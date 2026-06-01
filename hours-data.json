@@ -248,7 +248,7 @@
     ],
     "quotes": [
       {
-        "text": "<p>The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.</p>\n        <p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>",
+        "text": "<p>The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.</p>\n        <br><p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>",
         "attr": "Rainier Marie Rilke, &ldquo;Evening&rdquo; &lpar;1918&rpar;"
       },
       {
@@ -263,7 +263,7 @@
     "images": [
       {
         "src": "images/denouement_kuindzhi.jpg",
-        "caption": "Arkhip Kuindzhi, <em>Moonlit Night on the Dnieper</em> &lpar;1880)&rpar;"
+        "caption": "Arkhip Kuindzhi, <em>Moonlit Night on the Dnieper</em> &lpar;(1880)&rpar;"
       },
       {
         "src": null,
