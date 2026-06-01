@@ -547,11 +547,10 @@ function pick(arr) {
 }
 
 function formatTime(d) {
-   const h = 5, m = d.getMinutes(); // TESTING — remove before publish
-   // const h = d.getHours(), m = d.getMinutes();
+  const h = d.getHours(), m = d.getMinutes();
   return `${h % 12 || 12}:${String(m).padStart(2,'0')} ${h >= 12 ? 'pm' : 'am'}`;
 }
-
+  
 function formatDate(d) {
   return `${DAYS[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
 }
@@ -582,7 +581,8 @@ let currentBlockName = null;
 
 function render(blocks, force) {
   const now   = new Date();
-  const h     = now.getHours();
+  const h = 5; // TESTING — remove before publish
+  // const h     = now.getHours();
   const block = blockForHour(blocks, h);
 
   document.getElementById('clock-time').textContent    = formatTime(now);
