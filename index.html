@@ -547,7 +547,7 @@ function pick(arr) {
 }
 
 function formatTime(d) {
-   const h = 1, m = d.getMinutes(); // TESTING — remove before publish
+   const h = 5, m = d.getMinutes(); // TESTING — remove before publish
    // const h = d.getHours(), m = d.getMinutes();
   return `${h % 12 || 12}:${String(m).padStart(2,'0')} ${h >= 12 ? 'pm' : 'am'}`;
 }
