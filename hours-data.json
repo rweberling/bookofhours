@@ -1,0 +1,274 @@
+[
+  {
+    "name": "Void",
+    "cssClass": "block-void",
+    "startHour": 0,
+    "subtitle": "Midnight · hours 0–2",
+    "versicle": "<p>You are alone with the dark now. The house settles; the field lies still.</p><p>Nothing is asked of you.</p>",
+    "phenomena": [
+      "Orion transits the meridian",
+      "Dew begins to form on grass blades",
+      "Screech-owl calls from the wood edge"
+    ],
+    "quotes": [
+      {
+        "text": "In the middle of the journey of our life I came to myself within a dark wood where the straight way was lost.",
+        "attr": "Dante Alighieri, <em>Inferno</em>"
+      },
+      {
+        "text": "Darkness is not the absence of light; it is the presence of the night.",
+        "attr": "Clark Strand, <em>Waking Up to the Dark</em>"
+      },
+      {
+        "text": "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.",
+        "attr": "Albert Einstein"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "The wood unseen but present"
+      }
+    ]
+  },
+  {
+    "name": "Silence",
+    "cssClass": "block-silence",
+    "startHour": 3,
+    "subtitle": "Pre-dawn · hours 3–5",
+    "versicle": "<p>Something shifts. The darkness has not changed, but there is a loosening at its edge — not light yet, but the memory of light.</p>",
+    "phenomena": [
+      "Body temperature reaches its nadir",
+      "Flying squirrel glides between oaks",
+      "First vague pallor at the east horizon"
+    ],
+    "quotes": [
+      {
+        "text": "How often have I lain beneath rain on a strange roof, thinking of home.",
+        "attr": "William Faulkner, <em>As I Lay Dying</em>"
+      },
+      {
+        "text": "It is a beauteous evening, calm and free; the holy time is quiet as a nun breathless with adoration.",
+        "attr": "William Wordsworth"
+      },
+      {
+        "text": "Before the birds have begun, before the day has made any claim, the soul is most itself.",
+        "attr": "Thomas Merton, <em>The Sign of Jonas</em>"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "The fourth watch; the east not yet but readying"
+      }
+    ]
+  },
+  {
+    "name": "Chorus",
+    "cssClass": "block-chorus",
+    "startHour": 6,
+    "subtitle": "Dawn · hours 6–8",
+    "versicle": "<p>The robin sings first, always the robin — <em>Turdus migratorius</em>, the wandering thrush — before the light has committed to anything.</p><p>Then the wood thrush. Then the world remembers it is permitted to begin.</p>",
+    "phenomena": [
+      "American Robin sings first: 45 min before sunrise",
+      "Eastern Bluebird on the fence post",
+      "Spiders string dew on grass blades"
+    ],
+    "quotes": [
+      {
+        "text": "No man can be said to have lost the day who has watched the dawn and heard the chorus break the silence.",
+        "attr": "John Burroughs, <em>Wake-Robin</em>"
+      },
+      {
+        "text": "Early in the morning, when the world is young, the sun coming up from behind the hills — that is the time to see all things new.",
+        "attr": "Willa Cather, <em>O Pioneers!</em>"
+      },
+      {
+        "text": "The light comes in sideways, the way grace is said to come — not from above, but through the cracks at the edge of things.",
+        "attr": "Lectio Terra"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "First light on the field"
+      },
+      {
+        "src": null,
+        "caption": "Dawn chorus; the robin's extravagant claim on the morning"
+      }
+    ]
+  },
+  {
+    "name": "Transit",
+    "cssClass": "block-transit",
+    "startHour": 9,
+    "subtitle": "Morning · hours 9–11",
+    "versicle": "<p>Light is now something you move through rather than look at. The day is underway, and you are in it.</p>",
+    "phenomena": [
+      "Monarch butterfly nectaring at milkweed",
+      "Bumblebee queen foraging for nest material",
+      "Photosynthesis at full rate in the canopy"
+    ],
+    "quotes": [
+      {
+        "text": "The poetry of earth is never dead.",
+        "attr": "John Keats, <em>On the Grasshopper and Cricket</em>"
+      },
+      {
+        "text": "One touch of nature makes the whole world kin.",
+        "attr": "William Shakespeare, <em>Troilus and Cressida</em>"
+      },
+      {
+        "text": "We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time.",
+        "attr": "T. S. Eliot, <em>Four Quartets</em>"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "The wren's extravagant claim on the morning"
+      },
+      {
+        "src": null,
+        "caption": "Mid-morning; the ordinary light"
+      }
+    ]
+  },
+  {
+    "name": "Fulcrum",
+    "cssClass": "block-fulcrum",
+    "startHour": 12,
+    "subtitle": "Noon · hours 12–14",
+    "versicle": "<p>The sun stands at the top of its arc. The shadow is directly beneath you.</p><p>For a moment, there is no pointing away.</p>",
+    "phenomena": [
+      "Solar zenith; shadows at minimum length",
+      "Cicada chorus at peak intensity",
+      "Linnaean <em>Horologium Florae</em>: chicory closes its petals"
+    ],
+    "quotes": [
+      {
+        "text": "All really inhabited space bears the essence of the notion of home.",
+        "attr": "Gaston Bachelard, <em>The Poetics of Space</em>"
+      },
+      {
+        "text": "It is not down on any map; true places never are.",
+        "attr": "Herman Melville, <em>Moby-Dick</em>"
+      },
+      {
+        "text": "Nature is not a place to visit. It is home.",
+        "attr": "Gary Snyder"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "Meridies; the hour of no shadow"
+      }
+    ]
+  },
+  {
+    "name": "Doldrums",
+    "cssClass": "block-doldrums",
+    "startHour": 15,
+    "subtitle": "Afternoon · hours 15–17",
+    "versicle": "<p>The angle of the light has become philosophical. Every object casts a shadow longer than itself.</p>",
+    "phenomena": [
+      "Goldenrod lit at the field edge",
+      "Monarch forming waypoint roost",
+      "Evening primrose opens its first flowers"
+    ],
+    "quotes": [
+      {
+        "text": "Adopt the pace of nature: her secret is patience.",
+        "attr": "Ralph Waldo Emerson"
+      },
+      {
+        "text": "Time is the longest distance between two places.",
+        "attr": "Tennessee Williams, <em>The Glass Menagerie</em>"
+      },
+      {
+        "text": "The vesper sparrow gives its name to this hour, and to a particular quality of late-day song that sounds like something ending and not minding.",
+        "attr": "Lectio Terra"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "Long shadows and the philosophical light"
+      }
+    ]
+  },
+  {
+    "name": "Repast",
+    "cssClass": "block-repast",
+    "startHour": 18,
+    "subtitle": "Dusk · hours 18–20",
+    "versicle": "<p>The light does not go. It withdraws. There is a difference, and the birds know it.</p><p>This is the hour of the lamp and the window. From outside, the lit rooms look like devotion.</p>",
+    "phenomena": [
+      "Common Nighthawk begins aerial foraging",
+      "First fireflies flash in open fields",
+      "Peepers at maximum volume in the wetland chorus"
+    ],
+    "quotes": [
+      {
+        "text": "There is something infinitely healing in the repeated refrains of nature.",
+        "attr": "Rachel Carson, <em>The Sense of Wonder</em>"
+      },
+      {
+        "text": "The sky holds blue after the sun has gone. Ornithologists call this civil twilight, as if to say: we permit this.",
+        "attr": "Lectio Terra"
+      },
+      {
+        "text": "Evening is the time when the heart is most open.",
+        "attr": "Helen Macdonald, <em>H is for Hawk</em>"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "Solis occasus; the light's formal withdrawal"
+      },
+      {
+        "src": null,
+        "caption": "Crepusculum; the blue that stays when the light has gone"
+      }
+    ]
+  },
+  {
+    "name": "Denouement",
+    "cssClass": "block-denouement",
+    "startHour": 21,
+    "subtitle": "Night · hours 21–23",
+    "versicle": "<p>The old monks said this was the close of the day — <em>completorium</em>, the completing.</p><p>Something may be laid down now.</p>",
+    "phenomena": [
+      "Milky Way transiting; core visible from dark sites",
+      "Great Horned Owl calls from the pine stand",
+      "Orion rising at the east horizon"
+    ],
+    "quotes": [
+      {
+        "text": "Now bless yourself with all that you are, resting in the fertile darkness.",
+        "attr": "John O'Donohue, <em>To Bless the Space Between Us</em>"
+      },
+      {
+        "text": "The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars.",
+        "attr": "Carl Sagan, <em>Cosmos</em>"
+      },
+      {
+        "text": "We are all strangers in a strange land, longing for home, but not quite knowing what or where home is.",
+        "attr": "Madeleine L'Engle"
+      }
+    ],
+    "images": [
+      {
+        "src": null,
+        "caption": "The close of the day's office"
+      },
+      {
+        "src": null,
+        "caption": "Nox incipit; the deep evening, the sky opened"
+      }
+    ]
+  }
+]
