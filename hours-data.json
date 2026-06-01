@@ -90,7 +90,7 @@
     ],
     "images": [
       {
-        "src": images/chorus_klint.jpg,
+        "src": "images/chorus_klint.jpg",
         "caption": "Hilma af Klint, <em>Group IX/UW, No. 25, The Dove, No. 1 </em> &lpar;1915&rpar;"
       },
       {
@@ -249,7 +249,7 @@
     "quotes": [
       {
         "text": "<p>The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.</p>
-        <p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>"
+        <p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>",
         "attr": "Rainier Marie Rilke, &ldquo;Evening&rdquo; &lpar;1918&rpar;"
       },
       {
@@ -263,7 +263,7 @@
     ],
     "images": [
       {
-        "src": images/denouement_kuindzhi.jpg,
+        "src": "images/denouement_kuindzhi.jpg",
         "caption": "Arkhip Kuindzhi, <em>Moonlit Night on the Dnieper</em> &lpar;1880)&rpar;"
       },
       {
