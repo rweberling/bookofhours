@@ -248,8 +248,7 @@
     ],
     "quotes": [
       {
-        "text": "<p>The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.</p>
-        <p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>",
+        "text": "<p>The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.</p>\n        <p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>",
         "attr": "Rainier Marie Rilke, &ldquo;Evening&rdquo; &lpar;1918&rpar;"
       },
       {
@@ -257,7 +256,7 @@
         "attr": "Carl Sagan, <em>Cosmos</em>"
       },
       {
-        "text": "3.	The dawn! The sun! The light! Haw! The long blue days, for his head, for his side, and the little paths for his feet, and all the brightness to touch and gather. Through the grass the little mosspaths, bony with old roots, and the trees sticking up, and the flowers sticking up, and the fruit hanging down, and the white exhausted butterflies, and the birds never the same darting all day into hiding. And all the sounds, meaning nothing. Then at night rest in the quiet house, there are no roads, no streets any more, you lie down by the window opening on refuge, the little sounds come that demand nothing, ordain nothing, explain nothing, propound nothing, and the short necesssary night is soon ended, and the sky blue again over all the secret places where nobody ever comes, the secret places never the same, but always simple and indifferent, always mere places, sites of a stirring beyond coming and going, of a being so light and free that it is as the being of nothing.",
+        "text": "3.\tThe dawn! The sun! The light! Haw! The long blue days, for his head, for his side, and the little paths for his feet, and all the brightness to touch and gather. Through the grass the little mosspaths, bony with old roots, and the trees sticking up, and the flowers sticking up, and the fruit hanging down, and the white exhausted butterflies, and the birds never the same darting all day into hiding. And all the sounds, meaning nothing. Then at night rest in the quiet house, there are no roads, no streets any more, you lie down by the window opening on refuge, the little sounds come that demand nothing, ordain nothing, explain nothing, propound nothing, and the short necesssary night is soon ended, and the sky blue again over all the secret places where nobody ever comes, the secret places never the same, but always simple and indifferent, always mere places, sites of a stirring beyond coming and going, of a being so light and free that it is as the being of nothing.",
         "attr": "Samuel Beckett, <em>Watt</em> &lpar;1953&rpar;"
       }
     ],
