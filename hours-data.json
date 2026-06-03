@@ -3,7 +3,7 @@
     "name": "Void",
     "cssClass": "block-void",
     "startHour": 0,
-    "subtitle": "Midnight · hours 0–2",
+    "subtitle": "Midnight · hours 0 to 3",
     "versicle": "<p>You are alone with the dark now. The house settles; the field lies still.</p><p>Nothing is asked of you.</p>",
     "phenomena": [
       "Orion transits the meridian",
@@ -35,7 +35,7 @@
     "name": "Silence",
     "cssClass": "block-silence",
     "startHour": 3,
-    "subtitle": "Pre-dawn · hours 3–5",
+    "subtitle": "Pre-dawn · hours 3 to 6",
     "versicle": "<p>Something shifts. The darkness has not changed, but there is a loosening at its edge — not light yet, but the memory of light.</p>",
     "phenomena": [
       "Body temperature reaches its nadir",
@@ -67,7 +67,7 @@
     "name": "Chorus",
     "cssClass": "block-chorus",
     "startHour": 6,
-    "subtitle": "Dawn · hours 6–8",
+    "subtitle": "Dawn · hours 6 to 9",
     "versicle": "<p>The robin sings first, always the robin — <em>Turdus migratorius</em>, the wandering thrush — before the light has committed to anything.</p><p>Then the wood thrush. Then the world remembers it is permitted to begin.</p>",
     "phenomena": [
       "American Robin sings first: 45 min before sunrise",
@@ -103,7 +103,7 @@
     "name": "Transit",
     "cssClass": "block-transit",
     "startHour": 9,
-    "subtitle": "Morning · hours 9–11",
+    "subtitle": "Morning · hours 9 to 12",
     "versicle": "<p>Light is now something you move through rather than look at. The day is underway, and you are in it.</p>",
     "phenomena": [
       "Monarch butterfly nectaring at milkweed",
@@ -112,8 +112,8 @@
     ],
     "quotes": [
       {
-        "text": "The poetry of earth is never dead.",
-        "attr": "John Keats, <em>On the Grasshopper and Cricket</em>"
+        "text": "I have heard what the talkers were talking, the talk of the beginning and the end,<br>But I do not talk of the beginning or the end.<br><br>There was never any more inception than there is now,<br>Nor any more youth or age than there is now,<br>And will never be any more perfection than there is now,<br>Nor any more heaven or hell than there is now.<br><br>Urge and urge and urge,<br>Always the procreant urge of the world.",
+        "attr": "Walt Whitman, <a href=\"https://www.poetryfoundation.org/poems/45477/song-of-myself-1892-version" target=\"_blank\"><em>Song of Myself</em></a>(1892)"
       },
       {
         "text": "One touch of nature makes the whole world kin.",
@@ -139,7 +139,7 @@
     "name": "Fulcrum",
     "cssClass": "block-fulcrum",
     "startHour": 12,
-    "subtitle": "Noon · hours 12–14",
+    "subtitle": "Noon · hours 12 to 15",
     "versicle": "<p>The sun stands at the top of its arc. The shadow is directly beneath you.</p><p>For a moment, there is no pointing away.</p>",
     "phenomena": [
       "Solar zenith; shadows at minimum length",
@@ -171,7 +171,7 @@
     "name": "Doldrums",
     "cssClass": "block-doldrums",
     "startHour": 15,
-    "subtitle": "Afternoon · hours 15–17",
+    "subtitle": "Afternoon · hours 15 to 18",
     "versicle": "<p>The angle of the light has become philosophical. Every object casts a shadow longer than itself.</p>",
     "phenomena": [
       "Goldenrod lit at the field edge",
@@ -203,7 +203,7 @@
     "name": "Repast",
     "cssClass": "block-repast",
     "startHour": 18,
-    "subtitle": "Dusk · hours 18–20",
+    "subtitle": "Dusk · hours 18 to 21",
     "versicle": "<p>The light does not go. It withdraws. There is a difference, and the birds know it.</p><p>This is the hour of the lamp and the window. From outside, the lit rooms look like devotion.</p>",
     "phenomena": [
       "Common Nighthawk begins aerial foraging",
@@ -239,7 +239,7 @@
     "name": "Denouement",
     "cssClass": "block-denouement",
     "startHour": 21,
-    "subtitle": "Night · hours 21–23",
+    "subtitle": "Night · hours 21 to 24",
     "versicle": "<p>The old monks said this was the close of the day — <em>completorium</em>, the completing.</p><p>Something may be laid down now.</p>",
     "phenomena": [
       "Milky Way transiting; core visible from dark sites",
