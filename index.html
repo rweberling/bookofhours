@@ -100,7 +100,7 @@ body {
 body::before {
   content: '';
   position: fixed; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' result='noise'/%3E%3C/filter%3E%3Crect width='400' height='400' fill='%23f5ede0' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4'/%3E%3C/filter%3E%3Crect width='400' height='400' fill='%23f5ede0'/%3E%3Crect width='400' height='400' fill='%23d4c4a8' opacity='0.3' filter='url(%23n)'/%3E%3C/svg%3E");
   pointer-events: none; z-index: 0; opacity: 0.5;
 }
 
@@ -369,6 +369,29 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   text-align: center; padding: 60px 40px; line-height: 1.8;
 }
 
+.error-detail {
+  font-size: 13px; font-weight: 300; margin-top: 20px;
+  color: var(--ink-light); font-style: normal;
+}
+
+.retry-button {
+  margin-top: 24px;
+  padding: 10px 24px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.retry-button:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
 /* ── Lightbox ─────────────────────────────────────────────────── */
 .lightbox {
   display: none;
@@ -583,11 +606,12 @@ function blockForHour(blocks, h) {
 
 let currentBlockName = null;
 let lastRenderedHour = null;
+let blocks = null;
 
-function render(blocks, force) {
+function render(blocksData, force) {
   const now   = new Date();
   const h     = now.getHours();
-  const block = blockForHour(blocks, h);
+  const block = blockForHour(blocksData, h);
 
   document.getElementById('clock-time').textContent    = formatTime(now);
   document.getElementById('colophon-date').textContent = formatDate(now);
@@ -598,7 +622,7 @@ function render(blocks, force) {
   const veil = document.getElementById('veil');
 
   function doUpdate() {
-    blocks.forEach(b => {
+    blocksData.forEach(b => {
       if (b.cssClass) document.body.classList.remove(b.cssClass);
     });
     if (block.cssClass) document.body.classList.add(block.cssClass);
@@ -635,33 +659,73 @@ function render(blocks, force) {
   }
 }
 
-function showError(msg) {
-  document.querySelector('.page').innerHTML =
-    `<p class="load-error">${msg}</p>`;
+function showError(msg, details = '') {
+  const errorHTML = `
+    <p class="load-error">
+      ${msg}
+      ${details ? `<div class="error-detail">${details}</div>` : ''}
+      <button class="retry-button" onclick="location.reload()">Try Again</button>
+    </p>
+  `;
+  document.querySelector('.page').innerHTML = errorHTML;
 }
 
-/* ── Fetch data and start ─────────────────────────────────────── */
+/* ── Fetch data with retry logic ────────────────────────────────── */
+async function fetchWithRetry(retries = 3, timeout = 8000) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeout);
+      
+      const res = await fetch('hours-data.json', { signal: controller.signal });
+      clearTimeout(timeoutId);
+      
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      }
+      
+      const data = await res.json();
+      return data;
+    } catch (err) {
+      console.error(`Attempt ${attempt}/${retries} failed:`, err);
+      
+      if (attempt === retries) {
+        // Final attempt failed
+        throw err;
+      }
+      
+      // Wait before retrying (exponential backoff)
+      const delayMs = Math.min(1000 * Math.pow(2, attempt - 1), 4000);
+      await new Promise(r => setTimeout(r, delayMs));
+    }
+  }
+}
+
 async function init() {
-  let blocks;
   try {
-    const res = await fetch('hours-data.json');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    blocks = await res.json();
+    blocks = await fetchWithRetry(3, 8000);
+    
+    render(blocks, true);
+    
+    // Update every minute
+    setInterval(() => render(blocks, false), 60000);
   } catch (err) {
+    const errorType = err.name === 'AbortError' ? 'timeout' : 'network';
+    const errorMsg = errorType === 'timeout' 
+      ? 'The request took too long to respond.'
+      : `${err.message}`;
+    
     showError(
       `Could not load <em>hours-data.json</em>.<br>
+       ${errorMsg}<br><br>
        If you are working locally, run:<br>
        <code>python3 -m http.server 8000</code><br>
-       then open <code>http://localhost:8000</code>`
+       then open <code>http://localhost:8000</code>`,
+      `Error: ${err.message}`
     );
-    console.error('hours-data.json fetch failed:', err);
-    return;
+    
+    console.error('Data fetch failed after retries:', err);
   }
-
-  render(blocks, true);
-  
-  // Update on the hour or every minute
-  setInterval(() => render(blocks, false), 60000);
 }
 
 init();
