@@ -684,10 +684,25 @@ async function fetchWithRetry(retries = 3, timeout = 8000) {
         throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       }
       
-      const data = await res.json();
+      // Get response as text first to avoid parsing issues
+      const text = await res.text();
+      
+      // Validate it looks like JSON
+      if (!text.trim().startsWith('[') && !text.trim().startsWith('{')) {
+        throw new Error('Response is not valid JSON');
+      }
+      
+      // Now parse it
+      const data = JSON.parse(text);
+      
+      // Validate structure
+      if (!Array.isArray(data)) {
+        throw new Error('JSON data is not an array');
+      }
+      
       return data;
     } catch (err) {
-      console.error(`Attempt ${attempt}/${retries} failed:`, err);
+      console.error(`Attempt ${attempt}/${retries} failed:`, err.message);
       
       if (attempt === retries) {
         // Final attempt failed
@@ -710,10 +725,10 @@ async function init() {
     // Update every minute
     setInterval(() => render(blocks, false), 60000);
   } catch (err) {
-    const errorType = err.name === 'AbortError' ? 'timeout' : 'network';
+    const errorType = err.name === 'AbortError' ? 'timeout' : 'parse_error';
     const errorMsg = errorType === 'timeout' 
       ? 'The request took too long to respond.'
-      : `${err.message}`;
+      : err.message;
     
     showError(
       `Could not load <em>hours-data.json</em>.<br>
