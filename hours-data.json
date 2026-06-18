@@ -58,8 +58,8 @@
     ],
     "images": [
       {
-        "src": null,
-        "caption": "The fourth watch; the east not yet but readying"
+        "src": "images/silence_bentley.jpg",
+        "caption": "Wilson Alwyn Bentley, <a href=\"https://www.metmuseum.org/art/collection/search/286768\" target=\"_blank\"><em>[Snow Crystal]</em></a> (c. 1910)"
       }
     ]
   },
@@ -122,8 +122,8 @@
     ],
     "images": [
       {
-        "src": null,
-        "caption": "The wren's extravagant claim on the morning"
+        "src": "images/transit_darwin.jpg",
+        "caption": "Charles Darwin, from <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t0ms3kq78?urlappend=%3Bseq=177\" target=\"_blank\"><em>The Power of Movement in Plants</em></a> (1880)"
       },
       {
         "src": null,
@@ -190,8 +190,8 @@
     ],
     "images": [
       {
-        "src": null,
-        "caption": "Long shadows and the philosophical light"
+        "src": "images/dolrums_monet.jpg",
+        "caption": "Claude Monet, <a href=\"https://www.artic.edu/artworks/64818/stacks-of-wheat-end-of-summer\" target=\"_blank\"><em>Stacks of Wheat (End of Summer)</em></a> (1890-1891)"
       }
     ]
   },
