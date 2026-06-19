@@ -3,7 +3,7 @@
     "name": "Void",
     "cssClass": "block-void",
     "startHour": 0,
-    "subtitle": "Midnight · hours 0 to 3",
+    "subtitle": "Midnight · Hours 0 to 3",
     "versicle": "<p>You are alone with the dark now. The house settles; the field lies still.</p><p>Nothing is asked of you.</p>",
     "phenomena": [
       "Orion transits the meridian",
@@ -35,7 +35,7 @@
     "name": "Silence",
     "cssClass": "block-silence",
     "startHour": 3,
-    "subtitle": "Pre-dawn · hours 3 to 6",
+    "subtitle": "Pre-dawn · Hours 3 to 6",
     "versicle": "<p>Something shifts. The darkness has not changed, but there is a loosening at its edge — not light yet, but the memory of light.</p>",
     "phenomena": [
       "Body temperature reaches its nadir",
@@ -67,7 +67,7 @@
     "name": "Chorus",
     "cssClass": "block-chorus",
     "startHour": 6,
-    "subtitle": "Dawn · hours 6 to 9",
+    "subtitle": "Dawn · Hours 6 to 9",
     "versicle": "<p>The robin sings first, always the robin — <em>Turdus migratorius</em>, the wandering thrush — before the light has committed to anything.</p><p>Then the wood thrush. Then the world remembers it is permitted to begin.</p>",
     "phenomena": [
       "American Robin sings first: 45 min before sunrise",
@@ -103,7 +103,7 @@
     "name": "Transit",
     "cssClass": "block-transit",
     "startHour": 9,
-    "subtitle": "Morning · hours 9 to 12",
+    "subtitle": "Morning · Hours 9 to 12",
     "versicle": "<p>Light is now something you move through rather than look at. The day is underway, and you are in it.</p>",
     "phenomena": [
       "Monarch butterfly nectaring at milkweed",
@@ -135,7 +135,7 @@
     "name": "Fulcrum",
     "cssClass": "block-fulcrum",
     "startHour": 12,
-    "subtitle": "Noon · hours 12 to 15",
+    "subtitle": "Noon · Hours 12 to 15",
     "versicle": "<p>The sun stands at the top of its arc. The shadow is directly beneath you.</p><p>For a moment, there is no pointing away.</p>",
     "phenomena": [
       "Solar zenith; shadows at minimum length",
@@ -167,7 +167,7 @@
     "name": "Doldrums",
     "cssClass": "block-doldrums",
     "startHour": 15,
-    "subtitle": "Afternoon · hours 15 to 18",
+    "subtitle": "Afternoon · Hours 15 to 18",
     "versicle": "<p>The angle of the light has become philosophical. Every object casts a shadow longer than itself.</p>",
     "phenomena": [
       "Goldenrod lit at the field edge",
@@ -199,8 +199,8 @@
     "name": "Repast",
     "cssClass": "block-repast",
     "startHour": 18,
-    "subtitle": "Dusk · hours 18 to 21",
-    "versicle": "<p>The light does not go. It withdraws. There is a difference, and the birds know it.</p><p>This is the hour of the lamp and the window. From outside, the lit rooms look like devotion.</p>",
+    "subtitle": "Evening · Hours 18 to 21",
+    "versicle": "<p>The light lingers until it is gone.</p><p>This is the hour of the lamp and the window. From outside, the lit rooms look like devotion.</p>",
     "phenomena": [
       "Common Nighthawk begins aerial foraging",
       "First fireflies flash in open fields",
@@ -235,8 +235,8 @@
     "name": "Denouement",
     "cssClass": "block-denouement",
     "startHour": 21,
-    "subtitle": "Night · hours 21 to 24",
-    "versicle": "<p>The old monks said this was the close of the day — <em>completorium</em>, the completing.</p><p>Something may be laid down now.</p>",
+    "subtitle": "Night · Hours 21 to 24",
+    "versicle": "<p>The old monks said this was the close of the day: <em>completorium</em>, the completing.</p><p>Something may be laid down now.</p>",
     "phenomena": [
       "Milky Way transiting; core visible from dark sites",
       "Great Horned Owl calls from the pine stand",
@@ -246,10 +246,6 @@
       {
         "text": "<p>The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.</p>\n        <br><p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>",
         "attr": "Rainier Marie Rilke, <a href=\"https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening\" target=\"_blank\">&ldquo;Evening&rdquo;</a> &lpar;1918&rpar;"
-      },
-      {
-        "text": "Steep with deep sweetness,<br>O You White Magnolias,<br>This still torpid night!",
-        "attr": "Richard Wright,#9 (c. 1959) <a href=\"https://bookshop.org/a/86532/9781611453492\" target=\"_blank\"><em>Haiku: This Other World</em></a> (1998)"
       },
       {
         "text": "Steep with deep sweetness,<br>O You White Magnolias,<br>This still torpid night!",
