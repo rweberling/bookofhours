@@ -32,8 +32,8 @@
     ]
   },
   {
-    "name": "Silence",
-    "cssClass": "block-silence",
+    "name": "Hush",
+    "cssClass": "block-hush",
     "startHour": 3,
     "subtitle": "Pre-dawn · Hours 3 to 6",
     "versicle": "<p>Something shifts. The darkness has not changed, but there is a loosening at its edge — not light yet, but the memory of light.</p>",
@@ -58,7 +58,7 @@
     ],
     "images": [
       {
-        "src": "images/silence_bentley.jpg",
+        "src": "images/hush_bentley.jpg",
         "caption": "Wilson Alwyn Bentley, <a href=\"https://www.metmuseum.org/art/collection/search/286768\" target=\"_blank\"><em>[Snow Crystal]</em></a> (c. 1910)"
       }
     ]
@@ -196,8 +196,8 @@
     ]
   },
   {
-    "name": "Repast",
-    "cssClass": "block-repast",
+    "name": "Convivium",
+    "cssClass": "block-convivium",
     "startHour": 18,
     "subtitle": "Evening · Hours 18 to 21",
     "versicle": "<p>The light lingers until it is gone.</p><p>This is the hour of the lamp and the window. From outside, the lit rooms look like devotion.</p>",
