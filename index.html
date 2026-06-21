@@ -462,7 +462,14 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .versicle { padding: 16px; margin-top: 24px; }
   .versicle p { font-size: 13px; }
   .corner { display: none; }
-  .site-nav { padding: 0 20px; gap: 20px; }
+  .site-nav { 
+  padding: 0 12px; 
+  gap: 10px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 56px; }
+.site-nav a, button.wander-btn { font-size: 9px; letter-spacing: 0.18em; }
+.site-nav .nav-sep { display: none; }
   .lightbox { padding: 20px; }
   .wander-pane .wander-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; width: 100%; }
   .wander-pane { padding: 52px 20px 60px; }
