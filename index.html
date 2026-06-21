@@ -952,16 +952,16 @@ const R_TICK = 100;
 const R_TICK_INNER = 96;
 const R_LABEL = 110;
 
-const BLOCK_COLORS = [
-  '#1a1825',   // void       — deep blue-violet night
-  '#1e1c2a',   // hush       — near-black indigo
-  '#f7ece0',   // chorus     — warm dawn cream
-  '#f8f0d8',   // transit    — pale gold morning
-  '#fdf8ec',   // fulcrum    — bright midday ivory
-  '#f2e4cc',   // doldrums   — amber afternoon
-  '#2a1c18',   // convivium  — deep ember brown
-  '#141820',   // denouement — dark blue-slate night
-];
+const BLOCK_PALETTES = {
+  'Void':       '#2a2440',   // deeper violet-indigo, more visible than bg
+  'Hush':       '#3a3050',   // slightly lighter indigo, step up from Void
+  'Chorus':     '#c89030',   // warm gold — dawn breaking, from --gold-light
+  'Transit':    '#e8a840',   // brighter amber gold — full sunrise
+  'Fulcrum':    '#d4b870',   // softer golden ivory — high noon warmth
+  'Doldrums':   '#c08040',   // deeper amber — afternoon heaviness
+  'Convivium':  '#a84828',   // rich ember red — from --accent
+  'Denouement': '#404870',   // muted blue-slate — cooling toward night
+};
 function hourToAngleDeg(h) {
   return h * 15 - 90;
 }
