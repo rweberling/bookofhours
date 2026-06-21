@@ -117,7 +117,7 @@ body::before {
 .outer-frame {
   position: fixed; inset: 18px;
   border: 1px solid var(--rule);
-  pointer-events: none; z-index: 10;
+  pointer-events: none; z-index: 0;
   transition: border-color 3s ease;
 }
 .outer-frame::before {
@@ -126,7 +126,7 @@ body::before {
 }
 .corner {
   position: fixed; width: 36px; height: 36px;
-  z-index: 11; pointer-events: none; color: var(--gold);
+  z-index: 0; pointer-events: none; color: var(--gold);
   transition: color 3s ease;
 }
 .corner svg { display: block; }
