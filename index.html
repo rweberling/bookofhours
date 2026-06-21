@@ -462,13 +462,20 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .versicle { padding: 16px; margin-top: 24px; }
   .versicle p { font-size: 13px; }
   .corner { display: none; }
- .site-nav {
+.site-nav {
   padding: 8px 20px;
-  gap: 6px 16px;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: auto; }
-.site-nav a, button.wander-btn { font-size: 10px; letter-spacing: 0.15em; }
+  flex-direction: column;
+  gap: 0;
+  min-height: auto;
+  align-items: center;
+}
+.site-nav a, button.wander-btn {
+  font-size: 10px; letter-spacing: 0.18em;
+  padding: 9px 0;
+  width: 100%; text-align: center;
+  border-bottom: 0.5px solid var(--rule);
+}
+.site-nav a:last-of-type { border-bottom: none; }
 .site-nav .nav-sep { display: none; }
   .lightbox { padding: 20px; }
   .wander-pane .wander-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; width: 100%; }
