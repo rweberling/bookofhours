@@ -1035,13 +1035,16 @@ function buildDial(blocksData) {
     svg.insertBefore(text, document.getElementById('dial-hand'));
   });
 
-  const nowDot = document.createElementNS(svgNS, 'circle');
-  nowDot.setAttribute('id', 'dial-now-dot');
-  nowDot.setAttribute('r', '3');
-  nowDot.setAttribute('fill', 'currentColor');
-  nowDot.setAttribute('opacity', '0.45');
-  svg.insertBefore(nowDot, document.getElementById('dial-hand'));
-  updateDialNowDot();
+    const nowDot = document.createElementNS(svgNS, 'text');
+    nowDot.setAttribute('id', 'dial-now-dot');
+    nowDot.setAttribute('font-size', '9');
+    nowDot.setAttribute('fill', 'currentColor');
+    nowDot.setAttribute('opacity', '0.75');
+    nowDot.setAttribute('text-anchor', 'middle');
+    nowDot.setAttribute('dominant-baseline', 'middle');
+    nowDot.textContent = '✦';
+    svg.insertBefore(nowDot, document.getElementById('dial-hand'));
+    updateDialNowDot();
 }
 
 function updateDialNowDot() {
@@ -1050,8 +1053,8 @@ function updateDialNowDot() {
   const now = new Date();
   const h = now.getHours() + now.getMinutes() / 60;
   const p = polarToXY(hourToAngleDeg(h), R_ARC);
-  dot.setAttribute('cx', p.x);
-  dot.setAttribute('cy', p.y);
+  dot.setAttribute('x', p.x);
+  dot.setAttribute('y', p.y);
 }
 
 function setDialHand(hour) {
