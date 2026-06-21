@@ -441,13 +441,27 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
-  .page { padding: 48px 26px 40px; }
-  .outer-frame { inset: 10px; }
+  .outer-frame { box-shadow:
+      0 0 0 10px var(--bg),
+      inset 0 0 0 1px var(--rule),
+      inset 0 0 0 15px var(--bg),
+      inset 0 0 0 16px var(--rule); }
+  .page { padding: 36px 20px 32px; }
+  .image-frame-outer { max-width: 100%; }
+  .block-name { font-size: clamp(24px, 7vw, 36px); }
+  .quote-text { font-size: clamp(14px, 4vw, 18px); }
+  .versicle p { font-size: 13px; }
   .corner { display: none; }
   .versicle { padding: 16px 16px; }
   .hour-line { flex-direction: column; align-items: center; gap: 4px; }
   .site-nav { padding: 0 20px; gap: 20px; }
   .lightbox { padding: 20px; }
+  .wander-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .wander-pane { padding: 52px 20px 60px; }
+  .wander-dial-wrap { width: 230px; height: 230px; }
+  .tile-name { font-size: 11px; }
+  .tile-hours { font-size: 12px; }
+  .tile-subtitle { font-size: 12px; }
 }
   /* ── Wander trigger button ────────────────────────────────────── */
 button.wander-btn {
@@ -587,15 +601,6 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   transition: color 3s ease;
 }
 
-/* ── Responsive additions ─────────────────────────────────────── */
-@media (max-width: 600px) {
-  .wander-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .wander-pane { padding: 52px 20px 60px; }
-  .wander-dial-wrap { width: 230px; height: 230px; }
-  .tile-name { font-size: 11px; }
-  .tile-hours { font-size: 12px; }
-  .tile-subtitle { font-size: 12px; }
-}
 </style>
 </head>
 <body>
