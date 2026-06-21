@@ -448,6 +448,149 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .site-nav { padding: 0 20px; gap: 20px; }
   .lightbox { padding: 20px; }
 }
+  /* ── Wander trigger button ────────────────────────────────────── */
+button.wander-btn {
+  all: unset;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  text-transform: uppercase; cursor: pointer;
+  color: var(--ink-faint); opacity: 0.75;
+  transition: opacity 0.2s ease, color 3s ease;
+}
+button.wander-btn:hover { opacity: 1; color: var(--accent); }
+
+/* ── Wander pane ──────────────────────────────────────────────── */
+.wander-pane {
+  display: none;
+  position: fixed; inset: 0; z-index: 150;
+  background: var(--bg);
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease, background 3s ease;
+  padding: 56px 40px 80px;
+}
+.wander-pane.open {
+  display: flex;
+  opacity: 1;
+}
+
+.wander-close {
+  position: fixed; top: 28px; right: 36px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--ink-faint); opacity: 0.6; cursor: pointer;
+  background: none; border: none;
+  transition: opacity 0.2s ease, color 3s ease;
+  z-index: 160;
+}
+.wander-close:hover { opacity: 1; color: var(--accent); }
+
+.wander-heading {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 11px; letter-spacing: 0.36em; text-transform: uppercase;
+  color: var(--ink-faint); margin-bottom: 8px;
+  transition: color 3s ease;
+}
+.wander-subheading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px; font-style: italic; font-weight: 300;
+  color: var(--ink-faint); opacity: 0.7; margin-bottom: 36px;
+  transition: color 3s ease;
+}
+
+/* ── Dial ─────────────────────────────────────────────────────── */
+.wander-dial-wrap {
+  margin-bottom: 44px;
+  position: relative;
+  width: 240px; height: 240px;
+  flex-shrink: 0;
+}
+.wander-dial-wrap svg {
+  width: 100%; height: 100%;
+  overflow: visible;
+}
+.dial-arc {
+  fill: none;
+  stroke-width: 14;
+  stroke-linecap: butt;
+  opacity: 0.28;
+  transition: opacity 0.35s ease, stroke-width 0.35s ease;
+}
+.dial-arc.active   { opacity: 0.9; stroke-width: 17; }
+.dial-arc.current  { opacity: 0.55; }
+.dial-hand {
+  transform-origin: 120px 120px;
+  transition: transform 0.45s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+.dial-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 7.5px; font-style: italic;
+  fill: var(--ink-faint);
+  opacity: 0.55;
+  transition: opacity 0.35s ease, fill 0.35s ease;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+.dial-label.active { opacity: 1; fill: var(--ink); }
+
+/* ── Block tile grid ──────────────────────────────────────────── */
+.wander-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%; max-width: 760px;
+}
+.wander-tile {
+  border: 1px solid var(--rule);
+  background: var(--bg-dark);
+  padding: 18px 14px 16px;
+  cursor: pointer;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 6px;
+  transition: background 0.2s ease, border-color 0.2s ease,
+              background-color 3s ease, border-color 3s ease;
+  position: relative;
+}
+.wander-tile:hover {
+  background: var(--bg-deep);
+  border-color: var(--gold);
+}
+.wander-tile.is-current {
+  border-color: var(--accent);
+  background: var(--bg-deep);
+}
+.wander-tile.is-current::before {
+  content: '✦';
+  position: absolute; top: 6px; right: 8px;
+  font-size: 7px; color: var(--accent); opacity: 0.7;
+}
+.tile-name {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 10px; letter-spacing: 0.05em;
+  color: var(--ink); text-align: center;
+  transition: color 3s ease;
+}
+.tile-hours {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; font-weight: 300; letter-spacing: 0.1em;
+  color: var(--ink-faint); text-align: center;
+  transition: color 3s ease;
+}
+.tile-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; font-style: italic; font-weight: 300;
+  color: var(--ink-faint); opacity: 0.7; text-align: center;
+  transition: color 3s ease;
+}
+
+/* ── Responsive additions ─────────────────────────────────────── */
+@media (max-width: 600px) {
+  .wander-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .wander-pane { padding: 52px 20px 60px; }
+  .wander-dial-wrap { width: 200px; height: 200px; }
+}
 </style>
 </head>
 <body>
@@ -492,7 +635,28 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   <img id="lightbox-img" src="" alt="">
   <p class="lightbox-caption" id="lightbox-caption"></p>
 </div>
+<!-- ═══════════════════════════════════════════════
+     WANDER THE HOURS PANE
+════════════════════════════════════════════════ -->
+<div class="wander-pane" id="wander-pane" role="dialog" aria-label="Wander the Hours" aria-modal="true">
+  <button class="wander-close" id="wander-close" aria-label="Close">✦ &nbsp;Close</button>
 
+  <p class="wander-heading">Wander the Hours</p>
+  <p class="wander-subheading">Each day is divided into eight watches</p>
+
+  <div class="wander-dial-wrap" aria-hidden="true">
+    <svg id="wander-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+      <g class="dial-hand" id="dial-hand">
+        <line x1="120" y1="120" x2="120" y2="34"
+              stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
+        <circle cx="120" cy="36" r="2.5" fill="currentColor" opacity="0.5"/>
+        <circle cx="120" cy="120" r="3" fill="currentColor" opacity="0.35"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wander-grid" id="wander-grid"></div>
+</div>
 <!-- ═══════════════════════════════════════════════
      MAIN PAGE CONTENT
 ════════════════════════════════════════════════ -->
@@ -550,12 +714,14 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 ════════════════════════════════════════════════ -->
 <nav class="site-nav" id="site-nav">
   <a href="index.html">Hours</a>
-  <span class="nav-sep">✦</span>
+  <span class="nav-sep" aria-hidden="true">✦</span>
   <a href="about.html">About</a>
-  <span class="nav-sep">✦</span>
-  <a href="reading.html" class="active">Reading</a>
-  <span class="nav-sep">✦</span>
+  <span class="nav-sep" aria-hidden="true">✦</span>
+  <a href="reading.html">Reading</a>
+  <span class="nav-sep" aria-hidden="true">✦</span>
   <a href="https://laurentia.substack.com">Substack</a>
+  <span class="nav-sep" aria-hidden="true">✦</span>
+  <button class="wander-btn" id="wander-open">Wander the Hours</button>
 </nav>
 
 <!-- ═══════════════════════════════════════════════
@@ -771,14 +937,272 @@ document.getElementById('image-inner').addEventListener('click', () => {
   requestAnimationFrame(() => lightbox.classList.add('open'));
 });
 
-lightbox.addEventListener('click', closeLightbox);
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeLightbox();
-});
-
 function closeLightbox() {
   lightbox.classList.remove('open');
   setTimeout(() => { lightbox.style.display = 'none'; }, 300);
+}
+  /* ══════════════════════════════════════════════════════════════
+   WANDER THE HOURS
+══════════════════════════════════════════════════════════════ */
+
+const CX = 120, CY = 120;
+const R_ARC  = 88;
+const R_TICK = 100;
+const R_TICK_INNER = 96;
+const R_LABEL = 110;
+
+const BLOCK_COLORS = [
+  '#b599d9',   // void
+  '#a080a0',   // hush
+  '#a83828',   // chorus
+  '#904018',   // transit
+  '#7a3010',   // fulcrum
+  '#8a3018',   // doldrums
+  '#e08050',   // convivium
+  '#7080c0',   // denouement
+];
+
+function hourToAngleDeg(h) {
+  return h * 15 - 90;
+}
+
+function polarToXY(angleDeg, r) {
+  const rad = angleDeg * Math.PI / 180;
+  return { x: CX + r * Math.cos(rad), y: CY + r * Math.sin(rad) };
+}
+
+function arcPath(startHour, spanHours, r) {
+  const a1 = hourToAngleDeg(startHour);
+  const a2 = hourToAngleDeg(startHour + spanHours);
+  const p1 = polarToXY(a1, r);
+  const p2 = polarToXY(a2, r);
+  const large = spanHours > 12 ? 1 : 0;
+  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 ${large} 1 ${p2.x} ${p2.y}`;
+}
+
+const svgNS = 'http://www.w3.org/2000/svg';
+
+function buildDial(blocksData) {
+  const svg = document.getElementById('wander-dial');
+
+  const bgRing = document.createElementNS(svgNS, 'circle');
+  bgRing.setAttribute('cx', CX); bgRing.setAttribute('cy', CY);
+  bgRing.setAttribute('r', R_ARC);
+  bgRing.setAttribute('fill', 'none');
+  bgRing.setAttribute('stroke', 'currentColor');
+  bgRing.setAttribute('stroke-width', '14');
+  bgRing.setAttribute('opacity', '0.06');
+  svg.insertBefore(bgRing, svg.firstChild);
+
+  for (let i = 0; i < 24; i++) {
+    const ang = hourToAngleDeg(i);
+    const isBlock = i % 3 === 0;
+    const p1 = polarToXY(ang, isBlock ? R_TICK_INNER - 2 : R_TICK_INNER + 1);
+    const p2 = polarToXY(ang, isBlock ? R_TICK + 2 : R_TICK);
+    const tick = document.createElementNS(svgNS, 'line');
+    tick.setAttribute('x1', p1.x); tick.setAttribute('y1', p1.y);
+    tick.setAttribute('x2', p2.x); tick.setAttribute('y2', p2.y);
+    tick.setAttribute('stroke', 'currentColor');
+    tick.setAttribute('stroke-width', isBlock ? '1' : '0.5');
+    tick.setAttribute('opacity', isBlock ? '0.3' : '0.14');
+    svg.insertBefore(tick, document.getElementById('dial-hand'));
+  }
+
+  blocksData.forEach((block, i) => {
+    const color = BLOCK_COLORS[i % BLOCK_COLORS.length];
+
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('d', arcPath(block.startHour, 3, R_ARC));
+    path.setAttribute('stroke', color);
+    path.setAttribute('class', 'dial-arc');
+    path.setAttribute('data-block', block.name);
+    svg.insertBefore(path, document.getElementById('dial-hand'));
+
+    const midAngle = hourToAngleDeg(block.startHour + 1.5);
+    const lp = polarToXY(midAngle, R_LABEL);
+    const text = document.createElementNS(svgNS, 'text');
+    text.setAttribute('x', lp.x);
+    text.setAttribute('y', lp.y);
+    text.setAttribute('class', 'dial-label');
+    text.setAttribute('data-block', block.name);
+    text.setAttribute('transform', `rotate(${midAngle + 90}, ${lp.x}, ${lp.y})`);
+    text.textContent = block.name.toUpperCase();
+    svg.insertBefore(text, document.getElementById('dial-hand'));
+  });
+
+  const nowDot = document.createElementNS(svgNS, 'circle');
+  nowDot.setAttribute('id', 'dial-now-dot');
+  nowDot.setAttribute('r', '3');
+  nowDot.setAttribute('fill', 'currentColor');
+  nowDot.setAttribute('opacity', '0.45');
+  svg.insertBefore(nowDot, document.getElementById('dial-hand'));
+  updateDialNowDot();
+}
+
+function updateDialNowDot() {
+  const dot = document.getElementById('dial-now-dot');
+  if (!dot) return;
+  const now = new Date();
+  const h = now.getHours() + now.getMinutes() / 60;
+  const p = polarToXY(hourToAngleDeg(h), R_ARC);
+  dot.setAttribute('cx', p.x);
+  dot.setAttribute('cy', p.y);
+}
+
+function setDialHand(hour) {
+  const hand = document.getElementById('dial-hand');
+  hand.setAttribute('transform', `rotate(${hour * 15}, ${CX}, ${CY})`);
+}
+
+function setDialActive(blockName) {
+  document.querySelectorAll('.dial-arc').forEach(el => {
+    el.classList.toggle('active', el.dataset.block === blockName);
+  });
+  document.querySelectorAll('.dial-label').forEach(el => {
+    el.classList.toggle('active', el.dataset.block === blockName);
+  });
+}
+
+function formatBlockHours(startHour) {
+  const fmt = h => {
+    const ampm = h >= 12 ? 'pm' : 'am';
+    return `${h % 12 || 12}${ampm}`;
+  };
+  return `${fmt(startHour)} – ${fmt((startHour + 3) % 24)}`;
+}
+
+function buildWander(blocksData) {
+  buildDial(blocksData);
+
+  const grid = document.getElementById('wander-grid');
+  const realHour = new Date().getHours();
+  const realBlock = blockForHour(blocksData, realHour);
+
+  blocksData.forEach((block, i) => {
+    const tile = document.createElement('div');
+    tile.className = 'wander-tile';
+    tile.dataset.blockName = block.name;
+    tile.dataset.startHour = block.startHour;
+    if (block.name === realBlock.name) tile.classList.add('is-current');
+
+    tile.innerHTML = `
+      <span class="tile-name">${block.name}</span>
+      <span class="tile-hours">${formatBlockHours(block.startHour)}</span>
+      ${block.subtitle ? `<span class="tile-subtitle">${block.subtitle}</span>` : ''}
+    `;
+
+    tile.addEventListener('mouseenter', () => {
+      setDialActive(block.name);
+      setDialHand(block.startHour + 1.5);
+    });
+    tile.addEventListener('mouseleave', () => {
+      const cur = blockForHour(blocksData, new Date().getHours());
+      setDialActive(cur.name);
+      setDialHand(cur.startHour + 1.5);
+    });
+    tile.addEventListener('click', () => {
+      selectWanderBlock(block, blocksData);
+    });
+
+    grid.appendChild(tile);
+  });
+
+  const curBlock = blockForHour(blocksData, realHour);
+  setDialActive(curBlock.name);
+  setDialHand(curBlock.startHour + 1.5);
+  document.querySelectorAll('.dial-arc').forEach(el => {
+    if (el.dataset.block === curBlock.name) el.classList.add('current');
+  });
+}
+
+function updateWanderTileCurrent(blockName) {
+  document.querySelectorAll('.wander-tile').forEach(el => {
+    el.classList.toggle('is-current', el.dataset.blockName === blockName);
+  });
+}
+
+function selectWanderBlock(block, blocksData) {
+  closeWander();
+  setTimeout(() => {
+    // temporarily override hour for render
+    const savedRender = window._wanderOverrideHour;
+    window._wanderOverrideHour = block.startHour;
+    currentBlockName = null;
+    renderAtHour(blocksData, block.startHour);
+    delete window._wanderOverrideHour;
+  }, 280);
+}
+
+function renderAtHour(blocksData, overrideHour) {
+  const now = new Date();
+  const h = overrideHour;
+  const block = blockForHour(blocksData, h);
+  const veil = document.getElementById('veil');
+
+  veil.classList.add('active');
+  setTimeout(() => {
+    blocksData.forEach(b => {
+      if (b.cssClass) document.body.classList.remove(b.cssClass);
+    });
+    if (block.cssClass) document.body.classList.add(block.cssClass);
+
+    const q   = pick(block.quotes) || { text: '', attr: '' };
+    const img = pick(block.images) || { src: null, caption: '' };
+
+    document.getElementById('block-subtitle').textContent = block.subtitle || '';
+    document.getElementById('block-name').textContent     = block.name;
+    document.getElementById('hour-name').textContent      = HOUR_NAMES[h] || '';
+    document.getElementById('clock-time').textContent     = formatTime(now);
+    document.getElementById('colophon-date').textContent  = formatDate(now);
+    document.getElementById('quote-text').innerHTML       = q.text;
+    document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
+    document.getElementById('phenomena-list').innerHTML   = phenomenaHTML(block.phenomena);
+    document.getElementById('versicle').innerHTML         = block.versicle || '';
+    document.getElementById('image-caption').innerHTML    = img.caption || '';
+
+    const inner = document.getElementById('image-inner');
+    inner.innerHTML = img.src
+      ? `<img src="${img.src}" alt="${block.name}">`
+      : placeholderSVG(block.name);
+
+    currentBlockName = block.name;
+    updateWanderTileCurrent(block.name);
+    veil.classList.remove('active');
+  }, 1200);
+}
+
+/* ── Open / close ────────────────────────────────────────────── */
+const wanderPane  = document.getElementById('wander-pane');
+const wanderOpen  = document.getElementById('wander-open');
+const wanderClose = document.getElementById('wander-close');
+
+wanderOpen.addEventListener('click', () => {
+  wanderPane.style.display = 'flex';
+  requestAnimationFrame(() => wanderPane.classList.add('open'));
+  updateDialNowDot();
+  // Call buildWander only on first open
+  if (!document.querySelector('.wander-tile') && blocks) {
+    buildWander(blocks);
+  }
+});
+
+wanderClose.addEventListener('click', closeWander);
+wanderPane.addEventListener('click', e => {
+  if (e.target === wanderPane) closeWander();
+});
+
+// Add Escape key to existing keydown listener — find your existing one and
+// add closeWander() to it, or add this if you've removed it:
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeLightbox();
+    closeWander();
+  }
+});
+
+function closeWander() {
+  wanderPane.classList.remove('open');
+  setTimeout(() => { wanderPane.style.display = 'none'; }, 400);
 }
 </script>
 
