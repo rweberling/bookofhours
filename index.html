@@ -116,7 +116,10 @@ body::before {
 /* ── Frame & corners ──────────────────────────────────────────── */
 .outer-frame {
   position: fixed; inset: 18px;
-  border: 1px solid var(--rule);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  border-top: none;
+  border-bottom: none;
   pointer-events: none; z-index: 0;
   transition: border-color 3s ease;
 }
