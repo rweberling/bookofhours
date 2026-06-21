@@ -938,6 +938,8 @@ document.getElementById('image-inner').addEventListener('click', () => {
   requestAnimationFrame(() => lightbox.classList.add('open'));
 });
 
+lightbox.addEventListener('click', closeLightbox);
+
 function closeLightbox() {
   lightbox.classList.remove('open');
   setTimeout(() => { lightbox.style.display = 'none'; }, 300);
@@ -1010,7 +1012,7 @@ function buildDial(blocksData) {
   }
 
   blocksData.forEach((block, i) => {
-    const color = BLOCK_COLORS[i % BLOCK_COLORS.length];
+    const color = BLOCK_PALETTES[block.name] || '#888888';
 
     // Colored arc on top
     const path = document.createElementNS(svgNS, 'path');
