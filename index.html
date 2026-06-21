@@ -516,6 +516,8 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   stroke-width: 14;
   stroke-linecap: butt;
   opacity: 0.28;
+  -webkit-text-stroke: none;
+  filter: drop-shadow(0 0 1.5px var(--bg-dark));
   transition: opacity 0.35s ease, stroke-width 0.35s ease;
 }
 .dial-arc.active   { opacity: 0.9; stroke-width: 17; }
@@ -1010,23 +1012,14 @@ function buildDial(blocksData) {
   blocksData.forEach((block, i) => {
     const color = BLOCK_COLORS[i % BLOCK_COLORS.length];
 
-// Background halo arc for contrast
-const haloPaint = document.createElementNS(svgNS, 'path');
-haloPaint.setAttribute('d', arcPath(block.startHour, 3, R_ARC));
-haloPaint.setAttribute('stroke', 'var(--bg)');
-haloPaint.setAttribute('fill', 'none');
-haloPaint.setAttribute('stroke-width', '18');
-haloPaint.setAttribute('stroke-linecap', 'butt');
-haloPaint.setAttribute('opacity', '1');
-svg.insertBefore(haloPaint, document.getElementById('dial-hand'));
-
-// Colored arc on top
-const path = document.createElementNS(svgNS, 'path');
-path.setAttribute('d', arcPath(block.startHour, 3, R_ARC));
-path.setAttribute('stroke', color);
-path.setAttribute('class', 'dial-arc');
-path.setAttribute('data-block', block.name);
-svg.insertBefore(path, document.getElementById('dial-hand'));
+    // Colored arc on top
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('d', arcPath(block.startHour, 3, R_ARC));
+    path.setAttribute('stroke', color);
+    path.setAttribute('fill', 'none');
+    path.setAttribute('class', 'dial-arc');
+    path.setAttribute('data-block', block.name);
+    svg.insertBefore(path, document.getElementById('dial-hand'));
 
     const midAngle = hourToAngleDeg(block.startHour + 1.5);
     const lp = polarToXY(midAngle, R_LABEL);
