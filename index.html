@@ -363,10 +363,15 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   color: var(--ink-faint); opacity: 0.75;
   transition: opacity 0.2s ease, color 3s ease;
 }
-.site-nav a:hover { opacity: 1; color: var(--accent); }
-.site-nav .nav-sep {
-  color: var(--gold); font-size: 8px; opacity: 0.5;
-  transition: color 3s ease;
+.site-nav .nav-sep { display: none; }
+.site-nav a + a::before,
+.site-nav button.wander-btn + a::before,
+.site-nav a + button.wander-btn::before {
+  content: '✦';
+  color: var(--gold);
+  font-size: 8px;
+  opacity: 0.5;
+  margin: 0 18px;
 }
 
 /* ── Veil ─────────────────────────────────────────────────────── */
@@ -469,13 +474,14 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
     min-height: auto;
     align-items: center;
   }
-  .site-nav a {
-    font-size: 10px; letter-spacing: 0.18em;
-    padding: 9px 0;
-    width: 100%; text-align: center;
-    border-top: 0.5px solid var(--rule);
-  }
-  .site-nav a.nav-first { border-top: none; }
+  .site-nav a,
+  button.wander-btn {
+  font-size: 10px; letter-spacing: 0.18em;
+  padding: 9px 0;
+  width: 100%; text-align: center;
+  border-top: 0.5px solid var(--rule);
+}
+.site-nav a.nav-first { border-top: none; }
   button.wander-btn {
     font-size: 10px; letter-spacing: 0.18em;
     padding: 9px 0;
@@ -752,15 +758,10 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 ════════════════════════════════════════════════ -->
 <nav class="site-nav" id="site-nav">
   <a href="index.html" class="nav-first">The Current Hour</a>
-  <span class="nav-sep" aria-hidden="true">✦</span>
   <button class="wander-btn" id="wander-open">Wander the Hours</button>
-  <span class="nav-sep" aria-hidden="true">✦</span>
   <a href="about.html">About</a>
-  <span class="nav-sep" aria-hidden="true">✦</span>
   <a href="reading.html">Readings and Images</a>
-  <span class="nav-sep" aria-hidden="true">✦</span>
   <a href="https://laurentia.substack.com">Other Projects</a>
-
 </nav>
 
 <!-- ═══════════════════════════════════════════════
