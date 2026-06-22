@@ -457,6 +457,11 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   width: 100%; text-align: center;
   border-top: 0.5px solid var(--rule);
 }
+  .site-nav a + a::before,
+.site-nav button.wander-btn + a::before,
+.site-nav a + button.wander-btn::before {
+  content: none;
+}
 .site-nav a.nav-first { border-top: none; }
   button.wander-btn {
     font-size: 10px; letter-spacing: 0.18em;
