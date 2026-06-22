@@ -6,9 +6,9 @@
     "subtitle": "Midnight · Hours 0 to 3",
     "versicle": "<p>You are alone with the dark now. The house settles; the field lies still.</p><p>Nothing is asked of you.</p>",
     "phenomena": [
-      "Orion transits the meridian",
-      "Dew begins to form on grass blades",
-      "Screech-owl calls from the wood edge"
+      "Melatonin saturates the brain: deepest phase of slow-wave neurological repair",
+      "Mushrooms release their spores",
+      "Plants grow best in the shade of night"
     ],
     "quotes": [
       { 
@@ -42,9 +42,9 @@
     "subtitle": "Pre-dawn · Hours 3 to 6",
     "versicle": "<p>Something shifts. The darkness has not changed, but there is a loosening at its edge — not light yet, but the memory of light.</p>",
     "phenomena": [
-      "Body temperature reaches its nadir",
-      "Flying squirrel glides between oaks",
-      "First vague pallor at the east horizon"
+      "Metabolic nadir: blood cools and breathing slows",
+      "Worms retreat underground",
+      "Atmospheric stasis; dew point"
     ],
     "quotes": [
       {
@@ -230,8 +230,8 @@
     ],
     "images": [
       {
-        "src": null,
-        "caption": "Solis occasus; the light's formal withdrawal"
+        "src": "images/convivium_davis.jpg",
+        "caption": "Harold Davis, <a href=\"https://www.digitalfieldguide.com/blog/18487\" target=\"_blank\"><em>Salad Mandala</em></a> (2020)"
       },
       {
         "src": null,
@@ -246,9 +246,9 @@
     "subtitle": "Night · Hours 21 to 24",
     "versicle": "<p>The old monks said this was the close of the day: <em>completorium</em>, the completing.</p><p>Something may be laid down now.</p>",
     "phenomena": [
-      "Milky Way transiting; core visible from dark sites",
-      "Great Horned Owl calls from the pine stand",
-      "Orion rising at the east horizon"
+      "Nocturnal activities begin",
+      "Plants complete their nyctinastic closing",
+      "Peak marine bioluminescence"
     ],
     "quotes": [
       {
