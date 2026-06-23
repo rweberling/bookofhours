@@ -476,6 +476,68 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ── Hours drop-up group ──────────────────────────────────────── */
+.nav-hours-group {
+  position: relative;
+  display: flex; align-items: center;
+}
+.nav-hours-trigger {
+  all: unset;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  text-transform: uppercase; cursor: pointer;
+  color: var(--ink-faint); opacity: 0.75;
+  transition: opacity 0.2s ease, color 3s ease;
+}
+.nav-hours-trigger::after {
+  content: ' ▴';
+  font-size: 7px;
+  opacity: 0.5;
+  margin-left: 4px;
+}
+.nav-hours-trigger:hover { opacity: 1; color: var(--accent); }
+.nav-hours-trigger.open { opacity: 1; color: var(--accent); }
+
+.nav-hours-menu {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-dark);
+  border: 1px solid var(--rule);
+  padding: 8px 0;
+  min-width: 180px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 60;
+  transition: background 3s ease, border-color 3s ease;
+}
+.nav-hours-menu.open {
+  display: flex;
+}
+.nav-hours-menu a,
+.nav-hours-menu .wander-btn {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  text-transform: uppercase; text-decoration: none;
+  color: var(--ink-faint); opacity: 0.75;
+  padding: 8px 20px;
+  width: 100%; text-align: center;
+  transition: opacity 0.2s ease, color 3s ease;
+}
+.nav-hours-menu a:hover,
+.nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
+.nav-hours-menu a + a::before,
+.nav-hours-menu a + button::before {
+  content: '';
+  display: block;
+  height: 0.5px;
+  background: var(--rule);
+  width: calc(100% - 40px);
+  margin: 0 20px;
+}
+
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .outer-frame { box-shadow:
@@ -494,41 +556,27 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .versicle { padding: 16px; margin-top: 24px; }
   .versicle p { font-size: 13px; }
   .corner { display: none; }
-  .site-nav {
-    padding: 8px 20px;
-    flex-direction: column;
-    gap: 0;
-    min-height: auto;
-    align-items: center;
-  }
-  .site-nav a,
-  button.wander-btn {
+.site-nav {
+  padding: 8px 20px;
+  flex-direction: column;
+  gap: 0;
+  min-height: auto;
+  align-items: center;
+}
+.site-nav > a,
+.nav-hours-trigger {
   font-size: 10px; letter-spacing: 0.18em;
   padding: 9px 0;
   width: 100%; text-align: center;
   border-top: 0.5px solid var(--rule);
 }
-  .site-nav a + a::before,
-.site-nav button.wander-btn + a::before,
-.site-nav a + button.wander-btn::before {
+.site-nav > a:first-of-type { border-top: none; }
+.site-nav a + a::before,
+.site-nav a + button::before,
+.site-nav button + a::before {
   content: none;
 }
-.site-nav a.nav-first { border-top: none; }
-  button.wander-btn {
-    font-size: 10px; letter-spacing: 0.18em;
-    padding: 9px 0;
-    width: 100%; text-align: center;
-    border-top: 0.5px solid var(--rule);
-  }
-  .site-nav .nav-sep { display: none; }
-  .lightbox { padding: 20px; }
-  .wander-pane .wander-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; width: 100%; }
-  .wander-pane { padding: 52px 20px 60px; }
-  .wander-pane .wander-dial-wrap { width: 230px; height: 230px; }
-  .tile-name { font-size: 11px; }
-  .tile-hours { font-size: 12px; }
-  .tile-subtitle { font-size: 12px; }
-}
+  
   /* ── Wander trigger button ────────────────────────────────────── */
 button.wander-btn {
   all: unset;
