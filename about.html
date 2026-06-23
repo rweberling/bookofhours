@@ -14,6 +14,20 @@
   gtag('js', new Date());
 
   gtag('config', 'G-P4407N365M');
+    const hoursTrigger = document.getElementById('nav-hours-trigger');
+const hoursMenu    = document.getElementById('nav-hours-menu');
+
+hoursTrigger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = hoursMenu.classList.contains('open');
+  hoursMenu.classList.toggle('open', !isOpen);
+  hoursTrigger.classList.toggle('open', !isOpen);
+});
+
+document.addEventListener('click', () => {
+  hoursMenu.classList.remove('open');
+  hoursTrigger.classList.remove('open');
+});
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,9 +142,15 @@
      FOOTER NAV BAR
 ════════════════════════════════════════════════ -->
 <nav class="site-nav" id="site-nav">
-  <a href="index.html" class="nav-first">The Hours</a>
-  <a href="about.html" class="active">About</a>
-  <a href="sources.html">Sources</a>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html">Wander the Hours</a>
+    </div>
+  </div>
+  <a href="about.html">About</a>
+  <a href="reading.html">Readings and Images</a>
   <a href="https://laurentia.substack.com">Other Projects</a>
 </nav>
 
