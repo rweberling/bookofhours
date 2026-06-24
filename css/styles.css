@@ -586,6 +586,19 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   border-bottom: 0.5px solid var(--rule);
   }
 }
+  /* Desktop-specific safety for the pane */
+@media (min-width: 601px) {
+  .wander-pane {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 80px 40px !important;
+    background: var(--bg);
+  }
+}
   
   /* ── Wander trigger button ────────────────────────────────────── */
 button.wander-btn {
