@@ -545,8 +545,8 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
-  .outer-frame { 
-    box-shadow: 0 0 0 10px var(--bg), inset 0 0 0 1px var(--rule), inset 0 0 0 15px var(--bg), inset 0 0 0 16px var(--rule); 
+  .outer-frame {
+    box-shadow: 0 0 0 10px var(--bg), inset 0 0 0 1px var(--rule), inset 0 0 0 15px var(--bg), inset 0 0 0 16px var(--rule);
   }
   .page { padding: 44px 24px 36px; }
   .image-frame-outer { max-width: 100%; margin-bottom: 24px; }
@@ -559,50 +559,65 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .versicle { padding: 16px; margin-top: 24px; }
   .versicle p { font-size: 13px; }
   .corner { display: none; }
-  
+
   .site-nav {
     flex-direction: column;
     align-items: center;
     padding: 8px 20px;
     gap: 0;
   }
-
+  .site-nav > a {
+    font-size: 10px; letter-spacing: 0.18em;
+    padding: 10px 0;
+    width: 100%; text-align: center;
+    border-top: 0.5px solid var(--rule);
+  }
   .nav-hours-group {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .nav-hours-trigger {
     width: 100%;
     text-align: center;
+    justify-content: center;
     display: flex;
-    jsutify-content: center;
-    font-size: 10px; 
+    font-size: 10px;
     letter-spacing: 0.18em;
     padding: 12px 0;
     border-top: 0.5px solid var(--rule);
   }
-
-.nav-hours-menu {
-    display: none;
-    position: static;
+  .nav-hours-menu {
+    position: relative;
     width: 100%;
-    border: none; 
+    left: auto;
+    transform: none;
+    bottom: auto;
+    margin-bottom: 0;
+    border: none;
+    border-top: 0.5px solid var(--rule);
+    padding: 0;
+  }
+  .nav-hours-menu a,
+  .nav-hours-menu .wander-btn {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    padding: 10px 0;
     border-top: 0.5px solid var(--rule);
   }
-
-  .nav-hours-menu.open {
-    display: flex;       
-  }
-
+  .nav-hours-menu a:first-child,
+  .nav-hours-menu .wander-btn:first-child { border-top: none; }
   .nav-divider { display: none; }
-
   .wander-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 8px;
   }
+  .wander-pane { padding: 52px 20px 60px; }
+  .wander-pane .wander-dial-wrap { width: 230px; height: 230px; }
+  .tile-name { font-size: 11px; }
+  .tile-hours { font-size: 12px; }
+  .tile-subtitle { font-size: 12px; }
 }
 
   
