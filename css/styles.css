@@ -594,7 +594,6 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
     transform: none;       
     width: 100%;           /* Stretches to the full width of the mobile menu */
     border: none;          /* Clean up borders */
-    border-bottom: 0.5px solid var(--rule);
     display: none;         /* Hidden by default */
   }
 
