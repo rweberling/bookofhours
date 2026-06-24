@@ -584,7 +584,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 
   .nav-hours-menu {
     display: none;
-    position: absolute;
+    position: static;
     bottom: 100%;
     left:50%;
     transform: translateX(-50%);
