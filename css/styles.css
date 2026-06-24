@@ -580,12 +580,32 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
     content: none;
   } /* <--- THIS BRACE WAS MISSING */
 
+/* Ensure the trigger container is a full-width block */
+  .nav-hours-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Force the menu to be a standard block element in the column */
   .nav-hours-menu {
-    position: static;      
+    position: static;      /* Removes it from the layer stack */
     transform: none;       
-    width: 100%;           
-    margin-bottom: 0;
-    border-bottom: 0.5px solid var(--rule);
+    width: 100%;           /* Stretches to the full width of the mobile menu */
+    border: none;          /* Clean up borders */
+    border-top: 0.5px solid var(--rule);
+    display: none;         /* Hidden by default */
+  }
+
+  /* Show it only when open */
+  .nav-hours-menu.open {
+    display: flex;
+  }
+  
+  .wander-grid {
+    grid-template-columns: repeat(2, 1fr); /* Forces a 2x4 layout on mobile */
+    gap: 8px; /* Slightly tighter gap for mobile */
   }
 }
 
