@@ -531,15 +531,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 }
 .nav-hours-menu a:hover,
 .nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
-.nav-hours-menu a + a::before,
-.nav-hours-menu a + button::before {
-  content: '';
-  display: block;
-  height: 0.5px;
-  background: var(--rule);
-  width: calc(100% - 40px);
-  margin: 0 20px;
-}
+
 
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
