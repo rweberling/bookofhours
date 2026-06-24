@@ -559,16 +559,16 @@ function updateWanderTileCurrent(blockName) {
   });
 }
 
-function selectWanderBlock(block, blocksData) {
-  closeWander();
-  setTimeout(() => {
-    // temporarily override hour for render
-    const savedRender = window._wanderOverrideHour;
-    window._wanderOverrideHour = block.startHour;
-    currentBlockName = null;
-    renderAtHour(blocksData, block.startHour);
-    delete window._wanderOverrideHour;
-  }, 280);
+  function closeWander() {
+  const pane = document.getElementById('wander-pane');
+  pane.classList.remove('open');
+  
+  // Use transitionend to ensure the pane is fully hidden only after the fade-out
+  pane.addEventListener('transitionend', () => {
+    if (!pane.classList.contains('open')) {
+      pane.style.display = 'none';
+    }
+  }, { once: true });
 }
 
 function renderAtHour(blocksData, overrideHour) {
