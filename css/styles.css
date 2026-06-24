@@ -570,7 +570,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .nav-hours-trigger {
     font-size: 10px; letter-spacing: 0.18em;
     padding: 9px 0;
-    width: 100%; text-align: center;
+    width: auto; text-align: center;
     border-top: 0.5px solid var(--rule);
   }
   .site-nav > a:first-of-type { border-top: none; } 
