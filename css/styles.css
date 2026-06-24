@@ -632,6 +632,9 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   display: flex;
   opacity: 1;
 }
+  body:has(.wander-pane.open) {
+  overflow: hidden;
+}
 
 .wander-close {
   position: fixed; top: 28px; right: 36px;
