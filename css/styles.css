@@ -587,22 +587,21 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   }
 } 
 
-/* Ensure the trigger container is a full-width block */
   .nav-hours-group {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  /* Force the menu to be a standard block element in the column */
   .nav-hours-menu {
-    position: static;      /* Removes it from the layer stack */
+    position: absolute;
+    bottom: 100%;
+    top: auot;
     transform: none;       
-    width: 100%;           /* Stretches to the full width of the mobile menu */
-    border: none;          /* Clean up borders */
+    width: 100%;
+    border: none;
     border-top: 0.5px solid var(--rule);
-    display: none;         /* Hidden by default */
+    display: none;
   }
 
   /* Show it only when open */
