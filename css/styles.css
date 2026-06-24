@@ -494,8 +494,6 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   color: var(--ink-faint); 
   opacity: 0.75;
   transition: opacity 0.2s ease, color 3s ease;
-  
-  /* ADD THIS: Ensures the trigger doesn't stretch */
   width: auto; 
   display: flex;
   align-items: center;
@@ -513,6 +511,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   display: none;
   position: absolute;
   bottom: 100%;
+  top: auto;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 12px;
@@ -522,7 +521,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   min-width: 180px;
   flex-direction: column;
   align-items: center;
-  z-index: 60;
+  z-index: 999;
   transition: background 3s ease, border-color 3s ease;
 }
 .nav-hours-menu.open {
