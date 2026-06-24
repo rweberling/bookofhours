@@ -368,21 +368,14 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   border-top: 1px solid var(--rule);
   background: var(--bg-dark);
   padding: 0 40px;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  /* Increasing gap slightly to compensate for removing the 18px margin on each side of the star */
   gap: 36px; min-height: 48px;
   transition: background 3s ease, border-color 3s ease;
 }
-.site-nav:empty::after {
-  content: '— navigation links —';
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
-  color: var(--ink-faint); opacity: 0.4;
-}
-.site-nav a.active {
-  font-weight: bold;
-  color: var(--accent);
-  text-decoration: underline;
-}
+
 .site-nav a {
   font-family: 'Cormorant Garamond', serif;
   font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
@@ -390,15 +383,19 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   color: var(--ink-faint); opacity: 0.75;
   transition: opacity 0.2s ease, color 3s ease;
 }
-.site-nav .nav-sep { display: none; }
-.site-nav a + a::before,
-.site-nav button.wander-btn + a::before,
-.site-nav a + button.wander-btn::before {
-  content: '✦';
+
+.site-nav a.active {
+  font-weight: bold;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ── Add this new class for your separators ── */
+.nav-divider {
   color: var(--gold);
   font-size: 8px;
   opacity: 0.5;
-  margin: 0 18px;
+  user-select: none; /* Prevents users from highlighting/clicking the star */
 }
 
 /* ── Veil ─────────────────────────────────────────────────────── */
