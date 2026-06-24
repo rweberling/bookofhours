@@ -594,6 +594,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
     transform: none;       
     width: 100%;           /* Stretches to the full width of the mobile menu */
     border: none;          /* Clean up borders */
+    border-top: 0.5px solid var(--rule);
     display: none;         /* Hidden by default */
   }
 
@@ -603,7 +604,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   }
   
   .wander-grid {
-    grid-template-columns: repeat(2, 1fr); /* Forces a 2x4 layout on mobile */
+    grid-template-columns: repeat(2, 1fr) !important; /* Forces a 2x4 layout on mobile */
     gap: 8px; /* Slightly tighter gap for mobile */
   }
 }
