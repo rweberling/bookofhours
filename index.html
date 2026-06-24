@@ -135,6 +135,31 @@
   <a href="https://laurentia.substack.com">Other Projects</a>
 </nav>
 
+
+  <!-- ═══════════════════════════════════════════════
+     WANDER THE HOURS PANE
+════════════════════════════════════════════════ -->
+<div class="wander-pane" id="wander-pane" role="dialog" aria-label="Wander the Hours" aria-modal="true">
+  <button class="wander-close" id="wander-close" aria-label="Close">✦ &nbsp;Close</button>
+
+  <p class="wander-heading">Wander the Hours</p>
+  <p class="wander-subheading">Each day is divided into eight watches</p>
+
+  <div class="wander-dial-wrap" aria-hidden="true">
+    <svg id="wander-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+      <g class="dial-hand" id="dial-hand">
+        <line x1="120" y1="120" x2="120" y2="34"
+              stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
+        <circle cx="120" cy="36" r="2.5" fill="currentColor" opacity="0.5"/>
+        <circle cx="120" cy="120" r="3" fill="currentColor" opacity="0.35"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wander-grid" id="wander-grid"></div>
+</div>
+
+
 <!-- ═══════════════════════════════════════════════
      SCRIPT
 ════════════════════════════════════════════════ -->
@@ -618,10 +643,6 @@ document.addEventListener('keydown', e => {
   }
 });
 
-function closeWander() {
-  wanderPane.classList.remove('open');
-  setTimeout(() => { wanderPane.style.display = 'none'; }, 400);
-}
   /* ── Hours drop-up ───────────────────────────────────────────── */
 const hoursTrigger = document.getElementById('nav-hours-trigger');
 const hoursMenu    = document.getElementById('nav-hours-menu');
@@ -638,29 +659,6 @@ document.addEventListener('click', () => {
   hoursTrigger.classList.remove('open');
 });
 </script>
-
-  <!-- ═══════════════════════════════════════════════
-     WANDER THE HOURS PANE
-════════════════════════════════════════════════ -->
-<div class="wander-pane" id="wander-pane" role="dialog" aria-label="Wander the Hours" aria-modal="true">
-  <button class="wander-close" id="wander-close" aria-label="Close">✦ &nbsp;Close</button>
-
-  <p class="wander-heading">Wander the Hours</p>
-  <p class="wander-subheading">Each day is divided into eight watches</p>
-
-  <div class="wander-dial-wrap" aria-hidden="true">
-    <svg id="wander-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-      <g class="dial-hand" id="dial-hand">
-        <line x1="120" y1="120" x2="120" y2="34"
-              stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
-        <circle cx="120" cy="36" r="2.5" fill="currentColor" opacity="0.5"/>
-        <circle cx="120" cy="120" r="3" fill="currentColor" opacity="0.35"/>
-      </g>
-    </svg>
-  </div>
-
-  <div class="wander-grid" id="wander-grid"></div>
-</div>
   
 </body>
 </html>
