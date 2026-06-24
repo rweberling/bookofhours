@@ -542,7 +542,6 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 
 
 /* ── Responsive ───────────────────────────────────────────────── */
-/* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .outer-frame { 
     box-shadow: 0 0 0 10px var(--bg), inset 0 0 0 1px var(--rule), inset 0 0 0 15px var(--bg), inset 0 0 0 16px var(--rule); 
@@ -561,6 +560,7 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   
   .site-nav {
     flex-direction: column;
+    align-items: center;
     padding: 8px 20px;
     gap: 0;
   }
@@ -575,6 +575,8 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .nav-hours-trigger {
     width: 100%;
     text-align: center;
+    display: flex;
+    jsutify-content: center;
     font-size: 10px; 
     letter-spacing: 0.18em;
     padding: 12px 0;
