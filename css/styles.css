@@ -543,11 +543,9 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
-  .outer-frame { box-shadow:
-      0 0 0 10px var(--bg),
-      inset 0 0 0 1px var(--rule),
-      inset 0 0 0 15px var(--bg),
-      inset 0 0 0 16px var(--rule); }
+  .outer-frame { 
+    box-shadow: 0 0 0 10px var(--bg), inset 0 0 0 1px var(--rule), inset 0 0 0 15px var(--bg), inset 0 0 0 16px var(--rule); 
+  }
   .page { padding: 44px 24px 36px; }
   .image-frame-outer { max-width: 100%; margin-bottom: 24px; }
   .image-frame { padding: 10px; }
@@ -559,31 +557,35 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
   .versicle { padding: 16px; margin-top: 24px; }
   .versicle p { font-size: 13px; }
   .corner { display: none; }
-.site-nav {
-  padding: 8px 20px;
-  flex-direction: column;
-  gap: 0;
-  min-height: auto;
-  align-items: center;
-}
-.site-nav > a,
-.nav-hours-trigger {
-  font-size: 10px; letter-spacing: 0.18em;
-  padding: 9px 0;
-  width: 100%; text-align: center;
-  border-top: 0.5px solid var(--rule);
-}
-.site-nav > a:first-of-type { border-top: none; }
-.site-nav a + a::before,
-.site-nav a + button::before,
-.site-nav button + a::before {
-  content: none;
-.nav-hours-menu {
-  position: static;     
-  transform: none;     
-  width: 100%;    
-  margin-bottom: 0;
-  border-bottom: 0.5px solid var(--rule);
+  
+  .site-nav {
+    padding: 8px 20px;
+    flex-direction: column;
+    gap: 0;
+    min-height: auto;
+    align-items: center;
+  }
+  .site-nav > a,
+  .nav-hours-trigger {
+    font-size: 10px; letter-spacing: 0.18em;
+    padding: 9px 0;
+    width: 100%; text-align: center;
+    border-top: 0.5px solid var(--rule);
+  }
+  .site-nav > a:first-of-type { border-top: none; }
+  
+  .site-nav a + a::before,
+  .site-nav a + button::before,
+  .site-nav button + a::before {
+    content: none;
+  } /* <--- THIS BRACE WAS MISSING */
+
+  .nav-hours-menu {
+    position: static;      
+    transform: none;       
+    width: 100%;           
+    margin-bottom: 0;
+    border-bottom: 0.5px solid var(--rule);
   }
 }
 
