@@ -479,7 +479,9 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 /* ── Hours drop-up group ──────────────────────────────────────── */
 .nav-hours-group {
   position: relative;
-  display: flex; align-items: center;
+  display: flex; 
+  align-items: center;
+  jutify-content: center;
 }
 .nav-hours-trigger {
   all: unset;
@@ -501,9 +503,10 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 .nav-hours-menu {
   display: none;
   position: absolute;
-  bottom: calc(100% + 12px);
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 12px;
   background: var(--bg-dark);
   border: 1px solid var(--rule);
   padding: 8px 0;
@@ -575,6 +578,13 @@ body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
 .site-nav a + button::before,
 .site-nav button + a::before {
   content: none;
+.nav-hours-menu {
+  position: static;     
+  transform: none;     
+  width: 100%;    
+  margin-bottom: 0;
+  border-bottom: 0.5px solid var(--rule);
+  }
 }
   
   /* ── Wander trigger button ────────────────────────────────────── */
