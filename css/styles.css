@@ -133,6 +133,8 @@ body::before {
   color: var(--ink-faint); text-transform: uppercase;
   margin-bottom: 26px;
   transition: color 3s ease;
+  text-align: center;
+  width: 100%;
 }
 
 /* ── Rule ornament ────────────────────────────────────────────── */
