@@ -627,6 +627,11 @@ function renderAtHour(blocksData, overrideHour) {
   }, 1200);
 }
 
+function selectWanderBlock(block, blocksData) {
+  renderAtHour(blocksData, block.startHour);
+  closeWander();
+}
+
 /* ── Open / close ────────────────────────────────────────────── */
 const wanderPane  = document.getElementById('wander-pane');
 const wanderOpen  = document.getElementById('wander-open');
