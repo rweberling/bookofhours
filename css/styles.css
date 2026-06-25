@@ -286,7 +286,7 @@ body::before {
 .quote-mark {
   font-family: 'IM Fell English', Georgia, serif;
   font-size: 52px; line-height: 0.5; color: var(--gold-light);
-  display: block; margin-bottom: 14px; margin-top: 14px; opacity: 0.5;
+  display: block; margin-bottom: 8px; margin-top: 14px; opacity: 0.5;
   transition: color 3s ease;
 }
 .quote-text {
