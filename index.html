@@ -116,6 +116,11 @@
       <div class="line"></div>
     </div>
     <p class="colophon" id="colophon-date"></p>
+    <button class="turn-the-page" id="turn-the-page" aria-label="Load another reading">
+      <span class="ttp-symbol">✦</span>
+        turn the page
+      <span class="ttp-symbol">✦</span>
+</button>
   </footer>
 </main>
 
@@ -663,6 +668,44 @@ hoursTrigger.addEventListener('click', (e) => {
 document.addEventListener('click', () => {
   hoursMenu.classList.remove('open');
   hoursTrigger.classList.remove('open');
+});
+  /* ── Turn the page ────────────────────────────────────────────── */
+const ttpBtn = document.getElementById('turn-the-page');
+let blocksRef = null;
+
+// Expose blocks to the button after init loads them
+const _origInit = init;
+// Store blocks when render is first called
+const _origRender = render;
+
+// We thread blocksRef through by patching init's fetch callback:
+async function init() {
+  let blocks;
+  try {
+    const res = await fetch('hours-data.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    blocks = await res.json();
+  } catch (err) {
+    showError(
+      `Could not load <em>hours-data.json</em>.<br>
+       If you are working locally, run:<br>
+       <code>python3 -m http.server 8000</code><br>
+       then open <code>http://localhost:8000</code>`
+    );
+    console.error('hours-data.json fetch failed:', err);
+    return;
+  }
+
+  blocksRef = blocks;
+  render(blocks, true);
+  setInterval(() => render(blocks, false), 15000);
+  setTimeout(() => ttpBtn.classList.add('visible'), 5000);
+}
+
+ttpBtn.addEventListener('click', () => {
+  if (!blocksRef) return;
+  currentBlockName = null; // force new pick even within same block
+  render(blocksRef, false);
 });
 </script>
   
