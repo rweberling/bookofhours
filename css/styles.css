@@ -302,41 +302,51 @@ body::before {
   transition: color 3s ease;
 }
 
+/* ── Static zone divider ──────────────────────────────────────── */
+.static-divider {
+  width: 100%; max-width: 520px;
+  height: 0.5px;
+  background: linear-gradient(to right, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
+  margin: 36px 0 0;
+  opacity: 0; animation: fadeIn 1.4s ease forwards 1.3s;
+  transition: background 3s ease;
+}
+
 /* ── Phenomena ────────────────────────────────────────────────── */
 .phenomena {
-  width: 100%; max-width: 520px; margin-top: 6px; text-align: center;
-  opacity: 0; animation: fadeIn 1.4s ease forwards 1.3s;
+  width: 100%; max-width: 520px; margin-top: 28px; text-align: center;
+  opacity: 0; animation: fadeIn 1.4s ease forwards 1.35s;
 }
 .phenomena-list {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 13px; font-weight: 300; color: var(--accent2);
-  letter-spacing: 0.07em; line-height: 2;
+  font-size: 14px; font-weight: 300; color: var(--accent2);
+  letter-spacing: 0.07em; line-height: 2.2;
   transition: color 3s ease;
 }
-.phenomena-list .sep { color: var(--gold); margin: 0 8px; transition: color 3s ease; }
+.phenomena-list .sep { color: var(--gold); margin: 0 10px; transition: color 3s ease; }
 
 /* ── Versicle ─────────────────────────────────────────────────── */
 .versicle {
   width: 100%; max-width: 520px;
-  margin-top: 34px; margin-bottom: 4px;
-  padding: 20px 26px;
+  margin-top: 48px; margin-bottom: 4px;
+  padding: 24px 30px;
   border-left: 2px solid var(--accent);
   background: rgba(128,80,40,0.04);
   opacity: 0; animation: fadeIn 1.4s ease forwards 1.5s;
   transition: border-color 3s ease;
 }
 body.block-void .versicle,
-body.block-hush .versicle,
-body.block-convivium .versicle,
-body.block-denouement .versicle { background: rgba(200,180,240,0.08); }
+body.block-silence .versicle,
+body.block-repast .versicle,
+body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 
 .versicle p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 14.5px; font-style: italic; font-weight: 300;
-  color: var(--ink-light); line-height: 1.85;
+  color: var(--ink-light); line-height: 1.95;
   transition: color 3s ease;
 }
-.versicle p + p { margin-top: 1em; }
+.versicle p + p { margin-top: 1.1em; }
 
 /* ── Rich-text links ──────────────────────────────────────────── */
 .versicle a, .image-caption a, .quote-text a, .quote-attribution a {
