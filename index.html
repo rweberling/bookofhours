@@ -343,9 +343,11 @@ async function init() {
     blocks = await fetchWithRetry(3, 8000);
     
     render(blocks, true);
+    blocksRef = blocks;
     
     // Update every minute
     setInterval(() => render(blocks, false), 60000);
+    setTimeout(() => ttpBtn.classList.add('visible'), 5000);
   } catch (err) {
     const errorType = err.name === 'AbortError' ? 'timeout' : 'parse_error';
     const errorMsg = errorType === 'timeout' 
@@ -672,35 +674,6 @@ document.addEventListener('click', () => {
   /* ── Turn the page ────────────────────────────────────────────── */
 const ttpBtn = document.getElementById('turn-the-page');
 let blocksRef = null;
-
-// Expose blocks to the button after init loads them
-const _origInit = init;
-// Store blocks when render is first called
-const _origRender = render;
-
-// We thread blocksRef through by patching init's fetch callback:
-async function init() {
-  let blocks;
-  try {
-    const res = await fetch('hours-data.json');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    blocks = await res.json();
-  } catch (err) {
-    showError(
-      `Could not load <em>hours-data.json</em>.<br>
-       If you are working locally, run:<br>
-       <code>python3 -m http.server 8000</code><br>
-       then open <code>http://localhost:8000</code>`
-    );
-    console.error('hours-data.json fetch failed:', err);
-    return;
-  }
-
-  blocksRef = blocks;
-  render(blocks, true);
-  setInterval(() => render(blocks, false), 15000);
-  setTimeout(() => ttpBtn.classList.add('visible'), 5000);
-}
 
 ttpBtn.addEventListener('click', () => {
   if (!blocksRef) return;
