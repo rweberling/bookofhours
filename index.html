@@ -124,11 +124,7 @@
       <div class="line"></div>
     </div>
     <p class="colophon" id="colophon-date"></p>
-    <button class="turn-the-page" id="turn-the-page" aria-label="Load another reading">
-      <span class="ttp-symbol">✦</span>
-        turn the page
-      <span class="ttp-symbol">✦</span>
-</button>
+
   </footer>
 </main>
 
@@ -277,7 +273,7 @@ function render(blocksData, force) {
       : placeholderSVG(block.name);
 
     currentBlockName = block.name;
-    displayedHour = overrideHour;
+    displayedHour = h;
   }
 
   if (force) {
