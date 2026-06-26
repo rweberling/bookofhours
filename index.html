@@ -235,6 +235,7 @@ function blockForHour(blocks, h) {
 }
 
 let currentBlockName = null;
+let displayedHour = null;
 let lastRenderedHour = null;
 let blocks = null;
 
@@ -276,6 +277,7 @@ function render(blocksData, force) {
       : placeholderSVG(block.name);
 
     currentBlockName = block.name;
+    displayedHour = overrideHour;
   }
 
   if (force) {
@@ -630,6 +632,7 @@ function renderAtHour(blocksData, overrideHour) {
       : placeholderSVG(block.name);
 
     currentBlockName = block.name;
+    displayedHour = h;
     updateWanderTileCurrent(block.name);
     veil.classList.remove('active');
   }, 1200);
@@ -690,8 +693,8 @@ let blocksRef = null;
 
 ttpBtn.addEventListener('click', () => {
   if (!blocksRef) return;
-  currentBlockName = null; // force new pick even within same block
-  render(blocksRef, false);
+  currentBlockName = null;
+  renderAtHour(blocksRef, displayedHour !== null ? displayedHour : new Date().getHours());
 });
 </script>
   
