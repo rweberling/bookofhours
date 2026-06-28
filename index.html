@@ -349,6 +349,7 @@ async function init() {
     blocks = await fetchWithRetry(3, 8000);
     
     render(blocks, true);
+    openWanderIfHashed();
     blocksRef = blocks;
     
     // Update every minute
@@ -583,18 +584,6 @@ function updateWanderTileCurrent(blockName) {
   });
 }
 
-  function closeWander() {
-  const pane = document.getElementById('wander-pane');
-  pane.classList.remove('open');
-  
-  // Use transitionend to ensure the pane is fully hidden only after the fade-out
-  pane.addEventListener('transitionend', () => {
-    if (!pane.classList.contains('open')) {
-      pane.style.display = 'none';
-    }
-  }, { once: true });
-}
-
 function renderAtHour(blocksData, overrideHour) {
   const now = new Date();
   const h = overrideHour;
@@ -641,50 +630,6 @@ function selectWanderBlock(block, blocksData) {
   closeWander();
 }
 
-/* ── Open / close ────────────────────────────────────────────── */
-const wanderPane  = document.getElementById('wander-pane');
-const wanderOpen  = document.getElementById('wander-open');
-const wanderClose = document.getElementById('wander-close');
-
-wanderOpen.addEventListener('click', () => {
-  wanderPane.style.display = 'flex';
-  requestAnimationFrame(() => wanderPane.classList.add('open'));
-  updateDialNowDot();
-  // Call buildWander only on first open
-  if (!document.querySelector('.wander-tile') && blocks) {
-    buildWander(blocks);
-  }
-});
-
-wanderClose.addEventListener('click', closeWander);
-wanderPane.addEventListener('click', e => {
-  if (e.target === wanderPane) closeWander();
-});
-
-// Add Escape key to existing keydown listener — find your existing one and
-// add closeWander() to it, or add this if you've removed it:
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closeLightbox();
-    closeWander();
-  }
-});
-
-  /* ── Hours drop-up ───────────────────────────────────────────── */
-const hoursTrigger = document.getElementById('nav-hours-trigger');
-const hoursMenu    = document.getElementById('nav-hours-menu');
-
-hoursTrigger.addEventListener('click', (e) => {
-  e.stopPropagation();
-  const isOpen = hoursMenu.classList.contains('open');
-  hoursMenu.classList.toggle('open', !isOpen);
-  hoursTrigger.classList.toggle('open', !isOpen);
-});
-
-document.addEventListener('click', () => {
-  hoursMenu.classList.remove('open');
-  hoursTrigger.classList.remove('open');
-});
   /* ── Turn the page ────────────────────────────────────────────── */
 const ttpBtn = document.getElementById('turn-the-page');
 let blocksRef = null;
@@ -695,6 +640,8 @@ ttpBtn.addEventListener('click', () => {
   renderAtHour(blocksRef, displayedHour !== null ? displayedHour : new Date().getHours());
 });
 </script>
+
+<script src="nav.js"></script>
   
 </body>
 </html>
