@@ -62,7 +62,7 @@ body.block-doldrums {
 body.block-convivium {
   --bg:#2a1c18; --bg-dark:#201410; --bg-deep:#180e0a;
   --ink:#f0e0d8; --ink-light:#e0c8b8; --ink-faint:#d0a890;
-  --accent:#e08050; --accent2:#608050;
+  --accent:#e08050; --accent2:#c0a868;
   --gold:#e0a050; --gold-light:#f0b860;
   --rule:rgba(240,160,100,0.35);
 }
