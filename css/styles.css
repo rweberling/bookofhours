@@ -32,11 +32,11 @@ body.block-hush {
   --rule:rgba(200,180,240,0.35);
 }
 body.block-chorus {
-  --bg:#f7ece0; --bg-dark:#eedad0; --bg-deep:#d8c8b8;
+  --bg:#f5e8e0; --bg-dark:#ead8cc; --bg-deep:#d4c0b0;
   --ink:#1a1210; --ink-light:#38261a; --ink-faint:#6a4e3c;
-  --accent:#a83828; --accent2:#285840;
+  --accent:#b03828; --accent2:#7a5848;
   --gold:#a07020; --gold-light:#c89030;
-  --rule:rgba(80,40,20,0.22);
+  --rule:rgba(100,60,40,0.22);
 }
 body.block-transit {
   --bg:#f8f0d8; --bg-dark:#eddfc0; --bg-deep:#d8c89a;
@@ -67,11 +67,11 @@ body.block-convivium {
   --rule:rgba(240,160,100,0.35);
 }
 body.block-denouement {
-  --bg:#141820; --bg-dark:#0e1018; --bg-deep:#080c10;
-  --ink:#e0e8f0; --ink-light:#c8e0f0; --ink-faint:#b0c8e0;
-  --accent:#90a8e0; --accent2:#70c0b8;
-  --gold:#90b8d0; --gold-light:#b0d0e8;
-  --rule:rgba(160,200,240,0.35);
+  --bg:#181420; --bg-dark:#100c18; --bg-deep:#0a0810;
+  --ink:#e8e0f0; --ink-light:#d0c0e8; --ink-faint:#b0a0d0;
+  --accent:#9888d0; --accent2:#88a8c8;
+  --gold:#9890c0; --gold-light:#b8a8d8;
+  --rule:rgba(180,160,220,0.30);
 }
 
 /* ── Base ─────────────────────────────────────────────────────── */
