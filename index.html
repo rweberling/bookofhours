@@ -598,6 +598,8 @@ function updateWanderTileCurrent(blockName) {
 function renderAtHour(blocksData, overrideHour) {
   const now = new Date();
   const h = overrideHour;
+  const displayTime = new Date(now);
+  displayTime.setHours(overrideHour + 1, 30, 0, 0);
   const block = blockForHour(blocksData, h);
   const veil = document.getElementById('veil');
 
@@ -614,7 +616,7 @@ function renderAtHour(blocksData, overrideHour) {
     document.getElementById('block-subtitle').textContent = block.subtitle || '';
     document.getElementById('block-name').textContent     = block.name;
     document.getElementById('hour-name').textContent      = HOUR_NAMES[h] || '';
-    document.getElementById('clock-time').textContent     = formatTime(now);
+    document.getElementById('clock-time').textContent     = formatTime(displayTime);
     document.getElementById('colophon-date').textContent  = formatDate(now);
     document.getElementById('quote-text').innerHTML       = q.text;
     document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
