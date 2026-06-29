@@ -40,7 +40,7 @@
     "cssClass": "block-hush",
     "startHour": 3,
     "subtitle": "Pre-dawn · Hours 3 to 6",
-    "versicle": "<p>Something shifts. The darkness has not changed, but there is a loosening at its edge — not light yet, but the memory of light.</p>",
+    "versicle": "<p>Something shifts. The darkness is unchanged, but its edges loosen — not light yet, but the memory of light.</p>",
     "phenomena": [
       "Metabolic nadir: blood cools and breathing slows",
       "Worms retreat underground",
@@ -208,7 +208,7 @@
     "cssClass": "block-convivium",
     "startHour": 18,
     "subtitle": "Evening · Hours 18 to 21",
-    "versicle": "<p>The light lingers until it is gone.</p><p>This is the hour of the lamp and the window. From outside, the lit rooms look like devotion.</p>",
+    "versicle": "<p>The light lingers above. The lamps offer their devotion.</p>",
     "phenomena": [
       "Shared caloric replenishment; social structures visible",
       "Crepuscular swarming and/or dispersal",
