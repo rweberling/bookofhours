@@ -4,7 +4,7 @@
     "cssClass": "block-void",
     "startHour": 0,
     "subtitle": "Midnight · Hours 0 to 3",
-    "versicle": "<p>You are alone with the dark now. The house settles; the field lies still.</p><p>Nothing is asked of you.</p>",
+    "versicle": "<p>You are alone with the dark now. Nothing is asked of you.</p>",
     "phenomena": [
       "Melatonin saturates the brain: deepest phase of slow-wave neurological repair",
       "Mushrooms release their spores",
@@ -72,7 +72,7 @@
     "cssClass": "block-chorus",
     "startHour": 6,
     "subtitle": "Dawn · Hours 6 to 9",
-    "versicle": "<p>The robin sings first, always the robin — <em>Turdus migratorius</em>, the wandering thrush — before the light has committed to anything.</p><p>Then the wood thrush. Then the world remembers it is permitted to begin.</p>",
+    "versicle": "<p>The sound comes before the light. The world remembers it exists.</p>",
     "phenomena": [
       "Songbirds begin the dawn chorus",
       "Insects and other cold-blooded creatures shake off their nocturnal chill",
@@ -108,7 +108,7 @@
     "cssClass": "block-transit",
     "startHour": 9,
     "subtitle": "Morning · Hours 9 to 12",
-    "versicle": "<p>Light is now something you move through rather than look at. The day is underway, and you are in it.</p>",
+    "versicle": "<p>The day lifts. Light is now something you move through rather than look at.</p>",
     "phenomena": [
       "Synchronized migration of human workforces: scattered commuter densities",
       "Sap ascends",
@@ -140,7 +140,7 @@
     "cssClass": "block-fulcrum",
     "startHour": 12,
     "subtitle": "Noon · Hours 12 to 15",
-    "versicle": "<p>The sun stands at the top of its arc. The shadow is directly beneath you.</p><p>For a moment, there is no pointing away.</p>",
+    "versicle": "<p>Your shadow is directly beneath you. For a moment, there is no pointing away.</p>",
     "phenomena": [
       "Solar zenith achieved: zero azimuth deviation, maximum ultraviolet index",
       "Petals unfurl to maximum aperture",
@@ -244,9 +244,9 @@
     "cssClass": "block-denouement",
     "startHour": 21,
     "subtitle": "Night · Hours 21 to 24",
-    "versicle": "<p>The old monks said this was the close of the day: <em>completorium</em>, the completing.</p><p>Something may be laid down now.</p>",
+    "versicle": "<p>The day closes; the night opens. Something may be laid down now.</p>",
     "phenomena": [
-      "Nocturnal activities begin",
+      "Nocturnal activities commence",
       "Plants complete their nyctinastic closing",
       "Peak marine bioluminescence"
     ],
