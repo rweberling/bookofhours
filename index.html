@@ -192,16 +192,48 @@
      SCRIPT
 ════════════════════════════════════════════════ -->
 <script>
-const HOUR_NAMES = [
-  "Midnight","The Middle Watch","Dead of Night",
-  "Somnium","Soundings","Twilight",
-  "Dawn","Insolation","Lift",
-  "Prime","Tilt","Forenoon",
-  "Noon","Zenith","Declension",
-  "Lull","Deep Afternoon","The Golden Hour",
-  "Sunset","Dusk","Eventide",
-  "Tenebrae","Nocturne","Eleventh"
-];
+const HOUR_NAMES = {
+  spring: [
+    "Midnight","The Middle Watch","Dead of Night",
+    "Somnium","Soundings","Twilight",
+    "Dawn","Insolation","Lift",
+    "Prime","Tilt","Forenoon",
+    "Noon","Zenith","Declension",
+    "Lull","Deep Afternoon","The Golden Hour",
+    "Sunset","Dusk","Eventide",
+    "Tenebrae","Nocturne","Eleventh"
+  ],
+  summer: [
+    "Midnight","The Middle Watch","Dead of Night",
+    "Twilight","Dawn","Insolation",
+    "Lift","Prime","Tilt",
+    "Forenoon","Forenoon","Noon",
+    "Zenith","Declension","Lull",
+    "Deep Afternoon","Deep Afternoon","The Golden Hour",
+    "Sunset","Dusk","Eventide",
+    "Eventide","Tenebrae","Nocturne"
+  ],
+  autumn: [
+    "Midnight","The Middle Watch","Dead of Night",
+    "Somnium","Soundings","Twilight",
+    "Dawn","Insolation","Lift",
+    "Prime","Tilt","Forenoon",
+    "Noon","Zenith","Declension",
+    "Lull","Deep Afternoon","The Golden Hour",
+    "Sunset","Dusk","Eventide",
+    "Tenebrae","Nocturne","Eleventh"
+  ],
+  winter: [
+    "Midnight","The Middle Watch","Dead of Night",
+    "Somnium","Somnium","Soundings",
+    "Soundings", "Dawn","Lift",
+    "Prime","Tilt","Forenoon",
+    "Noon","Zenith","Declension",
+    "The Golden Hours","Sunset","Dusk",
+    "Eventide","Eventide","Flicker",
+    "Tenebrae","Nocturne","Eleventh"
+  ]
+};
 
 const MONTHS = ["January","February","March","April","May","June",
                 "July","August","September","October","November","December"];
@@ -210,6 +242,14 @@ const DAYS   = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sat
 function pick(arr) {
   if (!arr || arr.length === 0) return null;
   return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function getSeason() {
+  const m = new Date().getMonth();
+  if (m >= 2 && m <= 4) return 'spring';
+  if (m >= 5 && m <= 7) return 'summer';
+  if (m >= 8 && m <= 10) return 'autumn';
+  return 'winter';
 }
 
 function formatTime(d) {
@@ -272,7 +312,7 @@ function render(blocksData, force) {
 
     document.getElementById('block-subtitle').textContent = block.subtitle || '';
     document.getElementById('block-name').textContent     = block.name;
-    document.getElementById('hour-name').textContent      = HOUR_NAMES[h] || '';
+    document.getElementById('hour-name').textContent = HOUR_NAMES[getSeason()][h] || '';
 
     document.getElementById('quote-text').innerHTML       = q.text;
     document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
