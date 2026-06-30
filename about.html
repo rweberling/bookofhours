@@ -12,26 +12,19 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-P4407N365M');
-    const hoursTrigger = document.getElementById('nav-hours-trigger');
-const hoursMenu    = document.getElementById('nav-hours-menu');
-
-hoursTrigger.addEventListener('click', (e) => {
-  e.stopPropagation();
-  const isOpen = hoursMenu.classList.contains('open');
-  hoursMenu.classList.toggle('open', !isOpen);
-  hoursTrigger.classList.toggle('open', !isOpen);
-});
-
-document.addEventListener('click', () => {
-  hoursMenu.classList.remove('open');
-  hoursTrigger.classList.remove('open');
-});
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Horae Terrenae</title>
+<meta name="description" content="The Earthly Book of Hours — Horae Terrenae — is a daily primer of art, literature, and ecology; a contemplative archive of images, readings, and natural phenomena for observing the day and finding yourself in it.">
+<meta name="application-name" content="The Earthly Hours">
+<meta name="author" content="Ryan Weberling">
+<meta property="og:title" content="The Earthly Hours">
+<meta property="og:description" content="A contemplative book of hours for the present day.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://earthlyhours.com/about.html">
+<link rel="canonical" href="https://earthlyhours.com/about.html">
+<title>About — The Earthly Book of Hours</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
