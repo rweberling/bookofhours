@@ -166,8 +166,12 @@
         "caption": "Hilma af Klint, <a href=\"https://www.guggenheim-bilbao.eus/en/exhibition/the-dove-1915\" target=\"_blank\"><em>Group IX/UW, No. 25, The Dove, No. 1</em></a> (1915)"
       },
       {
-        "src": "images/fulcrum_campbell.jpg",
-        "caption": "A.J.A. Campbell, <a href=\"https://commons.wikimedia.org/wiki/Category:Leaf_epidermis_and_stomata_prints#/media/File:09-_Fraxinus_gooddingii_20x_obj_leaf_print.jpg\" target=\"_blank\"><em>Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</em></a> (2025)"
+        "src": "images/fulcrum_klint.jpg",
+        "caption": "Hilma af Klint, <a href=\"https://www.guggenheim-bilbao.eus/en/exhibition/the-dove-1915\" target=\"_blank\"><em>Group IX/UW, No. 25, The Dove, No. 1</em></a> (1915)"
+      },
+      {
+        "src": "images/fulcrum_hitchcock.jpg",
+        "caption": "Orra White Hitchcock, <a href=\"https://acdc.amherst.edu/view/OrraClassroomDrawings/ma01020-0033#page/1\" target=\"_blank\"><em>Epochs of Elevation</em></a> (c. 1828-1840)"
       }
     ]
   },
@@ -234,8 +238,8 @@
         "caption": "Harold Davis, <a href=\"https://www.digitalfieldguide.com/blog/18487\" target=\"_blank\"><em>Salad Mandala</em></a> (2020)"
       },
       {
-        "src": null,
-        "caption": "Crepusculum; the blue that stays when the light has gone"
+        "src": "images/convivium_wragge.jpg",
+        "caption": "Clement Lindley Wragge, <a href=\"https://www.flickr.com/photos/aucklandmuseum_commons/54959419657/in/album-72177720330692278\" target=\"_blank\"><em>Sunset, G2</em></a> (1905)"
       }
     ]
   },
