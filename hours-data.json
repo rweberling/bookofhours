@@ -204,6 +204,10 @@
       {
         "src": "images/doldrums_monet.jpg",
         "caption": "Claude Monet, <a href=\"https://www.artic.edu/artworks/64818/stacks-of-wheat-end-of-summer\" target=\"_blank\"><em>Stacks of Wheat (End of Summer)</em></a> (1890-1891)"
+      },
+      {
+        "src": "images/doldrums_cajal.jpg",
+        "caption": "Santiago Ramón y Cajal, <a href=\"https://commons.wikimedia.org/wiki/Category:Camillo_Golgi#/media/File:Golgi_1885_Plate_XIII.JPG\" target=\"_blank\"><em>A purkinje neuron from the human cerebellum</em></a> (c. 1900)"
       }
     ]
   },
