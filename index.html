@@ -253,6 +253,10 @@ function getSeason() {
   return 'winter';
 }
 
+function stripHTML(str) {
+  return str ? str.replace(/<[^>]*>/g, '') : '';
+}
+
 function formatTime(d) {
   const h = d.getHours(), m = d.getMinutes();
   return `${h % 12 || 12}:${String(m).padStart(2,'0')} ${h >= 12 ? 'pm' : 'am'}`;
@@ -669,7 +673,7 @@ function renderAtHour(blocksData, overrideHour) {
 
     const inner = document.getElementById('image-inner');
     inner.innerHTML = img.src
-      ? `<img src="${img.src}" alt="${block.name}">`
+      ? `<img src="${img.src}" alt="${stripHTML(img.caption) || block.name}">`
       : placeholderSVG(block.name);
 
     currentBlockName = block.name;
