@@ -254,7 +254,7 @@ function getSeason() {
 }
 
 function stripHTML(str) {
-  return str ? str.replace(/<[^>]*>/g, '') : '';
+  return str ? str.replace(/<[^>]*>/g, '').replace(/"/g, '&quot;') : '';
 }
 
 function formatTime(d) {
