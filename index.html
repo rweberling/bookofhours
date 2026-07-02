@@ -321,8 +321,8 @@ function render(blocksData, force) {
     document.getElementById('image-caption').innerHTML    = img.caption || '';
 
     const inner = document.getElementById('image-inner');
-    inner.innerHTML = img.src
-      ? `<img src="${img.src}" alt="${block.name}">`
+      inner.innerHTML = img.src
+      ? `<img src="${img.src}" alt="${img.caption || block.name}">`
       : placeholderSVG(block.name);
 
     currentBlockName = block.name;
