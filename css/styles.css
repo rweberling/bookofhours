@@ -922,6 +922,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .page ul li::before {
   content: '✦';
   color: var(--gold);
+  font-size: 7px;
   vertical-align: middle;
   margin-right: 0.65em;
   opacity: 0.7;
@@ -940,6 +941,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .page ol li::before {
   content: counter(ol-counter) '.';
   font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 13px;
   color: var(--gold);
   letter-spacing: 0.08em;
   margin-right: 0.65em;
