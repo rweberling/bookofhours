@@ -90,7 +90,7 @@ body {
 body::before {
   content: '';
   position: fixed; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4'/%3E%3C/filter%3E%3Crect width='400' height='400' fill='%23f5ede0'/%3E%3Crect width='400' height='400' fill='%23d4c4a8' opacity='0.3' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOcta[...]
   pointer-events: none; z-index: 0; opacity: 0.5;
 }
 
@@ -907,6 +907,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 .page li {
   font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(11px, 2vw, 19px);
   font-weight: 300;
   line-height: 1.75;
   color: var(--ink-light);
@@ -941,6 +942,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .page ol li::before {
   content: counter(ol-counter) '.';
   font-family: 'Cormorant Garamond', Georgia, serif;
+
   color: var(--gold);
   letter-spacing: 0.08em;
   margin-right: 0.65em;
