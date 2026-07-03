@@ -899,6 +899,56 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   padding: 8px 0;
 }
 
+.page ul, .page ol {
+  margin: 0.75em 0 1.25em 0;
+  padding-left: 1.4em;
+  color: var(--ink-light);
+}
+
+.page li {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(16px, 2vw, 19px);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--ink-light);
+  margin-bottom: 0.25em;
+  padding-left: 0.4em;
+}
+
+.page ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.page ul li::before {
+  content: '✦';
+  color: var(--gold);
+  font-size: 7px;
+  vertical-align: middle;
+  margin-right: 0.65em;
+  opacity: 0.7;
+}
+
+.page ol {
+  list-style: none;
+  counter-reset: ol-counter;
+  padding-left: 1em;
+}
+
+.page ol li {
+  counter-increment: ol-counter;
+}
+
+.page ol li::before {
+  content: counter(ol-counter) '.';
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 13px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-right: 0.65em;
+  opacity: 0.8;
+}
+
 /* ── Responsive additions for reading list ────────────────────── */
 @media (max-width: 600px) {
   .entry-meta { flex-direction: column; gap: 4px; }
