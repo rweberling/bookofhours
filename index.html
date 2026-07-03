@@ -230,7 +230,7 @@ const HOUR_NAMES = {
     "Soundings", "Dawn","Lift",
     "Prime","Tilt","Forenoon",
     "Noon","Zenith","Declension",
-    "The Golden Hours","Sunset","Dusk",
+    "The Golden Hour","Sunset","Dusk",
     "Eventide","Eventide","Flicker",
     "Tenebrae","Nocturne","Eleventh"
   ]
@@ -662,7 +662,7 @@ function renderAtHour(blocksData, overrideHour) {
 
     document.getElementById('block-subtitle').textContent = block.subtitle || '';
     document.getElementById('block-name').textContent     = block.name;
-    document.getElementById('hour-name').textContent      = HOUR_NAMES[h] || '';
+    document.getElementById('hour-name').textContent      = HOUR_NAMES[getSeason()][h] || '';
     document.getElementById('clock-time').textContent     = formatTime(displayTime);
     document.getElementById('colophon-date').textContent  = formatDate(now);
     document.getElementById('quote-text').innerHTML       = q.text;
