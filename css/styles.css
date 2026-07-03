@@ -907,7 +907,6 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 .page li {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(11px, 2vw, 19px);
   font-weight: 300;
   line-height: 1.75;
   color: var(--ink-light);
@@ -942,7 +941,6 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .page ol li::before {
   content: counter(ol-counter) '.';
   font-family: 'Cormorant Garamond', Georgia, serif;
-
   color: var(--gold);
   letter-spacing: 0.08em;
   margin-right: 0.65em;
