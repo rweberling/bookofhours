@@ -19,7 +19,12 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-P4407N365M');
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches
+    || window.navigator.standalone === true; // older iOS Safari fallback
+
+  gtag('config', 'G-P4407N365M', {
+    display_mode: isStandalone ? 'standalone' : 'browser'
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
