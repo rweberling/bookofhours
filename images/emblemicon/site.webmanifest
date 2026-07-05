@@ -1,21 +1,42 @@
-{
-  "name": "The Earthly Book of Hours",
-  "short_name": "The Earthly Hours",
-  "icons": [
-    {
-      "src": "/images/emblemicon/web-app-manifest-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/images/emblemicon/web-app-manifest-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
-}
+	
+id	"/"
+name	"The Earthly Book of Hours"
+short_name	"The Earthly Hours"
+description	"A contemplative book of hours for the day, with readings, images, and versicles keyed to eight daily blocks."
+start_url	"/?source=pwa"
+scope	"/"
+display	"standalone"
+orientation	"portrait"
+theme_color	"#8b6914"
+background_color	"#f5ede0"
+categories	
+0	"lifestyle"
+1	"books"
+2	"education"
+icons	
+0	
+src	"/images/emblemicon/web-app-manifest-192x192.png"
+sizes	"192x192"
+type	"image/png"
+purpose	"maskable"
+1	
+src	"/images/emblemicon/web-app-manifest-512x512.png"
+sizes	"512x512"
+type	"image/png"
+purpose	"maskable"
+shortcuts	
+0	
+name	"Wander the Hours"
+short_name	"Wander"
+description	"Open the full-screen hour dial and jump to any block"
+url	"/?source=pwa#wander"
+1	
+name	"About"
+short_name	"About"
+description	"About Horae Terrenae"
+url	"/about.html?source=pwa"
+2	
+name	"Sources"
+short_name	"Sources"
+description	"Bibliography and curated sources"
+url	"/sources.html?source=pwa"
