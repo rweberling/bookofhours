@@ -1,7 +1,7 @@
 	
 id	"/"
 name	"The Earthly Book of Hours"
-short_name	"The Earthly Hours"
+short_name	"Earthly Hours"
 description	"A contemplative book of hours for the day, with readings, images, and versicles keyed to eight daily blocks."
 start_url	"/?source=pwa"
 scope	"/"
