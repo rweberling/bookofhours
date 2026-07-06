@@ -290,7 +290,18 @@ function placeholderSVG(blockName) {
   </div>`;
 }
 
+function getBlockOverride() {
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get('block');
+  return requested ? requested.toLowerCase() : null;
+}
+
 function blockForHour(blocks, h) {
+  const override = getBlockOverride();
+  if (override) {
+    const match = blocks.find(b => b.cssClass === `block-${override}`);
+    if (match) return match;
+  }
   return blocks.find(b => h >= b.startHour && h < b.startHour + 3) || blocks[0];
 }
 
