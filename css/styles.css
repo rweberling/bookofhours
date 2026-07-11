@@ -373,6 +373,21 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   transition: color 3s ease;
 }
 
+.colophon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.season-emblem {
+  width: 24px;
+  height: 24px;
+  color: var(--gold);
+  opacity: 0.6;
+  transition: color 3s ease;
+}
+
 /* ── Footer nav bar ───────────────────────────────────────────── */
 .site-nav {
   position: relative; z-index: 55;
