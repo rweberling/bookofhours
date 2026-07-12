@@ -91,7 +91,7 @@
 <!-- ═══════════════════════════════════════════════
      MAIN PAGE CONTENT
 ════════════════════════════════════════════════ -->
-<main class="page">
+<main class="page keepsake-frame">
   <p class="publication-name">Horae Terrenae — The Earthly Book of Hours</p>
 
   <div class="rule-ornament" aria-hidden="true">
@@ -130,6 +130,12 @@
   <span class="ttp-bracket">]</span>
 </button>
 
+<button class="turn-the-page" id="keep-page" aria-label="Print or save this reading as a keepsake">
+  <span class="ttp-bracket">[</span>
+  keep this page
+  <span class="ttp-bracket">]</span>
+</button>
+
   <div class="static-divider" aria-hidden="true"></div>
 
   <div class="phenomena">
@@ -138,6 +144,12 @@
 
   <div class="versicle" id="versicle"></div>
 
+  <p class="keepsake-stamp print-only">
+    Kept from The Earthly Book of Hours · <span id="print-block-name"></span> · <span id="print-timestamp"></span>
+  </p>
+
+  <footer class="page-footer">
+  
   <footer class="page-footer">
     <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
       <div class="line"></div>
