@@ -646,40 +646,26 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 
 /* ── Print / Keepsake styles ─────────────────────────────────── */
+.print-only { display: none; }
+
 @media print {
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  @page {
-    size: 5in 7in;
-    margin: 0.4in;
-  }
-
-  /* Hide everything that isn't part of the reading itself */
   .outer-frame, .corner, .site-nav, .page-footer,
-  .transition-veil, .block-subtitle, .rule-ornament,
-  .action-row { display: none !important; }
+  .transition-veil, .rule-ornament,
+  .turn-the-page, .static-divider,
+  .lightbox, .wander-pane { display: none !important; }
 
   body { background: var(--bg) !important; }
 
-  .page {
-    padding: 0;
-    max-width: none;
-  }
-
-  .image-inner img { filter: none; }
-
-  .quote-text { font-size: 15pt; }
-
-  /* Print-only elements, hidden on screen by default */
-  .print-only { display: none; }
-
   .keepsake-frame {
-    display: block;
+    max-width: 5in;
+    margin: 0 auto;
+    padding: 28px;
     border: 1px solid var(--gold);
-    padding: 22px;
     position: relative;
   }
   .keepsake-frame::before {
@@ -690,9 +676,13 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     pointer-events: none;
   }
 
+  .image-inner img { filter: none; }
+  .quote-text { font-size: 14pt; }
+
+  .print-only { display: block !important; }
+
   .keepsake-stamp {
-    display: block;
-    margin-top: 22px;
+    margin-top: 20px;
     font-family: 'Cormorant Garamond', serif;
     font-size: 9.5pt;
     font-style: italic;
@@ -702,9 +692,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     text-align: center;
   }
 }
-
-/* Screen-only: hide print-only elements during normal browsing */
-.print-only { display: none; }
   
   /* ── Wander trigger button ────────────────────────────────────── */
 button.wander-btn {
