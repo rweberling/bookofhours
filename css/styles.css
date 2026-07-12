@@ -657,7 +657,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .outer-frame, .corner, .site-nav, .page-footer,
   .transition-veil, .rule-ornament,
   .turn-the-page, .static-divider,
-  .lightbox, .wander-pane { display: none !important; }
+  .lightbox, .wander-pane, .phenomena, .versicle { display: none !important; }
 
   body { background: var(--bg) !important; }
 
