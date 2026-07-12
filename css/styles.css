@@ -381,10 +381,10 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 
 .season-emblem {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   color: var(--gold);
-  opacity: 0.6;
+  opacity: 0.5;
   transition: color 3s ease;
 }
 
