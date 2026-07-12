@@ -781,7 +781,7 @@ function selectWanderBlock(block, blocksData) {
   closeWander();
 }
 
-  /* ── Turn the page ────────────────────────────────────────────── */
+/* ── Turn the page ────────────────────────────────────────────── */
 const ttpBtn = document.getElementById('turn-the-page');
 let blocksRef = null;
 
@@ -790,7 +790,18 @@ ttpBtn.addEventListener('click', () => {
   currentBlockName = null;
   renderAtHour(blocksRef, displayedHour !== null ? displayedHour : new Date().getHours());
 });
+
+/* ── Keep this page ───────────────────────────────────────────── */
+const keepPageBtn = document.getElementById('keep-page');
+keepPageBtn.addEventListener('click', () => {
+  document.getElementById('print-block-name').textContent = currentBlockName || '';
+  const now = new Date();
+  document.getElementById('print-timestamp').textContent = formatDate(now) + ' · ' + formatTime(now);
+  window.print();
+});
 </script>
+
+<script src="nav.js"></script>
 
 <script src="nav.js"></script>
   
