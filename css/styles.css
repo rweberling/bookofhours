@@ -691,8 +691,15 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     color: var(--ink-faint);
     text-align: center;
   }
+
+  .block-subtitle, .block-name, .hour-line,
+  .image-frame-outer, .quote-block,
+  .phenomena, .versicle, .keepsake-stamp {
+    opacity: 1 !important;
+    animation: none !important;
+  }
 }
-  
+
   /* ── Wander trigger button ────────────────────────────────────── */
 button.wander-btn {
   all: unset;
