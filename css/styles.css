@@ -855,7 +855,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .turn-the-page {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  font-size: 13px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; color: var(--ink-faint);
   opacity: 0; padding: 4px 0;
   margin-top: 32px;
@@ -874,7 +874,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .turn-the-page .ttp-sep {
   color: var(--gold);
   opacity: 0.5;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .page-action {
