@@ -124,7 +124,7 @@
     <p class="quote-attribution" id="quote-attr"></p>
   </div>
 
-<div class="page-actions">
+<div class="turn-the-page" id="reading-actions">
   <span class="ttp-bracket">[</span>
   <button class="page-action" id="turn-the-page" aria-label="Load another reading">turn the page</button>
   <span class="ttp-sep" aria-hidden="true">|</span>
@@ -501,7 +501,7 @@ async function init() {
     
     // Update every minute
     setInterval(() => render(blocks, false), 60000);
-    setTimeout(() => ttpBtn.classList.add('visible'), 5000);
+    setTimeout(() => document.getElementById('reading-actions').classList.add('visible'), 5000);
   } catch (err) {
     const errorType = err.name === 'AbortError' ? 'timeout' : 'parse_error';
     const errorMsg = errorType === 'timeout' 
