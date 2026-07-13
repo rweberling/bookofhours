@@ -657,34 +657,41 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .outer-frame, .corner, .site-nav, .page-footer,
   .transition-veil, .rule-ornament,
   .turn-the-page, .static-divider,
-  .lightbox, .wander-pane, .phenomena, .versicle { display: none !important; }
+  .lightbox, .wander-pane,
+  .phenomena, .versicle,
+  .block-subtitle, .block-name, .hour-line { display: none !important; }
 
   body { background: var(--bg) !important; }
 
   .keepsake-frame {
-    max-width: 5in;
+    max-width: 4.5in;
     margin: 0 auto;
-    padding: 28px;
+    padding: 18px;
     border: 1px solid var(--gold);
     position: relative;
+    page-break-inside: avoid;
   }
   .keepsake-frame::before {
     content: '';
     position: absolute;
-    inset: 6px;
+    inset: 5px;
     border: 0.5px solid var(--rule);
     pointer-events: none;
   }
 
+  .image-frame-outer { max-width: 3.2in; margin: 0 auto 14px; }
   .image-inner img { filter: none; }
-  .quote-text { font-size: 14pt; }
+
+  .quote-block { margin-bottom: 10px; }
+  .quote-text { font-size: 12.5pt; line-height: 1.4; }
+  .quote-mark { font-size: 32px; margin-bottom: 6px; }
 
   .print-only { display: block !important; }
 
   .keepsake-stamp {
-    margin-top: 20px;
+    margin-top: 12px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 9.5pt;
+    font-size: 9pt;
     font-style: italic;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -692,9 +699,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     text-align: center;
   }
 
-  .block-subtitle, .block-name, .hour-line,
-  .image-frame-outer, .quote-block,
-  .phenomena, .versicle, .keepsake-stamp {
+  .image-frame-outer, .quote-block, .keepsake-stamp {
     opacity: 1 !important;
     animation: none !important;
   }
