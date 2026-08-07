@@ -322,6 +322,18 @@ function pick(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+// Picks a random item, avoiding whatever is currently displayed
+// (falls back to the full pool if there's only one option, so it never gets stuck).
+function pickExcluding(arr, excludeFn) {
+  if (!arr || arr.length === 0) return null;
+  const pool = arr.filter(item => !excludeFn(item));
+  const source = pool.length > 0 ? pool : arr;
+  return source[Math.floor(Math.random() * source.length)];
+}
+
+let lastQuoteText = null;
+let lastImageSrc  = null;
+
 function getSeason() {
   const m = new Date().getMonth();
   if (m >= 2 && m <= 4) return 'spring';
@@ -401,8 +413,10 @@ function render(blocksData, force) {
     });
     if (block.cssClass) document.body.classList.add(block.cssClass);
 
-    const q   = pick(block.quotes) || { text: '', attr: '' };
-    const img = pick(block.images) || { src: null, caption: '' };
+    const q   = pickExcluding(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
+    const img = pickExcluding(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+    lastQuoteText = q.text;
+    lastImageSrc  = img.src;
 
     document.getElementById('block-subtitle').textContent = block.subtitle || '';
     document.getElementById('block-name').textContent     = block.name;
@@ -746,8 +760,10 @@ function renderAtHour(blocksData, overrideHour) {
     });
     if (block.cssClass) document.body.classList.add(block.cssClass);
 
-    const q   = pick(block.quotes) || { text: '', attr: '' };
-    const img = pick(block.images) || { src: null, caption: '' };
+    const q   = pickExcluding(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
+    const img = pickExcluding(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+    lastQuoteText = q.text;
+    lastImageSrc  = img.src;
 
     document.getElementById('block-subtitle').textContent = block.subtitle || '';
     document.getElementById('block-name').textContent     = block.name;
@@ -796,8 +812,6 @@ keepPageBtn.addEventListener('click', () => {
   window.print();
 });
 </script>
-
-<script src="nav.js"></script>
 
 <script src="nav.js"></script>
   
