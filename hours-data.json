@@ -280,6 +280,14 @@
       {
         "src": "images/convivium_wragge.jpg",
         "caption": "Clement Lindley Wragge, <a href=\"https://www.flickr.com/photos/aucklandmuseum_commons/54959419657/in/album-72177720330692278\" target=\"_blank\"><em>Sunset, G2</em></a> (1905)"
+      },
+      {
+        "src": "images/convivium_cezanne.jpg",
+        "caption": "Paul Cezanne, <a href=\"https://www.artic.edu/artworks/111436/the-basket-of-apples\" target=\"_blank\"><em>The Basket of Apples</em></a> (c. 1893)"
+      },
+      {
+        "src": "images/convivium_hiroshige.jpg",
+        "caption": "Utagawa Hiroshige, <a href=\"https://www.metmuseum.org/art/collection/search/55278\" target=\"_blank\"><em>Cooling off in the Evening at Shijogawara</em></a> (c. 1834)"
       }
     ]
   },
@@ -320,6 +328,10 @@
       {
         "src": "images/denouement_giberne.jpg",
         "caption": "Agnes Giberne, from <a href=\"https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232\" target=\"_blank\"><em>The Story of the Sun, Moon, and Stars</em></a> (1898)"
+      },
+      {
+        "src": "images/denouement_haeckel.jpg",
+        "caption": "Ernst Haeckel, \"<a href=\"https://archive.org/details/monographiederme11879haec/page/n70/mode/1up\" target=\"_blank\">Leptomedusae</a>,\" from <em>Das System der Medusen</em> (Vol. 1, 1879)"
       }
     ]
   }
