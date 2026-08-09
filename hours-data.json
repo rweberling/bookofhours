@@ -240,6 +240,10 @@
       {
         "src": "images/doldrums_cajal.jpg",
         "caption": "Santiago Ramón y Cajal, <a href=\"https://commons.wikimedia.org/wiki/Category:Camillo_Golgi#/media/File:Golgi_1885_Plate_XIII.JPG\" target=\"_blank\"><em>A purkinje neuron from the human cerebellum</em></a> (c. 1900)"
+      },
+      {
+        "src": "images/doldrums_brigman.jpg",
+        "caption": "Anne Brigman, <a href=\"https://www.photola.com/virtual/galleries/2020/44/images/15_big.jpg"><em>Infinitude</em></a> (c. 1910)"
       }
     ]
   },
@@ -332,6 +336,10 @@
       {
         "src": "images/denouement_haeckel.jpg",
         "caption": "Ernst Haeckel, \"<a href=\"https://archive.org/details/monographiederme11879haec/page/n70/mode/1up\" target=\"_blank\">Leptomedusae</a>,\" from <em>Das System der Medusen</em> (Vol. 1, 1879)"
+      },
+      {
+        "src": "images/denouement_tryon.jpg",
+        "caption": "Dwight William Tryon , <a href=\"https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1915.131a-b/\" target=\"_blank\"><em>After Sunset: Looking East</em></a> (1915)"
       }
     ]
   }
