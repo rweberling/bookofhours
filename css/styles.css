@@ -272,7 +272,7 @@ body::before {
 .image-placeholder svg { opacity: 0.3; }
 .image-caption {
   margin-top: 10px; text-align: center;
-  font-size: 12.5px; font-style: italic;
+  font-size: 12.5px; font-style: none;
   color: var(--ink-faint); letter-spacing: 0.02em; line-height: 1.65;
   white-space: pre-line;
   transition: color 3s ease;
@@ -961,7 +961,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .entry-attr {
   font-family: 'Cormorant Garamond', serif;
   font-size: 12px; font-weight: 300; letter-spacing: 0.14em;
-  color: var(--ink-faint); text-transform: uppercase;
+  color: var(--ink-faint); text-transform: none;
 }
 .entry-links {
   display: flex; align-items: center; gap: 10px;
