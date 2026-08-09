@@ -200,6 +200,10 @@
       {
         "src": "images/fulcrum_hitchcock.jpg",
         "caption": "Orra White Hitchcock, <a href=\"https://acdc.amherst.edu/view/OrraClassroomDrawings/ma01020-0033#page/1\" target=\"_blank\"><em>Epochs of Elevation</em></a> (c. 1828-1840)"
+      },
+      {
+        "src": "images/fulcrum_caillebotte.jpg",
+        "caption": "Gustave Caillebotte, <a href=\"https://www.musee-orsay.fr/en/artworks/raboteurs-de-parquet-105\" target=\"_blank\"><em>Raboteurs de parquets</em></a> (1875)"
       }
     ]
   },
@@ -244,6 +248,10 @@
       {
         "src": "images/doldrums_brigman.jpg",
         "caption": "Anne Brigman, <a href=\"https://www.photola.com/virtual/galleries/2020/44/images/15_big.jpg\"><em>Infinitude</em></a> (c. 1910)"
+      },
+      {
+        "src": "images/doldrums_degas.jpg",
+        "caption": "Edgar Degas, <a href=\"https://www.metmuseum.org/art/collection/search/436174\"><em>A Woman Ironing</em></a> (1873)"
       }
     ]
   },
