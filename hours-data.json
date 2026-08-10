@@ -68,6 +68,14 @@
       {
         "src": "images/hush_bentley2.jpg",
         "caption": "Wilson Alwyn Bentley, <a href=\"https://www.metmuseum.org/art/collection/search/286768\" target=\"_blank\"><em>[Snow Crystal]</em></a> (c. 1910)"
+      },
+      {
+        "src": "images/hush_lockyer1.jpg",
+        "caption": "J. Norman Lockyer, \"Superposition of Two Wave-Systems,\" from <a href=\"https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/June_1878/Water-Waves_and_Sound-Waves\" target=\"_blank\"><em>Water-Waves and Sound-Waves</em></a> (1878)"
+      },
+      {
+        "src": "images/hush_whistler.jpg",
+        "caption": "James McNeill Whistler, <a href=\"https://www.gardnermuseum.org/experience/collection/10900\" target=\"_blank\"><em>Nocturne, Blue and Silver: Battersea Reach</em></a> (c. 1872-1878)"
       }
     ]
   },
@@ -160,6 +168,10 @@
       {
         "src": "images/transit_muybridge.jpg",
         "caption": "Eadward Muybridge, Plate 169 from <a href=\"https://drive.google.com/file/d/1o04qBq3W3oJwDVsCxWqRQ3XvUffcBVJ6/view?pli=1\" target=\"_blank\"><em>Animal Locomotion, Vol. VII</em></a> (1887)"
+      },
+      {
+        "src": "images/transit_abbott.jpg",
+        "caption": "Berenice Abbott, <a href=\"https://digitalcollections.nypl.org/items/32f22aa0-878a-013a-95ad-0242ac110002?canvasIndex=0\" target=\"_blank\"><em>Seventh Avenue looking south from 35th Street</em></a> (1935)"
       }
     ]
   },
