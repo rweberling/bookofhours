@@ -32,6 +32,18 @@
       {
         "src": "images/void_betts.jpg",
         "caption": "Louisa S. Cook, <a href=\"https://archive.org/details/geometricalpsych00cook/geometricalpsych00cook\" target=\"_blank\"><em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em></a> (1887)"
+      },
+      {
+        "src": "images/void_allais.jpg",
+        "caption": "Alphonse Allais, \"<a href=\"https://en.wikipedia.org/wiki/File:Ronde_de_pochards_dans_le_brouillard.jpg\" target=\"_blank\">Ronde de pochards dans le brouillard [Dance of drunks in the fog]</a>,\" from <a href=\"https://publicdomainreview.org/collection/alphonse-allais-april-fools-album/\" target=\"_blank\"><em>Album primo-avrilesque</em></a> (1897)"
+      },
+      {
+        "src": "images/void_smithsonian.jpg",
+        "caption": "The Smithsonian Insitution, <a href=\"https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich/page/n71/mode/2up\" target=\"_blank\"><em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory </em></a> (1900/1904)"
+      },
+      {
+        "src": "images/void_redon.jpg",
+        "caption": "Odilon Redon, <a href=\"https://collections.lacma.org/object/75354\" target=\"_blank\"><em>The Eye, Like a Strange Balloon, Mounts toward Infinity</em></a> (1882)"
       }
     ]
   },
@@ -76,6 +88,10 @@
       {
         "src": "images/hush_whistler.jpg",
         "caption": "James McNeill Whistler, <a href=\"https://www.gardnermuseum.org/experience/collection/10900\" target=\"_blank\"><em>Nocturne, Blue and Silver: Battersea Reach</em></a> (c. 1872-1878)"
+      },
+      {
+        "src": "images/hush_steichen.jpg",
+        "caption": "Edward Steichen, <a href=\"https://repository.library.brown.edu/viewers/readers/set/bdr:565092/0/#page/15/mode/1up\" target=\"_blank\"><em>Moonlight: The Pond</em></a> (1904/1906)"
       }
     ]
   },
