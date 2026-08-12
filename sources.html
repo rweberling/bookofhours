@@ -30,7 +30,188 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
-
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+:root {
+  --bg:            #f5ede0;
+  --bg-dark:       #e8d9c4;
+  --ink:           #1c1510;
+  --ink-light:     #3d2f22;
+  --ink-faint:     #6b5744;
+  --accent:        #8b2020;
+  --accent2:       #2d5c4a;
+  --gold:          #8b6914;
+  --gold-light:    #c9a227;
+  --rule:          rgba(60,40,20,0.25);
+}
+ 
+html { height: 100%; }
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  overflow-x: hidden;
+}
+ 
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 0; opacity: 0.5;
+}
+ 
+.outer-frame {
+  position: fixed; inset: 18px;
+  border: 1px solid var(--rule);
+  pointer-events: none; z-index: 10;
+}
+.outer-frame::before {
+  content: ''; position: absolute; inset: 5px;
+  border: 0.5px solid var(--rule); opacity: 0.5;
+}
+ 
+.page {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 780px;
+  margin: 0 auto;
+  padding: 68px 50px 100px;
+}
+ 
+.publication-name {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 10px; letter-spacing: 0.38em;
+  color: var(--ink-faint); text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+.rule-ornament {
+  display: flex; align-items: center; gap: 14px;
+  width: 100%; max-width: 480px; margin: 0 auto 28px;
+}
+.rule-ornament .line {
+  flex: 1; height: 0.5px;
+  background: linear-gradient(to right, transparent, var(--rule), transparent);
+}
+.rule-ornament .diamond {
+  width: 6px; height: 6px; background: var(--gold);
+  transform: rotate(45deg); flex-shrink: 0;
+}
+.rule-ornament .lozenge { color: var(--gold); font-size: 14px; flex-shrink: 0; line-height: 1; }
+ 
+.page-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(28px, 5vw, 44px); font-weight: 400;
+  text-align: center; letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+.page-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px; font-style: italic; font-weight: 300;
+  color: var(--ink-faint); text-align: center;
+  letter-spacing: 0.04em; line-height: 1.7;
+  max-width: 520px; margin: 0 auto 56px;
+}
+ 
+.block-section { margin-bottom: 64px; }
+.block-header {
+  display: flex; align-items: baseline; gap: 14px;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 10px; margin-bottom: 8px;
+}
+.block-header h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 24px; font-weight: 400; letter-spacing: 0.03em;
+  color: var(--ink);
+}
+.block-header .block-hours {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+  letter-spacing: 0.06em;
+}
+ 
+.category-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); opacity: 0.85;
+  margin: 28px 0 12px;
+}
+ 
+.entry {
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--rule);
+}
+.entry:last-child { border-bottom: none; }
+ 
+.citation {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15.5px; font-weight: 400;
+  color: var(--ink-light); line-height: 1.6;
+  text-indent: -1.5em; padding-left: 1.5em;
+}
+.citation em { font-style: italic; }
+ 
+.entry-links {
+  margin-top: 5px;
+  padding-left: 1.5em;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12.5px; font-style: italic;
+  color: var(--ink-faint); letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+.entry-links .links-label {
+  font-style: normal; text-transform: uppercase;
+  letter-spacing: 0.15em; font-size: 10px;
+  color: var(--gold); margin-right: 6px;
+}
+.entry-links a {
+  color: var(--accent); text-decoration: underline;
+  text-underline-offset: 2px; opacity: 0.85;
+}
+.entry-links a:hover { opacity: 1; }
+.entry-links .sep { color: var(--rule); margin: 0 6px; }
+ 
+.flag-note {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 10.5px;
+  color: var(--accent);
+  font-style: italic;
+  opacity: 0.8;
+}
+ 
+.colophon-note {
+  margin-top: 70px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px; font-style: italic;
+  color: var(--ink-faint); text-align: center;
+  line-height: 1.8;
+}
+ 
+.site-nav {
+  position: relative; z-index: 20;
+  text-align: center;
+  padding: 24px 0 40px;
+}
+.site-nav a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  text-transform: uppercase; text-decoration: none;
+  color: var(--ink-faint); opacity: 0.75;
+}
+.site-nav a:hover { opacity: 1; color: var(--accent); }
+.site-nav .nav-sep { color: var(--gold); font-size: 8px; opacity: 0.5; margin: 0 14px; }
+ 
+@media (max-width: 600px) {
+  .page { padding: 48px 22px 70px; }
+  .outer-frame { inset: 10px; }
+  .citation { font-size: 14.5px; }
+}
+</style>
 </head>
 <body>
 
@@ -85,306 +266,411 @@
     hours are filled. Some recommended editions via <a href="https://bookshop.org" target="_blank">Bookshop.org</a> are affiliate links; any commission earned from your purchase 
     will go to supporting the project.
   </p>
-<!--
-  <div class="reading-list">
+<p class="page-subtitle">A citation for every reading and image in the first edition, arranged by hour, in the seventh edition of MLA style. Where a piece is still under copyright, a note follows for purchase or further reading.</p>
  
-    <!-- ── VOID ──────────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Void</span>
-        <span class="block-header-hours">Midnight · hours 0 to 3</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"In the middle of the journey of our life I came to myself within a dark wood where the straight way was lost."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Dante Alighieri — <em>Inferno</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.gutenberg.org/ebooks/1001" target="_blank">Gutenberg text</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"Darkness is not the absence of light; it is the presence of the night."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Clark Strand — <em>Waking Up to the Dark</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=waking+up+to+the+dark+clark+strand" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Albert Einstein</span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://en.wikisource.org/wiki/What_I_Believe_(Einstein)" target="_blank">Wikisource</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SILENCE ────────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Silence</span>
-        <span class="block-header-hours">Pre-dawn · hours 3 to 6</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"How often have I lain beneath rain on a strange roof, thinking of home."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">William Faulkner — <em>As I Lay Dying</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=as+i+lay+dying+faulkner" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"It is a beauteous evening, calm and free; the holy time is quiet as a nun breathless with adoration."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">William Wordsworth — <em>It is a Beauteous Evening</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.poetryfoundation.org/poems/45541/it-is-a-beauteous-evening-calm-and-free" target="_blank">Poetry Foundation</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"Before the birds have begun, before the day has made any claim, the soul is most itself."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Thomas Merton — <em>The Sign of Jonas</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=sign+of+jonas+merton" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CHORUS ─────────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Chorus</span>
-        <span class="block-header-hours">Dawn · hours 6 to 9</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"No man can be said to have lost the day who has watched the dawn and heard the chorus break the silence."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">John Burroughs — <em>Wake-Robin</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.gutenberg.org/ebooks/3343" target="_blank">Gutenberg text</a>
-            <span class="entry-link-sep">✦</span>
-            <a class="entry-link" href="https://bookshop.org/search?keywords=wake+robin+john+burroughs" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"Early in the morning, when the world is young, the sun coming up from behind the hills — that is the time to see all things new."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Willa Cather — <em>O Pioneers!</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.gutenberg.org/ebooks/24" target="_blank">Gutenberg text</a>
-            <span class="entry-link-sep">✦</span>
-            <a class="entry-link" href="https://bookshop.org/search?keywords=o+pioneers+willa+cather" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── TRANSIT ────────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Transit</span>
-        <span class="block-header-hours">Morning · hours 9 to 12</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"There was never any more inception than there is now, / Nor any more youth or age than there is now…"</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Walt Whitman — <em>Song of Myself</em> (1892)</span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.poetryfoundation.org/poems/45477/song-of-myself-1892-version" target="_blank">Poetry Foundation</a>
-            <span class="entry-link-sep">✦</span>
-            <a class="entry-link" href="https://bookshop.org/search?keywords=leaves+of+grass+whitman" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">T. S. Eliot — <em>Four Quartets</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=four+quartets+eliot" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"One touch of nature makes the whole world kin."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">William Shakespeare — <em>Troilus and Cressida</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.gutenberg.org/ebooks/1790" target="_blank">Gutenberg text</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── FULCRUM ─────────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Fulcrum</span>
-        <span class="block-header-hours">Noon · hours 12 to 15</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"All really inhabited space bears the essence of the notion of home."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Gaston Bachelard — <em>The Poetics of Space</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=poetics+of+space+bachelard" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"It is not down on any map; true places never are."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Herman Melville — <em>Moby-Dick</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.gutenberg.org/ebooks/2701" target="_blank">Gutenberg text</a>
-            <span class="entry-link-sep">✦</span>
-            <a class="entry-link" href="https://bookshop.org/search?keywords=moby+dick+melville" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"Nature is not a place to visit. It is home."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Gary Snyder — <em>The Practice of the Wild</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=practice+of+the+wild+snyder" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── DOLDRUMS ────────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Doldrums</span>
-        <span class="block-header-hours">Afternoon · hours 15 to 18</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"Adopt the pace of nature: her secret is patience."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Ralph Waldo Emerson</span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://www.gutenberg.org/ebooks/2944" target="_blank">Gutenberg — <em>Essays</em></a>
-            <span class="entry-link-sep">✦</span>
-            <a class="entry-link" href="https://bookshop.org/search?keywords=emerson+essays+selected" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"Time is the longest distance between two places."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Tennessee Williams — <em>The Glass Menagerie</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=glass+menagerie+tennessee+williams" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── REPAST ──────────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Repast</span>
-        <span class="block-header-hours">Dusk · hours 18 to 21</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"There is something infinitely healing in the repeated refrains of nature."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Rachel Carson — <em>The Sense of Wonder</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=sense+of+wonder+rachel+carson" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"Evening is the time when the heart is most open."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Helen Macdonald — <em>H is for Hawk</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=h+is+for+hawk+macdonald" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── DENOUEMENT ─────────────────────────────────────────── -->
-    <section class="block-section">
-      <div class="block-header">
-        <span class="block-header-name">Denouement</span>
-        <span class="block-header-hours">Night · hours 21 to 24</span>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"The bleak fields are asleep, / My heart alone wakes…"</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Rainer Maria Rilke — <em>Evening</em> (1918)</span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening" target="_blank">Wikisource</a>
-            <span class="entry-link-sep">✦</span>
-            <a class="entry-link" href="https://bookshop.org/search?keywords=rilke+poems+selected" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars."</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Carl Sagan — <em>Cosmos</em></span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=cosmos+carl+sagan" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry">
-        <p class="entry-quote">"…and the short necessary night is soon ended, and the sky blue again over all the secret places where nobody ever comes…"</p>
-        <div class="entry-meta">
-          <span class="entry-attr">Samuel Beckett — <em>Watt</em> (1953)</span>
-          <div class="entry-links">
-            <a class="entry-link" href="https://bookshop.org/search?keywords=watt+samuel+beckett" target="_blank">Bookshop.org</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div><!-- /.reading-list -->
--->
-  <footer class="page-footer">
-    <div class="rule-ornament" style="max-width:260px; margin-bottom:0;">
-      <div class="line"></div>
-      <div class="diamond"></div>
-      <div class="line"></div>
+  <!-- ═══════════════════ VOID ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Void</h2><span class="block-hours">Midnight · Hours 0–3</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">Woolf, Virginia. <em>To the Lighthouse</em>. Hogarth Press, 1927.</p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780156030472" target="_blank">Bookshop.org edition</a></p>
     </div>
-    <p class="colophon">This list grows as the hours are filled</p>
-  </footer>
-
+ 
+    <div class="entry">
+      <p class="citation">Pseudo-Dionysius the Areopagite. <em>The Mystical Theology</em>. c. 500 CE.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://archive.org/details/dionysiusareopag00pseu" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Nāgārjuna. <em>Mūlamadhyamakakārikā</em>. c. 150 CE.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&view=fulltext&vid=1124" target="_blank">Polyglotta Comparative Text Archive, University of Oslo</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Blanchot, Maurice. <em>Thomas the Obscure</em>. Translated by Robert Lamberton, Station Hill Press, 1988. Originally published 1941.<span class="flag-note">translation in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780882680767" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">Cook, Louisa S. <em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em>. George Redway, 1887.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://archive.org/details/geometricalpsych00cook/geometricalpsych00cook" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Allais, Alphonse. "Ronde de pochards dans le brouillard." <em>Album primo-avrilesque</em>, 1897.</p>
+      <p class="entry-links"><span class="links-label">Context</span><a href="https://publicdomainreview.org/collection/alphonse-allais-april-fools-album/" target="_blank">Public Domain Review, "April Fools' Album"</a><span class="sep">·</span><a href="https://en.wikipedia.org/wiki/File:Ronde_de_pochards_dans_le_brouillard.jpg" target="_blank">Wikimedia Commons</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Smithsonian Institution. <em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em>. Smithsonian Institution, 1904.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Redon, Odilon. <em>The Eye, Like a Strange Balloon, Mounts toward Infinity</em>. 1882, Los Angeles County Museum of Art, Los Angeles.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://collections.lacma.org/object/75354" target="_blank">LACMA</a></p>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════ HUSH ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Hush</h2><span class="block-hours">Pre-dawn · Hours 3–6</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">Lispector, Clarice. <em>The Passion According to G.H.</em> Translated by Idra Novey, New Directions, 2012. Originally published 1964.<span class="flag-note">translation in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780811219686" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Young, Kevin. <em>Book of Hours</em>. Knopf, 2014.<span class="flag-note">in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780375711886" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Cage, John. "Experimental Music." <em>Silence: Lectures and Writings</em>, Wesleyan University Press, 1961. Lecture delivered 1957.<span class="flag-note">in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780819573650" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Novalis. "Hymns to the Night." <em>Rampolli: Growths from a Long-Planted Root</em>, translated by George MacDonald, Longmans, Green, 1897. Originally published 1800.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://www.george-macdonald.com/etexts/hymns_to_night.html" target="_blank">george-macdonald.com</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">Bentley, Wilson Alwyn. <em>[Snow Crystal]</em>. c. 1910, The Metropolitan Museum of Art, New York.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.metmuseum.org/art/collection/search/286768" target="_blank">The Met</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Lockyer, J. Norman. "Superposition of Two Wave-Systems." "Water-Waves and Sound-Waves," <em>Popular Science Monthly</em>, vol. 13, June 1878.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/June_1878/Water-Waves_and_Sound-Waves" target="_blank">Wikisource</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Whistler, James McNeill. <em>Nocturne, Blue and Silver: Battersea Reach</em>. c. 1872–1878, Isabella Stewart Gardner Museum, Boston.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.gardnermuseum.org/experience/collection/10900" target="_blank">Gardner Museum</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Steichen, Edward. <em>Moonlight: The Pond</em>. 1904, printed 1906.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://repository.library.brown.edu/viewers/readers/set/bdr:565092/0/#page/15/mode/1up" target="_blank">Brown University Library Digital Repository</a></p>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════ CHORUS ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Chorus</h2><span class="block-hours">Dawn · Hours 6–9</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">Burroughs, John. <em>Wake-Robin</em>. Hurd and Houghton, 1871.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://hdl.handle.net/2027/uc2.ark:/13960/t0ms3kq78?urlappend=%3Bseq=177" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Field, Michael. "The Depths of the Grass." <em>Wild Honey from Various Thyme</em>, T. Fisher Unwin, 1908.<span class="flag-note">date as captioned (1898); verify edition</span></p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Pessoa, Fernando. <em>The Book of Disquiet</em>. Translated by Richard Zenith, Penguin, 2002. Fragment written c. 1913; first assembled and published 1982.<span class="flag-note">translation in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780811226936" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Sei Shōnagon. <em>The Pillow Book of Sei Shōnagon</em>. Translated by Ivan Morris, Columbia University Press, 1971. Originally composed c. 1002.<span class="flag-note">translation in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780231073370" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">Limbourg Brothers. <em>Anatomical Zodiac Man</em>. c. 1412–1416, Musée Condé, Chantilly. <em>Les Très Riches Heures du Duc de Berry</em>.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://les-tres-riches-heures.chateaudechantilly.fr" target="_blank">Château de Chantilly</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Sivartha, Alesha. <em>The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man</em>. Sivartha Publishing, 1898.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://hdl.handle.net/2027/uc2.ark:/13960/t77s7n156?urlappend=%3Bseq=65" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Smith, Arthur E. "Human Blood x1000." <em>Nature Through Microscope &amp; Camera</em>, by Richard Kerr, Religious Tract Society, 1909.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Harris, Moses. <em>Prismatic Colour Wheel</em>. <em>The Natural System of Colours</em>, 1766, Royal Academy of Arts, London.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.royalacademy.org.uk/art-artists/work-of-art/prismatic-colour-wheel" target="_blank">Royal Academy</a></p>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════ TRANSIT ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Transit</h2><span class="block-hours">Morning · Hours 9–12</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">Whitman, Walt. "Song of Myself." <em>Leaves of Grass</em>, 1892 ed., David McKay.</p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9781609384654" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Naidu, Sarojini. "Palanquin-Bearers." <em>The Golden Threshold</em>, William Heinemann, 1906.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://hdl.handle.net/2027/hvd.32044010369874?urlappend=%3Bseq=35%3Bownerid=27021597766923349-39" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Eliot, T. S. "Little Gidding." <em>Four Quartets</em>, Harcourt, Brace, 1943.<span class="flag-note">in copyright — estate actively enforces</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780547538211" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Johnson, Helene. "The Road." <em>Caroling Dusk: An Anthology of Verse by Negro Poets</em>, edited by Countee Cullen, Harper &amp; Brothers, 1927.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://archive.org/details/carolingduskanth00cull/page/220/mode/2up" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Heraclitus. "Fragments 41–42." <em>On Nature</em>, translated by G. T. W. Patrick, 1889. Composed c. 500 BCE.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">Darwin, Charles. <em>The Power of Movement in Plants</em>. John Murray, 1880.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://babel.hathitrust.org/cgi/pt?id=nyp.33433007351665&seq=293&view=1up" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Vermeer, Johannes. <em>Woman Reading a Letter</em>. c. 1663, Rijksmuseum, Amsterdam.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.rijksmuseum.nl/en/collection/object/Woman-Reading-a-Letter--8e9e02c8045362ffb2171b2fb52953ba" target="_blank">Rijksmuseum</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Unknown. <em>Diagram of the Winds (I)</em>. c. 1170–1200, The Walters Art Museum, Baltimore, MS W.73.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W73" target="_blank">The Digital Walters</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Muybridge, Eadweard. Plate 169. <em>Animal Locomotion</em>, vol. 7, 1887.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://drive.google.com/file/d/1o04qBq3W3oJwDVsCxWqRQ3XvUffcBVJ6/view?pli=1" target="_blank">digitized plate</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Abbott, Berenice. <em>Seventh Avenue Looking South from 35th Street</em>. 1935, New York Public Library Digital Collections.<span class="flag-note">in copyright — estate licenses actively</span></p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://digitalcollections.nypl.org/items/32f22aa0-878a-013a-95ad-0242ac110002?canvasIndex=0" target="_blank">NYPL Digital Collections</a></p>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════ FULCRUM ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Fulcrum</h2><span class="block-hours">Noon · Hours 12–15</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">Freytag, Gustav. <em>Technique of the Drama</em>. Translated by Elias J. MacEwan, Scott, Foresman, 1894.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://archive.org/details/freytagstechniqu00freyuoft" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Cavafy, C. P. "When They Come Alive." <em>C. P. Cavafy: Collected Poems</em>, translated by Edmund Keeley and Philip Sherrard, Princeton University Press, 1975. Written 1916.<span class="flag-note">translation copyright — pending resolution</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780691264646" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Weil, Simone. "The Mysticism of Work." <em>Gravity and Grace</em>, translated by Emma Crawford and Mario von der Ruhr, Routledge, 2002. Written c. 1935; first published 1947.<span class="flag-note">translation in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780415290012" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">H.D. "Mid-day." <em>Sea Garden</em>, Constable, 1916.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://archive.org/details/seagarden00hdhirich/page/6/mode/2up" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">af Klint, Hilma. <em>Group IX/UW, No. 25, The Dove, No. 1</em>. 1915, Guggenheim Museum Bilbao.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.guggenheim-bilbao.eus/en/exhibition/the-dove-1915" target="_blank">Guggenheim Bilbao</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Campbell, A. J. A. <em>Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</em>. 2025, Wikimedia Commons.<span class="flag-note">recent, living creator — verify CC license terms</span></p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://commons.wikimedia.org/wiki/Category:Leaf_epidermis_and_stomata_prints#/media/File:09-_Fraxinus_gooddingii_20x_obj_leaf_print.jpg" target="_blank">Wikimedia Commons</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Hitchcock, Orra White. <em>Epochs of Elevation</em>. c. 1828–1840, Amherst College Archives &amp; Special Collections.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://acdc.amherst.edu/view/OrraClassroomDrawings/ma01020-0033#page/1" target="_blank">Amherst College Digital Collections</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Caillebotte, Gustave. <em>Raboteurs de parquet</em>. 1875, Musée d'Orsay, Paris.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.musee-orsay.fr/en/artworks/raboteurs-de-parquet-105" target="_blank">Musée d'Orsay</a></p>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════ DOLDRUMS ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Doldrums</h2><span class="block-hours">Afternoon · Hours 15–18</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">James, William. <em>Psychology: The Briefer Course</em>. Henry Holt, 1892.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044004518320&seq=183&q1=stream" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Burton, Robert. "The Author's Abstract of Melancholy." <em>The Anatomy of Melancholy</em>, 1621.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://www.google.com/books/edition/The_Anatomy_of_Melancholy/cPgveWnCdRcC?hl=en&gbpv=1&pg=PP17&printsec=frontcover" target="_blank">Google Books</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Benjamin, Walter. <em>The Arcades Project</em>. Translated by Howard Eiland and Kevin McLaughlin, Belknap Press of Harvard University Press, 1999. Written 1927–1940.<span class="flag-note">translation in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780674008021" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Dickinson, Emily. "There's a certain Slant of light." c. 1861. Emily Dickinson Archive, Houghton Library, Harvard University.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA4310_P90-75" target="_blank">Harvard Emily Dickinson Archive</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">Monet, Claude. <em>Stacks of Wheat (End of Summer)</em>. 1890–1891, Art Institute of Chicago.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.artic.edu/artworks/64818/stacks-of-wheat-end-of-summer" target="_blank">Art Institute of Chicago</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Ramón y Cajal, Santiago. <em>A Purkinje Neuron from the Human Cerebellum</em>. c. 1900, Wikimedia Commons.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://commons.wikimedia.org/wiki/Category:Camillo_Golgi#/media/File:Golgi_1885_Plate_XIII.JPG" target="_blank">Wikimedia Commons</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Brigman, Anne. <em>Infinitude</em>. c. 1910.<span class="flag-note">hosted scan may carry separate rights — consider sourcing museum copy</span></p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://www.photola.com/virtual/galleries/2020/44/images/15_big.jpg" target="_blank">photola.com</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Degas, Edgar. <em>A Woman Ironing</em>. 1873, The Metropolitan Museum of Art, New York.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.metmuseum.org/art/collection/search/436174" target="_blank">The Met</a></p>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════ CONVIVIUM ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Convivium</h2><span class="block-hours">Evening · Hours 18–21</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">Sappho. "Fragment 104a." <em>Sappho: Memoir, Text, Selected Renderings, and a Literal Translation</em>, translated by Henry Thornton Wharton, John Lane, 1908. Composed c. 630–580 BCE.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://www.gutenberg.org/files/57390/57390-h/57390-h.htm" target="_blank">Project Gutenberg</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Stein, Gertrude. "Celery," "Veal," "Vegetable," "Way Lay Vegetable." <em>Tender Buttons</em>, Claire Marie, 1914.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://writing.upenn.edu/library/Stein_Gertrude_Tender_Buttons_1914.pdf" target="_blank">University of Pennsylvania</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Tanizaki, Jun'ichirō. <em>In Praise of Shadows</em>. Translated by Thomas J. Harper and Edward G. Seidensticker, Leete's Island Books, 1977. Originally published 1933.<span class="flag-note">translation in copyright</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/p/books/in-praise-of-shadows-jun-ichiro-tanizaki/0f1dcafed6a38414?ean=9780918172020&bkshp-astro=t" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Fisher, M. F. K. <em>The Gastronomical Me</em>. Duell, Sloan and Pearce, 1943.<span class="flag-note">in copyright — actively republished</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780764542619" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">Davis, Harold. <em>Salad Mandala</em>. 2020.<span class="flag-note">living photographer — active commercial licensing</span></p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://www.digitalfieldguide.com/blog/18487" target="_blank">digitalfieldguide.com</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Wragge, Clement Lindley. <em>Sunset, G2</em>. 1905, Auckland War Memorial Museum.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.flickr.com/photos/aucklandmuseum_commons/54959419657/in/album-72177720330692278" target="_blank">Auckland Museum, Flickr Commons</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Cézanne, Paul. <em>The Basket of Apples</em>. c. 1893, Art Institute of Chicago.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.artic.edu/artworks/111436/the-basket-of-apples" target="_blank">Art Institute of Chicago</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Hiroshige, Utagawa. <em>Cooling Off in the Evening at Shijogawara</em>. c. 1834, The Metropolitan Museum of Art, New York.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://www.metmuseum.org/art/collection/search/55278" target="_blank">The Met</a></p>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════ DENOUEMENT ═══════════════════ -->
+  <section class="block-section">
+    <div class="block-header"><h2>Denouement</h2><span class="block-hours">Night · Hours 21–24</span></div>
+ 
+    <p class="category-label">Readings</p>
+ 
+    <div class="entry">
+      <p class="citation">Rilke, Rainer Maria. "Evening." <em>Poems</em>, 1918.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening" target="_blank">Wikisource</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Wright, Richard. "9." <em>Haiku: This Other World</em>, Arcade Publishing, 1998. Written c. 1959.<span class="flag-note">in copyright — estate actively protective</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9781611453492" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Beckett, Samuel. <em>Watt</em>. Olympia Press, 1953.<span class="flag-note">in copyright — estate aggressively enforces</span></p>
+      <p class="entry-links"><span class="links-label">Purchase</span><a href="https://bookshop.org/a/86532/9780802144485" target="_blank">Bookshop.org edition</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Thomas, Edward. "Lights Out." <em>Last Poems</em>, Selwyn &amp; Blount, 1918. Written 1917.</p>
+      <p class="entry-links"><span class="links-label">Read</span><a href="https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <p class="category-label">Images</p>
+ 
+    <div class="entry">
+      <p class="citation">Kuindzhi, Arkhip. <em>Moonlit Night on the Dnieper</em>. 1880, State Tretyakov Gallery, Moscow.</p>
+      <p class="entry-links"><span class="links-label">Context</span><a href="https://en.wikipedia.org/wiki/Moonlit_Night_on_the_Dnieper" target="_blank">Wikipedia</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Giberne, Agnes. <em>The Story of the Sun, Moon, and Stars</em>. Seeley, 1898.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232" target="_blank">HathiTrust</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Haeckel, Ernst. "Leptomedusae." <em>Das System der Medusen</em>, vol. 1, Gustav Fischer, 1879.</p>
+      <p class="entry-links"><span class="links-label">Source</span><a href="https://archive.org/details/monographiederme11879haec/page/n70/mode/1up" target="_blank">Internet Archive</a></p>
+    </div>
+ 
+    <div class="entry">
+      <p class="citation">Tryon, Dwight William. <em>After Sunset: Looking East</em>. 1915, National Museum of Asian Art, Smithsonian Institution.</p>
+      <p class="entry-links"><span class="links-label">Collection</span><a href="https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1915.131a-b/" target="_blank">Smithsonian</a></p>
+    </div>
+  </section>
+ 
+  <p class="colophon-note">Citations follow MLA style, 7th edition. Dates given as "c." indicate approximate or estimated composition. Where a translator is credited, the translation itself carries its own copyright independent of the source text's public-domain status. Entries marked with a note indicate items still under copyright, current as of August 2026 — consult before commercial or print reproduction.</p>
 </main>
 
 <!-- ═══════════════════════════════════════════════
