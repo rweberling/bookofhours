@@ -298,7 +298,7 @@ body::before {
 .quote-attribution {
   font-family: 'Cormorant Garamond', serif;
   font-size: 12.5px; font-weight: 300; letter-spacing: 0.18em;
-  color: var(--ink-faint); text-transform: uppercase;
+  color: var(--ink-faint); text-transform: none;
   transition: color 3s ease;
 }
 
