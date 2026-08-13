@@ -485,7 +485,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .lightbox-caption {
   margin-top: 16px;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 13px; font-style: italic;
+  font-size: 13px; font-style: none;
   color: rgba(255,255,255,0.7);
   text-align: center; max-width: 600px; line-height: 1.6;
 }
