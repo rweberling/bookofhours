@@ -392,6 +392,7 @@ let currentBlockName = null;
 let displayedHour = null;
 let lastRenderedHour = null;
 let blocks = null;
+let isWandering = false;
 
 function render(blocksData, force) {
   const now   = new Date();
@@ -401,6 +402,8 @@ function render(blocksData, force) {
   document.getElementById('clock-time').textContent    = formatTime(now);
   document.getElementById('colophon-date').textContent = formatDate(now);
   document.getElementById('season-emblem').innerHTML   = SEASON_EMBLEMS[getSeason(now)];
+
+  if (isWandering && !force) return; 
   
   if (block.name === currentBlockName && !force && h === lastRenderedHour) return;
 
@@ -789,6 +792,7 @@ function renderAtHour(blocksData, overrideHour) {
 }
 
 function selectWanderBlock(block, blocksData) {
+  isWandering = true;
   renderAtHour(blocksData, block.startHour);
   closeWander();
 }
