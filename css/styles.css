@@ -426,6 +426,11 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 
 /* ── Add to Home Screen ──────────────────────────────────────── */
+.install-divider {
+  display: none;
+}
+.install-divider.visible { display: inline; }
+
 .install-btn {
   all: unset;
   display: none;
