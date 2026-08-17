@@ -669,6 +669,12 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .nav-hours-menu a:first-child,
   .nav-hours-menu .wander-btn:first-child { border-top: none; }
   .nav-divider { display: none; }
+  .install-btn.visible {
+  font-size: 10px; letter-spacing: 0.18em;
+  padding: 10px 0;
+  width: 100%; text-align: center;
+  border-top: 0.5px solid var(--rule);
+}
   .wander-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 8px;
