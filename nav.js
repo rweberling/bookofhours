@@ -102,3 +102,49 @@ function openWanderIfHashed() {
     history.replaceState(null, '', window.location.pathname);
   }
 }
+
+/* ── Add to Home Screen ───────────────────────────────────────────
+   Only runs if the install button exists on this page (added via
+   the #install-btn / #install-tip markup inside the nav). Hidden
+   entirely on desktop, and once the site is already installed and
+   running standalone.
+────────────────────────────────────────────────────────────────── */
+const installBtn = document.getElementById('install-btn');
+const installTip = document.getElementById('install-tip');
+
+if (installBtn && installTip) {
+  const standalone = window.matchMedia('(display-mode: standalone)').matches
+                   || window.navigator.standalone === true;
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (!standalone && isMobile) {
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isIOS) {
+      installBtn.classList.add('visible');
+      installBtn.addEventListener('click', () => {
+        installTip.classList.toggle('open');
+      });
+      document.addEventListener('click', (e) => {
+        if (!installTip.contains(e.target) && e.target !== installBtn) {
+          installTip.classList.remove('open');
+        }
+      });
+    } else {
+      let deferredPrompt = null;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installBtn.classList.add('visible');
+      });
+      installBtn.addEventListener('click', async () => {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        installBtn.classList.remove('visible');
+      });
+    }
+  }
+}
