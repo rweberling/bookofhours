@@ -105,14 +105,15 @@ function openWanderIfHashed() {
 
 /* ── Add to Home Screen ───────────────────────────────────────────
    Only runs if the install button exists on this page (added via
-   the #install-btn / #install-tip markup inside the nav). Hidden
-   entirely on desktop, and once the site is already installed and
-   running standalone.
+   the #install-btn / #install-tip / #install-divider markup inside
+   the nav). Hidden entirely on desktop, and once the site is
+   already installed and running standalone.
 ────────────────────────────────────────────────────────────────── */
-const installBtn = document.getElementById('install-btn');
-const installTip = document.getElementById('install-tip');
+const installBtn     = document.getElementById('install-btn');
+const installTip     = document.getElementById('install-tip');
+const installDivider = document.getElementById('install-divider');
 
-if (installBtn && installTip) {
+if (installBtn && installTip && installDivider) {
   const standalone = window.matchMedia('(display-mode: standalone)').matches
                    || window.navigator.standalone === true;
 
@@ -123,6 +124,7 @@ if (installBtn && installTip) {
 
     if (isIOS) {
       installBtn.classList.add('visible');
+      installDivider.classList.add('visible');
       installBtn.addEventListener('click', () => {
         installTip.classList.toggle('open');
       });
@@ -137,6 +139,7 @@ if (installBtn && installTip) {
         e.preventDefault();
         deferredPrompt = e;
         installBtn.classList.add('visible');
+        installDivider.classList.add('visible');
       });
       installBtn.addEventListener('click', async () => {
         if (!deferredPrompt) return;
@@ -144,6 +147,7 @@ if (installBtn && installTip) {
         await deferredPrompt.userChoice;
         deferredPrompt = null;
         installBtn.classList.remove('visible');
+        installDivider.classList.remove('visible');
       });
     }
   }
