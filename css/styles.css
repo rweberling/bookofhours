@@ -669,6 +669,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .nav-hours-menu a:first-child,
   .nav-hours-menu .wander-btn:first-child { border-top: none; }
   .nav-divider { display: none; }
+  .install-divider.visible { display: none; }
   .install-btn.visible {
   font-size: 10px; letter-spacing: 0.18em;
   padding: 10px 0;
