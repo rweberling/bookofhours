@@ -103,11 +103,14 @@ function openWanderIfHashed() {
   }
 }
 
-/* ── Add to Home Screen ───────────────────────────────────────────
+/* ── Add to Home Screen / Add to Dock ──────────────────────────────
    Only runs if the install button exists on this page (added via
    the #install-btn / #install-tip / #install-divider markup inside
-   the nav). Hidden entirely on desktop, and once the site is
-   already installed and running standalone.
+   the nav). Covers three cases with no shared JS event between
+   them: Android/Chrome (real install prompt), iOS Safari and
+   desktop Safari (both instruction-only, no API exists for either).
+   Hidden entirely elsewhere (desktop Chrome/Firefox/Edge, etc.),
+   and once the site is already installed and running standalone.
 ────────────────────────────────────────────────────────────────── */
 const installBtn     = document.getElementById('install-btn');
 const installTip     = document.getElementById('install-tip');
@@ -117,23 +120,37 @@ if (installBtn && installTip && installDivider) {
   const standalone = window.matchMedia('(display-mode: standalone)').matches
                    || window.navigator.standalone === true;
 
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const ua = navigator.userAgent;
 
-  if (!standalone && isMobile) {
-    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  // Modern iPadOS reports a Mac-style UA; maxTouchPoints disambiguates
+  // an actual touchscreen iPad from a real trackpad/mouse Mac.
+  const isIPad   = /iPad/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+  const isMobile = /Android|iPhone|iPod/i.test(ua) || isIPad;
+  const isIOS    = /iPhone|iPod/i.test(ua) || isIPad;
 
-    if (isIOS) {
-      installBtn.classList.add('visible');
-      installDivider.classList.add('visible');
-      installBtn.addEventListener('click', () => {
-        installTip.classList.toggle('open');
-      });
-      document.addEventListener('click', (e) => {
-        if (!installTip.contains(e.target) && e.target !== installBtn) {
-          installTip.classList.remove('open');
-        }
-      });
-    } else {
+  const isRealMac      = /Macintosh/i.test(ua) && navigator.maxTouchPoints <= 1;
+  const isSafariEngine = /^((?!chrome|crios|fxios|edg|opr).)*safari/i.test(ua);
+  const isDesktopSafari = isRealMac && isSafariEngine;
+
+  function showTip(text) {
+    installBtn.classList.add('visible');
+    installDivider.classList.add('visible');
+    installTip.textContent = text;
+    installBtn.addEventListener('click', () => {
+      installTip.classList.toggle('open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!installTip.contains(e.target) && e.target !== installBtn) {
+        installTip.classList.remove('open');
+      }
+    });
+  }
+
+  if (!standalone) {
+    if (isMobile && isIOS) {
+      showTip('Tap the Share icon, then "Add to Home Screen."');
+    } else if (isMobile) {
+      // Android/Chrome: wait for the real install prompt.
       let deferredPrompt = null;
       window.addEventListener('beforeinstallprompt', (e) => {
         e.preventDefault();
@@ -149,6 +166,8 @@ if (installBtn && installTip && installDivider) {
         installBtn.classList.remove('visible');
         installDivider.classList.remove('visible');
       });
+    } else if (isDesktopSafari) {
+      showTip('Click the Share icon in the toolbar, or choose File, then "Add to Dock."');
     }
   }
 }
