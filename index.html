@@ -752,11 +752,11 @@ function updateWanderTileCurrent(blockName) {
   });
 }
 
-function renderAtHour(blocksData, overrideHour) {
+function renderAtHour(blocksData, overrideHour, useRealTime = false) {
   const now = new Date();
   const h = overrideHour;
-  const displayTime = new Date(now);
-  displayTime.setHours(overrideHour + 1, 30, 0, 0);
+  const displayTime = useRealTime ? now : new Date(now);
+  if (!useRealTime) displayTime.setHours(overrideHour + 1, 30, 0, 0);
   const block = blockForHour(blocksData, h);
   const veil = document.getElementById('veil');
 
@@ -808,7 +808,7 @@ let blocksRef = null;
 ttpBtn.addEventListener('click', () => {
   if (!blocksRef) return;
   currentBlockName = null;
-  renderAtHour(blocksRef, displayedHour !== null ? displayedHour : new Date().getHours());
+  renderAtHour(blocksRef, new Date().getHours(), true);
 });
 
 /* ── Keep this page ───────────────────────────────────────────── */
