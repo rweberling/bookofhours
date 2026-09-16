@@ -171,7 +171,26 @@
       <button class="wander-btn" id="wander-open">Wander the Hours</button>
     </div>
   </div>
-  
+
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <button class="wander-btn" data-season="spring">Spring</button>
+      <button class="wander-btn" data-season="summer">Summer</button>
+      <button class="wander-btn" data-season="autumn">Autumn</button>
+      <button class="wander-btn" data-season="winter">Winter</button>
+    </div>
+  </div>
+
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <button class="wander-btn" id="weather-open">Choose a Condition</button>
+    </div>
+  </div>
+
   <span class="nav-divider">✦</span>
   <a href="about.html">About</a>
   
@@ -208,6 +227,34 @@
   </div>
 
   <div class="wander-grid" id="wander-grid"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     THE SEASONS PANE
+════════════════════════════════════════════════ -->
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
+  <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
+
+  <p class="wander-heading">The Seasons</p>
+  <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
+
+  <div class="season-dial-wrap" aria-hidden="true">
+    <svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+
+  <div class="species-grid" id="species-grid"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     THE WEATHER PANE
+════════════════════════════════════════════════ -->
+<div class="wander-pane" id="weather-pane" role="dialog" aria-label="The Weather" aria-modal="true">
+  <button class="wander-close" id="weather-close" aria-label="Close">✦ &nbsp;Close</button>
+
+  <p class="wander-heading">The Weather</p>
+  <p class="wander-subheading">Choose the condition outside your window</p>
+
+  <div class="weather-grid" id="weather-grid"></div>
 </div>
 
 
@@ -326,8 +373,6 @@ function pick(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-// Picks a random item, avoiding whatever is currently displayed
-// (falls back to the full pool if there's only one option, so it never gets stuck).
 function pickExcluding(arr, excludeFn) {
   if (!arr || arr.length === 0) return null;
   const pool = arr.filter(item => !excludeFn(item));
@@ -466,7 +511,6 @@ function showError(msg, details = '') {
   document.querySelector('.page').innerHTML = errorHTML;
 }
 
-/* ── Fetch data with retry logic ────────────────────────────────── */
 async function fetchWithRetry(retries = 3, timeout = 8000) {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
@@ -480,18 +524,14 @@ async function fetchWithRetry(retries = 3, timeout = 8000) {
         throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       }
       
-      // Get response as text first to avoid parsing issues
       const text = await res.text();
       
-      // Validate it looks like JSON
       if (!text.trim().startsWith('[') && !text.trim().startsWith('{')) {
         throw new Error('Response is not valid JSON');
       }
       
-      // Now parse it
       const data = JSON.parse(text);
       
-      // Validate structure
       if (!Array.isArray(data)) {
         throw new Error('JSON data is not an array');
       }
@@ -501,11 +541,9 @@ async function fetchWithRetry(retries = 3, timeout = 8000) {
       console.error(`Attempt ${attempt}/${retries} failed:`, err.message);
       
       if (attempt === retries) {
-        // Final attempt failed
         throw err;
       }
       
-      // Wait before retrying (exponential backoff)
       const delayMs = Math.min(1000 * Math.pow(2, attempt - 1), 4000);
       await new Promise(r => setTimeout(r, delayMs));
     }
@@ -520,7 +558,6 @@ async function init() {
     openWanderIfHashed();
     blocksRef = blocks;
     
-    // Update every minute
     setInterval(() => render(blocks, false), 60000);
     setTimeout(() => document.getElementById('reading-actions').classList.add('visible'), 5000);
   } catch (err) {
@@ -544,7 +581,6 @@ async function init() {
 
 init();
 
-/* ── Lightbox ─────────────────────────────────────────────────── */
 const lightbox        = document.getElementById('lightbox');
 const lightboxImg     = document.getElementById('lightbox-img');
 const lightboxCaption = document.getElementById('lightbox-caption');
@@ -567,9 +603,6 @@ function closeLightbox() {
   lightbox.classList.remove('open');
   setTimeout(() => { lightbox.style.display = 'none'; }, 300);
 }
-  /* ══════════════════════════════════════════════════════════════
-   WANDER THE HOURS
-══════════════════════════════════════════════════════════════ */
 
 const CX = 120, CY = 120;
 const R_ARC  = 88;
@@ -578,14 +611,14 @@ const R_TICK_INNER = 96;
 const R_LABEL = 110;
 
 const BLOCK_PALETTES = {
-  'Void':       '#2a2440',   // deeper violet-indigo, more visible than bg
-  'Hush':       '#3a3050',   // slightly lighter indigo, step up from Void
-  'Chorus':     '#c89030',   // warm gold — dawn breaking, from --gold-light
-  'Transit':    '#f0c050',   // brighter amber gold — full sunrise
-  'Fulcrum':    '#d4b870',   // softer golden ivory — high noon warmth
-  'Doldrums':   '#c08040',   // deeper amber — afternoon heaviness
-  'Convivium':  '#a84828',   // rich ember red — from --accent
-  'Denouement': '#404870',   // muted blue-slate — cooling toward night
+  'Void':       '#2a2440',
+  'Hush':       '#3a3050',
+  'Chorus':     '#c89030',
+  'Transit':    '#f0c050',
+  'Fulcrum':    '#d4b870',
+  'Doldrums':   '#c08040',
+  'Convivium':  '#a84828',
+  'Denouement': '#404870',
 };
   
 function hourToAngleDeg(h) {
@@ -637,7 +670,6 @@ function buildDial(blocksData) {
   blocksData.forEach((block, i) => {
     const color = BLOCK_PALETTES[block.name] || '#888888';
 
-    // Colored arc on top
     const path = document.createElementNS(svgNS, 'path');
     path.setAttribute('d', arcPath(block.startHour, 3, R_ARC));
     path.setAttribute('stroke', color);
@@ -801,7 +833,6 @@ function selectWanderBlock(block, blocksData) {
   closeWander();
 }
 
-/* ── Turn the page ────────────────────────────────────────────── */
 const ttpBtn = document.getElementById('turn-the-page');
 let blocksRef = null;
 
@@ -811,7 +842,6 @@ ttpBtn.addEventListener('click', () => {
   renderAtHour(blocksRef, new Date().getHours(), true);
 });
 
-/* ── Keep this page ───────────────────────────────────────────── */
 const keepPageBtn = document.getElementById('keep-page');
 keepPageBtn.addEventListener('click', () => {
   document.getElementById('print-block-name').textContent = currentBlockName || '';
@@ -819,6 +849,201 @@ keepPageBtn.addEventListener('click', () => {
   document.getElementById('print-timestamp').textContent = formatDate(now) + ' · ' + formatTime(now);
   window.print();
 });
+
+/* ══════════════════════════════════════════════════════════════
+   THE SEASONS
+   Prototype data — eventually this should come from a
+   lectio-data.json file (Lectio Terra posts tagged by season),
+   the same way hours-data.json feeds Wander the Hours.
+══════════════════════════════════════════════════════════════ */
+
+const SEASON_SPECIES = {
+  spring: [
+    { common: 'Pink lady\u2019s slipper', latin: 'Cypripedium acaule' },
+    { common: 'Common lilac',             latin: 'Syringa vulgaris' },
+    { common: 'Ostrich fern',             latin: 'Matteuccia struthiopteris' }
+  ],
+  summer: [
+    { common: 'Butterfly weed',   latin: 'Asclepias tuberosa' },
+    { common: 'Common reed',      latin: 'Phragmites australis' },
+    { common: 'Sheet moss',       latin: 'Hypnum imponens' }
+  ],
+  autumn: [
+    { common: 'Sugar maple',      latin: 'Acer saccharum' },
+    { common: 'Paper birch',      latin: 'Betula papyrifera' },
+    { common: 'Corn',             latin: 'Zea mays' }
+  ],
+  winter: [
+    { common: 'Witch hazel',      latin: 'Hamamelis virginiana' },
+    { common: 'Red currant',      latin: 'Ribes rubrum' }
+  ]
+};
+
+const SEASON_LABELS = { spring: 'Spring', summer: 'Summer', autumn: 'Autumn', winter: 'Winter' };
+
+const SCX = 120, SCY = 120, S_R_ARC = 88, S_R_LABEL = 112;
+
+// Quadrant order matches clock position: spring NE, summer NW,
+// autumn SW mirrored to sit opposite spring, winter SE — arranged
+// so the current season always renders in the same screen position
+// as it would on a real yearly calendar face (spring at upper-right).
+const SEASON_QUADRANTS = [
+  { key: 'spring', startDeg: -90, endDeg: 0   },
+  { key: 'summer', startDeg: 0,   endDeg: 90  },
+  { key: 'autumn', startDeg: 90,  endDeg: 180 },
+  { key: 'winter', startDeg: 180, endDeg: 270 }
+];
+
+function seasonPolarToXY(deg, r) {
+  const rad = deg * Math.PI / 180;
+  return { x: SCX + r * Math.cos(rad), y: SCY + r * Math.sin(rad) };
+}
+
+function seasonArcPath(startDeg, endDeg, r) {
+  const p1 = seasonPolarToXY(startDeg, r);
+  const p2 = seasonPolarToXY(endDeg, r);
+  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y}`;
+}
+
+let displayedSeason = null; // null = ambient (real getSeason()); set = browsing a chosen season
+
+function buildSeasonDial() {
+  const svg = document.getElementById('season-dial');
+  svg.innerHTML = '';
+
+  const bgRing = document.createElementNS(svgNS, 'circle');
+  bgRing.setAttribute('cx', SCX); bgRing.setAttribute('cy', SCY);
+  bgRing.setAttribute('r', S_R_ARC);
+  bgRing.setAttribute('fill', 'none');
+  bgRing.setAttribute('stroke', 'currentColor');
+  bgRing.setAttribute('stroke-width', '14');
+  bgRing.setAttribute('opacity', '0.06');
+  svg.appendChild(bgRing);
+
+  const line1 = document.createElementNS(svgNS, 'line');
+  line1.setAttribute('x1', SCX); line1.setAttribute('y1', SCY - S_R_ARC - 14);
+  line1.setAttribute('x2', SCX); line1.setAttribute('y2', SCY + S_R_ARC + 14);
+  line1.setAttribute('stroke', 'currentColor'); line1.setAttribute('stroke-width', '0.5'); line1.setAttribute('opacity', '0.15');
+  svg.appendChild(line1);
+
+  const line2 = document.createElementNS(svgNS, 'line');
+  line2.setAttribute('x1', SCX - S_R_ARC - 14); line2.setAttribute('y1', SCY);
+  line2.setAttribute('x2', SCX + S_R_ARC + 14); line2.setAttribute('y2', SCY);
+  line2.setAttribute('stroke', 'currentColor'); line2.setAttribute('stroke-width', '0.5'); line2.setAttribute('opacity', '0.15');
+  svg.appendChild(line2);
+
+  SEASON_QUADRANTS.forEach(q => {
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('d', seasonArcPath(q.startDeg, q.endDeg, S_R_ARC));
+    path.setAttribute('stroke', 'currentColor');
+    path.setAttribute('fill', 'none');
+    path.setAttribute('class', 'season-arc');
+    path.setAttribute('data-season', q.key);
+    svg.appendChild(path);
+
+    const midDeg = (q.startDeg + q.endDeg) / 2;
+    const lp = seasonPolarToXY(midDeg, S_R_LABEL);
+    const text = document.createElementNS(svgNS, 'text');
+    text.setAttribute('x', lp.x);
+    text.setAttribute('y', lp.y);
+    text.setAttribute('class', 'season-label');
+    text.setAttribute('data-season', q.key);
+    text.textContent = SEASON_LABELS[q.key].toUpperCase();
+    svg.appendChild(text);
+  });
+
+  const centerDot = document.createElementNS(svgNS, 'circle');
+  centerDot.setAttribute('cx', SCX); centerDot.setAttribute('cy', SCY);
+  centerDot.setAttribute('r', '3');
+  centerDot.setAttribute('fill', 'currentColor'); centerDot.setAttribute('opacity', '0.35');
+  svg.appendChild(centerDot);
+
+  setSeasonDialActive(displayedSeason || getSeason());
+}
+
+function setSeasonDialActive(seasonKey) {
+  document.querySelectorAll('.season-arc').forEach(el => {
+    el.classList.toggle('active', el.dataset.season === seasonKey);
+  });
+  document.querySelectorAll('.season-label').forEach(el => {
+    el.classList.toggle('active', el.dataset.season === seasonKey);
+  });
+}
+
+function buildSpeciesGrid(seasonKey) {
+  const grid = document.getElementById('species-grid');
+  grid.innerHTML = '';
+  const entries = SEASON_SPECIES[seasonKey] || [];
+  entries.forEach(sp => {
+    const card = document.createElement('div');
+    card.className = 'species-card';
+    card.innerHTML = `
+      <span class="species-common">${sp.common}</span>
+      <span class="species-latin">${sp.latin}</span>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function selectSeason(seasonKey) {
+  displayedSeason = seasonKey;
+  const isReal = seasonKey === getSeason();
+  document.getElementById('season-subheading').textContent = isReal
+    ? `Species drawn from Lectio Terra, this season (${SEASON_LABELS[seasonKey]})`
+    : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[seasonKey]}`;
+  setSeasonDialActive(seasonKey);
+  buildSpeciesGrid(seasonKey);
+}
+
+function openSeasonPane(seasonKey) {
+  const pane = document.getElementById('season-pane');
+  pane.style.display = 'flex';
+  requestAnimationFrame(() => pane.classList.add('open'));
+  if (!document.querySelector('.season-arc')) buildSeasonDial();
+  selectSeason(seasonKey || getSeason());
+}
+
+document.querySelectorAll('#nav-seasons-menu [data-season]').forEach(btn => {
+  btn.addEventListener('click', () => openSeasonPane(btn.dataset.season));
+});
+
+/* ══════════════════════════════════════════════════════════════
+   THE WEATHER
+   Self-select only for now — no location permission requested.
+   Detection (opt-in) and real wander-weighted cards are tabled
+   for a later pass once weather tags exist in the data.
+══════════════════════════════════════════════════════════════ */
+
+const WEATHER_CONDITIONS = [
+  'Clear', 'Overcast', 'Rain', 'Snow', 'Fog', 'Wind', 'First frost', 'Heat'
+];
+
+function buildWeatherGrid() {
+  const grid = document.getElementById('weather-grid');
+  if (grid.children.length) return;
+  WEATHER_CONDITIONS.forEach(cond => {
+    const tile = document.createElement('button');
+    tile.type = 'button';
+    tile.className = 'weather-tile';
+    tile.textContent = cond;
+    tile.addEventListener('click', () => {
+      document.querySelectorAll('.weather-tile').forEach(t => t.classList.remove('is-current'));
+      tile.classList.add('is-current');
+      // Prototype only — no data wired up yet.
+    });
+    grid.appendChild(tile);
+  });
+}
+
+const weatherOpenBtn = document.getElementById('weather-open');
+if (weatherOpenBtn) {
+  weatherOpenBtn.addEventListener('click', () => {
+    const pane = document.getElementById('weather-pane');
+    pane.style.display = 'flex';
+    requestAnimationFrame(() => pane.classList.add('open'));
+    buildWeatherGrid();
+  });
+}
 </script>
 
 <script src="nav.js"></script>
