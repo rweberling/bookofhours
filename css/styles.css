@@ -1,4 +1,3 @@
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -398,7 +397,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   display: flex; 
   align-items: center; 
   justify-content: center;
-  /* Increasing gap slightly to compensate for removing the 18px margin on each side of the star */
   gap: 36px; min-height: 48px;
   transition: background 3s ease, border-color 3s ease;
 }
@@ -417,7 +415,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   text-decoration: underline;
 }
 
-/* ── Add this new class for your separators ── */
 .nav-divider {
   color: var(--gold);
   font-size: 8px;
@@ -540,8 +537,8 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   position: relative;
   display: flex; 
   align-items: center; 
-  justify-content: center; /* Fixed typo: jutify-content */
-  margin: 0;               /* Fixed typo: marign */
+  justify-content: center;
+  margin: 0;
   padding: 0;
 }
 
@@ -686,6 +683,10 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .tile-name { font-size: 11px; }
   .tile-hours { font-size: 12px; }
   .tile-subtitle { font-size: 12px; }
+
+  .season-dial-wrap { width: 190px; height: 190px; }
+  .species-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
+  .weather-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
 }
 
 /* ── Print / Keepsake styles ─────────────────────────────────── */
@@ -892,6 +893,107 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   font-size: 11px; font-style: italic; font-weight: 300;
   color: var(--ink-faint); opacity: 0.7; text-align: center;
   transition: color 3s ease;
+}
+
+/* ── Season dial (four-quadrant compass, echoes .wander-dial) ──── */
+.season-dial-wrap {
+  margin-bottom: 44px;
+  position: relative;
+  width: 220px; height: 220px;
+  flex-shrink: 0;
+}
+.season-dial-wrap svg {
+  width: 100%; height: 100%;
+  overflow: visible;
+  color: var(--ink-faint);
+}
+.season-arc {
+  fill: none;
+  stroke-width: 14;
+  stroke-linecap: butt;
+  opacity: 0.28;
+  filter: drop-shadow(0 0 1.5px var(--bg-dark));
+  transition: opacity 0.35s ease, stroke-width 0.35s ease;
+}
+.season-arc.active { opacity: 0.9; stroke-width: 17; color: var(--accent); }
+.season-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 9px; letter-spacing: 0.08em;
+  fill: var(--ink-faint);
+  opacity: 0.55;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  transition: opacity 0.35s ease, fill 0.35s ease;
+  cursor: default;
+}
+.season-label.active { opacity: 1; fill: var(--ink); }
+
+/* ── Species cards (common name / Latin name) ───────────────────
+   Deliberately distinct from .wander-tile — a different card
+   shape signals "different kind of material" (Lectio Terra
+   species entries, not quotes/images) without needing a label.
+────────────────────────────────────────────────────────────────── */
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%; max-width: 640px;
+}
+.species-card {
+  border: 1px solid var(--rule);
+  background: var(--bg-dark);
+  border-radius: 6px;
+  padding: 16px 14px;
+  display: flex; flex-direction: column; gap: 3px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.species-card:hover {
+  background: var(--bg-deep);
+  border-color: var(--gold);
+}
+.species-common {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px; font-weight: 500;
+  color: var(--ink);
+}
+.species-latin {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-style: italic; font-size: 12.5px;
+  color: var(--ink-faint);
+}
+
+/* ── Weather condition tiles ─────────────────────────────────────
+   Self-select list, no location permission requested. Flatter
+   than .wander-tile / .species-card on purpose — this is a
+   prototype of the free/self-select tier, not the curated pool.
+────────────────────────────────────────────────────────────────── */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%; max-width: 560px;
+}
+.weather-tile {
+  all: unset;
+  border: 1px solid var(--rule);
+  background: var(--bg-dark);
+  padding: 14px 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px; letter-spacing: 0.05em;
+  color: var(--ink-faint);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.weather-tile:hover {
+  background: var(--bg-deep);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+.weather-tile.is-current {
+  border-color: var(--accent);
+  background: var(--bg-deep);
+  color: var(--ink);
 }
 
 /* ── Turn the page ────────────────────────────────────────────── */
