@@ -115,6 +115,26 @@ function openWanderIfHashed() {
   }
 }
 
+function openSeasonsIfHashed() {
+  if (window.location.hash !== '#seasons-wander' || !seasonPane) return;
+  seasonPane.style.display = 'flex';
+  requestAnimationFrame(() => seasonPane.classList.add('open'));
+  if (typeof buildSeasonDial === 'function') buildSeasonDial();
+  if (typeof selectSeason === 'function') selectSeason(typeof getSeason === 'function' ? getSeason() : 'spring');
+  history.replaceState(null, '', window.location.pathname);
+}
+
+function openWeatherIfHashed() {
+  if (window.location.hash !== '#weather' || !weatherPane) return;
+  weatherPane.style.display = 'flex';
+  requestAnimationFrame(() => weatherPane.classList.add('open'));
+  if (typeof buildWeatherGrid === 'function') buildWeatherGrid();
+  history.replaceState(null, '', window.location.pathname);
+}
+
+openSeasonsIfHashed();
+openWeatherIfHashed();
+
 const installBtn     = document.getElementById('install-btn');
 const installTip     = document.getElementById('install-tip');
 const installDivider = document.getElementById('install-divider');

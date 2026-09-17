@@ -176,10 +176,8 @@
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
     <div class="nav-hours-menu" id="nav-seasons-menu">
-      <button class="wander-btn" data-season="spring">Spring</button>
-      <button class="wander-btn" data-season="summer">Summer</button>
-      <button class="wander-btn" data-season="autumn">Autumn</button>
-      <button class="wander-btn" data-season="winter">Winter</button>
+      <a href="seasons.html">The Current Season</a>
+      <button class="wander-btn" id="seasons-wander-open">Wander the Seasons</button>
     </div>
   </div>
 
@@ -187,7 +185,8 @@
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
     <div class="nav-hours-menu" id="nav-weather-menu">
-      <button class="wander-btn" id="weather-open">Choose a Condition</button>
+      <button class="wander-btn weather-current-option" id="weather-current-open" type="button">The Current Weather</button>
+      <button class="wander-btn" id="weather-open" type="button">Wander the Weather</button>
     </div>
   </div>
 
@@ -242,7 +241,7 @@
     <svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg>
   </div>
 
-  <div class="species-grid" id="species-grid"></div>
+  <div class="species-grid species-season-groups" id="species-grid"></div>
 </div>
 
 <!-- ═══════════════════════════════════════════════
@@ -252,7 +251,7 @@
   <button class="wander-close" id="weather-close" aria-label="Close">✦ &nbsp;Close</button>
 
   <p class="wander-heading">The Weather</p>
-  <p class="wander-subheading">Choose the condition outside your window</p>
+  <p class="wander-subheading" id="weather-subheading">Choose the condition outside your window</p>
 
   <div class="weather-grid" id="weather-grid"></div>
 </div>
@@ -261,6 +260,8 @@
 <!-- ═══════════════════════════════════════════════
      SCRIPT
 ════════════════════════════════════════════════ -->
+<script src="atmosphere.js"></script>
+<script src="seasonal-data.js"></script>
 <script>
 const HOUR_NAMES = {
   spring: [
@@ -380,6 +381,13 @@ function pickExcluding(arr, excludeFn) {
   return source[Math.floor(Math.random() * source.length)];
 }
 
+function pickWeatherAware(items, excludeFn) {
+  const weather = window.siteAtmosphere && window.siteAtmosphere.weather;
+  if (!weather) return pickExcluding(items, excludeFn);
+  const tagged = items.filter(item => Array.isArray(item.weather) && item.weather.includes(weather));
+  return pickExcluding(tagged.length ? tagged : items, excludeFn);
+}
+
 let lastQuoteText = null;
 let lastImageSrc  = null;
 
@@ -465,8 +473,8 @@ function render(blocksData, force) {
     });
     if (block.cssClass) document.body.classList.add(block.cssClass);
 
-    const q   = pickExcluding(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
-    const img = pickExcluding(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+    const q   = pickWeatherAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
+    const img = pickWeatherAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
     lastQuoteText = q.text;
     lastImageSrc  = img.src;
 
@@ -799,8 +807,8 @@ function renderAtHour(blocksData, overrideHour, useRealTime = false) {
     });
     if (block.cssClass) document.body.classList.add(block.cssClass);
 
-    const q   = pickExcluding(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
-    const img = pickExcluding(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+    const q   = pickWeatherAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
+    const img = pickWeatherAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
     lastQuoteText = q.text;
     lastImageSrc  = img.src;
 
@@ -857,27 +865,20 @@ keepPageBtn.addEventListener('click', () => {
    the same way hours-data.json feeds Wander the Hours.
 ══════════════════════════════════════════════════════════════ */
 
-const SEASON_SPECIES = {
-  spring: [
-    { common: 'Pink lady\u2019s slipper', latin: 'Cypripedium acaule' },
-    { common: 'Common lilac',             latin: 'Syringa vulgaris' },
-    { common: 'Ostrich fern',             latin: 'Matteuccia struthiopteris' }
-  ],
-  summer: [
-    { common: 'Butterfly weed',   latin: 'Asclepias tuberosa' },
-    { common: 'Common reed',      latin: 'Phragmites australis' },
-    { common: 'Sheet moss',       latin: 'Hypnum imponens' }
-  ],
-  autumn: [
-    { common: 'Sugar maple',      latin: 'Acer saccharum' },
-    { common: 'Paper birch',      latin: 'Betula papyrifera' },
-    { common: 'Corn',             latin: 'Zea mays' }
-  ],
-  winter: [
-    { common: 'Witch hazel',      latin: 'Hamamelis virginiana' },
-    { common: 'Red currant',      latin: 'Ribes rubrum' }
-  ]
-};
+const SEASON_SPECIES = Object.fromEntries(
+  SEASON_KEYS.map(key => [key, SEASONAL_DATA[key].species.map(([common, latin]) => ({ common, latin }))])
+);
+let lectioDataPromise = null;
+
+function loadLectioData() {
+  if (!lectioDataPromise) {
+    lectioDataPromise = fetch('lectio-data.json').then(response => {
+      if (!response.ok) throw new Error(`Unable to load Lectio Terra posts (${response.status}).`);
+      return response.json();
+    });
+  }
+  return lectioDataPromise;
+}
 
 const SEASON_LABELS = { spring: 'Spring', summer: 'Summer', autumn: 'Autumn', winter: 'Winter' };
 
@@ -970,18 +971,51 @@ function setSeasonDialActive(seasonKey) {
   });
 }
 
-function buildSpeciesGrid(seasonKey) {
+async function buildSpeciesGrid(seasonKey) {
   const grid = document.getElementById('species-grid');
   grid.innerHTML = '';
-  const entries = SEASON_SPECIES[seasonKey] || [];
-  entries.forEach(sp => {
-    const card = document.createElement('div');
-    card.className = 'species-card';
-    card.innerHTML = `
-      <span class="species-common">${sp.common}</span>
-      <span class="species-latin">${sp.latin}</span>
-    `;
-    grid.appendChild(card);
+  let importedSeasons = null;
+  try {
+    const data = await loadLectioData();
+    importedSeasons = data.seasons;
+  } catch (error) {
+    console.error(error);
+  }
+
+  SEASON_KEYS.forEach(key => {
+    const group = document.createElement('section');
+    group.className = 'species-season-section';
+    group.dataset.season = key;
+
+    const heading = document.createElement('h3');
+    heading.className = 'species-season-heading';
+    heading.textContent = SEASON_LABELS[key];
+    group.appendChild(heading);
+
+    const entryGrid = document.createElement('div');
+    entryGrid.className = 'species-season-grid';
+    const entries = importedSeasons && importedSeasons[key]
+      ? importedSeasons[key]
+      : SEASON_SPECIES[key].map(species => ({
+          id: species.common.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+          title: species.common,
+          subtitle: species.latin
+        }));
+    entries.forEach(entry => {
+      const card = document.createElement('a');
+      card.className = 'species-card';
+      card.href = `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
+      const common = document.createElement('span');
+      common.className = 'species-common';
+      common.textContent = entry.title;
+      const detail = document.createElement('span');
+      detail.className = 'species-latin';
+      detail.textContent = entry.subtitle || entry.published || '';
+      card.append(common, detail);
+      entryGrid.appendChild(card);
+    });
+    group.appendChild(entryGrid);
+    grid.appendChild(group);
   });
 }
 
@@ -1003,9 +1037,7 @@ function openSeasonPane(seasonKey) {
   selectSeason(seasonKey || getSeason());
 }
 
-document.querySelectorAll('#nav-seasons-menu [data-season]').forEach(btn => {
-  btn.addEventListener('click', () => openSeasonPane(btn.dataset.season));
-});
+document.getElementById('seasons-wander-open').addEventListener('click', () => openSeasonPane(getSeason()));
 
 /* ══════════════════════════════════════════════════════════════
    THE WEATHER
@@ -1015,7 +1047,8 @@ document.querySelectorAll('#nav-seasons-menu [data-season]').forEach(btn => {
 ══════════════════════════════════════════════════════════════ */
 
 const WEATHER_CONDITIONS = [
-  'Clear', 'Overcast', 'Rain', 'Snow', 'Fog', 'Wind', 'First frost', 'Heat'
+  'Clear', 'Overcast', 'Drizzle', 'Rain', 'Snow', 'Snow on ground',
+  'Fog', 'Wind', 'Thunderstorm', 'Freezing rain', 'Heat'
 ];
 
 function buildWeatherGrid() {
@@ -1029,20 +1062,75 @@ function buildWeatherGrid() {
     tile.addEventListener('click', () => {
       document.querySelectorAll('.weather-tile').forEach(t => t.classList.remove('is-current'));
       tile.classList.add('is-current');
-      // Prototype only — no data wired up yet.
+        if (typeof setWeatherCondition === 'function') setWeatherCondition(cond);
     });
+      if (window.siteAtmosphere && window.siteAtmosphere.weather === cond.toLowerCase().replace(/\s+/g, '-')) {
+        tile.classList.add('is-current');
+      }
     grid.appendChild(tile);
   });
 }
 
+function openWeatherPane() {
+  const pane = document.getElementById('weather-pane');
+  pane.style.display = 'flex';
+  requestAnimationFrame(() => pane.classList.add('open'));
+  buildWeatherGrid();
+}
+
 const weatherOpenBtn = document.getElementById('weather-open');
-if (weatherOpenBtn) {
-  weatherOpenBtn.addEventListener('click', () => {
-    const pane = document.getElementById('weather-pane');
-    pane.style.display = 'flex';
-    requestAnimationFrame(() => pane.classList.add('open'));
-    buildWeatherGrid();
+if (weatherOpenBtn) weatherOpenBtn.addEventListener('click', openWeatherPane);
+
+const weatherCurrentBtn = document.getElementById('weather-current-open');
+if (weatherCurrentBtn) {
+  weatherCurrentBtn.addEventListener('click', () => {
+    if (!navigator.geolocation) {
+      document.getElementById('weather-subheading').textContent = 'Location is unavailable; choose a condition instead.';
+      openWeatherPane();
+      return;
+    }
+
+    weatherCurrentBtn.disabled = true;
+    weatherCurrentBtn.textContent = 'Locating...';
+    navigator.geolocation.getCurrentPosition(async position => {
+      try {
+        const { latitude, longitude } = position.coords;
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code,wind_speed_10m,snow_depth&temperature_unit=fahrenheit&wind_speed_unit=mph`;
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Weather request failed (${response.status}).`);
+        const data = await response.json();
+        const condition = normalizeOpenMeteoWeather(data.current.weather_code, data.current.temperature_2m, data.current.wind_speed_10m, data.current.snow_depth);
+        setWeatherCondition(condition);
+        openWeatherPane();
+      } catch (error) {
+        console.error(error);
+        document.getElementById('weather-subheading').textContent = 'The current weather could not be found; choose a condition instead.';
+        openWeatherPane();
+      } finally {
+        weatherCurrentBtn.disabled = false;
+        weatherCurrentBtn.textContent = 'The Current Weather';
+      }
+    }, () => {
+      document.getElementById('weather-subheading').textContent = 'Location was not shared; choose a condition instead.';
+      weatherCurrentBtn.disabled = false;
+      weatherCurrentBtn.textContent = 'The Current Weather';
+      openWeatherPane();
+    }, { timeout: 10000, maximumAge: 300000 });
   });
+}
+
+function normalizeOpenMeteoWeather(code, temperature, windSpeed, snowDepth) {
+  if (snowDepth > 0) return 'snow-on-ground';
+  if ([71, 73, 75, 77, 85, 86].includes(code)) return 'snow';
+  if ([45, 48].includes(code)) return 'fog';
+  if ([51, 53, 55].includes(code)) return 'drizzle';
+  if ([56, 57, 66, 67].includes(code)) return 'freezing-rain';
+  if ([95, 96, 99].includes(code)) return 'thunderstorm';
+  if ([61, 63, 65, 80, 81, 82].includes(code)) return 'rain';
+  if (temperature >= 90) return 'heat';
+  if (windSpeed >= 20) return 'wind';
+  if (code === 3) return 'overcast';
+  return 'clear';
 }
 </script>
 
