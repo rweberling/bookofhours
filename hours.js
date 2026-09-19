@@ -104,17 +104,8 @@ const SEASON_EMBLEMS = {
            </g>`
 };
   
-function pick(arr) {
-  if (!arr || arr.length === 0) return null;
-  return arr[Math.floor(Math.random() * arr.length)];
-}
-
-function pickExcluding(arr, excludeFn) {
-  if (!arr || arr.length === 0) return null;
-  const pool = arr.filter(item => !excludeFn(item));
-  const source = pool.length > 0 ? pool : arr;
-  return source[Math.floor(Math.random() * source.length)];
-}
+// pick() / pickExcluding() now live in seasonal-data.js, loaded before
+// this file — shared with seasons.js instead of duplicated here.
 
 function pickWeatherAware(items, excludeFn) {
   const weather = window.siteAtmosphere && window.siteAtmosphere.weather;

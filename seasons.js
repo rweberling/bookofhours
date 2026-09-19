@@ -4,10 +4,10 @@ const seasonKey = ['spring', 'summer', 'autumn', 'winter'].includes(requestedSea
   ? requestedSeason
   : currentSeason();
 let season;
-let readingIndex = 0;
+let currentEntryId = null;
 
-function renderSeasonReading() {
-  const entry = season.entries[readingIndex];
+function renderSeasonReading(entry) {
+  currentEntryId = entry.id;
   document.title = `${entry.title} — The Current Season`;
   document.getElementById('season-reading-subtitle').textContent = entry.subtitle || season.subtitle;
   document.getElementById('season-reading-label').textContent = season.label;
@@ -34,13 +34,13 @@ async function initialiseSeason() {
       subtitle: 'Species drawn from Lectio Terra, this season',
       entries
     };
-    const requestedIndex = entries.findIndex(entry => entry.id === requestedEntry);
-    if (requestedIndex >= 0) readingIndex = requestedIndex;
+    const requestedMatch = entries.find(entry => entry.id === requestedEntry);
+    const startingEntry = requestedMatch || pick(entries);
     document.getElementById('season-turn-page').addEventListener('click', () => {
-      readingIndex = (readingIndex + 1) % season.entries.length;
-      renderSeasonReading();
+      const next = pickExcluding(season.entries, entry => entry.id === currentEntryId);
+      renderSeasonReading(next);
     });
-    renderSeasonReading();
+    renderSeasonReading(startingEntry);
   } catch (error) {
     document.getElementById('season-reading-body').innerHTML = '<p>The seasonal reading could not be opened. Please return soon.</p>';
     console.error(error);
