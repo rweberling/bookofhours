@@ -392,11 +392,12 @@ let lastQuoteText = null;
 let lastImageSrc  = null;
 
 function getSeason() {
-  const m = new Date().getMonth();
-  if (m >= 2 && m <= 4) return 'spring';
-  if (m >= 5 && m <= 7) return 'summer';
-  if (m >= 8 && m <= 10) return 'autumn';
-  return 'winter';
+// The actual month-range logic lives in one place now: currentSeason()
+// in seasonal-data.js (loaded before this script). This wrapper exists
+// so every existing getSeason() call site in this file — and the
+// getSeason(now) call below, which, like the original, ignores its
+// argument — keeps working unchanged.
+return currentSeason();
 }
 
 function stripHTML(str) {
