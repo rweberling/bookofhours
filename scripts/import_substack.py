@@ -43,6 +43,9 @@ def parse_args():
     parser.add_argument('--images', type=Path, default=Path('images/lectio-terra'))
     parser.add_argument('--template', action='store_true', help='Print an assignment template instead of writing data')
     parser.add_argument('--write', action='store_true', help='Write the generated JSON and downloaded images')
+    parser.add_argument('--refresh', nargs='*', default=[], metavar='SLUG',
+                         help='Re-import these already-imported posts from the export instead of leaving them untouched '
+                              '(discards any hand edits made to that entry in the existing output file)')
     return parser.parse_args()
 
 
@@ -187,6 +190,27 @@ def load_assignments(path):
         return json.load(source)
 
 
+def load_existing(path):
+    """Load a previously written output file, if one exists, keyed by slug.
+
+    Only entries already sorted into a real season count as "already
+    imported" — those are the ones this script will leave untouched from
+    now on, hand edits (species/latin/contributors, title corrections,
+    whatever) included. Rows in the old 'unassigned' list are lightweight
+    stubs with no real content, so they're always re-evaluated fresh
+    against the current season-assignments.json rather than preserved.
+    """
+    if not path.exists():
+        return {}
+    with path.open(encoding='utf-8') as source:
+        data = json.load(source)
+    existing_by_slug = {}
+    for season in SEASONS:
+        for entry in data.get('seasons', {}).get(season, []):
+            existing_by_slug[entry['id']] = (season, entry)
+    return existing_by_slug
+
+
 def parse_date(value):
     if not value:
         return ''
@@ -220,24 +244,45 @@ def main():
     args = parse_args()
     posts = read_posts(args.export)
     assignments = load_assignments(args.assignments)
+    existing_by_slug = load_existing(args.output)
+    refresh = set(args.refresh)
 
     if args.template:
         for row, path in posts:
             slug = slug_for(path)
-            if slug not in assignments:
+            if slug not in assignments and slug not in existing_by_slug:
                 print(f'  "{slug}": ""')
         return
 
+    # Start from whatever's already on disk, in its original order, so
+    # anything hand-edited into an existing entry (species/latin/
+    # contributors, a corrected title, whatever) survives this run
+    # untouched — unless its slug was explicitly passed to --refresh.
     grouped = {season: [] for season in SEASONS}
+    for season, entry in existing_by_slug.values():
+        if entry['id'] not in refresh:
+            grouped[season].append(entry)
+
     unassigned = []
+    new_count = 0
+    skipped_count = 0
     for row, path in posts:
         slug = slug_for(path)
+        if slug in existing_by_slug and slug not in refresh:
+            skipped_count += 1
+            continue
+
         season = assignments.get(slug, '')
         if season not in SEASONS:
             unassigned.append({'id': slug, 'title': row.get('title', ''), 'published': parse_date(row.get('post_date', ''))})
             continue
-        print(f'Importing {slug} [{season}]')
+
+        verb = 'Refreshing' if slug in existing_by_slug else 'Importing'
+        print(f'{verb} {slug} [{season}]')
         grouped[season].append(build_entry(row, path, season, args.images, args.write))
+        new_count += 1
+
+    print(f'{new_count} new/refreshed post(s), {skipped_count} left untouched.')
 
     result = {
         'generatedBy': 'scripts/import_substack.py',
