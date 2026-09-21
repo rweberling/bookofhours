@@ -808,7 +808,8 @@ let blocksRef = null;
 ttpBtn.addEventListener('click', () => {
   if (!blocksRef) return;
   currentBlockName = null;
-  renderAtHour(blocksRef, new Date().getHours(), true);
+  const hour = isWandering ? displayedHour : new Date().getHours();
+  renderAtHour(blocksRef, hour, !isWandering);
 });
 
 /* ── Keep this page ───────────────────────────────────────────── */
