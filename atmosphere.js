@@ -13,13 +13,16 @@
  ];
  const SEASONS = ['spring', 'summer', 'autumn', 'winter'];
  const WEATHER_KEY = 'earthly-hours-weather';
- const WEATHER = ['clear', 'overcast', 'drizzle', 'rain', 'snow', 'snow-on-ground', 'fog', 'wind', 'thunderstorm', 'freezing-rain', 'heat'];
+ const WEATHER = ['clear', 'partly-cloudy', 'overcast', 'drizzle', 'rain', 'snow', 'snow-on-ground', 'fog', 'wind', 'thunderstorm', 'freezing-rain', 'heat', 'cold'];
 
  // How long a chosen/detected condition stays in effect before the site
  // quietly falls back to ambient (ordinary ticking clock/season, no
  // weather class). 3 hours, not 1 — real weather doesn't usually flip
  // inside an hour, and reverting too eagerly would undo someone's
  // choice mid-visit. Adjust this one line if that balance feels off.
+ // Multiple conditions can be active at once (e.g. cold + snow), each
+ // with its own setAt, so toggling one on doesn't reset the clock on
+ // conditions already active.
  const WEATHER_TTL_MS = 3 * 60 * 60 * 1000;
 
  function timeKey(date) {
@@ -35,30 +38,41 @@
  return 'winter';
  }
 
- function storedWeather() {
+ function readEntries() {
  try {
  const raw = window.localStorage.getItem(WEATHER_KEY);
- if (!raw) return null;
-
+ if (!raw) return [];
  const parsed = JSON.parse(raw);
- const value = parsed && parsed.value;
- const setAt = parsed && parsed.setAt;
-
- if (!WEATHER.includes(value) || typeof setAt !== 'number') {
- window.localStorage.removeItem(WEATHER_KEY);
- return null;
- }
- if (Date.now() - setAt > WEATHER_TTL_MS) {
- window.localStorage.removeItem(WEATHER_KEY);
- return null;
- }
- return value;
+ const entries = parsed && parsed.entries;
+ if (!Array.isArray(entries)) throw new Error('not a multi-condition record');
+ return entries.filter(e => e && WEATHER.includes(e.value) && typeof e.setAt === 'number');
  } catch (error) {
- // Covers a leftover value from before this TTL existed (a plain
- // string, not JSON) as well as any other parse failure.
+ // Covers a leftover single-condition record from before conditions
+ // could stack (a bare {value, setAt}, not {entries}) as well as any
+ // other parse failure.
  try { window.localStorage.removeItem(WEATHER_KEY); } catch (_) {}
- return null;
+ return [];
  }
+ }
+
+ function writeEntries(entries) {
+ try {
+ if (entries.length) {
+ window.localStorage.setItem(WEATHER_KEY, JSON.stringify({ entries }));
+ } else {
+ window.localStorage.removeItem(WEATHER_KEY);
+ }
+ } catch (error) {
+ // The visual state still applies when storage is unavailable.
+ }
+ }
+
+ function storedWeather() {
+ const now = Date.now();
+ const entries = readEntries();
+ const active = entries.filter(e => now - e.setAt <= WEATHER_TTL_MS);
+ if (active.length !== entries.length) writeEntries(active);
+ return active.map(e => e.value);
  }
 
  function applyAtmosphere(date = new Date()) {
@@ -74,7 +88,7 @@
  const currentWeather = storedWeather();
 
  body.classList.add(`block-${currentTime}`, `season-${currentSeason}`);
- if (currentWeather) body.classList.add(`weather-${currentWeather}`);
+ currentWeather.forEach(w => body.classList.add(`weather-${w}`));
 
  window.siteAtmosphere = {
  time: currentTime,
@@ -83,24 +97,36 @@
  };
  }
 
- window.setWeatherCondition = function (condition) {
+ // For the self-select picker: flips one condition on or off, leaving
+ // whatever else is already active untouched. Contradictory combinations
+ // (e.g. Heat + Cold) are allowed on purpose — see setWeatherConditions
+ // for the same call on detected results, which replaces wholesale instead.
+ window.toggleWeatherCondition = function (condition) {
  const value = String(condition || '').toLowerCase().replace(/\s+/g, '-');
  if (!WEATHER.includes(value)) return;
- try {
- window.localStorage.setItem(WEATHER_KEY, JSON.stringify({ value, setAt: Date.now() }));
- } catch (error) {
- // The visual state still applies when storage is unavailable.
- }
+ const entries = readEntries();
+ const without = entries.filter(e => e.value !== value);
+ const wasActive = without.length !== entries.length;
+ writeEntries(wasActive ? without : [...without, { value, setAt: Date.now() }]);
+ applyAtmosphere();
+ window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
+ };
+
+ // For detection: replaces the active set wholesale with what Open-Meteo
+ // reported (sky condition + any independent temperature/wind/ground
+ // layers), rather than merging with whatever was manually toggled before.
+ window.setWeatherConditions = function (conditions) {
+ const setAt = Date.now();
+ const values = (conditions || [])
+ .map(c => String(c || '').toLowerCase().replace(/\s+/g, '-'))
+ .filter(v => WEATHER.includes(v));
+ writeEntries(values.map(value => ({ value, setAt })));
  applyAtmosphere();
  window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
  };
 
  window.clearWeatherCondition = function () {
- try {
- window.localStorage.removeItem(WEATHER_KEY);
- } catch (error) {
- // Ignore storage restrictions; the next page load will recalculate state.
- }
+ writeEntries([]);
  applyAtmosphere();
  window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
  };

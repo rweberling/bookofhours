@@ -235,6 +235,14 @@ body::before {
   font-size: 14px; font-weight: 300; letter-spacing: 0.18em;
   color: var(--ink-faint); transition: color 3s ease;
 }
+.weather-line {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px; font-weight: 300; letter-spacing: 0.1em; font-style: italic;
+  color: var(--accent2); text-align: center;
+  margin-top: -24px; margin-bottom: 34px;
+  transition: color 3s ease;
+}
+.weather-line .sep { color: var(--gold); margin: 0 8px; transition: color 3s ease; }
 
 /* ── Season reading page (seasons.html) ──────────────────────────
    .season-reading-meta now holds just the Latin name, solo and

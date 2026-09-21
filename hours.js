@@ -108,9 +108,9 @@ const SEASON_EMBLEMS = {
 // this file — shared with seasons.js instead of duplicated here.
 
 function pickWeatherAware(items, excludeFn) {
-  const weather = window.siteAtmosphere && window.siteAtmosphere.weather;
-  if (!weather) return pickExcluding(items, excludeFn);
-  const tagged = items.filter(item => Array.isArray(item.weather) && item.weather.includes(weather));
+  const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
+  if (!weather.length) return pickExcluding(items, excludeFn);
+  const tagged = items.filter(item => Array.isArray(item.weather) && item.weather.some(w => weather.includes(w)));
   return pickExcluding(tagged.length ? tagged : items, excludeFn);
 }
 
@@ -186,6 +186,7 @@ function render(blocksData, force) {
   document.getElementById('clock-time').textContent    = formatTime(now);
   document.getElementById('colophon-date').textContent = formatDate(now);
   document.getElementById('season-emblem').innerHTML   = SEASON_EMBLEMS[getSeason(now)];
+  renderWeatherLine();
 
   if (isWandering && !force) return; 
   
@@ -844,29 +845,50 @@ document.getElementById('seasons-wander-open').addEventListener('click', () => o
 ══════════════════════════════════════════════════════════════ */
 
 const WEATHER_CONDITIONS = [
-  'Clear', 'Overcast', 'Drizzle', 'Rain', 'Snow', 'Snow on ground',
-  'Fog', 'Wind', 'Thunderstorm', 'Freezing rain', 'Heat'
+  'Clear', 'Partly cloudy', 'Overcast', 'Drizzle', 'Rain', 'Snow', 'Snow on ground',
+  'Fog', 'Wind', 'Thunderstorm', 'Freezing rain', 'Heat', 'Cold'
 ];
+const WEATHER_LABELS = Object.fromEntries(
+  WEATHER_CONDITIONS.map(cond => [cond.toLowerCase().replace(/\s+/g, '-'), cond])
+);
+
+// Tiles toggle independently now (multiple conditions can be active at
+// once, e.g. Cold + Snow); this just re-syncs their is-current state from
+// whatever atmosphere.js currently has stored.
+function syncWeatherTiles() {
+  const active = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
+  document.querySelectorAll('.weather-tile').forEach(tile => {
+    tile.classList.toggle('is-current', active.includes(tile.dataset.value));
+  });
+}
 
 function buildWeatherGrid() {
   const grid = document.getElementById('weather-grid');
-  if (grid.children.length) return;
+  if (grid.children.length) { syncWeatherTiles(); return; }
   WEATHER_CONDITIONS.forEach(cond => {
+    const value = cond.toLowerCase().replace(/\s+/g, '-');
     const tile = document.createElement('button');
     tile.type = 'button';
     tile.className = 'weather-tile';
     tile.textContent = cond;
+    tile.dataset.value = value;
     tile.addEventListener('click', () => {
-      document.querySelectorAll('.weather-tile').forEach(t => t.classList.remove('is-current'));
-      tile.classList.add('is-current');
-        if (typeof setWeatherCondition === 'function') setWeatherCondition(cond);
+      if (typeof toggleWeatherCondition === 'function') toggleWeatherCondition(cond);
+      syncWeatherTiles();
     });
-      if (window.siteAtmosphere && window.siteAtmosphere.weather === cond.toLowerCase().replace(/\s+/g, '-')) {
-        tile.classList.add('is-current');
-      }
     grid.appendChild(tile);
   });
+  syncWeatherTiles();
 }
+
+function renderWeatherLine() {
+  const el = document.getElementById('weather-line');
+  if (!el) return;
+  const active = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
+  el.innerHTML = phenomenaHTML(active.map(value => WEATHER_LABELS[value] || value));
+  el.hidden = !active.length;
+}
+window.addEventListener('atmospherechange', renderWeatherLine);
 
 function openWeatherPane() {
   openGatedPane(document.getElementById('weather-pane'), {
@@ -895,8 +917,8 @@ if (weatherCurrentBtn) {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`Weather request failed (${response.status}).`);
         const data = await response.json();
-        const condition = normalizeOpenMeteoWeather(data.current.weather_code, data.current.temperature_2m, data.current.wind_speed_10m, data.current.snow_depth);
-        setWeatherCondition(condition);
+        const conditions = normalizeOpenMeteoWeather(data.current.weather_code, data.current.temperature_2m, data.current.wind_speed_10m, data.current.snow_depth);
+        setWeatherConditions(conditions);
         openWeatherPane();
       } catch (error) {
         console.error(error);
@@ -915,16 +937,28 @@ if (weatherCurrentBtn) {
   });
 }
 
+// Returns every condition that independently applies at once, rather
+// than picking a single "best" one — sky/precipitation is one mutually
+// exclusive layer, ground cover / temperature / wind are separate layers
+// that can stack on top (so a real report can come back as e.g.
+// ['snow', 'cold'] or ['thunderstorm', 'heat']).
 function normalizeOpenMeteoWeather(code, temperature, windSpeed, snowDepth) {
-  if (snowDepth > 0) return 'snow-on-ground';
-  if ([71, 73, 75, 77, 85, 86].includes(code)) return 'snow';
-  if ([45, 48].includes(code)) return 'fog';
-  if ([51, 53, 55].includes(code)) return 'drizzle';
-  if ([56, 57, 66, 67].includes(code)) return 'freezing-rain';
-  if ([95, 96, 99].includes(code)) return 'thunderstorm';
-  if ([61, 63, 65, 80, 81, 82].includes(code)) return 'rain';
-  if (temperature >= 90) return 'heat';
-  if (windSpeed >= 20) return 'wind';
-  if (code === 3) return 'overcast';
-  return 'clear';
+  const conditions = [];
+
+  if ([71, 73, 75, 77, 85, 86].includes(code)) conditions.push('snow');
+  else if ([45, 48].includes(code)) conditions.push('fog');
+  else if ([56, 57, 66, 67].includes(code)) conditions.push('freezing-rain');
+  else if ([95, 96, 99].includes(code)) conditions.push('thunderstorm');
+  else if ([61, 63, 65, 80, 81, 82].includes(code)) conditions.push('rain');
+  else if ([51, 53, 55].includes(code)) conditions.push('drizzle');
+  else if (code === 3) conditions.push('overcast');
+  else if (code === 1 || code === 2) conditions.push('partly-cloudy');
+  else conditions.push('clear');
+
+  if (snowDepth > 0) conditions.push('snow-on-ground');
+  if (temperature >= 90) conditions.push('heat');
+  else if (temperature <= 32) conditions.push('cold');
+  if (windSpeed >= 20) conditions.push('wind');
+
+  return conditions;
 }
