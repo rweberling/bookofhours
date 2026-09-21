@@ -73,39 +73,6 @@ body.block-denouement {
   --rule:rgba(180,160,220,0.30);
 }
 
-/* ── Shared season and weather modifiers ─────────────────────── */
-body.season-spring { --season-accent: #6d8060; --season-gold: #aa8a38; }
-body.season-summer { --season-accent: #2d705b; --season-gold: #c18d27; }
-body.season-autumn { --season-accent: #9b4d2c; --season-gold: #a97923; }
-body.season-winter { --season-accent: #557080; --season-gold: #9d9b83; }
-
-body.season-spring,
-body.season-summer,
-body.season-autumn,
-body.season-winter {
-  --accent2: var(--season-accent);
-  --gold: var(--season-gold);
-}
-
-body.weather-overcast { --weather-overlay: rgba(72, 77, 82, 0.05); }
-body.weather-rain { --weather-overlay: rgba(30, 55, 72, 0.09); }
-body.weather-snow { --weather-overlay: rgba(185, 205, 218, 0.12); }
-body.weather-fog { --weather-overlay: rgba(190, 188, 177, 0.14); }
-body.weather-wind { --weather-overlay: rgba(150, 126, 91, 0.04); }
-body.weather-first-frost { --weather-overlay: rgba(128, 166, 185, 0.08); }
-body.weather-heat { --weather-overlay: rgba(184, 83, 35, 0.07); }
-body.weather-drizzle { --weather-overlay: rgba(70, 93, 106, 0.06); }
-body.weather-snow-on-ground { --weather-overlay: rgba(168, 190, 207, 0.09); }
-body.weather-thunderstorm { --weather-overlay: rgba(37, 39, 59, 0.13); }
-body.weather-freezing-rain { --weather-overlay: rgba(100, 145, 170, 0.11); }
-body::after {
-  content: '';
-  position: fixed; inset: 0;
-  background: var(--weather-overlay, transparent);
-  pointer-events: none; z-index: 0;
-  transition: background 3s ease;
-}
-
 /* ── Base ─────────────────────────────────────────────────────── */
 html { height: 100%; }
 body {
@@ -267,6 +234,90 @@ body::before {
   font-family: 'Cormorant Garamond', serif;
   font-size: 14px; font-weight: 300; letter-spacing: 0.18em;
   color: var(--ink-faint); transition: color 3s ease;
+}
+
+/* ── Season reading page (seasons.html) ──────────────────────────
+   .season-reading-meta now holds just the Latin name, solo and
+   centered beneath the species title. (The season + month-range now
+   lives in #season-reading-subtitle, above the title.)
+────────────────────────────────────────────────────────────────── */
+.season-reading-meta {
+  display: flex; align-items: baseline; justify-content: center;
+  margin-bottom: 30px;
+}
+.season-reading-meta #season-reading-latin {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-style: italic; font-size: 15px;
+  color: var(--ink-faint); transition: color 3s ease;
+}
+.season-post-dek {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px; font-weight: 300; font-style: italic;
+  color: var(--ink-faint); letter-spacing: 0.05em;
+  text-align: center; margin-bottom: 30px;
+  transition: color 3s ease;
+}
+
+/* ── Season reading body (imported post HTML) ────────────────────
+   #season-reading-body renders raw bodyHtml from the Substack
+   import, so it needs to style whatever the importer's ALLOWED_TAGS
+   let through: p, a, em, strong, u, img, figure/figcaption,
+   blockquote, h2-h4, hr. (ul/ol/li are already handled by the site-
+   wide .page ul/.page ol/.page li rules further down.)
+────────────────────────────────────────────────────────────────── */
+#season-reading-body {
+  width: 100%; max-width: 640px; margin: 0 auto;
+}
+#season-reading-body p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px; font-weight: 300; line-height: 1.85;
+  color: var(--ink-light);
+  margin-bottom: 20px;
+}
+#season-reading-body p:last-child { margin-bottom: 0; }
+#season-reading-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+#season-reading-body a:hover { opacity: 1; }
+#season-reading-body em { font-style: italic; }
+#season-reading-body strong { font-weight: 500; }
+#season-reading-body u { text-decoration: underline; }
+#season-reading-body img {
+  display: block;
+  max-width: 100%; height: auto;
+  margin: 26px auto; border-radius: 4px;
+}
+#season-reading-body figure { margin: 26px 0; }
+#season-reading-body figcaption {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px; font-style: italic;
+  color: var(--ink-faint); text-align: center;
+  margin-top: 8px;
+}
+#season-reading-body blockquote {
+  margin: 24px 0; padding-left: 20px;
+  border-left: 2px solid var(--rule);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic; color: var(--ink-faint);
+}
+#season-reading-body h2,
+#season-reading-body h3,
+#season-reading-body h4 {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 400; color: var(--ink);
+  letter-spacing: 0.03em;
+  margin: 32px 0 14px;
+}
+#season-reading-body h2 { font-size: 20px; }
+#season-reading-body h3 { font-size: 17px; }
+#season-reading-body h4 { font-size: 15px; }
+#season-reading-body hr {
+  border: none; border-top: 0.5px solid var(--rule);
+  margin: 32px 0;
 }
 
 /* ── Image frame ──────────────────────────────────────────────── */
@@ -631,10 +682,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 .nav-hours-menu a:hover,
 .nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
-.weather-current-option:disabled {
-  cursor: not-allowed;
-  opacity: 0.35;
-}
 
 
 /* ── Responsive ───────────────────────────────────────────────── */
@@ -722,12 +769,8 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .tile-subtitle { font-size: 12px; }
 
   .season-dial-wrap { width: 190px; height: 190px; }
-  .species-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
-  .species-season-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .species-season-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
   .weather-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
-  .season-reading-meta { font-size: 11px; letter-spacing: 0.1em; }
-  .season-post-dek { font-size: 16px; }
-  .season-post p:not(.season-post-dek) { font-size: 15px; }
 }
 
 /* ── Print / Keepsake styles ─────────────────────────────────── */
@@ -975,32 +1018,64 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
    species entries, not quotes/images) without needing a label.
 ────────────────────────────────────────────────────────────────── */
 .species-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  /* The outer wrapper around all four season sections — stacks
+     them vertically. The per-season card grid is .species-season-grid
+     below; this container just holds one section after another. */
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
   width: 100%; max-width: 640px;
 }
+.species-season-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.species-season-heading {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.species-season-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+}
 .species-card {
+  /* .species-card is the only tile of the three (Hours/Species/Weather)
+     actually built as an <a> — the others are div/button — so it's the
+     only one that inherits the browser's default link styling
+     (blue text-decoration color, underline) unless reset here. */
+  text-decoration: none;
+  color: inherit;
   border: 1px solid var(--rule);
   background: var(--bg-dark);
-  color: inherit;
-  text-decoration: none;
   border-radius: 6px;
   padding: 16px 14px;
   display: flex; flex-direction: column; gap: 3px;
   transition: background 0.2s ease, border-color 0.2s ease;
 }
+.species-card:visited {
+  color: inherit;
+}
 .species-card:hover {
   background: var(--bg-deep);
   border-color: var(--gold);
 }
-.species-card:focus-visible {
-  outline: 1px solid var(--accent);
-  outline-offset: 3px;
+.species-thumb {
+  /* Bleeds to the card's own edges by countering its padding, rather
+     than restructuring the card into an inner padded wrapper. */
+  width: calc(100% + 28px);
+  margin: -16px -14px 10px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+  display: block;
 }
 .species-common {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 14px; font-weight: 500;
+  font-size: 16.5px; font-weight: 600;
   color: var(--ink);
 }
 .species-latin {
@@ -1008,89 +1083,12 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   font-style: italic; font-size: 12.5px;
   color: var(--ink-faint);
 }
-
-.species-season-groups {
-  display: block;
-  max-width: 820px;
-}
-.species-season-section {
-  width: 100%;
-  margin-bottom: 34px;
-}
-.species-season-heading {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 13px; font-weight: 400; letter-spacing: 0.08em;
-  color: var(--ink); text-align: center;
-  margin-bottom: 12px; padding-bottom: 8px;
-  border-bottom: 1px solid var(--rule);
-}
-.species-season-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-.species-season-grid .species-card { min-height: 68px; }
-
-/* ── Current seasonal reading ────────────────────────────────── */
-.season-reading-meta {
-  display: flex; align-items: center; justify-content: center; gap: 12px;
-  color: var(--ink-faint); font-size: 13px; letter-spacing: 0.14em;
-  text-transform: uppercase; margin-bottom: 34px;
-}
-.season-reading-meta span:nth-child(2) { color: var(--gold); font-size: 8px; }
-.season-reading-meta em { font-family: 'IM Fell English', Georgia, serif; text-transform: none; letter-spacing: 0; }
-.season-post {
-  width: 100%; max-width: 600px; text-align: left;
-  margin-bottom: 28px;
-}
-.season-post-dek {
+.species-credit {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 18px; font-style: italic; line-height: 1.45;
-  color: var(--ink-light); margin-bottom: 24px;
+  font-size: 10.5px; font-weight: 400; letter-spacing: 0.04em;
+  color: var(--ink-faint); opacity: 0.75;
+  margin-top: 2px;
 }
-.season-post p:not(.season-post-dek) {
-  font-family: 'IM Fell English', Georgia, serif;
-  font-size: 17px; line-height: 1.72; color: var(--ink-light);
-}
-.season-post h2,
-.season-post h3,
-.season-post h4 {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 16px; font-weight: 400; line-height: 1.35;
-  color: var(--ink); margin: 30px 0 12px;
-}
-.season-post ul,
-.season-post ol {
-  margin: 16px 0 22px 24px;
-  color: var(--ink-light);
-}
-.season-post li {
-  padding-left: 6px; margin-bottom: 6px;
-  font-size: 16px; line-height: 1.55;
-}
-.season-post a {
-  color: var(--accent);
-  text-decoration: underline; text-underline-offset: 3px;
-}
-.season-post blockquote {
-  border-left: 1px solid var(--gold);
-  margin: 26px 0; padding: 4px 0 4px 22px;
-  color: var(--ink-light); font-style: italic;
-}
-.season-post figure {
-  margin: 30px 0;
-}
-.season-post img {
-  display: block; width: 100%; height: auto;
-  border: 1px solid var(--rule); background: var(--bg-dark);
-}
-.season-post figcaption {
-  margin-top: 8px; color: var(--ink-faint);
-  font-size: 12px; line-height: 1.45; text-align: center;
-}
-.season-post-observation { max-width: 600px; margin: 0 0 6px; }
-.season-post-observation .phenomena-list { text-align: left; }
-.season-turn { margin-top: 18px; }
 
 /* ── Weather condition tiles ─────────────────────────────────────
    Self-select list, no location permission requested. Flatter

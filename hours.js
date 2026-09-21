@@ -728,17 +728,62 @@ async function buildSpeciesGrid(seasonKey) {
           title: species.common,
           subtitle: species.latin
         }));
+    const isRealEntries = importedSeasons && importedSeasons[key];
     entries.forEach(entry => {
       const card = document.createElement('a');
       card.className = 'species-card';
       card.href = `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
+
+      // Hand-edited real posts carry their own species/latin/readings
+      // fields directly now — use those first. Anything not yet hand-edited
+      // (freshly pulled, or one of the still-unclassified phenomena entries)
+      // falls back to parsing the raw weekly title client-side. Fallback
+      // sample entries (SEASON_SPECIES) already have clean title/subtitle
+      // and no images. See seasonal-data.js for the durable-fix note.
+      let species, latin, readings;
+      if (isRealEntries && entry.species) {
+        species = entry.species;
+        latin = entry.latin || null;
+        readings = entry.readings || [];
+      } else if (isRealEntries) {
+        const parsed = parsePostTitle(entry.title);
+        species = parsed.species;
+        readings = parsed.readings;
+        latin = SPECIES_LATIN_LOOKUP.get(species.toLowerCase()) || null;
+      } else {
+        species = entry.title;
+        latin = entry.subtitle || null;
+        readings = [];
+      }
+
+      if (entry.images && entry.images[0]) {
+        const thumb = document.createElement('img');
+        thumb.className = 'species-thumb';
+        thumb.src = entry.images[0].src;
+        thumb.alt = entry.images[0].alt || species;
+        thumb.loading = 'lazy';
+        card.appendChild(thumb);
+      }
+
       const common = document.createElement('span');
       common.className = 'species-common';
-      common.textContent = entry.title;
-      const detail = document.createElement('span');
-      detail.className = 'species-latin';
-      detail.textContent = entry.subtitle || entry.published || '';
-      card.append(common, detail);
+      common.textContent = species;
+      card.appendChild(common);
+
+      if (latin) {
+        const latinEl = document.createElement('span');
+        latinEl.className = 'species-latin';
+        latinEl.textContent = latin;
+        card.appendChild(latinEl);
+      }
+
+      if (readings.length) {
+        const credit = document.createElement('span');
+        credit.className = 'species-credit';
+        credit.textContent = creditLine(readings);
+        card.appendChild(credit);
+      }
+
       entryGrid.appendChild(card);
     });
     group.appendChild(entryGrid);
