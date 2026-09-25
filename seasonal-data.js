@@ -64,6 +64,30 @@ function pickExcluding(arr, excludeFn) {
   return source[Math.floor(Math.random() * source.length)];
 }
 
+// Random pick where each item's odds are proportional to weightFn(item)
+// instead of flat — used to lean toward stronger matches (e.g. more
+// overlapping weather tags) without ever making a match the only
+// possible outcome. Falls back to a flat pick() if every weight is zero.
+function pickWeighted(arr, weightFn) {
+  if (!arr || arr.length === 0) return null;
+  const weights = arr.map(item => Math.max(0, weightFn(item) || 0));
+  const total = weights.reduce((sum, w) => sum + w, 0);
+  if (total <= 0) return pick(arr);
+  let roll = Math.random() * total;
+  for (let i = 0; i < arr.length; i++) {
+    roll -= weights[i];
+    if (roll <= 0) return arr[i];
+  }
+  return arr[arr.length - 1];
+}
+
+function pickWeightedExcluding(arr, weightFn, excludeFn) {
+  if (!arr || arr.length === 0) return null;
+  const pool = arr.filter(item => !excludeFn(item));
+  const source = pool.length > 0 ? pool : arr;
+  return pickWeighted(source, weightFn);
+}
+
 // --- Species-card / post-title rework -------------------------------------
 // STOPGAP: real lectio-data.json posts carry no separate species/latin/
 // readings fields — only a raw weekly title string, e.g.
