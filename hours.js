@@ -200,6 +200,7 @@ let blocks = null;
 // reset.
 const WANDER_HOLD_MS = 10 * 60 * 1000;
 let wanderHoldUntil = 0;
+let wanderHour = null; // which hour selectWanderBlock() picked — "turn the page" reads this during the hold so it re-rolls that hour's content instead of jumping to real time
 
 let lastRenderedSeason = null;
 
@@ -590,6 +591,7 @@ function renderAtHour(blocksData, overrideHour, useRealTime = false) {
 
 function selectWanderBlock(block, blocksData) {
   wanderHoldUntil = Date.now() + WANDER_HOLD_MS;
+  wanderHour = block.startHour;
   renderAtHour(blocksData, block.startHour);
   if (typeof closeOverlayPane === 'function') closeOverlayPane(document.getElementById('wander-pane'));
 }
@@ -600,7 +602,12 @@ let blocksRef = null;
 ttpBtn.addEventListener('click', () => {
   if (!blocksRef) return;
   currentBlockName = null;
-  renderAtHour(blocksRef, new Date().getHours(), true);
+  // Mid-wander-hold, re-roll content for the hour that was picked, not
+  // real time — otherwise "turn the page" while reading a wandered-to
+  // hour would yank you straight back to now.
+  const isWandering = Date.now() < wanderHoldUntil;
+  const hour = isWandering ? wanderHour : new Date().getHours();
+  renderAtHour(blocksRef, hour, !isWandering);
 });
 
 const keepPageBtn = document.getElementById('keep-page');
