@@ -40,8 +40,11 @@ const SEASON_MONTH_RANGES = {
   winter: 'December through February'
 };
 
-function currentSeason() {
-  const month = new Date().getMonth();
+// date defaults to "now", but takes an explicit Date too — atmosphere.js's
+// seasonKey() delegates here (when this file is loaded) rather than
+// keeping its own copy of the month-range thresholds.
+function currentSeason(date = new Date()) {
+  const month = date.getMonth();
   if (month >= 2 && month <= 4) return 'spring';
   if (month >= 5 && month <= 7) return 'summer';
   if (month >= 8 && month <= 10) return 'autumn';
@@ -142,3 +145,45 @@ SEASON_KEYS.forEach(key => {
     SPECIES_LATIN_LOOKUP.set(common.toLowerCase(), latin);
   });
 });
+
+// Shared by hours.js's species grid and seasons.js's reading page — same
+// species/latin/readings extraction, so a parsing-edge-case fix doesn't
+// have to be made twice (or, worse, made in only one of the two and left
+// to quietly disagree with the other for the same post).
+//
+// isRealEntry distinguishes a real fetched lectio-data.json entry from
+// hours.js's fallback-sample entries (SEASON_SPECIES, used only if the
+// fetch fails) — the fallback entries already carry a clean title/subtitle
+// and never need the raw-title parse. seasons.js only ever renders real
+// entries, so it always passes true.
+function resolveSpeciesFields(entry, isRealEntry) {
+  if (isRealEntry && entry.species) {
+    return { species: entry.species, latin: entry.latin || null, readings: entry.readings || [] };
+  }
+  if (isRealEntry) {
+    const parsed = parsePostTitle(entry.title);
+    return {
+      species: parsed.species,
+      readings: parsed.readings,
+      latin: SPECIES_LATIN_LOOKUP.get(parsed.species.toLowerCase()) || null
+    };
+  }
+  return { species: entry.title, latin: entry.subtitle || null, readings: [] };
+}
+
+// Shared by hours.js (species grid) and seasons.js (reading page) — one
+// fetch+error path instead of two copies that could drift (different
+// error copy, different caching, a future retry/timeout added to one and
+// not the other). Cached per page load: repeatedly opening the species
+// grid, or anything else that calls this again, reuses the same promise
+// instead of re-fetching.
+let lectioDataPromise = null;
+function loadLectioData() {
+  if (!lectioDataPromise) {
+    lectioDataPromise = fetch('lectio-data.json').then(response => {
+      if (!response.ok) throw new Error(`Unable to load Lectio Terra posts (${response.status}).`);
+      return response.json();
+    });
+  }
+  return lectioDataPromise;
+}

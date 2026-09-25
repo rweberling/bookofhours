@@ -15,6 +15,12 @@
  const WEATHER_KEY = 'earthly-hours-weather';
  const WEATHER = ['clear', 'partly-cloudy', 'overcast', 'drizzle', 'rain', 'snow', 'snow-on-ground', 'fog', 'wind', 'thunderstorm', 'freezing-rain', 'heat', 'cold'];
 
+ // The one list of valid conditions — hours.js's weather picker builds its
+ // tiles from this (deriving display labels mechanically, see
+ // weatherLabel() there) instead of hand-maintaining a second, differently-
+ // cased copy that has to be kept in sync by hand.
+ window.WEATHER_VALUES = WEATHER.slice();
+
  // How long a chosen/detected condition stays in effect before the site
  // quietly falls back to ambient (ordinary ticking clock/season, no
  // weather class). 3 hours, not 1 — real weather doesn't usually flip
@@ -30,7 +36,15 @@
  return TIME_BLOCKS.slice().reverse().find(block => hour >= block.start).key;
  }
 
+ // Delegates to seasonal-data.js's currentSeason() when it's loaded
+ // (index.html, seasons.html) instead of keeping a second copy of the
+ // month-range thresholds. atmosphere.js also runs alone on about.html,
+ // sources.html and 404.html, so this still needs its own fallback for
+ // when that file isn't present — and can't assume load order even when
+ // it is: seasons.html loads seasonal-data.js first, index.html loads it
+ // second, and this runs immediately on script load either way.
  function seasonKey(date) {
+ if (typeof currentSeason === 'function') return currentSeason(date);
  const month = date.getMonth();
  if (month >= 2 && month <= 4) return 'spring';
  if (month >= 5 && month <= 7) return 'summer';
@@ -84,15 +98,20 @@
  body.classList.remove(...WEATHER.map(weather => `weather-${weather}`));
 
  const currentTime = timeKey(date);
- const currentSeason = seasonKey(date);
+ // Named currentSeasonKey, not currentSeason — that name belongs to the
+ // global function from seasonal-data.js that seasonKey() above may
+ // delegate to; shadowing it here would be confusing even though it's
+ // harmless (seasonKey's own reference to currentSeason() resolves
+ // lexically, not against this local).
+ const currentSeasonKey = seasonKey(date);
  const currentWeather = storedWeather();
 
- body.classList.add(`block-${currentTime}`, `season-${currentSeason}`);
+ body.classList.add(`block-${currentTime}`, `season-${currentSeasonKey}`);
  currentWeather.forEach(w => body.classList.add(`weather-${w}`));
 
  window.siteAtmosphere = {
  time: currentTime,
- season: currentSeason,
+ season: currentSeasonKey,
  weather: currentWeather
  };
  }
@@ -132,5 +151,14 @@
  };
 
  applyAtmosphere();
- window.setInterval(() => applyAtmosphere(), 60000);
+ // One shared heartbeat instead of every consumer running its own
+ // setInterval(..., 60000) — hours.js's render loop listens for this
+ // instead of keeping a second, independently-drifting 60s timer.
+ // Distinct from 'atmospherechange' (dispatched only when something
+ // actually changed, e.g. a weather toggle) since this fires every
+ // tick regardless.
+ window.setInterval(() => {
+ applyAtmosphere();
+ window.dispatchEvent(new CustomEvent('atmospheretick', { detail: window.siteAtmosphere }));
+ }, 60000);
 })();

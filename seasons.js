@@ -9,22 +9,10 @@ let currentEntryId = null;
 function renderSeasonReading(entry) {
   currentEntryId = entry.id;
 
-  // Hand-edited entries carry real species/latin/readings fields directly.
   // seasons.js only ever renders real fetched entries (no fallback-sample
-  // path here), so anything without a `species` field just hasn't been
-  // hand-edited yet — parse the raw weekly title as a stopgap. See
-  // parsePostTitle()/creditLine()/SPECIES_LATIN_LOOKUP in seasonal-data.js.
-  let species, latin, readings;
-  if (entry.species) {
-    species = entry.species;
-    latin = entry.latin || null;
-    readings = entry.readings || [];
-  } else {
-    const parsed = parsePostTitle(entry.title);
-    species = parsed.species;
-    readings = parsed.readings;
-    latin = SPECIES_LATIN_LOOKUP.get(species.toLowerCase()) || null;
-  }
+  // path here), so isRealEntry is always true — see resolveSpeciesFields()
+  // in seasonal-data.js, shared with hours.js's species grid.
+  const { species, latin, readings } = resolveSpeciesFields(entry, true);
   const credits = creditLine(readings);
 
   document.title = `${species} — The Current Season`;
@@ -49,9 +37,7 @@ function renderSeasonReading(entry) {
 
 async function initialiseSeason() {
   try {
-    const response = await fetch('lectio-data.json');
-    if (!response.ok) throw new Error(`Unable to load Lectio Terra posts (${response.status}).`);
-    const data = await response.json();
+    const data = await loadLectioData();
     const entries = data.seasons[seasonKey];
     if (!Array.isArray(entries) || !entries.length) throw new Error(`No posts assigned to ${seasonKey}.`);
     const label = seasonKey.charAt(0).toUpperCase() + seasonKey.slice(1);
@@ -62,10 +48,18 @@ async function initialiseSeason() {
     };
     const requestedMatch = entries.find(entry => entry.id === requestedEntry);
     const startingEntry = requestedMatch || pick(entries);
-    document.getElementById('season-turn-page').addEventListener('click', () => {
-      const next = pickExcluding(season.entries, entry => entry.id === currentEntryId);
-      renderSeasonReading(next);
-    });
+    const turnPageWrap = document.getElementById('season-turn-page')?.closest('.turn-the-page');
+    if (entries.length > 1) {
+      document.getElementById('season-turn-page').addEventListener('click', () => {
+        const next = pickExcluding(season.entries, entry => entry.id === currentEntryId);
+        renderSeasonReading(next);
+      });
+    } else if (turnPageWrap) {
+      // Only one post assigned to this season so far — a "turn the page"
+      // that always lands back on the same reading reads as broken, not
+      // quiet, so hide it until there's a second post to turn to.
+      turnPageWrap.hidden = true;
+    }
     renderSeasonReading(startingEntry);
   } catch (error) {
     document.getElementById('season-reading-body').innerHTML = '<p>The seasonal reading could not be opened. Please return soon.</p>';

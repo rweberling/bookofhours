@@ -556,6 +556,12 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   opacity: 0; transition: opacity 1.4s ease;
 }
 .transition-veil.active { opacity: 0.9; }
+@media (prefers-reduced-motion: reduce) {
+  /* Still masks the content swap underneath (that part isn't
+     "motion" — it's covering a jump-cut) — just without the
+     animated full-viewport crossfade for anyone sensitive to it. */
+  .transition-veil { transition: none; }
+}
 
 /* ── Error state ──────────────────────────────────────────────── */
 .load-error {
@@ -915,30 +921,39 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   width: 100%; height: 100%;
   overflow: visible;
 }
-.dial-arc {
+/* .season-arc/.season-label (Wander the Seasons dial) share this base
+   with .dial-arc/.dial-label (Wander the Hours dial) — same wheel, same
+   arc/label treatment, just season-specific deltas layered on below
+   (font-size, letter-spacing, the active-state accent color). See the
+   season-dial-wrap rules further down for those. */
+.dial-arc,
+.season-arc {
   fill: none;
   stroke-width: 14;
   stroke-linecap: butt;
   opacity: 0.28;
-  -webkit-text-stroke: none;
   filter: drop-shadow(0 0 1.5px var(--bg-dark));
   transition: opacity 0.35s ease, stroke-width 0.35s ease;
 }
-.dial-arc.active   { opacity: 0.9; stroke-width: 17; }
+.dial-arc { -webkit-text-stroke: none; }
+.dial-arc.active,
+.season-arc.active { opacity: 0.9; stroke-width: 17; }
 .dial-arc.current  { opacity: 0.55; }
 .dial-hand {
   transition: transform 0.45s cubic-bezier(0.34, 1.2, 0.64, 1);
 }
-.dial-label {
+.dial-label,
+.season-label {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 7.5px; font-style: italic;
   fill: var(--ink-faint);
   opacity: 0.55;
   transition: opacity 0.35s ease, fill 0.35s ease;
   text-anchor: middle;
   dominant-baseline: middle;
 }
-.dial-label.active { opacity: 1; fill: var(--ink); }
+.dial-label { font-size: 7.5px; font-style: italic; }
+.dial-label.active,
+.season-label.active { opacity: 1; fill: var(--ink); }
 
 /* ── Block tile grid ──────────────────────────────────────────── */
 .wander-grid {
@@ -1002,26 +1017,10 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   overflow: visible;
   color: var(--ink-faint);
 }
-.season-arc {
-  fill: none;
-  stroke-width: 14;
-  stroke-linecap: butt;
-  opacity: 0.28;
-  filter: drop-shadow(0 0 1.5px var(--bg-dark));
-  transition: opacity 0.35s ease, stroke-width 0.35s ease;
-}
-.season-arc.active { opacity: 0.9; stroke-width: 17; color: var(--accent); }
-.season-label {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 9px; letter-spacing: 0.08em;
-  fill: var(--ink-faint);
-  opacity: 0.55;
-  text-anchor: middle;
-  dominant-baseline: middle;
-  transition: opacity 0.35s ease, fill 0.35s ease;
-  cursor: default;
-}
-.season-label.active { opacity: 1; fill: var(--ink); }
+/* Shared arc/label rules live with .dial-arc/.dial-label above — these
+   are just the season dial's deltas from that shared base. */
+.season-arc.active { color: var(--accent); }
+.season-label { font-size: 9px; letter-spacing: 0.08em; cursor: default; }
 
 /* ── Species cards (common name / Latin name) ───────────────────
    Deliberately distinct from .wander-tile — a different card

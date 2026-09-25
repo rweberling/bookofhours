@@ -187,10 +187,59 @@ function blockForHour(blocks, h) {
 }
 
 let currentBlockName = null;
-let displayedHour = null;
 let lastRenderedHour = null;
 let blocks = null;
-let isWandering = false;
+
+// How long a hand-picked Wander-the-Hours block stays put before the
+// 60s auto-render loop is allowed to snap it back to the real current
+// hour. Long enough to actually read the block you picked without the
+// clock yanking you back to "now" mid-read; short enough that an idle
+// tab doesn't stay frozen on a stale hour indefinitely. Same shape as
+// WEATHER_TTL_MS in atmosphere.js — a timed hold, not a manual toggle,
+// so there's nothing for a pane-close/turn-the-page/etc. to forget to
+// reset.
+const WANDER_HOLD_MS = 10 * 60 * 1000;
+let wanderHoldUntil = 0;
+
+let lastRenderedSeason = null;
+
+// Writes one block's content into the DOM — shared by render()'s regular
+// tick and renderAtHour()'s hand-picked-hour view (Wander the Hours,
+// "turn the page"), which used to carry two near-identical copies of the
+// same ~11 getElementById writes. clockTime/colophonDate are optional:
+// render()'s tick already wrote those once, unconditionally, before
+// deciding whether anything else needs updating, so it doesn't pass them
+// again here.
+function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate, afterUpdate } = {}) {
+  blocksData.forEach(b => {
+    if (b.cssClass) document.body.classList.remove(b.cssClass);
+  });
+  if (block.cssClass) document.body.classList.add(block.cssClass);
+
+  const q   = pickWeatherAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
+  const img = pickWeatherAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+  lastQuoteText = q.text;
+  lastImageSrc  = img.src;
+
+  document.getElementById('block-subtitle').textContent = block.subtitle || '';
+  document.getElementById('block-name').textContent     = block.name;
+  document.getElementById('hour-name').textContent      = HOUR_NAMES[getSeason()][h] || '';
+  if (clockTime)    document.getElementById('clock-time').textContent    = clockTime;
+  if (colophonDate) document.getElementById('colophon-date').textContent = colophonDate;
+  document.getElementById('quote-text').innerHTML       = q.text;
+  document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
+  document.getElementById('phenomena-list').innerHTML   = phenomenaHTML(block.phenomena);
+  document.getElementById('versicle').innerHTML         = block.versicle || '';
+  document.getElementById('image-caption').innerHTML    = img.caption || '';
+
+  const inner = document.getElementById('image-inner');
+  inner.innerHTML = img.src
+    ? `<img src="${img.src}" alt="${stripHTML(img.caption) || block.name}">`
+    : placeholderSVG(block.name);
+
+  currentBlockName = block.name;
+  if (typeof afterUpdate === 'function') afterUpdate();
+}
 
 function render(blocksData, force) {
   const now   = new Date();
@@ -199,10 +248,19 @@ function render(blocksData, force) {
 
   document.getElementById('clock-time').textContent    = formatTime(now);
   document.getElementById('colophon-date').textContent = formatDate(now);
-  document.getElementById('season-emblem').innerHTML   = SEASON_EMBLEMS[getSeason(now)];
+
+  // The emblem is a multi-path inline SVG — cheap to skip re-parsing on
+  // every 60s tick when the season (changes ~4x/year) hasn't actually
+  // moved since the last render.
+  const season = getSeason(now);
+  if (force || season !== lastRenderedSeason) {
+    document.getElementById('season-emblem').innerHTML = SEASON_EMBLEMS[season];
+    lastRenderedSeason = season;
+  }
+
   renderWeatherLine();
 
-  if (isWandering && !force) return; 
+  if (Date.now() < wanderHoldUntil && !force) return;
   
   if (block.name === currentBlockName && !force && h === lastRenderedHour) return;
 
@@ -210,33 +268,7 @@ function render(blocksData, force) {
   const veil = document.getElementById('veil');
 
   function doUpdate() {
-    blocksData.forEach(b => {
-      if (b.cssClass) document.body.classList.remove(b.cssClass);
-    });
-    if (block.cssClass) document.body.classList.add(block.cssClass);
-
-    const q   = pickWeatherAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
-    const img = pickWeatherAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
-    lastQuoteText = q.text;
-    lastImageSrc  = img.src;
-
-    document.getElementById('block-subtitle').textContent = block.subtitle || '';
-    document.getElementById('block-name').textContent     = block.name;
-    document.getElementById('hour-name').textContent = HOUR_NAMES[getSeason()][h] || '';
-
-    document.getElementById('quote-text').innerHTML       = q.text;
-    document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
-    document.getElementById('phenomena-list').innerHTML   = phenomenaHTML(block.phenomena);
-    document.getElementById('versicle').innerHTML         = block.versicle || '';
-    document.getElementById('image-caption').innerHTML    = img.caption || '';
-
-    const inner = document.getElementById('image-inner');
-      inner.innerHTML = img.src
-      ? `<img src="${img.src}" alt="${stripHTML(img.caption) || block.name}">`
-      : placeholderSVG(block.name);
-
-    currentBlockName = block.name;
-    displayedHour = h;
+    applyBlockToDOM(blocksData, block, h);
   }
 
   if (force) {
@@ -308,7 +340,10 @@ async function init() {
     openWanderIfHashed();
     blocksRef = blocks;
     
-    setInterval(() => render(blocks, false), 60000);
+    // Shares atmosphere.js's one 60s heartbeat instead of running a second,
+    // independently-scheduled setInterval doing the same "what time/season
+    // is it now" work a few milliseconds apart.
+    window.addEventListener('atmospheretick', () => render(blocks, false));
     setTimeout(() => document.getElementById('reading-actions').classList.add('visible'), 5000);
   } catch (err) {
     const errorType = err.name === 'AbortError' ? 'timeout' : 'parse_error';
@@ -375,18 +410,18 @@ function hourToAngleDeg(h) {
   return h * 15 - 90;
 }
 
+// Shared by both dials (Wander the Hours and Wander the Seasons draw on
+// the same center point and arc radius — see CX/CY/R_ARC above). Takes
+// degrees directly; hour-domain callers convert via hourToAngleDeg first.
 function polarToXY(angleDeg, r) {
   const rad = angleDeg * Math.PI / 180;
   return { x: CX + r * Math.cos(rad), y: CY + r * Math.sin(rad) };
 }
 
-function arcPath(startHour, spanHours, r) {
-  const a1 = hourToAngleDeg(startHour);
-  const a2 = hourToAngleDeg(startHour + spanHours);
-  const p1 = polarToXY(a1, r);
-  const p2 = polarToXY(a2, r);
-  const large = spanHours > 12 ? 1 : 0;
-  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 ${large} 1 ${p2.x} ${p2.y}`;
+function arcPath(startDeg, endDeg, r) {
+  const p1 = polarToXY(startDeg, r);
+  const p2 = polarToXY(endDeg, r);
+  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y}`;
 }
 
 const svgNS = 'http://www.w3.org/2000/svg';
@@ -421,7 +456,7 @@ function buildDial(blocksData) {
     const color = BLOCK_PALETTES[block.name] || '#888888';
 
     const path = document.createElementNS(svgNS, 'path');
-    path.setAttribute('d', arcPath(block.startHour, 3, R_ARC));
+    path.setAttribute('d', arcPath(hourToAngleDeg(block.startHour), hourToAngleDeg(block.startHour + 3), R_ARC));
     path.setAttribute('stroke', color);
     path.setAttribute('fill', 'none');
     path.setAttribute('class', 'dial-arc');
@@ -544,43 +579,19 @@ function renderAtHour(blocksData, overrideHour, useRealTime = false) {
 
   veil.classList.add('active');
   setTimeout(() => {
-    blocksData.forEach(b => {
-      if (b.cssClass) document.body.classList.remove(b.cssClass);
+    applyBlockToDOM(blocksData, block, h, {
+      clockTime: formatTime(displayTime),
+      colophonDate: formatDate(now),
+      afterUpdate: () => updateWanderTileCurrent(block.name)
     });
-    if (block.cssClass) document.body.classList.add(block.cssClass);
-
-    const q   = pickWeatherAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
-    const img = pickWeatherAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
-    lastQuoteText = q.text;
-    lastImageSrc  = img.src;
-
-    document.getElementById('block-subtitle').textContent = block.subtitle || '';
-    document.getElementById('block-name').textContent     = block.name;
-    document.getElementById('hour-name').textContent      = HOUR_NAMES[getSeason()][h] || '';
-    document.getElementById('clock-time').textContent     = formatTime(displayTime);
-    document.getElementById('colophon-date').textContent  = formatDate(now);
-    document.getElementById('quote-text').innerHTML       = q.text;
-    document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
-    document.getElementById('phenomena-list').innerHTML   = phenomenaHTML(block.phenomena);
-    document.getElementById('versicle').innerHTML         = block.versicle || '';
-    document.getElementById('image-caption').innerHTML    = img.caption || '';
-
-    const inner = document.getElementById('image-inner');
-    inner.innerHTML = img.src
-      ? `<img src="${img.src}" alt="${stripHTML(img.caption) || block.name}">`
-      : placeholderSVG(block.name);
-
-    currentBlockName = block.name;
-    displayedHour = h;
-    updateWanderTileCurrent(block.name);
     veil.classList.remove('active');
   }, 1200);
 }
 
 function selectWanderBlock(block, blocksData) {
-  isWandering = true;
+  wanderHoldUntil = Date.now() + WANDER_HOLD_MS;
   renderAtHour(blocksData, block.startHour);
-  closeWander();
+  if (typeof closeOverlayPane === 'function') closeOverlayPane(document.getElementById('wander-pane'));
 }
 
 const ttpBtn = document.getElementById('turn-the-page');
@@ -610,21 +621,14 @@ keepPageBtn.addEventListener('click', () => {
 const SEASON_SPECIES = Object.fromEntries(
   SEASON_KEYS.map(key => [key, SEASONAL_DATA[key].species.map(([common, latin]) => ({ common, latin }))])
 );
-let lectioDataPromise = null;
-
-function loadLectioData() {
-  if (!lectioDataPromise) {
-    lectioDataPromise = fetch('lectio-data.json').then(response => {
-      if (!response.ok) throw new Error(`Unable to load Lectio Terra posts (${response.status}).`);
-      return response.json();
-    });
-  }
-  return lectioDataPromise;
-}
 
 const SEASON_LABELS = { spring: 'Spring', summer: 'Summer', autumn: 'Autumn', winter: 'Winter' };
 
-const SCX = 120, SCY = 120, S_R_ARC = 88, S_R_LABEL = 112;
+// Center and arc radius are shared with the Hours dial (CX/CY/R_ARC,
+// defined above) — same wheel, different labels. Only the label radius is
+// deliberately different (112 vs the Hours dial's 110): the season
+// quadrant labels needed a hair more clearance from the arc.
+const SEASON_R_LABEL = 112;
 
 // Quadrant order matches clock position: spring NE, summer NW,
 // autumn SW mirrored to sit opposite spring, winter SE — arranged
@@ -637,17 +641,6 @@ const SEASON_QUADRANTS = [
   { key: 'winter', startDeg: 180, endDeg: 270 }
 ];
 
-function seasonPolarToXY(deg, r) {
-  const rad = deg * Math.PI / 180;
-  return { x: SCX + r * Math.cos(rad), y: SCY + r * Math.sin(rad) };
-}
-
-function seasonArcPath(startDeg, endDeg, r) {
-  const p1 = seasonPolarToXY(startDeg, r);
-  const p2 = seasonPolarToXY(endDeg, r);
-  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y}`;
-}
-
 let displayedSeason = null; // null = ambient (real getSeason()); set = browsing a chosen season
 
 function buildSeasonDial() {
@@ -655,8 +648,8 @@ function buildSeasonDial() {
   svg.innerHTML = '';
 
   const bgRing = document.createElementNS(svgNS, 'circle');
-  bgRing.setAttribute('cx', SCX); bgRing.setAttribute('cy', SCY);
-  bgRing.setAttribute('r', S_R_ARC);
+  bgRing.setAttribute('cx', CX); bgRing.setAttribute('cy', CY);
+  bgRing.setAttribute('r', R_ARC);
   bgRing.setAttribute('fill', 'none');
   bgRing.setAttribute('stroke', 'currentColor');
   bgRing.setAttribute('stroke-width', '14');
@@ -664,20 +657,20 @@ function buildSeasonDial() {
   svg.appendChild(bgRing);
 
   const line1 = document.createElementNS(svgNS, 'line');
-  line1.setAttribute('x1', SCX); line1.setAttribute('y1', SCY - S_R_ARC - 14);
-  line1.setAttribute('x2', SCX); line1.setAttribute('y2', SCY + S_R_ARC + 14);
+  line1.setAttribute('x1', CX); line1.setAttribute('y1', CY - R_ARC - 14);
+  line1.setAttribute('x2', CX); line1.setAttribute('y2', CY + R_ARC + 14);
   line1.setAttribute('stroke', 'currentColor'); line1.setAttribute('stroke-width', '0.5'); line1.setAttribute('opacity', '0.15');
   svg.appendChild(line1);
 
   const line2 = document.createElementNS(svgNS, 'line');
-  line2.setAttribute('x1', SCX - S_R_ARC - 14); line2.setAttribute('y1', SCY);
-  line2.setAttribute('x2', SCX + S_R_ARC + 14); line2.setAttribute('y2', SCY);
+  line2.setAttribute('x1', CX - R_ARC - 14); line2.setAttribute('y1', CY);
+  line2.setAttribute('x2', CX + R_ARC + 14); line2.setAttribute('y2', CY);
   line2.setAttribute('stroke', 'currentColor'); line2.setAttribute('stroke-width', '0.5'); line2.setAttribute('opacity', '0.15');
   svg.appendChild(line2);
 
   SEASON_QUADRANTS.forEach(q => {
     const path = document.createElementNS(svgNS, 'path');
-    path.setAttribute('d', seasonArcPath(q.startDeg, q.endDeg, S_R_ARC));
+    path.setAttribute('d', arcPath(q.startDeg, q.endDeg, R_ARC));
     path.setAttribute('stroke', 'currentColor');
     path.setAttribute('fill', 'none');
     path.setAttribute('class', 'season-arc');
@@ -685,7 +678,7 @@ function buildSeasonDial() {
     svg.appendChild(path);
 
     const midDeg = (q.startDeg + q.endDeg) / 2;
-    const lp = seasonPolarToXY(midDeg, S_R_LABEL);
+    const lp = polarToXY(midDeg, SEASON_R_LABEL);
     const text = document.createElementNS(svgNS, 'text');
     text.setAttribute('x', lp.x);
     text.setAttribute('y', lp.y);
@@ -696,7 +689,7 @@ function buildSeasonDial() {
   });
 
   const centerDot = document.createElementNS(svgNS, 'circle');
-  centerDot.setAttribute('cx', SCX); centerDot.setAttribute('cy', SCY);
+  centerDot.setAttribute('cx', CX); centerDot.setAttribute('cy', CY);
   centerDot.setAttribute('r', '3');
   centerDot.setAttribute('fill', 'currentColor'); centerDot.setAttribute('opacity', '0.35');
   svg.appendChild(centerDot);
@@ -713,7 +706,17 @@ function setSeasonDialActive(seasonKey) {
   });
 }
 
-async function buildSpeciesGrid(seasonKey) {
+// The grid always shows all four seasons stacked (see .species-grid in
+// css/styles.css) — it never filtered to just one, so the seasonKey this
+// used to take was dead weight, and rebuilding all ~48 cards from scratch
+// on every dial-wedge click (selectSeason() called this every time) just
+// reproduced the same DOM. Built once per page load instead; the
+// subheading text in selectSeason() is what actually reflects which
+// season was clicked.
+let speciesGridBuilt = false;
+async function buildSpeciesGrid() {
+  if (speciesGridBuilt) return;
+  speciesGridBuilt = true;
   const grid = document.getElementById('species-grid');
   grid.innerHTML = '';
   let importedSeasons = null;
@@ -749,27 +752,7 @@ async function buildSpeciesGrid(seasonKey) {
       card.className = 'species-card';
       card.href = `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
 
-      // Hand-edited real posts carry their own species/latin/readings
-      // fields directly now — use those first. Anything not yet hand-edited
-      // (freshly pulled, or one of the still-unclassified phenomena entries)
-      // falls back to parsing the raw weekly title client-side. Fallback
-      // sample entries (SEASON_SPECIES) already have clean title/subtitle
-      // and no images. See seasonal-data.js for the durable-fix note.
-      let species, latin, readings;
-      if (isRealEntries && entry.species) {
-        species = entry.species;
-        latin = entry.latin || null;
-        readings = entry.readings || [];
-      } else if (isRealEntries) {
-        const parsed = parsePostTitle(entry.title);
-        species = parsed.species;
-        readings = parsed.readings;
-        latin = SPECIES_LATIN_LOOKUP.get(species.toLowerCase()) || null;
-      } else {
-        species = entry.title;
-        latin = entry.subtitle || null;
-        readings = [];
-      }
+      const { species, latin, readings } = resolveSpeciesFields(entry, isRealEntries);
 
       if (entry.images && entry.images[0]) {
         const thumb = document.createElement('img');
@@ -813,15 +796,16 @@ function selectSeason(seasonKey) {
     ? `Species drawn from Lectio Terra, this season (${SEASON_LABELS[seasonKey]})`
     : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[seasonKey]}`;
   setSeasonDialActive(seasonKey);
-  buildSpeciesGrid(seasonKey);
+  buildSpeciesGrid();
 }
 
-/* ── Gated pane chokepoint ────────────────────────────────────────
+/* ── Overlay pane opener ──────────────────────────────────────────
    Every wander-style pane (Wander the Hours, Wander the Seasons,
-   Wander the Weather) opens through this one function. Today it
-   just opens the pane; once Wander moves behind membership, the
-   auth check goes here — one place, not one per pane, per button,
-   and per hash-triggered deep link.
+   Wander the Weather) opens through this one function — display,
+   fade-in, build-if-needed, on-open callback. No auth check here:
+   Weather is intentionally never gated, so the DFOS check lives one
+   level up, in openWanderPane/openSeasonPane themselves. See dfosGate()
+   below.
 ────────────────────────────────────────────────────────────────── */
 function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
   if (!paneEl) return;
@@ -831,7 +815,40 @@ function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
   if (typeof onOpen === 'function') onOpen();
 }
 
+// The DFOS check lives here, not in openGatedPane — openGatedPane also
+// serves the Weather pane's "Current Weather" path, which was never meant
+// to be gated. Checking at this level instead of per-caller means every
+// path in (the on-page buttons, and the #wander/#seasons-wander/#weather
+// hash deep-links other pages link to) is gated for free, with nothing to
+// remember to wrap.
+function dfosGate(intent) {
+  if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) return true;
+  if (typeof window.dfosBeginSignIn === 'function') {
+    // dfosBeginSignIn normally ends by navigating away (location.href =
+    // the DFOS authorize URL), so this only ever resolves/rejects when it
+    // *didn't* get that far — e.g. the CDN import it does internally
+    // failed. That's the one failure mode worth surfacing.
+    Promise.resolve(window.dfosBeginSignIn(intent)).catch(showDfosGateError);
+  } else {
+    // dfos-siwd.js never finished loading as a module at all (ad blocker,
+    // CSP, offline, jsDelivr outage) — same user-facing problem, different
+    // cause.
+    showDfosGateError();
+  }
+  return false;
+}
+
+let dfosGateErrorTimeout = null;
+function showDfosGateError() {
+  clearTimeout(dfosGateErrorTimeout);
+  document.querySelectorAll('.dfos-gated').forEach(btn => {
+    btn.textContent = 'Sign-in unavailable — try again';
+  });
+  dfosGateErrorTimeout = setTimeout(updateDfosGatedButtons, 5000);
+}
+
 function openWanderPane() {
+  if (!dfosGate('wander')) return;
   openGatedPane(document.getElementById('wander-pane'), {
     onOpen: () => {
       if (typeof updateDialNowDot === 'function') updateDialNowDot();
@@ -841,6 +858,7 @@ function openWanderPane() {
 }
 
 function openSeasonPane(seasonKey) {
+  if (!dfosGate('season')) return;
   openGatedPane(document.getElementById('season-pane'), {
     ensureBuilt: () => { if (!document.querySelector('.season-arc')) buildSeasonDial(); },
     onOpen: () => selectSeason(seasonKey || getSeason())
@@ -849,9 +867,10 @@ function openSeasonPane(seasonKey) {
 
 /* ══════════════════════════════════════════════════════════════
    THE DFOS GATE
-   Cosmetic only — see dfos-siwd.js. Locks the two Wander buttons
-   behind Sign In With DFOS (scope=identity: proves *a* DFOS
-   identity, nothing about this project specifically).
+   Cosmetic only — see dfos-siwd.js. Locks Wander the Hours, Wander
+   the Seasons, and Wander the Weather behind Sign In With DFOS
+   (scope=identity: proves *a* DFOS identity, nothing about this
+   project specifically). "The Current Weather" stays ungated.
 ══════════════════════════════════════════════════════════════ */
 
 function updateDfosGatedButtons() {
@@ -862,21 +881,18 @@ function updateDfosGatedButtons() {
   });
 }
 
-function withDfosGate(intent, action) {
-  return () => {
-    if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) { action(); return; }
-    if (typeof window.dfosBeginSignIn === 'function') window.dfosBeginSignIn(intent);
-  };
-}
+const wanderOpenBtn = document.getElementById('wander-open');
+if (wanderOpenBtn) wanderOpenBtn.addEventListener('click', openWanderPane);
 
-document.getElementById('wander-open').addEventListener('click', withDfosGate('wander', openWanderPane));
-document.getElementById('seasons-wander-open').addEventListener('click', withDfosGate('season', () => openSeasonPane(getSeason())));
+const seasonsWanderOpenBtn = document.getElementById('seasons-wander-open');
+if (seasonsWanderOpenBtn) seasonsWanderOpenBtn.addEventListener('click', () => openSeasonPane(getSeason()));
 
 window.addEventListener('dfossignin', e => {
   updateDfosGatedButtons();
   const intent = e.detail && e.detail.intent;
   if (intent === 'wander') openWanderPane();
   else if (intent === 'season') openSeasonPane(getSeason());
+  else if (intent === 'weather') openWanderWeatherPane();
 });
 
 // dfos-siwd.js is a module script: even declared first in index.html, its
@@ -892,13 +908,14 @@ window.addEventListener('DOMContentLoaded', updateDfosGatedButtons);
    for a later pass once weather tags exist in the data.
 ══════════════════════════════════════════════════════════════ */
 
-const WEATHER_CONDITIONS = [
-  'Clear', 'Partly cloudy', 'Overcast', 'Drizzle', 'Rain', 'Snow', 'Snow on ground',
-  'Fog', 'Wind', 'Thunderstorm', 'Freezing rain', 'Heat', 'Cold'
-];
-const WEATHER_LABELS = Object.fromEntries(
-  WEATHER_CONDITIONS.map(cond => [cond.toLowerCase().replace(/\s+/g, '-'), cond])
-);
+// Every condition's kebab-case value ('snow-on-ground') mechanically
+// produces its display label ('Snow on ground') — capitalize the first
+// letter, turn hyphens into spaces — so there's no separate hand-written
+// display list to keep in sync with atmosphere.js's WEATHER_VALUES.
+function weatherLabel(value) {
+  return value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, ' ');
+}
+const WEATHER_CONDITIONS = window.WEATHER_VALUES || [];
 
 // Tiles toggle independently now (multiple conditions can be active at
 // once, e.g. Cold + Snow); this just re-syncs their is-current state from
@@ -913,15 +930,14 @@ function syncWeatherTiles() {
 function buildWeatherGrid() {
   const grid = document.getElementById('weather-grid');
   if (grid.children.length) { syncWeatherTiles(); return; }
-  WEATHER_CONDITIONS.forEach(cond => {
-    const value = cond.toLowerCase().replace(/\s+/g, '-');
+  WEATHER_CONDITIONS.forEach(value => {
     const tile = document.createElement('button');
     tile.type = 'button';
     tile.className = 'weather-tile';
-    tile.textContent = cond;
+    tile.textContent = weatherLabel(value);
     tile.dataset.value = value;
     tile.addEventListener('click', () => {
-      if (typeof toggleWeatherCondition === 'function') toggleWeatherCondition(cond);
+      if (typeof toggleWeatherCondition === 'function') toggleWeatherCondition(value);
       syncWeatherTiles();
     });
     grid.appendChild(tile);
@@ -933,7 +949,7 @@ function renderWeatherLine() {
   const el = document.getElementById('weather-line');
   if (!el) return;
   const active = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
-  el.innerHTML = phenomenaHTML(active.map(value => WEATHER_LABELS[value] || value));
+  el.innerHTML = phenomenaHTML(active.map(weatherLabel));
   el.hidden = !active.length;
 }
 window.addEventListener('atmospherechange', renderWeatherLine);
@@ -944,8 +960,19 @@ function openWeatherPane() {
   });
 }
 
+// "Wander the Weather" (self-select any condition) is gated; "The Current
+// Weather" (geolocation-detected, below) isn't — it calls openWeatherPane()
+// directly at the end of each of its own paths. Same chokepoint principle
+// as Wander the Hours/Seasons, just scoped to one of openWeatherPane's two
+// callers instead of the function itself, since only one of them should
+// require sign-in.
+function openWanderWeatherPane() {
+  if (!dfosGate('weather')) return;
+  openWeatherPane();
+}
+
 const weatherOpenBtn = document.getElementById('weather-open');
-if (weatherOpenBtn) weatherOpenBtn.addEventListener('click', openWeatherPane);
+if (weatherOpenBtn) weatherOpenBtn.addEventListener('click', openWanderWeatherPane);
 
 const weatherCurrentBtn = document.getElementById('weather-current-open');
 if (weatherCurrentBtn) {

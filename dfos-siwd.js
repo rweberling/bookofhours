@@ -17,8 +17,14 @@
 
 const AUTHORIZE_URL = 'https://app.dfos.com/authorize';
 const RELAY_URL = 'https://relay.dfos.com';
-const SIWD_MODULE_URL = 'https://cdn.jsdelivr.net/npm/@metalabel/dfos-client/siwd/+esm';
-const CLIENT_MODULE_URL = 'https://cdn.jsdelivr.net/npm/@metalabel/dfos-client/+esm';
+
+// Pinned to an exact version, not a loose "latest" resolve — an
+// unpinned CDN import means a bad or compromised release on the
+// other end changes what runs on this site the moment it publishes,
+// with nothing here to notice. Bump this deliberately, not silently.
+const DFOS_CLIENT_VERSION = '0.54.0';
+const SIWD_MODULE_URL = `https://cdn.jsdelivr.net/npm/@metalabel/dfos-client@${DFOS_CLIENT_VERSION}/siwd/+esm`;
+const CLIENT_MODULE_URL = `https://cdn.jsdelivr.net/npm/@metalabel/dfos-client@${DFOS_CLIENT_VERSION}/+esm`;
 
 const SESSION_KEY = 'earthly-hours-dfos';        // localStorage, persists: { did, signedInAt }
 const FLIGHT_KEY = 'earthly-hours-dfos-flight';  // sessionStorage, one round trip: { nonce, domain, intent }

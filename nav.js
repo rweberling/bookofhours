@@ -26,10 +26,11 @@ registerDropup('nav-hours-trigger', 'nav-hours-menu');
 registerDropup('nav-seasons-trigger', 'nav-seasons-menu');
 registerDropup('nav-weather-trigger', 'nav-weather-menu');
 
-/* ── Generic overlay-pane close (Season pane, Weather pane) ──────
-Wander the Hours has its own dedicated close() below, since it
-also has to reset isWandering. Season and Weather panes don't
-carry that extra state yet, so a generic close covers them.
+/* ── Overlay pane close (Wander, Season, Weather panes) ───────────
+   Wander-the-Hours' hold duration (how long a picked block stays put
+   before the clock resumes) is a timed expiry in hours.js now, not a
+   flag this needs to clear — so one close function covers all three
+   panes.
 ────────────────────────────────────────────────────────────────── */
 function closeOverlayPane(paneEl) {
 if (!paneEl) return;
@@ -68,27 +69,17 @@ const wanderClose = document.getElementById('wander-close');
 // Wander the Weather — one place per pane, not split across files.
 // Closing stays here since it isn't part of the gating concern.
 if (wanderPane && wanderClose) {
-wanderClose.addEventListener('click', closeWander);
+wanderClose.addEventListener('click', () => closeOverlayPane(wanderPane));
 wanderPane.addEventListener('click', e => {
-if (e.target === wanderPane) closeWander();
+if (e.target === wanderPane) closeOverlayPane(wanderPane);
 });
-}
-
-function closeWander() {
-if (!wanderPane) return;
-wanderPane.classList.remove('open');
-wanderPane.addEventListener('transitionend', () => {
-if (!wanderPane.classList.contains('open')) {
-wanderPane.style.display = 'none';
-}
-}, { once: true });
 }
 
 
 document.addEventListener('keydown', e => {
 if (e.key === 'Escape') {
 if (typeof closeLightbox === 'function') closeLightbox();
-closeWander();
+closeOverlayPane(wanderPane);
 closeOverlayPane(seasonPane);
 closeOverlayPane(weatherPane);
 }
@@ -110,8 +101,8 @@ history.replaceState(null, '', window.location.pathname);
 }
 
 function openWeatherIfHashed() {
-if (window.location.hash === '#weather' && typeof openWeatherPane === 'function') {
-openWeatherPane();
+if (window.location.hash === '#weather' && typeof openWanderWeatherPane === 'function') {
+openWanderWeatherPane();
 history.replaceState(null, '', window.location.pathname);
 }
 }

@@ -90,19 +90,20 @@ class SafeHTML(HTMLParser):
             if attributes.get('target') != '_self':
                 attributes['target'] = '_blank'
 
+        # Iterate the updated `attributes` dict directly, not the original
+        # `attrs` list — src/alt/loading/rel/target fallbacks above are set
+        # on `attributes` even when the source tag never had that key at
+        # all (a plain <a href="..."> with no target/rel of its own, most
+        # commonly), and a loop over `attrs` only ever sees keys the source
+        # tag already had, silently dropping every fallback for a key the
+        # tag was missing. dict() preserves insertion order, so already-
+        # present keys still serialize in their original source order;
+        # only genuinely new keys (alt, loading, rel, target when absent)
+        # land at the end.
         serialized = []
-        attribute_pairs = list(attrs)
-        if tag == 'img' and 'alt' not in attributes:
-            attribute_pairs.append(('alt', attributes.get('alt', self.post_title)))
-        for key, value in attribute_pairs:
+        for key, value in attributes.items():
             if key not in ALLOWED_ATTRIBUTES.get(tag, set()):
                 continue
-            if key == 'src' and tag == 'img':
-                value = attributes['src']
-            if key == 'target' and tag == 'a':
-                value = attributes['target']
-            if key == 'rel' and tag == 'a':
-                value = attributes['rel']
             serialized.append(f' {key}="{html.escape(value or "", quote=True)}"')
         if tag == 'a' and not any(item.startswith(' href=') for item in serialized):
             return
