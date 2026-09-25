@@ -253,6 +253,16 @@ body::before {
   display: flex; align-items: baseline; justify-content: center;
   margin-bottom: 30px;
 }
+/* .page is a flex column with align-items: center, so a direct child
+   with no width of its own falls back to shrink-to-fit sizing — and
+   #season-reading-body's own `width: 100%` below then resolves against
+   that still-being-computed shrink-to-fit width instead of a fixed
+   value, which is exactly the kind of ambiguous, content-length- and
+   image-load-timing-sensitive sizing that produced the "loads too
+   narrow" bug. Giving .season-post an explicit width breaks the
+   circularity — same pattern .quote-block already uses correctly on
+   index.html. */
+.season-post { width: 100%; }
 .season-reading-meta #season-reading-latin {
   font-family: 'IM Fell English', Georgia, serif;
   font-style: italic; font-size: 15px;

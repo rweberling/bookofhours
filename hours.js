@@ -973,8 +973,15 @@ function openWeatherPane() {
 // as Wander the Hours/Seasons, just scoped to one of openWeatherPane's two
 // callers instead of the function itself, since only one of them should
 // require sign-in.
+const WEATHER_SUBHEADING_DEFAULT = 'Choose the condition outside your window';
+
 function openWanderWeatherPane() {
   if (!dfosGate('weather')) return;
+  // Reset in case a prior "Current Weather" detection left its "Outside
+  // your window: ..." confirmation showing — that line should only ever
+  // describe a detection that just happened, not linger and imply this
+  // self-select visit is also live/detected weather.
+  document.getElementById('weather-subheading').textContent = WEATHER_SUBHEADING_DEFAULT;
   openWeatherPane();
 }
 
@@ -1001,6 +1008,7 @@ if (weatherCurrentBtn) {
         const data = await response.json();
         const conditions = normalizeOpenMeteoWeather(data.current.weather_code, data.current.temperature_2m, data.current.wind_speed_10m, data.current.snow_depth);
         setWeatherConditions(conditions);
+        document.getElementById('weather-subheading').textContent = `Outside your window: ${conditions.map(weatherLabel).join(', ')}`;
         openWeatherPane();
       } catch (error) {
         console.error(error);
