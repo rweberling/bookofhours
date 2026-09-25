@@ -170,7 +170,7 @@
  <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
  <div class="nav-hours-menu" id="nav-hours-menu">
  <a href="index.html">The Current Hour</a>
- <button class="wander-btn" id="wander-open">Wander the Hours</button>
+ <button class="wander-btn dfos-gated" id="wander-open" data-gated-label="Wander the Hours">Wander the Hours</button>
  </div>
  </div>
 
@@ -179,7 +179,7 @@
  <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
  <div class="nav-hours-menu" id="nav-seasons-menu">
  <a href="seasons.html">The Current Season</a>
- <button class="wander-btn" id="seasons-wander-open">Wander the Seasons</button>
+ <button class="wander-btn dfos-gated" id="seasons-wander-open" data-gated-label="Wander the Seasons">Wander the Seasons</button>
  </div>
  </div>
 
@@ -262,6 +262,7 @@
 <!-- ═══════════════════════════════════════════════
  SCRIPT
 ════════════════════════════════════════════════ -->
+<script type="module" src="dfos-siwd.js"></script>
 <script src="atmosphere.js"></script>
 <script src="seasonal-data.js"></script>
 <script src="hours.js"></script>

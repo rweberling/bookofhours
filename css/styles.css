@@ -691,6 +691,9 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu a:hover,
 .nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
 
+.nav-hours-menu .wander-btn.is-locked { font-style: italic; }
+.nav-hours-menu .wander-btn.is-locked:hover { color: var(--gold); }
+
 
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {

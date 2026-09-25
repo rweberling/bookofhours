@@ -840,8 +840,6 @@ function openWanderPane() {
   });
 }
 
-document.getElementById('wander-open').addEventListener('click', openWanderPane);
-
 function openSeasonPane(seasonKey) {
   openGatedPane(document.getElementById('season-pane'), {
     ensureBuilt: () => { if (!document.querySelector('.season-arc')) buildSeasonDial(); },
@@ -849,7 +847,43 @@ function openSeasonPane(seasonKey) {
   });
 }
 
-document.getElementById('seasons-wander-open').addEventListener('click', () => openSeasonPane(getSeason()));
+/* ══════════════════════════════════════════════════════════════
+   THE DFOS GATE
+   Cosmetic only — see dfos-siwd.js. Locks the two Wander buttons
+   behind Sign In With DFOS (scope=identity: proves *a* DFOS
+   identity, nothing about this project specifically).
+══════════════════════════════════════════════════════════════ */
+
+function updateDfosGatedButtons() {
+  const signedIn = typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn();
+  document.querySelectorAll('.dfos-gated').forEach(btn => {
+    btn.textContent = signedIn ? btn.dataset.gatedLabel : 'Sign in to wander';
+    btn.classList.toggle('is-locked', !signedIn);
+  });
+}
+
+function withDfosGate(intent, action) {
+  return () => {
+    if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) { action(); return; }
+    if (typeof window.dfosBeginSignIn === 'function') window.dfosBeginSignIn(intent);
+  };
+}
+
+document.getElementById('wander-open').addEventListener('click', withDfosGate('wander', openWanderPane));
+document.getElementById('seasons-wander-open').addEventListener('click', withDfosGate('season', () => openSeasonPane(getSeason())));
+
+window.addEventListener('dfossignin', e => {
+  updateDfosGatedButtons();
+  const intent = e.detail && e.detail.intent;
+  if (intent === 'wander') openWanderPane();
+  else if (intent === 'season') openSeasonPane(getSeason());
+});
+
+// dfos-siwd.js is a module script: even declared first in index.html, its
+// top-level (where window.dfosIsSignedIn gets assigned) runs after this
+// classic script's, not before — so the button labels have to wait for
+// DOMContentLoaded, which module scripts are guaranteed to finish before.
+window.addEventListener('DOMContentLoaded', updateDfosGatedButtons);
 
 /* ══════════════════════════════════════════════════════════════
    THE WEATHER
