@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg" />
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Earthly Hours" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="manifest" href="images/emblemicon/site.webmanifest" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4407N365M"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-P4407N365M');
+</script>
+<meta name="description" content="The Weather: a view from the reading room's window, with a short reading for the conditions outside.">
+<meta name="application-name" content="The Earthly Hours">
+<meta name="author" content="Ryan Weberling">
+<title>The Weather — The Earthly Book of Hours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="weather-page">
+
+<div class="outer-frame"></div>
+
+<div class="corner corner-tl">
+ <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+ <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+ <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+ </svg>
+</div>
+<div class="corner corner-tr">
+ <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+ <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+ <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+ </svg>
+</div>
+<div class="corner corner-bl">
+ <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+ <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+ <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+ </svg>
+</div>
+<div class="corner corner-br">
+ <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+ <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+ <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+ </svg>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+ THE WINDOW — full-bleed view behind the frame
+════════════════════════════════════════════════ -->
+<div class="weather-window">
+ <img id="weather-window-img" alt="">
+</div>
+
+<main class="weather-spread">
+ <article class="weather-card" id="weather-card" data-position="bottom-right" aria-live="polite">
+ <p class="publication-name">The Earthly Book of Hours</p>
+ <h1 class="weather-card-title">The Weather</h1>
+ <p class="weather-readout" id="weather-readout"></p>
+
+ <div class="weather-reading" id="weather-reading">
+ <p class="weather-quote-text" id="weather-quote-text"></p>
+ <p class="weather-quote-attr" id="weather-quote-attr"></p>
+ </div>
+
+ <p class="weather-caption" id="weather-caption"></p>
+
+ <div class="turn-the-page visible weather-actions">
+ <span class="ttp-bracket">[</span>
+ <button class="page-action" id="weather-turn-page" type="button" aria-label="Show another view">turn the page</button>
+ <span class="ttp-sep" aria-hidden="true">|</span>
+ <button class="page-action" id="weather-look" type="button" aria-label="Detect the weather at your location">look outside</button>
+ <span class="ttp-sep" aria-hidden="true">|</span>
+ <button class="page-action" id="weather-choose" type="button" aria-label="Choose the weather conditions">choose the weather</button>
+ <span class="ttp-bracket">]</span>
+ </div>
+ </article>
+</main>
+
+<!-- ═══════════════════════════════════════════════
+ FOOTER NAV BAR
+════════════════════════════════════════════════ -->
+<nav class="site-nav" id="site-nav">
+ <div class="nav-hours-group">
+ <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+ <div class="nav-hours-menu" id="nav-hours-menu">
+ <a href="index.html">The Current Hour</a>
+ <a href="index.html#wander">Wander the Hours</a>
+ </div>
+ </div>
+
+ <span class="nav-divider">✦</span>
+ <div class="nav-hours-group">
+ <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+ <div class="nav-hours-menu" id="nav-seasons-menu">
+ <a href="seasons.html">The Current Season</a>
+ <a href="index.html#seasons-wander">Wander the Seasons</a>
+ </div>
+ </div>
+
+ <span class="nav-divider">✦</span>
+ <div class="nav-hours-group">
+ <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+ <div class="nav-hours-menu" id="nav-weather-menu">
+ <a class="active" href="weather.html">The Current Weather</a>
+ <a href="weather.html#wander">Wander the Weather</a>
+ </div>
+ </div>
+
+ <span class="nav-divider">✦</span>
+ <a href="about.html">About</a>
+
+ <span class="nav-divider">✦</span>
+ <a href="sources.html">Sources</a>
+
+ <span class="nav-divider">✦</span>
+ <a href="https://laurentia.substack.com">Other Projects</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+ WANDER THE WEATHER PANE
+════════════════════════════════════════════════ -->
+<div class="wander-pane" id="weather-pane" role="dialog" aria-label="The Weather" aria-modal="true">
+ <button class="wander-close" id="weather-close" aria-label="Close">✦ &nbsp;Close</button>
+
+ <p class="wander-heading">The Weather</p>
+ <p class="wander-subheading">Choose the condition outside your window</p>
+
+ <div class="weather-grid" id="weather-grid"></div>
+
+ <button class="wander-btn weather-pane-look" id="weather-pane-look" type="button">Or look outside</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+ SCRIPT
+════════════════════════════════════════════════ -->
+<script type="module" src="dfos-siwd.js"></script>
+<script src="seasonal-data.js"></script>
+<script src="atmosphere.js"></script>
+<script src="weather.js"></script>
+<script src="nav.js"></script>
+
+</body>
+</html>

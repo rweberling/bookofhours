@@ -1,0 +1,23 @@
+[
+  {
+    "src": "images/transit_winds.jpg",
+    "caption": "Unknown, <a href=\"https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W73\" target=\"_blank\"><em>Diagram of the Winds (I)</em></a> (c. 1170-1200)",
+    "quote": { "text": "", "attr": "" },
+    "weather": ["wind"],
+    "cardPosition": "bottom-center"
+  },
+  {
+    "src": "images/hush_bentley2.jpg",
+    "caption": "Wilson Alwyn Bentley, <a href=\"https://www.metmuseum.org/art/collection/search/286768\" target=\"_blank\"><em>[Snow Crystal]</em></a> (c. 1910)",
+    "quote": { "text": "Sample quote text for a snow condition.", "attr": "Author, Title (Year)" },
+    "weather": ["snow", "cold"],
+    "cardPosition": "bottom-left"
+  },
+  {
+    "src": "images/hush_whistler.jpg",
+    "caption": "James McNeill Whistler, <a href=\"https://www.gardnermuseum.org/experience/collection/10900\" target=\"_blank\"><em>Nocturne, Blue and Silver: Battersea Reach</em></a> (c. 1872-1878)",
+    "quote": { "text": "Sample quote text for a fog condition.", "attr": "Author, Title (Year)" },
+    "weather": ["fog", "overcast"],
+    "cardPosition": "top-right"
+  }
+]

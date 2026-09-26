@@ -15,11 +15,20 @@
  const WEATHER_KEY = 'earthly-hours-weather';
  const WEATHER = ['clear', 'partly-cloudy', 'overcast', 'drizzle', 'rain', 'snow', 'snow-on-ground', 'fog', 'wind', 'thunderstorm', 'freezing-rain', 'heat', 'cold'];
 
- // The one list of valid conditions — hours.js's weather picker builds its
+ // The one list of valid conditions — weather.js's weather picker builds its
  // tiles from this (deriving display labels mechanically, see
  // weatherLabel() there) instead of hand-maintaining a second, differently-
  // cased copy that has to be kept in sync by hand.
  window.WEATHER_VALUES = WEATHER.slice();
+
+ // Every condition's kebab-case value ('snow-on-ground') mechanically
+ // produces its display label ('Snow on ground') — capitalize the first
+ // letter, turn hyphens into spaces — so there's no separate hand-written
+ // display list to keep in sync. Global so hours.js's #weather-line and
+ // weather.js's tiles/readout share one copy.
+ window.weatherLabel = function (value) {
+ return value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, ' ');
+ };
 
  // How long a chosen/detected condition stays in effect before the site
  // quietly falls back to ambient (ordinary ticking clock/season, no

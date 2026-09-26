@@ -1143,6 +1143,129 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   background: var(--bg-deep);
   color: var(--ink);
 }
+.wander-pane .weather-pane-look { margin-top: 32px; }
+
+/* ── The Weather page (weather.html) ─────────────────────────────
+   The whole page is the window: one image fills the viewport behind
+   the outer frame (which reads as the casement), and a fragment of
+   paper — torn along its top edge — lies over it with the reading,
+   the work's attribution, and the page's controls. Where it sits is
+   set per view (cardPosition in weather-oracle.json) so it can stay
+   clear of the part of each picture that matters.
+────────────────────────────────────────────────────────────────── */
+.weather-window {
+  position: fixed; inset: 0; z-index: 0;
+  background: var(--bg-deep);
+  transition: background 3s ease;
+}
+.weather-window img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: sepia(20%) contrast(0.95);
+  opacity: 0; transition: opacity 1.4s ease;
+}
+.weather-window img.is-loaded { opacity: 1; }
+/* Soft darkening toward the edges — standing inside, looking out. */
+.weather-window::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  box-shadow: inset 0 0 160px rgba(0,0,0,0.35);
+}
+
+.weather-spread {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: minmax(0, 1fr);
+  padding: 64px 60px;
+}
+
+.weather-card {
+  position: relative;
+  width: 100%; max-width: 380px;
+  padding: 26px 28px 20px;
+  text-align: left;
+  transform: rotate(-0.5deg);
+  filter: drop-shadow(0 3px 10px rgba(0,0,0,0.28));
+  opacity: 0; animation: fadeIn 1.4s ease forwards 0.6s;
+}
+/* The paper itself sits on a pseudo-element so the torn edge
+   (clip-path) doesn't also clip the card's drop shadow. */
+.weather-card::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background: var(--bg);
+  clip-path: polygon(0 4px, 7% 1px, 14% 3px, 22% 0, 31% 4px, 39% 1px, 48% 3px, 56% 0, 64% 3px, 73% 1px, 81% 4px, 89% 0, 95% 3px, 100% 1px, 100% 100%, 0 100%);
+  transition: background 3s ease;
+}
+.weather-card::after {
+  content: ''; position: absolute; inset: 9px 7px 7px; pointer-events: none;
+  border: 0.5px solid var(--rule); opacity: 0.7;
+}
+
+.weather-card[data-position="top-left"]      { align-self: start; justify-self: start; }
+.weather-card[data-position="top-right"]     { align-self: start; justify-self: end; transform: rotate(0.5deg); }
+.weather-card[data-position="bottom-left"]   { align-self: end;   justify-self: start; }
+.weather-card[data-position="bottom-right"]  { align-self: end;   justify-self: end; transform: rotate(0.5deg); }
+.weather-card[data-position="bottom-center"] { align-self: end;   justify-self: center; transform: none; }
+
+.weather-card .publication-name {
+  font-size: 8px; letter-spacing: 0.32em;
+  text-align: left; margin-bottom: 10px;
+}
+.weather-card-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 20px; font-weight: 400; letter-spacing: 0.04em;
+  color: var(--ink); margin-bottom: 4px;
+  transition: color 3s ease;
+}
+.weather-readout {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12px; font-weight: 300; font-style: italic; letter-spacing: 0.1em;
+  color: var(--accent2);
+  padding-bottom: 14px; margin-bottom: 14px;
+  border-bottom: 0.5px solid var(--rule);
+  transition: color 3s ease;
+}
+.weather-readout .sep { color: var(--gold); margin: 0 8px; font-style: normal; }
+
+.weather-reading { margin-bottom: 14px; }
+.weather-quote-text {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: clamp(14px, 1.6vw, 16.5px); font-style: italic;
+  color: var(--ink-light); line-height: 1.6; margin-bottom: 8px;
+  transition: color 3s ease;
+}
+.weather-quote-attr {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11.5px; font-weight: 300; letter-spacing: 0.12em;
+  color: var(--ink-faint);
+  transition: color 3s ease;
+}
+.weather-quote-attr:not(:empty)::before { content: '— '; }
+
+.weather-caption {
+  font-size: 11.5px; line-height: 1.6; letter-spacing: 0.02em;
+  color: var(--ink-faint);
+  transition: color 3s ease;
+}
+.weather-caption a, .weather-quote-text a, .weather-quote-attr a {
+  color: inherit; text-decoration: underline; text-underline-offset: 2px;
+}
+
+.weather-actions {
+  flex-wrap: wrap; row-gap: 2px;
+  font-size: 10.5px; letter-spacing: 0.2em;
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  /* No room to float the fragment over the picture on a phone — it
+     settles at the foot of the window, full width, whatever the view's
+     cardPosition says. */
+  .weather-spread { min-height: calc(100svh - 60px); padding: 40px 18px 24px; }
+  .weather-card,
+  .weather-card[data-position] {
+    align-self: end; justify-self: stretch;
+    max-width: none; transform: none;
+  }
+  .weather-actions { gap: 7px; letter-spacing: 0.14em; }
+}
 
 /* ── Turn the page ────────────────────────────────────────────── */
 .turn-the-page {

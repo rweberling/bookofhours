@@ -91,6 +91,28 @@ function pickWeightedExcluding(arr, weightFn, excludeFn) {
   return pickWeighted(source, weightFn);
 }
 
+// How many of the currently-active weather conditions an item's tags hit.
+function weatherMatchCount(item, weather) {
+  return Array.isArray(item.weather) ? item.weather.filter(w => weather.includes(w)).length : 0;
+}
+
+// Every item starts from the same baseline weight — no tags, or tags that
+// don't match, is never a hard exclusion, just the least-likely outcome —
+// then each matching condition adds on quadratically: 1 match only a
+// modest nudge above baseline, but a triple match (e.g. cold+snow+wind,
+// all active at once) stands out sharply as the "resonant" pick.
+const WEATHER_BASE_WEIGHT = 1;
+function weatherMatchWeight(item, weather) {
+  return WEATHER_BASE_WEIGHT + weatherMatchCount(item, weather) ** 2;
+}
+
+// Shared by hours.js (quotes/images) and weather.js (window views).
+function pickWeatherAware(items, excludeFn) {
+  const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
+  if (!weather.length) return pickExcluding(items, excludeFn);
+  return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather), excludeFn);
+}
+
 // --- Species-card / post-title rework -------------------------------------
 // STOPGAP: real lectio-data.json posts carry no separate species/latin/
 // readings fields — only a raw weekly title string, e.g.

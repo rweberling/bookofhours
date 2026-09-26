@@ -51,6 +51,8 @@ if (e.target === seasonPane) closeOverlayPane(seasonPane);
 });
 }
 
+// weather.html's condition picker (weather.js opens it; #wander deep-link
+// handled there too, after the DFOS module has loaded).
 const weatherPane = document.getElementById('weather-pane');
 const weatherClose = document.getElementById('weather-close');
 if (weatherPane && weatherClose) {
@@ -100,15 +102,7 @@ history.replaceState(null, '', window.location.pathname);
 }
 }
 
-function openWeatherIfHashed() {
-if (window.location.hash === '#weather' && typeof openWanderWeatherPane === 'function') {
-openWanderWeatherPane();
-history.replaceState(null, '', window.location.pathname);
-}
-}
-
 openSeasonsIfHashed();
-openWeatherIfHashed();
 
 const installBtn = document.getElementById('install-btn');
 const installTip = document.getElementById('install-tip');

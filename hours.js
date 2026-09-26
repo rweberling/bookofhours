@@ -107,26 +107,8 @@ const SEASON_EMBLEMS = {
 // pick() / pickExcluding() now live in seasonal-data.js, loaded before
 // this file — shared with seasons.js instead of duplicated here.
 
-// How many of the currently-active weather conditions an item's tags hit.
-function weatherMatchCount(item, weather) {
-  return Array.isArray(item.weather) ? item.weather.filter(w => weather.includes(w)).length : 0;
-}
-
-// Every item starts from the same baseline weight — no tags, or tags that
-// don't match, is never a hard exclusion, just the least-likely outcome —
-// then each matching condition adds on quadratically: 1 match only a
-// modest nudge above baseline, but a triple match (e.g. cold+snow+wind,
-// all active at once) stands out sharply as the "resonant" pick.
-const WEATHER_BASE_WEIGHT = 1;
-function weatherMatchWeight(item, weather) {
-  return WEATHER_BASE_WEIGHT + weatherMatchCount(item, weather) ** 2;
-}
-
-function pickWeatherAware(items, excludeFn) {
-  const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
-  if (!weather.length) return pickExcluding(items, excludeFn);
-  return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather), excludeFn);
-}
+// pickWeatherAware() (weather-weighted picks) lives there too, shared
+// with weather.js.
 
 let lastQuoteText = null;
 let lastImageSrc  = null;
@@ -807,12 +789,12 @@ function selectSeason(seasonKey) {
 }
 
 /* ── Overlay pane opener ──────────────────────────────────────────
-   Every wander-style pane (Wander the Hours, Wander the Seasons,
-   Wander the Weather) opens through this one function — display,
-   fade-in, build-if-needed, on-open callback. No auth check here:
-   Weather is intentionally never gated, so the DFOS check lives one
-   level up, in openWanderPane/openSeasonPane themselves. See dfosGate()
-   below.
+   Both wander-style panes on this page (Wander the Hours, Wander the
+   Seasons) open through this one function — display, fade-in,
+   build-if-needed, on-open callback. No auth check here; the DFOS
+   check lives one level up, in openWanderPane/openSeasonPane
+   themselves. See dfosGate() below. (Wander the Weather has its own
+   page now — weather.js carries its own copy of the gate.)
 ────────────────────────────────────────────────────────────────── */
 function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
   if (!paneEl) return;
@@ -822,12 +804,11 @@ function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
   if (typeof onOpen === 'function') onOpen();
 }
 
-// The DFOS check lives here, not in openGatedPane — openGatedPane also
-// serves the Weather pane's "Current Weather" path, which was never meant
-// to be gated. Checking at this level instead of per-caller means every
-// path in (the on-page buttons, and the #wander/#seasons-wander/#weather
-// hash deep-links other pages link to) is gated for free, with nothing to
-// remember to wrap.
+// Checking at this level instead of per-caller means every path in (the
+// on-page buttons, and the #wander/#seasons-wander hash deep-links other
+// pages link to) is gated for free, with nothing to remember to wrap.
+// weather.js keeps a smaller copy of this for weather.html, which doesn't
+// load hours.js.
 function dfosGate(intent) {
   if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) return true;
   if (typeof window.dfosBeginSignIn === 'function') {
@@ -874,10 +855,10 @@ function openSeasonPane(seasonKey) {
 
 /* ══════════════════════════════════════════════════════════════
    THE DFOS GATE
-   Cosmetic only — see dfos-siwd.js. Locks Wander the Hours, Wander
-   the Seasons, and Wander the Weather behind Sign In With DFOS
-   (scope=identity: proves *a* DFOS identity, nothing about this
-   project specifically). "The Current Weather" stays ungated.
+   Cosmetic only — see dfos-siwd.js. Locks Wander the Hours and Wander
+   the Seasons behind Sign In With DFOS (scope=identity: proves *a*
+   DFOS identity, nothing about this project specifically). Wander the
+   Weather is gated the same way, from weather.js.
 ══════════════════════════════════════════════════════════════ */
 
 function updateDfosGatedButtons() {
@@ -899,7 +880,6 @@ window.addEventListener('dfossignin', e => {
   const intent = e.detail && e.detail.intent;
   if (intent === 'wander') openWanderPane();
   else if (intent === 'season') openSeasonPane(getSeason());
-  else if (intent === 'weather') openWanderWeatherPane();
 });
 
 // dfos-siwd.js is a module script: even declared first in index.html, its
@@ -910,47 +890,10 @@ window.addEventListener('DOMContentLoaded', updateDfosGatedButtons);
 
 /* ══════════════════════════════════════════════════════════════
    THE WEATHER
-   Self-select only for now — no location permission requested.
-   Detection (opt-in) and real wander-weighted cards are tabled
-   for a later pass once weather tags exist in the data.
+   Choosing/detecting conditions lives on its own page now
+   (weather.html / weather.js). The hour page only reads back whatever
+   is active, as the #weather-line readout.
 ══════════════════════════════════════════════════════════════ */
-
-// Every condition's kebab-case value ('snow-on-ground') mechanically
-// produces its display label ('Snow on ground') — capitalize the first
-// letter, turn hyphens into spaces — so there's no separate hand-written
-// display list to keep in sync with atmosphere.js's WEATHER_VALUES.
-function weatherLabel(value) {
-  return value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, ' ');
-}
-const WEATHER_CONDITIONS = window.WEATHER_VALUES || [];
-
-// Tiles toggle independently now (multiple conditions can be active at
-// once, e.g. Cold + Snow); this just re-syncs their is-current state from
-// whatever atmosphere.js currently has stored.
-function syncWeatherTiles() {
-  const active = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
-  document.querySelectorAll('.weather-tile').forEach(tile => {
-    tile.classList.toggle('is-current', active.includes(tile.dataset.value));
-  });
-}
-
-function buildWeatherGrid() {
-  const grid = document.getElementById('weather-grid');
-  if (grid.children.length) { syncWeatherTiles(); return; }
-  WEATHER_CONDITIONS.forEach(value => {
-    const tile = document.createElement('button');
-    tile.type = 'button';
-    tile.className = 'weather-tile';
-    tile.textContent = weatherLabel(value);
-    tile.dataset.value = value;
-    tile.addEventListener('click', () => {
-      if (typeof toggleWeatherCondition === 'function') toggleWeatherCondition(value);
-      syncWeatherTiles();
-    });
-    grid.appendChild(tile);
-  });
-  syncWeatherTiles();
-}
 
 function renderWeatherLine() {
   const el = document.getElementById('weather-line');
@@ -960,95 +903,3 @@ function renderWeatherLine() {
   el.hidden = !active.length;
 }
 window.addEventListener('atmospherechange', renderWeatherLine);
-
-function openWeatherPane() {
-  openGatedPane(document.getElementById('weather-pane'), {
-    onOpen: () => buildWeatherGrid()
-  });
-}
-
-// "Wander the Weather" (self-select any condition) is gated; "The Current
-// Weather" (geolocation-detected, below) isn't — it calls openWeatherPane()
-// directly at the end of each of its own paths. Same chokepoint principle
-// as Wander the Hours/Seasons, just scoped to one of openWeatherPane's two
-// callers instead of the function itself, since only one of them should
-// require sign-in.
-const WEATHER_SUBHEADING_DEFAULT = 'Choose the condition outside your window';
-
-function openWanderWeatherPane() {
-  if (!dfosGate('weather')) return;
-  // Reset in case a prior "Current Weather" detection left its "Outside
-  // your window: ..." confirmation showing — that line should only ever
-  // describe a detection that just happened, not linger and imply this
-  // self-select visit is also live/detected weather.
-  document.getElementById('weather-subheading').textContent = WEATHER_SUBHEADING_DEFAULT;
-  openWeatherPane();
-}
-
-const weatherOpenBtn = document.getElementById('weather-open');
-if (weatherOpenBtn) weatherOpenBtn.addEventListener('click', openWanderWeatherPane);
-
-const weatherCurrentBtn = document.getElementById('weather-current-open');
-if (weatherCurrentBtn) {
-  weatherCurrentBtn.addEventListener('click', () => {
-    if (!navigator.geolocation) {
-      document.getElementById('weather-subheading').textContent = 'Location is unavailable; choose a condition instead.';
-      openWeatherPane();
-      return;
-    }
-
-    weatherCurrentBtn.disabled = true;
-    weatherCurrentBtn.textContent = 'Locating...';
-    navigator.geolocation.getCurrentPosition(async position => {
-      try {
-        const { latitude, longitude } = position.coords;
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code,wind_speed_10m,snow_depth&temperature_unit=fahrenheit&wind_speed_unit=mph`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`Weather request failed (${response.status}).`);
-        const data = await response.json();
-        const conditions = normalizeOpenMeteoWeather(data.current.weather_code, data.current.temperature_2m, data.current.wind_speed_10m, data.current.snow_depth);
-        setWeatherConditions(conditions);
-        document.getElementById('weather-subheading').textContent = `Outside your window: ${conditions.map(weatherLabel).join(', ')}`;
-        openWeatherPane();
-      } catch (error) {
-        console.error(error);
-        document.getElementById('weather-subheading').textContent = 'The current weather could not be found; choose a condition instead.';
-        openWeatherPane();
-      } finally {
-        weatherCurrentBtn.disabled = false;
-        weatherCurrentBtn.textContent = 'The Current Weather';
-      }
-    }, () => {
-      document.getElementById('weather-subheading').textContent = 'Location was not shared; choose a condition instead.';
-      weatherCurrentBtn.disabled = false;
-      weatherCurrentBtn.textContent = 'The Current Weather';
-      openWeatherPane();
-    }, { timeout: 10000, maximumAge: 300000 });
-  });
-}
-
-// Returns every condition that independently applies at once, rather
-// than picking a single "best" one — sky/precipitation is one mutually
-// exclusive layer, ground cover / temperature / wind are separate layers
-// that can stack on top (so a real report can come back as e.g.
-// ['snow', 'cold'] or ['thunderstorm', 'heat']).
-function normalizeOpenMeteoWeather(code, temperature, windSpeed, snowDepth) {
-  const conditions = [];
-
-  if ([71, 73, 75, 77, 85, 86].includes(code)) conditions.push('snow');
-  else if ([45, 48].includes(code)) conditions.push('fog');
-  else if ([56, 57, 66, 67].includes(code)) conditions.push('freezing-rain');
-  else if ([95, 96, 99].includes(code)) conditions.push('thunderstorm');
-  else if ([61, 63, 65, 80, 81, 82].includes(code)) conditions.push('rain');
-  else if ([51, 53, 55].includes(code)) conditions.push('drizzle');
-  else if (code === 3) conditions.push('overcast');
-  else if (code === 1 || code === 2) conditions.push('partly-cloudy');
-  else conditions.push('clear');
-
-  if (snowDepth > 0) conditions.push('snow-on-ground');
-  if (temperature >= 90) conditions.push('heat');
-  else if (temperature <= 32) conditions.push('cold');
-  if (windSpeed >= 20) conditions.push('wind');
-
-  return conditions;
-}
