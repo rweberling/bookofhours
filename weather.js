@@ -64,6 +64,20 @@ function renderWeatherReadout(message) {
     : 'The weather is unset';
 }
 
+/* ── Folding the card ─────────────────────────────────────────────
+   The card opens in full (reading first); folding it leaves just the
+   image credit, so the whole picture can be seen. Stays folded across
+   "turn the page" until unfolded — it's a way of looking, not a
+   per-view setting.
+────────────────────────────────────────────────────────────────── */
+function toggleWeatherCard() {
+  const card = document.getElementById('weather-card');
+  const folded = card.classList.toggle('is-folded');
+  const btn = document.getElementById('weather-fold');
+  btn.setAttribute('aria-expanded', String(!folded));
+  btn.setAttribute('aria-label', folded ? 'Show the reading' : 'Fold the card down to the image credit');
+}
+
 /* ── Condition tiles (Wander the Weather) ─────────────────────── */
 
 function syncWeatherTiles() {
@@ -106,10 +120,11 @@ function openWanderWeather() {
     openWeatherPane();
     return;
   }
-  const btn = document.getElementById('weather-choose');
+  // Reached from the nav's "Wander the Weather" link (via #wander), so
+  // there's no button of our own to relabel — say so on the card instead.
   const failed = () => {
-    btn.textContent = 'sign-in unavailable';
-    setTimeout(() => { btn.textContent = 'choose the weather'; }, 5000);
+    renderWeatherReadout('Sign-in is unavailable; try again soon');
+    setTimeout(() => renderWeatherReadout(), 5000);
   };
   if (typeof window.dfosBeginSignIn === 'function') {
     Promise.resolve(window.dfosBeginSignIn('weather')).catch(failed);
@@ -206,7 +221,11 @@ async function initWeatherPage() {
 
   document.getElementById('weather-turn-page').addEventListener('click', renderWeatherView);
   document.getElementById('weather-look').addEventListener('click', lookOutside);
-  document.getElementById('weather-choose').addEventListener('click', openWanderWeather);
+  document.getElementById('weather-fold').addEventListener('click', toggleWeatherCard);
+  // Clicking the picture itself (anywhere off the card) folds/unfolds too.
+  document.querySelector('.weather-spread').addEventListener('click', e => {
+    if (e.target === e.currentTarget) toggleWeatherCard();
+  });
   document.getElementById('weather-pane-look').addEventListener('click', lookOutside);
   renderWeatherReadout();
 

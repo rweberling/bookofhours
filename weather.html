@@ -70,14 +70,17 @@
 </div>
 
 <main class="weather-spread">
+ <h1 class="visually-hidden">The Weather</h1>
  <article class="weather-card" id="weather-card" data-position="bottom-right" aria-live="polite">
+ <button class="weather-fold" id="weather-fold" type="button" aria-expanded="true" aria-controls="weather-card-body" aria-label="Fold the card down to the image credit"></button>
+ <div class="weather-card-body" id="weather-card-body">
  <p class="publication-name">The Earthly Book of Hours</p>
- <h1 class="weather-card-title">The Weather</h1>
  <p class="weather-readout" id="weather-readout"></p>
 
  <div class="weather-reading" id="weather-reading">
  <p class="weather-quote-text" id="weather-quote-text"></p>
  <p class="weather-quote-attr" id="weather-quote-attr"></p>
+ </div>
  </div>
 
  <p class="weather-caption" id="weather-caption"></p>
@@ -87,8 +90,6 @@
  <button class="page-action" id="weather-turn-page" type="button" aria-label="Show another view">turn the page</button>
  <span class="ttp-sep" aria-hidden="true">|</span>
  <button class="page-action" id="weather-look" type="button" aria-label="Detect the weather at your location">look outside</button>
- <span class="ttp-sep" aria-hidden="true">|</span>
- <button class="page-action" id="weather-choose" type="button" aria-label="Choose the weather conditions">choose the weather</button>
  <span class="ttp-bracket">]</span>
  </div>
  </article>

@@ -1178,8 +1178,8 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 .weather-card {
   position: relative;
-  width: 100%; max-width: 380px;
-  padding: 26px 28px 20px;
+  width: 100%; max-width: 460px;
+  padding: 28px 34px 22px;
   text-align: left;
   transform: rotate(-0.5deg);
   filter: drop-shadow(0 3px 10px rgba(0,0,0,0.28));
@@ -1205,42 +1205,37 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-card[data-position="bottom-center"] { align-self: end;   justify-self: center; transform: none; }
 
 .weather-card .publication-name {
-  font-size: 8px; letter-spacing: 0.32em;
-  text-align: left; margin-bottom: 10px;
-}
-.weather-card-title {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 20px; font-weight: 400; letter-spacing: 0.04em;
-  color: var(--ink); margin-bottom: 4px;
-  transition: color 3s ease;
+  font-size: 9px; letter-spacing: 0.32em;
+  text-align: left; margin-bottom: 8px;
+  padding-right: 28px;
 }
 .weather-readout {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 12px; font-weight: 300; font-style: italic; letter-spacing: 0.1em;
+  font-size: 14px; font-weight: 400; font-style: italic; letter-spacing: 0.08em;
   color: var(--accent2);
-  padding-bottom: 14px; margin-bottom: 14px;
+  padding-bottom: 16px; margin-bottom: 18px;
   border-bottom: 0.5px solid var(--rule);
   transition: color 3s ease;
 }
 .weather-readout .sep { color: var(--gold); margin: 0 8px; font-style: normal; }
 
-.weather-reading { margin-bottom: 14px; }
+.weather-reading { margin-bottom: 18px; }
 .weather-quote-text {
   font-family: 'IM Fell English', Georgia, serif;
-  font-size: clamp(14px, 1.6vw, 16.5px); font-style: italic;
-  color: var(--ink-light); line-height: 1.6; margin-bottom: 8px;
+  font-size: clamp(18px, 1.9vw, 21px); font-style: italic;
+  color: var(--ink-light); line-height: 1.55; margin-bottom: 10px;
   transition: color 3s ease;
 }
 .weather-quote-attr {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 11.5px; font-weight: 300; letter-spacing: 0.12em;
+  font-size: 13.5px; font-weight: 400; letter-spacing: 0.1em;
   color: var(--ink-faint);
   transition: color 3s ease;
 }
 .weather-quote-attr:not(:empty)::before { content: '— '; }
 
 .weather-caption {
-  font-size: 11.5px; line-height: 1.6; letter-spacing: 0.02em;
+  font-size: 13.5px; line-height: 1.55; letter-spacing: 0.02em;
   color: var(--ink-faint);
   transition: color 3s ease;
 }
@@ -1250,8 +1245,37 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 .weather-actions {
   flex-wrap: wrap; row-gap: 2px;
-  font-size: 10.5px; letter-spacing: 0.2em;
+  font-size: 12px; letter-spacing: 0.2em;
   margin-top: 16px;
+}
+.weather-actions.visible { opacity: 0.75; }
+
+/* ── Folding the card ────────────────────────────────────────────
+   Open by default; the corner mark (or a click on the picture) folds
+   it down to the image credit alone. */
+.weather-fold {
+  position: absolute; top: 16px; right: 16px; z-index: 1;
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  background: none; border: none; cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; line-height: 1;
+  color: var(--gold); opacity: 0.75;
+  transition: opacity 0.2s ease, color 3s ease;
+}
+.weather-fold::before { content: '\2212'; }   /* − */
+.weather-fold:hover { opacity: 1; color: var(--accent); }
+
+.weather-card.is-folded { max-width: 380px; padding: 16px 52px 12px 22px; }
+.weather-card.is-folded .weather-fold { top: 50%; transform: translateY(-50%); right: 12px; }
+.weather-card.is-folded .weather-fold::before { content: '+'; }
+.weather-card.is-folded .weather-card-body,
+.weather-card.is-folded .weather-actions { display: none; }
+.weather-card.is-folded .weather-caption { font-size: 12.5px; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
 }
 
 @media (max-width: 600px) {
