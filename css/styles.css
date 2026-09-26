@@ -1178,8 +1178,8 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 .weather-card {
   position: relative;
-  width: 100%; max-width: 460px;
-  padding: 28px 34px 22px;
+  width: 100%; max-width: 560px;
+  padding: 32px 40px 24px;
   text-align: left;
   transform: rotate(-0.5deg);
   filter: drop-shadow(0 3px 10px rgba(0,0,0,0.28));
@@ -1205,13 +1205,13 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-card[data-position="bottom-center"] { align-self: end;   justify-self: center; transform: none; }
 
 .weather-card .publication-name {
-  font-size: 9px; letter-spacing: 0.32em;
-  text-align: left; margin-bottom: 8px;
-  padding-right: 28px;
+  font-size: 10.5px; letter-spacing: 0.3em;
+  text-align: left; margin-bottom: 10px;
+  padding-right: 28px; white-space: nowrap;
 }
 .weather-readout {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 14px; font-weight: 400; font-style: italic; letter-spacing: 0.08em;
+  font-size: 16px; font-weight: 400; font-style: italic; letter-spacing: 0.08em;
   color: var(--accent2);
   padding-bottom: 16px; margin-bottom: 18px;
   border-bottom: 0.5px solid var(--rule);
@@ -1222,20 +1222,20 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-reading { margin-bottom: 18px; }
 .weather-quote-text {
   font-family: 'IM Fell English', Georgia, serif;
-  font-size: clamp(18px, 1.9vw, 21px); font-style: italic;
-  color: var(--ink-light); line-height: 1.55; margin-bottom: 10px;
+  font-size: clamp(21px, 1.9vw, 25px); font-style: italic;
+  color: var(--ink-light); line-height: 1.5; margin-bottom: 12px;
   transition: color 3s ease;
 }
 .weather-quote-attr {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 13.5px; font-weight: 400; letter-spacing: 0.1em;
+  font-size: 15.5px; font-weight: 400; letter-spacing: 0.1em;
   color: var(--ink-faint);
   transition: color 3s ease;
 }
 .weather-quote-attr:not(:empty)::before { content: '— '; }
 
 .weather-caption {
-  font-size: 13.5px; line-height: 1.55; letter-spacing: 0.02em;
+  font-size: 15.5px; line-height: 1.55; letter-spacing: 0.02em;
   color: var(--ink-faint);
   transition: color 3s ease;
 }
@@ -1245,8 +1245,8 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 .weather-actions {
   flex-wrap: wrap; row-gap: 2px;
-  font-size: 12px; letter-spacing: 0.2em;
-  margin-top: 16px;
+  font-size: 13.5px; letter-spacing: 0.2em;
+  margin-top: 18px;
 }
 .weather-actions.visible { opacity: 0.75; }
 
@@ -1266,12 +1266,12 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-fold::before { content: '\2212'; }   /* − */
 .weather-fold:hover { opacity: 1; color: var(--accent); }
 
-.weather-card.is-folded { max-width: 380px; padding: 16px 52px 12px 22px; }
+.weather-card.is-folded { max-width: 460px; padding: 16px 52px 12px 22px; }
 .weather-card.is-folded .weather-fold { top: 50%; transform: translateY(-50%); right: 12px; }
 .weather-card.is-folded .weather-fold::before { content: '+'; }
 .weather-card.is-folded .weather-card-body,
 .weather-card.is-folded .weather-actions { display: none; }
-.weather-card.is-folded .weather-caption { font-size: 12.5px; }
+.weather-card.is-folded .weather-caption { font-size: 14px; }
 
 .visually-hidden {
   position: absolute; width: 1px; height: 1px;
@@ -1288,7 +1288,15 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
     align-self: end; justify-self: stretch;
     max-width: none; transform: none;
   }
-  .weather-actions { gap: 7px; letter-spacing: 0.14em; }
+  /* Phone sizes — the desktop ones above are tuned for reading at
+     arm's length over a large picture; these were already comfortable. */
+  .weather-card { padding: 28px 34px 22px; }
+  .weather-card .publication-name { font-size: 9px; letter-spacing: 0.32em; white-space: normal; }
+  .weather-readout { font-size: 14px; }
+  .weather-quote-text { font-size: 18px; }
+  .weather-quote-attr, .weather-caption { font-size: 13.5px; }
+  .weather-card.is-folded .weather-caption { font-size: 12.5px; }
+  .weather-actions { font-size: 12px; gap: 7px; letter-spacing: 0.14em; }
 }
 
 /* ── Turn the page ────────────────────────────────────────────── */

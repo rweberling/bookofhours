@@ -26,9 +26,24 @@ function stripHTML(str) {
 
 /* ── The view ─────────────────────────────────────────────────── */
 
-function renderWeatherView() {
+// Views flagged "unset": true (e.g. Emslie's chart of every kind of
+// weather) are the opening view when no conditions are set — nothing
+// chosen, nothing detected. They're never drawn otherwise, and "turn the
+// page" always moves on to the ordinary views, so an unset visit can still
+// browse everything instead of being stuck on one picture.
+function pickWeatherView({ turning = false } = {}) {
+  const notLast = v => v.src === lastWeatherViewSrc;
+  const unsetViews = weatherViews.filter(v => v.unset);
+  const ordinaryViews = weatherViews.filter(v => !v.unset);
+  if (!turning && !activeWeather().length && unsetViews.length) {
+    return pickExcluding(unsetViews, notLast);
+  }
+  return pickWeatherAware(ordinaryViews.length ? ordinaryViews : weatherViews, notLast);
+}
+
+function renderWeatherView(options) {
   if (!weatherViews || !weatherViews.length) return;
-  const view = pickWeatherAware(weatherViews, v => v.src === lastWeatherViewSrc) || weatherViews[0];
+  const view = pickWeatherView(options) || weatherViews[0];
   lastWeatherViewSrc = view.src;
 
   // Fade the old view out, swap once the new one has actually loaded —
@@ -212,14 +227,14 @@ window.addEventListener('atmospherechange', () => {
   renderWeatherReadout();
   syncWeatherTiles();
   clearTimeout(rerollTimeout);
-  rerollTimeout = setTimeout(renderWeatherView, 450);
+  rerollTimeout = setTimeout(() => renderWeatherView(), 450);
 });
 
 async function initWeatherPage() {
   const img = document.getElementById('weather-window-img');
   img.addEventListener('load', () => img.classList.add('is-loaded'));
 
-  document.getElementById('weather-turn-page').addEventListener('click', renderWeatherView);
+  document.getElementById('weather-turn-page').addEventListener('click', () => renderWeatherView({ turning: true }));
   document.getElementById('weather-look').addEventListener('click', lookOutside);
   document.getElementById('weather-fold').addEventListener('click', toggleWeatherCard);
   // Clicking the picture itself (anywhere off the card) folds/unfolds too.

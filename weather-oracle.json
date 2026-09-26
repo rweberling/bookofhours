@@ -1,5 +1,13 @@
 [
   {
+    "src": "images/weather_emslie.jpg",
+    "caption": "John Emslie, <a href=\"https://www.rmg.co.uk/collections/objects/rmgc-object-263842\" target=\"_blank\"><em>Diagram of Meteorology, displaying the various phenomena of the atmosphere</em> (c. 1845-1860)",
+    "quote": { "text": "", "attr": "" },
+    "weather": [],
+    "unset": true,
+    "cardPosition": "bottom-right"
+  },
+  {
     "src": "images/transit_winds.jpg",
     "caption": "Unknown, <a href=\"https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W73\" target=\"_blank\"><em>Diagram of the Winds (I)</em></a> (c. 1170-1200)",
     "quote": { "text": "", "attr": "" },
