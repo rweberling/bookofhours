@@ -2,7 +2,7 @@
   {
     "src": "images/weather_emslie.jpg",
     "caption": "John Emslie, <a href=\"https://www.rmg.co.uk/collections/objects/rmgc-object-263842\" target=\"_blank\"><em>Diagram of Meteorology, displaying the various phenomena of the atmosphere</em></a> (c. 1845-1860)",
-    "quote": { "text": "Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhil- arating. As Ruskin says, \"There is really no such thing as bad weather, only different kinds of good weather.\"", "attr": "John Lubbock, <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81\" target=\"_blank\"><em>The Use of Life</em></a> (1894), quot. John Ruskin, <a href=\"https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52\" target=\"blank\"><em>The Art of England</em> (1884)</a>"},
+    "quote": { "text": "Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating. As Ruskin says, \"There is really no such thing as bad weather, only different kinds of good weather.\"", "attr": "John Lubbock, <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81\" target=\"_blank\"><em>The Use of Life</em></a> (1894), quot. John Ruskin, <a href=\"https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52\" target=\"blank\"><em>The Art of England</em></a> (1884)"},
     "weather": [],
     "unset": true,
     "cardPosition": "bottom-right"

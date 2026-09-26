@@ -74,9 +74,7 @@ function renderWeatherReadout(message) {
   const el = document.getElementById('weather-readout');
   if (message) { el.textContent = message; return; }
   const active = activeWeather();
-  el.innerHTML = active.length
-    ? active.map(weatherLabel).join('<span class="sep">✦</span>')
-    : 'The weather is unset';
+  el.innerHTML = active.length ? weatherConditionsHTML(active) : 'The weather is unset';
 }
 
 /* ── Folding the card ─────────────────────────────────────────────
@@ -111,6 +109,7 @@ function buildWeatherGrid() {
     tile.className = 'weather-tile';
     tile.textContent = weatherLabel(value);
     tile.dataset.value = value;
+    tile.dataset.wx = value;
     tile.addEventListener('click', () => toggleWeatherCondition(value));
     grid.appendChild(tile);
   });

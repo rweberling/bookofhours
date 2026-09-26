@@ -30,6 +30,16 @@
  return value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, ' ');
  };
 
+ // The one way a list of conditions is written out anywhere on the site
+ // (the hour page's #weather-line, the Weather card's readout) — each name
+ // in its own .wx element carrying data-wx, so styles.css can tint every
+ // condition the same way wherever it appears.
+ window.weatherConditionsHTML = function (values) {
+ return (values || [])
+ .map(value => `<span class="wx" data-wx="${value}">${window.weatherLabel(value)}</span>`)
+ .join('<span class="sep" aria-hidden="true">✦</span>');
+ };
+
  // How long a chosen/detected condition stays in effect before the site
  // quietly falls back to ambient (ordinary ticking clock/season, no
  // weather class). 3 hours, not 1 — real weather doesn't usually flip

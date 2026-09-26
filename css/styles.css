@@ -244,6 +244,43 @@ body::before {
 }
 .weather-line .sep { color: var(--gold); margin: 0 8px; transition: color 3s ease; }
 
+/* ── Weather condition tints ─────────────────────────────────────
+   Every condition name on the site (.wx spans from weatherConditionsHTML
+   in atmosphere.js, and the picker's .weather-tile) gets a tint from its
+   data-wx value. The tint is never used straight: it's blended into the
+   current hour's ink, so Snow reads as "this palette's ink, nudged cool"
+   in the light daytime palettes and the dark night ones alike. To retune
+   a condition, change its --wx here; to make every tint stronger or
+   fainter, change --wx-strength.
+   Browsers without color-mix() just keep the plain ink color.
+────────────────────────────────────────────────────────────────── */
+[data-wx]                    { --wx-strength: 70%; }
+[data-wx="clear"]            { --wx: #c9a227; }
+[data-wx="partly-cloudy"]    { --wx: #8a9bb0; }
+[data-wx="overcast"]         { --wx: #7d8590; }
+[data-wx="drizzle"]          { --wx: #5f8fa8; }
+[data-wx="rain"]             { --wx: #3f7aa0; }
+[data-wx="snow"]             { --wx: #7fb0d8; }
+[data-wx="snow-on-ground"]   { --wx: #9cc2dc; }
+[data-wx="fog"]              { --wx: #8fa39a; }
+[data-wx="wind"]             { --wx: #5f9e8a; }
+[data-wx="thunderstorm"]     { --wx: #7d6cb8; }
+[data-wx="freezing-rain"]    { --wx: #4f9fb8; }
+[data-wx="heat"]             { --wx: #c8683a; }
+[data-wx="cold"]             { --wx: #5a8cc8; }
+
+.wx {
+  color: var(--ink-light);
+  color: color-mix(in oklab, var(--ink-light), var(--wx) var(--wx-strength));
+  transition: color 3s ease;
+}
+.weather-tile.is-current[data-wx] {
+  /* Lighter blend than the .wx text — tile text sits on a filled
+     background, so it needs to stay closer to full-strength ink. */
+  color: color-mix(in oklab, var(--ink), var(--wx) 45%);
+  border-color: color-mix(in oklab, var(--accent), var(--wx) 75%);
+}
+
 /* ── Season reading page (seasons.html) ──────────────────────────
    .season-reading-meta now holds just the Latin name, solo and
    centered beneath the species title. (The season + month-range now
@@ -1177,9 +1214,12 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 }
 
 .weather-card {
+  /* The credit band bleeds out to the card's inner rule, so its margins
+     are worked out from these — change the padding here, not there. */
+  --card-pad-x: 40px; --card-pad-b: 24px; --card-rule-inset: 7px;
   position: relative;
   width: 100%; max-width: 560px;
-  padding: 32px 40px 24px;
+  padding: 32px var(--card-pad-x) var(--card-pad-b);
   text-align: left;
   transform: rotate(-0.5deg);
   filter: drop-shadow(0 3px 10px rgba(0,0,0,0.28));
@@ -1234,6 +1274,15 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 }
 .weather-quote-attr:not(:empty)::before { content: '— '; }
 
+/* The picture's credit, on its own band across the foot of the card —
+   the reading above belongs to the card, this belongs to the view. */
+.weather-credit {
+  margin: 20px calc(var(--card-rule-inset) - var(--card-pad-x)) calc(var(--card-rule-inset) - var(--card-pad-b));
+  padding: 14px calc(var(--card-pad-x) - var(--card-rule-inset)) 15px;
+  background: var(--bg-dark);
+  border-top: 0.5px solid var(--rule);
+  transition: background 3s ease, border-color 3s ease;
+}
 .weather-caption {
   font-size: 15.5px; line-height: 1.55; letter-spacing: 0.02em;
   color: var(--ink-faint);
@@ -1243,10 +1292,12 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   color: inherit; text-decoration: underline; text-underline-offset: 2px;
 }
 
-.weather-actions {
+/* Scoped under .weather-card so it outranks the base .turn-the-page
+   rule, which comes later in this file and sets margin-top: 32px. */
+.weather-card .weather-actions {
   flex-wrap: wrap; row-gap: 2px;
   font-size: 13.5px; letter-spacing: 0.2em;
-  margin-top: 18px;
+  margin-top: 0;
 }
 .weather-actions.visible { opacity: 0.75; }
 
@@ -1266,11 +1317,14 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-fold::before { content: '\2212'; }   /* − */
 .weather-fold:hover { opacity: 1; color: var(--accent); }
 
-.weather-card.is-folded { max-width: 460px; padding: 16px 52px 12px 22px; }
+.weather-card.is-folded {
+  max-width: 460px;
+  padding: 9px var(--card-rule-inset) var(--card-rule-inset);
+}
+.weather-card.is-folded .weather-credit { margin: 0; border-top: none; padding: 12px 48px 12px 16px; }
 .weather-card.is-folded .weather-fold { top: 50%; transform: translateY(-50%); right: 12px; }
 .weather-card.is-folded .weather-fold::before { content: '+'; }
-.weather-card.is-folded .weather-card-body,
-.weather-card.is-folded .weather-actions { display: none; }
+.weather-card.is-folded .weather-card-body { display: none; }
 .weather-card.is-folded .weather-caption { font-size: 14px; }
 
 .visually-hidden {
@@ -1290,13 +1344,13 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   }
   /* Phone sizes — the desktop ones above are tuned for reading at
      arm's length over a large picture; these were already comfortable. */
-  .weather-card { padding: 28px 34px 22px; }
+  .weather-card { --card-pad-x: 34px; --card-pad-b: 22px; padding-top: 28px; }
   .weather-card .publication-name { font-size: 9px; letter-spacing: 0.32em; white-space: normal; }
   .weather-readout { font-size: 14px; }
   .weather-quote-text { font-size: 18px; }
   .weather-quote-attr, .weather-caption { font-size: 13.5px; }
   .weather-card.is-folded .weather-caption { font-size: 12.5px; }
-  .weather-actions { font-size: 12px; gap: 7px; letter-spacing: 0.14em; }
+  .weather-card .weather-actions { font-size: 12px; gap: 7px; letter-spacing: 0.14em; }
 }
 
 /* ── Turn the page ────────────────────────────────────────────── */

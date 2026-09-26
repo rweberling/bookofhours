@@ -899,7 +899,7 @@ function renderWeatherLine() {
   const el = document.getElementById('weather-line');
   if (!el) return;
   const active = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
-  el.innerHTML = phenomenaHTML(active.map(weatherLabel));
+  el.innerHTML = weatherConditionsHTML(active);
   el.hidden = !active.length;
 }
 window.addEventListener('atmospherechange', renderWeatherLine);
