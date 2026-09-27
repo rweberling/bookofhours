@@ -254,20 +254,27 @@ body::before {
    fainter, change --wx-strength.
    Browsers without color-mix() just keep the plain ink color.
 ────────────────────────────────────────────────────────────────── */
-[data-wx]                    { --wx-strength: 70%; }
-[data-wx="clear"]            { --wx: #c9a227; }
-[data-wx="partly-cloudy"]    { --wx: #8a9bb0; }
-[data-wx="overcast"]         { --wx: #7d8590; }
-[data-wx="drizzle"]          { --wx: #5f8fa8; }
-[data-wx="rain"]             { --wx: #3f7aa0; }
-[data-wx="snow"]             { --wx: #7fb0d8; }
-[data-wx="snow-on-ground"]   { --wx: #9cc2dc; }
-[data-wx="fog"]              { --wx: #8fa39a; }
-[data-wx="wind"]             { --wx: #5f9e8a; }
-[data-wx="thunderstorm"]     { --wx: #7d6cb8; }
-[data-wx="freezing-rain"]    { --wx: #4f9fb8; }
-[data-wx="heat"]             { --wx: #c8683a; }
-[data-wx="cold"]             { --wx: #5a8cc8; }
+[data-wx]             { --wx-strength: 70%; }
+[data-wx="clear"]     { --wx: #c9a227; }
+[data-wx="dappled"]   { --wx: #8a9bb0; }
+[data-wx="overcast"]  { --wx: #7d8590; }
+[data-wx="mist"]      { --wx: #9aabb4; }
+[data-wx="fog"]       { --wx: #8fa39a; }
+[data-wx="drizzle"]   { --wx: #5f8fa8; }
+[data-wx="rain"]      { --wx: #3f7aa0; }
+[data-wx="thunder"]   { --wx: #7d6cb8; }
+[data-wx="ice"]       { --wx: #4f9fb8; }
+[data-wx="snow"]      { --wx: #7fb0d8; }
+[data-wx="wind"]      { --wx: #5f9e8a; }
+[data-wx="heat"]      { --wx: #c8683a; }
+[data-wx="cold"]      { --wx: #5a8cc8; }
+[data-wx="humid"]     { --wx: #8a9a58; }
+[data-wx="changing"]  { --wx: #a8845a; }
+[data-wx="dew"]       { --wx: #6aaea4; }
+[data-wx="frost"]     { --wx: #a4c4de; }
+[data-wx="puddles"]   { --wx: #5d86b0; }
+[data-wx="parched"]   { --wx: #b88a44; }
+[data-wx="snowpack"]  { --wx: #9cc2dc; }
 
 .wx {
   color: var(--ink-light);
@@ -1178,8 +1185,8 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 /* Station model above the picker (renderStationModel in weather.js) —
    sized to sit where the Hours and Seasons panes have their dials. */
 .station-model-wrap {
-  width: 250px; max-width: 100%;
-  margin: 0 0 30px;
+  width: 380px; max-width: 100%;
+  margin: -6px 0 26px;
   color: var(--ink-faint);
   transition: color 3s ease;
 }
@@ -1188,13 +1195,22 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   color: color-mix(in oklab, var(--ink-light), var(--wx) var(--wx-strength));
 }
 .station-ghost { opacity: 0.22; }
-.station-reading { color: var(--ink-light); }
+.station-reading { color: var(--ink-faint); }
 /* The unfilled strip in a 7-okta circle — the pane's own background. */
 .station-gap { fill: var(--bg); }
 .station-temp {
   font-family: 'IM Fell English', Georgia, serif;
   font-size: 15px; font-style: italic;
   fill: currentColor; text-anchor: end; dominant-baseline: middle;
+  /* Halo in the page color, so a wind staff passes behind the numbers. */
+  paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round;
+}
+.station-pressure {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 13px;
+  fill: currentColor; text-anchor: start; dominant-baseline: middle;
+  /* Halo in the page color, so a wind staff passes behind the numbers. */
+  paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round;
 }
 .station-label {
   font-family: 'Cormorant Garamond', serif;

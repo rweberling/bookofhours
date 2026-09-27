@@ -112,26 +112,35 @@ function syncWeatherTiles() {
      sky          — how much of the circle is filled (fog: sky obscured, ×)
      wind         — a staff pointing to where the wind comes from, barbed
                     by speed (half barb 5 knots, full 10, pennant 50)
-     what falls   — traditional present-weather symbols, left of the circle
+     what falls   — traditional present-weather symbols (and mist's =),
+                    left of the circle
      temperature  — upper left
-     ground       — lower right
+     dew point    — lower left (Humid, Dew, Frost)
+     pressure     — upper right, with its 3-hour trend mark to the right
+                    of the circle (Changing)
+     ground       — lower right (Puddles, Parched, Snowpack)
    After "look outside", the measured reading (siteAtmosphere.reading)
    fills in the real values: cloud cover in eighths (oktas), true wind
-   direction and speed, the actual temperature. Chosen by hand, there's
-   no reading, so each part shows a stand-in for its condition instead
-   (half/full circle, a fixed 20-knot wind, 90°+ / 32°−).
+   direction and speed, temperature, dew point, pressure and its trend.
+   Chosen by hand, there's no reading, so each part shows a stand-in for
+   its condition instead (half/full circle, a 20-knot north wind, 90°+ /
+   32°− / 65°+, a droplet for dew, a crystal for frost, ∧ for changing).
+   The dew and frost marks are this site's own — real station models
+   have no symbol for either.
    Inactive positions stay as faint ghosts, labelled when nothing is set,
    so the figure reads as a key and fills in as tiles are chosen. Parts
    tied to an active condition take its tint (see [data-wx] in
    styles.css); measured values with no matching condition (a light
-   breeze, a mild 58°) are drawn in plain ink.
+   breeze, a mild 58°) are drawn in quieter ink, and numbers carry a
+   halo in the page color so a wind staff can cross them legibly.
    Display only for now — nothing in it is clickable.
 ────────────────────────────────────────────────────────────────── */
 const STATION_R = 20;
 const STATION_STAFF = 56;   // wind staff length beyond the circle
 const MPH_TO_KNOTS = 0.869;
 
-// on: tinted by its condition · reading: plain ink · otherwise a ghost
+// on: tinted by its condition · reading: a measured value with no active
+// condition to match, in quieter ink · otherwise a ghost
 function stationPart(active, wx, inner, isReading = false) {
   if (wx && active.includes(wx)) return `<g class="station-on" data-wx="${wx}">${inner}</g>`;
   return `<g class="${isReading ? 'station-reading' : 'station-ghost'}">${inner}</g>`;
@@ -173,14 +182,17 @@ function stationSky(active) {
   const circle = `<circle cx="${CX}" cy="${CY}" r="${r}" fill="none" stroke="currentColor" stroke-width="1.6"/>`;
   if (active.includes('fog'))
     return stationPart(active, 'fog', `${circle}<path d="M ${CX - 13} ${CY - 13} L ${CX + 13} ${CY + 13} M ${CX + 13} ${CY - 13} L ${CX - 13} ${CY + 13}" stroke="currentColor" stroke-width="1.6"/>`);
-  const skyCondition = ['overcast', 'partly-cloudy', 'clear'].find(v => active.includes(v)) || null;
+  const skyCondition = ['overcast', 'dappled', 'clear'].find(v => active.includes(v)) || null;
   const reading = stationReading();
   if (reading && typeof reading.cloudCover === 'number') {
     const oktas = Math.min(8, Math.max(0, Math.round(reading.cloudCover / 12.5)));
-    return stationPart(active, skyCondition, stationOktas(oktas) + circle, true);
+    // Measured cover is tinted by its own amount — even when what's falling
+    // (snow, rain) took the place of a sky condition in the detected set.
+    const coverTint = oktas === 0 ? 'clear' : oktas <= 5 ? 'dappled' : 'overcast';
+    return `<g class="station-on" data-wx="${coverTint}">${stationOktas(oktas)}${circle}</g>`;
   }
   if (skyCondition === 'overcast') return stationPart(active, skyCondition, stationOktas(8) + circle);
-  if (skyCondition === 'partly-cloudy') return stationPart(active, skyCondition, stationOktas(4) + circle);
+  if (skyCondition === 'dappled') return stationPart(active, skyCondition, stationOktas(4) + circle);
   return stationPart(active, skyCondition, circle);
 }
 
@@ -193,8 +205,9 @@ function stationWind(active) {
     return stationPart(active, 'wind', `<circle cx="${CX}" cy="${CY}" r="${STATION_R + 5}" fill="none" stroke="currentColor" stroke-width="1.2"/>`, true);
   }
   // The staff points toward where the wind blows *from* (0° = north, up);
-  // by hand, a fixed northeasterly.
-  const staffDeg = (measured && typeof reading.windDirection === 'number' ? reading.windDirection : 45) - 90;
+  // by hand, a north wind — straight up, clear of the pressure (upper
+  // right) and temperature (upper left).
+  const staffDeg = (measured && typeof reading.windDirection === 'number' ? reading.windDirection : 0) - 90;
   const along = d => polarToXY(staffDeg, d);
   const start = along(STATION_R), end = along(STATION_R + STATION_STAFF);
   // Barbs sit on the staff's clockwise side, as plotted in the northern
@@ -233,8 +246,9 @@ const STATION_FALLS = {
   drizzle: `<circle cx="-5" cy="0" r="2.8" fill="currentColor"/><path d="M -2.4 0.8 Q -2 5 -6 7" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="6" cy="0" r="2.8" fill="currentColor"/><path d="M 8.6 0.8 Q 9 5 5 7" stroke="currentColor" stroke-width="1.4" fill="none"/>`,
   rain: `<circle cx="-6" cy="0" r="3.4" fill="currentColor"/><circle cx="6" cy="0" r="3.4" fill="currentColor"/>`,
   snow: [-7, 7].map(x => `<path transform="translate(${x} 0)" d="M 0 -5 L 0 5 M -4.3 -2.5 L 4.3 2.5 M -4.3 2.5 L 4.3 -2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>`).join(''),
-  'freezing-rain': `<path d="M -11 2 C -8 -8, -2 -8, 0 0 C 2 8, 8 8, 11 -2" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="-5.5" cy="-1" r="2.4" fill="currentColor"/><circle cx="5.5" cy="1" r="2.4" fill="currentColor"/>`,
-  thunderstorm: `<path d="M -9 11 L -9 -9 L 7 -9 L 1 0 L 7 3 L 0 12 M 0 12 L 0.5 6.5 M 0 12 L 4.5 9" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>`,
+  mist: `<path d="M -10 -3 L 10 -3 M -10 3 L 10 3" stroke="currentColor" stroke-width="1.5"/>`,
+  ice: `<path d="M -11 2 C -8 -8, -2 -8, 0 0 C 2 8, 8 8, 11 -2" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="-5.5" cy="-1" r="2.4" fill="currentColor"/><circle cx="5.5" cy="1" r="2.4" fill="currentColor"/>`,
+  thunder: `<path d="M -9 11 L -9 -9 L 7 -9 L 1 0 L 7 3 L 0 12 M 0 12 L 0.5 6.5 M 0 12 L 4.5 9" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>`,
   fog: `<path d="M -10 -5 L 10 -5 M -10 0 L 10 0 M -10 5 L 10 5" stroke="currentColor" stroke-width="1.5"/>`
 };
 
@@ -259,11 +273,62 @@ function stationTemperature(active) {
   return stationPart(active, null, text('—°'));
 }
 
+function stationDewPoint(active) {
+  const [x, y] = [CX - 28, CY + 32];
+  const text = t => `<text class="station-temp" x="${x}" y="${y}">${t}</text>`;
+  const dewCondition = ['frost', 'dew', 'humid'].find(v => active.includes(v)) || null;
+  const reading = stationReading();
+  if (reading && typeof reading.dewPoint === 'number')
+    return stationPart(active, dewCondition, text(`${Math.round(reading.dewPoint)}°`), true);
+  if (dewCondition === 'frost')
+    return stationPart(active, 'frost', `<path transform="translate(${x - 8} ${y})" d="M 0 -7 L 0 7 M -6 -3.5 L 6 3.5 M -6 3.5 L 6 -3.5 M -2 -5.5 L 0 -3.5 L 2 -5.5 M -2 5.5 L 0 3.5 L 2 5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>`);
+  if (dewCondition === 'dew')
+    return stationPart(active, 'dew', `<path transform="translate(${x - 8} ${y})" d="M 0 -7 C 3 -2, 5 1, 5 3 A 5 5 0 0 1 -5 3 C -5 1, -3 -2, 0 -7 Z" fill="currentColor"/>`);
+  if (dewCondition === 'humid') return stationPart(active, 'humid', text('65°+'));
+  return stationPart(active, null, text('—°'));
+}
+
+// Pressure (upper right, in hPa) and its 3-hour tendency (right of the
+// circle): / rising, \ falling, — steady; ∧ when chosen by hand, since
+// Changing doesn't say which way.
+function stationPressure(active) {
+  const [px, py] = [CX + 28, CY - 30];
+  const [tx, ty] = [CX + 36, CY];
+  const reading = stationReading();
+  const measured = reading && typeof reading.pressure === 'number';
+  const number = measured
+    ? stationPart(active, null, `<text class="station-pressure" x="${px}" y="${py}">${Math.round(reading.pressure)}</text>`, true)
+    : stationPart(active, null, `<text class="station-pressure" x="${px}" y="${py}">——</text>`);
+  let mark;
+  if (measured && typeof reading.pressureChange === 'number') {
+    const change = reading.pressureChange;
+    mark = change >= 1 ? `M ${tx} ${ty + 6} L ${tx + 10} ${ty - 6}`
+      : change <= -1 ? `M ${tx} ${ty - 6} L ${tx + 10} ${ty + 6}`
+      : `M ${tx} ${ty} L ${tx + 10} ${ty}`;
+  } else {
+    mark = `M ${tx} ${ty + 5} L ${tx + 5} ${ty - 5} L ${tx + 10} ${ty + 5}`;
+  }
+  const tendency = stationPart(active, 'changing',
+    `<path d="${mark}" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
+    measured && typeof reading.pressureChange === 'number');
+  return number + tendency;
+}
+
+// Lower right: a ground line, with one mark for its state — snowpack
+// first, then puddles, then parched.
 function stationGround(active) {
   const [x, y] = [CX + 42, CY + 34];
-  return stationPart(active, 'snow-on-ground',
-    `<path d="M ${x - 12} ${y + 7} L ${x + 12} ${y + 7}" stroke="currentColor" stroke-width="1.5"/>
-     <path transform="translate(${x} ${y - 1})" d="M 0 -4.5 L 0 4.5 M -3.9 -2.2 L 3.9 2.2 M -3.9 2.2 L 3.9 -2.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>`);
+  const line = `<path d="M ${x - 12} ${y + 7} L ${x + 12} ${y + 7}" stroke="currentColor" stroke-width="1.5"/>`;
+  if (active.includes('snowpack'))
+    return stationPart(active, 'snowpack', line
+      + `<path transform="translate(${x} ${y - 1})" d="M 0 -4.5 L 0 4.5 M -3.9 -2.2 L 3.9 2.2 M -3.9 2.2 L 3.9 -2.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>`);
+  if (active.includes('puddles'))
+    return stationPart(active, 'puddles', line
+      + `<ellipse cx="${x - 5}" cy="${y + 3.5}" rx="5" ry="1.8" fill="currentColor"/><ellipse cx="${x + 6}" cy="${y + 4}" rx="3.5" ry="1.4" fill="currentColor"/>`);
+  if (active.includes('parched'))
+    return stationPart(active, 'parched', line
+      + `<path d="M ${x - 8} ${y + 7} L ${x - 5.5} ${y + 12} L ${x - 2} ${y + 9.5} M ${x + 3} ${y + 7} L ${x + 5.5} ${y + 11.5} L ${x + 9} ${y + 10}" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linejoin="round"/>`);
+  return stationPart(active, null, line);
 }
 
 // Position names, like the dials' quadrant labels — only while nothing
@@ -271,25 +336,28 @@ function stationGround(active) {
 function stationLabels(active) {
   if (active.length) return '';
   const label = (x, y, t) => `<text class="station-label" x="${x}" y="${y}">${t}</text>`;
-  return label(CX, CY + 34, 'sky') + label(CX + 70, CY - 30, 'wind') + label(CX - 44, CY + 16, 'what falls')
-    + label(CX - 44, CY - 46, 'air') + label(CX + 42, CY + 54, 'ground');
+  return label(CX, CY + 30, 'sky') + label(CX + 12, CY - 76, 'wind') + label(CX - 44, CY + 13, 'what falls')
+    + label(CX - 42, CY - 44, 'air') + label(CX - 42, CY + 46, 'dew point')
+    + label(CX + 44, CY - 44, 'pressure') + label(CX + 42, CY + 54, 'ground');
 }
 
 function renderStationModel(active) {
   const svg = document.getElementById('station-model');
   if (!svg) return;
-  svg.innerHTML = `<g transform="translate(0 -20)">${stationTemperature(active)}${stationWind(active)}${stationFalls(active)}${stationGround(active)}${stationSky(active)}${stationLabels(active)}</g>`;
+  // Wind first, so the numbers' halos draw over the staff where it crosses them.
+  svg.innerHTML = `<g transform="translate(0 -20)">${stationWind(active)}${stationTemperature(active)}${stationDewPoint(active)}${stationPressure(active)}${stationFalls(active)}${stationGround(active)}${stationSky(active)}${stationLabels(active)}</g>`;
 }
 
-// Picker rows, loosely following the layers normalizeOpenMeteoWeather()
-// detects: what the sky is doing, what's falling from it, and the air and
-// ground around it. Display grouping only — the list of valid conditions
-// is still atmosphere.js's WEATHER_VALUES, and any condition added there
-// but not placed here lands in a trailing row rather than going missing.
+// Picker rows, five conditions each, loosely following the layers
+// detection reads: what the sky is doing, what's falling from it, the air,
+// and the ground. Display grouping only — the list of valid conditions is
+// still atmosphere.js's WEATHER_VALUES, and any condition added there but
+// not placed here lands in a trailing row rather than going missing.
 const WEATHER_GROUPS = [
-  { label: 'The Sky',          values: ['clear', 'partly-cloudy', 'overcast', 'fog'] },
-  { label: 'What Falls',       values: ['drizzle', 'rain', 'thunderstorm', 'freezing-rain', 'snow'] },
-  { label: 'The Air & Ground', values: ['wind', 'heat', 'cold', 'snow-on-ground'] }
+  { label: 'The Sky',    values: ['clear', 'dappled', 'overcast', 'mist', 'fog'] },
+  { label: 'What Falls', values: ['drizzle', 'rain', 'thunder', 'ice', 'snow'] },
+  { label: 'The Air',    values: ['wind', 'heat', 'cold', 'humid', 'changing'] },
+  { label: 'The Ground', values: ['dew', 'frost', 'puddles', 'parched', 'snowpack'] }
 ];
 
 function buildWeatherTile(value) {
@@ -357,28 +425,96 @@ window.addEventListener('dfossignin', e => {
 
 /* ── Look outside (geolocation → Open-Meteo) ──────────────────── */
 
-// Returns every condition that independently applies at once, rather
-// than picking a single "best" one — sky/precipitation is one mutually
-// exclusive layer, ground cover / temperature / wind are separate layers
-// that can stack on top (so a real report can come back as e.g.
-// ['snow', 'cold'] or ['thunderstorm', 'heat']).
-function normalizeOpenMeteoWeather(code, temperature, windSpeed, snowDepth) {
-  const conditions = [];
+// Everything "look outside" asks Open-Meteo for, in US units: °F, mph,
+// inches of rain — and, as a consequence of those, visibility in feet.
+// Pressure (hPa) is fetched hourly for the past 3 hours to get its trend,
+// and precipitation for the past day and fortnight for the ground.
+function openMeteoURL(latitude, longitude) {
+  const params = new URLSearchParams({
+    latitude, longitude,
+    current: 'temperature_2m,dew_point_2m,weather_code,cloud_cover,visibility,pressure_msl,wind_speed_10m,wind_direction_10m,snow_depth',
+    hourly: 'pressure_msl,precipitation',
+    past_hours: 24, forecast_hours: 1,
+    daily: 'precipitation_sum',
+    past_days: 14, forecast_days: 1,
+    temperature_unit: 'fahrenheit', wind_speed_unit: 'mph', precipitation_unit: 'inch',
+    timezone: 'auto'
+  });
+  return `https://api.open-meteo.com/v1/forecast?${params}`;
+}
 
+// The response boiled down to the measured values the site keeps (see
+// siteAtmosphere.reading in atmosphere.js) plus a few used only for
+// detection.
+function readingFromOpenMeteo(data) {
+  const c = data.current;
+  const pressures = (data.hourly && data.hourly.pressure_msl) || [];
+  const hourlyRain = (data.hourly && data.hourly.precipitation) || [];
+  const dailyRain = (data.daily && data.daily.precipitation_sum) || [];
+  const sum = values => values.reduce((total, v) => total + (v || 0), 0);
+  // The hourly series ends at the current hour, so three entries back is
+  // three hours ago.
+  const earlier = pressures.length >= 4 ? pressures[pressures.length - 4] : null;
+  return {
+    weatherCode: c.weather_code,
+    temperature: c.temperature_2m,
+    dewPoint: c.dew_point_2m,
+    cloudCover: c.cloud_cover,
+    visibility: c.visibility,                 // feet
+    pressure: c.pressure_msl,                 // hPa
+    pressureChange: typeof earlier === 'number' ? c.pressure_msl - earlier : null,   // hPa over 3 hours
+    windSpeed: c.wind_speed_10m,
+    windDirection: c.wind_direction_10m,
+    snowDepth: c.snow_depth,
+    rainPastDay: sum(hourlyRain),             // inches
+    rainPastFortnight: sum(dailyRain)         // inches
+  };
+}
+
+const FEET_PER_KM = 3281;
+
+// Every condition that independently applies at once, rather than a single
+// "best" one — what the sky is doing and what's falling are one layer
+// (from the WMO weather code, plus visibility for mist); the air and the
+// ground are separate layers that stack on top, so a real report can come
+// back as e.g. ['overcast', 'rain', 'cold', 'changing', 'puddles'].
+// Thresholds are rules of thumb, not official definitions.
+function conditionsFromReading(r) {
+  const conditions = [];
+  const code = r.weatherCode;
+  const falling = [51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 71, 73, 75, 77, 80, 81, 82, 85, 86, 95, 96, 99].includes(code);
+
+  // The sky and what falls
   if ([71, 73, 75, 77, 85, 86].includes(code)) conditions.push('snow');
   else if ([45, 48].includes(code)) conditions.push('fog');
-  else if ([56, 57, 66, 67].includes(code)) conditions.push('freezing-rain');
-  else if ([95, 96, 99].includes(code)) conditions.push('thunderstorm');
+  else if ([56, 57, 66, 67].includes(code)) conditions.push('ice');
+  else if ([95, 96, 99].includes(code)) conditions.push('thunder');
   else if ([61, 63, 65, 80, 81, 82].includes(code)) conditions.push('rain');
   else if ([51, 53, 55].includes(code)) conditions.push('drizzle');
   else if (code === 3) conditions.push('overcast');
-  else if (code === 1 || code === 2) conditions.push('partly-cloudy');
+  else if (code === 1 || code === 2) conditions.push('dappled');
   else conditions.push('clear');
+  // Mist: visibility cut to 1–5 km (fog is under 1 km, and has its own
+  // weather code).
+  if (!conditions.includes('fog') && typeof r.visibility === 'number'
+      && r.visibility >= 1 * FEET_PER_KM && r.visibility < 5 * FEET_PER_KM) {
+    conditions.push('mist');
+  }
 
-  if (snowDepth > 0) conditions.push('snow-on-ground');
-  if (temperature >= 90) conditions.push('heat');
-  else if (temperature <= 32) conditions.push('cold');
-  if (windSpeed >= 20) conditions.push('wind');
+  // The air
+  if (r.windSpeed >= 20) conditions.push('wind');
+  if (r.temperature >= 90) conditions.push('heat');
+  else if (r.temperature <= 32) conditions.push('cold');
+  if (r.dewPoint >= 65) conditions.push('humid');                  // muggy, by the usual dew point rule
+  if (typeof r.pressureChange === 'number' && Math.abs(r.pressureChange) >= 3) conditions.push('changing');
+
+  // The ground
+  const spread = r.temperature - r.dewPoint;   // near zero: air at saturation
+  if (!falling && spread <= 4 && r.temperature <= 34) conditions.push('frost');
+  else if (!falling && spread <= 3) conditions.push('dew');
+  if (r.snowDepth > 0) conditions.push('snowpack');
+  else if (r.rainPastDay >= 0.1) conditions.push('puddles');
+  else if (r.rainPastFortnight < 0.25 && r.temperature > 40) conditions.push('parched');
 
   return conditions;
 }
@@ -396,17 +532,12 @@ function lookOutside(event) {
   navigator.geolocation.getCurrentPosition(async position => {
     try {
       const { latitude, longitude } = position.coords;
-      const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code,wind_speed_10m,wind_direction_10m,cloud_cover,snow_depth&temperature_unit=fahrenheit&wind_speed_unit=mph`;
-      const response = await fetch(url);
+      const response = await fetch(openMeteoURL(latitude, longitude));
       if (!response.ok) throw new Error(`Weather request failed (${response.status}).`);
-      const data = await response.json();
+      const reading = readingFromOpenMeteo(await response.json());
       // setWeatherConditions fires 'atmospherechange', which re-renders
-      // the readout and the view below.
-      const c = data.current;
-      setWeatherConditions(
-        normalizeOpenMeteoWeather(c.weather_code, c.temperature_2m, c.wind_speed_10m, c.snow_depth),
-        { temperature: c.temperature_2m, windSpeed: c.wind_speed_10m, windDirection: c.wind_direction_10m, cloudCover: c.cloud_cover }
-      );
+      // the readout, the station model and the view.
+      setWeatherConditions(conditionsFromReading(reading), reading);
     } catch (error) {
       console.error(error);
       renderWeatherReadout('The weather could not be found');

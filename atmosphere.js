@@ -19,7 +19,14 @@
  // ones: any manual change drops it (see toggleWeatherCondition), so a
  // stored 75° can never sit beside a hand-picked Cold.
  const READING_KEY = 'earthly-hours-weather-reading';
- const WEATHER = ['clear', 'partly-cloudy', 'overcast', 'drizzle', 'rain', 'snow', 'snow-on-ground', 'fog', 'wind', 'thunderstorm', 'freezing-rain', 'heat', 'cold'];
+ // One word each, on purpose — they're read out on their own (the Weather
+ // card, the hour page) as well as under weather.js's picker row headings.
+ const WEATHER = [
+ 'clear', 'dappled', 'overcast', 'mist', 'fog',
+ 'drizzle', 'rain', 'thunder', 'ice', 'snow',
+ 'wind', 'heat', 'cold', 'humid', 'changing',
+ 'dew', 'frost', 'puddles', 'parched', 'snowpack'
+ ];
 
  // The one list of valid conditions — weather.js's weather picker builds its
  // tiles from this (deriving display labels mechanically, see
@@ -165,8 +172,10 @@
  time: currentTime,
  season: currentSeasonKey,
  weather: currentWeather,
- // { temperature (°F), windSpeed (mph), windDirection (degrees the
- // wind blows *from*, 0 = north), cloudCover (%), setAt } or null
+ // Everything readingFromOpenMeteo() in weather.js keeps — temperature
+ // and dewPoint (°F), windSpeed (mph), windDirection (degrees the wind
+ // blows *from*, 0 = north), cloudCover (%), visibility (ft), pressure
+ // and pressureChange over 3 hours (hPa), and more — plus setAt; or null
  reading: currentWeather.length ? storedReading() : null
  };
  }
