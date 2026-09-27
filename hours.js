@@ -454,6 +454,7 @@ function buildDial(blocksData) {
     nowDot.textContent = '✦';
     svg.insertBefore(nowDot, document.getElementById('dial-hand'));
     updateDialNowDot();
+    renderDialSky();
 }
 
 function updateDialNowDot() {
@@ -465,6 +466,167 @@ function updateDialNowDot() {
   dot.setAttribute('x', p.x);
   dot.setAttribute('y', p.y);
 }
+
+/* ── The dial's sky: moon, daylight, caption ──────────────────────
+   Three quiet layers on Wander the Hours, echoing the seasons dial's
+   solstices and equinoxes:
+     moon      — today's phase, drawn in the dial's empty center. Worked
+                 out offline from a known new moon and the mean length of
+                 the lunar month, so it needs no location. The real moon
+                 wanders around that mean by up to most of a day, so a
+                 phase can occasionally be named a day early or late —
+                 fine for "full moon in 3 days", not for an almanac.
+     daylight  — a shadow band inside the ring from sunset to sunrise,
+                 softened over half an hour at each end for twilight,
+                 with sunrise and sunset marked. Only when "look outside"
+                 has run today (siteAtmosphere.sun, from atmosphere.js).
+     caption   — the time, the watch, how long until the next one, and
+                 the moon and sun in words.
+────────────────────────────────────────────────────────────────── */
+const SYNODIC_MONTH = 29.530588853;                        // days
+const REFERENCE_NEW_MOON = Date.UTC(2000, 0, 6, 18, 14);   // 6 Jan 2000, 18:14 UTC
+const R_MOON = 13;
+const R_NIGHT = 74, NIGHT_WIDTH = 7;   // just inside the watches' ring
+const R_SUN_LABEL = 60;
+
+function moonPhase(now = new Date()) {
+  const days = (now.getTime() - REFERENCE_NEW_MOON) / 86400000;
+  const age = ((days / SYNODIC_MONTH) % 1 + 1) % 1;       // 0 new → 0.5 full → 1 new
+  const illumination = (1 - Math.cos(2 * Math.PI * age)) / 2;
+  const day = 1 / SYNODIC_MONTH;                          // "on the day" window
+  const name =
+    age < day || age > 1 - day ? 'New moon'
+    : age < 0.25 - day ? 'Waxing crescent'
+    : age < 0.25 + day ? 'First quarter'
+    : age < 0.5 - day ? 'Waxing gibbous'
+    : age < 0.5 + day ? 'Full moon'
+    : age < 0.75 - day ? 'Waning gibbous'
+    : age < 0.75 + day ? 'Last quarter'
+    : 'Waning crescent';
+  return {
+    age, illumination, name,
+    daysToFull: ((0.5 - age + 1) % 1) * SYNODIC_MONTH,
+    daysToNew: ((1 - age) % 1) * SYNODIC_MONTH
+  };
+}
+
+// The lit part of the moon's disc: the bright limb (right side while
+// waxing, left while waning) closed by the terminator, an ellipse whose
+// width follows the phase — bulging toward the lit side as a crescent,
+// away from it as a gibbous moon.
+function moonLitPath(cx, cy, r, age) {
+  const k = Math.cos(2 * Math.PI * age);   // 1 at new, −1 at full
+  const rx = Math.abs(k) * r;
+  const waxing = age < 0.5;
+  const limbSweep = waxing ? 1 : 0;
+  const terminatorSweep = waxing ? (k > 0 ? 0 : 1) : (k > 0 ? 1 : 0);
+  return `M ${cx} ${cy - r} A ${r} ${r} 0 0 ${limbSweep} ${cx} ${cy + r} A ${rx} ${r} 0 0 ${terminatorSweep} ${cx} ${cy - r} Z`;
+}
+
+// Like arcPath(), but for spans over 180° too (a long winter night).
+function longArcPath(startDeg, endDeg, r) {
+  const p1 = polarToXY(startDeg, r), p2 = polarToXY(endDeg, r);
+  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 ${endDeg - startDeg > 180 ? 1 : 0} 1 ${p2.x} ${p2.y}`;
+}
+
+function hoursOf(date) {
+  return date.getHours() + date.getMinutes() / 60;
+}
+
+function renderDialSky() {
+  const svg = document.getElementById('wander-dial');
+  if (!svg) return;
+  const old = document.getElementById('dial-sky');
+  if (old) old.remove();
+  const sky = document.createElementNS(svgNS, 'g');
+  sky.setAttribute('id', 'dial-sky');
+
+  const sun = window.siteAtmosphere && window.siteAtmosphere.sun;
+  if (sun) {
+    const set = hoursOf(sun.sunset), rise = hoursOf(sun.sunrise) + 24;
+    const TWILIGHT = 0.5;
+    const band = (from, to, cls) => {
+      const path = document.createElementNS(svgNS, 'path');
+      path.setAttribute('d', longArcPath(hourToAngleDeg(from), hourToAngleDeg(to), R_NIGHT));
+      path.setAttribute('class', cls);
+      path.setAttribute('stroke-width', NIGHT_WIDTH);
+      sky.appendChild(path);
+    };
+    band(set, set + TWILIGHT, 'dial-twilight');
+    band(set + TWILIGHT, rise - TWILIGHT, 'dial-night');
+    band(rise - TWILIGHT, rise, 'dial-twilight');
+
+    [['sunrise', sun.sunrise], ['sunset', sun.sunset]].forEach(([word, time]) => {
+      const deg = hourToAngleDeg(hoursOf(time));
+      const a = polarToXY(deg, R_NIGHT - NIGHT_WIDTH / 2 - 2), b = polarToXY(deg, R_NIGHT + NIGHT_WIDTH / 2 + 2);
+      const mark = document.createElementNS(svgNS, 'line');
+      mark.setAttribute('x1', a.x); mark.setAttribute('y1', a.y);
+      mark.setAttribute('x2', b.x); mark.setAttribute('y2', b.y);
+      mark.setAttribute('class', 'dial-sun-mark');
+      sky.appendChild(mark);
+      // Set along the ring, turned upright on the lower half.
+      const lp = polarToXY(deg, R_SUN_LABEL);
+      const upright = deg > 0 && deg < 180;
+      const text = document.createElementNS(svgNS, 'text');
+      text.setAttribute('x', lp.x); text.setAttribute('y', lp.y);
+      text.setAttribute('class', 'dial-sun-label');
+      text.setAttribute('transform', `rotate(${upright ? deg - 90 : deg + 90}, ${lp.x}, ${lp.y})`);
+      text.textContent = `${word} ${formatTime(time)}`;
+      sky.appendChild(text);
+    });
+  }
+
+  // The moon, in the center; the hand's pivot sits on top of it.
+  const phase = moonPhase();
+  const moon = document.createElementNS(svgNS, 'g');
+  moon.setAttribute('class', 'dial-moon');
+  moon.innerHTML = `<title>${phase.name}, ${Math.round(phase.illumination * 100)}% lit</title>`
+    + `<circle cx="${CX}" cy="${CY}" r="${R_MOON}" class="dial-moon-disc"/>`
+    + `<path d="${moonLitPath(CX, CY, R_MOON, phase.age)}" class="dial-moon-lit"/>`;
+  sky.appendChild(moon);
+
+  svg.insertBefore(sky, document.getElementById('dial-hand'));
+  renderDialCaption();
+}
+
+function durationWords(minutes) {
+  const h = Math.floor(minutes / 60), m = minutes % 60;
+  const part = (n, unit) => `${n} ${unit}${n === 1 ? '' : 's'}`;
+  if (!h) return part(m, 'minute');
+  return m ? `${part(h, 'hour')} ${part(m, 'minute')}` : part(h, 'hour');
+}
+
+function renderDialCaption() {
+  const el = document.getElementById('wander-dial-caption');
+  const data = blocks || blocksRef;
+  if (!el || !data) return;
+  const now = new Date();
+  const hour = hoursOf(now);
+  const i = data.findIndex(b => hour >= b.startHour && hour < b.startHour + 3);
+  const current = data[i], next = data[(i + 1) % data.length];
+  const minutesLeft = ((next.startHour * 60 - (now.getHours() * 60 + now.getMinutes())) % 1440 + 1440) % 1440;
+
+  const phase = moonPhase(now);
+  const lit = `${phase.name}, ${Math.round(phase.illumination * 100)}% lit`;
+  const upcoming = phase.name === 'Full moon' || phase.name === 'New moon' ? ''
+    : phase.daysToFull < phase.daysToNew
+      ? ` · full moon in ${durationDays(phase.daysToFull)}`
+      : ` · new moon in ${durationDays(phase.daysToNew)}`;
+  const sun = window.siteAtmosphere && window.siteAtmosphere.sun;
+  const sunWords = sun ? ` · sunrise ${formatTime(sun.sunrise)}, sunset ${formatTime(sun.sunset)}` : '';
+
+  el.innerHTML = `${formatTime(now)} · ${current.name} · ${durationWords(minutesLeft)} until ${next.name}`
+    + `<br>${lit}${upcoming}${sunWords}`;
+}
+
+function durationDays(days) {
+  const n = Math.max(1, Math.round(days));
+  return n === 1 ? 'a day' : `${n} days`;
+}
+
+window.addEventListener('atmospheretick', () => {
+  if (document.getElementById('wander-dial-caption')) renderDialCaption();
+});
 
 function setDialHand(hour) {
   const hand = document.getElementById('dial-hand');
@@ -625,6 +787,7 @@ function openWanderPane() {
     onOpen: () => {
       if (typeof updateDialNowDot === 'function') updateDialNowDot();
       if (!document.querySelector('.wander-tile') && blocks) buildWander(blocks);
+      else renderDialSky();   // moon, daylight and caption as of now
     }
   });
 }

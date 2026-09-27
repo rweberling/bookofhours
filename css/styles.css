@@ -834,7 +834,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     gap: 8px;
   }
   .wander-pane { padding: 52px 20px 60px; }
-  .wander-pane .wander-dial-wrap { width: 230px; height: 230px; }
+  .wander-pane .wander-dial-wrap { width: 300px; height: 300px; }
   .tile-name { font-size: 11px; }
   .tile-hours { font-size: 12px; }
   .tile-subtitle { font-size: 12px; }
@@ -969,7 +969,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 /* ── Dial ─────────────────────────────────────────────────────── */
 .wander-dial-wrap {
-  margin-bottom: 44px;
+  margin-bottom: 18px;
   position: relative;
   width: 340px; height: 340px; max-width: 100%;
   flex-shrink: 0;
@@ -1095,12 +1095,29 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   font-size: 9px; fill: var(--ink); opacity: 0.8;
   text-anchor: middle; dominant-baseline: middle;
 }
+/* Wander the Hours: moon, night band, sunrise/sunset (renderDialSky in
+   hours.js). */
+.dial-moon-disc { fill: none; stroke: currentColor; stroke-width: 0.6; opacity: 0.35; }
+/* Lit side in the palette's pale gold, not ink — in ink, a full moon on
+   the light daytime paper reads as a dark (new) one. */
+.dial-moon-lit { fill: var(--gold-light); opacity: 0.9; }
+.dial-night { fill: none; stroke: var(--ink-faint); opacity: 0.22; }
+.dial-twilight { fill: none; stroke: var(--ink-faint); opacity: 0.1; }
+.dial-sun-mark { stroke: var(--gold); stroke-width: 1; opacity: 0.8; }
+.dial-sun-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5.6px; font-style: italic; letter-spacing: 0.04em;
+  fill: var(--ink-faint);
+  text-anchor: middle; dominant-baseline: middle;
+}
+.wander-dial-caption,
 .season-dial-caption {
   font-family: 'Cormorant Garamond', serif;
   font-size: 13px; font-style: italic; letter-spacing: 0.04em;
   color: var(--ink-faint);
   margin-bottom: 40px; text-align: center;
   transition: color 3s ease;
+  line-height: 1.7;
 }
 
 /* ── Species cards (common name / Latin name) ───────────────────

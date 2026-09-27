@@ -19,6 +19,10 @@
  // ones: any manual change drops it (see toggleWeatherCondition), so a
  // stored 75° can never sit beside a hand-picked Cold.
  const READING_KEY = 'earthly-hours-weather-reading';
+ // Sunrise and sunset from the same "look outside" — kept on their own,
+ // for the rest of that calendar day, since they stay true long after the
+ // conditions' 3-hour hold and aren't undone by choosing weather by hand.
+ const SUN_KEY = 'earthly-hours-sun';
  // One word each, on purpose — they're read out on their own (the Weather
  // card, the hour page) as well as under weather.js's picker row headings.
  const WEATHER = [
@@ -140,6 +144,30 @@
  }
  }
 
+ function todayKey(date = new Date()) {
+ return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+ }
+
+ // { sunrise, sunset } as Dates, or null — only for the day it was saved.
+ function storedSun() {
+ try {
+ const raw = window.localStorage.getItem(SUN_KEY);
+ if (!raw) return null;
+ const sun = JSON.parse(raw);
+ if (!sun || sun.day !== todayKey()) return null;
+ return { sunrise: new Date(sun.sunrise), sunset: new Date(sun.sunset) };
+ } catch (error) {
+ return null;
+ }
+ }
+
+ function writeSun(reading) {
+ if (!reading || !reading.sunrise || !reading.sunset) return;
+ try {
+ window.localStorage.setItem(SUN_KEY, JSON.stringify({ day: todayKey(), sunrise: reading.sunrise, sunset: reading.sunset }));
+ } catch (error) {}
+ }
+
  function storedWeather() {
  const now = Date.now();
  const entries = readEntries();
@@ -176,7 +204,9 @@
  // and dewPoint (°F), windSpeed (mph), windDirection (degrees the wind
  // blows *from*, 0 = north), cloudCover (%), visibility (ft), pressure
  // and pressureChange over 3 hours (hPa), and more — plus setAt; or null
- reading: currentWeather.length ? storedReading() : null
+ reading: currentWeather.length ? storedReading() : null,
+ // Today's sunrise and sunset, if "look outside" has run today; see SUN_KEY.
+ sun: storedSun()
  };
  }
 
@@ -207,6 +237,7 @@
  .filter(v => WEATHER.includes(v));
  writeEntries(values.map(value => ({ value, setAt })));
  writeReading(reading && values.length ? { ...reading, setAt } : null);
+ writeSun(reading);
  applyAtmosphere();
  window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
  };

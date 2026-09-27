@@ -428,14 +428,15 @@ window.addEventListener('dfossignin', e => {
 // Everything "look outside" asks Open-Meteo for, in US units: °F, mph,
 // inches of rain — and, as a consequence of those, visibility in feet.
 // Pressure (hPa) is fetched hourly for the past 3 hours to get its trend,
-// and precipitation for the past day and fortnight for the ground.
+// precipitation for the past day and fortnight for the ground, and today's
+// sunrise and sunset for the Hours dial's daylight band.
 function openMeteoURL(latitude, longitude) {
   const params = new URLSearchParams({
     latitude, longitude,
     current: 'temperature_2m,dew_point_2m,weather_code,cloud_cover,visibility,pressure_msl,wind_speed_10m,wind_direction_10m,snow_depth',
     hourly: 'pressure_msl,precipitation',
     past_hours: 24, forecast_hours: 1,
-    daily: 'precipitation_sum',
+    daily: 'precipitation_sum,sunrise,sunset',
     past_days: 14, forecast_days: 1,
     temperature_unit: 'fahrenheit', wind_speed_unit: 'mph', precipitation_unit: 'inch',
     timezone: 'auto'
@@ -467,7 +468,11 @@ function readingFromOpenMeteo(data) {
     windDirection: c.wind_direction_10m,
     snowDepth: c.snow_depth,
     rainPastDay: sum(hourlyRain),             // inches
-    rainPastFortnight: sum(dailyRain)         // inches
+    rainPastFortnight: sum(dailyRain),        // inches
+    // Today's (the daily series ends on today), as local ISO times —
+    // "2026-09-26T06:48" — which the browser reads as local time.
+    sunrise: data.daily && data.daily.sunrise ? data.daily.sunrise[data.daily.sunrise.length - 1] : null,
+    sunset: data.daily && data.daily.sunset ? data.daily.sunset[data.daily.sunset.length - 1] : null
   };
 }
 
