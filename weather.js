@@ -531,7 +531,12 @@ function lookOutside(event) {
   btn.textContent = 'Looking…';
   navigator.geolocation.getCurrentPosition(async position => {
     try {
-      const { latitude, longitude } = position.coords;
+      // Rounded to 2 decimal places (~1 km) before leaving the browser: the
+      // weather models behind Open-Meteo are gridded far more coarsely than
+      // that, so it costs no accuracy and shares less about where someone is.
+      const round = n => Math.round(n * 100) / 100;
+      const latitude = round(position.coords.latitude);
+      const longitude = round(position.coords.longitude);
       const response = await fetch(openMeteoURL(latitude, longitude));
       if (!response.ok) throw new Error(`Weather request failed (${response.status}).`);
       const reading = readingFromOpenMeteo(await response.json());
