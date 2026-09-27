@@ -834,7 +834,10 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 
   .season-dial-wrap { width: 190px; height: 190px; }
   .species-season-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
-  .weather-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
+  .weather-grid { gap: 20px; }
+  .station-model-wrap { width: 210px; margin-bottom: 22px; }
+  .weather-group-row { gap: 8px; }
+  .weather-group-row .weather-tile { flex-basis: calc(50% - 4px); }
 }
 
 /* ── Print / Keepsake styles ─────────────────────────────────── */
@@ -1153,10 +1156,51 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
    prototype of the free/self-select tier, not the curated pool.
 ────────────────────────────────────────────────────────────────── */
 .weather-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  width: 100%; max-width: 560px;
+  display: flex; flex-direction: column; gap: 26px;
+  width: 100%; max-width: 700px;
+}
+/* One row per group (see WEATHER_GROUPS in weather.js); rows hold 4–5
+   tiles, so fixed-width tiles centered in a wrapping row rather than a
+   fixed column count. */
+.weather-group { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.weather-group-heading {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 11px; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--ink-faint);
+  transition: color 3s ease;
+}
+.weather-group-row {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+  width: 100%;
+}
+.weather-group-row .weather-tile { flex: 0 1 128px; box-sizing: border-box; }
+
+/* Station model above the picker (renderStationModel in weather.js) —
+   sized to sit where the Hours and Seasons panes have their dials. */
+.station-model-wrap {
+  width: 250px; max-width: 100%;
+  margin: 0 0 30px;
+  color: var(--ink-faint);
+  transition: color 3s ease;
+}
+.station-model-wrap svg { width: 100%; height: auto; display: block; overflow: visible; }
+.station-on {
+  color: color-mix(in oklab, var(--ink-light), var(--wx) var(--wx-strength));
+}
+.station-ghost { opacity: 0.22; }
+.station-reading { color: var(--ink-light); }
+/* The unfilled strip in a 7-okta circle — the pane's own background. */
+.station-gap { fill: var(--bg); }
+.station-temp {
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 15px; font-style: italic;
+  fill: currentColor; text-anchor: end; dominant-baseline: middle;
+}
+.station-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 7.5px; font-style: italic;
+  fill: var(--ink-faint); opacity: 0.6;
+  text-anchor: middle; dominant-baseline: middle;
 }
 .weather-tile {
   all: unset;

@@ -13,6 +13,12 @@
  ];
  const SEASONS = ['spring', 'summer', 'autumn', 'winter'];
  const WEATHER_KEY = 'earthly-hours-weather';
+ // The measured values behind a "look outside" detection (temperature,
+ // wind, cloud cover) — kept apart from the conditions themselves, and
+ // only ever present while the active conditions are exactly the detected
+ // ones: any manual change drops it (see toggleWeatherCondition), so a
+ // stored 75° can never sit beside a hand-picked Cold.
+ const READING_KEY = 'earthly-hours-weather-reading';
  const WEATHER = ['clear', 'partly-cloudy', 'overcast', 'drizzle', 'rain', 'snow', 'snow-on-ground', 'fog', 'wind', 'thunderstorm', 'freezing-rain', 'heat', 'cold'];
 
  // The one list of valid conditions — weather.js's weather picker builds its
@@ -100,6 +106,33 @@
  }
  }
 
+ function writeReading(reading) {
+ try {
+ if (reading) {
+ window.localStorage.setItem(READING_KEY, JSON.stringify(reading));
+ } else {
+ window.localStorage.removeItem(READING_KEY);
+ }
+ } catch (error) {}
+ }
+
+ // Same TTL as the conditions it was detected alongside.
+ function storedReading() {
+ try {
+ const raw = window.localStorage.getItem(READING_KEY);
+ if (!raw) return null;
+ const reading = JSON.parse(raw);
+ if (!reading || typeof reading.setAt !== 'number' || Date.now() - reading.setAt > WEATHER_TTL_MS) {
+ writeReading(null);
+ return null;
+ }
+ return reading;
+ } catch (error) {
+ writeReading(null);
+ return null;
+ }
+ }
+
  function storedWeather() {
  const now = Date.now();
  const entries = readEntries();
@@ -131,7 +164,10 @@
  window.siteAtmosphere = {
  time: currentTime,
  season: currentSeasonKey,
- weather: currentWeather
+ weather: currentWeather,
+ // { temperature (°F), windSpeed (mph), windDirection (degrees the
+ // wind blows *from*, 0 = north), cloudCover (%), setAt } or null
+ reading: currentWeather.length ? storedReading() : null
  };
  }
 
@@ -146,6 +182,7 @@
  const without = entries.filter(e => e.value !== value);
  const wasActive = without.length !== entries.length;
  writeEntries(wasActive ? without : [...without, { value, setAt: Date.now() }]);
+ writeReading(null);
  applyAtmosphere();
  window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
  };
@@ -153,18 +190,21 @@
  // For detection: replaces the active set wholesale with what Open-Meteo
  // reported (sky condition + any independent temperature/wind/ground
  // layers), rather than merging with whatever was manually toggled before.
- window.setWeatherConditions = function (conditions) {
+ // reading (optional) is the measured values those conditions came from.
+ window.setWeatherConditions = function (conditions, reading) {
  const setAt = Date.now();
  const values = (conditions || [])
  .map(c => String(c || '').toLowerCase().replace(/\s+/g, '-'))
  .filter(v => WEATHER.includes(v));
  writeEntries(values.map(value => ({ value, setAt })));
+ writeReading(reading && values.length ? { ...reading, setAt } : null);
  applyAtmosphere();
  window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
  };
 
  window.clearWeatherCondition = function () {
  writeEntries([]);
+ writeReading(null);
  applyAtmosphere();
  window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
  };

@@ -74,7 +74,11 @@ function renderWeatherReadout(message) {
   const el = document.getElementById('weather-readout');
   if (message) { el.textContent = message; return; }
   const active = activeWeather();
-  el.innerHTML = active.length ? weatherConditionsHTML(active) : 'The weather is unset';
+  const reading = window.siteAtmosphere && window.siteAtmosphere.reading;
+  const temperature = reading && typeof reading.temperature === 'number'
+    ? `<span class="sep" aria-hidden="true">·</span>${Math.round(reading.temperature)}°`
+    : '';
+  el.innerHTML = active.length ? weatherConditionsHTML(active) + temperature : 'The weather is unset';
 }
 
 /* ── Folding the card ─────────────────────────────────────────────
@@ -98,20 +102,229 @@ function syncWeatherTiles() {
   document.querySelectorAll('.weather-tile').forEach(tile => {
     tile.classList.toggle('is-current', active.includes(tile.dataset.value));
   });
+  renderStationModel(active);
+}
+
+/* ── Station model ────────────────────────────────────────────────
+   The picker's counterpart to the Hours and Seasons dials: the
+   synoptic "station model" from weather maps — one circle at the
+   station, each kind of weather in its own fixed place around it:
+     sky          — how much of the circle is filled (fog: sky obscured, ×)
+     wind         — a staff pointing to where the wind comes from, barbed
+                    by speed (half barb 5 knots, full 10, pennant 50)
+     what falls   — traditional present-weather symbols, left of the circle
+     temperature  — upper left
+     ground       — lower right
+   After "look outside", the measured reading (siteAtmosphere.reading)
+   fills in the real values: cloud cover in eighths (oktas), true wind
+   direction and speed, the actual temperature. Chosen by hand, there's
+   no reading, so each part shows a stand-in for its condition instead
+   (half/full circle, a fixed 20-knot wind, 90°+ / 32°−).
+   Inactive positions stay as faint ghosts, labelled when nothing is set,
+   so the figure reads as a key and fills in as tiles are chosen. Parts
+   tied to an active condition take its tint (see [data-wx] in
+   styles.css); measured values with no matching condition (a light
+   breeze, a mild 58°) are drawn in plain ink.
+   Display only for now — nothing in it is clickable.
+────────────────────────────────────────────────────────────────── */
+const STATION_R = 20;
+const STATION_STAFF = 56;   // wind staff length beyond the circle
+const MPH_TO_KNOTS = 0.869;
+
+// on: tinted by its condition · reading: plain ink · otherwise a ghost
+function stationPart(active, wx, inner, isReading = false) {
+  if (wx && active.includes(wx)) return `<g class="station-on" data-wx="${wx}">${inner}</g>`;
+  return `<g class="${isReading ? 'station-reading' : 'station-ghost'}">${inner}</g>`;
+}
+
+function stationReading() {
+  return (window.siteAtmosphere && window.siteAtmosphere.reading) || null;
+}
+
+// A filled wedge of the station circle, clockwise from fromDeg to toDeg
+// (0 = up).
+function stationSector(fromDeg, toDeg) {
+  const r = STATION_R;
+  const at = deg => polarToXY(deg - 90, r);
+  const [a, b] = [at(fromDeg), at(toDeg)];
+  return `<path d="M ${CX} ${CY} L ${a.x} ${a.y} A ${r} ${r} 0 ${toDeg - fromDeg > 180 ? 1 : 0} 1 ${b.x} ${b.y} Z" fill="currentColor"/>`;
+}
+
+// Cloud cover in oktas (eighths), drawn the standard way: a quarter of the
+// circle per two oktas, with a bar for each odd one in between.
+function stationOktas(oktas) {
+  const r = STATION_R;
+  const vBar = (y1, y2) => `<path d="M ${CX} ${y1} L ${CX} ${y2}" stroke="currentColor" stroke-width="1.8"/>`;
+  switch (oktas) {
+    case 0: return '';
+    case 1: return vBar(CY - r, CY + r);
+    case 2: return stationSector(0, 90);
+    case 3: return stationSector(0, 90) + vBar(CY, CY + r);
+    case 4: return stationSector(0, 180);
+    case 5: return stationSector(0, 180) + `<path d="M ${CX - r} ${CY} L ${CX} ${CY}" stroke="currentColor" stroke-width="1.8"/>`;
+    case 6: return stationSector(0, 270);
+    case 7: return `<circle cx="${CX}" cy="${CY}" r="${r}" fill="currentColor"/><rect x="${CX - 2.5}" y="${CY - r}" width="5" height="${2 * r}" class="station-gap"/>`;
+    default: return `<circle cx="${CX}" cy="${CY}" r="${r}" fill="currentColor"/>`;
+  }
+}
+
+function stationSky(active) {
+  const r = STATION_R;
+  const circle = `<circle cx="${CX}" cy="${CY}" r="${r}" fill="none" stroke="currentColor" stroke-width="1.6"/>`;
+  if (active.includes('fog'))
+    return stationPart(active, 'fog', `${circle}<path d="M ${CX - 13} ${CY - 13} L ${CX + 13} ${CY + 13} M ${CX + 13} ${CY - 13} L ${CX - 13} ${CY + 13}" stroke="currentColor" stroke-width="1.6"/>`);
+  const skyCondition = ['overcast', 'partly-cloudy', 'clear'].find(v => active.includes(v)) || null;
+  const reading = stationReading();
+  if (reading && typeof reading.cloudCover === 'number') {
+    const oktas = Math.min(8, Math.max(0, Math.round(reading.cloudCover / 12.5)));
+    return stationPart(active, skyCondition, stationOktas(oktas) + circle, true);
+  }
+  if (skyCondition === 'overcast') return stationPart(active, skyCondition, stationOktas(8) + circle);
+  if (skyCondition === 'partly-cloudy') return stationPart(active, skyCondition, stationOktas(4) + circle);
+  return stationPart(active, skyCondition, circle);
+}
+
+function stationWind(active) {
+  const reading = stationReading();
+  const measured = reading && typeof reading.windSpeed === 'number';
+  const knots = measured ? reading.windSpeed * MPH_TO_KNOTS : 20;
+  // Calm (under ~3 knots): a second ring around the station, no staff.
+  if (measured && knots < 3) {
+    return stationPart(active, 'wind', `<circle cx="${CX}" cy="${CY}" r="${STATION_R + 5}" fill="none" stroke="currentColor" stroke-width="1.2"/>`, true);
+  }
+  // The staff points toward where the wind blows *from* (0° = north, up);
+  // by hand, a fixed northeasterly.
+  const staffDeg = (measured && typeof reading.windDirection === 'number' ? reading.windDirection : 45) - 90;
+  const along = d => polarToXY(staffDeg, d);
+  const start = along(STATION_R), end = along(STATION_R + STATION_STAFF);
+  // Barbs sit on the staff's clockwise side, as plotted in the northern
+  // hemisphere, working inward from the tip: pennants (filled), then full
+  // barbs, then a half barb.
+  const barbRad = (staffDeg - 70) * Math.PI / 180;
+  const out = (p, len) => ({ x: p.x + Math.cos(barbRad) * len, y: p.y + Math.sin(barbRad) * len });
+  let remaining = Math.round(knots / 5) * 5;
+  let d = STATION_R + STATION_STAFF;
+  let pennants = '';
+  let barbs = '';
+  while (remaining >= 50) {
+    const p = along(d), q = out(p, 17), base = along(d - 7);
+    pennants += `<path d="M ${p.x} ${p.y} L ${q.x} ${q.y} L ${base.x} ${base.y} Z" fill="currentColor"/>`;
+    d -= 10; remaining -= 50;
+  }
+  while (remaining >= 10) {
+    const p = along(d), q = out(p, 17);
+    barbs += ` M ${p.x} ${p.y} L ${q.x} ${q.y}`;
+    d -= 8; remaining -= 10;
+  }
+  if (remaining >= 5) {
+    // A lone half barb sits one step in from the tip, so it isn't
+    // mistaken for a full one.
+    if (d === STATION_R + STATION_STAFF) d -= 8;
+    const p = along(d), q = out(p, 9);
+    barbs += ` M ${p.x} ${p.y} L ${q.x} ${q.y}`;
+  }
+  return stationPart(active, 'wind',
+    `<path d="M ${start.x} ${start.y} L ${end.x} ${end.y}${barbs}" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>${pennants}`,
+    measured);
+}
+
+// Present-weather symbols, drawn around (0,0).
+const STATION_FALLS = {
+  drizzle: `<circle cx="-5" cy="0" r="2.8" fill="currentColor"/><path d="M -2.4 0.8 Q -2 5 -6 7" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="6" cy="0" r="2.8" fill="currentColor"/><path d="M 8.6 0.8 Q 9 5 5 7" stroke="currentColor" stroke-width="1.4" fill="none"/>`,
+  rain: `<circle cx="-6" cy="0" r="3.4" fill="currentColor"/><circle cx="6" cy="0" r="3.4" fill="currentColor"/>`,
+  snow: [-7, 7].map(x => `<path transform="translate(${x} 0)" d="M 0 -5 L 0 5 M -4.3 -2.5 L 4.3 2.5 M -4.3 2.5 L 4.3 -2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>`).join(''),
+  'freezing-rain': `<path d="M -11 2 C -8 -8, -2 -8, 0 0 C 2 8, 8 8, 11 -2" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="-5.5" cy="-1" r="2.4" fill="currentColor"/><circle cx="5.5" cy="1" r="2.4" fill="currentColor"/>`,
+  thunderstorm: `<path d="M -9 11 L -9 -9 L 7 -9 L 1 0 L 7 3 L 0 12 M 0 12 L 0.5 6.5 M 0 12 L 4.5 9" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>`,
+  fog: `<path d="M -10 -5 L 10 -5 M -10 0 L 10 0 M -10 5 L 10 5" stroke="currentColor" stroke-width="1.5"/>`
+};
+
+function stationFalls(active) {
+  const present = Object.keys(STATION_FALLS).filter(k => active.includes(k));
+  if (!present.length)
+    return stationPart(active, null, `<g transform="translate(${CX - 44} ${CY})">${STATION_FALLS.rain}</g>`);
+  // Several at once step further out to the left, nearest first.
+  return present.map((k, i) =>
+    stationPart(active, k, `<g transform="translate(${CX - 44 - i * 30} ${CY})">${STATION_FALLS[k]}</g>`)).join('');
+}
+
+function stationTemperature(active) {
+  const [x, y] = [CX - 28, CY - 30];
+  const text = t => `<text class="station-temp" x="${x}" y="${y}">${t}</text>`;
+  const tempCondition = ['heat', 'cold'].find(v => active.includes(v)) || null;
+  const reading = stationReading();
+  if (reading && typeof reading.temperature === 'number')
+    return stationPart(active, tempCondition, text(`${Math.round(reading.temperature)}°`), true);
+  if (tempCondition === 'heat') return stationPart(active, 'heat', text('90°+'));
+  if (tempCondition === 'cold') return stationPart(active, 'cold', text('32°−'));
+  return stationPart(active, null, text('—°'));
+}
+
+function stationGround(active) {
+  const [x, y] = [CX + 42, CY + 34];
+  return stationPart(active, 'snow-on-ground',
+    `<path d="M ${x - 12} ${y + 7} L ${x + 12} ${y + 7}" stroke="currentColor" stroke-width="1.5"/>
+     <path transform="translate(${x} ${y - 1})" d="M 0 -4.5 L 0 4.5 M -3.9 -2.2 L 3.9 2.2 M -3.9 2.2 L 3.9 -2.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>`);
+}
+
+// Position names, like the dials' quadrant labels — only while nothing
+// is set, when the figure is serving as its own key.
+function stationLabels(active) {
+  if (active.length) return '';
+  const label = (x, y, t) => `<text class="station-label" x="${x}" y="${y}">${t}</text>`;
+  return label(CX, CY + 34, 'sky') + label(CX + 70, CY - 30, 'wind') + label(CX - 44, CY + 16, 'what falls')
+    + label(CX - 44, CY - 46, 'air') + label(CX + 42, CY + 54, 'ground');
+}
+
+function renderStationModel(active) {
+  const svg = document.getElementById('station-model');
+  if (!svg) return;
+  svg.innerHTML = `<g transform="translate(0 -20)">${stationTemperature(active)}${stationWind(active)}${stationFalls(active)}${stationGround(active)}${stationSky(active)}${stationLabels(active)}</g>`;
+}
+
+// Picker rows, loosely following the layers normalizeOpenMeteoWeather()
+// detects: what the sky is doing, what's falling from it, and the air and
+// ground around it. Display grouping only — the list of valid conditions
+// is still atmosphere.js's WEATHER_VALUES, and any condition added there
+// but not placed here lands in a trailing row rather than going missing.
+const WEATHER_GROUPS = [
+  { label: 'The Sky',          values: ['clear', 'partly-cloudy', 'overcast', 'fog'] },
+  { label: 'What Falls',       values: ['drizzle', 'rain', 'thunderstorm', 'freezing-rain', 'snow'] },
+  { label: 'The Air & Ground', values: ['wind', 'heat', 'cold', 'snow-on-ground'] }
+];
+
+function buildWeatherTile(value) {
+  const tile = document.createElement('button');
+  tile.type = 'button';
+  tile.className = 'weather-tile';
+  tile.textContent = weatherLabel(value);
+  tile.dataset.value = value;
+  tile.dataset.wx = value;
+  tile.addEventListener('click', () => toggleWeatherCondition(value));
+  return tile;
 }
 
 function buildWeatherGrid() {
   const grid = document.getElementById('weather-grid');
   if (grid.children.length) { syncWeatherTiles(); return; }
-  (window.WEATHER_VALUES || []).forEach(value => {
-    const tile = document.createElement('button');
-    tile.type = 'button';
-    tile.className = 'weather-tile';
-    tile.textContent = weatherLabel(value);
-    tile.dataset.value = value;
-    tile.dataset.wx = value;
-    tile.addEventListener('click', () => toggleWeatherCondition(value));
-    grid.appendChild(tile);
+  const all = window.WEATHER_VALUES || [];
+  const placed = WEATHER_GROUPS.flatMap(g => g.values);
+  const groups = [
+    ...WEATHER_GROUPS,
+    { label: 'Also', values: all.filter(v => !placed.includes(v)) }
+  ];
+  groups.forEach(({ label, values }) => {
+    const valid = values.filter(v => all.includes(v));
+    if (!valid.length) return;
+    const section = document.createElement('section');
+    section.className = 'weather-group';
+    const heading = document.createElement('h3');
+    heading.className = 'weather-group-heading';
+    heading.textContent = label;
+    const row = document.createElement('div');
+    row.className = 'weather-group-row';
+    valid.forEach(value => row.appendChild(buildWeatherTile(value)));
+    section.append(heading, row);
+    grid.appendChild(section);
   });
   syncWeatherTiles();
 }
@@ -183,13 +396,17 @@ function lookOutside(event) {
   navigator.geolocation.getCurrentPosition(async position => {
     try {
       const { latitude, longitude } = position.coords;
-      const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code,wind_speed_10m,snow_depth&temperature_unit=fahrenheit&wind_speed_unit=mph`;
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code,wind_speed_10m,wind_direction_10m,cloud_cover,snow_depth&temperature_unit=fahrenheit&wind_speed_unit=mph`;
       const response = await fetch(url);
       if (!response.ok) throw new Error(`Weather request failed (${response.status}).`);
       const data = await response.json();
       // setWeatherConditions fires 'atmospherechange', which re-renders
       // the readout and the view below.
-      setWeatherConditions(normalizeOpenMeteoWeather(data.current.weather_code, data.current.temperature_2m, data.current.wind_speed_10m, data.current.snow_depth));
+      const c = data.current;
+      setWeatherConditions(
+        normalizeOpenMeteoWeather(c.weather_code, c.temperature_2m, c.wind_speed_10m, c.snow_depth),
+        { temperature: c.temperature_2m, windSpeed: c.wind_speed_10m, windDirection: c.wind_direction_10m, cloudCover: c.cloud_cover }
+      );
     } catch (error) {
       console.error(error);
       renderWeatherReadout('The weather could not be found');
