@@ -86,10 +86,10 @@ function turnSeasonPage() {
 /* ── Wander the Seasons: the dial ─────────────────────────────── */
 
 // Center and arc radius are shared with the Hours dial (CX/CY/R_ARC in
-// seasonal-data.js) — same wheel, different labels. Only the label
-// radius is deliberately different (112 vs the Hours dial's 110): the
-// season quadrant labels needed a hair more clearance from the arc.
-const SEASON_R_LABEL = 112;
+// seasonal-data.js) — same wheel, different labels. The season names sit
+// further out than the Hours dial's watch names (122 vs 110): they're
+// larger and unrotated, and need clear space off the arc and its ticks.
+const SEASON_R_LABEL = 122;
 const SEASON_R_TICK = 100, SEASON_R_TICK_INNER = 96;   // month ticks, as the Hours dial's
 // Solstice/equinox/cross-quarter marks sit just inside the ring, each
 // directly beside its name.
@@ -278,7 +278,7 @@ function buildSeasonDial() {
     text.setAttribute('x', lp.x); text.setAttribute('y', lp.y);
     text.setAttribute('class', 'turning-point-label');
     text.setAttribute('transform', `rotate(${upright ? deg - 90 : deg + 90}, ${lp.x}, ${lp.y})`);
-    text.textContent = point.kind === 'cross' ? 'cross-quarter' : point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
+    text.textContent = point.kind === 'cross' ? 'Cross-Quarter' : point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
     g.appendChild(text);
     svg.appendChild(g);
   });

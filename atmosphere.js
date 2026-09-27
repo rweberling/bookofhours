@@ -19,10 +19,13 @@
  // ones: any manual change drops it (see toggleWeatherCondition), so a
  // stored 75° can never sit beside a hand-picked Cold.
  const READING_KEY = 'earthly-hours-weather-reading';
- // Sunrise and sunset from the same "look outside" — kept on their own,
- // for the rest of that calendar day, since they stay true long after the
- // conditions' 3-hour hold and aren't undone by choosing weather by hand.
- const SUN_KEY = 'earthly-hours-sun';
+ // The rounded location from the last "look outside" (the same ~1 km
+ // coordinates it sends to Open-Meteo), kept in this browser only, so the
+ // Hours dial can work out each day's sunrise and sunset — see sunTimes()
+ // — without another lookup, and without the day running out at midnight.
+ // Not undone by choosing weather by hand: it's where you are, not what
+ // the weather is.
+ const LOCATION_KEY = 'earthly-hours-location';
  // One word each, on purpose — they're read out on their own (the Weather
  // card, the hour page) as well as under weather.js's picker row headings.
  const WEATHER = [
@@ -144,27 +147,46 @@
  }
  }
 
- function todayKey(date = new Date()) {
- return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+ // Sunrise and sunset for a date and place, by the standard sunrise
+ // equation (solar mean anomaly, equation of center, declination, hour
+ // angle at −0.833° for refraction and the sun's radius). Within about 3
+ // minutes of Open-Meteo's own times from the equator to the Arctic. Null
+ // on days the sun doesn't rise or doesn't set (polar winter/summer).
+ function sunTimes(latitude, longitude, date = new Date()) {
+ const rad = Math.PI / 180;
+ const jdNoon = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), 12) / 86400000 + 2440587.5;
+ const n = Math.ceil(jdNoon - 2451545.0 + 0.0008);
+ const meanSolarTime = n - longitude / 360;
+ const M = (357.5291 + 0.98560028 * meanSolarTime) % 360;
+ const C = 1.9148 * Math.sin(M * rad) + 0.02 * Math.sin(2 * M * rad) + 0.0003 * Math.sin(3 * M * rad);
+ const lambda = (M + C + 180 + 102.9372) % 360;
+ const transit = 2451545.0 + meanSolarTime + 0.0053 * Math.sin(M * rad) - 0.0069 * Math.sin(2 * lambda * rad);
+ const sinDecl = Math.sin(lambda * rad) * Math.sin(23.4397 * rad);
+ const cosDecl = Math.cos(Math.asin(sinDecl));
+ const cosHour = (Math.sin(-0.833 * rad) - Math.sin(latitude * rad) * sinDecl) / (Math.cos(latitude * rad) * cosDecl);
+ if (cosHour < -1 || cosHour > 1) return null;
+ const hourAngle = Math.acos(cosHour) / rad;
+ const toDate = jd => new Date((jd - 2440587.5) * 86400000);
+ return { sunrise: toDate(transit - hourAngle / 360), sunset: toDate(transit + hourAngle / 360) };
  }
 
- // { sunrise, sunset } as Dates, or null — only for the day it was saved.
- function storedSun() {
+ function storedLocation() {
  try {
- const raw = window.localStorage.getItem(SUN_KEY);
+ const raw = window.localStorage.getItem(LOCATION_KEY);
  if (!raw) return null;
- const sun = JSON.parse(raw);
- if (!sun || sun.day !== todayKey()) return null;
- return { sunrise: new Date(sun.sunrise), sunset: new Date(sun.sunset) };
+ const loc = JSON.parse(raw);
+ return loc && typeof loc.latitude === 'number' && typeof loc.longitude === 'number' ? loc : null;
  } catch (error) {
  return null;
  }
  }
 
- function writeSun(reading) {
- if (!reading || !reading.sunrise || !reading.sunset) return;
+ function writeLocation(reading) {
+ if (!reading || typeof reading.latitude !== 'number' || typeof reading.longitude !== 'number') return;
  try {
- window.localStorage.setItem(SUN_KEY, JSON.stringify({ day: todayKey(), sunrise: reading.sunrise, sunset: reading.sunset }));
+ window.localStorage.setItem(LOCATION_KEY, JSON.stringify({ latitude: reading.latitude, longitude: reading.longitude }));
+ // The earlier, date-bound sunrise/sunset record this replaces.
+ window.localStorage.removeItem('earthly-hours-sun');
  } catch (error) {}
  }
 
@@ -205,8 +227,9 @@
  // blows *from*, 0 = north), cloudCover (%), visibility (ft), pressure
  // and pressureChange over 3 hours (hPa), and more — plus setAt; or null
  reading: currentWeather.length ? storedReading() : null,
- // Today's sunrise and sunset, if "look outside" has run today; see SUN_KEY.
- sun: storedSun()
+ // Today's sunrise and sunset ({ sunrise, sunset } Dates), if "look
+ // outside" has ever run here; null otherwise, or on a polar day/night.
+ sun: (loc => loc ? sunTimes(loc.latitude, loc.longitude, date) : null)(storedLocation())
  };
  }
 
@@ -237,7 +260,7 @@
  .filter(v => WEATHER.includes(v));
  writeEntries(values.map(value => ({ value, setAt })));
  writeReading(reading && values.length ? { ...reading, setAt } : null);
- writeSun(reading);
+ writeLocation(reading);
  applyAtmosphere();
  window.dispatchEvent(new CustomEvent('atmospherechange', { detail: window.siteAtmosphere }));
  };

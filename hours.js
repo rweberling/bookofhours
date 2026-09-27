@@ -439,7 +439,10 @@ function buildDial(blocksData) {
     text.setAttribute('y', lp.y);
     text.setAttribute('class', 'dial-label');
     text.setAttribute('data-block', block.name);
-    text.setAttribute('transform', `rotate(${midAngle + 90}, ${lp.x}, ${lp.y})`);
+    // Read along the ring, turned upright on the lower half — as the
+    // seasons dial and the sunrise/sunset labels do.
+    const upright = midAngle > 0 && midAngle < 180;
+    text.setAttribute('transform', `rotate(${upright ? midAngle - 90 : midAngle + 90}, ${lp.x}, ${lp.y})`);
     text.textContent = block.name.toUpperCase();
     svg.insertBefore(text, document.getElementById('dial-hand'));
   });
@@ -476,10 +479,12 @@ function updateDialNowDot() {
                  wanders around that mean by up to most of a day, so a
                  phase can occasionally be named a day early or late —
                  fine for "full moon in 3 days", not for an almanac.
-     daylight  — a shadow band inside the ring from sunset to sunrise,
-                 softened over half an hour at each end for twilight,
-                 with sunrise and sunset marked. Only when "look outside"
-                 has run today (siteAtmosphere.sun, from atmosphere.js).
+     daylight  — a full band inside the ring: gold from sunrise to
+                 sunset, shadow through the night, and half an hour of
+                 twilight at each end, with sunrise and sunset marked. Only once "look outside"
+                 has run in this browser: atmosphere.js keeps its rounded
+                 location and works out each day's times from it
+                 (siteAtmosphere.sun).
      caption   — the time, the watch, how long until the next one, and
                  the moon and sun in words.
 ────────────────────────────────────────────────────────────────── */
@@ -552,6 +557,9 @@ function renderDialSky() {
       path.setAttribute('stroke-width', NIGHT_WIDTH);
       sky.appendChild(path);
     };
+    // A full inner circle, as on old astronomical clocks: day in gold,
+    // night in shadow, and half an hour of twilight at each end between.
+    band(rise - 24, set, 'dial-day');
     band(set, set + TWILIGHT, 'dial-twilight');
     band(set + TWILIGHT, rise - TWILIGHT, 'dial-night');
     band(rise - TWILIGHT, rise, 'dial-twilight');

@@ -1008,7 +1008,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   text-anchor: middle;
   dominant-baseline: middle;
 }
-.dial-label { font-size: 7.5px; font-style: italic; }
+.dial-label { font-size: 9px; font-style: italic; }
 .dial-label.active,
 .season-label.active { opacity: 1; fill: var(--ink); }
 
@@ -1077,7 +1077,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 /* Shared arc/label rules live with .dial-arc/.dial-label above — these
    are just the season dial's deltas from that shared base. */
 .season-arc.active { color: var(--accent); }
-.season-label { font-size: 9px; letter-spacing: 0.08em; cursor: default; }
+.season-label { font-size: 10.5px; letter-spacing: 0.08em; cursor: default; }
 
 /* Solstices, equinoxes and cross-quarters (seasons.js). Quiet by design:
    the season arcs stay the figure, these are the fine print. */
@@ -1087,7 +1087,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .turning-point-cross { opacity: 0.5; }
 .turning-point-label {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 5.6px; font-style: italic; letter-spacing: 0.04em;
+  font-size: 7.4px; font-style: italic; letter-spacing: 0.04em;
   fill: currentColor;
   text-anchor: middle; dominant-baseline: middle;
 }
@@ -1101,12 +1101,15 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 /* Lit side in the palette's pale gold, not ink — in ink, a full moon on
    the light daytime paper reads as a dark (new) one. */
 .dial-moon-lit { fill: var(--gold-light); opacity: 0.9; }
+/* Day in a fixed warm gold rather than --gold, which the night palettes
+   turn lavender — daylight should read as daylight at any hour. */
+.dial-day { fill: none; stroke: #d6b25a; opacity: 0.4; }
 .dial-night { fill: none; stroke: var(--ink-faint); opacity: 0.22; }
 .dial-twilight { fill: none; stroke: var(--ink-faint); opacity: 0.1; }
 .dial-sun-mark { stroke: var(--gold); stroke-width: 1; opacity: 0.8; }
 .dial-sun-label {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 5.6px; font-style: italic; letter-spacing: 0.04em;
+  font-size: 7.4px; font-style: italic; letter-spacing: 0.04em;
   fill: var(--ink-faint);
   text-anchor: middle; dominant-baseline: middle;
 }

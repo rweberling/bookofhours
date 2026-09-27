@@ -428,15 +428,14 @@ window.addEventListener('dfossignin', e => {
 // Everything "look outside" asks Open-Meteo for, in US units: °F, mph,
 // inches of rain — and, as a consequence of those, visibility in feet.
 // Pressure (hPa) is fetched hourly for the past 3 hours to get its trend,
-// precipitation for the past day and fortnight for the ground, and today's
-// sunrise and sunset for the Hours dial's daylight band.
+// and precipitation for the past day and fortnight for the ground.
 function openMeteoURL(latitude, longitude) {
   const params = new URLSearchParams({
     latitude, longitude,
     current: 'temperature_2m,dew_point_2m,weather_code,cloud_cover,visibility,pressure_msl,wind_speed_10m,wind_direction_10m,snow_depth',
     hourly: 'pressure_msl,precipitation',
     past_hours: 24, forecast_hours: 1,
-    daily: 'precipitation_sum,sunrise,sunset',
+    daily: 'precipitation_sum',
     past_days: 14, forecast_days: 1,
     temperature_unit: 'fahrenheit', wind_speed_unit: 'mph', precipitation_unit: 'inch',
     timezone: 'auto'
@@ -468,11 +467,7 @@ function readingFromOpenMeteo(data) {
     windDirection: c.wind_direction_10m,
     snowDepth: c.snow_depth,
     rainPastDay: sum(hourlyRain),             // inches
-    rainPastFortnight: sum(dailyRain),        // inches
-    // Today's (the daily series ends on today), as local ISO times —
-    // "2026-09-26T06:48" — which the browser reads as local time.
-    sunrise: data.daily && data.daily.sunrise ? data.daily.sunrise[data.daily.sunrise.length - 1] : null,
-    sunset: data.daily && data.daily.sunset ? data.daily.sunset[data.daily.sunset.length - 1] : null
+    rainPastFortnight: sum(dailyRain)         // inches
   };
 }
 
@@ -544,7 +539,9 @@ function lookOutside(event) {
       const longitude = round(position.coords.longitude);
       const response = await fetch(openMeteoURL(latitude, longitude));
       if (!response.ok) throw new Error(`Weather request failed (${response.status}).`);
-      const reading = readingFromOpenMeteo(await response.json());
+      // The rounded coordinates ride along so atmosphere.js can keep them
+      // (in this browser only) for the Hours dial's sunrise and sunset.
+      const reading = { ...readingFromOpenMeteo(await response.json()), latitude, longitude };
       // setWeatherConditions fires 'atmospherechange', which re-renders
       // the readout, the station model and the view.
       setWeatherConditions(conditionsFromReading(reading), reading);
