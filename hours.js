@@ -372,8 +372,8 @@ function closeLightbox() {
   setTimeout(() => { lightbox.style.display = 'none'; }, 300);
 }
 
-const CX = 120, CY = 120;
-const R_ARC  = 88;
+// CX/CY/R_ARC (dial center and arc radius) live in seasonal-data.js,
+// shared with seasons.js's Wander the Seasons dial.
 const R_TICK = 100;
 const R_TICK_INNER = 96;
 const R_LABEL = 110;
@@ -393,21 +393,7 @@ function hourToAngleDeg(h) {
   return h * 15 - 90;
 }
 
-// Shared by both dials (Wander the Hours and Wander the Seasons draw on
-// the same center point and arc radius — see CX/CY/R_ARC above). Takes
-// degrees directly; hour-domain callers convert via hourToAngleDeg first.
-function polarToXY(angleDeg, r) {
-  const rad = angleDeg * Math.PI / 180;
-  return { x: CX + r * Math.cos(rad), y: CY + r * Math.sin(rad) };
-}
-
-function arcPath(startDeg, endDeg, r) {
-  const p1 = polarToXY(startDeg, r);
-  const p2 = polarToXY(endDeg, r);
-  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y}`;
-}
-
-const svgNS = 'http://www.w3.org/2000/svg';
+// polarToXY() / arcPath() / svgNS live in seasonal-data.js too.
 
 function buildDial(blocksData) {
   const svg = document.getElementById('wander-dial');
@@ -600,201 +586,12 @@ keepPageBtn.addEventListener('click', () => {
   window.print();
 });
 
-/* ══════════════════════════════════════════════════════════════
-   THE SEASONS
-   Prototype data — eventually this should come from a
-   lectio-data.json file (Lectio Terra posts tagged by season),
-   the same way hours-data.json feeds Wander the Hours.
-══════════════════════════════════════════════════════════════ */
-
-const SEASON_SPECIES = Object.fromEntries(
-  SEASON_KEYS.map(key => [key, SEASONAL_DATA[key].species.map(([common, latin]) => ({ common, latin }))])
-);
-
-const SEASON_LABELS = { spring: 'Spring', summer: 'Summer', autumn: 'Autumn', winter: 'Winter' };
-
-// Center and arc radius are shared with the Hours dial (CX/CY/R_ARC,
-// defined above) — same wheel, different labels. Only the label radius is
-// deliberately different (112 vs the Hours dial's 110): the season
-// quadrant labels needed a hair more clearance from the arc.
-const SEASON_R_LABEL = 112;
-
-// Quadrant order matches clock position: spring NE, summer NW,
-// autumn SW mirrored to sit opposite spring, winter SE — arranged
-// so the current season always renders in the same screen position
-// as it would on a real yearly calendar face (spring at upper-right).
-const SEASON_QUADRANTS = [
-  { key: 'spring', startDeg: -90, endDeg: 0   },
-  { key: 'summer', startDeg: 0,   endDeg: 90  },
-  { key: 'autumn', startDeg: 90,  endDeg: 180 },
-  { key: 'winter', startDeg: 180, endDeg: 270 }
-];
-
-let displayedSeason = null; // null = ambient (real getSeason()); set = browsing a chosen season
-
-function buildSeasonDial() {
-  const svg = document.getElementById('season-dial');
-  svg.innerHTML = '';
-
-  const bgRing = document.createElementNS(svgNS, 'circle');
-  bgRing.setAttribute('cx', CX); bgRing.setAttribute('cy', CY);
-  bgRing.setAttribute('r', R_ARC);
-  bgRing.setAttribute('fill', 'none');
-  bgRing.setAttribute('stroke', 'currentColor');
-  bgRing.setAttribute('stroke-width', '14');
-  bgRing.setAttribute('opacity', '0.06');
-  svg.appendChild(bgRing);
-
-  const line1 = document.createElementNS(svgNS, 'line');
-  line1.setAttribute('x1', CX); line1.setAttribute('y1', CY - R_ARC - 14);
-  line1.setAttribute('x2', CX); line1.setAttribute('y2', CY + R_ARC + 14);
-  line1.setAttribute('stroke', 'currentColor'); line1.setAttribute('stroke-width', '0.5'); line1.setAttribute('opacity', '0.15');
-  svg.appendChild(line1);
-
-  const line2 = document.createElementNS(svgNS, 'line');
-  line2.setAttribute('x1', CX - R_ARC - 14); line2.setAttribute('y1', CY);
-  line2.setAttribute('x2', CX + R_ARC + 14); line2.setAttribute('y2', CY);
-  line2.setAttribute('stroke', 'currentColor'); line2.setAttribute('stroke-width', '0.5'); line2.setAttribute('opacity', '0.15');
-  svg.appendChild(line2);
-
-  SEASON_QUADRANTS.forEach(q => {
-    const path = document.createElementNS(svgNS, 'path');
-    path.setAttribute('d', arcPath(q.startDeg, q.endDeg, R_ARC));
-    path.setAttribute('stroke', 'currentColor');
-    path.setAttribute('fill', 'none');
-    path.setAttribute('class', 'season-arc');
-    path.setAttribute('data-season', q.key);
-    svg.appendChild(path);
-
-    const midDeg = (q.startDeg + q.endDeg) / 2;
-    const lp = polarToXY(midDeg, SEASON_R_LABEL);
-    const text = document.createElementNS(svgNS, 'text');
-    text.setAttribute('x', lp.x);
-    text.setAttribute('y', lp.y);
-    text.setAttribute('class', 'season-label');
-    text.setAttribute('data-season', q.key);
-    text.textContent = SEASON_LABELS[q.key].toUpperCase();
-    svg.appendChild(text);
-  });
-
-  const centerDot = document.createElementNS(svgNS, 'circle');
-  centerDot.setAttribute('cx', CX); centerDot.setAttribute('cy', CY);
-  centerDot.setAttribute('r', '3');
-  centerDot.setAttribute('fill', 'currentColor'); centerDot.setAttribute('opacity', '0.35');
-  svg.appendChild(centerDot);
-
-  setSeasonDialActive(displayedSeason || getSeason());
-}
-
-function setSeasonDialActive(seasonKey) {
-  document.querySelectorAll('.season-arc').forEach(el => {
-    el.classList.toggle('active', el.dataset.season === seasonKey);
-  });
-  document.querySelectorAll('.season-label').forEach(el => {
-    el.classList.toggle('active', el.dataset.season === seasonKey);
-  });
-}
-
-// The grid always shows all four seasons stacked (see .species-grid in
-// css/styles.css) — it never filtered to just one, so the seasonKey this
-// used to take was dead weight, and rebuilding all ~48 cards from scratch
-// on every dial-wedge click (selectSeason() called this every time) just
-// reproduced the same DOM. Built once per page load instead; the
-// subheading text in selectSeason() is what actually reflects which
-// season was clicked.
-let speciesGridBuilt = false;
-async function buildSpeciesGrid() {
-  if (speciesGridBuilt) return;
-  speciesGridBuilt = true;
-  const grid = document.getElementById('species-grid');
-  grid.innerHTML = '';
-  let importedSeasons = null;
-  try {
-    const data = await loadLectioData();
-    importedSeasons = data.seasons;
-  } catch (error) {
-    console.error(error);
-  }
-
-  SEASON_KEYS.forEach(key => {
-    const group = document.createElement('section');
-    group.className = 'species-season-section';
-    group.dataset.season = key;
-
-    const heading = document.createElement('h3');
-    heading.className = 'species-season-heading';
-    heading.textContent = SEASON_LABELS[key];
-    group.appendChild(heading);
-
-    const entryGrid = document.createElement('div');
-    entryGrid.className = 'species-season-grid';
-    const entries = importedSeasons && importedSeasons[key]
-      ? importedSeasons[key]
-      : SEASON_SPECIES[key].map(species => ({
-          id: species.common.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-          title: species.common,
-          subtitle: species.latin
-        }));
-    const isRealEntries = importedSeasons && importedSeasons[key];
-    entries.forEach(entry => {
-      const card = document.createElement('a');
-      card.className = 'species-card';
-      card.href = `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
-
-      const { species, latin, readings } = resolveSpeciesFields(entry, isRealEntries);
-
-      if (entry.images && entry.images[0]) {
-        const thumb = document.createElement('img');
-        thumb.className = 'species-thumb';
-        thumb.src = entry.images[0].src;
-        thumb.alt = entry.images[0].alt || species;
-        thumb.loading = 'lazy';
-        card.appendChild(thumb);
-      }
-
-      const common = document.createElement('span');
-      common.className = 'species-common';
-      common.textContent = species;
-      card.appendChild(common);
-
-      if (latin) {
-        const latinEl = document.createElement('span');
-        latinEl.className = 'species-latin';
-        latinEl.textContent = latin;
-        card.appendChild(latinEl);
-      }
-
-      if (readings.length) {
-        const credit = document.createElement('span');
-        credit.className = 'species-credit';
-        credit.textContent = creditLine(readings);
-        card.appendChild(credit);
-      }
-
-      entryGrid.appendChild(card);
-    });
-    group.appendChild(entryGrid);
-    grid.appendChild(group);
-  });
-}
-
-function selectSeason(seasonKey) {
-  displayedSeason = seasonKey;
-  const isReal = seasonKey === getSeason();
-  document.getElementById('season-subheading').textContent = isReal
-    ? `Species drawn from Lectio Terra, this season (${SEASON_LABELS[seasonKey]})`
-    : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[seasonKey]}`;
-  setSeasonDialActive(seasonKey);
-  buildSpeciesGrid();
-}
-
 /* ── Overlay pane opener ──────────────────────────────────────────
-   Both wander-style panes on this page (Wander the Hours, Wander the
-   Seasons) open through this one function — display, fade-in,
+   Wander the Hours opens through this — display, fade-in,
    build-if-needed, on-open callback. No auth check here; the DFOS
-   check lives one level up, in openWanderPane/openSeasonPane
-   themselves. See dfosGate() below. (Wander the Weather has its own
-   page now — weather.js carries its own copy of the gate.)
+   check lives one level up, in openWanderPane. See dfosGate() below.
+   (Wander the Seasons and Wander the Weather live on their own pages,
+   seasons.html and weather.html.)
 ────────────────────────────────────────────────────────────────── */
 function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
   if (!paneEl) return;
@@ -805,25 +602,12 @@ function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
 }
 
 // Checking at this level instead of per-caller means every path in (the
-// on-page buttons, and the #wander/#seasons-wander hash deep-links other
-// pages link to) is gated for free, with nothing to remember to wrap.
-// weather.js keeps a smaller copy of this for weather.html, which doesn't
-// load hours.js.
+// on-page button, and the #wander hash deep-link other pages link to) is
+// gated for free, with nothing to remember to wrap. The sign-in check
+// itself is requireDfosSignIn() in nav.js, shared with seasons.js and
+// weather.js; this page only adds its own failure message.
 function dfosGate(intent) {
-  if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) return true;
-  if (typeof window.dfosBeginSignIn === 'function') {
-    // dfosBeginSignIn normally ends by navigating away (location.href =
-    // the DFOS authorize URL), so this only ever resolves/rejects when it
-    // *didn't* get that far — e.g. the CDN import it does internally
-    // failed. That's the one failure mode worth surfacing.
-    Promise.resolve(window.dfosBeginSignIn(intent)).catch(showDfosGateError);
-  } else {
-    // dfos-siwd.js never finished loading as a module at all (ad blocker,
-    // CSP, offline, jsDelivr outage) — same user-facing problem, different
-    // cause.
-    showDfosGateError();
-  }
-  return false;
+  return requireDfosSignIn(intent, showDfosGateError);
 }
 
 let dfosGateErrorTimeout = null;
@@ -845,20 +629,12 @@ function openWanderPane() {
   });
 }
 
-function openSeasonPane(seasonKey) {
-  if (!dfosGate('season')) return;
-  openGatedPane(document.getElementById('season-pane'), {
-    ensureBuilt: () => { if (!document.querySelector('.season-arc')) buildSeasonDial(); },
-    onOpen: () => selectSeason(seasonKey || getSeason())
-  });
-}
-
 /* ══════════════════════════════════════════════════════════════
    THE DFOS GATE
-   Cosmetic only — see dfos-siwd.js. Locks Wander the Hours and Wander
-   the Seasons behind Sign In With DFOS (scope=identity: proves *a*
-   DFOS identity, nothing about this project specifically). Wander the
-   Weather is gated the same way, from weather.js.
+   Cosmetic only — see dfos-siwd.js. Locks Wander the Hours behind
+   Sign In With DFOS (scope=identity: proves *a* DFOS identity, nothing
+   about this project specifically). Wander the Seasons and Wander the
+   Weather are gated the same way, from seasons.js and weather.js.
 ══════════════════════════════════════════════════════════════ */
 
 function updateDfosGatedButtons() {
@@ -872,14 +648,10 @@ function updateDfosGatedButtons() {
 const wanderOpenBtn = document.getElementById('wander-open');
 if (wanderOpenBtn) wanderOpenBtn.addEventListener('click', openWanderPane);
 
-const seasonsWanderOpenBtn = document.getElementById('seasons-wander-open');
-if (seasonsWanderOpenBtn) seasonsWanderOpenBtn.addEventListener('click', () => openSeasonPane(getSeason()));
-
 window.addEventListener('dfossignin', e => {
   updateDfosGatedButtons();
   const intent = e.detail && e.detail.intent;
   if (intent === 'wander') openWanderPane();
-  else if (intent === 'season') openSeasonPane(getSeason());
 });
 
 // dfos-siwd.js is a module script: even declared first in index.html, its

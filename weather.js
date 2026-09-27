@@ -124,27 +124,18 @@ function openWeatherPane() {
 }
 
 /* ── DFOS gate ────────────────────────────────────────────────────
-   A smaller copy of hours.js's dfosGate() — this page doesn't load
-   hours.js. Choosing a condition by hand (Wander the Weather) is
-   gated; looking outside (The Current Weather) isn't, same as it
-   was on the hour page.
+   Choosing a condition by hand (Wander the Weather) is gated, via
+   requireDfosSignIn() in nav.js; looking outside (The Current
+   Weather) isn't.
 ────────────────────────────────────────────────────────────────── */
 function openWanderWeather() {
-  if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) {
-    openWeatherPane();
-    return;
-  }
   // Reached from the nav's "Wander the Weather" link (via #wander), so
   // there's no button of our own to relabel — say so on the card instead.
-  const failed = () => {
+  const unavailable = () => {
     renderWeatherReadout('Sign-in is unavailable; try again soon');
     setTimeout(() => renderWeatherReadout(), 5000);
   };
-  if (typeof window.dfosBeginSignIn === 'function') {
-    Promise.resolve(window.dfosBeginSignIn('weather')).catch(failed);
-  } else {
-    failed();
-  }
+  if (requireDfosSignIn('weather', unavailable)) openWeatherPane();
 }
 
 window.addEventListener('dfossignin', e => {

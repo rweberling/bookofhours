@@ -31,6 +31,26 @@ const SEASONAL_DATA = {
 
 const SEASON_KEYS = ['spring', 'summer', 'autumn', 'winter'];
 
+// --- Dial geometry --------------------------------------------------------
+// Shared by both dials — Wander the Hours (hours.js) and Wander the Seasons
+// (seasons.js) draw on the same 240×240 wheel: same center point, same arc
+// radius. Angles are in degrees; hour-domain callers convert via
+// hourToAngleDeg() in hours.js first.
+const CX = 120, CY = 120;
+const R_ARC = 88;
+const svgNS = 'http://www.w3.org/2000/svg';
+
+function polarToXY(angleDeg, r) {
+  const rad = angleDeg * Math.PI / 180;
+  return { x: CX + r * Math.cos(rad), y: CY + r * Math.sin(rad) };
+}
+
+function arcPath(startDeg, endDeg, r) {
+  const p1 = polarToXY(startDeg, r);
+  const p2 = polarToXY(endDeg, r);
+  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y}`;
+}
+
 // Month-range label for the reading page's header, e.g. "Spring ✦ March
 // through May". Meteorological seasons, same as currentSeason() below.
 const SEASON_MONTH_RANGES = {

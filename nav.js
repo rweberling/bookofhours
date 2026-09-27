@@ -26,7 +26,36 @@ registerDropup('nav-hours-trigger', 'nav-hours-menu');
 registerDropup('nav-seasons-trigger', 'nav-seasons-menu');
 registerDropup('nav-weather-trigger', 'nav-weather-menu');
 
+/* ── DFOS gate (shared) ───────────────────────────────────────────
+   One sign-in check for every Wander pane — Hours (hours.js),
+   Seasons (seasons.js), Weather (weather.js). Cosmetic only; see
+   dfos-siwd.js. Returns true when signed in; otherwise starts the
+   DFOS sign-in (which navigates away, then comes back and fires
+   'dfossignin' with the same intent) and returns false.
+   onUnavailable runs when sign-in can't even start — dfos-siwd.js
+   never loaded (ad blocker, offline, CDN outage) or its CDN import
+   failed — so each page can say so in its own place.
+
+   Only call this from a click or after DOMContentLoaded, never while
+   scripts are still loading: dfos-siwd.js is a module, so it defines
+   window.dfosIsSignedIn after every classic script has run. Called
+   earlier, a signed-in visitor looks signed out.
+────────────────────────────────────────────────────────────────── */
+function requireDfosSignIn(intent, onUnavailable) {
+if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) return true;
+const unavailable = typeof onUnavailable === 'function' ? onUnavailable : () => {};
+if (typeof window.dfosBeginSignIn === 'function') {
+Promise.resolve(window.dfosBeginSignIn(intent)).catch(unavailable);
+} else {
+unavailable();
+}
+return false;
+}
+
 /* ── Overlay pane close (Wander, Season, Weather panes) ───────────
+   Each pane lives on its own page now — wander-pane on index.html,
+   season-pane on seasons.html, weather-pane on weather.html — and
+   whichever one is present gets wired up here.
    Wander-the-Hours' hold duration (how long a picked block stays put
    before the clock resumes) is a timed expiry in hours.js now, not a
    flag this needs to clear — so one close function covers all three
@@ -95,14 +124,6 @@ history.replaceState(null, '', window.location.pathname);
 }
 }
 
-function openSeasonsIfHashed() {
-if (window.location.hash === '#seasons-wander' && typeof openSeasonPane === 'function') {
-openSeasonPane(typeof getSeason === 'function' ? getSeason() : null);
-history.replaceState(null, '', window.location.pathname);
-}
-}
-
-openSeasonsIfHashed();
 
 const installBtn = document.getElementById('install-btn');
 const installTip = document.getElementById('install-tip');
