@@ -839,7 +839,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .tile-hours { font-size: 12px; }
   .tile-subtitle { font-size: 12px; }
 
-  .season-dial-wrap { width: 190px; height: 190px; }
+  .season-dial-wrap { width: 300px; height: 300px; }
   .species-season-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
   .weather-grid { gap: 20px; }
   .station-model-wrap { width: 210px; margin-bottom: 22px; }
@@ -971,7 +971,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .wander-dial-wrap {
   margin-bottom: 44px;
   position: relative;
-  width: 240px; height: 240px;
+  width: 340px; height: 340px; max-width: 100%;
   flex-shrink: 0;
 }
 .wander-dial-wrap svg {
@@ -1064,9 +1064,9 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 /* ── Season dial (four-quadrant compass, echoes .wander-dial) ──── */
 .season-dial-wrap {
-  margin-bottom: 44px;
+  margin-bottom: 18px;
   position: relative;
-  width: 220px; height: 220px;
+  width: 360px; height: 360px; max-width: 100%;
   flex-shrink: 0;
 }
 .season-dial-wrap svg {
@@ -1078,6 +1078,30 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
    are just the season dial's deltas from that shared base. */
 .season-arc.active { color: var(--accent); }
 .season-label { font-size: 9px; letter-spacing: 0.08em; cursor: default; }
+
+/* Solstices, equinoxes and cross-quarters (seasons.js). Quiet by design:
+   the season arcs stay the figure, these are the fine print. */
+.turning-point { color: var(--ink-faint); }
+.turning-point rect, .turning-point circle { fill: currentColor; }
+.turning-point-quarter { opacity: 0.75; }
+.turning-point-cross { opacity: 0.5; }
+.turning-point-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5.6px; font-style: italic; letter-spacing: 0.04em;
+  fill: currentColor;
+  text-anchor: middle; dominant-baseline: middle;
+}
+.season-now {
+  font-size: 9px; fill: var(--ink); opacity: 0.8;
+  text-anchor: middle; dominant-baseline: middle;
+}
+.season-dial-caption {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px; font-style: italic; letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin-bottom: 40px; text-align: center;
+  transition: color 3s ease;
+}
 
 /* ── Species cards (common name / Latin name) ───────────────────
    Deliberately distinct from .wander-tile — a different card

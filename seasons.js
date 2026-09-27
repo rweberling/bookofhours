@@ -90,6 +90,9 @@ function turnSeasonPage() {
 // radius is deliberately different (112 vs the Hours dial's 110): the
 // season quadrant labels needed a hair more clearance from the arc.
 const SEASON_R_LABEL = 112;
+const SEASON_R_TICK = 100, SEASON_R_TICK_INNER = 96;   // month ticks, as the Hours dial's
+const SEASON_R_MARK = 102;          // solstice/equinox/cross-quarter marks
+const SEASON_R_INNER_LABEL = 70;    // their names, inside the ring
 
 // Quadrant order matches clock position: spring NE, summer NW,
 // autumn SW mirrored to sit opposite spring, winter SE — arranged
@@ -101,6 +104,82 @@ const SEASON_QUADRANTS = [
   { key: 'autumn', startDeg: 90,  endDeg: 180 },
   { key: 'winter', startDeg: 180, endDeg: 270 }
 ];
+
+/* ── The year's turning points ────────────────────────────────────
+   Solstices and equinoxes by their hemisphere-neutral astronomical
+   names, and the four cross-quarter days at the true midpoints between
+   them — no feast or festival names, on purpose, so the dial belongs to
+   no one tradition. Dates come from Meeus's mean-equinox polynomials
+   (Astronomical Algorithms, ch. 27, valid 2000–3000), which land within
+   about ten minutes of the published times: plenty for a dial.
+────────────────────────────────────────────────────────────────── */
+const SOLSTICE_TERMS = {
+  march:     [2451623.80984, 365242.37404,  0.05169, -0.00411, -0.00057],
+  june:      [2451716.56767, 365241.62603,  0.00325,  0.00888, -0.00030],
+  september: [2451810.21715, 365242.01767, -0.11575,  0.00337,  0.00078],
+  december:  [2451900.05952, 365242.74049, -0.06223, -0.00823,  0.00032]
+};
+
+function solsticeDate(key, year) {
+  const Y = (year - 2000) / 1000;
+  const [a, b, c, d, e] = SOLSTICE_TERMS[key];
+  const jde = a + b * Y + c * Y ** 2 + d * Y ** 3 + e * Y ** 4;
+  return new Date((jde - 2440587.5) * 86400000);
+}
+
+// The dial's year runs from 1 March (top of the wheel, the start of
+// meteorological spring) to the next 1 March.
+function dialYearOf(date) {
+  return date.getMonth() >= 2 ? date.getFullYear() : date.getFullYear() - 1;
+}
+
+function dialDeg(date, dialYear) {
+  const start = new Date(dialYear, 2, 1), end = new Date(dialYear + 1, 2, 1);
+  return -90 + ((date - start) / (end - start)) * 360;
+}
+
+// Every marker falling within one dial year, in order.
+function turningPoints(dialYear) {
+  const quarters = [
+    { name: 'March Equinox',     date: solsticeDate('march', dialYear) },
+    { name: 'June Solstice',     date: solsticeDate('june', dialYear) },
+    { name: 'September Equinox', date: solsticeDate('september', dialYear) },
+    { name: 'December Solstice', date: solsticeDate('december', dialYear) },
+    { name: 'March Equinox',     date: solsticeDate('march', dialYear + 1) }
+  ];
+  const points = [];
+  for (let i = 0; i < 4; i++) {
+    points.push({ ...quarters[i], kind: 'quarter' });
+    points.push({
+      name: 'cross-quarter', kind: 'cross',
+      date: new Date((quarters[i].date.getTime() + quarters[i + 1].date.getTime()) / 2)
+    });
+  }
+  return points;
+}
+
+// Whole calendar days between two dates, in local time.
+function daysBetween(a, b) {
+  const day = d => Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
+  return Math.round((day(b) - day(a)) / 86400000);
+}
+
+const DIAL_DATE_FORMAT = new Intl.DateTimeFormat(undefined, { day: 'numeric', month: 'long' });
+
+// "27 September · 4 days after the September Equinox · 41 days to the
+// next cross-quarter" — where today sits between its two nearest markers.
+function turningPointCaption(now = new Date()) {
+  const year = dialYearOf(now);
+  const points = [...turningPoints(year - 1), ...turningPoints(year), ...turningPoints(year + 1)];
+  const today = points.find(p => daysBetween(now, p.date) === 0);
+  const label = p => p.kind === 'cross' ? 'a cross-quarter day' : `the ${p.name}`;
+  if (today) return `${DIAL_DATE_FORMAT.format(now)} · Today is ${label(today)}`;
+  const previous = [...points].reverse().find(p => p.date < now);
+  const next = points.find(p => p.date > now);
+  const plural = n => `${n} day${n === 1 ? '' : 's'}`;
+  const nextLabel = next.kind === 'cross' ? 'the next cross-quarter' : `the ${next.name}`;
+  return `${DIAL_DATE_FORMAT.format(now)} · ${plural(daysBetween(previous.date, now))} after ${label(previous)} · ${plural(daysBetween(now, next.date))} to ${nextLabel}`;
+}
 
 function buildSeasonDial() {
   const svg = document.getElementById('season-dial');
@@ -146,6 +225,71 @@ function buildSeasonDial() {
     text.textContent = SEASON_LABELS[q.key].toUpperCase();
     svg.appendChild(text);
   });
+
+  // Month ticks, like the Hours dial's hour ticks; the four that start a
+  // season (1 Mar/Jun/Sep/Dec) sit on the quadrant lines, a little longer.
+  const now = new Date();
+  const year = dialYearOf(now);
+  for (let m = 0; m < 12; m++) {
+    const deg = dialDeg(new Date(year, 2 + m, 1), year);
+    const isSeason = m % 3 === 0;
+    const p1 = polarToXY(deg, isSeason ? SEASON_R_TICK_INNER - 2 : SEASON_R_TICK_INNER + 1);
+    const p2 = polarToXY(deg, isSeason ? SEASON_R_TICK + 2 : SEASON_R_TICK);
+    const tick = document.createElementNS(svgNS, 'line');
+    tick.setAttribute('x1', p1.x); tick.setAttribute('y1', p1.y);
+    tick.setAttribute('x2', p2.x); tick.setAttribute('y2', p2.y);
+    tick.setAttribute('stroke', 'currentColor');
+    tick.setAttribute('stroke-width', isSeason ? '1' : '0.5');
+    tick.setAttribute('opacity', isSeason ? '0.3' : '0.14');
+    svg.appendChild(tick);
+  }
+
+  // Solstices, equinoxes and cross-quarters: a mark just outside the arc,
+  // and the name set small inside the ring, clear of the season names.
+  turningPoints(year).forEach(point => {
+    const deg = dialDeg(point.date, year);
+    const g = document.createElementNS(svgNS, 'g');
+    g.setAttribute('class', `turning-point turning-point-${point.kind}`);
+    const title = document.createElementNS(svgNS, 'title');
+    title.textContent = `${point.kind === 'cross' ? 'Cross-quarter day' : point.name} · ${DIAL_DATE_FORMAT.format(point.date)}`;
+    g.appendChild(title);
+
+    const m = polarToXY(deg, SEASON_R_MARK);
+    const mark = document.createElementNS(svgNS, point.kind === 'quarter' ? 'rect' : 'circle');
+    if (point.kind === 'quarter') {
+      mark.setAttribute('x', m.x - 2.2); mark.setAttribute('y', m.y - 2.2);
+      mark.setAttribute('width', 4.4); mark.setAttribute('height', 4.4);
+      mark.setAttribute('transform', `rotate(45, ${m.x}, ${m.y})`);
+    } else {
+      mark.setAttribute('cx', m.x); mark.setAttribute('cy', m.y); mark.setAttribute('r', 1.6);
+    }
+    g.appendChild(mark);
+
+    // Names read along the ring, turned upright on the lower half.
+    const lp = polarToXY(deg, SEASON_R_INNER_LABEL);
+    const upright = deg > 0 && deg < 180;
+    const text = document.createElementNS(svgNS, 'text');
+    text.setAttribute('x', lp.x); text.setAttribute('y', lp.y);
+    text.setAttribute('class', 'turning-point-label');
+    text.setAttribute('transform', `rotate(${upright ? deg - 90 : deg + 90}, ${lp.x}, ${lp.y})`);
+    text.textContent = point.name;
+    g.appendChild(text);
+    svg.appendChild(g);
+  });
+
+  // Today, as a star on the arc — the Hours dial's "now" mark.
+  const nowPoint = polarToXY(dialDeg(now, year), R_ARC);
+  const nowStar = document.createElementNS(svgNS, 'text');
+  nowStar.setAttribute('x', nowPoint.x); nowStar.setAttribute('y', nowPoint.y);
+  nowStar.setAttribute('class', 'season-now');
+  nowStar.textContent = '✦';
+  const nowTitle = document.createElementNS(svgNS, 'title');
+  nowTitle.textContent = `Today · ${DIAL_DATE_FORMAT.format(now)}`;
+  nowStar.appendChild(nowTitle);
+  svg.appendChild(nowStar);
+
+  const caption = document.getElementById('season-dial-caption');
+  if (caption) caption.textContent = turningPointCaption(now);
 
   const centerDot = document.createElementNS(svgNS, 'circle');
   centerDot.setAttribute('cx', CX); centerDot.setAttribute('cy', CY);
