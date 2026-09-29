@@ -3,8 +3,9 @@
    A full-page "window" view: one image (painting, photograph,
    diagram) filling the page behind the frame, and a paper fragment
    laid over it carrying the reading and the work's attribution.
-   Views come from weather-oracle.json, weighted toward whatever
-   conditions are active (pickWeatherAware, seasonal-data.js).
+   Images and readings come from weather-oracle.json as two separate
+   lists, each drawn on its own, weighted toward whatever conditions are
+   active (pickWeatherAware, seasonal-data.js).
 
    Expects atmosphere.js (conditions, weatherLabel) and
    seasonal-data.js (pick helpers) loaded before this file.
@@ -13,8 +14,12 @@
 const WEATHER_CARD_POSITIONS = ['top-left', 'top-right', 'bottom-left', 'bottom-right', 'bottom-center'];
 const WEATHER_CARD_DEFAULT_POSITION = 'bottom-right';
 
-let weatherViews = null;
-let lastWeatherViewSrc = null;
+// weather-oracle.json: { images: [...], readings: [...] }, drawn
+// independently of each other (as hours-data.json's images and quotes are).
+let weatherImages = null;
+let weatherReadings = null;
+let lastWeatherImageSrc = null;
+let lastWeatherReadingText = null;
 
 function activeWeather() {
   return (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
@@ -26,47 +31,82 @@ function stripHTML(str) {
 
 /* ── The view ─────────────────────────────────────────────────── */
 
-// Views flagged "unset": true (e.g. Emslie's chart of every kind of
-// weather) are the opening view when no conditions are set — nothing
-// chosen, nothing detected. They're never drawn otherwise, and "turn the
-// page" always moves on to the ordinary views, so an unset visit can still
-// browse everything instead of being stuck on one picture.
-function pickWeatherView({ turning = false } = {}) {
-  const notLast = v => v.src === lastWeatherViewSrc;
-  const unsetViews = weatherViews.filter(v => v.unset);
-  const ordinaryViews = weatherViews.filter(v => !v.unset);
-  if (!turning && !activeWeather().length && unsetViews.length) {
-    return pickExcluding(unsetViews, notLast);
+// One pick from either list, images or readings — the same rules for both.
+// Entries flagged "unset": true (Emslie's chart of every kind of weather,
+// Lubbock's "no such thing as bad weather") are the opening view when no
+// conditions are set — nothing chosen, nothing detected. They're never
+// drawn otherwise, and "turn the page" always moves on to the ordinary
+// entries, so an unset visit can still browse everything instead of being
+// stuck on one picture. Otherwise, weighted toward the active conditions —
+// or by weightFn, when given (see readingWeight below).
+function pickWeatherEntry(entries, excludeFn, { turning = false } = {}, weightFn = null) {
+  if (!entries || !entries.length) return null;
+  const unset = entries.filter(e => e.unset);
+  const ordinary = entries.filter(e => !e.unset);
+  if (!turning && !activeWeather().length && unset.length) {
+    return pickExcluding(unset, excludeFn);
   }
-  return pickWeatherAware(ordinaryViews.length ? ordinaryViews : weatherViews, notLast);
+  const pool = ordinary.length ? ordinary : entries;
+  return weightFn ? pickWeightedExcluding(pool, weightFn, excludeFn) : pickWeatherAware(pool, excludeFn);
+}
+
+// The image is drawn first; the reading then leans toward both the weather
+// outside and the image's own tags, so the card and the picture tend to
+// agree — Whistler's fog nocturne mostly brings a mist poem — while any
+// reading can still turn up with any image. Nothing is ruled out: every
+// reading keeps the base weight.
+// READING_IMAGE_PULL sets how strongly the image pulls: 0 ignores the image
+// entirely (readings follow only the weather), 1 weighs it the same as the
+// weather outside, 2+ makes matching the picture the stronger pull.
+const READING_IMAGE_PULL = 1;
+// The reading just shown isn't ruled out on the next turn the way the last
+// image is — only made this much less likely. With few readings, a hard
+// "never twice running" rule forces them to simply alternate and drowns
+// out the pull toward the image; this keeps repeats rare but lets a
+// reading that fits the new picture come back.
+const READING_REPEAT_FACTOR = 0.25;
+
+function readingWeight(image) {
+  const active = activeWeather();
+  const imageTags = (image && image.weather) || [];
+  return reading => (WEATHER_BASE_WEIGHT
+    + weatherMatchCount(reading, active) ** 2
+    + READING_IMAGE_PULL * weatherMatchCount(reading, imageTags) ** 2)
+    * (reading.text === lastWeatherReadingText ? READING_REPEAT_FACTOR : 1);
 }
 
 function renderWeatherView(options) {
-  if (!weatherViews || !weatherViews.length) return;
-  const view = pickWeatherView(options) || weatherViews[0];
-  lastWeatherViewSrc = view.src;
+  if (!weatherImages || !weatherImages.length) return;
+  const image = pickWeatherEntry(weatherImages, e => e.src === lastWeatherImageSrc, options) || weatherImages[0];
+  // No hard exclusion for readings — readingWeight() makes the last one
+  // less likely instead.
+  const reading = pickWeatherEntry(weatherReadings, () => false, options, readingWeight(image));
+  lastWeatherImageSrc = image.src;
+  lastWeatherReadingText = reading ? reading.text : null;
 
   // Fade the old view out, swap once the new one has actually loaded —
   // otherwise a slow image pops in half-drawn over the previous one.
   const img = document.getElementById('weather-window-img');
-  if (img.getAttribute('src') !== view.src) {
+  if (img.getAttribute('src') !== image.src) {
     img.classList.remove('is-loaded');
-    img.src = view.src;
+    img.src = image.src;
   }
-  img.alt = stripHTML(view.caption) || 'The view from the window';
-  document.getElementById('weather-caption').innerHTML = view.caption || '';
+  img.alt = stripHTML(image.caption) || 'The view from the window';
+  document.getElementById('weather-caption').innerHTML = image.caption || '';
 
-  // An entry with an empty quote (e.g. a plain chart or diagram) still
-  // gets the card — it carries the attribution and the page's controls —
-  // just without the reading.
-  const hasQuote = !!(view.quote && view.quote.text);
-  document.getElementById('weather-reading').hidden = !hasQuote;
-  document.getElementById('weather-quote-text').innerHTML = hasQuote ? view.quote.text : '';
-  document.getElementById('weather-quote-attr').innerHTML = hasQuote && view.quote.attr ? view.quote.attr : '';
+  // No readings at all (or an empty one) still leaves the card — it
+  // carries the image credit and the page's controls — just without the
+  // reading.
+  const hasReading = !!(reading && reading.text);
+  document.getElementById('weather-reading').hidden = !hasReading;
+  document.getElementById('weather-quote-text').innerHTML = hasReading ? reading.text : '';
+  document.getElementById('weather-quote-attr').innerHTML = hasReading && reading.attr ? reading.attr : '';
 
+  // Where the card sits belongs to the image: it's about keeping clear of
+  // the part of the picture that matters.
   const card = document.getElementById('weather-card');
-  card.dataset.position = WEATHER_CARD_POSITIONS.includes(view.cardPosition)
-    ? view.cardPosition
+  card.dataset.position = WEATHER_CARD_POSITIONS.includes(image.cardPosition)
+    ? image.cardPosition
     : WEATHER_CARD_DEFAULT_POSITION;
 }
 
@@ -599,7 +639,9 @@ async function initWeatherPage() {
   try {
     const response = await fetch('weather-oracle.json');
     if (!response.ok) throw new Error(`Unable to load weather-oracle.json (${response.status}).`);
-    weatherViews = await response.json();
+    const oracle = await response.json();
+    weatherImages = oracle.images || [];
+    weatherReadings = oracle.readings || [];
   } catch (error) {
     console.error(error);
     document.getElementById('weather-caption').textContent = 'The window could not be opened. Please return soon.';
