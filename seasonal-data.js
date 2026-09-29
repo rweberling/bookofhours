@@ -159,6 +159,18 @@ function parsePostTitle(title) {
     return { species: title || '', readings: [] };
   }
   const afterColon = title.includes(':') ? title.split(':').slice(1).join(':').trim() : title.trim();
+  // Newer titles put the readings in parentheses after the species —
+  // "Week 37: Northern Red Oak (Susan Fenimore Cooper, George Francis
+  // Heath, James George Frazer)". Only when nothing before the "(" has a
+  // comma, so an older title's trailing aside ("Cucumis, Robert Hass,
+  // Marcus Aurelius (and William Cowper, too)") still parses the old way.
+  const parenthesized = afterColon.match(/^([^,(]+?)\s*\((.+)\)\s*$/);
+  if (parenthesized) {
+    return {
+      species: parenthesized[1].trim(),
+      readings: parenthesized[2].split(',').map(s => s.trim()).filter(Boolean)
+    };
+  }
   const parts = afterColon.split(',').map(s => s.trim()).filter(Boolean);
   if (parts.length === 0) {
     return { species: title.trim(), readings: [] };
