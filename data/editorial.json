@@ -1,0 +1,106 @@
+[
+  {
+    "id": "ed-hour-void",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["void"]
+    },
+    "versicle": "<p>You are alone with the dark now. Nothing is asked of you.</p>",
+    "phenomena": [
+      "Melatonin saturates the brain: deepest phase of slow-wave neurological repair",
+      "Mushrooms release their spores",
+      "Plants grow best in the shade of night"
+    ]
+  },
+  {
+    "id": "ed-hour-hush",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["hush"]
+    },
+    "versicle": "<p>Something shifts in the silence. The darkness is unchanged, but its edges loosen.</p>",
+    "phenomena": [
+      "Metabolic nadir: blood cools and breathing slows",
+      "Worms retreat underground",
+      "Atmospheric stasis; dew point"
+    ]
+  },
+  {
+    "id": "ed-hour-chorus",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["chorus"]
+    },
+    "versicle": "<p>The sound comes before the light. The world remembers it exists.</p>",
+    "phenomena": [
+      "Songbirds begin the dawn chorus",
+      "Insects and other cold-blooded creatures shake off their nocturnal chill",
+      "Stomata open to inhale the morning carbon: photosynthesis initiates"
+    ]
+  },
+  {
+    "id": "ed-hour-transit",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["transit"]
+    },
+    "versicle": "<p>The day lifts. Light is now something you move through rather than look at.</p>",
+    "phenomena": [
+      "Synchronized migration of human workforces: scattered commuter densities",
+      "Sap ascends",
+      "Convective heating triggers the first rising columns of air"
+    ]
+  },
+  {
+    "id": "ed-hour-fulcrum",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["fulcrum"]
+    },
+    "versicle": "<p>Your shadow is directly beneath you. For a moment, there is no pointing away.</p>",
+    "phenomena": [
+      "Solar zenith achieved: zero azimuth deviation, maximum ultraviolet index",
+      "Petals unfurl to maximum aperture",
+      "Lunch hour"
+    ]
+  },
+  {
+    "id": "ed-hour-doldrums",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["doldrums"]
+    },
+    "versicle": "<p>The angle of the light has become philosophical. Every object casts a shadow longer than itself.</p>",
+    "phenomena": [
+      "Shadows elongate, red-shift in light",
+      "The afternoon lull: synchronized quietude of birds and bugs",
+      "Neurocognitive deceleration; prefrontal executive control fractures under cumulative mental load"
+    ]
+  },
+  {
+    "id": "ed-hour-convivium",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["convivium"]
+    },
+    "versicle": "<p>The light lingers above. The lamps offer their devotion.</p>",
+    "phenomena": [
+      "Shared caloric replenishment; social structures visible",
+      "Crepuscular swarming and/or dispersal",
+      "Gradual descent into passive respiration, circadian quiescence"
+    ]
+  },
+  {
+    "id": "ed-hour-denouement",
+    "kind": "hour-note",
+    "about": {
+      "hours": ["denouement"]
+    },
+    "versicle": "<p>The day closes; the night opens. Something may be laid down now.</p>",
+    "phenomena": [
+      "Nocturnal activities commence",
+      "Plants complete their nyctinastic closing",
+      "Peak marine bioluminescence"
+    ]
+  }
+]

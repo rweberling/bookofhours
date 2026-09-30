@@ -1,17 +1,8 @@
 
 /* Shared atmospheric state for every page. */
 (function () {
- const TIME_BLOCKS = [
- { key: 'void', start: 0 },
- { key: 'hush', start: 3 },
- { key: 'chorus', start: 6 },
- { key: 'transit', start: 9 },
- { key: 'fulcrum', start: 12 },
- { key: 'doldrums', start: 15 },
- { key: 'convivium', start: 18 },
- { key: 'denouement', start: 21 }
- ];
- const SEASONS = ['spring', 'summer', 'autumn', 'winter'];
+ // The watches and their start hours are HOURS, in shared.js.
+ const TIME_BLOCKS = HOURS;
  const WEATHER_KEY = 'earthly-hours-weather';
  // The measured values behind a "look outside" detection (temperature,
  // wind, cloud cover) — kept apart from the conditions themselves, and
@@ -75,20 +66,10 @@
  return TIME_BLOCKS.slice().reverse().find(block => hour >= block.start).key;
  }
 
- // Delegates to seasonal-data.js's currentSeason() when it's loaded
- // (index.html, seasons.html) instead of keeping a second copy of the
- // month-range thresholds. atmosphere.js also runs alone on about.html,
- // sources.html and 404.html, so this still needs its own fallback for
- // when that file isn't present — and can't assume load order even when
- // it is: seasons.html loads seasonal-data.js first, index.html loads it
- // second, and this runs immediately on script load either way.
+ // The season's months are defined once, in shared.js, which every page
+ // loads before this file (scripts/check_data.py checks the order).
  function seasonKey(date) {
- if (typeof currentSeason === 'function') return currentSeason(date);
- const month = date.getMonth();
- if (month >= 2 && month <= 4) return 'spring';
- if (month >= 5 && month <= 7) return 'summer';
- if (month >= 8 && month <= 10) return 'autumn';
- return 'winter';
+ return currentSeason(date);
  }
 
  function readEntries() {
@@ -203,12 +184,12 @@
  if (!body) return;
 
  body.classList.remove(...TIME_BLOCKS.map(block => `block-${block.key}`));
- body.classList.remove(...SEASONS.map(season => `season-${season}`));
+ body.classList.remove(...SEASON_KEYS.map(season => `season-${season}`));
  body.classList.remove(...WEATHER.map(weather => `weather-${weather}`));
 
  const currentTime = timeKey(date);
  // Named currentSeasonKey, not currentSeason — that name belongs to the
- // global function from seasonal-data.js that seasonKey() above may
+ // global function from shared.js that seasonKey() above may
  // delegate to; shadowing it here would be confusing even though it's
  // harmless (seasonKey's own reference to currentSeason() resolves
  // lexically, not against this local).

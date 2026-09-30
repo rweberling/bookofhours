@@ -41,9 +41,7 @@ const HOUR_NAMES = {
   ]
 };
 
-const MONTHS = ["January","February","March","April","May","June",
-                "July","August","September","October","November","December"];
-const DAYS   = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+// Month names are MONTH_NAMES, in shared.js.
 
 const SEASON_EMBLEMS = {
   spring: `<path d="M8 20 Q10 13 16 5" stroke="currentColor" stroke-width="0.75" opacity="0.5" fill="none"/>
@@ -104,7 +102,7 @@ const SEASON_EMBLEMS = {
            </g>`
 };
   
-// pick() / pickExcluding() now live in seasonal-data.js, loaded before
+// pick() / pickExcluding() now live in shared.js, loaded before
 // this file — shared with seasons.js instead of duplicated here.
 
 // pickWeatherAware() (weather-weighted picks) lives there too, shared
@@ -115,25 +113,14 @@ let lastImageSrc  = null;
 
 function getSeason() {
   // The actual month-range logic lives in one place now: currentSeason()
-  // in seasonal-data.js (loaded before this script). This wrapper exists
+  // in shared.js (loaded before this script). This wrapper exists
   // so every existing getSeason() call site in this file — and the
   // getSeason(now) call below, which, like the original, ignores its
   // argument — keeps working unchanged.
   return currentSeason();
 }
 
-function stripHTML(str) {
-  return str ? str.replace(/<[^>]*>/g, '').replace(/"/g, '&quot;') : '';
-}
-
-function formatTime(d) {
-  const h = d.getHours(), m = d.getMinutes();
-  return `${h % 12 || 12}:${String(m).padStart(2,'0')} ${h >= 12 ? 'pm' : 'am'}`;
-}
-  
-function formatDate(d) {
-  return `${DAYS[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
-}
+// formatTime(), formatDate(), plainText() and escapeHTML() live in shared.js.
 
 function phenomenaHTML(list) {
   if (!list || list.length === 0) return '';
@@ -217,7 +204,7 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate, afterU
 
   const inner = document.getElementById('image-inner');
   inner.innerHTML = img.src
-    ? `<img src="${img.src}" alt="${stripHTML(img.caption) || block.name}">`
+    ? `<img src="${img.src}" alt="${escapeHTML(plainText(img.caption) || block.name)}">`
     : placeholderSVG(block.name);
 
   currentBlockName = block.name;
@@ -276,31 +263,13 @@ function showError(msg, details = '') {
   document.querySelector('.page').innerHTML = errorHTML;
 }
 
-async function fetchWithRetry(retries = 3, timeout = 8000) {
+// The watches, built from the collection in data/ (loadCollection() and
+// hoursView() in shared.js).
+async function fetchWithRetry(retries = 3) {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), timeout);
-      
-      const res = await fetch('hours-data.json', { signal: controller.signal });
-      clearTimeout(timeoutId);
-      
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-      }
-      
-      const text = await res.text();
-      
-      if (!text.trim().startsWith('[') && !text.trim().startsWith('{')) {
-        throw new Error('Response is not valid JSON');
-      }
-      
-      const data = JSON.parse(text);
-      
-      if (!Array.isArray(data)) {
-        throw new Error('JSON data is not an array');
-      }
-      
+      const data = hoursView(await loadCollection());
+      if (!data.length) throw new Error('No hours found in data/vocab.json');
       return data;
     } catch (err) {
       console.error(`Attempt ${attempt}/${retries} failed:`, err.message);
@@ -317,7 +286,7 @@ async function fetchWithRetry(retries = 3, timeout = 8000) {
 
 async function init() {
   try {
-    blocks = await fetchWithRetry(3, 8000);
+    blocks = await fetchWithRetry(3);
     
     render(blocks, true);
     openWanderIfHashed();
@@ -329,14 +298,9 @@ async function init() {
     window.addEventListener('atmospheretick', () => render(blocks, false));
     setTimeout(() => document.getElementById('reading-actions').classList.add('visible'), 5000);
   } catch (err) {
-    const errorType = err.name === 'AbortError' ? 'timeout' : 'parse_error';
-    const errorMsg = errorType === 'timeout' 
-      ? 'The request took too long to respond.'
-      : err.message;
-    
     showError(
-      `Could not load <em>hours-data.json</em>.<br>
-       ${errorMsg}<br><br>
+      `Could not load the collection in <em>data/</em>.<br>
+       ${err.message}<br><br>
        If you are working locally, run:<br>
        <code>python3 -m http.server 8000</code><br>
        then open <code>http://localhost:8000</code>`,
@@ -372,28 +336,19 @@ function closeLightbox() {
   setTimeout(() => { lightbox.style.display = 'none'; }, 300);
 }
 
-// CX/CY/R_ARC (dial center and arc radius) live in seasonal-data.js,
+// CX/CY/R_ARC (dial center and arc radius) live in shared.js,
 // shared with seasons.js's Wander the Seasons dial.
 const R_TICK = 100;
 const R_TICK_INNER = 96;
 const R_LABEL = 110;
 
-const BLOCK_PALETTES = {
-  'Void':       '#2a2440',
-  'Hush':       '#3a3050',
-  'Chorus':     '#c89030',
-  'Transit':    '#f0c050',
-  'Fulcrum':    '#d4b870',
-  'Doldrums':   '#c08040',
-  'Convivium':  '#a84828',
-  'Denouement': '#404870',
-};
+// Each watch's dial color is in HOURS, in shared.js.
   
 function hourToAngleDeg(h) {
   return h * 15 - 90;
 }
 
-// polarToXY() / arcPath() / svgNS live in seasonal-data.js too.
+// polarToXY() / arcPath() / svgNS live in shared.js too.
 
 function buildDial(blocksData) {
   const svg = document.getElementById('wander-dial');
@@ -422,7 +377,7 @@ function buildDial(blocksData) {
   }
 
   blocksData.forEach((block, i) => {
-    const color = BLOCK_PALETTES[block.name] || '#888888';
+    const color = (HOURS.find(hour => hour.key === block.key) || {}).color || '#888888';
 
     const path = document.createElementNS(svgNS, 'path');
     path.setAttribute('d', arcPath(hourToAngleDeg(block.startHour), hourToAngleDeg(block.startHour + 3), R_ARC));
@@ -765,8 +720,7 @@ keepPageBtn.addEventListener('click', () => {
 ────────────────────────────────────────────────────────────────── */
 function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
   if (!paneEl) return;
-  paneEl.style.display = 'flex';
-  requestAnimationFrame(() => paneEl.classList.add('open'));
+  openOverlayPane(paneEl);
   if (typeof ensureBuilt === 'function') ensureBuilt();
   if (typeof onOpen === 'function') onOpen();
 }

@@ -1,3 +1,62 @@
+/* ══════════════════════════════════════════════════════════════
+   SHARED — the foundation every page loads first.
+   One definition per fact: the watches, the seasons and their months,
+   month and day names, date and text helpers, the pick helpers, the dial
+   geometry, the Lectio Terra species lists
+   (until they move into data/vocab.json), and the loader for the
+   collection in data/. Loaded before atmosphere.js on every page.
+══════════════════════════════════════════════════════════════ */
+
+// --- The watches ------------------------------------------------------------
+// The eight three-hour watches of the day, with the color each is drawn in
+// on the Wander the Hours dial. atmosphere.js works out the current watch
+// from these start hours, and hours.js draws the dial from the colors.
+// data/vocab.json repeats the ids, names and start hours for reuse outside
+// the site; scripts/check_data.py checks that the two agree.
+const HOURS = [
+  { key: 'void', label: 'Void', start: 0, color: '#2a2440' },
+  { key: 'hush', label: 'Hush', start: 3, color: '#3a3050' },
+  { key: 'chorus', label: 'Chorus', start: 6, color: '#c89030' },
+  { key: 'transit', label: 'Transit', start: 9, color: '#f0c050' },
+  { key: 'fulcrum', label: 'Fulcrum', start: 12, color: '#d4b870' },
+  { key: 'doldrums', label: 'Doldrums', start: 15, color: '#c08040' },
+  { key: 'convivium', label: 'Convivium', start: 18, color: '#a84828' },
+  { key: 'denouement', label: 'Denouement', start: 21, color: '#404870' }
+];
+
+// --- Seasons and months -----------------------------------------------------
+// The site's meteorological seasons. Everything about a season's months
+// comes from this table: which season it is now (currentSeason), the
+// "March through May" wording, and the labels. data/vocab.json repeats the
+// months for reuse outside the site; scripts/check_data.py checks that the
+// two agree.
+const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'];
+const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+const SEASONS = [
+  { key: 'spring', label: 'Spring', months: [3, 4, 5] },
+  { key: 'summer', label: 'Summer', months: [6, 7, 8] },
+  { key: 'autumn', label: 'Autumn', months: [9, 10, 11] },
+  { key: 'winter', label: 'Winter', months: [12, 1, 2] }
+];
+
+const SEASON_KEYS = SEASONS.map(season => season.key);
+const SEASON_LABELS = Object.fromEntries(SEASONS.map(season => [season.key, season.label]));
+
+// e.g. "March through May", for the reading page's header and the Sources page.
+const SEASON_MONTH_RANGES = Object.fromEntries(SEASONS.map(season => [
+  season.key,
+  `${MONTH_NAMES[season.months[0] - 1]} through ${MONTH_NAMES[season.months[season.months.length - 1] - 1]}`
+]));
+
+// date defaults to "now", but takes an explicit Date too. atmosphere.js's
+// seasonKey() uses this, so the month thresholds exist only here.
+function currentSeason(date = new Date()) {
+  const month = date.getMonth() + 1;
+  return SEASONS.find(season => season.months.includes(month)).key;
+}
+
 const SEASONAL_DATA = {
   spring: {
     label: 'Spring',
@@ -29,7 +88,29 @@ const SEASONAL_DATA = {
   }
 };
 
-const SEASON_KEYS = ['spring', 'summer', 'autumn', 'winter'];
+
+// --- Dates and text -----------------------------------------------------------
+// "3:45 pm"
+function formatTime(d) {
+  const h = d.getHours(), m = d.getMinutes();
+  return `${h % 12 || 12}:${String(m).padStart(2, '0')} ${h >= 12 ? 'pm' : 'am'}`;
+}
+
+// "Wednesday, 30 September 2026"
+function formatDate(d) {
+  return `${DAY_NAMES[d.getDay()]}, ${d.getDate()} ${MONTH_NAMES[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+// A caption or citation with its markup removed, e.g. for an image's alt text.
+function plainText(html) {
+  return html ? String(html).replace(/<[^>]*>/g, '') : '';
+}
+
+// Text made safe to place inside HTML, including inside an attribute's quotes.
+function escapeHTML(text) {
+  return String(text == null ? '' : text)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
 
 // --- Dial geometry --------------------------------------------------------
 // Shared by both dials — Wander the Hours (hours.js) and Wander the Seasons
@@ -49,26 +130,6 @@ function arcPath(startDeg, endDeg, r) {
   const p1 = polarToXY(startDeg, r);
   const p2 = polarToXY(endDeg, r);
   return `M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y}`;
-}
-
-// Month-range label for the reading page's header, e.g. "Spring ✦ March
-// through May". Meteorological seasons, same as currentSeason() below.
-const SEASON_MONTH_RANGES = {
-  spring: 'March through May',
-  summer: 'June through August',
-  autumn: 'September through November',
-  winter: 'December through February'
-};
-
-// date defaults to "now", but takes an explicit Date too — atmosphere.js's
-// seasonKey() delegates here (when this file is loaded) rather than
-// keeping its own copy of the month-range thresholds.
-function currentSeason(date = new Date()) {
-  const month = date.getMonth();
-  if (month >= 2 && month <= 4) return 'spring';
-  if (month >= 5 && month <= 7) return 'summer';
-  if (month >= 8 && month <= 10) return 'autumn';
-  return 'winter';
 }
 
 // Shared by hours.js (quotes/images) and seasons.js (seasonal readings) —
@@ -240,4 +301,102 @@ function loadLectioData() {
     });
   }
   return lectioDataPromise;
+}
+// --- The collection ---------------------------------------------------------
+// data/ holds the collection itself: readings, images, editorial writing and
+// the vocabularies their tags point to (hours, seasons, weather, subjects),
+// plus site.json, the site's settings (such as the suggested-edition link).
+// Pages read it through loadCollection() and reshape it with the views
+// below into the forms their code already expects, so there is one set of
+// files to edit and nothing generated in between. Records marked
+// "draft": true are kept in the files but never shown.
+const COLLECTION_FILES = ['readings', 'images', 'editorial', 'vocab', 'site'];
+let collectionPromise = null;
+function loadCollection() {
+  if (!collectionPromise) {
+    collectionPromise = Promise.all(COLLECTION_FILES.map(name =>
+      fetch(`data/${name}.json`).then(response => {
+        if (!response.ok) throw new Error(`Unable to load data/${name}.json (${response.status}).`);
+        return response.json();
+      })
+    )).then(([readings, images, editorial, vocab, site]) => ({
+      readings: readings.filter(r => !r.draft),
+      images: images.filter(i => !i.draft),
+      editorial: editorial.filter(e => !e.draft),
+      vocab,
+      site
+    }));
+    // A failed load isn't cached, so a retry fetches again.
+    collectionPromise.catch(() => { collectionPromise = null; });
+  }
+  return collectionPromise;
+}
+
+// Suggested editions are stored as an ISBN only. The link is built from
+// the pattern in data/site.json (suggestedEditionUrl, with {isbn} where
+// the ISBN goes), so changing retailer or affiliate ID is one data edit.
+function suggestedEditionUrl(suggestedEdition, site) {
+  const pattern = site && site.suggestedEditionUrl;
+  return pattern && suggestedEdition && suggestedEdition.isbn
+    ? pattern.replace('{isbn}', suggestedEdition.isbn)
+    : null;
+}
+
+function taggedWith(record, scheme, id) {
+  return !!(record.tags && Array.isArray(record.tags[scheme]) && record.tags[scheme].includes(id));
+}
+
+// The shapes the page code reads: a quote is { text, attr, weather } and
+// an image { src, caption, weather, cardPosition, unset }. attr is the
+// hand-written display citation.
+function quoteView(reading) {
+  return {
+    id: reading.id,
+    text: reading.text,
+    attr: reading.citation ? reading.citation.display : '',
+    weather: (reading.tags && reading.tags.weather) || [],
+    unset: !!(reading.display && reading.display.weatherUnset)
+  };
+}
+
+function imageView(image) {
+  const display = image.display || {};
+  return {
+    id: image.id,
+    src: image.file,
+    caption: image.caption || '',
+    weather: (image.tags && image.tags.weather) || [],
+    cardPosition: display.cardPosition,
+    unset: !!display.weatherUnset
+  };
+}
+
+// The hours page's blocks, in vocabulary order: each watch with its
+// versicle and phenomena, and every reading and image tagged for it.
+function hoursView(collection) {
+  return collection.vocab.hours.map(hour => {
+    const note = collection.editorial.find(e => e.kind === 'hour-note' && e.about && (e.about.hours || []).includes(hour.id)) || {};
+    return {
+      key: hour.id,
+      name: hour.label,
+      cssClass: `block-${hour.id}`,
+      startHour: hour.startHour,
+      subtitle: hour.subtitle,
+      versicle: note.versicle || '',
+      phenomena: note.phenomena || [],
+      quotes: collection.readings.filter(r => taggedWith(r, 'hours', hour.id)).map(quoteView),
+      images: collection.images.filter(i => taggedWith(i, 'hours', hour.id)).map(imageView)
+    };
+  });
+}
+
+// The weather page's window: every image and reading tagged with a
+// condition, plus the "unset" ones shown before any condition is chosen.
+function weatherView(collection) {
+  const onWeatherPage = record => ((record.tags && record.tags.weather) || []).length > 0
+    || !!(record.display && record.display.weatherUnset);
+  return {
+    images: collection.images.filter(onWeatherPage).map(imageView),
+    readings: collection.readings.filter(onWeatherPage).map(quoteView)
+  };
 }

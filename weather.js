@@ -3,19 +3,20 @@
    A full-page "window" view: one image (painting, photograph,
    diagram) filling the page behind the frame, and a paper fragment
    laid over it carrying the reading and the work's attribution.
-   Images and readings come from weather-oracle.json as two separate
-   lists, each drawn on its own, weighted toward whatever conditions are
-   active (pickWeatherAware, seasonal-data.js).
+   Images and readings come from the collection in data/ (weatherView()
+   in shared.js: everything tagged with a condition) as two
+   separate lists, each drawn on its own, weighted toward whatever conditions are
+   active (pickWeatherAware, shared.js).
 
    Expects atmosphere.js (conditions, weatherLabel) and
-   seasonal-data.js (pick helpers) loaded before this file.
+   shared.js (pick helpers) loaded before this file.
 ══════════════════════════════════════════════════════════════ */
 
 const WEATHER_CARD_POSITIONS = ['top-left', 'top-right', 'bottom-left', 'bottom-right', 'bottom-center'];
 const WEATHER_CARD_DEFAULT_POSITION = 'bottom-right';
 
-// weather-oracle.json: { images: [...], readings: [...] }, drawn
-// independently of each other (as hours-data.json's images and quotes are).
+// weatherView(): { images: [...], readings: [...] }, drawn independently
+// of each other (as the hours page's images and quotes are).
 let weatherImages = null;
 let weatherReadings = null;
 let lastWeatherImageSrc = null;
@@ -25,9 +26,7 @@ function activeWeather() {
   return (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
 }
 
-function stripHTML(str) {
-  return str ? str.replace(/<[^>]*>/g, '') : '';
-}
+// plainText() lives in shared.js.
 
 /* ── The view ─────────────────────────────────────────────────── */
 
@@ -91,7 +90,7 @@ function renderWeatherView(options) {
     img.classList.remove('is-loaded');
     img.src = image.src;
   }
-  img.alt = stripHTML(image.caption) || 'The view from the window';
+  img.alt = plainText(image.caption) || 'The view from the window';
   document.getElementById('weather-caption').innerHTML = image.caption || '';
 
   // No readings at all (or an empty one) still leaves the card — it
@@ -440,8 +439,7 @@ function buildWeatherGrid() {
 function openWeatherPane() {
   const pane = document.getElementById('weather-pane');
   buildWeatherGrid();
-  pane.style.display = 'flex';
-  requestAnimationFrame(() => pane.classList.add('open'));
+  openOverlayPane(pane);
 }
 
 /* ── DFOS gate ────────────────────────────────────────────────────
@@ -637,11 +635,9 @@ async function initWeatherPage() {
   window.addEventListener('hashchange', openWanderWeatherIfHashed);
 
   try {
-    const response = await fetch('weather-oracle.json');
-    if (!response.ok) throw new Error(`Unable to load weather-oracle.json (${response.status}).`);
-    const oracle = await response.json();
-    weatherImages = oracle.images || [];
-    weatherReadings = oracle.readings || [];
+    const oracle = weatherView(await loadCollection());
+    weatherImages = oracle.images;
+    weatherReadings = oracle.readings;
   } catch (error) {
     console.error(error);
     document.getElementById('weather-caption').textContent = 'The window could not be opened. Please return soon.';

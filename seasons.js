@@ -5,11 +5,11 @@
    the Seasons (the dial + every season's species cards, in a pane).
    Picking a card swaps the reading in place and closes the pane.
 
-   Expects seasonal-data.js (season data, pick helpers, dial geometry,
+   Expects shared.js (season data, pick helpers, dial geometry,
    loadLectioData) and nav.js (requireDfosSignIn, closeOverlayPane).
 ══════════════════════════════════════════════════════════════ */
 
-const SEASON_LABELS = { spring: 'Spring', summer: 'Summer', autumn: 'Autumn', winter: 'Winter' };
+// SEASON_LABELS, SEASON_KEYS and SEASON_MONTH_RANGES come from shared.js.
 
 let lectioSeasons = null;   // lectio-data.json's { spring: [...], ... }, once loaded
 let season = null;          // the season whose readings are showing
@@ -31,7 +31,7 @@ function renderSeasonReading(entry) {
 
   // Only real fetched entries are ever rendered here (no fallback-sample
   // path), so isRealEntry is always true — see resolveSpeciesFields() in
-  // seasonal-data.js, shared with the species cards below.
+  // shared.js, shared with the species cards below.
   const { species, latin, readings } = resolveSpeciesFields(entry, true);
   const credits = creditLine(readings);
 
@@ -86,7 +86,7 @@ function turnSeasonPage() {
 /* ── Wander the Seasons: the dial ─────────────────────────────── */
 
 // Center and arc radius are shared with the Hours dial (CX/CY/R_ARC in
-// seasonal-data.js) — same wheel, different labels. The season names sit
+// shared.js) — same wheel, different labels. The season names sit
 // further out than the Hours dial's watch names (122 vs 110): they're
 // larger and unrotated, and need clear space off the arc and its ticks.
 const SEASON_R_LABEL = 122;
@@ -316,7 +316,7 @@ function setSeasonDialActive(seasonKey) {
 /* ── Wander the Seasons: the species cards ────────────────────── */
 
 // Only used if lectio-data.json can't be loaded: the hand-curated
-// species lists in seasonal-data.js, so the grid isn't empty.
+// species lists in shared.js, so the grid isn't empty.
 const SEASON_SPECIES = Object.fromEntries(
   SEASON_KEYS.map(key => [key, SEASONAL_DATA[key].species.map(([common, latin]) => ({ common, latin }))])
 );
@@ -430,8 +430,7 @@ function openSeasonPane() {
     : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[key]}`;
   setSeasonDialActive(key);
   buildSpeciesGrid();
-  pane.style.display = 'flex';
-  requestAnimationFrame(() => pane.classList.add('open'));
+  openOverlayPane(pane);
 }
 
 function openWanderSeasons() {

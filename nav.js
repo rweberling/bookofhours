@@ -61,6 +61,14 @@ return false;
    flag this needs to clear — so one close function covers all three
    panes.
 ────────────────────────────────────────────────────────────────── */
+// Shows an overlay pane (Wander the Hours, Seasons or Weather) and fades
+// it in; closeOverlayPane() below fades it out again.
+function openOverlayPane(paneEl) {
+if (!paneEl) return;
+paneEl.style.display = 'flex';
+requestAnimationFrame(() => paneEl.classList.add('open'));
+}
+
 function closeOverlayPane(paneEl) {
 if (!paneEl) return;
 paneEl.classList.remove('open');

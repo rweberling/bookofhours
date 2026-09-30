@@ -1,0 +1,105 @@
+{
+  "hours": [
+    {
+      "id": "void",
+      "label": "Void",
+      "startHour": 0,
+      "endHour": 3,
+      "subtitle": "Midnight · Hours 0 to 3"
+    },
+    {
+      "id": "hush",
+      "label": "Hush",
+      "startHour": 3,
+      "endHour": 6,
+      "subtitle": "Pre-dawn · Hours 3 to 6"
+    },
+    {
+      "id": "chorus",
+      "label": "Chorus",
+      "startHour": 6,
+      "endHour": 9,
+      "subtitle": "Dawn · Hours 6 to 9"
+    },
+    {
+      "id": "transit",
+      "label": "Transit",
+      "startHour": 9,
+      "endHour": 12,
+      "subtitle": "Morning · Hours 9 to 12"
+    },
+    {
+      "id": "fulcrum",
+      "label": "Fulcrum",
+      "startHour": 12,
+      "endHour": 15,
+      "subtitle": "Noon · Hours 12 to 15"
+    },
+    {
+      "id": "doldrums",
+      "label": "Doldrums",
+      "startHour": 15,
+      "endHour": 18,
+      "subtitle": "Afternoon · Hours 15 to 18"
+    },
+    {
+      "id": "convivium",
+      "label": "Convivium",
+      "startHour": 18,
+      "endHour": 21,
+      "subtitle": "Evening · Hours 18 to 21"
+    },
+    {
+      "id": "denouement",
+      "label": "Denouement",
+      "startHour": 21,
+      "endHour": 24,
+      "subtitle": "Night · Hours 21 to 24"
+    }
+  ],
+  "seasons": [
+    {
+      "id": "spring",
+      "label": "Spring",
+      "months": [3, 4, 5]
+    },
+    {
+      "id": "summer",
+      "label": "Summer",
+      "months": [6, 7, 8]
+    },
+    {
+      "id": "autumn",
+      "label": "Autumn",
+      "months": [9, 10, 11]
+    },
+    {
+      "id": "winter",
+      "label": "Winter",
+      "months": [12, 1, 2]
+    }
+  ],
+  "weather": [
+    { "id": "clear", "label": "Clear", "group": "The Sky" },
+    { "id": "dappled", "label": "Dappled", "group": "The Sky" },
+    { "id": "overcast", "label": "Overcast", "group": "The Sky" },
+    { "id": "mist", "label": "Mist", "group": "The Sky" },
+    { "id": "fog", "label": "Fog", "group": "The Sky" },
+    { "id": "drizzle", "label": "Drizzle", "group": "What Falls" },
+    { "id": "rain", "label": "Rain", "group": "What Falls" },
+    { "id": "thunder", "label": "Thunder", "group": "What Falls" },
+    { "id": "ice", "label": "Ice", "group": "What Falls" },
+    { "id": "snow", "label": "Snow", "group": "What Falls" },
+    { "id": "wind", "label": "Wind", "group": "The Air" },
+    { "id": "heat", "label": "Heat", "group": "The Air" },
+    { "id": "cold", "label": "Cold", "group": "The Air" },
+    { "id": "humid", "label": "Humid", "group": "The Air" },
+    { "id": "changing", "label": "Changing", "group": "The Air" },
+    { "id": "dew", "label": "Dew", "group": "The Ground" },
+    { "id": "frost", "label": "Frost", "group": "The Ground" },
+    { "id": "puddles", "label": "Puddles", "group": "The Ground" },
+    { "id": "parched", "label": "Parched", "group": "The Ground" },
+    { "id": "snowpack", "label": "Snowpack", "group": "The Ground" }
+  ],
+  "subjects": []
+}
