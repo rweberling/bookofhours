@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- The Earthly Book of Hours star (U+2726), concave four-pointed.
+       scripts/build_star_font.py turns this path into EarthlyStar.woff2. -->
+  <path d="M50 2C53 38 62 47 98 50C62 53 53 62 50 98C47 62 38 53 2 50C38 47 47 38 50 2Z"/>
+</svg>

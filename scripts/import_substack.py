@@ -34,6 +34,18 @@ ALLOWED_ATTRIBUTES = {
 DROP_CONTENT_TAGS = {'script', 'style', 'iframe', 'form', 'button', 'svg', 'video', 'audio'}
 POST_ID_PATTERN = re.compile(r'^(\d+)\.')
 
+# Typographic ligature characters (ﬁ, ﬂ and so on) arrive in text pasted
+# from PDFs. Spelled out, the words can be searched, copied and read aloud,
+# and the site's fonts draw them; the browser still joins the letters where
+# a font has a ligature.
+LIGATURES = {'\ufb00': 'ff', '\ufb01': 'fi', '\ufb02': 'fl', '\ufb03': 'ffi',
+             '\ufb04': 'ffl', '\ufb05': 'st', '\ufb06': 'st'}
+LIGATURE_PATTERN = re.compile('[' + ''.join(LIGATURES) + ']')
+
+
+def spell_out_ligatures(text):
+    return LIGATURE_PATTERN.sub(lambda m: LIGATURES[m.group(0)], text)
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -123,7 +135,7 @@ class SafeHTML(HTMLParser):
 
     def handle_data(self, data):
         if not self.skip_depth:
-            self.output.append(html.escape(data, quote=False))
+            self.output.append(html.escape(spell_out_ligatures(data), quote=False))
 
     def handle_entityref(self, name):
         if not self.skip_depth:
@@ -232,8 +244,8 @@ def build_entry(row, path, season, image_dir, download_images):
         'id': slug_for(path),
         'postId': post_id,
         'season': season,
-        'title': row.get('title', '').strip(),
-        'subtitle': row.get('subtitle', '').strip(),
+        'title': spell_out_ligatures(row.get('title', '').strip()),
+        'subtitle': spell_out_ligatures(row.get('subtitle', '').strip()),
         'published': parse_date(row.get('post_date', '')),
         'canonicalUrl': f"https://lectio-terra.substack.com/p/{slug_for(path)}",
         'bodyHtml': body_html,

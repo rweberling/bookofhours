@@ -39,12 +39,29 @@
   font-display: swap;
 }
 
+/* Earthly Star: the site's own ornament star (U+2726 ✦), drawn in
+   fonts/earthly-star/star.svg and built by scripts/build_star_font.py.
+   Listed first in every font role below but limited to that one
+   character, so the star looks the same on every device. */
+@font-face {
+  font-family: 'Earthly Star';
+  src: url('../fonts/earthly-star/EarthlyStar.woff2') format('woff2');
+  unicode-range: U+2726;
+  font-display: block;
+}
+
 /* GL-Morris: Gutenberg Labo's digitization of William Morris's Troy Type
    (Kelmscott Press, 1892). Free software; see fonts/gl-morris/LICENSE.txt. */
 @font-face {
   font-family: 'GL-Morris';
   src: url('../fonts/gl-morris/GL-Morris.otf') format('opentype');
   font-display: swap;
+  /* GL-Morris's own line metrics put its short letters high in the line,
+     so its flourishes crowded the subtitle above. These lower it by about
+     an eighth of its size, the room Cinzel's taller metrics used to give. */
+  ascent-override: 98%;
+  descent-override: 26%;
+  line-gap-override: 0%;
 }
 
 /* Fraunces: Phaedra Charles and Flavia Zimbardi (Undercase Type), 2020.
@@ -98,11 +115,11 @@
      --font-label    small spaced capitals: masthead and pane headings
      --font-voice    the editor's own writing: versicles, phenomena, notes,
                      the About page */
-  --font-text:    'Cormorant Garamond', Georgia, serif;
-  --font-reading: 'IM Fell English', Georgia, serif;
-  --font-title:   'GL-Morris', Georgia, serif;
-  --font-label:   'IM Fell English SC', Georgia, serif;
-  --font-voice:   'Fraunces', 'Cormorant Garamond', Georgia, serif;
+  --font-text:    'Earthly Star', 'Cormorant Garamond', Georgia, serif;
+  --font-reading: 'Earthly Star', 'IM Fell English', Georgia, serif;
+  --font-title:   'Earthly Star', 'GL-Morris', Georgia, serif;
+  --font-label:   'Earthly Star', 'IM Fell English SC', Georgia, serif;
+  --font-voice:   'Earthly Star', 'Fraunces', 'Cormorant Garamond', Georgia, serif;
 }
 
 /* ── Per-block palettes ───────────────────────────────────────── */
