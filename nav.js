@@ -25,6 +25,20 @@ trigger.classList.remove('open');
 registerDropup('nav-hours-trigger', 'nav-hours-menu');
 registerDropup('nav-seasons-trigger', 'nav-seasons-menu');
 registerDropup('nav-weather-trigger', 'nav-weather-menu');
+registerDropup('nav-projects-trigger', 'nav-projects-menu');
+
+// Other Projects holds the DFOS space embed. Its iframe only gets its
+// src the first time the menu opens, so pages don't load it unasked;
+// clicks on the menu's own padding don't count as clicking away.
+const projectsTrigger = document.getElementById('nav-projects-trigger');
+const projectsMenu = document.getElementById('nav-projects-menu');
+if (projectsTrigger && projectsMenu) {
+const embed = projectsMenu.querySelector('iframe[data-src]');
+projectsTrigger.addEventListener('click', () => {
+if (embed && !embed.src) embed.src = embed.dataset.src;
+});
+projectsMenu.addEventListener('click', e => e.stopPropagation());
+}
 
 /* ── DFOS gate (shared) ───────────────────────────────────────────
    One sign-in check for every Wander pane — Hours (hours.js),

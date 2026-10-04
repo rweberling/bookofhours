@@ -930,6 +930,23 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu .wander-btn.is-locked { font-style: italic; }
 .nav-hours-menu .wander-btn.is-locked:hover { color: var(--gold); }
 
+/* Other Projects: the DFOS space embed. Anchored to the trigger's right
+   edge, since it sits at the right of the bar and is wider than the
+   text menus. */
+.nav-embed-menu {
+  left: auto;
+  right: 0;
+  transform: none;
+  padding: 12px 12px 4px;
+}
+.nav-embed-menu iframe {
+  display: block;
+  width: 400px;
+  max-width: calc(100vw - 48px);
+  height: 118px;
+  border: 0;
+}
+
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .outer-frame {
@@ -995,6 +1012,8 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
   .nav-hours-menu a:first-child,
   .nav-hours-menu .wander-btn:first-child { border-top: none; }
+  .nav-embed-menu { padding: 12px 0 0; }
+  .nav-embed-menu iframe { width: 100%; max-width: 400px; }
   .nav-divider { display: none; }
   .install-divider.visible { display: none; }
   .install-btn.visible {
