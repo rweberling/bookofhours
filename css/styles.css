@@ -930,7 +930,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu .wander-btn.is-locked { font-style: italic; }
 .nav-hours-menu .wander-btn.is-locked:hover { color: var(--gold); }
 
-/* Other Projects: the DFOS space embed. Anchored to the trigger's right
+/* The Reading Room: the DFOS space embed. Anchored to the trigger's right
    edge, since it sits at the right of the bar and is wider than the
    text menus. */
 .nav-embed-menu {

@@ -27,7 +27,7 @@ registerDropup('nav-seasons-trigger', 'nav-seasons-menu');
 registerDropup('nav-weather-trigger', 'nav-weather-menu');
 registerDropup('nav-projects-trigger', 'nav-projects-menu');
 
-// Other Projects holds the DFOS space embed. Its iframe only gets its
+// The Reading Room holds the DFOS space embed. Its iframe only gets its
 // src the first time the menu opens, so pages don't load it unasked;
 // clicks on the menu's own padding don't count as clicking away.
 const projectsTrigger = document.getElementById('nav-projects-trigger');
