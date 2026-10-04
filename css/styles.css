@@ -587,6 +587,8 @@ body::before {
   font-size: 13.5px; font-style: italic; opacity: 0.8;
 }
 .postcard-links a:hover { opacity: 1; color: var(--ink); }
+/* A further text about the image, set apart from the archive links. */
+.postcard-links .postcard-context { margin-top: 10px; }
 /* "turn the page" leads on to the next card; a link here, not a button. */
 .postcard-turn { margin-top: 40px; }
 .postcard-turn a { text-decoration: none; }

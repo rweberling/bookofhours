@@ -23,6 +23,10 @@ Columns in data/postcards.csv:
   image_full    the whole, uncropped image, e.g. images/postcards/w26/1-full.jpg;
                 clicking the card opens it full screen. Optional.
   post          the Lectio Terra entry about the card, once there is one
+  context       optional: a further text about the image, e.g. the artist's own
+                description of it
+  context_label how the context link reads on the page, e.g. "Read Trouvelot's
+                account of that night (1882)"
   print_run, print_date, last_checked, status
                 record keeping only; not shown on the page
 
@@ -252,6 +256,10 @@ def links(row):
     if row['backup']:
         items.append(f'<a class="postcard-link" href="{esc(row["backup"])}" target="_blank">'
                      f'or at {esc(holder(row["backup"]))}</a>')
+    if row.get('context'):
+        label = row.get('context_label') or 'Read more about this image'
+        items.append(f'<a class="postcard-link postcard-context" href="{esc(row["context"])}" '
+                     f'target="_blank">{rich(label)}</a>')
     if not items:
         return ''
     inner = '\n    '.join(items)
@@ -355,6 +363,9 @@ def build(row, rows=()):
 def main():
     with DATA.open(encoding='utf-8', newline='') as f:
         rows = [{k: (v or '').strip() for k, v in r.items()} for r in csv.DictReader(f)]
+    for row in rows:
+        for col in ('context', 'context_label'):
+            row.setdefault(col, '')
 
     errors, warnings, seen = [], [], set()
     for row in rows:
@@ -364,7 +375,7 @@ def main():
         if p in seen:
             errors.append(f'{p}: listed twice')
         seen.add(p)
-        for col in ('destination', 'backup', 'post'):
+        for col in ('destination', 'backup', 'post', 'context'):
             if row[col] and urlparse(row[col]).scheme not in ('http', 'https'):
                 errors.append(f'{p}: {col} is not a web address')
         for col in ('image', 'image_full'):
