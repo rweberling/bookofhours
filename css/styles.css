@@ -559,6 +559,16 @@ body::before {
    IM Fell's, the face the site uses for Latin names. */
 .page-title em { font-family: var(--font-reading); font-style: italic; }
 .postcard-note { max-width: 520px; text-align: center; }
+/* The moment the series marks, under the subtitle; the subtitle's
+   bottom margin moves below it. */
+.page-subtitle:has(+ .postcard-dateline) { margin-bottom: 6px; }
+.postcard-dateline {
+  font-family: var(--font-text);
+  font-size: 12.5px; font-style: italic;
+  color: var(--ink-faint); letter-spacing: 0.06em;
+  margin-bottom: 32px;
+  opacity: 0; animation: fadeIn 1.2s ease forwards 0.6s;
+}
 .postcard-links {
   display: flex; flex-direction: column; align-items: center; gap: 12px;
   margin-top: 34px;

@@ -51,6 +51,13 @@ SERIES = {
     'w26': 'A postcard for the winter solstice, 2026',
 }
 
+# The moment each series marks, shown under its subtitle. Written as a
+# record, without tense, so it reads the same before and after the day.
+# UT is Universal Time, the astronomers' clock at Greenwich.
+DATELINES = {
+    'w26': 'December 21, 2026, at 20:50 UT (3:50 p.m. Eastern)',
+}
+
 # Names for the libraries and archives the cards link to; any other host
 # is shown by its domain.
 HOLDERS = {
@@ -126,7 +133,7 @@ PAGE = '''<!DOCTYPE html>
 
   <h1 class="page-title">{title}</h1>
   <p class="page-subtitle">{series}</p>
-
+{dateline}
 {body}
 
   <footer class="page-footer">
@@ -298,6 +305,9 @@ def intro(row):
 def build(row):
     path = row['path']
     series = SERIES.get(path.split('/')[0], 'A postcard from the Earthly Book of Hours')
+    dateline = DATELINES.get(path.split('/')[0], '')
+    if dateline:
+        dateline = f'  <p class="postcard-dateline">{esc(dateline)}</p>\n'
     url = f'{SITE}/c/{path}/'
     ready = bool(row['title'])
     title_text = plain(row['title']) if ready else 'A Card in Preparation'
@@ -321,7 +331,7 @@ def build(row):
     return PAGE.format(
         title=title, title_text=esc(title_text), series=esc(series),
         description=esc(description), url=esc(url), robots=robots,
-        og_image=og_image, corners=corners, body=body,
+        og_image=og_image, corners=corners, body=body, dateline=dateline,
         lightbox=LIGHTBOX if ready and has(row, 'image') and has(row, 'image_full') else '')
 
 
