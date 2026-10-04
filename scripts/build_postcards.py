@@ -301,7 +301,9 @@ def build(row):
     title_text = plain(row['title']) if ready else 'A Card in Preparation'
     title = rich(row['title']) if ready else esc(title_text)
     if ready:
-        body = '\n\n'.join(part for part in (figure(row), intro(row), links(row)) if part)
+        # The note points readers to the original, so it waits for one.
+        note = intro(row) if row['destination'] else ''
+        body = '\n\n'.join(part for part in (figure(row), note, links(row)) if part)
         description = f'{title_text}: {plain(row["citation"])}' if row['citation'] else title_text
     else:
         body = '''  <article class="content-block postcard-note">
