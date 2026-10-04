@@ -1,6 +1,6 @@
-path,destination,backup,title,citation,image,post,print_run,print_date,last_checked,status
-w26/1,https://commons.wikimedia.org/wiki/File:121_Snowy_Owl.jpg,https://www.digitalcommonwealth.org/search/commonwealth:9s16d0015,Snowy Owl,"John James Audubon, ""Snowy Owl,"" Plate 121, *The Birds of America* (London: Robert Havell, 1827–38).",images/postcards/w26/1.jpg,,,,,draft
-w26/2,https://digitalcollections.nypl.org/items/510d47dd-e6cd-a3d9-e040-e00a18064a99,https://archive.org/details/TrouvelotAstronomicalDrawings,Aurora Borealis,"É. L. Trouvelot, ""Aurora Borealis: As Observed March 1, 1872, at 9h. 25m. P.M.,"" Plate IV, *The Trouvelot Astronomical Drawings* (New York: Charles Scribner's Sons, 1881–82).",images/postcards/w26/2.jpg,,,,,draft
-w26/3,https://www.wbc.poznan.pl/dlibra/publication/edition/499389/content,https://www.atlascoelestis.com/hev%2043.htm,,,images/postcards/w26/3.jpg,,,,,draft
-w26/4,,,,,,,,,,draft
-w26/5,,,,,,,,,,draft
+path,destination,backup,title,citation,image,image_full,post,print_run,print_date,last_checked,status
+w26/1,https://commons.wikimedia.org/wiki/File:121_Snowy_Owl.jpg,https://www.digitalcommonwealth.org/search/commonwealth:9s16d0015,Snowy Owl,"John James Audubon, ""Snowy Owl,"" Plate 121, *The Birds of America* (London: Robert Havell, 1827–38).",images/postcards/w26/1.jpg,images/postcards/w26/1-full.jpg,,,,,draft
+w26/2,https://digitalcollections.nypl.org/items/510d47dd-e6cd-a3d9-e040-e00a18064a99,https://archive.org/details/TrouvelotAstronomicalDrawings,Aurora Borealis,"É. L. Trouvelot, ""Aurora Borealis: As Observed March 1, 1872, at 9h. 25m. P.M.,"" Plate IV, *The Trouvelot Astronomical Drawings* (New York: Charles Scribner's Sons, 1881–82).",images/postcards/w26/2.jpg,images/postcards/w26/2-full.jpg,,,,,draft
+w26/3,https://www.wbc.poznan.pl/dlibra/publication/edition/499389/content,https://www.atlascoelestis.com/hev%2043.htm,,,images/postcards/w26/3.jpg,images/postcards/w26/3-full.jpg,,,,,draft
+w26/4,,,,,,,,,,,draft
+w26/5,,,,,,,,,,,draft

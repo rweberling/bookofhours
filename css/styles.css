@@ -550,8 +550,10 @@ body::before {
 .postcard-figure .image-inner { aspect-ratio: auto; min-height: 180px; }
 .postcard-figure .image-inner a { display: block; width: 100%; }
 .postcard-figure .image-inner img {
-  height: auto; object-fit: contain; cursor: pointer;
+  height: auto; object-fit: contain; cursor: default;
 }
+/* The card shows the front as printed; clicking opens the whole image. */
+.postcard-figure .postcard-zoom img { cursor: zoom-in; }
 .postcard-figure .image-caption { white-space: normal; }
 .postcard-note { max-width: 520px; text-align: center; }
 .postcard-links {

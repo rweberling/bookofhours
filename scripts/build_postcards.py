@@ -18,7 +18,10 @@ Columns in data/postcards.csv:
   backup        a second copy, in case the first link breaks
   title         the card's title
   citation      the full citation; *asterisks* mark italics
-  image         the card's image, from the site root (images/postcards/...)
+  image         the card's front as printed (cropped to the postcard), from
+                the site root, e.g. images/postcards/w26/1.jpg
+  image_full    the whole, uncropped image, e.g. images/postcards/w26/1-full.jpg;
+                clicking the card opens it full screen. Optional.
   post          the Lectio Terra entry about the card, once there is one
   print_run, print_date, last_checked, status
                 record keeping only; not shown on the page
@@ -172,7 +175,7 @@ PAGE = '''<!DOCTYPE html>
 <script src="/shared.js"></script>
 <script src="/atmosphere.js"></script>
 <script src="/nav.js"></script>
-
+{lightbox}
 </body>
 </html>
 '''
@@ -203,14 +206,20 @@ def holder(url):
     return HOLDERS.get(host, host.removeprefix('www.'))
 
 
+def has(row, col):
+    return bool(row[col]) and (ROOT / row[col]).is_file()
+
+
 def figure(row):
-    """The card's image and citation, the image linking to the original."""
-    src = '/' + row['image'] if row['image'] else ''
+    """The card's front and citation; the front opens the whole image."""
     alt = esc(plain(row['title']))
-    if src and (ROOT / row['image']).is_file():
-        img = f'<img src="{esc(src)}" alt="{alt}">'
-        if row['destination']:
-            img = f'<a href="{esc(row["destination"])}" target="_blank">{img}</a>'
+    if has(row, 'image'):
+        img = f'<img src="/{esc(row["image"])}" alt="{alt}">'
+        if has(row, 'image_full'):
+            # A plain link to the full image, which the script below opens
+            # in the lightbox instead.
+            img = (f'<a class="postcard-zoom" href="/{esc(row["image_full"])}" '
+                   f'title="See the whole image">{img}</a>')
     else:
         img = '<div class="image-placeholder">The image for this card is on its way.</div>'
     caption = f'\n      <p class="image-caption">{rich(row["citation"])}</p>' if row['citation'] else ''
@@ -239,6 +248,41 @@ def links(row):
     return f'  <div class="postcard-links">\n    {inner}\n  </div>'
 
 
+# The hours' lightbox (css/styles.css), for the whole image. Without
+# JavaScript the card's link simply opens the image file.
+LIGHTBOX = '''
+<div class="lightbox" id="lightbox" role="dialog" aria-label="The whole image" aria-modal="true" tabindex="-1">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+<script>
+(() => {
+  const zoom = document.querySelector('.postcard-zoom');
+  const box = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  zoom.addEventListener('click', (e) => {
+    e.preventDefault();
+    img.src = zoom.href;
+    img.alt = zoom.querySelector('img').alt;
+    document.getElementById('lightbox-caption').innerHTML =
+      document.querySelector('.postcard-figure .image-caption')?.innerHTML || '';
+    box.style.display = 'flex';
+    box.focus();
+    requestAnimationFrame(() => box.classList.add('open'));
+  });
+  const close = () => {
+    if (!box.classList.contains('open')) return;
+    box.classList.remove('open');
+    setTimeout(() => { box.style.display = 'none'; }, 300);
+    zoom.focus();
+  };
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
+</script>
+'''
+
+
 def intro(row):
     note = ('The image on this card is in the public domain. Follow the link below '
             'to see it in its first setting, the book, print or plate it comes from, '
@@ -265,13 +309,14 @@ def build(row):
         description = 'A postcard from the Earthly Book of Hours.'
     robots = '' if ready and row['status'] != 'draft' else '  <meta name="robots" content="noindex">\n'
     og_image = ''
-    if ready and row['image'] and (ROOT / row['image']).is_file():
+    if ready and has(row, 'image'):
         og_image = f'  <meta property="og:image" content="{SITE}/{esc(row["image"])}">\n'
     corners = '\n'.join(CORNER.format(pos=p) for p in ('tl', 'tr', 'bl', 'br'))
     return PAGE.format(
         title=esc(title_text), title_text=esc(title_text), series=esc(series),
         description=esc(description), url=esc(url), robots=robots,
-        og_image=og_image, corners=corners, body=body)
+        og_image=og_image, corners=corners, body=body,
+        lightbox=LIGHTBOX if ready and has(row, 'image') and has(row, 'image_full') else '')
 
 
 def main():
@@ -289,8 +334,11 @@ def main():
         for col in ('destination', 'backup', 'post'):
             if row[col] and urlparse(row[col]).scheme not in ('http', 'https'):
                 errors.append(f'{p}: {col} is not a web address')
-        if row['image'] and not (ROOT / row['image']).is_file():
-            warnings.append(f'{p}: image not found yet at {row["image"]}')
+        for col in ('image', 'image_full'):
+            if row[col] and not (ROOT / row[col]).is_file():
+                warnings.append(f'{p}: {col} not found yet at {row[col]}')
+        if row['image_full'] and not row['image']:
+            warnings.append(f'{p}: has image_full but no image; nothing to click')
         if row['title'] and not row['destination']:
             warnings.append(f'{p}: has a title but no destination')
     if errors:
