@@ -135,7 +135,7 @@ PAGE = '''<!DOCTYPE html>
   <p class="page-subtitle">{series}</p>
 {dateline}
 {body}
-
+{turn}
   <footer class="page-footer">
     <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
       <div class="line"></div>
@@ -302,7 +302,23 @@ def intro(row):
   </article>'''
 
 
-def build(row):
+def turn(row, rows):
+    """The hours' "turn the page", here leading to the series' next card."""
+    series = row['path'].split('/')[0]
+    cards = [r['path'] for r in rows if r['path'].split('/')[0] == series]
+    if len(cards) < 2:
+        return ''
+    nxt = cards[(cards.index(row['path']) + 1) % len(cards)]
+    return f'''
+  <div class="turn-the-page visible postcard-turn">
+    <span class="ttp-bracket">[</span>
+    <a class="page-action" href="/c/{esc(nxt)}/" aria-label="The next card in this set">turn the page</a>
+    <span class="ttp-bracket">]</span>
+  </div>
+'''
+
+
+def build(row, rows=()):
     path = row['path']
     series = SERIES.get(path.split('/')[0], 'A postcard from the Earthly Book of Hours')
     dateline = DATELINES.get(path.split('/')[0], '')
@@ -332,6 +348,7 @@ def build(row):
         title=title, title_text=esc(title_text), series=esc(series),
         description=esc(description), url=esc(url), robots=robots,
         og_image=og_image, corners=corners, body=body, dateline=dateline,
+        turn=turn(row, rows),
         lightbox=LIGHTBOX if ready and has(row, 'image') and has(row, 'image_full') else '')
 
 
@@ -364,7 +381,7 @@ def main():
     for row in rows:
         page = OUT / row['path'] / 'index.html'
         page.parent.mkdir(parents=True, exist_ok=True)
-        page.write_text(build(row), encoding='utf-8')
+        page.write_text(build(row, rows), encoding='utf-8')
         print(f'wrote {page.relative_to(ROOT)}')
     for w in warnings:
         print(f'note: {w}')
