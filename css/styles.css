@@ -555,6 +555,9 @@ body::before {
 /* The card shows the front as printed; clicking opens the whole image. */
 .postcard-figure .postcard-zoom img { cursor: zoom-in; }
 .postcard-figure .image-caption { white-space: normal; }
+/* GL-Morris has no italic, so a species name in a card's title is set in
+   IM Fell's, the face the site uses for Latin names. */
+.page-title em { font-family: var(--font-reading); font-style: italic; }
 .postcard-note { max-width: 520px; text-align: center; }
 .postcard-links {
   display: flex; flex-direction: column; align-items: center; gap: 12px;

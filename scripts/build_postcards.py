@@ -16,7 +16,7 @@ Columns in data/postcards.csv:
   path          the short link after /c/, e.g. w26/1; becomes c/w26/1/index.html
   destination   the digital original (museum, library or archive page)
   backup        a second copy, in case the first link breaks
-  title         the card's title
+  title         the card's title; *asterisks* mark italics, e.g. for a species name
   citation      the full citation; *asterisks* mark italics
   image         the card's front as printed (cropped to the postcard), from
                 the site root, e.g. images/postcards/w26/1.jpg
@@ -198,7 +198,8 @@ def rich(text):
 
 
 def plain(text):
-    return text.replace('*', '')
+    """Text for places that can't show italics: tab titles, link previews, alt text."""
+    return curly(text).replace('*', '')
 
 
 def holder(url):
@@ -298,9 +299,10 @@ def build(row):
     url = f'{SITE}/c/{path}/'
     ready = bool(row['title'])
     title_text = plain(row['title']) if ready else 'A Card in Preparation'
+    title = rich(row['title']) if ready else esc(title_text)
     if ready:
         body = '\n\n'.join(part for part in (figure(row), intro(row), links(row)) if part)
-        description = f'{title_text}: {plain(curly(row["citation"]))}' if row['citation'] else title_text
+        description = f'{title_text}: {plain(row["citation"])}' if row['citation'] else title_text
     else:
         body = '''  <article class="content-block postcard-note">
     <p>This card is still being prepared. Its image, citation and links will appear here soon.</p>
@@ -313,7 +315,7 @@ def build(row):
         og_image = f'  <meta property="og:image" content="{SITE}/{esc(row["image"])}">\n'
     corners = '\n'.join(CORNER.format(pos=p) for p in ('tl', 'tr', 'bl', 'br'))
     return PAGE.format(
-        title=esc(title_text), title_text=esc(title_text), series=esc(series),
+        title=title, title_text=esc(title_text), series=esc(series),
         description=esc(description), url=esc(url), robots=robots,
         og_image=og_image, corners=corners, body=body,
         lightbox=LIGHTBOX if ready and has(row, 'image') and has(row, 'image_full') else '')
