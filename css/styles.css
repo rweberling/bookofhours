@@ -543,6 +543,36 @@ body::before {
   transition: color 3s ease;
 }
 
+/* ── Postcards (c/, built by scripts/build_postcards.py) ──────── */
+/* The card's image is shown whole, at its own proportions, rather than
+   cropped to the hours' 4:3 frame. */
+.postcard-figure { max-width: 520px; }
+.postcard-figure .image-inner { aspect-ratio: auto; min-height: 180px; }
+.postcard-figure .image-inner a { display: block; width: 100%; }
+.postcard-figure .image-inner img {
+  height: auto; object-fit: contain; cursor: pointer;
+}
+.postcard-figure .image-caption { white-space: normal; }
+.postcard-note { max-width: 520px; text-align: center; }
+.postcard-links {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  margin-top: 34px;
+  opacity: 0; animation: fadeIn 1.2s ease forwards 0.9s;
+}
+.postcard-links a {
+  font-family: var(--font-text); text-decoration: none;
+  color: var(--ink-faint); transition: opacity 0.2s ease, color 0.2s ease;
+}
+.postcard-links .postcard-link-main {
+  font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--accent); border-bottom: 0.5px solid currentColor;
+  padding-bottom: 3px; text-align: center;
+}
+.postcard-links .postcard-link {
+  font-size: 13.5px; font-style: italic; opacity: 0.8;
+}
+.postcard-links a:hover { opacity: 1; color: var(--ink); }
+
 /* ── Quote ────────────────────────────────────────────────────── */
 .quote-block {
   width: 100%; max-width: 560px; margin-bottom: 26px; text-align: left;
