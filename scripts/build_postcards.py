@@ -64,6 +64,8 @@ HOLDERS = {
     'www.loc.gov': 'the Library of Congress',
     'www.metmuseum.org': 'The Metropolitan Museum of Art',
     'www.rijksmuseum.nl': 'the Rijksmuseum',
+    'hdl.handle.net': 'HathiTrust',
+    'babel.hathitrust.org': 'HathiTrust',
 }
 
 PATH = re.compile(r'^[a-z0-9-]+(/[a-z0-9-]+)*$')
