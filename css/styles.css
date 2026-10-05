@@ -725,7 +725,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 
 .site-nav a {
   font-family: var(--font-text);
-  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  font-size: 12px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; text-decoration: none;
   color: var(--ink-faint); opacity: 0.75;
   transition: opacity 0.2s ease, color 3s ease;
@@ -763,7 +763,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   display: none;
   box-sizing: border-box;
   font-family: var(--font-text);
-  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  font-size: 12px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; cursor: pointer;
   color: var(--ink-faint); opacity: 0.75;
   padding: 8px 20px;
@@ -876,7 +876,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-trigger {
   all: unset;
   font-family: var(--font-text);
-  font-size: 11px; 
+  font-size: 12px; 
   font-weight: 400; 
   letter-spacing: 0.28em;
   text-transform: uppercase; 
@@ -920,7 +920,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu a,
 .nav-hours-menu .wander-btn {
   font-family: var(--font-text);
-  font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
+  font-size: 12px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; text-decoration: none;
   color: var(--ink-faint); opacity: 0.75;
   padding: 8px 20px;
@@ -951,9 +951,9 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 
 /* ── Responsive ───────────────────────────────────────────────── */
-/* The nav bar needs ~1100px in one row at full spacing. Below that it
-   tightens; below 800px it stacks, as on a phone. */
-@media (max-width: 1100px) {
+/* The nav bar needs ~1150px in one row at full spacing. Below that it
+   tightens; below 840px it stacks, as on a phone. */
+@media (max-width: 1150px) {
   .site-nav { gap: 16px; padding: 0 20px; }
   .site-nav a,
   .nav-hours-trigger,
@@ -961,7 +961,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .install-btn { letter-spacing: 0.18em; }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .site-nav {
     flex-direction: column;
     align-items: center;
@@ -969,7 +969,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     gap: 0;
   }
   .site-nav > a {
-    font-size: 10px; letter-spacing: 0.18em;
+    font-size: 11px; letter-spacing: 0.18em;
     padding: 10px 0;
     width: 100%; text-align: center;
     border-top: 0.5px solid var(--rule);
@@ -985,7 +985,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     text-align: center;
     justify-content: center;
     display: flex;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.18em;
     padding: 12px 0;
     border-top: 0.5px solid var(--rule);
@@ -1003,7 +1003,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
   .nav-hours-menu a,
   .nav-hours-menu .wander-btn {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.18em;
     padding: 10px 0;
     border-top: 0.5px solid var(--rule);
@@ -1015,7 +1015,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .nav-divider { display: none; }
   .install-divider.visible { display: none; }
   .install-btn.visible {
-    font-size: 10px; letter-spacing: 0.18em;
+    font-size: 11px; letter-spacing: 0.18em;
     padding: 10px 0;
     border-top: 0.5px solid var(--rule);
   }
