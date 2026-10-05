@@ -25,6 +25,7 @@
   <meta property="og:description" content="Orion (The Hunter): Johannes Hevelius. “Table QQ: Orion.” Prodromus Astronomiae. Vol. 3: Firmamentum Sobiescianum, Sive Uranographia. Ed. Elisabeth Hevelius. Danzig [Gdańsk, Poland]: Johannis Zachariae Stollii, 1690.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://earthlyhours.com/c/w26/1/">
+  <meta property="og:image" content="https://earthlyhours.com/c/w26/1/1.jpg">
   <link rel="canonical" href="https://earthlyhours.com/c/w26/1/">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -78,7 +79,7 @@
 
   <div class="image-frame-outer postcard-figure">
     <div class="image-frame">
-      <div class="image-inner"><div class="image-placeholder">The image for this card is on its way.</div></div>
+      <div class="image-inner"><a class="postcard-zoom" href="/c/w26/1/1-full.jpg" title="See the whole image"><img src="/c/w26/1/1.jpg" alt="Orion (The Hunter)"></a></div>
       <p class="image-caption">Johannes Hevelius. “Table QQ: Orion.” <em>Prodromus Astronomiae</em>. Vol. 3: <em>Firmamentum Sobiescianum, Sive Uranographia</em>. Ed. Elisabeth Hevelius. Danzig [Gdańsk, Poland]: Johannis Zachariae Stollii, 1690.</p>
     </div>
   </div>
@@ -146,6 +147,36 @@
 <script src="/shared.js"></script>
 <script src="/atmosphere.js"></script>
 <script src="/nav.js"></script>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="The whole image" aria-modal="true" tabindex="-1">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+<script>
+(() => {
+  const zoom = document.querySelector('.postcard-zoom');
+  const box = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  zoom.addEventListener('click', (e) => {
+    e.preventDefault();
+    img.src = zoom.href;
+    img.alt = zoom.querySelector('img').alt;
+    document.getElementById('lightbox-caption').innerHTML =
+      document.querySelector('.postcard-figure .image-caption')?.innerHTML || '';
+    box.style.display = 'flex';
+    box.focus();
+    requestAnimationFrame(() => box.classList.add('open'));
+  });
+  const close = () => {
+    if (!box.classList.contains('open')) return;
+    box.classList.remove('open');
+    setTimeout(() => { box.style.display = 'none'; }, 300);
+    zoom.focus();
+  };
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
+</script>
 
 </body>
 </html>

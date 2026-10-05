@@ -1,2 +1,5 @@
 # Private working notes (the repository is served publicly as the site)
 docs/
+
+# macOS Finder files
+.DS_Store

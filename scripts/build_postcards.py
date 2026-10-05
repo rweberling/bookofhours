@@ -19,8 +19,8 @@ Columns in data/postcards.csv:
   title         the card's title; *asterisks* mark italics, e.g. for a species name
   citation      the full citation; *asterisks* mark italics
   image         the card's front as printed (cropped to the postcard), from
-                the site root, e.g. images/postcards/w26/1.jpg
-  image_full    the whole, uncropped image, e.g. images/postcards/w26/1-full.jpg;
+                the site root, e.g. c/w26/1/1.jpg (next to its page)
+  image_full    the whole, uncropped image, e.g. c/w26/1/1-full.jpg;
                 clicking the card opens it full screen. Optional.
   post          the Lectio Terra entry about the card, once there is one
   context       optional: a further text about the image, e.g. the artist's own
