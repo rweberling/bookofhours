@@ -745,37 +745,40 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 
 /* ── Add to Home Screen ──────────────────────────────────────── */
+/* Lives at the foot of The Reading Room menu, under a short rule,
+   shown only where the device can install (nav.js). */
 .install-divider {
   display: none;
 }
-.install-divider.visible { display: inline; }
+.install-divider.visible {
+  display: block;
+  width: 40%;
+  margin: 8px auto 4px;
+  border-top: 1px solid var(--rule);
+  transition: border-color 3s ease;
+}
 
 .install-btn {
   all: unset;
   display: none;
+  box-sizing: border-box;
   font-family: var(--font-text);
   font-size: 11px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; cursor: pointer;
   color: var(--ink-faint); opacity: 0.75;
+  padding: 8px 20px;
+  width: 100%; text-align: center;
   transition: opacity 0.2s ease, color 3s ease;
 }
 .install-btn:hover { opacity: 1; color: var(--accent); }
-.install-btn.visible { display: inline-flex; }
+.install-btn.visible { display: block; }
 
 .install-tip {
   display: none;
-  position: fixed;
-  left: 50%; bottom: 66px;
-  transform: translateX(-50%);
-  z-index: 160;
-  width: min(280px, 82vw);
-  padding: 16px 18px;
-  background: var(--bg-dark);
-  border: 1px solid var(--rule);
+  margin: 0 20px 8px;
   font-family: var(--font-text);
   font-size: 13px; font-style: italic; font-weight: 300;
   color: var(--ink-light); line-height: 1.7; text-align: center;
-  transition: background 3s ease, border-color 3s ease;
 }
 .install-tip.open { display: block; }
 
@@ -948,28 +951,14 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 
 /* ── Responsive ───────────────────────────────────────────────── */
-/* The nav bar needs ~1100px in one row at full spacing (~1360px with
-   Add to Home Screen showing). Below that it tightens; below 1000px the
-   install button takes a line of its own; below 800px it all stacks,
-   as on a phone. */
+/* The nav bar needs ~1100px in one row at full spacing. Below that it
+   tightens; below 800px it stacks, as on a phone. */
 @media (max-width: 1100px) {
   .site-nav { gap: 16px; padding: 0 20px; }
   .site-nav a,
   .nav-hours-trigger,
   .nav-hours-menu .wander-btn,
   .install-btn { letter-spacing: 0.18em; }
-}
-@media (min-width: 1101px) and (max-width: 1360px) {
-  .site-nav:has(.install-btn.visible) { gap: 16px; padding: 0 20px; }
-  .site-nav:has(.install-btn.visible) a,
-  .site-nav:has(.install-btn.visible) .nav-hours-trigger,
-  .site-nav:has(.install-btn.visible) .wander-btn,
-  .site-nav:has(.install-btn.visible) .install-btn { letter-spacing: 0.18em; }
-}
-@media (min-width: 801px) and (max-width: 1000px) {
-  .site-nav:has(.install-btn.visible) { flex-wrap: wrap; padding: 12px 20px 10px; row-gap: 10px; }
-  .site-nav .install-divider.visible { display: none; }
-  .site-nav .install-btn.visible { flex-basis: 100%; justify-content: center; }
 }
 
 @media (max-width: 800px) {
@@ -1028,8 +1017,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .install-btn.visible {
     font-size: 10px; letter-spacing: 0.18em;
     padding: 10px 0;
-    width: 100%; text-align: center;
-    justify-content: center;
     border-top: 0.5px solid var(--rule);
   }
 }

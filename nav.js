@@ -27,15 +27,19 @@ registerDropup('nav-seasons-trigger', 'nav-seasons-menu');
 registerDropup('nav-weather-trigger', 'nav-weather-menu');
 registerDropup('nav-projects-trigger', 'nav-projects-menu');
 
-// The Reading Room holds the DFOS space embed. Its iframe only gets its
-// src the first time the menu opens, so pages don't load it unasked;
-// clicks on the menu's own padding don't count as clicking away.
+// The Reading Room holds the ways to join or go deeper: the DFOS space
+// embed, and Add to Home Screen beneath it. The iframe only gets its src
+// the first time the menu opens, so pages don't load it unasked; the
+// install tip folds away whenever the menu is toggled; clicks inside the
+// menu don't count as clicking away.
 const projectsTrigger = document.getElementById('nav-projects-trigger');
 const projectsMenu = document.getElementById('nav-projects-menu');
 if (projectsTrigger && projectsMenu) {
 const embed = projectsMenu.querySelector('iframe[data-src]');
 projectsTrigger.addEventListener('click', () => {
 if (embed && !embed.src) embed.src = embed.dataset.src;
+const tip = document.getElementById('install-tip');
+if (tip) tip.classList.remove('open');
 });
 projectsMenu.addEventListener('click', e => e.stopPropagation());
 }
