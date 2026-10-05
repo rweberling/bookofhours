@@ -27,10 +27,15 @@ const SIWD_MODULE_URL = `https://cdn.jsdelivr.net/npm/@metalabel/dfos-client@${D
 const CLIENT_MODULE_URL = `https://cdn.jsdelivr.net/npm/@metalabel/dfos-client@${DFOS_CLIENT_VERSION}/+esm`;
 
 const SESSION_KEY = 'earthly-hours-dfos';        // localStorage, persists: { did, signedInAt }
-const FLIGHT_KEY = 'earthly-hours-dfos-flight';  // sessionStorage, one round trip: { nonce, domain, intent }
+const FLIGHT_KEY = 'earthly-hours-dfos-flight';  // sessionStorage, one round trip: { nonce, domain, intent, returnTo }
 
+// Always the site root, whichever page sign-in starts from: DFOS only
+// accepts a redirect_uri listed in /.well-known/dfos-app.json, which
+// lists just this one. The page (and pane) the visitor started from
+// rides along in the flight record instead, and the root forwards them
+// back there once verified.
 function callbackUrl() {
-  return `${location.origin}${location.pathname}`;
+  return `${location.origin}/`;
 }
 
 window.dfosIsSignedIn = function () {
@@ -60,7 +65,10 @@ window.dfosBeginSignIn = async function (intent) {
     scope: 'identity'
   });
   try {
-    sessionStorage.setItem(FLIGHT_KEY, JSON.stringify({ nonce: expect.nonce, domain, intent: intent || null }));
+    sessionStorage.setItem(FLIGHT_KEY, JSON.stringify({
+      nonce: expect.nonce, domain, intent: intent || null,
+      returnTo: location.pathname + location.search
+    }));
   } catch (error) {
     // Sign-in still completes without the intent surviving the round trip
     // — the visitor just lands back on the page instead of the pane they
@@ -109,6 +117,15 @@ async function handleCallback() {
   try {
     localStorage.setItem(SESSION_KEY, JSON.stringify({ did: verified.value.did, signedInAt: Date.now() }));
   } catch (error) {}
+
+  // Started from another page (Seasons, Weather, or /index.html rather
+  // than /): go back there. Each page opens its pane from #wander, now
+  // that the visitor is signed in.
+  const returnTo = flight.returnTo || '/';
+  if (returnTo !== location.pathname + location.search) {
+    location.replace(returnTo + (flight.intent ? '#wander' : ''));
+    return;
+  }
 
   window.dispatchEvent(new CustomEvent('dfossignin', {
     detail: { signedIn: true, did: verified.value.did, intent: flight.intent }
