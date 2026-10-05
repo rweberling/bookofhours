@@ -946,7 +946,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   display: block;
   width: 400px;
   max-width: calc(100vw - 48px);
-  height: 118px;
+  height: 114px;
   border: 0;
 }
 
