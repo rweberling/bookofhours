@@ -640,6 +640,20 @@ body::before {
 }
 .phenomena-list .sep { color: var(--gold); margin: 0 10px; transition: color 3s ease; }
 
+/* The publication line under a seasons post: quiet small capitals, so it
+   closes the post without competing with "turn the page" below it. */
+.season-post-observation .phenomena-list {
+  font-family: var(--font-label);
+  font-size: 12.5px; font-weight: 400; color: var(--ink-faint);
+  letter-spacing: 0.12em;
+}
+.season-post-observation a {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.3s ease;
+}
+.season-post-observation a:hover { border-bottom-color: var(--ink-faint); }
+
 /* ── Versicle ─────────────────────────────────────────────────── */
 .versicle {
   width: 100%; max-width: 520px;

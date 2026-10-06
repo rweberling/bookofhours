@@ -47,12 +47,33 @@ function renderSeasonReading(entry) {
   // the observation line below the body is for the publish date only, so
   // the two don't repeat the same names.
   document.getElementById('season-reading-dek').textContent = credits || `A seasonal reading from ${season.label}.`;
-  document.getElementById('season-reading-observation').textContent = entry.published
-    ? `Published ${entry.published}`
-    : `A species reading for ${season.label}.`;
+  const observation = document.getElementById('season-reading-observation');
+  observation.textContent = '';
+  if (entry.published) {
+    const link = document.createElement('a');
+    link.href = postUrl(entry);
+    link.textContent = 'Lectio Terra';
+    observation.append('First published in ', link, `, ${longDate(entry.published)}`);
+  } else {
+    observation.textContent = `A species reading for ${season.label}.`;
+  }
 
   const body = document.getElementById('season-reading-body');
   body.innerHTML = entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+}
+
+// Where a post was first published. One place to change if the posts
+// move (to DFOS, say).
+function postUrl(entry) {
+  return entry.canonicalUrl;
+}
+
+// "2026-07-14" -> "July 14, 2026". Read as UTC so the date doesn't slip
+// back a day for readers west of Greenwich.
+function longDate(isoDate) {
+  const [y, m, d] = isoDate.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US',
+    { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
 }
 
 function setSeason(key) {
