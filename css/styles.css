@@ -1705,6 +1705,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   transition: color 3s ease;
 }
 .page-action:hover { color: var(--accent); }
+a.page-action { text-decoration: none; }
 
 /* ── Active nav link ──────────────────────────────────────────── */
 .site-nav a.active {
