@@ -224,6 +224,22 @@ def load_existing(path):
     return existing_by_slug
 
 
+# The weekly "From the Earthly Book of Hours" update section, which only
+# matters on Substack: it runs from its heading (and the <hr> above it)
+# up to the footnotes, the closing subscribe line, or the end of the post.
+HOURS_SECTION = re.compile(
+    r'(?:<hr>)?<h2>✦ From the Earthly Book of Hours ✦</h2>.*?'
+    r'(?=<a href="#footnote-anchor-|<p>Otherwise is a reader-supported|$)',
+    re.S)
+
+
+def strip_hours_section(body_html, images):
+    """Drop the update section, and the images that were only in it."""
+    body_html = HOURS_SECTION.sub('', body_html).strip()
+    body_html = re.sub(r'(?:<p></p>)+$', '', body_html)
+    return body_html, [image for image in images if image['src'] in body_html]
+
+
 def parse_date(value):
     if not value:
         return ''
@@ -239,7 +255,7 @@ def build_entry(row, path, season, image_dir, download_images):
     raw_html = path.read_text(encoding='utf-8')
     parser = SafeHTML(image_dir, post_id, row.get('title', '').strip(), download_images)
     parser.feed(raw_html)
-    body_html = ''.join(parser.output).strip()
+    body_html, images = strip_hours_section(''.join(parser.output).strip(), parser.images)
     return {
         'id': slug_for(path),
         'postId': post_id,
@@ -249,7 +265,7 @@ def build_entry(row, path, season, image_dir, download_images):
         'published': parse_date(row.get('post_date', '')),
         'canonicalUrl': f"https://lectio-terra.substack.com/p/{slug_for(path)}",
         'bodyHtml': body_html,
-        'images': parser.images
+        'images': images
     }
 
 
