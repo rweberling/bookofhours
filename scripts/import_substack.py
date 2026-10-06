@@ -263,7 +263,7 @@ def build_entry(row, path, season, image_dir, download_images):
         'title': spell_out_ligatures(row.get('title', '').strip()),
         'subtitle': spell_out_ligatures(row.get('subtitle', '').strip()),
         'published': parse_date(row.get('post_date', '')),
-        'canonicalUrl': f"https://lectio-terra.substack.com/p/{slug_for(path)}",
+        'canonicalUrl': f"https://laurentia.substack.com/p/{slug_for(path)}",
         'bodyHtml': body_html,
         'images': images
     }
