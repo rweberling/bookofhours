@@ -1707,6 +1707,8 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .page-action:hover { color: var(--accent); }
 a.page-action { text-decoration: none; }
 
+/* An incipit with no subtitle: keep the subtitle's gap under the title. */
+.page-title + .content-block { margin-top: 22px; }
 /* Standing in for an incipit that isn't written yet. */
 .content-block p.incipit-note { text-align: center; font-style: italic; color: var(--ink-faint); }
 
