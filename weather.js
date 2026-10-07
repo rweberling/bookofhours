@@ -134,6 +134,129 @@ function toggleWeatherCard() {
   btn.setAttribute('aria-label', folded ? 'Show the reading' : 'Fold the card down to the image credit');
 }
 
+/* ── Leaning out of the window ────────────────────────────────────
+   The picture fills the window and its edges are cut off. Dragging it
+   (or the arrow keys) leans out to look at the rest: the view slides
+   toward the hidden part, as far as the picture goes and no further.
+   Let go and, after a moment, it drifts back to the middle — you can
+   look around, but the view stays what it is. A tap without dragging
+   still folds the card.
+
+   The view is moved with object-position, so 0–100% is exactly the
+   part of the picture the window cuts off, at any screen size.
+   The first view of a visit "breathes" once toward its hidden side, a
+   cue that there's more to see (skipped when motion is reduced).
+────────────────────────────────────────────────────────────────── */
+const LEAN_RETURN_DELAY_MS = 2500;   // how long the view stays leaned out after letting go
+const LEAN_DRAG_THRESHOLD = 6;       // px of movement before a press counts as a lean, not a tap
+const LEAN_KEY_STEP = 12;            // % per arrow-key press
+let lean = { x: 50, y: 50 };
+let leanReturnTimeout = null;
+
+function leanOverflow(img) {
+  // How many pixels of the picture the window cuts off, across and down.
+  if (!img.naturalWidth) return { x: 0, y: 0 };
+  const scale = Math.max(img.clientWidth / img.naturalWidth, img.clientHeight / img.naturalHeight);
+  return {
+    x: Math.max(0, img.naturalWidth * scale - img.clientWidth),
+    y: Math.max(0, img.naturalHeight * scale - img.clientHeight)
+  };
+}
+
+function setLean(img, x, y) {
+  lean = { x: Math.min(100, Math.max(0, x)), y: Math.min(100, Math.max(0, y)) };
+  img.style.objectPosition = `${lean.x}% ${lean.y}%`;
+}
+
+function returnLean(img, delay = LEAN_RETURN_DELAY_MS) {
+  clearTimeout(leanReturnTimeout);
+  leanReturnTimeout = setTimeout(() => {
+    img.classList.remove('is-leaning');
+    setLean(img, 50, 50);
+  }, delay);
+}
+
+function resetLean(img) {
+  clearTimeout(leanReturnTimeout);
+  img.classList.add('is-leaning');      // no drift: a new view simply starts centred
+  setLean(img, 50, 50);
+  requestAnimationFrame(() => img.classList.remove('is-leaning'));
+}
+
+// The cue: once a visit, ease a little toward the side with the most
+// hidden, then back.
+function breatheLean(img) {
+  try {
+    if (sessionStorage.getItem('weather-leaned')) return;
+    sessionStorage.setItem('weather-leaned', '1');
+  } catch (e) { /* storage blocked: breathe anyway */ }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const over = leanOverflow(img);
+  if (Math.max(over.x, over.y) < 40) return;   // nothing much to see beyond the edges
+  const across = over.x >= over.y;
+  setTimeout(() => {
+    setLean(img, across ? 30 : 50, across ? 50 : 30);
+    returnLean(img, 1800);
+  }, 2600);
+}
+
+function initLeaning() {
+  const view = document.querySelector('.weather-window');
+  const img = document.getElementById('weather-window-img');
+  let press = null;
+
+  view.addEventListener('pointerdown', e => {
+    if (e.button !== 0) return;
+    press = { id: e.pointerId, x: e.clientX, y: e.clientY, from: { ...lean }, over: leanOverflow(img), leaning: false };
+  });
+  view.addEventListener('pointermove', e => {
+    if (!press || e.pointerId !== press.id) return;
+    const dx = e.clientX - press.x, dy = e.clientY - press.y;
+    if (!press.leaning) {
+      if (Math.hypot(dx, dy) < LEAN_DRAG_THRESHOLD) return;
+      press.leaning = true;
+      clearTimeout(leanReturnTimeout);
+      img.classList.add('is-leaning');
+      view.setPointerCapture(e.pointerId);
+    }
+    // Dragging the picture right shows more of its left side, and so on.
+    setLean(img,
+      press.over.x ? press.from.x - dx / press.over.x * 100 : 50,
+      press.over.y ? press.from.y - dy / press.over.y * 100 : 50);
+  });
+  const release = e => {
+    if (!press || e.pointerId !== press.id) return;
+    const wasLeaning = press.leaning;
+    press = null;
+    if (wasLeaning) {
+      img.classList.remove('is-leaning');
+      returnLean(img);
+    } else if (e.type === 'pointerup') {
+      toggleWeatherCard();               // a tap on the picture folds the card, as before
+    }
+  };
+  view.addEventListener('pointerup', release);
+  view.addEventListener('pointercancel', release);
+
+  document.addEventListener('keydown', e => {
+    if (e.target.closest && e.target.closest('input, textarea, select, [contenteditable], .wander-pane, .site-nav')) return;
+    const step = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key];
+    if (!step) return;
+    const over = leanOverflow(img);
+    if (!over.x && !over.y) return;
+    e.preventDefault();
+    clearTimeout(leanReturnTimeout);
+    setLean(img, lean.x + step[0] * LEAN_KEY_STEP * (over.x ? 1 : 0), lean.y + step[1] * LEAN_KEY_STEP * (over.y ? 1 : 0));
+    returnLean(img);
+  });
+
+  // Each new view starts centred; the first of the visit breathes once.
+  img.addEventListener('load', () => {
+    resetLean(img);
+    breatheLean(img);
+  });
+}
+
 /* ── Condition tiles (Wander the Weather) ─────────────────────── */
 
 function syncWeatherTiles() {
@@ -620,10 +743,8 @@ async function initWeatherPage() {
   document.getElementById('weather-turn-page').addEventListener('click', () => renderWeatherView({ turning: true }));
   document.getElementById('weather-look').addEventListener('click', lookOutside);
   document.getElementById('weather-fold').addEventListener('click', toggleWeatherCard);
-  // Clicking the picture itself (anywhere off the card) folds/unfolds too.
-  document.querySelector('.weather-spread').addEventListener('click', e => {
-    if (e.target === e.currentTarget) toggleWeatherCard();
-  });
+  // The picture itself: drag to lean out, tap to fold/unfold the card.
+  initLeaning();
   document.getElementById('weather-pane-look').addEventListener('click', lookOutside);
   renderWeatherReadout();
 

@@ -1515,12 +1515,23 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   background: var(--bg-deep);
   transition: background 3s ease;
 }
+.weather-window {
+  /* The picture takes drags (leaning out, weather.js) and taps (folding
+     the card); the page doesn't scroll from here. */
+  touch-action: none; cursor: grab;
+}
 .weather-window img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+  width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block;
   filter: sepia(20%) contrast(0.95);
-  opacity: 0; transition: opacity 1.4s ease;
+  opacity: 0;
+  /* Letting go drifts the view slowly back to the middle. */
+  transition: opacity 1.4s ease, object-position 2.6s cubic-bezier(0.45, 0, 0.25, 1);
+  user-select: none; -webkit-user-select: none; -webkit-user-drag: none;
 }
 .weather-window img.is-loaded { opacity: 1; }
+/* While leaning, the view follows the hand with no lag. */
+.weather-window img.is-leaning { transition: opacity 1.4s ease; }
+.weather-window:active { cursor: grabbing; }
 /* Soft darkening toward the edges — standing inside, looking out. */
 .weather-window::after {
   content: ''; position: absolute; inset: 0; pointer-events: none;
@@ -1529,11 +1540,14 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 .weather-spread {
   position: relative; z-index: 1;
+  /* Clicks and drags off the card fall through to the picture. */
+  pointer-events: none;
   display: grid; grid-template-columns: minmax(0, 1fr);
   padding: 64px 60px;
 }
 
 .weather-card {
+  pointer-events: auto;
   /* The credit band bleeds out to the card's inner rule, so its margins
      are worked out from these — change the padding here, not there. */
   --card-pad-x: 40px; --card-pad-b: 24px; --card-rule-inset: 7px;
