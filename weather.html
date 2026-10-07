@@ -3,23 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg" />
-<link rel="shortcut icon" href="images/emblemicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Earthly Hours" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="mobile-web-app-capable" content="yes" />
-<link rel="manifest" href="images/emblemicon/site.webmanifest" />
-<!-- Google tag (gtag.js) -->
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Google tag (gtag.js); display_mode tells home-screen visits from browser ones -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4407N365M"></script>
 <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-P4407N365M');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P4407N365M', {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  });
 </script>
+<!-- /shared:head -->
 <meta name="description" content="The Weather: a view from the reading room's window, with a short reading for the conditions outside.">
 <meta name="application-name" content="The Earthly Hours">
 <meta name="author" content="Ryan Weberling">
@@ -28,39 +35,8 @@
 </head>
 <body class="weather-page">
 
-<div class="outer-frame"></div>
-
-<div class="corner corner-tl">
- <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
- <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
- <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
- <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
- </svg>
-</div>
-<div class="corner corner-tr">
- <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
- <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
- <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
- <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
- </svg>
-</div>
-<div class="corner corner-bl">
- <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
- <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
- <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
- <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
- </svg>
-</div>
-<div class="corner corner-br">
- <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
- <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
- <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
- <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
- </svg>
-</div>
-
 <!-- ═══════════════════════════════════════════════
- THE WINDOW — full-bleed view behind the frame
+ THE WINDOW — full-bleed view (no page frame on this page)
 ════════════════════════════════════════════════ -->
 <div class="weather-window">
  <img id="weather-window-img" alt="">
@@ -97,7 +73,7 @@
 <!-- ═══════════════════════════════════════════════
  FOOTER NAV BAR
 ════════════════════════════════════════════════ -->
-<!-- nav: built from partials/nav.html by scripts/build_nav.py; edit it there -->
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
 <nav class="site-nav" id="site-nav">
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
@@ -141,7 +117,7 @@
     </div>
   </div>
 </nav>
-<!-- /nav -->
+<!-- /shared:nav -->
 
 <!-- ═══════════════════════════════════════════════
  WANDER THE WEATHER PANE

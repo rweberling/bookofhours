@@ -73,7 +73,7 @@ return false;
 
 /* ── Gated Wander buttons ─────────────────────────────────────────
    On each section's own page, its Wander item in the menu is a button
-   (class dfos-gated; scripts/build_nav.py puts it there) that reads
+   (class dfos-gated; scripts/build_shared.py puts it there) that reads
    "Sign in to wander" until the visitor has signed in with DFOS. The
    page's own script (hours.js, seasons.js, weather.js) opens its pane
    when the button is clicked.

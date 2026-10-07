@@ -45,7 +45,7 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
-from build_nav import render as render_nav
+from build_shared import render as render_shared
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data' / 'postcards.csv'
@@ -83,30 +83,10 @@ HOLDERS = {
 
 PATH = re.compile(r'^[a-z0-9-]+(/[a-z0-9-]+)*$')
 
-CORNER = '''<div class="corner corner-{pos}">
-  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
-    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
-    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
-  </svg>
-</div>'''
-
 PAGE = '''<!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="/images/emblemicon/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/images/emblemicon/favicon.svg">
-  <link rel="shortcut icon" href="/images/emblemicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/emblemicon/apple-touch-icon.png">
-  <link rel="manifest" href="/images/emblemicon/site.webmanifest">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4407N365M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
-    gtag('js', new Date());
-    gtag('config', 'G-P4407N365M');
-  </script>
+{head}
   <!-- Built by scripts/build_postcards.py from data/postcards.csv; edit those, not this. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -122,9 +102,7 @@ PAGE = '''<!DOCTYPE html>
 </head>
 <body>
 
-<div class="outer-frame"></div>
-
-{corners}
+{frame}
 
 <main class="page">
   <p class="publication-name">The Earthly Book of Hours</p>
@@ -323,13 +301,14 @@ def build(row, rows=()):
     og_image = ''
     if ready and has(row, 'image'):
         og_image = f'  <meta property="og:image" content="{SITE}/{esc(row["image"])}">\n'
-    corners = '\n'.join(CORNER.format(pos=p) for p in ('tl', 'tr', 'bl', 'br'))
     return PAGE.format(
         title=title, title_text=esc(title_text), series=esc(series),
         description=esc(description), url=esc(url), robots=robots,
-        og_image=og_image, corners=corners, body=body, dateline=dateline,
+        og_image=og_image, body=body, dateline=dateline,
         turn=turn(row, rows),
-        nav=render_nav(f'c/{path}/index.html'),
+        head=render_shared('head', f'c/{path}/index.html'),
+        frame=render_shared('frame', f'c/{path}/index.html'),
+        nav=render_shared('nav', f'c/{path}/index.html'),
         lightbox=LIGHTBOX if ready and has(row, 'image') and has(row, 'image_full') else '')
 
 

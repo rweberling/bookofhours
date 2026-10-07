@@ -317,13 +317,13 @@ def main():
     elif m.group(1) != inputs_digest():
         print('\nThe Sources page is out of date with the data. Run: python3 scripts/build_sources.py')
 
-    # The menu is copied into each page from partials/nav.html; say when a
-    # page's copy no longer matches.
-    from build_nav import stale_pages
+    # The head, frame and menu are copied into each page from partials/;
+    # say when a page's copy no longer matches.
+    from build_shared import stale_pages
     stale = stale_pages()
     if stale:
-        print(f'\nThe menu is out of date on {len(stale)} page(s) ({", ".join(stale)}). '
-              'Run: python3 scripts/build_nav.py')
+        print(f'\nShared parts are out of date on {len(stale)} page(s) ({", ".join(stale)}). '
+              'Run: python3 scripts/build_shared.py')
 
     return 1 if errors else 0
 
