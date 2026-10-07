@@ -86,9 +86,9 @@ function renderWeatherView(options) {
   // Fade the old view out, swap once the new one has actually loaded —
   // otherwise a slow image pops in half-drawn over the previous one.
   const img = document.getElementById('weather-window-img');
-  if (img.getAttribute('src') !== image.src) {
+  if (img.dataset.master !== image.src) {
     img.classList.remove('is-loaded');
-    img.src = image.src;
+    setWebImage(img, image.src, '100vw');
   }
   img.alt = plainText(image.caption) || 'The view from the window';
   document.getElementById('weather-caption').innerHTML = image.caption || '';

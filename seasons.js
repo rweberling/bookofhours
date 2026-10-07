@@ -52,7 +52,15 @@ function renderSeasonReading(entry) {
     : `A species reading for ${season.label}.`;
 
   const body = document.getElementById('season-reading-body');
-  body.innerHTML = entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+  // The post's images point at the full-size masters. Their src is set
+  // aside before the HTML goes in (so the browser doesn't start fetching
+  // the masters), then each is pointed at its web copies.
+  const html = entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+  body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
+  body.querySelectorAll('img[data-master]').forEach(img => {
+    img.loading = 'lazy';
+    setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
+  });
 }
 
 // "2026-07-14" -> "July 14, 2026". Read as UTC so the date doesn't slip
@@ -392,7 +400,7 @@ async function buildSpeciesGrid() {
       if (entry.images && entry.images[0]) {
         const thumb = document.createElement('img');
         thumb.className = 'species-thumb';
-        thumb.src = entry.images[0].src;
+        setWebImage(thumb, entry.images[0].src, '240px', [800]);
         thumb.alt = entry.images[0].alt || species;
         thumb.loading = 'lazy';
         card.appendChild(thumb);

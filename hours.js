@@ -203,9 +203,15 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate, afterU
   document.getElementById('image-caption').innerHTML    = img.caption || '';
 
   const inner = document.getElementById('image-inner');
-  inner.innerHTML = img.src
-    ? `<img src="${img.src}" alt="${escapeHTML(plainText(img.caption) || block.name)}">`
-    : placeholderSVG(block.name);
+  if (img.src) {
+    const el = document.createElement('img');
+    el.alt = plainText(img.caption) || block.name;
+    // The frame is at most 440px wide, less its padding, and narrower on phones.
+    setWebImage(el, img.src, '(max-width: 480px) 85vw, 410px', [800, 1600]);
+    inner.replaceChildren(el);
+  } else {
+    inner.innerHTML = placeholderSVG(block.name);
+  }
 
   currentBlockName = block.name;
   if (typeof afterUpdate === 'function') afterUpdate();
@@ -321,7 +327,7 @@ document.getElementById('image-inner').addEventListener('click', () => {
   const img     = document.querySelector('#image-inner img');
   const caption = document.getElementById('image-caption');
   if (!img) return;
-  lightboxImg.src           = img.src;
+  setWebImage(lightboxImg, img.dataset.master || img.src, '100vw');
   lightboxImg.alt           = img.alt || 'Expanded image';
   lightboxCaption.innerHTML = caption.innerHTML;
   lightbox.style.display    = 'flex';

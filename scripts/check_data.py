@@ -317,6 +317,15 @@ def main():
     elif m.group(1) != inputs_digest():
         print('\nThe Sources page is out of date with the data. Run: python3 scripts/build_sources.py')
 
+    # The pages show web copies of the images, made by build_images.py;
+    # say when a master has none, or has changed since they were made.
+    from build_images import stale_masters
+    stale = stale_masters()
+    if stale:
+        print(f'\nWeb copies are missing or out of date for {len(stale)} image(s) '
+              f'({", ".join(stale[:5])}{", ..." if len(stale) > 5 else ""}). '
+              'Run: python3 scripts/build_images.py')
+
     # The head, frame and menu are copied into each page from partials/;
     # say when a page's copy no longer matches.
     from build_shared import stale_pages

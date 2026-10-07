@@ -40,7 +40,9 @@ SAVED = re.compile(r'<!-- sources:start[^>]*-->.*?<!-- sources:end -->', re.S)
 def inputs_digest():
     """A short fingerprint of everything the page is built from."""
     # shared.js supplies the season month ranges and the loader.
-    paths = sorted((ROOT / 'data').glob('*.json')) + [
+    # data/image-files.json is build_images.py's record of the web copies,
+    # which this page doesn't use.
+    paths = sorted(p for p in (ROOT / 'data').glob('*.json') if p.name != 'image-files.json') + [
         ROOT / 'lectio-data.json', ROOT / 'sources.js', ROOT / 'shared.js']
     digest = hashlib.sha256()
     for path in paths:

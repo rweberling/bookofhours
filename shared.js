@@ -112,6 +112,40 @@ function escapeHTML(text) {
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// --- Web copies of images -------------------------------------------------
+// Pages show web copies of the master images, made by
+// scripts/build_images.py: images/fulcrum_klint.jpg is shown as
+// images/web/fulcrum_klint-800.webp, -1600.webp and -2400.webp.
+// webVersion() builds the same names; anything outside images/ is left as is.
+const WEB_WIDTHS = [800, 1600, 2400];
+
+function webVersion(src, width) {
+  return /^images\//.test(src)
+    ? src.replace(/^images\//, 'images/web/').replace(/\.[^./]+$/, `-${width}.webp`)
+    : src;
+}
+
+// Points an <img> at the web copies of a master, letting the browser pick
+// the width for its screen. sizes says how wide the image is drawn. If a
+// copy is missing (the build script not yet run for a new image), it
+// falls back to the master. The master's path is kept in data-master.
+function setWebImage(img, src, sizes, widths = WEB_WIDTHS) {
+  img.dataset.master = src;
+  if (!/^images\//.test(src)) {
+    img.removeAttribute('srcset');
+    img.src = src;
+    return;
+  }
+  img.onerror = () => {
+    img.onerror = null;
+    img.removeAttribute('srcset');
+    img.src = src;
+  };
+  img.sizes = sizes;
+  img.srcset = widths.map(w => `${webVersion(src, w)} ${w}w`).join(', ');
+  img.src = webVersion(src, 1600);
+}
+
 // --- Dial geometry --------------------------------------------------------
 // Shared by both dials — Wander the Hours (hours.js) and Wander the Seasons
 // (seasons.js) draw on the same 240×240 wheel: same center point, same arc
