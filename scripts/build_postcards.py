@@ -45,6 +45,8 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
+from build_nav import render as render_nav
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data' / 'postcards.csv'
 OUT = ROOT / 'c'
@@ -153,40 +155,7 @@ PAGE = '''<!DOCTYPE html>
 <!-- ═══════════════════════════════════════════════
      FOOTER NAV BAR
 ════════════════════════════════════════════════ -->
-<nav class="site-nav" id="site-nav">
-  <div class="nav-hours-group">
-    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
-    <div class="nav-hours-menu" id="nav-hours-menu">
-      <a href="/hours-incipit.html">Incipit</a>
-      <a href="/index.html">The Current Hour</a>
-      <a href="/index.html#wander">Wander the Hours</a>
-    </div>
-  </div>
-  <span class="nav-divider">✦</span>
-  <div class="nav-hours-group">
-    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
-    <div class="nav-hours-menu" id="nav-seasons-menu">
-      <a href="/seasons-incipit.html">Incipit</a>
-      <a href="/seasons.html">The Current Season</a>
-      <a href="/seasons.html#wander">Wander the Seasons</a>
-    </div>
-  </div>
-  <span class="nav-divider">✦</span>
-  <div class="nav-hours-group">
-    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
-    <div class="nav-hours-menu" id="nav-weather-menu">
-      <a href="/weather-incipit.html">Incipit</a>
-      <a href="/weather.html">The Current Weather</a>
-      <a href="/weather.html#wander">Wander the Weather</a>
-    </div>
-  </div>
-  <span class="nav-divider">✦</span>
-  <a href="/about.html">About</a>
-  <span class="nav-divider">✦</span>
-  <a href="/sources.html">Sources</a>
-  <span class="nav-divider">✦</span>
-  <div class="nav-hours-group"><button class="nav-hours-trigger" id="nav-projects-trigger">The Reading Room</button><div class="nav-hours-menu nav-embed-menu" id="nav-projects-menu"><iframe data-src="https://app.dfos.com/embed/spaces/otherwise?desc=0" width="400" height="114" frameborder="0" title="Otherwise"></iframe><a href="https://otherwise.dfos.com" target="_blank">Visit Otherwise</a><span class="install-divider" id="install-divider"></span><button class="install-btn" id="install-btn" type="button">Add to Home Screen</button><p class="install-tip" id="install-tip"></p></div></div>
-</nav>
+{nav}
 
 <script src="/shared.js"></script>
 <script src="/atmosphere.js"></script>
@@ -360,6 +329,7 @@ def build(row, rows=()):
         description=esc(description), url=esc(url), robots=robots,
         og_image=og_image, corners=corners, body=body, dateline=dateline,
         turn=turn(row, rows),
+        nav=render_nav(f'c/{path}/index.html'),
         lightbox=LIGHTBOX if ready and has(row, 'image') and has(row, 'image_full') else '')
 
 
