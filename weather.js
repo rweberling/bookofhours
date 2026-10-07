@@ -448,8 +448,8 @@ function openWeatherPane() {
    Weather) isn't.
 ────────────────────────────────────────────────────────────────── */
 function openWanderWeather() {
-  // Reached from the nav's "Wander the Weather" link (via #wander), so
-  // there's no button of our own to relabel — say so on the card instead.
+  // Say so on the card, not just on the menu's (closed) Wander button:
+  // arriving from another page's #wander link, the card is what's in view.
   const unavailable = () => {
     renderWeatherReadout('Sign-in is unavailable; try again soon');
     setTimeout(() => renderWeatherReadout(), 5000);
@@ -630,9 +630,10 @@ async function initWeatherPage() {
   // DOMContentLoaded, not script load: dfos-siwd.js is a module and only
   // defines dfosIsSignedIn once it has run, which is guaranteed by now.
   openWanderWeatherIfHashed();
-  // The nav's "Wander the Weather" link on this same page only changes
-  // the hash, it doesn't reload.
   window.addEventListener('hashchange', openWanderWeatherIfHashed);
+  // On this page the menu's Wander item is a button (see nav.js).
+  const wanderButton = document.getElementById('weather-wander-open');
+  if (wanderButton) wanderButton.addEventListener('click', openWanderWeather);
 
   try {
     const oracle = weatherView(await loadCollection());

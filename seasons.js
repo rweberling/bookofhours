@@ -465,9 +465,10 @@ async function initialiseSeason() {
   // DOMContentLoaded (this runs from it, below), not script load: the
   // DFOS gate needs dfos-siwd.js, a module, to have run first.
   openWanderSeasonsIfHashed();
-  // The nav's "Wander the Seasons" link on this same page only changes
-  // the hash, it doesn't reload.
   window.addEventListener('hashchange', openWanderSeasonsIfHashed);
+  // On this page the menu's Wander item is a button (see nav.js).
+  const wanderButton = document.getElementById('season-wander-open');
+  if (wanderButton) wanderButton.addEventListener('click', openWanderSeasons);
 
   try {
     const data = await loadLectioData();

@@ -714,7 +714,7 @@ keepPageBtn.addEventListener('click', () => {
 /* ── Overlay pane opener ──────────────────────────────────────────
    Wander the Hours opens through this — display, fade-in,
    build-if-needed, on-open callback. No auth check here; the DFOS
-   check lives one level up, in openWanderPane. See dfosGate() below.
+   check lives one level up, in openWanderPane() below.
    (Wander the Seasons and Wander the Weather live on their own pages,
    seasons.html and weather.html.)
 ────────────────────────────────────────────────────────────────── */
@@ -725,26 +725,13 @@ function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
   if (typeof onOpen === 'function') onOpen();
 }
 
-// Checking at this level instead of per-caller means every path in (the
-// on-page button, and the #wander hash deep-link other pages link to) is
-// gated for free, with nothing to remember to wrap. The sign-in check
-// itself is requireDfosSignIn() in nav.js, shared with seasons.js and
-// weather.js; this page only adds its own failure message.
-function dfosGate(intent) {
-  return requireDfosSignIn(intent, showDfosGateError);
-}
-
-let dfosGateErrorTimeout = null;
-function showDfosGateError() {
-  clearTimeout(dfosGateErrorTimeout);
-  document.querySelectorAll('.dfos-gated').forEach(btn => {
-    btn.textContent = 'Sign-in unavailable — try again';
-  });
-  dfosGateErrorTimeout = setTimeout(updateDfosGatedButtons, 5000);
-}
-
+// Checking here instead of per-caller means every path in (the menu's
+// Wander button, and the #wander hash deep-link other pages link to) is
+// gated for free, with nothing to remember to wrap. The sign-in check,
+// and the button's "Sign in to wander" label, live in nav.js, shared
+// with seasons.js and weather.js.
 function openWanderPane() {
-  if (!dfosGate('wander')) return;
+  if (!requireDfosSignIn('wander')) return;
   openGatedPane(document.getElementById('wander-pane'), {
     onOpen: () => {
       if (typeof updateDialNowDot === 'function') updateDialNowDot();
@@ -762,28 +749,14 @@ function openWanderPane() {
    Weather are gated the same way, from seasons.js and weather.js.
 ══════════════════════════════════════════════════════════════ */
 
-function updateDfosGatedButtons() {
-  const signedIn = typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn();
-  document.querySelectorAll('.dfos-gated').forEach(btn => {
-    btn.textContent = signedIn ? btn.dataset.gatedLabel : 'Sign in to wander';
-    btn.classList.toggle('is-locked', !signedIn);
-  });
-}
-
 const wanderOpenBtn = document.getElementById('wander-open');
 if (wanderOpenBtn) wanderOpenBtn.addEventListener('click', openWanderPane);
 
 window.addEventListener('dfossignin', e => {
-  updateDfosGatedButtons();
   const intent = e.detail && e.detail.intent;
   if (intent === 'wander') openWanderPane();
 });
 
-// dfos-siwd.js is a module script: even declared first in index.html, its
-// top-level (where window.dfosIsSignedIn gets assigned) runs after this
-// classic script's, not before — so the button labels have to wait for
-// DOMContentLoaded, which module scripts are guaranteed to finish before.
-window.addEventListener('DOMContentLoaded', updateDfosGatedButtons);
 
 /* ══════════════════════════════════════════════════════════════
    THE WEATHER

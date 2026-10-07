@@ -52,7 +52,8 @@ projectsMenu.addEventListener('click', e => e.stopPropagation());
    'dfossignin' with the same intent) and returns false.
    onUnavailable runs when sign-in can't even start — dfos-siwd.js
    never loaded (ad blocker, offline, CDN outage) or its CDN import
-   failed — so each page can say so in its own place.
+   failed. Left out, the Wander button in the menu says so; a page can
+   pass its own to say it somewhere more visible.
 
    Only call this from a click or after DOMContentLoaded, never while
    scripts are still loading: dfos-siwd.js is a module, so it defines
@@ -61,7 +62,7 @@ projectsMenu.addEventListener('click', e => e.stopPropagation());
 ────────────────────────────────────────────────────────────────── */
 function requireDfosSignIn(intent, onUnavailable) {
 if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) return true;
-const unavailable = typeof onUnavailable === 'function' ? onUnavailable : () => {};
+const unavailable = typeof onUnavailable === 'function' ? onUnavailable : showDfosGateError;
 if (typeof window.dfosBeginSignIn === 'function') {
 Promise.resolve(window.dfosBeginSignIn(intent)).catch(unavailable);
 } else {
@@ -69,6 +70,37 @@ unavailable();
 }
 return false;
 }
+
+/* ── Gated Wander buttons ─────────────────────────────────────────
+   On each section's own page, its Wander item in the menu is a button
+   (class dfos-gated; scripts/build_nav.py puts it there) that reads
+   "Sign in to wander" until the visitor has signed in with DFOS. The
+   page's own script (hours.js, seasons.js, weather.js) opens its pane
+   when the button is clicked.
+────────────────────────────────────────────────────────────────── */
+function updateDfosGatedButtons() {
+const signedIn = typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn();
+document.querySelectorAll('.dfos-gated').forEach(btn => {
+btn.textContent = signedIn ? btn.dataset.gatedLabel : 'Sign in to wander';
+btn.classList.toggle('is-locked', !signedIn);
+});
+}
+
+let dfosGateErrorTimeout = null;
+function showDfosGateError() {
+clearTimeout(dfosGateErrorTimeout);
+document.querySelectorAll('.dfos-gated').forEach(btn => {
+btn.textContent = 'Sign-in unavailable — try again';
+});
+dfosGateErrorTimeout = setTimeout(updateDfosGatedButtons, 5000);
+}
+
+// dfos-siwd.js is a module script: even declared first, its top level
+// (where window.dfosIsSignedIn gets assigned) runs after the classic
+// scripts, so the labels wait for DOMContentLoaded, which module scripts
+// are guaranteed to finish before.
+window.addEventListener('DOMContentLoaded', updateDfosGatedButtons);
+window.addEventListener('dfossignin', updateDfosGatedButtons);
 
 /* ── Overlay pane close (Wander, Season, Weather panes) ───────────
    Each pane lives on its own page now — wander-pane on index.html,

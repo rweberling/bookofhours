@@ -22,8 +22,10 @@ Write links in partials/nav.html as plain file names (about.html, not
   - Pages that can be reached at other addresses (404.html, and the
     postcard pages under c/) get links starting with /, so they work
     from anywhere on the site.
-  - On index.html, Wander the Hours opens the pane in place rather than
-    linking to index.html#wander, behind the DFOS sign-in check.
+  - On each section's own page (index.html, seasons.html, weather.html),
+    its Wander item becomes a button that opens the pane in place and
+    reads "Sign in to wander" until the visitor signs in with DFOS (see
+    nav.js). Elsewhere it stays a link to that page's #wander.
 
 The postcard pages are written by scripts/build_postcards.py, which takes
 its menu from here too.
@@ -40,9 +42,12 @@ START = '<!-- nav: built from partials/nav.html by scripts/build_nav.py; edit it
 END = '<!-- /nav -->'
 BLOCK = re.compile(re.escape(START) + '.*?' + re.escape(END), re.S)
 
-WANDER_HOURS_LINK = '<a href="index.html#wander">Wander the Hours</a>'
-WANDER_HOURS_BUTTON = ('<button class="wander-btn dfos-gated" id="wander-open" '
-                       'data-gated-label="Wander the Hours">Wander the Hours</button>')
+# Each section's page, its Wander item, and the id its script listens on.
+WANDER = {
+    'index.html': ('Wander the Hours', 'wander-open'),
+    'seasons.html': ('Wander the Seasons', 'season-wander-open'),
+    'weather.html': ('Wander the Weather', 'weather-wander-open'),
+}
 
 
 def absolute_links(page):
@@ -60,8 +65,13 @@ def render(page=''):
         return menu.group(0).replace(f'<a href="{page}">', f'<a class="active" href="{page}">')
     nav = re.sub(r'<div class="nav-hours-menu".*?</div>', mark, nav, flags=re.S)
 
-    if page == 'index.html':
-        nav = nav.replace(WANDER_HOURS_LINK, WANDER_HOURS_BUTTON)
+    if page in WANDER:
+        label, button_id = WANDER[page]
+        link = f'<a href="{page}#wander">{label}</a>'
+        button = (f'<button class="wander-btn dfos-gated" id="{button_id}" '
+                  f'data-gated-label="{label}">{label}</button>')
+        assert link in nav, f'partials/nav.html has no {link}'
+        nav = nav.replace(link, button)
     if absolute_links(page):
         nav = re.sub(r'href="(?![a-z]+:|/|#)', 'href="/', nav)
     return f'{START}\n{nav}\n{END}'
