@@ -5,6 +5,10 @@ Usage:
   python3 scripts/import_substack.py --export /path/to/substack-export --template
   python3 scripts/import_substack.py --export /path/to/substack-export --assignments season-assignments.json
   python3 scripts/import_substack.py --export /path/to/substack-export --assignments season-assignments.json --write
+
+With --write, the post images are downloaded to images/lectio-terra/ and
+scripts/build_images.py then runs, making the web copies the Seasons page
+shows (and removing those of any image no longer there).
 """
 
 import argparse
@@ -322,6 +326,10 @@ def main():
     if args.write:
         args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print(f'Wrote {args.output} with {sum(len(items) for items in grouped.values())} assigned posts.')
+        print('Making web copies of the images:')
+        built = subprocess.run([sys.executable, str(Path(__file__).with_name('build_images.py'))])
+        if built.returncode:
+            print('The web copies were not all made. Run: python3 scripts/build_images.py', file=sys.stderr)
     else:
         print(json.dumps({season: len(items) for season, items in grouped.items()}, indent=2))
         print(f'Unassigned posts: {len(unassigned)}. Use --template to create assignment entries.')
