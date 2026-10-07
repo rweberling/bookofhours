@@ -157,6 +157,7 @@ PAGE = '''<!DOCTYPE html>
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
     <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="/hours-incipit.html">Incipit</a>
       <a href="/index.html">The Current Hour</a>
       <a href="/index.html#wander">Wander the Hours</a>
     </div>
@@ -165,6 +166,7 @@ PAGE = '''<!DOCTYPE html>
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
     <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="/seasons-incipit.html">Incipit</a>
       <a href="/seasons.html">The Current Season</a>
       <a href="/seasons.html#wander">Wander the Seasons</a>
     </div>
@@ -173,6 +175,7 @@ PAGE = '''<!DOCTYPE html>
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
     <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="/weather-incipit.html">Incipit</a>
       <a href="/weather.html">The Current Weather</a>
       <a href="/weather.html#wander">Wander the Weather</a>
     </div>
