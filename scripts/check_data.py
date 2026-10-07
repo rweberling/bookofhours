@@ -257,6 +257,16 @@ def main():
         check_date(iid, 'date', img.get('date'))
         check_rights(iid, img.get('rights'))
         check_links(iid, img.get('links'))
+        # source: where the image file itself was downloaded, and when.
+        # The cited link is the work; this is the exact file, so a better
+        # copy or a broken link can be traced later.
+        source = img.get('source')
+        if source is not None:
+            if not str(source.get('url', '')).startswith(('http://', 'https://')):
+                errors.append(f'{iid}: source without a web address: {source}')
+            check_date(iid, 'source retrieved', source.get('retrieved'))
+        if not (source and source.get('url') and source.get('retrieved')):
+            gaps[iid].append('source file and retrieval date')
         check_further(iid, img.get('furtherReading'))
         check_display_links(iid, img.get('caption'))
         if not img.get('caption'):

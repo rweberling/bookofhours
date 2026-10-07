@@ -12,24 +12,25 @@
       "height": 2000,
       "sha256": "d5ac2c9d2844b81936f7181fc924c3d56362f88547d486f685a7cb55881d345a",
       "settings": "89e48fac760f",
+      "credit": "bf8328679a70",
       "copies": [
         {
           "file": "images/web/chorus_harris-800.webp",
           "width": 800,
           "height": 985,
-          "bytes": 98080
+          "bytes": 99396
         },
         {
           "file": "images/web/chorus_harris-1600.webp",
           "width": 1600,
           "height": 1969,
-          "bytes": 292692
+          "bytes": 294008
         },
         {
           "file": "images/web/chorus_harris-2400.webp",
           "width": 1625,
           "height": 2000,
-          "bytes": 302934
+          "bytes": 304250
         }
       ]
     },
@@ -39,24 +40,25 @@
       "height": 1126,
       "sha256": "753b8f413950b95eef99d77adeaefd185cd3c624ee9c179300e0f6d1f17fb41e",
       "settings": "89e48fac760f",
+      "credit": "8e71c660b911",
       "copies": [
         {
           "file": "images/web/chorus_sivartha-800.webp",
           "width": 660,
           "height": 1126,
-          "bytes": 185038
+          "bytes": 186432
         },
         {
           "file": "images/web/chorus_sivartha-1600.webp",
           "width": 660,
           "height": 1126,
-          "bytes": 185038
+          "bytes": 186432
         },
         {
           "file": "images/web/chorus_sivartha-2400.webp",
           "width": 660,
           "height": 1126,
-          "bytes": 185038
+          "bytes": 186432
         }
       ]
     },
@@ -66,24 +68,25 @@
       "height": 2001,
       "sha256": "dfd48e491deddb515ec7c9c3b5517b8a39aa0d5e0de1caa9caa14ed38c2dda4a",
       "settings": "89e48fac760f",
+      "credit": "a98c648a20e3",
       "copies": [
         {
           "file": "images/web/chorus_smithblood-800.webp",
           "width": 800,
           "height": 1313,
-          "bytes": 202724
+          "bytes": 204066
         },
         {
           "file": "images/web/chorus_smithblood-1600.webp",
           "width": 1219,
           "height": 2001,
-          "bytes": 593356
+          "bytes": 594698
         },
         {
           "file": "images/web/chorus_smithblood-2400.webp",
           "width": 1219,
           "height": 2001,
-          "bytes": 593356
+          "bytes": 594698
         }
       ]
     },
@@ -93,24 +96,25 @@
       "height": 2179,
       "sha256": "42aab903f98dd101d62d38639d89451e19796389b56fa39709c8933def7a77f0",
       "settings": "89e48fac760f",
+      "credit": "d994a1b580ca",
       "copies": [
         {
           "file": "images/web/chorus_tres_riches-800.webp",
           "width": 800,
           "height": 1039,
-          "bytes": 186142
+          "bytes": 187454
         },
         {
           "file": "images/web/chorus_tres_riches-1600.webp",
           "width": 1600,
           "height": 2079,
-          "bytes": 458972
+          "bytes": 460284
         },
         {
           "file": "images/web/chorus_tres_riches-2400.webp",
           "width": 1677,
           "height": 2179,
-          "bytes": 489486
+          "bytes": 490798
         }
       ]
     },
@@ -120,24 +124,25 @@
       "height": 2396,
       "sha256": "b0c6912bfd68f4ae6b3b08584a3c8466cf4d5669b888065189f35d492ad28bdb",
       "settings": "89e48fac760f",
+      "credit": "1d3096cfd0ef",
       "copies": [
         {
           "file": "images/web/convivium_cezanne-800.webp",
           "width": 800,
           "height": 639,
-          "bytes": 45418
+          "bytes": 46614
         },
         {
           "file": "images/web/convivium_cezanne-1600.webp",
           "width": 1600,
           "height": 1278,
-          "bytes": 156082
+          "bytes": 157278
         },
         {
           "file": "images/web/convivium_cezanne-2400.webp",
           "width": 2400,
           "height": 1917,
-          "bytes": 331232
+          "bytes": 332428
         }
       ]
     },
@@ -147,24 +152,25 @@
       "height": 1808,
       "sha256": "89dcff23902089cfa7d5b28f1d04ac8b0e9b617467c48d591492ee57cb624b95",
       "settings": "89e48fac760f",
+      "credit": "c44670a96bd7",
       "copies": [
         {
           "file": "images/web/convivium_davis-800.webp",
           "width": 800,
           "height": 800,
-          "bytes": 61194
+          "bytes": 62402
         },
         {
           "file": "images/web/convivium_davis-1600.webp",
           "width": 1600,
           "height": 1600,
-          "bytes": 167758
+          "bytes": 168966
         },
         {
           "file": "images/web/convivium_davis-2400.webp",
           "width": 1808,
           "height": 1808,
-          "bytes": 209492
+          "bytes": 210700
         }
       ]
     },
@@ -174,24 +180,25 @@
       "height": 2670,
       "sha256": "1e4a5eeac218788a159462a4579667bd79f73594c175e5607190dcd94744848c",
       "settings": "89e48fac760f",
+      "credit": "fbeb693d7063",
       "copies": [
         {
           "file": "images/web/convivium_hiroshige-800.webp",
           "width": 800,
           "height": 553,
-          "bytes": 74078
+          "bytes": 75320
         },
         {
           "file": "images/web/convivium_hiroshige-1600.webp",
           "width": 1600,
           "height": 1105,
-          "bytes": 287256
+          "bytes": 288498
         },
         {
           "file": "images/web/convivium_hiroshige-2400.webp",
           "width": 2400,
           "height": 1658,
-          "bytes": 643252
+          "bytes": 644494
         }
       ]
     },
@@ -201,24 +208,25 @@
       "height": 1868,
       "sha256": "2391bad89b581172e88bb2946e7d08f0e8dac1a2f18623122628c1bc1ba53f15",
       "settings": "89e48fac760f",
+      "credit": "d8be5e196e7e",
       "copies": [
         {
           "file": "images/web/convivium_wragge-800.webp",
           "width": 800,
           "height": 798,
-          "bytes": 38916
+          "bytes": 40204
         },
         {
           "file": "images/web/convivium_wragge-1600.webp",
           "width": 1600,
           "height": 1597,
-          "bytes": 149220
+          "bytes": 150508
         },
         {
           "file": "images/web/convivium_wragge-2400.webp",
           "width": 1872,
           "height": 1868,
-          "bytes": 201040
+          "bytes": 202328
         }
       ]
     },
@@ -228,24 +236,25 @@
       "height": 607,
       "sha256": "6f5a0cf4b31d0087aed29ea18fd1934f61d12da3dad3bbfa3bd12cbb6146d8bf",
       "settings": "89e48fac760f",
+      "credit": "f76df7de2c44",
       "copies": [
         {
           "file": "images/web/denouement_giberne-800.webp",
           "width": 600,
           "height": 607,
-          "bytes": 69610
+          "bytes": 70948
         },
         {
           "file": "images/web/denouement_giberne-1600.webp",
           "width": 600,
           "height": 607,
-          "bytes": 69610
+          "bytes": 70948
         },
         {
           "file": "images/web/denouement_giberne-2400.webp",
           "width": 600,
           "height": 607,
-          "bytes": 69610
+          "bytes": 70948
         }
       ]
     },
@@ -255,24 +264,25 @@
       "height": 3916,
       "sha256": "2a998434eae1d68dccb5484696e19a06340ecc762d82d87734c40e3730777563",
       "settings": "89e48fac760f",
+      "credit": "b5ed1a192e24",
       "copies": [
         {
           "file": "images/web/denouement_haeckel-800.webp",
           "width": 800,
           "height": 1176,
-          "bytes": 162960
+          "bytes": 164264
         },
         {
           "file": "images/web/denouement_haeckel-1600.webp",
           "width": 1600,
           "height": 2351,
-          "bytes": 638994
+          "bytes": 640298
         },
         {
           "file": "images/web/denouement_haeckel-2400.webp",
           "width": 2400,
           "height": 3527,
-          "bytes": 1170160
+          "bytes": 1171464
         }
       ]
     },
@@ -282,24 +292,25 @@
       "height": 1260,
       "sha256": "b4e4f74addfcc8cb2b0f0f6be28578544410f71634df5c29c688516d9201761d",
       "settings": "89e48fac760f",
+      "credit": "b5c18679858d",
       "copies": [
         {
           "file": "images/web/denouement_kuindzhi-800.webp",
           "width": 800,
           "height": 577,
-          "bytes": 14636
+          "bytes": 15828
         },
         {
           "file": "images/web/denouement_kuindzhi-1600.webp",
           "width": 1600,
           "height": 1155,
-          "bytes": 54192
+          "bytes": 55384
         },
         {
           "file": "images/web/denouement_kuindzhi-2400.webp",
           "width": 1746,
           "height": 1260,
-          "bytes": 66366
+          "bytes": 67558
         }
       ]
     },
@@ -309,24 +320,25 @@
       "height": 1630,
       "sha256": "dcc63a09ea9caf07e713f5ecc077669b24dad4731e456a939bd832ef92c08214",
       "settings": "89e48fac760f",
+      "credit": "764277d29227",
       "copies": [
         {
           "file": "images/web/denouement_tryon-800.webp",
           "width": 800,
           "height": 536,
-          "bytes": 59598
+          "bytes": 60908
         },
         {
           "file": "images/web/denouement_tryon-1600.webp",
           "width": 1600,
           "height": 1071,
-          "bytes": 240012
+          "bytes": 241322
         },
         {
           "file": "images/web/denouement_tryon-2400.webp",
           "width": 2400,
           "height": 1607,
-          "bytes": 475392
+          "bytes": 476702
         }
       ]
     },
@@ -336,24 +348,25 @@
       "height": 900,
       "sha256": "5b2b0ddbbe137b71cc6814a8b220a7bd0b9beab6794417ab671cba7b42df51c0",
       "settings": "89e48fac760f",
+      "credit": "8c6632a503fa",
       "copies": [
         {
           "file": "images/web/doldrums_brigman-800.webp",
           "width": 509,
           "height": 900,
-          "bytes": 31220
+          "bytes": 32404
         },
         {
           "file": "images/web/doldrums_brigman-1600.webp",
           "width": 509,
           "height": 900,
-          "bytes": 31220
+          "bytes": 32404
         },
         {
           "file": "images/web/doldrums_brigman-2400.webp",
           "width": 509,
           "height": 900,
-          "bytes": 31220
+          "bytes": 32404
         }
       ]
     },
@@ -363,24 +376,25 @@
       "height": 1024,
       "sha256": "6255a396655b56c44c7be2d07b5b2d4fc3da21b9ec8b169602dad21a25542a37",
       "settings": "89e48fac760f",
+      "credit": "7636f0514250",
       "copies": [
         {
           "file": "images/web/doldrums_cajal-800.webp",
           "width": 720,
           "height": 1024,
-          "bytes": 200546
+          "bytes": 201846
         },
         {
           "file": "images/web/doldrums_cajal-1600.webp",
           "width": 720,
           "height": 1024,
-          "bytes": 200546
+          "bytes": 201846
         },
         {
           "file": "images/web/doldrums_cajal-2400.webp",
           "width": 720,
           "height": 1024,
-          "bytes": 200546
+          "bytes": 201846
         }
       ]
     },
@@ -390,24 +404,25 @@
       "height": 3722,
       "sha256": "32a867627ef07c553929550fbc41f553b01cb2a5101f994e37d8e625c9709f0d",
       "settings": "89e48fac760f",
+      "credit": "bf2ff6a4151e",
       "copies": [
         {
           "file": "images/web/doldrums_degas-800.webp",
           "width": 800,
           "height": 1097,
-          "bytes": 140576
+          "bytes": 141816
         },
         {
           "file": "images/web/doldrums_degas-1600.webp",
           "width": 1600,
           "height": 2194,
-          "bytes": 639934
+          "bytes": 641174
         },
         {
           "file": "images/web/doldrums_degas-2400.webp",
           "width": 2400,
           "height": 3291,
-          "bytes": 1348878
+          "bytes": 1350118
         }
       ]
     },
@@ -417,24 +432,25 @@
       "height": 996,
       "sha256": "d554b0ec60a3545478ef876e32ae515e133157dd4828df0d30b923305947263c",
       "settings": "89e48fac760f",
+      "credit": "89e1c4422926",
       "copies": [
         {
           "file": "images/web/doldrums_monet-800.webp",
           "width": 800,
           "height": 473,
-          "bytes": 38084
+          "bytes": 39312
         },
         {
           "file": "images/web/doldrums_monet-1600.webp",
           "width": 1600,
           "height": 945,
-          "bytes": 119902
+          "bytes": 121130
         },
         {
           "file": "images/web/doldrums_monet-2400.webp",
           "width": 1686,
           "height": 996,
-          "bytes": 132048
+          "bytes": 133276
         }
       ]
     },
@@ -444,24 +460,25 @@
       "height": 589,
       "sha256": "5cdf3018b78aac901f2e1a2ed67224e8d11b6e5d9fa21980faf86016d498796a",
       "settings": "89e48fac760f",
+      "credit": "570c7c523500",
       "copies": [
         {
           "file": "images/web/fulcrum_caillebotte-800.webp",
           "width": 800,
           "height": 554,
-          "bytes": 55668
+          "bytes": 56944
         },
         {
           "file": "images/web/fulcrum_caillebotte-1600.webp",
           "width": 850,
           "height": 589,
-          "bytes": 65750
+          "bytes": 67026
         },
         {
           "file": "images/web/fulcrum_caillebotte-2400.webp",
           "width": 850,
           "height": 589,
-          "bytes": 65750
+          "bytes": 67026
         }
       ]
     },
@@ -471,24 +488,25 @@
       "height": 1400,
       "sha256": "99f3c242da92737e2ea887ac80f6af187cdc94e8f441a94ee091031ed286e105",
       "settings": "89e48fac760f",
+      "credit": "f3dd2aa56256",
       "copies": [
         {
           "file": "images/web/fulcrum_campbell-800.webp",
           "width": 800,
           "height": 450,
-          "bytes": 175386
+          "bytes": 176596
         },
         {
           "file": "images/web/fulcrum_campbell-1600.webp",
           "width": 1600,
           "height": 900,
-          "bytes": 580516
+          "bytes": 581726
         },
         {
           "file": "images/web/fulcrum_campbell-2400.webp",
           "width": 2400,
           "height": 1350,
-          "bytes": 1078392
+          "bytes": 1079602
         }
       ]
     },
@@ -498,24 +516,25 @@
       "height": 2264,
       "sha256": "bfcfb09f7b6583c8e72be747569bcb45904561978493ff68fc647725d3105001",
       "settings": "89e48fac760f",
+      "credit": "bf14ba7500f6",
       "copies": [
         {
           "file": "images/web/fulcrum_hitchcock-800.webp",
           "width": 800,
           "height": 326,
-          "bytes": 38436
+          "bytes": 39664
         },
         {
           "file": "images/web/fulcrum_hitchcock-1600.webp",
           "width": 1600,
           "height": 653,
-          "bytes": 144974
+          "bytes": 146202
         },
         {
           "file": "images/web/fulcrum_hitchcock-2400.webp",
           "width": 2400,
           "height": 979,
-          "bytes": 461596
+          "bytes": 462824
         }
       ]
     },
@@ -525,24 +544,25 @@
       "height": 3994,
       "sha256": "0fd3d729ec0ca95546c78959ea931b0aa3ace96128acc14e61fd8c9694c78af9",
       "settings": "89e48fac760f",
+      "credit": "6ba978c837f6",
       "copies": [
         {
           "file": "images/web/fulcrum_klint-800.webp",
           "width": 800,
           "height": 1050,
-          "bytes": 39550
+          "bytes": 40844
         },
         {
           "file": "images/web/fulcrum_klint-1600.webp",
           "width": 1600,
           "height": 2101,
-          "bytes": 181590
+          "bytes": 182884
         },
         {
           "file": "images/web/fulcrum_klint-2400.webp",
           "width": 2400,
           "height": 3151,
-          "bytes": 484796
+          "bytes": 486090
         }
       ]
     },
@@ -552,24 +572,25 @@
       "height": 765,
       "sha256": "6a6c366406c7d41d6c9ae837e6b590713e490a1fcf152b03aaaa4c4e1630032a",
       "settings": "89e48fac760f",
+      "credit": "209fa6e50e8b",
       "copies": [
         {
           "file": "images/web/hush_bentley2-800.webp",
           "width": 708,
           "height": 765,
-          "bytes": 73742
+          "bytes": 74938
         },
         {
           "file": "images/web/hush_bentley2-1600.webp",
           "width": 708,
           "height": 765,
-          "bytes": 73742
+          "bytes": 74938
         },
         {
           "file": "images/web/hush_bentley2-2400.webp",
           "width": 708,
           "height": 765,
-          "bytes": 73742
+          "bytes": 74938
         }
       ]
     },
@@ -579,24 +600,25 @@
       "height": 1186,
       "sha256": "3fc431ed4da8e0a842a84d155616b92d60865c220aa4f76cd4e429395b9ea4dd",
       "settings": "89e48fac760f",
+      "credit": "f4a19ad8e3d1",
       "copies": [
         {
           "file": "images/web/hush_lockyer1-800.webp",
           "width": 800,
           "height": 1035,
-          "bytes": 308040
+          "bytes": 309422
         },
         {
           "file": "images/web/hush_lockyer1-1600.webp",
           "width": 917,
           "height": 1186,
-          "bytes": 395268
+          "bytes": 396650
         },
         {
           "file": "images/web/hush_lockyer1-2400.webp",
           "width": 917,
           "height": 1186,
-          "bytes": 395268
+          "bytes": 396650
         }
       ]
     },
@@ -606,24 +628,25 @@
       "height": 882,
       "sha256": "e164b4a8fbf7cc5b5c877b37518bfd1a6bc95e7166f18b607d9be6e242f53e69",
       "settings": "89e48fac760f",
+      "credit": "65d467d59152",
       "copies": [
         {
           "file": "images/web/hush_steichen-800.webp",
           "width": 800,
           "height": 689,
-          "bytes": 47012
+          "bytes": 48242
         },
         {
           "file": "images/web/hush_steichen-1600.webp",
           "width": 1024,
           "height": 882,
-          "bytes": 127066
+          "bytes": 128296
         },
         {
           "file": "images/web/hush_steichen-2400.webp",
           "width": 1024,
           "height": 882,
-          "bytes": 127066
+          "bytes": 128296
         }
       ]
     },
@@ -633,24 +656,25 @@
       "height": 1240,
       "sha256": "3293518f5164223e8976dc17555a5263baa47d527cddb83e739548d1680b9a82",
       "settings": "89e48fac760f",
+      "credit": "a981facf8c04",
       "copies": [
         {
           "file": "images/web/hush_whistler-800.webp",
           "width": 800,
           "height": 496,
-          "bytes": 7126
+          "bytes": 8390
         },
         {
           "file": "images/web/hush_whistler-1600.webp",
           "width": 1600,
           "height": 992,
-          "bytes": 73548
+          "bytes": 74812
         },
         {
           "file": "images/web/hush_whistler-2400.webp",
           "width": 2000,
           "height": 1240,
-          "bytes": 144762
+          "bytes": 146026
         }
       ]
     },
@@ -660,24 +684,25 @@
       "height": 2151,
       "sha256": "eb69abe8f615a4e7e6eed8ac42653fe10f94972ee237c513cedd3d3ed6ed5210",
       "settings": "89e48fac760f",
+      "credit": "43c3156ed097",
       "copies": [
         {
           "file": "images/web/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-1-2363b3621c32-800.webp",
           "width": 800,
           "height": 1215,
-          "bytes": 190730
+          "bytes": 191712
         },
         {
           "file": "images/web/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-1-2363b3621c32-1600.webp",
           "width": 1416,
           "height": 2151,
-          "bytes": 547038
+          "bytes": 548020
         },
         {
           "file": "images/web/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-1-2363b3621c32-2400.webp",
           "width": 1416,
           "height": 2151,
-          "bytes": 547038
+          "bytes": 548020
         }
       ]
     },
@@ -687,24 +712,25 @@
       "height": 1469,
       "sha256": "5bfc64bc23bbfefeff3af140433b235cefc38e54fc124e33420aa56bf8845183",
       "settings": "89e48fac760f",
+      "credit": "43c3156ed097",
       "copies": [
         {
           "file": "images/web/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-2-8c89efe60931-800.webp",
           "width": 800,
           "height": 757,
-          "bytes": 71270
+          "bytes": 72252
         },
         {
           "file": "images/web/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-2-8c89efe60931-1600.webp",
           "width": 1552,
           "height": 1469,
-          "bytes": 172988
+          "bytes": 173970
         },
         {
           "file": "images/web/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-2-8c89efe60931-2400.webp",
           "width": 1552,
           "height": 1469,
-          "bytes": 172988
+          "bytes": 173970
         }
       ]
     },
@@ -714,24 +740,25 @@
       "height": 1445,
       "sha256": "5b294ffec8a7a71c73bb98b2df67472ef76f157aadb9f6b88aba6a2350a682c1",
       "settings": "89e48fac760f",
+      "credit": "41117bccc76f",
       "copies": [
         {
           "file": "images/web/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-1-c165fe52c430-800.webp",
           "width": 800,
           "height": 1312,
-          "bytes": 108228
+          "bytes": 109220
         },
         {
           "file": "images/web/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-1-c165fe52c430-1600.webp",
           "width": 881,
           "height": 1445,
-          "bytes": 125644
+          "bytes": 126636
         },
         {
           "file": "images/web/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-1-c165fe52c430-2400.webp",
           "width": 881,
           "height": 1445,
-          "bytes": 125644
+          "bytes": 126636
         }
       ]
     },
@@ -741,24 +768,25 @@
       "height": 999,
       "sha256": "b0cbe57b02433038070251c7ec4c84f1c939556e868ba521bbcf6e8e01af034b",
       "settings": "89e48fac760f",
+      "credit": "41117bccc76f",
       "copies": [
         {
           "file": "images/web/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-2-ddea7a1983e0-800.webp",
           "width": 601,
           "height": 999,
-          "bytes": 54124
+          "bytes": 55116
         },
         {
           "file": "images/web/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-2-ddea7a1983e0-1600.webp",
           "width": 601,
           "height": 999,
-          "bytes": 54124
+          "bytes": 55116
         },
         {
           "file": "images/web/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-2-ddea7a1983e0-2400.webp",
           "width": 601,
           "height": 999,
-          "bytes": 54124
+          "bytes": 55116
         }
       ]
     },
@@ -768,24 +796,25 @@
       "height": 921,
       "sha256": "dc09896165c02ad0bf2e6aa2d2927144b25d09b5f26459ca5815b81147cc8ffd",
       "settings": "89e48fac760f",
+      "credit": "7dea43278108",
       "copies": [
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-1-a4ff95cb4686-800.webp",
           "width": 800,
           "height": 387,
-          "bytes": 36970
+          "bytes": 37942
         },
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-1-a4ff95cb4686-1600.webp",
           "width": 1600,
           "height": 773,
-          "bytes": 113706
+          "bytes": 114678
         },
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-1-a4ff95cb4686-2400.webp",
           "width": 1906,
           "height": 921,
-          "bytes": 153498
+          "bytes": 154470
         }
       ]
     },
@@ -795,24 +824,25 @@
       "height": 1898,
       "sha256": "c0aa40eeedc19c6246249a0d6b8b2ec86c49f4f348f7d190db6afc8e175bdc76",
       "settings": "89e48fac760f",
+      "credit": "7dea43278108",
       "copies": [
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-2-3dbe507824f0-800.webp",
           "width": 800,
           "height": 1265,
-          "bytes": 57256
+          "bytes": 58228
         },
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-2-3dbe507824f0-1600.webp",
           "width": 1200,
           "height": 1898,
-          "bytes": 101594
+          "bytes": 102566
         },
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-2-3dbe507824f0-2400.webp",
           "width": 1200,
           "height": 1898,
-          "bytes": 101594
+          "bytes": 102566
         }
       ]
     },
@@ -822,24 +852,25 @@
       "height": 441,
       "sha256": "e6a4048a1a30090c1d4e47b6e30d8ca91ba5031f121974b1d5fc62048076bc7b",
       "settings": "89e48fac760f",
+      "credit": "7dea43278108",
       "copies": [
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-3-0ecd09119a8c-800.webp",
           "width": 370,
           "height": 441,
-          "bytes": 26206
+          "bytes": 27178
         },
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-3-0ecd09119a8c-1600.webp",
           "width": 370,
           "height": 441,
-          "bytes": 26206
+          "bytes": 27178
         },
         {
           "file": "images/web/lectio-terra/189887776.week-11-american-robin-emily-dickinson-3-0ecd09119a8c-2400.webp",
           "width": 370,
           "height": 441,
-          "bytes": 26206
+          "bytes": 27178
         }
       ]
     },
@@ -849,24 +880,25 @@
       "height": 600,
       "sha256": "1c75da538e51a737edc56ac307993f276bd4b637fe5bf0d1468cd9c9634b5725",
       "settings": "89e48fac760f",
+      "credit": "309126ade608",
       "copies": [
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-1-9644353e30e2-800.webp",
           "width": 721,
           "height": 600,
-          "bytes": 113484
+          "bytes": 114440
         },
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-1-9644353e30e2-1600.webp",
           "width": 721,
           "height": 600,
-          "bytes": 113484
+          "bytes": 114440
         },
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-1-9644353e30e2-2400.webp",
           "width": 721,
           "height": 600,
-          "bytes": 113484
+          "bytes": 114440
         }
       ]
     },
@@ -876,24 +908,25 @@
       "height": 1501,
       "sha256": "75cac7747358b17c676ad27a7881afb01d791f5af5d561100f4856a4db09bbef",
       "settings": "89e48fac760f",
+      "credit": "309126ade608",
       "copies": [
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-2-635054073ded-800.webp",
           "width": 800,
           "height": 834,
-          "bytes": 67556
+          "bytes": 68512
         },
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-2-635054073ded-1600.webp",
           "width": 1440,
           "height": 1501,
-          "bytes": 123504
+          "bytes": 124460
         },
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-2-635054073ded-2400.webp",
           "width": 1440,
           "height": 1501,
-          "bytes": 123504
+          "bytes": 124460
         }
       ]
     },
@@ -903,24 +936,25 @@
       "height": 2922,
       "sha256": "8e7c4310a092cd61a3337543f1229bdd4093e29df79b74435615224a233d7a96",
       "settings": "89e48fac760f",
+      "credit": "309126ade608",
       "copies": [
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-3-bc4f66ab5190-800.webp",
           "width": 800,
           "height": 614,
-          "bytes": 81108
+          "bytes": 82064
         },
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-3-bc4f66ab5190-1600.webp",
           "width": 1600,
           "height": 1227,
-          "bytes": 328312
+          "bytes": 329268
         },
         {
           "file": "images/web/lectio-terra/190031542.week-13-paper-birch-robert-frost-3-bc4f66ab5190-2400.webp",
           "width": 2400,
           "height": 1841,
-          "bytes": 706324
+          "bytes": 707280
         }
       ]
     },
@@ -930,24 +964,25 @@
       "height": 1583,
       "sha256": "d79624970f659330e449f4cc1eea7fa5bf2019c932d949b45c4bdcf10d99b78a",
       "settings": "89e48fac760f",
+      "credit": "250a8ac5cf16",
       "copies": [
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-1-4a420f30d874-800.webp",
           "width": 800,
           "height": 1459,
-          "bytes": 377470
+          "bytes": 378438
         },
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-1-4a420f30d874-1600.webp",
           "width": 868,
           "height": 1583,
-          "bytes": 443800
+          "bytes": 444768
         },
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-1-4a420f30d874-2400.webp",
           "width": 868,
           "height": 1583,
-          "bytes": 443800
+          "bytes": 444768
         }
       ]
     },
@@ -957,24 +992,25 @@
       "height": 2707,
       "sha256": "5d0055bed718ad4b5169e1fdf61f506a31dc41afdbb2cb8c8828a65e91f3cec4",
       "settings": "89e48fac760f",
+      "credit": "250a8ac5cf16",
       "copies": [
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-2-a6652040d14a-800.webp",
           "width": 800,
           "height": 1221,
-          "bytes": 45046
+          "bytes": 46014
         },
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-2-a6652040d14a-1600.webp",
           "width": 1600,
           "height": 2443,
-          "bytes": 134156
+          "bytes": 135124
         },
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-2-a6652040d14a-2400.webp",
           "width": 1773,
           "height": 2707,
-          "bytes": 159978
+          "bytes": 160946
         }
       ]
     },
@@ -984,24 +1020,25 @@
       "height": 1742,
       "sha256": "7edc96df1f1531e21da5cf8c09db63bbc09a9cec753eeb33e8247f137941f107",
       "settings": "89e48fac760f",
+      "credit": "250a8ac5cf16",
       "copies": [
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-3-bfd5392ed171-800.webp",
           "width": 800,
           "height": 1008,
-          "bytes": 167264
+          "bytes": 168232
         },
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-3-bfd5392ed171-1600.webp",
           "width": 1382,
           "height": 1742,
-          "bytes": 497824
+          "bytes": 498792
         },
         {
           "file": "images/web/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-3-bfd5392ed171-2400.webp",
           "width": 1382,
           "height": 1742,
-          "bytes": 497824
+          "bytes": 498792
         }
       ]
     },
@@ -1011,24 +1048,25 @@
       "height": 2636,
       "sha256": "83d5dc2c88b3d8171802a0a6e8fec301dd4044ac39cf4494ccfd40e615ce9c93",
       "settings": "89e48fac760f",
+      "credit": "c8100e0cbb9e",
       "copies": [
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-1-f9d418810b8b-800.webp",
           "width": 800,
           "height": 560,
-          "bytes": 16162
+          "bytes": 17170
         },
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-1-f9d418810b8b-1600.webp",
           "width": 1600,
           "height": 1120,
-          "bytes": 112784
+          "bytes": 113792
         },
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-1-f9d418810b8b-2400.webp",
           "width": 2400,
           "height": 1679,
-          "bytes": 322442
+          "bytes": 323450
         }
       ]
     },
@@ -1038,24 +1076,25 @@
       "height": 326,
       "sha256": "d05a42bf2acb8640de3ae58cfddca752922dc7efb1778b621134154965770fe1",
       "settings": "89e48fac760f",
+      "credit": "c8100e0cbb9e",
       "copies": [
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-2-bf1cc2ece0f7-800.webp",
           "width": 647,
           "height": 326,
-          "bytes": 34346
+          "bytes": 35354
         },
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-2-bf1cc2ece0f7-1600.webp",
           "width": 647,
           "height": 326,
-          "bytes": 34346
+          "bytes": 35354
         },
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-2-bf1cc2ece0f7-2400.webp",
           "width": 647,
           "height": 326,
-          "bytes": 34346
+          "bytes": 35354
         }
       ]
     },
@@ -1065,24 +1104,25 @@
       "height": 1486,
       "sha256": "1d25b778d5251d891d6c53b272208c1196b5f75301c9c60facb46e7359380339",
       "settings": "89e48fac760f",
+      "credit": "c8100e0cbb9e",
       "copies": [
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-3-ec7c167df443-800.webp",
           "width": 800,
           "height": 547,
-          "bytes": 23316
+          "bytes": 24324
         },
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-3-ec7c167df443-1600.webp",
           "width": 1600,
           "height": 1095,
-          "bytes": 60352
+          "bytes": 61360
         },
         {
           "file": "images/web/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-3-ec7c167df443-2400.webp",
           "width": 2172,
           "height": 1486,
-          "bytes": 90972
+          "bytes": 91980
         }
       ]
     },
@@ -1092,24 +1132,25 @@
       "height": 2400,
       "sha256": "91b4b4528cf95857e4f85e6f61c8f77cd65627723d1d94589be4b2e78b26cba4",
       "settings": "89e48fac760f",
+      "credit": "ba154a695cc0",
       "copies": [
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-1-cc94b0a0c820-800.webp",
           "width": 800,
           "height": 1200,
-          "bytes": 46474
+          "bytes": 47464
         },
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-1-cc94b0a0c820-1600.webp",
           "width": 1600,
           "height": 2400,
-          "bytes": 153372
+          "bytes": 154362
         },
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-1-cc94b0a0c820-2400.webp",
           "width": 1600,
           "height": 2400,
-          "bytes": 153372
+          "bytes": 154362
         }
       ]
     },
@@ -1119,24 +1160,25 @@
       "height": 1581,
       "sha256": "706eeeb0670f617412d3b84d0da5c10f8e2e18daf3af88de245271bb7314b2b9",
       "settings": "89e48fac760f",
+      "credit": "ba154a695cc0",
       "copies": [
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-2-118d97ebe479-800.webp",
           "width": 800,
           "height": 1108,
-          "bytes": 196040
+          "bytes": 197030
         },
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-2-118d97ebe479-1600.webp",
           "width": 1142,
           "height": 1581,
-          "bytes": 463040
+          "bytes": 464030
         },
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-2-118d97ebe479-2400.webp",
           "width": 1142,
           "height": 1581,
-          "bytes": 463040
+          "bytes": 464030
         }
       ]
     },
@@ -1146,24 +1188,25 @@
       "height": 2985,
       "sha256": "de2ee924e6b1f75c7bfccfb2db3358b1c64e63ff46e195dc0d9b267e76585c73",
       "settings": "89e48fac760f",
+      "credit": "ba154a695cc0",
       "copies": [
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-3-fcab5e16f57a-800.webp",
           "width": 800,
           "height": 1144,
-          "bytes": 134174
+          "bytes": 135164
         },
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-3-fcab5e16f57a-1600.webp",
           "width": 1600,
           "height": 2287,
-          "bytes": 291180
+          "bytes": 292170
         },
         {
           "file": "images/web/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-3-fcab5e16f57a-2400.webp",
           "width": 2088,
           "height": 2985,
-          "bytes": 401484
+          "bytes": 402474
         }
       ]
     },
@@ -1173,24 +1216,25 @@
       "height": 1474,
       "sha256": "0dd3f9fcbe75d7d8f035035ef4cba98f0b25fbdf7bec8e51bf5293835a265a17",
       "settings": "89e48fac760f",
+      "credit": "53d9be6c4f73",
       "copies": [
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-1-1d31a365a7a0-800.webp",
           "width": 800,
           "height": 1201,
-          "bytes": 111766
+          "bytes": 112754
         },
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-1-1d31a365a7a0-1600.webp",
           "width": 982,
           "height": 1474,
-          "bytes": 155732
+          "bytes": 156720
         },
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-1-1d31a365a7a0-2400.webp",
           "width": 982,
           "height": 1474,
-          "bytes": 155732
+          "bytes": 156720
         }
       ]
     },
@@ -1200,24 +1244,25 @@
       "height": 1860,
       "sha256": "2ff3054afca839627f9ccccebfe7ae4676b35c2a3e915a1c06db16a3b76133ec",
       "settings": "89e48fac760f",
+      "credit": "53d9be6c4f73",
       "copies": [
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-2-00d8e45baf8d-800.webp",
           "width": 800,
           "height": 1339,
-          "bytes": 46114
+          "bytes": 47102
         },
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-2-00d8e45baf8d-1600.webp",
           "width": 1111,
           "height": 1860,
-          "bytes": 77882
+          "bytes": 78870
         },
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-2-00d8e45baf8d-2400.webp",
           "width": 1111,
           "height": 1860,
-          "bytes": 77882
+          "bytes": 78870
         }
       ]
     },
@@ -1227,24 +1272,25 @@
       "height": 1543,
       "sha256": "d64da0a616c8f9879624b14bd30a7cebeb7e6b8f7051af76f110106567b4eaf5",
       "settings": "89e48fac760f",
+      "credit": "53d9be6c4f73",
       "copies": [
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-3-10e91b2d4103-800.webp",
           "width": 800,
           "height": 1254,
-          "bytes": 56888
+          "bytes": 57876
         },
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-3-10e91b2d4103-1600.webp",
           "width": 984,
           "height": 1543,
-          "bytes": 78480
+          "bytes": 79468
         },
         {
           "file": "images/web/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-3-10e91b2d4103-2400.webp",
           "width": 984,
           "height": 1543,
-          "bytes": 78480
+          "bytes": 79468
         }
       ]
     },
@@ -1254,24 +1300,25 @@
       "height": 1198,
       "sha256": "7c101591955135129c5303623e48511c3d15192e033cddd235aa86fd0ed2e7ad",
       "settings": "89e48fac760f",
+      "credit": "0cf9d66cb33e",
       "copies": [
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-1-ec76e2856ea7-800.webp",
           "width": 800,
           "height": 998,
-          "bytes": 242900
+          "bytes": 243868
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-1-ec76e2856ea7-1600.webp",
           "width": 960,
           "height": 1198,
-          "bytes": 342728
+          "bytes": 343696
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-1-ec76e2856ea7-2400.webp",
           "width": 960,
           "height": 1198,
-          "bytes": 342728
+          "bytes": 343696
         }
       ]
     },
@@ -1281,24 +1328,25 @@
       "height": 2109,
       "sha256": "306a3bf3edc32f2294646ec8deb82da86dea20c09af1ce5bca18678e10a922b3",
       "settings": "89e48fac760f",
+      "credit": "0cf9d66cb33e",
       "copies": [
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-2-daffb419a6a3-800.webp",
           "width": 800,
           "height": 1208,
-          "bytes": 84850
+          "bytes": 85818
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-2-daffb419a6a3-1600.webp",
           "width": 1397,
           "height": 2109,
-          "bytes": 178112
+          "bytes": 179080
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-2-daffb419a6a3-2400.webp",
           "width": 1397,
           "height": 2109,
-          "bytes": 178112
+          "bytes": 179080
         }
       ]
     },
@@ -1308,24 +1356,25 @@
       "height": 837,
       "sha256": "a9e506914e65c50fcfb90400baf386c573530c71097d2100d31f2d2e87323572",
       "settings": "89e48fac760f",
+      "credit": "0cf9d66cb33e",
       "copies": [
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-3-7b5d91a67f83-800.webp",
           "width": 800,
           "height": 532,
-          "bytes": 32964
+          "bytes": 33932
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-3-7b5d91a67f83-1600.webp",
           "width": 1259,
           "height": 837,
-          "bytes": 61746
+          "bytes": 62714
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-3-7b5d91a67f83-2400.webp",
           "width": 1259,
           "height": 837,
-          "bytes": 61746
+          "bytes": 62714
         }
       ]
     },
@@ -1335,24 +1384,25 @@
       "height": 3558,
       "sha256": "908dca4b7d953784cadbba053c2370ca44bdc4897ff13bd18cc141970a62f924",
       "settings": "89e48fac760f",
+      "credit": "0cf9d66cb33e",
       "copies": [
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-4-fd23e548a002-800.webp",
           "width": 800,
           "height": 1000,
-          "bytes": 68348
+          "bytes": 69316
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-4-fd23e548a002-1600.webp",
           "width": 1600,
           "height": 2000,
-          "bytes": 174738
+          "bytes": 175706
         },
         {
           "file": "images/web/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-4-fd23e548a002-2400.webp",
           "width": 2400,
           "height": 2999,
-          "bytes": 276580
+          "bytes": 277548
         }
       ]
     },
@@ -1362,24 +1412,25 @@
       "height": 1229,
       "sha256": "020bd32168dae697ff91d3000b9dc4567c9ec8e94b4597e3cfd10f3e7ebfb49a",
       "settings": "89e48fac760f",
+      "credit": "291ef30b7a5e",
       "copies": [
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-1-613f6cf604e0-800.webp",
           "width": 800,
           "height": 625,
-          "bytes": 54578
+          "bytes": 55578
         },
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-1-613f6cf604e0-1600.webp",
           "width": 1574,
           "height": 1229,
-          "bytes": 127254
+          "bytes": 128254
         },
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-1-613f6cf604e0-2400.webp",
           "width": 1574,
           "height": 1229,
-          "bytes": 127254
+          "bytes": 128254
         }
       ]
     },
@@ -1389,24 +1440,25 @@
       "height": 1821,
       "sha256": "1c238fe72ce7c64eda92410e0aae336635a2df5b6adf1202ed487b610b02c5c8",
       "settings": "89e48fac760f",
+      "credit": "291ef30b7a5e",
       "copies": [
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-2-81be58c5b2f5-800.webp",
           "width": 800,
           "height": 994,
-          "bytes": 179886
+          "bytes": 180886
         },
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-2-81be58c5b2f5-1600.webp",
           "width": 1465,
           "height": 1821,
-          "bytes": 383054
+          "bytes": 384054
         },
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-2-81be58c5b2f5-2400.webp",
           "width": 1465,
           "height": 1821,
-          "bytes": 383054
+          "bytes": 384054
         }
       ]
     },
@@ -1416,24 +1468,25 @@
       "height": 2405,
       "sha256": "e2dce1b612fd32eb3c832bab6364dccb0110e88a8079adbbbb0270764a2d7290",
       "settings": "89e48fac760f",
+      "credit": "291ef30b7a5e",
       "copies": [
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-3-1a7d9846c02f-800.webp",
           "width": 800,
           "height": 1316,
-          "bytes": 100734
+          "bytes": 101734
         },
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-3-1a7d9846c02f-1600.webp",
           "width": 1462,
           "height": 2405,
-          "bytes": 224912
+          "bytes": 225912
         },
         {
           "file": "images/web/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-3-1a7d9846c02f-2400.webp",
           "width": 1462,
           "height": 2405,
-          "bytes": 224912
+          "bytes": 225912
         }
       ]
     },
@@ -1443,24 +1496,25 @@
       "height": 2694,
       "sha256": "bb7db7ba2b8f0603e6e7a799a32c93a09885c099975e27caf37c2d45a52ec51c",
       "settings": "89e48fac760f",
+      "credit": "a18e6eb551d4",
       "copies": [
         {
           "file": "images/web/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-1-a3fb7c28fc19-800.webp",
           "width": 800,
           "height": 1036,
-          "bytes": 56674
+          "bytes": 57642
         },
         {
           "file": "images/web/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-1-a3fb7c28fc19-1600.webp",
           "width": 1600,
           "height": 2071,
-          "bytes": 164504
+          "bytes": 165472
         },
         {
           "file": "images/web/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-1-a3fb7c28fc19-2400.webp",
           "width": 2081,
           "height": 2694,
-          "bytes": 235846
+          "bytes": 236814
         }
       ]
     },
@@ -1470,24 +1524,25 @@
       "height": 1387,
       "sha256": "edb2819c1615f24d578bcfcec3d83111ff5cc1d8b4a2e8f2ac5d8d6bf8d31f92",
       "settings": "89e48fac760f",
+      "credit": "a18e6eb551d4",
       "copies": [
         {
           "file": "images/web/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-2-5068bd45d325-800.webp",
           "width": 800,
           "height": 923,
-          "bytes": 84412
+          "bytes": 85380
         },
         {
           "file": "images/web/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-2-5068bd45d325-1600.webp",
           "width": 1202,
           "height": 1387,
-          "bytes": 139872
+          "bytes": 140840
         },
         {
           "file": "images/web/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-2-5068bd45d325-2400.webp",
           "width": 1202,
           "height": 1387,
-          "bytes": 139872
+          "bytes": 140840
         }
       ]
     },
@@ -1497,24 +1552,25 @@
       "height": 2769,
       "sha256": "b04841a337c18af045447cbfa1fe741263396b4446969c51355adbc8e670f3e2",
       "settings": "89e48fac760f",
+      "credit": "b534fec25b68",
       "copies": [
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-1-0273491a2acc-800.webp",
           "width": 800,
           "height": 906,
-          "bytes": 212032
+          "bytes": 213068
         },
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-1-0273491a2acc-1600.webp",
           "width": 1600,
           "height": 1812,
-          "bytes": 887248
+          "bytes": 888284
         },
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-1-0273491a2acc-2400.webp",
           "width": 2400,
           "height": 2718,
-          "bytes": 1767404
+          "bytes": 1768440
         }
       ]
     },
@@ -1524,24 +1580,25 @@
       "height": 3087,
       "sha256": "b3e4fc8ac72a52349dec4dac5c25b45ae7558cbc7be302e692ae6ff275d08c10",
       "settings": "89e48fac760f",
+      "credit": "b534fec25b68",
       "copies": [
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-2-d9b47253f1e3-800.webp",
           "width": 800,
           "height": 1298,
-          "bytes": 92780
+          "bytes": 93816
         },
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-2-d9b47253f1e3-1600.webp",
           "width": 1600,
           "height": 2597,
-          "bytes": 467110
+          "bytes": 468146
         },
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-2-d9b47253f1e3-2400.webp",
           "width": 1902,
           "height": 3087,
-          "bytes": 692356
+          "bytes": 693392
         }
       ]
     },
@@ -1551,24 +1608,25 @@
       "height": 428,
       "sha256": "7c6176eb7fe1a3f7de6cd300c3bc8adb4ff2dca70ddd4b9579a628eadb7394ce",
       "settings": "89e48fac760f",
+      "credit": "b534fec25b68",
       "copies": [
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-3-04e0704813ca-800.webp",
           "width": 800,
           "height": 248,
-          "bytes": 39844
+          "bytes": 40880
         },
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-3-04e0704813ca-1600.webp",
           "width": 1381,
           "height": 428,
-          "bytes": 106380
+          "bytes": 107416
         },
         {
           "file": "images/web/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-3-04e0704813ca-2400.webp",
           "width": 1381,
           "height": 428,
-          "bytes": 106380
+          "bytes": 107416
         }
       ]
     },
@@ -1578,24 +1636,25 @@
       "height": 2402,
       "sha256": "e197cf091072c82f3519c4adaed51d012ae18ac5e0ca1c7b2ce65a58ac3ab62c",
       "settings": "89e48fac760f",
+      "credit": "e6c36731be0e",
       "copies": [
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-1-8d49b51fb432-800.webp",
           "width": 800,
           "height": 1249,
-          "bytes": 61144
+          "bytes": 62136
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-1-8d49b51fb432-1600.webp",
           "width": 1539,
           "height": 2402,
-          "bytes": 127074
+          "bytes": 128066
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-1-8d49b51fb432-2400.webp",
           "width": 1539,
           "height": 2402,
-          "bytes": 127074
+          "bytes": 128066
         }
       ]
     },
@@ -1605,24 +1664,25 @@
       "height": 1183,
       "sha256": "ed0765aec532ddab4a90e8e862a9625ab8b5122e0846d63649ff78c4b5db39b6",
       "settings": "89e48fac760f",
+      "credit": "e6c36731be0e",
       "copies": [
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-2-450349531675-800.webp",
           "width": 800,
           "height": 708,
-          "bytes": 60212
+          "bytes": 61204
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-2-450349531675-1600.webp",
           "width": 1337,
           "height": 1183,
-          "bytes": 104082
+          "bytes": 105074
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-2-450349531675-2400.webp",
           "width": 1337,
           "height": 1183,
-          "bytes": 104082
+          "bytes": 105074
         }
       ]
     },
@@ -1632,24 +1692,25 @@
       "height": 1096,
       "sha256": "d6eb900ae38a239e9a63f70358573fb122dabab717fd60f7be41c9bd486ab9fe",
       "settings": "89e48fac760f",
+      "credit": "e6c36731be0e",
       "copies": [
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-3-3b53b178df53-800.webp",
           "width": 800,
           "height": 723,
-          "bytes": 80858
+          "bytes": 81850
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-3-3b53b178df53-1600.webp",
           "width": 1212,
           "height": 1096,
-          "bytes": 141746
+          "bytes": 142738
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-3-3b53b178df53-2400.webp",
           "width": 1212,
           "height": 1096,
-          "bytes": 141746
+          "bytes": 142738
         }
       ]
     },
@@ -1659,24 +1720,25 @@
       "height": 1460,
       "sha256": "d524bbadd4553cc5223b836c23850cc71d463c6a5b1f6dbbf17f3117d9f3cfee",
       "settings": "89e48fac760f",
+      "credit": "e6c36731be0e",
       "copies": [
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-4-8d3fa41dd229-800.webp",
           "width": 800,
           "height": 405,
-          "bytes": 58822
+          "bytes": 59814
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-4-8d3fa41dd229-1600.webp",
           "width": 1600,
           "height": 810,
-          "bytes": 182858
+          "bytes": 183850
         },
         {
           "file": "images/web/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-4-8d3fa41dd229-2400.webp",
           "width": 2400,
           "height": 1215,
-          "bytes": 335032
+          "bytes": 336024
         }
       ]
     },
@@ -1686,24 +1748,25 @@
       "height": 761,
       "sha256": "e172c5101f426c3313089c234adb00b00e3057a3934385f1e030fc7a61d61ed0",
       "settings": "89e48fac760f",
+      "credit": "0e13f222c2d7",
       "copies": [
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-1-57c87d7b83e9-800.webp",
           "width": 590,
           "height": 761,
-          "bytes": 72552
+          "bytes": 73510
         },
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-1-57c87d7b83e9-1600.webp",
           "width": 590,
           "height": 761,
-          "bytes": 72552
+          "bytes": 73510
         },
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-1-57c87d7b83e9-2400.webp",
           "width": 590,
           "height": 761,
-          "bytes": 72552
+          "bytes": 73510
         }
       ]
     },
@@ -1713,24 +1776,25 @@
       "height": 1233,
       "sha256": "d4871244166fc2b77854eb7f8c5c0dea8bb8af9fba6c6d5c375d5d22ca221702",
       "settings": "89e48fac760f",
+      "credit": "0e13f222c2d7",
       "copies": [
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-2-f1266a95c0a4-800.webp",
           "width": 800,
           "height": 1143,
-          "bytes": 36126
+          "bytes": 37084
         },
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-2-f1266a95c0a4-1600.webp",
           "width": 863,
           "height": 1233,
-          "bytes": 41134
+          "bytes": 42092
         },
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-2-f1266a95c0a4-2400.webp",
           "width": 863,
           "height": 1233,
-          "bytes": 41134
+          "bytes": 42092
         }
       ]
     },
@@ -1740,24 +1804,25 @@
       "height": 440,
       "sha256": "091073e5c3069904d22ae180f8174f76f5f61dbec0ab9323ea2701c854009cc7",
       "settings": "89e48fac760f",
+      "credit": "0e13f222c2d7",
       "copies": [
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-3-17dcc15a1e7b-800.webp",
           "width": 723,
           "height": 440,
-          "bytes": 27254
+          "bytes": 28212
         },
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-3-17dcc15a1e7b-1600.webp",
           "width": 723,
           "height": 440,
-          "bytes": 27254
+          "bytes": 28212
         },
         {
           "file": "images/web/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-3-17dcc15a1e7b-2400.webp",
           "width": 723,
           "height": 440,
-          "bytes": 27254
+          "bytes": 28212
         }
       ]
     },
@@ -1767,24 +1832,25 @@
       "height": 588,
       "sha256": "d5dd220ab35a983517e5d433eacd8fede7333abbc3df6ce0ac66565227a4a1b6",
       "settings": "89e48fac760f",
+      "credit": "ead9b38ed9c7",
       "copies": [
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-1-60f3300d966e-800.webp",
           "width": 740,
           "height": 588,
-          "bytes": 56252
+          "bytes": 57240
         },
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-1-60f3300d966e-1600.webp",
           "width": 740,
           "height": 588,
-          "bytes": 56252
+          "bytes": 57240
         },
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-1-60f3300d966e-2400.webp",
           "width": 740,
           "height": 588,
-          "bytes": 56252
+          "bytes": 57240
         }
       ]
     },
@@ -1794,24 +1860,25 @@
       "height": 800,
       "sha256": "6f9d81649939d55e3b582f17b29408fb4b72388f1c3d7e592f48bb813caef95b",
       "settings": "89e48fac760f",
+      "credit": "ead9b38ed9c7",
       "copies": [
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-2-ea33a4d4d5d9-800.webp",
           "width": 471,
           "height": 800,
-          "bytes": 29088
+          "bytes": 30076
         },
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-2-ea33a4d4d5d9-1600.webp",
           "width": 471,
           "height": 800,
-          "bytes": 29088
+          "bytes": 30076
         },
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-2-ea33a4d4d5d9-2400.webp",
           "width": 471,
           "height": 800,
-          "bytes": 29088
+          "bytes": 30076
         }
       ]
     },
@@ -1821,24 +1888,25 @@
       "height": 471,
       "sha256": "d3522e9c5d2f50ff8bbe2747f3fb5dda26a673fa9af687d2ec4a44429ffd22cb",
       "settings": "89e48fac760f",
+      "credit": "ead9b38ed9c7",
       "copies": [
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-3-a0c0d2b08aba-800.webp",
           "width": 688,
           "height": 471,
-          "bytes": 54358
+          "bytes": 55346
         },
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-3-a0c0d2b08aba-1600.webp",
           "width": 688,
           "height": 471,
-          "bytes": 54358
+          "bytes": 55346
         },
         {
           "file": "images/web/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-3-a0c0d2b08aba-2400.webp",
           "width": 688,
           "height": 471,
-          "bytes": 54358
+          "bytes": 55346
         }
       ]
     },
@@ -1848,24 +1916,25 @@
       "height": 3189,
       "sha256": "9550e70b35a0114ff5a984d7310bfa79be0e90721a66139657b8e37962fc4467",
       "settings": "89e48fac760f",
+      "credit": "8a220b00b545",
       "copies": [
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-1-7e6f285c22aa-800.webp",
           "width": 800,
           "height": 1228,
-          "bytes": 178384
+          "bytes": 179340
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-1-7e6f285c22aa-1600.webp",
           "width": 1600,
           "height": 2457,
-          "bytes": 516980
+          "bytes": 517936
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-1-7e6f285c22aa-2400.webp",
           "width": 2077,
           "height": 3189,
-          "bytes": 752704
+          "bytes": 753660
         }
       ]
     },
@@ -1875,24 +1944,25 @@
       "height": 1706,
       "sha256": "1f20f70cd20870e00f8359aa3ded9a77bbd0c206d52b742f4c07d6d449e2b156",
       "settings": "89e48fac760f",
+      "credit": "8a220b00b545",
       "copies": [
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-2-c9b22a2920de-800.webp",
           "width": 800,
           "height": 1060,
-          "bytes": 31452
+          "bytes": 32408
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-2-c9b22a2920de-1600.webp",
           "width": 1288,
           "height": 1706,
-          "bytes": 57868
+          "bytes": 58824
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-2-c9b22a2920de-2400.webp",
           "width": 1288,
           "height": 1706,
-          "bytes": 57868
+          "bytes": 58824
         }
       ]
     },
@@ -1902,24 +1972,25 @@
       "height": 596,
       "sha256": "19395034aa214ed50271d9c27e7ad25e86431d8ca4a5eb2a2d04420d3123a35b",
       "settings": "89e48fac760f",
+      "credit": "8a220b00b545",
       "copies": [
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-3-4b3100cf3ccf-800.webp",
           "width": 800,
           "height": 529,
-          "bytes": 37866
+          "bytes": 38822
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-3-4b3100cf3ccf-1600.webp",
           "width": 902,
           "height": 596,
-          "bytes": 48908
+          "bytes": 49864
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-3-4b3100cf3ccf-2400.webp",
           "width": 902,
           "height": 596,
-          "bytes": 48908
+          "bytes": 49864
         }
       ]
     },
@@ -1929,24 +2000,25 @@
       "height": 716,
       "sha256": "983b3bb756e22444944e4970712ff20876526c0abf4f0c4e89d2ba81454c5df8",
       "settings": "89e48fac760f",
+      "credit": "8a220b00b545",
       "copies": [
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-4-4d2f84b7fe35-800.webp",
           "width": 759,
           "height": 716,
-          "bytes": 65458
+          "bytes": 66414
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-4-4d2f84b7fe35-1600.webp",
           "width": 759,
           "height": 716,
-          "bytes": 65458
+          "bytes": 66414
         },
         {
           "file": "images/web/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-4-4d2f84b7fe35-2400.webp",
           "width": 759,
           "height": 716,
-          "bytes": 65458
+          "bytes": 66414
         }
       ]
     },
@@ -1956,24 +2028,25 @@
       "height": 1597,
       "sha256": "9d024eb1a9df4c463e9cf4ee57667d09fb3564b476d822753f1f30c5ae2907b4",
       "settings": "89e48fac760f",
+      "credit": "de346653a1d8",
       "copies": [
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-1-1d144754afb2-800.webp",
           "width": 800,
           "height": 573,
-          "bytes": 58872
+          "bytes": 59808
         },
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-1-1d144754afb2-1600.webp",
           "width": 1600,
           "height": 1147,
-          "bytes": 137146
+          "bytes": 138082
         },
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-1-1d144754afb2-2400.webp",
           "width": 2228,
           "height": 1597,
-          "bytes": 196390
+          "bytes": 197326
         }
       ]
     },
@@ -1983,24 +2056,25 @@
       "height": 1013,
       "sha256": "a90f4c2b95f19c17c68bfc2b3efed2204cba9e84813426d64767fef5f20f3052",
       "settings": "89e48fac760f",
+      "credit": "de346653a1d8",
       "copies": [
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-2-a3e4848cd3d1-800.webp",
           "width": 800,
           "height": 558,
-          "bytes": 106802
+          "bytes": 107738
         },
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-2-a3e4848cd3d1-1600.webp",
           "width": 1452,
           "height": 1013,
-          "bytes": 269812
+          "bytes": 270748
         },
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-2-a3e4848cd3d1-2400.webp",
           "width": 1452,
           "height": 1013,
-          "bytes": 269812
+          "bytes": 270748
         }
       ]
     },
@@ -2010,24 +2084,25 @@
       "height": 1200,
       "sha256": "3d09bdb839f3b902380a2109329d4ca771a2e8896fbf4b3cfce5e208bb6f0efb",
       "settings": "89e48fac760f",
+      "credit": "de346653a1d8",
       "copies": [
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-3-2ebd8614c020-800.webp",
           "width": 800,
           "height": 1194,
-          "bytes": 142296
+          "bytes": 143232
         },
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-3-2ebd8614c020-1600.webp",
           "width": 804,
           "height": 1200,
-          "bytes": 148538
+          "bytes": 149474
         },
         {
           "file": "images/web/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-3-2ebd8614c020-2400.webp",
           "width": 804,
           "height": 1200,
-          "bytes": 148538
+          "bytes": 149474
         }
       ]
     },
@@ -2037,24 +2112,25 @@
       "height": 2954,
       "sha256": "b7b51a061503a8056deb27ec3818bf97e4efcc7bb2b4251725607fb3e9e89c9d",
       "settings": "89e48fac760f",
+      "credit": "8c4897d6fdf9",
       "copies": [
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-1-6cb71e4bb4b7-800.webp",
           "width": 800,
           "height": 1089,
-          "bytes": 85642
+          "bytes": 86626
         },
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-1-6cb71e4bb4b7-1600.webp",
           "width": 1600,
           "height": 2177,
-          "bytes": 206754
+          "bytes": 207738
         },
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-1-6cb71e4bb4b7-2400.webp",
           "width": 2171,
           "height": 2954,
-          "bytes": 301624
+          "bytes": 302608
         }
       ]
     },
@@ -2064,24 +2140,25 @@
       "height": 2340,
       "sha256": "937f80a1bff8766795402f387f58b8edfa8ad8cd6a8118f48a1d6d497adb6cbc",
       "settings": "89e48fac760f",
+      "credit": "8c4897d6fdf9",
       "copies": [
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-2-d6e5c6227dad-800.webp",
           "width": 800,
           "height": 799,
-          "bytes": 78746
+          "bytes": 79730
         },
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-2-d6e5c6227dad-1600.webp",
           "width": 1600,
           "height": 1598,
-          "bytes": 196862
+          "bytes": 197846
         },
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-2-d6e5c6227dad-2400.webp",
           "width": 2343,
           "height": 2340,
-          "bytes": 418190
+          "bytes": 419174
         }
       ]
     },
@@ -2091,24 +2168,25 @@
       "height": 820,
       "sha256": "494f8cd62acfc6bbc4c781000c09294a5cb5210c80fe8fb4d91b9469fe02a39a",
       "settings": "89e48fac760f",
+      "credit": "8c4897d6fdf9",
       "copies": [
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-3-966babe61d36-800.webp",
           "width": 800,
           "height": 467,
-          "bytes": 48770
+          "bytes": 49754
         },
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-3-966babe61d36-1600.webp",
           "width": 1404,
           "height": 820,
-          "bytes": 91158
+          "bytes": 92142
         },
         {
           "file": "images/web/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-3-966babe61d36-2400.webp",
           "width": 1404,
           "height": 820,
-          "bytes": 91158
+          "bytes": 92142
         }
       ]
     },
@@ -2118,24 +2196,25 @@
       "height": 3235,
       "sha256": "33aade668cf4bfdbe6e6db713d693d09fc5df70ddbb7a1906761f78700329304",
       "settings": "89e48fac760f",
+      "credit": "5e999e0fbe7a",
       "copies": [
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-1-62e48dfa4063-800.webp",
           "width": 800,
           "height": 1097,
-          "bytes": 90144
+          "bytes": 91118
         },
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-1-62e48dfa4063-1600.webp",
           "width": 1600,
           "height": 2194,
-          "bytes": 194140
+          "bytes": 195114
         },
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-1-62e48dfa4063-2400.webp",
           "width": 2359,
           "height": 3235,
-          "bytes": 310968
+          "bytes": 311942
         }
       ]
     },
@@ -2145,24 +2224,25 @@
       "height": 3232,
       "sha256": "3e1f49773d8df65d4811f0ed25b54d85c9badfe02e46705da198ad08004720ad",
       "settings": "89e48fac760f",
+      "credit": "5e999e0fbe7a",
       "copies": [
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-2-f4d49ea44be6-800.webp",
           "width": 800,
           "height": 1005,
-          "bytes": 115954
+          "bytes": 116928
         },
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-2-f4d49ea44be6-1600.webp",
           "width": 1600,
           "height": 2011,
-          "bytes": 266084
+          "bytes": 267058
         },
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-2-f4d49ea44be6-2400.webp",
           "width": 2400,
           "height": 3016,
-          "bytes": 386404
+          "bytes": 387378
         }
       ]
     },
@@ -2172,24 +2252,25 @@
       "height": 976,
       "sha256": "f132581d426fd723e51615eeab2d4f276e539cf90918882ab86e8428e20f13b8",
       "settings": "89e48fac760f",
+      "credit": "5e999e0fbe7a",
       "copies": [
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-3-4e1073d0fee4-800.webp",
           "width": 549,
           "height": 976,
-          "bytes": 39748
+          "bytes": 40722
         },
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-3-4e1073d0fee4-1600.webp",
           "width": 549,
           "height": 976,
-          "bytes": 39748
+          "bytes": 40722
         },
         {
           "file": "images/web/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-3-4e1073d0fee4-2400.webp",
           "width": 549,
           "height": 976,
-          "bytes": 39748
+          "bytes": 40722
         }
       ]
     },
@@ -2199,24 +2280,25 @@
       "height": 2201,
       "sha256": "507aab0bc012efa4ddd77b6c9c3f2daf288a39cceb5bdad170c0ee2d4b9b8e74",
       "settings": "89e48fac760f",
+      "credit": "bff25379b639",
       "copies": [
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-1-97f4e35f82f5-800.webp",
           "width": 800,
           "height": 1249,
-          "bytes": 189148
+          "bytes": 190154
         },
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-1-97f4e35f82f5-1600.webp",
           "width": 1410,
           "height": 2201,
-          "bytes": 603932
+          "bytes": 604938
         },
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-1-97f4e35f82f5-2400.webp",
           "width": 1410,
           "height": 2201,
-          "bytes": 603932
+          "bytes": 604938
         }
       ]
     },
@@ -2226,24 +2308,25 @@
       "height": 1353,
       "sha256": "fc33872908961adfa5bd86b92e35518e137f76626b8d1cec4aeb143edcb82d36",
       "settings": "89e48fac760f",
+      "credit": "bff25379b639",
       "copies": [
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-2-b6b8da8c41f6-800.webp",
           "width": 800,
           "height": 787,
-          "bytes": 67382
+          "bytes": 68388
         },
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-2-b6b8da8c41f6-1600.webp",
           "width": 1376,
           "height": 1353,
-          "bytes": 149568
+          "bytes": 150574
         },
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-2-b6b8da8c41f6-2400.webp",
           "width": 1376,
           "height": 1353,
-          "bytes": 149568
+          "bytes": 150574
         }
       ]
     },
@@ -2253,24 +2336,25 @@
       "height": 1623,
       "sha256": "2a8cd1df17b4f74ac6266507373862a9ad0328d6d3b365845d06de17a37601df",
       "settings": "89e48fac760f",
+      "credit": "bff25379b639",
       "copies": [
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-3-29c93178a899-800.webp",
           "width": 800,
           "height": 928,
-          "bytes": 58638
+          "bytes": 59644
         },
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-3-29c93178a899-1600.webp",
           "width": 1399,
           "height": 1623,
-          "bytes": 107464
+          "bytes": 108470
         },
         {
           "file": "images/web/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-3-29c93178a899-2400.webp",
           "width": 1399,
           "height": 1623,
-          "bytes": 107464
+          "bytes": 108470
         }
       ]
     },
@@ -2280,24 +2364,25 @@
       "height": 4000,
       "sha256": "f4c8670689b489afc4c5cf653abc0d7c74563d1eaf34606186e13ee027161cfb",
       "settings": "89e48fac760f",
+      "credit": "ebd30f5456ba",
       "copies": [
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-1-812537cc22a0-800.webp",
           "width": 800,
           "height": 1067,
-          "bytes": 22308
+          "bytes": 23296
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-1-812537cc22a0-1600.webp",
           "width": 1600,
           "height": 2133,
-          "bytes": 69728
+          "bytes": 70716
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-1-812537cc22a0-2400.webp",
           "width": 2400,
           "height": 3200,
-          "bytes": 154574
+          "bytes": 155562
         }
       ]
     },
@@ -2307,24 +2392,25 @@
       "height": 1184,
       "sha256": "a84f52b9bdc0f15fc0bb92221b19f156875467d35ffbe6dafd13319308d7aa2f",
       "settings": "89e48fac760f",
+      "credit": "ebd30f5456ba",
       "copies": [
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-2-7a013fccd630-800.webp",
           "width": 800,
           "height": 454,
-          "bytes": 43826
+          "bytes": 44814
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-2-7a013fccd630-1600.webp",
           "width": 1600,
           "height": 907,
-          "bytes": 103812
+          "bytes": 104800
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-2-7a013fccd630-2400.webp",
           "width": 2088,
           "height": 1184,
-          "bytes": 148528
+          "bytes": 149516
         }
       ]
     },
@@ -2334,24 +2420,25 @@
       "height": 1666,
       "sha256": "fb77f219edbe2289fc5a7d186c94104aa8bf4dd3ab10c3f139fcb2a2dfeb90fa",
       "settings": "89e48fac760f",
+      "credit": "ebd30f5456ba",
       "copies": [
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-3-943bb839029c-800.webp",
           "width": 800,
           "height": 1212,
-          "bytes": 137438
+          "bytes": 138426
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-3-943bb839029c-1600.webp",
           "width": 1100,
           "height": 1666,
-          "bytes": 249714
+          "bytes": 250702
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-3-943bb839029c-2400.webp",
           "width": 1100,
           "height": 1666,
-          "bytes": 249714
+          "bytes": 250702
         }
       ]
     },
@@ -2361,24 +2448,25 @@
       "height": 2850,
       "sha256": "aa2977a156613b3ea8b52015a17bdb77806368ddef428d24c63f200eab14c38d",
       "settings": "89e48fac760f",
+      "credit": "ebd30f5456ba",
       "copies": [
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-4-9c71133456e9-800.webp",
           "width": 800,
           "height": 1109,
-          "bytes": 50370
+          "bytes": 51358
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-4-9c71133456e9-1600.webp",
           "width": 1600,
           "height": 2218,
-          "bytes": 123144
+          "bytes": 124132
         },
         {
           "file": "images/web/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-4-9c71133456e9-2400.webp",
           "width": 2056,
           "height": 2850,
-          "bytes": 174114
+          "bytes": 175102
         }
       ]
     },
@@ -2388,24 +2476,25 @@
       "height": 4000,
       "sha256": "53866a4505262d16fe35f3857ffe8f68efa5a43e299434b222759564625c798c",
       "settings": "89e48fac760f",
+      "credit": "66de1ba562e0",
       "copies": [
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-1-15630da30a32-800.webp",
           "width": 800,
           "height": 1126,
-          "bytes": 25684
+          "bytes": 26688
         },
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-1-15630da30a32-1600.webp",
           "width": 1600,
           "height": 2253,
-          "bytes": 120526
+          "bytes": 121530
         },
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-1-15630da30a32-2400.webp",
           "width": 2400,
           "height": 3379,
-          "bytes": 304518
+          "bytes": 305522
         }
       ]
     },
@@ -2415,24 +2504,25 @@
       "height": 2464,
       "sha256": "f9d5d4ec2a28759e5c0a3dc1b8cd568a628a73709f18041ca417b935325a4436",
       "settings": "89e48fac760f",
+      "credit": "66de1ba562e0",
       "copies": [
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-2-5d2317404650-800.webp",
           "width": 800,
           "height": 1345,
-          "bytes": 198136
+          "bytes": 199140
         },
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-2-5d2317404650-1600.webp",
           "width": 1466,
           "height": 2464,
-          "bytes": 615694
+          "bytes": 616698
         },
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-2-5d2317404650-2400.webp",
           "width": 1466,
           "height": 2464,
-          "bytes": 615694
+          "bytes": 616698
         }
       ]
     },
@@ -2442,24 +2532,25 @@
       "height": 944,
       "sha256": "2c4cd282cb7b9555bdae26d9e42efe5b3e069931b65c614bf050070fb00fe7ef",
       "settings": "89e48fac760f",
+      "credit": "66de1ba562e0",
       "copies": [
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-3-6f3b57dc8218-800.webp",
           "width": 719,
           "height": 944,
-          "bytes": 103694
+          "bytes": 104698
         },
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-3-6f3b57dc8218-1600.webp",
           "width": 719,
           "height": 944,
-          "bytes": 103694
+          "bytes": 104698
         },
         {
           "file": "images/web/lectio-terra/207622717.week-30-blueberries-joseph-j-white-3-6f3b57dc8218-2400.webp",
           "width": 719,
           "height": 944,
-          "bytes": 103694
+          "bytes": 104698
         }
       ]
     },
@@ -2469,24 +2560,25 @@
       "height": 2040,
       "sha256": "7d19cce0b178df9b0a44e8bf8c78606c4426b57e36a12ab00dfb57af1ad0e496",
       "settings": "89e48fac760f",
+      "credit": "849e58bb84fa",
       "copies": [
         {
           "file": "images/web/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-1-a64cad04972b-800.webp",
           "width": 800,
           "height": 1192,
-          "bytes": 79250
+          "bytes": 80228
         },
         {
           "file": "images/web/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-1-a64cad04972b-1600.webp",
           "width": 1369,
           "height": 2040,
-          "bytes": 163322
+          "bytes": 164300
         },
         {
           "file": "images/web/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-1-a64cad04972b-2400.webp",
           "width": 1369,
           "height": 2040,
-          "bytes": 163322
+          "bytes": 164300
         }
       ]
     },
@@ -2496,24 +2588,25 @@
       "height": 445,
       "sha256": "2ce1c3af26c8c331086dd89a7effecb698bd0937b6ecf6a48db307653649e421",
       "settings": "89e48fac760f",
+      "credit": "849e58bb84fa",
       "copies": [
         {
           "file": "images/web/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-2-8c1877b23c1d-800.webp",
           "width": 655,
           "height": 445,
-          "bytes": 14446
+          "bytes": 15424
         },
         {
           "file": "images/web/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-2-8c1877b23c1d-1600.webp",
           "width": 655,
           "height": 445,
-          "bytes": 14446
+          "bytes": 15424
         },
         {
           "file": "images/web/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-2-8c1877b23c1d-2400.webp",
           "width": 655,
           "height": 445,
-          "bytes": 14446
+          "bytes": 15424
         }
       ]
     },
@@ -2523,24 +2616,25 @@
       "height": 1361,
       "sha256": "7c1bd4969d14b3f83962fc263ebe91a69ab926510b1a85b8a93af92bdd081e87",
       "settings": "89e48fac760f",
+      "credit": "0727cbdc689f",
       "copies": [
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-1-98c605574152-800.webp",
           "width": 800,
           "height": 923,
-          "bytes": 131106
+          "bytes": 132036
         },
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-1-98c605574152-1600.webp",
           "width": 1179,
           "height": 1361,
-          "bytes": 291760
+          "bytes": 292690
         },
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-1-98c605574152-2400.webp",
           "width": 1179,
           "height": 1361,
-          "bytes": 291760
+          "bytes": 292690
         }
       ]
     },
@@ -2550,24 +2644,25 @@
       "height": 1182,
       "sha256": "13470d94bb60db516c7c415899620a2ba20550ff0763d59bdf9c56d457226cd8",
       "settings": "89e48fac760f",
+      "credit": "0727cbdc689f",
       "copies": [
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-2-60ab1f8abd8f-800.webp",
           "width": 800,
           "height": 658,
-          "bytes": 26790
+          "bytes": 27720
         },
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-2-60ab1f8abd8f-1600.webp",
           "width": 1437,
           "height": 1182,
-          "bytes": 67448
+          "bytes": 68378
         },
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-2-60ab1f8abd8f-2400.webp",
           "width": 1437,
           "height": 1182,
-          "bytes": 67448
+          "bytes": 68378
         }
       ]
     },
@@ -2577,24 +2672,25 @@
       "height": 1510,
       "sha256": "36171f599b916a6940030f6f1142c588f11cedf7fd191e926439d6865a471640",
       "settings": "89e48fac760f",
+      "credit": "0727cbdc689f",
       "copies": [
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-3-f2eaea1474db-800.webp",
           "width": 800,
           "height": 768,
-          "bytes": 99546
+          "bytes": 100476
         },
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-3-f2eaea1474db-1600.webp",
           "width": 1573,
           "height": 1510,
-          "bytes": 220882
+          "bytes": 221812
         },
         {
           "file": "images/web/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-3-f2eaea1474db-2400.webp",
           "width": 1573,
           "height": 1510,
-          "bytes": 220882
+          "bytes": 221812
         }
       ]
     },
@@ -2604,24 +2700,25 @@
       "height": 380,
       "sha256": "e0bc7e5924e67724984c30cc6232d38c5333f2f4466890e886682b868a4b9cc5",
       "settings": "89e48fac760f",
+      "credit": "b17285d69356",
       "copies": [
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-1-196c82d29c32-800.webp",
           "width": 579,
           "height": 380,
-          "bytes": 25068
+          "bytes": 26042
         },
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-1-196c82d29c32-1600.webp",
           "width": 579,
           "height": 380,
-          "bytes": 25068
+          "bytes": 26042
         },
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-1-196c82d29c32-2400.webp",
           "width": 579,
           "height": 380,
-          "bytes": 25068
+          "bytes": 26042
         }
       ]
     },
@@ -2631,24 +2728,25 @@
       "height": 1306,
       "sha256": "cc61dc5b51c041a12950c5fe81900f2d3a68e4ce9c68f32bd628f093222a1ed0",
       "settings": "89e48fac760f",
+      "credit": "b17285d69356",
       "copies": [
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-2-f75cd88ec792-800.webp",
           "width": 800,
           "height": 480,
-          "bytes": 41758
+          "bytes": 42732
         },
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-2-f75cd88ec792-1600.webp",
           "width": 1600,
           "height": 960,
-          "bytes": 85140
+          "bytes": 86114
         },
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-2-f75cd88ec792-2400.webp",
           "width": 2176,
           "height": 1306,
-          "bytes": 110798
+          "bytes": 111772
         }
       ]
     },
@@ -2658,24 +2756,25 @@
       "height": 809,
       "sha256": "ace42c5d4bb25837048428f4cf27a1159f85fa89ec3a1342c867c5e0f2da440c",
       "settings": "89e48fac760f",
+      "credit": "b17285d69356",
       "copies": [
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-3-477f8b130120-800.webp",
           "width": 800,
           "height": 667,
-          "bytes": 35016
+          "bytes": 35990
         },
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-3-477f8b130120-1600.webp",
           "width": 970,
           "height": 809,
-          "bytes": 61270
+          "bytes": 62244
         },
         {
           "file": "images/web/lectio-terra/208575477.week-33-perseids-meteor-shower-han-3-477f8b130120-2400.webp",
           "width": 970,
           "height": 809,
-          "bytes": 61270
+          "bytes": 62244
         }
       ]
     },
@@ -2685,24 +2784,25 @@
       "height": 1300,
       "sha256": "73f77b6d962d09dd421fe97826df1ce69bac72418cdc6f854d1f164d18640b7f",
       "settings": "89e48fac760f",
+      "credit": "02b1df9cf2e9",
       "copies": [
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-1-d28133c217f9-800.webp",
           "width": 800,
           "height": 508,
-          "bytes": 21052
+          "bytes": 22096
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-1-d28133c217f9-1600.webp",
           "width": 1600,
           "height": 1016,
-          "bytes": 88454
+          "bytes": 89498
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-1-d28133c217f9-2400.webp",
           "width": 2048,
           "height": 1300,
-          "bytes": 152146
+          "bytes": 153190
         }
       ]
     },
@@ -2712,24 +2812,25 @@
       "height": 3164,
       "sha256": "26d6d743d3f2d2ac59a9b274d8860c6ba5fc0336003fe026bf529ed5cf521c4f",
       "settings": "89e48fac760f",
+      "credit": "02b1df9cf2e9",
       "copies": [
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-2-34e8a8fd3d56-800.webp",
           "width": 800,
           "height": 902,
-          "bytes": 100976
+          "bytes": 102020
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-2-34e8a8fd3d56-1600.webp",
           "width": 1600,
           "height": 1803,
-          "bytes": 309324
+          "bytes": 310368
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-2-34e8a8fd3d56-2400.webp",
           "width": 2400,
           "height": 2705,
-          "bytes": 652442
+          "bytes": 653486
         }
       ]
     },
@@ -2739,24 +2840,25 @@
       "height": 1679,
       "sha256": "a55342c1119c042f1faaf8265f07ba6f343f6b61e732ae7cc2f83ad42c474cd8",
       "settings": "89e48fac760f",
+      "credit": "02b1df9cf2e9",
       "copies": [
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-3-953376fe3763-800.webp",
           "width": 800,
           "height": 589,
-          "bytes": 53388
+          "bytes": 54432
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-3-953376fe3763-1600.webp",
           "width": 1600,
           "height": 1177,
-          "bytes": 267492
+          "bytes": 268536
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-3-953376fe3763-2400.webp",
           "width": 2282,
           "height": 1679,
-          "bytes": 604032
+          "bytes": 605076
         }
       ]
     },
@@ -2766,24 +2868,25 @@
       "height": 1803,
       "sha256": "9dcf5184f372226f90e5203cce0d5fd51e6f3207f8057d56390016ecabfb1c98",
       "settings": "89e48fac760f",
+      "credit": "02b1df9cf2e9",
       "copies": [
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-4-1c13e3ca35a8-800.webp",
           "width": 800,
           "height": 1205,
-          "bytes": 86810
+          "bytes": 87854
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-4-1c13e3ca35a8-1600.webp",
           "width": 1197,
           "height": 1803,
-          "bytes": 197846
+          "bytes": 198890
         },
         {
           "file": "images/web/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-4-1c13e3ca35a8-2400.webp",
           "width": 1197,
           "height": 1803,
-          "bytes": 197846
+          "bytes": 198890
         }
       ]
     },
@@ -2793,24 +2896,25 @@
       "height": 2373,
       "sha256": "0433f50cf2d23b3e53242d91a3006c504e523414b50bc2bb57888929cc40e00c",
       "settings": "89e48fac760f",
+      "credit": "2b6bb3343816",
       "copies": [
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-1-126d608eed31-800.webp",
           "width": 800,
           "height": 463,
-          "bytes": 42050
+          "bytes": 43050
         },
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-1-126d608eed31-1600.webp",
           "width": 1600,
           "height": 927,
-          "bytes": 158606
+          "bytes": 159606
         },
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-1-126d608eed31-2400.webp",
           "width": 2400,
           "height": 1390,
-          "bytes": 385680
+          "bytes": 386680
         }
       ]
     },
@@ -2820,24 +2924,25 @@
       "height": 667,
       "sha256": "ac33cc20867c3ee801d02eb663fead8802322fd3b6af86bda60e532b47d79200",
       "settings": "89e48fac760f",
+      "credit": "2b6bb3343816",
       "copies": [
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-2-8cfb597354a4-800.webp",
           "width": 650,
           "height": 667,
-          "bytes": 46946
+          "bytes": 47946
         },
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-2-8cfb597354a4-1600.webp",
           "width": 650,
           "height": 667,
-          "bytes": 46946
+          "bytes": 47946
         },
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-2-8cfb597354a4-2400.webp",
           "width": 650,
           "height": 667,
-          "bytes": 46946
+          "bytes": 47946
         }
       ]
     },
@@ -2847,24 +2952,25 @@
       "height": 1552,
       "sha256": "4028cab92887dc48b480d782f0632a8b725bba1dcaaa136a2b711ba1c3b7197c",
       "settings": "89e48fac760f",
+      "credit": "2b6bb3343816",
       "copies": [
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-3-5f65fc835311-800.webp",
           "width": 800,
           "height": 647,
-          "bytes": 41576
+          "bytes": 42576
         },
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-3-5f65fc835311-1600.webp",
           "width": 1600,
           "height": 1293,
-          "bytes": 214696
+          "bytes": 215696
         },
         {
           "file": "images/web/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-3-5f65fc835311-2400.webp",
           "width": 1920,
           "height": 1552,
-          "bytes": 332760
+          "bytes": 333760
         }
       ]
     },
@@ -2874,24 +2980,25 @@
       "height": 2088,
       "sha256": "1a706f7a620e3b49dd44adfa470fc1d5c448e9438989a07b83f072577e1960ba",
       "settings": "89e48fac760f",
+      "credit": "cd15b393c79d",
       "copies": [
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-1-79d05ebcb30e-800.webp",
           "width": 800,
           "height": 523,
-          "bytes": 33398
+          "bytes": 34356
         },
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-1-79d05ebcb30e-1600.webp",
           "width": 1600,
           "height": 1046,
-          "bytes": 124600
+          "bytes": 125558
         },
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-1-79d05ebcb30e-2400.webp",
           "width": 2400,
           "height": 1569,
-          "bytes": 300214
+          "bytes": 301172
         }
       ]
     },
@@ -2901,24 +3008,25 @@
       "height": 1179,
       "sha256": "59d80db7c4ebf19c43ef99cd21bde52aeb990dd656c72e5a2fd3d3cb8e9e7edd",
       "settings": "89e48fac760f",
+      "credit": "cd15b393c79d",
       "copies": [
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-2-6223245b64bc-800.webp",
           "width": 705,
           "height": 1179,
-          "bytes": 164736
+          "bytes": 165694
         },
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-2-6223245b64bc-1600.webp",
           "width": 705,
           "height": 1179,
-          "bytes": 164736
+          "bytes": 165694
         },
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-2-6223245b64bc-2400.webp",
           "width": 705,
           "height": 1179,
-          "bytes": 164736
+          "bytes": 165694
         }
       ]
     },
@@ -2928,24 +3036,25 @@
       "height": 2831,
       "sha256": "f411e8b9d868afd4116dfc798f49201853e9293d92bf0f5972788ea830aa0083",
       "settings": "89e48fac760f",
+      "credit": "cd15b393c79d",
       "copies": [
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-3-9c65227e690b-800.webp",
           "width": 800,
           "height": 1510,
-          "bytes": 143512
+          "bytes": 144470
         },
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-3-9c65227e690b-1600.webp",
           "width": 1500,
           "height": 2831,
-          "bytes": 483448
+          "bytes": 484406
         },
         {
           "file": "images/web/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-3-9c65227e690b-2400.webp",
           "width": 1500,
           "height": 2831,
-          "bytes": 483448
+          "bytes": 484406
         }
       ]
     },
@@ -2955,24 +3064,25 @@
       "height": 1200,
       "sha256": "a0f3edab9e88b4de6cb3622884d7687c6da65d8d2e70a55d7b11abff7d520b69",
       "settings": "89e48fac760f",
+      "credit": "b96d1c1964a5",
       "copies": [
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-1-ba367b435c4e-800.webp",
           "width": 800,
           "height": 1175,
-          "bytes": 95542
+          "bytes": 96560
         },
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-1-ba367b435c4e-1600.webp",
           "width": 817,
           "height": 1200,
-          "bytes": 104410
+          "bytes": 105428
         },
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-1-ba367b435c4e-2400.webp",
           "width": 817,
           "height": 1200,
-          "bytes": 104410
+          "bytes": 105428
         }
       ]
     },
@@ -2982,24 +3092,25 @@
       "height": 634,
       "sha256": "fea824847a93af2a3681dab03e5e1418573da160ee90f3014347c1c5469bc7ca",
       "settings": "89e48fac760f",
+      "credit": "b96d1c1964a5",
       "copies": [
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-2-fcfa5da7839c-800.webp",
           "width": 800,
           "height": 634,
-          "bytes": 36380
+          "bytes": 37398
         },
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-2-fcfa5da7839c-1600.webp",
           "width": 800,
           "height": 634,
-          "bytes": 36380
+          "bytes": 37398
         },
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-2-fcfa5da7839c-2400.webp",
           "width": 800,
           "height": 634,
-          "bytes": 36380
+          "bytes": 37398
         }
       ]
     },
@@ -3009,24 +3120,25 @@
       "height": 3511,
       "sha256": "247e158fda1d1796925da0c4900664621393d89bba55ca13b76420e7a0983ce4",
       "settings": "89e48fac760f",
+      "credit": "b96d1c1964a5",
       "copies": [
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-3-96701b4632e9-800.webp",
           "width": 800,
           "height": 1048,
-          "bytes": 87062
+          "bytes": 88080
         },
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-3-96701b4632e9-1600.webp",
           "width": 1600,
           "height": 2097,
-          "bytes": 242746
+          "bytes": 243764
         },
         {
           "file": "images/web/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-3-96701b4632e9-2400.webp",
           "width": 2400,
           "height": 3145,
-          "bytes": 424518
+          "bytes": 425536
         }
       ]
     },
@@ -3036,24 +3148,25 @@
       "height": 1601,
       "sha256": "61635b7d4a96ae3523bde2807c39164818d2a1e0b31a70fd41350d04609c6af6",
       "settings": "89e48fac760f",
+      "credit": "490a656d9184",
       "copies": [
         {
           "file": "images/web/transit_abbott-800.webp",
           "width": 800,
           "height": 988,
-          "bytes": 45402
+          "bytes": 46728
         },
         {
           "file": "images/web/transit_abbott-1600.webp",
           "width": 1297,
           "height": 1601,
-          "bytes": 100460
+          "bytes": 101786
         },
         {
           "file": "images/web/transit_abbott-2400.webp",
           "width": 1297,
           "height": 1601,
-          "bytes": 100460
+          "bytes": 101786
         }
       ]
     },
@@ -3063,24 +3176,25 @@
       "height": 1832,
       "sha256": "078e2e6c5f08849b99b1f966b0927b756abb7258b26ac5d672977b2d8a0becfe",
       "settings": "89e48fac760f",
+      "credit": "e322bdd3e2b6",
       "copies": [
         {
           "file": "images/web/transit_darwin-800.webp",
           "width": 800,
           "height": 1353,
-          "bytes": 40838
+          "bytes": 42148
         },
         {
           "file": "images/web/transit_darwin-1600.webp",
           "width": 1083,
           "height": 1832,
-          "bytes": 61324
+          "bytes": 62634
         },
         {
           "file": "images/web/transit_darwin-2400.webp",
           "width": 1083,
           "height": 1832,
-          "bytes": 61324
+          "bytes": 62634
         }
       ]
     },
@@ -3090,24 +3204,25 @@
       "height": 4029,
       "sha256": "429db19f5009fe89a51f422179f4227979a5966f5c50eb844170f2d524120332",
       "settings": "89e48fac760f",
+      "credit": "77d9e3c237fb",
       "copies": [
         {
           "file": "images/web/transit_muybridge-800.webp",
           "width": 800,
           "height": 767,
-          "bytes": 39648
+          "bytes": 40944
         },
         {
           "file": "images/web/transit_muybridge-1600.webp",
           "width": 1600,
           "height": 1535,
-          "bytes": 98966
+          "bytes": 100262
         },
         {
           "file": "images/web/transit_muybridge-2400.webp",
           "width": 2400,
           "height": 2302,
-          "bytes": 176680
+          "bytes": 177976
         }
       ]
     },
@@ -3117,24 +3232,25 @@
       "height": 1534,
       "sha256": "3b173308ae67ed1d563c484335b576a0c0bd64e49443a2a730c286747f44f40f",
       "settings": "89e48fac760f",
+      "credit": "1bee44dfcc24",
       "copies": [
         {
           "file": "images/web/transit_vermeer-800.webp",
           "width": 800,
           "height": 959,
-          "bytes": 57024
+          "bytes": 58278
         },
         {
           "file": "images/web/transit_vermeer-1600.webp",
           "width": 1280,
           "height": 1534,
-          "bytes": 232622
+          "bytes": 233876
         },
         {
           "file": "images/web/transit_vermeer-2400.webp",
           "width": 1280,
           "height": 1534,
-          "bytes": 232622
+          "bytes": 233876
         }
       ]
     },
@@ -3144,24 +3260,25 @@
       "height": 822,
       "sha256": "50987fe59e5c5fea932dc255228ad87a0285f7d27da5f96010decde8f5a38eed",
       "settings": "89e48fac760f",
+      "credit": "3d90022abbbb",
       "copies": [
         {
           "file": "images/web/transit_winds-800.webp",
           "width": 800,
           "height": 811,
-          "bytes": 174784
+          "bytes": 175918
         },
         {
           "file": "images/web/transit_winds-1600.webp",
           "width": 811,
           "height": 822,
-          "bytes": 193106
+          "bytes": 194240
         },
         {
           "file": "images/web/transit_winds-2400.webp",
           "width": 811,
           "height": 822,
-          "bytes": 193106
+          "bytes": 194240
         }
       ]
     },
@@ -3171,19 +3288,20 @@
       "height": 980,
       "sha256": "5fd3ae60646b1b0f66805eb72e975740e60803c6d7343532c02cebac07120382",
       "settings": "89e48fac760f",
+      "credit": "b103355562f7",
       "copies": [
-        { "file": "images/web/void_allais-800.webp", "width": 800, "height": 560, "bytes": 79132 },
+        { "file": "images/web/void_allais-800.webp", "width": 800, "height": 560, "bytes": 80542 },
         {
           "file": "images/web/void_allais-1600.webp",
           "width": 1400,
           "height": 980,
-          "bytes": 248672
+          "bytes": 250082
         },
         {
           "file": "images/web/void_allais-2400.webp",
           "width": 1400,
           "height": 980,
-          "bytes": 248672
+          "bytes": 250082
         }
       ]
     },
@@ -3193,19 +3311,20 @@
       "height": 3830,
       "sha256": "8e68167ab9956b873a253f8fb7f8e1abb18508802b2a671f4d10237e5a63fd8c",
       "settings": "89e48fac760f",
+      "credit": "bc003afba4a6",
       "copies": [
-        { "file": "images/web/void_betts-800.webp", "width": 800, "height": 1174, "bytes": 56822 },
+        { "file": "images/web/void_betts-800.webp", "width": 800, "height": 1174, "bytes": 58284 },
         {
           "file": "images/web/void_betts-1600.webp",
           "width": 1600,
           "height": 2349,
-          "bytes": 140512
+          "bytes": 141974
         },
         {
           "file": "images/web/void_betts-2400.webp",
           "width": 2400,
           "height": 3523,
-          "bytes": 223946
+          "bytes": 225408
         }
       ]
     },
@@ -3215,24 +3334,25 @@
       "height": 2226,
       "sha256": "e5d482f3471f9b566e9aa9be5cbf8930ce01a7c7fe0c5d61878c4830b449730f",
       "settings": "89e48fac760f",
+      "credit": "00efb8314e10",
       "copies": [
         {
           "file": "images/web/void_redon-800.webp",
           "width": 800,
           "height": 1056,
-          "bytes": 231008
+          "bytes": 232318
         },
         {
           "file": "images/web/void_redon-1600.webp",
           "width": 1600,
           "height": 2112,
-          "bytes": 848986
+          "bytes": 850296
         },
         {
           "file": "images/web/void_redon-2400.webp",
           "width": 1686,
           "height": 2226,
-          "bytes": 924852
+          "bytes": 926162
         }
       ]
     },
@@ -3242,24 +3362,25 @@
       "height": 1033,
       "sha256": "936aa2887e672fa4ba0799f9fa7dc93ac6aa50b0406456bdedc0f21f75e34ab1",
       "settings": "89e48fac760f",
+      "credit": "d5c123508e06",
       "copies": [
         {
           "file": "images/web/void_smithsonian-800.webp",
           "width": 800,
           "height": 619,
-          "bytes": 31262
+          "bytes": 32600
         },
         {
           "file": "images/web/void_smithsonian-1600.webp",
           "width": 1336,
           "height": 1033,
-          "bytes": 108482
+          "bytes": 109820
         },
         {
           "file": "images/web/void_smithsonian-2400.webp",
           "width": 1336,
           "height": 1033,
-          "bytes": 108482
+          "bytes": 109820
         }
       ]
     },
@@ -3269,24 +3390,25 @@
       "height": 1010,
       "sha256": "b7dc72e5b34c620a6c7567086a291fd162b5821b7733ecd02052308b17386fc8",
       "settings": "89e48fac760f",
+      "credit": "821906d8bcdb",
       "copies": [
         {
           "file": "images/web/weather_emslie-800.webp",
           "width": 800,
           "height": 631,
-          "bytes": 65882
+          "bytes": 67190
         },
         {
           "file": "images/web/weather_emslie-1600.webp",
           "width": 1280,
           "height": 1010,
-          "bytes": 163646
+          "bytes": 164954
         },
         {
           "file": "images/web/weather_emslie-2400.webp",
           "width": 1280,
           "height": 1010,
-          "bytes": 163646
+          "bytes": 164954
         }
       ]
     }
