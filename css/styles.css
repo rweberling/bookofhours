@@ -474,6 +474,49 @@ body::before {
   margin: 26px auto; border-radius: 4px;
 }
 #season-reading-body figure { margin: 26px 0; }
+
+/* ── The readings' margin labels (markReadings() in seasons.js) ──
+   A numeral in the accent (rubric) colour, then the author in small
+   capitals and the work in italic. Narrow screens: a short line above
+   each passage. Wide screens: in the left margin, travelling down
+   beside the passage it belongs to.
+────────────────────────────────────────────────────────────────── */
+#season-reading-body .reading { position: relative; }
+.reading-margin-label {
+  display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px;
+  margin: 34px 0 4px;
+}
+.reading-numeral {
+  font-family: var(--font-title);
+  font-size: 22px; line-height: 1;
+  color: var(--accent); transition: color 3s ease;
+}
+.reading-author {
+  font-family: var(--font-label);
+  font-size: 13px; letter-spacing: 0.06em;
+  color: var(--ink-light); transition: color 3s ease;
+}
+.reading-work {
+  font-family: var(--font-reading);
+  font-size: 13px; font-style: italic;
+  color: var(--ink-faint); transition: color 3s ease;
+}
+.reading-author + .reading-work::before { content: '·'; font-style: normal; margin-right: 10px; }
+@media (min-width: 1180px) {
+  .reading-margin {
+    position: absolute; top: 0; bottom: 0;
+    right: calc(100% + 40px); width: 170px;
+  }
+  .reading-margin-label {
+    position: sticky; top: 48px;
+    flex-direction: column; align-items: flex-end; row-gap: 6px;
+    margin: 0.9em 0 0; text-align: right;
+  }
+  .reading-numeral { font-size: 30px; }
+  .reading-author { line-height: 1.35; }
+  .reading-work { line-height: 1.4; }
+  .reading-author + .reading-work::before { content: none; }
+}
 #season-reading-body figcaption {
   font-family: var(--font-text);
   font-size: 12px; font-style: italic;

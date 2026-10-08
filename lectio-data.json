@@ -889,6 +889,20 @@
             "alt": "Week 37: Northern Red Oak (Susan Fenimore Cooper, George Francis Heath, James George Frazer)",
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/b219cd4e-8bd9-4d99-b5fb-197cca1e623f_1197x1803.jpeg"
           }
+        ],
+        "readingLabels": [
+          {
+            "author": "Susan Fenimore Cooper",
+            "work": "Rural Hours, 1850"
+          },
+          {
+            "author": "Francis George Heath",
+            "work": "Tree Lore, 1912"
+          },
+          {
+            "author": "James George Frazer",
+            "work": "The Golden Bough, 1922"
+          }
         ]
       },
       {
@@ -915,6 +929,20 @@
             "src": "images/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-3-96701b4632e9.jpeg",
             "alt": "Week 38: Shagbark Hickory (Carl Sandburg, Vladimir Nabokov, Charles S. Sargent)",
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/ac61dfff-1a97-4b2c-b7ea-3cee148e2922_2679x3511.jpeg"
+          }
+        ],
+        "readingLabels": [
+          {
+            "author": "Carl Sandburg",
+            "work": "Smoke and Steel, 1920"
+          },
+          {
+            "author": "Vladimir Nabokov",
+            "work": "Pale Fire, 1962"
+          },
+          {
+            "author": "Charles S. Sargent",
+            "work": "Report on the forests of North America, 1884"
           }
         ]
       }

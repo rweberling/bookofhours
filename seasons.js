@@ -61,6 +61,55 @@ function renderSeasonReading(entry) {
     img.loading = 'lazy';
     setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
   });
+  markReadings(body, entry.readingLabels || []);
+}
+
+/* ── The readings, marked in the margin ───────────────────────────
+   Under a post's "Readings" heading, each reading arrives as a
+   one-item list holding the passage, followed by its citation. Each
+   gets a label in the margin: a numeral (I, II, III) and, where the
+   post has them, the author and work from entry.readingLabels — one
+   { author, work } per reading, in order, written by hand in
+   lectio-data.json (import_substack.py leaves them alone unless the
+   post is re-imported with --refresh). On wide screens the label sits
+   in the left margin and travels down beside its passage; on narrower
+   ones it sits just above it.
+
+   The reading itself is left exactly as it came: the passage and its
+   citation are only gathered into a <section> so the label can stay
+   beside them.
+────────────────────────────────────────────────────────────────── */
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+const READING_BLOCKS = new Set(['P', 'OL', 'UL', 'H2', 'H3', 'H4', 'FIGURE', 'HR', 'BLOCKQUOTE']);
+
+function markReadings(body, labels) {
+  let inReadings = false;
+  const lists = [];
+  for (const el of body.children) {
+    if (/^H[2-4]$/.test(el.tagName)) inReadings = /^\s*readings\s*$/i.test(el.textContent);
+    else if (inReadings && el.tagName === 'OL') lists.push(el);
+  }
+  lists.forEach((list, i) => {
+    const section = document.createElement('section');
+    section.className = 'reading';
+    list.before(section);
+    // The passage, then its citation: everything up to the next block.
+    let node = list;
+    while (node && !(node !== list && node.nodeType === 1 && READING_BLOCKS.has(node.tagName))) {
+      const next = node.nextSibling;
+      section.appendChild(node);
+      node = next;
+    }
+    const label = labels[i] || {};
+    const margin = document.createElement('aside');
+    margin.className = 'reading-margin';
+    margin.innerHTML = `<div class="reading-margin-label">
+      <span class="reading-numeral">${ROMAN[i] || i + 1}</span>
+      ${label.author ? `<span class="reading-author">${escapeHTML(label.author)}</span>` : ''}
+      ${label.work ? `<span class="reading-work">${escapeHTML(label.work)}</span>` : ''}
+    </div>`;
+    section.prepend(margin);
+  });
 }
 
 // "2026-07-14" -> "July 14, 2026". Read as UTC so the date doesn't slip
