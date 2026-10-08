@@ -1500,7 +1500,10 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   background: var(--bg-deep);
   color: var(--ink);
 }
-.wander-pane .weather-pane-look { margin-top: 32px; }
+/* "Or look outside" sits right under the pane's instruction, as its
+   alternative; the instruction's usual gap moves below the button. */
+.wander-pane .wander-subheading:has(+ .weather-pane-look) { margin-bottom: 10px; }
+.wander-pane .weather-pane-look { margin: 0 0 30px; }
 
 /* ── The Weather page (weather.html) ─────────────────────────────
    The whole page is the window: one image fills the viewport behind
