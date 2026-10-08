@@ -136,51 +136,68 @@ function toggleWeatherCard() {
 
 /* ── Leaning out of the window ────────────────────────────────────
    The picture fills the window and its edges are cut off. Dragging it
-   (or the arrow keys) leans out to look at the rest: the view slides
-   toward the hidden part, as far as the picture goes and no further.
-   Let go and, after a moment, it drifts back to the middle — you can
-   look around, but the view stays what it is. A tap without dragging
-   still folds the card.
+   (or the arrow keys) leans out to look at the rest: the picture eases
+   a little closer (LEAN_SCALE) and the view slides toward wherever you
+   drag, as far as the picture goes and no further. The closer view
+   gives room to look up and down too, even where the window cuts
+   nothing off (a landscape picture on a phone). Let go and, after a
+   moment, it drifts back to the middle at its usual size — you can look
+   around, but the view stays what it is. A tap without dragging still
+   folds the card.
 
-   The view is moved with object-position, so 0–100% is exactly the
-   part of the picture the window cuts off, at any screen size.
+   Two things move together, both set to the same lean percentage:
+   object-position slides across the part of the picture the window
+   cuts off, and transform-origin across the extra margin the closer
+   view adds. 0% is the left (or top) edge, 100% the right (or bottom).
    The first view of a visit "breathes" once toward its hidden side, a
    cue that there's more to see (skipped when motion is reduced).
 ────────────────────────────────────────────────────────────────── */
+const LEAN_SCALE = 1.1;              // how much closer the picture comes while leaning
 const LEAN_RETURN_DELAY_MS = 2500;   // how long the view stays leaned out after letting go
 const LEAN_DRAG_THRESHOLD = 6;       // px of movement before a press counts as a lean, not a tap
 const LEAN_KEY_STEP = 12;            // % per arrow-key press
 let lean = { x: 50, y: 50 };
 let leanReturnTimeout = null;
 
-function leanOverflow(img) {
-  // How many pixels of the picture the window cuts off, across and down.
-  if (!img.naturalWidth) return { x: 0, y: 0 };
-  const scale = Math.max(img.clientWidth / img.naturalWidth, img.clientHeight / img.naturalHeight);
+function leanRange(img) {
+  // How far the view can travel, in pixels, across and down while leaning:
+  // the part the window cuts off (enlarged with the picture) plus the
+  // margin the closer view adds.
+  let over = { x: 0, y: 0 };
+  if (img.naturalWidth) {
+    const fit = Math.max(img.clientWidth / img.naturalWidth, img.clientHeight / img.naturalHeight);
+    over = {
+      x: Math.max(0, img.naturalWidth * fit - img.clientWidth),
+      y: Math.max(0, img.naturalHeight * fit - img.clientHeight)
+    };
+  }
   return {
-    x: Math.max(0, img.naturalWidth * scale - img.clientWidth),
-    y: Math.max(0, img.naturalHeight * scale - img.clientHeight)
+    x: over.x * LEAN_SCALE + (LEAN_SCALE - 1) * img.clientWidth,
+    y: over.y * LEAN_SCALE + (LEAN_SCALE - 1) * img.clientHeight,
+    hiddenX: over.x, hiddenY: over.y
   };
 }
 
-function setLean(img, x, y) {
+function setLean(img, x, y, near = true) {
   lean = { x: Math.min(100, Math.max(0, x)), y: Math.min(100, Math.max(0, y)) };
   img.style.objectPosition = `${lean.x}% ${lean.y}%`;
+  img.style.transformOrigin = `${lean.x}% ${lean.y}%`;
+  img.style.transform = near ? `scale(${LEAN_SCALE})` : '';
 }
 
 function returnLean(img, delay = LEAN_RETURN_DELAY_MS) {
   clearTimeout(leanReturnTimeout);
   leanReturnTimeout = setTimeout(() => {
     img.classList.remove('is-leaning');
-    setLean(img, 50, 50);
+    setLean(img, 50, 50, false);
   }, delay);
 }
 
 function resetLean(img) {
   clearTimeout(leanReturnTimeout);
-  img.classList.add('is-leaning');      // no drift: a new view simply starts centred
-  setLean(img, 50, 50);
-  requestAnimationFrame(() => img.classList.remove('is-leaning'));
+  img.classList.add('is-resetting');    // no drift: a new view simply starts centred
+  setLean(img, 50, 50, false);
+  requestAnimationFrame(() => requestAnimationFrame(() => img.classList.remove('is-resetting')));
 }
 
 // The cue: once a visit, ease a little toward the side with the most
@@ -191,9 +208,8 @@ function breatheLean(img) {
     sessionStorage.setItem('weather-leaned', '1');
   } catch (e) { /* storage blocked: breathe anyway */ }
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const over = leanOverflow(img);
-  if (Math.max(over.x, over.y) < 40) return;   // nothing much to see beyond the edges
-  const across = over.x >= over.y;
+  const range = leanRange(img);
+  const across = range.hiddenX >= range.hiddenY;
   setTimeout(() => {
     setLean(img, across ? 30 : 50, across ? 50 : 30);
     returnLean(img, 1800);
@@ -207,7 +223,7 @@ function initLeaning() {
 
   view.addEventListener('pointerdown', e => {
     if (e.button !== 0) return;
-    press = { id: e.pointerId, x: e.clientX, y: e.clientY, from: { ...lean }, over: leanOverflow(img), leaning: false };
+    press = { id: e.pointerId, x: e.clientX, y: e.clientY, from: { ...lean }, range: leanRange(img), leaning: false };
   });
   view.addEventListener('pointermove', e => {
     if (!press || e.pointerId !== press.id) return;
@@ -220,9 +236,7 @@ function initLeaning() {
       view.setPointerCapture(e.pointerId);
     }
     // Dragging the picture right shows more of its left side, and so on.
-    setLean(img,
-      press.over.x ? press.from.x - dx / press.over.x * 100 : 50,
-      press.over.y ? press.from.y - dy / press.over.y * 100 : 50);
+    setLean(img, press.from.x - dx / press.range.x * 100, press.from.y - dy / press.range.y * 100);
   });
   const release = e => {
     if (!press || e.pointerId !== press.id) return;
@@ -242,11 +256,9 @@ function initLeaning() {
     if (e.target.closest && e.target.closest('input, textarea, select, [contenteditable], .wander-pane, .site-nav')) return;
     const step = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key];
     if (!step) return;
-    const over = leanOverflow(img);
-    if (!over.x && !over.y) return;
     e.preventDefault();
     clearTimeout(leanReturnTimeout);
-    setLean(img, lean.x + step[0] * LEAN_KEY_STEP * (over.x ? 1 : 0), lean.y + step[1] * LEAN_KEY_STEP * (over.y ? 1 : 0));
+    setLean(img, lean.x + step[0] * LEAN_KEY_STEP, lean.y + step[1] * LEAN_KEY_STEP);
     returnLean(img);
   });
 
