@@ -156,11 +156,12 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/5e09353b-1458-489a-9f92-1db13fcc4d4a_2172x1486.jpeg"
           }
         ],
-        "species": "Nimbostratus praecipitatio",
+        "species": "Rain Clouds",
         "readings": [
           "Johann Wolfgang von Goethe",
           "Jenny Odell"
-        ]
+        ],
+        "latin": "Nimbostratus praecipitatio"
       },
       {
         "id": "week-16-ostrich-fern-martin-heidegger",
@@ -329,7 +330,8 @@
         "readings": [
           "Ludwig Wittgenstein",
           "The Dana Brothers"
-        ]
+        ],
+        "latin": "Argillita cantabrigiensis"
       },
       {
         "id": "week-21-common-lilac-amy-lowell-ronald",
@@ -390,7 +392,7 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/edc9ddca-85c2-4afd-87d0-59d5910bec85_688x471.png"
           }
         ],
-        "species": "Mycobacterium vaccae",
+        "species": "Living Soil",
         "readings": [
           "Jenifer Wightman",
           "Graham A.W. Rook"
@@ -425,7 +427,7 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/6c07f51a-baea-44d8-8ca4-247f296e509f_984x1543.jpeg"
           }
         ],
-        "species": "Pink Lady's Slipper",
+        "species": "Pink Lady’s Slipper",
         "readings": [
           "Grace Graylock Niles",
           "C.S. Young"
@@ -458,11 +460,12 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/2a0a2d48-48ba-41da-acc6-f31057fcd616_1381x428.webp"
           }
         ],
-        "species": "Maculae Solares",
+        "species": "Sunspots",
         "readings": [
           "Galileo Galilei feat. The Roman Inquisition",
           "Simon Barraclough"
-        ]
+        ],
+        "latin": "Maculae solares"
       },
       {
         "id": "week-33-cucurbits-marge-piercy-padgraig",
@@ -763,7 +766,8 @@
         "readings": [
           "Horace",
           "Heraclitus"
-        ]
+        ],
+        "latin": "Dies caniculares"
       },
       {
         "id": "week-33-perseids-meteor-shower-han",
@@ -795,7 +799,8 @@
         "readings": [
           "Han Dynasty Scribes",
           "Henry David Thoreau"
-        ]
+        ],
+        "latin": "Lacrimae Sancti Laurentii"
       },
       {
         "id": "week-35-cucumis-robert-hass-marcus",
