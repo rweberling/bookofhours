@@ -427,10 +427,12 @@ body::before {
    circularity — same pattern .quote-block already uses correctly on
    index.html. */
 .season-post { width: 100%; }
+/* The same size and colour as the hours page's hour name (.hour-name):
+   both are the second name beneath the title. Italic, as Latin names are. */
 .season-reading-meta #season-reading-latin {
   font-family: var(--font-reading);
-  font-style: italic; font-size: 15px;
-  color: var(--ink-faint); transition: color 3s ease;
+  font-style: italic; font-size: 18px;
+  color: var(--accent); transition: color 3s ease;
 }
 .season-post-dek {
   font-family: var(--font-text);
