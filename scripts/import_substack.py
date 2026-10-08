@@ -254,6 +254,30 @@ def strip_hours_section(body_html, images):
     return body_html, [image for image in images if image['src'] in body_html]
 
 
+# The moon-and-countdown line some posts open with ("Waxing Gibbous Moon -
+# 6 Days to Full; 2 Days to Fall Equinox"): a short paragraph before the
+# Headnote naming the moon and a countdown to a solstice, equinox or
+# quarter day. It belongs to the newsletter's week, not the reading, so the
+# site leaves it out. Any other opening paragraph (a dedication, a note)
+# stays.
+COUNTDOWN_PARAGRAPH = re.compile(r'<p\b[^>]*>((?:(?!</p>).)*)</p>\s*', re.S)
+
+
+def drop_countdown(body_html):
+    headnote = re.search(r'<h[2-4][^>]*>\s*headnote', body_html, re.I)
+    if not headnote:
+        return body_html
+
+    def keep_unless_countdown(paragraph):
+        text = re.sub(r'<[^>]+>', '', paragraph.group(1))
+        is_countdown = (len(text) < 160 and re.search(r'\bmoon\b', text, re.I)
+                        and re.search(r'days? to|equinox|solstice|cross-quarter', text, re.I))
+        return '' if is_countdown else paragraph.group(0)
+
+    opening = COUNTDOWN_PARAGRAPH.sub(keep_unless_countdown, body_html[:headnote.start()])
+    return opening + body_html[headnote.start():]
+
+
 def parse_date(value):
     if not value:
         return ''
@@ -272,6 +296,7 @@ def build_entry(row, path, season, image_dir, download_images):
     body_html, images = strip_hours_section(''.join(parser.output).strip(), parser.images)
     # Early posts called the closing part "More"; it's "Supplementum" now.
     body_html = re.sub(r'<(h[2-4])>\s*More\s*</\1>', r'<\1>Supplementum</\1>', body_html)
+    body_html = drop_countdown(body_html)
     return {
         'id': slug_for(path),
         'postId': post_id,
