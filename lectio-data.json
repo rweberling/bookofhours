@@ -855,7 +855,13 @@
             "alt": "Week 36: Watermelon, Sylvia Plath, Pliny the Elder",
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/6917037b-d320-4c98-a6a6-8bb746f8c336_1500x2831.jpeg"
           }
-        ]
+        ],
+        "species": "Watermelon",
+        "readings": [
+          "Sylvia Plath",
+          "Pliny the Elder"
+        ],
+        "latin": "Citrullus lanatus"
       }
     ],
     "autumn": [
@@ -889,7 +895,14 @@
             "alt": "Week 37: Northern Red Oak (Susan Fenimore Cooper, George Francis Heath, James George Frazer)",
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/b219cd4e-8bd9-4d99-b5fb-197cca1e623f_1197x1803.jpeg"
           }
-        ]
+        ],
+        "species": "Northern Red Oak",
+        "readings": [
+          "Susan Fenimore Cooper",
+          "George Francis Heath",
+          "James George Frazer"
+        ],
+        "latin": "Quercus rubra"
       },
       {
         "id": "week-38-shagbark-hickory-carl-sandburg",
@@ -916,7 +929,14 @@
             "alt": "Week 38: Shagbark Hickory (Carl Sandburg, Vladimir Nabokov, Charles S. Sargent)",
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/ac61dfff-1a97-4b2c-b7ea-3cee148e2922_2679x3511.jpeg"
           }
-        ]
+        ],
+        "species": "Shagbark Hickory",
+        "readings": [
+          "Carl Sandburg",
+          "Vladimir Nabokov",
+          "Charles S. Sargent"
+        ],
+        "latin": "Carya ovata"
       }
     ],
     "winter": [
