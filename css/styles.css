@@ -706,6 +706,31 @@ body::before {
   transition: color 3s ease;
 }
 
+/* ── The spread (wide screens) ────────────────────────────────────
+   The image and the reading face each other, as the two pages of an
+   open book of hours: the picture on the left, held in view while a
+   long reading scrolls past, the words on the right. The pair stays
+   well inside the window, keeping the page's wide margins. Narrower
+   screens: the wrapper steps aside (display: contents) and the two
+   stack as before.
+────────────────────────────────────────────────────────────────── */
+.hours-spread { display: contents; }
+@media (min-width: 1100px) {
+  .hours-spread {
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    column-gap: 64px; align-items: start;
+    width: min(1040px, calc(100vw - 240px));
+    margin: 6px 0 30px;
+  }
+  .hours-spread .image-frame-outer {
+    max-width: none; margin-bottom: 0;
+    position: sticky; top: 56px;
+  }
+  .hours-spread .quote-block { max-width: none; margin-bottom: 0; }
+  .hours-spread .quote-mark { margin-top: 2px; }
+  .hours-spread .quote-text { font-size: 20px; }
+}
+
 /* ── Static zone divider ──────────────────────────────────────── */
 .static-divider {
   width: 100%; max-width: 520px;
@@ -723,11 +748,17 @@ body::before {
 }
 .phenomena-list {
   font-family: var(--font-voice);
-  font-size: 14px; font-weight: 300; color: var(--accent2);
-  letter-spacing: 0.07em; line-height: 2.2;
+  font-size: 14px; font-weight: 300; font-style: italic; color: var(--ink-faint);
+  letter-spacing: 0.03em; line-height: 1.7;
   transition: color 3s ease;
 }
-.phenomena-list .sep { color: var(--gold); margin: 0 10px; transition: color 3s ease; }
+/* The hour's phenomena read as an almanac's entries: one to a line, with
+   the ✦ set small between them. */
+.phenomena-list .sep {
+  display: block; margin: 5px 0;
+  font-size: 9px; font-style: normal; line-height: 1;
+  color: var(--gold); transition: color 3s ease;
+}
 
 /* The publication line under a seasons post: quiet small capitals, so it
    closes the post without competing with "turn the page" below it. */

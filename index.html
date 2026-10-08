@@ -110,6 +110,9 @@
 
  <p class="weather-line" id="weather-line" hidden></p>
 
+ <!-- On wide screens the image and the reading face each other, as an
+      open book's two pages (.hours-spread); on narrower ones they stack. -->
+ <div class="hours-spread">
  <div class="image-frame-outer">
  <div class="image-frame">
  <div class="image-inner" id="image-inner"></div>
@@ -121,6 +124,7 @@
  <span class="quote-mark">&ldquo;</span>
  <p class="quote-text" id="quote-text"></p>
  <p class="quote-attribution" id="quote-attr"></p>
+ </div>
  </div>
 
 <div class="turn-the-page" id="reading-actions">
@@ -143,8 +147,6 @@
  Kept from The Earthly Book of Hours · <span id="print-block-name"></span><br><span id="print-timestamp"></span>
  </p>
 
- <footer class="page-footer">
- 
  <footer class="page-footer">
  <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
  <div class="line"></div>
