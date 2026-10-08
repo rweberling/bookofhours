@@ -227,8 +227,11 @@ function showSeasonEntry(key, entryId) {
   renderSeasonReading(entry);
 }
 
+// The button sits at the foot of the post, so the next post opens at its
+// top, as a turned page does.
 function turnSeasonPage() {
   renderSeasonReading(pickExcluding(season.entries, entry => entry.id === currentEntryId));
+  window.scrollTo(0, 0);
 }
 
 /* ── Wander the Seasons: the dial ─────────────────────────────── */
