@@ -63,6 +63,7 @@ function renderSeasonReading(entry) {
   });
   markReadings(body, entry.readingLabels || []);
   markParts(body);
+  updateRunningHead();
 }
 
 /* ── The post's parts, named in the margin ────────────────────────
@@ -70,10 +71,56 @@ function renderSeasonReading(entry) {
    Supplementum (More, in early posts). On wide screens each part's
    heading moves into the left margin, beside the part: Headnote and
    Supplementum travel down with their text, as the reading numerals
-   do; Readings stays put at the top of its part, just above the
-   numeral I. On narrower screens the headings stay where they are.
+   do; Readings travels too, with each reading's numeral held just
+   beneath it in turn. On narrower screens the headings stay where they
+   are, and the running head (below) names the part instead.
    Other headings inside a post are left alone.
 ────────────────────────────────────────────────────────────────── */
+/* ── The running head (narrower screens) ─────────────────────────
+   Where there's no margin, a slim line at the top of the screen names
+   where you are in the post once you've scrolled into it, as a book's
+   running head does: "Headnote", or "Readings · II · Vladimir
+   Nabokov". It changes as each part and reading reaches the top, and
+   hides above and below the post. On wide screens the margin labels
+   do this job and the line stays hidden (CSS).
+────────────────────────────────────────────────────────────────── */
+const RUNNING_HEAD_LINE = 72;   // px from the top: what has passed this is "where you are"
+let runningHead = null;
+
+function updateRunningHead() {
+  if (!runningHead) {
+    runningHead = document.createElement('div');
+    runningHead.className = 'running-head';
+    runningHead.setAttribute('aria-hidden', 'true');   // the headings themselves are in the page
+    document.body.appendChild(runningHead);
+    let queued = false;
+    const onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => { queued = false; updateRunningHead(); });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+  }
+  const body = document.getElementById('season-reading-body');
+  const passed = el => el.getBoundingClientRect().top < RUNNING_HEAD_LINE;
+  const part = [...body.querySelectorAll('.post-part')].filter(passed).pop();
+  const inPost = part && body.getBoundingClientRect().bottom > RUNNING_HEAD_LINE + 40;
+  let text = '';
+  if (inPost) {
+    const heading = part.querySelector('.part-margin-label :is(h2, h3, h4)');
+    text = heading ? heading.textContent.trim() : '';
+    const reading = [...part.querySelectorAll('.reading')].filter(passed).pop();
+    if (reading) {
+      const label = reading.querySelector('.reading-margin-label');
+      const bits = [...label.children].map(el => el.textContent.trim()).filter(Boolean);
+      text += ' · ' + bits.slice(0, 2).join(' · ');   // numeral, and author if there is one
+    }
+  }
+  if (text) runningHead.textContent = text;
+  runningHead.classList.toggle('is-shown', !!text);
+}
+
 const POST_PARTS = /^\s*(headnote|readings|supplementum|more)\s*$/i;
 
 function markParts(body) {

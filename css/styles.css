@@ -475,6 +475,28 @@ body::before {
 }
 #season-reading-body figure { margin: 26px 0; }
 
+/* ── The running head (updateRunningHead() in seasons.js) ─────────
+   Narrower screens only: a slim line at the top of the screen naming
+   the part (and reading) you're in. Hidden on wide screens, where the
+   margin labels do this.
+────────────────────────────────────────────────────────────────── */
+.running-head {
+  /* Just inside the page frame's inner rule: 24px in, 16px on phones. */
+  --frame-in: 24px;
+  position: fixed; top: var(--frame-in); left: var(--frame-in); right: var(--frame-in); z-index: 45;
+  padding: 8px 14px 7px;
+  background: color-mix(in oklab, var(--bg), transparent 6%);
+  border-bottom: 0.5px solid var(--rule);
+  font-family: var(--font-label);
+  font-size: 12px; letter-spacing: 0.08em; text-align: center;
+  color: var(--ink-faint);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  opacity: 0; transform: translateY(-100%);
+  transition: opacity 0.4s ease, transform 0.4s ease, background 3s ease, color 3s ease;
+  pointer-events: none;
+}
+.running-head.is-shown { opacity: 1; transform: none; }
+
 /* ── The readings' margin labels (markReadings() in seasons.js) ──
    A numeral in the accent (rubric) colour, then the author in small
    capitals and the work in italic. Narrow screens: a short line above
@@ -527,9 +549,11 @@ body::before {
   #season-reading-body .part-margin-label :is(h2, h3, h4) {
     margin: 0.2em 0 0; font-size: 20px;
   }
-  /* Readings stays at the top of its part; the numerals take over below. */
-  .post-part-readings .part-margin-label { position: static; }
+  /* Readings travels down its part too; each reading's numeral and
+     author are held just beneath it, in turn. */
+  .post-part-readings .reading-margin-label { top: 96px; }
   .post-part-readings .reading:first-of-type .reading-margin-label { margin-top: 3.4em; }
+  .running-head { display: none; }
   .reading-author { line-height: 1.35; }
   .reading-work { line-height: 1.4; }
   .reading-author + .reading-work::before { content: none; }
@@ -1093,6 +1117,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .outer-frame {
     box-shadow: 0 0 0 10px var(--bg), inset 0 0 0 1px var(--rule), inset 0 0 0 15px var(--bg), inset 0 0 0 16px var(--rule);
   }
+  .running-head { --frame-in: 16px; }
   .page { padding: 44px 24px 36px; }
   .image-frame-outer { max-width: 100%; margin-bottom: 24px; }
   .image-frame { padding: 10px; }
