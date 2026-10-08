@@ -669,7 +669,10 @@ function updateWanderTileCurrent(blockName) {
   });
 }
 
-function renderAtHour(blocksData, overrideHour, useRealTime = false) {
+// toTop: start the new content at the top of the page, scrolled there
+// while the veil covers the swap ("turn the page", whose button sits
+// below the reading).
+function renderAtHour(blocksData, overrideHour, useRealTime = false, { toTop = false } = {}) {
   const now = new Date();
   const h = overrideHour;
   const displayTime = useRealTime ? now : new Date(now);
@@ -684,6 +687,7 @@ function renderAtHour(blocksData, overrideHour, useRealTime = false) {
       colophonDate: formatDate(now),
       afterUpdate: () => updateWanderTileCurrent(block.name)
     });
+    if (toTop) window.scrollTo(0, 0);
     veil.classList.remove('active');
   }, 1200);
 }
@@ -706,7 +710,7 @@ ttpBtn.addEventListener('click', () => {
   // hour would yank you straight back to now.
   const isWandering = Date.now() < wanderHoldUntil;
   const hour = isWandering ? wanderHour : new Date().getHours();
-  renderAtHour(blocksRef, hour, !isWandering);
+  renderAtHour(blocksRef, hour, !isWandering, { toTop: true });
 });
 
 const keepPageBtn = document.getElementById('keep-page');
