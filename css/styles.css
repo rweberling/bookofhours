@@ -708,8 +708,8 @@ body::before {
 
 /* ── The spread (wide screens) ────────────────────────────────────
    The image and the reading face each other, as the two pages of an
-   open book of hours: the picture on the left, held in view while a
-   long reading scrolls past, the words on the right. The pair stays
+   open book of hours: the picture on the left, level with the top of
+   the reading, the words on the right. The pair stays
    well inside the window, keeping the page's wide margins. Narrower
    screens: the wrapper steps aside (display: contents) and the two
    stack as before.
@@ -722,10 +722,7 @@ body::before {
     width: min(1040px, calc(100vw - 240px));
     margin: 6px 0 30px;
   }
-  .hours-spread .image-frame-outer {
-    max-width: none; margin-bottom: 0;
-    position: sticky; top: 56px;
-  }
+  .hours-spread .image-frame-outer { max-width: none; margin-bottom: 0; }
   .hours-spread .quote-block { max-width: none; margin-bottom: 0; }
   .hours-spread .quote-mark { margin-top: 2px; }
   .hours-spread .quote-text { font-size: 20px; }
