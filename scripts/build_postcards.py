@@ -40,8 +40,10 @@ Every page is rewritten on each run. Nothing else in the site is touched.
 
 import csv
 import html
+import math
 import re
 import sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -52,17 +54,65 @@ DATA = ROOT / 'data' / 'postcards.csv'
 OUT = ROOT / 'c'
 SITE = 'https://earthlyhours.com'
 
-# The series a short link belongs to, named on its page.
+# The series a short link belongs to, named on its page. No year: the
+# cards can be sold again in later winters.
 SERIES = {
-    'w26': 'A postcard for the winter solstice, 2026',
+    'w26': 'A postcard for the winter solstice',
 }
 
-# The moment each series marks, shown under its subtitle. Written as a
-# record, without tense, so it reads the same before and after the day.
-# UT is Universal Time, the astronomers' clock at Greenwich.
-DATELINES = {
-    'w26': 'December 21, 2026, at 20:50 UT (3:50 p.m. Eastern)',
+# Series whose pages show the moment of the winter solstice under the
+# subtitle: the coming one or, until the March equinox, the one just past.
+# postcards.js works it out when the page is read; the line written here
+# at build time is for readers without JavaScript. UT is Universal Time,
+# the astronomers' clock at Greenwich.
+SOLSTICE_SERIES = {'w26'}
+
+# December solstices, UT, from published tables (timeanddate.com, USNO);
+# keep in step with postcards.js. Other years use Meeus's method.
+PUBLISHED_SOLSTICES = {
+    2024: (12, 21, 9, 20), 2025: (12, 21, 15, 3), 2026: (12, 21, 20, 50),
+    2027: (12, 22, 2, 42), 2028: (12, 21, 8, 19), 2029: (12, 21, 14, 14),
+    2030: (12, 21, 20, 9), 2031: (12, 22, 1, 55), 2032: (12, 21, 7, 55),
+    2033: (12, 21, 13, 45), 2034: (12, 21, 19, 33), 2035: (12, 22, 1, 30),
 }
+_TERMS = [(485, 324.96, 1934.136), (203, 337.23, 32964.467), (199, 342.08, 20.186),
+          (182, 27.85, 445267.112), (156, 73.14, 45036.886), (136, 171.52, 22518.443),
+          (77, 222.54, 65928.934), (74, 296.72, 3034.906), (70, 243.58, 9037.513),
+          (58, 119.81, 33718.147), (52, 297.17, 150.678), (50, 21.02, 2281.226),
+          (45, 247.54, 29929.562), (44, 325.15, 31555.956), (29, 60.93, 4443.417),
+          (18, 155.12, 67555.328), (17, 288.79, 4562.452), (16, 198.04, 62894.029),
+          (14, 199.76, 31436.921), (12, 95.39, 14577.848), (12, 287.11, 31931.756),
+          (12, 320.81, 34777.259), (9, 227.73, 1222.114), (8, 15.45, 16859.074)]
+
+
+def december_solstice(year):
+    """The December solstice of a year, as a UTC datetime."""
+    if year in PUBLISHED_SOLSTICES:
+        mo, d, h, mi = PUBLISHED_SOLSTICES[year]
+        return datetime(year, mo, d, h, mi, tzinfo=timezone.utc)
+    Y = (year - 2000) / 1000
+    jde0 = 2451900.05952 + 365242.74049 * Y - 0.06223 * Y**2 - 0.00823 * Y**3 + 0.00032 * Y**4
+    T = (jde0 - 2451545) / 36525
+    W = math.radians(35999.373 * T - 2.47)
+    dl = 1 + 0.0334 * math.cos(W) + 0.0007 * math.cos(2 * W)
+    S = sum(A * math.cos(math.radians(B + C * T)) for A, B, C in _TERMS)
+    jde = jde0 + 0.00001 * S / dl
+    return datetime(1970, 1, 1, tzinfo=timezone.utc) + timedelta(days=jde - 2440587.5, seconds=-70)
+
+
+def solstice_line(now=None):
+    """'December 21, 2026, at 20:50 UT (3:50 p.m. Eastern)' for the solstice
+    that matters on a given day; December is always standard time, UT - 5."""
+    now = now or datetime.now(timezone.utc)
+    when = december_solstice(now.year)
+    if now < when and now < datetime(now.year, 3, 20, tzinfo=timezone.utc):
+        when = december_solstice(now.year - 1)
+    ut = when.replace(second=0, microsecond=0)
+    east = ut - timedelta(hours=5)
+    clock = f"{east.hour % 12 or 12}:{east.minute:02d} {'a.m.' if east.hour < 12 else 'p.m.'}"
+    east_day = f", {east:%B} {east.day}" if east.day != ut.day else ''
+    return (f'{ut:%B} {ut.day}, {ut.year}, at {ut:%H:%M} UT '
+            f'({clock} Eastern{east_day})')
 
 # Names for the libraries and archives the cards link to; any other host
 # is shown by its domain.
@@ -138,6 +188,7 @@ PAGE = '''<!DOCTYPE html>
 <script src="/shared.js"></script>
 <script src="/atmosphere.js"></script>
 <script src="/nav.js"></script>
+<script src="/postcards.js"></script>
 {lightbox}
 </body>
 </html>
@@ -279,9 +330,10 @@ def turn(row, rows):
 def build(row, rows=()):
     path = row['path']
     series = SERIES.get(path.split('/')[0], 'A postcard from the Earthly Book of Hours')
-    dateline = DATELINES.get(path.split('/')[0], '')
-    if dateline:
-        dateline = f'  <p class="postcard-dateline">{esc(dateline)}</p>\n'
+    dateline = ''
+    if path.split('/')[0] in SOLSTICE_SERIES:
+        dateline = (f'  <p class="postcard-dateline" data-solstice="december">'
+                    f'{esc(solstice_line())}</p>\n')
     url = f'{SITE}/c/{path}/'
     ready = bool(row['title'])
     title_text = plain(row['title']) if ready else 'A Card in Preparation'
