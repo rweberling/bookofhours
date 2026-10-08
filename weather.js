@@ -151,6 +151,12 @@ function toggleWeatherCard() {
    view adds. 0% is the left (or top) edge, 100% the right (or bottom).
    The first view of a visit "breathes" once toward its hidden side, a
    cue that there's more to see (skipped when motion is reduced).
+
+   Where the card lies across the window (on a phone, along the bottom),
+   leaning on past the picture's edge lifts the whole picture, so what
+   was behind the card comes up above it (liftRoom). In the extended
+   lean percentage that's anything past 100% (or below 0% for a card
+   along the top).
 ────────────────────────────────────────────────────────────────── */
 const LEAN_SCALE = 1.1;              // how much closer the picture comes while leaning
 const LEAN_RETURN_DELAY_MS = 2500;   // how long the view stays leaned out after letting go
@@ -178,11 +184,31 @@ function leanRange(img) {
   };
 }
 
+// How far the picture may be lifted to show what the card covers, in
+// pixels: up, when the card lies along the bottom; down, along the top.
+// Only where the card spans most of the window — in a corner, you can
+// already see around it.
+function liftRoom() {
+  const card = document.getElementById('weather-card').getBoundingClientRect();
+  if (card.width < window.innerWidth * 0.6) return { up: 0, down: 0 };
+  return card.top + card.height / 2 > window.innerHeight / 2
+    ? { up: Math.max(0, window.innerHeight - card.top), down: 0 }
+    : { up: 0, down: Math.max(0, card.bottom) };
+}
+
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+
 function setLean(img, x, y, near = true) {
-  lean = { x: Math.min(100, Math.max(0, x)), y: Math.min(100, Math.max(0, y)) };
-  img.style.objectPosition = `${lean.x}% ${lean.y}%`;
-  img.style.transformOrigin = `${lean.x}% ${lean.y}%`;
-  img.style.transform = near ? `scale(${LEAN_SCALE})` : '';
+  const range = leanRange(img), room = near ? liftRoom() : { up: 0, down: 0 };
+  const perPx = range.y ? 100 / range.y : 0;
+  lean = { x: clamp(x, 0, 100), y: clamp(y, -room.down * perPx, 100 + room.up * perPx) };
+  const pos = { x: lean.x, y: clamp(lean.y, 0, 100) };
+  // Past the edge, the picture itself moves: up past 100%, down below 0%.
+  const lift = perPx ? -(lean.y - pos.y) / perPx : 0;
+  img.style.objectPosition = `${pos.x}% ${pos.y}%`;
+  img.style.transformOrigin = `${pos.x}% ${pos.y}%`;
+  img.style.scale = near ? String(LEAN_SCALE) : '';
+  img.style.translate = lift ? `0 ${lift}px` : '';
 }
 
 function returnLean(img, delay = LEAN_RETURN_DELAY_MS) {
