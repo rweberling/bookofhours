@@ -474,6 +474,9 @@ body::before {
   margin: 26px auto; border-radius: 4px;
 }
 #season-reading-body figure { margin: 26px 0; }
+/* A preformatted block from Substack (a poem set out with its own line
+   breaks and indents): shown with that spacing kept. */
+#season-reading-body .preformatted { white-space: pre-wrap; }
 
 /* ── The running head (updateRunningHead() in seasons.js) ─────────
    Narrower screens only: a slim line at the top of the screen naming

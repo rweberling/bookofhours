@@ -35,7 +35,10 @@ ALLOWED_ATTRIBUTES = {
     'a': {'href', 'target', 'rel'},
     'img': {'alt', 'height', 'loading', 'src', 'title', 'width'},
 }
-DROP_CONTENT_TAGS = {'script', 'style', 'iframe', 'form', 'button', 'svg', 'video', 'audio'}
+# label: Substack's editor notes on its blocks, such as "Text within this
+# block will maintain its original spacing when published" on a
+# preformatted block, which aren't part of the post.
+DROP_CONTENT_TAGS = {'script', 'style', 'iframe', 'form', 'button', 'svg', 'video', 'audio', 'label'}
 POST_ID_PATTERN = re.compile(r'^(\d+)\.')
 
 # Typographic ligature characters (ﬁ, ﬂ and so on) arrive in text pasted
@@ -86,6 +89,11 @@ class SafeHTML(HTMLParser):
         if tag in DROP_CONTENT_TAGS:
             self.skip_depth = 1
             return
+        # A preformatted block (a poem set out with its own line breaks and
+        # indents) becomes a paragraph the site shows with that spacing kept.
+        if tag == 'pre':
+            self.output.append('<p class="preformatted">')
+            return
         if tag not in ALLOWED_TAGS:
             return
 
@@ -134,7 +142,9 @@ class SafeHTML(HTMLParser):
             if tag in DROP_CONTENT_TAGS:
                 self.skip_depth -= 1
             return
-        if tag in ALLOWED_TAGS and tag not in {'br', 'hr', 'img'}:
+        if tag == 'pre':
+            self.output.append('</p>')
+        elif tag in ALLOWED_TAGS and tag not in {'br', 'hr', 'img'}:
             self.output.append(f'</{tag}>')
 
     def handle_data(self, data):
@@ -260,6 +270,8 @@ def build_entry(row, path, season, image_dir, download_images):
     parser = SafeHTML(image_dir, post_id, row.get('title', '').strip(), download_images)
     parser.feed(raw_html)
     body_html, images = strip_hours_section(''.join(parser.output).strip(), parser.images)
+    # Early posts called the closing part "More"; it's "Supplementum" now.
+    body_html = re.sub(r'<(h[2-4])>\s*More\s*</\1>', r'<\1>Supplementum</\1>', body_html)
     return {
         'id': slug_for(path),
         'postId': post_id,
