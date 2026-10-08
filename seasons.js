@@ -62,6 +62,42 @@ function renderSeasonReading(entry) {
     setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
   });
   markReadings(body, entry.readingLabels || []);
+  markParts(body);
+}
+
+/* ── The post's parts, named in the margin ────────────────────────
+   A post is in parts, each under its own heading: Headnote, Readings,
+   Supplementum (More, in early posts). On wide screens each part's
+   heading moves into the left margin, beside the part: Headnote and
+   Supplementum travel down with their text, as the reading numerals
+   do; Readings stays put at the top of its part, just above the
+   numeral I. On narrower screens the headings stay where they are.
+   Other headings inside a post are left alone.
+────────────────────────────────────────────────────────────────── */
+const POST_PARTS = /^\s*(headnote|readings|supplementum|more)\s*$/i;
+
+function markParts(body) {
+  const headings = [...body.children].filter(el => /^H[2-4]$/.test(el.tagName) && POST_PARTS.test(el.textContent));
+  headings.forEach(heading => {
+    const part = document.createElement('div');
+    part.className = 'post-part';
+    if (/readings/i.test(heading.textContent)) part.classList.add('post-part-readings');
+    heading.before(part);
+    // The part runs to the next part's heading.
+    let node = heading.nextSibling;
+    while (node && !headings.includes(node)) {
+      const next = node.nextSibling;
+      part.appendChild(node);
+      node = next;
+    }
+    const margin = document.createElement('aside');
+    margin.className = 'part-margin';
+    const label = document.createElement('div');
+    label.className = 'part-margin-label';
+    label.appendChild(heading);
+    margin.appendChild(label);
+    part.prepend(margin);
+  });
 }
 
 /* ── The readings, marked in the margin ───────────────────────────

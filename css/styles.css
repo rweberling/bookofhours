@@ -482,6 +482,9 @@ body::before {
    beside the passage it belongs to.
 ────────────────────────────────────────────────────────────────── */
 #season-reading-body .reading { position: relative; }
+/* The passages keep the list's small inset, which sets each one apart
+   as quoted words; only the list's "1." goes (the numeral does its job). */
+#season-reading-body .reading ol li::before { content: none; }
 .reading-margin-label {
   display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px;
   margin: 34px 0 4px;
@@ -513,6 +516,20 @@ body::before {
     margin: 0.9em 0 0; text-align: right;
   }
   .reading-numeral { font-size: 30px; }
+
+  /* The parts' headings (markParts() in seasons.js), in the same margin. */
+  #season-reading-body .post-part { position: relative; margin-top: 44px; }
+  .part-margin {
+    position: absolute; top: 0; bottom: 0;
+    right: calc(100% + 40px); width: 170px;
+  }
+  .part-margin-label { position: sticky; top: 48px; text-align: right; }
+  #season-reading-body .part-margin-label :is(h2, h3, h4) {
+    margin: 0.2em 0 0; font-size: 20px;
+  }
+  /* Readings stays at the top of its part; the numerals take over below. */
+  .post-part-readings .part-margin-label { position: static; }
+  .post-part-readings .reading:first-of-type .reading-margin-label { margin-top: 3.4em; }
   .reading-author { line-height: 1.35; }
   .reading-work { line-height: 1.4; }
   .reading-author + .reading-work::before { content: none; }
