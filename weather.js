@@ -89,6 +89,12 @@ function renderWeatherView(options) {
   if (img.dataset.master !== image.src) {
     img.classList.remove('is-loaded');
     setWebImage(img, image.src, '100vw');
+    // The haze behind the picture: a small copy of it, blurred (see the
+    // leaning section below).
+    // (A full address: a relative one would be read from css/, where the
+    // stylesheet that uses it lives.)
+    const haze = new URL(webVersion(image.src, 800), document.baseURI).href;
+    img.parentElement.style.setProperty('--haze', `url("${haze}")`);
   }
   img.alt = plainText(image.caption) || 'The view from the window';
   document.getElementById('weather-caption').innerHTML = image.caption || '';
@@ -157,7 +163,14 @@ function toggleWeatherCard() {
    was behind the card comes up above it (liftRoom). In the extended
    lean percentage that's anything past 100% (or below 0% for a card
    along the top).
+
+   At the end of the view in any direction the picture gives a little
+   further, with growing resistance (LEAN_EDGE_GIVE), and springs back
+   when let go: the edge of the view, felt rather than hit. What shows
+   in the gap is the haze behind the picture, a blurred copy of it
+   (--haze on .weather-window, set in renderWeatherView()).
 ────────────────────────────────────────────────────────────────── */
+const LEAN_EDGE_GIVE = 28;           // px the picture gives past an edge, at most
 const LEAN_SCALE = 1.1;              // how much closer the picture comes while leaning
 const LEAN_RETURN_DELAY_MS = 2500;   // how long the view stays leaned out after letting go
 const LEAN_DRAG_THRESHOLD = 6;       // px of movement before a press counts as a lean, not a tap
@@ -198,17 +211,41 @@ function liftRoom() {
 
 const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
 
-function setLean(img, x, y, near = true) {
+// Pixels dragged past an edge -> pixels the picture actually gives:
+// nearly one for one at first, never more than LEAN_EDGE_GIVE.
+function edgeGive(px) {
+  return Math.sign(px) * LEAN_EDGE_GIVE * (1 - Math.exp(-Math.abs(px) / LEAN_EDGE_GIVE));
+}
+
+// elastic: a drag, which may pull past the edges (the give); otherwise
+// the lean is simply held within them.
+function setLean(img, x, y, near = true, elastic = false) {
   const range = leanRange(img), room = near ? liftRoom() : { up: 0, down: 0 };
-  const perPx = range.y ? 100 / range.y : 0;
-  lean = { x: clamp(x, 0, 100), y: clamp(y, -room.down * perPx, 100 + room.up * perPx) };
+  const perPxX = range.x ? 100 / range.x : 0, perPxY = range.y ? 100 / range.y : 0;
+  const bounds = { x0: 0, x1: 100, y0: -room.down * perPxY, y1: 100 + room.up * perPxY };
+  lean = { x: clamp(x, bounds.x0, bounds.x1), y: clamp(y, bounds.y0, bounds.y1) };
   const pos = { x: lean.x, y: clamp(lean.y, 0, 100) };
-  // Past the edge, the picture itself moves: up past 100%, down below 0%.
-  const lift = perPx ? -(lean.y - pos.y) / perPx : 0;
+  // Past the picture's edge, the picture itself moves: up past 100%, down below 0%.
+  const lift = perPxY ? -(lean.y - pos.y) / perPxY : 0;
+  // How far the drag pulls past the furthest the view can go (as pixels; the
+  // picture moves the other way to the lean).
+  const give = elastic ? {
+    x: perPxX ? edgeGive(-(x - lean.x) / perPxX) : 0,
+    y: perPxY ? edgeGive(-(y - lean.y) / perPxY) : 0
+  } : { x: 0, y: 0 };
   img.style.objectPosition = `${pos.x}% ${pos.y}%`;
   img.style.transformOrigin = `${pos.x}% ${pos.y}%`;
   img.style.scale = near ? String(LEAN_SCALE) : '';
-  img.style.translate = lift ? `0 ${lift}px` : '';
+  const tx = give.x, ty = lift + give.y;
+  img.style.translate = tx || ty ? `${tx}px ${ty}px` : '';
+}
+
+// Letting go past an edge: spring back to it, quickly, before the slow
+// drift home.
+function springBack(img) {
+  img.classList.add('is-springing');
+  setLean(img, lean.x, lean.y);
+  setTimeout(() => img.classList.remove('is-springing'), 500);
 }
 
 function returnLean(img, delay = LEAN_RETURN_DELAY_MS) {
@@ -262,7 +299,7 @@ function initLeaning() {
       view.setPointerCapture(e.pointerId);
     }
     // Dragging the picture right shows more of its left side, and so on.
-    setLean(img, press.from.x - dx / press.range.x * 100, press.from.y - dy / press.range.y * 100);
+    setLean(img, press.from.x - dx / press.range.x * 100, press.from.y - dy / press.range.y * 100, true, true);
   });
   const release = e => {
     if (!press || e.pointerId !== press.id) return;
@@ -270,6 +307,7 @@ function initLeaning() {
     press = null;
     if (wasLeaning) {
       img.classList.remove('is-leaning');
+      springBack(img);
       returnLean(img);
     } else if (e.type === 'pointerup') {
       toggleWeatherCard();               // a tap on the picture folds the card, as before

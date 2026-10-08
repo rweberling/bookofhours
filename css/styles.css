@@ -1538,8 +1538,22 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-window:active { cursor: grabbing; }
 /* Soft darkening toward the edges — standing inside, looking out. */
 .weather-window::after {
-  content: ''; position: absolute; inset: 0; pointer-events: none;
+  content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 2;
   box-shadow: inset 0 0 160px rgba(0,0,0,0.35);
+}
+/* The haze behind the picture: the same view, blurred and dimmed, which
+   shows wherever the picture is drawn aside (leaning past an edge, or
+   lifting it above the card) and while a new view loads. --haze is set
+   per view in weather.js. Bled past the window so the blur has no edge. */
+.weather-window { overflow: hidden; }
+.weather-window::before {
+  content: ''; position: absolute; inset: -80px; pointer-events: none; z-index: 0;
+  background: var(--haze, none) center / cover no-repeat;
+  filter: blur(36px) brightness(0.6) sepia(25%);
+}
+.weather-window img { position: relative; z-index: 1; }
+.weather-window img.is-springing {
+  transition: opacity 1.4s ease, translate 0.45s cubic-bezier(0.2, 0.9, 0.3, 1);
 }
 
 .weather-spread {
