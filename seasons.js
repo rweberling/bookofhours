@@ -208,8 +208,10 @@ function setSeason(key) {
   if (!Array.isArray(entries) || !entries.length) throw new Error(`No posts assigned to ${key}.`);
   // The emblem at the foot of the page is the season being read, which
   // may not be today's (Wander the Seasons).
+  // (Only a decoration: if it's missing, say from an older cached
+  // shared.js, the reading still opens.)
   const emblem = document.getElementById('season-emblem');
-  if (emblem) emblem.innerHTML = SEASON_EMBLEMS[key];
+  if (emblem && typeof SEASON_EMBLEMS !== 'undefined') emblem.innerHTML = SEASON_EMBLEMS[key] || '';
   season = {
     key,
     label: SEASON_LABELS[key],
