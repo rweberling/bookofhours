@@ -278,6 +278,33 @@ body::before {
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.5s;
 }
 
+/* ── Paratext and thresholds ──────────────────────────────────────
+   The pages around the book share the main sections' three-tier head
+   (a small line above, the title, a subheading) one step quieter:
+   the line above in small capitals, the title a size down, the
+   subheading in italic. About and Sources (.paratext) are apparatus,
+   in plain ink: the accent colour, the hour's rubric, is kept for the
+   book itself. The incipits (.threshold) keep it in their subheading,
+   as a manuscript's incipit is written in red. The page's colours
+   still follow the hour.
+────────────────────────────────────────────────────────────────── */
+.page-kicker {
+  font-family: var(--font-label);
+  font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ink-faint); margin-bottom: 8px;
+  opacity: 0; animation: fadeIn 1.2s ease forwards 0.2s;
+  transition: color 3s ease;
+}
+:is(.paratext, .threshold) .page-title {
+  font-size: clamp(30px, 5vw, 42px); line-height: 1.05;
+}
+:is(.paratext, .threshold) .page-subtitle {
+  font-family: var(--font-reading);
+  font-size: 16px; font-weight: 400; font-style: italic; letter-spacing: 0;
+  color: var(--ink-faint); transition: color 3s ease;
+}
+.threshold .page-subtitle { color: var(--accent); }
+
 /* ── Content ──────────────────────────────────────────────────── */
 .content-block {
   width: 100%; max-width: 640px;
