@@ -123,7 +123,9 @@ function renderWeatherReadout(message) {
   const temperature = reading && typeof reading.temperature === 'number'
     ? `<span class="sep" aria-hidden="true">·</span>${Math.round(reading.temperature)}°`
     : '';
-  el.innerHTML = active.length ? weatherConditionsHTML(active) + temperature : 'The weather is unset';
+  // The season first, then the conditions, set apart by the star.
+  const season = `${SEASON_LABELS[currentSeason()]}<span class="sep season-sep" aria-hidden="true">✦</span>`;
+  el.innerHTML = season + (active.length ? weatherConditionsHTML(active) + temperature : 'the weather is unset');
 }
 
 /* ── Folding the card ─────────────────────────────────────────────
