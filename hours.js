@@ -123,7 +123,7 @@ let lastRenderedSeason = null;
 // render()'s tick already wrote those once, unconditionally, before
 // deciding whether anything else needs updating, so it doesn't pass them
 // again here.
-function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate, afterUpdate } = {}) {
+function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate } = {}) {
   blocksData.forEach(b => {
     if (b.cssClass) document.body.classList.remove(b.cssClass);
   });
@@ -157,7 +157,7 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate, afterU
   }
 
   currentBlockName = block.name;
-  if (typeof afterUpdate === 'function') afterUpdate();
+  syncWanderDial();
 }
 
 function render(blocksData, force) {
@@ -178,6 +178,7 @@ function render(blocksData, force) {
   }
 
   renderWeatherLine();
+  syncWanderDial();   // the real block may have moved on, even mid-hold
 
   if (Date.now() < wanderHoldUntil && !force) return;
   
@@ -554,6 +555,26 @@ function setDialActive(blockName) {
   });
 }
 
+// The dial keeps two layers, as Wander the Seasons does. "Now" — the ✦,
+// the caption, the sky, and the dim .current arc — is always real time.
+// "Where you're reading" — the hand, the bright .active arc and the
+// tile's marker — follows the block on the page, which is the wandered
+// one during the hold and the real one otherwise. Re-synced whenever
+// either could have moved: the pane opening, a hover ending, a block
+// being written to the page, and each tick.
+function syncWanderDial() {
+  const data = blocks || blocksRef;
+  if (!data || !document.querySelector('.dial-arc')) return;
+  const real = blockForHour(data, new Date().getHours());
+  const reading = data.find(b => b.name === currentBlockName) || real;
+  setDialActive(reading.name);
+  setDialHand(reading.startHour + 1.5);
+  document.querySelectorAll('.dial-arc').forEach(el => {
+    el.classList.toggle('current', el.dataset.block === real.name);
+  });
+  updateWanderTileCurrent(reading.name);
+}
+
 function formatBlockHours(startHour) {
   const fmt = h => {
     const ampm = h >= 12 ? 'pm' : 'am';
@@ -566,15 +587,12 @@ function buildWander(blocksData) {
   buildDial(blocksData);
 
   const grid = document.getElementById('wander-grid');
-  const realHour = new Date().getHours();
-  const realBlock = blockForHour(blocksData, realHour);
 
   blocksData.forEach((block, i) => {
     const tile = document.createElement('div');
     tile.className = 'wander-tile';
     tile.dataset.blockName = block.name;
     tile.dataset.startHour = block.startHour;
-    if (block.name === realBlock.name) tile.classList.add('is-current');
 
     tile.innerHTML = `
       <span class="tile-name">${block.name}</span>
@@ -586,11 +604,7 @@ function buildWander(blocksData) {
       setDialActive(block.name);
       setDialHand(block.startHour + 1.5);
     });
-    tile.addEventListener('mouseleave', () => {
-      const cur = blockForHour(blocksData, new Date().getHours());
-      setDialActive(cur.name);
-      setDialHand(cur.startHour + 1.5);
-    });
+    tile.addEventListener('mouseleave', syncWanderDial);
     tile.addEventListener('click', () => {
       selectWanderBlock(block, blocksData);
     });
@@ -598,12 +612,7 @@ function buildWander(blocksData) {
     grid.appendChild(tile);
   });
 
-  const curBlock = blockForHour(blocksData, realHour);
-  setDialActive(curBlock.name);
-  setDialHand(curBlock.startHour + 1.5);
-  document.querySelectorAll('.dial-arc').forEach(el => {
-    if (el.dataset.block === curBlock.name) el.classList.add('current');
-  });
+  syncWanderDial();
 }
 
 function updateWanderTileCurrent(blockName) {
@@ -627,8 +636,7 @@ function renderAtHour(blocksData, overrideHour, useRealTime = false, { toTop = f
   setTimeout(() => {
     applyBlockToDOM(blocksData, block, h, {
       clockTime: formatTime(displayTime),
-      colophonDate: formatDate(now),
-      afterUpdate: () => updateWanderTileCurrent(block.name)
+      colophonDate: formatDate(now)
     });
     if (toTop) window.scrollTo(0, 0);
     veil.classList.remove('active');
@@ -689,7 +697,10 @@ function openWanderPane() {
     onOpen: () => {
       if (typeof updateDialNowDot === 'function') updateDialNowDot();
       if (!document.querySelector('.wander-tile') && blocks) buildWander(blocks);
-      else renderDialSky();   // moon, daylight and caption as of now
+      else {
+        renderDialSky();   // moon, daylight and caption as of now
+        syncWanderDial();
+      }
     }
   });
 }
