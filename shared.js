@@ -115,62 +115,93 @@ function escapeHTML(text) {
 // The season's emblem, a small line drawing (an SVG's inner markup, 24×24):
 // at the foot of the Hours page and of the Seasons page.
 const SEASON_EMBLEMS = {
-  spring: `<path d="M8 20 Q10 13 16 5" stroke="currentColor" stroke-width="0.75" opacity="0.5" fill="none"/>
-           <path d="M10 16 Q8.3 15 7 14" stroke="currentColor" stroke-width="0.55" opacity="0.45" fill="none"/>
-           <path d="M11.7 11.5 Q15 10.8 17 10" stroke="currentColor" stroke-width="0.55" opacity="0.45" fill="none"/>
-           <path d="M14 8 Q12.5 7 11.5 6" stroke="currentColor" stroke-width="0.55" opacity="0.45" fill="none"/>
-           <g transform="translate(7 14) rotate(-55) scale(1.65)">
-             <path d="M0 0 C0.9 -0.6 0.9 -1.8 0 -2.6 C-0.9 -1.8 -0.9 -0.6 0 0 Z" fill="currentColor" opacity="0.45"/>
+  // Spring: a heraldic rose — five petals, small lozenge barbs between them, a washed boss with a point at its heart.
+  spring: `<path transform="translate(12 12) rotate(0)" d="M0 -1.6 C1.9 -2.2 3.4 -4.1 2.5 -6.2 C1.9 -7.6 0.5 -7.3 0 -6.4 C-0.5 -7.3 -1.9 -7.6 -2.5 -6.2 C-3.4 -4.1 -1.9 -2.2 0 -1.6 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.55" stroke-linejoin="round"/>
+           <path transform="translate(12 12) rotate(72)" d="M0 -1.6 C1.9 -2.2 3.4 -4.1 2.5 -6.2 C1.9 -7.6 0.5 -7.3 0 -6.4 C-0.5 -7.3 -1.9 -7.6 -2.5 -6.2 C-3.4 -4.1 -1.9 -2.2 0 -1.6 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.55" stroke-linejoin="round"/>
+           <path transform="translate(12 12) rotate(144)" d="M0 -1.6 C1.9 -2.2 3.4 -4.1 2.5 -6.2 C1.9 -7.6 0.5 -7.3 0 -6.4 C-0.5 -7.3 -1.9 -7.6 -2.5 -6.2 C-3.4 -4.1 -1.9 -2.2 0 -1.6 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.55" stroke-linejoin="round"/>
+           <path transform="translate(12 12) rotate(216)" d="M0 -1.6 C1.9 -2.2 3.4 -4.1 2.5 -6.2 C1.9 -7.6 0.5 -7.3 0 -6.4 C-0.5 -7.3 -1.9 -7.6 -2.5 -6.2 C-3.4 -4.1 -1.9 -2.2 0 -1.6 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.55" stroke-linejoin="round"/>
+           <path transform="translate(12 12) rotate(288)" d="M0 -1.6 C1.9 -2.2 3.4 -4.1 2.5 -6.2 C1.9 -7.6 0.5 -7.3 0 -6.4 C-0.5 -7.3 -1.9 -7.6 -2.5 -6.2 C-3.4 -4.1 -1.9 -2.2 0 -1.6 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.55" stroke-linejoin="round"/>
+           <path transform="translate(16.29 6.09) rotate(36) scale(0.65)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(18.94 14.26) rotate(108) scale(0.65)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(12 19.3) rotate(180) scale(0.65)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(5.06 14.26) rotate(252) scale(0.65)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(7.71 6.09) rotate(324) scale(0.65)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <circle cx="12" cy="12" r="1.75" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38"/>
+           <circle cx="12" cy="12" r="0.45" fill="currentColor"/>`,
+  // Summer: the sun — a washed disc and eight tapered rays, each tipped with a lozenge.
+  summer: `<path d="M11.68 7.41 L12 3.7 L12.32 7.41" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path d="M15.02 8.53 L17.87 6.13 L15.47 8.98" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path d="M16.59 11.68 L20.3 12 L16.59 12.32" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path d="M15.47 15.02 L17.87 17.87 L15.02 15.47" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path d="M12.32 16.59 L12 20.3 L11.68 16.59" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path d="M8.98 15.47 L6.13 17.87 L8.53 15.02" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path d="M7.41 12.32 L3.7 12 L7.41 11.68" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path d="M8.53 8.98 L6.13 6.13 L8.98 8.53" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.38" stroke-linejoin="round"/>
+           <path transform="translate(12 2.7) rotate(0) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(18.58 5.42) rotate(45) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(21.3 12) rotate(90) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(18.58 18.58) rotate(135) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(12 21.3) rotate(180) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(5.42 18.58) rotate(225) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(2.7 12) rotate(270) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(5.42 5.42) rotate(315) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <circle cx="12" cy="12" r="3.6" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.55"/>`,
+  // Autumn: an acorn "slipped and leaved", as heraldry has it — the nut in its scaled cup, on a stalk with a leaf either side.
+  autumn: `<g transform="translate(0 1.1)">
+           <g transform="translate(12 7) rotate(-40) scale(1.1)">
+           <path d="M0 0 C1.5 -1.1 1.7 -3.4 0 -5.2 C-1.7 -3.4 -1.5 -1.1 0 0 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.5" stroke-linejoin="round"/>
+           <path d="M0 -0.3 L0 -4.4" stroke="currentColor" stroke-width="0.29"/>
            </g>
-           <g transform="translate(17 10) rotate(75) scale(1.7)">
-             <path d="M0 0 C0.9 -0.6 0.9 -1.8 0 -2.6 C-0.9 -1.8 -0.9 -0.6 0 0 Z" fill="currentColor" opacity="0.45"/>
+           <g transform="translate(12 7) rotate(40) scale(1.1)">
+           <path d="M0 0 C1.5 -1.1 1.7 -3.4 0 -5.2 C-1.7 -3.4 -1.5 -1.1 0 0 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.5" stroke-linejoin="round"/>
+           <path d="M0 -0.3 L0 -4.4" stroke="currentColor" stroke-width="0.29"/>
            </g>
-           <g transform="translate(11.5 6) rotate(-50) scale(1.4)">
-             <path d="M0 0 C0.9 -0.6 0.9 -1.8 0 -2.6 C-0.9 -1.8 -0.9 -0.6 0 0 Z" fill="currentColor" opacity="0.45"/>
+           <path d="M12 8.6 C12 7.4 12.1 5.6 12.0 3.9" stroke="currentColor" stroke-width="0.55" stroke-linecap="round" fill="none"/>
+           <path transform="translate(12 3.1) rotate(0) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path d="M8.6 12.3 C8.5 15.5 10.3 17.9 12 18.7 C13.7 17.9 15.5 15.5 15.4 12.3 Z" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="0.55" stroke-linejoin="round"/>
+           <path d="M7.7 12.3 C7.5 9.8 9.4 8.4 12 8.4 C14.6 8.4 16.5 9.8 16.3 12.3 C13.4 13.1 10.6 13.1 7.7 12.3 Z" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="0.55" stroke-linejoin="round"/>
+           <clipPath id="acorn-cup">
+           <path d="M7.7 12.3 C7.5 9.8 9.4 8.4 12 8.4 C14.6 8.4 16.5 9.8 16.3 12.3 C13.4 13.1 10.6 13.1 7.7 12.3 Z"/>
+           </clipPath>
+           <g clip-path="url(#acorn-cup)">
+           <path d="M8.60 11.2 Q9.50 10.07 10.40 11.2" stroke="currentColor" stroke-width="0.3" fill="none"/>
+           <path d="M10.40 11.2 Q11.30 10.07 12.20 11.2" stroke="currentColor" stroke-width="0.3" fill="none"/>
+           <path d="M12.20 11.2 Q13.10 10.07 14.00 11.2" stroke="currentColor" stroke-width="0.3" fill="none"/>
+           <path d="M14.00 11.2 Q14.90 10.07 15.80 11.2" stroke="currentColor" stroke-width="0.3" fill="none"/>
+           </g>
            </g>`,
-  summer: `<circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
-           <path d="M12 3.5 L12 6 M12 18 L12 20.5 M3.5 12 L6 12 M18 12 L20.5 12
-                    M5.9 5.9 L7.6 7.6 M16.4 16.4 L18.1 18.1 M5.9 18.1 L7.6 16.4 M16.4 7.6 L18.1 5.9"
-                 stroke="currentColor" stroke-width="0.6" opacity="0.4"/>`,
-  autumn: `<path d="M8 20 Q10 13 16 5" stroke="currentColor" stroke-width="0.75" opacity="0.5" fill="none"/>
-           <path d="M10 16 Q8.3 15 7 14" stroke="currentColor" stroke-width="0.55" opacity="0.35" fill="none"/>
-           <path d="M11.7 11.5 Q15 10.8 17 10" stroke="currentColor" stroke-width="0.55" opacity="0.35" fill="none"/>
-           <path d="M14 8 Q12.5 7 11.5 6" stroke="currentColor" stroke-width="0.55" opacity="0.35" fill="none"/>
-           <g transform="translate(7 14) rotate(-55) scale(1.65)">
-             <path d="M0 0 C0.9 -0.6 0.9 -1.8 0 -2.6 C-0.9 -1.8 -0.9 -0.6 0 0 Z" fill="currentColor" opacity="0.42"/>
-           </g>`,
-  winter: `<g transform="translate(12 12)">
-             <g transform="rotate(0)">
-               <path d="M0 0 L0 -8" stroke="currentColor" stroke-width="0.6" opacity="0.45"/>
-               <path d="M0 -2.8 L-1.3 -3.8 M0 -2.8 L1.3 -3.8" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-               <path d="M0 -5.6 L-1.1 -6.4 M0 -5.6 L1.1 -6.4" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-             </g>
-             <g transform="rotate(60)">
-               <path d="M0 0 L0 -8" stroke="currentColor" stroke-width="0.6" opacity="0.45"/>
-               <path d="M0 -2.8 L-1.3 -3.8 M0 -2.8 L1.3 -3.8" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-               <path d="M0 -5.6 L-1.1 -6.4 M0 -5.6 L1.1 -6.4" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-             </g>
-             <g transform="rotate(120)">
-               <path d="M0 0 L0 -8" stroke="currentColor" stroke-width="0.6" opacity="0.45"/>
-               <path d="M0 -2.8 L-1.3 -3.8 M0 -2.8 L1.3 -3.8" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-               <path d="M0 -5.6 L-1.1 -6.4 M0 -5.6 L1.1 -6.4" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-             </g>
-             <g transform="rotate(180)">
-               <path d="M0 0 L0 -8" stroke="currentColor" stroke-width="0.6" opacity="0.45"/>
-               <path d="M0 -2.8 L-1.3 -3.8 M0 -2.8 L1.3 -3.8" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-               <path d="M0 -5.6 L-1.1 -6.4 M0 -5.6 L1.1 -6.4" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-             </g>
-             <g transform="rotate(240)">
-               <path d="M0 0 L0 -8" stroke="currentColor" stroke-width="0.6" opacity="0.45"/>
-               <path d="M0 -2.8 L-1.3 -3.8 M0 -2.8 L1.3 -3.8" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-               <path d="M0 -5.6 L-1.1 -6.4 M0 -5.6 L1.1 -6.4" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-             </g>
-             <g transform="rotate(300)">
-               <path d="M0 0 L0 -8" stroke="currentColor" stroke-width="0.6" opacity="0.45"/>
-               <path d="M0 -2.8 L-1.3 -3.8 M0 -2.8 L1.3 -3.8" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-               <path d="M0 -5.6 L-1.1 -6.4 M0 -5.6 L1.1 -6.4" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
-             </g>
-           </g>`
+  // Winter: a snow crystal — six arms with paired branches and lozenge tips, meeting at a point.
+  winter: `<g transform="translate(12 12) rotate(0)">
+           <path d="M0 -1.0 L0 -8.1" stroke="currentColor" stroke-width="0.55" stroke-linecap="round"/>
+           <path d="M0 -4.4 L-1.35 -5.4 M0 -4.4 L1.35 -5.4 M0 -6.4 L-0.85 -7.05 M0 -6.4 L0.85 -7.05" stroke="currentColor" stroke-width="0.34" stroke-linecap="round"/>
+           </g>
+           <g transform="translate(12 12) rotate(60)">
+           <path d="M0 -1.0 L0 -8.1" stroke="currentColor" stroke-width="0.55" stroke-linecap="round"/>
+           <path d="M0 -4.4 L-1.35 -5.4 M0 -4.4 L1.35 -5.4 M0 -6.4 L-0.85 -7.05 M0 -6.4 L0.85 -7.05" stroke="currentColor" stroke-width="0.34" stroke-linecap="round"/>
+           </g>
+           <g transform="translate(12 12) rotate(120)">
+           <path d="M0 -1.0 L0 -8.1" stroke="currentColor" stroke-width="0.55" stroke-linecap="round"/>
+           <path d="M0 -4.4 L-1.35 -5.4 M0 -4.4 L1.35 -5.4 M0 -6.4 L-0.85 -7.05 M0 -6.4 L0.85 -7.05" stroke="currentColor" stroke-width="0.34" stroke-linecap="round"/>
+           </g>
+           <g transform="translate(12 12) rotate(180)">
+           <path d="M0 -1.0 L0 -8.1" stroke="currentColor" stroke-width="0.55" stroke-linecap="round"/>
+           <path d="M0 -4.4 L-1.35 -5.4 M0 -4.4 L1.35 -5.4 M0 -6.4 L-0.85 -7.05 M0 -6.4 L0.85 -7.05" stroke="currentColor" stroke-width="0.34" stroke-linecap="round"/>
+           </g>
+           <g transform="translate(12 12) rotate(240)">
+           <path d="M0 -1.0 L0 -8.1" stroke="currentColor" stroke-width="0.55" stroke-linecap="round"/>
+           <path d="M0 -4.4 L-1.35 -5.4 M0 -4.4 L1.35 -5.4 M0 -6.4 L-0.85 -7.05 M0 -6.4 L0.85 -7.05" stroke="currentColor" stroke-width="0.34" stroke-linecap="round"/>
+           </g>
+           <g transform="translate(12 12) rotate(300)">
+           <path d="M0 -1.0 L0 -8.1" stroke="currentColor" stroke-width="0.55" stroke-linecap="round"/>
+           <path d="M0 -4.4 L-1.35 -5.4 M0 -4.4 L1.35 -5.4 M0 -6.4 L-0.85 -7.05 M0 -6.4 L0.85 -7.05" stroke="currentColor" stroke-width="0.34" stroke-linecap="round"/>
+           </g>
+           <path transform="translate(12 3.05) rotate(0) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(19.75 7.53) rotate(60) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(19.75 16.47) rotate(120) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(12 20.95) rotate(180) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(4.25 16.48) rotate(240) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <path transform="translate(4.25 7.53) rotate(300) scale(0.6)" d="M0 -0.85 L0.55 0 L0 0.85 L-0.55 0 Z" fill="currentColor"/>
+           <circle cx="12" cy="12" r="0.55" fill="currentColor"/>`
 };
 
 // --- Web copies of images -------------------------------------------------
