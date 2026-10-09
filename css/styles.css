@@ -1446,11 +1446,13 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .turning-point rect, .turning-point circle { fill: currentColor; }
 .turning-point-quarter { opacity: 0.75; }
 .turning-point-cross { opacity: 0.5; }
+/* Size comes from seasons.js (smaller for cross-quarters), which also
+   offsets each curved baseline, so it stays alphabetic here. */
 .turning-point-label {
   font-family: var(--font-text);
-  font-size: 7.4px; font-style: italic; letter-spacing: 0.04em;
+  font-style: italic; letter-spacing: 0.04em;
   fill: currentColor;
-  text-anchor: middle; dominant-baseline: middle;
+  text-anchor: middle; dominant-baseline: alphabetic;
 }
 .season-now {
   font-size: 9px; fill: var(--ink); opacity: 0.8;

@@ -247,11 +247,16 @@ function turnSeasonPage() {
 // further out than the Hours dial's watch names (122 vs 110): they're
 // larger and unrotated, and need clear space off the arc and its ticks.
 const SEASON_R_LABEL = 122;
-const SEASON_R_TICK = 100, SEASON_R_TICK_INNER = 96;   // month ticks, as the Hours dial's
-// Solstice/equinox/cross-quarter marks sit just inside the ring, each
-// directly beside its name.
-const SEASON_R_MARK = 76;
-const SEASON_R_INNER_LABEL = 68;
+// Ticks start just clear of the band's outer edge (95, or 96.5 when the
+// arc is active and widens to 17); the four season ticks run longer.
+const SEASON_R_TICK_INNER = 98, SEASON_R_TICK = 101, SEASON_R_TICK_SEASON = 104;
+// The quadrant axes stop short of the band's inner edge rather than
+// cutting across it; the season ticks carry them on outside.
+const SEASON_R_AXIS = R_ARC - 10;
+// Solstice/equinox/cross-quarter marks sit inside the ring with room to
+// spare off the active arc, each name curving along the ring inside it.
+const SEASON_R_MARK = 74;
+const SEASON_R_INNER_LABEL = 64.5;
 
 // Quadrant order matches clock position: spring NE, summer NW,
 // autumn SW mirrored to sit opposite spring, winter SE — arranged
@@ -293,9 +298,13 @@ function dialYearOf(date) {
   return date.getMonth() >= 2 ? date.getFullYear() : date.getFullYear() - 1;
 }
 
+// Each season fills exactly its quadrant (they run 90–92 days), so
+// 1 Jun/Sep/Dec land on the quadrant lines rather than a degree or so off.
 function dialDeg(date, dialYear) {
-  const start = new Date(dialYear, 2, 1), end = new Date(dialYear + 1, 2, 1);
-  return -90 + ((date - start) / (end - start)) * 360;
+  const starts = [0, 1, 2, 3, 4].map(i => new Date(dialYear, 2 + 3 * i, 1));
+  let q = 3;
+  while (q > 0 && date < starts[q]) q--;
+  return -90 + 90 * (q + (date - starts[q]) / (starts[q + 1] - starts[q]));
 }
 
 // Every marker falling within one dial year, in order.
@@ -355,14 +364,14 @@ function buildSeasonDial() {
   svg.appendChild(bgRing);
 
   const line1 = document.createElementNS(svgNS, 'line');
-  line1.setAttribute('x1', CX); line1.setAttribute('y1', CY - R_ARC - 14);
-  line1.setAttribute('x2', CX); line1.setAttribute('y2', CY + R_ARC + 14);
+  line1.setAttribute('x1', CX); line1.setAttribute('y1', CY - SEASON_R_AXIS);
+  line1.setAttribute('x2', CX); line1.setAttribute('y2', CY + SEASON_R_AXIS);
   line1.setAttribute('stroke', 'currentColor'); line1.setAttribute('stroke-width', '0.5'); line1.setAttribute('opacity', '0.15');
   svg.appendChild(line1);
 
   const line2 = document.createElementNS(svgNS, 'line');
-  line2.setAttribute('x1', CX - R_ARC - 14); line2.setAttribute('y1', CY);
-  line2.setAttribute('x2', CX + R_ARC + 14); line2.setAttribute('y2', CY);
+  line2.setAttribute('x1', CX - SEASON_R_AXIS); line2.setAttribute('y1', CY);
+  line2.setAttribute('x2', CX + SEASON_R_AXIS); line2.setAttribute('y2', CY);
   line2.setAttribute('stroke', 'currentColor'); line2.setAttribute('stroke-width', '0.5'); line2.setAttribute('opacity', '0.15');
   svg.appendChild(line2);
 
@@ -387,28 +396,32 @@ function buildSeasonDial() {
   });
 
   // Month ticks, like the Hours dial's hour ticks; the four that start a
-  // season (1 Mar/Jun/Sep/Dec) sit on the quadrant lines, a little longer.
+  // season (1 Mar/Jun/Sep/Dec) carry the quadrant lines on past the band.
   const now = new Date();
   const year = dialYearOf(now);
   for (let m = 0; m < 12; m++) {
     const deg = dialDeg(new Date(year, 2 + m, 1), year);
     const isSeason = m % 3 === 0;
-    const p1 = polarToXY(deg, isSeason ? SEASON_R_TICK_INNER - 2 : SEASON_R_TICK_INNER + 1);
-    const p2 = polarToXY(deg, isSeason ? SEASON_R_TICK + 2 : SEASON_R_TICK);
+    const p1 = polarToXY(deg, SEASON_R_TICK_INNER);
+    const p2 = polarToXY(deg, isSeason ? SEASON_R_TICK_SEASON : SEASON_R_TICK);
     const tick = document.createElementNS(svgNS, 'line');
     tick.setAttribute('x1', p1.x); tick.setAttribute('y1', p1.y);
     tick.setAttribute('x2', p2.x); tick.setAttribute('y2', p2.y);
     tick.setAttribute('stroke', 'currentColor');
-    tick.setAttribute('stroke-width', isSeason ? '1' : '0.5');
-    tick.setAttribute('opacity', isSeason ? '0.3' : '0.14');
+    tick.setAttribute('stroke-width', isSeason ? '0.75' : '0.5');
+    tick.setAttribute('stroke-linecap', 'round');
+    tick.setAttribute('opacity', isSeason ? '0.3' : '0.18');
     svg.appendChild(tick);
   }
 
   // Solstices, equinoxes and cross-quarters: a mark just inside the arc
-  // with its name beside it, clear of the season names outside. The ring
-  // says only "Equinox"/"Solstice" — its quadrant already names the
-  // season — while the hover title keeps the full name and date.
-  turningPoints(year).forEach(point => {
+  // with its name curving along the ring inside it, clear of the season
+  // names outside. The ring says only "Equinox"/"Solstice" — its quadrant
+  // already names the season — while the hover title keeps the full name
+  // and date.
+  const defs = document.createElementNS(svgNS, 'defs');
+  svg.appendChild(defs);
+  turningPoints(year).forEach((point, i) => {
     const deg = dialDeg(point.date, year);
     const g = document.createElementNS(svgNS, 'g');
     g.setAttribute('class', `turning-point turning-point-${point.kind}`);
@@ -420,22 +433,37 @@ function buildSeasonDial() {
     const m = polarToXY(deg, SEASON_R_MARK);
     const mark = document.createElementNS(svgNS, point.kind === 'quarter' ? 'rect' : 'circle');
     if (point.kind === 'quarter') {
-      mark.setAttribute('x', m.x - 2.2); mark.setAttribute('y', m.y - 2.2);
-      mark.setAttribute('width', 4.4); mark.setAttribute('height', 4.4);
-      mark.setAttribute('transform', `rotate(45, ${m.x}, ${m.y})`);
+      mark.setAttribute('x', m.x - 1.9); mark.setAttribute('y', m.y - 1.9);
+      mark.setAttribute('width', 3.8); mark.setAttribute('height', 3.8);
+      mark.setAttribute('transform', `rotate(${deg + 45}, ${m.x}, ${m.y})`);
     } else {
-      mark.setAttribute('cx', m.x); mark.setAttribute('cy', m.y); mark.setAttribute('r', 1.6);
+      mark.setAttribute('cx', m.x); mark.setAttribute('cy', m.y); mark.setAttribute('r', 1.4);
     }
     g.appendChild(mark);
 
-    // Names read along the ring, turned upright on the lower half.
-    const lp = polarToXY(deg, SEASON_R_INNER_LABEL);
-    const upright = deg > 0 && deg < 180;
+    // Names follow the ring on a textPath: clockwise on the upper half
+    // (letters' tops outward), counter-clockwise on the lower so they
+    // stay upright (tops inward). The baseline is offset by a third of
+    // the font size either way so the letters, not the baseline, sit
+    // centred on SEASON_R_INNER_LABEL.
+    const lower = deg > 0 && deg < 180;
+    const fontSize = point.kind === 'cross' ? 6.8 : 7.4;
+    const r = SEASON_R_INNER_LABEL + (lower ? 1 : -1) * fontSize / 3;
+    const a = polarToXY(lower ? deg + 60 : deg - 60, r);
+    const b = polarToXY(lower ? deg - 60 : deg + 60, r);
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('id', `turning-point-path-${i}`);
+    path.setAttribute('d', `M ${a.x} ${a.y} A ${r} ${r} 0 0 ${lower ? 0 : 1} ${b.x} ${b.y}`);
+    defs.appendChild(path);
+
     const text = document.createElementNS(svgNS, 'text');
-    text.setAttribute('x', lp.x); text.setAttribute('y', lp.y);
     text.setAttribute('class', 'turning-point-label');
-    text.setAttribute('transform', `rotate(${upright ? deg - 90 : deg + 90}, ${lp.x}, ${lp.y})`);
-    text.textContent = point.kind === 'cross' ? 'Cross-Quarter' : point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
+    text.setAttribute('font-size', fontSize);
+    const textPath = document.createElementNS(svgNS, 'textPath');
+    textPath.setAttribute('href', `#turning-point-path-${i}`);
+    textPath.setAttribute('startOffset', '50%');
+    textPath.textContent = point.kind === 'cross' ? 'Cross-Quarter' : point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
+    text.appendChild(textPath);
     g.appendChild(text);
     svg.appendChild(g);
   });
@@ -479,7 +507,9 @@ const SEASON_SPECIES = Object.fromEntries(
 );
 
 // The grid always shows all four seasons stacked (see .species-grid in
-// css/styles.css). Built once per page load.
+// css/styles.css), starting from the season it is now and running on
+// through the year — in October: autumn, winter, spring, summer. Built
+// once per page load.
 let speciesGridBuilt = false;
 async function buildSpeciesGrid() {
   if (speciesGridBuilt) return;
@@ -494,7 +524,9 @@ async function buildSpeciesGrid() {
     console.error(error);
   }
 
-  SEASON_KEYS.forEach(key => {
+  const first = SEASON_KEYS.indexOf(currentSeason());
+  const yearFromNow = [...SEASON_KEYS.slice(first), ...SEASON_KEYS.slice(0, first)];
+  yearFromNow.forEach(key => {
     const group = document.createElement('section');
     group.className = 'species-season-section';
     group.dataset.season = key;
