@@ -298,7 +298,40 @@ function hourToAngleDeg(h) {
   return h * 15 - 90;
 }
 
+// A label set along the ring at angle deg and radius r, as the Seasons
+// dial's turning points are: clockwise on the upper half (tops outward),
+// counter-clockwise on the lower so it stays upright. Its arc goes into
+// defs; the baseline is offset by a third of the font size so the
+// letters, not the baseline, sit centred on r.
+function ringText(defs, id, deg, r, fontSize, words) {
+  const lower = deg > 0 && deg < 180;
+  const rr = r + (lower ? 1 : -1) * fontSize / 3;
+  const a = polarToXY(lower ? deg + 60 : deg - 60, rr);
+  const b = polarToXY(lower ? deg - 60 : deg + 60, rr);
+  const path = document.createElementNS(svgNS, 'path');
+  path.setAttribute('id', id);
+  path.setAttribute('d', `M ${a.x} ${a.y} A ${rr} ${rr} 0 0 ${lower ? 0 : 1} ${b.x} ${b.y}`);
+  defs.appendChild(path);
+  const text = document.createElementNS(svgNS, 'text');
+  const textPath = document.createElementNS(svgNS, 'textPath');
+  textPath.setAttribute('href', `#${id}`);
+  textPath.setAttribute('startOffset', '50%');
+  textPath.textContent = words;
+  text.appendChild(textPath);
+  return text;
+}
+
 // polarToXY() / arcPath() / svgNS live in shared.js too.
+
+// The dial's own defs, for the label arcs (made on first use).
+function dialDefs(svg) {
+  let defs = svg.querySelector(':scope > defs');
+  if (!defs) {
+    defs = document.createElementNS(svgNS, 'defs');
+    svg.insertBefore(defs, svg.firstChild);
+  }
+  return defs;
+}
 
 function buildDial(blocksData) {
   const svg = document.getElementById('wander-dial');
@@ -337,18 +370,12 @@ function buildDial(blocksData) {
     path.setAttribute('data-block', block.name);
     svg.insertBefore(path, document.getElementById('dial-hand'));
 
+    // Curved along the ring, turned upright on the lower half — as the
+    // seasons dial's turning points and the sunrise/sunset labels are.
     const midAngle = hourToAngleDeg(block.startHour + 1.5);
-    const lp = polarToXY(midAngle, R_LABEL);
-    const text = document.createElementNS(svgNS, 'text');
-    text.setAttribute('x', lp.x);
-    text.setAttribute('y', lp.y);
+    const text = ringText(dialDefs(svg), `dial-label-path-${i}`, midAngle, R_LABEL, 9, block.name.toUpperCase());
     text.setAttribute('class', 'dial-label');
     text.setAttribute('data-block', block.name);
-    // Read along the ring, turned upright on the lower half — as the
-    // seasons dial and the sunrise/sunset labels do.
-    const upright = midAngle > 0 && midAngle < 180;
-    text.setAttribute('transform', `rotate(${upright ? midAngle - 90 : midAngle + 90}, ${lp.x}, ${lp.y})`);
-    text.textContent = block.name.toUpperCase();
     svg.insertBefore(text, document.getElementById('dial-hand'));
   });
 
@@ -452,6 +479,8 @@ function renderDialSky() {
   sky.setAttribute('id', 'dial-sky');
 
   const sun = window.siteAtmosphere && window.siteAtmosphere.sun;
+  const skyDefs = document.createElementNS(svgNS, 'defs');
+  sky.appendChild(skyDefs);
   if (sun) {
     const set = hoursOf(sun.sunset), rise = hoursOf(sun.sunrise) + 24;
     const TWILIGHT = 0.5;
@@ -477,14 +506,10 @@ function renderDialSky() {
       mark.setAttribute('x2', b.x); mark.setAttribute('y2', b.y);
       mark.setAttribute('class', 'dial-sun-mark');
       sky.appendChild(mark);
-      // Set along the ring, turned upright on the lower half.
-      const lp = polarToXY(deg, R_SUN_LABEL);
-      const upright = deg > 0 && deg < 180;
-      const text = document.createElementNS(svgNS, 'text');
-      text.setAttribute('x', lp.x); text.setAttribute('y', lp.y);
+      // Curved along the ring, turned upright on the lower half. Its arc
+      // lives in the sky group's own defs, so it goes when the sky is redrawn.
+      const text = ringText(skyDefs, `dial-sun-path-${word}`, deg, R_SUN_LABEL, 7.4, `${word} ${formatTime(time)}`);
       text.setAttribute('class', 'dial-sun-label');
-      text.setAttribute('transform', `rotate(${upright ? deg - 90 : deg + 90}, ${lp.x}, ${lp.y})`);
-      text.textContent = `${word} ${formatTime(time)}`;
       sky.appendChild(text);
     });
   }

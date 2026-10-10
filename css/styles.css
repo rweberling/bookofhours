@@ -1369,6 +1369,9 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   text-anchor: middle;
   dominant-baseline: middle;
 }
+/* The Hours dial's labels follow the ring on a textPath (ringText() in
+   hours.js), which positions them from the alphabetic baseline. */
+.dial-label { dominant-baseline: alphabetic; }
 .dial-label { font-size: 9px; font-style: italic; }
 .dial-label.active,
 .season-label.active { opacity: 1; fill: var(--ink); }
@@ -1474,7 +1477,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   font-family: var(--font-text);
   font-size: 7.4px; font-style: italic; letter-spacing: 0.04em;
   fill: var(--ink-faint);
-  text-anchor: middle; dominant-baseline: middle;
+  text-anchor: middle; dominant-baseline: alphabetic;
 }
 .wander-dial-caption,
 .season-dial-caption {
