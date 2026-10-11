@@ -12,7 +12,7 @@ Include on every page after the nav HTML.
    That's the only change either way: sign-in itself (dfos-siwd.js)
    stays in place, so turning the gate back on is this one word.
 ────────────────────────────────────────────────────────────────── */
-let DFOS_GATE = false;
+let DFOS_GATE = true;
 
 // Preview: ?gate=preview on any page turns the gate on in this browser
 // only, to try sign-in before everyone gets it; ?gate=off turns it back
