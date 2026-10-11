@@ -28,8 +28,8 @@ if (localStorage.getItem(GATE_PREVIEW_KEY)) DFOS_GATE = true;
 })();
 
 // Where the lock sends signed-in visitors who aren't key holders yet:
-// the paid subgroup's page in the DFOS space.
-const KEY_HOLDER_URL = 'https://otherwise.dfos.com';
+// the "Support the Project" item, whose purchase joins the Wanderers.
+const KEY_HOLDER_URL = 'https://otherwise.dfos.com/p/earthlyhours';
 
 function registerDropup(triggerId, menuId) {
 const trigger = document.getElementById(triggerId);
