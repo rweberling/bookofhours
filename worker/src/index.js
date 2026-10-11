@@ -29,7 +29,11 @@ import { createApiAuthFetch } from '@metalabel/dfos-client/api-auth';
 import { decodeDFOSCredentialUnsafe } from '@metalabel/dfos-protocol/credentials';
 
 const NONCE_TTL_MS = 10 * 60 * 1000;            // a sign-in must finish within 10 minutes
-const RECHECK_MS = 6 * 60 * 60 * 1000;          // re-ask DFOS about the group at most every 6 hours
+// How often to re-ask DFOS about the group: rarely for key holders, but
+// soon for everyone else, so someone who has just joined comes back to
+// find the choosers open.
+const RECHECK_MS = 6 * 60 * 60 * 1000;
+const RECHECK_OUTSIDER_MS = 2 * 60 * 1000;
 const TOKEN_TTL_MS = 60 * 24 * 60 * 60 * 1000;  // after 60 days unseen, sign in again
 
 export default {
@@ -114,7 +118,7 @@ async function session(env, { token }) {
 
   let keyHolder = grant.key_holder === 1;
   let checkedAt = grant.checked_at;
-  if (Date.now() - checkedAt > RECHECK_MS) {
+  if (Date.now() - checkedAt > (keyHolder ? RECHECK_MS : RECHECK_OUTSIDER_MS)) {
     let answer;
     try {
       answer = await checkKeyHolder(env, grant.credential);
