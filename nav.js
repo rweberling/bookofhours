@@ -4,6 +4,15 @@ nav.js — Shared navigation for Horae Terrenae
 Include on every page after the nav HTML.
 ════════════════════════════════════════════════════════════════ */
 
+/* ── DFOS gate switch ─────────────────────────────────────────────
+   true:  Wander the Hours, Seasons and Weather ask visitors to sign in
+          with DFOS first (the menus read "Sign in to wander").
+   false: every Wander pane opens for everyone, with its plain label.
+   That's the only change either way: sign-in itself (dfos-siwd.js)
+   stays in place, so turning the gate back on is this one word.
+────────────────────────────────────────────────────────────────── */
+const DFOS_GATE = true;
+
 function registerDropup(triggerId, menuId) {
 const trigger = document.getElementById(triggerId);
 const menu = document.getElementById(menuId);
@@ -61,6 +70,7 @@ projectsMenu.addEventListener('click', e => e.stopPropagation());
    earlier, a signed-in visitor looks signed out.
 ────────────────────────────────────────────────────────────────── */
 function requireDfosSignIn(intent, onUnavailable) {
+if (!DFOS_GATE) return true;
 if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) return true;
 const unavailable = typeof onUnavailable === 'function' ? onUnavailable : showDfosGateError;
 if (typeof window.dfosBeginSignIn === 'function') {
@@ -79,7 +89,8 @@ return false;
    when the button is clicked.
 ────────────────────────────────────────────────────────────────── */
 function updateDfosGatedButtons() {
-const signedIn = typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn();
+const signedIn = !DFOS_GATE
+  || (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn());
 document.querySelectorAll('.dfos-gated').forEach(btn => {
 btn.textContent = signedIn ? btn.dataset.gatedLabel : 'Sign in to wander';
 btn.classList.toggle('is-locked', !signedIn);
