@@ -3,3 +3,6 @@ docs/
 
 # macOS Finder files
 .DS_Store
+
+# Python bytecode cache (from running scripts/)
+__pycache__/
