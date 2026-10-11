@@ -1,0 +1,16 @@
+{
+  "name": "earthlyhours-auth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "@metalabel/dfos-client": "0.54.0",
+    "@metalabel/dfos-protocol": "0.54.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

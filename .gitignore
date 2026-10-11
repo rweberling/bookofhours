@@ -6,3 +6,8 @@ docs/
 
 # Python bytecode cache (from running scripts/)
 __pycache__/
+
+# The auth Worker's install, local state and local secrets
+worker/node_modules/
+worker/.wrangler/
+worker/.dev.vars
