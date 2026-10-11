@@ -52,9 +52,20 @@ Sign in once as a member of the subgroup, find its `group_…` id there,
 put it in `KEY_HOLDER_GROUP`, and redeploy. Then
 `DROP TABLE setup_groups`.
 
+## Binding the identity to the domain
+
+DFOS's consent screen shows whether the app identity is bound to
+earthlyhours.com. Two halves make the binding:
+
+- **The identity claims the domain.** Its chain carries a `DfosOrigin`
+  entry, added by `node scripts/bind-origin.mjs <identity file> earthlyhours.com`.
+- **The domain claims the identity.** That's `../.well-known/dfos-did`,
+  plus `client_did` in `dfos-app.json`.
+
 ## Rotating the app identity
 
 `node scripts/mint-app-identity.mjs <file outside the repo>` mints a new
-one. Put its public half in `dfos-app.json` and `APP_IDENTITY`, its
+one, and `scripts/bind-origin.mjs` binds it to the domain. Put its public
+half in `dfos-app.json`, `dfos-did` and `APP_IDENTITY`, its
 private key in `APP_PRIVATE_KEY`, and redeploy. Visitors sign in again,
 because their grants were issued to the old identity.
