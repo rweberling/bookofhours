@@ -1082,8 +1082,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu a:hover,
 .nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
 
-.nav-hours-menu .wander-btn.is-locked { font-style: italic; }
-.nav-hours-menu .wander-btn.is-locked:hover { color: var(--gold); }
 
 /* The Reading Room: the DFOS space embed. Anchored to the trigger's right
    edge, since it sits at the right of the bar and is wider than the
@@ -1654,6 +1652,12 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
    alternative; the instruction's usual gap moves below the button. */
 .wander-pane .wander-subheading:has(+ .weather-pane-look) { margin-bottom: 10px; }
 .wander-pane .weather-pane-look { margin: 0 0 30px; }
+
+/* With the DFOS gate on, a pane's grid waits behind this until the
+   visitor signs in (syncWanderLock in nav.js); the dial above it
+   stays open to everyone. */
+.wander-pane .wander-lock { font-style: italic; margin: 0 0 30px; }
+.wander-pane [hidden] { display: none !important; }
 
 /* ── The Weather page (weather.html) ─────────────────────────────
    The whole page is the window: one image fills the viewport behind

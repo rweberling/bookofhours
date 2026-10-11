@@ -361,8 +361,11 @@ function syncWeatherPaneCopy() {
   const subheading = document.getElementById('weather-pane-subheading');
   if (!subheading) return;
   clearTimeout(paneNoticeTimeout);
-  subheading.textContent = stationReading()
-    ? 'As read outside your window, or choose otherwise'
+  const measured = Boolean(stationReading());
+  // Without the tiles (DFOS gate on, signed out), there's nothing to choose.
+  subheading.textContent = !dfosMayWander()
+    ? (measured ? 'As read outside your window' : 'Look outside to read the weather here')
+    : measured ? 'As read outside your window, or choose otherwise'
     : 'Choose the condition outside your window';
 }
 
@@ -669,25 +672,15 @@ function buildWeatherGrid() {
   syncWeatherTiles();
 }
 
+// Open to everyone, station model and "Look outside" included; with
+// the DFOS gate on, choosing conditions by hand (the tiles) waits for
+// sign-in (nav.js).
 function openWeatherPane() {
   const pane = document.getElementById('weather-pane');
   buildWeatherGrid();
+  syncWanderLock(document.getElementById('weather-grid'), 'weather');
+  syncWeatherPaneCopy();
   openOverlayPane(pane);
-}
-
-/* ── DFOS gate ────────────────────────────────────────────────────
-   Choosing a condition by hand (Wander the Weather) is gated, via
-   requireDfosSignIn() in nav.js; looking outside (The Current
-   Weather) isn't.
-────────────────────────────────────────────────────────────────── */
-function openWanderWeather() {
-  // Say so on the card, not just on the menu's (closed) Wander button:
-  // arriving from another page's #wander link, the card is what's in view.
-  const unavailable = () => {
-    renderWeatherReadout('Sign-in is unavailable; try again soon');
-    setTimeout(() => renderWeatherReadout(), 5000);
-  };
-  if (requireDfosSignIn('weather', unavailable)) openWeatherPane();
 }
 
 window.addEventListener('dfossignin', e => {
@@ -834,7 +827,7 @@ function lookOutside(btn) {
 function openWanderWeatherIfHashed() {
   if (window.location.hash !== '#wander') return;
   history.replaceState(null, '', window.location.pathname);
-  openWanderWeather();
+  openWeatherPane();
 }
 
 // Toggling several tiles in a row shouldn't load a new image per click —
@@ -865,9 +858,9 @@ async function initWeatherPage() {
   window.addEventListener('hashchange', openWanderWeatherIfHashed);
   // On this page the menu's Wander item is a button (see nav.js).
   const wanderButton = document.getElementById('weather-wander-open');
-  if (wanderButton) wanderButton.addEventListener('click', openWanderWeather);
+  if (wanderButton) wanderButton.addEventListener('click', openWeatherPane);
   // So is the card's conditions line: the full reading is in the pane.
-  document.getElementById('weather-readout').addEventListener('click', openWanderWeather);
+  document.getElementById('weather-readout').addEventListener('click', openWeatherPane);
 
   try {
     const oracle = weatherView(await loadCollection());

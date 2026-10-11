@@ -6,7 +6,7 @@
    Picking a card swaps the reading in place and closes the pane.
 
    Expects shared.js (season data, pick helpers, dial geometry,
-   loadLectioData) and nav.js (requireDfosSignIn, closeOverlayPane).
+   loadLectioData) and nav.js (syncWanderLock, openOverlayPane).
 ══════════════════════════════════════════════════════════════ */
 
 // SEASON_LABELS, SEASON_KEYS and SEASON_MONTH_RANGES come from shared.js.
@@ -619,11 +619,10 @@ function openSeasonPane() {
     : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[key]}`;
   setSeasonDialActive(key);
   buildSpeciesGrid();
+  // Open to everyone; with the DFOS gate on, the species cards wait
+  // for sign-in (nav.js).
+  syncWanderLock(document.getElementById('species-grid'), 'season');
   openOverlayPane(pane);
-}
-
-function openWanderSeasons() {
-  if (requireDfosSignIn('season')) openSeasonPane();
 }
 
 // Name kept distinct from nav.js's openWanderIfHashed() (the Hours
@@ -631,7 +630,7 @@ function openWanderSeasons() {
 function openWanderSeasonsIfHashed() {
   if (window.location.hash !== '#wander') return;
   history.replaceState(null, '', window.location.pathname + window.location.search);
-  openWanderSeasons();
+  openSeasonPane();
 }
 
 window.addEventListener('dfossignin', e => {
@@ -649,9 +648,9 @@ async function initialiseSeason() {
   window.addEventListener('hashchange', openWanderSeasonsIfHashed);
   // On this page the menu's Wander item is a button (see nav.js).
   const wanderButton = document.getElementById('season-wander-open');
-  if (wanderButton) wanderButton.addEventListener('click', openWanderSeasons);
+  if (wanderButton) wanderButton.addEventListener('click', openSeasonPane);
   // So is the season's name over the reading, whose dial it opens on.
-  document.getElementById('season-reading-subtitle').addEventListener('click', openWanderSeasons);
+  document.getElementById('season-reading-subtitle').addEventListener('click', openSeasonPane);
 
   try {
     const data = await loadLectioData();
