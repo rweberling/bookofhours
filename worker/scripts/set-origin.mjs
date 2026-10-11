@@ -1,10 +1,16 @@
-// Binds the site's DFOS app identity to its domain: appends an identity
-// `update` carrying a DfosOrigin service entry (INTEGRATIONS.md, Origin
-// binding), so DFOS's consent screen can show the app as bound to the
-// domain rather than unbound. The domain's half is already there:
-// /.well-known/dfos-app.json names the identity as client_did.
+// Sets which domain the site's DFOS app identity claims — or none:
+// appends an identity `update` whose services carry a DfosOrigin entry
+// for <domain>, or no DfosOrigin entry at all for `none`
+// (INTEGRATIONS.md, Origin binding).
 //
-//   node scripts/bind-origin.mjs <identity-file> <domain>
+//   node scripts/set-origin.mjs <identity-file> <domain | none>
+//
+// A claim is only half a binding: the domain has to attest this identity
+// back (/.well-known/dfos-did, or a _dfos TXT record), and a domain
+// attests exactly one identity. earthlyhours.com attests the DFOS
+// *space* (did:dfos:7z2fk4vkkd63ta424z2n639v6tan2ev), so the app
+// identity claims no domain — claiming earthlyhours.com too would only
+// make its binding read as broken.
 //
 // <identity-file> is the mint script's output (it holds the private key —
 // keep it out of the repository). It's rewritten with the longer chain;
@@ -16,7 +22,7 @@ import { restoreSiwdClientIdentity } from '@metalabel/dfos-client/siwd';
 
 const [file, domain] = process.argv.slice(2);
 if (!file || !domain || !/^[a-z0-9.-]+$/.test(domain)) {
-  console.error('usage: node scripts/bind-origin.mjs <identity-file> <bare lowercase domain>');
+  console.error('usage: node scripts/set-origin.mjs <identity-file> <bare lowercase domain | none>');
   process.exit(1);
 }
 
@@ -27,7 +33,10 @@ const head = decodeJwsUnsafe(saved.chain[saved.chain.length - 1]);
 
 // The keys stay as declared; only the services change.
 const keys = role => (state.declared || state)[role].map(({ id, type, publicKeyMultibase }) => ({ id, type, publicKeyMultibase }));
-const services = [...(state.services || []).filter(s => s.type !== 'DfosOrigin'), { id: 'origin', type: 'DfosOrigin', domain }];
+const services = [
+  ...(state.services || []).filter(s => s.type !== 'DfosOrigin'),
+  ...(domain === 'none' ? [] : [{ id: 'origin', type: 'DfosOrigin', domain }])
+];
 const operation = {
   version: 1,
   type: 'update',
@@ -43,7 +52,7 @@ const chain = [...saved.chain, jwsToken];
 
 const verified = await verifyIdentityChain({ didPrefix: 'did:dfos', log: chain });
 if (verified.did !== app.did) throw new Error('the chain no longer derives the same DID');
-console.error('bound:', JSON.stringify(verified.services));
+console.error('services now:', JSON.stringify(verified.services));
 
 writeFileSync(file, JSON.stringify({ ...saved, chain }, null, 2) + '\n', { mode: 0o600 });
 console.log(JSON.stringify(chain));

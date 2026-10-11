@@ -52,20 +52,23 @@ Sign in once as a member of the subgroup, find its `group_…` id there,
 put it in `KEY_HOLDER_GROUP`, and redeploy. Then
 `DROP TABLE setup_groups`.
 
-## Binding the identity to the domain
+## earthlyhours.com belongs to the DFOS space
 
-DFOS's consent screen shows whether the app identity is bound to
-earthlyhours.com. Two halves make the binding:
+A domain vouches for exactly one DFOS identity. earthlyhours.com vouches
+for the **space**, `did:dfos:7z2fk4vkkd63ta424z2n639v6tan2ev`, through
+both `../.well-known/dfos-did` and the DNS TXT record at
+`_dfos.earthlyhours.com`. Both must name the space, or DFOS reads the
+domain as having changed hands and drops the space's verification.
 
-- **The identity claims the domain.** Its chain carries a `DfosOrigin`
-  entry, added by `node scripts/bind-origin.mjs <identity file> earthlyhours.com`.
-- **The domain claims the identity.** That's `../.well-known/dfos-did`,
-  plus `client_did` in `dfos-app.json`.
+So the app identity claims no domain. `scripts/set-origin.mjs <identity
+file> none` is how it was cleared. DFOS's sign-in screen therefore shows
+the app as not bound to a domain. That's expected and doesn't affect
+sign-in. Don't point `dfos-did` at the app identity. While `dfos-did`
+answers, the `client_did` in `dfos-app.json` doesn't count as a vouch.
 
 ## Rotating the app identity
 
 `node scripts/mint-app-identity.mjs <file outside the repo>` mints a new
-one, and `scripts/bind-origin.mjs` binds it to the domain. Put its public
-half in `dfos-app.json`, `dfos-did` and `APP_IDENTITY`, its
+one. Put its public half in `dfos-app.json` and `APP_IDENTITY`, its
 private key in `APP_PRIVATE_KEY`, and redeploy. Visitors sign in again,
 because their grants were issued to the old identity.
