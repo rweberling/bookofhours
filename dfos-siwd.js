@@ -35,7 +35,8 @@ const SIWD_MODULE_URL = `https://cdn.jsdelivr.net/npm/@metalabel/dfos-client@${D
 
 const SESSION_KEY = 'earthly-hours-dfos-session';  // localStorage: { did, keyHolder, token, checkedAt }
 const FLIGHT_KEY = 'earthly-hours-dfos-flight';    // sessionStorage, one round trip: { intent, returnTo }
-const RECHECK_MS = 6 * 60 * 60 * 1000;             // matches the Worker's
+const RECHECK_MS = 6 * 60 * 60 * 1000;             // key holders; matches the Worker's
+const RECHECK_OUTSIDER_MS = 60 * 1000;             // everyone else: soon, in case they've just joined
 
 // Sign-ins from before key holders (identity only) carry nothing to
 // check; drop them.
@@ -146,10 +147,19 @@ async function handleCallback() {
   return true;
 }
 
-// Now and then, ask the Worker whether this is still a key holder.
+// Now and then, ask the Worker whether this is still a key holder — or,
+// for someone signed in without a key, whether they hold one yet. Also
+// called by nav.js whenever a locked pane opens.
+let refreshing = null;
+window.dfosRefreshSession = function () {
+  return refreshing || (refreshing = refreshSession().finally(() => { refreshing = null; }));
+};
+
 async function refreshSession() {
   const session = readSession();
-  if (!session || Date.now() - (session.checkedAt || 0) < RECHECK_MS) return;
+  if (!session) return;
+  const due = session.keyHolder ? RECHECK_MS : RECHECK_OUTSIDER_MS;
+  if (Date.now() - (session.checkedAt || 0) < due) return;
   try {
     const answer = await callWorker('/session', { token: session.token });
     if (answer.signedIn === false) {
@@ -164,4 +174,4 @@ async function refreshSession() {
   }
 }
 
-handleCallback().then(handled => { if (!handled) refreshSession(); });
+handleCallback().then(handled => { if (!handled) window.dfosRefreshSession(); });

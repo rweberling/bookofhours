@@ -140,6 +140,9 @@ const open = dfosMayWander();
 gridEl.hidden = !open;
 lock.hidden = open;
 lock.textContent = dfosSignedIn() ? 'Hold a key to wander' : 'Sign in to wander';
+// Signed in without a key: ask again (dfos-siwd.js keeps this to once a
+// minute); a key found since unlocks the pane through 'dfossignin'.
+if (!open && dfosSignedIn() && typeof window.dfosRefreshSession === 'function') window.dfosRefreshSession();
 }
 
 // Signing in or out, or a key gained or lost, re-locks or unlocks any
