@@ -88,16 +88,9 @@ return false;
    page's own script (hours.js, seasons.js, weather.js) opens its pane
    when the button is clicked.
 ────────────────────────────────────────────────────────────────── */
-// Whether the Wander panes are open to this visitor right now, without
-// starting a sign-in (requireDfosSignIn above does that). Same timing
-// caveat: only after DOMContentLoaded.
-function dfosMayWander() {
-return !DFOS_GATE
-  || (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn());
-}
-
 function updateDfosGatedButtons() {
-const signedIn = dfosMayWander();
+const signedIn = !DFOS_GATE
+  || (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn());
 document.querySelectorAll('.dfos-gated').forEach(btn => {
 btn.textContent = signedIn ? btn.dataset.gatedLabel : 'Sign in to wander';
 btn.classList.toggle('is-locked', !signedIn);

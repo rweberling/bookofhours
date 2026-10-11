@@ -740,6 +740,9 @@ function openWanderPane() {
 
 const wanderOpenBtn = document.getElementById('wander-open');
 if (wanderOpenBtn) wanderOpenBtn.addEventListener('click', openWanderPane);
+// So is the hour's name over the reading: the dial is the hour at large.
+const blockNameBtn = document.getElementById('block-name');
+if (blockNameBtn) blockNameBtn.addEventListener('click', openWanderPane);
 
 window.addEventListener('dfossignin', e => {
   const intent = e.detail && e.detail.intent;

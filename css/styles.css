@@ -1650,7 +1650,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   background: var(--bg-deep);
   color: var(--ink);
 }
-/* "Or look outside" sits right under the pane's instruction, as its
+/* "Look outside" sits right under the pane's instruction, as its
    alternative; the instruction's usual gap moves below the button. */
 .wander-pane .wander-subheading:has(+ .weather-pane-look) { margin-bottom: 10px; }
 .wander-pane .weather-pane-look { margin: 0 0 30px; }
@@ -1891,6 +1891,18 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 }
 .page-action:hover { color: var(--accent); }
 a.page-action { text-decoration: none; }
+
+/* A card's heading that opens its section's pane — the hour's name
+   (Wander the Hours), the season's (Wander the Seasons), the weather's
+   conditions line (the station model). Looks like the heading it is
+   until hovered. */
+.pane-link {
+  background: none; border: none; cursor: pointer;
+  font: inherit; color: inherit; letter-spacing: inherit; text-align: inherit;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+.pane-link:hover, .pane-link:focus-visible { color: var(--accent); }
 
 /* An incipit with no subtitle: keep the subtitle's gap under the title. */
 .page-title + .content-block { margin-top: 22px; }

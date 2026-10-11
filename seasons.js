@@ -650,6 +650,8 @@ async function initialiseSeason() {
   // On this page the menu's Wander item is a button (see nav.js).
   const wanderButton = document.getElementById('season-wander-open');
   if (wanderButton) wanderButton.addEventListener('click', openWanderSeasons);
+  // So is the season's name over the reading, whose dial it opens on.
+  document.getElementById('season-reading-subtitle').addEventListener('click', openWanderSeasons);
 
   try {
     const data = await loadLectioData();
