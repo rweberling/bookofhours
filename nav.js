@@ -11,7 +11,7 @@ Include on every page after the nav HTML.
    That's the only change either way: sign-in itself (dfos-siwd.js)
    stays in place, so turning the gate back on is this one word.
 ────────────────────────────────────────────────────────────────── */
-const DFOS_GATE = true;
+const DFOS_GATE = false;
 
 function registerDropup(triggerId, menuId) {
 const trigger = document.getElementById(triggerId);
