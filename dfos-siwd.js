@@ -22,7 +22,7 @@
    choosers, not who can technically reach this public site's files. */
 
 // The Worker (worker/wrangler.jsonc), as deployed.
-const AUTH_URL = 'https://earthlyhours-auth.REPLACE-ME.workers.dev';
+const AUTH_URL = 'https://earthlyhours-auth.earthlyhours-com.workers.dev';
 
 // Pinned to an exact version, not a loose "latest" resolve — an
 // unpinned CDN import means a bad or compromised release on the

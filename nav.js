@@ -12,7 +12,20 @@ Include on every page after the nav HTML.
    That's the only change either way: sign-in itself (dfos-siwd.js)
    stays in place, so turning the gate back on is this one word.
 ────────────────────────────────────────────────────────────────── */
-const DFOS_GATE = false;
+let DFOS_GATE = false;
+
+// Preview: ?gate=preview on any page turns the gate on in this browser
+// only, to try sign-in before everyone gets it; ?gate=off turns it back
+// off. Remembered in localStorage across the round trip to DFOS.
+(() => {
+const GATE_PREVIEW_KEY = 'earthly-hours-gate-preview';
+try {
+const asked = new URLSearchParams(location.search).get('gate');
+if (asked === 'preview') localStorage.setItem(GATE_PREVIEW_KEY, '1');
+if (asked === 'off') localStorage.removeItem(GATE_PREVIEW_KEY);
+if (localStorage.getItem(GATE_PREVIEW_KEY)) DFOS_GATE = true;
+} catch (error) {}
+})();
 
 // Where the lock sends signed-in visitors who aren't key holders yet:
 // the paid subgroup's page in the DFOS space.
