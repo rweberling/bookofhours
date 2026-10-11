@@ -100,7 +100,8 @@
  </div>
 
  <p class="block-subtitle" id="block-subtitle"></p>
- <h1 class="block-name" id="block-name"></h1>
+ <h1 class="block-name"><button class="pane-link" id="block-name" type="button" aria-describedby="block-name-hint"></button></h1>
+ <span class="visually-hidden" id="block-name-hint">Open Wander the Hours</span>
 
  <div class="hour-line">
  <span class="hour-name" id="hour-name"></span>
@@ -171,7 +172,7 @@
     <div class="nav-hours-menu" id="nav-hours-menu">
       <a href="hours-incipit.html">Incipit</a>
       <a class="active" href="index.html">The Current Hour</a>
-      <button class="wander-btn dfos-gated" id="wander-open" data-gated-label="Wander the Hours">Wander the Hours</button>
+      <button class="wander-btn" id="wander-open">Wander the Hours</button>
     </div>
   </div>
   <span class="nav-divider">✦</span>
@@ -214,10 +215,10 @@
  <!-- ═══════════════════════════════════════════════
  WANDER THE HOURS PANE
 ════════════════════════════════════════════════ -->
-<div class="wander-pane" id="wander-pane" role="dialog" aria-label="Wander the Hours" aria-modal="true">
+<div class="wander-pane" id="wander-pane" role="dialog" aria-label="The Hours" aria-modal="true">
  <button class="wander-close" id="wander-close" aria-label="Close">✦ &nbsp;Close</button>
 
- <p class="wander-heading">Wander the Hours</p>
+ <p class="wander-heading">The Hours</p>
  <p class="wander-subheading">Each day is divided into eight watches</p>
 
  <div class="wander-dial-wrap" aria-hidden="true">

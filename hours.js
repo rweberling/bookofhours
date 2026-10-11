@@ -697,49 +697,40 @@ keepPageBtn.addEventListener('click', () => {
   window.print();
 });
 
-/* ── Overlay pane opener ──────────────────────────────────────────
-   Wander the Hours opens through this — display, fade-in,
-   build-if-needed, on-open callback. No auth check here; the DFOS
-   check lives one level up, in openWanderPane() below.
-   (Wander the Seasons and Wander the Weather live on their own pages,
-   seasons.html and weather.html.)
+/* ── Wander the Hours: the pane ───────────────────────────────────
+   Every way in (the menu's Wander button, the hour's name over the
+   reading, the #wander deep-link other pages use) comes through here.
+   The pane opens for everyone; with the DFOS gate on, only its grid
+   of blocks waits for sign-in (syncWanderLock in nav.js, shared with
+   seasons.js and weather.js).
 ────────────────────────────────────────────────────────────────── */
-function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
-  if (!paneEl) return;
-  openOverlayPane(paneEl);
-  if (typeof ensureBuilt === 'function') ensureBuilt();
-  if (typeof onOpen === 'function') onOpen();
-}
-
-// Checking here instead of per-caller means every path in (the menu's
-// Wander button, and the #wander hash deep-link other pages link to) is
-// gated for free, with nothing to remember to wrap. The sign-in check,
-// and the button's "Sign in to wander" label, live in nav.js, shared
-// with seasons.js and weather.js.
 function openWanderPane() {
-  if (!requireDfosSignIn('wander')) return;
-  openGatedPane(document.getElementById('wander-pane'), {
-    onOpen: () => {
-      if (typeof updateDialNowDot === 'function') updateDialNowDot();
-      if (!document.querySelector('.wander-tile') && blocks) buildWander(blocks);
-      else {
-        renderDialSky();   // moon, daylight and caption as of now
-        syncWanderDial();
-      }
-    }
-  });
+  const pane = document.getElementById('wander-pane');
+  if (!pane) return;
+  openOverlayPane(pane);
+  if (typeof updateDialNowDot === 'function') updateDialNowDot();
+  if (!document.querySelector('.wander-tile') && blocks) buildWander(blocks);
+  else {
+    renderDialSky();   // moon, daylight and caption as of now
+    syncWanderDial();
+  }
+  syncWanderLock(document.getElementById('wander-grid'), 'wander');
 }
 
 /* ══════════════════════════════════════════════════════════════
    THE DFOS GATE
-   Cosmetic only — see dfos-siwd.js. Locks Wander the Hours behind
-   Sign In With DFOS (scope=identity: proves *a* DFOS identity, nothing
-   about this project specifically). Wander the Seasons and Wander the
-   Weather are gated the same way, from seasons.js and weather.js.
+   Cosmetic only — see dfos-siwd.js. With DFOS_GATE on (nav.js),
+   picking a block in Wander the Hours waits for Sign In With DFOS
+   (scope=identity: proves *a* DFOS identity, nothing about this
+   project specifically); the pane and its dial don't. Wander the
+   Seasons and Wander the Weather are gated the same way.
 ══════════════════════════════════════════════════════════════ */
 
 const wanderOpenBtn = document.getElementById('wander-open');
 if (wanderOpenBtn) wanderOpenBtn.addEventListener('click', openWanderPane);
+// So is the hour's name over the reading: the dial is the hour at large.
+const blockNameBtn = document.getElementById('block-name');
+if (blockNameBtn) blockNameBtn.addEventListener('click', openWanderPane);
 
 window.addEventListener('dfossignin', e => {
   const intent = e.detail && e.detail.intent;

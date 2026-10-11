@@ -1,0 +1,32 @@
+// earthlyhours-auth — see src/index.js. Deploy from this folder:
+//   npm install && npx wrangler deploy
+// Secrets (never in this file — the repository is served publicly):
+//   npx wrangler secret put APP_PRIVATE_KEY   (from the mint script's output file)
+//   npx wrangler secret put SESSION_SECRET    (any long random string)
+{
+  "name": "earthlyhours-auth",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "d1_databases": [
+    { "binding": "DB", "database_name": "earthlyhours-auth", "database_id": "1e31b50d-88de-459d-911e-f084c471f96d" }
+  ],
+  "vars": {
+    // The site, as DFOS sees it: the challenge's domain and the one
+    // redirect_uri listed in /.well-known/dfos-app.json.
+    "SITE_DOMAIN": "earthlyhours.com",
+    "REDIRECT_URI": "https://earthlyhours.com/",
+    // Pages allowed to call this Worker (comma-separated).
+    "ALLOWED_ORIGINS": "https://earthlyhours.com",
+    "AUTHORIZE_URL": "https://app.dfos.com/authorize",
+    "RELAY_URL": "https://relay.dfos.com",
+    "API_BASE": "https://api.dfos.com/v1",
+    // The paid subgroup (group_…). Empty: nobody is a key holder yet, and
+    // sign-ins record their groups in D1's setup_groups to find the id.
+    "KEY_HOLDER_GROUP": "",
+    // The site's app identity, public half (did + chain, as in
+    // dfos-app.json). Its private key is the APP_PRIVATE_KEY secret.
+    "APP_IDENTITY": "{\"did\":\"did:dfos:c8f8fcztnrvnftrz6anfc489nck6d7e\",\"chain\":[\"eyJhbGciOiJFZERTQSIsInR5cCI6ImRpZDpkZm9zOmlkZW50aXR5LW9wIiwia2lkIjoia2V5X2FkN25kN2RoZGRoa25kcmRoZDJyZXJmOXpyazhjejQiLCJjaWQiOiJiYWZ5cmVpYnNqNnhydmJ0eHEyNXFwN2pnNHlxbXBpamlibHFmdnhjNWQzb2NxNW5kNHBqNGV0M2JmaSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiY3JlYXRlIiwiYXV0aEtleXMiOlt7ImlkIjoia2V5X2FkN25kN2RoZGRoa25kcmRoZDJyZXJmOXpyazhjejQiLCJ0eXBlIjoiTXVsdGlrZXkiLCJwdWJsaWNLZXlNdWx0aWJhc2UiOiJ6Nk1rb2pXNUh3Nkh0ZE5HRHJNb0VGZGZVdEh6UmR6RkF1dUpoanpGUnpXaERFWVoifV0sImFzc2VydEtleXMiOlt7ImlkIjoia2V5X2FkN25kN2RoZGRoa25kcmRoZDJyZXJmOXpyazhjejQiLCJ0eXBlIjoiTXVsdGlrZXkiLCJwdWJsaWNLZXlNdWx0aWJhc2UiOiJ6Nk1rb2pXNUh3Nkh0ZE5HRHJNb0VGZGZVdEh6UmR6RkF1dUpoanpGUnpXaERFWVoifV0sImNvbnRyb2xsZXJLZXlzIjpbeyJpZCI6ImtleV9hZDduZDdkaGRkaGtuZHJkaGQycmVyZjl6cms4Y3o0IiwidHlwZSI6Ik11bHRpa2V5IiwicHVibGljS2V5TXVsdGliYXNlIjoiejZNa29qVzVIdzZIdGROR0RyTW9FRmRmVXRIelJkekZBdXVKaGp6RlJ6V2hERVlaIn1dLCJjcmVhdGVkQXQiOiIyMDI2LTEwLTExVDE0OjUyOjA5LjAwMFoifQ.ZPZJV2TlyLJh9Lv0rQI7CKYa-YYXqLzgkCMKMM1V19WFWCx-6fi7FQ_SHORmK05InCpF3JvmhlA1SZ262bD4BQ\"]}"
+  }
+}

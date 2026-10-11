@@ -87,8 +87,7 @@ def adjust_nav(nav, page):
     if page in WANDER:
         label, button_id = WANDER[page]
         link = f'<a href="{page}#wander">{label}</a>'
-        button = (f'<button class="wander-btn dfos-gated" id="{button_id}" '
-                  f'data-gated-label="{label}">{label}</button>')
+        button = f'<button class="wander-btn" id="{button_id}">{label}</button>'
         assert link in nav, f'partials/nav.html has no {link}'
         nav = nav.replace(link, button)
     return nav

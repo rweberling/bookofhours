@@ -48,7 +48,8 @@
  <button class="weather-fold" id="weather-fold" type="button" aria-expanded="true" aria-controls="weather-card-body" aria-label="Fold the card down to the image credit"></button>
  <div class="weather-card-body" id="weather-card-body">
  <p class="publication-name">The Earthly Book of Hours</p>
- <p class="weather-readout" id="weather-readout"></p>
+ <p class="weather-readout"><button class="pane-link" id="weather-readout" type="button" aria-describedby="weather-readout-hint"></button></p>
+ <span class="visually-hidden" id="weather-readout-hint">Open the full reading</span>
 
  <div class="weather-reading" id="weather-reading">
  <p class="weather-quote-text" id="weather-quote-text"></p>
@@ -98,7 +99,7 @@
     <div class="nav-hours-menu" id="nav-weather-menu">
       <a href="weather-incipit.html">Incipit</a>
       <a class="active" href="weather.html">The Current Weather</a>
-      <button class="wander-btn dfos-gated" id="weather-wander-open" data-gated-label="Wander the Weather">Wander the Weather</button>
+      <button class="wander-btn" id="weather-wander-open">Wander the Weather</button>
     </div>
   </div>
   <span class="nav-divider">✦</span>
@@ -126,8 +127,8 @@
  <button class="wander-close" id="weather-close" aria-label="Close">✦ &nbsp;Close</button>
 
  <p class="wander-heading">The Weather</p>
- <p class="wander-subheading">Choose the condition outside your window</p>
- <button class="wander-btn weather-pane-look" id="weather-pane-look" type="button">Or look outside</button>
+ <p class="wander-subheading" id="weather-pane-subheading">Choose the condition outside your window</p>
+ <button class="wander-btn weather-pane-look" id="weather-pane-look" type="button">Look outside</button>
 
  <div class="station-model-wrap" aria-hidden="true">
  <svg id="station-model" viewBox="22 6 196 190" xmlns="http://www.w3.org/2000/svg"></svg>

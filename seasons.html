@@ -67,7 +67,8 @@
 <main class="page keepsake-frame season-reading">
   <p class="publication-name">The Earthly Book of Hours</p>
   <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
-  <p class="block-subtitle" id="season-reading-subtitle"></p>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint"></button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
   <h1 class="block-name" id="season-reading-title">The Current Season</h1>
   <div class="season-reading-meta"><em id="season-reading-latin"></em></div>
   <article class="season-post" aria-live="polite">
@@ -94,7 +95,7 @@
     <div class="nav-hours-menu" id="nav-seasons-menu">
       <a href="seasons-incipit.html">Incipit</a>
       <a class="active" href="seasons.html">The Current Season</a>
-      <button class="wander-btn dfos-gated" id="season-wander-open" data-gated-label="Wander the Seasons">Wander the Seasons</button>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
     </div>
   </div>
   <span class="nav-divider">✦</span>
@@ -123,7 +124,7 @@
   </div>
 </nav>
 <!-- /shared:nav -->
-<div class="wander-pane" id="season-pane" role="dialog" aria-label="Wander the Seasons" aria-modal="true">
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
   <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
   <p class="wander-heading">The Seasons</p>
   <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
