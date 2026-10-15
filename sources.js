@@ -162,20 +162,28 @@ function buildSources(collection, lectio) {
   const hoursById = Object.fromEntries(vocab.hours.map(h => [h.id, h]));
   const rows = weatherRows(vocab);
 
-  // Cross-references between the Hours and the Weather.
+  // Each piece is listed once, where it's shown (its shownIn); its other
+  // tags are noted beneath it.
+  const seasonNote = record => {
+    const seasons = tagsOf(record, 'seasons').map(id => SEASON_LABELS[id]).filter(Boolean);
+    return seasons.length ? [`Seasons: ${listWords(seasons)}`] : [];
+  };
   const notesInHours = record => {
     const tags = tagsOf(record, 'weather');
-    const row = weatherRowOf(record, rows);
-    return row ? [`Also under the Weather: ${row.name} (${listWords(tags)})`] : [];
+    return [...(tags.length ? [`Conditions: ${listWords(tags)}`] : []), ...seasonNote(record)];
   };
   const notesInWeather = record => {
     const notes = [];
     const tags = tagsOf(record, 'weather');
     if (tags.length) notes.push(`Conditions: ${listWords(tags)}`);
     const hours = tagsOf(record, 'hours').map(id => hoursById[id] && hoursById[id].label).filter(Boolean);
-    if (hours.length) notes.push(`Also under the Hours: ${listWords(hours)}`);
-    return notes;
+    if (hours.length) notes.push(`Hours: ${listWords(hours)}`);
+    return [...notes, ...seasonNote(record)];
   };
+  const inHours = readings.filter(r => r.shownIn === 'hours');
+  const inHoursImages = images.filter(i => i.shownIn === 'hours');
+  const inWeather = readings.filter(r => r.shownIn === 'weather');
+  const inWeatherImages = images.filter(i => i.shownIn === 'weather');
 
   let html = contentsHTML(vocab.hours, rows, SEASON_KEYS);
 
@@ -184,18 +192,18 @@ function buildSources(collection, lectio) {
   vocab.hours.forEach(hour => {
     const tagged = r => tagsOf(r, 'hours').includes(hour.id);
     html += sectionHTML(`hours-${hour.id}`, hour.label, hour.subtitle,
-      readings.filter(tagged), images.filter(tagged), notesInHours, site);
+      inHours.filter(tagged), inHoursImages.filter(tagged), notesInHours, site);
   });
 
   // The Weather
   html += partHeaderHTML('weather', 'The Weather',
     'The readings and images for the weather, arranged by the rows of the weather picker. A piece tagged with several conditions is listed once, under the first row they belong to.');
   html += sectionHTML('weather-all', 'All Weather', 'Shown before any condition is chosen',
-    readings.filter(isWeatherUnset), images.filter(isWeatherUnset), notesInWeather, site);
+    inWeather.filter(isWeatherUnset), inWeatherImages.filter(isWeatherUnset), notesInWeather, site);
   rows.forEach(row => {
     const inRow = r => !isWeatherUnset(r) && weatherRowOf(r, rows) === row;
     html += sectionHTML(row.id, row.name, row.conditions.map(c => c.label).join(' · '),
-      readings.filter(inRow), images.filter(inRow), notesInWeather, site);
+      inWeather.filter(inRow), inWeatherImages.filter(inRow), notesInWeather, site);
   });
 
   // The Seasons

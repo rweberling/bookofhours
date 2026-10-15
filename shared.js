@@ -281,7 +281,25 @@ function weatherMatchWeight(item, weather) {
   return WEATHER_BASE_WEIGHT + weatherMatchCount(item, weather) ** 2;
 }
 
-// Shared by hours.js (quotes/images) and weather.js (window views).
+// The season leans the Hours the same gentle way: a piece tagged with
+// the season it is now is three times as likely, one with no season tag
+// is neutral (it belongs to the whole year), and one tagged only with
+// other seasons is a third as likely, never excluded, so a thinly
+// stocked hour never runs dry.
+const SEASON_MATCH_FACTOR = 3;
+function seasonFactor(item, season) {
+  if (!Array.isArray(item.seasons) || item.seasons.length === 0) return 1;
+  return item.seasons.includes(season) ? SEASON_MATCH_FACTOR : 1 / SEASON_MATCH_FACTOR;
+}
+
+// hours.js's picks: weather and season both lean the odds.
+function pickHoursAware(items, excludeFn) {
+  const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
+  const season = currentSeason();
+  return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather) * seasonFactor(item, season), excludeFn);
+}
+
+// weather.js's window views (and any page that leans on weather alone).
 function pickWeatherAware(items, excludeFn) {
   const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
   if (!weather.length) return pickExcluding(items, excludeFn);
@@ -427,6 +445,7 @@ function quoteView(reading) {
     text: reading.text,
     attr: reading.citation ? reading.citation.display : '',
     weather: (reading.tags && reading.tags.weather) || [],
+    seasons: (reading.tags && reading.tags.seasons) || [],
     unset: !!(reading.display && reading.display.weatherUnset)
   };
 }
@@ -438,13 +457,22 @@ function imageView(image) {
     src: image.file,
     caption: image.caption || '',
     weather: (image.tags && image.tags.weather) || [],
+    seasons: (image.tags && image.tags.seasons) || [],
     cardPosition: display.cardPosition,
     unset: !!display.weatherUnset
   };
 }
 
+// Where a reading or image appears on the site is its "shownIn": the
+// Hours, the Weather or the Seasons, one only. Its tags only describe it
+// (its hours, seasons, weather, species), so tagging a piece never moves it.
+function shownIn(record, place) {
+  return record.shownIn === place;
+}
+
 // The hours page's blocks, in vocabulary order: each watch with its
-// versicle and phenomena, and every reading and image tagged for it.
+// versicle and phenomena, and every reading and image shown in the Hours
+// and tagged for that watch.
 function hoursView(collection) {
   return collection.vocab.hours.map(hour => {
     const note = collection.editorial.find(e => e.kind === 'hour-note' && e.about && (e.about.hours || []).includes(hour.id)) || {};
@@ -456,17 +484,16 @@ function hoursView(collection) {
       subtitle: hour.subtitle,
       versicle: note.versicle || '',
       phenomena: note.phenomena || [],
-      quotes: collection.readings.filter(r => taggedWith(r, 'hours', hour.id)).map(quoteView),
-      images: collection.images.filter(i => taggedWith(i, 'hours', hour.id)).map(imageView)
+      quotes: collection.readings.filter(r => shownIn(r, 'hours') && taggedWith(r, 'hours', hour.id)).map(quoteView),
+      images: collection.images.filter(i => shownIn(i, 'hours') && taggedWith(i, 'hours', hour.id)).map(imageView)
     };
   });
 }
 
-// The weather page's window: every image and reading tagged with a
-// condition, plus the "unset" ones shown before any condition is chosen.
+// The weather page's window: every image and reading shown in the
+// Weather, including the "unset" ones shown before any condition is chosen.
 function weatherView(collection) {
-  const onWeatherPage = record => ((record.tags && record.tags.weather) || []).length > 0
-    || !!(record.display && record.display.weatherUnset);
+  const onWeatherPage = record => shownIn(record, 'weather');
   return {
     images: collection.images.filter(onWeatherPage).map(imageView),
     readings: collection.readings.filter(onWeatherPage).map(quoteView)

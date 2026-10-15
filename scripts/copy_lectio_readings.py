@@ -14,9 +14,9 @@ from the last r- ID, with:
             stanzas by <br><br>, as in the other readings
   citation  display: the citation as the post gives it
   lectio    the post it appears in (its lt- ID) and its place there
+  shownIn   seasons: the Seasons page shows it, inside its post
   tags      the post's season, and its subject (the sp- or ph- record
-            the post names as "subject"); no hours or weather, so the
-            Hours and Weather pages never show it
+            the post names as "subject")
 
 The post itself is unchanged: the Seasons page still shows it whole.
 
@@ -137,6 +137,7 @@ def main():
                 continue
             record = {
                 'id': f'r-{next_number:04d}',
+                'shownIn': 'seasons',
                 'text': text,
                 'citation': {'display': citation},
                 'lectio': {'post': post['id'], 'place': place},

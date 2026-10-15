@@ -66,6 +66,8 @@ ID_FORMS = {
     'ed': re.compile(r'^ed-[a-z0-9-]+$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
     'sp': re.compile(r'^sp-\d{4}$'), 'ph': re.compile(r'^ph-\d{4}$'),
 }
+# Where a reading or image can be shown on the site.
+SHOWN_IN = ('hours', 'weather', 'seasons')
 # A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
 SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
 
@@ -173,6 +175,20 @@ def main():
                     errors.append(f'{rid}: "{v}" is not in the {scheme} vocabulary')
     for rec in readings + images:
         check_tags(rec['id'], rec.get('tags'))
+
+    # Each reading and image is shown in one place on the site, and has
+    # what that place needs: an hour to be shown at, a weather condition
+    # (or the unset view), or the Lectio Terra post it comes from.
+    for rec in readings + images:
+        rid, place, tags = rec['id'], rec.get('shownIn'), rec.get('tags') or {}
+        if place not in SHOWN_IN:
+            errors.append(f'{rid}: shownIn is {place!r}; it must be one of {", ".join(SHOWN_IN)}')
+        elif place == 'hours' and not tags.get('hours'):
+            errors.append(f'{rid}: shown in the Hours, but tagged with no hour to show it at')
+        elif place == 'weather' and not (tags.get('weather') or (rec.get('display') or {}).get('weatherUnset')):
+            errors.append(f'{rid}: shown in the Weather, but tagged with no condition (or display.weatherUnset)')
+        elif place == 'seasons' and not rec.get('lectio'):
+            errors.append(f'{rid}: shown in the Seasons, but not from a Lectio Terra post ("lectio")')
     for rec in editorial:
         check_tags(rec['id'], rec.get('about'))
 

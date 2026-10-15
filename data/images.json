@@ -2,6 +2,7 @@
   {
     "id": "i-0001",
     "aliases": ["i-cook-geometrical-psychology-or-the"],
+    "shownIn": "hours",
     "file": "images/void_betts.jpg",
     "caption": "Louisa S. Cook, <a href=\"https://archive.org/details/geometricalpsych00cook/geometricalpsych00cook\" target=\"_blank\"><em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em></a> (1887)",
     "bibliography": "Cook, Louisa S. <em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em>. George Redway, 1887.",
@@ -28,6 +29,7 @@
   {
     "id": "i-0002",
     "aliases": ["i-allais-ronde-de-pochards-dans"],
+    "shownIn": "hours",
     "file": "images/void_allais.jpg",
     "caption": "Alphonse Allais, \"<a href=\"https://en.wikipedia.org/wiki/File:Ronde_de_pochards_dans_le_brouillard.jpg\" target=\"_blank\">Ronde de pochards dans le brouillard [Dance of drunks in the fog]</a>,\" from <a href=\"https://publicdomainreview.org/collection/alphonse-allais-april-fools-album/\" target=\"_blank\"><em>Album primo-avrilesque</em></a> (1897)",
     "bibliography": "Allais, Alphonse. \"Ronde de pochards dans le brouillard.\" <em>Album primo-avrilesque</em>, 1897.",
@@ -60,6 +62,7 @@
   {
     "id": "i-0003",
     "aliases": ["i-smithsonian-the-1900-solar-eclipse"],
+    "shownIn": "hours",
     "file": "images/void_smithsonian.jpg",
     "caption": "The Smithsonian Institution, <a href=\"https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich/page/n71/mode/2up\" target=\"_blank\"><em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em></a> (1900/1904)",
     "bibliography": "Smithsonian Institution. <em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em>. Smithsonian Institution, 1904.",
@@ -91,6 +94,7 @@
   {
     "id": "i-0004",
     "aliases": ["i-redon-the-eye-like-a"],
+    "shownIn": "hours",
     "file": "images/void_redon.jpg",
     "caption": "Odilon Redon, <a href=\"https://collections.lacma.org/object/75354\" target=\"_blank\"><em>The Eye, Like a Strange Balloon, Mounts toward Infinity</em></a> (1882)",
     "bibliography": "Redon, Odilon. <em>The Eye, Like a Strange Balloon, Mounts toward Infinity</em>. 1882, Los Angeles County Museum of Art, Los Angeles.",
@@ -112,6 +116,7 @@
   {
     "id": "i-0005",
     "aliases": ["i-bentley-snow-crystal"],
+    "shownIn": "weather",
     "file": "images/hush_bentley2.jpg",
     "caption": "Wilson Alwyn Bentley, <a href=\"https://www.metmuseum.org/art/collection/search/286768\" target=\"_blank\"><em>[Snow Crystal]</em></a> (c. 1910)",
     "bibliography": "Bentley, Wilson Alwyn. <em>[Snow Crystal]</em>. c. 1910, The Metropolitan Museum of Art, New York.",
@@ -138,6 +143,7 @@
   {
     "id": "i-0006",
     "aliases": ["i-lockyer-superposition-of-two-wave"],
+    "shownIn": "hours",
     "file": "images/hush_lockyer1.jpg",
     "caption": "J. Norman Lockyer, \"Superposition of Two Wave-Systems,\" from <a href=\"https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/June_1878/Water-Waves_and_Sound-Waves\" target=\"_blank\"><em>Water-Waves and Sound-Waves</em></a> (1878)",
     "bibliography": "Lockyer, J. Norman. \"Superposition of Two Wave-Systems.\" \"Water-Waves and Sound-Waves,\" <em>Popular Science Monthly</em>, vol. 13, June 1878.",
@@ -163,6 +169,7 @@
   {
     "id": "i-0007",
     "aliases": ["i-whistler-nocturne-blue-and-silver"],
+    "shownIn": "weather",
     "file": "images/hush_whistler.jpg",
     "caption": "James McNeill Whistler, <a href=\"https://www.gardnermuseum.org/experience/collection/10900\" target=\"_blank\"><em>Nocturne, Blue and Silver: Battersea Reach</em></a> (c. 1872-1878)",
     "bibliography": "Whistler, James McNeill. <em>Nocturne, Blue and Silver: Battersea Reach</em>. c. 1872–1878, Isabella Stewart Gardner Museum, Boston.",
@@ -189,6 +196,7 @@
   {
     "id": "i-0008",
     "aliases": ["i-steichen-moonlight-the-pond"],
+    "shownIn": "hours",
     "file": "images/hush_steichen.jpg",
     "caption": "Edward Steichen, <a href=\"https://repository.library.brown.edu/viewers/readers/set/bdr:565092/0/#page/15/mode/1up\" target=\"_blank\"><em>Moonlight: The Pond</em></a> (1904/1906)",
     "bibliography": "Steichen, Edward. <em>Moonlight: The Pond</em>. 1904, printed 1906.",
@@ -214,6 +222,7 @@
   {
     "id": "i-0009",
     "aliases": ["i-limbourg-anatomical-zodiac-man-or"],
+    "shownIn": "hours",
     "file": "images/chorus_tres_riches.jpg",
     "caption": "Limbourg brothers, <em>Anatomical Zodiac Man (or L'Homme anatomique)</em>, from <a href=\"https://les-tres-riches-heures.chateaudechantilly.fr\" target=\"_blank\"><em>Les Très Riches Heures du Duc de Berry</em></a> (c. 1412–1416)",
     "bibliography": "Limbourg Brothers. <em>Anatomical Zodiac Man</em>. c. 1412–1416, Musée Condé, Chantilly. <em>Les Très Riches Heures du Duc de Berry</em>.",
@@ -239,6 +248,7 @@
   {
     "id": "i-0010",
     "aliases": ["i-sivartha-the-book-of-life"],
+    "shownIn": "hours",
     "file": "images/chorus_sivartha.jpg",
     "caption": "Alesha Sivartha, from <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t77s7n156?urlappend=%3Bseq=65\" target=\"_blank\"><em>The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man</em></a> (1898)",
     "bibliography": "Sivartha, Alesha. <em>The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man</em>. Sivartha Publishing, 1898.",
@@ -265,6 +275,7 @@
   {
     "id": "i-0011",
     "aliases": ["i-smith-human-blood-x1000"],
+    "shownIn": "hours",
     "file": "images/chorus_smithblood.jpg",
     "caption": "Arthur E. Smith, \"<a href=\"https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270\" target=\"_blank\">Human Blood x1000</a>,\" from Richard Kerr, <em>Nature Through Microscope & Camera</em> (1909)",
     "bibliography": "Smith, Arthur E. \"Human Blood x1000.\" <em>Nature Through Microscope &amp; Camera</em>, by Richard Kerr, Religious Tract Society, 1909.",
@@ -291,6 +302,7 @@
   {
     "id": "i-0012",
     "aliases": ["i-harris-prismatic-colour-wheel"],
+    "shownIn": "hours",
     "file": "images/chorus_harris.avif",
     "caption": "Moses Harris, <a href=\"https://www.royalacademy.org.uk/art-artists/work-of-art/prismatic-colour-wheel\" target=\"_blank\"><em>Prismatic Colour Wheel</em></a>, from <em>The Natural System of Colours</em> (1766)",
     "bibliography": "Harris, Moses. <em>Prismatic Colour Wheel</em>. <em>The Natural System of Colours</em>, 1766, Royal Academy of Arts, London.",
@@ -316,6 +328,7 @@
   {
     "id": "i-0013",
     "aliases": ["i-darwin-the-power-of-movement"],
+    "shownIn": "hours",
     "file": "images/transit_darwin.jpg",
     "caption": "Charles Darwin, from <a href=\"https://babel.hathitrust.org/cgi/pt?id=nyp.33433007351665&seq=293&view=1up\" target=\"_blank\"><em>The Power of Movement in Plants</em></a> (1880)",
     "bibliography": "Darwin, Charles. <em>The Power of Movement in Plants</em>. John Murray, 1880.",
@@ -342,6 +355,7 @@
   {
     "id": "i-0014",
     "aliases": ["i-vermeer-woman-reading-a-letter"],
+    "shownIn": "hours",
     "file": "images/transit_vermeer.jpg",
     "caption": "Johannes Vermeer, <a href=\"https://www.rijksmuseum.nl/en/collection/object/Woman-Reading-a-Letter--8e9e02c8045362ffb2171b2fb52953ba\" target=\"_blank\"><em>Woman Reading a Letter</em></a> (c. 1663)",
     "bibliography": "Vermeer, Johannes. <em>Woman Reading a Letter</em>. c. 1663, Rijksmuseum, Amsterdam.",
@@ -367,6 +381,7 @@
   {
     "id": "i-0015",
     "aliases": ["i-unknown-diagram-of-the-winds"],
+    "shownIn": "weather",
     "file": "images/transit_winds.jpg",
     "caption": "Unknown, <a href=\"https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W73\" target=\"_blank\"><em>Diagram of the Winds (I)</em></a> (c. 1170-1200)",
     "bibliography": "Unknown. <em>Diagram of the Winds (I)</em>. c. 1170–1200, The Walters Art Museum, Baltimore, MS W.73.",
@@ -394,6 +409,7 @@
   {
     "id": "i-0016",
     "aliases": ["i-muybridge-plate-169"],
+    "shownIn": "hours",
     "file": "images/transit_muybridge.jpg",
     "caption": "Eadweard Muybridge, Plate 169 from <a href=\"https://drive.google.com/file/d/1o04qBq3W3oJwDVsCxWqRQ3XvUffcBVJ6/view?pli=1\" target=\"_blank\"><em>Animal Locomotion, Vol. VII</em></a> (1887)",
     "bibliography": "Muybridge, Eadweard. Plate 169. <em>Animal Locomotion</em>, vol. 7, 1887.",
@@ -419,6 +435,7 @@
   {
     "id": "i-0017",
     "aliases": ["i-abbott-seventh-avenue-looking-south"],
+    "shownIn": "hours",
     "file": "images/transit_abbott.jpg",
     "caption": "Berenice Abbott, <a href=\"https://digitalcollections.nypl.org/items/32f22aa0-878a-013a-95ad-0242ac110002?canvasIndex=0\" target=\"_blank\"><em>Seventh Avenue looking south from 35th Street</em></a> (1935)",
     "bibliography": "Abbott, Berenice. <em>Seventh Avenue Looking South from 35th Street</em>. 1935, New York Public Library Digital Collections.",
@@ -445,6 +462,7 @@
   {
     "id": "i-0018",
     "aliases": ["i-klint-group-ix-uw-no"],
+    "shownIn": "hours",
     "file": "images/fulcrum_klint.jpg",
     "caption": "Hilma af Klint, <a href=\"https://www.guggenheim-bilbao.eus/en/exhibition/the-dove-1915\" target=\"_blank\"><em>Group IX/UW, No. 25, The Dove, No. 1</em></a> (1915)",
     "bibliography": "af Klint, Hilma. <em>Group IX/UW, No. 25, The Dove, No. 1</em>. 1915, Guggenheim Museum Bilbao.",
@@ -470,6 +488,7 @@
   {
     "id": "i-0019",
     "aliases": ["i-campbell-brightfield-light-microscopy-leaf"],
+    "shownIn": "hours",
     "file": "images/fulcrum_campbell.jpg",
     "caption": "A.J.A. Campbell, <a href=\"https://commons.wikimedia.org/wiki/Category:Leaf_epidermis_and_stomata_prints#/media/File:09-_Fraxinus_gooddingii_20x_obj_leaf_print.jpg\" target=\"_blank\"><em>Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</em></a> (2025)",
     "bibliography": "Campbell, A. J. A. <em>Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</em>. 2025, Wikimedia Commons.",
@@ -496,6 +515,7 @@
   {
     "id": "i-0020",
     "aliases": ["i-hitchcock-epochs-of-elevation"],
+    "shownIn": "hours",
     "file": "images/fulcrum_hitchcock.jpg",
     "caption": "Orra White Hitchcock, <a href=\"https://acdc.amherst.edu/view/OrraClassroomDrawings/ma01020-0033#page/1\" target=\"_blank\"><em>Epochs of Elevation</em></a> (c. 1828-1840)",
     "bibliography": "Hitchcock, Orra White. <em>Epochs of Elevation</em>. c. 1828–1840, Amherst College Archives &amp; Special Collections.",
@@ -521,6 +541,7 @@
   {
     "id": "i-0021",
     "aliases": ["i-caillebotte-raboteurs-de-parquets"],
+    "shownIn": "hours",
     "file": "images/fulcrum_caillebotte.jpg",
     "caption": "Gustave Caillebotte, <a href=\"https://www.musee-orsay.fr/en/artworks/raboteurs-de-parquet-105\" target=\"_blank\"><em>Raboteurs de parquets</em></a> (1875)",
     "bibliography": "Caillebotte, Gustave. <em>Raboteurs de parquet</em>. 1875, Musée d'Orsay, Paris.",
@@ -546,6 +567,7 @@
   {
     "id": "i-0022",
     "aliases": ["i-monet-stacks-of-wheat-end"],
+    "shownIn": "hours",
     "file": "images/doldrums_monet.jpg",
     "caption": "Claude Monet, <a href=\"https://www.artic.edu/artworks/64818/stacks-of-wheat-end-of-summer\" target=\"_blank\"><em>Stacks of Wheat (End of Summer)</em></a> (1890-1891)",
     "bibliography": "Monet, Claude. <em>Stacks of Wheat (End of Summer)</em>. 1890–1891, Art Institute of Chicago.",
@@ -571,6 +593,7 @@
   {
     "id": "i-0023",
     "aliases": ["i-cajal-a-purkinje-neuron-from"],
+    "shownIn": "hours",
     "file": "images/doldrums_cajal.jpg",
     "caption": "Santiago Ramón y Cajal, <a href=\"https://commons.wikimedia.org/wiki/File:Cajal_-_a_purkinje_neuron_from_the_human_cerebellum.jpg\" target=\"_blank\"><em>A purkinje neuron from the human cerebellum</em></a> (c. 1900)",
     "bibliography": "Ramón y Cajal, Santiago. <em>A Purkinje Neuron from the Human Cerebellum</em>. c. 1900, Wikimedia Commons.",
@@ -596,6 +619,7 @@
   {
     "id": "i-0024",
     "aliases": ["i-brigman-infinitude"],
+    "shownIn": "hours",
     "file": "images/doldrums_brigman.jpg",
     "caption": "Anne Brigman, <a href=\"https://www.photola.com/virtual/galleries/2020/44/images/15_big.jpg\" target=\"_blank\"><em>Infinitude</em></a> (c. 1910)",
     "bibliography": "Brigman, Anne. <em>Infinitude</em>. c. 1910.",
@@ -622,6 +646,7 @@
   {
     "id": "i-0025",
     "aliases": ["i-degas-a-woman-ironing"],
+    "shownIn": "hours",
     "file": "images/doldrums_degas.jpg",
     "caption": "Edgar Degas, <a href=\"https://www.metmuseum.org/art/collection/search/436174\" target=\"_blank\"><em>A Woman Ironing</em></a> (1873)",
     "bibliography": "Degas, Edgar. <em>A Woman Ironing</em>. 1873, The Metropolitan Museum of Art, New York.",
@@ -647,6 +672,7 @@
   {
     "id": "i-0026",
     "aliases": ["i-davis-salad-mandala"],
+    "shownIn": "hours",
     "file": "images/convivium_davis.jpg",
     "caption": "Harold Davis, <a href=\"https://www.digitalfieldguide.com/blog/18487\" target=\"_blank\"><em>Salad Mandala</em></a> (2020)",
     "bibliography": "Davis, Harold. <em>Salad Mandala</em>. 2020.",
@@ -673,6 +699,7 @@
   {
     "id": "i-0027",
     "aliases": ["i-wragge-sunset-g2"],
+    "shownIn": "hours",
     "file": "images/convivium_wragge.jpg",
     "caption": "Clement Lindley Wragge, <a href=\"https://www.flickr.com/photos/aucklandmuseum_commons/54959419657/in/album-72177720330692278\" target=\"_blank\"><em>Sunset, G2</em></a> (1905)",
     "bibliography": "Wragge, Clement Lindley. <em>Sunset, G2</em>. 1905, Auckland War Memorial Museum.",
@@ -698,6 +725,7 @@
   {
     "id": "i-0028",
     "aliases": ["i-cezanne-the-basket-of-apples"],
+    "shownIn": "hours",
     "file": "images/convivium_cezanne.jpg",
     "caption": "Paul Cezanne, <a href=\"https://www.artic.edu/artworks/111436/the-basket-of-apples\" target=\"_blank\"><em>The Basket of Apples</em></a> (c. 1893)",
     "bibliography": "Cézanne, Paul. <em>The Basket of Apples</em>. c. 1893, Art Institute of Chicago.",
@@ -723,6 +751,7 @@
   {
     "id": "i-0029",
     "aliases": ["i-hiroshige-cooling-off-in-the"],
+    "shownIn": "hours",
     "file": "images/convivium_hiroshige.jpg",
     "caption": "Utagawa Hiroshige, <a href=\"https://www.metmuseum.org/art/collection/search/55278\" target=\"_blank\"><em>Cooling off in the Evening at Shijogawara</em></a> (c. 1834)",
     "bibliography": "Hiroshige, Utagawa. <em>Cooling Off in the Evening at Shijogawara</em>. c. 1834, The Metropolitan Museum of Art, New York.",
@@ -748,6 +777,7 @@
   {
     "id": "i-0030",
     "aliases": ["i-kuindzhi-moonlit-night-on-the"],
+    "shownIn": "hours",
     "file": "images/denouement_kuindzhi.jpg",
     "caption": "Arkhip Kuindzhi, <a href=\"https://en.wikipedia.org/wiki/Moonlit_Night_on_the_Dnieper\" target=\"_blank\"><em>Moonlit Night on the Dnieper</em></a> (1880)",
     "bibliography": "Kuindzhi, Arkhip. <em>Moonlit Night on the Dnieper</em>. 1880, State Tretyakov Gallery, Moscow.",
@@ -774,6 +804,7 @@
   {
     "id": "i-0031",
     "aliases": ["i-giberne-the-story-of-the"],
+    "shownIn": "hours",
     "file": "images/denouement_giberne.jpg",
     "caption": "Agnes Giberne, from <a href=\"https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232\" target=\"_blank\"><em>The Story of the Sun, Moon, and Stars</em></a> (1898)",
     "bibliography": "Giberne, Agnes. <em>The Story of the Sun, Moon, and Stars</em>. Seeley, 1898.",
@@ -800,6 +831,7 @@
   {
     "id": "i-0032",
     "aliases": ["i-haeckel-leptomedusae"],
+    "shownIn": "hours",
     "file": "images/denouement_haeckel.jpg",
     "caption": "Ernst Haeckel, \"<a href=\"https://archive.org/details/monographiederme11879haec/page/n70/mode/1up\" target=\"_blank\">Leptomedusae</a>,\" from <em>Das System der Medusen</em> (Vol. 1, 1879)",
     "bibliography": "Haeckel, Ernst. \"Leptomedusae.\" <em>Das System der Medusen</em>, vol. 1, Gustav Fischer, 1879.",
@@ -826,6 +858,7 @@
   {
     "id": "i-0033",
     "aliases": ["i-tryon-after-sunset-looking-east"],
+    "shownIn": "hours",
     "file": "images/denouement_tryon.jpg",
     "caption": "Dwight William Tryon, <a href=\"https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1915.131a-b/\" target=\"_blank\"><em>After Sunset: Looking East</em></a> (1915)",
     "bibliography": "Tryon, Dwight William. <em>After Sunset: Looking East</em>. 1915, National Museum of Asian Art, Smithsonian Institution.",
@@ -851,6 +884,7 @@
   {
     "id": "i-0034",
     "aliases": ["i-emslie-diagram-of-meteorology-displaying"],
+    "shownIn": "weather",
     "file": "images/weather_emslie.jpg",
     "caption": "John Emslie, <a href=\"https://www.rmg.co.uk/collections/objects/rmgc-object-263842\" target=\"_blank\"><em>Diagram of Meteorology, displaying the various phenomena of the atmosphere</em></a> (c. 1845-1860)",
     "bibliography": "Emslie, John. <em>Diagram of Meteorology, Displaying the Various Phenomena of the Atmosphere</em>. c. 1845–1860, Royal Museums Greenwich, London.",

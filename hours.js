@@ -48,8 +48,8 @@ const HOUR_NAMES = {
 // pick() / pickExcluding() now live in shared.js, loaded before
 // this file — shared with seasons.js instead of duplicated here.
 
-// pickWeatherAware() (weather-weighted picks) lives there too, shared
-// with weather.js.
+// pickHoursAware() (picks leaning on the weather and the season) lives
+// there too, beside weather.js's pickWeatherAware().
 
 let lastQuoteText = null;
 let lastImageSrc  = null;
@@ -129,8 +129,8 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate } = {})
   });
   if (block.cssClass) document.body.classList.add(block.cssClass);
 
-  const q   = pickWeatherAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
-  const img = pickWeatherAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+  const q   = pickHoursAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
+  const img = pickHoursAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
   lastQuoteText = q.text;
   lastImageSrc  = img.src;
 
