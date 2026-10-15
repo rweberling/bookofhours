@@ -708,6 +708,15 @@ body::before {
 /* "turn the page" leads on to the next card; a link here, not a button. */
 .postcard-turn { margin-top: 40px; }
 .postcard-turn a { text-decoration: none; }
+/* Above the footer on every card: where the cards come from, and how to
+   hear when the next set arrives. Quieter than the card's own note. */
+.postcard-follow {
+  max-width: 440px; margin: 36px auto 0; text-align: center;
+  font-family: var(--font-text); font-size: 13px; font-style: italic;
+  line-height: 1.7; color: var(--ink-faint);
+}
+.postcard-follow a { color: inherit; }
+.postcard-follow a:hover { color: var(--accent); }
 
 /* ── Quote ────────────────────────────────────────────────────── */
 .quote-block {
