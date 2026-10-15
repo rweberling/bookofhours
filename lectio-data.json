@@ -32,7 +32,8 @@
           "Annika Hansteen-Izora",
           "Walter H. Crockett"
         ],
-        "latin": "Acer saccharum"
+        "latin": "Acer saccharum",
+        "subject": "sp-0003"
       },
       {
         "id": "lt-0002",
@@ -68,7 +69,8 @@
           "Emily Dickinson",
           "Robert Ridgway"
         ],
-        "latin": "Turdus migratorius"
+        "latin": "Turdus migratorius",
+        "subject": "sp-0002"
       },
       {
         "id": "lt-0004",
@@ -104,7 +106,8 @@
           "Robert Frost",
           "Gifford Pinchot"
         ],
-        "latin": "Betula papyrifera"
+        "latin": "Betula papyrifera",
+        "subject": "sp-0004"
       },
       {
         "id": "lt-0009",
@@ -140,7 +143,8 @@
           "Ashia Ajani",
           "Hildegard von Bingen"
         ],
-        "latin": "Verbascum thapsus"
+        "latin": "Verbascum thapsus",
+        "subject": "sp-0008"
       },
       {
         "id": "lt-0005",
@@ -176,7 +180,8 @@
           "Johann Wolfgang von Goethe",
           "Jenny Odell"
         ],
-        "latin": "Nimbostratus praecipitatio"
+        "latin": "Nimbostratus praecipitatio",
+        "subject": "ph-0001"
       },
       {
         "id": "lt-0007",
@@ -212,7 +217,8 @@
           "Martin Heidegger",
           "Douglas Houghton Campbell"
         ],
-        "latin": "Matteuccia struthiopteris"
+        "latin": "Matteuccia struthiopteris",
+        "subject": "sp-0006"
       },
       {
         "id": "lt-0006",
@@ -253,7 +259,8 @@
           "Guillaume Barth",
           "William Herbert"
         ],
-        "latin": "Crocus vernus"
+        "latin": "Crocus vernus",
+        "subject": "sp-0005"
       },
       {
         "id": "lt-0008",
@@ -289,7 +296,8 @@
           "Zora Neale Hurston",
           "Ernest Thompson Seton"
         ],
-        "latin": "Sylvilagus floridanus"
+        "latin": "Sylvilagus floridanus",
+        "subject": "sp-0007"
       },
       {
         "id": "lt-0010",
@@ -320,7 +328,8 @@
           "Hildegard von Bingen",
           "Michael Marder"
         ],
-        "latin": "Hypnum imponens"
+        "latin": "Hypnum imponens",
+        "subject": "sp-0009"
       },
       {
         "id": "lt-0011",
@@ -361,7 +370,8 @@
           "Ludwig Wittgenstein",
           "The Dana Brothers"
         ],
-        "latin": "Argillita cantabrigiensis"
+        "latin": "Argillita cantabrigiensis",
+        "subject": "ph-0002"
       },
       {
         "id": "lt-0012",
@@ -397,7 +407,8 @@
           "Amy Lowell",
           "Ronald Firbank"
         ],
-        "latin": "Syringa vulgaris"
+        "latin": "Syringa vulgaris",
+        "subject": "sp-0010"
       },
       {
         "id": "lt-0013",
@@ -433,7 +444,8 @@
           "Jenifer Wightman",
           "Graham A.W. Rook"
         ],
-        "latin": "Mycobacterium vaccae"
+        "latin": "Mycobacterium vaccae",
+        "subject": "sp-0011"
       }
     ],
     "summer": [
@@ -471,7 +483,8 @@
           "Grace Graylock Niles",
           "C.S. Young"
         ],
-        "latin": "Cypripedium acaule"
+        "latin": "Cypripedium acaule",
+        "subject": "sp-0014"
       },
       {
         "id": "lt-0017",
@@ -507,7 +520,8 @@
           "Galileo Galilei feat. The Roman Inquisition",
           "Simon Barraclough"
         ],
-        "latin": "Maculae solares"
+        "latin": "Maculae solares",
+        "subject": "ph-0003"
       },
       {
         "id": "lt-0025",
@@ -548,7 +562,8 @@
           "Marge Piercy",
           "Padraig Regan"
         ],
-        "latin": "Cucurbitaceae"
+        "latin": "Cucurbitaceae",
+        "subject": "sp-0020"
       },
       {
         "id": "lt-0014",
@@ -584,7 +599,8 @@
           "Rumi",
           "A.R. Harwood"
         ],
-        "latin": "Phragmites australis"
+        "latin": "Phragmites australis",
+        "subject": "sp-0012"
       },
       {
         "id": "lt-0015",
@@ -620,7 +636,8 @@
           "E.P. Felt",
           "Francesco Redi of Arezzo"
         ],
-        "latin": "Callirhytis seminator"
+        "latin": "Callirhytis seminator",
+        "subject": "sp-0013"
       },
       {
         "id": "lt-0018",
@@ -656,7 +673,8 @@
           "Robin Wall Kimmerer",
           "K.M. Wiegand"
         ],
-        "latin": "Amelanchier canadensis"
+        "latin": "Amelanchier canadensis",
+        "subject": "sp-0015"
       },
       {
         "id": "lt-0019",
@@ -692,7 +710,8 @@
           "Maud Grieve",
           "The Ohio Agricultural Experiment Station"
         ],
-        "latin": "Ribes rubrum"
+        "latin": "Ribes rubrum",
+        "subject": "sp-0016"
       },
       {
         "id": "lt-0020",
@@ -733,7 +752,8 @@
           "Haudenosaunee Storytellers",
           "Emily Pauline Johnson"
         ],
-        "latin": "Zea mays"
+        "latin": "Zea mays",
+        "subject": "sp-0017"
       },
       {
         "id": "lt-0021",
@@ -769,7 +789,8 @@
           "Joseph J. White, Inc.",
           "Alix Beeston on Ellena Savage"
         ],
-        "latin": "Vaccinium corymbosum"
+        "latin": "Vaccinium corymbosum",
+        "subject": "sp-0018"
       },
       {
         "id": "lt-0022",
@@ -800,7 +821,8 @@
           "Paul Muldoon",
           "Nathaniel Lord Britton"
         ],
-        "latin": "Asclepias tuberosa"
+        "latin": "Asclepias tuberosa",
+        "subject": "sp-0019"
       },
       {
         "id": "lt-0023",
@@ -836,7 +858,8 @@
           "Horace",
           "Heraclitus"
         ],
-        "latin": "Dies caniculares"
+        "latin": "Dies caniculares",
+        "subject": "ph-0004"
       },
       {
         "id": "lt-0024",
@@ -872,7 +895,8 @@
           "Han Dynasty Scribes",
           "Henry David Thoreau"
         ],
-        "latin": "Lacrimae Sancti Laurentii"
+        "latin": "Lacrimae Sancti Laurentii",
+        "subject": "ph-0005"
       },
       {
         "id": "lt-0026",
@@ -908,7 +932,8 @@
           "Robert Hass",
           "Marcus Aurelius (and William Cowper, too)"
         ],
-        "latin": "Cucumis"
+        "latin": "Cucumis",
+        "subject": "sp-0021"
       },
       {
         "id": "lt-0027",
@@ -944,7 +969,8 @@
           "Sylvia Plath",
           "Pliny the Elder"
         ],
-        "latin": "Citrullus lanatus"
+        "latin": "Citrullus lanatus",
+        "subject": "sp-0022"
       }
     ],
     "autumn": [
@@ -1002,7 +1028,8 @@
             "author": "James George Frazer",
             "work": "The Golden Bough, 1922"
           }
-        ]
+        ],
+        "subject": "sp-0023"
       },
       {
         "id": "lt-0029",
@@ -1053,7 +1080,8 @@
             "author": "Charles S. Sargent",
             "work": "Report on the forests of North America, 1884"
           }
-        ]
+        ],
+        "subject": "sp-0024"
       }
     ],
     "winter": [
@@ -1086,7 +1114,8 @@
           "Friedrich Nietzsche",
           "William Hamilton Gibson"
         ],
-        "latin": "Hamamelis virginiana"
+        "latin": "Hamamelis virginiana",
+        "subject": "sp-0001"
       }
     ]
   },

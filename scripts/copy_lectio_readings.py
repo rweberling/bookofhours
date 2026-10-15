@@ -14,8 +14,9 @@ from the last r- ID, with:
             stanzas by <br><br>, as in the other readings
   citation  display: the citation as the post gives it
   lectio    the post it appears in (its lt- ID) and its place there
-  tags      the post's season; no hours or weather, so the Hours and
-            Weather pages never show it
+  tags      the post's season, and its subject (the sp- or ph- record
+            the post names as "subject"); no hours or weather, so the
+            Hours and Weather pages never show it
 
 The post itself is unchanged: the Seasons page still shows it whole.
 
@@ -126,7 +127,7 @@ def main():
     used = [int(m.group(1)) for i in [r['id'] for r in readings] + retired if (m := R_ID.match(i))]
     next_number = max(used, default=0) + 1
 
-    added, differ = [], []
+    added, differ, unlinked = [], [], set()
     for season, post in posts:
         for place, text, citation in passages(post):
             record = copied.get((post['id'], place))
@@ -141,6 +142,11 @@ def main():
                 'lectio': {'post': post['id'], 'place': place},
                 'tags': {'hours': [], 'weather': [], 'seasons': [season], 'subjects': []}
             }
+            subject = post.get('subject') or ''
+            if subject.startswith(('sp-', 'ph-')):
+                record['tags']['species' if subject.startswith('sp-') else 'phenomena'] = [subject]
+            else:
+                unlinked.add(post['id'])
             next_number += 1
             readings.append(record)
             added.append(record)
@@ -149,6 +155,8 @@ def main():
         print(f'{r["id"]}: {r["lectio"]["post"]} passage {r["lectio"]["place"]}: {plain(r["citation"]["display"])[:70]}')
     for d in differ:
         print(f'{d}: the post\'s text no longer matches the record; neither was changed', file=sys.stderr)
+    for pid in sorted(unlinked):
+        print(f'{pid} has no subject yet: add its sp- or ph- record to the post, then tag its readings', file=sys.stderr)
     if not added:
         print('No new passages.')
     elif args.write:

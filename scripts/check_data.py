@@ -57,13 +57,14 @@ def isbn13_valid(isbn):
     return (10 - total % 10) % 10 == int(isbn[12])
 
 
-CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition'}
+CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition', 'subject (species or phenomenon)'}
 
 
 # One ID format per kind of record.
 ID_FORMS = {
     'r': re.compile(r'^r-\d{4}$'), 'i': re.compile(r'^i-\d{4}$'), 'lt': re.compile(r'^lt-\d{4}$'),
     'ed': re.compile(r'^ed-[a-z0-9-]+$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
+    'sp': re.compile(r'^sp-\d{4}$'), 'ph': re.compile(r'^ph-\d{4}$'),
 }
 # A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
 SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
@@ -80,6 +81,7 @@ def main():
     args = parser.parse_args()
 
     readings, images, editorial, vocab = (load(n) for n in ('readings', 'images', 'editorial', 'vocab'))
+    species, phenomena = load('species'), load('phenomena')
     errors = []
     gaps = defaultdict(list)
 
@@ -97,7 +99,8 @@ def main():
     seen = {}
     for kind, records, form in (('reading', readings, ID_FORMS['r']), ('image', images, ID_FORMS['i']),
                                 ('editorial', editorial, ID_FORMS['ed']), ('Lectio Terra post', posts, ID_FORMS['lt']),
-                                ('postcard', cards, ID_FORMS['pc'])):
+                                ('postcard', cards, ID_FORMS['pc']), ('species', species, ID_FORMS['sp']),
+                                ('phenomenon', phenomena, ID_FORMS['ph'])):
         for rec in records:
             rid = rec.get('id')
             if not rid:
@@ -123,6 +126,19 @@ def main():
         if (season, target) not in post_place:
             errors.append(f'{owner}: links to Seasons entry {target} in {season}, which is not there')
 
+    # Each post's subject is a species or phenomenon record.
+    subjects = {r['id'] for r in species + phenomena}
+    for e in posts:
+        if not e.get('subject'):
+            gaps[e['id']].append('subject (species or phenomenon)')
+        elif e['subject'] not in subjects:
+            errors.append(f'{e["id"]}: subject {e["subject"]} is not in data/species.json or data/phenomena.json')
+    for r in species + phenomena:
+        if not r.get('wikidata'):
+            gaps[r['id']].append('Wikidata ID')
+        if r['id'].startswith('sp-') and not r.get('gbif'):
+            gaps[r['id']].append('GBIF ID')
+
     # Readings copied from Lectio Terra posts (copy_lectio_readings.py)
     # name a post that exists, each passage of it once.
     post_ids = {e['id'] for e in posts}
@@ -140,6 +156,8 @@ def main():
 
     # Tags point at the vocabularies.
     schemes = {name: {c['id'] for c in concepts} for name, concepts in vocab.items()}
+    schemes['species'] = {r['id'] for r in species}
+    schemes['phenomena'] = {r['id'] for r in phenomena}
     def check_tags(rid, tags):
         for scheme, values in (tags or {}).items():
             if scheme not in schemes:

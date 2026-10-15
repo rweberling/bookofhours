@@ -1,0 +1,218 @@
+[
+  {
+    "id": "sp-0001",
+    "name": "Witch Hazel",
+    "scientific": "Hamamelis virginiana",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0002",
+    "name": "American Robin",
+    "scientific": "Turdus migratorius",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0003",
+    "name": "Sugar Maple",
+    "scientific": "Acer saccharum",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0004",
+    "name": "Paper Birch",
+    "scientific": "Betula papyrifera",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0005",
+    "name": "Dutch Crocus",
+    "scientific": "Crocus vernus",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0006",
+    "name": "Ostrich Fern",
+    "scientific": "Matteuccia struthiopteris",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0007",
+    "name": "Eastern Cottontail",
+    "scientific": "Sylvilagus floridanus",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0008",
+    "name": "Great Mullein",
+    "scientific": "Verbascum thapsus",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0009",
+    "name": "Sheet Moss",
+    "scientific": "Hypnum imponens",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0010",
+    "name": "Common Lilac",
+    "scientific": "Syringa vulgaris",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0011",
+    "name": "Living Soil",
+    "scientific": "Mycobacterium vaccae",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0012",
+    "name": "Common Reed",
+    "scientific": "Phragmites australis",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0013",
+    "name": "Wool Sower Wasp",
+    "scientific": "Callirhytis seminator",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0014",
+    "name": "Pink Lady’s Slipper",
+    "scientific": "Cypripedium acaule",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0015",
+    "name": "Serviceberry",
+    "scientific": "Amelanchier canadensis",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0016",
+    "name": "Red Currant",
+    "scientific": "Ribes rubrum",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0017",
+    "name": "Corn",
+    "scientific": "Zea mays",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0018",
+    "name": "Highbush Blueberry",
+    "scientific": "Vaccinium corymbosum",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0019",
+    "name": "Butterfly Weed",
+    "scientific": "Asclepias tuberosa",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0020",
+    "name": "Cucurbits",
+    "scientific": "Cucurbitaceae",
+    "rank": "family",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0021",
+    "name": "Melons and Cucumbers",
+    "scientific": "Cucumis",
+    "rank": "genus",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0022",
+    "name": "Watermelon",
+    "scientific": "Citrullus lanatus",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0023",
+    "name": "Northern Red Oak",
+    "scientific": "Quercus rubra",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  },
+  {
+    "id": "sp-0024",
+    "name": "Shagbark Hickory",
+    "scientific": "Carya ovata",
+    "rank": "species",
+    "wikidata": null,
+    "gbif": null,
+    "inaturalist": null
+  }
+]
