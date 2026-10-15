@@ -115,7 +115,7 @@ def credits():
             'rights': rec.get('rights'),
             'source': source,
         }
-    lectio = json.loads((ROOT / 'lectio-data.json').read_text())
+    lectio = json.loads((ROOT / 'data' / 'lectio-data.json').read_text())
     entries = [e for group in lectio['seasons'].values() for e in group] + lectio.get('unassigned', [])
     for entry in entries:
         for img in entry.get('images') or []:

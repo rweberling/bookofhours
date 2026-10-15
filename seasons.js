@@ -11,7 +11,7 @@
 
 // SEASON_LABELS, SEASON_KEYS and SEASON_MONTH_RANGES come from shared.js.
 
-let lectioSeasons = null;   // lectio-data.json's { spring: [...], ... }, once loaded
+let lectioSeasons = null;   // data/lectio-data.json's { spring: [...], ... }, once loaded
 let season = null;          // the season whose readings are showing
 let currentEntryId = null;
 
@@ -184,7 +184,7 @@ function markParts(body) {
    gets a label in the margin: a numeral (I, II, III) and, where the
    post has them, the author and work from entry.readingLabels — one
    { author, work } per reading, in order, written by hand in
-   lectio-data.json (import_substack.py leaves them alone unless the
+   data/lectio-data.json (import_substack.py leaves them alone unless the
    post is re-imported with --refresh). On wide screens the label sits
    in the left margin and travels down beside its passage; on narrower
    ones it sits just above it.

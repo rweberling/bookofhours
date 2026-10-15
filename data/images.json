@@ -22,8 +22,7 @@
     "tags": {
       "hours": ["void"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -55,8 +54,7 @@
     "tags": {
       "hours": ["void"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -87,8 +85,7 @@
     "tags": {
       "hours": ["void"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -109,8 +106,7 @@
     "tags": {
       "hours": ["void"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -136,8 +132,7 @@
     "tags": {
       "hours": ["hush"],
       "weather": ["snow", "cold"],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -162,8 +157,7 @@
     "tags": {
       "hours": ["hush"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -189,8 +183,7 @@
     "tags": {
       "hours": ["hush"],
       "weather": ["fog", "overcast"],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -215,8 +208,7 @@
     "tags": {
       "hours": ["hush"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -241,8 +233,7 @@
     "tags": {
       "hours": ["chorus"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -268,8 +259,7 @@
     "tags": {
       "hours": ["chorus"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -295,8 +285,7 @@
     "tags": {
       "hours": ["chorus"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -321,8 +310,7 @@
     "tags": {
       "hours": ["chorus"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -348,8 +336,7 @@
     "tags": {
       "hours": ["transit"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -374,8 +361,7 @@
     "tags": {
       "hours": ["transit"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -402,8 +388,7 @@
     "tags": {
       "hours": ["transit"],
       "weather": ["wind"],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -428,8 +413,7 @@
     "tags": {
       "hours": ["transit"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -455,8 +439,7 @@
     "tags": {
       "hours": ["transit"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -481,8 +464,7 @@
     "tags": {
       "hours": ["fulcrum"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -508,8 +490,7 @@
     "tags": {
       "hours": ["fulcrum"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -534,8 +515,7 @@
     "tags": {
       "hours": ["fulcrum"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -560,8 +540,7 @@
     "tags": {
       "hours": ["fulcrum"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -586,8 +565,7 @@
     "tags": {
       "hours": ["doldrums"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -612,8 +590,7 @@
     "tags": {
       "hours": ["doldrums"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -639,8 +616,7 @@
     "tags": {
       "hours": ["doldrums"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -665,8 +641,7 @@
     "tags": {
       "hours": ["doldrums"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -692,8 +667,7 @@
     "tags": {
       "hours": ["convivium"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -718,8 +692,7 @@
     "tags": {
       "hours": ["convivium"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -744,8 +717,7 @@
     "tags": {
       "hours": ["convivium"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -770,8 +742,7 @@
     "tags": {
       "hours": ["convivium"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -797,8 +768,7 @@
     "tags": {
       "hours": ["denouement"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -824,8 +794,7 @@
     "tags": {
       "hours": ["denouement"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -851,8 +820,7 @@
     "tags": {
       "hours": ["denouement"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -877,8 +845,7 @@
     "tags": {
       "hours": ["denouement"],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   },
   {
@@ -904,8 +871,7 @@
     "tags": {
       "hours": [],
       "weather": [],
-      "seasons": [],
-      "subjects": []
+      "seasons": []
     }
   }
 ]

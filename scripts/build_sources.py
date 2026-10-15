@@ -4,7 +4,7 @@
 Usage:
   python3 scripts/build_sources.py
 
-sources.js builds the bibliography from data/ and lectio-data.json. This
+sources.js builds the bibliography from data/, including data/lectio-data.json. This
 runs that same script once, in headless Google Chrome, and saves what it
 built into sources.html between the sources:start and sources:end
 markers. The published page is then plain HTML that readers, citation
@@ -43,7 +43,7 @@ def inputs_digest():
     # data/image-files.json is build_images.py's record of the web copies,
     # which this page doesn't use.
     paths = sorted(p for p in (ROOT / 'data').glob('*.json') if p.name != 'image-files.json') + [
-        ROOT / 'lectio-data.json', ROOT / 'sources.js', ROOT / 'shared.js']
+        ROOT / 'sources.js', ROOT / 'shared.js']
     digest = hashlib.sha256()
     for path in paths:
         digest.update(path.name.encode())

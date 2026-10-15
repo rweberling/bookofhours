@@ -1,7 +1,7 @@
 /* ══════════════════════════════════════════════════════════════
    THE SOURCES — sources.html
    The bibliography is built from the collection in data/ (and, for
-   the Seasons, from lectio-data.json), so it always matches what the
+   the Seasons, from data/lectio-data.json), so it always matches what the
    Hours and Weather pages show. Three parts, each in its own order:
      The Hours    — each watch, readings then images
      The Weather  — the weather picker's rows, plus "All Weather" for

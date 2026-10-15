@@ -5,7 +5,7 @@ Usage:
   python3 scripts/copy_lectio_readings.py           # report what would change
   python3 scripts/copy_lectio_readings.py --write   # add the new passages
 
-Each post in lectio-data.json quotes its readings under the Readings
+Each post in data/lectio-data.json quotes its readings under the Readings
 heading, one passage to a numbered list, with its citation straight
 after. This gives each passage a reading record of its own, numbered on
 from the last r- ID, with:
@@ -38,7 +38,7 @@ from pathlib import Path
 
 from datafile import ROOT, load, save
 
-LECTIO = ROOT / 'lectio-data.json'
+LECTIO = ROOT / 'data' / 'lectio-data.json'
 PASSAGE = re.compile(r'<ol\b[^>]*>\s*<li>(.*?)</li>\s*</ol>', re.S)
 READINGS_HEADING = re.compile(r'<h[23][^>]*>\s*readings\s*</h[23]>', re.I)
 NEXT_HEADING = re.compile(r'<h[23]\b')
@@ -140,7 +140,7 @@ def main():
                 'text': text,
                 'citation': {'display': citation},
                 'lectio': {'post': post['id'], 'place': place},
-                'tags': {'hours': [], 'weather': [], 'seasons': [season], 'subjects': []}
+                'tags': {'hours': [], 'weather': [], 'seasons': [season]}
             }
             subject = post.get('subject') or ''
             if subject.startswith(('sp-', 'ph-')):

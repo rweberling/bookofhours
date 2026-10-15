@@ -362,7 +362,7 @@ function loadLectioData() {
       getJSON('data/phenomena.json', 'data/phenomena.json')
     ]).then(([species, phenomena]) => new Map([...species, ...phenomena].map(r => [r.id, r])))
       .catch(error => { console.error(error); return new Map(); });
-    lectioDataPromise = Promise.all([getJSON('lectio-data.json', 'Lectio Terra posts'), subjects])
+    lectioDataPromise = Promise.all([getJSON('data/lectio-data.json', 'Lectio Terra posts'), subjects])
       .then(([data, byId]) => {
         Object.values(data.seasons || {}).forEach(entries => entries.forEach(entry => {
           if (entry.subject && byId.has(entry.subject)) entry.subjectRecord = byId.get(entry.subject);
@@ -376,7 +376,7 @@ function loadLectioData() {
 
 // --- The collection ---------------------------------------------------------
 // data/ holds the collection itself: readings, images, editorial writing and
-// the vocabularies their tags point to (hours, seasons, weather, subjects),
+// the vocabularies their tags point to (hours, seasons, weather),
 // plus site.json, the site's settings (such as the suggested-edition link).
 // Pages read it through loadCollection() and reshape it with the views
 // below into the forms their code already expects, so there is one set of

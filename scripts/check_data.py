@@ -90,7 +90,7 @@ def main():
     # (the old IDs they replaced) included, and never one that's retired.
     # Editorial records keep their ed- IDs until they're split into
     # writing (w-) and phenomena (ph-).
-    lectio = json.loads((ROOT / 'lectio-data.json').read_text())
+    lectio = json.loads((DATA / 'lectio-data.json').read_text())
     posts = [e for items in lectio.get('seasons', {}).values() for e in items]
     with (DATA / 'postcards.csv').open(encoding='utf-8', newline='') as f:
         cards = list(csv.DictReader(f))

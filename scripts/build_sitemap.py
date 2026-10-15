@@ -68,7 +68,7 @@ def addresses():
             continue
         entries.append((address(rel, html), last_commit_date(rel)))
 
-    readings = json.loads((ROOT / 'lectio-data.json').read_text(encoding='utf-8'))
+    readings = json.loads((ROOT / 'data' / 'lectio-data.json').read_text(encoding='utf-8'))
     for season, items in readings['seasons'].items():
         for entry in items:
             entries.append((f'{SITE}/seasons.html?season={quote(season)}&entry={quote(entry["id"])}', None))

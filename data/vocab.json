@@ -100,6 +100,5 @@
     { "id": "puddles", "label": "Puddles", "group": "The Ground" },
     { "id": "parched", "label": "Parched", "group": "The Ground" },
     { "id": "snowpack", "label": "Snowpack", "group": "The Ground" }
-  ],
-  "subjects": []
+  ]
 }

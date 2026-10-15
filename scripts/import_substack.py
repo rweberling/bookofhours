@@ -61,7 +61,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--export', required=True, type=Path, help='Substack export directory')
     parser.add_argument('--assignments', type=Path, default=Path('season-assignments.json'))
-    parser.add_argument('--output', type=Path, default=Path('lectio-data.json'))
+    parser.add_argument('--output', type=Path, default=Path('data/lectio-data.json'))
     parser.add_argument('--images', type=Path, default=Path('images/lectio-terra'))
     parser.add_argument('--template', action='store_true', help='Print an assignment template instead of writing data')
     parser.add_argument('--write', action='store_true', help='Write the generated JSON and downloaded images')
