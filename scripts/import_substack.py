@@ -310,6 +310,45 @@ def build_entry(row, path, season, image_dir, download_images):
     }
 
 
+# A link to another Lectio Terra post on Substack, inside an <a> tag.
+OWN_POST_HREF = re.compile(r'href="https?://laurentia\.substack\.com/p/([^/?#"]+)[^"]*"')
+# An image wrapped in a link to Substack's copy of it: the <a>'s href,
+# then the local master the <img> already shows.
+SUBSTACK_IMAGE_LINK = re.compile(
+    r'(<a\b[^>]*?\shref=")https?://substackcdn\.com/[^"]*'
+    r'("[^>]*>\s*<img\b[^>]*?\ssrc="(images/lectio-terra/[^"]+)")')
+
+
+def link_internally(grouped):
+    """Keep readers on this site rather than sending them to Substack.
+
+    A link to another Lectio Terra post that's on the Seasons page now
+    opens that reading here, in the same tab; a link to one that isn't
+    (yet) keeps its Substack address, and turns local once that post is
+    assigned a season and this runs again. A post image's link opens the
+    site's own full-size master instead of Substack's copy. Links to
+    anyone else's posts are left alone. Runs over every entry on each
+    import, so it also covers posts left untouched by this run.
+    """
+    season_of = {entry['id']: season for season, items in grouped.items() for entry in items}
+
+    def own_post(match):
+        tag = match.group(0)
+        href = OWN_POST_HREF.search(tag)
+        if not href or href.group(1) not in season_of:
+            return tag
+        slug = href.group(1)
+        tag = tag.replace(href.group(0), f'href="seasons.html?season={season_of[slug]}&amp;entry={slug}"')
+        return re.sub(r'\s(?:target|rel)="[^"]*"', '', tag)
+
+    for items in grouped.values():
+        for entry in items:
+            if not entry.get('bodyHtml'):
+                continue
+            body = re.sub(r'<a\b[^>]*>', own_post, entry['bodyHtml'])
+            entry['bodyHtml'] = SUBSTACK_IMAGE_LINK.sub(r'\1\3\2', body)
+
+
 def main():
     args = parse_args()
     posts = read_posts(args.export)
@@ -353,6 +392,7 @@ def main():
         new_count += 1
 
     print(f'{new_count} new/refreshed post(s), {skipped_count} left untouched.')
+    link_internally(grouped)
 
     result = {
         'generatedBy': 'scripts/import_substack.py',
