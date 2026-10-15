@@ -32,9 +32,21 @@ function seasonFromURL() {
 // change the address), the page is seasons.html itself. Set from here,
 // not fixed in the HTML, since a fixed one would claim every reading is
 // the same page.
+//
+// A post's ID is neutral (lt-0001…); its old, Substack-derived ID is kept
+// in entry.aliases, so earlier links still open it. Opened by an alias,
+// the address bar is quietly updated to the post's own ID.
+function isEntry(entry, id) {
+  return !!id && (entry.id === id || (entry.aliases || []).includes(id));
+}
+
 function setSeasonCanonical(entry) {
   const params = new URLSearchParams(window.location.search);
-  const own = params.get('entry') === entry.id && params.get('season');
+  const own = isEntry(entry, params.get('entry')) && params.get('season');
+  if (own && params.get('entry') !== entry.id) {
+    params.set('entry', entry.id);
+    history.replaceState(history.state, '', `${window.location.pathname}?${params}${window.location.hash}`);
+  }
   let link = document.querySelector('link[rel="canonical"]');
   if (!link) {
     link = document.createElement('link');
@@ -250,7 +262,7 @@ function setSeason(key) {
 // missing or unknown), switching seasons first if needed.
 function showSeasonEntry(key, entryId) {
   if (!season || season.key !== key) setSeason(key);
-  const entry = season.entries.find(e => e.id === entryId) || pick(season.entries);
+  const entry = season.entries.find(e => isEntry(e, entryId)) || pick(season.entries);
   renderSeasonReading(entry);
 }
 

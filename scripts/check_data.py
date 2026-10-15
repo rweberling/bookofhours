@@ -6,8 +6,10 @@ Usage:
   python3 scripts/check_data.py --gaps        # ...and the core gaps by record
   python3 scripts/check_data.py --all --gaps  # ...including research details
 
-Errors are things that would break the site or the data's reuse: duplicate
-IDs, tags that aren't in data/vocab.json, missing image files, malformed
+Errors are things that would break the site or the data's reuse: IDs
+that are missing, malformed, duplicated or retired (across the collection,
+the Lectio Terra posts and the postcards, aliases included), links between
+them that point nowhere, tags that aren't in data/vocab.json, missing image files, malformed
 dates, and embedded editions or people whose copies disagree. The script
 exits with status 1 when there are any.
 
@@ -22,6 +24,7 @@ in shared.js).
 """
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -57,6 +60,15 @@ def isbn13_valid(isbn):
 CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition'}
 
 
+# One ID format per kind of record.
+ID_FORMS = {
+    'r': re.compile(r'^r-\d{4}$'), 'i': re.compile(r'^i-\d{4}$'), 'lt': re.compile(r'^lt-\d{4}$'),
+    'ed': re.compile(r'^ed-[a-z0-9-]+$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
+}
+# A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
+SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
+
+
 def load(name):
     return json.loads((DATA / f'{name}.json').read_text())
 
@@ -71,16 +83,45 @@ def main():
     errors = []
     gaps = defaultdict(list)
 
-    # IDs are unique across the whole collection.
+    # IDs: neutral and permanent, one format per kind (see the Identifiers
+    # section of the metadata notes), unique across everything, aliases
+    # (the old IDs they replaced) included, and never one that's retired.
+    # Editorial records keep their ed- IDs until they're split into
+    # writing (w-) and phenomena (ph-).
+    lectio = json.loads((ROOT / 'lectio-data.json').read_text())
+    posts = [e for items in lectio.get('seasons', {}).values() for e in items]
+    with (DATA / 'postcards.csv').open(encoding='utf-8', newline='') as f:
+        cards = list(csv.DictReader(f))
+    retired_path = DATA / 'retired-ids.json'
+    retired = set(json.loads(retired_path.read_text())) if retired_path.exists() else set()
     seen = {}
-    for kind, records in (('reading', readings), ('image', images), ('editorial', editorial)):
+    for kind, records, form in (('reading', readings, ID_FORMS['r']), ('image', images, ID_FORMS['i']),
+                                ('editorial', editorial, ID_FORMS['ed']), ('Lectio Terra post', posts, ID_FORMS['lt']),
+                                ('postcard', cards, ID_FORMS['pc'])):
         for rec in records:
             rid = rec.get('id')
             if not rid:
                 errors.append(f'{kind} without an id: {str(rec)[:80]}')
-            elif rid in seen:
-                errors.append(f'duplicate id {rid}')
-            seen[rid] = kind
+                continue
+            if not form.match(rid):
+                errors.append(f'{kind} id {rid} is not in the form {form.pattern}')
+            if rid in retired:
+                errors.append(f'{rid} is a retired id; give the {kind} a new one')
+            for name in [rid] + list(rec.get('aliases') or []):
+                if name in seen:
+                    errors.append(f'duplicate id {name} ({seen[name]} and {kind})')
+                seen[name] = kind
+
+    # Links between them point somewhere: Seasons links in the posts and
+    # on the postcards name a post that exists, in the season it's in.
+    post_place = {(season, e['id']) for season, items in lectio.get('seasons', {}).items() for e in items}
+    linked = [(e['id'], m.group(1), m.group(2)) for e in posts
+              for m in SEASONS_LINK.finditer(e.get('bodyHtml') or '')]
+    linked += [(c['id'], m.group(1), m.group(2)) for c in cards
+               for m in SEASONS_LINK.finditer(c.get('post') or '')]
+    for owner, season, target in linked:
+        if (season, target) not in post_place:
+            errors.append(f'{owner}: links to Seasons entry {target} in {season}, which is not there')
 
     # Tags point at the vocabularies.
     schemes = {name: {c['id'] for c in concepts} for name, concepts in vocab.items()}

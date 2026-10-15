@@ -235,7 +235,7 @@ def load_existing(path):
     existing_by_slug = {}
     for season in SEASONS:
         for entry in data.get('seasons', {}).get(season, []):
-            existing_by_slug[entry['id']] = (season, entry)
+            existing_by_slug[substack_slug(entry)] = (season, entry)
     return existing_by_slug
 
 
@@ -289,6 +289,18 @@ def slug_for(path):
     return path.stem.split('.', 1)[1] if '.' in path.stem else path.stem
 
 
+# A post's own ID is neutral and permanent (lt-0001, lt-0002…; see the
+# Identifiers section of the metadata notes). Its Substack address, the
+# slug, is only how this script matches it to the export: it's kept as
+# the post's alias, and in canonicalUrl.
+LT_ID = re.compile(r'^lt-(\d{4})$')
+
+
+def substack_slug(entry):
+    url = entry.get('canonicalUrl') or ''
+    return url.rsplit('/p/', 1)[1] if '/p/' in url else entry['id']
+
+
 def build_entry(row, path, season, image_dir, download_images):
     post_id = row['post_id']
     raw_html = path.read_text(encoding='utf-8')
@@ -299,7 +311,8 @@ def build_entry(row, path, season, image_dir, download_images):
     body_html = re.sub(r'<(h[2-4])>\s*More\s*</\1>', r'<\1>Supplementum</\1>', body_html)
     body_html = drop_countdown(body_html)
     return {
-        'id': slug_for(path),
+        'id': None,  # set by main(): the post's existing lt- ID, or the next free one
+        'aliases': [slug_for(path)],
         'postId': post_id,
         'season': season,
         'title': spell_out_ligatures(row.get('title', '').strip()),
@@ -331,15 +344,16 @@ def link_internally(grouped):
     anyone else's posts are left alone. Runs over every entry on each
     import, so it also covers posts left untouched by this run.
     """
-    season_of = {entry['id']: season for season, items in grouped.items() for entry in items}
+    place_of = {substack_slug(entry): (season, entry['id'])
+                for season, items in grouped.items() for entry in items}
 
     def own_post(match):
         tag = match.group(0)
         href = OWN_POST_HREF.search(tag)
-        if not href or href.group(1) not in season_of:
+        if not href or href.group(1) not in place_of:
             return tag
-        slug = href.group(1)
-        tag = tag.replace(href.group(0), f'href="seasons.html?season={season_of[slug]}&amp;entry={slug}"')
+        season, post_id = place_of[href.group(1)]
+        tag = tag.replace(href.group(0), f'href="seasons.html?season={season}&amp;entry={post_id}"')
         return re.sub(r'\s(?:target|rel)="[^"]*"', '', tag)
 
     for items in grouped.values():
@@ -370,8 +384,13 @@ def main():
     # untouched — unless its slug was explicitly passed to --refresh.
     grouped = {season: [] for season in SEASONS}
     for season, entry in existing_by_slug.values():
-        if entry['id'] not in refresh:
+        if substack_slug(entry) not in refresh:
             grouped[season].append(entry)
+
+    # New posts take the next free lt- number; a refreshed post keeps its own.
+    taken = [int(m.group(1)) for _, entry in existing_by_slug.values()
+             if (m := LT_ID.match(entry['id']))]
+    next_number = max(taken, default=0) + 1
 
     unassigned = []
     new_count = 0
@@ -389,7 +408,14 @@ def main():
 
         verb = 'Refreshing' if slug in existing_by_slug else 'Importing'
         print(f'{verb} {slug} [{season}]')
-        grouped[season].append(build_entry(row, path, season, args.images, args.write))
+        entry = build_entry(row, path, season, args.images, args.write)
+        if slug in existing_by_slug:
+            old = existing_by_slug[slug][1]
+            entry['id'], entry['aliases'] = old['id'], old.get('aliases') or entry['aliases']
+        else:
+            entry['id'] = f'lt-{next_number:04d}'
+            next_number += 1
+        grouped[season].append(entry)
         new_count += 1
 
     print(f'{new_count} new/refreshed post(s), {skipped_count} left untouched.')

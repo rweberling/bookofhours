@@ -84,7 +84,8 @@ function entryHTML(record, notes = [], site = null) {
 
   const linkLine = groups.filter(Boolean).join('<span class="sep">·</span>');
   return `
-    <div class="entry" id="${escapeHTML(record.id)}">
+    <div class="entry" id="${escapeHTML(record.id)}">${(record.aliases || []).map(a =>
+      `<span class="anchor-alias" id="${escapeHTML(a)}"></span>`).join('')}
       <p class="citation">${citation || ''}${rightsNote ? `<span class="flag-note">${escapeHTML(rightsNote)}</span>` : ''}</p>
       ${linkLine ? `<p class="entry-links">${linkLine}</p>` : ''}
       ${notes.length ? `<p class="entry-note">${notes.map(escapeHTML).join(' · ')}</p>` : ''}

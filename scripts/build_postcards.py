@@ -13,6 +13,8 @@ entry. Changing where a card leads means editing its row and running this
 again; the codes on cards already sent stay good.
 
 Columns in data/postcards.csv:
+  id            the card's permanent ID: pc- and its path, e.g. pc-w26-1 (see
+                the Identifiers section of the metadata notes)
   path          the short link after /c/, e.g. w26/1; becomes c/w26/1/index.html
   destination   the digital original (museum, library or archive page)
   backup        a second copy, in case the first link breaks
@@ -382,6 +384,8 @@ def main():
             errors.append(f'{p!r}: path should look like w26/1')
         if p in seen:
             errors.append(f'{p}: listed twice')
+        if row.get('id') != 'pc-' + p.replace('/', '-'):
+            errors.append(f'{p}: id should be pc-{p.replace("/", "-")}, not {row.get("id")!r}')
         seen.add(p)
         for col in ('destination', 'backup', 'post', 'context'):
             if row[col] and urlparse(row[col]).scheme not in ('http', 'https'):
