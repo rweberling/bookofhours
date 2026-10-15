@@ -57,38 +57,6 @@ function currentSeason(date = new Date()) {
   return SEASONS.find(season => season.months.includes(month)).key;
 }
 
-const SEASONAL_DATA = {
-  spring: {
-    label: 'Spring',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Pink lady\'s slipper', 'Cypripedium acaule'], ['Common lilac', 'Syringa vulgaris'], ['Ostrich fern', 'Matteuccia struthiopteris'], ['Red maple', 'Acer rubrum'], ['Trillium', 'Trillium grandiflorum'], ['Columbine', 'Aquilegia canadensis'], ['Mayapple', 'Podophyllum peltatum'], ['Jack-in-the-pulpit', 'Arisaema triphyllum'], ['Bloodroot', 'Sanguinaria canadensis'], ['Dutchman\'s breeches', 'Dicentra cucullaria'], ['Serviceberry', 'Amelanchier canadensis'], ['Spring beauty', 'Claytonia virginica']
-    ]
-  },
-  summer: {
-    label: 'Summer',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Butterfly weed', 'Asclepias tuberosa'], ['Common reed', 'Phragmites australis'], ['Sheet moss', 'Hypnum imponens'], ['Black-eyed Susan', 'Rudbeckia hirta'], ['Wild bergamot', 'Monarda fistulosa'], ['Joe-Pye weed', 'Eutrochium purpureum'], ['Queen Anne\'s lace', 'Daucus carota'], ['Milkweed', 'Asclepias syriaca'], ['Blue vervain', 'Verbena hastata'], ['Bee balm', 'Monarda didyma'], ['Yarrow', 'Achillea millefolium'], ['Fireweed', 'Chamerion angustifolium']
-    ]
-  },
-  autumn: {
-    label: 'Autumn',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Sugar maple', 'Acer saccharum'], ['Paper birch', 'Betula papyrifera'], ['Corn', 'Zea mays'], ['White oak', 'Quercus alba'], ['American beech', 'Fagus grandifolia'], ['Sumac', 'Rhus typhina'], ['Goldenrod', 'Solidago canadensis'], ['New England aster', 'Symphyotrichum novae-angliae'], ['Pawpaw', 'Asimina triloba'], ['Black walnut', 'Juglans nigra'], ['Highbush blueberry', 'Vaccinium corymbosum'], ['Cranberry', 'Vaccinium macrocarpon']
-    ]
-  },
-  winter: {
-    label: 'Winter',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Witch hazel', 'Hamamelis virginiana'], ['Red currant', 'Ribes rubrum'], ['Eastern hemlock', 'Tsuga canadensis'], ['White pine', 'Pinus strobus'], ['Red cedar', 'Juniperus virginiana'], ['Winterberry', 'Ilex verticillata'], ['Mountain laurel', 'Kalmia latifolia'], ['Christmas fern', 'Polystichum acrostichoides'], ['American holly', 'Ilex opaca'], ['Paper wasp gall', 'Rhopalomyia solidaginis'], ['Snowberry', 'Symphoricarpos albus'], ['Juniper', 'Juniperus communis']
-    ]
-  }
-};
-
-
 // --- Dates and text -----------------------------------------------------------
 // "3:45 pm"
 function formatTime(d) {
@@ -320,23 +288,15 @@ function pickWeatherAware(items, excludeFn) {
   return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather), excludeFn);
 }
 
-// --- Species-card / post-title rework -------------------------------------
-// STOPGAP: real lectio-data.json posts carry no separate species/latin/
-// readings fields — only a raw weekly title string, e.g.
-//   "Week 12: Sugar Maple, Annika Hansteen-Izora, Walter H. Crockett"
-// This parses that title client-side so cards/reading pages can lead with
-// the species name instead of the full post title. It's a stopgap because
-// it's guessing structure from a string built for a different (weekly-post)
-// context. THE DURABLE FIX is to add real `species`, `latin`, and
-// `readings` fields at the point lectio-data.json is generated (or by hand,
-// directly in the file), so this parsing (and its "Week N:" / comma-list
-// assumptions) can be deleted.
+// --- Species cards and reading pages ----------------------------------------
+// A post's subject (its species or phenomenon) lives in data/species.json
+// or data/phenomena.json; the post names it by ID ("subject"), and
+// loadLectioData() below joins the two. A post without a subject yet (a
+// new import) falls back to its title, parsed here.
 //
 // `readings` names the 2-3 writers whose work is paired with each post —
 // deliberately not "contributors," since it's scoped to written readings
-// only. Artists/images are a separate, not-yet-built concern; if that ever
-// gets its own field, it'll be additive (e.g. `artists`), not a rename of
-// this one.
+// only.
 //
 // Expected shape: "<label>: <Species Name>, <Reading 1>, <Reading 2>, ..."
 // Falls back gracefully (whole title as species, no readings) if the
@@ -373,61 +333,47 @@ function creditLine(readings) {
   return readings.join(', ');
 }
 
-// Latin-name lookup, keyed by lowercased common name, built from the
-// hand-curated SEASONAL_DATA species lists above. Only covers species that
-// happen to match one of those ~48 entries — real posts outside that list
-// fall back to showing the credit line instead of a Latin name. That's a
-// known, visible limitation of the stopgap, not a bug: the durable fix
-// (real `latin` field in lectio-data.json) covers every post, not just the
-// hand-curated sample.
-const SPECIES_LATIN_LOOKUP = new Map();
-SEASON_KEYS.forEach(key => {
-  SEASONAL_DATA[key].species.forEach(([common, latin]) => {
-    SPECIES_LATIN_LOOKUP.set(common.toLowerCase(), latin);
-  });
-});
-
-// Shared by hours.js's species grid and seasons.js's reading page — same
-// species/latin/readings extraction, so a parsing-edge-case fix doesn't
-// have to be made twice (or, worse, made in only one of the two and left
-// to quietly disagree with the other for the same post).
-//
-// isRealEntry distinguishes a real fetched lectio-data.json entry from
-// hours.js's fallback-sample entries (SEASON_SPECIES, used only if the
-// fetch fails) — the fallback entries already carry a clean title/subtitle
-// and never need the raw-title parse. seasons.js only ever renders real
-// entries, so it always passes true.
-function resolveSpeciesFields(entry, isRealEntry) {
-  if (isRealEntry && entry.species) {
-    return { species: entry.species, latin: entry.latin || null, readings: entry.readings || [] };
+// The names a species card and a reading page show for a post: its
+// subject record's common and scientific (or Latin) name, else what its
+// title gives.
+function resolveSpeciesFields(entry) {
+  const parsed = parsePostTitle(entry.title);
+  const readings = entry.readings || parsed.readings;
+  const subject = entry.subjectRecord;
+  if (subject) {
+    return { species: subject.name, latin: subject.scientific || subject.latin || null, readings };
   }
-  if (isRealEntry) {
-    const parsed = parsePostTitle(entry.title);
-    return {
-      species: parsed.species,
-      readings: parsed.readings,
-      latin: SPECIES_LATIN_LOOKUP.get(parsed.species.toLowerCase()) || null
-    };
-  }
-  return { species: entry.title, latin: entry.subtitle || null, readings: [] };
+  return { species: parsed.species, latin: null, readings };
 }
 
-// Shared by hours.js (species grid) and seasons.js (reading page) — one
-// fetch+error path instead of two copies that could drift (different
-// error copy, different caching, a future retry/timeout added to one and
-// not the other). Cached per page load: repeatedly opening the species
-// grid, or anything else that calls this again, reuses the same promise
-// instead of re-fetching.
+// The Lectio Terra posts, each with its subject record joined on as
+// subjectRecord. Shared by seasons.js and sources.js, and cached per page
+// load. If the species files can't be loaded, the posts still are, and
+// fall back to their titles.
 let lectioDataPromise = null;
 function loadLectioData() {
   if (!lectioDataPromise) {
-    lectioDataPromise = fetch('lectio-data.json').then(response => {
-      if (!response.ok) throw new Error(`Unable to load Lectio Terra posts (${response.status}).`);
+    const getJSON = (url, what) => fetch(url).then(response => {
+      if (!response.ok) throw new Error(`Unable to load ${what} (${response.status}).`);
       return response.json();
     });
+    const subjects = Promise.all([
+      getJSON('data/species.json', 'data/species.json'),
+      getJSON('data/phenomena.json', 'data/phenomena.json')
+    ]).then(([species, phenomena]) => new Map([...species, ...phenomena].map(r => [r.id, r])))
+      .catch(error => { console.error(error); return new Map(); });
+    lectioDataPromise = Promise.all([getJSON('lectio-data.json', 'Lectio Terra posts'), subjects])
+      .then(([data, byId]) => {
+        Object.values(data.seasons || {}).forEach(entries => entries.forEach(entry => {
+          if (entry.subject && byId.has(entry.subject)) entry.subjectRecord = byId.get(entry.subject);
+        }));
+        return data;
+      });
+    lectioDataPromise.catch(() => { lectioDataPromise = null; });
   }
   return lectioDataPromise;
 }
+
 // --- The collection ---------------------------------------------------------
 // data/ holds the collection itself: readings, images, editorial writing and
 // the vocabularies their tags point to (hours, seasons, weather, subjects),

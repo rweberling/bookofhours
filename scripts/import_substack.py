@@ -225,7 +225,7 @@ def load_existing(path):
 
     Only entries already sorted into a real season count as "already
     imported" — those are the ones this script will leave untouched from
-    now on, hand edits (species/latin/readings, title corrections,
+    now on, hand edits (subject/readings, title corrections,
     whatever) included. Rows in the old 'unassigned' list are lightweight
     stubs with no real content, so they're always re-evaluated fresh
     against the current season-assignments.json rather than preserved.
@@ -381,7 +381,7 @@ def main():
         return
 
     # Start from whatever's already on disk, in its original order, so
-    # anything hand-edited into an existing entry (species/latin/
+    # anything hand-edited into an existing entry (subject/
     # readings, a corrected title, whatever) survives this run
     # untouched — unless its slug was explicitly passed to --refresh.
     grouped = {season: [] for season in SEASONS}

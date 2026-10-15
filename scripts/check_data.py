@@ -126,20 +126,18 @@ def main():
         if (season, target) not in post_place:
             errors.append(f'{owner}: links to Seasons entry {target} in {season}, which is not there')
 
-    # Each post's subject is a species or phenomenon record.
+    # Each post's subject is a species or phenomenon record, whose names
+    # the Seasons page shows; the post doesn't keep a copy of them.
     subjects = {r['id'] for r in species + phenomena}
     for e in posts:
+        for field in ('species', 'latin'):
+            if field in e:
+                errors.append(f'{e["id"]}: "{field}" belongs on its subject record in data/species.json '
+                              'or data/phenomena.json, not on the post')
         if not e.get('subject'):
             gaps[e['id']].append('subject (species or phenomenon)')
         elif e['subject'] not in subjects:
             errors.append(f'{e["id"]}: subject {e["subject"]} is not in data/species.json or data/phenomena.json')
-        else:
-            # The Latin name the Wander cards show is the record's own.
-            record = next(r for r in species + phenomena if r['id'] == e['subject'])
-            named = record.get('scientific') or record.get('latin')
-            if (e.get('latin') or '').strip() != named:
-                errors.append(f'{e["id"]}: Latin name "{e.get("latin")}" differs from its subject {e["subject"]} ("{named}"); '
-                              'change both together')
     for r in species + phenomena:
         if not r.get('wikidata'):
             gaps[r['id']].append('Wikidata ID')

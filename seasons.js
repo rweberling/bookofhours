@@ -61,10 +61,8 @@ function setSeasonCanonical(entry) {
 function renderSeasonReading(entry) {
   currentEntryId = entry.id;
 
-  // Only real fetched entries are ever rendered here (no fallback-sample
-  // path), so isRealEntry is always true — see resolveSpeciesFields() in
-  // shared.js, shared with the species cards below.
-  const { species, latin, readings } = resolveSpeciesFields(entry, true);
+  // resolveSpeciesFields() is in shared.js, shared with the species cards below.
+  const { species, latin, readings } = resolveSpeciesFields(entry);
   const credits = creditLine(readings);
 
   document.title = `${species} — The Current Season`;
@@ -533,12 +531,6 @@ function setSeasonDialActive(seasonKey) {
 
 /* ── Wander the Seasons: the species cards ────────────────────── */
 
-// Only used if lectio-data.json can't be loaded: the hand-curated
-// species lists in shared.js, so the grid isn't empty.
-const SEASON_SPECIES = Object.fromEntries(
-  SEASON_KEYS.map(key => [key, SEASONAL_DATA[key].species.map(([common, latin]) => ({ common, latin }))])
-);
-
 // The grid always shows all four seasons stacked (see .species-grid in
 // css/styles.css), starting from the season it is now and running on
 // through the year — in October: autumn, winter, spring, summer. Built
@@ -555,6 +547,9 @@ async function buildSpeciesGrid() {
     importedSeasons = data.seasons;
   } catch (error) {
     console.error(error);
+    grid.innerHTML = '<p class="empty-note">The species could not be opened. Please return soon.</p>';
+    speciesGridBuilt = false;
+    return;
   }
 
   const first = SEASON_KEYS.indexOf(currentSeason());
@@ -571,37 +566,28 @@ async function buildSpeciesGrid() {
 
     const entryGrid = document.createElement('div');
     entryGrid.className = 'species-season-grid';
-    const isRealEntries = !!(importedSeasons && importedSeasons[key]);
-    const entries = isRealEntries
-      ? importedSeasons[key]
-      : SEASON_SPECIES[key].map(species => ({
-          id: species.common.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-          title: species.common,
-          subtitle: species.latin
-        }));
+    const entries = importedSeasons[key] || [];
     entries.forEach(entry => {
       const card = document.createElement('a');
       card.className = 'species-card';
       card.href = `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
 
-      // A real entry opens right here, in place — the link stays a real
+      // The reading opens right here, in place — the link stays a real
       // link so a new-tab/cmd-click still works the ordinary way.
-      if (isRealEntries) {
-        card.addEventListener('click', e => {
-          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
-          e.preventDefault();
-          // Remember which reading was showing (it may have been reached
-          // by turning pages, which the URL doesn't record), so Back
-          // returns to it rather than to a fresh random pick.
-          history.replaceState({ season: season.key, entry: currentEntryId }, '', window.location.href);
-          showSeasonEntry(key, entry.id);
-          history.pushState({ season: key, entry: entry.id }, '', card.href);
-          closeOverlayPane(document.getElementById('season-pane'));
-          window.scrollTo(0, 0);
-        });
-      }
+      card.addEventListener('click', e => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        e.preventDefault();
+        // Remember which reading was showing (it may have been reached
+        // by turning pages, which the URL doesn't record), so Back
+        // returns to it rather than to a fresh random pick.
+        history.replaceState({ season: season.key, entry: currentEntryId }, '', window.location.href);
+        showSeasonEntry(key, entry.id);
+        history.pushState({ season: key, entry: entry.id }, '', card.href);
+        closeOverlayPane(document.getElementById('season-pane'));
+        window.scrollTo(0, 0);
+      });
 
-      const { species, latin, readings } = resolveSpeciesFields(entry, isRealEntries);
+      const { species, latin, readings } = resolveSpeciesFields(entry);
 
       if (entry.images && entry.images[0]) {
         const thumb = document.createElement('img');

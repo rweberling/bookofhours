@@ -27,12 +27,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/8792b78f-b668-4bdc-a0c2-987770a3bc6e_1552x1469.jpeg"
           }
         ],
-        "species": "Sugar Maple",
         "readings": [
           "Annika Hansteen-Izora",
           "Walter H. Crockett"
         ],
-        "latin": "Acer saccharum",
         "subject": "sp-0003"
       },
       {
@@ -64,12 +62,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/38019d87-389a-4e2a-944b-9837709cfe96_370x441.png"
           }
         ],
-        "species": "American Robin",
         "readings": [
           "Emily Dickinson",
           "Robert Ridgway"
         ],
-        "latin": "Turdus migratorius",
         "subject": "sp-0002"
       },
       {
@@ -101,12 +97,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/9fc63fbc-c9c2-464e-a849-e69e47958040_3809x2922.jpeg"
           }
         ],
-        "species": "Paper Birch",
         "readings": [
           "Robert Frost",
           "Gifford Pinchot"
         ],
-        "latin": "Betula papyrifera",
         "subject": "sp-0004"
       },
       {
@@ -138,12 +132,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/b2cea422-0258-42e9-9722-9f69cceeacb9_1382x1742.jpeg"
           }
         ],
-        "species": "Great Mullein",
         "readings": [
           "Ashia Ajani",
           "Hildegard von Bingen"
         ],
-        "latin": "Verbascum thapsus",
         "subject": "sp-0008"
       },
       {
@@ -175,12 +167,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/5e09353b-1458-489a-9f92-1db13fcc4d4a_2172x1486.jpeg"
           }
         ],
-        "species": "Rain Clouds",
         "readings": [
           "Johann Wolfgang von Goethe",
           "Jenny Odell"
         ],
-        "latin": "Nimbostratus praecipitatio",
         "subject": "ph-0001"
       },
       {
@@ -212,12 +202,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/0b4cdde9-78a0-4b05-b3b0-67470ad90a9f_2088x2985.jpeg"
           }
         ],
-        "species": "Ostrich Fern",
         "readings": [
           "Martin Heidegger",
           "Douglas Houghton Campbell"
         ],
-        "latin": "Matteuccia struthiopteris",
         "subject": "sp-0006"
       },
       {
@@ -254,12 +242,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/afaf3a9d-f7f6-4ff6-a9e6-a8a1273a1bcf_2847x3558.jpeg"
           }
         ],
-        "species": "Dutch Crocus",
         "readings": [
           "Guillaume Barth",
           "William Herbert"
         ],
-        "latin": "Crocus vernus",
         "subject": "sp-0005"
       },
       {
@@ -291,12 +277,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/057feb7e-6ae1-4297-9a34-893142c88575_1462x2405.jpeg"
           }
         ],
-        "species": "Eastern Cottontail",
         "readings": [
           "Zora Neale Hurston",
           "Ernest Thompson Seton"
         ],
-        "latin": "Sylvilagus floridanus",
         "subject": "sp-0007"
       },
       {
@@ -323,12 +307,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/30311337-4367-4aac-9951-b9e1b87ac0f1_1202x1387.jpeg"
           }
         ],
-        "species": "Sheet Moss",
         "readings": [
           "Hildegard von Bingen",
           "Michael Marder"
         ],
-        "latin": "Hypnum imponens",
         "subject": "sp-0009"
       },
       {
@@ -365,12 +347,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/83280b03-ff6b-488b-b64d-37b0a27a37b5_2883x1460.heic"
           }
         ],
-        "species": "Cambridge Argillite",
         "readings": [
           "Ludwig Wittgenstein",
           "The Dana Brothers"
         ],
-        "latin": "Argillita cantabrigiensis",
         "subject": "ph-0002"
       },
       {
@@ -402,12 +382,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/551e6c26-4697-496e-82f7-c0522a9d2b55_723x440.jpeg"
           }
         ],
-        "species": "Common Lilac",
         "readings": [
           "Amy Lowell",
           "Ronald Firbank"
         ],
-        "latin": "Syringa vulgaris",
         "subject": "sp-0010"
       },
       {
@@ -439,12 +417,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/edc9ddca-85c2-4afd-87d0-59d5910bec85_688x471.png"
           }
         ],
-        "species": "Living Soil",
         "readings": [
           "Jenifer Wightman",
           "Graham A.W. Rook"
         ],
-        "latin": "Mycobacterium vaccae",
         "subject": "sp-0011"
       }
     ],
@@ -478,12 +454,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/6c07f51a-baea-44d8-8ca4-247f296e509f_984x1543.jpeg"
           }
         ],
-        "species": "Pink Lady’s Slipper",
         "readings": [
           "Grace Graylock Niles",
           "C.S. Young"
         ],
-        "latin": "Cypripedium acaule",
         "subject": "sp-0014"
       },
       {
@@ -515,12 +489,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/2a0a2d48-48ba-41da-acc6-f31057fcd616_1381x428.webp"
           }
         ],
-        "species": "Sunspots",
         "readings": [
           "Galileo Galilei feat. The Roman Inquisition",
           "Simon Barraclough"
         ],
-        "latin": "Maculae solares",
         "subject": "ph-0003"
       },
       {
@@ -557,12 +529,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/62f7ab6f-13b5-4882-97c1-dac44a9928f2_759x716.jpeg"
           }
         ],
-        "species": "Cucurbits",
         "readings": [
           "Marge Piercy",
           "Padraig Regan"
         ],
-        "latin": "Cucurbitaceae",
         "subject": "sp-0020"
       },
       {
@@ -594,12 +564,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/ee9bbc95-3940-46ee-810c-bc9df9cdcdce_804x1200.jpeg"
           }
         ],
-        "species": "Common Reed",
         "readings": [
           "Rumi",
           "A.R. Harwood"
         ],
-        "latin": "Phragmites australis",
         "subject": "sp-0012"
       },
       {
@@ -631,12 +599,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/81c85b01-23bb-400b-a92e-5db8289d5ee2_1404x820.jpeg"
           }
         ],
-        "species": "Wool Sower Wasp",
         "readings": [
           "E.P. Felt",
           "Francesco Redi of Arezzo"
         ],
-        "latin": "Callirhytis seminator",
         "subject": "sp-0013"
       },
       {
@@ -668,12 +634,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/5c0282a9-9def-4caa-aad0-abe201438c68_549x976.jpeg"
           }
         ],
-        "species": "Serviceberry",
         "readings": [
           "Robin Wall Kimmerer",
           "K.M. Wiegand"
         ],
-        "latin": "Amelanchier canadensis",
         "subject": "sp-0015"
       },
       {
@@ -705,12 +669,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/b459e3c8-e1c2-4a64-b083-3924185bc1bb_1399x1623.jpeg"
           }
         ],
-        "species": "Red Currant",
         "readings": [
           "Maud Grieve",
           "The Ohio Agricultural Experiment Station"
         ],
-        "latin": "Ribes rubrum",
         "subject": "sp-0016"
       },
       {
@@ -747,12 +709,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/8012a144-77f6-47cb-9c90-805c7c9d575a_2056x2850.jpeg"
           }
         ],
-        "species": "Corn",
         "readings": [
           "Haudenosaunee Storytellers",
           "Emily Pauline Johnson"
         ],
-        "latin": "Zea mays",
         "subject": "sp-0017"
       },
       {
@@ -784,12 +744,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/ff312cd2-ab1d-4ce7-8fcb-c806c3aff84a_719x944.jpeg"
           }
         ],
-        "species": "Highbush Blueberry",
         "readings": [
           "Joseph J. White, Inc.",
           "Alix Beeston on Ellena Savage"
         ],
-        "latin": "Vaccinium corymbosum",
         "subject": "sp-0018"
       },
       {
@@ -816,12 +774,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/b996b081-3a76-491f-a32a-f0eac856642d_655x445.webp"
           }
         ],
-        "species": "Butterfly Weed",
         "readings": [
           "Paul Muldoon",
           "Nathaniel Lord Britton"
         ],
-        "latin": "Asclepias tuberosa",
         "subject": "sp-0019"
       },
       {
@@ -853,12 +809,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/f3967c45-7d51-4f21-814d-032b194cde72_1573x1510.png"
           }
         ],
-        "species": "Dog Days",
         "readings": [
           "Horace",
           "Heraclitus"
         ],
-        "latin": "Dies caniculares",
         "subject": "ph-0004"
       },
       {
@@ -890,12 +844,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/8cdb8df1-3be2-4517-93dd-cd6e519de531_970x809.webp"
           }
         ],
-        "species": "Perseids",
         "readings": [
           "Han Dynasty Scribes",
           "Henry David Thoreau"
         ],
-        "latin": "Lacrimae Sancti Laurentii",
         "subject": "ph-0005"
       },
       {
@@ -927,12 +879,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/cccacb51-079c-41e4-806b-05ea60f81d7f_1920x1552.jpeg"
           }
         ],
-        "species": "Melons and Cucumbers",
         "readings": [
           "Robert Hass",
           "Marcus Aurelius (and William Cowper, too)"
         ],
-        "latin": "Cucumis",
         "subject": "sp-0021"
       },
       {
@@ -964,12 +914,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/6917037b-d320-4c98-a6a6-8bb746f8c336_1500x2831.jpeg"
           }
         ],
-        "species": "Watermelon",
         "readings": [
           "Sylvia Plath",
           "Pliny the Elder"
         ],
-        "latin": "Citrullus lanatus",
         "subject": "sp-0022"
       }
     ],
@@ -1008,13 +956,11 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/b219cd4e-8bd9-4d99-b5fb-197cca1e623f_1197x1803.jpeg"
           }
         ],
-        "species": "Northern Red Oak",
         "readings": [
           "Susan Fenimore Cooper",
           "George Francis Heath",
           "James George Frazer"
         ],
-        "latin": "Quercus rubra",
         "readingLabels": [
           {
             "author": "Susan Fenimore Cooper",
@@ -1060,13 +1006,11 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/ac61dfff-1a97-4b2c-b7ea-3cee148e2922_2679x3511.jpeg"
           }
         ],
-        "species": "Shagbark Hickory",
         "readings": [
           "Carl Sandburg",
           "Vladimir Nabokov",
           "Charles S. Sargent"
         ],
-        "latin": "Carya ovata",
         "readingLabels": [
           {
             "author": "Carl Sandburg",
@@ -1109,12 +1053,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/c34aca4c-7bc8-4ea6-9103-21be6f326f30_601x999.png"
           }
         ],
-        "species": "Witch Hazel",
         "readings": [
           "Friedrich Nietzsche",
           "William Hamilton Gibson"
         ],
-        "latin": "Hamamelis virginiana",
         "subject": "sp-0001"
       }
     ]
