@@ -123,6 +123,21 @@ def main():
         if (season, target) not in post_place:
             errors.append(f'{owner}: links to Seasons entry {target} in {season}, which is not there')
 
+    # Readings copied from Lectio Terra posts (copy_lectio_readings.py)
+    # name a post that exists, each passage of it once.
+    post_ids = {e['id'] for e in posts}
+    copied = {}
+    for r in readings:
+        source = r.get('lectio')
+        if not source:
+            continue
+        key = (source.get('post'), source.get('place'))
+        if key[0] not in post_ids:
+            errors.append(f'{r["id"]}: copied from Lectio Terra post {key[0]}, which is not there')
+        if key in copied:
+            errors.append(f'{r["id"]}: the same passage as {copied[key]} ({key[0]}, passage {key[1]})')
+        copied[key] = r['id']
+
     # Tags point at the vocabularies.
     schemes = {name: {c['id'] for c in concepts} for name, concepts in vocab.items()}
     def check_tags(rid, tags):
