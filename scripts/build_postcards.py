@@ -400,6 +400,9 @@ def main():
         print(f'wrote {page.relative_to(ROOT)}')
     for w in warnings:
         print(f'note: {w}')
+    # A card leaving draft joins the sitemap (draft pages are noindex).
+    import build_sitemap
+    build_sitemap.main()
 
 
 if __name__ == '__main__':

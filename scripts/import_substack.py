@@ -8,7 +8,8 @@ Usage:
 
 With --write, the post images are downloaded to images/lectio-terra/ and
 scripts/build_images.py then runs, making the web copies the Seasons page
-shows (and removing those of any image no longer there).
+shows (and removing those of any image no longer there), and then
+scripts/build_sitemap.py, listing the new readings.
 """
 
 import argparse
@@ -407,6 +408,10 @@ def main():
         built = subprocess.run([sys.executable, str(Path(__file__).with_name('build_images.py'))])
         if built.returncode:
             print('The web copies were not all made. Run: python3 scripts/build_images.py', file=sys.stderr)
+        # New readings get their own addresses in the sitemap.
+        mapped = subprocess.run([sys.executable, str(Path(__file__).with_name('build_sitemap.py'))])
+        if mapped.returncode:
+            print('The sitemap was not updated. Run: python3 scripts/build_sitemap.py', file=sys.stderr)
     else:
         print(json.dumps({season: len(items) for season, items in grouped.items()}, indent=2))
         print(f'Unassigned posts: {len(unassigned)}. Use --template to create assignment entries.')

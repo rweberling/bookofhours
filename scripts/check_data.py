@@ -344,6 +344,14 @@ def main():
         print(f'\nShared parts are out of date on {len(stale)} page(s) ({", ".join(stale)}). '
               'Run: python3 scripts/build_shared.py')
 
+    # sitemap.xml lists every page and reading; say when the list no
+    # longer matches (lastmod dates aside).
+    from build_sitemap import stale_addresses
+    missing, extra = stale_addresses()
+    if missing or extra:
+        print(f'\nThe sitemap is out of date ({len(missing)} address(es) to add, {len(extra)} to remove). '
+              'Run: python3 scripts/build_sitemap.py')
+
     return 1 if errors else 0
 
 
