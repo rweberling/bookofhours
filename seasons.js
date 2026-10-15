@@ -26,6 +26,26 @@ function seasonFromURL() {
 
 /* ── The reading ──────────────────────────────────────────────── */
 
+// The page's canonical address, for search engines. Opened at a reading's
+// own address (?season=…&entry=…), that reading is the page; opened
+// plain, or turned to another reading by the page buttons (which don't
+// change the address), the page is seasons.html itself. Set from here,
+// not fixed in the HTML, since a fixed one would claim every reading is
+// the same page.
+function setSeasonCanonical(entry) {
+  const params = new URLSearchParams(window.location.search);
+  const own = params.get('entry') === entry.id && params.get('season');
+  let link = document.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'canonical';
+    document.head.appendChild(link);
+  }
+  link.href = own
+    ? `https://earthlyhours.com/seasons.html?season=${encodeURIComponent(params.get('season'))}&entry=${encodeURIComponent(entry.id)}`
+    : 'https://earthlyhours.com/seasons.html';
+}
+
 function renderSeasonReading(entry) {
   currentEntryId = entry.id;
 
@@ -36,6 +56,7 @@ function renderSeasonReading(entry) {
   const credits = creditLine(readings);
 
   document.title = `${species} — The Current Season`;
+  setSeasonCanonical(entry);
   document.getElementById('season-reading-subtitle').textContent = season.subtitle;
   document.getElementById('season-reading-title').textContent = species;
 
