@@ -103,6 +103,9 @@ def credits():
     """The credit to embed in each master's copies, keyed by master path."""
     out = {}
     for rec in datafile.load('images'):
+        # A Lectio Terra figure keeps the credit of its post, below.
+        if rec.get('lectio'):
+            continue
         links = rec.get('links') or []
         source = ((rec.get('source') or {}).get('url')
                   or next((l['url'] for l in links if l['role'] == 'cited'), None)

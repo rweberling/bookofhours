@@ -9,8 +9,8 @@ Usage:
 With --write, the post images are downloaded to images/lectio-terra/ and
 scripts/build_images.py then runs, making the web copies the Seasons page
 shows (and removing those of any image no longer there), then
-scripts/copy_lectio_readings.py, adding each new passage to
-data/readings.json, and then scripts/build_sitemap.py, listing the new
+scripts/copy_lectio.py, adding each new passage and figure to
+data/readings.json and data/images.json, and then scripts/build_sitemap.py, listing the new
 readings.
 """
 
@@ -436,10 +436,10 @@ def main():
         built = subprocess.run([sys.executable, str(Path(__file__).with_name('build_images.py'))])
         if built.returncode:
             print('The web copies were not all made. Run: python3 scripts/build_images.py', file=sys.stderr)
-        # Their passages become reading records of their own.
-        copied = subprocess.run([sys.executable, str(Path(__file__).with_name('copy_lectio_readings.py')), '--write'])
+        # Their passages and figures become records of their own.
+        copied = subprocess.run([sys.executable, str(Path(__file__).with_name('copy_lectio.py')), '--write'])
         if copied.returncode:
-            print('The passages were not copied. Run: python3 scripts/copy_lectio_readings.py --write', file=sys.stderr)
+            print('The passages and figures were not copied. Run: python3 scripts/copy_lectio.py --write', file=sys.stderr)
         # New readings get their own addresses in the sitemap.
         mapped = subprocess.run([sys.executable, str(Path(__file__).with_name('build_sitemap.py'))])
         if mapped.returncode:

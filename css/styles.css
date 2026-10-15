@@ -2070,6 +2070,14 @@ a.page-action { text-decoration: none; }
 
 .sources-page .citation em { font-style: italic; }
 
+/* Links written into a citation or caption as the post gives it. */
+.sources-page .citation a {
+  color: inherit; text-decoration: underline;
+  text-decoration-color: var(--accent); text-underline-offset: 2px;
+}
+
+.sources-page .citation a:hover { color: var(--accent); }
+
 .sources-page .entry-links {
   margin-top: 5px;
   padding-left: 1.5em;
@@ -2169,6 +2177,10 @@ a.page-action { text-decoration: none; }
 .sources-page .week { padding: 12px 0; border-bottom: 0.5px solid var(--rule); }
 
 .sources-page .week:last-child { border-bottom: none; }
+
+.sources-page .week .category-label { margin: 18px 0 4px; }
+
+.sources-page .week .entry:last-child { border-bottom: none; }
 
 .sources-page .week-title a {
   font-family: var(--font-text);

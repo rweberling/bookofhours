@@ -8,7 +8,8 @@
                     the pieces shown before any condition is chosen;
                     a piece is listed once, under the first row any of
                     its conditions belongs to
-     The Seasons  — each season's Lectio Terra posts, by week
+     The Seasons  — each season's Lectio Terra posts, by week, each with
+                    the passages and figures copied from it
 
    Each entry shows its hand-written bibliography line (or its display
    citation, until one is written), any rights note, and its links:
@@ -208,7 +209,14 @@ function buildSources(collection, lectio) {
 
   // The Seasons
   html += partHeaderHTML('seasons', 'The Seasons',
-    "The weekly readings from <em>Lectio Terra</em>, by season. Citations for each week's readings and images will be listed beneath it.");
+    "The weekly readings from <em>Lectio Terra</em>, by season, each with the passages it quotes and the figures it shows.");
+  // A week's own passages and figures, in the order the post gives them.
+  const piecesOf = (records, week) => records
+    .filter(r => r.lectio && r.lectio.post === week.id)
+    .sort((a, b) => a.lectio.place - b.lectio.place);
+  const weekGroup = (label, records) => records.length
+    ? `<p class="category-label">${label}</p>${records.map(r => entryHTML(r, [], site)).join('')}`
+    : '';
   SEASON_KEYS.forEach(key => {
     const weeks = ((lectio && lectio.seasons && lectio.seasons[key]) || [])
       .slice().sort((a, b) => (a.published || '').localeCompare(b.published || ''));
@@ -219,6 +227,7 @@ function buildSources(collection, lectio) {
     <div class="week">
       <p class="week-title"><a href="seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}">${escapeHTML(week.title)}</a></p>
       ${date ? `<p class="week-date">${date}</p>` : ''}
+      ${weekGroup('Readings', piecesOf(readings, week))}${weekGroup('Figures', piecesOf(images, week))}
     </div>`;
     }).join('') : '<p class="empty-note">No sources yet.</p>';
     html += `

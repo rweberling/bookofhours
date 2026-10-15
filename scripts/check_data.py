@@ -90,8 +90,8 @@ def main():
     # IDs: neutral and permanent, one format per kind (see the Identifiers
     # section of the metadata notes), unique across everything, aliases
     # (the old IDs they replaced) included, and never one that's retired.
-    # Editorial records keep their ed- IDs until they're split into
-    # writing (w-) and phenomena (ph-).
+    # Editorial records keep their ed- IDs until Stage 2 makes their
+    # versicles and phenomenon lines writing (w-) records.
     lectio = json.loads((DATA / 'lectio-data.json').read_text())
     posts = [e for items in lectio.get('seasons', {}).values() for e in items]
     with (DATA / 'postcards.csv').open(encoding='utf-8', newline='') as f:
@@ -146,20 +146,21 @@ def main():
         if r['id'].startswith('sp-') and not r.get('gbif'):
             gaps[r['id']].append('GBIF ID')
 
-    # Readings copied from Lectio Terra posts (copy_lectio_readings.py)
-    # name a post that exists, each passage of it once.
+    # Passages and figures copied from Lectio Terra posts (copy_lectio.py)
+    # name a post that exists, each passage or figure of it once.
     post_ids = {e['id'] for e in posts}
-    copied = {}
-    for r in readings:
-        source = r.get('lectio')
-        if not source:
-            continue
-        key = (source.get('post'), source.get('place'))
-        if key[0] not in post_ids:
-            errors.append(f'{r["id"]}: copied from Lectio Terra post {key[0]}, which is not there')
-        if key in copied:
-            errors.append(f'{r["id"]}: the same passage as {copied[key]} ({key[0]}, passage {key[1]})')
-        copied[key] = r['id']
+    for records, piece in ((readings, 'passage'), (images, 'figure')):
+        copied = {}
+        for r in records:
+            source = r.get('lectio')
+            if not source:
+                continue
+            key = (source.get('post'), source.get('place'))
+            if key[0] not in post_ids:
+                errors.append(f'{r["id"]}: copied from Lectio Terra post {key[0]}, which is not there')
+            if key in copied:
+                errors.append(f'{r["id"]}: the same {piece} as {copied[key]} ({key[0]}, {piece} {key[1]})')
+            copied[key] = r['id']
 
     # Tags point at the vocabularies.
     schemes = {name: {c['id'] for c in concepts} for name, concepts in vocab.items()}
