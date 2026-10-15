@@ -133,6 +133,13 @@ def main():
             gaps[e['id']].append('subject (species or phenomenon)')
         elif e['subject'] not in subjects:
             errors.append(f'{e["id"]}: subject {e["subject"]} is not in data/species.json or data/phenomena.json')
+        else:
+            # The Latin name the Wander cards show is the record's own.
+            record = next(r for r in species + phenomena if r['id'] == e['subject'])
+            named = record.get('scientific') or record.get('latin')
+            if (e.get('latin') or '').strip() != named:
+                errors.append(f'{e["id"]}: Latin name "{e.get("latin")}" differs from its subject {e["subject"]} ("{named}"); '
+                              'change both together')
     for r in species + phenomena:
         if not r.get('wikidata'):
             gaps[r['id']].append('Wikidata ID')
