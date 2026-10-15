@@ -1656,7 +1656,17 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 /* With the DFOS gate on, a pane's grid waits behind this until the
    visitor signs in (syncWanderLock in nav.js); the dial above it
    stays open to everyone. */
-.wander-pane .wander-lock { font-style: italic; margin: 0 0 30px; }
+.wander-pane .wander-lock { font-style: italic; margin: 0 0 8px; }
+/* Under the lock, in parentheses: what a key is for (and, once signed
+   in, thanks). Quieter than the button. */
+.wander-pane .wander-lock-note {
+  max-width: 34em;
+  margin: 0 auto 30px;
+  font-family: var(--font-text);
+  font-size: 13px; font-style: italic;
+  line-height: 1.6; text-align: center;
+  color: var(--ink-faint);
+}
 .wander-pane [hidden] { display: none !important; }
 
 /* ── The Weather page (weather.html) ─────────────────────────────

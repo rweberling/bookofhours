@@ -112,14 +112,19 @@ onUnavailable();
 }
 }
 
+// What each pane's lock lets you choose, for the note under it.
+const WANDER_CHOICE = { wander: 'another hour', season: 'another season', weather: 'other weather' };
+
 // Shows gridEl, or in its place the lock: a button that starts sign-in
 // with intent (the page's name for its pane), or, for a visitor already
-// signed in without a key, points them to KEY_HOLDER_URL. The button is
-// made once, just above the grid, and kept.
+// signed in without a key, points them to KEY_HOLDER_URL. Under it, a
+// note in parentheses says what the key is for, and thanks a visitor
+// who has just signed in. Button and note are made once, just above
+// the grid, and kept; each knows the other and the grid.
 function syncWanderLock(gridEl, intent) {
 if (!gridEl) return;
-let lock = gridEl.previousElementSibling;
-if (!lock || !lock.classList.contains('wander-lock')) {
+let lock = gridEl.wanderLock;
+if (!lock) {
 lock = document.createElement('button');
 lock.type = 'button';
 lock.className = 'wander-btn wander-lock';
@@ -134,12 +139,21 @@ lock.textContent = 'Sign-in unavailable — try again';
 setTimeout(() => syncWanderLock(gridEl, intent), 5000);
 });
 });
-gridEl.before(lock);
+const note = document.createElement('p');
+note.className = 'wander-lock-note';
+gridEl.before(lock, note);
+gridEl.wanderLock = lock;
+lock.wanderNote = note;
+lock.wanderGrid = gridEl;
 }
 const open = dfosMayWander();
+const signedIn = dfosSignedIn();
 gridEl.hidden = !open;
 lock.hidden = open;
-lock.textContent = dfosSignedIn() ? 'Hold a key to wander' : 'Sign in to wander';
+lock.wanderNote.hidden = open;
+lock.textContent = signedIn ? 'Hold a key to wander' : 'Sign in to wander';
+const choosing = `Choosing ${WANDER_CHOICE[intent] || 'another hour'} is for Wanderers, who keep this book going; the present is open to all.`;
+lock.wanderNote.textContent = signedIn ? `(Thank you for signing in. ${choosing})` : `(${choosing})`;
 // Signed in without a key: ask again (dfos-siwd.js keeps this to once a
 // minute); a key found since unlocks the pane through 'dfossignin'.
 if (!open && dfosSignedIn() && typeof window.dfosRefreshSession === 'function') window.dfosRefreshSession();
@@ -149,7 +163,7 @@ if (!open && dfosSignedIn() && typeof window.dfosRefreshSession === 'function') 
 // pane already built.
 window.addEventListener('dfossignin', () => {
 document.querySelectorAll('.wander-lock').forEach(lock => {
-syncWanderLock(lock.nextElementSibling, lock.dataset.intent);
+syncWanderLock(lock.wanderGrid, lock.dataset.intent);
 });
 });
 
