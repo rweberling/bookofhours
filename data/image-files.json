@@ -594,6 +594,34 @@
         }
       ]
     },
+    "images/hush_bentley_plate.jpg": {
+      "bytes": 719126,
+      "width": 1124,
+      "height": 1437,
+      "sha256": "5930ebbf7331f7c5a5ddae0cc6a2359dc2e99764e52ec91640e486dfa47e99ed",
+      "settings": "89e48fac760f",
+      "credit": "aff85cd01f26",
+      "copies": [
+        {
+          "file": "images/web/hush_bentley_plate-800.webp",
+          "width": 800,
+          "height": 1023,
+          "bytes": 101510
+        },
+        {
+          "file": "images/web/hush_bentley_plate-1600.webp",
+          "width": 1124,
+          "height": 1437,
+          "bytes": 155598
+        },
+        {
+          "file": "images/web/hush_bentley_plate-2400.webp",
+          "width": 1124,
+          "height": 1437,
+          "bytes": 155598
+        }
+      ]
+    },
     "images/hush_lockyer1.jpg": {
       "bytes": 448228,
       "width": 917,
@@ -3381,6 +3409,34 @@
           "width": 1336,
           "height": 1033,
           "bytes": 109820
+        }
+      ]
+    },
+    "images/weather_bentley_mopa.jpg": {
+      "bytes": 563254,
+      "width": 1908,
+      "height": 2000,
+      "sha256": "f18a6fa627856fef142762b97e7c20583dd47ddbc8dab4378037cc53625bc57a",
+      "settings": "89e48fac760f",
+      "credit": "39262425b89d",
+      "copies": [
+        {
+          "file": "images/web/weather_bentley_mopa-800.webp",
+          "width": 800,
+          "height": 839,
+          "bytes": 41164
+        },
+        {
+          "file": "images/web/weather_bentley_mopa-1600.webp",
+          "width": 1600,
+          "height": 1677,
+          "bytes": 108170
+        },
+        {
+          "file": "images/web/weather_bentley_mopa-2400.webp",
+          "width": 1908,
+          "height": 2000,
+          "bytes": 138094
         }
       ]
     },

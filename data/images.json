@@ -138,7 +138,8 @@
       "hours": ["hush"],
       "weather": ["snow", "cold"],
       "seasons": []
-    }
+    },
+    "draft": true
   },
   {
     "id": "i-0006",
@@ -2859,6 +2860,63 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0018"]
+    }
+  },
+  {
+    "id": "i-0127",
+    "shownIn": "weather",
+    "file": "images/weather_bentley_mopa.jpg",
+    "caption": "Wilson Alwyn Bentley, <a href=\"https://www.flickr.com/photos/mopa1/5711526202/\" target=\"_blank\"><em>Untitled (Snowflake)</em></a> (c. 1905)",
+    "bibliography": "Bentley, Wilson Alwyn. <em>Untitled (Snowflake)</em>. c. 1905, gelatin silver photomicrograph print, Museum of Photographic Arts, San Diego (2010.010.001).",
+    "creator": { "id": "a-wilson-alwyn-bentley", "name": "Wilson Alwyn Bentley" },
+    "title": "Untitled (Snowflake)",
+    "container": null,
+    "date": "1905~",
+    "institution": "Museum of Photographic Arts",
+    "links": [
+      {
+        "role": "cited",
+        "label": "MoPA on Flickr",
+        "url": "https://www.flickr.com/photos/mopa1/5711526202/"
+      },
+      {
+        "role": "copy",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Snowflake_-_By_Wilson_Bentley_ca._1905_-_MoPA.jpg"
+      }
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "display": { "cardPosition": "bottom-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["snow", "cold"],
+      "seasons": ["winter"]
+    }
+  },
+  {
+    "id": "i-0128",
+    "shownIn": "hours",
+    "file": "images/hush_bentley_plate.jpg",
+    "caption": "Wilson Alwyn Bentley, <a href=\"https://doi.org/10.1175/1520-0493-30.13.607\" target=\"_blank\">Plate XIX</a>, <em>Monthly Weather Review</em> (1902)",
+    "bibliography": "Bentley, Wilson A. Plate XIX. In “Studies among the Snow Crystals during the Winter of 1901–2, with Additional Data Collected during Previous Winters.” <em>Monthly Weather Review</em> 30, no. 13 (1902): 607–616.",
+    "creator": { "id": "a-wilson-alwyn-bentley", "name": "Wilson Alwyn Bentley" },
+    "title": "Plate XIX",
+    "container": "Studies among the Snow Crystals during the Winter of 1901–2",
+    "date": "1902",
+    "institution": "NOAA Photo Library (Historic NWS Collection, wea02087)",
+    "links": [
+      { "role": "cited", "label": "DOI", "url": "https://doi.org/10.1175/1520-0493-30.13.607" },
+      {
+        "role": "copy",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:SnowflakesWilsonBentley.jpg"
+      }
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "tags": {
+      "hours": ["hush"],
+      "weather": ["snow"],
+      "seasons": ["winter"]
     }
   }
 ]
