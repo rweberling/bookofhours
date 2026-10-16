@@ -1079,7 +1079,8 @@
     "id": "i-0043",
     "shownIn": "seasons",
     "file": "images/lectio-terra/190031542.week-13-paper-birch-robert-frost-2-635054073ded.jpg",
-    "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21\">Paper Birch (Betula papyrifera) Botanical and Commercial Range</a>,” from <em>An American Wood</em> (Washington., D.C.: U.S. Forest Service, U.S. Dept. of Agriculture - Forest Service, 1940), p. 15.",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21\">Paper Birch (Betula papyrifera) Botanical and Commercial Range</a>,” from <em>Birch</em>, American Woods (Washington, D.C.: U.S. Dept. of Agriculture, Forest Service, 1940), p. 15.",
+    "bibliography": "United States Forest Service. \"Paper Birch (Betula papyrifera) Botanical and Commercial Range.\" <em>Birch</em>, American Woods, U.S. Department of Agriculture, Forest Service, 1940.",
     "links": [
       {
         "role": "cited",
@@ -1590,7 +1591,7 @@
     "id": "i-0067",
     "shownIn": "seasons",
     "file": "images/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-1-57c87d7b83e9.jpeg",
-    "caption": "“<a href=\"https://digitalcollections.nypl.org/items/249ee980-c561-012f-c3ed-58d385a7bc34\">Wills’s Cigarettes, Lilac</a>” (1850), cigarette card from The George Arents Collection, The New York Public Library Digital Collections.",
+    "caption": "“<a href=\"https://digitalcollections.nypl.org/items/249ee980-c561-012f-c3ed-58d385a7bc34\">Wills’s Cigarettes, Lilac</a>” (n.d.), cigarette card from The George Arents Collection, The New York Public Library Digital Collections.",
     "bibliography": "W. D. &amp; H. O. Wills. \"Lilac.\" Cigarette card, George Arents Collection, New York Public Library.",
     "links": [
       {
@@ -1801,7 +1802,8 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-2-d6e5c6227dad.jpeg",
     "caption": "Wool Sower Wasp Galls, Tisbury, Massachusetts (May 25, 2026).",
-    "bibliography": "Wool Sower Wasp Galls, Tisbury, Massachusetts. Photograph, 25 May 2026.",
+    "bibliography": "Weberling, Ryan. <em>Wool Sower Wasp Galls, Tisbury, Massachusetts</em>. Photograph, 25 May 2026.",
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
     "lectio": { "post": "lt-0015", "place": 2 },
     "tags": {
       "hours": [],

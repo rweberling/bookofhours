@@ -2146,7 +2146,7 @@
     "shownIn": "seasons",
     "text": "It is with some hesitation that the writer attempts a treatment of a genus which in the past has been subject to so much difference of opinion as <em>Amelanchier</em>. His only excuse is that field and herbarium studies covering a period of sixteen years, but more especially of four years, have led him to conclusions in regard to specific identity, relationship, and nomenclature which differ rather widely from those generally accepted at present.<br>[…] The principal cause of most of the difficulty experienced by the students of <em>Amelanchier</em> in the past in drawing specific lines [of relationship], is to be found undoubtedly in the wonderful variability which seems to exist within the genus, a variability so extreme that rarely did it seem possible to find two plants as much alike as specific identity in other groups would demand. Indeed, if the sheets of any large collection are sorted on any assumed basis, almost as many transitional sheets will be found as sheets typical of the supposed species. For this reason many taxonomists have been inclined to believe that no real specific lines exist, at least so far as the eastern species are concerned. Because of this wealth of form two courses have seemed possible: a conservative treatment in which very few species, sometimes only one, are recognized; or a radical one in which a great many species are supposed to exist.<br>",
     "citation": {
-      "display": "K.M. Wiegand, “<a href=\"https://hdl.handle.net/2027/coo.31924001829971?urlappend=%3Bseq=5%3Bownerid=27021597768700384-9\">The Genus Amelanchier in Eastern North America</a>,” <em>Rhodora: Journal of the New England Botanical Club </em>14.163 (July 1912: 117-161), pp. 117, .",
+      "display": "K.M. Wiegand, “<a href=\"https://hdl.handle.net/2027/coo.31924001829971?urlappend=%3Bseq=5%3Bownerid=27021597768700384-9\">The Genus Amelanchier in Eastern North America</a>,” <em>Rhodora: Journal of the New England Botanical Club </em>14.163 (July 1912: 117-161), p. 117.",
       "bibliography": "Wiegand, K. M. \"The Genus Amelanchier in Eastern North America.\" <em>Rhodora: Journal of the New England Botanical Club</em>, vol. 14, no. 163, July 1912, pp. 117–161.",
       "edition": {
         "links": [
@@ -2154,6 +2154,11 @@
             "role": "cited",
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/coo.31924001829971?urlappend=%3Bseq=5%3Bownerid=27021597768700384-9"
+          },
+          {
+            "role": "copy",
+            "label": "Biodiversity Heritage Library",
+            "url": "https://www.biodiversitylibrary.org/part/187785"
           }
         ]
       }
@@ -2296,7 +2301,7 @@
     "shownIn": "seasons",
     "text": "Eat one blueberry and you’ll eat them all. In Robert McCloskey’s <em>Blueberries for Sal</em>, an award-winning illustrated children’s book published in 1948, plucky Sal sets out with her mother to pick fruit on Blueberry Hill. ‘We will take our berries home and can them,’ her mother says. ‘Then we will have food for the winter.’ Sal can’t help herself. The blueberries barely hit the bottom of her tin pail – ‘<em>kuplink, kuplank, kuplunk!</em>’ – before they’re scooped into her mouth, a cheeky smile on her lips.<br><br>In Roald Dahl’s <em>Charlie and the Chocolate Factory</em> (1964), Willy Wonka forbids Miss Violet Beauregarde from chewing his magic gum, a new and untested invention. But she, a self-proclaimed chewing-gum champion, grabs a stick and shoves it into her mouth. The gum contains a three-course dinner, with blueberry pie for dessert, and it’s in this final course that things go wrong. From nose to cheeks, hands to arms and legs, a ‘brilliant, purplish-blue, the colour of blueberry juice’ spreads like a dye over Violet’s skin and hair. ‘Violet, you’re turning violet, Violet!’ shrieks her mother, as her daughter becomes ‘an enormous round blue ball – a gigantic blueberry, in fact – and all that remained of Violet Beauregarde herself was a tiny pair of legs and a tiny pair of arms sticking out of the great round fruit and little head on top’. In the 1971 <a href=\"https://www.youtube.com/watch?reload=9&amp;v=8Yqw_f26SvM\">film adaptation</a>, <em>Willy Wonka &amp; the Chocolate Factory</em>, Violet’s red belt makes a satisfying <em>pop</em> as it gives under the pressure of her expanding stomach. Ballooning with berry juice, consumed by that which she consumes, she’s rolled off by the Oompa Loompas as they sing their smug, moralising song: ‘It’s repulsive, revolting, and wrong, chewing all day long – the way that a cow does!’<br><br>Violet, that rude little cow! So disdainful, in her marathon mastication, of the manners and prohibitions of adults, with the perfectly devastating contempt of an almost-teenaged girl. And so unseemly in her bald-faced competitiveness, her elbow-jostling self-interest.<br><br>By design – Dahl’s design, his un-prim but still reactionary morality tale – the prideful and indecorous Violet is far less likeable than the cheerful Sal. Yet both of these girls are rebellious blueberry-eaters. They refuse to defer to the adults or to delay the gratification of their desires. Blueberries, in these stories, are associated with young women’s illicit acts of consumption, illicit in both timing and excess. The girls eat when they shouldn’t and they eat too much. Once they start, in different ways, they can’t stop.",
     "citation": {
-      "display": "Alix Beeston. “<a href=\"https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink\">Fingers Stained With Juice and Ink</a>.” Rev. of Ellena Savage, <em>Blueberries: Essays Concerning Understanding </em>(2020). <em>The Sydney Review of Books </em>(June 15, 2020)<em>.</em>",
+      "display": "Alix Beeston. “<a href=\"https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink\">Fingers Stained With Fruit and Ink</a>.” Rev. of Ellena Savage, <em>Blueberries: Essays Concerning Understanding </em>(2020). <em>The Sydney Review of Books </em>(June 15, 2020)<em>.</em>",
       "edition": {
         "links": [
           {
@@ -2305,7 +2310,8 @@
             "url": "https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink"
           }
         ]
-      }
+      },
+      "bibliography": "Beeston, Alix. \"Fingers Stained with Fruit and Ink.\" Review of <em>Blueberries: Essays Concerning Understanding</em>, by Ellena Savage. <em>Sydney Review of Books</em>, 15 June 2020."
     },
     "lectio": { "post": "lt-0021", "place": 2 },
     "tags": {
