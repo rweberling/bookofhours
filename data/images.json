@@ -949,7 +949,8 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/189887776.week-11-american-robin-emily-dickinson-1-a4ff95cb4686.png",
     "caption": "<a href=\"https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse\">Species migration map for American Robins, March 5-12</a>, created using the National Audubon Society’s <a href=\"https://explorer.audubon.org/home?layersPanel=collapse&amp;legend=collapse\">Bird Migration Explorer</a>. See video below for full-year visualization.",
-    "bibliography": "National Audubon Society. \"American Robin, March 5–12.\" <em>Bird Migration Explorer</em>.",
+    "bibliography": "National Audubon Society. \"American Robin, March 5–12.\" <em>Bird Migration Explorer</em>. Map made 6 Mar. 2026.",
+    "date": "2026-03-06",
     "links": [
       {
         "role": "cited",
@@ -2762,6 +2763,31 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0024"]
+    }
+  },
+  {
+    "id": "i-0123",
+    "shownIn": "seasons",
+    "file": "video/lectio-terra/robin-migration-2026.mp4",
+    "fallback": "video/lectio-terra/robin-migration-2026.webm",
+    "poster": "video/lectio-terra/robin-migration-2026-poster.jpg",
+    "media": "video",
+    "caption": "Annual migration of American Robins, created using the National Audubon Society’s <a href=\"https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse\">Bird Migration Explorer</a> (March 6, 2026).",
+    "bibliography": "National Audubon Society. \"American Robin: Annual Migration.\" <em>Bird Migration Explorer</em>. Screen recording, 6 Mar. 2026.",
+    "date": "2026-03-06",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Bird Migration Explorer",
+        "url": "https://explorer.audubon.org/explore/species/1055/american-robin/migration"
+      }
+    ],
+    "lectio": { "post": "lt-0002", "place": 4 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0002"]
     }
   }
 ]

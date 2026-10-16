@@ -131,10 +131,11 @@ def passages(post):
 
 
 def figures(post):
-    """(place, file, caption) for each figure in the post, in order."""
+    """(place, file, caption) for each figure in the post, in order: an
+    image, or a video (its file is the video's)."""
     out = []
     for n, m in enumerate(FIGURE.finditer(post.get('bodyHtml') or '')):
-        img = re.search(r'<img\b[^>]*\bsrc="([^"]+)"', m.group(0))
+        img = re.search(r'<(?:img|video|source)\b[^>]*\bsrc="([^"]+)"', m.group(0))
         caption = re.search(r'<figcaption\b[^>]*>(.*?)</figcaption>', m.group(0), re.S)
         caption = FIGURE_LABEL.sub(r'\1', caption.group(1).strip()) if caption else ''
         if not caption:
@@ -294,6 +295,7 @@ def main():
                 'id': f'i-{next_i:04d}',
                 'shownIn': 'seasons',
                 'file': file,
+                **({'media': 'video'} if file.endswith(('.mp4', '.webm')) else {}),
                 'caption': caption,
                 'lectio': {'post': post['id'], 'place': place},
                 'tags': subject_tags(post, season)
