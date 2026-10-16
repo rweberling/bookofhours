@@ -136,6 +136,9 @@ def figures(post):
     out = []
     for n, m in enumerate(FIGURE.finditer(post.get('bodyHtml') or '')):
         img = re.search(r'<(?:img|video|source)\b[^>]*\bsrc="([^"]+)"', m.group(0))
+        youtube = re.search(r'\bdata-youtube="([\w-]+)"', m.group(0))
+        if youtube:
+            img = re.match(r'(.*)', f'https://www.youtube.com/watch?v={youtube.group(1)}')
         caption = re.search(r'<figcaption\b[^>]*>(.*?)</figcaption>', m.group(0), re.S)
         caption = FIGURE_LABEL.sub(r'\1', caption.group(1).strip()) if caption else ''
         if not caption:
@@ -295,7 +298,7 @@ def main():
                 'id': f'i-{next_i:04d}',
                 'shownIn': 'seasons',
                 'file': file,
-                **({'media': 'video'} if file.endswith(('.mp4', '.webm')) else {}),
+                **({'media': 'video'} if file.endswith(('.mp4', '.webm')) or 'youtube.com/' in file else {}),
                 'caption': caption,
                 'lectio': {'post': post['id'], 'place': place},
                 'tags': subject_tags(post, season)
