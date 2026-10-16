@@ -64,17 +64,20 @@ def build(post, readings, images, writing):
 
     def figure(html):
         src = IMG_SRC.search(html)
-        record = by_file.get(src.group(1)) if src else None
+        youtube = re.search(r'\bdata-youtube="([\w-]+)"', html)
+        file = f'https://www.youtube.com/watch?v={youtube.group(1)}' if youtube else (src.group(1) if src else None)
+        record = by_file.get(file) if file else None
         if not record:
             problems.append(f'a figure with no image record: {html[:80]}')
             return None
         href = A_HREF.search(html)
         update = {}
-        img = re.search(r'<(?:img|video)\b[^>]*>', html).group(0)
+        img = re.search(r'<(?:img|video)\b[^>]*>', html)
+        img = img.group(0) if img else ''
         w, h = re.search(r'\bwidth="([\d.]+)"', img), re.search(r'\bheight="([\d.]+)"', img)
         if w and h:
             update['size'] = [round(float(w.group(1))), round(float(h.group(1)))]
-        if href and href.group(1) != record['file']:
+        if href and href.group(1) != record['file'] and not youtube:
             update['link'] = href.group(1)
         caption = re.search(r'<figcaption[^>]*>(.*?)</figcaption>', html, re.S)
         if not caption:

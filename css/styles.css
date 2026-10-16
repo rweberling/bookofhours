@@ -503,6 +503,28 @@ body::before {
   margin: 26px auto; border-radius: 4px;
 }
 #season-reading-body figure { margin: 26px 0; }
+/* A video watched elsewhere: a card until it's played (wireVideoEmbeds() in seasons.js). */
+#season-reading-body .video-play,
+#season-reading-body .video-frame {
+  display: block; width: 100%; aspect-ratio: 16 / 9;
+  margin: 26px auto 0; border-radius: 4px;
+}
+#season-reading-body .video-play {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+  border: 0.5px solid var(--rule); background: color-mix(in oklab, var(--rule), transparent 70%);
+  color: var(--ink-light); cursor: pointer; font: inherit;
+  transition: background 0.3s ease;
+}
+#season-reading-body .video-play:hover,
+#season-reading-body .video-play:focus-visible { background: color-mix(in oklab, var(--rule), transparent 40%); }
+#season-reading-body .video-play-icon {
+  display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%;
+  border: 1px solid var(--accent); color: var(--accent); font-size: 20px; padding-left: 4px;
+}
+#season-reading-body .video-play-note {
+  font-family: var(--font-text); font-size: 13px; font-style: italic; color: var(--ink-faint);
+}
+#season-reading-body .video-frame { border: 0; }
 #season-reading-body video {
   display: block; width: 100%; max-width: 100%; height: auto;
   margin: 26px auto; border-radius: 4px; background: var(--rule);

@@ -94,6 +94,7 @@ function renderSeasonReading(entry) {
     img.loading = 'lazy';
     setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
   });
+  wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
   markParts(body);
   updateRunningHead();
@@ -197,6 +198,30 @@ function markParts(body) {
 ────────────────────────────────────────────────────────────────── */
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
 const READING_BLOCKS = new Set(['P', 'OL', 'UL', 'H2', 'H3', 'H4', 'FIGURE', 'HR', 'BLOCKQUOTE']);
+
+/* ── Videos watched elsewhere: click to play ──────────────────────
+   A video from YouTube sits in the post as a quiet card with its
+   caption: nothing loads from YouTube until the reader presses play.
+   Then the card becomes the player, from YouTube's privacy-enhanced
+   address (youtube-nocookie.com). The caption keeps a plain link to the
+   video for anyone who would rather watch it there.
+────────────────────────────────────────────────────────────────── */
+function wireVideoEmbeds(body) {
+  body.querySelectorAll('.video-play[data-youtube]').forEach(button => {
+    button.addEventListener('click', () => {
+      const id = encodeURIComponent(button.dataset.youtube);
+      const frame = document.createElement('iframe');
+      frame.className = 'video-frame';
+      frame.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+      frame.title = button.getAttribute('aria-label').replace(/^Play the video: /, '');
+      frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      button.replaceWith(frame);
+      frame.focus();
+    });
+  });
+}
 
 function markReadings(body, labels) {
   let inReadings = false;

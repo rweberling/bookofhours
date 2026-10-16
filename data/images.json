@@ -2465,7 +2465,7 @@
         "url": "https://www.natureinstitute.org/article/craig-holdrege/the-story-of-an-organism-common-milkweed"
       }
     ],
-    "lectio": { "post": "lt-0022", "place": 2 },
+    "lectio": { "post": "lt-0022", "place": 3 },
     "tags": {
       "hours": [],
       "weather": [],
@@ -3059,6 +3059,50 @@
     "link": "https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse",
     "display": {
       "size": [1280, 582]
+    }
+  },
+  {
+    "id": "i-0124",
+    "shownIn": "seasons",
+    "file": "https://www.youtube.com/watch?v=844C0hDfECU",
+    "media": "video",
+    "caption": "“<a href=\"https://www.youtube.com/watch?v=844C0hDfECU\">O Nobilissima Viriditas</a>,” written by Hildegard von Bingen, composed/arranged by Bryce Dessner, featuring Barbara Hannigan, David Chalmin, and Katia and Marielle Labèque. <em>Electric Fields</em> (Alpha Classics, 2025).",
+    "bibliography": "Hildegard von Bingen. \"O Nobilissima Viriditas.\" Arranged by Bryce Dessner, performed by Barbara Hannigan, David Chalmin, and Katia and Marielle Labèque. <em>Electric Fields</em>, Alpha Classics, 2025. Video, YouTube.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=844C0hDfECU"
+      }
+    ],
+    "lectio": { "post": "lt-0010", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0009"]
+    }
+  },
+  {
+    "id": "i-0125",
+    "shownIn": "seasons",
+    "file": "https://www.youtube.com/watch?v=n2WHV7qlAeI",
+    "media": "video",
+    "caption": "<em><a href=\"https://www.youtube.com/watch?v=n2WHV7qlAeI\">Monarch and Milkweed, by Helen Frost and Leonid Gore. Read Aloud by Reading Rhino</a></em> (July 30, 2026).",
+    "bibliography": "Frost, Helen, and Leonid Gore. <em>Monarch and Milkweed</em>. Read aloud by Reading Rhino. Video, YouTube, 30 July 2026.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/watch?v=n2WHV7qlAeI"
+      }
+    ],
+    "lectio": { "post": "lt-0022", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0019"]
     }
   }
 ]

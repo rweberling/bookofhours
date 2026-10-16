@@ -290,7 +290,7 @@ def main():
 
     # Image files exist.
     for img in images:
-        if not (ROOT / img['file']).exists():
+        if not img['file'].startswith(('http://', 'https://')) and not (ROOT / img['file']).exists():
             errors.append(f'{img["id"]}: missing file {img["file"]}')
 
     # Embedded editions and people: every copy that shares an id agrees.

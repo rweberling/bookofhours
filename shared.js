@@ -416,6 +416,13 @@ function figureHTML(image, number) {
   const caption = display.noCaption ? '' : `<figcaption>${label}${image.caption || ''}</figcaption>`;
   // The size the post sets it at (images narrower than the column stay so).
   const size = display.size ? ` width="${display.size[0]}" height="${display.size[1]}"` : '';
+  const youtube = (image.file || '').match(/youtube\.com\/watch\?v=([\w-]+)/);
+  if (youtube) {
+    const title = escapeHTML(plainText(image.caption || '').split(',')[0].replace(/[\u201c\u201d"]/g, ''));
+    return `<figure class="video-embed"><button type="button" class="video-play" data-youtube="${youtube[1]}" `
+      + `aria-label="Play the video: ${title}"><span class="video-play-icon" aria-hidden="true">\u25b6</span>`
+      + `<span class="video-play-note">Plays from YouTube when you press play</span></button>${caption}</figure>`;
+  }
   if (image.media === 'video') {
     const source = (src, type) => src ? `<source src="${escapeHTML(src)}" type="${type}">` : '';
     return `<figure><video poster="${escapeHTML(image.poster || '')}"${size} controls muted loop playsinline preload="metadata">`
