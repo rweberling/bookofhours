@@ -919,6 +919,9 @@
       "weather": [],
       "seasons": ["winter"],
       "species": ["sp-0001"]
+    },
+    "display": {
+      "size": [400, 656]
     }
   },
   {
@@ -932,6 +935,9 @@
       "weather": [],
       "seasons": ["winter"],
       "species": ["sp-0001"]
+    },
+    "display": {
+      "size": [329, 547]
     }
   },
   {
@@ -945,6 +951,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0002"]
+    },
+    "display": {
+      "size": [1906, 921]
     }
   },
   {
@@ -958,6 +967,10 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0002"]
+    },
+    "link": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA0695_F501C",
+    "display": {
+      "size": [270, 427]
     }
   },
   {
@@ -971,6 +984,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0002"]
+    },
+    "display": {
+      "size": [370, 441]
     }
   },
   {
@@ -984,6 +1000,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0003"]
+    },
+    "display": {
+      "size": [1416, 2151]
     }
   },
   {
@@ -997,6 +1016,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0003"]
+    },
+    "display": {
+      "size": [1456, 1378]
     }
   },
   {
@@ -1010,6 +1032,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0004"]
+    },
+    "display": {
+      "size": [721, 600]
     }
   },
   {
@@ -1023,6 +1048,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0004"]
+    },
+    "display": {
+      "size": [1440, 1501]
     }
   },
   {
@@ -1036,6 +1064,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0004"]
+    },
+    "display": {
+      "size": [1456, 1117]
     }
   },
   {
@@ -1049,6 +1080,9 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0001"]
+    },
+    "display": {
+      "size": [3767, 2636]
     }
   },
   {
@@ -1062,6 +1096,9 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0001"]
+    },
+    "display": {
+      "size": [647, 326]
     }
   },
   {
@@ -1075,6 +1112,9 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0001"]
+    },
+    "display": {
+      "size": [2172, 1486]
     }
   },
   {
@@ -1088,6 +1128,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0005"]
+    },
+    "display": {
+      "size": [422, 527]
     }
   },
   {
@@ -1101,6 +1144,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0005"]
+    },
+    "display": {
+      "size": [497, 750]
     }
   },
   {
@@ -1114,6 +1160,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0005"]
+    },
+    "display": {
+      "size": [1259, 837]
     }
   },
   {
@@ -1127,6 +1176,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0005"]
+    },
+    "display": {
+      "size": [314, 392]
     }
   },
   {
@@ -1140,6 +1192,10 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0006"]
+    },
+    "display": {
+      "unlabelled": true,
+      "size": [448, 672]
     }
   },
   {
@@ -1153,6 +1209,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0006"]
+    },
+    "display": {
+      "size": [466, 645]
     }
   },
   {
@@ -1166,6 +1225,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0006"]
+    },
+    "display": {
+      "size": [564, 806]
     }
   },
   {
@@ -1179,6 +1241,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0007"]
+    },
+    "display": {
+      "size": [1574, 1229]
     }
   },
   {
@@ -1192,6 +1257,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0007"]
+    },
+    "display": {
+      "size": [1465, 1821]
     }
   },
   {
@@ -1205,6 +1273,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0007"]
+    },
+    "display": {
+      "size": [1462, 2405]
     }
   },
   {
@@ -1218,6 +1289,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0008"]
+    },
+    "display": {
+      "size": [354, 646]
     }
   },
   {
@@ -1231,6 +1305,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0008"]
+    },
+    "display": {
+      "size": [341, 521]
     }
   },
   {
@@ -1244,6 +1321,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0008"]
+    },
+    "display": {
+      "size": [370, 466]
     }
   },
   {
@@ -1257,6 +1337,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0009"]
+    },
+    "display": {
+      "size": [534, 691]
     }
   },
   {
@@ -1270,6 +1353,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0009"]
+    },
+    "display": {
+      "size": [532, 614]
     }
   },
   {
@@ -1283,6 +1369,9 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0002"]
+    },
+    "display": {
+      "size": [480, 749]
     }
   },
   {
@@ -1296,6 +1385,9 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0002"]
+    },
+    "display": {
+      "size": [1337, 1183]
     }
   },
   {
@@ -1309,6 +1401,9 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0002"]
+    },
+    "display": {
+      "size": [696, 629]
     }
   },
   {
@@ -1322,6 +1417,9 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0002"]
+    },
+    "display": {
+      "size": [1456, 737]
     }
   },
   {
@@ -1335,6 +1433,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0010"]
+    },
+    "display": {
+      "size": [590, 761]
     }
   },
   {
@@ -1348,6 +1449,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0010"]
+    },
+    "display": {
+      "size": [575, 822]
     }
   },
   {
@@ -1361,6 +1465,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0010"]
+    },
+    "display": {
+      "size": [723, 440]
     }
   },
   {
@@ -1374,6 +1481,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0011"]
+    },
+    "display": {
+      "size": [740, 588]
     }
   },
   {
@@ -1387,6 +1497,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0011"]
+    },
+    "display": {
+      "size": [471, 800]
     }
   },
   {
@@ -1400,6 +1513,9 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0011"]
+    },
+    "display": {
+      "size": [688, 471]
     }
   },
   {
@@ -1413,6 +1529,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0012"]
+    },
+    "display": {
+      "size": [2228, 1597]
     }
   },
   {
@@ -1426,6 +1545,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0012"]
+    },
+    "display": {
+      "size": [1452, 1013]
     }
   },
   {
@@ -1439,6 +1561,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0012"]
+    },
+    "display": {
+      "size": [557, 831]
     }
   },
   {
@@ -1452,6 +1577,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0013"]
+    },
+    "display": {
+      "size": [2171, 2954]
     }
   },
   {
@@ -1465,6 +1593,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0013"]
+    },
+    "display": {
+      "size": [679, 678]
     }
   },
   {
@@ -1478,6 +1609,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0013"]
+    },
+    "display": {
+      "size": [1404, 820]
     }
   },
   {
@@ -1491,6 +1625,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0014"]
+    },
+    "display": {
+      "size": [459, 689]
     }
   },
   {
@@ -1504,6 +1641,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0014"]
+    },
+    "display": {
+      "size": [439, 735]
     }
   },
   {
@@ -1517,6 +1657,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0014"]
+    },
+    "display": {
+      "size": [443, 695]
     }
   },
   {
@@ -1530,6 +1673,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0003"]
+    },
+    "display": {
+      "size": [578, 655]
     }
   },
   {
@@ -1543,6 +1689,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0003"]
+    },
+    "display": {
+      "size": [394, 639]
     }
   },
   {
@@ -1556,6 +1705,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0003"]
+    },
+    "display": {
+      "size": [1381, 428]
     }
   },
   {
@@ -1569,6 +1721,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0015"]
+    },
+    "display": {
+      "size": [523, 717]
     }
   },
   {
@@ -1582,6 +1737,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0015"]
+    },
+    "display": {
+      "size": [455, 572]
     }
   },
   {
@@ -1595,6 +1753,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0015"]
+    },
+    "display": {
+      "size": [345, 613]
     }
   },
   {
@@ -1608,6 +1769,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0016"]
+    },
+    "display": {
+      "size": [460, 718]
     }
   },
   {
@@ -1621,6 +1785,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0016"]
+    },
+    "display": {
+      "size": [551, 542]
     }
   },
   {
@@ -1634,6 +1801,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0016"]
+    },
+    "display": {
+      "size": [459, 532]
     }
   },
   {
@@ -1647,6 +1817,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0017"]
+    },
+    "display": {
+      "size": [452, 603]
     }
   },
   {
@@ -1660,6 +1833,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0017"]
+    },
+    "display": {
+      "size": [1456, 826]
     }
   },
   {
@@ -1673,6 +1849,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0017"]
+    },
+    "display": {
+      "size": [440, 666]
     }
   },
   {
@@ -1686,6 +1865,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0017"]
+    },
+    "display": {
+      "size": [612, 848]
     }
   },
   {
@@ -1699,6 +1881,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0018"]
+    },
+    "display": {
+      "size": [415, 584]
     }
   },
   {
@@ -1712,6 +1897,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0018"]
+    },
+    "display": {
+      "size": [1466, 2464]
     }
   },
   {
@@ -1725,6 +1913,10 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0018"]
+    },
+    "display": {
+      "noCaption": true,
+      "size": [655, 860]
     }
   },
   {
@@ -1738,6 +1930,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0019"]
+    },
+    "display": {
+      "size": [500, 745]
     }
   },
   {
@@ -1751,6 +1946,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0019"]
+    },
+    "display": {
+      "size": [655, 445]
     }
   },
   {
@@ -1764,6 +1962,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0004"]
+    },
+    "display": {
+      "size": [591, 682]
     }
   },
   {
@@ -1777,6 +1978,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0004"]
+    },
+    "display": {
+      "size": [1437, 1182]
     }
   },
   {
@@ -1790,6 +1994,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0004"]
+    },
+    "display": {
+      "size": [587, 563]
     }
   },
   {
@@ -1803,6 +2010,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0005"]
+    },
+    "display": {
+      "size": [727, 477]
     }
   },
   {
@@ -1816,6 +2026,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0005"]
+    },
+    "display": {
+      "size": [1456, 874]
     }
   },
   {
@@ -1829,6 +2042,9 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0005"]
+    },
+    "display": {
+      "size": [970, 809]
     }
   },
   {
@@ -1842,6 +2058,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0020"]
+    },
+    "display": {
+      "size": [577, 886]
     }
   },
   {
@@ -1855,6 +2074,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0020"]
+    },
+    "display": {
+      "size": [1288, 1706]
     }
   },
   {
@@ -1868,6 +2090,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0020"]
+    },
+    "display": {
+      "size": [902, 596]
     }
   },
   {
@@ -1881,6 +2106,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0020"]
+    },
+    "display": {
+      "size": [759, 716]
     }
   },
   {
@@ -1894,6 +2122,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0021"]
+    },
+    "display": {
+      "size": [1456, 844]
     }
   },
   {
@@ -1907,6 +2138,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0021"]
+    },
+    "display": {
+      "size": [650, 667]
     }
   },
   {
@@ -1920,6 +2154,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0021"]
+    },
+    "display": {
+      "size": [1456, 1177]
     }
   },
   {
@@ -1933,6 +2170,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0022"]
+    },
+    "display": {
+      "size": [3194, 2088]
     }
   },
   {
@@ -1946,6 +2186,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0022"]
+    },
+    "display": {
+      "size": [705, 1179]
     }
   },
   {
@@ -1959,6 +2202,9 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0022"]
+    },
+    "display": {
+      "size": [533, 1006]
     }
   },
   {
@@ -1972,6 +2218,9 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0023"]
+    },
+    "display": {
+      "size": [1456, 924]
     }
   },
   {
@@ -1985,6 +2234,9 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0023"]
+    },
+    "display": {
+      "size": [597, 673]
     }
   },
   {
@@ -1998,6 +2250,9 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0023"]
+    },
+    "display": {
+      "size": [2282, 1679]
     }
   },
   {
@@ -2011,6 +2266,9 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0023"]
+    },
+    "display": {
+      "size": [1197, 1803]
     }
   },
   {
@@ -2024,6 +2282,9 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0024"]
+    },
+    "display": {
+      "size": [530, 778]
     }
   },
   {
@@ -2037,6 +2298,9 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0024"]
+    },
+    "display": {
+      "size": [800, 634]
     }
   },
   {
@@ -2050,6 +2314,9 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0024"]
+    },
+    "display": {
+      "size": [2679, 3511]
     }
   }
 ]

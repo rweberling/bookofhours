@@ -205,6 +205,26 @@ def main():
         if w.get('shownIn') == 'hours' and not w.get('draft'):
             for hour in (w.get('tags') or {}).get('hours') or []:
                 per_hour[hour][w.get('kind')].append(w)
+    # A post's body (its pieces in order, which the Seasons page rebuilds
+    # it from) names each of its passages, figures and pieces of writing,
+    # each passage and figure once, and nothing from another post.
+    by_id = {r['id']: r for r in readings + images + writing}
+    for e in posts:
+        if 'body' not in e:
+            continue
+        named = []
+        for item in e['body']:
+            named += [item.get('reading'), item.get('image'), item.get('writing')] + item.get('figures', [])
+        named = [n for n in named if n]
+        for n in named:
+            if n not in by_id or (by_id[n].get('lectio') or {}).get('post') != e['id']:
+                errors.append(f'{e["id"]}: its body names {n}, which is not one of its pieces')
+        mine = {r['id'] for r in readings + images + writing if (r.get('lectio') or {}).get('post') == e['id']}
+        for n in sorted(mine - set(named)):
+            errors.append(f'{e["id"]}: {n} is one of its pieces, but its body leaves it out')
+        for n in {n for n in named if named.count(n) > 1 and not n.startswith('w-')}:
+            errors.append(f'{e["id"]}: its body names {n} more than once')
+
     # Footnotes belong to the piece their references are in (a piece of
     # writing, or a reading): each has a marker and text, and the piece
     # refers to it.

@@ -86,7 +86,9 @@ function renderSeasonReading(entry) {
   // The post's images point at the full-size masters. Their src is set
   // aside before the HTML goes in (so the browser doesn't start fetching
   // the masters), then each is pointed at its web copies.
-  const html = entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+  // A post with a list of its pieces is rebuilt from the collection
+  // (renderPostBody() in shared.js); otherwise its imported HTML is shown.
+  const html = entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`;
   body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
   body.querySelectorAll('img[data-master]').forEach(img => {
     img.loading = 'lazy';
@@ -672,8 +674,17 @@ async function initialiseSeason() {
   document.getElementById('season-reading-subtitle').addEventListener('click', openSeasonPane);
 
   try {
-    const data = await loadLectioData();
+    const [data, collection] = await Promise.all([
+      loadLectioData(),
+      loadCollection().catch(error => { console.error(error); return null; })
+    ]);
     lectioSeasons = data.seasons;
+    if (collection) {
+      const byId = new Map([...collection.readings, ...collection.images, ...collection.writing].map(r => [r.id, r]));
+      Object.values(lectioSeasons).forEach(entries => entries.forEach(entry => {
+        if (entry.body) entry.renderedHtml = renderPostBody(entry, byId);
+      }));
+    }
     const { key, entryId } = seasonFromURL();
     showSeasonEntry(key, entryId);
   } catch (error) {

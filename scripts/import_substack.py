@@ -440,6 +440,10 @@ def main():
         copied = subprocess.run([sys.executable, str(Path(__file__).with_name('copy_lectio.py')), '--write'])
         if copied.returncode:
             print('The passages and figures were not copied. Run: python3 scripts/copy_lectio.py --write', file=sys.stderr)
+        # Each post's list of its pieces, which the Seasons page rebuilds it from.
+        listed = subprocess.run([sys.executable, str(Path(__file__).with_name('build_post_manifests.py')), '--write'])
+        if listed.returncode:
+            print('The posts\' lists of pieces were not made. Run: python3 scripts/build_post_manifests.py --write', file=sys.stderr)
         # New readings get their own addresses in the sitemap.
         mapped = subprocess.run([sys.executable, str(Path(__file__).with_name('build_sitemap.py'))])
         if mapped.returncode:
