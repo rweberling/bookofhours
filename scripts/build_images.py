@@ -173,7 +173,8 @@ def credit_key(meta):
 
 def masters():
     """Every image the site shows, as paths from the site root."""
-    paths = {record['file'] for record in datafile.load('images')}
+    # Videos (media: video, in video/) have no web copies to make.
+    paths = {record['file'] for record in datafile.load('images') if record.get('media') != 'video'}
     paths.update(f'images/lectio-terra/{p.name}'
                  for p in (ROOT / 'images/lectio-terra').iterdir() if p.is_file())
     return sorted(paths)

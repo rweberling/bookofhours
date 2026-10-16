@@ -45,7 +45,8 @@ from copy_lectio import FIGURE, SECTION_HEADING, SUBSTACK_LINE, LECTIO
 from post_html import blocks
 
 EMPTY_P = re.compile(r'^<p>\s*</p>$')
-IMG_SRC = re.compile(r'<img\b[^>]*\bsrc="([^"]+)"')
+# An image's file, or a video's (its first source).
+IMG_SRC = re.compile(r'<(?:img|source)\b[^>]*\bsrc="([^"]+)"')
 A_HREF = re.compile(r'<a\b[^>]*\bhref="([^"]+)"')
 
 
@@ -69,7 +70,7 @@ def build(post, readings, images, writing):
             return None
         href = A_HREF.search(html)
         update = {}
-        img = re.search(r'<img\b[^>]*>', html).group(0)
+        img = re.search(r'<(?:img|video)\b[^>]*>', html).group(0)
         w, h = re.search(r'\bwidth="([\d.]+)"', img), re.search(r'\bheight="([\d.]+)"', img)
         if w and h:
             update['size'] = [round(float(w.group(1))), round(float(h.group(1)))]

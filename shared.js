@@ -416,6 +416,11 @@ function figureHTML(image, number) {
   const caption = display.noCaption ? '' : `<figcaption>${label}${image.caption || ''}</figcaption>`;
   // The size the post sets it at (images narrower than the column stay so).
   const size = display.size ? ` width="${display.size[0]}" height="${display.size[1]}"` : '';
+  if (image.media === 'video') {
+    const source = (src, type) => src ? `<source src="${escapeHTML(src)}" type="${type}">` : '';
+    return `<figure><video poster="${escapeHTML(image.poster || '')}"${size} controls muted loop playsinline preload="metadata">`
+      + `${source(image.file, 'video/mp4')}${source(image.fallback, 'video/webm')}</video>${caption}</figure>`;
+  }
   return `<figure><a target="_blank" href="${escapeHTML(image.link || image.file)}">`
     + `<img src="${escapeHTML(image.file)}"${size} alt=""></a>${caption}</figure>`;
 }
