@@ -4,98 +4,98 @@
     "name": "Witch Hazel",
     "scientific": "Hamamelis virginiana",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q913129",
+    "gbif": "3152827",
+    "inaturalist": "51970"
   },
   {
     "id": "sp-0002",
     "name": "American Robin",
     "scientific": "Turdus migratorius",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q460967",
+    "gbif": "9510564",
+    "inaturalist": "12727"
   },
   {
     "id": "sp-0003",
     "name": "Sugar Maple",
     "scientific": "Acer saccharum",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q214733",
+    "gbif": "3189859",
+    "inaturalist": "52543"
   },
   {
     "id": "sp-0004",
     "name": "Paper Birch",
     "scientific": "Betula papyrifera",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q76971",
+    "gbif": "5332120",
+    "inaturalist": "49883"
   },
   {
     "id": "sp-0005",
     "name": "Dutch Crocus",
     "scientific": "Crocus vernus",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q165077",
+    "gbif": "2747567",
+    "inaturalist": "55769"
   },
   {
     "id": "sp-0006",
     "name": "Ostrich Fern",
     "scientific": "Matteuccia struthiopteris",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q1130386",
+    "gbif": "2650999",
+    "inaturalist": "82574"
   },
   {
     "id": "sp-0007",
     "name": "Eastern Cottontail",
     "scientific": "Sylvilagus floridanus",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q774716",
+    "gbif": "2436886",
+    "inaturalist": "43111"
   },
   {
     "id": "sp-0008",
     "name": "Great Mullein",
     "scientific": "Verbascum thapsus",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q160095",
+    "gbif": "3171949",
+    "inaturalist": "59029"
   },
   {
     "id": "sp-0009",
     "name": "Sheet Moss",
     "scientific": "Hypnum imponens",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q4329447",
+    "gbif": "2681995",
+    "inaturalist": "154640"
   },
   {
     "id": "sp-0010",
     "name": "Common Lilac",
     "scientific": "Syringa vulgaris",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q6565319",
+    "gbif": "5415039",
+    "inaturalist": "83072"
   },
   {
     "id": "sp-0011",
     "name": "Living Soil",
     "scientific": "Mycobacterium vaccae",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
+    "wikidata": "Q655983",
+    "gbif": "3225191",
     "inaturalist": null
   },
   {
@@ -103,116 +103,116 @@
     "name": "Common Reed",
     "scientific": "Phragmites australis",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q28557",
+    "gbif": "5290149",
+    "inaturalist": "64237"
   },
   {
     "id": "sp-0013",
     "name": "Wool Sower Wasp",
     "scientific": "Callirhytis seminator",
     "rank": "species",
-    "wikidata": null,
+    "wikidata": "Q104177631",
     "gbif": null,
-    "inaturalist": null
+    "inaturalist": "123900"
   },
   {
     "id": "sp-0014",
     "name": "Pink Lady’s Slipper",
     "scientific": "Cypripedium acaule",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q744706",
+    "gbif": "2820380",
+    "inaturalist": "47588"
   },
   {
     "id": "sp-0015",
     "name": "Serviceberry",
     "scientific": "Amelanchier canadensis",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q159030",
+    "gbif": "3023833",
+    "inaturalist": "133382"
   },
   {
     "id": "sp-0016",
     "name": "Red Currant",
     "scientific": "Ribes rubrum",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q146661",
+    "gbif": "2986097",
+    "inaturalist": "54431"
   },
   {
     "id": "sp-0017",
     "name": "Corn",
     "scientific": "Zea mays",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q11575",
+    "gbif": "5290052",
+    "inaturalist": "48448"
   },
   {
     "id": "sp-0018",
     "name": "Highbush Blueberry",
     "scientific": "Vaccinium corymbosum",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q468695",
+    "gbif": "2882849",
+    "inaturalist": "52740"
   },
   {
     "id": "sp-0019",
     "name": "Butterfly Weed",
     "scientific": "Asclepias tuberosa",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q311131",
+    "gbif": "3170305",
+    "inaturalist": "47912"
   },
   {
     "id": "sp-0020",
     "name": "Cucurbits",
     "scientific": "Cucurbitaceae",
     "rank": "family",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q8314",
+    "gbif": "6634",
+    "inaturalist": "48620"
   },
   {
     "id": "sp-0021",
     "name": "Melons and Cucumbers",
     "scientific": "Cucumis",
     "rank": "genus",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q148758",
+    "gbif": "2874568",
+    "inaturalist": "54916"
   },
   {
     "id": "sp-0022",
     "name": "Watermelon",
     "scientific": "Citrullus lanatus",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q17507129",
+    "gbif": "2874621",
+    "inaturalist": "70054"
   },
   {
     "id": "sp-0023",
     "name": "Northern Red Oak",
     "scientific": "Quercus rubra",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q147525",
+    "gbif": "2880539",
+    "inaturalist": "49005"
   },
   {
     "id": "sp-0024",
     "name": "Shagbark Hickory",
     "scientific": "Carya ovata",
     "rank": "species",
-    "wikidata": null,
-    "gbif": null,
-    "inaturalist": null
+    "wikidata": "Q2601238",
+    "gbif": "3054296",
+    "inaturalist": "54791"
   }
 ]
