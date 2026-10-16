@@ -282,14 +282,14 @@ function weatherMatchWeight(item, weather) {
 }
 
 // The season leans the Hours the same gentle way: a piece tagged with
-// the season it is now is three times as likely, one with no season tag
-// is neutral (it belongs to the whole year), and one tagged only with
-// other seasons is a third as likely, never excluded, so a thinly
-// stocked hour never runs dry.
+// the season it is now is three times as likely; any other piece, untagged
+// or tagged for other seasons, keeps the ordinary weight. Season tags only
+// ever add weight, never take it away, so a piece is never pushed out of
+// sight for most of the year (with only a few pieces to an hour, a penalty
+// out of season would all but hide it).
 const SEASON_MATCH_FACTOR = 3;
 function seasonFactor(item, season) {
-  if (!Array.isArray(item.seasons) || item.seasons.length === 0) return 1;
-  return item.seasons.includes(season) ? SEASON_MATCH_FACTOR : 1 / SEASON_MATCH_FACTOR;
+  return Array.isArray(item.seasons) && item.seasons.includes(season) ? SEASON_MATCH_FACTOR : 1;
 }
 
 // hours.js's picks: weather and season both lean the odds.
