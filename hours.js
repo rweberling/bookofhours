@@ -54,6 +54,34 @@ const HOUR_NAMES = {
 let lastQuoteText = null;
 let lastImageSrc  = null;
 
+// The first page of an hour is the "magic" one: picked leaning on the
+// weather and the season (pickHoursAware). Every turn of the page after
+// that opens up the whole hour instead, drawing evenly from the pieces
+// not yet shown on this visit, so a reader who keeps turning sees all of
+// it before anything comes round again. Arriving at a different hour
+// (the clock moving on, or wandering) starts a new visit.
+let visitBlockName = null;
+const shownThisVisit = { quotes: new Set(), images: new Set() };
+
+function pickForVisit(items, shown, keyOf, lastKey, firstPage) {
+  if (!items || items.length === 0) return null;
+  let pick;
+  if (firstPage) {
+    pick = pickHoursAware(items, item => keyOf(item) === lastKey);
+  } else {
+    let unseen = items.filter(item => !shown.has(keyOf(item)));
+    if (unseen.length === 0) {
+      // Seen the whole hour: start the round again, just not with the
+      // piece already on the page.
+      shown.clear();
+      unseen = items.filter(item => keyOf(item) !== lastKey);
+    }
+    pick = pickExcluding(unseen, () => false) || pickExcluding(items, () => false);
+  }
+  shown.add(keyOf(pick));
+  return pick;
+}
+
 function getSeason() {
   // The actual month-range logic lives in one place now: currentSeason()
   // in shared.js (loaded before this script). This wrapper exists
@@ -129,8 +157,14 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate } = {})
   });
   if (block.cssClass) document.body.classList.add(block.cssClass);
 
-  const q   = pickHoursAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
-  const img = pickHoursAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+  const firstPage = block.name !== visitBlockName;
+  if (firstPage) {
+    visitBlockName = block.name;
+    shownThisVisit.quotes.clear();
+    shownThisVisit.images.clear();
+  }
+  const q   = pickForVisit(block.quotes, shownThisVisit.quotes, item => item.text, lastQuoteText, firstPage) || { text: '', attr: '' };
+  const img = pickForVisit(block.images, shownThisVisit.images, item => item.src, lastImageSrc, firstPage) || { src: null, caption: '' };
   lastQuoteText = q.text;
   lastImageSrc  = img.src;
 
