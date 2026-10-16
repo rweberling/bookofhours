@@ -17,18 +17,18 @@ and each piece of the post's own writing a writing record
   text      (a passage) the passage, with lines joined by <br> and
             paragraphs or stanzas by <br><br>, as in the other readings
   citation  (a passage) display: the citation as the post gives it
-  kind      (writing) note, headnote, supplementum or footnote
+  kind      (writing) note, headnote or supplementum
   text      (writing) its HTML as the post gives it, less the figures
             (which are image records) and Substack's "reader-supported
-            publication" line; a footnote's text is its note, and the
-            reference to it stays in the piece it annotates
-  annotates (a footnote) the ID of the piece its reference is in
+            publication" line
+  footnotes the post's footnotes whose references are in this piece (a
+            piece of writing, or a passage), each its marker and text
   file      (a figure) the image file the post shows
   caption   (a figure) its caption as the post gives it, without the
             post's own "Fig. 2." numbering
   lectio    the post it appears in (its lt- ID) and its place there:
-            passage 2, figure 3, or footnote 1 (other writing has one
-            of each kind per post)
+            passage 2, or figure 3 (writing has one of each kind per
+            post)
   shownIn   seasons: the Seasons page shows it, inside its post
   tags      the post's season, and its subject (the sp- or ph- record
             the post names as "subject")
@@ -165,9 +165,10 @@ def own_text(html):
 
 
 def writings(post):
-    """(kind, marker, text, where) for each piece of the post's own
-    writing; where is the part a footnote's reference is in: 'note',
-    'headnote', 'supplementum', or ('passage', place)."""
+    """The post's own writing: [(kind, text)] for its note, headnote and
+    supplementum, and {where: [footnote]} for its footnotes, by the piece
+    their reference is in ('note', 'headnote', 'supplementum', or
+    ('passage', place); None if it wasn't found)."""
     parts = sections(post)
     supplementum = parts.get('supplementum', '')
     notes = list(NOTE_MARK.finditer(supplementum))
@@ -178,19 +179,37 @@ def writings(post):
     if notes:
         supplementum = supplementum[:notes[0].start()]
 
-    out = []
+    pieces = []
     for kind, html in (('note', parts.get('before', '')), ('headnote', parts.get('headnote', '')),
                        ('supplementum', supplementum)):
         text = own_text(html)
         if plain(text):
-            out.append((kind, 1, text, None))
+            pieces.append((kind, text))
+    notes_by_piece = {}
     for marker, text in footnotes:
         ref = f'href="#footnote-{marker}"'
-        where = next((kind for kind, _, t, _ in out if ref in t), None)
+        where = next((kind for kind, t in pieces if ref in t), None)
         if not where:
             where = next((('passage', place) for place, t, _ in passages(post) if ref in t), None)
-        out.append(('footnote', marker, text, where))
+        notes_by_piece.setdefault(where, []).append({'marker': marker, 'text': text})
+    return pieces, notes_by_piece
+
+
+def with_footnotes(record, notes):
+    """The record with its footnotes just after its text, if it has any."""
+    if not notes:
+        return record
+    out = {}
+    for key, value in record.items():
+        out[key] = value
+        if key == 'text':
+            out['footnotes'] = notes
     return out
+
+
+def same_notes(record, notes):
+    return [(n['marker'], plain(n['text'])) for n in record.get('footnotes') or []] == \
+           [(n['marker'], plain(n['text'])) for n in notes or []]
 
 
 def subject_tags(post, season):
@@ -224,7 +243,7 @@ def main():
 
     copied_r = {(r['lectio']['post'], r['lectio']['place']): r for r in readings if r.get('lectio')}
     copied_i = {(r['lectio']['post'], r['lectio']['place']): r for r in images if r.get('lectio')}
-    copied_w = {(w['lectio']['post'], w['kind'], w['lectio'].get('place', 1)): w for w in writing if w.get('lectio')}
+    copied_w = {(w['lectio']['post'], w['kind']): w for w in writing if w.get('lectio')}
     next_r, next_i = next_number(readings, retired, 'r'), next_number(images, retired, 'i')
     next_w = next_number(writing, retired, 'w')
 
@@ -232,11 +251,16 @@ def main():
     for season, post in posts:
         if not (post.get('subject') or '').startswith(('sp-', 'ph-')):
             unlinked.add(post['id'])
+        pieces, notes = writings(post)
+        for note in notes.get(None, []):
+            differ.append(f'{post["id"]}, footnote {note["marker"]}: its reference was not found')
         for place, text, citation in passages(post):
             record = copied_r.get((post['id'], place))
             if record:
                 if plain(record['text']) != plain(text):
                     differ.append(f'{record["id"]} ({post["id"]}, passage {place}): the passage')
+                if not same_notes(record, notes.get(('passage', place))):
+                    differ.append(f'{record["id"]} ({post["id"]}, passage {place}): its footnotes')
                 continue
             record = {
                 'id': f'r-{next_r:04d}',
@@ -246,6 +270,7 @@ def main():
                 'lectio': {'post': post['id'], 'place': place},
                 'tags': subject_tags(post, season)
             }
+            record = with_footnotes(record, notes.get(('passage', place)))
             next_r += 1
             readings.append(record)
             added_r.append(record)
@@ -266,34 +291,22 @@ def main():
             next_i += 1
             images.append(record)
             added_i.append(record)
-        ids = {}
-        for kind, marker, text, where in writings(post):
-            record = copied_w.get((post['id'], kind, marker))
+        for kind, text in pieces:
+            record = copied_w.get((post['id'], kind))
             if record:
-                ids[kind] = record['id']
                 if plain(record['text']) != plain(text):
-                    differ.append(f'{record["id"]} ({post["id"]}, {kind}{" " + str(marker) if kind == "footnote" else ""}): the text')
+                    differ.append(f'{record["id"]} ({post["id"]}, {kind}): the text')
+                if not same_notes(record, notes.get(kind)):
+                    differ.append(f'{record["id"]} ({post["id"]}, {kind}): its footnotes')
                 continue
-            record = {
+            record = with_footnotes({
                 'id': f'w-{next_w:04d}',
                 'kind': kind,
                 'shownIn': 'seasons',
                 'text': text,
-                'lectio': {'post': post['id']} if kind != 'footnote' else {'post': post['id'], 'place': marker},
+                'lectio': {'post': post['id']},
                 'tags': subject_tags(post, season)
-            }
-            if kind == 'footnote':
-                if isinstance(where, tuple):
-                    passage = copied_r.get((post['id'], where[1])) or next(
-                        (r for r in added_r if r['lectio'] == {'post': post['id'], 'place': where[1]}), None)
-                    record['annotates'] = passage['id'] if passage else None
-                else:
-                    record['annotates'] = ids.get(where)
-                if not record['annotates']:
-                    differ.append(f'{record["id"]} ({post["id"]}, footnote {marker}): its reference was not found')
-                # Next to its kind, so the record reads in order.
-                record = {k: record[k] for k in ('id', 'kind', 'annotates', 'shownIn', 'text', 'lectio', 'tags')}
-            ids[kind] = record['id']
+            }, notes.get(kind))
             next_w += 1
             writing.append(record)
             added_w.append(record)

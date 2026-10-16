@@ -70,7 +70,7 @@ ID_FORMS = {
 SHOWN_IN = ('hours', 'weather', 'seasons')
 # The kinds of the site's own writing (data/writing.json). A new genre is
 # a new kind here, not a new kind of ID.
-WRITING_KINDS = ('versicle', 'phenomenon', 'note', 'headnote', 'supplementum', 'footnote')
+WRITING_KINDS = ('versicle', 'phenomenon', 'note', 'headnote', 'supplementum')
 # A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
 SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
 
@@ -205,11 +205,18 @@ def main():
         if w.get('shownIn') == 'hours' and not w.get('draft'):
             for hour in (w.get('tags') or {}).get('hours') or []:
                 per_hour[hour][w.get('kind')].append(w)
-    # A footnote names the piece its reference is in.
-    every_id = {r['id'] for r in readings + images + writing}
-    for w in writing:
-        if w.get('kind') == 'footnote' and w.get('annotates') not in every_id:
-            errors.append(f'{w["id"]}: a footnote to {w.get("annotates")!r}, which is not there')
+    # Footnotes belong to the piece their references are in (a piece of
+    # writing, or a reading): each has a marker and text, and the piece
+    # refers to it.
+    for rec in readings + writing:
+        markers = [n.get('marker') for n in rec.get('footnotes') or []]
+        for n in rec.get('footnotes') or []:
+            if not isinstance(n.get('marker'), int) or not (n.get('text') or '').strip():
+                errors.append(f'{rec["id"]}: a footnote needs a number (marker) and text: {str(n)[:60]}')
+            elif f'href="#footnote-{n["marker"]}"' not in rec.get('text', ''):
+                errors.append(f'{rec["id"]}: footnote {n["marker"]} is never referred to in its text')
+        if len(set(markers)) != len(markers):
+            errors.append(f'{rec["id"]}: two footnotes with the same number')
     for hour, kinds in per_hour.items():
         if len(kinds['versicle']) > 1:
             errors.append(f'{hour}: more than one versicle ({", ".join(w["id"] for w in kinds["versicle"])})')
