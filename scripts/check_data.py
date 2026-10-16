@@ -63,11 +63,14 @@ CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition', '
 # One ID format per kind of record.
 ID_FORMS = {
     'r': re.compile(r'^r-\d{4}$'), 'i': re.compile(r'^i-\d{4}$'), 'lt': re.compile(r'^lt-\d{4}$'),
-    'ed': re.compile(r'^ed-[a-z0-9-]+$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
+    'w': re.compile(r'^w-\d{4}$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
     'sp': re.compile(r'^sp-\d{4}$'), 'ph': re.compile(r'^ph-\d{4}$'),
 }
-# Where a reading or image can be shown on the site.
+# Where a reading, image or piece of writing can be shown on the site.
 SHOWN_IN = ('hours', 'weather', 'seasons')
+# The kinds of the site's own writing (data/writing.json). A new genre is
+# a new kind here, not a new kind of ID.
+WRITING_KINDS = ('versicle', 'phenomenon')
 # A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
 SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
 
@@ -82,7 +85,7 @@ def main():
     parser.add_argument('--all', action='store_true', help='include research details, not just core gaps')
     args = parser.parse_args()
 
-    readings, images, editorial, vocab = (load(n) for n in ('readings', 'images', 'editorial', 'vocab'))
+    readings, images, writing, vocab = (load(n) for n in ('readings', 'images', 'writing', 'vocab'))
     species, phenomena = load('species'), load('phenomena')
     errors = []
     gaps = defaultdict(list)
@@ -90,8 +93,7 @@ def main():
     # IDs: neutral and permanent, one format per kind (see the Identifiers
     # section of the metadata notes), unique across everything, aliases
     # (the old IDs they replaced) included, and never one that's retired.
-    # Editorial records keep their ed- IDs until Stage 2 makes their
-    # versicles and phenomenon lines writing (w-) records.
+    # The old ed- IDs of the hour notes live on as aliases of the versicles.
     lectio = json.loads((DATA / 'lectio-data.json').read_text())
     posts = [e for items in lectio.get('seasons', {}).values() for e in items]
     with (DATA / 'postcards.csv').open(encoding='utf-8', newline='') as f:
@@ -100,7 +102,7 @@ def main():
     retired = set(json.loads(retired_path.read_text())) if retired_path.exists() else set()
     seen = {}
     for kind, records, form in (('reading', readings, ID_FORMS['r']), ('image', images, ID_FORMS['i']),
-                                ('editorial', editorial, ID_FORMS['ed']), ('Lectio Terra post', posts, ID_FORMS['lt']),
+                                ('writing', writing, ID_FORMS['w']), ('Lectio Terra post', posts, ID_FORMS['lt']),
                                 ('postcard', cards, ID_FORMS['pc']), ('species', species, ID_FORMS['sp']),
                                 ('phenomenon', phenomena, ID_FORMS['ph'])):
         for rec in records:
@@ -174,13 +176,14 @@ def main():
             for v in values:
                 if v not in schemes[scheme]:
                     errors.append(f'{rid}: "{v}" is not in the {scheme} vocabulary')
-    for rec in readings + images:
+    for rec in readings + images + writing:
         check_tags(rec['id'], rec.get('tags'))
 
-    # Each reading and image is shown in one place on the site, and has
-    # what that place needs: an hour to be shown at, a weather condition
-    # (or the unset view), or the Lectio Terra post it comes from.
-    for rec in readings + images:
+    # Each reading, image and piece of writing is shown in one place on
+    # the site, and has what that place needs: an hour to be shown at, a
+    # weather condition (or the unset view), or the Lectio Terra post it
+    # comes from.
+    for rec in readings + images + writing:
         rid, place, tags = rec['id'], rec.get('shownIn'), rec.get('tags') or {}
         if place not in SHOWN_IN:
             errors.append(f'{rid}: shownIn is {place!r}; it must be one of {", ".join(SHOWN_IN)}')
@@ -190,8 +193,24 @@ def main():
             errors.append(f'{rid}: shown in the Weather, but tagged with no condition (or display.weatherUnset)')
         elif place == 'seasons' and not rec.get('lectio'):
             errors.append(f'{rid}: shown in the Seasons, but not from a Lectio Terra post ("lectio")')
-    for rec in editorial:
-        check_tags(rec['id'], rec.get('about'))
+
+    # Writing: a known kind and some text; in the Hours, one versicle per
+    # hour, and its phenomenon lines numbered 1, 2, 3... by place.
+    per_hour = defaultdict(lambda: defaultdict(list))
+    for w in writing:
+        if w.get('kind') not in WRITING_KINDS:
+            errors.append(f'{w["id"]}: kind {w.get("kind")!r} is not one of {", ".join(WRITING_KINDS)}')
+        if not (w.get('text') or '').strip():
+            errors.append(f'{w["id"]}: no text')
+        if w.get('shownIn') == 'hours' and not w.get('draft'):
+            for hour in (w.get('tags') or {}).get('hours') or []:
+                per_hour[hour][w.get('kind')].append(w)
+    for hour, kinds in per_hour.items():
+        if len(kinds['versicle']) > 1:
+            errors.append(f'{hour}: more than one versicle ({", ".join(w["id"] for w in kinds["versicle"])})')
+        places = sorted(w.get('place') for w in kinds['phenomenon'] if isinstance(w.get('place'), int))
+        if len(places) != len(kinds['phenomenon']) or places != list(range(1, len(places) + 1)):
+            errors.append(f'{hour}: phenomenon lines need places 1 to {len(kinds["phenomenon"])}, one each')
 
     # The weather vocabulary matches the picker's list in atmosphere.js,
     # which stays the canonical list for pages that don't load data/.
@@ -378,9 +397,9 @@ def main():
         if img.get('creator') and not img['creator'].get('wikidata'):
             gaps[iid].append('creator Wikidata ID')
 
-    drafts = [r['id'] for r in readings + images + editorial if r.get('draft')]
+    drafts = [r['id'] for r in readings + images + writing if r.get('draft')]
 
-    print(f'{len(readings)} readings, {len(images)} images, {len(editorial)} editorial records'
+    print(f'{len(readings)} readings, {len(images)} images, {len(writing)} pieces of writing'
           + (f', {len(drafts)} drafts (not shown on the site): {", ".join(drafts)}' if drafts else ''))
     if errors:
         print(f'\n{len(errors)} error(s):')

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "w-0001",
+    "aliases": ["ed-hour-void"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>You are alone with the dark now. Nothing is asked of you.</p>",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0002",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Melatonin saturates the brain: deepest phase of slow-wave neurological repair",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0003",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Mushrooms release their spores",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0004",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Plants grow best in the shade of night",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0005",
+    "aliases": ["ed-hour-hush"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>Something shifts in the silence. The darkness is unchanged, but its edges loosen.</p>",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0006",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Metabolic nadir: blood cools and breathing slows",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0007",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Worms retreat underground",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0008",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Atmospheric stasis; dew point",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0009",
+    "aliases": ["ed-hour-chorus"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The sound comes before the light. The world remembers it exists.</p>",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0010",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Songbirds begin the dawn chorus",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0011",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Insects and other cold-blooded creatures shake off their nocturnal chill",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0012",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Stomata open to inhale the morning carbon: photosynthesis initiates",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0013",
+    "aliases": ["ed-hour-transit"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The day lifts. Light is now something you move through rather than look at.</p>",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0014",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Synchronized migration of human workforces: scattered commuter densities",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0015",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Sap ascends",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0016",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Convective heating triggers the first rising columns of air",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0017",
+    "aliases": ["ed-hour-fulcrum"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>Your shadow is directly beneath you. For a moment, there is no pointing away.</p>",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0018",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Solar zenith achieved: zero azimuth deviation, maximum ultraviolet index",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0019",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Petals unfurl to maximum aperture",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0020",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Lunch hour",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0021",
+    "aliases": ["ed-hour-doldrums"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The angle of the light has become philosophical. Every object casts a shadow longer than itself.</p>",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0022",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Shadows elongate, red-shift in light",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0023",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "The afternoon lull: synchronized quietude of birds and bugs",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0024",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Neurocognitive deceleration; prefrontal executive control fractures under cumulative mental load",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0025",
+    "aliases": ["ed-hour-convivium"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The light lingers above. The lamps offer their devotion.</p>",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0026",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Shared caloric replenishment; social structures visible",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0027",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Crepuscular swarming and/or dispersal",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0028",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Gradual descent into passive respiration, circadian quiescence",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0029",
+    "aliases": ["ed-hour-denouement"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The day closes; the night opens. Something may be laid down now.</p>",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  },
+  {
+    "id": "w-0030",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Nocturnal activities commence",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  },
+  {
+    "id": "w-0031",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Plants complete their nyctinastic closing",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  },
+  {
+    "id": "w-0032",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Peak marine bioluminescence",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  }
+]

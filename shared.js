@@ -393,14 +393,15 @@ function loadLectioData() {
 }
 
 // --- The collection ---------------------------------------------------------
-// data/ holds the collection itself: readings, images, editorial writing and
-// the vocabularies their tags point to (hours, seasons, weather),
+// data/ holds the collection itself: readings (others' words), images,
+// writing (the site's own words: versicles, phenomenon lines) and the
+// vocabularies their tags point to (hours, seasons, weather),
 // plus site.json, the site's settings (such as the suggested-edition link).
 // Pages read it through loadCollection() and reshape it with the views
 // below into the forms their code already expects, so there is one set of
 // files to edit and nothing generated in between. Records marked
 // "draft": true are kept in the files but never shown.
-const COLLECTION_FILES = ['readings', 'images', 'editorial', 'vocab', 'site'];
+const COLLECTION_FILES = ['readings', 'images', 'writing', 'vocab', 'site'];
 let collectionPromise = null;
 function loadCollection() {
   if (!collectionPromise) {
@@ -409,10 +410,10 @@ function loadCollection() {
         if (!response.ok) throw new Error(`Unable to load data/${name}.json (${response.status}).`);
         return response.json();
       })
-    )).then(([readings, images, editorial, vocab, site]) => ({
+    )).then(([readings, images, writing, vocab, site]) => ({
       readings: readings.filter(r => !r.draft),
       images: images.filter(i => !i.draft),
-      editorial: editorial.filter(e => !e.draft),
+      writing: writing.filter(w => !w.draft),
       vocab,
       site
     }));
@@ -475,15 +476,17 @@ function shownIn(record, place) {
 // and tagged for that watch.
 function hoursView(collection) {
   return collection.vocab.hours.map(hour => {
-    const note = collection.editorial.find(e => e.kind === 'hour-note' && e.about && (e.about.hours || []).includes(hour.id)) || {};
+    const writing = kind => collection.writing
+      .filter(w => w.kind === kind && shownIn(w, 'hours') && taggedWith(w, 'hours', hour.id));
+    const versicle = writing('versicle')[0];
     return {
       key: hour.id,
       name: hour.label,
       cssClass: `block-${hour.id}`,
       startHour: hour.startHour,
       subtitle: hour.subtitle,
-      versicle: note.versicle || '',
-      phenomena: note.phenomena || [],
+      versicle: versicle ? versicle.text : '',
+      phenomena: writing('phenomenon').sort((a, b) => (a.place || 0) - (b.place || 0)).map(w => w.text),
       quotes: collection.readings.filter(r => shownIn(r, 'hours') && taggedWith(r, 'hours', hour.id)).map(quoteView),
       images: collection.images.filter(i => shownIn(i, 'hours') && taggedWith(i, 'hours', hour.id)).map(imageView)
     };
