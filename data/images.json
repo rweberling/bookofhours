@@ -913,6 +913,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-1-c165fe52c430.jpeg",
     "caption": "<em>From J. Francis Macbride, <a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t1td9rd5z?urlappend=%3Bseq=1\">Autumn Flowers and Fruits</a></em> <em>(Chicago: Field Museum of Natural History, 1924), p. 103.</em>",
+    "bibliography": "Macbride, J. Francis. <em>Autumn Flowers and Fruits</em>. Field Museum of Natural History, 1924.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t1td9rd5z?urlappend=%3Bseq=1"
+      }
+    ],
     "lectio": { "post": "lt-0001", "place": 1 },
     "tags": {
       "hours": [],
@@ -928,7 +936,9 @@
     "id": "i-0036",
     "shownIn": "seasons",
     "file": "images/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-2-ddea7a1983e0.png",
-    "caption": "<em>Leaves of the Witch Hazel Family - 1/3 life size</em>, from Richard E. Weaver, “<a href=\"https://doi.org/10.5962/p.249681\">The Witch Hazel Family (Hamamelidaceae)</a>,” Arnoldia 36.3 (1976, pp. 69-109.",
+    "caption": "<em>Leaves of the Witch Hazel Family - 1/3 life size</em>, from Richard E. Weaver, “<a href=\"https://doi.org/10.5962/p.249681\">The Witch Hazel Family (Hamamelidaceae)</a>,” Arnoldia 36.3 (1976), pp. 69-109.",
+    "bibliography": "Weaver, Richard E. \"Leaves of the Witch Hazel Family – 1/3 Life Size.\" \"The Witch Hazel Family (Hamamelidaceae),\" <em>Arnoldia</em>, vol. 36, no. 3, 1976, pp. 69–109.",
+    "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.5962/p.249681" }],
     "lectio": { "post": "lt-0001", "place": 2 },
     "tags": {
       "hours": [],
@@ -945,6 +955,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/189887776.week-11-american-robin-emily-dickinson-1-a4ff95cb4686.png",
     "caption": "<a href=\"https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse\">Species migration map for American Robins, March 5-12</a>, created using the National Audubon Society’s <a href=\"https://explorer.audubon.org/home?layersPanel=collapse&amp;legend=collapse\">Bird Migration Explorer</a>. See video below for full-year visualization.",
+    "bibliography": "National Audubon Society. \"American Robin, March 5–12.\" <em>Bird Migration Explorer</em>.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Bird Migration Explorer",
+        "url": "https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse"
+      },
+      {
+        "role": "copy",
+        "label": "Bird Migration Explorer",
+        "url": "https://explorer.audubon.org/home?layersPanel=collapse&amp;legend=collapse"
+      }
+    ],
     "lectio": { "post": "lt-0002", "place": 1 },
     "tags": {
       "hours": [],
@@ -961,6 +984,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/189887776.week-11-american-robin-emily-dickinson-2-3dbe507824f0.jpeg",
     "caption": "1863 manuscript of “The Robin is the One,” Amherst College, collected in <em><a href=\"https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA0695_F501C\">Emily Dickinson Archive</a></em>.",
+    "bibliography": "Dickinson, Emily. \"The Robin is the One.\" Manuscript, 1863, Amherst College. <em>Emily Dickinson Archive</em>.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Harvard Emily Dickinson Archive",
+        "url": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA0695_F501C"
+      }
+    ],
     "lectio": { "post": "lt-0002", "place": 2 },
     "tags": {
       "hours": [],
@@ -978,6 +1009,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/189887776.week-11-american-robin-emily-dickinson-3-0ecd09119a8c.png",
     "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95\">The Redbreast</a>,” or European Robin, from <a href=\"https://en.wikipedia.org/wiki/Howard_Saunders#:~:text=Howard%20Saunders%20(16%20September%201835,specialising%20in%20gulls%20and%20terns.\">Howard Saunders</a> (1835-1907), <em>An Illustrated Manual of British Birds</em> (London: Gurney and Jackson, 1889), p. 37.",
+    "bibliography": "Saunders, Howard. \"The Redbreast.\" <em>An Illustrated Manual of British Birds</em>, Gurney and Jackson, 1889.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95"
+      }
+    ],
     "lectio": { "post": "lt-0002", "place": 3 },
     "tags": {
       "hours": [],
@@ -994,6 +1033,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-1-2363b3621c32.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12\">Tapping the Grove, Boiling the Sap</a>,” from Crockett, <em>How Vermont Maple Sugar is Made</em>, p. 6.",
+    "bibliography": "Crockett, Walter H. \"Tapping the Grove, Boiling the Sap.\" <em>How Vermont Maple Sugar Is Made</em>, Vermont Department of Agriculture, 1915.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12"
+      }
+    ],
     "lectio": { "post": "lt-0003", "place": 1 },
     "tags": {
       "hours": [],
@@ -1010,6 +1057,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-2-8c89efe60931.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1\">Natural range of sugar maple</a>,” from <em>Sugar Maple: An American Wood</em> (Washington: Dept. of Agriculture, Forest Service, 1980), p. 2.",
+    "bibliography": "United States Forest Service. \"Natural Range of Sugar Maple.\" <em>Sugar Maple: An American Wood</em>, U.S. Department of Agriculture, Forest Service, 1980.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1"
+      }
+    ],
     "lectio": { "post": "lt-0003", "place": 2 },
     "tags": {
       "hours": [],
@@ -1026,6 +1081,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190031542.week-13-paper-birch-robert-frost-1-9644353e30e2.jpeg",
     "caption": "<em><a href=\"https://www.phillipscollection.org/collection/new-england-birches\">New England Birches</a> </em>(n.d.), Ernest Lawson (1873-1939). Oil on cradled plywood panel. Held in The Phillips Collection (Washington, D.C.).",
+    "bibliography": "Lawson, Ernest. <em>New England Birches</em>. n.d., The Phillips Collection, Washington, D.C.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Phillips Collection",
+        "url": "https://www.phillipscollection.org/collection/new-england-birches"
+      }
+    ],
     "lectio": { "post": "lt-0004", "place": 1 },
     "tags": {
       "hours": [],
@@ -1042,6 +1105,13 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190031542.week-13-paper-birch-robert-frost-2-635054073ded.jpg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21\">Paper Birch (Betula papyrifera) Botanical and Commercial Range</a>,” from <em>An American Wood</em> (Washington., D.C.: U.S. Forest Service, U.S. Dept. of Agriculture - Forest Service, 1940), p. 15.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21"
+      }
+    ],
     "lectio": { "post": "lt-0004", "place": 2 },
     "tags": {
       "hours": [],
@@ -1058,6 +1128,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190031542.week-13-paper-birch-robert-frost-3-bc4f66ab5190.jpeg",
     "caption": "<em><a href=\"https://www.biodiversitylibrary.org/item/313311\">Birch and Evergreens</a></em> (Gallitzin, PA: Nordstrom Nurseries, 1951). From the Henry G. Gilbert Nursery and Seed Trade Catalog Collection, U.S. Department of Agriculture, <a href=\"https://www.nal.usda.gov/programs/speccoll\">National Agricultural Library</a>.",
+    "bibliography": "Nordstrom Nurseries. <em>Birch and Evergreens</em>. Nordstrom Nurseries, 1951. Henry G. Gilbert Nursery and Seed Trade Catalog Collection, National Agricultural Library.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Biodiversity Heritage Library",
+        "url": "https://www.biodiversitylibrary.org/item/313311"
+      },
+      {
+        "role": "copy",
+        "label": "National Agricultural Library",
+        "url": "https://www.nal.usda.gov/programs/speccoll"
+      }
+    ],
     "lectio": { "post": "lt-0004", "place": 3 },
     "tags": {
       "hours": [],
@@ -1073,7 +1156,15 @@
     "id": "i-0045",
     "shownIn": "seasons",
     "file": "images/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-1-f9d418810b8b.jpeg",
-    "caption": "“Alto-Stratus,” from <em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\">Atlas International Des Nudges</a></em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\"> </a>(Paris, France: Gauthier-Villars et Fils, 1896).",
+    "caption": "“Alto-Stratus,” from <em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\">Atlas International Des Nuages</a></em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\"> </a>(Paris, France: Gauthier-Villars et Fils, 1896).",
+    "bibliography": "\"Alto-Stratus.\" <em>Atlas international des nuages</em>, Gauthier-Villars et Fils, 1896.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "University of Chicago Library",
+        "url": "https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf"
+      }
+    ],
     "lectio": { "post": "lt-0005", "place": 1 },
     "tags": {
       "hours": [],
@@ -1090,6 +1181,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-2-bf1cc2ece0f7.png",
     "caption": "“Nimbostratus,” from <a href=\"https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf\">International Atlas of Clouds and of States of the Sky</a> (Paris, France: Office National Meteorologique. 1930), p. 14.",
+    "bibliography": "\"Nimbostratus.\" <em>International Atlas of Clouds and of States of the Sky</em>, Office National Météorologique, 1930.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "WMO Cloud Atlas",
+        "url": "https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf"
+      }
+    ],
     "lectio": { "post": "lt-0005", "place": 2 },
     "tags": {
       "hours": [],
@@ -1106,6 +1205,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-3-ec7c167df443.jpeg",
     "caption": "“Nimbostratus,” from <em><a href=\"https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf\">International Cloud Atlas, Volume II</a></em> (Geneva, Switzerland: World Meteorological Organization, 1987), p. 52.",
+    "bibliography": "World Meteorological Organization. \"Nimbostratus.\" <em>International Cloud Atlas</em>, vol. 2, World Meteorological Organization, 1987.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "WMO Cloud Atlas",
+        "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf"
+      }
+    ],
     "lectio": { "post": "lt-0005", "place": 3 },
     "tags": {
       "hours": [],
@@ -1122,6 +1229,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-1-ec76e2856ea7.jpeg",
     "caption": "<a href=\"https://commons.wikimedia.org/wiki/Category:Saffron_gatherers_(Akrotiri)#/media/File:Cueilleuse_de_safran,_fresque,_Akrotiri,_Gr%C3%A8ce_(coupes).jpg\">The Saffron Gatherers</a> (circa 1650 BCE), from the Frescoes at Akrotiri, Santorini (Greece). Museum of Prehistoric Thira.",
+    "bibliography": "<em>The Saffron Gatherers</em>. Fresco, c. 1650 BCE, Akrotiri, Santorini. Museum of Prehistoric Thera, Fira.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/Category:Saffron_gatherers_(Akrotiri)#/media/File:Cueilleuse_de_safran,_fresque,_Akrotiri,_Gr%C3%A8ce_(coupes).jpg"
+      }
+    ],
     "lectio": { "post": "lt-0006", "place": 1 },
     "tags": {
       "hours": [],
@@ -1137,7 +1252,15 @@
     "id": "i-0049",
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-2-daffb419a6a3.jpeg",
-    "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41\">The Parts of Crocus and Colchicum Flowers</a>,” from from E. A. Bowles, <em>A Handbook of Crocus and Colchicum for Gardeners</em> (London : M. Hopkinson &amp; Company Ltd., 1924).",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41\">The Parts of Crocus and Colchicum Flowers</a>,” from E. A. Bowles, <em>A Handbook of Crocus and Colchicum for Gardeners</em> (London : M. Hopkinson &amp; Company Ltd., 1924).",
+    "bibliography": "Bowles, E. A. \"The Parts of Crocus and Colchicum Flowers.\" <em>A Handbook of Crocus and Colchicum for Gardeners</em>, M. Hopkinson, 1924.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41"
+      }
+    ],
     "lectio": { "post": "lt-0006", "place": 2 },
     "tags": {
       "hours": [],
@@ -1154,6 +1277,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-3-7b5d91a67f83.jpeg",
     "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/15330235\">Geographical Distribution of the Genus Crocus</a>,” from George Maw, <em>A Monograph of the Genus Crocus</em> (London, England: Dulau and Co., 1886), pp. 26-27.",
+    "bibliography": "Maw, George. \"Geographical Distribution of the Genus Crocus.\" <em>A Monograph of the Genus Crocus</em>, Dulau, 1886.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Biodiversity Heritage Library",
+        "url": "https://www.biodiversitylibrary.org/page/15330235"
+      }
+    ],
     "lectio": { "post": "lt-0006", "place": 3 },
     "tags": {
       "hours": [],
@@ -1170,6 +1301,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-4-fd23e548a002.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2\">The Crocus</a>,” from Adolph Baumbach, <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano </em>(Cleveland, Ohio: S. Brainard’s Sons, 1851).",
+    "bibliography": "Baumbach, Adolph. \"The Crocus.\" <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano</em>, S. Brainard’s Sons, 1851.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2"
+      }
+    ],
     "lectio": { "post": "lt-0006", "place": 4 },
     "tags": {
       "hours": [],
@@ -1186,6 +1325,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-1-cc94b0a0c820.jpeg",
     "caption": "Heidi Brickell, <em><a href=\"https://lareepaynegallery.com/artists/79-heidi-brickell/works/1653-heidi-brickell-safe-euphoric-ara-with-hine-korako-2025/\">Safe Euphoric Ara with Hine Kōrako</a> </em>(2025).",
+    "bibliography": "Brickell, Heidi. <em>Safe Euphoric Ara with Hine Kōrako</em>. 2025.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Laree Payne Gallery",
+        "url": "https://lareepaynegallery.com/artists/79-heidi-brickell/works/1653-heidi-brickell-safe-euphoric-ara-with-hine-korako-2025/"
+      }
+    ],
     "lectio": { "post": "lt-0007", "place": 1 },
     "tags": {
       "hours": [],
@@ -1203,6 +1350,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-2-118d97ebe479.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183\">Ostrich Fern. Sterile Fronds (New Hampshire)</a>,” from George Henry Tilton, <em>The Fern Lover’s Companion: A Guide for the Northeastern States and Canada</em> (Boston, Massachusetts: 1922), p. 175.",
+    "bibliography": "Tilton, George Henry. \"Ostrich Fern. Sterile Fronds (New Hampshire).\" <em>The Fern Lover’s Companion: A Guide for the Northeastern States and Canada</em>, Little, Brown, 1922.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183"
+      }
+    ],
     "lectio": { "post": "lt-0007", "place": 2 },
     "tags": {
       "hours": [],
@@ -1219,6 +1374,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-3-fcab5e16f57a.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59\">Development of the Ostrich Fern</a>,” Plate 6 from <em>The Development of the Ostrich Fern</em>, Douglas Houghton Campbell (Boston: Society of Natural History, April 1887).",
+    "bibliography": "Campbell, Douglas Houghton. \"Development of the Ostrich Fern.\" Plate 6, <em>The Development of the Ostrich Fern</em>, Boston Society of Natural History, 1887.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59"
+      }
+    ],
     "lectio": { "post": "lt-0007", "place": 3 },
     "tags": {
       "hours": [],
@@ -1235,6 +1398,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-1-613f6cf604e0.jpeg",
     "caption": "“<a href=\"https://digitalcollections.nypl.org/items/285d1d50-c6bd-012f-0dc4-58d385a7bc34?canvasIndex=0\">Lepus Sylvaticus, Grey Rabbit. Natural Size. Old &amp; young</a>.” Lithograph from John James Audubon and John Bachman, <em><a href=\"https://digitalcollections.nypl.org/items/21c9b4c0-c6bd-012f-bbbb-58d385a7bc34?canvasIndex=0\">The Viviparous Quadrupeds of North America, Vol. 1</a></em> (New York: J.J. Audubon, 1845).",
+    "bibliography": "Audubon, John James, and John Bachman. \"Lepus sylvaticus, Grey Rabbit.\" Lithograph, <em>The Viviparous Quadrupeds of North America</em>, vol. 1, J. J. Audubon, 1845.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "NYPL Digital Collections",
+        "url": "https://digitalcollections.nypl.org/items/285d1d50-c6bd-012f-0dc4-58d385a7bc34?canvasIndex=0"
+      },
+      {
+        "role": "copy",
+        "label": "NYPL Digital Collections",
+        "url": "https://digitalcollections.nypl.org/items/21c9b4c0-c6bd-012f-bbbb-58d385a7bc34?canvasIndex=0"
+      }
+    ],
     "lectio": { "post": "lt-0008", "place": 1 },
     "tags": {
       "hours": [],
@@ -1251,6 +1427,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-2-81be58c5b2f5.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57\">Distribution in North America of rabbits of the genus </a><em><a href=\"https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57\">Sylvilagus</a></em>,” from E. W. Nelson, <em>North American Fauna, No. 29: The Rabbits of North America</em> (Washington, DC: Government Printing Office, 1909), p. 43.",
+    "bibliography": "Nelson, E. W. \"Distribution in North America of Rabbits of the Genus <em>Sylvilagus</em>.\" <em>The Rabbits of North America</em>, North American Fauna 29, Government Printing Office, 1909.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57"
+      }
+    ],
     "lectio": { "post": "lt-0008", "place": 2 },
     "tags": {
       "hours": [],
@@ -1267,6 +1451,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-3-1a7d9846c02f.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397\">Skulls of Sylvilagus</a>,” from E. W. Nelson, <em>North American Fauna, No. 29: The Rabbits of North America </em>(Washington, DC: Government Printing Office, 1909), p. 302.",
+    "bibliography": "Nelson, E. W. \"Skulls of Sylvilagus.\" <em>The Rabbits of North America</em>, North American Fauna 29, Government Printing Office, 1909.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397"
+      }
+    ],
     "lectio": { "post": "lt-0008", "place": 3 },
     "tags": {
       "hours": [],
@@ -1283,6 +1475,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-1-4a420f30d874.jpeg",
     "caption": "“<a href=\"https://wellcomecollection.org/search/images?query=hdwqcqdn#wc5s9ag5\">Common mullein (Verbascum thapsus) with an associated moth and its anatomical segments</a>.” Etching with watercolor. London: J. Curtis, 1831. From the <a href=\"https://wellcomecollection.org/works/hdwqcqdn\">Wellcome Collection</a>.",
+    "bibliography": "Curtis, J. \"Common Mullein (Verbascum thapsus) with an Associated Moth and Its Anatomical Segments.\" Etching with watercolour, 1831, Wellcome Collection, London.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Wellcome Collection",
+        "url": "https://wellcomecollection.org/search/images?query=hdwqcqdn#wc5s9ag5"
+      },
+      {
+        "role": "copy",
+        "label": "Wellcome Collection",
+        "url": "https://wellcomecollection.org/works/hdwqcqdn"
+      }
+    ],
     "lectio": { "post": "lt-0009", "place": 1 },
     "tags": {
       "hours": [],
@@ -1299,6 +1504,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-2-a6652040d14a.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127\">Common Mullein.</a>” from <em>The Book of Wild Flowers: An Introduction to the Ways of Plant Life</em> (Washington, DC: The National Geographic Society, 1924 [1915]), p. <strong>111.</strong>",
+    "bibliography": "\"Common Mullein.\" <em>The Book of Wild Flowers: An Introduction to the Ways of Plant Life</em>, National Geographic Society, 1924.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127"
+      }
+    ],
     "lectio": { "post": "lt-0009", "place": 2 },
     "tags": {
       "hours": [],
@@ -1315,6 +1528,7 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-3-bfd5392ed171.jpeg",
     "caption": "Louise A. Field, <em>Peter Rabbit and His Pa</em>, illustr. Virginia Albert (Chicago, Illinois:  The Saalfield Publishing Company, 1917), p. 27.",
+    "bibliography": "Field, Louise A. <em>Peter Rabbit and His Pa</em>. Illustrated by Virginia Albert, Saalfield Publishing, 1917.",
     "lectio": { "post": "lt-0009", "place": 3 },
     "tags": {
       "hours": [],
@@ -1331,6 +1545,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-1-a3fb7c28fc19.jpeg",
     "caption": "“<a href=\"https://archive.org/details/britishmossesthe21874trip\">Plate XXXIII. HYPNEAE (continued)</a>,” from F.E. Tripp, <em>British Mosses: Their Homes, Aspects, Structure, and Uses, Vol. II </em>(London: George Bell and Sons, 1874).",
+    "bibliography": "Tripp, F. E. \"Plate XXXIII. Hypneae (continued).\" <em>British Mosses: Their Homes, Aspects, Structure, and Uses</em>, vol. 2, George Bell and Sons, 1874.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Internet Archive",
+        "url": "https://archive.org/details/britishmossesthe21874trip"
+      }
+    ],
     "lectio": { "post": "lt-0010", "place": 1 },
     "tags": {
       "hours": [],
@@ -1346,7 +1568,15 @@
     "id": "i-0062",
     "shownIn": "seasons",
     "file": "images/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-2-5068bd45d325.jpeg",
-    "caption": "“<a href=\"https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69\">Mosses</a>,” from A.J. Grout, A. J. <em>Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States</em>, illus. Mary V. Thayer (New York: Self-published, 1900), p. 37.",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69\">Mosses</a>,” from A. J. Grout, <em>Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States</em>, illus. Mary V. Thayer (New York: Self-published, 1900), p. 37.",
+    "bibliography": "Grout, A. J. \"Mosses.\" <em>Mosses with Hand-Lens and Microscope: A Non-Technical Hand-Book of the More Common Mosses of the Northeastern United States</em>, illustrated by Mary V. Thayer, 1900.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69"
+      }
+    ],
     "lectio": { "post": "lt-0010", "place": 2 },
     "tags": {
       "hours": [],
@@ -1363,6 +1593,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-1-8d49b51fb432.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60\">Structure discontinuities, Porter Square pilot tunnel</a>,” from D.E. Thompson et al., <em>Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report </em>(Washington, D.C.: Urban Mass Transportation Administration, 1983).",
+    "bibliography": "Thompson, D. E., et al. \"Structure Discontinuities, Porter Square Pilot Tunnel.\" <em>Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report</em>, Urban Mass Transportation Administration, 1983.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60"
+      }
+    ],
     "lectio": { "post": "lt-0011", "place": 1 },
     "tags": {
       "hours": [],
@@ -1379,6 +1617,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-2-450349531675.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147\">Reconstruction of the continental blocks for the Great Ice Age</a>,” from Alfred Wegener, <em>The Origin of Continents and Oceans, </em>third ed. (1922), trans. J.G.A. Skerl (New York: E.P. Dutton, [1924]), p. 111.",
+    "bibliography": "Wegener, Alfred. \"Reconstruction of the Continental Blocks for the Great Ice Age.\" <em>The Origin of Continents and Oceans</em>, 3rd ed., translated by J. G. A. Skerl, E. P. Dutton, 1924. Originally published 1922.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147"
+      }
+    ],
     "lectio": { "post": "lt-0011", "place": 2 },
     "tags": {
       "hours": [],
@@ -1394,7 +1640,15 @@
     "id": "i-0065",
     "shownIn": "seasons",
     "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-3-3b53b178df53.jpg",
-    "caption": "View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al., “<a href=\"https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf\">Bedrock Geology of the Boston Harbor</a>“ (January 2014).",
+    "caption": "View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al., “<a href=\"https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf\">Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows</a>” (2014).",
+    "bibliography": "Thompson, Peter J., et al. View of Cambridge Argillite in the Boston Harbor Islands. \"Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows,\" <em>Guidebook to Field Trips in Southeastern New England (MA-NH-RI)</em>, edited by Margaret D. Thompson, New England Intercollegiate Geological Conference, 2014, pp. C1-1–C1-32.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Wellesley College",
+        "url": "https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf"
+      }
+    ],
     "lectio": { "post": "lt-0011", "place": 3 },
     "tags": {
       "hours": [],
@@ -1411,6 +1665,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-4-8d3fa41dd229.jpg",
     "caption": "Screenshot from <a href=\"https://ngmdb.usgs.gov/mapview/?center=-97,39.6&amp;zoom=4\">The National Geologic Map Database</a> (U.S. Department of the Interior and the U.S. Geological Survey).",
+    "bibliography": "U.S. Geological Survey. Screenshot of the National Geologic Map Database. U.S. Department of the Interior.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "National Geologic Map Database",
+        "url": "https://ngmdb.usgs.gov/mapview/?center=-97,39.6&amp;zoom=4"
+      }
+    ],
     "lectio": { "post": "lt-0011", "place": 4 },
     "tags": {
       "hours": [],
@@ -1427,6 +1689,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-1-57c87d7b83e9.jpeg",
     "caption": "“<a href=\"https://digitalcollections.nypl.org/items/249ee980-c561-012f-c3ed-58d385a7bc34\">Wills’s Cigarettes, Lilac</a>” (1850), cigarette card from The George Arents Collection, The New York Public Library Digital Collections.",
+    "bibliography": "W. D. &amp; H. O. Wills. \"Lilac.\" Cigarette card, George Arents Collection, New York Public Library.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "NYPL Digital Collections",
+        "url": "https://digitalcollections.nypl.org/items/249ee980-c561-012f-c3ed-58d385a7bc34"
+      }
+    ],
     "lectio": { "post": "lt-0012", "place": 1 },
     "tags": {
       "hours": [],
@@ -1443,6 +1713,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-2-f1266a95c0a4.jpeg",
     "caption": "“<a href=\"https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item\">Lilas</a>,” from <em>Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits</em>, by  La Société Française des Chrysanthémistes and René Oberthür, et al. (La Société Nationale d’Horticulture de France, n.d.), p. 176.",
+    "bibliography": "Société Française des Chrysanthémistes and René Oberthür. \"Lilas.\" <em>Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits</em>, Société Nationale d’Horticulture de France, n.d.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Gallica",
+        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item"
+      }
+    ],
     "lectio": { "post": "lt-0012", "place": 2 },
     "tags": {
       "hours": [],
@@ -1459,6 +1737,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-3-17dcc15a1e7b.jpeg",
     "caption": "“<a href=\"https://digitalcollections.nypl.org/items/7db28480-c5c5-012f-f36a-58d385a7bc34\">Flower fancies: calendar with text; depicting lilacs</a>” (1865), from The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Print Collection, The New York Public Library Digital Collections.",
+    "bibliography": "\"Flower Fancies: Calendar with Text; Depicting Lilacs.\" 1865, Miriam and Ira D. Wallach Division of Art, Prints and Photographs, New York Public Library.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "NYPL Digital Collections",
+        "url": "https://digitalcollections.nypl.org/items/7db28480-c5c5-012f-f36a-58d385a7bc34"
+      }
+    ],
     "lectio": { "post": "lt-0012", "place": 3 },
     "tags": {
       "hours": [],
@@ -1475,6 +1761,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-1-60f3300d966e.jpeg",
     "caption": "<em><a href=\"https://www.microbiologyinpictures.com/bacteriainphotos/mycobacterium-vaccae.html\">Mycobacterium vaccae</a>, </em>from <em>Microbiology in Pictures, </em>n.d.",
+    "bibliography": "<em>Mycobacterium vaccae</em>. <em>Microbiology in Pictures</em>, n.d.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Microbiology in Pictures",
+        "url": "https://www.microbiologyinpictures.com/bacteriainphotos/mycobacterium-vaccae.html"
+      }
+    ],
     "lectio": { "post": "lt-0013", "place": 1 },
     "tags": {
       "hours": [],
@@ -1491,6 +1785,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-2-ea33a4d4d5d9.jpg",
     "caption": "Jenifer Wightman, <em><a href=\"https://exhibits.library.cornell.edu/mud-painting/feature/winogradsky-rothko-d701f1f4-6960-4eab-9e42-0f3036ce57ec\">Winogradsky Rothko</a></em> (2004). Six weeks after installation. Photo: Johnna MacArthur (September 11, 2004).",
+    "bibliography": "Wightman, Jenifer. <em>Winogradsky Rothko</em>. 2004. Photograph by Johnna MacArthur, 11 Sept. 2004.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Cornell University Library",
+        "url": "https://exhibits.library.cornell.edu/mud-painting/feature/winogradsky-rothko-d701f1f4-6960-4eab-9e42-0f3036ce57ec"
+      }
+    ],
     "lectio": { "post": "lt-0013", "place": 2 },
     "tags": {
       "hours": [],
@@ -1507,6 +1809,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-3-a0c0d2b08aba.png",
     "caption": "“Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) rough,” from <a href=\"https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production\">Elisabeth Rodriguez-Guell, et al.</a> (2006).",
+    "bibliography": "Rodríguez-Güell, Elisabeth, et al. \"Scanning Electron Microscopy Analysis of Colony Variants of M. vaccae.\" \"A New Extracellular Putative Long-Chain Saturated Polyester Produced by Smooth Variants of <em>Mycobacterium vaccae</em> Interferes with Th1-Cytokine Production,\" <em>Antonie van Leeuwenhoek</em>, vol. 90, no. 1, 2006, pp. 93–108.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production"
+      }
+    ],
     "lectio": { "post": "lt-0013", "place": 3 },
     "tags": {
       "hours": [],
@@ -1523,6 +1833,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-1-1d144754afb2.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109\">Reed Swamp at the Margin of a Norfolk Broad,</a>” from A.R. Horwood, <em><strong>A New British Flora: British Wild Flowers in Their Natural Haunts,   Vol. IV</strong></em> (London: The Gresham Publishing Company, Ltd., 1919), p. 63.",
+    "bibliography": "Horwood, A. R. \"Reed Swamp at the Margin of a Norfolk Broad.\" <em>A New British Flora: British Wild Flowers in Their Natural Haunts</em>, vol. 4, Gresham Publishing, 1919.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109"
+      }
+    ],
     "lectio": { "post": "lt-0014", "place": 1 },
     "tags": {
       "hours": [],
@@ -1539,6 +1857,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-2-a3e4848cd3d1.jpeg",
     "caption": "<a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\">Habitat illustration and range map for </a><em><a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\">Phragmites communis</a></em><a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\"> [sic]</a>, from  Alex C. Martin, Ray C. Erickson, and John H. Steenis, <em>Improving Duck Marshes by Weed Control </em>(Washington, DC: U.S. Department of the Interior Fish and Wildlife Service, 1957), p. 35.",
+    "bibliography": "Martin, Alex C., Ray C. Erickson, and John H. Steenis. <em>Improving Duck Marshes by Weed Control</em>. U.S. Department of the Interior, Fish and Wildlife Service, 1957.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49"
+      }
+    ],
     "lectio": { "post": "lt-0014", "place": 2 },
     "tags": {
       "hours": [],
@@ -1555,6 +1881,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-3-2ebd8614c020.jpeg",
     "caption": "Calligraphed and illuminated Persian manuscript edition of “<a href=\"https://www.digitalcollections.manchester.ac.uk/view/MS-PERSIAN-00072/10\">Mas̲navī-i Ma‘navī, Book 1</a>” (1487), p. 2b. Persian MS 72, The John Rylands Library, The University of Manchester, England.",
+    "bibliography": "Rūmī, Jalāl al-Dīn Muḥammad. <em>Mas̲navī-i Ma‘navī</em>, book 1. Illuminated manuscript, 1487, Persian MS 72, John Rylands Library, University of Manchester.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Manchester Digital Collections",
+        "url": "https://www.digitalcollections.manchester.ac.uk/view/MS-PERSIAN-00072/10"
+      }
+    ],
     "lectio": { "post": "lt-0014", "place": 3 },
     "tags": {
       "hours": [],
@@ -1571,6 +1905,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-1-6cb71e4bb4b7.jpeg",
     "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/33339968\">Oak Galls,</a>” from Millett Taylor Thompson, <em>An Illustrated Catalogue of American Insect Galls</em>, ed. E.P. Felt (Nassau, New York: Rensselaer Co., 1915), p. 71<em>.</em>",
+    "bibliography": "Thompson, Millett Taylor. \"Oak Galls.\" <em>An Illustrated Catalogue of American Insect Galls</em>, edited by E. P. Felt, Rensselaer, 1915.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Biodiversity Heritage Library",
+        "url": "https://www.biodiversitylibrary.org/page/33339968"
+      }
+    ],
     "lectio": { "post": "lt-0015", "place": 1 },
     "tags": {
       "hours": [],
@@ -1587,6 +1929,7 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-2-d6e5c6227dad.jpeg",
     "caption": "Wool Sower Wasp Galls, Tisbury, Massachusetts (May 25, 2026).",
+    "bibliography": "Wool Sower Wasp Galls, Tisbury, Massachusetts. Photograph, 25 May 2026.",
     "lectio": { "post": "lt-0015", "place": 2 },
     "tags": {
       "hours": [],
@@ -1603,6 +1946,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-3-966babe61d36.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21\">Wool Sower Gall,</a>” from Carl F. Gronemann, <em>Fifty Common Plant Galls of the Chicago Area</em>, Botany Leaflet 16<em> </em>(Chicago: Chicago Field Museum, 1930), p. 13.",
+    "bibliography": "Gronemann, Carl F. \"Wool Sower Gall.\" <em>Fifty Common Plant Galls of the Chicago Area</em>, Botany Leaflet 16, Field Museum of Natural History, 1930.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21"
+      }
+    ],
     "lectio": { "post": "lt-0015", "place": 3 },
     "tags": {
       "hours": [],
@@ -1619,6 +1970,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-1-1d31a365a7a0.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">The Pink Moccasin-Flower. (</a><em><a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">Cypripedium acaule.</a></em><a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">)</a>,” from Grace Greylock Niles, <em>Bog-Trotting for Orchids </em>(New York: The Knickerbocker Press, 1904), colored frontispiece.",
+    "bibliography": "Niles, Grace Greylock. \"The Pink Moccasin-Flower (<em>Cypripedium acaule</em>).\" Frontispiece, <em>Bog-Trotting for Orchids</em>, Knickerbocker Press, 1904.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8"
+      }
+    ],
     "lectio": { "post": "lt-0016", "place": 1 },
     "tags": {
       "hours": [],
@@ -1635,6 +1994,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-2-00d8e45baf8d.jpeg",
     "caption": "“<em><a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29\">Cypripedium acaule</a></em>,” from <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em> (Boston: Bradlee Whidden, 1885), n.p.",
+    "bibliography": "Young, C. S. \"<em>Cypripedium acaule</em>.\" <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em>, Bradlee Whidden, 1885.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29"
+      }
+    ],
     "lectio": { "post": "lt-0016", "place": 2 },
     "tags": {
       "hours": [],
@@ -1650,7 +2017,15 @@
     "id": "i-0081",
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-3-10e91b2d4103.jpeg",
-    "caption": "“<a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379\">The Pink Moccasin-Flower - The Stemless Lady’s Slipper</a>,” from Grace Graylock Niles, <em>Bog-Trotting for Orchids</em>, p. 247.",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379\">The Pink Moccasin-Flower - The Stemless Lady’s Slipper</a>,” from Grace Greylock Niles, <em>Bog-Trotting for Orchids</em>, p. 247.",
+    "bibliography": "Niles, Grace Greylock. \"The Pink Moccasin-Flower – The Stemless Lady’s Slipper.\" <em>Bog-Trotting for Orchids</em>, Knickerbocker Press, 1904.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379"
+      }
+    ],
     "lectio": { "post": "lt-0016", "place": 3 },
     "tags": {
       "hours": [],
@@ -1667,6 +2042,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-1-0273491a2acc.jpeg",
     "caption": "Richard William Seale, “<a href=\"https://wellcomecollection.org/works/xrjnyg2g\">The Course of the Solar Maculae over the Sun’s Disk</a>” (n.d.).",
+    "bibliography": "Seale, Richard William. \"The Course of the Solar Maculae over the Sun’s Disk.\" n.d.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Wellcome Collection",
+        "url": "https://wellcomecollection.org/works/xrjnyg2g"
+      }
+    ],
     "lectio": { "post": "lt-0017", "place": 1 },
     "tags": {
       "hours": [],
@@ -1683,6 +2066,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-2-d9b47253f1e3.jpeg",
     "caption": "Étienne Léopold Trouvelot, “<a href=\"https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f\">Plate IV. Solar Prominences</a>.” (Wellcome Collection). Rpt. from <em><a href=\"https://hdl.handle.net/2027/coo.31924056091709?urlappend=%3Bseq=151%3Bownerid=27021597769875425-161\">Annals of the Astronomical Observatory of Harvard College</a>, </em>Vol. VIII<em> </em>(Cambridge: John Wilson and Son, 1876).",
+    "bibliography": "Trouvelot, Étienne Léopold. \"Plate IV. Solar Prominences.\" <em>Annals of the Astronomical Observatory of Harvard College</em>, vol. 8, John Wilson and Son, 1876. Wellcome Collection, London.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Wellcome Collection",
+        "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f"
+      },
+      {
+        "role": "copy",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/coo.31924056091709?urlappend=%3Bseq=151%3Bownerid=27021597769875425-161"
+      }
+    ],
     "lectio": { "post": "lt-0017", "place": 2 },
     "tags": {
       "hours": [],
@@ -1698,7 +2094,16 @@
     "id": "i-0084",
     "shownIn": "seasons",
     "file": "images/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-3-04e0704813ca.webp",
-    "caption": "“<a href=\"https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2\">Early sunspot drawings from naked-eye observations</a>,” rpt. from R. Arlt and J.M. Vaquero, “<a href=\"https://doi.org/10.1007/s41116-020-0023-y\">Historical sunspot records</a>. <em>Living Reviews in Solar Physics</em> 17.1 (2020).",
+    "caption": "“<a href=\"https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2\">Early sunspot drawings from naked-eye observations</a>,” rpt. from R. Arlt and J.M. Vaquero, “<a href=\"https://doi.org/10.1007/s41116-020-0023-y\">Historical sunspot records</a>.” <em>Living Reviews in Solar Physics</em> 17.1 (2020).",
+    "bibliography": "Arlt, R., and J. M. Vaquero. \"Early Sunspot Drawings from Naked-Eye Observations.\" \"Historical Sunspot Records,\" <em>Living Reviews in Solar Physics</em>, vol. 17, no. 1, 2020.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Springer",
+        "url": "https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2"
+      },
+      { "role": "copy", "label": "DOI", "url": "https://doi.org/10.1007/s41116-020-0023-y" }
+    ],
     "lectio": { "post": "lt-0017", "place": 3 },
     "tags": {
       "hours": [],
@@ -1715,6 +2120,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-1-62e48dfa4063.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349\">Amelanchier Canadensis</a>,” Plate CXCIV from Charles Sprague Sargent, <em>The Silva of North America, Vol. IV: Rosaceae-Saxifragaceae</em> (Boston: Houghton Mifflin, 1892), p. 133.",
+    "bibliography": "Sargent, Charles Sprague. \"Amelanchier canadensis.\" Plate CXCIV, <em>The Silva of North America</em>, vol. 4, Houghton Mifflin, 1892.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349"
+      }
+    ],
     "lectio": { "post": "lt-0018", "place": 1 },
     "tags": {
       "hours": [],
@@ -1731,6 +2144,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-2-f4d49ea44be6.jpeg",
     "caption": "“<em><a href=\"https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63\">Amelanchier arborea</a></em><a href=\"https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63\"> (Michx. f.) Fern., downy serviceberry,</a>” from Elbert L. Little Jr., <em>Atlas of United States Trees, Vol. 4: Minor Eastern Hardwoods</em> (Washington, DC: USDA Forest Service, 1976), p. 51.",
+    "bibliography": "Little, Elbert L., Jr. \"<em>Amelanchier arborea</em> (Michx. f.) Fern., Downy Serviceberry.\" <em>Atlas of United States Trees</em>, vol. 4, <em>Minor Eastern Hardwoods</em>, USDA Forest Service, 1976.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63"
+      }
+    ],
     "lectio": { "post": "lt-0018", "place": 2 },
     "tags": {
       "hours": [],
@@ -1747,6 +2168,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-3-4e1073d0fee4.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30\">Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section</a>,” from E.S. Harrar, <em><a href=\"https://www.metmuseum.org/perspectives/wood-samples\">Hough’s Encyclopaedia of American Woods</a> </em>(New York: Robert Speller &amp; Sons, 1957), specimen 287.",
+    "bibliography": "Harrar, E. S. \"Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section.\" <em>Hough’s Encyclopaedia of American Woods</em>, Robert Speller &amp; Sons, 1957.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30"
+      },
+      {
+        "role": "copy",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/perspectives/wood-samples"
+      }
+    ],
     "lectio": { "post": "lt-0018", "place": 3 },
     "tags": {
       "hours": [],
@@ -1763,6 +2197,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-1-97f4e35f82f5.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499\">Fay’s Prolific</a>,” from <em>Fruit Culture, Volume 2</em> (Scranton, Pennsylvania: International Textbook Company, 1913), Section 19.",
+    "bibliography": "\"Fay’s Prolific.\" <em>Fruit Culture</em>, vol. 2, International Textbook Company, 1913.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499"
+      }
+    ],
     "lectio": { "post": "lt-0019", "place": 1 },
     "tags": {
       "hours": [],
@@ -1779,6 +2221,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-2-b6b8da8c41f6.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18\">Red Dutch. Raceme and detail of flower</a>.” <em>The Red and White Currants. </em>Wooster, Ohio: Ohio Agricultural Experiment Station, 1923.",
+    "bibliography": "\"Red Dutch. Raceme and Detail of Flower.\" <em>The Red and White Currants</em>, Ohio Agricultural Experiment Station, 1923.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18"
+      }
+    ],
     "lectio": { "post": "lt-0019", "place": 2 },
     "tags": {
       "hours": [],
@@ -1795,6 +2245,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-3-29c93178a899.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/coo.31924081974929?urlappend=%3Bseq=32%3Bownerid=120575415-36\">A currant bush before pruning</a>,” <em>Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust</em> (Washington, DC: U.S. Department of Agriculture Farmer’s Bulletin 1398, September 1929), p. 10.",
+    "bibliography": "\"A Currant Bush before Pruning.\" <em>Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust</em>, Farmers’ Bulletin 1398, U.S. Department of Agriculture, Sept. 1929.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/coo.31924081974929?urlappend=%3Bseq=32%3Bownerid=120575415-36"
+      }
+    ],
     "lectio": { "post": "lt-0019", "place": 3 },
     "tags": {
       "hours": [],
@@ -1811,6 +2269,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-1-812537cc22a0.jpeg",
     "caption": "Nasca artist(s), <em><a href=\"https://www.metmuseum.org/art/collection/search/316270\">Corn Stalk-Shaped Vessel</a> </em>(c. 1-600 CE).",
+    "bibliography": "Nasca artist(s). <em>Corn Stalk-Shaped Vessel</em>. c. 1–600 CE.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/316270"
+      }
+    ],
     "lectio": { "post": "lt-0020", "place": 1 },
     "tags": {
       "hours": [],
@@ -1827,6 +2293,8 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-2-7a013fccd630.png",
     "caption": "C. Mir, et al. “<a href=\"https://doi.org/10.1007/s00122-013-2164-z\">Out of America: Tracing the Genetic Footprints of the Global Diffusion of Maize</a>.” <em>Theoretical and Applied Genetics </em>[Berlin/Heidelberg] 126.11 (November 2013: 2671–2682), p. 2679.",
+    "bibliography": "Mir, C., et al. \"Out of America: Tracing the Genetic Footprints of the Global Diffusion of Maize.\" <em>Theoretical and Applied Genetics</em>, vol. 126, no. 11, Nov. 2013, pp. 2671–2682.",
+    "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.1007/s00122-013-2164-z" }],
     "lectio": { "post": "lt-0020", "place": 2 },
     "tags": {
       "hours": [],
@@ -1843,6 +2311,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-3-943bb839029c.jpeg",
     "caption": "<em><a href=\"https://www.europeana.eu/en/stories/corn-a-versatile-plant-with-a-long-history\">Zea Mays L</a> (1892/1893), </em>from <em><a href=\"https://www.europeana.eu/en/item/165/https___bibdigital_rjb_csic_es_idviewer_14310_169\">Atlas des plantes de France</a></em>, Royal Botanic Garden of Madrid.",
+    "bibliography": "<em>Zea mays L.</em> 1892/1893. <em>Atlas des plantes de France</em>, Real Jardín Botánico, Madrid.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Europeana",
+        "url": "https://www.europeana.eu/en/stories/corn-a-versatile-plant-with-a-long-history"
+      },
+      {
+        "role": "copy",
+        "label": "Europeana",
+        "url": "https://www.europeana.eu/en/item/165/https___bibdigital_rjb_csic_es_idviewer_14310_169"
+      }
+    ],
     "lectio": { "post": "lt-0020", "place": 3 },
     "tags": {
       "hours": [],
@@ -1859,6 +2340,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-4-9c71133456e9.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215\">Plate XIV</a>,” from George Ashley Crosthwait, <em>Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting </em>(Urbana-Champaign, Illinois: University of Illinois College of Agriculture, 1903).",
+    "bibliography": "Crosthwait, George Ashley. \"Plate XIV.\" <em>Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting</em>, University of Illinois College of Agriculture, 1903.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215"
+      }
+    ],
     "lectio": { "post": "lt-0020", "place": 4 },
     "tags": {
       "hours": [],
@@ -1875,6 +2364,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/207622717.week-30-blueberries-joseph-j-white-1-15630da30a32.jpeg",
     "caption": "“<a href=\"https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12287438430007426\">Vaccinium corymbosum: Stanley</a>.” J. Marion Shull, USDA Pomological Watercolor Collection",
+    "bibliography": "Shull, J. Marion. \"Vaccinium corymbosum: Stanley.\" USDA Pomological Watercolor Collection, National Agricultural Library.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "National Agricultural Library",
+        "url": "https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12287438430007426"
+      }
+    ],
     "lectio": { "post": "lt-0021", "place": 1 },
     "tags": {
       "hours": [],
@@ -1891,6 +2388,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/207622717.week-30-blueberries-joseph-j-white-2-5d2317404650.jpeg",
     "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52\">Plate XII. Blueberry Propagation Frames.</a>” Frederick V. Coville, <em>Directions for Blueberry Culture</em>. U.S. Department of Agriculture, Bulletin No. 974. Washington, DC: Government Printing Office, 1921.",
+    "bibliography": "Coville, Frederick V. \"Plate XII. Blueberry Propagation Frames.\" <em>Directions for Blueberry Culture</em>, Bulletin 974, U.S. Department of Agriculture, Government Printing Office, 1921.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52"
+      }
+    ],
     "lectio": { "post": "lt-0021", "place": 2 },
     "tags": {
       "hours": [],
@@ -1907,6 +2412,7 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/207622717.week-30-blueberries-joseph-j-white-3-6f3b57dc8218.jpeg",
     "caption": "An image in the Lectio Terra post “Week 30: Blueberries, Joseph J. White, Inc., Alix Beeston on Ellena Savage”",
+    "bibliography": "Joseph J. White, Inc. <em>Whitesbog Blueberries</em>. Joseph J. White, Inc., 1925. National Agricultural Library, U.S. Department of Agriculture.",
     "lectio": { "post": "lt-0021", "place": 3 },
     "tags": {
       "hours": [],
@@ -1924,6 +2430,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-1-a64cad04972b.jpeg",
     "caption": "William Clark, “<a href=\"https://archive.org/details/floraconspicuase00morr/page/226/mode/2up\">Asclepias tuberosa. Tuberous Swallow-wort</a>.” From Richard Morris, <em>Flora Conspicua: A Selection of the Most Ornamental Flowering, Hardy, Exotic and Indigenous Trees, Shrubs, and Herbaceous plants, for Embellishing Flower-Gardens and Pleasure-Grounds. </em>London: Longman, 1826.",
+    "bibliography": "Clark, William. \"Asclepias tuberosa. Tuberous Swallow-wort.\" Richard Morris, <em>Flora Conspicua</em>, Longman, 1826.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Internet Archive",
+        "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up"
+      }
+    ],
     "lectio": { "post": "lt-0022", "place": 1 },
     "tags": {
       "hours": [],
@@ -1940,6 +2454,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-2-8c1877b23c1d.webp",
     "caption": "Craig Holdrege. <em><a href=\"https://www.natureinstitute.org/article/craig-holdrege/the-story-of-an-organism-common-milkweed\">Shoot development in common milkweed (Asclepias syriaca). Shoots from one colony, drawn to scale</a></em> (Summer 2007).",
+    "bibliography": "Holdrege, Craig. <em>Shoot Development in Common Milkweed (Asclepias syriaca)</em>. Drawing, Summer 2007.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Nature Institute",
+        "url": "https://www.natureinstitute.org/article/craig-holdrege/the-story-of-an-organism-common-milkweed"
+      }
+    ],
     "lectio": { "post": "lt-0022", "place": 2 },
     "tags": {
       "hours": [],
@@ -1956,6 +2478,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-1-98c605574152.jpeg",
     "caption": "<a href=\"https://www.flickr.com/photos/britishlibrary/12459060295\">Illustration of the Constellation Sirius, with text</a>. From<a href=\"https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/\"> </a><em><a href=\"https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/\">The Harley Aratus </a></em><a href=\"https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/\">(c. 820-840)</a>. Rheims, France. From the British Library, <a href=\"https://en.wikipedia.org/wiki/Harleian_Library\">Harley Collection</a>.",
+    "bibliography": "\"Sirius.\" Illustration with text, <em>The Harley Aratus</em>, c. 820–840, Rheims. British Library, Harley MS 647.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Flickr",
+        "url": "https://www.flickr.com/photos/britishlibrary/12459060295"
+      },
+      {
+        "role": "copy",
+        "label": "The Public Domain Review",
+        "url": "https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/"
+      }
+    ],
     "lectio": { "post": "lt-0023", "place": 1 },
     "tags": {
       "hours": [],
@@ -1972,6 +2507,15 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-2-60ab1f8abd8f.jpeg",
     "caption": "<a href=\"https://starglass.cfa.harvard.edu/plate/a03507\">Plate a03507</a> (May 2, 1899). Marked-up astronomical plate from Arequipa, Peru, featuring Sirius. Harvard College Observatory, <a href=\"https://starglass.cfa.harvard.edu/about\">StarGlass</a>.",
+    "bibliography": "Harvard College Observatory. Plate a03507, Arequipa, Peru, 2 May 1899. StarGlass.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "StarGlass",
+        "url": "https://starglass.cfa.harvard.edu/plate/a03507"
+      },
+      { "role": "copy", "label": "StarGlass", "url": "https://starglass.cfa.harvard.edu/about" }
+    ],
     "lectio": { "post": "lt-0023", "place": 2 },
     "tags": {
       "hours": [],
@@ -1988,6 +2532,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-3-f2eaea1474db.png",
     "caption": "“<a href=\"https://www.loc.gov/resource/sn88085187/1909-08-02/ed-1/?sp=8&amp;q=%22dog+days%22&amp;r=-0.386,-0.177,1.735,0.872,0\">It’s Dog Days, But ‘Dog Days’ is Biggest Hoax Yet</a>.” <em>The Tacoma Times</em> [Tacoma, Washington] (August 2, 1909).",
+    "bibliography": "\"It’s Dog Days, But ‘Dog Days’ Is Biggest Hoax Yet.\" <em>The Tacoma Times</em>, 2 Aug. 1909.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Library of Congress",
+        "url": "https://www.loc.gov/resource/sn88085187/1909-08-02/ed-1/?sp=8&amp;q=%22dog+days%22&amp;r=-0.386,-0.177,1.735,0.872,0"
+      }
+    ],
     "lectio": { "post": "lt-0023", "place": 3 },
     "tags": {
       "hours": [],
@@ -2004,6 +2556,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208575477.week-33-perseids-meteor-shower-han-1-196c82d29c32.png",
     "caption": "W.F. Denning. “<a href=\"https://ui.adsabs.harvard.edu/scan/manifest/1901MNRAS..62..161D\">Positions of the Perseid Radiant Point, July 15, to August 20</a>.” From “The Observed Motion and Duration of the Radiant Point of the Perseids.” <em>Monthly Notices of the Royal Astronomical Society </em>(December 1901: 161-169). 168.",
+    "bibliography": "Denning, W. F. \"Positions of the Perseid Radiant Point, July 15 to August 20.\" \"The Observed Motion and Duration of the Radiant Point of the Perseids,\" <em>Monthly Notices of the Royal Astronomical Society</em>, Dec. 1901, pp. 161–169.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "NASA ADS",
+        "url": "https://ui.adsabs.harvard.edu/scan/manifest/1901MNRAS..62..161D"
+      }
+    ],
     "lectio": { "post": "lt-0024", "place": 1 },
     "tags": {
       "hours": [],
@@ -2020,6 +2580,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208575477.week-33-perseids-meteor-shower-han-2-f75cd88ec792.png",
     "caption": "W.F. Denning. “<a href=\"https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D\">Horary number of Perseïds</a>.” From “The August Perseïds, 1877.” <em>The Observatory</em> 1 (September 1877): 164-166.",
+    "bibliography": "Denning, W. F. \"Horary Number of Perseïds.\" \"The August Perseïds, 1877,\" <em>The Observatory</em>, vol. 1, Sept. 1877, pp. 164–166.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "NASA ADS",
+        "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D"
+      }
+    ],
     "lectio": { "post": "lt-0024", "place": 2 },
     "tags": {
       "hours": [],
@@ -2036,6 +2604,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208575477.week-33-perseids-meteor-shower-han-3-477f8b130120.webp",
     "caption": "<a href=\"https://www.space.com/33706-perseid-meteor-shower-legend-science.html\">Perseid meteors photo collage</a> (August 10-15, 2011). NASA/MSFC/Meteoroid Environment Office.",
+    "bibliography": "NASA/MSFC Meteoroid Environment Office. Perseid meteors photo collage, 10–15 Aug. 2011.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Space.com",
+        "url": "https://www.space.com/33706-perseid-meteor-shower-legend-science.html"
+      }
+    ],
     "lectio": { "post": "lt-0024", "place": 3 },
     "tags": {
       "hours": [],
@@ -2052,6 +2628,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-1-7e6f285c22aa.jpeg",
     "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/44254481\">Courd, Courge, Der Kürbiss</a>.” Eugène Grasset and M. P. Verneuil. <em>La plante et ses applications ornementales</em>. Paris, France: Librairie Centrale des Beaux-Arts, 1896. Plate 14.",
+    "bibliography": "Grasset, Eugène, and M. P. Verneuil. \"Courge.\" Plate 14, <em>La plante et ses applications ornementales</em>, Librairie Centrale des Beaux-Arts, 1896.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Biodiversity Heritage Library",
+        "url": "https://www.biodiversitylibrary.org/page/44254481"
+      }
+    ],
     "lectio": { "post": "lt-0025", "place": 1 },
     "tags": {
       "hours": [],
@@ -2067,7 +2651,15 @@
     "id": "i-0107",
     "shownIn": "seasons",
     "file": "images/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-2-c9b22a2920de.jpeg",
-    "caption": "“<a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Fruit Shape of Each of the Eight Cultivar Groups of </a><em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Cucurbita Pepo.</a></em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\"> Proximal (stem) end is at top, distal (blossom end at bottom</a>.” Harry S. Parris. “A Proposed Subspecific Classification for Cucurbita-Pepo.” <em>Phytologia</em> 61.3 (November 1986: 133-138), 136.",
+    "caption": "“<a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Fruit Shape of Each of the Eight Cultivar Groups of </a><em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Cucurbita Pepo.</a></em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\"> Proximal (stem) end is at top, distal (blossom end at bottom</a>.” Harry S. Paris. “A Proposed Subspecific Classification for Cucurbita-Pepo.” <em>Phytologia</em> 61.3 (November 1986: 133-138), 136.",
+    "bibliography": "Paris, Harry S. \"Fruit Shape of Each of the Eight Cultivar Groups of <em>Cucurbita pepo</em>.\" \"A Proposed Subspecific Classification for <em>Cucurbita pepo</em>,\" <em>Phytologia</em>, vol. 61, no. 3, Nov. 1986, pp. 133–138.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Biodiversity Heritage Library",
+        "url": "https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up"
+      }
+    ],
     "lectio": { "post": "lt-0025", "place": 2 },
     "tags": {
       "hours": [],
@@ -2083,7 +2675,15 @@
     "id": "i-0108",
     "shownIn": "seasons",
     "file": "images/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-3-4b3100cf3ccf.jpeg",
-    "caption": "“<a href=\"https://books.openedition.org/mnhn/5164?dir=next\">67. 18 Juin 1771</a>.” Antoine Nicolas Duchesne. The<em> Essai sur l’Histoire Naturelle des Courges. </em>1876. Ed. Harrys S. Parris. <em>The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds</em>. Paris, France: Publications scientifiques du Muséum, 2007.",
+    "caption": "“<a href=\"https://books.openedition.org/mnhn/5164?dir=next\">67. 18 Juin 1771</a>.” Antoine Nicolas Duchesne. The<em> Essai sur l’Histoire Naturelle des Courges. </em>1786. Ed. Harry S. Paris. <em>The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds</em>. Paris, France: Publications scientifiques du Muséum, 2007.",
+    "bibliography": "Duchesne, Antoine Nicolas. \"67. 18 Juin 1771.\" <em>The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds</em>, edited by Harry S. Paris, Publications scientifiques du Muséum, 2007.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "OpenEdition Books",
+        "url": "https://books.openedition.org/mnhn/5164?dir=next"
+      }
+    ],
     "lectio": { "post": "lt-0025", "place": 3 },
     "tags": {
       "hours": [],
@@ -2100,6 +2700,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-4-4d2f84b7fe35.jpeg",
     "caption": "<em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Quegourdes de turquie</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (left), </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Quegourdes</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (centre) and </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Concombres</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (right)</a>. Paintings from the <em><a href=\"https://en.wikipedia.org/wiki/Grandes_Heures_of_Anne_of_Brittany\">Grandes Heures d'Anne de Bretagne</a></em> (1503–1508). Rpt. Harry S. Paris, et al. “First Known Image of Cucurbita in Europe, 1503-1508.” <em>Annals of Botany</em> 98.1 (July 2006): 41-47.",
+    "bibliography": "<em>Quegourdes de Turquie</em>, <em>Quegourdes</em> and <em>Concombres</em>. <em>Grandes Heures d’Anne de Bretagne</em>, 1503–1508. Reproduced in Harry S. Paris et al., \"First Known Image of Cucurbita in Europe, 1503–1508,\" <em>Annals of Botany</em>, vol. 98, no. 1, July 2006, pp. 41–47.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/"
+      }
+    ],
     "lectio": { "post": "lt-0025", "place": 4 },
     "tags": {
       "hours": [],
@@ -2116,6 +2724,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-1-126d608eed31.jpeg",
     "caption": "Fede Galizia. <a href=\"https://www.nga.gov/artworks/226411-still-life-apples-pears-cucumbers-figs-plums-and-melon\">Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon</a> (c. 1625-1630).",
+    "bibliography": "Galizia, Fede. <em>Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon</em>. c. 1625–1630.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "National Gallery of Art",
+        "url": "https://www.nga.gov/artworks/226411-still-life-apples-pears-cucumbers-figs-plums-and-melon"
+      }
+    ],
     "lectio": { "post": "lt-0026", "place": 1 },
     "tags": {
       "hours": [],
@@ -2132,6 +2748,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-2-8cfb597354a4.jpeg",
     "caption": "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">Depiction labelled Qawoun (melon, </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">Cucumis melo</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">)</a>. From <em>Kitab al-Hasha'ish fi Hayula al-‘Ilaj al-Tibbi</em> (Arabic translation of Dioscorides’ <em>De Materia Medica</em>, edited by Abu ‘Abdallah al-Natili, approx. 990) and copied in Samarqand, 1082. Rpt. Harry S. Paris, et al. “Medieval emergence of sweet melons, <em>Cucumis melo</em> (Cucurbitaceae).” <em>Annals of Botany</em> 110.1 (May 2012): 23-33.",
+    "bibliography": "\"Qawoun (Melon, <em>Cucumis melo</em>).\" <em>Kitāb al-Ḥashā’ish fī hayūlā al-‘ilāj al-ṭibbī</em>, copied in Samarqand, 1082. Reproduced in Harry S. Paris et al., \"Medieval Emergence of Sweet Melons, <em>Cucumis melo</em> (Cucurbitaceae),\" <em>Annals of Botany</em>, vol. 110, no. 1, May 2012, pp. 23–33.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/"
+      }
+    ],
     "lectio": { "post": "lt-0026", "place": 2 },
     "tags": {
       "hours": [],
@@ -2148,6 +2772,7 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-3-5f65fc835311.jpeg",
     "caption": "Juan Sánchez Cotán. <em><a href=\"https://en.wikipedia.org/wiki/Quince,_Cabbage,_Melon_and_Cucumber\">Still Life with Quince, Cabbage, Melon, and Cucumber</a></em> (c. 1602)",
+    "bibliography": "Sánchez Cotán, Juan. <em>Still Life with Quince, Cabbage, Melon, and Cucumber</em>. c. 1602, San Diego Museum of Art.",
     "lectio": { "post": "lt-0026", "place": 3 },
     "tags": {
       "hours": [],
@@ -2164,6 +2789,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-1-79d05ebcb30e.jpeg",
     "caption": "“<a href=\"https://www.metmuseum.org/art/collection/search/305831\" rel=\"noopener\" target=\"_blank\">[Man Cutting Watermelon]</a>” (c. 1898-1903). Johnson Photography Studio. The Metropolitan Museum of Art.",
+    "bibliography": "Johnson Photography Studio. <em>[Man Cutting Watermelon]</em>. c. 1898–1903, The Metropolitan Museum of Art, New York.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/305831"
+      }
+    ],
     "lectio": { "post": "lt-0027", "place": 1 },
     "tags": {
       "hours": [],
@@ -2180,6 +2813,19 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-2-6223245b64bc.jpeg",
     "caption": "“<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/figure/MCT151F2/\" rel=\"noopener\" target=\"_blank\">Images of watermelon drawn from approx. 1385 to 1395</a>.” Harry S. Paris, et al. “<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/\" rel=\"noopener\" target=\"_blank\">Medieval iconography of watermelons in Mediterranean Europe</a>.” <em>Annals of Botany</em> 112.5 (2013): 867-79.",
+    "bibliography": "Paris, Harry S., et al. \"Images of Watermelon Drawn from approx. 1385 to 1395.\" \"Medieval Iconography of Watermelons in Mediterranean Europe,\" <em>Annals of Botany</em>, vol. 112, no. 5, 2013, pp. 867–879.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/figure/MCT151F2/"
+      },
+      {
+        "role": "copy",
+        "label": "PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/"
+      }
+    ],
     "lectio": { "post": "lt-0027", "place": 2 },
     "tags": {
       "hours": [],
@@ -2196,6 +2842,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-3-9c65227e690b.jpeg",
     "caption": "“<a href=\"https://www.metmuseum.org/art/collection/search/423219\" rel=\"noopener\" target=\"_blank\">Rose Coghlan as \"The Watermelon,\" from the series Fancy Dress Ball Costumes (N73) for Duke brand cigarettes</a>” (1889). <em>The Metropolitan Museum of Art</em>.",
+    "bibliography": "\"Rose Coghlan as ‘The Watermelon,’ from the Series Fancy Dress Ball Costumes (N73) for Duke Brand Cigarettes.\" 1889, The Metropolitan Museum of Art, New York.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/423219"
+      }
+    ],
     "lectio": { "post": "lt-0027", "place": 3 },
     "tags": {
       "hours": [],
@@ -2212,6 +2866,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-1-d28133c217f9.jpeg",
     "caption": "Piet Mondrian. <em><a href=\"https://www.sothebys.com/en/buy/auction/2021/impressionist-modern-art-day-sale-4/field-with-oak-trees-at-dusk\" rel=\"noopener\" target=\"_blank\">Field with Oak Trees at Dusk</a> </em>(1907-1908). “Owned” by some rich person.",
+    "bibliography": "Mondrian, Piet. <em>Field with Oak Trees at Dusk</em>. 1907–1908. Private collection.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Sotheby's",
+        "url": "https://www.sothebys.com/en/buy/auction/2021/impressionist-modern-art-day-sale-4/field-with-oak-trees-at-dusk"
+      }
+    ],
     "lectio": { "post": "lt-0028", "place": 1 },
     "tags": {
       "hours": [],
@@ -2228,6 +2890,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-2-34e8a8fd3d56.jpeg",
     "caption": "“<a href=\"https://archive.org/details/CAT87209954/page/n291/mode/2up\" rel=\"noopener\" target=\"_blank\">Map 180-E. northern red oak, </a><em><a href=\"https://archive.org/details/CAT87209954/page/n291/mode/2up\" rel=\"noopener\" target=\"_blank\">Quercus rubra L</a>.” </em>Elbert L. Little, Jr. <em>Atlas of United States Trees, Vol. 1: Conifers and Important Hardwoods</em>. Washington, DC: U.S. Department of Agriculture Forest Service, 1971.",
+    "bibliography": "Little, Elbert L., Jr. \"Map 180-E. Northern Red Oak, <em>Quercus rubra</em> L.\" <em>Atlas of United States Trees</em>, vol. 1, <em>Conifers and Important Hardwoods</em>, U.S. Department of Agriculture, Forest Service, 1971.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Internet Archive",
+        "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up"
+      }
+    ],
     "lectio": { "post": "lt-0028", "place": 2 },
     "tags": {
       "hours": [],
@@ -2244,6 +2914,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-3-953376fe3763.jpeg",
     "caption": "“<a href=\"https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22\" rel=\"noopener\" target=\"_blank\">Red Oak and The Pigeon of Passage</a>.” Mark Catesby. <em>The Natural History of Carolina, Florida and the Bahama Islands, Vol. 1</em>. London, England: n.p., 1729-1732. 22.",
+    "bibliography": "Catesby, Mark. \"Red Oak and the Pigeon of Passage.\" <em>The Natural History of Carolina, Florida and the Bahama Islands</em>, vol. 1, 1729–1732.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Internet Archive",
+        "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22"
+      }
+    ],
     "lectio": { "post": "lt-0028", "place": 3 },
     "tags": {
       "hours": [],
@@ -2260,6 +2938,14 @@
     "shownIn": "seasons",
     "file": "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-4-1c13e3ca35a8.jpeg",
     "caption": "“<a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">Red Oak. </a><em><a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">Quercus rubra</a></em><a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">.</a>” From François André Michaux. <em>The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia. </em>Paris, France: 1819.",
+    "bibliography": "Michaux, François André. \"Red Oak. <em>Quercus rubra</em>.\" <em>The North American Sylva, or a Description of the Forest Trees of the United States, Canada and Nova Scotia</em>, 1819.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Internet Archive",
+        "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up"
+      }
+    ],
     "lectio": { "post": "lt-0028", "place": 4 },
     "tags": {
       "hours": [],
@@ -2275,7 +2961,15 @@
     "id": "i-0120",
     "shownIn": "seasons",
     "file": "images/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-1-ba367b435c4e.jpeg",
-    "caption": "Bertha E. Jaques. <em><a href=\"https://americanart.si.edu/artwork/young-leaves-and-blossoms-hickory-tree-34276\" rel=\"noopener\" target=\"_blank\">Young Leaves and Blossoms of Hickory Tree</a></em> (c. 1910). Smithsonian American Art Museum. <a href=\"https://voices.uchicago.edu/unsettledground/the-botanical-art-of-bertha-evelyn-jaques/#_ftn1\" rel=\"noopener\" target=\"_blank\">Read more</a>.",
+    "caption": "Bertha E. Jaques. <em><a href=\"https://americanart.si.edu/artwork/young-leaves-and-blossoms-hickory-tree-34276\" rel=\"noopener\" target=\"_blank\">Young Leaves and Blossoms of Hickory Tree</a></em> (c. 1910). Smithsonian American Art Museum.",
+    "bibliography": "Jaques, Bertha E. <em>Young Leaves and Blossoms of Hickory Tree</em>. c. 1910, Smithsonian American Art Museum, Washington, D.C.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Smithsonian American Art Museum",
+        "url": "https://americanart.si.edu/artwork/young-leaves-and-blossoms-hickory-tree-34276"
+      }
+    ],
     "lectio": { "post": "lt-0029", "place": 1 },
     "tags": {
       "hours": [],
@@ -2291,7 +2985,15 @@
     "id": "i-0121",
     "shownIn": "seasons",
     "file": "images/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-2-fcfa5da7839c.jpeg",
-    "caption": "Sophia Thoreau. <a href=\"https://concord.emuseum.com/objects/45741/specimens\" rel=\"noopener\" target=\"_blank\">Inscribed hickory leaves in memory of her brother, Henry</a> (1868). Concord Museum. <a href=\"https://www.themagazineantiques.com/article/five-leaves-left/\" rel=\"noopener\" target=\"_blank\">Read more</a>.",
+    "caption": "Sophia Thoreau. <a href=\"https://concord.emuseum.com/objects/45741/specimens\" rel=\"noopener\" target=\"_blank\">Inscribed hickory leaves in memory of her brother, Henry</a> (1868). Concord Museum.",
+    "bibliography": "Thoreau, Sophia. Inscribed hickory leaves in memory of her brother, Henry. 1868, Concord Museum, Concord, Massachusetts.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Concord Museum",
+        "url": "https://concord.emuseum.com/objects/45741/specimens"
+      }
+    ],
     "lectio": { "post": "lt-0029", "place": 2 },
     "tags": {
       "hours": [],
@@ -2307,7 +3009,15 @@
     "id": "i-0122",
     "shownIn": "seasons",
     "file": "images/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-3-96701b4632e9.jpeg",
-    "caption": "“<a href=\"https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263\" rel=\"noopener\" target=\"_blank\">Hicoria ovata</a>.” From Charles Sprague Sargent. <em>The Sylva of North America, Vol. VII: Lauraceae - Juglandacea. </em>Boston: Houghton Mifflin, 1895.",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263\" rel=\"noopener\" target=\"_blank\">Hicoria ovata</a>.” From Charles Sprague Sargent. <em>The Silva of North America, Vol. VII: Lauraceae - Juglandaceae. </em>Boston: Houghton Mifflin, 1895.",
+    "bibliography": "Sargent, Charles Sprague. \"Hicoria ovata.\" <em>The Silva of North America</em>, vol. 7, Houghton Mifflin, 1895.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "HathiTrust",
+        "url": "https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263"
+      }
+    ],
     "lectio": { "post": "lt-0029", "place": 3 },
     "tags": {
       "hours": [],

@@ -296,7 +296,9 @@ def main():
     # Embedded editions and people: every copy that shares an id agrees.
     copies = defaultdict(list)
     def collect(owner, edition):
-        if not edition:
+        # An edition without an ID (a Lectio reading's links, until Stage 3
+        # gives it an edition record) has nothing to keep consistent.
+        if not edition or 'id' not in edition:
             return
         people = edition.get('contributors') or []
         copies[edition['id']].append((owner, {k: v for k, v in edition.items() if k != 'contributors'}))
