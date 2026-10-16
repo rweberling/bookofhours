@@ -14,8 +14,8 @@ numbered figures with captions. This gives each passage a reading record
 and each piece of the post's own writing a writing record
 (data/writing.json), numbered on from the last r-, i- or w- ID, with:
 
-  text      (a passage) the passage, with lines joined by <br> and
-            paragraphs or stanzas by <br><br>, as in the other readings
+  text      (a passage) the passage as the post sets it out: its own
+            paragraphs and line breaks, less any figures
   citation  (a passage) display: the citation as the post gives it
   kind      (writing) note, headnote or supplementum
   text      (writing) its HTML as the post gives it, less the figures
@@ -68,29 +68,12 @@ EMPTY_EDGE = re.compile(r'^(\s*<p>\s*</p>)+|(<p>\s*</p>\s*)+$')
 FIGURE_LABEL = re.compile(r'^(\s*(?:<(?:em|i|strong|b)>)?)\s*fig(?:ure)?\.?\s*\d+\s*[.:]\s*', re.I)
 
 
-def preformatted(text):
-    """A preformatted paragraph's own line breaks, as <br>."""
-    lines = [line.rstrip() for line in text.strip().split('\n')]
-    return re.sub(r'(<br>){3,}', '<br><br>', '<br>'.join(lines))
-
-
 def passage_text(html):
-    """The passage in the readings' own markup: <br> between lines, <br><br>
-    between paragraphs or stanzas (an empty paragraph in the post)."""
+    """The passage as the post sets it out (its paragraphs, line breaks and
+    any preformatted lines), less figures and empty paragraphs at either
+    end."""
     html = re.sub(r'<figure\b.*?</figure>', '', html, flags=re.S)
-    paras = [(cls, p.strip()) for cls, p in re.findall(r'<p\b([^>]*)>(.*?)</p>', html, re.S)]
-    if not paras:
-        return html.strip()
-    out, gap = [], False
-    for cls, p in paras:
-        if not p:
-            gap = bool(out)
-            continue
-        if out:
-            out.append('<br><br>' if gap else '<br>')
-        out.append(preformatted(p) if 'preformatted' in cls else p)
-        gap = False
-    return ''.join(out)
+    return EMPTY_EDGE.sub('', html.strip()).strip()
 
 
 def citation_text(html):

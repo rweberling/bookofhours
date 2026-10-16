@@ -73,5 +73,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - Notes (Claude Docs): "Metadata Standards" holds the map of how the pieces
   fit, the ID rule and the open items; a separate bibliography review doc
   tracks citation questions.
-- Branch `rebuild-posts`: a prototype that rebuilds each post from the data
-  (`renderPostBody`, `scripts/build_post_manifests.py`); not yet merged.
+- Rebuilt posts (on trial): each post in `lectio-data.json` has a `body`
+  listing its pieces, and `renderPostBody()` in `shared.js` rebuilds the post
+  from the records (`scripts/build_post_manifests.py` makes the lists). The
+  Seasons page shows the rebuilt post only with `?rebuilt` in the address;
+  otherwise each post's imported `bodyHtml`, which is kept unchanged.

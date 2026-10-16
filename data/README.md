@@ -45,10 +45,13 @@ Every record has an `id`, and most share a few fields:
 Then each kind has its own:
 
 - **Readings**: `text` (lines joined by `<br>`, stanzas or paragraphs by
-  `<br><br>`), `citation` (`display`, the line shown with the reading; and,
+  `<br><br>`; a Lectio Terra passage keeps the post's own paragraphs), `citation` (`display`, the line shown with the reading; and,
   where researched, a `bibliography` line and the `edition` it comes from),
   `suggestedEdition` (an ISBN for a recommended edition), and `footnotes`.
-- **Images**: `file`, `caption`, `bibliography`, `creator`, `title`, `date`,
+- **Images**: `file`, `caption`, `display` (for a Lectio Terra figure:
+  its `size` in the post, and `noCaption` or `unlabelled` where it has no
+  caption or no "Fig." number), `link` (where a figure links, if not to
+  itself), `bibliography`, `creator`, `title`, `date`,
   `institution`, `links` (where the work was cited from), `rights` (a
   [RightsStatements.org](https://rightsstatements.org) or Creative Commons
   URI).
@@ -71,6 +74,10 @@ record in `readings.json`, `images.json` and `writing.json`. It runs after
 every Substack import. It only ever adds new pieces, never changes one
 already copied, and reports when a post and its copy no longer match. If you
 correct a post, correct its copy too (or the other way round).
+
+Each post also has a `body`: its pieces in order (headings, figures,
+passages, runs of its writing), which the Seasons page rebuilds the post
+from. `scripts/build_post_manifests.py` makes these lists after an import.
 
 ## Editing by hand
 

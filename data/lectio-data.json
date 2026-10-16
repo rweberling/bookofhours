@@ -31,7 +31,50 @@
           "Annika Hansteen-Izora",
           "Walter H. Crockett"
         ],
-        "subject": "sp-0003"
+        "subject": "sp-0003",
+        "body": [
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0038",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0040"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0041"
+          },
+          {
+            "reading": "r-0042"
+          },
+          {
+            "reading": "r-0043"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0039",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0041"
+          }
+        ]
       },
       {
         "id": "lt-0002",
@@ -66,7 +109,53 @@
           "Emily Dickinson",
           "Robert Ridgway"
         ],
-        "subject": "sp-0002"
+        "subject": "sp-0002",
+        "body": [
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0036",
+            "blocks": [
+              0,
+              2
+            ]
+          },
+          {
+            "image": "i-0037"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0039"
+          },
+          {
+            "image": "i-0038"
+          },
+          {
+            "reading": "r-0040"
+          },
+          {
+            "image": "i-0039"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0037",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0123"
+          }
+        ]
       },
       {
         "id": "lt-0004",
@@ -101,7 +190,50 @@
           "Robert Frost",
           "Gifford Pinchot"
         ],
-        "subject": "sp-0004"
+        "subject": "sp-0004",
+        "body": [
+          {
+            "image": "i-0042"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0040",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0043"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0044"
+          },
+          {
+            "reading": "r-0045"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0041",
+            "blocks": [
+              0,
+              1
+            ],
+            "figures": [
+              "i-0044"
+            ]
+          }
+        ]
       },
       {
         "id": "lt-0009",
@@ -136,7 +268,60 @@
           "Ashia Ajani",
           "Hildegard von Bingen"
         ],
-        "subject": "sp-0008"
+        "subject": "sp-0008",
+        "body": [
+          {
+            "image": "i-0058"
+          },
+          {
+            "writing": "w-0050",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0051",
+            "blocks": [
+              0,
+              2
+            ]
+          },
+          {
+            "image": "i-0059"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0054"
+          },
+          {
+            "reading": "r-0055"
+          },
+          {
+            "reading": "r-0056"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0052",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0060"
+          }
+        ]
       },
       {
         "id": "lt-0005",
@@ -171,7 +356,50 @@
           "Johann Wolfgang von Goethe",
           "Jenny Odell"
         ],
-        "subject": "ph-0001"
+        "subject": "ph-0001",
+        "body": [
+          {
+            "image": "i-0045"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0042",
+            "blocks": [
+              0,
+              4
+            ]
+          },
+          {
+            "image": "i-0046"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0046"
+          },
+          {
+            "reading": "r-0047"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0043",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0047"
+          }
+        ]
       },
       {
         "id": "lt-0007",
@@ -206,7 +434,50 @@
           "Martin Heidegger",
           "Douglas Houghton Campbell"
         ],
-        "subject": "sp-0006"
+        "subject": "sp-0006",
+        "body": [
+          {
+            "image": "i-0052"
+          },
+          {
+            "heading": "HEADNOTE",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0046",
+            "blocks": [
+              0,
+              6
+            ]
+          },
+          {
+            "image": "i-0053"
+          },
+          {
+            "heading": "READINGS",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0050"
+          },
+          {
+            "reading": "r-0051"
+          },
+          {
+            "heading": "SUPPLEMENTUM",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0047",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0054"
+          }
+        ]
       },
       {
         "id": "lt-0006",
@@ -246,7 +517,53 @@
           "Guillaume Barth",
           "William Herbert"
         ],
-        "subject": "sp-0005"
+        "subject": "sp-0005",
+        "body": [
+          {
+            "image": "i-0048"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0044",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0049"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0048"
+          },
+          {
+            "reading": "r-0049"
+          },
+          {
+            "image": "i-0050"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0045",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0051"
+          }
+        ]
       },
       {
         "id": "lt-0008",
@@ -281,7 +598,50 @@
           "Zora Neale Hurston",
           "Ernest Thompson Seton"
         ],
-        "subject": "sp-0007"
+        "subject": "sp-0007",
+        "body": [
+          {
+            "image": "i-0055"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0048",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0056"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0052"
+          },
+          {
+            "reading": "r-0053"
+          },
+          {
+            "image": "i-0057"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0049",
+            "blocks": [
+              0,
+              1
+            ]
+          }
+        ]
       },
       {
         "id": "lt-0010",
@@ -311,7 +671,53 @@
           "Hildegard von Bingen",
           "Michael Marder"
         ],
-        "subject": "sp-0009"
+        "subject": "sp-0009",
+        "body": [
+          {
+            "image": "i-0061"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0053",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0062"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0057"
+          },
+          {
+            "reading": "r-0058"
+          },
+          {
+            "reading": "r-0059"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0054",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0124"
+          }
+        ]
       },
       {
         "id": "lt-0011",
@@ -351,7 +757,53 @@
           "Ludwig Wittgenstein",
           "The Dana Brothers"
         ],
-        "subject": "ph-0002"
+        "subject": "ph-0002",
+        "body": [
+          {
+            "image": "i-0063"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0055",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0064"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0060"
+          },
+          {
+            "reading": "r-0061"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0056",
+            "blocks": [
+              0,
+              1
+            ],
+            "figures": [
+              "i-0065"
+            ]
+          },
+          {
+            "image": "i-0066"
+          }
+        ]
       },
       {
         "id": "lt-0012",
@@ -386,7 +838,53 @@
           "Amy Lowell",
           "Ronald Firbank"
         ],
-        "subject": "sp-0010"
+        "subject": "sp-0010",
+        "body": [
+          {
+            "image": "i-0067"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0057",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0068"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0062"
+          },
+          {
+            "reading": "r-0063"
+          },
+          {
+            "reading": "r-0064"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0058",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0069"
+          }
+        ]
       },
       {
         "id": "lt-0013",
@@ -421,7 +919,60 @@
           "Jenifer Wightman",
           "Graham A.W. Rook"
         ],
-        "subject": "sp-0011"
+        "subject": "sp-0011",
+        "body": [
+          {
+            "image": "i-0070"
+          },
+          {
+            "writing": "w-0059",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0060",
+            "blocks": [
+              0,
+              6
+            ]
+          },
+          {
+            "image": "i-0071"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0065"
+          },
+          {
+            "reading": "r-0066"
+          },
+          {
+            "reading": "r-0067"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0061",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0072"
+          }
+        ]
       }
     ],
     "summer": [
@@ -458,7 +1009,53 @@
           "Grace Greylock Niles",
           "C.S. Young"
         ],
-        "subject": "sp-0014"
+        "subject": "sp-0014",
+        "body": [
+          {
+            "image": "i-0079"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0066",
+            "blocks": [
+              0,
+              3
+            ]
+          },
+          {
+            "image": "i-0080"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0072"
+          },
+          {
+            "reading": "r-0073"
+          },
+          {
+            "reading": "r-0074"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0067",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0081"
+          }
+        ]
       },
       {
         "id": "lt-0017",
@@ -493,7 +1090,50 @@
           "Galileo Galilei feat. The Roman Inquisition",
           "Simon Barraclough"
         ],
-        "subject": "ph-0003"
+        "subject": "ph-0003",
+        "body": [
+          {
+            "image": "i-0082"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0068",
+            "blocks": [
+              0,
+              4
+            ]
+          },
+          {
+            "image": "i-0083"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0075"
+          },
+          {
+            "reading": "r-0076"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0069",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0084"
+          }
+        ]
       },
       {
         "id": "lt-0025",
@@ -533,7 +1173,60 @@
           "Marge Piercy",
           "Padraig Regan"
         ],
-        "subject": "sp-0020"
+        "subject": "sp-0020",
+        "body": [
+          {
+            "image": "i-0106"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0085",
+            "blocks": [
+              0,
+              6
+            ]
+          },
+          {
+            "image": "i-0107"
+          },
+          {
+            "writing": "w-0085",
+            "blocks": [
+              6,
+              7
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0091"
+          },
+          {
+            "reading": "r-0092"
+          },
+          {
+            "image": "i-0108"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0086",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0109"
+          }
+        ]
       },
       {
         "id": "lt-0014",
@@ -568,7 +1261,50 @@
           "Rumi",
           "A.R. Horwood"
         ],
-        "subject": "sp-0012"
+        "subject": "sp-0012",
+        "body": [
+          {
+            "image": "i-0073"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0062",
+            "blocks": [
+              0,
+              4
+            ]
+          },
+          {
+            "image": "i-0074"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0068"
+          },
+          {
+            "reading": "r-0069"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0063",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0075"
+          }
+        ]
       },
       {
         "id": "lt-0015",
@@ -603,7 +1339,50 @@
           "E.P. Felt",
           "Francesco Redi of Arezzo"
         ],
-        "subject": "sp-0013"
+        "subject": "sp-0013",
+        "body": [
+          {
+            "image": "i-0076"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0064",
+            "blocks": [
+              0,
+              8
+            ]
+          },
+          {
+            "image": "i-0077"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0070"
+          },
+          {
+            "reading": "r-0071"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0065",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0078"
+          }
+        ]
       },
       {
         "id": "lt-0018",
@@ -638,7 +1417,50 @@
           "Robin Wall Kimmerer",
           "K.M. Wiegand"
         ],
-        "subject": "sp-0015"
+        "subject": "sp-0015",
+        "body": [
+          {
+            "image": "i-0085"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0070",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0086"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0077"
+          },
+          {
+            "reading": "r-0078"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0071",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0087"
+          }
+        ]
       },
       {
         "id": "lt-0019",
@@ -673,7 +1495,57 @@
           "Maud Grieve",
           "The Ohio Agricultural Experiment Station"
         ],
-        "subject": "sp-0016"
+        "subject": "sp-0016",
+        "body": [
+          {
+            "image": "i-0088"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0072",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0089"
+          },
+          {
+            "writing": "w-0072",
+            "blocks": [
+              5,
+              6
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0079"
+          },
+          {
+            "reading": "r-0080"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0073",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0090"
+          }
+        ]
       },
       {
         "id": "lt-0020",
@@ -713,7 +1585,60 @@
           "Haudenosaunee Storytellers",
           "Emily Pauline Johnson"
         ],
-        "subject": "sp-0017"
+        "subject": "sp-0017",
+        "body": [
+          {
+            "image": "i-0091"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0074",
+            "blocks": [
+              0,
+              8
+            ]
+          },
+          {
+            "image": "i-0092"
+          },
+          {
+            "writing": "w-0074",
+            "blocks": [
+              8,
+              9
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0081"
+          },
+          {
+            "reading": "r-0082"
+          },
+          {
+            "image": "i-0093"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0075",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0094"
+          }
+        ]
       },
       {
         "id": "lt-0021",
@@ -748,7 +1673,60 @@
           "Joseph J. White, Inc.",
           "Alix Beeston on Ellena Savage"
         ],
-        "subject": "sp-0018"
+        "subject": "sp-0018",
+        "body": [
+          {
+            "image": "i-0095"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0076",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0096"
+          },
+          {
+            "writing": "w-0076",
+            "blocks": [
+              5,
+              6
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0083",
+            "figures": [
+              "i-0097"
+            ]
+          },
+          {
+            "reading": "r-0084"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0077",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0126"
+          }
+        ]
       },
       {
         "id": "lt-0022",
@@ -778,7 +1756,57 @@
           "Paul Muldoon",
           "Nathaniel Lord Britton"
         ],
-        "subject": "sp-0019"
+        "subject": "sp-0019",
+        "body": [
+          {
+            "image": "i-0098"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0078",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0125"
+          },
+          {
+            "writing": "w-0078",
+            "blocks": [
+              5,
+              6
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0085"
+          },
+          {
+            "reading": "r-0086"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0079",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0099"
+          }
+        ]
       },
       {
         "id": "lt-0023",
@@ -813,7 +1841,64 @@
           "Horace",
           "Heraclitus"
         ],
-        "subject": "ph-0004"
+        "subject": "ph-0004",
+        "body": [
+          {
+            "image": "i-0100"
+          },
+          {
+            "writing": "w-0080",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0081",
+            "blocks": [
+              0,
+              8
+            ]
+          },
+          {
+            "image": "i-0101"
+          },
+          {
+            "writing": "w-0081",
+            "blocks": [
+              8,
+              9
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0087"
+          },
+          {
+            "reading": "r-0088"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0082",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0102"
+          }
+        ]
       },
       {
         "id": "lt-0024",
@@ -848,7 +1933,57 @@
           "Han Dynasty Scribes",
           "Henry David Thoreau"
         ],
-        "subject": "ph-0005"
+        "subject": "ph-0005",
+        "body": [
+          {
+            "image": "i-0103"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0083",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0104"
+          },
+          {
+            "writing": "w-0083",
+            "blocks": [
+              5,
+              6
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0089"
+          },
+          {
+            "reading": "r-0090"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0084",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0105"
+          }
+        ]
       },
       {
         "id": "lt-0026",
@@ -883,7 +2018,60 @@
           "Robert Hass",
           "Marcus Aurelius (and William Cowper, too)"
         ],
-        "subject": "sp-0021"
+        "subject": "sp-0021",
+        "body": [
+          {
+            "image": "i-0110"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0087",
+            "blocks": [
+              0,
+              6
+            ]
+          },
+          {
+            "image": "i-0111"
+          },
+          {
+            "writing": "w-0087",
+            "blocks": [
+              6,
+              7
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0093"
+          },
+          {
+            "reading": "r-0094"
+          },
+          {
+            "reading": "r-0095"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0088",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0112"
+          }
+        ]
       },
       {
         "id": "lt-0027",
@@ -918,7 +2106,64 @@
           "Sylvia Plath",
           "Pliny the Elder"
         ],
-        "subject": "sp-0022"
+        "subject": "sp-0022",
+        "body": [
+          {
+            "image": "i-0113"
+          },
+          {
+            "writing": "w-0089",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0090",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0114"
+          },
+          {
+            "writing": "w-0090",
+            "blocks": [
+              5,
+              6
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0096"
+          },
+          {
+            "reading": "r-0097"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0091",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0115"
+          }
+        ]
       }
     ],
     "autumn": [
@@ -975,7 +2220,63 @@
             "work": "The Golden Bough, 1922"
           }
         ],
-        "subject": "sp-0023"
+        "subject": "sp-0023",
+        "body": [
+          {
+            "image": "i-0116"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0092",
+            "blocks": [
+              0,
+              7
+            ]
+          },
+          {
+            "image": "i-0117"
+          },
+          {
+            "writing": "w-0092",
+            "blocks": [
+              7,
+              8
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0098"
+          },
+          {
+            "reading": "r-0099"
+          },
+          {
+            "reading": "r-0100"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0093",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0118"
+          },
+          {
+            "image": "i-0119"
+          }
+        ]
       },
       {
         "id": "lt-0029",
@@ -1025,7 +2326,60 @@
             "work": "Report on the forests of North America, 1884"
           }
         ],
-        "subject": "sp-0024"
+        "subject": "sp-0024",
+        "body": [
+          {
+            "image": "i-0120"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0094",
+            "blocks": [
+              0,
+              4
+            ]
+          },
+          {
+            "image": "i-0121"
+          },
+          {
+            "writing": "w-0094",
+            "blocks": [
+              4,
+              5
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0101"
+          },
+          {
+            "reading": "r-0102"
+          },
+          {
+            "reading": "r-0103"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0095",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0122"
+          }
+        ]
       }
     ],
     "winter": [
@@ -1057,7 +2411,54 @@
           "Friedrich Nietzsche",
           "William Hamilton Gibson"
         ],
-        "subject": "sp-0001"
+        "subject": "sp-0001",
+        "body": [
+          {
+            "writing": "w-0033",
+            "blocks": [
+              0,
+              2
+            ]
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0034",
+            "blocks": [
+              0,
+              2
+            ]
+          },
+          {
+            "image": "i-0035"
+          },
+          {
+            "heading": "Readings",
+            "tag": "h3"
+          },
+          {
+            "reading": "r-0037"
+          },
+          {
+            "reading": "r-0038"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h3"
+          },
+          {
+            "writing": "w-0035",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0036"
+          }
+        ]
       }
     ]
   },

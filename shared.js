@@ -392,6 +392,92 @@ function loadLectioData() {
   return lectioDataPromise;
 }
 
+// --- A Lectio Terra post, rebuilt from the collection ------------------------
+// A post's "body" lists its pieces in order (scripts/build_post_manifests.py):
+// headings, rules, figures (image records), passages (reading records) and
+// runs of its own writing (writing records). renderPostBody() turns that list
+// back into the post's HTML, in the markup the Seasons page expects: each
+// passage a one-item list followed by its citation, figures numbered in
+// order, footnotes after everything else.
+
+// The top-level blocks of some HTML, as scripts/post_html.py splits it:
+// each element, and each run of text that isn't only whitespace.
+function topLevelBlocks(html) {
+  const template = document.createElement('template');
+  template.innerHTML = html || '';
+  return [...template.content.childNodes]
+    .filter(node => node.nodeType === 1 || (node.nodeType === 3 && node.textContent.trim()))
+    .map(node => node.nodeType === 1 ? node.outerHTML : escapeHTML(node.textContent));
+}
+
+function figureHTML(image, number) {
+  const display = image.display || {};
+  const label = display.unlabelled ? '' : `Fig. ${number}. `;
+  const caption = display.noCaption ? '' : `<figcaption>${label}${image.caption || ''}</figcaption>`;
+  // The size the post sets it at (images narrower than the column stay so).
+  const size = display.size ? ` width="${display.size[0]}" height="${display.size[1]}"` : '';
+  const youtube = (image.file || '').match(/youtube\.com\/watch\?v=([\w-]+)/);
+  if (youtube) {
+    const title = escapeHTML(plainText(image.caption || '').split(',')[0].replace(/[\u201c\u201d"]/g, ''));
+    return `<figure class="video-embed"><button type="button" class="video-play" data-youtube="${youtube[1]}" `
+      + `aria-label="Play the video: ${title}"><span class="video-play-icon" aria-hidden="true">\u25b6</span>`
+      + `<span class="video-play-note">Plays from YouTube when you press play</span></button>${caption}</figure>`;
+  }
+  if (image.media === 'video') {
+    const source = (src, type) => src ? `<source src="${escapeHTML(src)}" type="${type}">` : '';
+    return `<figure><video poster="${escapeHTML(image.poster || '')}"${size} controls muted loop playsinline preload="metadata">`
+      + `${source(image.file, 'video/mp4')}${source(image.fallback, 'video/webm')}</video>${caption}</figure>`;
+  }
+  return `<figure><a target="_blank" href="${escapeHTML(image.link || image.file)}">`
+    + `<img src="${escapeHTML(image.file)}"${size} alt=""></a>${caption}</figure>`;
+}
+
+function renderPostBody(post, byId) {
+  let figures = 0;
+  const footnotes = [];
+  const seen = new Set();
+  const figure = id => {
+    const image = byId.get(id);
+    if (!image) return '';
+    if (!(image.display && image.display.noCaption)) figures += 1;
+    return figureHTML(image, figures);
+  };
+  const noteFrom = record => {
+    if (seen.has(record.id)) return;
+    seen.add(record.id);
+    (record.footnotes || []).forEach(note => footnotes.push(note));
+  };
+  const parts = (post.body || []).map(item => {
+    if (item.heading) return `<${item.tag || 'h3'}>${escapeHTML(item.heading)}</${item.tag || 'h3'}>`;
+    if (item.hr) return '<hr>';
+    if (item.image) return figure(item.image);
+    if (item.reading) {
+      const reading = byId.get(item.reading);
+      if (!reading) return '';
+      noteFrom(reading);
+      const inside = (item.figures || []).map(figure).join('');
+      return `<ol><li>${reading.text}${inside}</li></ol>${(reading.citation && reading.citation.display) || ''}`;
+    }
+    if (item.writing) {
+      const piece = byId.get(item.writing);
+      if (!piece) return '';
+      noteFrom(piece);
+      let html = topLevelBlocks(piece.text).slice(item.blocks[0], item.blocks[1]).join('');
+      if (item.figures) {
+        // At the end of the list's last item, before any empty paragraphs.
+        const inside = item.figures.map(figure).join('');
+        html = html.replace(/((?:<p>\s*<\/p>)*<\/li>\s*<\/[uo]l>\s*)$/, `${inside}$1`);
+      }
+      return html;
+    }
+    return '';
+  });
+  footnotes.sort((a, b) => a.marker - b.marker);
+  const notes = footnotes.map(note =>
+    `<a href="#footnote-anchor-${note.marker}" target="_self">${note.marker}</a>${note.text}`);
+  return parts.join('') + notes.join('');
+}
+
 // --- The collection ---------------------------------------------------------
 // data/ holds the collection itself: readings (others' words), images,
 // writing (the site's own words: versicles, phenomenon lines) and the
