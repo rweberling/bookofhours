@@ -1896,14 +1896,14 @@
     "shownIn": "seasons",
     "text": "<strong>Context</strong> Inflammation is increasingly recognized as contributing to the pathogenesis of major depressive disorder (MDD), even in individuals who are otherwise medically healthy. Most studies in search of sources for this increased inflammation have focused on factors such as psychosocial stress and obesity that are known to activate inflammatory processes and increase the risk for depression. However, MDD may be so prevalent in the modern world not just because proinflammatory factors are widespread, but also because we have lost contact with previously available sources of anti-inflammatory, immunoregulatory signaling.<br><br><strong>Objective</strong> To examine evidence that disruptions in coevolved relationships with a variety of tolerogenic microorganisms that were previously ubiquitous in soil, food, and the gut, but that are largely missing from industrialized societies, may contribute to increasing rates of MDD in the modern world.<br><br><strong>[…]</strong><br><br><strong>Conclusion</strong> Measured exposure to the old friends or their antigens may offer promise for the prevention and treatment of MDD in modern industrialized societies.",
     "citation": {
-      "display": "Charles L. Raison, Christopher A. Lowry, and Graham A.W. Rook. \"<a href=\"http://10.1001/archgenpsychiatry.2010.161\">Inflammation, Sanitation, and Consternation: Loss of Contact With Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression</a>.\" <em>Archives of General Psychiatry</em> 67.12 (December 2010): 1211–1224.",
+      "display": "Charles L. Raison, Christopher A. Lowry, and Graham A.W. Rook. \"<a href=\"https://doi.org/10.1001/archgenpsychiatry.2010.161\">Inflammation, Sanitation, and Consternation: Loss of Contact With Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression</a>.\" <em>Archives of General Psychiatry</em> 67.12 (December 2010): 1211–1224.",
       "bibliography": "Raison, Charles L., Christopher A. Lowry, and Graham A. W. Rook. \"Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression.\" <em>Archives of General Psychiatry</em>, vol. 67, no. 12, Dec. 2010, pp. 1211–1224.",
       "edition": {
         "links": [
           {
             "role": "cited",
-            "label": "10.1001",
-            "url": "http://10.1001/archgenpsychiatry.2010.161"
+            "label": "DOI",
+            "url": "https://doi.org/10.1001/archgenpsychiatry.2010.161"
           }
         ]
       }

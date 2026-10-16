@@ -226,6 +226,12 @@ def next_number(records, retired, prefix):
     return max(used, default=0) + 1
 
 
+def same(a, b):
+    """Whether two copies say the same: the same words and the same links."""
+    links = lambda h: re.findall(r'href="([^"]+)"', h or '')
+    return plain(a) == plain(b) and links(a) == links(b)
+
+
 def plain(html):
     return re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', ' ', html))).strip()
 
@@ -257,8 +263,10 @@ def main():
         for place, text, citation in passages(post):
             record = copied_r.get((post['id'], place))
             if record:
-                if plain(record['text']) != plain(text):
+                if not same(record['text'], text):
                     differ.append(f'{record["id"]} ({post["id"]}, passage {place}): the passage')
+                if not same(record['citation'].get('display', ''), citation):
+                    differ.append(f'{record["id"]} ({post["id"]}, passage {place}): its citation')
                 if not same_notes(record, notes.get(('passage', place))):
                     differ.append(f'{record["id"]} ({post["id"]}, passage {place}): its footnotes')
                 continue
@@ -279,6 +287,8 @@ def main():
             if record:
                 if record['file'] != file:
                     differ.append(f'{record["id"]} ({post["id"]}, figure {place}): the image file')
+                if not same(record['caption'], caption):
+                    differ.append(f'{record["id"]} ({post["id"]}, figure {place}): its caption')
                 continue
             record = {
                 'id': f'i-{next_i:04d}',
@@ -294,7 +304,7 @@ def main():
         for kind, text in pieces:
             record = copied_w.get((post['id'], kind))
             if record:
-                if plain(record['text']) != plain(text):
+                if not same(record['text'], text):
                     differ.append(f'{record["id"]} ({post["id"]}, {kind}): the text')
                 if not same_notes(record, notes.get(kind)):
                     differ.append(f'{record["id"]} ({post["id"]}, {kind}): its footnotes')
