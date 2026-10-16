@@ -1,25 +1,34 @@
 #!/usr/bin/env python3
-"""Copy the passages and figures in Lectio Terra posts into the collection.
+"""Copy the passages, figures and writing in Lectio Terra posts into the collection.
 
 Usage:
   python3 scripts/copy_lectio.py           # report what would change
   python3 scripts/copy_lectio.py --write   # add the new ones
 
-Each post in data/lectio-data.json quotes its readings under the Readings
-heading, one passage to a numbered list, with its citation straight
-after, and shows its images as numbered figures with captions. This
-gives each passage a reading record (data/readings.json) and each figure
-an image record (data/images.json) of its own, numbered on from the last
-r- or i- ID, with:
+Each post in data/lectio-data.json has a Headnote, then its readings
+under the Readings heading (one passage to a numbered list, with its
+citation straight after), then a Supplementum; some open with a note to
+readers before the Headnote, and some have footnotes. Its images are
+numbered figures with captions. This gives each passage a reading record
+(data/readings.json), each figure an image record (data/images.json),
+and each piece of the post's own writing a writing record
+(data/writing.json), numbered on from the last r-, i- or w- ID, with:
 
   text      (a passage) the passage, with lines joined by <br> and
             paragraphs or stanzas by <br><br>, as in the other readings
   citation  (a passage) display: the citation as the post gives it
+  kind      (writing) note, headnote, supplementum or footnote
+  text      (writing) its HTML as the post gives it, less the figures
+            (which are image records) and Substack's "reader-supported
+            publication" line; a footnote's text is its note, and the
+            reference to it stays in the piece it annotates
+  annotates (a footnote) the ID of the piece its reference is in
   file      (a figure) the image file the post shows
   caption   (a figure) its caption as the post gives it, without the
             post's own "Fig. 2." numbering
   lectio    the post it appears in (its lt- ID) and its place there:
-            passage 2, or figure 3
+            passage 2, figure 3, or footnote 1 (other writing has one
+            of each kind per post)
   shownIn   seasons: the Seasons page shows it, inside its post
   tags      the post's season, and its subject (the sp- or ph- record
             the post names as "subject")
@@ -50,6 +59,10 @@ READINGS_HEADING = re.compile(r'<h[23][^>]*>\s*readings\s*</h[23]>', re.I)
 NEXT_HEADING = re.compile(r'<h[23]\b')
 BLOCK = re.compile(r'<(?:p|figure|h[1-6]|ol|ul|hr|blockquote|div)\b')
 FIGURE = re.compile(r'<figure\b.*?</figure>', re.S)
+SECTION_HEADING = re.compile(r'<h[23][^>]*>\s*(headnote|readings|supplementum)\s*</h[23]>', re.I)
+SUBSTACK_LINE = re.compile(r'<p>\s*Otherwise is a reader-supported publication\..*?</p>', re.S)
+NOTE_MARK = re.compile(r'<a\b[^>]*href="#footnote-anchor-(\d+)"[^>]*>.*?</a>', re.S)
+EMPTY_EDGE = re.compile(r'^(\s*<p>\s*</p>)+|(<p>\s*</p>\s*)+$')
 # The post's own numbering at the start of a caption, "Fig. 2." or
 # "Figure 2.", which may sit just inside an opening <em>.
 FIGURE_LABEL = re.compile(r'^(\s*(?:<(?:em|i|strong|b)>)?)\s*fig(?:ure)?\.?\s*\d+\s*[.:]\s*', re.I)
@@ -131,6 +144,55 @@ def figures(post):
     return out
 
 
+def sections(post):
+    """The post's HTML in its parts: what comes before the Headnote, the
+    Headnote, the Readings and the Supplementum (any missing are '')."""
+    body = post.get('bodyHtml') or ''
+    found = list(SECTION_HEADING.finditer(body))
+    parts = {'before': body[:found[0].start()] if found else body}
+    for n, m in enumerate(found):
+        end = found[n + 1].start() if n + 1 < len(found) else len(body)
+        parts[m.group(1).lower()] = body[m.end():end]
+    return parts
+
+
+def own_text(html):
+    """A piece of the post's writing, without its figures, Substack's
+    subscribe line, or empty paragraphs at either end."""
+    html = FIGURE.sub('', html)
+    html = SUBSTACK_LINE.sub('', html)
+    return EMPTY_EDGE.sub('', html.strip()).strip()
+
+
+def writings(post):
+    """(kind, marker, text, where) for each piece of the post's own
+    writing; where is the part a footnote's reference is in: 'note',
+    'headnote', 'supplementum', or ('passage', place)."""
+    parts = sections(post)
+    supplementum = parts.get('supplementum', '')
+    notes = list(NOTE_MARK.finditer(supplementum))
+    footnotes = []
+    for n, m in enumerate(notes):
+        end = notes[n + 1].start() if n + 1 < len(notes) else len(supplementum)
+        footnotes.append((int(m.group(1)), own_text(supplementum[m.end():end])))
+    if notes:
+        supplementum = supplementum[:notes[0].start()]
+
+    out = []
+    for kind, html in (('note', parts.get('before', '')), ('headnote', parts.get('headnote', '')),
+                       ('supplementum', supplementum)):
+        text = own_text(html)
+        if plain(text):
+            out.append((kind, 1, text, None))
+    for marker, text in footnotes:
+        ref = f'href="#footnote-{marker}"'
+        where = next((kind for kind, _, t, _ in out if ref in t), None)
+        if not where:
+            where = next((('passage', place) for place, t, _ in passages(post) if ref in t), None)
+        out.append(('footnote', marker, text, where))
+    return out
+
+
 def subject_tags(post, season):
     tags = {'hours': [], 'weather': [], 'seasons': [season]}
     subject = post.get('subject') or ''
@@ -154,7 +216,7 @@ def main():
     parser.add_argument('--write', action='store_true', help='add the new pieces to data/readings.json and data/images.json')
     args = parser.parse_args()
 
-    readings, images = load('readings'), load('images')
+    readings, images, writing = load('readings'), load('images'), load('writing')
     retired = json.loads((ROOT / 'data' / 'retired-ids.json').read_text())
     lectio = json.loads(LECTIO.read_text(encoding='utf-8'))
     posts = sorted(((season, post) for season, items in lectio['seasons'].items() for post in items),
@@ -162,9 +224,11 @@ def main():
 
     copied_r = {(r['lectio']['post'], r['lectio']['place']): r for r in readings if r.get('lectio')}
     copied_i = {(r['lectio']['post'], r['lectio']['place']): r for r in images if r.get('lectio')}
+    copied_w = {(w['lectio']['post'], w['kind'], w['lectio'].get('place', 1)): w for w in writing if w.get('lectio')}
     next_r, next_i = next_number(readings, retired, 'r'), next_number(images, retired, 'i')
+    next_w = next_number(writing, retired, 'w')
 
-    added_r, added_i, differ, unlinked = [], [], [], set()
+    added_r, added_i, added_w, differ, unlinked = [], [], [], [], set()
     for season, post in posts:
         if not (post.get('subject') or '').startswith(('sp-', 'ph-')):
             unlinked.add(post['id'])
@@ -202,25 +266,61 @@ def main():
             next_i += 1
             images.append(record)
             added_i.append(record)
+        ids = {}
+        for kind, marker, text, where in writings(post):
+            record = copied_w.get((post['id'], kind, marker))
+            if record:
+                ids[kind] = record['id']
+                if plain(record['text']) != plain(text):
+                    differ.append(f'{record["id"]} ({post["id"]}, {kind}{" " + str(marker) if kind == "footnote" else ""}): the text')
+                continue
+            record = {
+                'id': f'w-{next_w:04d}',
+                'kind': kind,
+                'shownIn': 'seasons',
+                'text': text,
+                'lectio': {'post': post['id']} if kind != 'footnote' else {'post': post['id'], 'place': marker},
+                'tags': subject_tags(post, season)
+            }
+            if kind == 'footnote':
+                if isinstance(where, tuple):
+                    passage = copied_r.get((post['id'], where[1])) or next(
+                        (r for r in added_r if r['lectio'] == {'post': post['id'], 'place': where[1]}), None)
+                    record['annotates'] = passage['id'] if passage else None
+                else:
+                    record['annotates'] = ids.get(where)
+                if not record['annotates']:
+                    differ.append(f'{record["id"]} ({post["id"]}, footnote {marker}): its reference was not found')
+                # Next to its kind, so the record reads in order.
+                record = {k: record[k] for k in ('id', 'kind', 'annotates', 'shownIn', 'text', 'lectio', 'tags')}
+            ids[kind] = record['id']
+            next_w += 1
+            writing.append(record)
+            added_w.append(record)
 
     for r in added_r:
         print(f'{r["id"]}: {r["lectio"]["post"]} passage {r["lectio"]["place"]}: {plain(r["citation"]["display"])[:70]}')
     for r in added_i:
         print(f'{r["id"]}: {r["lectio"]["post"]} figure {r["lectio"]["place"]}: {plain(r["caption"])[:70]}')
+    for w in added_w:
+        print(f'{w["id"]}: {w["lectio"]["post"]} {w["kind"]}: {plain(w["text"])[:60]}')
     for d in differ:
-        print(f'{d} in the post no longer matches the record; neither was changed', file=sys.stderr)
+        print(f'{d} in the post no longer matches the record, or is missing; nothing was changed', file=sys.stderr)
     for pid in sorted(unlinked):
         print(f'{pid} has no subject yet: add its sp- or ph- record to the post, then tag its pieces', file=sys.stderr)
-    if not (added_r or added_i):
+    if not (added_r or added_i or added_w):
         print('Nothing new to copy.')
     elif args.write:
         if added_r:
             save('readings', readings)
         if added_i:
             save('images', images)
-        print(f'Added {len(added_r)} passages to data/readings.json and {len(added_i)} figures to data/images.json.')
+        if added_w:
+            save('writing', writing)
+        print(f'Added {len(added_r)} passages, {len(added_i)} figures and {len(added_w)} pieces of writing.')
     else:
-        print(f'{len(added_r)} new passages and {len(added_i)} new figures. Run with --write to add them.')
+        print(f'{len(added_r)} new passages, {len(added_i)} new figures and {len(added_w)} new pieces of writing. '
+              'Run with --write to add them.')
 
 
 if __name__ == '__main__':

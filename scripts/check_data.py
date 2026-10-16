@@ -70,7 +70,7 @@ ID_FORMS = {
 SHOWN_IN = ('hours', 'weather', 'seasons')
 # The kinds of the site's own writing (data/writing.json). A new genre is
 # a new kind here, not a new kind of ID.
-WRITING_KINDS = ('versicle', 'phenomenon')
+WRITING_KINDS = ('versicle', 'phenomenon', 'note', 'headnote', 'supplementum', 'footnote')
 # A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
 SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
 
@@ -148,20 +148,20 @@ def main():
         if r['id'].startswith('sp-') and not r.get('gbif'):
             gaps[r['id']].append('GBIF ID')
 
-    # Passages and figures copied from Lectio Terra posts (copy_lectio.py)
-    # name a post that exists, each passage or figure of it once.
+    # Passages, figures and writing copied from Lectio Terra posts
+    # (copy_lectio.py) name a post that exists, each piece of it once.
     post_ids = {e['id'] for e in posts}
-    for records, piece in ((readings, 'passage'), (images, 'figure')):
+    for records, piece in ((readings, 'passage'), (images, 'figure'), (writing, 'piece of writing')):
         copied = {}
         for r in records:
             source = r.get('lectio')
             if not source:
                 continue
-            key = (source.get('post'), source.get('place'))
+            key = (source.get('post'), r.get('kind'), source.get('place'))
             if key[0] not in post_ids:
                 errors.append(f'{r["id"]}: copied from Lectio Terra post {key[0]}, which is not there')
             if key in copied:
-                errors.append(f'{r["id"]}: the same {piece} as {copied[key]} ({key[0]}, {piece} {key[1]})')
+                errors.append(f'{r["id"]}: the same {piece} as {copied[key]} ({key[0]})')
             copied[key] = r['id']
 
     # Tags point at the vocabularies.
@@ -205,6 +205,11 @@ def main():
         if w.get('shownIn') == 'hours' and not w.get('draft'):
             for hour in (w.get('tags') or {}).get('hours') or []:
                 per_hour[hour][w.get('kind')].append(w)
+    # A footnote names the piece its reference is in.
+    every_id = {r['id'] for r in readings + images + writing}
+    for w in writing:
+        if w.get('kind') == 'footnote' and w.get('annotates') not in every_id:
+            errors.append(f'{w["id"]}: a footnote to {w.get("annotates")!r}, which is not there')
     for hour, kinds in per_hour.items():
         if len(kinds['versicle']) > 1:
             errors.append(f'{hour}: more than one versicle ({", ".join(w["id"] for w in kinds["versicle"])})')
