@@ -407,11 +407,12 @@ def main():
             gaps[rid].append('publisher')
         # The work quoted (a poem, essay, chapter or book), when it was
         # written, and where in the edition: asked of every reading alike,
-        # whichever page shows it. A locator may be a page or, for a scan
-        # or web text, the exact link.
-        if not cit.get('title'):
+        # whichever page shows it. A book quoted whole has its title and
+        # first date on its edition. A locator may be a page or, for a
+        # scan or web text, the exact link.
+        if not (cit.get('title') or ed.get('title')):
             gaps[rid].append('work title')
-        if not cit.get('written'):
+        if not (cit.get('written') or ed.get('original-date')):
             gaps[rid].append('date written')
         if not ((cit.get('locator') or {}).get('page') or (cit.get('locator') or {}).get('url')):
             gaps[rid].append('page or exact link')
