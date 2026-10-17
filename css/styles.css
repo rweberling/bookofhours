@@ -1848,6 +1848,10 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   transition: color 3s ease;
 }
 .weather-quote-attr:not(:empty)::before { content: '— '; }
+/* Verse lines (verseLines() in weather.js): a line that runs over the
+   card's width carries on under a hanging indent. */
+.weather-quote-text .verse-line { display: block; padding-left: 1.2em; text-indent: -1.2em; }
+.weather-quote-text .verse-gap { display: block; height: 1em; }
 
 /* The picture's credit, on its own band across the foot of the card —
    the reading above belongs to the card, this belongs to the view. */
@@ -1919,10 +1923,10 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   }
   /* Phone sizes — the desktop ones above are tuned for reading at
      arm's length over a large picture; these were already comfortable. */
-  .weather-card { --card-pad-x: 34px; --card-pad-b: 22px; padding-top: 28px; }
+  .weather-card { --card-pad-x: 30px; --card-pad-b: 22px; padding-top: 28px; }
   .weather-card .publication-name { font-size: 9px; letter-spacing: 0.32em; white-space: normal; }
   .weather-readout { font-size: 14px; }
-  .weather-quote-text { font-size: 18px; }
+  .weather-quote-text { font-size: 17px; }
   .weather-quote-attr, .weather-caption { font-size: 13.5px; }
   .weather-card.is-folded .weather-caption { font-size: 12.5px; }
   .weather-card .weather-actions { font-size: 12px; gap: 7px; letter-spacing: 0.14em; }

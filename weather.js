@@ -74,6 +74,23 @@ function readingWeight(image) {
     * (reading.text === lastWeatherReadingText ? READING_REPEAT_FACTOR : 1);
 }
 
+// Verse gets one block per line, so a line too long for the card runs on
+// under a hanging indent, as in a printed book, rather than wrapping flush
+// and passing for a new line; a blank line between stanzas stays a gap.
+// Prose uses <br><br> between paragraphs too, so verse is told apart by
+// its line lengths: in the collection, poems' lines average 16–63
+// characters and prose paragraphs 75 or (mostly) far more.
+function verseLines(html) {
+  const lines = html.split(/<br\s*\/?>/i);
+  const lengths = lines.map(line => plainText(line).trim().length).filter(Boolean);
+  if (lengths.length < 2) return html;
+  const average = lengths.reduce((a, b) => a + b, 0) / lengths.length;
+  if (average > 70 || Math.max(...lengths) > 140) return html;
+  return lines
+    .map(line => plainText(line).trim() ? `<span class="verse-line">${line}</span>` : '<span class="verse-gap"></span>')
+    .join('');
+}
+
 function renderWeatherView(options) {
   if (!weatherImages || !weatherImages.length) return;
   const image = pickWeatherEntry(weatherImages, e => e.src === lastWeatherImageSrc, options) || weatherImages[0];
@@ -104,7 +121,7 @@ function renderWeatherView(options) {
   // reading.
   const hasReading = !!(reading && reading.text);
   document.getElementById('weather-reading').hidden = !hasReading;
-  document.getElementById('weather-quote-text').innerHTML = hasReading ? reading.text : '';
+  document.getElementById('weather-quote-text').innerHTML = hasReading ? verseLines(reading.text) : '';
   document.getElementById('weather-quote-attr').innerHTML = hasReading && reading.attr ? reading.attr : '';
 
   // Where the card sits belongs to the image: it's about keeping clear of
