@@ -45,9 +45,22 @@ Every record has an `id`, and most share a few fields:
 Then each kind has its own:
 
 - **Readings**: `text` (lines joined by `<br>`, stanzas or paragraphs by
-  `<br><br>`; a Lectio Terra passage keeps the post's own paragraphs), `citation` (`display`, the line shown with the reading; and,
+  `<br><br>`; a Lectio Terra passage of prose keeps the post's own paragraphs), `citation` (`display`, the line shown with the reading; and,
   where researched, a `bibliography` line and the `edition` it comes from),
-  `suggestedEdition` (an ISBN for a recommended edition), and `footnotes`.
+  `suggestedEdition` (an ISBN for a recommended edition), `footnotes`, and
+  `display` (`verse`, below; `weatherUnset` for the Weather page's reading
+  when no weather is set).
+- **Verse**: a poem is marked `"display": {"verse": true}`, and the pages
+  set it out a line at a time: a line too long for the page carries on
+  under a hanging indent rather than passing for a new line. Its `text` is
+  always in one form, whatever the source: lines joined by `<br>`, one
+  `<br><br>` between stanzas, the poem's own indents as leading `&nbsp;`s
+  (one per space), and no `<p>` tags or raw line breaks. A prose poem
+  (Stein's *Tender Buttons*) is left as prose. To add a poem, paste it in
+  any of these shapes and run `python3 scripts/verse.py <id> --write`
+  (`--lines` when each paragraph is a line rather than a stanza): it sets
+  the text out and the flag, and never changes the words, so a Lectio Terra
+  copy still matches its post. `check_data.py` reports a poem not in the form.
 - **Images**: `file`, `caption`, `display` (for a Lectio Terra figure:
   its `size` in the post, and `noCaption` or `unlabelled` where it has no
   caption or no "Fig." number), `link` (where a figure links, if not to

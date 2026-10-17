@@ -182,7 +182,8 @@
       "hours": ["hush"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0007",
@@ -287,7 +288,7 @@
     "id": "r-0010",
     "aliases": ["r-michael-field-the-depths-of-the"],
     "shownIn": "hours",
-    "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look, in the early light,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down to the infinite <br>&nbsp;&nbsp;&nbsp;&nbsp;Depths at the deep grass-roots; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where the sun shoots<br>In golden veins, as looking through<br>&nbsp;&nbsp;&nbsp;&nbsp;A dear pool one sees it do; <br>&nbsp;&nbsp;&nbsp;&nbsp;Where campion drifts<br>Its bladders, iris-brinded, through the rifts<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of rising, falling seed<br>&nbsp;&nbsp;&nbsp;&nbsp;That the winds lightly scour&mdash;<br>Down to the matted earth where over<br>&nbsp;&nbsp;&nbsp;&nbsp;And over again crow’s-foot and clover<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And pink bindweed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dimly, steadily flower.",
+    "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look, in the early light,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down to the infinite<br>&nbsp;&nbsp;&nbsp;&nbsp;Depths at the deep grass-roots;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where the sun shoots<br>In golden veins, as looking through<br>&nbsp;&nbsp;&nbsp;&nbsp;A dear pool one sees it do;<br>&nbsp;&nbsp;&nbsp;&nbsp;Where campion drifts<br>Its bladders, iris-brinded, through the rifts<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of rising, falling seed<br>&nbsp;&nbsp;&nbsp;&nbsp;That the winds lightly scour&mdash;<br>Down to the matted earth where over<br>&nbsp;&nbsp;&nbsp;&nbsp;And over again crow’s-foot and clover<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And pink bindweed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dimly, steadily flower.",
     "citation": {
       "display": "Michael Field, \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102\" target=\"_blank\">The Depths of the Grass</a>\" (1898)",
       "bibliography": "Field, Michael. \"The Depths of the Grass.\" <em>Wild Honey from Various Thyme</em>, T. Fisher Unwin, 1908.",
@@ -316,7 +317,8 @@
       "hours": ["chorus"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0011",
@@ -415,7 +417,8 @@
       "hours": ["transit"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0014",
@@ -451,7 +454,8 @@
       "hours": ["transit"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0015",
@@ -481,7 +485,8 @@
       "hours": ["transit"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0016",
@@ -518,7 +523,8 @@
       "hours": ["transit"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0017",
@@ -595,7 +601,7 @@
     "id": "r-0019",
     "aliases": ["r-cavafy-when-they-come-alive"],
     "shownIn": "hours",
-    "text": "﻿Try to keep them, poet,<br>those erotic visions of yours,<br>however few of them there are that can be stilled.<br>Put them, half-hidden, in your lines.<br>Try to hold them, poet,<br>when they come alive in your mind<br>at night or in the brightness of noon.",
+    "text": "Try to keep them, poet,<br>those erotic visions of yours,<br>however few of them there are that can be stilled.<br>Put them, half-hidden, in your lines.<br>Try to hold them, poet,<br>when they come alive in your mind<br>at night or in the brightness of noon.",
     "citation": {
       "display": "C.P. Cavafy, \"When they Come Alive\" (1916, trans. <a href=\"https://bookshop.org/a/86532/9780691264646\" target=\"_blank\">Keeley and Sherrard, 1975</a>)",
       "bibliography": "Cavafy, C. P. \"When They Come Alive.\" <em>C. P. Cavafy: Collected Poems</em>, translated by Edmund Keeley and Philip Sherrard, Princeton University Press, 1975. Written 1916.",
@@ -623,7 +629,8 @@
       "hours": ["fulcrum"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0020",
@@ -691,7 +698,8 @@
       "hours": ["fulcrum"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0022",
@@ -759,7 +767,8 @@
       "hours": ["doldrums"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0024",
@@ -825,7 +834,8 @@
       "hours": ["doldrums"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0026",
@@ -865,7 +875,8 @@
       "hours": ["convivium"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0027",
@@ -968,7 +979,7 @@
     "id": "r-0030",
     "aliases": ["r-rilke-evening"],
     "shownIn": "hours",
-    "text": "<p>The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.</p>\n        <br><p>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.</p>",
+    "text": "The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.<br><br>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.",
     "citation": {
       "display": "Rainer Maria Rilke, \"<a href=\"https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening\" target=\"_blank\">Evening</a>\" (1918)",
       "bibliography": "Rilke, Rainer Maria. \"Evening.\" <em>Poems</em>, 1918.",
@@ -994,7 +1005,8 @@
       "hours": ["denouement"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0031",
@@ -1027,7 +1039,8 @@
       "hours": ["denouement"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0032",
@@ -1090,7 +1103,8 @@
       "hours": ["denouement"],
       "weather": [],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0034",
@@ -1194,7 +1208,8 @@
       "hours": [],
       "weather": ["fog", "overcast"],
       "seasons": []
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0037",
@@ -1249,7 +1264,7 @@
   {
     "id": "r-0039",
     "shownIn": "seasons",
-    "text": "<p class=\"preformatted\">The Robin is the One\nThat interrupt the Morn \nWith hurried – few –\nexpress Reports \nWhen March is scarcely on – \n\nThe Robin is the One \nThat overflow the Noon \nWith her cherubic\nquantity – \nAn April but begun – \n\nThe Robin is the One \nThat speechless from\nher Nest \nSubmit that Home –\nand Certainty \nAnd Sanctity, are best</p>",
+    "text": "The Robin is the One<br>That interrupt the Morn<br>With hurried – few –<br>express Reports<br>When March is scarcely on –<br><br>The Robin is the One<br>That overflow the Noon<br>With her cherubic<br>quantity –<br>An April but begun –<br><br>The Robin is the One<br>That speechless from<br>her Nest<br>Submit that Home –<br>and Certainty<br>And Sanctity, are best",
     "citation": {
       "display": "Emily Dickinson, “<a href=\"https://journeys.dartmouth.edu/whiteheat/the-robin-is-the-one-f501c-j828/\">The Robin is the One</a>” (cir. 1863, pub. 1891).",
       "bibliography": "Dickinson, Emily. \"The Robin is the One.\" c. 1863; published 1891.",
@@ -1269,7 +1284,8 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0002"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0040",
@@ -1399,7 +1415,7 @@
   {
     "id": "r-0045",
     "shownIn": "seasons",
-    "text": "<p>I’d like to get away from earth awhile</p><p>And then come back to it and begin over.</p><p>May no fate willfully misunderstand me</p><p>And half grant what I wish and snatch me away</p><p>Not to return. Earth’s the right place for love:</p><p>I don’t know where it’s likely to go better.</p><p>I’d like to go by climbing a birch tree,</p><p>And climb black branches up a snow-white trunk</p><p><em>Toward</em> heaven, till the tree could bear no more,</p><p>But dipped its top and set me down again.</p><p>That would be good both going and coming back.</p><p>One could do worse than be a swinger of birches.</p>",
+    "text": "I’d like to get away from earth awhile<br>And then come back to it and begin over.<br>May no fate willfully misunderstand me<br>And half grant what I wish and snatch me away<br>Not to return. Earth’s the right place for love:<br>I don’t know where it’s likely to go better.<br>I’d like to go by climbing a birch tree,<br>And climb black branches up a snow-white trunk<br><em>Toward</em> heaven, till the tree could bear no more,<br>But dipped its top and set me down again.<br>That would be good both going and coming back.<br>One could do worse than be a swinger of birches.",
     "citation": {
       "display": "Robert Frost, “Birches,” <em><a href=\"https://www.theatlantic.com/magazine/archive/1915/08/birches/645301/\">Atlantic Monthly</a></em> (August 1915). Rpt. Robert Frost, <em><a href=\"https://dn721805.ca.archive.org/0/items/mountaininterval0000fros/mountaininterval0000fros.pdf\">Mountain Interval</a> </em>(New York: Henry Holt and Company, 1916), pp. 29-30.",
       "bibliography": "Frost, Robert. \"Birches.\" <em>Mountain Interval</em>, Henry Holt, 1916. First published in <em>The Atlantic Monthly</em>, Aug. 1915.",
@@ -1424,12 +1440,13 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0004"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0046",
     "shownIn": "seasons",
-    "text": "<p><strong>Nimbus<br></strong>Now downwards by the world’s attraction driven,<br>That tends to earth, which had upris’n to heaven;<br>Threatening in the mad thunder-cloud, as when<br>Fierce legions clash, and vanish from the plain;<br>Sad destiny of the troubled world! but see,<br>The mist is now dispersing gloriously:<br>And language fails us in its vain endeavour —<br>The spirit mounts above, and lives forever.</p>",
+    "text": "<strong>Nimbus</strong><br>Now downwards by the world’s attraction driven,<br>That tends to earth, which had upris’n to heaven;<br>Threatening in the mad thunder-cloud, as when<br>Fierce legions clash, and vanish from the plain;<br>Sad destiny of the troubled world! but see,<br>The mist is now dispersing gloriously:<br>And language fails us in its vain endeavour —<br>The spirit mounts above, and lives forever.",
     "citation": {
       "display": "Goethe, from “I<a href=\"https://www.dailygood.org/story/1160/the-invention-of-clouds-goethe-s-poems-for-the-skies-maria-popova/\">n Honour of Mr. Howard”</a> (c. 1820), trans. George Soane and Sir John Bowring, <em>Gold’s London Magazine</em> 4.19 (July 1821), 59-63.",
       "bibliography": "Goethe, Johann Wolfgang von. \"In Honour of Mr. Howard.\" Translated by George Soane and John Bowring, <em>Gold’s London Magazine</em>, vol. 4, no. 19, July 1821, pp. 59–63. Written c. 1820.",
@@ -1449,7 +1466,8 @@
       "weather": [],
       "seasons": ["spring"],
       "phenomena": ["ph-0001"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0047",
@@ -1793,7 +1811,7 @@
   {
     "id": "r-0062",
     "shownIn": "seasons",
-    "text": "<p>Lilacs,</p><p>False blue,</p><p>White,</p><p>Purple,</p><p>Color of lilac.</p><p>Heart-leaves of lilac all over New England,</p><p>Roots of lilac under all the soil of New England,</p><p>Lilac in me because I am New England,</p><p>Because my roots are in it,</p><p>Because my leaves are of it,</p><p>Because my flowers are for it,</p><p>Because it is my country</p><p>And I speak to it of itself</p><p>And sing of it with my own voice</p><p>Since certainly it is mine.</p>",
+    "text": "Lilacs,<br>False blue,<br>White,<br>Purple,<br>Color of lilac.<br>Heart-leaves of lilac all over New England,<br>Roots of lilac under all the soil of New England,<br>Lilac in me because I am New England,<br>Because my roots are in it,<br>Because my leaves are of it,<br>Because my flowers are for it,<br>Because it is my country<br>And I speak to it of itself<br>And sing of it with my own voice<br>Since certainly it is mine.",
     "citation": {
       "display": "Amy Lowell, “<a href=\"https://hdl.handle.net/2027/uc1.b4857815?urlappend=%3Bseq=82%3Bownerid=116673599-86\">Lilacs</a>” (<em>The New York Evening Post</em>, 1920), rpt. <em>What’s O’Clock </em>(Boston: Houghton Mifflin Company, 1925), pp. 68-74.",
       "bibliography": "Lowell, Amy. \"Lilacs.\" <em>What’s O’Clock</em>, Houghton Mifflin, 1925. First published in <em>The New York Evening Post</em>, 1920.",
@@ -1813,7 +1831,8 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0010"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0063",
@@ -1919,7 +1938,7 @@
   {
     "id": "r-0068",
     "shownIn": "seasons",
-    "text": "<p>Listen to the reed how it tells a tale, complaining of separations—</p><p></p><p>Saying, “Ever since I was parted from the reed-bed, my lament hath caused man and woman to moan.</p><p><br>I want a bosom torn by severance, that I may unfold (to such a one) the pain of love-desire.</p><p><br>Every one who is left far from his source wishes back the time when he was united with it.</p><p><br>In every company I uttered my wailful notes, I consorted with the unhappy and with them that rejoice.</p><p><br>Every one became my friend from his own opinion; none sought out my secrets from within me.</p><p><br>My secret is not far from my plaint, but ear and eye lack the light (whereby it should be apprehended).</p><p><br>Body is not veiled from soul, nor soul from body, yet none is permitted to see the soul.</p><p><br>This noise of the reed is fire, it is not wind: whoso hath not this fire, may he be naught!</p><p><br>‘Tis the fire of Love that is in the reed, ‘tis the fervour of Love that is in the wine.</p><p><br>The reed is the comrade of every one who has been parted from a friend: its strains pierced our hearts.</p><p><br>Who ever saw a poison and antidote like the reed? Who ever saw a sympathiser and a longing lover like the reed?</p>",
+    "text": "Listen to the reed how it tells a tale, complaining of separations—<br><br>Saying, “Ever since I was parted from the reed-bed, my lament hath caused man and woman to moan.<br><br>I want a bosom torn by severance, that I may unfold (to such a one) the pain of love-desire.<br><br>Every one who is left far from his source wishes back the time when he was united with it.<br><br>In every company I uttered my wailful notes, I consorted with the unhappy and with them that rejoice.<br><br>Every one became my friend from his own opinion; none sought out my secrets from within me.<br><br>My secret is not far from my plaint, but ear and eye lack the light (whereby it should be apprehended).<br><br>Body is not veiled from soul, nor soul from body, yet none is permitted to see the soul.<br><br>This noise of the reed is fire, it is not wind: whoso hath not this fire, may he be naught!<br><br>‘Tis the fire of Love that is in the reed, ‘tis the fervour of Love that is in the wine.<br><br>The reed is the comrade of every one who has been parted from a friend: its strains pierced our hearts.<br><br>Who ever saw a poison and antidote like the reed? Who ever saw a sympathiser and a longing lover like the reed?",
     "citation": {
       "display": "Jalāl al-Dīn Muḥammad Rūmī, from “<a href=\"https://hdl.handle.net/2027/inu.30000011921974?urlappend=%3Bseq=33%3Bownerid=13510798897570173-37\">Proem to Book 1</a>,” <em>The Mathnawi of Jalalu’ddin Rumi, Volume II</em>. Trans. Reynold A. Nicholson. (London: E.J.W. Gibb Memorial, 1960 [1926]), p. 5.",
       "bibliography": "Rūmī, Jalāl al-Dīn Muḥammad. \"Proem to Book 1.\" <em>The Mathnawí of Jalálu’ddín Rúmí</em>, vol. 2, translated by Reynold A. Nicholson, E. J. W. Gibb Memorial, 1960. Originally published 1926.",
@@ -1939,7 +1958,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0012"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0069",
@@ -2110,7 +2130,7 @@
   {
     "id": "r-0076",
     "shownIn": "seasons",
-    "text": "<p>For having risen and settled into her groove she begins to consider herself.</p><p>For this she performs in eleven degrees.</p><p>For first she does the Planck to strengthen core stability.</p><p>For secondly she runs a malware scan for comets closing in.</p><p>For thirdly she completes the paperwork for eclipses total, annular, and partial.</p><p>For fourthly: flares.</p><p>For fifthly she sorts her sunspots into pairs.</p><p>For sixthly she gives neutrinos Priority Boarding.</p><p>For seventhly she referees the arm-wrestling match between the upstart fusion and gravity.</p><p>For eighthly she weaves flux ropes and thinks up skipping games.</p><p>For ninthly she degausses her plasma screens.</p><p>For tenthly she is profligate with her photons.</p><p>For eleventhly: star jumps.</p><p>For having considered herself she will consider her neighbors.</p><p>For she runs a cloth around the ecliptic to make it gleam.</p><p>For she oils the wheels of any planets gliding there.</p><p>For she sends invites out to wallflowers in the Oort cloud.</p><p>For she issues shadows for children to dodge as they make their way to school.</p><p>For she shakes out her blankets for devotees of helioseismology.</p><p>For when she takes her prey she plays with it to give it a chance.</p><p>For one planet in nine escapes by her dallying.</p><p>For in her morning orisons she loves the Earth and the Earth loves her.</p>",
+    "text": "For having risen and settled into her groove she begins to consider herself.<br>For this she performs in eleven degrees.<br>For first she does the Planck to strengthen core stability.<br>For secondly she runs a malware scan for comets closing in.<br>For thirdly she completes the paperwork for eclipses total, annular, and partial.<br>For fourthly: flares.<br>For fifthly she sorts her sunspots into pairs.<br>For sixthly she gives neutrinos Priority Boarding.<br>For seventhly she referees the arm-wrestling match between the upstart fusion and gravity.<br>For eighthly she weaves flux ropes and thinks up skipping games.<br>For ninthly she degausses her plasma screens.<br>For tenthly she is profligate with her photons.<br>For eleventhly: star jumps.<br>For having considered herself she will consider her neighbors.<br>For she runs a cloth around the ecliptic to make it gleam.<br>For she oils the wheels of any planets gliding there.<br>For she sends invites out to wallflowers in the Oort cloud.<br>For she issues shadows for children to dodge as they make their way to school.<br>For she shakes out her blankets for devotees of helioseismology.<br>For when she takes her prey she plays with it to give it a chance.<br>For one planet in nine escapes by her dallying.<br>For in her morning orisons she loves the Earth and the Earth loves her.",
     "citation": {
       "display": "Simon Barraclough. <em><a href=\"https://bookshop.org/a/86532/9781908058416\">Sunspots</a>. </em>London, England: Penned in the Margins, 2015.",
       "bibliography": "Barraclough, Simon. <em>Sunspots</em>. Penned in the Margins, 2015."
@@ -2122,7 +2142,8 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0003"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0077",
@@ -2249,7 +2270,7 @@
   {
     "id": "r-0082",
     "shownIn": "seasons",
-    "text": "<p class=\"preformatted\">So goes he forth beneath the planter’s moon\n    With sack of seed that pledges large increase, \nHis simple pagan faith knows night and noon, \n    Heat, cold, seedtime and harvest shall not cease.</p><p class=\"preformatted\">And yielding to his needs, this honest sod, \n    Brown as the hand that tills it, moist with rain, \nTeeming with ripe fulfillment, true as God, \n    With fostering richness, mothers every grain.</p>",
+    "text": "So goes he forth beneath the planter’s moon<br>&nbsp;&nbsp;&nbsp;&nbsp;With sack of seed that pledges large increase,<br>His simple pagan faith knows night and noon,<br>&nbsp;&nbsp;&nbsp;&nbsp;Heat, cold, seedtime and harvest shall not cease.<br><br>And yielding to his needs, this honest sod,<br>&nbsp;&nbsp;&nbsp;&nbsp;Brown as the hand that tills it, moist with rain,<br>Teeming with ripe fulfillment, true as God,<br>&nbsp;&nbsp;&nbsp;&nbsp;With fostering richness, mothers every grain.",
     "citation": {
       "display": "Emily Pauline Johnson (Tekahionwake). “<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t9v125b8j?urlappend=%3Bseq=181\">The Indian Corn Planter</a>.” <em>Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)</em>. 1912. Toronto, Ontario: The Musson Book Company Limited, 1917. 137.",
       "bibliography": "Johnson, Emily Pauline (Tekahionwake). \"The Indian Corn Planter.\" <em>Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)</em>, Musson Book Company, 1917. Originally published 1912.",
@@ -2269,7 +2290,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0017"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0083",
@@ -2324,7 +2346,7 @@
   {
     "id": "r-0085",
     "shownIn": "seasons",
-    "text": "<p>As he knelt by the grave of his mother and father<br>the taste of dill, or tarragon—<br>he could barely tell one from the other—<br><br>filled his mouth. It seemed as if he might smother.<br>Why should he be stricken<br>with grief, not for his mother and father,<br><br>but a woman slinking from the fur of a sea-otter<br>in Portland, Maine, or, yes, Portland, Oregon—<br>he could barely tell one from the other—<br><br>and why should he now savour<br>the tang of her, her little pickled gherkin,<br>as he knelt by the grave of his mother and father?<br><br>*</p><p></p><p>He looked about. He remembered her palaver<br>on how both earth and sky would darken—<br>‘You could barely tell one from the other’—<br><br>while the Monarch butterflies passed over<br>in their milkweed-hunger: ‘A wing-beat, some reckon,<br>may trigger off the mother and father<br><br>of all storms, striking your Irish Cliffs of Moher<br>with the force of a hurricane.’<br>Then: ‘Milkweed and Monarch “invented” each other.’<br></p><p>*<br><br>He looked about. Cow’s-parsley in a samovar.<br>He’d mistaken his mother’s name, ‘Regan’, for ‘Anger’:<br>as he knelt by the grave of his mother and father<br>he could barely tell one from the other.</p>",
+    "text": "As he knelt by the grave of his mother and father<br>the taste of dill, or tarragon—<br>he could barely tell one from the other—<br><br>filled his mouth. It seemed as if he might smother.<br>Why should he be stricken<br>with grief, not for his mother and father,<br><br>but a woman slinking from the fur of a sea-otter<br>in Portland, Maine, or, yes, Portland, Oregon—<br>he could barely tell one from the other—<br><br>and why should he now savour<br>the tang of her, her little pickled gherkin,<br>as he knelt by the grave of his mother and father?<br><br>*<br><br>He looked about. He remembered her palaver<br>on how both earth and sky would darken—<br>‘You could barely tell one from the other’—<br><br>while the Monarch butterflies passed over<br>in their milkweed-hunger: ‘A wing-beat, some reckon,<br>may trigger off the mother and father<br><br>of all storms, striking your Irish Cliffs of Moher<br>with the force of a hurricane.’<br>Then: ‘Milkweed and Monarch “invented” each other.’<br><br>*<br><br>He looked about. Cow’s-parsley in a samovar.<br>He’d mistaken his mother’s name, ‘Regan’, for ‘Anger’:<br>as he knelt by the grave of his mother and father<br>he could barely tell one from the other.",
     "citation": {
       "display": "Paul Muldoon. “Milkweed and Monarch.” <em>The Annals of Chile. </em>London: Faber &amp; Faber, 1994. 10-11.",
       "bibliography": "Muldoon, Paul. \"Milkweed and Monarch.\" <em>The Annals of Chile</em>, Faber &amp; Faber, 1994."
@@ -2335,7 +2357,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0019"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0086",
@@ -2365,7 +2388,7 @@
   {
     "id": "r-0087",
     "shownIn": "seasons",
-    "text": "<p class=\"preformatted\">O Bandusian fountain, brighter than crystal,\nworthy of sweet wine, not lacking in flowers,\ntomorrow we’ll honour you\nwith a kid, whose brow is budding\n\nwith those horns that are destined for love and battle.\nAll in vain: since this child of the playful herd will\ndarken your ice-cool waters,\nwith the stain of its crimson blood.\n\nThe implacable hour of the blazing dog-star\nknows no way to touch you; you offer your lovely\ncoolness to bullocks, weary\nof ploughing, and to wandering flocks.\n\nAnd you too will be one of the famous fountains,\nnow I write of the holm oak that’s rooted above\nthe cave in the rock where your\nclear babbling waters run down.</p>",
+    "text": "O Bandusian fountain, brighter than crystal,<br>worthy of sweet wine, not lacking in flowers,<br>tomorrow we’ll honour you<br>with a kid, whose brow is budding<br><br>with those horns that are destined for love and battle.<br>All in vain: since this child of the playful herd will<br>darken your ice-cool waters,<br>with the stain of its crimson blood.<br><br>The implacable hour of the blazing dog-star<br>knows no way to touch you; you offer your lovely<br>coolness to bullocks, weary<br>of ploughing, and to wandering flocks.<br><br>And you too will be one of the famous fountains,<br>now I write of the holm oak that’s rooted above<br>the cave in the rock where your<br>clear babbling waters run down.",
     "citation": {
       "display": "Horace. “<a href=\"https://www.poetryintranslation.com/PITBR/Latin/HoraceOdesBkIII.php#anchor_Toc40263858\">Odes, Book III: XIII</a>.” Trans. A. S. Kline. <em>Poetry in Translation</em>, 2003.",
       "bibliography": "Horace. \"Odes, Book III: XIII.\" Translated by A. S. Kline, <em>Poetry in Translation</em>, 2003.",
@@ -2385,7 +2408,8 @@
       "weather": [],
       "seasons": ["summer"],
       "phenomena": ["ph-0004"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0088",
@@ -2465,7 +2489,7 @@
   {
     "id": "r-0091",
     "shownIn": "seasons",
-    "text": "<p>With a suave reptilian glitter<br>you bask among your raspy</p><p>fronds sudden and huge as</p><p>alligators. You give and give</p><p>too much, like summer days</p><p>limp with heat, thunderstorms</p><p>bursting their bags on our heads,</p><p>as we salt and freeze and pickle</p><p>for the too little to come.</p>",
+    "text": "With a suave reptilian glitter<br>you bask among your raspy<br>fronds sudden and huge as<br>alligators. You give and give<br>too much, like summer days<br>limp with heat, thunderstorms<br>bursting their bags on our heads,<br>as we salt and freeze and pickle<br>for the too little to come.",
     "citation": {
       "display": "Marge Piercy. “<a href=\"https://rpo.library.utoronto.ca/content/attack-squash-people\">Attack of the Squash People.</a>” 1978. <em>Circles on the Water: Selected Poems of Marge Piercy</em>. New York, New York: Alfred A. Knopf, 1982.",
       "bibliography": "Piercy, Marge. \"Attack of the Squash People.\" <em>Circles on the Water: Selected Poems of Marge Piercy</em>, Alfred A. Knopf, 1982. Originally published 1978.",
@@ -2485,7 +2509,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0020"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0092",
@@ -2515,7 +2540,7 @@
   {
     "id": "r-0093",
     "shownIn": "seasons",
-    "text": "<p>In the old torment of the earth<br>When the fires were cooling and disposing themselves<br>Into granite and limestone and serpentine and shale,<br>It is possible to imagine that, under yellowish chemical clouds,<br>The molten froth, having burned long enough,<br>Was already dreaming of release,<br>And that the dream, dimly<br>But with increasingly distinctness, took the form<br>Of water, and that it was then, still more dimly, that it imagined<br>The dark green skin and opal green flesh of cucumbers.</p>",
+    "text": "In the old torment of the earth<br>When the fires were cooling and disposing themselves<br>Into granite and limestone and serpentine and shale,<br>It is possible to imagine that, under yellowish chemical clouds,<br>The molten froth, having burned long enough,<br>Was already dreaming of release,<br>And that the dream, dimly<br>But with increasingly distinctness, took the form<br>Of water, and that it was then, still more dimly, that it imagined<br>The dark green skin and opal green flesh of cucumbers.",
     "citation": {
       "display": "Robert Hass. From “<a href=\"https://www.jstor.org/stable/20683657?searchText=Robert%20hass%20poem%20with%20a%20cucumber%20in%20it&amp;searchUri=%2Faction%2FdoBasicSearch%3FQuery%3DRobert%2Bhass%2Bpoem%2Bwith%2Ba%2Bcucumber%2Bin%2Bit%26so%3Drel&amp;ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&amp;refreqid=fastly-default%3Af2747166e2520d3b8e67b7c4fbdd96a7\">Poem with a Cucumber in It.</a>” <em>The American Poetry Review</em> 36.5 (September/October 2007): 34.",
       "bibliography": "Hass, Robert. \"Poem with a Cucumber in It.\" <em>The American Poetry Review</em>, vol. 36, no. 5, Sept./Oct. 2007, p. 34.",
@@ -2535,7 +2560,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0021"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0094",
@@ -2565,7 +2591,7 @@
   {
     "id": "r-0095",
     "shownIn": "seasons",
-    "text": "<p>To raise the prickly and green-coated gourd,<br>So grateful to the palate, and when rare<br>So coveted, else base and disesteem'd —<br>Food for the vulgar merely — is an art<br>That toiling ages have but just matur'd,<br>And at this moment unassay'd in song.<br>Yet gnats have had, and frogs and mice, long since,<br>Their eulogy; those sang the Mantuan bard,<br>And these the Grecian, in ennobling strains;<br>And in thy numbers, Phillips, shines for aye<br>The solitary shilling. Pardon then,<br>Ye sage dispensers of poetic fame,<br>Th' ambition of one, meaner far, whose pow'rs,<br>Presuming an attempt not less sublime,<br>Pant for the praise of dressing to the taste<br>Of critic appetite, no sordid fare,<br>A cucumber, while costly yet and scarce.</p>",
+    "text": "To raise the prickly and green-coated gourd,<br>So grateful to the palate, and when rare<br>So coveted, else base and disesteem'd —<br>Food for the vulgar merely — is an art<br>That toiling ages have but just matur'd,<br>And at this moment unassay'd in song.<br>Yet gnats have had, and frogs and mice, long since,<br>Their eulogy; those sang the Mantuan bard,<br>And these the Grecian, in ennobling strains;<br>And in thy numbers, Phillips, shines for aye<br>The solitary shilling. Pardon then,<br>Ye sage dispensers of poetic fame,<br>Th' ambition of one, meaner far, whose pow'rs,<br>Presuming an attempt not less sublime,<br>Pant for the praise of dressing to the taste<br>Of critic appetite, no sordid fare,<br>A cucumber, while costly yet and scarce.",
     "citation": {
       "display": "William Cowper. From “<a href=\"https://en.wikisource.org/wiki/The_Poetical_Works_of_William_Cowper_(Benham)/The_Task/Book_3\">The Task, Book III: The Garden</a>.” 1785. <em>The Poetical Works of William Cowper</em>. Ed. William Benham. London: Macmillan and Co., 1870. 446-462.",
       "bibliography": "Cowper, William. \"The Task, Book III: The Garden.\" <em>The Poetical Works of William Cowper</em>, edited by William Benham, Macmillan, 1870. Originally published 1785.",
@@ -2585,12 +2611,13 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0021"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0096",
     "shownIn": "seasons",
-    "text": "<p>In Benidorm there are melons, <br>Whole donkey-carts full <br><br>Of innumerable melons, <br>Ovals and balls, <br><br>Bright green and thumpable <br>Laced over with stripes <br><br>Of turtle-dark green. <br>Choose an egg-shape, a world-shape, <br><br>Bowl one homeward to taste <br>In the whitehot noon: […]</p>",
+    "text": "In Benidorm there are melons,<br>Whole donkey-carts full<br><br>Of innumerable melons,<br>Ovals and balls,<br><br>Bright green and thumpable<br>Laced over with stripes<br><br>Of turtle-dark green.<br>Choose an egg-shape, a world-shape,<br><br>Bowl one homeward to taste<br>In the whitehot noon: […]",
     "citation": {
       "display": "Sylvia Plath. From “Fiesta Melons.” 1956. <em><a href=\"https://bookshop.org/a/86532/9780061558894\" rel=\"noopener\" target=\"_blank\">The Collected Poems</a>. </em>London, England: Faber &amp; Faber, 1981. 46-47.",
       "bibliography": "Plath, Sylvia. \"Fiesta Melons.\" <em>The Collected Poems</em>, edited by Ted Hughes, Faber &amp; Faber, 1981. Written 1956."
@@ -2602,7 +2629,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0022"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0097",
@@ -2712,7 +2740,7 @@
   {
     "id": "r-0101",
     "shownIn": "seasons",
-    "text": "<p>In the moonlight under a shag-bark hickory tree<br>Watching the yellow shadows melt in hoof-pools,<br>Listening to the yes and the no of a woman’s hands,</p><p>I kept my guess why the night was glad.</p><p><br>The night was lit with a woman’s eyes.<br>The night was crossed with a woman’s hands,<br>The night kept humming an undersong.</p>",
+    "text": "In the moonlight under a shag-bark hickory tree<br>Watching the yellow shadows melt in hoof-pools,<br>Listening to the yes and the no of a woman’s hands,<br><br>I kept my guess why the night was glad.<br><br>The night was lit with a woman’s eyes.<br>The night was crossed with a woman’s hands,<br>The night kept humming an undersong.",
     "citation": {
       "display": "Carl Sandburg. “<a href=\"https://hdl.handle.net/2027/uiug.30112039325284?urlappend=%3Bseq=180%3Bownerid=13510798903473000-184\" rel=\"noopener\" target=\"_blank\">Shag-Bark Hickory</a>.” <em>Smoke and Steel</em>. New York: Harcourt, Brace and Howe, 1920. 164.",
       "bibliography": "Sandburg, Carl. \"Shag-Bark Hickory.\" <em>Smoke and Steel</em>, Harcourt, Brace and Howe, 1920.",
@@ -2732,12 +2760,13 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0024"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0102",
     "shownIn": "seasons",
-    "text": "<p>I had a favorite young shagbark there</p><p>With ample dark jade leaves and a black, spare,</p><p>Vermiculated trunk. The setting sun</p><p>Bronzed the black bark, around which, like undone</p><p>Garlands, the shadows of the foliage fell.</p><p>It is now stout and rough; it has done well.</p><p>White butterflies turn lavender as they</p><p>Pass through its shade where gently seems to sway</p><p>The phantom of my little daughter’s swing.</p>",
+    "text": "I had a favorite young shagbark there<br>With ample dark jade leaves and a black, spare,<br>Vermiculated trunk. The setting sun<br>Bronzed the black bark, around which, like undone<br>Garlands, the shadows of the foliage fell.<br>It is now stout and rough; it has done well.<br>White butterflies turn lavender as they<br>Pass through its shade where gently seems to sway<br>The phantom of my little daughter’s swing.",
     "citation": {
       "display": "John Shade [pseud.]. “Canto One.” <a href=\"https://archive.org/details/in.ernet.dli.2015.458629/page/n21/mode/2up\" rel=\"noopener\" target=\"_blank\">Lines 49-57</a>. From Vladimir Nabokov. <em><a href=\"https://bookshop.org/a/86532/9780679723424\" rel=\"noopener\" target=\"_blank\">Pale Fire</a>. </em>1962. New York: Lancer Books, 1963. 24.",
       "bibliography": "Nabokov, Vladimir. <em>Pale Fire</em>. Lancer Books, 1963. Originally published 1962. Quoting John Shade, \"Canto One,\" lines 49–57.",
@@ -2758,7 +2787,8 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0024"]
-    }
+    },
+    "display": { "verse": true }
   },
   {
     "id": "r-0103",

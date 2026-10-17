@@ -456,7 +456,7 @@ function renderPostBody(post, byId) {
       if (!reading) return '';
       noteFrom(reading);
       const inside = (item.figures || []).map(figure).join('');
-      return `<ol><li>${reading.text}${inside}</li></ol>${(reading.citation && reading.citation.display) || ''}`;
+      return `<ol><li>${readingHTML(reading)}${inside}</li></ol>${(reading.citation && reading.citation.display) || ''}`;
     }
     if (item.writing) {
       const piece = byId.get(item.writing);
@@ -523,13 +523,30 @@ function taggedWith(record, scheme, id) {
   return !!(record.tags && Array.isArray(record.tags[scheme]) && record.tags[scheme].includes(id));
 }
 
+// A reading as the page shows it. Verse ("display": {"verse": true}) is
+// set one block to a line, so a line too long for the page carries on
+// under a hanging indent, as in a printed book, rather than wrapping flush
+// and passing for a new line. Its text is in the house verse form
+// (scripts/verse.py): lines joined by <br>, a blank line between stanzas,
+// and the poem's own indents as leading &nbsp;s, which become the line's
+// --indent so a run-on always sits deeper than any of them. Prose is
+// shown as written.
+function readingHTML(reading) {
+  if (!(reading.display && reading.display.verse)) return reading.text;
+  return reading.text.split(/<br\s*\/?>/i).map(line => {
+    const lead = line.match(/^(?:&nbsp;)*/)[0];
+    if (!line.slice(lead.length).trim()) return '<span class="verse-gap"></span>';
+    return `<span class="verse-line" style="--indent: ${lead.length / 6}">${line.slice(lead.length)}</span>`;
+  }).join('');
+}
+
 // The shapes the page code reads: a quote is { text, attr, weather } and
 // an image { src, caption, weather, cardPosition, unset }. attr is the
 // hand-written display citation.
 function quoteView(reading) {
   return {
     id: reading.id,
-    text: reading.text,
+    text: readingHTML(reading),
     attr: reading.citation ? reading.citation.display : '',
     weather: (reading.tags && reading.tags.weather) || [],
     seasons: (reading.tags && reading.tags.seasons) || [],

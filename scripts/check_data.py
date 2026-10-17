@@ -194,6 +194,16 @@ def main():
         elif place == 'seasons' and not rec.get('lectio'):
             errors.append(f'{rid}: shown in the Seasons, but not from a Lectio Terra post ("lectio")')
 
+    # Verse is held in one form (lines joined by <br>, one blank line
+    # between stanzas, indents as leading &nbsp;s), which the pages set out
+    # line by line; scripts/verse.py puts a reading into it.
+    from verse import in_verse_form
+    for r in readings:
+        if (r.get('display') or {}).get('verse'):
+            problem = in_verse_form(r.get('text') or '')
+            if problem:
+                errors.append(f'{r["id"]}: marked as verse, but {problem}; run: python3 scripts/verse.py {r["id"]}')
+
     # Writing: a known kind and some text; in the Hours, one versicle per
     # hour, and its phenomenon lines numbered 1, 2, 3... by place.
     per_hour = defaultdict(lambda: defaultdict(list))

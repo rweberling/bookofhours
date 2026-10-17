@@ -1848,16 +1848,17 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   transition: color 3s ease;
 }
 .weather-quote-attr:not(:empty)::before { content: '— '; }
-/* Verse lines (verseLines() in weather.js): a line that runs over the
-   card's width carries on 2em past where the line itself starts. A
-   poem's own indent arrives as --indent, a count of the &nbsp;s it was
-   written with (each about 0.21em in this face). */
-.weather-quote-text .verse-line {
+/* Verse, wherever a reading is shown (readingHTML() in shared.js): a
+   line that runs over carries on 2em past where the line itself starts.
+   A poem's own indent arrives as --indent, a count of the &nbsp;s it was
+   written with (each about 0.21em in the reading face). A stanza break
+   is a little under a line. */
+.verse-line {
   display: block;
   padding-left: calc(var(--indent, 0) * 0.21em + 2em);
   text-indent: -2em;
 }
-.weather-quote-text .verse-gap { display: block; height: 1em; }
+.verse-gap { display: block; height: 1em; }
 
 /* The picture's credit, on its own band across the foot of the card —
    the reading above belongs to the card, this belongs to the view. */

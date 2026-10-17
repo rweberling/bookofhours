@@ -219,6 +219,18 @@ def same(a, b):
     return plain(a) == plain(b) and links(a) == links(b)
 
 
+def looks_like_verse(html):
+    """A hint only, for a newly copied passage: set out in a preformatted
+    paragraph, or in short lines (poems' lines average well under 70
+    characters; prose paragraphs run to hundreds). Nothing is marked as
+    verse without someone looking."""
+    if 'preformatted' in html:
+        return True
+    lines = [plain(line) for line in re.split(r'<br\s*/?>|</p>', html)]
+    lines = [line for line in lines if line]
+    return len(lines) >= 3 and sum(map(len, lines)) / len(lines) <= 70
+
+
 def plain(html):
     return re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', ' ', html))).strip()
 
@@ -311,6 +323,8 @@ def main():
 
     for r in added_r:
         print(f'{r["id"]}: {r["lectio"]["post"]} passage {r["lectio"]["place"]}: {plain(r["citation"]["display"])[:70]}')
+        if looks_like_verse(r['text']):
+            print(f'  it may be a poem: if so, run python3 scripts/verse.py {r["id"]} (see data/README.md, Verse)')
     for r in added_i:
         print(f'{r["id"]}: {r["lectio"]["post"]} figure {r["lectio"]["place"]}: {plain(r["caption"])[:70]}')
     for w in added_w:
