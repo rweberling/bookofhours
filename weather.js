@@ -371,13 +371,13 @@ function syncWeatherPaneCopy() {
 
 // A failed look says so on the card and, briefly, in the pane's
 // subheading, where the pane's own button is.
-function reportLook(message) {
+function reportLook(message, ms = 5000) {
   renderWeatherReadout(message);
   const subheading = document.getElementById('weather-pane-subheading');
   if (!subheading) return;
   subheading.textContent = message;
   clearTimeout(paneNoticeTimeout);
-  paneNoticeTimeout = setTimeout(syncWeatherPaneCopy, 5000);
+  paneNoticeTimeout = setTimeout(syncWeatherPaneCopy, ms);
 }
 
 /* ── Station model ────────────────────────────────────────────────
@@ -816,8 +816,15 @@ function lookOutside(btn) {
     } finally {
       done();
     }
-  }, () => {
-    reportLook('Location was not shared');
+  }, error => {
+    // Once someone has said no, the browser remembers it for this site and
+    // refuses every later ask without showing the prompt again; only its
+    // own site settings can undo that, so say where they are.
+    if (error.code === error.PERMISSION_DENIED) {
+      reportLook('Location is blocked for this site. Allow it in your browser’s site settings (usually the icon beside the address), then look outside again.', 15000);
+    } else {
+      reportLook('Your location could not be found');
+    }
     done();
   }, { timeout: 10000, maximumAge: 300000 });
 }
