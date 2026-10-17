@@ -1482,16 +1482,20 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .turning-point rect, .turning-point circle { fill: currentColor; }
 .turning-point-quarter { opacity: 0.75; }
 .turning-point-cross { opacity: 0.5; }
-/* Size comes from seasons.js (smaller for cross-quarters), which also
-   offsets each curved baseline, so it stays alphabetic here. */
+/* Size comes from seasons.js, which also offsets each curved baseline,
+   so it stays alphabetic here. */
 .turning-point-label {
   font-family: var(--font-text);
   font-style: italic; letter-spacing: 0.04em;
   fill: currentColor;
   text-anchor: middle; dominant-baseline: alphabetic;
 }
-.season-now {
-  font-size: 9px; fill: var(--ink); opacity: 0.8;
+/* The ✦ "you are here" on both dials, ringed in the paper color so it
+   reads on any arc, the dark active one included. */
+.dial-now {
+  font-size: 11px; fill: var(--ink);
+  stroke: var(--bg); stroke-width: 2.5px; paint-order: stroke;
+  stroke-linejoin: round;
   text-anchor: middle; dominant-baseline: middle;
 }
 /* Wander the Hours: moon, night band, sunrise/sunset (renderDialSky in
@@ -1517,10 +1521,27 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   font-family: var(--font-text);
   font-size: 13px; font-style: italic; letter-spacing: 0.04em;
   color: var(--ink-faint);
-  margin-bottom: 40px; text-align: center;
+  margin-bottom: 10px; text-align: center;
   transition: color 3s ease;
   line-height: 1.7;
 }
+/* The key under each dial: its marks, small and quiet. */
+.dial-legend {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 4px 18px;
+  font-family: var(--font-text);
+  font-size: 11.5px; letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin-bottom: 40px; text-align: center;
+  transition: color 3s ease;
+}
+.dial-key { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.dial-key-star { color: var(--ink); font-size: 11px; }
+.dial-key-moon { width: 14px; height: 14px; }
+.dial-key-quarter, .dial-key-cross { display: inline-block; background: currentColor; }
+.dial-key-quarter { width: 4px; height: 4px; transform: rotate(45deg); opacity: 0.75; }
+.dial-key-cross { width: 3px; height: 3px; border-radius: 50%; opacity: 0.5; }
+.dial-key-day { display: inline-block; width: 14px; height: 4px; background: #d6b25a; opacity: 0.6; }
 
 /* ── Species cards (common name / Latin name) ───────────────────
    Deliberately distinct from .wander-tile — a different card

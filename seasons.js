@@ -394,19 +394,22 @@ function daysBetween(a, b) {
 
 const DIAL_DATE_FORMAT = new Intl.DateTimeFormat(undefined, { day: 'numeric', month: 'long' });
 
-// "September 26 · 4 days after the autumn equinox · 41 days to the next
-// cross-quarter" — where today sits between its two nearest markers.
+// "October 17 · 24 days since the autumn equinox · 65 days to the winter
+// solstice": where today sits between the solstices and equinoxes. The
+// cross-quarters are only named on the day itself; the legend explains
+// their marks.
 function turningPointCaption(now = new Date()) {
   const year = dialYearOf(now);
   const points = [...turningPoints(year - 1), ...turningPoints(year), ...turningPoints(year + 1)];
-  const today = points.find(p => daysBetween(now, p.date) === 0);
-  const label = p => p.kind === 'cross' ? 'a cross-quarter day' : `the ${p.name}`;
-  if (today) return `${DIAL_DATE_FORMAT.format(now)} · Today is ${label(today)}`;
-  const previous = [...points].reverse().find(p => p.date < now);
-  const next = points.find(p => p.date > now);
+  const quarters = points.filter(p => p.kind === 'quarter');
   const plural = n => `${n} day${n === 1 ? '' : 's'}`;
-  const nextLabel = next.kind === 'cross' ? 'the next cross-quarter' : `the ${next.name}`;
-  return `${DIAL_DATE_FORMAT.format(now)} · ${plural(daysBetween(previous.date, now))} after ${label(previous)} · ${plural(daysBetween(now, next.date))} to ${nextLabel}`;
+  const date = DIAL_DATE_FORMAT.format(now);
+  const today = points.find(p => daysBetween(now, p.date) === 0);
+  const next = quarters.find(p => p.date > now && daysBetween(now, p.date) > 0);
+  if (today && today.kind === 'quarter') return `${date} · Today is the ${today.name}`;
+  const previous = [...quarters].reverse().find(p => p.date < now);
+  if (today) return `${date} · A cross-quarter day, midway between the ${previous.name} and the ${next.name}`;
+  return `${date} · ${plural(daysBetween(previous.date, now))} since the ${previous.name} · ${plural(daysBetween(now, next.date))} to the ${next.name}`;
 }
 
 function buildSeasonDial() {
@@ -473,11 +476,12 @@ function buildSeasonDial() {
     svg.appendChild(tick);
   }
 
-  // Solstices, equinoxes and cross-quarters: a mark just inside the arc
-  // with its name curving along the ring inside it, clear of the season
-  // names outside. The ring says only "Equinox"/"Solstice" — its quadrant
-  // already names the season — while the hover title keeps the full name
-  // and date.
+  // Solstices, equinoxes and cross-quarters: a mark just inside the arc,
+  // the solstices and equinoxes with their name curving along the ring
+  // inside it, clear of the season names outside. The ring says only
+  // "Equinox"/"Solstice" — its quadrant already names the season — while
+  // the hover title keeps the full name and date. Cross-quarters are a
+  // bare dot, explained in the legend under the dial.
   const defs = document.createElementNS(svgNS, 'defs');
   svg.appendChild(defs);
   turningPoints(year).forEach((point, i) => {
@@ -500,13 +504,15 @@ function buildSeasonDial() {
     }
     g.appendChild(mark);
 
+    if (point.kind === 'cross') { svg.appendChild(g); return; }
+
     // Names follow the ring on a textPath: clockwise on the upper half
     // (letters' tops outward), counter-clockwise on the lower so they
     // stay upright (tops inward). The baseline is offset by a third of
     // the font size either way so the letters, not the baseline, sit
     // centred on SEASON_R_INNER_LABEL.
     const lower = deg > 0 && deg < 180;
-    const fontSize = point.kind === 'cross' ? 6.8 : 7.4;
+    const fontSize = 7.4;
     const r = SEASON_R_INNER_LABEL + (lower ? 1 : -1) * fontSize / 3;
     const a = polarToXY(lower ? deg + 60 : deg - 60, r);
     const b = polarToXY(lower ? deg - 60 : deg + 60, r);
@@ -521,7 +527,7 @@ function buildSeasonDial() {
     const textPath = document.createElementNS(svgNS, 'textPath');
     textPath.setAttribute('href', `#turning-point-path-${i}`);
     textPath.setAttribute('startOffset', '50%');
-    textPath.textContent = point.kind === 'cross' ? 'Cross-Quarter' : point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
+    textPath.textContent = point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
     text.appendChild(textPath);
     g.appendChild(text);
     svg.appendChild(g);
@@ -531,7 +537,7 @@ function buildSeasonDial() {
   const nowPoint = polarToXY(dialDeg(now, year), R_ARC);
   const nowStar = document.createElementNS(svgNS, 'text');
   nowStar.setAttribute('x', nowPoint.x); nowStar.setAttribute('y', nowPoint.y);
-  nowStar.setAttribute('class', 'season-now');
+  nowStar.setAttribute('class', 'dial-now');
   nowStar.textContent = '✦';
   const nowTitle = document.createElementNS(svgNS, 'title');
   nowTitle.textContent = `Today · ${DIAL_DATE_FORMAT.format(now)}`;

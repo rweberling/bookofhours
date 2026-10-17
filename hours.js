@@ -415,11 +415,7 @@ function buildDial(blocksData) {
 
     const nowDot = document.createElementNS(svgNS, 'text');
     nowDot.setAttribute('id', 'dial-now-dot');
-    nowDot.setAttribute('font-size', '9');
-    nowDot.setAttribute('fill', 'currentColor');
-    nowDot.setAttribute('opacity', '0.75');
-    nowDot.setAttribute('text-anchor', 'middle');
-    nowDot.setAttribute('dominant-baseline', 'middle');
+    nowDot.setAttribute('class', 'dial-now');
     nowDot.textContent = '✦';
     svg.insertBefore(nowDot, document.getElementById('dial-hand'));
     updateDialNowDot();
@@ -451,12 +447,13 @@ function updateDialNowDot() {
                  has run in this browser: atmosphere.js keeps its rounded
                  location and works out each day's times from it
                  (siteAtmosphere.sun).
-     caption   — the time, the watch, how long until the next one, and
-                 the moon and sun in words.
+     caption   — the time, the watch and how long until the next one.
+     legend    — a key under it: the ✦ ("you are here"), the moon's
+                 phase in words, and the daylight band's hours.
 ────────────────────────────────────────────────────────────────── */
 const SYNODIC_MONTH = 29.530588853;                        // days
 const REFERENCE_NEW_MOON = Date.UTC(2000, 0, 6, 18, 14);   // 6 Jan 2000, 18:14 UTC
-const R_MOON = 13;
+const R_MOON = 15;   // the hand starts just outside it (index.html)
 const R_NIGHT = 74, NIGHT_WIDTH = 7;   // just inside the watches' ring
 const R_SUN_LABEL = 60;
 
@@ -548,7 +545,7 @@ function renderDialSky() {
     });
   }
 
-  // The moon, in the center; the hand's pivot sits on top of it.
+  // The moon, in the center, clear of the hand.
   const phase = moonPhase();
   const moon = document.createElementNS(svgNS, 'g');
   moon.setAttribute('class', 'dial-moon');
@@ -577,18 +574,31 @@ function renderDialCaption() {
   const i = data.findIndex(b => hour >= b.startHour && hour < b.startHour + 3);
   const current = data[i], next = data[(i + 1) % data.length];
   const minutesLeft = ((next.startHour * 60 - (now.getHours() * 60 + now.getMinutes())) % 1440 + 1440) % 1440;
+  const said = renderDialLegend(now);
+  el.innerHTML = `${formatTime(now)} · ${current.name} · ${next.name} in ${durationWords(minutesLeft)}`
+    + `<span class="visually-hidden">. ${said}</span>`;
+}
 
+// The key under the dial: what the ✦, the center and the inner band
+// are. It's hidden from screen readers (like the dial itself), so it
+// returns the moon and daylight in words for the caption to carry.
+function renderDialLegend(now) {
+  const el = document.getElementById('wander-dial-legend');
   const phase = moonPhase(now);
-  const lit = `${phase.name}, ${Math.round(phase.illumination * 100)}% lit`;
   const upcoming = phase.name === 'Full moon' || phase.name === 'New moon' ? ''
     : phase.daysToFull < phase.daysToNew
-      ? ` · full moon in ${durationDays(phase.daysToFull)}`
-      : ` · new moon in ${durationDays(phase.daysToNew)}`;
+      ? `, full in ${durationDays(phase.daysToFull)}`
+      : `, new in ${durationDays(phase.daysToNew)}`;
+  const moonWords = `${phase.name}${upcoming}`;
+  const moonIcon = `<svg class="dial-key-moon" viewBox="0 0 20 20">`
+    + `<circle cx="10" cy="10" r="8" class="dial-moon-disc"/>`
+    + `<path d="${moonLitPath(10, 10, 8, phase.age)}" class="dial-moon-lit"/></svg>`;
   const sun = window.siteAtmosphere && window.siteAtmosphere.sun;
-  const sunWords = sun ? ` · sunrise ${formatTime(sun.sunrise)}, sunset ${formatTime(sun.sunset)}` : '';
-
-  el.innerHTML = `${formatTime(now)} · ${current.name} · ${durationWords(minutesLeft)} until ${next.name}`
-    + `<br>${lit}${upcoming}${sunWords}`;
+  const sunWords = sun ? `Daylight ${formatTime(sun.sunrise)} – ${formatTime(sun.sunset)}` : '';
+  if (el) el.innerHTML = `<span class="dial-key"><span class="dial-key-star">✦</span>You are here</span>`
+    + `<span class="dial-key">${moonIcon}${moonWords}</span>`
+    + (sun ? `<span class="dial-key"><span class="dial-key-day"></span>${sunWords}</span>` : '');
+  return sun ? `${moonWords}. ${sunWords}.` : `${moonWords}.`;
 }
 
 function durationDays(days) {
