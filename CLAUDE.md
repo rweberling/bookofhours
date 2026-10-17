@@ -51,6 +51,29 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   rest of the hour evenly, without repeats.
 - The Hours frame crops every image to 4:3; the lightbox shows it whole.
 
+## The postcards (`c/`)
+
+- Five winter-solstice cards (series `w26`), sold as a set through
+  Metalabel. Each card's QR code points at `earthlyhours.com/c/w26/N`: a
+  page, not a redirect, so the printed link never breaks.
+- `data/postcards.csv` (`pc-` IDs) → `python3 scripts/build_postcards.py`
+  → `c/w26/N/index.html`. The script's docstring explains every column.
+  Pages stay `noindex` while a card's `status` is `draft`; all five still
+  are.
+- The cards carry no year, so the pages name the relevant December
+  solstice: `postcards.js` updates it in the browser, and the build script
+  writes the same line for readers without JavaScript. Both hold a table
+  of published solstice times (2024–2035); keep them in step.
+- Print files are made by Ryan in Affinity, not in this repo. What worked
+  for the press PDF (Smartpress): PDF/X-4, CMYK U.S. Web Coated (SWOP) v2,
+  0.125 in bleed, crop marks only, Rasterize: Nothing, 300 dpi images,
+  text and QR codes in a K100 swatch (not rich black), QR codes opened and
+  pasted as curves (in a picture frame Affinity rasterises them), at least
+  3/16 in from the cut. The buyers' print-at-home PDF: RGB, sRGB, bleed
+  and crop marks, JPEG 90%.
+- Open: the back of the Orion card reads *Uranographia* "(1960)"; it
+  should be 1690.
+
 ## Working in the cloud container
 
 - `build_sources.py` needs Chrome: make a wrapper script containing
