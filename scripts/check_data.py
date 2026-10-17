@@ -16,8 +16,9 @@ exits with status 1 when there are any.
 Gaps are fields not yet filled in. They never fail the check. Core gaps
 matter for the site and for rights: a bibliography line, a rights
 statement, and a way for readers to reach the work (a cited link or a
-suggested edition). Research details (page numbers, publishers, edition
-dates, holding institutions, Wikidata IDs) are reported only with --all.
+suggested edition). Research details (a reading's work title, date
+written and page or exact link; publishers, edition dates, holding
+institutions, Wikidata IDs) are reported only with --all.
 
 Nothing here writes files. The site reads data/ directly (loadCollection()
 in shared.js).
@@ -404,8 +405,16 @@ def main():
             gaps[rid].append('edition date (issued)')
         if not ed.get('publisher'):
             gaps[rid].append('publisher')
-        if not (cit.get('locator') or {}).get('page'):
-            gaps[rid].append('page')
+        # The work quoted (a poem, essay, chapter or book), when it was
+        # written, and where in the edition: asked of every reading alike,
+        # whichever page shows it. A locator may be a page or, for a scan
+        # or web text, the exact link.
+        if not cit.get('title'):
+            gaps[rid].append('work title')
+        if not cit.get('written'):
+            gaps[rid].append('date written')
+        if not ((cit.get('locator') or {}).get('page') or (cit.get('locator') or {}).get('url')):
+            gaps[rid].append('page or exact link')
         if not any(p.get('wikidata') for p in ed.get('contributors') or []):
             gaps[rid].append('author Wikidata ID')
 
