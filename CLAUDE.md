@@ -76,9 +76,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 
 ## Working in the cloud container
 
-- `build_sources.py` needs Chrome: make a wrapper script containing
-  `exec /opt/pw-browsers/chromium --no-sandbox "$@"`, make it executable,
-  and pass its path as `CHROME=…`.
+- A start-up script (`.claude/hooks/session-start.sh`) runs as each
+  session opens: it fast-forwards `main` (several sessions push to it),
+  makes the no-sandbox Chrome wrapper and sets `CHROME` for
+  `build_sources.py`, and installs Pillow and fontTools if missing. Still
+  pull before pushing if the session has been open a while.
 - Testing pages: `python3 -m http.server 8765` from the repo root (run it in
   the background), then Playwright with
   `executablePath: '/opt/pw-browsers/chromium'`. The headless browser can't
@@ -93,9 +95,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 
 ## Elsewhere
 
-- Notes (Claude Docs): "Metadata Standards" holds the map of how the pieces
-  fit, the ID rule and the open items; a separate bibliography review doc
-  tracks citation questions.
+- Notes (Claude Docs): "Site Project Notes"
+  (https://claude.ai/artifact/SQLVXud94FQLubXUV18179) is the front page:
+  goals, to-dos, progress log, plans, and links to the other notes.
+  "Metadata Standards" (https://claude.ai/artifact/TTG2XaCWGUvvAScCvBKGM9)
+  holds the data collection's map, ID rule and open items; a bibliography
+  review doc tracks citation questions. Record decisions and open items
+  there, not on side branches or in a session's local files.
 - Rebuilt posts (on trial): each post in `lectio-data.json` has a `body`
   listing its pieces, and `renderPostBody()` in `shared.js` rebuilds the post
   from the records (`scripts/build_post_manifests.py` makes the lists). The
