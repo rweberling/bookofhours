@@ -1989,9 +1989,12 @@ a.page-action { text-decoration: none; }
 /* A card's heading that opens its section's pane — the hour's name
    (Wander the Hours), the season's (Wander the Seasons), the weather's
    conditions line (the station model). Looks like the heading it is
-   until hovered. */
+   until hovered. Its text isn't selectable, as on the menu's buttons:
+   Safari otherwise shows the text cursor over it, not the hand. */
 .pane-link {
+  -webkit-appearance: none; appearance: none;
   background: none; border: none; cursor: pointer;
+  -webkit-user-select: none; user-select: none;
   font: inherit; color: inherit; letter-spacing: inherit; text-align: inherit;
   padding: 0;
   transition: color 0.3s ease;
