@@ -343,6 +343,41 @@ function syncWeatherTiles() {
     tile.classList.toggle('is-current', active.includes(tile.dataset.value));
   });
   renderStationModel(active);
+  syncWeatherPaneCopy();
+}
+
+/* ── The pane's wording ───────────────────────────────────────────
+   One pane, two ways to set it: looking outside and choosing by hand.
+   Its subheading follows what it's showing rather than how it was
+   opened — a measured reading reads as one, with the tiles beneath to
+   choose otherwise; anything else (chosen by hand, or unset) invites a
+   choice. Choosing a tile drops the reading (atmosphere.js), so the
+   pane turns back to choosing on its own. The button stays "Look
+   outside" either way, as on the card — looking again is implied.
+────────────────────────────────────────────────────────────────── */
+let paneNoticeTimeout = null;
+
+function syncWeatherPaneCopy() {
+  const subheading = document.getElementById('weather-pane-subheading');
+  if (!subheading) return;
+  clearTimeout(paneNoticeTimeout);
+  const measured = Boolean(stationReading());
+  // Without the tiles (DFOS gate on, signed out), there's nothing to choose.
+  subheading.textContent = !dfosMayWander()
+    ? (measured ? 'As read outside your window' : 'Look outside to read the weather here')
+    : measured ? 'As read outside your window, or choose otherwise'
+    : 'Choose the condition outside your window';
+}
+
+// A failed look says so on the card and, briefly, in the pane's
+// subheading, where the pane's own button is.
+function reportLook(message, ms = 5000) {
+  renderWeatherReadout(message);
+  const subheading = document.getElementById('weather-pane-subheading');
+  if (!subheading) return;
+  subheading.textContent = message;
+  clearTimeout(paneNoticeTimeout);
+  paneNoticeTimeout = setTimeout(syncWeatherPaneCopy, ms);
 }
 
 /* ── Station model ────────────────────────────────────────────────
@@ -637,25 +672,15 @@ function buildWeatherGrid() {
   syncWeatherTiles();
 }
 
+// Open to everyone, station model and "Look outside" included; with
+// the DFOS gate on, choosing conditions by hand (the tiles) waits for
+// sign-in (nav.js).
 function openWeatherPane() {
   const pane = document.getElementById('weather-pane');
   buildWeatherGrid();
+  syncWanderLock(document.getElementById('weather-grid'), 'weather');
+  syncWeatherPaneCopy();
   openOverlayPane(pane);
-}
-
-/* ── DFOS gate ────────────────────────────────────────────────────
-   Choosing a condition by hand (Wander the Weather) is gated, via
-   requireDfosSignIn() in nav.js; looking outside (The Current
-   Weather) isn't.
-────────────────────────────────────────────────────────────────── */
-function openWanderWeather() {
-  // Say so on the card, not just on the menu's (closed) Wander button:
-  // arriving from another page's #wander link, the card is what's in view.
-  const unavailable = () => {
-    renderWeatherReadout('Sign-in is unavailable; try again soon');
-    setTimeout(() => renderWeatherReadout(), 5000);
-  };
-  if (requireDfosSignIn('weather', unavailable)) openWeatherPane();
 }
 
 window.addEventListener('dfossignin', e => {
@@ -758,10 +783,11 @@ function conditionsFromReading(r) {
   return conditions;
 }
 
-function lookOutside(event) {
-  const btn = event.currentTarget;
+// btn is the button that asked — the card's or the pane's — which reads
+// "Looking…" until the reading is in.
+function lookOutside(btn) {
   if (!navigator.geolocation) {
-    renderWeatherReadout('Location is unavailable here');
+    reportLook('Location is unavailable here');
     return;
   }
   const label = btn.textContent;
@@ -786,12 +812,19 @@ function lookOutside(event) {
       setWeatherConditions(conditionsFromReading(reading), reading);
     } catch (error) {
       console.error(error);
-      renderWeatherReadout('The weather could not be found');
+      reportLook('The weather could not be found');
     } finally {
       done();
     }
-  }, () => {
-    renderWeatherReadout('Location was not shared');
+  }, error => {
+    // Once someone has said no, the browser remembers it for this site and
+    // refuses every later ask without showing the prompt again; only its
+    // own site settings can undo that, so say where they are.
+    if (error.code === error.PERMISSION_DENIED) {
+      reportLook('Location is blocked for this site. Allow it in your browser’s site settings (usually the icon beside the address), then look outside again.', 15000);
+    } else {
+      reportLook('Your location could not be found');
+    }
     done();
   }, { timeout: 10000, maximumAge: 300000 });
 }
@@ -801,7 +834,7 @@ function lookOutside(event) {
 function openWanderWeatherIfHashed() {
   if (window.location.hash !== '#wander') return;
   history.replaceState(null, '', window.location.pathname);
-  openWanderWeather();
+  openWeatherPane();
 }
 
 // Toggling several tiles in a row shouldn't load a new image per click —
@@ -819,11 +852,11 @@ async function initWeatherPage() {
   img.addEventListener('load', () => img.classList.add('is-loaded'));
 
   document.getElementById('weather-turn-page').addEventListener('click', () => renderWeatherView({ turning: true }));
-  document.getElementById('weather-look').addEventListener('click', lookOutside);
+  document.getElementById('weather-look').addEventListener('click', e => lookOutside(e.currentTarget));
   document.getElementById('weather-fold').addEventListener('click', toggleWeatherCard);
   // The picture itself: drag to lean out, tap to fold/unfold the card.
   initLeaning();
-  document.getElementById('weather-pane-look').addEventListener('click', lookOutside);
+  document.getElementById('weather-pane-look').addEventListener('click', e => lookOutside(e.currentTarget));
   renderWeatherReadout();
 
   // DOMContentLoaded, not script load: dfos-siwd.js is a module and only
@@ -832,7 +865,9 @@ async function initWeatherPage() {
   window.addEventListener('hashchange', openWanderWeatherIfHashed);
   // On this page the menu's Wander item is a button (see nav.js).
   const wanderButton = document.getElementById('weather-wander-open');
-  if (wanderButton) wanderButton.addEventListener('click', openWanderWeather);
+  if (wanderButton) wanderButton.addEventListener('click', openWeatherPane);
+  // So is the card's conditions line: the full reading is in the pane.
+  document.getElementById('weather-readout').addEventListener('click', openWeatherPane);
 
   try {
     const oracle = weatherView(await loadCollection());

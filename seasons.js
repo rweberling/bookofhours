@@ -6,12 +6,12 @@
    Picking a card swaps the reading in place and closes the pane.
 
    Expects shared.js (season data, pick helpers, dial geometry,
-   loadLectioData) and nav.js (requireDfosSignIn, closeOverlayPane).
+   loadLectioData) and nav.js (syncWanderLock, openOverlayPane).
 ══════════════════════════════════════════════════════════════ */
 
 // SEASON_LABELS, SEASON_KEYS and SEASON_MONTH_RANGES come from shared.js.
 
-let lectioSeasons = null;   // lectio-data.json's { spring: [...], ... }, once loaded
+let lectioSeasons = null;   // data/lectio-data.json's { spring: [...], ... }, once loaded
 let season = null;          // the season whose readings are showing
 let currentEntryId = null;
 
@@ -26,16 +26,47 @@ function seasonFromURL() {
 
 /* ── The reading ──────────────────────────────────────────────── */
 
+// The page's canonical address, for search engines. Opened at a reading's
+// own address (?season=…&entry=…), that reading is the page; opened
+// plain, or turned to another reading by the page buttons (which don't
+// change the address), the page is seasons.html itself. Set from here,
+// not fixed in the HTML, since a fixed one would claim every reading is
+// the same page.
+//
+// A post's ID is neutral (lt-0001…); its old, Substack-derived ID is kept
+// in entry.aliases, so earlier links still open it. Opened by an alias,
+// the address bar is quietly updated to the post's own ID.
+function isEntry(entry, id) {
+  return !!id && (entry.id === id || (entry.aliases || []).includes(id));
+}
+
+function setSeasonCanonical(entry) {
+  const params = new URLSearchParams(window.location.search);
+  const own = isEntry(entry, params.get('entry')) && params.get('season');
+  if (own && params.get('entry') !== entry.id) {
+    params.set('entry', entry.id);
+    history.replaceState(history.state, '', `${window.location.pathname}?${params}${window.location.hash}`);
+  }
+  let link = document.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'canonical';
+    document.head.appendChild(link);
+  }
+  link.href = own
+    ? `https://earthlyhours.com/seasons.html?season=${encodeURIComponent(params.get('season'))}&entry=${encodeURIComponent(entry.id)}`
+    : 'https://earthlyhours.com/seasons.html';
+}
+
 function renderSeasonReading(entry) {
   currentEntryId = entry.id;
 
-  // Only real fetched entries are ever rendered here (no fallback-sample
-  // path), so isRealEntry is always true — see resolveSpeciesFields() in
-  // shared.js, shared with the species cards below.
-  const { species, latin, readings } = resolveSpeciesFields(entry, true);
+  // resolveSpeciesFields() is in shared.js, shared with the species cards below.
+  const { species, latin, readings } = resolveSpeciesFields(entry);
   const credits = creditLine(readings);
 
   document.title = `${species} — The Current Season`;
+  setSeasonCanonical(entry);
   document.getElementById('season-reading-subtitle').textContent = season.subtitle;
   document.getElementById('season-reading-title').textContent = species;
 
@@ -55,12 +86,16 @@ function renderSeasonReading(entry) {
   // The post's images point at the full-size masters. Their src is set
   // aside before the HTML goes in (so the browser doesn't start fetching
   // the masters), then each is pointed at its web copies.
-  const html = entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+  // With ?rebuilt, a post with a list of its pieces is rebuilt from the
+  // collection (renderPostBody() in shared.js); otherwise its imported
+  // HTML is shown.
+  const html = entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`;
   body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
   body.querySelectorAll('img[data-master]').forEach(img => {
     img.loading = 'lazy';
     setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
   });
+  wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
   markParts(body);
   updateRunningHead();
@@ -153,7 +188,7 @@ function markParts(body) {
    gets a label in the margin: a numeral (I, II, III) and, where the
    post has them, the author and work from entry.readingLabels — one
    { author, work } per reading, in order, written by hand in
-   lectio-data.json (import_substack.py leaves them alone unless the
+   data/lectio-data.json (import_substack.py leaves them alone unless the
    post is re-imported with --refresh). On wide screens the label sits
    in the left margin and travels down beside its passage; on narrower
    ones it sits just above it.
@@ -164,6 +199,30 @@ function markParts(body) {
 ────────────────────────────────────────────────────────────────── */
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
 const READING_BLOCKS = new Set(['P', 'OL', 'UL', 'H2', 'H3', 'H4', 'FIGURE', 'HR', 'BLOCKQUOTE']);
+
+/* ── Videos watched elsewhere: click to play ──────────────────────
+   A video from YouTube sits in the post as a quiet card with its
+   caption: nothing loads from YouTube until the reader presses play.
+   Then the card becomes the player, from YouTube's privacy-enhanced
+   address (youtube-nocookie.com). The caption keeps a plain link to the
+   video for anyone who would rather watch it there.
+────────────────────────────────────────────────────────────────── */
+function wireVideoEmbeds(body) {
+  body.querySelectorAll('.video-play[data-youtube]').forEach(button => {
+    button.addEventListener('click', () => {
+      const id = encodeURIComponent(button.dataset.youtube);
+      const frame = document.createElement('iframe');
+      frame.className = 'video-frame';
+      frame.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+      frame.title = button.getAttribute('aria-label').replace(/^Play the video: /, '');
+      frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      button.replaceWith(frame);
+      frame.focus();
+    });
+  });
+}
 
 function markReadings(body, labels) {
   let inReadings = false;
@@ -229,7 +288,7 @@ function setSeason(key) {
 // missing or unknown), switching seasons first if needed.
 function showSeasonEntry(key, entryId) {
   if (!season || season.key !== key) setSeason(key);
-  const entry = season.entries.find(e => e.id === entryId) || pick(season.entries);
+  const entry = season.entries.find(e => isEntry(e, entryId)) || pick(season.entries);
   renderSeasonReading(entry);
 }
 
@@ -335,19 +394,22 @@ function daysBetween(a, b) {
 
 const DIAL_DATE_FORMAT = new Intl.DateTimeFormat(undefined, { day: 'numeric', month: 'long' });
 
-// "September 26 · 4 days after the autumn equinox · 41 days to the next
-// cross-quarter" — where today sits between its two nearest markers.
+// "October 17 · 24 days since the autumn equinox · 65 days to the winter
+// solstice": where today sits between the solstices and equinoxes. The
+// cross-quarters are only named on the day itself; the legend explains
+// their marks.
 function turningPointCaption(now = new Date()) {
   const year = dialYearOf(now);
   const points = [...turningPoints(year - 1), ...turningPoints(year), ...turningPoints(year + 1)];
-  const today = points.find(p => daysBetween(now, p.date) === 0);
-  const label = p => p.kind === 'cross' ? 'a cross-quarter day' : `the ${p.name}`;
-  if (today) return `${DIAL_DATE_FORMAT.format(now)} · Today is ${label(today)}`;
-  const previous = [...points].reverse().find(p => p.date < now);
-  const next = points.find(p => p.date > now);
+  const quarters = points.filter(p => p.kind === 'quarter');
   const plural = n => `${n} day${n === 1 ? '' : 's'}`;
-  const nextLabel = next.kind === 'cross' ? 'the next cross-quarter' : `the ${next.name}`;
-  return `${DIAL_DATE_FORMAT.format(now)} · ${plural(daysBetween(previous.date, now))} after ${label(previous)} · ${plural(daysBetween(now, next.date))} to ${nextLabel}`;
+  const date = DIAL_DATE_FORMAT.format(now);
+  const today = points.find(p => daysBetween(now, p.date) === 0);
+  const next = quarters.find(p => p.date > now && daysBetween(now, p.date) > 0);
+  if (today && today.kind === 'quarter') return `${date} · Today is the ${today.name}`;
+  const previous = [...quarters].reverse().find(p => p.date < now);
+  if (today) return `${date} · A cross-quarter day, midway between the ${previous.name} and the ${next.name}`;
+  return `${date} · ${plural(daysBetween(previous.date, now))} since the ${previous.name} · ${plural(daysBetween(now, next.date))} to the ${next.name}`;
 }
 
 function buildSeasonDial() {
@@ -414,11 +476,12 @@ function buildSeasonDial() {
     svg.appendChild(tick);
   }
 
-  // Solstices, equinoxes and cross-quarters: a mark just inside the arc
-  // with its name curving along the ring inside it, clear of the season
-  // names outside. The ring says only "Equinox"/"Solstice" — its quadrant
-  // already names the season — while the hover title keeps the full name
-  // and date.
+  // Solstices, equinoxes and cross-quarters: a mark just inside the arc,
+  // the solstices and equinoxes with their name curving along the ring
+  // inside it, clear of the season names outside. The ring says only
+  // "Equinox"/"Solstice" — its quadrant already names the season — while
+  // the hover title keeps the full name and date. Cross-quarters are a
+  // bare dot, explained in the legend under the dial.
   const defs = document.createElementNS(svgNS, 'defs');
   svg.appendChild(defs);
   turningPoints(year).forEach((point, i) => {
@@ -441,13 +504,15 @@ function buildSeasonDial() {
     }
     g.appendChild(mark);
 
+    if (point.kind === 'cross') { svg.appendChild(g); return; }
+
     // Names follow the ring on a textPath: clockwise on the upper half
     // (letters' tops outward), counter-clockwise on the lower so they
     // stay upright (tops inward). The baseline is offset by a third of
     // the font size either way so the letters, not the baseline, sit
     // centred on SEASON_R_INNER_LABEL.
     const lower = deg > 0 && deg < 180;
-    const fontSize = point.kind === 'cross' ? 6.8 : 7.4;
+    const fontSize = 7.4;
     const r = SEASON_R_INNER_LABEL + (lower ? 1 : -1) * fontSize / 3;
     const a = polarToXY(lower ? deg + 60 : deg - 60, r);
     const b = polarToXY(lower ? deg - 60 : deg + 60, r);
@@ -462,7 +527,7 @@ function buildSeasonDial() {
     const textPath = document.createElementNS(svgNS, 'textPath');
     textPath.setAttribute('href', `#turning-point-path-${i}`);
     textPath.setAttribute('startOffset', '50%');
-    textPath.textContent = point.kind === 'cross' ? 'Cross-Quarter' : point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
+    textPath.textContent = point.name.split(' ')[1].replace(/^./, c => c.toUpperCase());
     text.appendChild(textPath);
     g.appendChild(text);
     svg.appendChild(g);
@@ -472,7 +537,7 @@ function buildSeasonDial() {
   const nowPoint = polarToXY(dialDeg(now, year), R_ARC);
   const nowStar = document.createElementNS(svgNS, 'text');
   nowStar.setAttribute('x', nowPoint.x); nowStar.setAttribute('y', nowPoint.y);
-  nowStar.setAttribute('class', 'season-now');
+  nowStar.setAttribute('class', 'dial-now');
   nowStar.textContent = '✦';
   const nowTitle = document.createElementNS(svgNS, 'title');
   nowTitle.textContent = `Today · ${DIAL_DATE_FORMAT.format(now)}`;
@@ -500,12 +565,6 @@ function setSeasonDialActive(seasonKey) {
 
 /* ── Wander the Seasons: the species cards ────────────────────── */
 
-// Only used if lectio-data.json can't be loaded: the hand-curated
-// species lists in shared.js, so the grid isn't empty.
-const SEASON_SPECIES = Object.fromEntries(
-  SEASON_KEYS.map(key => [key, SEASONAL_DATA[key].species.map(([common, latin]) => ({ common, latin }))])
-);
-
 // The grid always shows all four seasons stacked (see .species-grid in
 // css/styles.css), starting from the season it is now and running on
 // through the year — in October: autumn, winter, spring, summer. Built
@@ -522,6 +581,9 @@ async function buildSpeciesGrid() {
     importedSeasons = data.seasons;
   } catch (error) {
     console.error(error);
+    grid.innerHTML = '<p class="empty-note">The species could not be opened. Please return soon.</p>';
+    speciesGridBuilt = false;
+    return;
   }
 
   const first = SEASON_KEYS.indexOf(currentSeason());
@@ -538,37 +600,28 @@ async function buildSpeciesGrid() {
 
     const entryGrid = document.createElement('div');
     entryGrid.className = 'species-season-grid';
-    const isRealEntries = !!(importedSeasons && importedSeasons[key]);
-    const entries = isRealEntries
-      ? importedSeasons[key]
-      : SEASON_SPECIES[key].map(species => ({
-          id: species.common.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-          title: species.common,
-          subtitle: species.latin
-        }));
+    const entries = importedSeasons[key] || [];
     entries.forEach(entry => {
       const card = document.createElement('a');
       card.className = 'species-card';
       card.href = `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
 
-      // A real entry opens right here, in place — the link stays a real
+      // The reading opens right here, in place — the link stays a real
       // link so a new-tab/cmd-click still works the ordinary way.
-      if (isRealEntries) {
-        card.addEventListener('click', e => {
-          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
-          e.preventDefault();
-          // Remember which reading was showing (it may have been reached
-          // by turning pages, which the URL doesn't record), so Back
-          // returns to it rather than to a fresh random pick.
-          history.replaceState({ season: season.key, entry: currentEntryId }, '', window.location.href);
-          showSeasonEntry(key, entry.id);
-          history.pushState({ season: key, entry: entry.id }, '', card.href);
-          closeOverlayPane(document.getElementById('season-pane'));
-          window.scrollTo(0, 0);
-        });
-      }
+      card.addEventListener('click', e => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        e.preventDefault();
+        // Remember which reading was showing (it may have been reached
+        // by turning pages, which the URL doesn't record), so Back
+        // returns to it rather than to a fresh random pick.
+        history.replaceState({ season: season.key, entry: currentEntryId }, '', window.location.href);
+        showSeasonEntry(key, entry.id);
+        history.pushState({ season: key, entry: entry.id }, '', card.href);
+        closeOverlayPane(document.getElementById('season-pane'));
+        window.scrollTo(0, 0);
+      });
 
-      const { species, latin, readings } = resolveSpeciesFields(entry, isRealEntries);
+      const { species, latin, readings } = resolveSpeciesFields(entry);
 
       if (entry.images && entry.images[0]) {
         const thumb = document.createElement('img');
@@ -619,11 +672,10 @@ function openSeasonPane() {
     : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[key]}`;
   setSeasonDialActive(key);
   buildSpeciesGrid();
+  // Open to everyone; with the DFOS gate on, the species cards wait
+  // for sign-in (nav.js).
+  syncWanderLock(document.getElementById('species-grid'), 'season');
   openOverlayPane(pane);
-}
-
-function openWanderSeasons() {
-  if (requireDfosSignIn('season')) openSeasonPane();
 }
 
 // Name kept distinct from nav.js's openWanderIfHashed() (the Hours
@@ -631,7 +683,7 @@ function openWanderSeasons() {
 function openWanderSeasonsIfHashed() {
   if (window.location.hash !== '#wander') return;
   history.replaceState(null, '', window.location.pathname + window.location.search);
-  openWanderSeasons();
+  openSeasonPane();
 }
 
 window.addEventListener('dfossignin', e => {
@@ -649,11 +701,25 @@ async function initialiseSeason() {
   window.addEventListener('hashchange', openWanderSeasonsIfHashed);
   // On this page the menu's Wander item is a button (see nav.js).
   const wanderButton = document.getElementById('season-wander-open');
-  if (wanderButton) wanderButton.addEventListener('click', openWanderSeasons);
+  if (wanderButton) wanderButton.addEventListener('click', openSeasonPane);
+  // So is the season's name over the reading, whose dial it opens on.
+  document.getElementById('season-reading-subtitle').addEventListener('click', openSeasonPane);
 
   try {
-    const data = await loadLectioData();
+    const [data, collection] = await Promise.all([
+      loadLectioData(),
+      loadCollection().catch(error => { console.error(error); return null; })
+    ]);
     lectioSeasons = data.seasons;
+    // The rebuilt posts are on trial: shown only with ?rebuilt in the
+    // address, so readers keep seeing each post as imported meanwhile.
+    const showRebuilt = new URLSearchParams(window.location.search).has('rebuilt');
+    if (collection && showRebuilt) {
+      const byId = new Map([...collection.readings, ...collection.images, ...collection.writing].map(r => [r.id, r]));
+      Object.values(lectioSeasons).forEach(entries => entries.forEach(entry => {
+        if (entry.body) entry.renderedHtml = renderPostBody(entry, byId);
+      }));
+    }
     const { key, entryId } = seasonFromURL();
     showSeasonEntry(key, entryId);
   } catch (error) {

@@ -1,14 +1,15 @@
 /* ══════════════════════════════════════════════════════════════
    THE SOURCES — sources.html
    The bibliography is built from the collection in data/ (and, for
-   the Seasons, from lectio-data.json), so it always matches what the
+   the Seasons, from data/lectio-data.json), so it always matches what the
    Hours and Weather pages show. Three parts, each in its own order:
      The Hours    — each watch, readings then images
      The Weather  — the weather picker's rows, plus "All Weather" for
                     the pieces shown before any condition is chosen;
                     a piece is listed once, under the first row any of
                     its conditions belongs to
-     The Seasons  — each season's Lectio Terra posts, by week
+     The Seasons  — each season's Lectio Terra posts, by week, each with
+                    the passages and figures copied from it
 
    Each entry shows its hand-written bibliography line (or its display
    citation, until one is written), any rights note, and its links:
@@ -84,7 +85,8 @@ function entryHTML(record, notes = [], site = null) {
 
   const linkLine = groups.filter(Boolean).join('<span class="sep">·</span>');
   return `
-    <div class="entry" id="${escapeHTML(record.id)}">
+    <div class="entry" id="${escapeHTML(record.id)}">${(record.aliases || []).map(a =>
+      `<span class="anchor-alias" id="${escapeHTML(a)}"></span>`).join('')}
       <p class="citation">${citation || ''}${rightsNote ? `<span class="flag-note">${escapeHTML(rightsNote)}</span>` : ''}</p>
       ${linkLine ? `<p class="entry-links">${linkLine}</p>` : ''}
       ${notes.length ? `<p class="entry-note">${notes.map(escapeHTML).join(' · ')}</p>` : ''}
@@ -161,20 +163,28 @@ function buildSources(collection, lectio) {
   const hoursById = Object.fromEntries(vocab.hours.map(h => [h.id, h]));
   const rows = weatherRows(vocab);
 
-  // Cross-references between the Hours and the Weather.
+  // Each piece is listed once, where it's shown (its shownIn); its other
+  // tags are noted beneath it.
+  const seasonNote = record => {
+    const seasons = tagsOf(record, 'seasons').map(id => SEASON_LABELS[id]).filter(Boolean);
+    return seasons.length ? [`Seasons: ${listWords(seasons)}`] : [];
+  };
   const notesInHours = record => {
     const tags = tagsOf(record, 'weather');
-    const row = weatherRowOf(record, rows);
-    return row ? [`Also under the Weather: ${row.name} (${listWords(tags)})`] : [];
+    return [...(tags.length ? [`Conditions: ${listWords(tags)}`] : []), ...seasonNote(record)];
   };
   const notesInWeather = record => {
     const notes = [];
     const tags = tagsOf(record, 'weather');
     if (tags.length) notes.push(`Conditions: ${listWords(tags)}`);
     const hours = tagsOf(record, 'hours').map(id => hoursById[id] && hoursById[id].label).filter(Boolean);
-    if (hours.length) notes.push(`Also under the Hours: ${listWords(hours)}`);
-    return notes;
+    if (hours.length) notes.push(`Hours: ${listWords(hours)}`);
+    return [...notes, ...seasonNote(record)];
   };
+  const inHours = readings.filter(r => r.shownIn === 'hours');
+  const inHoursImages = images.filter(i => i.shownIn === 'hours');
+  const inWeather = readings.filter(r => r.shownIn === 'weather');
+  const inWeatherImages = images.filter(i => i.shownIn === 'weather');
 
   let html = contentsHTML(vocab.hours, rows, SEASON_KEYS);
 
@@ -183,23 +193,30 @@ function buildSources(collection, lectio) {
   vocab.hours.forEach(hour => {
     const tagged = r => tagsOf(r, 'hours').includes(hour.id);
     html += sectionHTML(`hours-${hour.id}`, hour.label, hour.subtitle,
-      readings.filter(tagged), images.filter(tagged), notesInHours, site);
+      inHours.filter(tagged), inHoursImages.filter(tagged), notesInHours, site);
   });
 
   // The Weather
   html += partHeaderHTML('weather', 'The Weather',
     'The readings and images for the weather, arranged by the rows of the weather picker. A piece tagged with several conditions is listed once, under the first row they belong to.');
   html += sectionHTML('weather-all', 'All Weather', 'Shown before any condition is chosen',
-    readings.filter(isWeatherUnset), images.filter(isWeatherUnset), notesInWeather, site);
+    inWeather.filter(isWeatherUnset), inWeatherImages.filter(isWeatherUnset), notesInWeather, site);
   rows.forEach(row => {
     const inRow = r => !isWeatherUnset(r) && weatherRowOf(r, rows) === row;
     html += sectionHTML(row.id, row.name, row.conditions.map(c => c.label).join(' · '),
-      readings.filter(inRow), images.filter(inRow), notesInWeather, site);
+      inWeather.filter(inRow), inWeatherImages.filter(inRow), notesInWeather, site);
   });
 
   // The Seasons
   html += partHeaderHTML('seasons', 'The Seasons',
-    "The weekly readings from <em>Lectio Terra</em>, by season. Citations for each week's readings and images will be listed beneath it.");
+    "The weekly readings from <em>Lectio Terra</em>, by season, each with the passages it quotes and the figures it shows.");
+  // A week's own passages and figures, in the order the post gives them.
+  const piecesOf = (records, week) => records
+    .filter(r => r.lectio && r.lectio.post === week.id)
+    .sort((a, b) => a.lectio.place - b.lectio.place);
+  const weekGroup = (label, records) => records.length
+    ? `<p class="category-label">${label}</p>${records.map(r => entryHTML(r, [], site)).join('')}`
+    : '';
   SEASON_KEYS.forEach(key => {
     const weeks = ((lectio && lectio.seasons && lectio.seasons[key]) || [])
       .slice().sort((a, b) => (a.published || '').localeCompare(b.published || ''));
@@ -210,6 +227,7 @@ function buildSources(collection, lectio) {
     <div class="week">
       <p class="week-title"><a href="seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}">${escapeHTML(week.title)}</a></p>
       ${date ? `<p class="week-date">${date}</p>` : ''}
+      ${weekGroup('Readings', piecesOf(readings, week))}${weekGroup('Figures', piecesOf(images, week))}
     </div>`;
     }).join('') : '<p class="empty-note">No sources yet.</p>';
     html += `

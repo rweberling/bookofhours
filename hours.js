@@ -48,11 +48,39 @@ const HOUR_NAMES = {
 // pick() / pickExcluding() now live in shared.js, loaded before
 // this file — shared with seasons.js instead of duplicated here.
 
-// pickWeatherAware() (weather-weighted picks) lives there too, shared
-// with weather.js.
+// pickHoursAware() (picks leaning on the weather and the season) lives
+// there too, beside weather.js's pickWeatherAware().
 
 let lastQuoteText = null;
 let lastImageSrc  = null;
+
+// The first page of an hour is the "magic" one: picked leaning on the
+// weather and the season (pickHoursAware). Every turn of the page after
+// that opens up the whole hour instead, drawing evenly from the pieces
+// not yet shown on this visit, so a reader who keeps turning sees all of
+// it before anything comes round again. Arriving at a different hour
+// (the clock moving on, or wandering) starts a new visit.
+let visitBlockName = null;
+const shownThisVisit = { quotes: new Set(), images: new Set() };
+
+function pickForVisit(items, shown, keyOf, lastKey, firstPage) {
+  if (!items || items.length === 0) return null;
+  let pick;
+  if (firstPage) {
+    pick = pickHoursAware(items, item => keyOf(item) === lastKey);
+  } else {
+    let unseen = items.filter(item => !shown.has(keyOf(item)));
+    if (unseen.length === 0) {
+      // Seen the whole hour: start the round again, just not with the
+      // piece already on the page.
+      shown.clear();
+      unseen = items.filter(item => keyOf(item) !== lastKey);
+    }
+    pick = pickExcluding(unseen, () => false) || pickExcluding(items, () => false);
+  }
+  shown.add(keyOf(pick));
+  return pick;
+}
 
 function getSeason() {
   // The actual month-range logic lives in one place now: currentSeason()
@@ -129,8 +157,14 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate } = {})
   });
   if (block.cssClass) document.body.classList.add(block.cssClass);
 
-  const q   = pickWeatherAware(block.quotes, item => item.text === lastQuoteText) || { text: '', attr: '' };
-  const img = pickWeatherAware(block.images, item => item.src === lastImageSrc) || { src: null, caption: '' };
+  const firstPage = block.name !== visitBlockName;
+  if (firstPage) {
+    visitBlockName = block.name;
+    shownThisVisit.quotes.clear();
+    shownThisVisit.images.clear();
+  }
+  const q   = pickForVisit(block.quotes, shownThisVisit.quotes, item => item.text, lastQuoteText, firstPage) || { text: '', attr: '' };
+  const img = pickForVisit(block.images, shownThisVisit.images, item => item.src, lastImageSrc, firstPage) || { src: null, caption: '' };
   lastQuoteText = q.text;
   lastImageSrc  = img.src;
 
@@ -298,7 +332,40 @@ function hourToAngleDeg(h) {
   return h * 15 - 90;
 }
 
+// A label set along the ring at angle deg and radius r, as the Seasons
+// dial's turning points are: clockwise on the upper half (tops outward),
+// counter-clockwise on the lower so it stays upright. Its arc goes into
+// defs; the baseline is offset by a third of the font size so the
+// letters, not the baseline, sit centred on r.
+function ringText(defs, id, deg, r, fontSize, words) {
+  const lower = deg > 0 && deg < 180;
+  const rr = r + (lower ? 1 : -1) * fontSize / 3;
+  const a = polarToXY(lower ? deg + 60 : deg - 60, rr);
+  const b = polarToXY(lower ? deg - 60 : deg + 60, rr);
+  const path = document.createElementNS(svgNS, 'path');
+  path.setAttribute('id', id);
+  path.setAttribute('d', `M ${a.x} ${a.y} A ${rr} ${rr} 0 0 ${lower ? 0 : 1} ${b.x} ${b.y}`);
+  defs.appendChild(path);
+  const text = document.createElementNS(svgNS, 'text');
+  const textPath = document.createElementNS(svgNS, 'textPath');
+  textPath.setAttribute('href', `#${id}`);
+  textPath.setAttribute('startOffset', '50%');
+  textPath.textContent = words;
+  text.appendChild(textPath);
+  return text;
+}
+
 // polarToXY() / arcPath() / svgNS live in shared.js too.
+
+// The dial's own defs, for the label arcs (made on first use).
+function dialDefs(svg) {
+  let defs = svg.querySelector(':scope > defs');
+  if (!defs) {
+    defs = document.createElementNS(svgNS, 'defs');
+    svg.insertBefore(defs, svg.firstChild);
+  }
+  return defs;
+}
 
 function buildDial(blocksData) {
   const svg = document.getElementById('wander-dial');
@@ -337,28 +404,18 @@ function buildDial(blocksData) {
     path.setAttribute('data-block', block.name);
     svg.insertBefore(path, document.getElementById('dial-hand'));
 
+    // Curved along the ring, turned upright on the lower half — as the
+    // seasons dial's turning points and the sunrise/sunset labels are.
     const midAngle = hourToAngleDeg(block.startHour + 1.5);
-    const lp = polarToXY(midAngle, R_LABEL);
-    const text = document.createElementNS(svgNS, 'text');
-    text.setAttribute('x', lp.x);
-    text.setAttribute('y', lp.y);
+    const text = ringText(dialDefs(svg), `dial-label-path-${i}`, midAngle, R_LABEL, 9, block.name.toUpperCase());
     text.setAttribute('class', 'dial-label');
     text.setAttribute('data-block', block.name);
-    // Read along the ring, turned upright on the lower half — as the
-    // seasons dial and the sunrise/sunset labels do.
-    const upright = midAngle > 0 && midAngle < 180;
-    text.setAttribute('transform', `rotate(${upright ? midAngle - 90 : midAngle + 90}, ${lp.x}, ${lp.y})`);
-    text.textContent = block.name.toUpperCase();
     svg.insertBefore(text, document.getElementById('dial-hand'));
   });
 
     const nowDot = document.createElementNS(svgNS, 'text');
     nowDot.setAttribute('id', 'dial-now-dot');
-    nowDot.setAttribute('font-size', '9');
-    nowDot.setAttribute('fill', 'currentColor');
-    nowDot.setAttribute('opacity', '0.75');
-    nowDot.setAttribute('text-anchor', 'middle');
-    nowDot.setAttribute('dominant-baseline', 'middle');
+    nowDot.setAttribute('class', 'dial-now');
     nowDot.textContent = '✦';
     svg.insertBefore(nowDot, document.getElementById('dial-hand'));
     updateDialNowDot();
@@ -390,12 +447,13 @@ function updateDialNowDot() {
                  has run in this browser: atmosphere.js keeps its rounded
                  location and works out each day's times from it
                  (siteAtmosphere.sun).
-     caption   — the time, the watch, how long until the next one, and
-                 the moon and sun in words.
+     caption   — the time, the watch and how long until the next one.
+     legend    — a key under it: the ✦ ("you are here"), the moon's
+                 phase in words, and the daylight band's hours.
 ────────────────────────────────────────────────────────────────── */
 const SYNODIC_MONTH = 29.530588853;                        // days
 const REFERENCE_NEW_MOON = Date.UTC(2000, 0, 6, 18, 14);   // 6 Jan 2000, 18:14 UTC
-const R_MOON = 13;
+const R_MOON = 15;   // the hand starts just outside it (index.html)
 const R_NIGHT = 74, NIGHT_WIDTH = 7;   // just inside the watches' ring
 const R_SUN_LABEL = 60;
 
@@ -452,6 +510,8 @@ function renderDialSky() {
   sky.setAttribute('id', 'dial-sky');
 
   const sun = window.siteAtmosphere && window.siteAtmosphere.sun;
+  const skyDefs = document.createElementNS(svgNS, 'defs');
+  sky.appendChild(skyDefs);
   if (sun) {
     const set = hoursOf(sun.sunset), rise = hoursOf(sun.sunrise) + 24;
     const TWILIGHT = 0.5;
@@ -477,19 +537,15 @@ function renderDialSky() {
       mark.setAttribute('x2', b.x); mark.setAttribute('y2', b.y);
       mark.setAttribute('class', 'dial-sun-mark');
       sky.appendChild(mark);
-      // Set along the ring, turned upright on the lower half.
-      const lp = polarToXY(deg, R_SUN_LABEL);
-      const upright = deg > 0 && deg < 180;
-      const text = document.createElementNS(svgNS, 'text');
-      text.setAttribute('x', lp.x); text.setAttribute('y', lp.y);
+      // Curved along the ring, turned upright on the lower half. Its arc
+      // lives in the sky group's own defs, so it goes when the sky is redrawn.
+      const text = ringText(skyDefs, `dial-sun-path-${word}`, deg, R_SUN_LABEL, 7.4, `${word} ${formatTime(time)}`);
       text.setAttribute('class', 'dial-sun-label');
-      text.setAttribute('transform', `rotate(${upright ? deg - 90 : deg + 90}, ${lp.x}, ${lp.y})`);
-      text.textContent = `${word} ${formatTime(time)}`;
       sky.appendChild(text);
     });
   }
 
-  // The moon, in the center; the hand's pivot sits on top of it.
+  // The moon, in the center, clear of the hand.
   const phase = moonPhase();
   const moon = document.createElementNS(svgNS, 'g');
   moon.setAttribute('class', 'dial-moon');
@@ -518,18 +574,31 @@ function renderDialCaption() {
   const i = data.findIndex(b => hour >= b.startHour && hour < b.startHour + 3);
   const current = data[i], next = data[(i + 1) % data.length];
   const minutesLeft = ((next.startHour * 60 - (now.getHours() * 60 + now.getMinutes())) % 1440 + 1440) % 1440;
+  const said = renderDialLegend(now);
+  el.innerHTML = `${formatTime(now)} · ${current.name} · ${next.name} in ${durationWords(minutesLeft)}`
+    + `<span class="visually-hidden">. ${said}</span>`;
+}
 
+// The key under the dial: what the ✦, the center and the inner band
+// are. It's hidden from screen readers (like the dial itself), so it
+// returns the moon and daylight in words for the caption to carry.
+function renderDialLegend(now) {
+  const el = document.getElementById('wander-dial-legend');
   const phase = moonPhase(now);
-  const lit = `${phase.name}, ${Math.round(phase.illumination * 100)}% lit`;
   const upcoming = phase.name === 'Full moon' || phase.name === 'New moon' ? ''
     : phase.daysToFull < phase.daysToNew
-      ? ` · full moon in ${durationDays(phase.daysToFull)}`
-      : ` · new moon in ${durationDays(phase.daysToNew)}`;
+      ? `, full in ${durationDays(phase.daysToFull)}`
+      : `, new in ${durationDays(phase.daysToNew)}`;
+  const moonWords = `${phase.name}${upcoming}`;
+  const moonIcon = `<svg class="dial-key-moon" viewBox="0 0 20 20">`
+    + `<circle cx="10" cy="10" r="8" class="dial-moon-disc"/>`
+    + `<path d="${moonLitPath(10, 10, 8, phase.age)}" class="dial-moon-lit"/></svg>`;
   const sun = window.siteAtmosphere && window.siteAtmosphere.sun;
-  const sunWords = sun ? ` · sunrise ${formatTime(sun.sunrise)}, sunset ${formatTime(sun.sunset)}` : '';
-
-  el.innerHTML = `${formatTime(now)} · ${current.name} · ${durationWords(minutesLeft)} until ${next.name}`
-    + `<br>${lit}${upcoming}${sunWords}`;
+  const sunWords = sun ? `Daylight ${formatTime(sun.sunrise)} – ${formatTime(sun.sunset)}` : '';
+  if (el) el.innerHTML = `<span class="dial-key"><span class="dial-key-star">✦</span>You are here</span>`
+    + `<span class="dial-key">${moonIcon}${moonWords}</span>`
+    + (sun ? `<span class="dial-key"><span class="dial-key-day"></span>${sunWords}</span>` : '');
+  return sun ? `${moonWords}. ${sunWords}.` : `${moonWords}.`;
 }
 
 function durationDays(days) {
@@ -672,49 +741,40 @@ keepPageBtn.addEventListener('click', () => {
   window.print();
 });
 
-/* ── Overlay pane opener ──────────────────────────────────────────
-   Wander the Hours opens through this — display, fade-in,
-   build-if-needed, on-open callback. No auth check here; the DFOS
-   check lives one level up, in openWanderPane() below.
-   (Wander the Seasons and Wander the Weather live on their own pages,
-   seasons.html and weather.html.)
+/* ── Wander the Hours: the pane ───────────────────────────────────
+   Every way in (the menu's Wander button, the hour's name over the
+   reading, the #wander deep-link other pages use) comes through here.
+   The pane opens for everyone; with the DFOS gate on, only its grid
+   of blocks waits for sign-in (syncWanderLock in nav.js, shared with
+   seasons.js and weather.js).
 ────────────────────────────────────────────────────────────────── */
-function openGatedPane(paneEl, { ensureBuilt, onOpen } = {}) {
-  if (!paneEl) return;
-  openOverlayPane(paneEl);
-  if (typeof ensureBuilt === 'function') ensureBuilt();
-  if (typeof onOpen === 'function') onOpen();
-}
-
-// Checking here instead of per-caller means every path in (the menu's
-// Wander button, and the #wander hash deep-link other pages link to) is
-// gated for free, with nothing to remember to wrap. The sign-in check,
-// and the button's "Sign in to wander" label, live in nav.js, shared
-// with seasons.js and weather.js.
 function openWanderPane() {
-  if (!requireDfosSignIn('wander')) return;
-  openGatedPane(document.getElementById('wander-pane'), {
-    onOpen: () => {
-      if (typeof updateDialNowDot === 'function') updateDialNowDot();
-      if (!document.querySelector('.wander-tile') && blocks) buildWander(blocks);
-      else {
-        renderDialSky();   // moon, daylight and caption as of now
-        syncWanderDial();
-      }
-    }
-  });
+  const pane = document.getElementById('wander-pane');
+  if (!pane) return;
+  openOverlayPane(pane);
+  if (typeof updateDialNowDot === 'function') updateDialNowDot();
+  if (!document.querySelector('.wander-tile') && blocks) buildWander(blocks);
+  else {
+    renderDialSky();   // moon, daylight and caption as of now
+    syncWanderDial();
+  }
+  syncWanderLock(document.getElementById('wander-grid'), 'wander');
 }
 
 /* ══════════════════════════════════════════════════════════════
    THE DFOS GATE
-   Cosmetic only — see dfos-siwd.js. Locks Wander the Hours behind
-   Sign In With DFOS (scope=identity: proves *a* DFOS identity, nothing
-   about this project specifically). Wander the Seasons and Wander the
-   Weather are gated the same way, from seasons.js and weather.js.
+   Cosmetic only — see dfos-siwd.js. With DFOS_GATE on (nav.js),
+   picking a block in Wander the Hours waits for Sign In With DFOS
+   (scope=identity: proves *a* DFOS identity, nothing about this
+   project specifically); the pane and its dial don't. Wander the
+   Seasons and Wander the Weather are gated the same way.
 ══════════════════════════════════════════════════════════════ */
 
 const wanderOpenBtn = document.getElementById('wander-open');
 if (wanderOpenBtn) wanderOpenBtn.addEventListener('click', openWanderPane);
+// So is the hour's name over the reading: the dial is the hour at large.
+const blockNameBtn = document.getElementById('block-name');
+if (blockNameBtn) blockNameBtn.addEventListener('click', openWanderPane);
 
 window.addEventListener('dfossignin', e => {
   const intent = e.detail && e.detail.intent;

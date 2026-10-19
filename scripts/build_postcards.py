@@ -13,6 +13,8 @@ entry. Changing where a card leads means editing its row and running this
 again; the codes on cards already sent stay good.
 
 Columns in data/postcards.csv:
+  id            the card's permanent ID: pc- and its path, e.g. pc-w26-1 (see
+                the Identifiers section of the metadata notes)
   path          the short link after /c/, e.g. w26/1; becomes c/w26/1/index.html
   destination   the digital original (museum, library or archive page)
   backup        a second copy, in case the first link breaks
@@ -170,6 +172,10 @@ PAGE = '''<!DOCTYPE html>
 {dateline}
 {body}
 {turn}
+  <p class="postcard-follow">These cards are the first of <a href="/editions.html">Otherwise Editions</a>;
+    a new set follows each solstice and equinox. To hear when the next arrives,
+    subscribe to <a href="https://laurentia.substack.com" target="_blank"><em>Lectio Terra</em></a> on Substack.</p>
+
   <footer class="page-footer">
     <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
       <div class="line"></div>
@@ -378,6 +384,8 @@ def main():
             errors.append(f'{p!r}: path should look like w26/1')
         if p in seen:
             errors.append(f'{p}: listed twice')
+        if row.get('id') != 'pc-' + p.replace('/', '-'):
+            errors.append(f'{p}: id should be pc-{p.replace("/", "-")}, not {row.get("id")!r}')
         seen.add(p)
         for col in ('destination', 'backup', 'post', 'context'):
             if row[col] and urlparse(row[col]).scheme not in ('http', 'https'):
@@ -400,6 +408,9 @@ def main():
         print(f'wrote {page.relative_to(ROOT)}')
     for w in warnings:
         print(f'note: {w}')
+    # A card leaving draft joins the sitemap (draft pages are noindex).
+    import build_sitemap
+    build_sitemap.main()
 
 
 if __name__ == '__main__':

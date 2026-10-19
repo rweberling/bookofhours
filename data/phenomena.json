@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ph-0001",
+    "name": "Rain Clouds",
+    "latin": "Nimbostratus praecipitatio",
+    "wikidata": null
+  },
+  {
+    "id": "ph-0002",
+    "name": "Cambridge Argillite",
+    "latin": "Argillita cantabrigiensis",
+    "wikidata": null
+  },
+  { "id": "ph-0003", "name": "Sunspots", "latin": "Maculae solares", "wikidata": null },
+  { "id": "ph-0004", "name": "Dog Days", "latin": "Dies caniculares", "wikidata": null },
+  {
+    "id": "ph-0005",
+    "name": "Perseids",
+    "latin": "Lacrimae Sancti Laurentii",
+    "wikidata": null
+  }
+]

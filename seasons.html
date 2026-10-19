@@ -15,6 +15,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
+<!-- Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.) -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "512cda5e961b4191b6f08cbcb80fc315"}'></script>
 <!-- Google tag (gtag.js); display_mode tells home-screen visits from browser ones -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4407N365M"></script>
 <script>
@@ -28,6 +32,11 @@
 </script>
 <!-- /shared:head -->
 <meta name="description" content="Lectio Terra: seasonal species readings from The Earthly Book of Hours.">
+<meta property="og:title" content="The Current Season — The Earthly Hours">
+<meta property="og:description" content="Lectio Terra: seasonal species readings from The Earthly Book of Hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://earthlyhours.com/seasons.html">
+<!-- No fixed canonical link here: seasons.js adds one per reading (see setSeasonCanonical). -->
 <meta name="application-name" content="The Earthly Hours">
 <title>The Current Season — The Earthly Book of Hours</title>
 <link rel="stylesheet" href="css/styles.css">
@@ -67,7 +76,8 @@
 <main class="page keepsake-frame season-reading">
   <p class="publication-name">The Earthly Book of Hours</p>
   <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
-  <p class="block-subtitle" id="season-reading-subtitle"></p>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint"></button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
   <h1 class="block-name" id="season-reading-title">The Current Season</h1>
   <div class="season-reading-meta"><em id="season-reading-latin"></em></div>
   <article class="season-post" aria-live="polite">
@@ -94,7 +104,7 @@
     <div class="nav-hours-menu" id="nav-seasons-menu">
       <a href="seasons-incipit.html">Incipit</a>
       <a class="active" href="seasons.html">The Current Season</a>
-      <button class="wander-btn dfos-gated" id="season-wander-open" data-gated-label="Wander the Seasons">Wander the Seasons</button>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
     </div>
   </div>
   <span class="nav-divider">✦</span>
@@ -116,6 +126,7 @@
     <div class="nav-hours-menu nav-embed-menu" id="nav-projects-menu">
       <iframe data-src="https://app.dfos.com/embed/spaces/otherwise?desc=0" width="400" height="114" frameborder="0" title="Otherwise"></iframe>
       <a href="https://otherwise.dfos.com" target="_blank">Visit Otherwise</a>
+      <a href="editions.html">Otherwise Editions</a>
       <span class="install-divider" id="install-divider"></span>
       <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
       <p class="install-tip" id="install-tip"></p>
@@ -123,12 +134,13 @@
   </div>
 </nav>
 <!-- /shared:nav -->
-<div class="wander-pane" id="season-pane" role="dialog" aria-label="Wander the Seasons" aria-modal="true">
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
   <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
   <p class="wander-heading">The Seasons</p>
   <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
   <div class="season-dial-wrap" aria-hidden="true"><svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg></div>
   <p class="season-dial-caption" id="season-dial-caption"></p>
+  <p class="dial-legend" aria-hidden="true"><span class="dial-key"><span class="dial-key-star">✦</span>You are here</span><span class="dial-key"><span class="dial-key-quarter"></span>Solstice or equinox</span><span class="dial-key"><span class="dial-key-cross"></span>Cross-quarter day</span></p>
   <div class="species-grid species-season-groups" id="species-grid"></div>
 </div>
 <script type="module" src="dfos-siwd.js"></script>

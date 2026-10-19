@@ -58,8 +58,8 @@ def main():
                 usWinAscent=750, usWinDescent=250, fsSelection=0x40 | 0x80)
     fb.setupNameTable({
         'familyName': 'Earthly Star', 'styleName': 'Regular',
-        'copyright': 'Drawn for The Earthly Book of Hours',
-        'licenseDescription': 'Released with the site under CC0 1.0 (public domain dedication).',
+        'copyright': 'Copyright 2026 Ryan Weberling. Drawn for The Earthly Book of Hours.',
+        'licenseDescription': 'All rights reserved. See LICENSE at github.com/rweberling/bookofhours.',
     })
     fb.setupPost()
     fb.font.flavor = 'woff2'

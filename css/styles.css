@@ -503,6 +503,32 @@ body::before {
   margin: 26px auto; border-radius: 4px;
 }
 #season-reading-body figure { margin: 26px 0; }
+/* A video watched elsewhere: a card until it's played (wireVideoEmbeds() in seasons.js). */
+#season-reading-body .video-play,
+#season-reading-body .video-frame {
+  display: block; width: 100%; aspect-ratio: 16 / 9;
+  margin: 26px auto 0; border-radius: 4px;
+}
+#season-reading-body .video-play {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+  border: 0.5px solid var(--rule); background: color-mix(in oklab, var(--rule), transparent 70%);
+  color: var(--ink-light); cursor: pointer; font: inherit;
+  transition: background 0.3s ease;
+}
+#season-reading-body .video-play:hover,
+#season-reading-body .video-play:focus-visible { background: color-mix(in oklab, var(--rule), transparent 40%); }
+#season-reading-body .video-play-icon {
+  display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%;
+  border: 1px solid var(--accent); color: var(--accent); font-size: 20px; padding-left: 4px;
+}
+#season-reading-body .video-play-note {
+  font-family: var(--font-text); font-size: 13px; font-style: italic; color: var(--ink-faint);
+}
+#season-reading-body .video-frame { border: 0; }
+#season-reading-body video {
+  display: block; width: 100%; max-width: 100%; height: auto;
+  margin: 26px auto; border-radius: 4px; background: var(--rule);
+}
 /* A preformatted block from Substack (a poem set out with its own line
    breaks and indents): shown with that spacing kept. */
 #season-reading-body .preformatted { white-space: pre-wrap; }
@@ -708,6 +734,15 @@ body::before {
 /* "turn the page" leads on to the next card; a link here, not a button. */
 .postcard-turn { margin-top: 40px; }
 .postcard-turn a { text-decoration: none; }
+/* Above the footer on every card: where the cards come from, and how to
+   hear when the next set arrives. Quieter than the card's own note. */
+.postcard-follow {
+  max-width: 440px; margin: 36px auto 0; text-align: center;
+  font-family: var(--font-text); font-size: 13px; font-style: italic;
+  line-height: 1.7; color: var(--ink-faint);
+}
+.postcard-follow a { color: inherit; }
+.postcard-follow a:hover { color: var(--accent); }
 
 /* ── Quote ────────────────────────────────────────────────────── */
 .quote-block {
@@ -1082,8 +1117,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu a:hover,
 .nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
 
-.nav-hours-menu .wander-btn.is-locked { font-style: italic; }
-.nav-hours-menu .wander-btn.is-locked:hover { color: var(--gold); }
 
 /* The Reading Room: the DFOS space embed. Anchored to the trigger's right
    edge, since it sits at the right of the bar and is wider than the
@@ -1369,6 +1402,9 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   text-anchor: middle;
   dominant-baseline: middle;
 }
+/* The Hours dial's labels follow the ring on a textPath (ringText() in
+   hours.js), which positions them from the alphabetic baseline. */
+.dial-label { dominant-baseline: alphabetic; }
 .dial-label { font-size: 9px; font-style: italic; }
 .dial-label.active,
 .season-label.active { opacity: 1; fill: var(--ink); }
@@ -1446,16 +1482,20 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .turning-point rect, .turning-point circle { fill: currentColor; }
 .turning-point-quarter { opacity: 0.75; }
 .turning-point-cross { opacity: 0.5; }
-/* Size comes from seasons.js (smaller for cross-quarters), which also
-   offsets each curved baseline, so it stays alphabetic here. */
+/* Size comes from seasons.js, which also offsets each curved baseline,
+   so it stays alphabetic here. */
 .turning-point-label {
   font-family: var(--font-text);
   font-style: italic; letter-spacing: 0.04em;
   fill: currentColor;
   text-anchor: middle; dominant-baseline: alphabetic;
 }
-.season-now {
-  font-size: 9px; fill: var(--ink); opacity: 0.8;
+/* The ✦ "you are here" on both dials, ringed in the paper color so it
+   reads on any arc, the dark active one included. */
+.dial-now {
+  font-size: 11px; fill: var(--ink);
+  stroke: var(--bg); stroke-width: 2.5px; paint-order: stroke;
+  stroke-linejoin: round;
   text-anchor: middle; dominant-baseline: middle;
 }
 /* Wander the Hours: moon, night band, sunrise/sunset (renderDialSky in
@@ -1474,17 +1514,34 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   font-family: var(--font-text);
   font-size: 7.4px; font-style: italic; letter-spacing: 0.04em;
   fill: var(--ink-faint);
-  text-anchor: middle; dominant-baseline: middle;
+  text-anchor: middle; dominant-baseline: alphabetic;
 }
 .wander-dial-caption,
 .season-dial-caption {
   font-family: var(--font-text);
   font-size: 13px; font-style: italic; letter-spacing: 0.04em;
   color: var(--ink-faint);
-  margin-bottom: 40px; text-align: center;
+  margin-bottom: 10px; text-align: center;
   transition: color 3s ease;
   line-height: 1.7;
 }
+/* The key under each dial: its marks, small and quiet. */
+.dial-legend {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 4px 18px;
+  font-family: var(--font-text);
+  font-size: 11.5px; letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  margin-bottom: 40px; text-align: center;
+  transition: color 3s ease;
+}
+.dial-key { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.dial-key-star { color: var(--ink); font-size: 11px; }
+.dial-key-moon { width: 14px; height: 14px; }
+.dial-key-quarter, .dial-key-cross { display: inline-block; background: currentColor; }
+.dial-key-quarter { width: 4px; height: 4px; transform: rotate(45deg); opacity: 0.75; }
+.dial-key-cross { width: 3px; height: 3px; border-radius: 50%; opacity: 0.5; }
+.dial-key-day { display: inline-block; width: 14px; height: 4px; background: #d6b25a; opacity: 0.6; }
 
 /* ── Species cards (common name / Latin name) ───────────────────
    Deliberately distinct from .wander-tile — a different card
@@ -1647,10 +1704,26 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   background: var(--bg-deep);
   color: var(--ink);
 }
-/* "Or look outside" sits right under the pane's instruction, as its
+/* "Look outside" sits right under the pane's instruction, as its
    alternative; the instruction's usual gap moves below the button. */
 .wander-pane .wander-subheading:has(+ .weather-pane-look) { margin-bottom: 10px; }
 .wander-pane .weather-pane-look { margin: 0 0 30px; }
+
+/* With the DFOS gate on, a pane's grid waits behind this until the
+   visitor signs in (syncWanderLock in nav.js); the dial above it
+   stays open to everyone. */
+.wander-pane .wander-lock { font-style: italic; margin: 0 0 8px; }
+/* Under the lock, in parentheses: what a key is for (and, once signed
+   in, thanks). Quieter than the button. */
+.wander-pane .wander-lock-note {
+  max-width: 34em;
+  margin: 0 auto 30px;
+  font-family: var(--font-text);
+  font-size: 13px; font-style: italic;
+  line-height: 1.6; text-align: center;
+  color: var(--ink-faint);
+}
+.wander-pane [hidden] { display: none !important; }
 
 /* ── The Weather page (weather.html) ─────────────────────────────
    The whole page is the window: one image fills the viewport behind
@@ -1775,6 +1848,17 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   transition: color 3s ease;
 }
 .weather-quote-attr:not(:empty)::before { content: '— '; }
+/* Verse, wherever a reading is shown (readingHTML() in shared.js): a
+   line that runs over carries on 2em past where the line itself starts.
+   A poem's own indent arrives as --indent, a count of the &nbsp;s it was
+   written with (each about 0.21em in the reading face). A stanza break
+   is a little under a line. */
+.verse-line {
+  display: block;
+  padding-left: calc(var(--indent, 0) * 0.21em + 2em);
+  text-indent: -2em;
+}
+.verse-gap { display: block; height: 1em; }
 
 /* The picture's credit, on its own band across the foot of the card —
    the reading above belongs to the card, this belongs to the view. */
@@ -1846,10 +1930,10 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   }
   /* Phone sizes — the desktop ones above are tuned for reading at
      arm's length over a large picture; these were already comfortable. */
-  .weather-card { --card-pad-x: 34px; --card-pad-b: 22px; padding-top: 28px; }
+  .weather-card { --card-pad-x: 30px; --card-pad-b: 22px; padding-top: 28px; }
   .weather-card .publication-name { font-size: 9px; letter-spacing: 0.32em; white-space: normal; }
   .weather-readout { font-size: 14px; }
-  .weather-quote-text { font-size: 18px; }
+  .weather-quote-text { font-size: 17px; }
   .weather-quote-attr, .weather-caption { font-size: 13.5px; }
   .weather-card.is-folded .weather-caption { font-size: 12.5px; }
   .weather-card .weather-actions { font-size: 12px; gap: 7px; letter-spacing: 0.14em; }
@@ -1888,6 +1972,18 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 }
 .page-action:hover { color: var(--accent); }
 a.page-action { text-decoration: none; }
+
+/* A card's heading that opens its section's pane — the hour's name
+   (Wander the Hours), the season's (Wander the Seasons), the weather's
+   conditions line (the station model). Looks like the heading it is
+   until hovered. */
+.pane-link {
+  background: none; border: none; cursor: pointer;
+  font: inherit; color: inherit; letter-spacing: inherit; text-align: inherit;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+.pane-link:hover, .pane-link:focus-visible { color: var(--accent); }
 
 /* An incipit with no subtitle: keep the subtitle's gap under the title. */
 .page-title + .content-block { margin-top: 22px; }
@@ -2032,6 +2128,14 @@ a.page-action { text-decoration: none; }
 
 .sources-page .citation em { font-style: italic; }
 
+/* Links written into a citation or caption as the post gives it. */
+.sources-page .citation a {
+  color: inherit; text-decoration: underline;
+  text-decoration-color: var(--accent); text-underline-offset: 2px;
+}
+
+.sources-page .citation a:hover { color: var(--accent); }
+
 .sources-page .entry-links {
   margin-top: 5px;
   padding-left: 1.5em;
@@ -2131,6 +2235,10 @@ a.page-action { text-decoration: none; }
 .sources-page .week { padding: 12px 0; border-bottom: 0.5px solid var(--rule); }
 
 .sources-page .week:last-child { border-bottom: none; }
+
+.sources-page .week .category-label { margin: 18px 0 4px; }
+
+.sources-page .week .entry:last-child { border-bottom: none; }
 
 .sources-page .week-title a {
   font-family: var(--font-text);

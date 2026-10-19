@@ -57,38 +57,6 @@ function currentSeason(date = new Date()) {
   return SEASONS.find(season => season.months.includes(month)).key;
 }
 
-const SEASONAL_DATA = {
-  spring: {
-    label: 'Spring',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Pink lady\'s slipper', 'Cypripedium acaule'], ['Common lilac', 'Syringa vulgaris'], ['Ostrich fern', 'Matteuccia struthiopteris'], ['Red maple', 'Acer rubrum'], ['Trillium', 'Trillium grandiflorum'], ['Columbine', 'Aquilegia canadensis'], ['Mayapple', 'Podophyllum peltatum'], ['Jack-in-the-pulpit', 'Arisaema triphyllum'], ['Bloodroot', 'Sanguinaria canadensis'], ['Dutchman\'s breeches', 'Dicentra cucullaria'], ['Serviceberry', 'Amelanchier canadensis'], ['Spring beauty', 'Claytonia virginica']
-    ]
-  },
-  summer: {
-    label: 'Summer',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Butterfly weed', 'Asclepias tuberosa'], ['Common reed', 'Phragmites australis'], ['Sheet moss', 'Hypnum imponens'], ['Black-eyed Susan', 'Rudbeckia hirta'], ['Wild bergamot', 'Monarda fistulosa'], ['Joe-Pye weed', 'Eutrochium purpureum'], ['Queen Anne\'s lace', 'Daucus carota'], ['Milkweed', 'Asclepias syriaca'], ['Blue vervain', 'Verbena hastata'], ['Bee balm', 'Monarda didyma'], ['Yarrow', 'Achillea millefolium'], ['Fireweed', 'Chamerion angustifolium']
-    ]
-  },
-  autumn: {
-    label: 'Autumn',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Sugar maple', 'Acer saccharum'], ['Paper birch', 'Betula papyrifera'], ['Corn', 'Zea mays'], ['White oak', 'Quercus alba'], ['American beech', 'Fagus grandifolia'], ['Sumac', 'Rhus typhina'], ['Goldenrod', 'Solidago canadensis'], ['New England aster', 'Symphyotrichum novae-angliae'], ['Pawpaw', 'Asimina triloba'], ['Black walnut', 'Juglans nigra'], ['Highbush blueberry', 'Vaccinium corymbosum'], ['Cranberry', 'Vaccinium macrocarpon']
-    ]
-  },
-  winter: {
-    label: 'Winter',
-    subtitle: 'Species drawn from Lectio Terra, this season',
-    species: [
-      ['Witch hazel', 'Hamamelis virginiana'], ['Red currant', 'Ribes rubrum'], ['Eastern hemlock', 'Tsuga canadensis'], ['White pine', 'Pinus strobus'], ['Red cedar', 'Juniperus virginiana'], ['Winterberry', 'Ilex verticillata'], ['Mountain laurel', 'Kalmia latifolia'], ['Christmas fern', 'Polystichum acrostichoides'], ['American holly', 'Ilex opaca'], ['Paper wasp gall', 'Rhopalomyia solidaginis'], ['Snowberry', 'Symphoricarpos albus'], ['Juniper', 'Juniperus communis']
-    ]
-  }
-};
-
-
 // --- Dates and text -----------------------------------------------------------
 // "3:45 pm"
 function formatTime(d) {
@@ -313,30 +281,40 @@ function weatherMatchWeight(item, weather) {
   return WEATHER_BASE_WEIGHT + weatherMatchCount(item, weather) ** 2;
 }
 
-// Shared by hours.js (quotes/images) and weather.js (window views).
+// The season leans the Hours the same gentle way: a piece tagged with
+// the season it is now is three times as likely; any other piece, untagged
+// or tagged for other seasons, keeps the ordinary weight. Season tags only
+// ever add weight, never take it away, so a piece is never pushed out of
+// sight for most of the year (with only a few pieces to an hour, a penalty
+// out of season would all but hide it).
+const SEASON_MATCH_FACTOR = 3;
+function seasonFactor(item, season) {
+  return Array.isArray(item.seasons) && item.seasons.includes(season) ? SEASON_MATCH_FACTOR : 1;
+}
+
+// hours.js's picks: weather and season both lean the odds.
+function pickHoursAware(items, excludeFn) {
+  const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
+  const season = currentSeason();
+  return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather) * seasonFactor(item, season), excludeFn);
+}
+
+// weather.js's window views (and any page that leans on weather alone).
 function pickWeatherAware(items, excludeFn) {
   const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
   if (!weather.length) return pickExcluding(items, excludeFn);
   return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather), excludeFn);
 }
 
-// --- Species-card / post-title rework -------------------------------------
-// STOPGAP: real lectio-data.json posts carry no separate species/latin/
-// readings fields — only a raw weekly title string, e.g.
-//   "Week 12: Sugar Maple, Annika Hansteen-Izora, Walter H. Crockett"
-// This parses that title client-side so cards/reading pages can lead with
-// the species name instead of the full post title. It's a stopgap because
-// it's guessing structure from a string built for a different (weekly-post)
-// context. THE DURABLE FIX is to add real `species`, `latin`, and
-// `readings` fields at the point lectio-data.json is generated (or by hand,
-// directly in the file), so this parsing (and its "Week N:" / comma-list
-// assumptions) can be deleted.
+// --- Species cards and reading pages ----------------------------------------
+// A post's subject (its species or phenomenon) lives in data/species.json
+// or data/phenomena.json; the post names it by ID ("subject"), and
+// loadLectioData() below joins the two. A post without a subject yet (a
+// new import) falls back to its title, parsed here.
 //
 // `readings` names the 2-3 writers whose work is paired with each post —
 // deliberately not "contributors," since it's scoped to written readings
-// only. Artists/images are a separate, not-yet-built concern; if that ever
-// gets its own field, it'll be additive (e.g. `artists`), not a rename of
-// this one.
+// only.
 //
 // Expected shape: "<label>: <Species Name>, <Reading 1>, <Reading 2>, ..."
 // Falls back gracefully (whole title as species, no readings) if the
@@ -373,70 +351,143 @@ function creditLine(readings) {
   return readings.join(', ');
 }
 
-// Latin-name lookup, keyed by lowercased common name, built from the
-// hand-curated SEASONAL_DATA species lists above. Only covers species that
-// happen to match one of those ~48 entries — real posts outside that list
-// fall back to showing the credit line instead of a Latin name. That's a
-// known, visible limitation of the stopgap, not a bug: the durable fix
-// (real `latin` field in lectio-data.json) covers every post, not just the
-// hand-curated sample.
-const SPECIES_LATIN_LOOKUP = new Map();
-SEASON_KEYS.forEach(key => {
-  SEASONAL_DATA[key].species.forEach(([common, latin]) => {
-    SPECIES_LATIN_LOOKUP.set(common.toLowerCase(), latin);
-  });
-});
-
-// Shared by hours.js's species grid and seasons.js's reading page — same
-// species/latin/readings extraction, so a parsing-edge-case fix doesn't
-// have to be made twice (or, worse, made in only one of the two and left
-// to quietly disagree with the other for the same post).
-//
-// isRealEntry distinguishes a real fetched lectio-data.json entry from
-// hours.js's fallback-sample entries (SEASON_SPECIES, used only if the
-// fetch fails) — the fallback entries already carry a clean title/subtitle
-// and never need the raw-title parse. seasons.js only ever renders real
-// entries, so it always passes true.
-function resolveSpeciesFields(entry, isRealEntry) {
-  if (isRealEntry && entry.species) {
-    return { species: entry.species, latin: entry.latin || null, readings: entry.readings || [] };
+// The names a species card and a reading page show for a post: its
+// subject record's common and scientific (or Latin) name, else what its
+// title gives.
+function resolveSpeciesFields(entry) {
+  const parsed = parsePostTitle(entry.title);
+  const readings = entry.readings || parsed.readings;
+  const subject = entry.subjectRecord;
+  if (subject) {
+    return { species: subject.name, latin: subject.scientific || subject.latin || null, readings };
   }
-  if (isRealEntry) {
-    const parsed = parsePostTitle(entry.title);
-    return {
-      species: parsed.species,
-      readings: parsed.readings,
-      latin: SPECIES_LATIN_LOOKUP.get(parsed.species.toLowerCase()) || null
-    };
-  }
-  return { species: entry.title, latin: entry.subtitle || null, readings: [] };
+  return { species: parsed.species, latin: null, readings };
 }
 
-// Shared by hours.js (species grid) and seasons.js (reading page) — one
-// fetch+error path instead of two copies that could drift (different
-// error copy, different caching, a future retry/timeout added to one and
-// not the other). Cached per page load: repeatedly opening the species
-// grid, or anything else that calls this again, reuses the same promise
-// instead of re-fetching.
+// The Lectio Terra posts, each with its subject record joined on as
+// subjectRecord. Shared by seasons.js and sources.js, and cached per page
+// load. If the species files can't be loaded, the posts still are, and
+// fall back to their titles.
 let lectioDataPromise = null;
 function loadLectioData() {
   if (!lectioDataPromise) {
-    lectioDataPromise = fetch('lectio-data.json').then(response => {
-      if (!response.ok) throw new Error(`Unable to load Lectio Terra posts (${response.status}).`);
+    const getJSON = (url, what) => fetch(url).then(response => {
+      if (!response.ok) throw new Error(`Unable to load ${what} (${response.status}).`);
       return response.json();
     });
+    const subjects = Promise.all([
+      getJSON('data/species.json', 'data/species.json'),
+      getJSON('data/phenomena.json', 'data/phenomena.json')
+    ]).then(([species, phenomena]) => new Map([...species, ...phenomena].map(r => [r.id, r])))
+      .catch(error => { console.error(error); return new Map(); });
+    lectioDataPromise = Promise.all([getJSON('data/lectio-data.json', 'Lectio Terra posts'), subjects])
+      .then(([data, byId]) => {
+        Object.values(data.seasons || {}).forEach(entries => entries.forEach(entry => {
+          if (entry.subject && byId.has(entry.subject)) entry.subjectRecord = byId.get(entry.subject);
+        }));
+        return data;
+      });
+    lectioDataPromise.catch(() => { lectioDataPromise = null; });
   }
   return lectioDataPromise;
 }
+
+// --- A Lectio Terra post, rebuilt from the collection ------------------------
+// A post's "body" lists its pieces in order (scripts/build_post_manifests.py):
+// headings, rules, figures (image records), passages (reading records) and
+// runs of its own writing (writing records). renderPostBody() turns that list
+// back into the post's HTML, in the markup the Seasons page expects: each
+// passage a one-item list followed by its citation, figures numbered in
+// order, footnotes after everything else.
+
+// The top-level blocks of some HTML, as scripts/post_html.py splits it:
+// each element, and each run of text that isn't only whitespace.
+function topLevelBlocks(html) {
+  const template = document.createElement('template');
+  template.innerHTML = html || '';
+  return [...template.content.childNodes]
+    .filter(node => node.nodeType === 1 || (node.nodeType === 3 && node.textContent.trim()))
+    .map(node => node.nodeType === 1 ? node.outerHTML : escapeHTML(node.textContent));
+}
+
+function figureHTML(image, number) {
+  const display = image.display || {};
+  const label = display.unlabelled ? '' : `Fig. ${number}. `;
+  const caption = display.noCaption ? '' : `<figcaption>${label}${image.caption || ''}</figcaption>`;
+  // The size the post sets it at (images narrower than the column stay so).
+  const size = display.size ? ` width="${display.size[0]}" height="${display.size[1]}"` : '';
+  const youtube = (image.file || '').match(/youtube\.com\/watch\?v=([\w-]+)/);
+  if (youtube) {
+    const title = escapeHTML(plainText(image.caption || '').split(',')[0].replace(/[\u201c\u201d"]/g, ''));
+    return `<figure class="video-embed"><button type="button" class="video-play" data-youtube="${youtube[1]}" `
+      + `aria-label="Play the video: ${title}"><span class="video-play-icon" aria-hidden="true">\u25b6</span>`
+      + `<span class="video-play-note">Plays from YouTube when you press play</span></button>${caption}</figure>`;
+  }
+  if (image.media === 'video') {
+    const source = (src, type) => src ? `<source src="${escapeHTML(src)}" type="${type}">` : '';
+    return `<figure><video poster="${escapeHTML(image.poster || '')}"${size} controls muted loop playsinline preload="metadata">`
+      + `${source(image.file, 'video/mp4')}${source(image.fallback, 'video/webm')}</video>${caption}</figure>`;
+  }
+  return `<figure><a target="_blank" href="${escapeHTML(image.link || image.file)}">`
+    + `<img src="${escapeHTML(image.file)}"${size} alt=""></a>${caption}</figure>`;
+}
+
+function renderPostBody(post, byId) {
+  let figures = 0;
+  const footnotes = [];
+  const seen = new Set();
+  const figure = id => {
+    const image = byId.get(id);
+    if (!image) return '';
+    if (!(image.display && image.display.noCaption)) figures += 1;
+    return figureHTML(image, figures);
+  };
+  const noteFrom = record => {
+    if (seen.has(record.id)) return;
+    seen.add(record.id);
+    (record.footnotes || []).forEach(note => footnotes.push(note));
+  };
+  const parts = (post.body || []).map(item => {
+    if (item.heading) return `<${item.tag || 'h3'}>${escapeHTML(item.heading)}</${item.tag || 'h3'}>`;
+    if (item.hr) return '<hr>';
+    if (item.image) return figure(item.image);
+    if (item.reading) {
+      const reading = byId.get(item.reading);
+      if (!reading) return '';
+      noteFrom(reading);
+      const inside = (item.figures || []).map(figure).join('');
+      return `<ol><li>${readingHTML(reading)}${inside}</li></ol>${(reading.citation && reading.citation.display) || ''}`;
+    }
+    if (item.writing) {
+      const piece = byId.get(item.writing);
+      if (!piece) return '';
+      noteFrom(piece);
+      let html = topLevelBlocks(piece.text).slice(item.blocks[0], item.blocks[1]).join('');
+      if (item.figures) {
+        // At the end of the list's last item, before any empty paragraphs.
+        const inside = item.figures.map(figure).join('');
+        html = html.replace(/((?:<p>\s*<\/p>)*<\/li>\s*<\/[uo]l>\s*)$/, `${inside}$1`);
+      }
+      return html;
+    }
+    return '';
+  });
+  footnotes.sort((a, b) => a.marker - b.marker);
+  const notes = footnotes.map(note =>
+    `<a href="#footnote-anchor-${note.marker}" target="_self">${note.marker}</a>${note.text}`);
+  return parts.join('') + notes.join('');
+}
+
 // --- The collection ---------------------------------------------------------
-// data/ holds the collection itself: readings, images, editorial writing and
-// the vocabularies their tags point to (hours, seasons, weather, subjects),
+// data/ holds the collection itself: readings (others' words), images,
+// writing (the site's own words: versicles, phenomenon lines) and the
+// vocabularies their tags point to (hours, seasons, weather),
 // plus site.json, the site's settings (such as the suggested-edition link).
 // Pages read it through loadCollection() and reshape it with the views
 // below into the forms their code already expects, so there is one set of
 // files to edit and nothing generated in between. Records marked
 // "draft": true are kept in the files but never shown.
-const COLLECTION_FILES = ['readings', 'images', 'editorial', 'vocab', 'site'];
+const COLLECTION_FILES = ['readings', 'images', 'writing', 'vocab', 'site'];
 let collectionPromise = null;
 function loadCollection() {
   if (!collectionPromise) {
@@ -445,10 +496,10 @@ function loadCollection() {
         if (!response.ok) throw new Error(`Unable to load data/${name}.json (${response.status}).`);
         return response.json();
       })
-    )).then(([readings, images, editorial, vocab, site]) => ({
+    )).then(([readings, images, writing, vocab, site]) => ({
       readings: readings.filter(r => !r.draft),
       images: images.filter(i => !i.draft),
-      editorial: editorial.filter(e => !e.draft),
+      writing: writing.filter(w => !w.draft),
       vocab,
       site
     }));
@@ -472,15 +523,33 @@ function taggedWith(record, scheme, id) {
   return !!(record.tags && Array.isArray(record.tags[scheme]) && record.tags[scheme].includes(id));
 }
 
+// A reading as the page shows it. Verse ("display": {"verse": true}) is
+// set one block to a line, so a line too long for the page carries on
+// under a hanging indent, as in a printed book, rather than wrapping flush
+// and passing for a new line. Its text is in the house verse form
+// (scripts/verse.py): lines joined by <br>, a blank line between stanzas,
+// and the poem's own indents as leading &nbsp;s, which become the line's
+// --indent so a run-on always sits deeper than any of them. Prose is
+// shown as written.
+function readingHTML(reading) {
+  if (!(reading.display && reading.display.verse)) return reading.text;
+  return reading.text.split(/<br\s*\/?>/i).map(line => {
+    const lead = line.match(/^(?:&nbsp;)*/)[0];
+    if (!line.slice(lead.length).trim()) return '<span class="verse-gap"></span>';
+    return `<span class="verse-line" style="--indent: ${lead.length / 6}">${line.slice(lead.length)}</span>`;
+  }).join('');
+}
+
 // The shapes the page code reads: a quote is { text, attr, weather } and
 // an image { src, caption, weather, cardPosition, unset }. attr is the
 // hand-written display citation.
 function quoteView(reading) {
   return {
     id: reading.id,
-    text: reading.text,
+    text: readingHTML(reading),
     attr: reading.citation ? reading.citation.display : '',
     weather: (reading.tags && reading.tags.weather) || [],
+    seasons: (reading.tags && reading.tags.seasons) || [],
     unset: !!(reading.display && reading.display.weatherUnset)
   };
 }
@@ -492,35 +561,45 @@ function imageView(image) {
     src: image.file,
     caption: image.caption || '',
     weather: (image.tags && image.tags.weather) || [],
+    seasons: (image.tags && image.tags.seasons) || [],
     cardPosition: display.cardPosition,
     unset: !!display.weatherUnset
   };
 }
 
+// Where a reading or image appears on the site is its "shownIn": the
+// Hours, the Weather or the Seasons, one only. Its tags only describe it
+// (its hours, seasons, weather, species), so tagging a piece never moves it.
+function shownIn(record, place) {
+  return record.shownIn === place;
+}
+
 // The hours page's blocks, in vocabulary order: each watch with its
-// versicle and phenomena, and every reading and image tagged for it.
+// versicle and phenomena, and every reading and image shown in the Hours
+// and tagged for that watch.
 function hoursView(collection) {
   return collection.vocab.hours.map(hour => {
-    const note = collection.editorial.find(e => e.kind === 'hour-note' && e.about && (e.about.hours || []).includes(hour.id)) || {};
+    const writing = kind => collection.writing
+      .filter(w => w.kind === kind && shownIn(w, 'hours') && taggedWith(w, 'hours', hour.id));
+    const versicle = writing('versicle')[0];
     return {
       key: hour.id,
       name: hour.label,
       cssClass: `block-${hour.id}`,
       startHour: hour.startHour,
       subtitle: hour.subtitle,
-      versicle: note.versicle || '',
-      phenomena: note.phenomena || [],
-      quotes: collection.readings.filter(r => taggedWith(r, 'hours', hour.id)).map(quoteView),
-      images: collection.images.filter(i => taggedWith(i, 'hours', hour.id)).map(imageView)
+      versicle: versicle ? versicle.text : '',
+      phenomena: writing('phenomenon').sort((a, b) => (a.place || 0) - (b.place || 0)).map(w => w.text),
+      quotes: collection.readings.filter(r => shownIn(r, 'hours') && taggedWith(r, 'hours', hour.id)).map(quoteView),
+      images: collection.images.filter(i => shownIn(i, 'hours') && taggedWith(i, 'hours', hour.id)).map(imageView)
     };
   });
 }
 
-// The weather page's window: every image and reading tagged with a
-// condition, plus the "unset" ones shown before any condition is chosen.
+// The weather page's window: every image and reading shown in the
+// Weather, including the "unset" ones shown before any condition is chosen.
 function weatherView(collection) {
-  const onWeatherPage = record => ((record.tags && record.tags.weather) || []).length > 0
-    || !!(record.display && record.display.weatherUnset);
+  const onWeatherPage = record => shownIn(record, 'weather');
   return {
     images: collection.images.filter(onWeatherPage).map(imageView),
     readings: collection.readings.filter(onWeatherPage).map(quoteView)

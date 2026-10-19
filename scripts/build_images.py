@@ -103,6 +103,9 @@ def credits():
     """The credit to embed in each master's copies, keyed by master path."""
     out = {}
     for rec in datafile.load('images'):
+        # A Lectio Terra figure keeps the credit of its post, below.
+        if rec.get('lectio'):
+            continue
         links = rec.get('links') or []
         source = ((rec.get('source') or {}).get('url')
                   or next((l['url'] for l in links if l['role'] == 'cited'), None)
@@ -115,7 +118,7 @@ def credits():
             'rights': rec.get('rights'),
             'source': source,
         }
-    lectio = json.loads((ROOT / 'lectio-data.json').read_text())
+    lectio = json.loads((ROOT / 'data' / 'lectio-data.json').read_text())
     entries = [e for group in lectio['seasons'].values() for e in group] + lectio.get('unassigned', [])
     for entry in entries:
         for img in entry.get('images') or []:
@@ -170,7 +173,8 @@ def credit_key(meta):
 
 def masters():
     """Every image the site shows, as paths from the site root."""
-    paths = {record['file'] for record in datafile.load('images')}
+    # Videos (media: video, in video/) have no web copies to make.
+    paths = {record['file'] for record in datafile.load('images') if record.get('media') != 'video'}
     paths.update(f'images/lectio-terra/{p.name}'
                  for p in (ROOT / 'images/lectio-terra').iterdir() if p.is_file())
     return sorted(paths)

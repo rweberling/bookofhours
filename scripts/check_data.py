@@ -6,22 +6,26 @@ Usage:
   python3 scripts/check_data.py --gaps        # ...and the core gaps by record
   python3 scripts/check_data.py --all --gaps  # ...including research details
 
-Errors are things that would break the site or the data's reuse: duplicate
-IDs, tags that aren't in data/vocab.json, missing image files, malformed
+Errors are things that would break the site or the data's reuse: IDs
+that are missing, malformed, duplicated or retired (across the collection,
+the Lectio Terra posts and the postcards, aliases included), links between
+them that point nowhere, tags that aren't in data/vocab.json, missing image files, malformed
 dates, and embedded editions or people whose copies disagree. The script
 exits with status 1 when there are any.
 
 Gaps are fields not yet filled in. They never fail the check. Core gaps
 matter for the site and for rights: a bibliography line, a rights
 statement, and a way for readers to reach the work (a cited link or a
-suggested edition). Research details (page numbers, publishers, edition
-dates, holding institutions, Wikidata IDs) are reported only with --all.
+suggested edition). Research details (a reading's work title, date
+written and page or exact link; publishers, edition dates, holding
+institutions, Wikidata IDs) are reported only with --all.
 
 Nothing here writes files. The site reads data/ directly (loadCollection()
 in shared.js).
 """
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -54,7 +58,22 @@ def isbn13_valid(isbn):
     return (10 - total % 10) % 10 == int(isbn[12])
 
 
-CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition'}
+CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition', 'subject (species or phenomenon)'}
+
+
+# One ID format per kind of record.
+ID_FORMS = {
+    'r': re.compile(r'^r-\d{4}$'), 'i': re.compile(r'^i-\d{4}$'), 'lt': re.compile(r'^lt-\d{4}$'),
+    'w': re.compile(r'^w-\d{4}$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
+    'sp': re.compile(r'^sp-\d{4}$'), 'ph': re.compile(r'^ph-\d{4}$'),
+}
+# Where a reading, image or piece of writing can be shown on the site.
+SHOWN_IN = ('hours', 'weather', 'seasons')
+# The kinds of the site's own writing (data/writing.json). A new genre is
+# a new kind here, not a new kind of ID.
+WRITING_KINDS = ('versicle', 'phenomenon', 'note', 'headnote', 'supplementum')
+# A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
+SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
 
 
 def load(name):
@@ -67,23 +86,89 @@ def main():
     parser.add_argument('--all', action='store_true', help='include research details, not just core gaps')
     args = parser.parse_args()
 
-    readings, images, editorial, vocab = (load(n) for n in ('readings', 'images', 'editorial', 'vocab'))
+    readings, images, writing, vocab = (load(n) for n in ('readings', 'images', 'writing', 'vocab'))
+    species, phenomena = load('species'), load('phenomena')
     errors = []
     gaps = defaultdict(list)
 
-    # IDs are unique across the whole collection.
+    # IDs: neutral and permanent, one format per kind (see the Identifiers
+    # section of the metadata notes), unique across everything, aliases
+    # (the old IDs they replaced) included, and never one that's retired.
+    # The old ed- IDs of the hour notes live on as aliases of the versicles.
+    lectio = json.loads((DATA / 'lectio-data.json').read_text())
+    posts = [e for items in lectio.get('seasons', {}).values() for e in items]
+    with (DATA / 'postcards.csv').open(encoding='utf-8', newline='') as f:
+        cards = list(csv.DictReader(f))
+    retired_path = DATA / 'retired-ids.json'
+    retired = set(json.loads(retired_path.read_text())) if retired_path.exists() else set()
     seen = {}
-    for kind, records in (('reading', readings), ('image', images), ('editorial', editorial)):
+    for kind, records, form in (('reading', readings, ID_FORMS['r']), ('image', images, ID_FORMS['i']),
+                                ('writing', writing, ID_FORMS['w']), ('Lectio Terra post', posts, ID_FORMS['lt']),
+                                ('postcard', cards, ID_FORMS['pc']), ('species', species, ID_FORMS['sp']),
+                                ('phenomenon', phenomena, ID_FORMS['ph'])):
         for rec in records:
             rid = rec.get('id')
             if not rid:
                 errors.append(f'{kind} without an id: {str(rec)[:80]}')
-            elif rid in seen:
-                errors.append(f'duplicate id {rid}')
-            seen[rid] = kind
+                continue
+            if not form.match(rid):
+                errors.append(f'{kind} id {rid} is not in the form {form.pattern}')
+            if rid in retired:
+                errors.append(f'{rid} is a retired id; give the {kind} a new one')
+            for name in [rid] + list(rec.get('aliases') or []):
+                if name in seen:
+                    errors.append(f'duplicate id {name} ({seen[name]} and {kind})')
+                seen[name] = kind
+
+    # Links between them point somewhere: Seasons links in the posts and
+    # on the postcards name a post that exists, in the season it's in.
+    post_place = {(season, e['id']) for season, items in lectio.get('seasons', {}).items() for e in items}
+    linked = [(e['id'], m.group(1), m.group(2)) for e in posts
+              for m in SEASONS_LINK.finditer(e.get('bodyHtml') or '')]
+    linked += [(c['id'], m.group(1), m.group(2)) for c in cards
+               for m in SEASONS_LINK.finditer(c.get('post') or '')]
+    for owner, season, target in linked:
+        if (season, target) not in post_place:
+            errors.append(f'{owner}: links to Seasons entry {target} in {season}, which is not there')
+
+    # Each post's subject is a species or phenomenon record, whose names
+    # the Seasons page shows; the post doesn't keep a copy of them.
+    subjects = {r['id'] for r in species + phenomena}
+    for e in posts:
+        for field in ('species', 'latin'):
+            if field in e:
+                errors.append(f'{e["id"]}: "{field}" belongs on its subject record in data/species.json '
+                              'or data/phenomena.json, not on the post')
+        if not e.get('subject'):
+            gaps[e['id']].append('subject (species or phenomenon)')
+        elif e['subject'] not in subjects:
+            errors.append(f'{e["id"]}: subject {e["subject"]} is not in data/species.json or data/phenomena.json')
+    for r in species + phenomena:
+        if not r.get('wikidata'):
+            gaps[r['id']].append('Wikidata ID')
+        if r['id'].startswith('sp-') and not r.get('gbif'):
+            gaps[r['id']].append('GBIF ID')
+
+    # Passages, figures and writing copied from Lectio Terra posts
+    # (copy_lectio.py) name a post that exists, each piece of it once.
+    post_ids = {e['id'] for e in posts}
+    for records, piece in ((readings, 'passage'), (images, 'figure'), (writing, 'piece of writing')):
+        copied = {}
+        for r in records:
+            source = r.get('lectio')
+            if not source:
+                continue
+            key = (source.get('post'), r.get('kind'), source.get('place'))
+            if key[0] not in post_ids:
+                errors.append(f'{r["id"]}: copied from Lectio Terra post {key[0]}, which is not there')
+            if key in copied:
+                errors.append(f'{r["id"]}: the same {piece} as {copied[key]} ({key[0]})')
+            copied[key] = r['id']
 
     # Tags point at the vocabularies.
     schemes = {name: {c['id'] for c in concepts} for name, concepts in vocab.items()}
+    schemes['species'] = {r['id'] for r in species}
+    schemes['phenomena'] = {r['id'] for r in phenomena}
     def check_tags(rid, tags):
         for scheme, values in (tags or {}).items():
             if scheme not in schemes:
@@ -92,10 +177,83 @@ def main():
             for v in values:
                 if v not in schemes[scheme]:
                     errors.append(f'{rid}: "{v}" is not in the {scheme} vocabulary')
-    for rec in readings + images:
+    for rec in readings + images + writing:
         check_tags(rec['id'], rec.get('tags'))
-    for rec in editorial:
-        check_tags(rec['id'], rec.get('about'))
+
+    # Each reading, image and piece of writing is shown in one place on
+    # the site, and has what that place needs: an hour to be shown at, a
+    # weather condition (or the unset view), or the Lectio Terra post it
+    # comes from.
+    for rec in readings + images + writing:
+        rid, place, tags = rec['id'], rec.get('shownIn'), rec.get('tags') or {}
+        if place not in SHOWN_IN:
+            errors.append(f'{rid}: shownIn is {place!r}; it must be one of {", ".join(SHOWN_IN)}')
+        elif place == 'hours' and not tags.get('hours'):
+            errors.append(f'{rid}: shown in the Hours, but tagged with no hour to show it at')
+        elif place == 'weather' and not (tags.get('weather') or (rec.get('display') or {}).get('weatherUnset')):
+            errors.append(f'{rid}: shown in the Weather, but tagged with no condition (or display.weatherUnset)')
+        elif place == 'seasons' and not rec.get('lectio'):
+            errors.append(f'{rid}: shown in the Seasons, but not from a Lectio Terra post ("lectio")')
+
+    # Verse is held in one form (lines joined by <br>, one blank line
+    # between stanzas, indents as leading &nbsp;s), which the pages set out
+    # line by line; scripts/verse.py puts a reading into it.
+    from verse import in_verse_form
+    for r in readings:
+        if (r.get('display') or {}).get('verse'):
+            problem = in_verse_form(r.get('text') or '')
+            if problem:
+                errors.append(f'{r["id"]}: marked as verse, but {problem}; run: python3 scripts/verse.py {r["id"]}')
+
+    # Writing: a known kind and some text; in the Hours, one versicle per
+    # hour, and its phenomenon lines numbered 1, 2, 3... by place.
+    per_hour = defaultdict(lambda: defaultdict(list))
+    for w in writing:
+        if w.get('kind') not in WRITING_KINDS:
+            errors.append(f'{w["id"]}: kind {w.get("kind")!r} is not one of {", ".join(WRITING_KINDS)}')
+        if not (w.get('text') or '').strip():
+            errors.append(f'{w["id"]}: no text')
+        if w.get('shownIn') == 'hours' and not w.get('draft'):
+            for hour in (w.get('tags') or {}).get('hours') or []:
+                per_hour[hour][w.get('kind')].append(w)
+    # A post's body (its pieces in order, which the Seasons page rebuilds
+    # it from) names each of its passages, figures and pieces of writing,
+    # each passage and figure once, and nothing from another post.
+    by_id = {r['id']: r for r in readings + images + writing}
+    for e in posts:
+        if 'body' not in e:
+            continue
+        named = []
+        for item in e['body']:
+            named += [item.get('reading'), item.get('image'), item.get('writing')] + item.get('figures', [])
+        named = [n for n in named if n]
+        for n in named:
+            if n not in by_id or (by_id[n].get('lectio') or {}).get('post') != e['id']:
+                errors.append(f'{e["id"]}: its body names {n}, which is not one of its pieces')
+        mine = {r['id'] for r in readings + images + writing if (r.get('lectio') or {}).get('post') == e['id']}
+        for n in sorted(mine - set(named)):
+            errors.append(f'{e["id"]}: {n} is one of its pieces, but its body leaves it out')
+        for n in {n for n in named if named.count(n) > 1 and not n.startswith('w-')}:
+            errors.append(f'{e["id"]}: its body names {n} more than once')
+
+    # Footnotes belong to the piece their references are in (a piece of
+    # writing, or a reading): each has a marker and text, and the piece
+    # refers to it.
+    for rec in readings + writing:
+        markers = [n.get('marker') for n in rec.get('footnotes') or []]
+        for n in rec.get('footnotes') or []:
+            if not isinstance(n.get('marker'), int) or not (n.get('text') or '').strip():
+                errors.append(f'{rec["id"]}: a footnote needs a number (marker) and text: {str(n)[:60]}')
+            elif f'href="#footnote-{n["marker"]}"' not in rec.get('text', ''):
+                errors.append(f'{rec["id"]}: footnote {n["marker"]} is never referred to in its text')
+        if len(set(markers)) != len(markers):
+            errors.append(f'{rec["id"]}: two footnotes with the same number')
+    for hour, kinds in per_hour.items():
+        if len(kinds['versicle']) > 1:
+            errors.append(f'{hour}: more than one versicle ({", ".join(w["id"] for w in kinds["versicle"])})')
+        places = sorted(w.get('place') for w in kinds['phenomenon'] if isinstance(w.get('place'), int))
+        if len(places) != len(kinds['phenomenon']) or places != list(range(1, len(places) + 1)):
+            errors.append(f'{hour}: phenomenon lines need places 1 to {len(kinds["phenomenon"])}, one each')
 
     # The weather vocabulary matches the picker's list in atmosphere.js,
     # which stays the canonical list for pages that don't load data/.
@@ -143,13 +301,15 @@ def main():
 
     # Image files exist.
     for img in images:
-        if not (ROOT / img['file']).exists():
+        if not img['file'].startswith(('http://', 'https://')) and not (ROOT / img['file']).exists():
             errors.append(f'{img["id"]}: missing file {img["file"]}')
 
     # Embedded editions and people: every copy that shares an id agrees.
     copies = defaultdict(list)
     def collect(owner, edition):
-        if not edition:
+        # An edition without an ID (a Lectio reading's links, until Stage 3
+        # gives it an edition record) has nothing to keep consistent.
+        if not edition or 'id' not in edition:
             return
         people = edition.get('contributors') or []
         copies[edition['id']].append((owner, {k: v for k, v in edition.items() if k != 'contributors'}))
@@ -245,8 +405,17 @@ def main():
             gaps[rid].append('edition date (issued)')
         if not ed.get('publisher'):
             gaps[rid].append('publisher')
-        if not (cit.get('locator') or {}).get('page'):
-            gaps[rid].append('page')
+        # The work quoted (a poem, essay, chapter or book), when it was
+        # written, and where in the edition: asked of every reading alike,
+        # whichever page shows it. A book quoted whole has its title and
+        # first date on its edition. A locator may be a page or, for a
+        # scan or web text, the exact link.
+        if not (cit.get('title') or ed.get('title')):
+            gaps[rid].append('work title')
+        if not (cit.get('written') or ed.get('original-date')):
+            gaps[rid].append('date written')
+        if not ((cit.get('locator') or {}).get('page') or (cit.get('locator') or {}).get('url')):
+            gaps[rid].append('page or exact link')
         if not any(p.get('wikidata') for p in ed.get('contributors') or []):
             gaps[rid].append('author Wikidata ID')
 
@@ -282,9 +451,9 @@ def main():
         if img.get('creator') and not img['creator'].get('wikidata'):
             gaps[iid].append('creator Wikidata ID')
 
-    drafts = [r['id'] for r in readings + images + editorial if r.get('draft')]
+    drafts = [r['id'] for r in readings + images + writing if r.get('draft')]
 
-    print(f'{len(readings)} readings, {len(images)} images, {len(editorial)} editorial records'
+    print(f'{len(readings)} readings, {len(images)} images, {len(writing)} pieces of writing'
           + (f', {len(drafts)} drafts (not shown on the site): {", ".join(drafts)}' if drafts else ''))
     if errors:
         print(f'\n{len(errors)} error(s):')
@@ -343,6 +512,14 @@ def main():
     if stale:
         print(f'\nShared parts are out of date on {len(stale)} page(s) ({", ".join(stale)}). '
               'Run: python3 scripts/build_shared.py')
+
+    # sitemap.xml lists every page and reading; say when the list no
+    # longer matches (lastmod dates aside).
+    from build_sitemap import stale_addresses
+    missing, extra = stale_addresses()
+    if missing or extra:
+        print(f'\nThe sitemap is out of date ({len(missing)} address(es) to add, {len(extra)} to remove). '
+              'Run: python3 scripts/build_sitemap.py')
 
     return 1 if errors else 0
 

@@ -15,6 +15,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
+<!-- Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.) -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "512cda5e961b4191b6f08cbcb80fc315"}'></script>
 <!-- Google tag (gtag.js); display_mode tells home-screen visits from browser ones -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4407N365M"></script>
 <script>
@@ -100,7 +104,8 @@
  </div>
 
  <p class="block-subtitle" id="block-subtitle"></p>
- <h1 class="block-name" id="block-name"></h1>
+ <h1 class="block-name"><button class="pane-link" id="block-name" type="button" aria-describedby="block-name-hint"></button></h1>
+ <span class="visually-hidden" id="block-name-hint">Open Wander the Hours</span>
 
  <div class="hour-line">
  <span class="hour-name" id="hour-name"></span>
@@ -171,7 +176,7 @@
     <div class="nav-hours-menu" id="nav-hours-menu">
       <a href="hours-incipit.html">Incipit</a>
       <a class="active" href="index.html">The Current Hour</a>
-      <button class="wander-btn dfos-gated" id="wander-open" data-gated-label="Wander the Hours">Wander the Hours</button>
+      <button class="wander-btn" id="wander-open">Wander the Hours</button>
     </div>
   </div>
   <span class="nav-divider">✦</span>
@@ -202,6 +207,7 @@
     <div class="nav-hours-menu nav-embed-menu" id="nav-projects-menu">
       <iframe data-src="https://app.dfos.com/embed/spaces/otherwise?desc=0" width="400" height="114" frameborder="0" title="Otherwise"></iframe>
       <a href="https://otherwise.dfos.com" target="_blank">Visit Otherwise</a>
+      <a href="editions.html">Otherwise Editions</a>
       <span class="install-divider" id="install-divider"></span>
       <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
       <p class="install-tip" id="install-tip"></p>
@@ -214,23 +220,23 @@
  <!-- ═══════════════════════════════════════════════
  WANDER THE HOURS PANE
 ════════════════════════════════════════════════ -->
-<div class="wander-pane" id="wander-pane" role="dialog" aria-label="Wander the Hours" aria-modal="true">
+<div class="wander-pane" id="wander-pane" role="dialog" aria-label="The Hours" aria-modal="true">
  <button class="wander-close" id="wander-close" aria-label="Close">✦ &nbsp;Close</button>
 
- <p class="wander-heading">Wander the Hours</p>
+ <p class="wander-heading">The Hours</p>
  <p class="wander-subheading">Each day is divided into eight watches</p>
 
  <div class="wander-dial-wrap" aria-hidden="true">
  <svg id="wander-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
  <g class="dial-hand" id="dial-hand">
- <line x1="120" y1="120" x2="120" y2="34"
+ <line x1="120" y1="101" x2="120" y2="34"
  stroke="currentColor" stroke-width="0.75" opacity="0.6"/>
  <circle cx="120" cy="36" r="2.5" fill="currentColor" opacity="0.5"/>
- <circle cx="120" cy="120" r="3" fill="currentColor" opacity="0.35"/>
  </g>
  </svg>
  </div>
  <p class="wander-dial-caption" id="wander-dial-caption"></p>
+ <p class="dial-legend" id="wander-dial-legend" aria-hidden="true"></p>
 
  <div class="wander-grid" id="wander-grid"></div>
 </div>

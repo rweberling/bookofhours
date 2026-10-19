@@ -1,0 +1,1199 @@
+[
+  {
+    "id": "w-0001",
+    "aliases": ["ed-hour-void"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>You are alone with the dark now. Nothing is asked of you.</p>",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0002",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Melatonin saturates the brain: deepest phase of slow-wave neurological repair",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0003",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Mushrooms release their spores",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0004",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Plants grow best in the shade of night",
+    "tags": {
+      "hours": ["void"]
+    }
+  },
+  {
+    "id": "w-0005",
+    "aliases": ["ed-hour-hush"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>Something shifts in the silence. The darkness is unchanged, but its edges loosen.</p>",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0006",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Metabolic nadir: blood cools and breathing slows",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0007",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Worms retreat underground",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0008",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Atmospheric stasis; dew point",
+    "tags": {
+      "hours": ["hush"]
+    }
+  },
+  {
+    "id": "w-0009",
+    "aliases": ["ed-hour-chorus"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The sound comes before the light. The world remembers it exists.</p>",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0010",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Songbirds begin the dawn chorus",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0011",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Insects and other cold-blooded creatures shake off their nocturnal chill",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0012",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Stomata open to inhale the morning carbon: photosynthesis initiates",
+    "tags": {
+      "hours": ["chorus"]
+    }
+  },
+  {
+    "id": "w-0013",
+    "aliases": ["ed-hour-transit"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The day lifts. Light is now something you move through rather than look at.</p>",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0014",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Synchronized migration of human workforces: scattered commuter densities",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0015",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Sap ascends",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0016",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Convective heating triggers the first rising columns of air",
+    "tags": {
+      "hours": ["transit"]
+    }
+  },
+  {
+    "id": "w-0017",
+    "aliases": ["ed-hour-fulcrum"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>Your shadow is directly beneath you. For a moment, there is no pointing away.</p>",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0018",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Solar zenith achieved: zero azimuth deviation, maximum ultraviolet index",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0019",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Petals unfurl to maximum aperture",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0020",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Lunch hour",
+    "tags": {
+      "hours": ["fulcrum"]
+    }
+  },
+  {
+    "id": "w-0021",
+    "aliases": ["ed-hour-doldrums"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The angle of the light has become philosophical. Every object casts a shadow longer than itself.</p>",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0022",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Shadows elongate, red-shift in light",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0023",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "The afternoon lull: synchronized quietude of birds and bugs",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0024",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Neurocognitive deceleration; prefrontal executive control fractures under cumulative mental load",
+    "tags": {
+      "hours": ["doldrums"]
+    }
+  },
+  {
+    "id": "w-0025",
+    "aliases": ["ed-hour-convivium"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The light lingers above. The lamps offer their devotion.</p>",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0026",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Shared caloric replenishment; social structures visible",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0027",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Crepuscular swarming and/or dispersal",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0028",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Gradual descent into passive respiration, circadian quiescence",
+    "tags": {
+      "hours": ["convivium"]
+    }
+  },
+  {
+    "id": "w-0029",
+    "aliases": ["ed-hour-denouement"],
+    "kind": "versicle",
+    "shownIn": "hours",
+    "text": "<p>The day closes; the night opens. Something may be laid down now.</p>",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  },
+  {
+    "id": "w-0030",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 1,
+    "text": "Nocturnal activities commence",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  },
+  {
+    "id": "w-0031",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 2,
+    "text": "Plants complete their nyctinastic closing",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  },
+  {
+    "id": "w-0032",
+    "kind": "phenomenon",
+    "shownIn": "hours",
+    "place": 3,
+    "text": "Peak marine bioluminescence",
+    "tags": {
+      "hours": ["denouement"]
+    }
+  },
+  {
+    "id": "w-0033",
+    "kind": "note",
+    "shownIn": "seasons",
+    "text": "<p><em>To any stray readers of this intermittent project, which I am now calling by a new name:</em></p><p><em>Welcome to </em>Lectio Terra, <em>a weekly series of curated readings drawn from botany, philosophy, and related disciplines. We are roughly 10 weeks past the winter solstice and closing in on the vernal equinox. Join me in this solar cycle for some eccentric, esoteric, ephemeral fun.</em></p>",
+    "lectio": { "post": "lt-0001" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": ["sp-0001"]
+    }
+  },
+  {
+    "id": "w-0034",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>When witch hazel blooms in late fall or early winter, it surprises our sense of time and place. I haven’t witnessed its dried seed pods exploding, as Gibson describes humorously later in his reflection. But I remember once, perhaps my first encounter with the plant, finding yellow ribbons of witch hazel unfurled under piles of snow and thin globes of ice. The plant’s strange time-keeping can remind us to look again at dormant life and feel something different in the cold air. The title of Nietzsche’s essay collection, “untimely meditations,” has been translated as “thoughts out of season.” In that spirit, may witch hazel be an “encouragement,” as Nietzsche writes, “to live after our own rule and measure.” </p><p>Vernal witch hazel (<em>Hamamelis vernalis</em>) is native to the Ozarks rather than New England, but it is noteworthy for its bright and sometimes fragrant late winter blooms, in February through early March, alongside Chinese, Japanese, and hybrid varieties—such as the “Arnold Promise” cultivar created, accidentally, by Boston’s own Arnold Arboretum . Common witch hazel (<em>Hamemelis virginiana</em>), which is native to New England, blooms in late autumn. The witch hazel genus (<em>Hamamelis</em>) is related to the winter hazel genus (<em>Corylopsis</em>), native to Asia, and to other genera within the controversial <em>Hamamelidaceae</em> family.</p>",
+    "lectio": { "post": "lt-0001" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": ["sp-0001"]
+    }
+  },
+  {
+    "id": "w-0035",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Cornel West, “<a href=\"http://“Nietzsche’s Prefiguration of Postmodern American Philosophy.”\">Nietzsche’s Prefiguration of Postmodern American Philosophy</a>,” <em>boundary 2 </em>9.3 (1981), pp. 241-269.</p></li><li><p><a href=\"https://hdl.handle.net/2027/uc1.aa0006514343?urlappend=%3Bseq=164%3Bownerid=115026820-168\">Hamamelis virginiana</a>, from John D. Gill and William M. Healy (eds.), <em>Shrubs and Vines for Northeastern Wildlife</em> (1974), pp. 154-157.</p></li><li><p>“<a href=\"https://extension.unh.edu/blog/2018/02/which-witchhazel\">Which Witchhazel</a>” (Feb. 8, 2018), from the University of New Hampshire Extension.</p></li><li><p><a href=\"https://arboretum.harvard.edu/plant-bios/arnold-promise-witch-hazel-2/\">“Arnold Promise” Witch Hazel</a>, from Arnold Arboretum.</p></li><li><p>“<a href=\"https://arboretum.harvard.edu/wp-content/uploads/2022/02/Hamamelis-TOTM-2022rm.pdf\">Witch-Hazel, Hamamelis spp.</a>,” from Arnold Arboretum.</p></li></ul>",
+    "lectio": { "post": "lt-0001" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": ["sp-0001"]
+    }
+  },
+  {
+    "id": "w-0036",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Last week were the first morning bird songs that I have noticed, riding quietly in the car with my partner after dropping our kids at school. I didn’t know it at the time, but that bright morning lay roughly equidistant between the final blizzard of the winter (a nor’easter, as they call it) and a season finale of delicate snow turned into freezing rain. In this way, the cold and warmth, dark and light, liberations and rainy constraints of spring organize this month, as we  “interrupt” and “overflow” the patterns of winter yet linger in the “Certainty / And Sanctity” of our hibernations. This transitional season contains a multitude of emotions, as evoked by Dickinson’s other poems featuring Robins (see More below). </p><p>The American Robin (<em>Turdus migratorius</em>) is a “true thrush” (genus <em>Turdus</em>) within the general “thrush” (<em>Turdidae</em>) family. Thrushes are passerine, or perching, birds within the order <em>Passeriformes</em>, a highly diverse clade comprising approximately half of the world’s bird species. The American Robin is a migratory bird, unlike its smaller, orange-breasted namesake, the European Robin (<em>Erithacus rubecula</em>), which is classified in the wonderfully named “Old World flycatcher” family (<em>Muscicapidae</em>). </p>",
+    "lectio": { "post": "lt-0002" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0002"]
+    }
+  },
+  {
+    "id": "w-0037",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Poetry</p><ul><li><p>Emily Dickinson, “<a href=\"https://dickinsonsbirds.org/project/poems/340#:~:text=Poem%2Dmanuscript%20paper%20data,must%20be%20the%20last.\">I have a bird in spring</a>” (1854).</p></li><li><p>Emily Dickinson,“<a href=\"https://journeys.dartmouth.edu/whiteheat/i-dreaded-that-first-robin-so-f347a-j348/\">I dreaded that first Robin, so</a>,” (1862, pub. 1891).</p></li><li><p>Emily Dickinson, “<a href=\"https://dickinsonsbirds.org/project/poems/712\">How dare the robins sing,</a>” (n.d.).</p></li><li><p>Witter Bynner, “<a href=\"https://poets.org/poem/robin\">The Robin</a>” (1907).</p></li><li><p>Paul Adrian, “<a href=\"https://poetrysociety.org.uk/poems/robin-in-flight/\">Robin in Flight</a>” (2010).</p></li></ul></li><li><p>Ornithology</p><ul><li><p>Sarah Fecht, “<a href=\"https://news.climate.columbia.edu/2020/04/01/robins-migrate-12-days-earlier/\">American Robins Now Migrate 12 Days Earlier than in 1994</a>” (April 1, 2020), from <em>State of the Planet, </em>Columbia Climate School.</p></li><li><p><a href=\"https://birdcast.org/migration-tools/migration-dashboard/\">Migration Dashboard</a>, from Cornell BirdCast</p></li><li><p>“<a href=\"https://www.audubon.org/field-guide/bird/american-robin\">American Robin</a>,” from Audubon Society Field Guide.</p></li></ul></li></ul><p></p><p><strong>Video: Annual Migration Patterns of American Robins</strong></p>",
+    "lectio": { "post": "lt-0002" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0002"]
+    }
+  },
+  {
+    "id": "w-0038",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Welcome to maple time, if you live in my corner of North America. The sap of the sugar maple (<em>Acer Saccharum</em>) has been flowing now in most places for several weeks, and the sugar shacks are busy boiling off water to concentrate sugar. Sap runs vary each year in timing and length based primarily on temperature (freezing nights and warming days), though the sap’s sugar content is affected by factors such as the previous summer’s weather. Like with the sap they carry, sugar maple saplings wait to grow until the circumstances are right, and can persist in dense woods for long periods of time until taller trees fall or are removed, at which points they seize the opportunity.</p><p>Which is all to say that maple season is a time of contingency and kairos—that is, of indeterminate chances aligning to produce the fullness of time, the ripe moment. Such experiences can feel providential, and we might associate them with, or mistake them for, things like economic opportunity and royal sovereignty, as demonstrated by the first two readings below. But the flipside of contingency and kairos are, as these readings also hint, revolutions (and other “turbulent causes”) and mystery (“certain wonderful chemical processes”). So while maple syrup production might seem similar to the extractive industries that predominate today (fossil fuels, rare-earth metals, digital data, human labor), it is a fundamentally different practice due to the magic of the maple tree—not only its xylem, or sapwood, but the seasonal weaving of nutrients throughout and beyond its parts, from sun and soil to buds and roots through trunk and taps into vats and, maybe, our mouths. Consider this magic, as Hansteen-Izora beautifully writes, among the many “alternative timelines plants offer in their cycles of life and death.” And seize the moment this spring, as the motivational content might say, but also realize that the moment may seize you back.</p><p>The maple (<em>Acer</em>) species are part of a large, exciting family (<em>Sapindaceae</em>) known as the soapberries. This family includes the temperate buckeye and horse chestnut—both special trees to me—but also tropical fruit-bearing species such as lychee, longan, rambutan, and ackee. </p>",
+    "lectio": { "post": "lt-0003" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0003"]
+    }
+  },
+  {
+    "id": "w-0039",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Rasheedah Phillips, “<a href=\"https://timezoneprotocols.space/generator/\">Time Zone Generator</a>,” from <em>Time Zone Protocols</em> (2022).</p></li><li><p>Joseph Bruchac, James Bruchac, Jesse Bruchac, and Amy Hook-Therrien, <em><a href=\"https://www.amazon.com/Gluskonba-Maple-Algonquian-Languages-English/dp/157067423X\">Gluskonba and the Maple Trees</a></em> (Summertown, Tennessee: 7th Generation, 2024).</p></li><li><p>Abagael Giles, “<a href=\"https://www.wbur.org/news/2026/03/11/warm-weather-maple-syrup-makers-vermont-climate-change.\">Warm Nights Bring Some Anxiety for Vermont’s Maple Syrup Makers,</a>” <em>WBUR</em> (March 11, 2026). </p></li><li><p>Nina Foster, “<a href=\"https://daily.jstor.org/sugar-maple-and-climate-change/.\">Tradition in Turmoil: Sugar Maple and Climate Change</a>,” <em>JSTOR Daily</em> (March 28, 2025).</p></li></ul>",
+    "lectio": { "post": "lt-0003" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0003"]
+    }
+  },
+  {
+    "id": "w-0040",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Paper birch (<em>Betula papyrifera</em>), also known as canoe birch or American white birch, is a mid-sized deciduous tree native to northern North America. It can be found across the northern half of the continent. Paper birch sap begins flowing near the end of <a href=\"seasons.html?season=spring&amp;entry=lt-0003\">sugar maple season</a>, when daytime temperatures reach above 50 degrees Fahrenheit, and continues to run for only two to three weeks, approximately half as long as maple sap. Although black and yellow birch are more commonly used to produce <a href=\"https://hdl.handle.net/2027/oxu1.601957964?urlappend=%3Bseq=84%3Bownerid=120181306-88\">birch beer</a>, which pairs their sap with wintergreen oils distilled from their bark, paper birch is best for producing syrup or “<a href=\"https://hdl.handle.net/2027/loc.ark:/13960/t9668kb36?urlappend=%3Bseq=36\">birch water molasses</a>,” as Cree and other indigenous communities have long done, due to the balanced flavor profile and relatively high sugar content of its sap.</p><p>The tree’s wonders go beyond the culinary, touching both art and science. Visually, birches in general are a perennial favorite of painters including <a href=\"https://www.vangoghmuseum.nl/en/about/knowledge-and-research/pollard-willow-or-pollard-birch\">Vincent Van Gogh</a>, <a href=\"https://www.dailyartmagazine.com/gustav-klimt-trees-paintings/\">Gustav Klimt</a>, and <a href=\"https://access-ok.okeeffemuseum.org/object/8590/\">Georgia O’Keefe</a>. And the actual bark of the paper birch, in particular, has provided the Anishinaabe with a medium for writing (as <em><a href=\"https://en.wikipedia.org/wiki/Wiigwaasabak#:~:text=A%20wiigwaasabak%20(in%20Anishinaabe%20syllabics,perhaps%20tied%20to%20Hand%20Talk.\">wiigwaasabak</a>, </em>a form of scroll), <a href=\"https://www.musee-mccord-stewart.ca/en/blog/embellishing-birchbark/#:~:text=Bark%20biting,that%20light%20can%20pass%20through.\">craft</a>, and even <a href=\"https://www.ecodisciple.com/blog/shared-knowledge/\">transport</a>. The tree’s visual interest and practical applications are due in large part to its high concentrations of betulin—the white, powdery, reflective, and water-resistant substance that gives the bark of the white birches its distinctive appearance. More than just a cosmetic surface, betulin is a bioactive <a href=\"https://www.sciencedirect.com/topics/neuroscience/triterpene\">triterpene </a>and the primary natural source of betulinic acid, which scientists are studying for its anti-inflammatory, anti-viral, anti-cancer, and other properties.</p><p>Betulin’s protective qualities make the paper birch a sort of superhero tree, allowing it to serve as a ruderal, or early successional species. It arrives first in disturbed and vulnerable landscapes, growing quickly to create a habitat for other trees. Yet the paper birch is also relatively fragile and short-lived, vulnerable to a variety of pests and diseases—and young birch-swingers—with a shorter lifespan than other trees (roughly 80 to 140 years, or shorter in warmer, more humid climates). In the succession of a forest, larger and more durable trees take root under the paper birch and eventually surpass it, outcompeting it for both sunlight and groundwater. The paper birch is “a temporary type of forest,” as Pinchot writes; it soon disappears from the shade it made possible. In the meantime, it grows rapidly, exfoliating bark in horizontal strips as its trunk expands, like a snake shedding its skin. </p>",
+    "lectio": { "post": "lt-0004" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0004"]
+    }
+  },
+  {
+    "id": "w-0041",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Halfmoon Woman (Pat Bruderer), “<a href=\"https://halfmoonwoman.com/how-indigenous-artists-are-reinvigorating-the-art-of-birch-bark-biting/\">How Indigenous Artists Are Reinvigorating the Art of Birch Biting</a>” (October 22, 2025).</p></li><li><p>Studio at Ruderal, “<a href=\"https://ruderal.substack.com/p/ruderal-aesthetics\">Ruderal Aesthetics</a>” (June 20, 2022).</p></li><li><p>Hardeep Singh Tuli et al. “<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8705846/#:~:text=This%20compound%20was%20first%20isolated,Chemistry%20of%20Betulin\">Anti-Inflammatory and Anticancer Properties of Birch Bark-Derived Betulin: Recent Developments</a>.” <em>Plants </em>10.12 (Basel, Switzerland; Dec. 2021): 2663.</p><p></p><p></p></li></ul>",
+    "lectio": { "post": "lt-0004" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0004"]
+    }
+  },
+  {
+    "id": "w-0042",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>If you didn’t know that <em>The International Cloud Atlas </em>exists, then you do now.</p><p>First published in 1896 by the International Meteorological Society in France, this trilingual edition codified nearly a century’s worth of taxonomic attention by certain Western European intellectuals, or, shall we say, lay-abouts. Apart from <a href=\"https://en.wikisource.org/wiki/The_Folk-Lore_Journal/Volume_6/Cloud-Land_in_Folk-Lore_and_in_Science#:~:text=I%20cannot%20give%20you%20any,same%20idea%20of%20something%20fleecy.\">folkloric</a> and <a href=\"https://teara.govt.nz/en/tawhirimatea-the-weather/page-3\">indigenous</a> <a href=\"https://waahonua.com/hawaiian-cloud-chart/#:~:text=Similar%20to%20other%20indigenous%20peoples,ʻōlelo%20noʻeau%20related%20to%20clouds.\">systems</a> of cloud-reading, the scientific classification of cloud formations began right around 1800, when Jean-Baptiste Lamarck and Luke Howard independently developed lexicons in French and English, respectively.  Lamarck’s evocative French phrases (i.e., <em>en balayeurs</em>, or broom-like) could not compete with Howard’s Latinate constructions, which won the endorsement of none other than Johann Wolfgang von Goethe, who wrote a poem mythologizing the English cloud-gazer. By the time the first <em>Atlas </em>was published, Howard’s romantic pastime had become a gentlemanly institution, housed in national bureaus and eventually international organizations; the project<em> </em>went through many print editions over the next 120 years, before <a href=\"https://cloudatlas.wmo.int/en/home.html\">going digital</a> in 2017. </p><p>Have I mentioned that springtime can be <a href=\"seasons.html?season=spring&amp;entry=lt-0002\">a polarized, multitudinous season</a>? The mornings are chilled, and the afternoons warm (or vice versa). The ice thaws and leaves behind a trash-filled swamp on the sidewalk. Preemptive acts of undeclared war roil the globe. Rolling rain clouds suffocate the cold lower atmosphere—evoking the “Sad destiny of the troubled world!,” in Goethe’s telling—even as they bring the rain needed to grow new life and, perhaps, discover spiritual transcendence. Cloud-reading is a fitting activity for such a season, with its paradoxical fusion of attention and lethargy, strain and relaxation, precision and imagination. It might reveal to us not only the strange contours of the sky but “the sheer volume of emotions” drifting behind our eyes.</p><p>The genus <em>Nimbostratus</em> was first introduced in the 1930 edition of the<em> Atlas </em>because “the definition of nimbus in the Atlas of 1910 led to some confusion” (p. 14, n. 1)—scandalous, I know!<a href=\"#footnote-1\" target=\"_self\">1</a> Due to the formation’s uniform and featureless character, it is not conventionally divided into species. However, the supplementary feature <em>praecipitatio </em>can be appended to the genus when it produces continuous precipitation that reaches the ground (in contrast to <em>virga</em>, referring to precipitation that evaporates mid-air). </p>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>The problem, specifically, was “confusion…between the low, rainy layer resulting from the downward extension of Altostratus and the very low, closely packed clouds (Fractostratus or Fractocumulus of bad weather) which often form beneath the Altostratus or the above-mentioned low layer” (“<a href=\"https://cloudatlas.wmo.int/en/preface-to-the-1939-edition.html\">Preface to the 1939 edition</a>”).</p>"
+      }
+    ],
+    "lectio": { "post": "lt-0005" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "phenomena": ["ph-0001"]
+    }
+  },
+  {
+    "id": "w-0043",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Thea Applebaum Licht, “<a href=\"https://publicdomainreview.org/collection/essay-on-the-modification-of-clouds/\">Luke Howard’s </a><em><a href=\"https://publicdomainreview.org/collection/essay-on-the-modification-of-clouds/\">Essay on the Modification of Clouds</a></em><a href=\"https://publicdomainreview.org/collection/essay-on-the-modification-of-clouds/\"> (1865)</a>,” <em>The Public Domain Review </em>(Dec. 2, 2025).</p></li><li><p>Maria Popova, “<a href=\"https://www.themarginalian.org/2015/03/02/89-clouds-mark-strand-wendy-mark/\">89 Clouds: A Poetic Celebration of Clouds and Everything They Mean</a>” (<em>The Marginalian, </em>March 3, 2015). Rev. of Wendy Mark and Mark Strand, <em><a href=\"https://www.jamescumminsbookseller.com/pages/books/332753/wendy-mark-mark-strand/89-clouds-monotypes-by-wendy-mark-aphorisms-by-mark-strand?srsltid=AfmBOop0yWQvSae4haoOIE4Ks_4_yqB8BAnoc8bAPURKq-K45SQXmcyA\">89 Clouds</a> </em>(New York, New York: ACA Galleries, 1999).</p></li><li><p>Richard Hamblyn, <em><a href=\"https://bookshop.org/a/86532/9780312420017\">The Invention of Clouds: How An Amateur Meteorologist Forged the Language of the Skies</a></em> (2001; New York: Picador, 2002).</p></li><li><p>Jenny Odell, <em><a href=\"https://bookshop.org/a/86532/9781612198552\">How to Do Nothing: Resisting the Attention Economy</a> </em>(New York: Melville House, 2019) and <em><a href=\"https://bookshop.org/a/86532/9780593242728\">Saving Time: Discovering a Life Beyond Productivity Culture</a> </em>(New York: Random House, 2023).</p></li></ul>",
+    "lectio": { "post": "lt-0005" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "phenomena": ["ph-0001"]
+    }
+  },
+  {
+    "id": "w-0044",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>The crocuses likely have already come and gone. They can return each spring almost too early, before the snow melts, before the <a href=\"seasons.html?season=spring&amp;entry=lt-0002\">robins return</a>, before the atmosphere warms (let alone the soil). Here in my urban neighborhood, the Dutch crocus (<em>Crocus vernus</em>) blooms in tandem with the snowdrops (<em>Galanthus nivalis</em>) and just prior to the daffodils (<em>Narcissus pseudonarcissus</em>). These <a href=\"https://www.mishicotffa.org/uploads/2/3/2/7/23271034/stem_specialized_.pdf\">corm-based</a> geophytes, which require 10 to 15 weeks of cold to biochemically shift their <a href=\"https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)/30%3A_Plant_Form_and_Physiology/30.11%3A_Plant_Development_-_Meristems#:~:text=The%20apical%20meristem%2C%20also%20known,and%20shoots%20and%20forming%20buds.\">apical meristem</a>, or growing point, from leaf- to flower-production, have become such a seasonal marker for me that I assumed they must be native to this landscape. And maybe they are—now. But their journey to here crosses several continents and centuries, through the studios of Dutch painters and the apothecaries brewing saffron concoctions to treat the Black death, across the slopes of the Alps and the diplomatic circuits of Holy Roman ambassadors, originating primarily from the grassy hillsides of <a href=\"https://www.cornucopia.net/magazine/articles/after-the-snows/\">Anatolia</a>, the species’ primary center of diversity.</p><p>These are <a href=\"https://www.sativus.com/pages/history?srsltid=AfmBOopdwWu6FXSYeT5DTVfj-yRDgFnunGzSbCw7xN2CmnBrfrkYSqY-\">ancient origins</a>. John Milton pictured the crocus embroidering the ground of Eden, “<a href=\"https://hdl.handle.net/2027/coo1.ark:/13960/t26b4zb9k?urlappend=%3Bseq=36\">more colour’d than with stone / Of costliest emblem</a>,” and the <a href=\"https://emilydickinsonsgarden.wordpress.com/2010/03/30/the-crocus-in-poetry-symbol/\">other poets</a>, of course, love the flower’s evocative timing and physical form. Ovid and other Greeks recorded a <a href=\"https://www.illaherareplants.com/blog/2021/10/crocus-of-mid-autumn.html#:~:text=There%20are%20two%20different%20versions,those%20in%20the%20Saffron%20group.\">more tragic tale</a> about Crocus’ place within the <a href=\"https://en.wikipedia.org/wiki/The_Empire_of_Flora\">empire of flowers</a>. Though long associated with the cradle(s) of civilization, the saffron crocus (<em>Crocus sativus</em>), source of the world’s most expensive spice, now is being cultivated <a href=\"https://civileats.com/2018/02/07/american-grown-saffron-could-change-the-spice-trade/\">across New England</a>, all the way out to <a href=\"https://www.capeandislands.org/in-this-place/2025-11-20/a-spice-you-can-grow-in-your-backyard\">Provincetown</a>. </p><p>The <em>Crocus </em>genus is part of the trimerous iris family (<em>Iridaceae</em>) but is distinct from the true <em>Iris</em> genus. The Dutch, or spring, <em>Vernus</em> species<em> </em>is one of several that bloom in spring, coming after the precocious <em>tommasinianus</em> (woodland) and <em>chrysanthus</em> (snow), alongside <em>flavus</em> (yellow), and long before the autumn group that includes <em>sativus </em>(saffron) and the beautiful but toxic crocus imposters of family <em>Colchicaceae</em>. Of particular note: the saffron crocus is a mutant or hybrid that contains three sets of chromosomes and is therefore sterile; it has survived as a clone for more than 3500 years through the division and propagation of corms by human hands, and its thread-like stigmas are also still harvested by hand, as they were in Minoan civilization.</p>",
+    "lectio": { "post": "lt-0006" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0005"]
+    }
+  },
+  {
+    "id": "w-0045",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Anna Trakoli, “<a href=\"https://doi.org/10.1093/occmed/kqab019\">Minoan Art, The ‘Saffron Gatherers’, c. 1650 BC,</a>” <em>Occupational Medicine</em> 71.3 (April 2021): 124–126.</p></li><li><p>Everett Merill Hill, <em><a href=\"https://hdl.handle.net/2027/uva.x002078356?urlappend=%3Bseq=9%3Bownerid=27021597768248826-13\">The Story the Crocus Told</a> </em>(Spokane, Washington: The Uplook Publishing Company, 1909).</p></li><li><p>Janis Ruksans, <a href=\"https://www.amazon.com/Crocuses-Complete-Guide-Janis-Ruksans/dp/1604691069\">Crocuses: A Complete Guide to the Genus</a> (Portland, Oregon: Timber Press, 2011).</p></li></ul>",
+    "lectio": { "post": "lt-0006" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0005"]
+    }
+  },
+  {
+    "id": "w-0046",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>What <em>IS </em>existing? </p><p>As German philosopher Martin Heidegger (1889-1976)<a href=\"#footnote-1\" target=\"_self\">1</a> noted, this quintessentially philosophical question might seem “primitive” compared to the specificities of modern science as it defines, dissects, quantifies, calculates, and hypothesizes all things based on empirical observations. Today, we might reframe the question as a riddle about neurons and “<a href=\"https://bookshop.org/a/86532/9781984881991\">consciousness</a>”: does the brain simply generate mental experience (materialism) or somehow channel a universal mind-spirit (idealism)?</p><p>But for Heidegger, the question of existence was fundamental, and it required a return to ancient ideas, including the pro-Socratic Greek term <em>Physis</em>, or <em>Phusis, </em>derived from the verb <em>phyo</em> (“to bring forth”), and often translated as “nature,” in contrast to <em>Nomos</em> (“law, custom, or convention”)<em>.</em> From <em>Physis</em>, we get “physics” as the science of matter and energy. Instead of turning to theorems or mathematical equations, though, Heidegger used this term to refer to our pre-reflective experiences of the world: what we see, feel, touch, or otherwise know before the application of mental interpretations and rational concepts. By postponing cognitive reflection, he attempted to distinguish “beings as such” (the existence of particular cats, people, and objects, which we encounter in physics and other of the natural sciences) from “Being itself” (the presence or revelation of existence in general, as discernible and meaningful to the philosophical tradition of metaphysics). This substratum of existence is not a static substance or representational framework, as modern philosophers sometimes proposed; it is a dynamic event, an unfolding process, through and within which particular beings come to exist or can be encountered as existing. Human “being,” indeed.</p><p>Here we’ve entered the realm of strange thoughts, like when we remember that the human body has a <a href=\"https://www.newscientist.com/article/2409699-human-cells-have-a-resonant-frequency-and-its-just-barely-audible/\">resonant frequency</a>, that atoms are <a href=\"https://aeon.co/essays/why-the-empty-atom-picture-misunderstands-quantum-theory\">quantum clouds of delocalized matter</a>, and that there is <a href=\"https://en.wikipedia.org/wiki/Cosmic_microwave_background\">a faint glow of ancient radiation saturating the entire observable universe</a>.</p><p>This is also the realm of <em>FERNS</em>: primordial (moreso exponentially than even <a href=\"seasons.html?season=spring&amp;entry=lt-0006\">the ancient crocus</a>), flowerless but spore-bearing, tropical-loving and cold-tolerant, sun-optional, sometimes edible, and <a href=\"https://www.sciencealert.com/ferns-are-super-weird-and-their-genomes-are-even-more-chaotic-than-we-thought\">chaotic to the bone genome</a>. In Aotearoa New Zealand, the unfurling fronds of the tree-like silver fern, or ponga (<em>Cyathea dealbata</em>), embody <em><a href=\"https://teara.govt.nz/en/photograph/2422/the-koru#:~:text=The%20koru%2C%20which%20is%20often,changes%20and%20stays%20the%20same.\">koru</a></em> (“loop” or “coil”), a visual leitmotif in <a href=\"https://en.wikipedia.org/wiki/Koru\">art/design</a> representing the emergence of life, the spiral from origin to endless future, and symbolizing the Māori genealogical concept of <a href=\"https://en.wikipedia.org/wiki/Whakapapa\">Whakapapa</a>. Closer to my home, in New England and across the Northern Hemisphere, the ostrich fern (<em>Matteuccia struthiopteris</em>) is one of several species whose slow-rocketing croziers, or fiddleheads, mark the return of spring and the persistence of biological life. Both a being as such and a symbol of existence itself, the fern is older, gentler, <a href=\"https://www.tate.org.uk/tate-etc/issue-67-autumn-2025/nature-lovers#:~:text=Still%20from%20Zheng%20Bo&#x27;s%2017,or%20female%2C%20straight%20or%20gay.\">queerer</a>—and tastier—even than Heidegger’s metaphysics.</p><p>The <em>Matteuccia</em> genus is named after Italian physicist Carlo Matteucci (1800–1868), and the <em>struthiopteris</em> species is from the Greek <em>strouthós</em>, “bird,” plus <em>pteron</em>, “wing” or “feather.” The ostrich fern belongs to the small family <em>Onocleaceae</em>, which contains only five species worldwide and is characterized by dimorphism, or the production of two distinct types of frond: tall sterile ones that carry on photosynthesis and give the plant its plumage-like shape, and smaller modified fronds that hold spore-bearing structures through the winter. The former are what can be cooked and eaten. To distinguish the ostrich fern from potentially dangerous lookalikes—particularly the cinnamon fern (<em>Osmundastrum cinnamomeum</em>) and the interrupted fern (<em>Osmunda claytoniana</em>), both of which may cause illness if eaten raw—look for the distinctive deep groove, like a small celery stalk’s channel, running along the inside of the stem. Only the ostrich fern has it.</p>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>Sometimes, two incongruous statements are both true. For example, Heidegger was a wonderfully earnest nature mystic and poet-philosopher. He was also a wretched Nazi stooge, and his attempt to recover a dynamic, organic notion of existence from pre-Socratic philosophy was tangled up in reactionary <a href=\"https://en.wikipedia.org/wiki/V%C3%B6lkisch_movement\">Folkist</a> mythologies of soil and blood, as well as his own spiritualized admiration for the Third Reich. Arguably, the contemporary <a href=\"https://www.opendemocracy.net/en/countering-radical-right/why-did-heidegger-emerge-central-philosopher-far-right/\">right-wing appropriation of Heidegger</a>, the related <a href=\"https://www.tni.org/en/article/the-new-blood-and-soil\">rise of eco-fascisms around the world</a>, and the <a href=\"https://www.asle.org/wp-content/uploads/Against-the-Ecofascist-Creep.pdf\">“creep” of these ideas into mainstream environmentalism</a> and <a href=\"https://www.upress.umn.edu/9781517918682/everyday-ecofascism/\">popular culture</a> make it all the more crucial to engage with and understand his ideas now.</p>"
+      }
+    ],
+    "lectio": { "post": "lt-0007" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0006"]
+    }
+  },
+  {
+    "id": "w-0047",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Mike Houlahan, “<a href=\"https://www.odt.co.nz/lifestyle/summer-times/koru-arguably-best-known-maori-symbol\">The Koru - Arguably the Best-Known Maori Symbol</a>,” <em>Otaga Daily Times</em> (December 27, 2018).</p></li><li><p>Gordon Walters, <em><a href=\"https://collections.tepapa.govt.nz/object/656749?page=1&amp;rtp=1&amp;ros=1&amp;asr=1&amp;assoc=all&amp;mb=c\">Maho</a> </em>(1973); cf. Robert Leonard, “<a href=\"https://robertleonard.org/gordon-walters-form-becomes-sign/\">Gordon Walters: Form Becomes Sign</a>,” <em>Art and Australia </em>44.2 (2006).</p></li><li><p>Matthew Sharpe, “<a href=\"https://theconversation.com/heidegger-in-ruins-grappling-with-an-anti-semitic-philosopher-and-his-troubling-rebirth-today-200826\">Heidegger in ruins? Grappling with an anti‑semitic philosopher and his troubling rebirth today</a>,” <em>The Conversation </em>(April 11, 2023).</p></li><li><p>Stacia Brezinski, “<a href=\"https://maineaudubon.org/news/fiddlehead-ostrich-and-cinnamon-all-about-ferns/\">Fiddlehead, Ostrich, and Cinnamon: All About Ferns!</a>,” from Maine Audobon (May 6, 2025).</p></li><li><p>Alan Bergo, “<a href=\"https://foragerchef.com/how-to-identify-and-cook-fiddlehead-ferns/\">Fiddlehead Ferns: Identifying, Harvesting and Cooking,</a>” <em>Forager | Chef</em> (March 14, 2023). </p></li></ul>",
+    "lectio": { "post": "lt-0007" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0006"]
+    }
+  },
+  {
+    "id": "w-0048",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Few creatures are more storied than the rabbit and its cousin, the hare. Their manifestations extend across the globe, ranging from cosmology and folklore (Nanabozho and Br’er Rabbit) into transatlantic children’s literature (Lewis Carroll’s “White Rabbit,” Peter Rabbit, and Peter Cottontail), and onward to twentieth-century cartoons (Bugs Bunny, Roger Rabbit) and cinematic riddles (the eponymous <em>Harvey</em> and <em>Donnie Darko</em>’s Frank)—let’s not get into the <a href=\"https://en.wikipedia.org/wiki/Easter_Bunny\">other</a> <a href=\"https://en.wikipedia.org/wiki/Playboy\">versions</a> of bunnies in American pop culture. Across their many forms, these leporine figures embody a variety of traits and entities: <a href=\"https://en.wikipedia.org/wiki/Nanabozho#Shapeshifting\">transformation</a> and <a href=\"https://en.wikipedia.org/wiki/Br%27er_Rabbit\">trick</a>; the <a href=\"https://en.wikipedia.org/wiki/Moon_rabbit\">moon</a> and its <a href=\"https://artmuseum.princeton.edu/art/collections/objects/18122\">goddess</a>, or perhaps the <a href=\"https://www.atlasobscura.com/articles/fear-of-rabbits#:~:text=“According%20to%20Plutarch%2C%20the%20Egyptians,wearing%20that%20stupid%20Bunny%20suit?”\">underworld</a>; fertile <a href=\"https://en.wikipedia.org/wiki/Three_hares\">abundance</a> or skittish <a href=\"https://sites.nd.edu/manuscript-studies/2024/03/22/medieval-rabbits-ancient-symbolism-english-migration-and-murderous-marginalia/#:~:text=Rabbits%20have%20had%20many%20symbolic%20meanings%20throughout,were%20primarily%20confined%20to%20privately%20owned%20warrens.\">cowardice</a>—unless you are <a href=\"https://en.wikipedia.org/wiki/Rabbit_of_Caerbannog\">Monty Python</a> and the <a href=\"https://www.mundiwunderkammer.com/post/the-killer-rabbits-of-the-middle-ages?lang=en\">medieval</a> <a href=\"https://thedevilsdavenport.wordpress.com/2015/05/02/why-are-there-violent-rabbits-in-the-margins-of-medieval-manuscripts/\">symbolism</a> that inspired those British flapdoddlers. The symbols are appropriately numerous for the famously procreative creature.</p><p>My kids have excitedly spotted several individual rabbits in our urban neighborhood this spring (no <a href=\"https://waywordradio.org/fluffle-rabbit-coinage/\">fluffles</a> yet), including one parent-shaped Easter bunny. I like to think the kids and the rabbits share a special connection, as both introduce a mix of docile dependence and feral wildness into the adult- and concrete-dominated cityscape. Remembering these tender wildlife sightings, or cross-identifications, it is a bit bewildering to dig up the wealth of rabbit-related scientific imagery and taxonomical data available in the public domain. So much energy and precision expended, much of it at public expense (back when that happened), to see and to understand. Yet this perspective is not neutral. As much as it reflects the wonders of science and of dedicating research for the public good, rather than corporate intellectual property, it also demonstrates how long-lasting, how granular was the American colonial project of mapping and quantifying the continent’s natural resources for the purposes of controlling and potentially extracting value from them. Millions upon millions of rabbits killed, initially for food and fur, and later for <a href=\"https://academic.oup.com/whq/article/56/4/295/8286379\">pest control</a>. No longer our kin, and no longer a source of sustenance or myth, the rabbit lives on at the edges of our gardens and digital media, a tender blessing, a possible threat—yes, still a trickster.</p><p>The Eastern Cottontail (<em>Sylvilagus floridanus, </em>formerly known as <em>Lepus sylvaticus</em>) is the most common rabbit throughout New England and one of the most frequently found mammals across the continent. The species includes as many as <a href=\"https://www.science.smith.edu/departments/biology/VHAYSSEN/msi/pdf/i0076-3519-136-01-0001.pdf\">25 subspecies</a>, varying primarily by region. In the northeast, the Eastern Cottontail<em> </em>has outcompeted the native New England Cottontail (<em>Sylvilagus transitionus</em>), which has smaller eyes, darker fur, slightly shorter ears with black edging, and often a black spot between its ears. The Eastern Cottontail is more versatile and adaptable than its New England kin, which relies on dense underbrush—maybe even briar patches—for protection. It roams into forest clearings, open meadows, and even suburban yards, relying instead on electric explosions of energy to leap away from harm. Rabbits and hares are both in the order <em>Lagomorpha</em>, along with the exceedingly adorable <a href=\"https://nanpa.org/2021/08/23/photographing-pikas-a-life-above-the-clouds/\">pika</a> (genus <em>Ochotona</em>) and the European rabbit (<em>Oryctolagus cuniculus)</em>, from which contemporary domestic rabbits descend.</p>",
+    "lectio": { "post": "lt-0008" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0007"]
+    }
+  },
+  {
+    "id": "w-0049",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Emily Zobel Marshall, “<a href=\"https://theconversation.com/beatrix-potters-famous-tales-are-rooted-in-stories-told-by-enslaved-africans-but-she-was-very-quiet-about-their-origins-202274\">Beatrix Potter’s famous tales are rooted in stories told by enslaved Africans – but she was very quiet about their origins</a>,” <em>The Conversation </em>(May 19, 2023).</p></li><li><p>Joshua J. Mark, “<a href=\"https://www.worldhistory.org/article/2632/manabozho-tales/\">Manabozho Tales,</a>” <em>World History Encyclopedia </em>(February 12, 2025).</p></li><li><p>Anne C., “<a href=\"https://blog.spl.org/2009/10/06/rabbits-in-myth-and-legend/\">Rabbits in Myth and Legend</a>,” <em>shelftalk: The Seattle Public Library Blog</em> (October 6, 2009).</p></li><li><p>Zora Neale Hurston, “<a href=\"https://hdl.handle.net/2027/inu.30000117880785?urlappend=%3Bseq=338%3Bownerid=13510798899945202-358\">The Eatonville Anthology</a>,” <em>The Messenger </em>13.11 (November 1926): 332.</p></li><li><p>J.A. Allen, <em><a href=\"https://hdl.handle.net/2027/coo.31924004641647?urlappend=%3Bseq=307%3Bownerid=120248616-319\">Monographs of North American Rodentia. No. 2.—Leporidae</a>, </em>United States Geological Survey of the Territories<em> </em>(Washington: Government Printing Office, 1877).</p></li></ul>",
+    "lectio": { "post": "lt-0008" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0007"]
+    }
+  },
+  {
+    "id": "w-0050",
+    "kind": "note",
+    "shownIn": "seasons",
+    "text": "<p><em>This one’s a day late; I had to catch up on my day job and be an insomniac for a couple nights. Do you have any suggested species or sources for me to include in future dispatches? Leave a comment on Substack or <a href=\"mailto:rweberling@gmail.com\">send me an email</a>.</em></p>",
+    "lectio": { "post": "lt-0009" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0008"]
+    }
+  },
+  {
+    "id": "w-0051",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>The wooly, silver-green leaves were hard to miss in my community garden plot last spring. It’s the sort of plant you’ve seen before but never noticed (cf. “<a href=\"https://unitedplantsavers.org/plant-blindness/\">plant blindness</a>”). I decided to let it continue growing, wildly and/or weedily, alongside the plants I had intentionally planted. Eventually, I learned that it was a mullein, likely “common” or “great” mullein, known for centuries as a respiratory support, <a href=\"https://www.reddit.com/r/Survival/comments/18rrn9x/mullein_to_catch_the_fish/#:~:text=It%20does%20work%20but%20you,the%20water%20is%20relatively%20stagnant.&amp;text=Better%20use%20of%20the%20Mullein,leaves%20to%20clear%20lung%20congestion.&amp;text=Would%20be%20interesting%20to%20see,For%20science%20of%20course.\">fish poison</a>, shoe insole, and <a href=\"https://www.instagram.com/reels/DRc2h_mDOa4/\">candle</a>. Plants are full of surprises. But since their introduction to North America up to 400 years ago, mulleins also have been a nuisance for farmers and often treated as <a href=\"https://hdl.handle.net/2027/uiug.30112019591913?urlappend=%3Bseq=7%3Bownerid=13510798901374561-11\">an invasive weed</a>. Plants are double-edged swords. Soft <a href=\"https://hdl.handle.net/2027/mdp.39015081412507?urlappend=%3Bseq=28%3Bownerid=13510798902415519-32\">shelter</a> or <a href=\"https://www.montana.edu/extension/invasiveplants/extension/monthly-weed-posts/2016_december.html#:~:text=Spread,16%20feet)%20of%20parent%20plants.\">overpowering </a>intruder, symbol of resilience and rage, a cure but also a poison, mullein survives our weeding and may, in the long run, survive us. Its seeds can lie dormant in soil for more than 100 years, until disturbed into the light.</p><p>Great mullein (<em>Verbascum thapsus</em>) is one of several hundred flowering species in the <em>Verbascum</em> genus, which itself is in the figwort (<em>Scrophulariaceae</em>) family. This scientific name potentially derives from <em>barbascum </em>(Latin for “bearded”) and Thapsos, the ancient Tunisian city. But the plant’s plethora of enticing nicknames and vernacular titles includes flannel leaf, velvet dock, lady’s candle, hag’s taper, Jupiter’s staff, hare’s beard, donkey’s ear, beggar’s blanket, and—much to my eight-year-old’s delight—cowboy toilet paper. Clearly, its stellate trichomes (star-shaped leaf hairs) and tower-like stem have not gone unnoticed. The biennial plant produces flat rosettes in its first year, followed in year two by a tall spike that flowers irregularly, with each blossom along the spike opening for one day. The spikes remain upright through winter, providing seed and perch or shelter for birds.  It is a ruderal species that colonizes fire-scarred or logged landscapes, roadsides and construction sites, and so on. I hope it doesn’t completely overrun my garden.</p>",
+    "lectio": { "post": "lt-0009" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0008"]
+    }
+  },
+  {
+    "id": "w-0052",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Ashia Ajani, with Amirio Freeman. “<a href=\"https://plantcraft.substack.com/p/plantcraft-ashia-ajani-mulls-over\">Ashia Ajani Mulls Over Mullein</a>,” <em>PLANTCRAFT </em>(May 5, 2025).</p></li><li><p>“<a href=\"https://hdl.handle.net/2027/nyp.33433010840944?urlappend=%3Bseq=55%3Bownerid=27021597768972411-59\">Common Mullein.—V. Thapsus</a>,” from Mrs. William Starr Dana [Frances Theodora Parsons], <em>A Selection of Fifty Plates from “How to Know the Wild Flowers”</em> (New York: C. Scribners’ Sons, 1894), p. 151.</p></li><li><p><a href=\"https://www.eddmaps.org/distribution/viewmap.cfm?sub=3080#\">County-level U.S. distribution of common mullein</a>. <em>Early Detection &amp; Distribution Mapping System (EDDMapS</em>). The University of Georgia - Center for Invasive Species and Ecosystem Health.</p></li><li><p><a href=\"https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:770183-1\">Global distribution of common mullein</a>. <em>.</em> The Board of Trustees of the Royal Botanic Gardens, Kew.</p></li></ul>",
+    "lectio": { "post": "lt-0009" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0008"]
+    }
+  },
+  {
+    "id": "w-0053",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>If there’s a plant that reminds me of God, it’s probably moss. Indeed, the plant’s biology is as ornate and rarefied as any systematic theology. Ubiquitous and abundant but amorphously changing, obvious but mysterious, perennially surprising and yet easy to take for granted, expanding or contracting as it slowly transforms its surroundings—modest moss can be as soft as the tender, mighty <a href=\"seasons.html?season=spring&amp;entry=lt-0009\">mullein</a>, but its diminutive, hair-like roots, called <a href=\"http://mossplants.fieldofscience.com/2008/09/examining-moss-filaments-protonema.html\">rhizoids</a>, work over time to accomplish feats of erosion that would be impossible for other plants. Moss is slow green fire, breathing air, water, and minerals into its <a href=\"https://www.anbg.gov.au/bryophyte/what-is-moss.html\">pseudoparts</a>; and permitting a multitude of traditional and experimental <a href=\"https://en.wikipedia.org/wiki/Moss#Uses\">applications</a>, from bedding, wound-dressing, and whiskey-making to biofuels and pharmaceuticals. For example, because of their nearly immediate interchange with the atmosphere, these subtle sculptors also function as bioindicators in both wild and human-developed landscapes, reflecting the quality of the air and capable of detecting even <a href=\"https://unece.org/climate-change/press/research-confirms-importance-mosses-detection-pollutants-including\">microplastics</a> and trace elements of <a href=\"https://www.usda.gov/about-usda/news/blog/moss-study-helps-identify-pollution-hotspots\">heavy metals</a>. </p><p>The full-spectrum greens of the mosses embody the <em>viriditas</em> (“<a href=\"https://dailymeditationswithmatthewfox.org/2024/01/11/hildegard-on-greening-power-spirit-nature-humanitys-creativity/\">greening power</a>” or “<a href=\"https://www.themarginalian.org/2025/01/07/hildegard-viriditas/\">greening life-force</a>”) that medieval mystic Hildegard of Bingen identified as God’s vital presence suffusing earth, soul, and cosmos. In her dynamic elemental visions, consuming-illuminating fire and blowing-atmospheric wind converge to draw moisture into dry soils, bodies, and souls, bringing forth plants and fruits, growth and strength, virtuous acts of faith and hymns of praise. Although May and its first day are conventionally a time of flowers—the Roman festival of <a href=\"https://en.wikipedia.org/wiki/Floralia\">Floralia</a>, the circling <a href=\"https://britishhistories.com/f/185-the-maypole\">garlands</a> and <a href=\"https://yalebooks.yale.edu/2025/05/07/the-spiritual-maypole/\">symbols</a> of the maypole, and the month of <a href=\"https://en.wikipedia.org/wiki/Flor%C3%A9al\">Floréal </a>on the French Revolutionary calendar—for me this is a month of mosses. Look to the decaying ground and the rocky crevices for a soft brush with the Creator.</p><p>The <em>Hypnum </em>genus, classified in the <em>Hypnales </em>order of “leafy” or “feather” mosses, is known for its thick, carpet-like growth and vivid green, yellow, or brown colors. These branching, mat- and tuft-forming species are pleurocarpous (<em>pleura, “</em>side,” plus <em>karpos, “</em>fruit”), in contrast to upright, capsule-bearing acrocarpous varieties. The <em>Hypnum </em>genus includes an undetermined number of species (in the range of hundreds), but all are part of the 11,000+ “true mosses” in the class <em>Bryopsida</em>. This class excludes several hundred varieties of moss (e.g., peat and granite mosses), which have various distinct characteristics, as well as outright imposters such as Spanish moss (related to the pineapple) and Irish moss (a seaweed). Along with liverworts (<em>Hepaticopsida</em>) and hornworts (<em>Anthocerotophyta</em>). all mosses are bryophytes in the <em>Bryophyta</em> division. These non-vascular, moisture-dependent plants lack true roots, stems, and leaves but are crucial for soil development and water retention. And the Victorians sure did love to press them under magnifying glasses.</p>",
+    "lectio": { "post": "lt-0010" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0009"]
+    }
+  },
+  {
+    "id": "w-0054",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Text of “<a href=\"http://www.hildegard-society.org/2017/04/o-nobilissima-viriditas-responsory.html\">O Nobilissima Viriditas</a>,” <em>International Society of Hildegard von Bingen Studies</em> (April 21, 2017).</p></li><li><p>Bruce McCune and Kristen Whitbeck, “<a href=\"https://pnwhandbooks.org/plantdisease/pathogen-articles/nonpathogenic-phenomena/living-land-mosses\">Living in the Land of Mosses</a>,” <em>Pacific Northwest Pest Management Handbooks</em> (March 2023).</p></li><li><p>Ellen McHale, “<a href=\"https://www.kew.org/read-and-watch/moss\">7 Interesting Things About Mosses</a>,” <em>Kew Royal Botanic Gardens </em>(May 23, 2020).</p></li><li><p><em><a href=\"https://www.bryonames.org\">The Bryophyte Nomenclator</a>. </em>ed. John C. Brinda and John J. Atwood (April 2026).</p></li></ul>",
+    "lectio": { "post": "lt-0010" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0009"]
+    }
+  },
+  {
+    "id": "w-0055",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>It’s worth at least <a href=\"https://ngmdb.usgs.gov/mapview/?center=-97,39.6&amp;zoom=4\">checking your bedrock</a>. You may find a surprising history beneath your feet.</p><p>As for me and my apartment, the story goes something like this:</p><p>A while back, when the continents were arranged much differently, the bedrock of present-day Boston was adrift on the <a href=\"https://en.wikipedia.org/wiki/Iapetus_Ocean\">Iapetus Ocean</a> as part of a microcontinent called <a href=\"https://en.wikipedia.org/wiki/Avalonia\">Avalonia</a>. More or less a chain of volcanic islands, Avalonia had split off from the supercontinent of Gondwana together with parts of what are now the UK and northern Europe. When all dry land on the planet eventually converged into the mother of all continents, <a href=\"https://en.wikipedia.org/wiki/Pangaea\">Pangaea</a>, the islands of Avalonia were crushed between the tectonic plates of Baltica (Europe) and later Laurentia (North America). So they rested until Pangea broke apart, and the Atlantic Ocean rifted Avalonia into two parts: New England and parts of Canada to the west, and old England and parts of Europe to the east. </p><p>The fault line where Avalonia fused to Laurentia is visible in a few places across Massachusetts, including the so-called “<a href=\"https://www.nps.gov/places/the-bloody-bluff.htm\">Bloody Bluff</a>” in Lexington. The land to the east of this bluff, where I live, shares rocks and fossils and other subtle features with the hills of Wales and other regions across the wide ocean. So while the flora and fauna of surrounding Boston may be part of North America, the region’s bedrock originated from another continent entirely. We live atop strange layers of time and stuff; but as Wittgenstein notes below, sometimes what we are looking for is less the facts of the matter than the knowledge that they exist. </p><p>As a sedimentary rock, Cambridge Argillite likely was formed off the coast of Avalonia, when a combination of underwater currents and submarine mudslides laid down thick layers of fine-grained silt in what eventually would become <a href=\"https://www.bostonbasinhills.org\">the Boston basin</a>. This mud was later buried, compacted, and lightly metamorphosed, creating a dense grey rock (or sometimes purplish-grey) that looks like shale but breaks into irregular chunks rather than thin sheets. Such characteristics created many headaches when they were <a href=\"https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60\">digging the subway tunnels under my current apartment</a>. But Cambridge Argillite also provides a generally stable foundation for heavy urban infrastructure, and has conductive properties that make it suitable for shallow geothermal applications, including <a href=\"https://www.wbur.org/news/2022/06/30/massachusetts-geothermal-ground-source-energy\">under my kids’ school</a>. Rock on.</p>",
+    "lectio": { "post": "lt-0011" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "phenomena": ["ph-0002"]
+    }
+  },
+  {
+    "id": "w-0056",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Ellen Wayland-Smith and Marcia Bjornerud, “<a href=\"https://orionmagazine.org/article/marcia-bjornerud-interview-turning-to-stone/\">The Languages and Lessons of Stone: A Conversation with Author and Geologist Marcia Bjornerud</a>,” <em>Orion Magazine </em>(August 13, 2024).</p></li><li><p>George Ehrenfried, “<a href=\"http://rwinters.com/history/ehrenfried.htm\">This Old Land of Cambridge</a>,” adapted from a lecture presented at the Mount Auburn Branch of the Cambridge Public Library (April 1991).</p></li><li><p>Patrick J. Barosh and David Woodhouse, “<a href=\"https://www.bscesjournal.org/wp-content/uploads/CEP-Vol-26-27-05.pdf\">Geology of the Boston Basin</a>,” <em>Civil Engineering Practice</em> (2011/2012):<em> 100-236</em>.</p></li></ul>",
+    "lectio": { "post": "lt-0011" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "phenomena": ["ph-0002"]
+    }
+  },
+  {
+    "id": "w-0057",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>The lilac—so pure, so sweet, so artificial. Although only 20 to 25 species of lilacs exist in the wild, more than 2,000 named cultivars (according to the official <a href=\"https://www.internationallilacsociety.org/lilacs/\">International Lilac Registrar</a>) have been developed, most over the past 150 years. Beginning in the 1870s, French botanists Victor and Marie Louise Lemoine began using needles, tweezers, and paintbrushes to <a href=\"https://www.atlasobscura.com/articles/the-unknown-french-horticulturist-who-made-lilacs-happen\">delicately cross </a>the common lilac—native to the Balkan Peninsula but common throughout Europe—with species from China and other regions, creating spectacular double-flowered and early-blooming hybrids. Other breeders around the world followed suit, leading to an explosion of new varieties, actual plants, and public interest. The numerous cultivars now require a <a href=\"https://www.internationallilacsociety.org/lilacs/\">color code</a> for reference and classification: I (White), II (Violet), III (Blue), IV (Lilac), V (Pink), VI (Magenta), and VII (Purple)—with some European organizations also recognizing VIII (Creamy Yellow.)</p><p>The flowers are just as abundant in literary and musical texts, featuring prominently in poems by <a href=\"https://www.poetryfoundation.org/poems/45480/when-lilacs-last-in-the-dooryard-bloomd\">Walt Whitman</a>, Amy Lowell (see below), and even <a href=\"https://www.poetryfoundation.org/articles/1646148/for-the-love-of-the-word\">Hannah Arendt</a>; short stories by the wonderful <a href=\"https://americanliterature.com/author/kate-chopin/short-story/lilacs\">Kate Chopin</a> and the lesser-known <a href=\"https://americanliterature.com/author/aleksandr-i-kuprin/short-story/a-clump-of-lilacs\">Aleksandr Kuprin</a>; prose by Henry David Thoreau and Marcel Proust; and, of course, in various renditions of the sultry, melancholic ballad, “<a href=\"https://ig.ft.com/life-of-a-song/lilac-wine.html\">Lilac Wine</a>.” If <a href=\"seasons.html?season=spring&amp;entry=lt-0010\">mosses are divine</a>, then lilacs are carnal. </p><p>The common lilac (<em>Syringa vulgaris</em>) is a flowering deciduous shrub in the olive family (<em>Oleaceae</em>). This family, which includes approximately 28 genera and 700 species, such as olive, ash, jasmine, and forsythia, is grouped in the order of mints (<em>Lamiales</em>, not to be confused with the specific mint family, <em>Lamiaceae</em>). And this order is characterized by several features: (1) paired rotating leaves—or “opposite decussate phyllotaxis,” in botanical terms; (2) bilateral, two-lipped flowers that are fused into a tube; (3) reduced reproductive organs, including two or four stamens; and (4) strong scent oils concentrated in microscopic glandular hairs, or trichomes, that blanket the leaves and stems. Of course, lilacs differ from this final trait in concentrating their volatile scent oils exclusively within their flowers, replacing the general defense mechanism of the mints with a targeted, highly volatile aromatic lure for spring pollinators—“sweet and heady,” indeed. </p>",
+    "lectio": { "post": "lt-0012" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0010"]
+    }
+  },
+  {
+    "id": "w-0058",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Sinead Campbell, “<a href=\"https://ig.ft.com/life-of-a-song/lilac-wine.html\">Life of a Song: Lilac Wine — Nina Simone put her stamp on an intoxicating ballad</a>,” <em>Financial Times </em>(July 14, 2024).</p></li><li><p>David Doochin, “<a href=\"https://www.atlasobscura.com/articles/the-unknown-french-horticulturist-who-made-lilacs-happen\">The Unknown French Horticulturist Who Made Lilacs Happen</a>,” <em>Atlas Obscura </em>(June 28 2016).</p></li><li><p>Kai Potter, “<a href=\"https://provincetownindependent.org/visual/2021/06/16/lilacs-tell-a-story/\">Lilacs Tell a Story</a>,” <em>The Provincetown Independent </em>(June 16, 2021).</p></li><li><p>John C. Wister, <em><a href=\"https://hdl.handle.net/2027/uiug.30112041658367\">Lilac Culture</a> </em>(New York: Orange Judd Publishing Company,<em> 1936).</em></p></li><li><p><em><a href=\"https://hdl.handle.net/2027/ufl.31262085829223?urlappend=%3Bseq=1%3Bownerid=117484662-5\">Growing Lilacs</a>, </em>Home and Garden Bulletin No. 19<em> </em>(Washington, DC: Agricultural Research Service, 1973).</p></li></ul>",
+    "lectio": { "post": "lt-0012" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0010"]
+    }
+  },
+  {
+    "id": "w-0059",
+    "kind": "note",
+    "shownIn": "seasons",
+    "text": "<p><em>This week goes long on history and biology—the latter not my forte. Bear with me as I venture into the science of the small. The surprising story is worth it.</em></p>",
+    "lectio": { "post": "lt-0013" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0011"]
+    }
+  },
+  {
+    "id": "w-0060",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>They’re in the soil. You may have heard that a single teaspoon of soil contains <a href=\"https://www.soilassociation.org/causes-campaigns/save-our-soil/meet-the-unsung-heroes-looking-after-our-soil/#microorganisms\">tens of billions</a> of individual microorganisms—far more than the total population of currently living humans, and perhaps approaching the total number of humans <a href=\"https://www.prb.org/news/how-many-people-have-ever-lived-on-earth/\">who have ever walked this planet</a>. Indeed, recent <a href=\"https://www.theguardian.com/environment/2023/aug/07/more-than-half-of-earths-species-live-in-the-soil-study-finds-aoe\">research </a>suggests that more than half of all species on Earth dwell primarily beneath our feet, in the microcosmos of infinitesimal life. And common among these tiny dirt dwellers are some very interesting and important “old friends” that we humans should get to know better: bacteria, parasites, and other microbes (viruses, fungi, and protozoa) that offer many known and potential benefits to humans. </p><p>In his 1665 book, <em><a href=\"https://ttp.royalsociety.org/ttp/ttp.html?id=a9c4863d-db77-42d1-b294-fe66c85958b3&amp;type=book\">Micrographia</a></em>, English scientist Robert Hooke produced a <a href=\"https://www.lindahall.org/experience/digital-exhibitions/the-grandeur-of-life/section-i/06-hooke-robert-1635-1703/#:~:text=Hooke%20did%20not%20invent%20the,level%20of%20existence%20“down%20there.\">striking illustration</a> of the fruiting structures of “blue mould” (something in the genus <em>Mucor</em>), thereby offering humans our first glimpse of the microscopic realm. When the eccentric Dutch experimentalist Antonie van Leeuwenhoek <a href=\"https://royalsocietypublishing.org/rstl/article/12/133/821/109770/Observations-communicated-to-the-publisher-by-Mr\">first observed bacteria in 1676</a>, he referred to the amusing little things he observed squirming in water as “animalcules.” Scientific wonder at these tiny forms grew into public fear roughly two centuries later, when the germ theory of disease gradually replaced belief in <a href=\"https://en.wikipedia.org/wiki/Miasma_theory\">miasmas</a>, and biologists realized that bacteria were responsible for horrifying diseases such as tuberculosis and leprosy.</p><p>By the beginning of the twenty-first century, though, things have come full circle. We now know that bacteria and other microorganisms, even viruses and parasites, operate as an “<a href=\"https://thereader.mitpress.mit.edu/the-invisible-organ-shaping-our-lives-microbiome/\">invisible organ</a>,” hidden body, or “<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4191858/\">second human genome</a>” within us, playing many crucial roles: digesting complex carbohydrates, producing essential vitamins, educating our immune systems, and shielding the body from harmful pathogens. We are, in fact, <a href=\"https://en.wikipedia.org/wiki/Holobiont\">holobionts</a>. Microbes also play crucial roles outside of our bodies, in agriculture and food preparation, industry and biotechnology—microscopic cyanobacteria, after all, generated the planet’s breathable atmosphere. How did we get here?</p><p>In 1971, immunologists noticed that people living near Lake Kyoga in central Uganda responded better to the vaccine for leprosy than people in other regions of the world. They connected this vaccine response to a strain of <em>Mycobacteria vaccae</em> (from <em>vacca</em>, Latin for “cow,” from which, via cowpox, we also get the word vaccine)<em>.<a href=\"#footnote-1\" target=\"_self\">1</a> </em>This bacteria was so abundant in the local environment that it lent a bright orange-yellow tint to the mud surrounding the lake. Thus began a radical revision of modern germ theory. The existence of good germs means that sterility is not synonymous with health; and while hygiene is still crucial, so is biodiversity—not just out in nature, but around us and inside us.</p><p>When later researchers tested <em>Mycobacteria vaccae </em>as an immunotherapy for lung cancer patients, they were surprised to find that, although treatment did not extend the patients lives, it significantly improved their mental health. Why this unexpected side effect? Follow-up studies <a href=\"https://www.sciencedirect.com/science/article/pii/S0306452207001510\">identified </a>the specific mechanism, revealing that exposure to the bacteria stimulated serotonin production and helped regulate stress responses in mice. The notion of a “<a href=\"https://www.colorado.edu/asmagazine/2018/09/28/stalking-dirt-vaccine\">dirt antidepressant</a>” made headlines, further research <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6436432/\">confirmed</a> the near-immediate benefits of direct contact with plants and soil, and wellness entrepreneurs rushed to commoditize <a href=\"https://mud-plus.com/products/mud-mental-wellbeing-supplement?variant=51788816351526\">yet another miracle-promising supplement</a>. Pardon me if I go do some weeding in my garden instead.</p><p><em>Mycobacterium vaccae</em> is a nonpathogenic bacteria commonly found in soil around the world. It is a saprophyte, or <a href=\"https://en.wikipedia.org/wiki/Saprotroph\">saprotroph</a>, meaning that it feeds off of decaying matter, secreting enzymes to break down dead organic matter or waste and absorbing whatever nutrients emerge. This bacteria has extensive immunoregulatory and anti-inflammatory properties that are being explored; and, through <a href=\"https://ui.adsabs.harvard.edu/abs/2015FrES....9...40R/abstract\">microbial prospecting</a>, a strain of it can even be used to <a href=\"https://www.alliedacademies.org/articles/microbiological-analysis-for-hydrocarbon-exploration-10213.html\">find oil</a>. The <em><a href=\"https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/mycobacteria\">Mycobacterium</a></em> genus includes several infamous <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6696970/\">disease-causing species</a>, including those responsible for tuberculosis and leprosy. But other mycobacteria are being studied for potential medical and health applications, ranging from treatment of cancers (<em>Mycobacterium obuense</em>) and allergy-induced asthma (<em>Mycobacterium phlei</em>) to remediation of polluted soils (<em>Mycobacterium chitae</em>). After a week of perusing the bacterial universe, I feel that I’ve only scratched the surface.</p>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>In 2018, the Lake Kyoga strain was reclassified as a distinct species, <em>Mycobacterium kyogaense</em>. This sort of thing seems to happen a lot with bacteria.</p>"
+      }
+    ],
+    "lectio": { "post": "lt-0013" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0011"]
+    }
+  },
+  {
+    "id": "w-0061",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>“<a href=\"https://www.bristol.ac.uk/news/2007/5384.html\">Getting Dirty May Lift Your Mood</a>,” University of Bristol (April 2, 2007).\"</p></li><li><p>Lisa Marshall, “<a href=\"https://www.colorado.edu/asmagazine/2018/09/28/stalking-dirt-vaccine\">Stalking the Dirt Vaccine</a>.” <em>Colorado Arts and Sciences Magazine </em>(The University of Colorado Boulder: September 28, 2018). </p></li><li><p>Chris Lowry, “<a href=\"https://townhallmedicine.com/summit-themes/the-paradigm-shift/the-old-friends-hypothesis-the-m-vaccae-story/\">The Old Friends Hypothesis &amp; the M. Vaccae Story</a>.” <em>The Microbiome Summit </em>(2019).</p></li><li><p>“<a href=\"https://www.nrcs.usda.gov/conservation-basics/soil/soil-quotations\">Soil Quotes</a>,” U.S. Department of Agriculture, Natural Resources Conservation Service (n.d.).</p></li><li><p>Antoni Van Leeuwenhoek, “<a href=\"https://royalsocietypublishing.org/rstl/article/12/133/821/109770/Observations-communicated-to-the-publisher-by-Mr\">Observations, communicated to the publisher by Mr. Antony van Leewenhoeck, in a dutch letter of the 9th Octob. 1676. here English'd: concerning little animals by him observed in rain-well-sea- and snow water; as also in water wherein pepper had lain infused</a>.” <em>Philosophical Transactions R. Society </em>12.133 (March 25, 1677): 821–831.</p></li></ul>",
+    "lectio": { "post": "lt-0013" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["spring"],
+      "species": ["sp-0011"]
+    }
+  },
+  {
+    "id": "w-0062",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Are you looking for Rumi-related AI slop? Well, YouTube has it! (No links provided here.) Perhaps this is not surprising. Since his introduction into English and Western European languages during the nineteenth century, Rumi went on to become a bestseller in the 1990s and early 2000s, <a href=\"https://ajammc.com/2015/03/09/rumi-for-the-new-age-soul/\">featured prominently </a>across Oprah’s multimedia empire and even recited on a Coldplay <a href=\"https://www.youtube.com/watch?v=h4ag7p5Tohw\">album</a>. Of course, making him <a href=\"https://www.bbc.com/culture/article/20140414-americas-best-selling-poet\">the most popular poet in the U.S.</a> required some translators/adapters and publishers to excise many of his cultural, historical, and linguistic particularities, including most traces of Islam. As a good student of literature, I know that these missing elements could expand and nuance, rather than hinder, appreciation of this important poet and Sufi, even for so-called Western readers. That being said, his writing evokes many spheres of nature and human experience in addition to mystical ecstasy and religious devotion. Consider the reed.</p><p>Traditional end-blown flutes such as the <a href=\"https://www.youtube.com/watch?v=5wc6zFXJPqM\">nay</a> are made primarily from the giant reed (<em>Arundo donax</em>), a tall perennial cane with a moderate circumference, or from varieties of <a href=\"https://www.youtube.com/watch?v=Sv2je9arNz4\">bamboo</a>, <a href=\"https://www.youtube.com/watch?v=FJs4Oz3rM6M\">yucca</a>, or… <a href=\"https://www.youtube.com/watch?v=JiNhaCpHL-8\">grass (?)</a>. But the common reed (<em>Phragmites australis</em>) still has some claim to musical history, as uber-niche <a href=\"https://www.doublepipes.info/phragmites-vs-arundo/\">archaeologists</a>, <a href=\"https://youtu.be/l-Tb0Yz7Jk4?t=900\">musicologists</a>, and <a href=\"https://www.youtube.com/watch?v=wkXJ6rOwVMw\">wind-instrument enthusiasts</a> are wont to argue. Long live the <a href=\"https://www.youtube.com/watch?v=_tdWdsozcTI\">ancient aulos revival</a>! In reminding us of the reed’s relationship to its “source” and to “fire” (many flutes require heat to achieve their necessary form and durability), Rumi transforms a soggy plant into a symbol of what is most human, most divine, most primordial in us: the “pain of love-desire,” borne of our “separations” and calling us back to our source. When he also compares the reed to wine, I can’t help but think that he is imagining its maroon-burgundy tassel, or panicle—one of my favorite sights in the blowing summer wind.</p><p>The common reed (<em>Phragmites australis</em>) is a flowering wetland grass in a subfamily of the <em><a href=\"https://en.wikipedia.org/wiki/Poaceae\">Poaceae</a></em>, or true grasses, family, along with the bamboos and cereal grains. In other words, it is a <a href=\"https://en.wikipedia.org/wiki/Littoral_zone\">littoral</a> relative of the corn, rice, wheat, oats, millet, barley, and sugarcane that feed most of the world, not to mention the turf in your backyard. The common reed can be found at the water’s edge around the world and has often been considered a single species. However, taxonomies for the plant were a bit muddled until <a href=\"https://onlinelibrary.wiley.com/doi/10.2307/1216507\">1968</a>, when a British botanist reviewed the history of classifications and revived the now-current<em> </em>designation from an eighteenth century Spanish botanist.</p><p>And now, morphological studies and <a href=\"https://invasions.si.edu/nemesis/chesreport/species_summary/phragmites%20australis\">genetic sequencing</a> indicate significant variations within <em>Phragmites australis</em>, which likely will be differentiated into multiple species, including a North American genotype that has largely been replaced across that continent by a rival Eurasian haplotype. This Eurasian variety, currently considered a subspecies, has been aggressively spreading since its “<a href=\"https://www.pnas.org/doi/full/10.1073/pnas.032477999\">cryptic invasion</a>” at some point in the last 150 years: a bed of “<a href=\"https://www.youtube.com/watch?v=N3P9wch5N3Y&amp;pp=ygUQcGhyYWdtaXRlcyBmbHV0ZQ%3D%3D\">phrag</a>” can expand through underground rhizomatic growth and above-ground <a href=\"https://en.wikipedia.org/wiki/Stolon\">stolons</a> up to several inches per day, and 20 feet per year. Its pressure on other species and destruction of prior ecosystems can be immense. Yet the durability and sheer mass of such thickets can be beneficial for purifying polluted ecosystems, stabilizing coastal and riparian zones, and <a href=\"https://bg.copernicus.org/articles/23/1327/2026/\">absorbing</a> atmospheric carbon. Death and life are not always a zero-sum game. Again—consider the cut, burned, empty, beautiful reed.</p>",
+    "lectio": { "post": "lt-0014" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0012"]
+    }
+  },
+  {
+    "id": "w-0063",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>“<a href=\"https://www.dar-al-masnavi.org/reedsong.html\">Translations and Versions of “The Song of the Reed” (Masnavi, Book 1: LInes 1-34)</a>.” The American Institute of Masnavi Studies (n.d.).</p></li><li><p>Kat Thornton, “<a href=\"https://ajammc.com/2015/03/09/rumi-for-the-new-age-soul/\">Rumi for the New-Age Soul: Coleman Barks and the Problems of Popular Translations</a>.” <em>Ajam Media Collective </em>(March 9, 2015).</p></li><li><p>Barnaby Brown, “<a href=\"https://www.doublepipes.info/phragmites-vs-arundo/\">Phragmites australis vs Arundo donax</a>.” The Workshop of Dionysus (September 16, 2019).</p></li><li><p>“<a href=\"https://www.greatlakesphragmites.net/phragbasics/mapping-tools/\">Where is </a><em><a href=\"https://www.greatlakesphragmites.net/phragbasics/mapping-tools/\">Phragmites</a></em><a href=\"https://www.greatlakesphragmites.net/phragbasics/mapping-tools/\"> Found?</a><strong><a href=\"https://www.greatlakesphragmites.net/phragbasics/mapping-tools/\">,</a>” </strong>The Great Lakes Phragmites Collaborative (2026).</p></li><li><p>\"<a href=\"https://www.texasbeyondhistory.net/ethnobot/images/commonreed.html\">Common Reed</a>,” from “<a href=\"https://www.texasbeyondhistory.net/ethnobot/gallery.html\">Ethnobotany of the Lower Pecos Canyonlands</a>,” <em>Texas Beyond History</em> (2008).</p></li><li><p>“<a href=\"https://www.invasiveplantatlas.org/subject.cfm?sub=3062\">Common reed</a>,” <em>Invasive Plant Atlas of the United States </em>(2018).</p></li></ul>",
+    "lectio": { "post": "lt-0014" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0012"]
+    }
+  },
+  {
+    "id": "w-0064",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>We thought they were fungal. Or maybe even artificial. </p><p>Crystallized dandelion seeds. </p><p>Speckled balls of styrofoam. </p><p><a href=\"https://en.wikipedia.org/wiki/Callirhytis_seminator#/media/File:Wool_Sower_Gall_Wasp_imported_from_iNaturalist_photo_129949604_on_23_October_2023.jpg\">Pink and white lollipops</a>. </p><p>The confusion was not ours alone. Since at least Aristotle, who held that insects could arise spontaneously from rotting vegetable matter, it was widely believed that galls and the insects that emerged from them were products of the tree itself—a kind of arboreal spontaneous generation. Even Francesco Redi of Arezzo, whose controlled experiments on rotting meat in 1668 are credited with first seriously challenging the doctrine of spontaneous generation, still believed that the oak galls were essentially eggs laid by the tree itself.</p><p>But no, they were the galls of the wool sower wasp (<em>Callirhytis seminator</em>), a harmless, parasitic wasp that chemically manipulates white oak trees into creating edible nests for its larvae. The hijacking happens in stages. Unlike the fig-friendly family of <em><a href=\"https://en.wikipedia.org/wiki/Agaonidae\">Agaonidae</a> </em>wasps, gall wasps do not pollinate the tree’s fruit to support its growth. Instead, a female wool sower wasp injects its eggs into a bud on the oak tree along with a maternal fluid that dissolves some of the plant cells, suppresses the tree’s defense systems, and seemingly halts the growth of the bud. When the larva hatch, they begin to secrete enzymes and other chemicals of their own, which hormonally alter the tree’s growth patterns and change <a href=\"https://pubmed.ncbi.nlm.nih.gov/34510608/\">nearly a third of its genetic expression</a>. Now, instead of growing branches, buds, and leaves, the tree instead creates a novel structure specifically tailored to feed and protect the larva. In fact, the entire tree system is hijacked in service of the gall and <a href=\"https://www.youtube.com/watch?v=lOgP5NzcTuA\">redirects nutrients</a> away from the leaves and fruit, funneling them into the gall to sustain the developing wasp. </p><p>The process is similar, but with many interesting variations, across the approximately 1400 members of the <em>Cynipidae </em>family, although some use the galls created by other gall wasps (as <a href=\"https://en.wikipedia.org/wiki/Inquiline\">inquilines</a>) rather than create their own. The cecidiologists who dedicate themselves to the study of plant galls are like kids in an alien candy shop filled with strange slimes, jellies, hunks, orbs, and pellets. And the gall wasps themselves are as surprising as their genetically pirated abodes. For most members of the <em>Cynipidae</em> family are heterogonic, alternating their reproductive characteristics each generation: while the first generation reproduces sexually, with male and female individuals, the second generation comprises all females, which reproduce asexually through <a href=\"https://en.wikipedia.org/wiki/Parthenogenesis\">parthenogenesis</a>—a sort of cloning or virgin birth that produces a mix of female and male offspring, all without fertilization. In fact, some species have done away entirely with sexual reproduction  and are made up only of females. For the wool sower wasp, its fuzzy lollipop gall incubates the asexual generation of larva; but no one yet knows what form of gall is created by its sexual generation.</p><p>This strange science also precipitated an unexpected cultural turn. For we owe much of European manuscript culture to the brown spheres produced by the asexual reproduction of the marble gall wasp (<em>Andricus kollari</em>) and other branches of the <em>Cynipidae</em> family. For approximately 1500 years, from the fall of the Western Roman Empire until the 20th century, these hard, nut-like galls became the primary media of textual culture, crushed and used to create an acidic ink that could permanently mark parchment, vellum, and paper. Notable documents from the text of <em>Beowulf </em>and a plethora of monastic manuscripts to the <em>Magna Carta</em>, Leonardo da Vinci’s notebooks, and <em>The Declaration of Independence</em> were written in oak gall ink. Ironically, though, the acid that made this ink so indelible is now eating away at these documents, threatening to erase the textual record it enabled in the first place. Instead of spontaneous generation, the archivists now are dealing not with spontaneous corrosion.</p>",
+    "lectio": { "post": "lt-0015" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0013"]
+    }
+  },
+  {
+    "id": "w-0065",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Adam Kranz, et al. <em><a href=\"https://www.gallformers.org/\">Gallformers.org</a></em>. </p></li><li><p>Joe Boggs, “<a href=\"https://bygl.osu.edu/node/2362\">Cotton Balls on Oak Trees</a>” (May 28, 2024) and “<a href=\"https://bygl.osu.edu/node/750\">Oak ‘Apples’ and the Gall-Making Process</a>“ (May 12, 2017). Buckeye Yard and Garden Online, The Ohio State University.</p></li><li><p>“<a href=\"https://www.youtube.com/watch?v=y7k4-wj8mZ8&amp;t=9s\">Making Manuscripts: Oak Gall Ink</a>,” <em>The British Library </em>(November 22, 2018).</p></li><li><p>Nathalie Roy, “<a href=\"https://www.sciencefriday.com/educational-resources/make-ancient-ink/\">Make Ancient Ink With The Help Of Oak Tree Parasites</a>,” <em>Science Friday </em>(August 21, 2024).</p></li><li><p>Usha Lee McFarling, “<a href=\"https://www.huntington.org/watch-read-listen/verso/making-ink-oak-galls\">Making Ink from Oak Galls</a>,” <em>The Huntington Library and Museum </em>(May 1, 2019).</p></li></ul>",
+    "lectio": { "post": "lt-0015" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0013"]
+    }
+  },
+  {
+    "id": "w-0066",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Along the same walk that I first encountered the <a href=\"seasons.html?season=summer&amp;entry=lt-0015\">wool sower wasp</a>, I found an old friend. No, not <a href=\"seasons.html?season=spring&amp;entry=lt-0013\">that type</a> of old friend—just a flower I’ve come to know over the past nine or so years. It has a delicate yet visceral form, immediately striking and beautiful but a bit gory if you think about it for too long. It’s the type of plant that seems to have nearly universal appeal, spawning refined social and scientific clubs while also luring weirdos out into the woods. For independent botanist and artist <a href=\"https://en.wikipedia.org/wiki/Grace_Greylock_Niles\">Grace Greylock Niles</a>, whose work and <a href=\"https://www.instagram.com/p/C4LGpEMusSn/\">story</a> are worth knowing, this flower took the front page of her best-known book, the marvelously titled <em>Bog-Trotting for Orchids. </em>And rumors are that it is illegal to pick or dig (in reality, that is only true <a href=\"https://newengland.com/living/gardening/are-lady-slippers-endangered/\">on federal lands</a>).</p><p>The pink lady’s slipper, or moccasin flower (<em>Cypripedium acaule</em>), is a perennial “<a href=\"https://en.wikipedia.org/wiki/Cypripedioideae\">slipper orchid</a>” in the varied and cosmopolitan orchid family (<em>Orchidaceae</em>). Native to the eastern woodlands of North America, the plant requires specific conditions to grow and bloom, including acidic, well-drained soils: it often prefers gentle slopes in pine forests, where it can appear alone or in colonies. Like all orchids, the pink lady’s slipper also requires the presence of a specific <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2005.02424.x\">mycorrhizal fungus</a> in the soil, which breaks open and nourishes the otherwise helpless seed. The orchid acts in a slightly parasitic relationship with the fungus, using it as a surrogate root system to obtain water and nutrients from the soil. Because of these exacting requirements, a moccasin flower can take two years to establish a seedling and anywhere from 5 to 16 years to produce its first flower. However, once established, an individual plant can live for decades (some say a half century or more) and expand rhizomatically to form a colony of clones.</p><p>The species name, <em>acaule</em> (Latin for “stemless”), seems misleading because the flower very noticeably rises on a stalk; however, this stalk is technically a scape, rather than a stem, and carries no leaves. Instead, two broad basal leaves emerge directly from the ground, green and hairy above, grayer beneath, with conspicuously raised parallel veins.  These leaves persist through summer long after the flower has gone to seed. The flower itself is a labellum (from the Latin for “little lip”), inflated and heavily veined, with two narrow, twisted petals extending outward to either side. The blossom lures bumblebees inward with a sweet fragrance, but offers no nectar; the bee enters through a slit in the pouch, works its way through the narrow interior passage, and exits bearing a load of pollen for which it received nothing in return—except, perhaps, the experience? The plant’s roots contain high concentrations of cypripedin (“<a href=\"https://botanical.com/botanical/mgmh/v/valame02.html\">American valerian</a>”), especially in late fall and early spring, and were <a href=\"https://sercblog.si.edu/medicine-myth-and-the-ladys-slipper-orchid/\">used historically</a> as a light sedative or calming agent to support menstruation and alleviate headaches or insomnia. The substance is now being studied in relationship to <a href=\"https://pubmed.ncbi.nlm.nih.gov/35159021/\">cancers</a>. But you probably shouldn’t dig up an orchid for your backyard science project, especially if it’s a pink lady’s slipper.</p>",
+    "lectio": { "post": "lt-0016" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0014"]
+    }
+  },
+  {
+    "id": "w-0067",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>“<a href=\"https://extension.umaine.edu/signs-of-the-seasons/indicator-species/pink-lady-slipper-fact-sheet/\">Pink Lady Slipper Fact Sheet</a>.” <em>Signs of the Seasons: A New England Phenology Program.</em> The University of Maine Cooperative Extension.</p></li><li><p>Kristen Goodhue, “<a href=\"https://sercblog.si.edu/medicine-myth-and-the-ladys-slipper-orchid/\">Medicine, Myth and the Lady’s Slipper Orchid</a>.” <em>Shorelines: Life and science at the Smithsonian Environmental Research Center </em>(August 7, 2015).</p></li><li><p>Grace [Greylock] Niles, “<a href=\"https://www.jstor.org/stable/43477161\">The Origin of Plant Names</a>.” <em>The Plant World </em>5.8 (1902): 141–44.</p></li><li><p>Grace Greylock Niles, <em><a href=\"https://archive.org/details/hoosacvalleyitsl00nileuoft/hoosacvalleyitsl00nileuoft/page/n9/mode/2up\">The Hoosac Valley: Its Legends and Its Stories</a> </em>(New York: The Knickerbocker Press, 1912).</p></li><li><p>Henry Baldwin, <em><a href=\"https://hdl.handle.net/2027/hvd.32044107232043?urlappend=%3Bseq=9%3Bownerid=27021597765946597-13\">The Orchids of New England: A Popular Monograph</a> </em>(New York: John Wiley &amp; Sons, 1894).</p></li></ul>",
+    "lectio": { "post": "lt-0016" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0014"]
+    }
+  },
+  {
+    "id": "w-0068",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>A weather update from outer space:</p><p>We are more than halfway through Solar Cycle 25, which unexpectedly peaked in October 2024, about one year earlier than predicted. Scientists observed a maximum of 161 sunspots around this time, a number that also exceeded expectations and which led to a period of more-prominent <a href=\"https://www.youtube.com/watch?v=G4gbE9DOSks&amp;t=11s\">space weather events</a>, according to CBS 17 News. Summer 2026 may be subject to a so-called “<a href=\"https://ui.adsabs.harvard.edu/abs/2018ApJ...866...17K/abstract\">double peak</a>,” as the sun’s other hemisphere (north or south) takes its turn churning through spots, flares, <a href=\"https://en.wikipedia.org/wiki/Coronal_mass_ejection\">coronal mass ejections</a>, and other phenomena. But the forecast for the next few years is rather quieter, as we approach the end of the current cycle in around 2030.</p><p>Though normal human persons rarely notice it, the solar cycle influences the type and intensity of radiation surging toward our planet at any given moment. The cycle names an 11-year-long process during which the sun’s magnetic activity builds in complexity, until the whole star eventually reverses its polarity, with magnetic north and south changing places due to the swirling movements of immense quantities of burning plasma. It’s a wild mess up/over there. And yet so much hinges on the sun, spots and all.</p><p>Sunspots (<em>maculae solares</em> in Latin) were first observed in China nearly 3000 years ago, in the <em><a href=\"https://en.wikipedia.org/wiki/I_Ching\">I Ching</a></em>, preceding Theophrastus’ observations in Ancient Greece by several centuries. They were made infamous by Galileo Galilei in 1612, when he circulated <a href=\"https://en.wikipedia.org/wiki/Letters_on_Sunspots\">a pamphlet</a> challenging Aristotle’s view that the sun was an unblemished, immutable sphere. That offense was cited two decades later, when he was imprisoned by the Sacred Congregation of the Holy Roman and Universal Inquisition (not to be confused with the earlier <a href=\"https://www.youtube.com/watch?v=psMMKgvpGfg\">Spanish Inquisition</a>).<a href=\"#footnote-1\" target=\"_self\">1</a> In theological and medical contexts, macula (meaning “spot” or “mark”) traditionally refers to either sin or the central retina, respectively. But the word has been used with various meanings <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4177979/\">over the past 600+ years</a> and even may have lent a name to that spotted fish, the mackerel. Four centuries after the condemnation of Galileo’s heretical conclusions about sunspots, poet Simon Barraclough showered them with playful, word-radiating attention in his endearing, if esoteric, 2015 collection (excerpted below).<a href=\"#footnote-2\" target=\"_self\">2</a> As we approach the summer solstice this weekend, the solar influence on our days grows unignorable. However, it’s best to avoid any direct observation of the sun, which could lead to <a href=\"https://eyewiki.org/Solar_Retinopathy\">solar retinopathy</a> and damage that precious macula of yours.</p>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>The day after Galileo’s sentencing, the Pope commuted his sentence from actual imprisonment to house arrest, and the stellar observer was eventually permitted to return to his villa but barred from further research, teaching, or publishing activities.</p>"
+      },
+      {
+        "marker": 2,
+        "text": "<p>Barraclough’s homage to the sun is itself paying tribute to Christopher Smart’s remarkable eighteenth-century work, <em><a href=\"https://en.wikipedia.org/wiki/Jubilate_Agno\">Jubilate Agno</a></em>, specifically its <a href=\"https://www.poetryfoundation.org/poems/45173/jubilate-agno\">anaphoric praise of the poet’s cat, Jeoffry</a><em>.</em></p>"
+      }
+    ],
+    "lectio": { "post": "lt-0017" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "phenomena": ["ph-0003"]
+    }
+  },
+  {
+    "id": "w-0069",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Simon Barraclough, “<a href=\"https://www.poetryfoundation.org/poetrymagazine/poems/58570/from-sunspots\">From </a><em><a href=\"https://www.poetryfoundation.org/poetrymagazine/poems/58570/from-sunspots\">Sunspots</a>.</em>” <em>Poetry </em>(December 2015).</p></li><li><p>Kate Howells, “<a href=\"https://www.planetary.org/articles/its-not-magic-its-magnetic\">It’s Not Magic; It’s Magnetic!</a>” <em>The Planetary Report</em> (June 9, 2025).</p></li><li><p>Adam Green, “<a href=\"https://publicdomainreview.org/collection/the-trouvelot-astronomical-drawings-1882/\">The Trouvelot Astronomical Drawings (1882)</a>.” <em>The Public Domain Review </em>(Dec. 14, 2026).</p></li><li><p>Richard Webb, “<a href=\"https://www.newscientist.com/gallery/sunspots/\">Spotty Record: Four Centuries of Sunspot Pictures</a>.” <em>New Scientist </em>(September 16, 2013). </p></li><li><p>“<a href=\"https://astro4edu.org/resources/glossary/term/345/\">Glossary Term: Sunspot.</a>” International Astronomical Union, Office of Astronomy for Education (2020-2026).</p></li></ul>",
+    "lectio": { "post": "lt-0017" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "phenomena": ["ph-0003"]
+    }
+  },
+  {
+    "id": "w-0070",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>It’s not every day you get to experience a new taste, a new texture—a new food—at the same time as your child, while both perched atop a long-tail cargo bicycle behind their elementary school. </p><p>We rolled up unexpecting. My son asked if they were edible, and, after I quickly confirmed on the internet that they were in fact serviceberries, we both sampled and quickly set in to munching. We rolled off a few minutes later to meet the rest of the family, sweetened and sated.</p><p>A berry in the apple family? A blueberry crossed with a cherry? “Ephemeral sips of summer,” as Robin Wall Kimmerer writes in the first reading below. </p><p>The genus <em>Amelanchier </em>includes more than 20 species of shrubs and small trees (or more than 80, by some counts). These go by many names regionally and linguistically: serviceberry, sugarplum, sarvis, shadbush, juneberry, saskatoon, chuckley pear, and misâskwatômin (in Cree). This abundance and variety are compounded by the genus’ penchant for cross-pollination; for the many species of <em>Amelanchier </em>easily hybridize with one another, creating “<a href=\"https://arstechnica.com/science/2024/07/how-hybrid-swarms-can-break-down-species-boundaries-and-take-over-habitats/\">swarms</a>” in which the difference between original and hybrid are blurred. They even can cross with <a href=\"https://en.wikipedia.org/wiki/%C3%97_Amelasorbus\">another genus entirely</a>, as when the Western or Saskatoon serviceberry (<em>Amelanchier alnifolia</em>) intermingles with a certain species of mountain-ash. And because serviceberry blossoms do not require fertilization to produce viable seeds (due to what the botanists call <a href=\"https://en.wikipedia.org/wiki/Apomixis\">apomixis</a>), these hybrids do not suffer the fate of the sterile mules; indeed, any stray cross-pollinated plant can produce a whole stand of hybrids identical to its novel self. Long botanics treatises have been written trying to make sense of the ensuing chaos, as K.M. Wiegand attests below.</p><p>Serviceberries are in the “<a href=\"https://en.wikipedia.org/wiki/Malinae\">apple subtribe</a>” of the Rose family, along with pears, quince, aronia berries, and several other edible fruits. Because of this, the serviceberry is a pome fruit rather than a true berry, each containing several small seeds. Although these add some texture to each bite, they also impart a slight almond flavor, which is further enhanced by cooking or heating (for example, in pies and compotes). Maybe next year we will have to try our first serviceberry pie.</p>",
+    "lectio": { "post": "lt-0018" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0015"]
+    }
+  },
+  {
+    "id": "w-0071",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Robin Wall Kimmerer, “<a href=\"https://emergencemagazine.org/essay/the-serviceberry/\">The Serviceberry: An Economy of Abundance</a>,” <em>Emergence Magazine </em>(October 26, 2022).</p></li><li><p>George Neville Jones, <em><a href=\"https://archive.org/details/americanspecieso202jone/page/122/mode/2up\">American Species of Amelanchier</a> </em>(Urbana: The University of Illinois Press, 1946).</p></li><li><p>Nina Foster, “<a href=\"https://daily.jstor.org/juneberry-a-summer-berry-for-people-pollinators-and-birds/\">Juneberry: A Summer Sweet for People, Pollinators, and Birds</a>,” <em>JStor Daily</em> (June 27, 2025).</p></li><li><p>“<a href=\"https://grubamericana.com/2026/02/27/the-berry-that-lost-to-the-blueberry/\">The Berry That Lost to the Blueberry,</a>” <em>Grub Americana </em>(n.d.).</p></li><li><p>Renée Kohlman, “<a href=\"https://canadianfoodfocus.org/food/classic-canadian-recipes-saskatoon-pie/\">Classic Canadian Dish: Saskatoon Pie</a>,” <em>Canadian Food Focus </em>(n.d.).</p><p></p></li></ul>",
+    "lectio": { "post": "lt-0018" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0015"]
+    }
+  },
+  {
+    "id": "w-0072",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>After a week off to make some progress on my <a href=\"https://earthlyhours.com\">book of hours</a> project, we continue our regularly scheduled berry programming with another red one adored by my oldest son.</p><p>Unlike the misleading <a href=\"seasons.html?season=summer&amp;entry=lt-0018\">serviceberry</a>, which is in fact a <a href=\"https://en.wikipedia.org/wiki/Pome\">pome</a>, the red currant or (if you’re British) redcurrant is a true berry. Indeed, all true currants, whether red, black, white, or pink—and no matter which of the more than 60 varieties extant globally—are berries. However, the dried, raisin-like “Zante currants” commonly available in stores are not really currants at all but a <a href=\"https://en.wikipedia.org/wiki/Zante_currant\">type of grape</a> made into raisins since antiquity. The <a href=\"https://foodprint.org/real-food/currants/\">currant genus</a> (<em>Ribes</em>) includes many species that are red, and some of these are native to North America. Yet most commercially available red currants in the U.S. comprise a mix of three varieties that are native to Europe, in part because currant plants were mostly banned in this country for more than a century (see below). Confused yet?</p><p>Thankfully, <em>Ribes rubrum</em>, as the most common edible species of red currant is called in Latin (and would be named in Dr. Seuss books), is a simple plant. To propagate it, you need only chop a few branches and stick them into dirt or water. They lack complex or extensive roots and have botanically simple leaves (one piece per stem, versus a compound leaf with leaflets). Currants also have associations with the simplicity of peasant culture; although they were foraged in the wild for thousands of years, currants were not really cultivated intentionally until around 1600 (perhaps earlier in Russia).<a href=\"#footnote-1\" target=\"_self\">1</a> </p><p>Yet the brilliance of their jewel-like <a href=\"https://en.wiktionary.org/wiki/strig\">strigs</a> and <a href=\"https://en.wikipedia.org/wiki/Raceme\">racemes</a> also make them suitable accoutrements for aristocrats. They are perhaps best known in jelly or jam form, including the English sweet-and-sour condiment known as <a href=\"https://www.cooksinfo.com/cumberland-sauce\">Cumberland Sauce</a> (the origins of this name are much debated), which is similar to—but <a href=\"http://www.theoldfoodie.com/2009/09/cumberland-sauce.html\">supposedly</a> not inspired by—the cranberry sauce of North American provenance. An especially <a href=\"https://francetoday.com/culture/made_in_france/historic_delicacy/\">sophisticated preparation</a> is to individually select the currants and manually remove their many tiny seeds using a sharpened feather quill, which leaves the orb intact within a thin sugar jelly. But you are much more likely to encounter a strained or filtered jam. In fact, many home cooks leave not only the seeds but also the stems intact during processing, because they add both natural pectin (a thickening agent) and a slightly astringent quality to the finished product. Red currants are also popular as a juice, often in combination with other fruits, and may serve as a <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11768213/\">digestive aid</a>. </p><p>As noted above, currant plants were banned from the U.S. in 1911 to protect pine trees and, therefore, the timber industry; currants are the primary alternate (non-pine) host for a forest-devastating fungus, white pine blister rust (<em>Cronartium ribicola</em>). They are still heavily restricted in many regions today. For example, it is <a href=\"https://www.mass.gov/growing-red-currants-or-gooseberries-in-massachusetts\">illegal</a> to grow black currants anywhere in Massachusetts, and a permit is required to cultivate other currants (at least notionally; enforcement seems limited, at least in the gardens I frequent). </p><hr>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>One <a href=\"https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=12%3Bownerid=13510798901363639-16\">commentator</a> locates currants’ emergence into written history near the introduction of the printing press into Europe. </p>"
+      }
+    ],
+    "lectio": { "post": "lt-0019" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0016"]
+    }
+  },
+  {
+    "id": "w-0073",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>“<a href=\"https://www.cooksinfo.com/cumberland-sauce\">Cumberland Sauce</a>.” <em>Cook’s Info </em>(Oct. 4, 2020).</p></li><li><p>Molly Watson. “<a href=\"https://www.thespruceeats.com/what-are-currants-2215835\">What Are Currants? A Guide to Buying and Cooking With Currants</a>.” <em>The Spruce Eats </em>(March 18, 2024).</p></li><li><p>Jonathan Townsend. “<a href=\"https://www.townsends.us/blogs/blog/18th-century-currants\">18th-Century Currants</a>.” <em>Townsends </em>(July 7, 2014).</p></li><li><p>George Bunyan. \"<a href=\"https://hdl.handle.net/2027/oxu1.605407839?urlappend=%3Bseq=11%3Bownerid=120509643-15\">Red Currants</a>.” <em>Helpful Hints for Hard Times: Gooseberries and Currants for Market. </em>London: Society for Promoting Christian Knowledge, 1895.</p></li><li><p>M. L. Fernald. “<em><a href=\"http://www.biodiversitylibrary.org/page/563144\">Ribes vulgare</a></em><a href=\"http://www.biodiversitylibrary.org/page/563144\"> and its Indigenous Representatives in Eastern North America</a>.” <em>Rhodora: Journal of the Botanical Society of New England </em>9.97 (January 1907): 1-4.</p></li></ul>",
+    "lectio": { "post": "lt-0019" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0016"]
+    }
+  },
+  {
+    "id": "w-0074",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>In my personal opinion, much resisted by the chatbots I consulted, corn is the berries of the vegetable world. Indeed, corn—specifically, sweet corn—is unique among commonly eaten plants in that it spans the typically distinct categories of fruit, vegetable, and grain. In other words, it’s a grass that produces sweet clusters that you eat like a carrot. The chatbots don’t know everything yet.</p><p>Unlike the relatively simple histories of <a href=\"seasons.html?season=summer&amp;entry=lt-0018\">serviceberries</a> and <a href=\"seasons.html?season=summer&amp;entry=lt-0019\">redcurrants</a>, the story of corn may be one of the more beautiful and harrowing tales you haven’t heard. Indeed, even the long series of events through which archaeologists, geneticists, and other researchers <a href=\"https://youtu.be/dYHEwTQHt24?t=358\">reconstructed this tangled story</a> is itself fascinating. Originating in Mexico some 9,000 years ago and eventually reaching fields, laboratories, and kitchens around the world, corn has powered civilizations and modernization while also, due to a mix of ignorance and greed, occasionally plaguing human health.</p><p>You may have noticed that corn does not exist in the wild; you can’t pluck an ear from your nearby nature trail. That absence generated nearly a century of academic controversy, as researchers scoured ancient caves and thousands of genetic sequences to determine whence this now-ubiquitous plant came. They eventually determined that modern maize originated from a subspecies of an unassuming, bushy grass called <a href=\"https://www.nativeseeds.org/pages/teosinte\">teosinte</a> that grew in the Balsas River Valley of southern Mexico. Through generations upon generations, indigenous growers and seed keepers up and down the Americas tended and selected plants to create much of the abundance and variety we know today. Through these changes, the plant came to depend on humans, to the extent that it cannot exist without human attention and interaction:  for although corn can be fertilized by the wind, its densely packed and sheathed cobs will fall to the ground and decay if our hands (or machines) do not husk and separate the kernels. </p><p>The relationship is symbiotic. The expertise of corn’s indigenous stewards was proved in the decades following European contact with the Americas, as the crop spread rapidly around the world. Its productivity, adaptability, and caloric richness made it popular across southern Europe, western and central Africa, and eastern Asia. Many peasant cultures across these regions embraced corn as a daily staple or life-saving supplement. The stuff could grow at elevations low or high, in conditions hot or wet, and in growing seasons short or long—thank you, <a href=\"https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/c4-plant\">C4 photosynthesis</a>! </p><p>However, indigenous knowledge about how to prepare corn did not spread with the plant itself. Although corn is rich in niacin and tryptophan, these vital nutrients only become digestible for humans if the corn is treated with an alkaline solution, such as wood ash or limestone water. This process of nixtamalization was not included in the so-called <a href=\"https://en.wikipedia.org/wiki/Columbian_exchange\">Columbian Exchange</a>, leading to widespread nutrient deficiencies and countless deaths, as the four Ds of <a href=\"https://www.termedia.pl/Historia-pelagry,56,46641,1,1.html\">pellagra</a>—diarrhea, dermatitis, dementia, and death—ravaged southern Europe, the U.S. South, and regions of Asia and Africa over several centuries. The health risks continued even after corn’s relationship to niacin deficiency was understood and remedied. Though long stigmatized as a poor, rural, or fodder crop, corn eventually saturated the modern diet through indirect channels, including grain-fed meat and eggs, a multitude of processed foods, and various sweeteners. By <a href=\"https://emergencemagazine.org/feature/corn-tastes-better/\">some estimates</a>, up to 70% of processed foods in a modern grocery store contain some form of corn product; likewise, as depicted in the 2007 documentary <em>King Corn</em>, <a href=\"https://uvamagazine.org/articles/the_hair_detective\">hair tests</a> reveal that up to 70% of the carbon in a modern American body can come from corn. The effects of this new-and-improved, supermarket version of a <a href=\"https://en.wikipedia.org/wiki/Monotrophic_diet\">monotrophic diet</a> may not be as gruesome as pellagra, but they are <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12689413/\">just</a> as <a href=\"https://www.nationalgeographic.com/science/article/corn-processed-health-harm\">pernicious</a>.</p><p>There’s much more that one could say about corn: about what is <a href=\"https://en.wikisource.org/wiki/The_Golden_Bough/Corn-Mother_in_Many_Lands\">universal</a> and what is <a href=\"https://emergencemagazine.org/feature/corn-tastes-better/\">distinctive</a> in its mythological origins; about how it inspired winsome poems by <a href=\"https://www.poetryfoundation.org/poems/52442/the-corn-stalk-fiddle\">Paul Laurence Dunbar</a> and <a href=\"https://americanliterature.com/author/carl-sandburg/poem/laughing-corn\">Carl Sandburg</a>; about the <a href=\"https://en.wikipedia.org/wiki/Category:Maize-based_drinks\">beverages</a> and <a href=\"https://en.wikipedia.org/wiki/Corn_ethanol\">biofuels</a> made out of it; about its place in the broader <a href=\"https://evolution.earthathome.org/grasses/andropogoneae/\">Andropogoneae, or sorghum, tribe</a>; or about how it typically has an <a href=\"https://www.foodandwine.com/corn-even-number-of-rows-11857772\">even number of rows</a> and its kernels embody a variety of <a href=\"https://www.rigb.org/explore-science/explore/blog/spirals-growth-celebrating-abundance-through-lens-maths\">mathematical</a> and <a href=\"https://kansascornstem.com/wp-content/uploads/2019/06/16-Corn-Genetics-and-Statistical-Analysis-MS.pdf\">statistical</a> principles. </p><p>Even within the typically tedious realms of taxonomy and genetics, maize (<em>Zea mays</em>) is a wild, wild bunch. Its many subspecies or cultivars include the four most widely cultivated varieties: dent or field corn <em>(</em>var. <em>indentata</em>), flint corn (var. <em>indurata</em>), sweet corn (var. <em>saccharata</em>), and popcorn (var. <em>everta</em>). But many other varieties exist. The visually stunning <a href=\"https://www.google.com/search?q=gallery+%C2%A0of+glass+gem+corn+photos&amp;sca_esv=983bceb9591bece9&amp;biw=1328&amp;bih=777&amp;udm=2&amp;sxsrf=APpeQnvB0oJYMmR6X7CklojeUC3ed_tMAg%3A1784382522473&amp;ei=OoRbaujBHO-GptQPopyBoQk&amp;ved=0ahUKEwjoxpTzrtyVAxVvg4kEHSJOIJQQ4dUDCBQ&amp;uact=5&amp;oq=gallery+%C2%A0of+glass+gem+corn+photos&amp;gs_lp=Egtnd3Mtd2l6LWltZyIiZ2FsbGVyeSDCoG9mIGdsYXNzIGdlbSBjb3JuIHBob3RvczIHECMYyQIYJ0ihE1BQWI8ScAF4AJABAJgBMaABjgSqAQIxMrgBA8gBAPgBAZgCAaACNJgDAIgGAZIHATGgB8ACsgcBMbgHNMIHAzAuMcgHAYAIAQ&amp;sclient=gws-wiz-img\">glass gem corn</a>, which went viral in the early 2010s, was produced—or perhaps recovered—in the 1980s, when an Oklahoma plant breeder crossed heirloom varieties of flint, flour, and popcorn. One rare variety, known as <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3344968/\">pod corn</a>, has a husk on each individual kernel (rather than the overall cob), which makes it interesting for scientists to study but not very practical for eating. Each subspecies has distinctive qualities and applications, based on the amount of starch it contains and the texture or composition of its kernel. For example, the ever-popular sweet corn is the result of one or more genetic mutations that stop the plant’s sugars from converting into starch. </p><p>Need I continue? Or have you accepted the premise that corn is one wonderful berry?</p><hr>",
+    "lectio": { "post": "lt-0020" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0017"]
+    }
+  },
+  {
+    "id": "w-0075",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Robin Wall Kimmerer. “<a href=\"https://emergencemagazine.org/feature/corn-tastes-better/\">Corn Tastes Better on the Honor System</a>.” <em>Emergence Magazine </em>(October 31, 2018).</p></li><li><p>Kimi Eisele. <em>“</em><a href=\"https://borderlore.org/artists-del-maiz-and-maguey/\">Artists del Maíz and Maguey</a>.<em>” Border Lore: Heritage and Culture of the U.S. Southwest and Northern Mexico</em> (October 2, 2023).</p></li><li><p>James Doyle. “<a href=\"https://www.metmuseum.org/perspectives/feasting-in-the-ancient-americas\">Giving Thanks before the Pilgrims: The Art of Feasting in the Ancient Americas</a>.” <em>Perspectives: The Metropolitan Museum of Art </em>(November 25, 2015).</p></li><li><p>Brian Krueger. “<a href=\"https://www.omic.ly/the-weird-color-patterns-of-corn-kernels-led-to-a-major-genetic-discovery-in-1950/\">The weird color patterns of corn kernels led to a major genetic discovery in 1950</a>.” <em>Omic.ly</em> (January 20, 2025).</p></li><li><p>“<a href=\"https://www.si.edu/newsdesk/releases/ancient-dna-continues-rewrite-corns-9000-year-society-shaping-history\">Ancient DNA Continues to Rewrite Corn’s 9,000-Year Society-Shaping History</a>.” <em>Smithsonian </em>(December 14, 2020).</p><p></p></li></ul>",
+    "lectio": { "post": "lt-0020" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0017"]
+    }
+  },
+  {
+    "id": "w-0076",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Rounding out my quartet of summer berries (<a href=\"seasons.html?season=summer&amp;entry=lt-0018\">fraudulent</a>, <a href=\"seasons.html?season=summer&amp;entry=lt-0019\">actual</a>, or <a href=\"seasons.html?season=summer&amp;entry=lt-0020\">imaginatively so</a>), we arrive now at the blueberry—my apologies to the sweet strawberry, that rosaceous <a href=\"https://en.wikipedia.org/wiki/Receptacle_(botany)\">receptacle</a>, which will have to wait for another summer.</p><p>Apart from a handful of medieval and early modern instances, most human food crops were domesticated thousands of years ago, during the globally distributed neolithic, or <a href=\"https://davidgraeber.org/wp-content/uploads/How-to-change-the-course-of-human-history.pdf\">so-called first agricultural</a>, revolution. However, blueberries stand alongside kiwifruits, Hass avocados, macadamia nuts, and <a href=\"https://www.saveur.com/true-story-wild-rice-north-americas-most-misunderstood-grain/\">wild rice</a> (<a href=\"https://natifs.org/blog/ingredient-profile/wild-rice/\">manoomin</a>) as important crops that only began to be cultivated scientifically and commercially in the twentieth century—although, as is often the case, evidence of indigenous harvesting, management, and <a href=\"https://journals.ashs.org/view/journals/hortsci/48/4/article-p413.xml\">multifarious use</a> extends back <a href=\"https://poorprolesalmanac.substack.com/p/blueberries#footnote-anchor-5\">thousands of years</a>.</p><p>The blueberry’s modern, agronomic story goes something like this: in 1911, botanist Frederick Coville teamed up with cranberry farmer Elizabeth White (heir to the Whitesbog company town infamously <a href=\"https://scispace.com/pdf/from-philadelphia-to-the-pinelands-the-new-jersey-1nazaseor3.pdf\">documented by Lewis Hine</a>). They found that blueberries require acidic, peat-and-sand soil—à la <a href=\"https://livinglandscapeobserver.net/maines-blueberry-barrens/\">North America’s prehistoric blueberry “barrens”</a>—rather than neutral, rich soil, to thrive.  They also ran a contest encouraging locals near White’s home in New Jersey to submit the largest wild blueberries they could forage, and then crossbred these selections to produce larger, sweeter, and more uniform berries. While the collaboration went on to develop hundreds of these hybrid varieties, it was in fact an especially fantastic <a href=\"https://www.npr.org/sections/thesalt/2015/08/04/428984045/how-new-jersey-tamed-the-wild-blueberry-for-global-production\">wild specimen</a>, submitted during the initial contest, that became the first commercial crop harvested in 1916. New cultivars (including more warm-tolerant ones), mechanization, and national expansion followed over the rest of the century. Then, sometime in the 1990s, several studies identifying blueberries’ high antioxidant and anthocyanin levels launched this newly minted “superfood” into a global, year-round, rapidly expanding, multi-billion-dollar industry expected to produce 3.2 million metric tons of berries by 2028. Though globalization, as usual, can have <a href=\"https://ambrook.com/offrange/crops/wild-blueberries-in-peril\">devastating local consequences</a>.</p><p>The recentness of this history makes the process of domestication much more visible than for other cultured plants. It reveals how closely implicated modern agriculture can be in the developmental interests of the state. Indeed, Coville’s employer was the U.S. Department of Agriculture; and his <em>Experiments in Blueberry Culture,</em> the foundational research document in the history of blueberry domestication, was produced by the Bureau of <em>Plant Industry</em> (RIP in 1953) and distributed by the “government printing office.” A more critical and intimate story of the blueberry, as Alix Beeston notes below, might touch on the morals it is chosen to convey in children’s literature and on how the indulgent succulence of a certified-organic commodity comes to embody both the insulating protections of capital and the various guilts that society displaces onto (young) women’s appetites. A more reparative story of blueberries might be found in the abundance experienced by Wabanaki  caretakers through their recovery of ritual, tradition, kinship, and self-determination in the blueberry barrens of eastern Maine—or in celebratory poems by <a href=\"https://poets.org/poem/blueberries\">Robert Frost</a>, <a href=\"https://radio.wpsu.org/2022-07-04/poetry-moment-mary-szybist-and-here-there-are-blueberries\">Mary Szybist</a>, <a href=\"https://koinoniafarm.org/blog/writings/blueberriesbymaryoliver/\">Mary Oliver</a>, or <a href=\"https://www.poetryfoundation.org/poems/89519/blueberries\">James Lasdun</a>.</p><p>Proper blueberries belong to the <em>Cyanococcus</em> section (Greek <em>kyanos</em>, “dark blue” + <em>kokkos</em>, “berry”) of the genus <em>Vaccinium</em>, which also includes cranberries, bilberries, lingonberries, some (but not all) huckleberries, and the less-known because not-tasty-to-humans <a href=\"https://en.wikipedia.org/wiki/Vaccinium_arboreum\">farkleberry/sparkleberry</a>. The majority of commercial blueberry cultivation involves cultivars of the primary “highbush” species (<em>Vaccinium corymbosum</em>), although a non-trivial proportion of the market consists of several “wild” <a href=\"https://extension.umaine.edu/blueberries/about/\">lowbush species</a> (e.g., <em>Vaccinium angustifolium</em>). These wild varieties emerged in the northeastern corner of the continent some 10,000 years ago, when glaciers receded and left behind fields of thin, acidic topsoil. You can visit them today and look out over ancient tangles of stems, roots, and berries, spreading and multiplying via underground clones. And yet each barren contains a multitude of subtle variations in color, taste, shape, and genetic makeup. Makes you wonder what we mean when we call something “barren.”</p><hr>",
+    "lectio": { "post": "lt-0021" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0018"]
+    }
+  },
+  {
+    "id": "w-0077",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Frederick V. Coville. <em><a href=\"https://www.google.com/books/edition/Experiments_in_Blueberry_Culture/StRJAAAAYAAJ?hl=en&amp;gbpv=1\">Experiments in Blueberry Culture</a>. </em>Bureau of Plant Industry, Bulletin No. 193. Washington, DC: Government Printing Office, 1911.</p></li><li><p>Jessamine Starr. “<a href=\"https://www.whetstonemagazine.com/radio/fruit-love-letters/ep-3\">Cultivated or Wild, the Blueberry Has a Story to Tell.</a>” <em>Fruit Love Letters </em>(January 25, 2022).</p></li><li><p>Amanda Peters. <em><a href=\"https://books.catapult.co/books/the-berry-pickers/\">The Berry Pickers: A Novel</a>. </em>Brooklyn, New York: Catapult, 2024.</p></li><li><p>Kim E. Hummer. “<a href=\"https://doi.org/10.21273/HORTSCI.48.4.413\">Manna in Winter: Indigenous Americans, Huckleberries, and Blueberries</a>.” <em>HortScience</em> 48.4 (April 2013): 413–417.</p></li><li><p>Julia Blakely. “<a href=\"https://www.ars.usda.gov/news-events/news/research-news/2011/historic-collection-at-nal-gives-insight-into-blueberrys-domestication/\">Native Fruit: The Wild Blueberry</a>.” <em>Unbound: Smithsonian Libraries and Archives</em> (November 13, 2018).  </p></li><li><p>J. Kim Kaplan. “<a href=\"https://agresearchmag.ars.usda.gov/2011/may/nal/\">Blueberry Growing Comes to the National Agricultural Library</a>.” <em>Agricultural Research </em>(May/June 2011): 14-16.</p></li></ul>",
+    "lectio": { "post": "lt-0021" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0018"]
+    }
+  },
+  {
+    "id": "w-0078",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>I came to appreciate butterfly weed through my wife <a href=\"https://meghanemorris.com/\">Meghan’s</a> occasional summer pickings. The plant’s clustered orange blooms can look like small flames or fireworks hovering above a meadow- or table-scape; or, if an especially long and narrow cluster is laying at rest on a table, it reminds me of a beaded brooch or hair clip.<a href=\"#footnote-1\" target=\"_self\">1</a> But I didn’t know the wonder or the strangeness behind the plant’s namesake until more recently.</p><p>Butterfly weed (<em>Asclepias tuberosa</em>), known historically as pleurisy root, is a member of the perennial, herbaceous, flowering milkweed genus and is native to eastern and central North America. Unlike other milkweeds, which produce a milky latex that they release when damaged, butterfly weed runs a clear or greenish sap. But both substances are actually a powerful defense mechanism containing cardiac glycosides, which literally disrupt heartbeats; specifically, they inhibit the cellular <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK537088/\">sodium-potassium pump</a> that regulates the muscle’s contractions. The poison is a family affair—milkweeds are part of the dogbane (<em>Apocynaceae</em>) family, some members of which were traditionally used to make the ends of darts and arrows deadly toxic. Nonetheless, milkweed sap also was used traditionally to clear warts and other skin conditions, and the plant’s roots were chewed for digestive or respiratory issues. Extracts of the root were included in the <a href=\"https://archive.org/details/b24907029/page/118/mode/2up?ref=ol&amp;q=Asclepias\">official U.S. Pharmacopeia</a> for nearly a century, until the early twentieth century. </p><p>The monarch butterfly (<em>Danaus plexippus</em>) is not immune to this heart poison; its growth can suffer under the metabolic strain. Yet through a delicate balance cultivated over eons and regions, the famously beautiful insect has learned to handle and make use of it. In fact, milkweed is the only cradle a monarch will accept, and monarch caterpillars are incapable of digesting the leaves of any other plant. The female butterfly searches out milkweed’s particular bitterness, often preferring milkier and more poisonous species over the showy butterfly weed, and lays her eggs on the underside of a leaf. When the eggs hatch, the caterpillars use special trenching and cutting techniques to divert the sap from the leaves, seeking to avoid not the sap’s poison but its stickiness, which can glue their mouths shut or adhere their bodies to the plant. Once the caterpillars grow larger and stronger, they actually make pools of the sap on the leaves and ingest it in large quantities, pirating the poison to make a defense mechanism of their own. The poison accumulated in their bodies renders the adult butterflies bitter and undesirable to potential predators, and it also inhibits the deadly parasite that plagues monarch butterflies. In fact, a butterfly infected with the parasite <a href=\"https://pubmed.ncbi.nlm.nih.gov/27286503/\">can seek out an especially toxic plant</a> to be its nursery. “The dose makes the poison,” <a href=\"https://en.wikipedia.org/wiki/The_dose_makes_the_poison\">as Paracelsus expressed</a>. </p><p>The butterfly’s dependence on the milkweed--poison and all--drives its epic, multi-generational annual migration. Beginning in the coniferous forests of central Mexico, the initial “super generation” of monarchs travels north, timing its arrival in the southern U.S. with the first emergence of the milkweeds in this region. This generation lays its eggs and then dies, producing a new generation with a shorter lifespan that will move further north in pursuit of newly growing milkweeds. This cycle repeats several more times, each curtailed generation finding a fresh crop of poisonous plants, until the final generation reaches the north in autumn. The cooling temperatures and declining plant life trigger another “super generation” of monarchs, which pause their fertility to make the treacherous 3,000-mile journey back to Mexico, where the next generation will begin a new transcontinental quest for nourishment and poison.</p><p></p><hr>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>The plants produce wide, umbrella-shaped clusters of flowers (called umbels, from the Latin for “parasol”) from their axils (the spot where the stem of the leaf connects to the main stem of the plant).</p>"
+      }
+    ],
+    "lectio": { "post": "lt-0022" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0019"]
+    }
+  },
+  {
+    "id": "w-0079",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Craig Holdrege. “<a href=\"https://www.natureinstitute.org/about/craig-holdrege\">The Story of an Organism: Common Milkweed</a>.”  <em>The Nature Institute </em>(2010).</p></li><li><p>Helen Frost and Leonid Gore. <em><a href=\"https://bookshop.org/a/86532/9781416900856\">Monarch and Milkweed</a>.</em> New York City, New York: Atheneum, 2006.</p></li><li><p>Anurag Agrawal. <em><a href=\"http://A Migrating Butterfly, a Poisonous Plant, and Their Remarkable Story of Coevolution\">Monarchs and Milkweed: A Migrating Butterfly, A Poisonous Plant, and Their Remarkable Story of Coevolution</a></em>.  Princeton, New Jersey: Princeton University Press, 2017.</p></li><li><p>Sandy Masuo, “<a href=\"https://www.huntington.org/watch-read-listen/verso/got-milkweed\">Got Milkweed?</a>,” <em>The Huntington Library, Art Museum, and Botanical Gardens</em> (October 18, 2022).</p></li><li><p>Robert Frost, “<a href=\"https://genius.com/Robert-frost-pod-of-the-milkweed-annotated\">Pod of the Milkweed</a>.” 1954. <em>Genius.com</em></p></li></ul>",
+    "lectio": { "post": "lt-0022" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0019"]
+    }
+  },
+  {
+    "id": "w-0080",
+    "kind": "note",
+    "shownIn": "seasons",
+    "text": "<p><em>This week’s post is dedicated to my highly anxious first-and-only childhood dog, Cricket; my father-in-law, Walter; and dog lovers everywhere except outside my bedroom window at night.</em></p>",
+    "lectio": { "post": "lt-0023" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "phenomena": ["ph-0004"]
+    }
+  },
+  {
+    "id": "w-0081",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Welcome to the “dog days” of summer. You’ve probably heard or perhaps used the phrase in casual conversation, but did you know that it originates in a bit of astronomical confusion from thousands of years ago?</p><p>For this week’s post, I was tempted to simply point you to <a href=\"https://en.wikipedia.org/wiki/Dog_days\">the extensive Wikipedia article on the subject</a>—scrappy as it is in some places, such entries embody the marvels of digitally crowd-sourced research. Or, I could direct you to one of many <a href=\"https://www.wjhg.com/2022/07/29/heres-why-warmest-time-year-is-called-dog-days-summer/\">local</a> <a href=\"https://www.youtube.com/watch?v=7qgmeYLFAkA&amp;t=1s\">news</a> <a href=\"https://www.youtube.com/watch?v=ZQkDwIo2j9w&amp;t=579s\">segments</a>, that other bastion of cultural weirdness. As demonstrated by several links in the Supplementum below, meandrous opining about the summer heat is a well-established tradition.</p><p>So here is my short-ish version of the story:</p><p>“Dog days” (<em>dies caniculares</em> in Latin) refers to the muggy, languid stretch of time, from peak through late summer, when the atmosphere feels slightly warped and you find yourself questioning frequently whether you have a sunburn. This period, which receives a pretty bad wrap overall (fevers, droughts, and <a href=\"https://doi.org/10.1177/00961442241260324\">rabies</a>!), coincides with the <a href=\"https://en.wikipedia.org/wiki/Heliacal_rising\">heliacal rising</a> of Sirius, the “dog-star” as it was known in ancient Greece, which is the Alpha star of the Canis Major constellation and also the brightest star in the night sky. In other words, sometime between mid-July and mid-August, depending on your latitude, the “dog-star” will begin rising in the dawn sky, glimmering briefly until it disappears in the emerging sunlight. When the ancient Greeks and Romans noticed this phenomena, they reasoned incorrectly that the light of Sirius was combining with that of the sun and thereby multiplying the summer’s heat.  Oops.</p><p>The confusion of the ancients nonetheless has inspired plenty of evocative literary conceits and turns of phrase, from Virgil’s <em><a href=\"https://archive.org/details/worksofvirgil00virg_1/page/390/mode/2up?q=dog\">Georgics</a></em> and Horace’s <a href=\"https://www.pantheonpoets.com/poems/o-fons-bandusiae/\">ode to a freshwater spring</a> (the first reading below, which also—content warning—mentions animal sacrifice) to contemporary Canadian <a href=\"https://www.blackiris.co/blogposts/2024/7/10/di-brandt-a-poetics-of-the-environment\">eco-poetry</a> and Cameroonian <a href=\"https://bookshop.org/a/86532/9780813925356\">political fiction</a>. “Dog-days,” apparently, are a great time to think about <a href=\"https://www.poetryfoundation.org/poems/45312/queens-56d224c55d565\">queens</a> and catalog them with a lover. And “dog daies” were even included in several 16th-century editions of the Anglican Book of Common Prayer. And one mustn’t forget that early-twenty-first-century hit single by <a href=\"https://genius.com/Florence-the-machine-dog-days-are-over-lyrics\">Florence + the Machine</a>.</p><p>All these historical and cultural layers leave one to ponder in the heat: What does this close association with summer mean for the reputation of our dear dogs? And what do the dogs actually think of all this warmth? Will summer ever end?</p><p>Take heart. You may have heard the phrase that every region of the U.S. likes to claim as its own: “If you don’t like the weather, wait a few minutes.” Or, per the fragments of Heraclitus (see below), “Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.”</p><p>Maybe it’s time to go take a cold shower.</p><hr>",
+    "lectio": { "post": "lt-0023" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "phenomena": ["ph-0004"]
+    }
+  },
+  {
+    "id": "w-0082",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Patrice Nganang. <em><a href=\"https://bookshop.org/a/86532/9780813925356\">Dog Days: An Animal Chronicle</a>. </em>Trans. Amy Baram Reid. Charlottesville, Virginia: University of Virginia Press, 2006.</p></li><li><p>Chris Pearson, “<a href=\"https://doi.org/10.1177/00961442241260324\">The Sinister Side of Summer: Revisiting the Dog Days of Nineteenth-Century New York</a>.” <em>Journal of Urban History </em>51.1 (January 2025): 10-20.</p></li><li><p>Roy Reed, “<a href=\"https://www.nytimes.com/1975/08/01/archives/cats-cattle-and-people-beware-of-dogdays.html\">Cats, Cattle and People—Beware of Dog-Days.</a>” <em>The New York Times (</em>August 1, 1975). 59.</p></li><li><p>Liza Kirwin. “<a href=\"https://www.aaa.si.edu/blog/2013/08/dog-days-of-summer\">Dog Days of Summer</a>.” <em>The Primary Source Blog. </em>Smithsonian Institution, Archives of American Art<em> </em>(August 16, 2013).</p></li><li><p>Val Lauder. “<a href=\"https://www.saturdayeveningpost.com/2020/07/dont-call-them-the-dog-days-of-summer/\">Don’t Call Them the Dog Days of Summer</a>.” <em>The Saturday Evening Post </em>(July 21, 2020).</p></li></ul>",
+    "lectio": { "post": "lt-0023" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "phenomena": ["ph-0004"]
+    }
+  },
+  {
+    "id": "w-0083",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>At the risk of this becoming an extraterrestrial blog, I am continuing last week’s <a href=\"seasons.html?season=summer&amp;entry=lt-0023\">astronomical theme</a> as we exit the peak of the Perseids meteor shower. Although it offers no liquid relief to the summer heat, this shower is a long debris trail with an equally long tale to tell.</p><p>Our dear little planet is peppered by Perseids around the same time every year, although the timing fluctuates slightly due to calendar mechanics and the <a href=\"https://en.wikipedia.org/wiki/Axial_precession\">wobbling</a> of the Earth’s axis, gradually shifting later in the year at a rate of approximately 1.5 days per century. And the shower is replenished every 133 years, when the <a href=\"https://science.nasa.gov/solar-system/comets/109p-swift-tuttle/\">Swift-Tuttle comet</a> again enters our inner solar system from the distant <a href=\"https://en.wikipedia.org/wiki/Kuiper_belt\">Kuiper Belt</a> and crosses Earth’s orbit on the way to its perihelion (closest point to the sun). As it passes through our neighborhood, the 16-mile-wide comet sheds some of its frozen gases, rock and mineral debris, and carbon compounds, leaving a renewed debris trail for our planet to spin through.<a href=\"#footnote-1\" target=\"_self\">1</a> The comet’s last visit to the sun was in December 1992, and it won’t return again until July 2126 (nearly 100 years from today). In the meantime, though, in 2028, we will pass through an especially rich “filament” of dust shed by the comet in 1479, which is expected to amplify the annual shower into an outright <a href=\"https://www.space.com/perseid-meteor-shower-storm-2028\">meteor storm</a>.</p><p>The first recorded observation of the Perseids shower was made in China nearly 2,000 years ago, in the extensive manuscript annals of the Han Dynasty (202 BCE to 220 CE), and was preserved for centuries through the region’s dedicated manuscript culture. This ancient observation was first compiled and translated for European audiences in 1841, as part of a French text presented below for your decoding pleasure. Yes, this took me a while to track down and verify, even with the help of a chatbot. But it was, I submit, worth it to encounter that ancient scribe’s evocative turns of phrase, transmitted to us across continents, millennia, and media forms.</p><p>Humans didn’t really figure out how meteor showers and shooting stars worked, including the regularity of their timing, until the nineteenth century. Prior to that, some Catholic cultures in Europe referred to the Perseids shower as the “<a href=\"https://www.nationalgeographic.com/science/article/news-perseid-meteor-lawrence-christianity\">tears of St. Lawrence</a>”; the feast day of this martyred saint—who is supposed to have told the people burning him to death, “This side is cooked enough; turn me over and eat!,” thereby securing his spot as the patron saint of both cooks and comedians—falls on August 10th. It wasn’t until 1838 that New Haven bookseller (and future Yale librarian) Edward C. Herrick more fully <a href=\"https://archive.org/details/mobot31753002152111/page/353/mode/2up\">connected the dots</a> across several years and, eventually, much of recorded history. This was the era that recognized meteors as more than just transient atmospheric phenomena, unrequiring of further study; for example, amateur British astronomer W. F. Denning first documented, in detail, how the Perseids shower <a href=\"https://ui.adsabs.harvard.edu/scan/manifest/1901MNRAS..62..161D\">gradually moves across the sky</a> as Earth passes through the comet debris.</p><p>Now, with those millennia of accumulated attention and eventual documentation behind us, humans in the twenty-first century can watch a <a href=\"https://www.youtube.com/watch?v=kVRkkrB4eS0\">state-sponsored live-stream of Perseids on Youtube</a> and poetically chronicle “<a href=\"https://www.poetryfoundation.org/poetrymagazine/poems/90656/watching-the-perseids\">this vertiginous awareness / mocking gravity on our speck of now</a>.” The infrastructure of our attention runs deep. </p><hr>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>Interestingly, the intensity of the Perseids shower tends to climb in the years around the comet’s perihelion passages, when Earth cuts through the densest part of the debris trail, as happened in the early 1860s and the 1990s. But the correlation isn’t ironclad: Jupiter’s gravity continually <a href=\"https://lowell.edu/raining-fire-sky-perseid-meteor-showers/\">reshapes the trail</a>.</p>"
+      }
+    ],
+    "lectio": { "post": "lt-0024" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "phenomena": ["ph-0005"]
+    }
+  },
+  {
+    "id": "w-0084",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Isabel Rogers. “<a href=\"https://www.poetryfoundation.org/poetrymagazine/poems/90656/watching-the-perseids\">Watching the Perseids</a>.” <em>Poetry </em>(October 2016).</p></li><li><p>Madison Mooney. “<a href=\"https://lowell.edu/raining-fire-sky-perseid-meteor-showers/\">Raining Fire in the Sky - The Perseid Meteor Showers</a>.” <em>Lowell Observatory Blog </em>(n.d.).</p></li><li><p>Joe Rao. “<a href=\"https://The Legend and Science Behind the Epic Meteor Shower\">The Legend and Science Behind the Famous Meteor Shower</a>.” <em>Space</em> (August 11, 2016).</p></li><li><p>Edward C. Herrick. “<a href=\"https://archive.org/details/mobot31753002152111/page/353/mode/2up\">Further proof of an annual Meteoric Shower in August, with remarks on Shooting Stars in general</a>.” <em>The American Journal of Science and Arts </em>XXXIII (January 1838): 354-364.</p></li><li><p>Mark Littman. “<a href=\"https://skyandtelescope.org/stargazing-and-observing/celestial-objects-to-watch/the-discovery-of-the-perseid-meteors/\">The Recognition of the Perseid Meteors</a>.” <em>Sky &amp; Telescope </em>(May 17, 2005).</p></li></ul>",
+    "lectio": { "post": "lt-0024" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "phenomena": ["ph-0005"]
+    }
+  },
+  {
+    "id": "w-0085",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>To untangle the messy world of squashes and melons, I will be spending the next three weeks zooming in on some of our favorite summer delectations, moving from the broad gourd family (<em>Cucurbitaceae</em>) to the distinctive melon-and-cucumber genus (<em>Cucumis</em>) and, finally, to the wholly separate watermelon species (<em>Citrullus lanatus</em>).</p><p>The cucurbits are a messy family despite being domesticated approximately 11,000 years ago across Asia, Africa, and the Americas (ask them about their <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2664369/figure/fig3/\">transatlantic and trans-Siberian journeys</a>). <em>Cucurbitaceae</em> contains approximately 100 genera and nearly 1,000 species distributed around the world and coming in many surprising variations. For example, there are the <a href=\"https://en.wikipedia.org/wiki/Tromboncino_%28squash%29\">trombone-shaped</a> heirlooms and the spongy <a href=\"https://www.instituteofmaking.org.uk/materials-library/library/loofah\">luffa/loofah</a> genus; there is even a squirting cucumber (<em><strong><a href=\"https://en.wikipedia.org/wiki/Ecballium\">Ecballium elaterium</a></strong></em>) that builds up immense pressure before launching its seeds up to 12 meters through the air. While a variety of gourds and melons were first cultivated in Asia and Africa, all “true” squashes—those in the <em>Cucurbita</em> genus—originated in the Americas, where they have been nurtured as part of the <a href=\"https://www.nal.usda.gov/collections/stories/three-sisters\">three sisters</a> and <a href=\"https://www.npr.org/sections/thesalt/2016/06/23/483147072/how-native-american-tribes-saved-a-giant-ancient-squash-from-oblivion\">carefully preserved</a> by seed keepers for <a href=\"https://www.ebsco.com/research-starters/nutrition-and-dietetics/squash-and-native-americans\">thousands of years</a>.</p><p>Amidst this diversity, many of our most familiar crops are drawn from just one species, <em>Cucurbita pepo, </em>home to both summer and winter squashes in all their multiplicity. On the summer side: zucchinis and <a href=\"https://en.wikipedia.org/wiki/Marrow_(vegetable)\">marrows</a>, straight necks and crooknecks and roundeds, scallops and pattypans, <a href=\"https://plotmygarden.com/plants/summer-squash-cousa\">cousa</a> and <a href=\"https://theurbanharvest.com/products/tatume-squash\">tatume</a> heirlooms, striped and speckled and <a href=\"https://fedcoseeds.com/seeds/zephyr-yellow-summer-squash-1526\">hybrid gradients</a>, and yellows and greens and grays and goldens! The abundance can be overwhelming, as my fridge experienced this past month—and as Piercy and Regan document in the readings below. And then in winter: acorns, delicatas, spaghettis, and sugar and field pumpkins. However, autumn and winter also bring notable members of <em>Cucurbita moschata </em>(butternut, specialty pumpkins, etc.)<em> </em>and <em>Cucurbita maxima </em>(Hubbard, kabocha, and friends).</p><p>Poison also lingers in the mix. Like the <a href=\"seasons.html?season=summer&amp;entry=lt-0022\">butterfly weed</a>, cucurbits produce bitter, toxic steroids as a defense mechanism. These appropriately named <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4441156/\">cucurbitacins</a> have been bred almost entirely out of domesticated squashes, although cross-pollination with a wild or ornamental relative can reawaken the ancestral pathway, producing a fruit capable of inducing <a href=\"https://www.acpjournals.org/doi/10.7326/aimcc.2023.1037\">toxic squash syndrome</a> (nausea and hair loss, oh my!). Even environmental stressors, such as drought or excessive heat, can lead to elevated toxin levels in a squash, though this is more rare and typically more mild in effect. Thankfully, poisonous cucurbits are so bitter that humans <a href=\"https://thesurvivalgardener.com/there-is-death-in-the-pot-curcurbitacin-poisoning/\">rarely</a> manage to eat them in dangerous quantities. Keep that in mind if a squash ever puckers your lips.</p><p><strong>Errata</strong></p><p>In last week’s post regarding the AD 36 meteor logs from Édouard Biot’s 1841 catalog, the poetic phrase “a vast migrating crowd” was highlighted in relation to the Perseids. While Biot calculated this event as June 27, a landmark 1958 recalculation by astronomers Susumu Imoto and Ichiro Hasegawa revealed a translation error in the months. The “migrating crowd” event actually occurred on August 30 and was likely a minor stream outburst such as the Aurigids. The true, historic first record of the Perseids belongs to the earlier entry on that page, which Biot misdated to February 9, but actually occurred on July 17.</p><hr>",
+    "lectio": { "post": "lt-0025" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0020"]
+    }
+  },
+  {
+    "id": "w-0086",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Hanno Schaefer. <a href=\"http://www.cucurbit.de\">Cucurbit Website</a>. Version 1 (January 2020).</p></li><li><p>Guillaume Chomicki, Hanno Schaefer, and Susanne S. Renner. “<a href=\"https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.16015?__cf_chl_tk=lxvgvyH_pdH1HcXWn2LziDlVBcIFrQ6WM0Pp1MM8aME-1787365268-1.0.1.1-E_gy4wgRjii183Domjdf7hdc7tNUfk4e0esX_ZOa.HU\">Origin and Domestication of Cucurbitaceae Crops: Insights from Phylogenies, Genomics and Archaeology</a>.” <em>New Phytology </em>226.5 (2020): 1240-1255,</p></li><li><p>W. A. Batson, Ed. <em><a href=\"https://www.biodiversitylibrary.org/item/279010#page/106/mode/1up\">The Cucurbits Illustrated: Fiftieth Anniversary Number</a></em>. Waterloo, Nebraska: The J. Robinson Seed Co., 1937.</p></li><li><p>Harry S. Paris, et al. “<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">First Known Image of </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Cucurbita</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> in Europe, 1503–1508</a>.” <em>Annals of Botany</em> 98.1 (July 2006): 41–47.</p></li><li><p>Gourd-Vine (Firm). <em><a href=\"https://www.biodiversitylibrary.org/item/286042#page/3/mode/1up\">Gourd-Gardeners! Are You Searching for This Address? : Send for Gourd Seed, Ornamental Gourds, Dried Gourds, Craftsman Gourds, and the First Gourd Book</a></em>. Vernon, Connecticut: The Gourd-Vine, 1940 [?]. From The Henry G. Gilbert Nursery and Seed Trade Catalog Collection, National Agricultural Library, U.S. Department of Agriculture.</p></li></ul>",
+    "lectio": { "post": "lt-0025" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0020"]
+    }
+  },
+  {
+    "id": "w-0087",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Which is messier, the history of words or of plants?</p><p>Something like \"<a href=\"seasons.html?season=summer&amp;entry=lt-0025\">squash</a>\" is exactly what it claims to be. The English word was adopted from the Narragansett word, <em>askutasquash</em> (\"the things that may be eaten raw\"), from <em>askut</em>, \"green, raw, uncooked,\" plus <em>asquash</em>, \"eaten.\" Compare that to “kabocha,” the sweet-fleshed <a href=\"https://gochisohistory.com/kabocha/\">winter squash</a> beloved across Japan, which derives its name from a compression of the Portuguese <em>Camboja abóbora</em>, \"Cambodia pumpkin.” It was assigned this name merely because Cambodia happened to be the last port Portuguese sailors called at before reaching Japan. This particular squash is not Cambodian, or even really Asian, since every member of the genus <em><a href=\"https://en.wikipedia.org/wiki/Cucurbita\">Cucurbita</a></em>, including kabocha, traces its origins to the Americas. </p><p>Cucumber's confusion works in a different way. While Kabocha's name wandered from the truth, cucumber's name never moved at all—but the plant beneath it did. This is the namesake of the genus <em>Cucumis</em>, home to both true cucumbers and many sweet melons since Linnaeus devised his system of botanical classification in 1735. When the Roman historian Pliny described the “cucumis” grown for Emperor Tiberius, who demanded a daily serving of the crisp, refreshing fruit (did I mention that cucumbers and melons are, botanically, <a href=\"seasons.html?season=summer&amp;entry=lt-0020\">berries</a>?); and when the <a href=\"https://en.wikipedia.org/wiki/Mishnah\">Mishnah</a> described the downy “qishu’im” eaten in second-century Judea, later translators rendered both terms as “cucumber.” But true cucumber (<em>Cucumis sativus</em>) is smooth and warty, not downy. The hairy, twisted, serpentine fruits these ancient writers describe in fact match the ancient Egyptian snake, or chate, melons (varieties of <em>Cucumis melo</em>—not yet the <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/\">sweet melons</a> we know today, which wouldn't emerge in Central Asia for another several centuries). These crisp, high-water-content melons arrived in Europe centuries before the cucumber. Only gradually did true cucumbers replace these melons in European art, writing, and mouths,<a href=\"#footnote-1\" target=\"_self\">1</a> as they journeyed from the foothills of the Himalayas across the <a href=\"https://en.wikipedia.org/wiki/Indo-Mediterranean\">Indo-Mediterranean world</a> through <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3241595/\">two routes</a>: overland through Persia into northern/Eastern Europe and, later, across the Mediterranean via Islamic trade and agriculture. Thus, the long history of the word “cucumber,” which possibly stretches back <a href=\"https://en.wiktionary.org/wiki/cucumis\">to ancient Sumer</a>, was extended a little further.</p><p>When this <em><a href=\"https://en.wiktionary.org/wiki/cucumis\">wanderwort</a></em>, or “wandering word,” eventually arrived in the English language, “cucumber” replaced the Germanic <em><a href=\"https://en.wiktionary.org/wiki/earthapple#English\">eorþæppla</a></em> (literally, “earth-apples”) but spent several centuries being pronounced as “<a href=\"https://www.pepysdiary.com/encyclopedia/6688/#c63356\">cowcumbers</a>”—perhaps, according to one folk legend, because they were primarily considered a bovine treat. Once the word was introduced to the Americas, however, its range again expanded to include not only true cucumbers (rumored to have been brought there by Christopher Columbus) but many other cucumber-like fruits, including those from Africa (<em>Cucumis anguria, </em>aka the maroon cucumber or West Indian gherkin), Europe (the aforementioned <em>Cucumis melo</em> var. <em>flexuosus</em>, or snake melon), and the Americas themselves (<em>Echinocystis lobata</em>, or wild cucumber; and <em>Marah macrocarpus</em>, or Cucamonga manroot). </p><p>Cucumber’s taxonomical bedfellow, “melon,” seems to sidestep this messy history. The word comes from Latin <em>melo</em>, shortened from <em>melopepo</em>, which was borrowed from the Greek <em>mēlopepōn</em> (\"apple-gourd\"). Like “squash,” “melon” named what it saw and left it at that: no mistranslated ancestor, no wrong continent. Linnaeus's decision to lodge melon inside the same genus as cucumber was based on their substantial similarities: their vining morphologies, monoecious flowers, and pepo-like fruits (a hard rind surrounding a fleshy, many-seeded interior). Yet his decision had repercussions appropriate to the messy Cucurbits family. In 1988, a group of researchers proposed splitting the<em> </em>genus so that cucumbers kept their longstanding name, while melon and its relatives would be exiled to a new genus called <em>Melo</em>. The proposal never took, and when genetic sequencing finally arrived to settle the matter, it didn't divide the family; <a href=\"https://pubmed.ncbi.nlm.nih.gov/17425784/\">it further enlarged it</a>, absorbing five more genera just to maintain the category’s phylogenic coherence. In the process, the genus's assumed geography was extended, too, as <em>Cucumis</em> turned out to have an entire overlooked branch stretching through the Malay Archipelago and into Australia.</p><p>The names reach, split, and tangle like the vines themselves. Yet their humble refreshment—musky sweet, or vegetal and slightly bitter—persists.</p><hr>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>The slow change was reflected in Medieval herbal manuscripts (circa 1300-1458), in which illustrations of snake and chate melon are gradually crowded out by pictures of cucumber.</p>"
+      }
+    ],
+    "lectio": { "post": "lt-0026" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0021"]
+    }
+  },
+  {
+    "id": "w-0088",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Andrés Muedano. “<a href=\"https://daily.jstor.org/cucumber-the-plant-that-moves-more-than-you-think/\">Cucumber: The Plant That Moves More than You Think</a>.” <em>JStor Daily </em>(March 25, 2026).</p></li><li><p>Monica Bowen. <em>“</em><a href=\"https://albertis-window.com/2019/01/crevellis-cucumbers-and-cotan/\">Crevelli’s Cucumbers, Christ, and Cotán</a><em>.</em>” <em>Alberti’s Window: An Art History Blog</em> (January 8, 2019).</p></li><li><p>Harry S. Paris and Jules Janick. “<a href=\"https://cucurbit.info/wp-content/uploads/2019/01/cgc3334-1.pdf\">The </a><em><a href=\"https://cucurbit.info/wp-content/uploads/2019/01/cgc3334-1.pdf\">Cucumis</a></em><a href=\"https://cucurbit.info/wp-content/uploads/2019/01/cgc3334-1.pdf\"> of Antiquity: A Case of Mistaken Identity</a>.” <em>Cucurbit Genetics Cooperative Report</em> (2010/2011): 1-2.</p></li><li><p>Harry S. Paris, Marie-Christine Daunay, and Jules Janick. “<a href=\"https://academic.oup.com/aob/article-abstract/109/1/117/154324?redirectedFrom=fulltext\">Occidental diffusion of cucumber (</a><em><a href=\"https://academic.oup.com/aob/article-abstract/109/1/117/154324?redirectedFrom=fulltext\">Cucumis sativus</a></em><a href=\"https://academic.oup.com/aob/article-abstract/109/1/117/154324?redirectedFrom=fulltext\">) 500–1300 CE: two routes to Europe</a>.” <em>Annals of Botany</em> 109.1 (January 2012): 117–126.</p></li><li><p>Paris, Harry S et al. “<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/\">Medieval emergence of sweet melons, Cucumis melo (Cucurbitaceae)</a>.” <em>Annals of Botany</em> 110.1 (2012): 23-33.</p></li><li><p>Susanne S. Renner, et al. “<a href=\"https://pubmed.ncbi.nlm.nih.gov/17425784/\">Phylogenetics of Cucumis (Cucurbitaceae): cucumber (C. sativus) belongs in an Asian/Australian clade far from melon (C. melo)</a>.” <em>BMC Evolutionary Biology</em> 7.58 (Apr 2007).</p><p></p></li></ul>",
+    "lectio": { "post": "lt-0026" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0021"]
+    }
+  },
+  {
+    "id": "w-0089",
+    "kind": "note",
+    "shownIn": "seasons",
+    "text": "<p><em>This week's post is dedicated to my dad, who always has a watermelon-in-progress in his fridge, covered with an elastic shower cap.</em></p>",
+    "lectio": { "post": "lt-0027" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0022"]
+    }
+  },
+  {
+    "id": "w-0090",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Let’s be honest: this whole three-part series on the <a href=\"https://en.wikipedia.org/wiki/Cucurbitaceae\" rel=\"noopener\" target=\"_blank\">cucurbits family</a> was aimed, all along, at that pinnacle summer experience, ye olde watermelon (<em>Citrullus lanatus</em>).<a href=\"#footnote-1\" target=\"_self\" rel=\"noopener\">1</a> Stepping back to view the family as a whole, we see a global story: whereas the <em><a href=\"seasons.html?season=summer&amp;entry=lt-0025\">Cucurbita</a></em> genus originated in the Americas, and <em><a href=\"seasons.html?season=summer&amp;entry=lt-0026\">Cucumis</a></em> in Asia (via Australia), <em>Citrullus</em> is a powerfully hydrating, botanically confusing gift from Africa. At first glance, “watermelon” is a wonderfully literal name compared to those evocatively figurative fruits, such as “honeydew” or “custard apple.” Indeed, the watermelon has such a high water content that it used to be carried on journeys like “<a href=\"https://www.atlasobscura.com/articles/where-are-watermelons-from\" rel=\"noopener\" target=\"_blank\">a kind of nature-made canteen</a>.” But that literalness conceals an apparent contradiction: wild and ancestral watermelons are xerophytic (“dry” + “plant”), requiring little water to grow. These sprawling annual vines first emerged in desert climates, from the <a href=\"https://www.smithsonianmag.com/smart-news/researchers-uncover-watermelons-origins-180977872/\" rel=\"noopener\" target=\"_blank\">Kordofan melons</a> that grow in Sudan, and their deep taproots and durable leaves allow them to survive on almost nothing. </p><p>How melons do this is a small marvel to consider. A melon operates as a thermal buffer, maintaining internal temperatures significantly below the ambient air through a combination of structural insulation and cellular physics. Drawing moisture from the deep, cool soil, the vine drives cooling groundwater into the expanding “pepo”—the botanical term for this specialized berry—where it is held in a mesh of thin-walled cells. This massive internal volume, containing approximately 92% water, requires a large amount of thermal energy to change its temperature; in other words, it stays cool long into the heat of the day. Furthermore, the dense rind acts as a barrier against rising temperatures, while the plant's own leaf canopy shades it from the sun. These neat tricks allow the watermelon to function as a living thermal heatsink, resisting the peak fluctuations of the summer atmosphere to preserve a stable, cool environment for its developing seeds. No wonder the fruit was <a href=\"https://www.biorxiv.org/content/10.1101/642785v1.full\" rel=\"noopener\" target=\"_blank\">buried with pharaohs</a> and <a href=\"https://watermelontimes.com/watermelon-history/\" rel=\"noopener\" target=\"_blank\">painted on the walls</a> of their tombs.</p><p>Obviously, watermelon is a pretty old fruit. Its intersection with human history falls roughly in a second generation between the oldest cultivated fruits—grapes, avocados, and especially figs—and modern newcomers such as strawberries, grapefruit, and kiwis. But the watermelon and its wild relatives were eaten first for their nutritious seeds, which <a href=\"https://source.washu.edu/2022/08/seedy-not-sweet/\" rel=\"noopener\" target=\"_blank\">have been</a> <a href=\"https://www.kew.org/about-us/press-media/ancient-watermelon-genome\" rel=\"noopener\" target=\"_blank\">recovered</a> from 6,000-year-old archaeological sites in Libya. And while the flesh of those wild relatives is mostly bitter and often toxic, all parts of the watermelon’s fruit are now edible thanks to a <a href=\"https://pubmed.ncbi.nlm.nih.gov/25430763/\" rel=\"noopener\" target=\"_blank\">genetic mutation</a> that stopped its production of bitter cucurbitacins, while leaving them intact, as pest deterrents, in the rest of the plant. In addition to its succulent pulp and pickle-able rinds, which include <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC7698065/\" rel=\"noopener\" target=\"_blank\">many beneficial substances and properties</a>, the historically significant seeds are again gaining <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11721404/\" rel=\"noopener\" target=\"_blank\">culinary interest</a>, especially in powder or flour form. </p><p>Botanically, the watermelon is considered a true pepo (a large berry with a hard rind and many seeds in a central pocket), not to be confused with soft-skinned true berries such as papaya and passionfruit. Unlike some thick-skinned pepos (think: pumpkin), you can eat it raw. In addition to the Kordofan melon from which it emerged, the watermelon shares a genus with six other species, with which it sometimes has been confused. The <a href=\"https://www.nationalacademies.org/read/11763/chapter/10\" rel=\"noopener\" target=\"_blank\">egusi melon</a> (<em>Citrullus mucosospermus</em>), recently confirmed by molecular botanists as its own species, is now being studied for <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11965695/\" rel=\"noopener\" target=\"_blank\">biotechnological applications</a>, and its seeds (alongside those of the white-seed melon, <em>Cucumeropsis mannii)</em> remain an <a href=\"https://egunsifoods.com/blogs/blog-list/egusi-seed-history\" rel=\"noopener\" target=\"_blank\">important part</a> of West African cuisine. There are other sources of confusion, too: it was only in the past twenty years that scientists <a href=\"https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.13163\" rel=\"noopener\" target=\"_blank\">robustly distinguished</a> the sweet red watermelon from several similar-looking relatives, including the toxic <a href=\"https://en.wikipedia.org/wiki/Citrullus_colocynthis\" rel=\"noopener\" target=\"_blank\">colocynth</a> and the oldest member of <em>Citrullus</em>: the alien-looking and deceptively named <a href=\"https://www.inaturalist.org/taxa/1245066-Citrullus-naudinianus\" rel=\"noopener\" target=\"_blank\">Gemsbok cucumber</a>. </p><p>The sweetness, the sustenance, the confusion, the weirdos—I guess the cucurbits are just another typical family, after all.</p><hr>",
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>Though often associated with the July 4 holiday and mid-summer shenanigans, they actually ripen in much of the northern U.S. during late August and the fall.</p>"
+      }
+    ],
+    "lectio": { "post": "lt-0027" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0022"]
+    }
+  },
+  {
+    "id": "w-0091",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Allison Meier. “<a href=\"https://hyperallergic.com/the-evolution-of-the-watermelon-captured-in-still-lifes/\" rel=\"noopener\" target=\"_blank\">The Evolution of the Watermelon Captured in Still Lifes</a>.” <em>Hyperallergic</em> (July 30, 2015).</p></li><li><p>Ellen Ficklen. <a href=\"https://watermelontimes.com\" rel=\"noopener\" target=\"_blank\">Watermelon Times</a> (2026).</p></li><li><p>Abbey Perrault. “<a href=\"https://www.atlasobscura.com/articles/where-are-watermelons-from\" rel=\"noopener\" target=\"_blank\">Here’s What the Watermelon Was Up to Before It Tasted Good</a>.” <em>Gastro Obscura </em>(September 17, 2018).</p></li><li><p>Bridget Alix. “<a href=\"https://www.smithsonianmag.com/science-nature/watermelon-seeds-were-snacked-before-its-flesh-became-sweet-180981008/\" rel=\"noopener\" target=\"_blank\">Why Prehistoric Herders Didn’t Spit Out Their Watermelon Seeds</a>.” <em>Smithsonian Magazine </em>(November 3, 2022).</p></li><li><p>Girinandini Singh. “<a href=\"https://www.stirworld.com/see-features-cyril-lancelin-on-his-immersive-sculpture-mix-at-ioma-art-center-beijing\" rel=\"noopener\" target=\"_blank\">Cyril Lancelin on his immersive sculpture ‘Mix’ at IOMA Art Center, Beijing</a>.” <em>stir world</em> (August 20, 2021).</p></li></ul>",
+    "lectio": { "post": "lt-0027" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0022"]
+    }
+  },
+  {
+    "id": "w-0092",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Welcome to the woodlands. There is, of course, more I would like to say about the late summer <a href=\"https://en.wikipedia.org/wiki/Harvest\" rel=\"noopener\" target=\"_blank\">hærfest</a>, but the call of the forest is irresistible, especially near the fall equinox, as the light slants through the trees and all that.</p><p>North American woodlands include more than 140 forest types, as recognized by the <a href=\"https://usfs.hub.arcgis.com/documents/0e67ddb4acf1454f9c1d7864eba8684e/about\" rel=\"noopener\" target=\"_blank\">U.S. Forest Service</a>. These are divided roughly between <a href=\"https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~341357~90109504:Major-forest-types-\" rel=\"noopener\" target=\"_blank\">eastern and western formations</a>, with coniferous softwood species dominating in the western portion of the continent and deciduous hardwood trees characterizing the eastern half. The “mighty oak,” as the English <a href=\"https://www.phrases.org.uk/meanings/247100.html\" rel=\"noopener\" target=\"_blank\">call it</a>, is a <a href=\"https://education.nationalgeographic.org/resource/keystone-species/\" rel=\"noopener\" target=\"_blank\">keystone species</a> across both of these halves and, indeed, the majority of the continent’s forests. It supports more life forms and provides more calories than most other trees: its nutritious acorns, up to 10,000 per tree in a <a href=\"https://www.bbg.org/article/the_mysteries_of_masting_in_trees\" rel=\"noopener\" target=\"_blank\">mast year</a>, support about 100 types of animals, and its abundant foliage sustains around 500 different types of caterpillars, which in turn are eaten by birds and small mammals. Oak forests also have played an important role in human diets from <a href=\"https://www.metmuseum.org/perspectives/acres-of-acorns\" rel=\"noopener\" target=\"_blank\">Europe</a> to <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9738068/\" rel=\"noopener\" target=\"_blank\">Asia</a>, and especially <a href=\"https://cimcc.info/system/files/atoms/file/Indigenous%20uses%20management%20and%20restoration%20of%20oaks.pdf\" rel=\"noopener\" target=\"_blank\">as tended by indigenous Americans</a> through <a href=\"https://bioone.org/journals/the-journal-of-the-torrey-botanical-society/volume-149/issue-2/TORREY-D-21-00024.1/Oak-forests-and-woodlands-as-Indigenous-landscapes-in-the-Eastern/10.3159/TORREY-D-21-00024.1.full\" rel=\"noopener\" target=\"_blank\">burning </a>and other practices. And they may yet play an <a href=\"https://www.northernfoodforest.ca/pages/acorns-a-fundamental-food-of-our-past-and-future?srsltid=AU7gw4V0OqZyT92H2WLvUzitUMbi0hkGQIp5S1_Dzkmco_NZy25cqIlB\" rel=\"noopener\" target=\"_blank\">important role</a> in <a href=\"https://bookshop.org/a/86532/9780865719729\" rel=\"noopener\" target=\"_blank\">the future of food</a>.</p><p>This is all in addition to the ink that oak galls provided for much of Euro-Mediterranean history, as I <a href=\"seasons.html?season=summer&amp;entry=lt-0015\">discussed </a>in early June. And even before they facilitated Europe’s written culture, oak trees were often associated with both deities (or worshipped outright) and sacrificial killings—a fact Paul Laurence Dunbar transforms in his lynching poem, “<a href=\"https://www.poetryfoundation.org/poems/44195/the-haunted-oak\" rel=\"noopener\" target=\"_blank\">The Haunted Oak</a>”:</p><p class=\"preformatted\">Pray why are you so bare, so bare,\n     Oh, bough of the old oak-tree;\nAnd why, when I go through the shade you throw,\n     Runs a shudder over me?</p><p>Whether scenery or sustenance, god or gallows, the oak reaches and tangles and expands, like the famous <a href=\"https://en.wikipedia.org/wiki/Angel_Oak\" rel=\"noopener\" target=\"_blank\">Angel Oak</a> in South Carolina.</p><p>The northern red oak (<em>Quercus rubra</em>)—not to be confused with what is sometimes called the southern red oak (<em>Quercus falcata</em>)—is one of nearly 500 members of the <em>Quercus</em> genus (which includes an additional 150 to 200 natural hybrids). However, “red oaks” also correspond to a whole section of the <em>Quercus</em> genus, called <em><a href=\"https://www.inaturalist.org/taxa/861036-Lobatae\" rel=\"noopener\" target=\"_blank\">Lobatae</a>, </em>which includes approximately 190 New World and high-latitude species (versus subsection <em>Cerris, </em>for Old World and mid-latitude species). Oaks are part of the beech family (<em>Fagaceae</em>), also home to beeches (obviously), chestnuts, and less common species, including chinquapins. They are trees of the northern hemisphere, originating <a href=\"https://www.scientificamerican.com/article/how-oak-trees-evolved-to-rule-the-forests-of-the-northern-hemisphere/\" rel=\"noopener\" target=\"_blank\">in the Arctic </a>(during a non-anthropogenically warm phase of the climate) and essential to the temperate landscapes and ecosystems across Asia, Europe, and North America. The northern red oak, in particular, is native to eastern North America and was called “red” by European settlers due to its fiery fall colors and pink-tinted wood—by contrast, the Ojibwe and Lenape call it <em><a href=\"https://ojibwe.lib.umn.edu/main-entry/wiisagi-mitigomizh-na\" rel=\"noopener\" target=\"_blank\">wiisagi-mitigominzh</a></em> and <em><a href=\"https://delawaretribe.org/wp-content/uploads/2026/04/Lenape-Names-of-Other-Trees.pdf\" rel=\"noopener\" target=\"_blank\">wisahkakw</a></em>, respectively, due to the bitter, tannic taste of its acorns (prior to soaking or other processing). Red oaks can be distinguished by their jagged lobes and sharp, bristle tips; white oaks have rounded lobes but, perhaps surprisingly, also turn bright burgundy, orange, and other vibrant colors in the fall.</p><p>It’s still early fall here in New England; but in just a few weeks, we’ll all be seeing red.</p><hr>",
+    "lectio": { "post": "lt-0028" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0023"]
+    }
+  },
+  {
+    "id": "w-0093",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Robin Wall Kimmerer. “<a href=\"https://www.youtube.com/watch?v=ypLExKx3ic4\" rel=\"noopener\" target=\"_blank\">The Council of Pecans</a>.” <em>Braiding Sweetgrass:  Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants. </em>Minneapolis, Minnesota: Milkweed Editions, 2013.</p></li><li><p>Christina Alphonso. “<a href=\"https://www.metmuseum.org/perspectives/acres-of-acorns\" rel=\"noopener\" target=\"_blank\">Acres of Acorns</a>.” <em>The Metropolitan Museum of Art</em> (November 5, 2015).</p></li><li><p>Rob Paratley. “<a href=\"https://ufi.mgcafe.uky.edu/treetalk/ecobot-red-oak\" rel=\"noopener\" target=\"_blank\">Economic Botany and Cultural History: Northern red oak</a>.” University of Kentucky Urban Forest Initiative (n.d.). </p></li><li><p>“<a href=\"https://www.nps.gov/articles/species-spotlight-oaks.htm\" rel=\"noopener\" target=\"_blank\">Species Spotlight - Oaks</a>.” <em>National Park Service </em>(January 15, 2025).</p></li><li><p>Andrew L. Hipp, Paul S. Manos, and Jeannine Cavender-Bares. “<a href=\"https://www.scientificamerican.com/article/how-oak-trees-evolved-to-rule-the-forests-of-the-northern-hemisphere/\" rel=\"noopener\" target=\"_blank\">How Oak Trees Evolved to Rule the Forests of the Northern Hemisphere</a>.”</p></li><li><p>Joe Lamp’l. “<a href=\"https://joegardener.com/podcast/nature-oaks-doug-tallamy/\" rel=\"noopener\" target=\"_blank\">Our Most Essential Trees: The Nature of Oaks, with Doug Tallamy</a>.” <em>Joe Gardener </em>(April 29, 2021).</p></li></ul>",
+    "lectio": { "post": "lt-0028" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0023"]
+    }
+  },
+  {
+    "id": "w-0094",
+    "kind": "headnote",
+    "shownIn": "seasons",
+    "text": "<p>Few trees in New England, except perhaps the marvelous <a href=\"seasons.html?season=spring&amp;entry=lt-0004\">paper birch</a> (<em>Betula papyrifera</em>), have quite the visual appeal of the shagbark hickory. The distinction is in the name. A <a href=\"https://en.wikipedia.org/wiki/Carya_ovata#/media/File:2021-03-03_10_34_58_Shagbark_Hickory_trunk_within_the_woodlands_along_the_West_Branch_Shabakunk_Creek_in_Ewing_Township,_Mercer_County,_New_Jersey.jpg\" rel=\"noopener\" target=\"_blank\">fully shagged-out trunk</a> embodies something between an elegant cascade and a strewn-out mess—a poise we might all hope to achieve, if we are so lucky.</p><p>Hickory trees found their name in English by shortening the Algonquin or Powhatan word, <em>pawcohiccora</em>, which refers to the <a href=\"https://www.fondazioneslowfood.com/en/ark-of-taste-slow-food/shagbark-hickory/\" rel=\"noopener\" target=\"_blank\">flour</a> or <a href=\"http://www.woodlandindianedu.com/foodnuts.html\" rel=\"noopener\" target=\"_blank\">milk</a> made from crushing hickory nuts dry or in water. Their name thus embodies not only this culinary-cultural past but, as writers like Elspeth Hay (in her recent book, <em><a href=\"https://bookshop.org/a/86532/9780865719729\" rel=\"noopener\" target=\"_blank\">Feed Us With Trees</a></em>) and <a href=\"https://www.bostonfoodforest.org/new-page-1\" rel=\"noopener\" target=\"_blank\">food foresters</a> around the country are demonstrating, a potential agricultural, social, and ecological future. After all, much of the North American continent, as well as regional and peasant cultures around the world, were once sustained by edible landscapes of fire-shaped forests that produced an abundance of nuts, other nourishing substances, and useful objects. Today, researchers and agroforesters across the Northeast and <a href=\"https://iowacapitaldispatch.com/2025/04/04/foraging-for-oil/\" rel=\"noopener\" target=\"_blank\">Midwest</a> are making a <a href=\"https://www.motherearthnews.com/real-food/carya-cordiformis-tree-zm0z26fmzols/\" rel=\"noopener\" target=\"_blank\">healthy, delicious culinary oil</a> from shagbark’s cousin, the Yellowbud, or bitternut, hickory (<em>Carya cordiformis</em>). This all made me curious about the forests that surround us here in New England.</p><p>Massachusetts, as the state <a href=\"https://storymaps.arcgis.com/stories/804b126a9a654a6a91f280114ef170e0\" rel=\"noopener\" target=\"_blank\">likes to brag</a>, is the third-densest state in the U.S. but also the 11th-most-forested. Thus, forests comprise a major variety of what are referred to politely, by the local government, as “<a href=\"https://www.mass.gov/info-details/natural-communities-fact-sheets\" rel=\"noopener\" target=\"_blank\">the natural communities of Massachusetts</a>”: these include formations such as “acidic rock cliff community” and  “cultural grassland.” The hickory genus (<em>Carya</em>) contains 19 recognized species, 12 native to North American and seven to Southeast Asia). Hickories are close companions of oaks, including the northern red oak I wrote about <a href=\"seasons.html?season=autumn&amp;entry=lt-0028\">last week</a>. Whereas oaks are in the beech family (<em>Fagaceae</em>), hickories are in the walnut family (<em>Juglandaceae</em>); but both are grouped in the higher-level order of beeches (<em>Fagales</em>), all <a href=\"https://www.britannica.com/plant/Fagales/Characteristic-morphological-features\" rel=\"noopener\" target=\"_blank\">distinguished</a> by the presence of a hard cupule (hull or husk) that partially or completely encloses their fruit. </p><p>Together, these two trees define the <a href=\"https://www.mass.gov/doc/oak-hickory-forest-0/download\" rel=\"noopener\" target=\"_blank\">oak-hickory forest type</a> that represents approximately <a href=\"https://research.fs.usda.gov/download/treesearch/54870.pdf)\" rel=\"noopener\" target=\"_blank\">one-third</a> of the state’s forested land: that’s more than 1,000,000 acres! Such forests are home to some of my favorite plants, including <a href=\"seasons.html?season=winter&amp;entry=lt-0001\">witch-hazel</a> and the <a href=\"seasons.html?season=summer&amp;entry=lt-0016\">pink lady’s slipper</a> orchid. Oak-hickory forest is one of the <a href=\"https://www.mass.gov/doc/oak-hickory-forest/download\" rel=\"noopener\" target=\"_blank\">more diverse</a> types of oak communities, falling near the middle of a spectrum between dry, acidic scrub oak scrublands (where they mix with wild blueberries and other heath species) and riparian, flood-prone oak wetlands (where they mix with ash, willow, or sweetgum) Though companions, oaks and hickories do compete, with fast-growing oaks racing to the canopy while hickories root deep, establish a small stand, and wait in the under-canopy, <a href=\"https://www.arborday.org/perspectives/white-oak-king-kings\" rel=\"noopener\" target=\"_blank\">perhaps for centuries</a>, until an opening appears—a poise we might all hope to achieve, if we are so lucky.</p><hr>",
+    "lectio": { "post": "lt-0029" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0024"]
+    }
+  },
+  {
+    "id": "w-0095",
+    "kind": "supplementum",
+    "shownIn": "seasons",
+    "text": "<ul><li><p>Elspeth Hay. <em><a href=\"https://bookshop.org/a/86532/9780865719729\" rel=\"noopener\" target=\"_blank\">Feed Us With Trees: Nuts and the Future of Food</a>. </em>Gabriola Island, British Columbia: New Society Publishers, 2025.</p></li><li><p>“<a href=\"https://newenglandforestry.org/meet-the-shagbark-hickory/\" rel=\"noopener\" target=\"_blank\">Meet the Shagbark Hickory</a>.” <em>New England Forestry Foundation </em>().</p></li><li><p>Les Engles. <a href=\"https://www.thespruce.com/all-about-hickory-trees-8303273\" rel=\"noopener\" target=\"_blank\">“12 Types of Hickory Tree to Know and How to Identify Each Correctly</a>.” <em>The Spruce </em>(August 8, 2026).</p></li><li><p>David L. Graney. “<a href=\"https://research.fs.usda.gov/silvics/shagbark-hickory\" rel=\"noopener\" target=\"_blank\">Shagbark Hickory</a>.” <em>Silvics of North America </em>(December 1, 1990).</p></li><li><p>Anne Krantz and Mary Tebo Davis. “<a href=\"https://extension.unh.edu/blog/2019/12/henry-thoreau-shagbark-hickories\" rel=\"noopener\" target=\"_blank\">Henry Thoreau and Shagbark Hickories</a>.” <em>University of New Hampshire Extension</em> (December 4, 2019).</p></li></ul>",
+    "lectio": { "post": "lt-0029" },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0024"]
+    }
+  }
+]

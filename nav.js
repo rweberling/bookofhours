@@ -4,6 +4,33 @@ nav.js — Shared navigation for Horae Terrenae
 Include on every page after the nav HTML.
 ════════════════════════════════════════════════════════════════ */
 
+/* ── DFOS gate switch ─────────────────────────────────────────────
+   true:  choosing in the Wander panes — the hour blocks, the species,
+          the weather conditions — asks visitors to sign in with DFOS
+          first; the panes themselves, with their dials, open for all.
+   false: everyone can choose.
+   That's the only change either way: sign-in itself (dfos-siwd.js)
+   stays in place, so turning the gate back on is this one word.
+────────────────────────────────────────────────────────────────── */
+let DFOS_GATE = true;
+
+// Preview: ?gate=preview on any page turns the gate on in this browser
+// only, to try sign-in before everyone gets it; ?gate=off turns it back
+// off. Remembered in localStorage across the round trip to DFOS.
+(() => {
+const GATE_PREVIEW_KEY = 'earthly-hours-gate-preview';
+try {
+const asked = new URLSearchParams(location.search).get('gate');
+if (asked === 'preview') localStorage.setItem(GATE_PREVIEW_KEY, '1');
+if (asked === 'off') localStorage.removeItem(GATE_PREVIEW_KEY);
+if (localStorage.getItem(GATE_PREVIEW_KEY)) DFOS_GATE = true;
+} catch (error) {}
+})();
+
+// Where the lock sends signed-in visitors who aren't key holders yet:
+// the "Support the Project" item, whose purchase joins the Wanderers.
+const KEY_HOLDER_URL = 'https://otherwise.dfos.com/p/earthlyhours';
+
 function registerDropup(triggerId, menuId) {
 const trigger = document.getElementById(triggerId);
 const menu = document.getElementById(menuId);
@@ -45,62 +72,100 @@ projectsMenu.addEventListener('click', e => e.stopPropagation());
 }
 
 /* ── DFOS gate (shared) ───────────────────────────────────────────
-   One sign-in check for every Wander pane — Hours (hours.js),
-   Seasons (seasons.js), Weather (weather.js). Cosmetic only; see
-   dfos-siwd.js. Returns true when signed in; otherwise starts the
-   DFOS sign-in (which navigates away, then comes back and fires
-   'dfossignin' with the same intent) and returns false.
-   onUnavailable runs when sign-in can't even start — dfos-siwd.js
-   never loaded (ad blocker, offline, CDN outage) or its CDN import
-   failed. Left out, the Wander button in the menu says so; a page can
-   pass its own to say it somewhere more visible.
+   Every Wander pane — Hours (hours.js), Seasons (seasons.js), Weather
+   (weather.js) — opens for everyone: its upper part (dial, sky,
+   station model) is the present moment, part of the site itself.
+   Only the choosing below it is gated, when DFOS_GATE is on, and only
+   key holders (members of the paid subgroup in the DFOS space) get
+   it: each page calls syncWanderLock() with its pane's grid as the
+   pane opens, which hides the grid behind a button — "Sign in to
+   wander" for visitors who aren't signed in, "Hold a key to wander"
+   (to KEY_HOLDER_URL) for those who are but aren't key holders.
+   Cosmetic only; see dfos-siwd.js.
 
-   Only call this from a click or after DOMContentLoaded, never while
+   Sign-in navigates away, then comes back to the page's #wander and
+   fires 'dfossignin' with the same intent, and each page reopens its
+   pane — with the grid, now.
+
+   Only call these from a click or after DOMContentLoaded, never while
    scripts are still loading: dfos-siwd.js is a module, so it defines
-   window.dfosIsSignedIn after every classic script has run. Called
+   window.dfosIsKeyHolder after every classic script has run. Called
    earlier, a signed-in visitor looks signed out.
 ────────────────────────────────────────────────────────────────── */
-function requireDfosSignIn(intent, onUnavailable) {
-if (typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn()) return true;
-const unavailable = typeof onUnavailable === 'function' ? onUnavailable : showDfosGateError;
+function dfosMayWander() {
+return !DFOS_GATE
+  || (typeof window.dfosIsKeyHolder === 'function' && window.dfosIsKeyHolder());
+}
+
+function dfosSignedIn() {
+return typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn();
+}
+
+// Starts sign-in; onUnavailable runs when it can't even start —
+// dfos-siwd.js never loaded (ad blocker, offline, CDN outage) or its
+// CDN import failed.
+function beginDfosSignIn(intent, onUnavailable) {
 if (typeof window.dfosBeginSignIn === 'function') {
-Promise.resolve(window.dfosBeginSignIn(intent)).catch(unavailable);
+Promise.resolve(window.dfosBeginSignIn(intent)).catch(onUnavailable);
 } else {
-unavailable();
+onUnavailable();
 }
-return false;
 }
 
-/* ── Gated Wander buttons ─────────────────────────────────────────
-   On each section's own page, its Wander item in the menu is a button
-   (class dfos-gated; scripts/build_shared.py puts it there) that reads
-   "Sign in to wander" until the visitor has signed in with DFOS. The
-   page's own script (hours.js, seasons.js, weather.js) opens its pane
-   when the button is clicked.
-────────────────────────────────────────────────────────────────── */
-function updateDfosGatedButtons() {
-const signedIn = typeof window.dfosIsSignedIn === 'function' && window.dfosIsSignedIn();
-document.querySelectorAll('.dfos-gated').forEach(btn => {
-btn.textContent = signedIn ? btn.dataset.gatedLabel : 'Sign in to wander';
-btn.classList.toggle('is-locked', !signedIn);
+// What each pane's lock lets you choose, for the note under it.
+const WANDER_CHOICE = { wander: 'another hour', season: 'another season', weather: 'other weather' };
+
+// Shows gridEl, or in its place the lock: a button that starts sign-in
+// with intent (the page's name for its pane), or, for a visitor already
+// signed in without a key, points them to KEY_HOLDER_URL. Under it, a
+// note in parentheses says what the key is for, and thanks a visitor
+// who has just signed in. Button and note are made once, just above
+// the grid, and kept; each knows the other and the grid.
+function syncWanderLock(gridEl, intent) {
+if (!gridEl) return;
+let lock = gridEl.wanderLock;
+if (!lock) {
+lock = document.createElement('button');
+lock.type = 'button';
+lock.className = 'wander-btn wander-lock';
+lock.dataset.intent = intent;
+lock.addEventListener('click', () => {
+if (dfosSignedIn()) {
+window.open(KEY_HOLDER_URL, '_blank', 'noopener');
+return;
+}
+beginDfosSignIn(intent, () => {
+lock.textContent = 'Sign-in unavailable — try again';
+setTimeout(() => syncWanderLock(gridEl, intent), 5000);
 });
-}
-
-let dfosGateErrorTimeout = null;
-function showDfosGateError() {
-clearTimeout(dfosGateErrorTimeout);
-document.querySelectorAll('.dfos-gated').forEach(btn => {
-btn.textContent = 'Sign-in unavailable — try again';
 });
-dfosGateErrorTimeout = setTimeout(updateDfosGatedButtons, 5000);
+const note = document.createElement('p');
+note.className = 'wander-lock-note';
+gridEl.before(lock, note);
+gridEl.wanderLock = lock;
+lock.wanderNote = note;
+lock.wanderGrid = gridEl;
+}
+const open = dfosMayWander();
+const signedIn = dfosSignedIn();
+gridEl.hidden = !open;
+lock.hidden = open;
+lock.wanderNote.hidden = open;
+lock.textContent = signedIn ? 'Hold a key to wander' : 'Sign in to wander';
+const choosing = `Choosing ${WANDER_CHOICE[intent] || 'another hour'} is for Wanderers, who keep this book going; the present is open to all.`;
+lock.wanderNote.textContent = signedIn ? `(Thank you for signing in. ${choosing})` : `(${choosing})`;
+// Signed in without a key: ask again (dfos-siwd.js keeps this to once a
+// minute); a key found since unlocks the pane through 'dfossignin'.
+if (!open && dfosSignedIn() && typeof window.dfosRefreshSession === 'function') window.dfosRefreshSession();
 }
 
-// dfos-siwd.js is a module script: even declared first, its top level
-// (where window.dfosIsSignedIn gets assigned) runs after the classic
-// scripts, so the labels wait for DOMContentLoaded, which module scripts
-// are guaranteed to finish before.
-window.addEventListener('DOMContentLoaded', updateDfosGatedButtons);
-window.addEventListener('dfossignin', updateDfosGatedButtons);
+// Signing in or out, or a key gained or lost, re-locks or unlocks any
+// pane already built.
+window.addEventListener('dfossignin', () => {
+document.querySelectorAll('.wander-lock').forEach(lock => {
+syncWanderLock(lock.wanderGrid, lock.dataset.intent);
+});
+});
 
 /* ── Overlay pane close (Wander, Season, Weather panes) ───────────
    Each pane lives on its own page now — wander-pane on index.html,

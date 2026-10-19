@@ -8,7 +8,10 @@ Usage:
 
 With --write, the post images are downloaded to images/lectio-terra/ and
 scripts/build_images.py then runs, making the web copies the Seasons page
-shows (and removing those of any image no longer there).
+shows (and removing those of any image no longer there), then
+scripts/copy_lectio.py, adding each new passage and figure to
+data/readings.json and data/images.json, and then scripts/build_sitemap.py, listing the new
+readings.
 """
 
 import argparse
@@ -58,7 +61,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--export', required=True, type=Path, help='Substack export directory')
     parser.add_argument('--assignments', type=Path, default=Path('season-assignments.json'))
-    parser.add_argument('--output', type=Path, default=Path('lectio-data.json'))
+    parser.add_argument('--output', type=Path, default=Path('data/lectio-data.json'))
     parser.add_argument('--images', type=Path, default=Path('images/lectio-terra'))
     parser.add_argument('--template', action='store_true', help='Print an assignment template instead of writing data')
     parser.add_argument('--write', action='store_true', help='Write the generated JSON and downloaded images')
@@ -222,7 +225,7 @@ def load_existing(path):
 
     Only entries already sorted into a real season count as "already
     imported" — those are the ones this script will leave untouched from
-    now on, hand edits (species/latin/readings, title corrections,
+    now on, hand edits (subject/readings, title corrections,
     whatever) included. Rows in the old 'unassigned' list are lightweight
     stubs with no real content, so they're always re-evaluated fresh
     against the current season-assignments.json rather than preserved.
@@ -234,7 +237,7 @@ def load_existing(path):
     existing_by_slug = {}
     for season in SEASONS:
         for entry in data.get('seasons', {}).get(season, []):
-            existing_by_slug[entry['id']] = (season, entry)
+            existing_by_slug[substack_slug(entry)] = (season, entry)
     return existing_by_slug
 
 
@@ -288,6 +291,18 @@ def slug_for(path):
     return path.stem.split('.', 1)[1] if '.' in path.stem else path.stem
 
 
+# A post's own ID is neutral and permanent (lt-0001, lt-0002…; see the
+# Identifiers section of the metadata notes). Its Substack address, the
+# slug, is only how this script matches it to the export: it's kept as
+# the post's alias, and in canonicalUrl.
+LT_ID = re.compile(r'^lt-(\d{4})$')
+
+
+def substack_slug(entry):
+    url = entry.get('canonicalUrl') or ''
+    return url.rsplit('/p/', 1)[1] if '/p/' in url else entry['id']
+
+
 def build_entry(row, path, season, image_dir, download_images):
     post_id = row['post_id']
     raw_html = path.read_text(encoding='utf-8')
@@ -298,7 +313,8 @@ def build_entry(row, path, season, image_dir, download_images):
     body_html = re.sub(r'<(h[2-4])>\s*More\s*</\1>', r'<\1>Supplementum</\1>', body_html)
     body_html = drop_countdown(body_html)
     return {
-        'id': slug_for(path),
+        'id': None,  # set by main(): the post's existing lt- ID, or the next free one
+        'aliases': [slug_for(path)],
         'postId': post_id,
         'season': season,
         'title': spell_out_ligatures(row.get('title', '').strip()),
@@ -308,6 +324,46 @@ def build_entry(row, path, season, image_dir, download_images):
         'bodyHtml': body_html,
         'images': images
     }
+
+
+# A link to another Lectio Terra post on Substack, inside an <a> tag.
+OWN_POST_HREF = re.compile(r'href="https?://laurentia\.substack\.com/p/([^/?#"]+)[^"]*"')
+# An image wrapped in a link to Substack's copy of it: the <a>'s href,
+# then the local master the <img> already shows.
+SUBSTACK_IMAGE_LINK = re.compile(
+    r'(<a\b[^>]*?\shref=")https?://substackcdn\.com/[^"]*'
+    r'("[^>]*>\s*<img\b[^>]*?\ssrc="(images/lectio-terra/[^"]+)")')
+
+
+def link_internally(grouped):
+    """Keep readers on this site rather than sending them to Substack.
+
+    A link to another Lectio Terra post that's on the Seasons page now
+    opens that reading here, in the same tab; a link to one that isn't
+    (yet) keeps its Substack address, and turns local once that post is
+    assigned a season and this runs again. A post image's link opens the
+    site's own full-size master instead of Substack's copy. Links to
+    anyone else's posts are left alone. Runs over every entry on each
+    import, so it also covers posts left untouched by this run.
+    """
+    place_of = {substack_slug(entry): (season, entry['id'])
+                for season, items in grouped.items() for entry in items}
+
+    def own_post(match):
+        tag = match.group(0)
+        href = OWN_POST_HREF.search(tag)
+        if not href or href.group(1) not in place_of:
+            return tag
+        season, post_id = place_of[href.group(1)]
+        tag = tag.replace(href.group(0), f'href="seasons.html?season={season}&amp;entry={post_id}"')
+        return re.sub(r'\s(?:target|rel)="[^"]*"', '', tag)
+
+    for items in grouped.values():
+        for entry in items:
+            if not entry.get('bodyHtml'):
+                continue
+            body = re.sub(r'<a\b[^>]*>', own_post, entry['bodyHtml'])
+            entry['bodyHtml'] = SUBSTACK_IMAGE_LINK.sub(r'\1\3\2', body)
 
 
 def main():
@@ -325,13 +381,18 @@ def main():
         return
 
     # Start from whatever's already on disk, in its original order, so
-    # anything hand-edited into an existing entry (species/latin/
+    # anything hand-edited into an existing entry (subject/
     # readings, a corrected title, whatever) survives this run
     # untouched — unless its slug was explicitly passed to --refresh.
     grouped = {season: [] for season in SEASONS}
     for season, entry in existing_by_slug.values():
-        if entry['id'] not in refresh:
+        if substack_slug(entry) not in refresh:
             grouped[season].append(entry)
+
+    # New posts take the next free lt- number; a refreshed post keeps its own.
+    taken = [int(m.group(1)) for _, entry in existing_by_slug.values()
+             if (m := LT_ID.match(entry['id']))]
+    next_number = max(taken, default=0) + 1
 
     unassigned = []
     new_count = 0
@@ -349,10 +410,18 @@ def main():
 
         verb = 'Refreshing' if slug in existing_by_slug else 'Importing'
         print(f'{verb} {slug} [{season}]')
-        grouped[season].append(build_entry(row, path, season, args.images, args.write))
+        entry = build_entry(row, path, season, args.images, args.write)
+        if slug in existing_by_slug:
+            old = existing_by_slug[slug][1]
+            entry['id'], entry['aliases'] = old['id'], old.get('aliases') or entry['aliases']
+        else:
+            entry['id'] = f'lt-{next_number:04d}'
+            next_number += 1
+        grouped[season].append(entry)
         new_count += 1
 
     print(f'{new_count} new/refreshed post(s), {skipped_count} left untouched.')
+    link_internally(grouped)
 
     result = {
         'generatedBy': 'scripts/import_substack.py',
@@ -367,6 +436,18 @@ def main():
         built = subprocess.run([sys.executable, str(Path(__file__).with_name('build_images.py'))])
         if built.returncode:
             print('The web copies were not all made. Run: python3 scripts/build_images.py', file=sys.stderr)
+        # Their passages and figures become records of their own.
+        copied = subprocess.run([sys.executable, str(Path(__file__).with_name('copy_lectio.py')), '--write'])
+        if copied.returncode:
+            print('The passages and figures were not copied. Run: python3 scripts/copy_lectio.py --write', file=sys.stderr)
+        # Each post's list of its pieces, which the Seasons page rebuilds it from.
+        listed = subprocess.run([sys.executable, str(Path(__file__).with_name('build_post_manifests.py')), '--write'])
+        if listed.returncode:
+            print('The posts\' lists of pieces were not made. Run: python3 scripts/build_post_manifests.py --write', file=sys.stderr)
+        # New readings get their own addresses in the sitemap.
+        mapped = subprocess.run([sys.executable, str(Path(__file__).with_name('build_sitemap.py'))])
+        if mapped.returncode:
+            print('The sitemap was not updated. Run: python3 scripts/build_sitemap.py', file=sys.stderr)
     else:
         print(json.dumps({season: len(items) for season, items in grouped.items()}, indent=2))
         print(f'Unassigned posts: {len(unassigned)}. Use --template to create assignment entries.')
