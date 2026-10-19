@@ -3189,5 +3189,222 @@
       "weather": ["snow"],
       "seasons": ["winter"]
     }
+  },
+  {
+    "id": "i-0129",
+    "shownIn": "weather",
+    "file": "images/weather_hokusai_red_fuji.jpg",
+    "caption": "Katsushika Hokusai, <a href=\"https://www.metmuseum.org/art/collection/search/36490\" target=\"_blank\"><em>South Wind, Clear Sky</em></a>, from <em>Thirty-six Views of Mount Fuji</em> (c. 1830–32)",
+    "bibliography": "Katsushika Hokusai. <em>South Wind, Clear Sky (Gaifū kaisei)</em>, also known as <em>Red Fuji</em>, from the series <em>Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)</em>. c. 1830–32, woodblock print, ink and color on paper, Metropolitan Museum of Art, New York (JP9).",
+    "creator": { "id": "a-katsushika-hokusai", "name": "Katsushika Hokusai", "wikidata": "Q5586" },
+    "title": "South Wind, Clear Sky (Gaifū kaisei)",
+    "container": null,
+    "date": "1830~/1832~",
+    "institution": "Metropolitan Museum of Art",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/36490"
+      }
+    ],
+    "source": {
+      "url": "https://images.metmuseum.org/CRDImages/as/original/DP141062.jpg",
+      "retrieved": "2026-10-19"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "bottom-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["clear", "wind"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0130",
+    "shownIn": "weather",
+    "file": "images/weather_saussure_cyanometer.jpg",
+    "caption": "Horace-Bénédict de Saussure, <a href=\"https://commons.wikimedia.org/wiki/File:Mat%C3%A9riel_de_recherche,_Horace-B%C3%A9n%C3%A9dict_de_Saussure_deuxi%C3%A8me_sch%C3%A9ma_du_cyanom%C3%A8tre,_1788_%C2%A9_Collection_Mus%C3%A9e_d%E2%80%99histoire_des_sciences,_Geneva.jpg\" target=\"_blank\"><em>Cyanometer</em></a> (1788), Musée d’histoire des sciences, Geneva",
+    "bibliography": "Saussure, Horace-Bénédict de. <em>Deuxième schéma du cyanomètre</em> [Second cyanometer]. 1788, watercolour on paper, Musée d’histoire des sciences, Geneva.",
+    "creator": {
+      "id": "a-horace-benedict-de-saussure",
+      "name": "Horace-Bénédict de Saussure",
+      "wikidata": "Q115525"
+    },
+    "title": "Deuxième schéma du cyanomètre",
+    "container": null,
+    "date": "1788",
+    "institution": "Musée d’histoire des sciences, Geneva",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Mat%C3%A9riel_de_recherche,_Horace-B%C3%A9n%C3%A9dict_de_Saussure_deuxi%C3%A8me_sch%C3%A9ma_du_cyanom%C3%A8tre,_1788_%C2%A9_Collection_Mus%C3%A9e_d%E2%80%99histoire_des_sciences,_Geneva.jpg"
+      }
+    ],
+    "source": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Mat%C3%A9riel_de_recherche%2C_Horace-B%C3%A9n%C3%A9dict_de_Saussure_deuxi%C3%A8me_sch%C3%A9ma_du_cyanom%C3%A8tre%2C_1788_%C2%A9_Collection_Mus%C3%A9e_d%E2%80%99histoire_des_sciences%2C_Geneva.jpg",
+      "retrieved": "2026-10-19"
+    },
+    "rights": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "tags": {
+      "hours": [],
+      "weather": ["clear"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0131",
+    "shownIn": "weather",
+    "file": "images/weather_tyndall_tube.gif",
+    "caption": "John Tyndall, Fig. 3, from <a href=\"https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601\" target=\"_blank\"><em>Fragments of Science</em></a>, vol. 1 (1879)",
+    "bibliography": "Tyndall, John. Fig. 3. In “New Chemical Reactions Produced by Light,” <em>Fragments of Science: A Series of Detached Essays, Addresses, and Reviews</em>, 6th ed., vol. 1. Longmans, Green, and Co., 1879.",
+    "creator": { "id": "a-john-tyndall", "name": "John Tyndall", "wikidata": "Q360808" },
+    "title": "Fig. 3",
+    "container": "Fragments of Science: A Series of Detached Essays, Addresses, and Reviews, vol. 1",
+    "publisher": "Longmans, Green, and Co.",
+    "date": "1879",
+    "institution": null,
+    "links": [
+      {
+        "role": "cited",
+        "label": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601"
+      },
+      {
+        "role": "copy",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Tyndall%27s_glass_tube.gif"
+      }
+    ],
+    "furtherReading": [
+      {
+        "kind": "about",
+        "label": "Royal Institution, \"John Tyndall's blue sky apparatus\"",
+        "url": "https://www.rigb.org/explore-science/explore/collection/john-tyndalls-blue-sky-apparatus"
+      }
+    ],
+    "source": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Tyndall%27s_glass_tube.gif",
+      "retrieved": "2026-10-19"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "display": { "cardPosition": "top-right" },
+    "tags": {
+      "hours": [],
+      "weather": ["clear"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0132",
+    "shownIn": "weather",
+    "file": "images/weather_kandinsky_sky_blue.jpg",
+    "caption": "Wassily Kandinsky, <a href=\"https://www.centrepompidou.fr/en/ressources/oeuvre/cEbLda\" target=\"_blank\"><em>Sky Blue</em></a> (1940)",
+    "bibliography": "Kandinsky, Wassily. <em>Bleu de ciel</em> [Sky Blue]. 1940, oil on canvas, Musée national d’art moderne, Centre Pompidou, Paris (AM 1976-862).",
+    "creator": { "id": "a-wassily-kandinsky", "name": "Wassily Kandinsky", "wikidata": "Q61064" },
+    "title": "Bleu de ciel",
+    "container": null,
+    "date": "1940",
+    "institution": "Musée national d’art moderne, Centre Pompidou",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Centre Pompidou",
+        "url": "https://www.centrepompidou.fr/en/ressources/oeuvre/cEbLda"
+      },
+      {
+        "role": "copy",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_-_Sky_Blue,_1940.jpg"
+      }
+    ],
+    "source": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Wassily_Kandinsky_-_Sky_Blue%2C_1940.jpg",
+      "retrieved": "2026-10-19"
+    },
+    "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+    "rightsNote": "public domain in France and the EU (Centre Pompidou); US status uncertain",
+    "tags": {
+      "hours": [],
+      "weather": ["clear"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0133",
+    "shownIn": "weather",
+    "file": "images/weather_valenciennes_farnese.jpg",
+    "caption": "Pierre-Henri de Valenciennes, <a href=\"https://collections.louvre.fr/ark:/53355/cl010064145\" target=\"_blank\"><em>Farm Buildings at the Villa Farnese: The Two Poplars</em></a> (c. 1782–84)",
+    "bibliography": "Valenciennes, Pierre-Henri de. <em>Fabriques à la villa Farnèse : les deux peupliers</em> [Farm Buildings at the Villa Farnese: The Two Poplars]. c. 1782–84, oil on paper mounted on cardboard, Musée du Louvre, Paris (RF 3004).",
+    "creator": {
+      "id": "a-pierre-henri-de-valenciennes",
+      "name": "Pierre-Henri de Valenciennes",
+      "wikidata": "Q334946"
+    },
+    "title": "Fabriques à la villa Farnèse : les deux peupliers",
+    "container": null,
+    "date": "1782~/1784~",
+    "institution": "Musée du Louvre",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Musée du Louvre",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010064145"
+      },
+      {
+        "role": "copy",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Fabriques_%C3%A0_la_villa_Farn%C3%A8se,_les_deux_peupliers_-_Pierre_de_Valenciennes_-_Mus%C3%A9e_du_Louvre_Peintures_RF_3004.jpg"
+      }
+    ],
+    "source": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Fabriques_%C3%A0_la_villa_Farn%C3%A8se%2C_les_deux_peupliers_-_Pierre_de_Valenciennes_-_Mus%C3%A9e_du_Louvre_Peintures_RF_3004.jpg",
+      "retrieved": "2026-10-19"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "display": { "cardPosition": "top-right" },
+    "tags": {
+      "hours": [],
+      "weather": ["clear"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0134",
+    "shownIn": "weather",
+    "file": "images/weather_frey_forum.jpg",
+    "caption": "Johann Jakob Frey, <a href=\"https://auction.van-ham.com/en/johann-jakob-frey-rome--id-79827-item.html\" target=\"_blank\"><em>Rome: The Roman Forum in the Evening Sun</em></a> (1859)",
+    "bibliography": "Frey, Johann Jakob. <em>Rome: The Roman Forum in the Evening Sun</em>. 1859, oil on canvas, private collection. Van Ham Kunstauktionen, Cologne, <em>Fine Art</em>, 21 November 2025, lot 1081.",
+    "creator": { "id": "a-johann-jakob-frey", "name": "Johann Jakob Frey", "wikidata": "Q1337730" },
+    "title": "Rome: The Roman Forum in the Evening Sun",
+    "container": null,
+    "date": "1859",
+    "institution": "Private collection",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Van Ham",
+        "url": "https://auction.van-ham.com/en/johann-jakob-frey-rome--id-79827-item.html"
+      }
+    ],
+    "furtherReading": [
+      {
+        "kind": "about",
+        "label": "Van Ham catalogue entry, with provenance (on Invaluable)",
+        "url": "https://www.invaluable.com/auction-lot/johann-jakob-frey-rome-1081-c-698622e000"
+      }
+    ],
+    "source": {
+      "url": "https://auction.van-ham.com/images/item_images/gallery/79827_0.jpg?t=20251027_133240",
+      "retrieved": "2026-10-19"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "display": { "cardPosition": "top-right" },
+    "tags": {
+      "hours": [],
+      "weather": ["clear"],
+      "seasons": []
+    }
   }
 ]

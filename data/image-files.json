@@ -3467,6 +3467,174 @@
           "bytes": 164954
         }
       ]
+    },
+    "images/weather_frey_forum.jpg": {
+      "bytes": 5927324,
+      "width": 3500,
+      "height": 2512,
+      "sha256": "baea19682f640bfca225c7790fc99e4b2cfc811e3bd8f9bf1246eca62ee6af7c",
+      "settings": "89e48fac760f",
+      "credit": "a8b1c43e3be3",
+      "copies": [
+        {
+          "file": "images/web/weather_frey_forum-800.webp",
+          "width": 800,
+          "height": 574,
+          "bytes": 55000
+        },
+        {
+          "file": "images/web/weather_frey_forum-1600.webp",
+          "width": 1600,
+          "height": 1148,
+          "bytes": 249512
+        },
+        {
+          "file": "images/web/weather_frey_forum-2400.webp",
+          "width": 2400,
+          "height": 1723,
+          "bytes": 626842
+        }
+      ]
+    },
+    "images/weather_hokusai_red_fuji.jpg": {
+      "bytes": 3158200,
+      "width": 3865,
+      "height": 2665,
+      "sha256": "93bfb76167159d101f3cba62c3dda63e0668faca3e91f5f62afcb74e735afbb3",
+      "settings": "89e48fac760f",
+      "credit": "576e54a91fd1",
+      "copies": [
+        {
+          "file": "images/web/weather_hokusai_red_fuji-800.webp",
+          "width": 800,
+          "height": 552,
+          "bytes": 72712
+        },
+        {
+          "file": "images/web/weather_hokusai_red_fuji-1600.webp",
+          "width": 1600,
+          "height": 1103,
+          "bytes": 275230
+        },
+        {
+          "file": "images/web/weather_hokusai_red_fuji-2400.webp",
+          "width": 2400,
+          "height": 1655,
+          "bytes": 638352
+        }
+      ]
+    },
+    "images/weather_kandinsky_sky_blue.jpg": {
+      "bytes": 17365385,
+      "width": 6548,
+      "height": 8907,
+      "sha256": "53d32382e7a18a36ed3100bcfd6fae6459caff1fa3f81355df47fec0080ec7f7",
+      "settings": "89e48fac760f",
+      "credit": "9820046b7030",
+      "copies": [
+        {
+          "file": "images/web/weather_kandinsky_sky_blue-800.webp",
+          "width": 800,
+          "height": 1088,
+          "bytes": 63408
+        },
+        {
+          "file": "images/web/weather_kandinsky_sky_blue-1600.webp",
+          "width": 1600,
+          "height": 2176,
+          "bytes": 396118
+        },
+        {
+          "file": "images/web/weather_kandinsky_sky_blue-2400.webp",
+          "width": 2400,
+          "height": 3265,
+          "bytes": 1016900
+        }
+      ]
+    },
+    "images/weather_saussure_cyanometer.jpg": {
+      "bytes": 456282,
+      "width": 1280,
+      "height": 1137,
+      "sha256": "d81ae5644e69ef1649a004cc7ab7a5af8f2beb7fc63b363ee0865a559940b710",
+      "settings": "89e48fac760f",
+      "credit": "660985019658",
+      "copies": [
+        {
+          "file": "images/web/weather_saussure_cyanometer-800.webp",
+          "width": 800,
+          "height": 711,
+          "bytes": 25768
+        },
+        {
+          "file": "images/web/weather_saussure_cyanometer-1600.webp",
+          "width": 1280,
+          "height": 1137,
+          "bytes": 54440
+        },
+        {
+          "file": "images/web/weather_saussure_cyanometer-2400.webp",
+          "width": 1280,
+          "height": 1137,
+          "bytes": 54440
+        }
+      ]
+    },
+    "images/weather_tyndall_tube.gif": {
+      "bytes": 261232,
+      "width": 1755,
+      "height": 1209,
+      "sha256": "ca8a1935c40db81d31ab8e9daf5156b5e499b058c5fc2766cc1ba5a76b350916",
+      "settings": "89e48fac760f",
+      "credit": "ee0d957bd9f6",
+      "copies": [
+        {
+          "file": "images/web/weather_tyndall_tube-800.webp",
+          "width": 800,
+          "height": 551,
+          "bytes": 44572
+        },
+        {
+          "file": "images/web/weather_tyndall_tube-1600.webp",
+          "width": 1600,
+          "height": 1102,
+          "bytes": 133358
+        },
+        {
+          "file": "images/web/weather_tyndall_tube-2400.webp",
+          "width": 1755,
+          "height": 1209,
+          "bytes": 155654
+        }
+      ]
+    },
+    "images/weather_valenciennes_farnese.jpg": {
+      "bytes": 2992239,
+      "width": 3580,
+      "height": 2364,
+      "sha256": "9c18ffe6294ad30526b4ba05a0f3940d4af4ce47ac0ef52bd62d09e651901b27",
+      "settings": "89e48fac760f",
+      "credit": "5b5c31062793",
+      "copies": [
+        {
+          "file": "images/web/weather_valenciennes_farnese-800.webp",
+          "width": 800,
+          "height": 528,
+          "bytes": 61478
+        },
+        {
+          "file": "images/web/weather_valenciennes_farnese-1600.webp",
+          "width": 1600,
+          "height": 1057,
+          "bytes": 205180
+        },
+        {
+          "file": "images/web/weather_valenciennes_farnese-2400.webp",
+          "width": 2400,
+          "height": 1585,
+          "bytes": 379184
+        }
+      ]
     }
   }
 }
