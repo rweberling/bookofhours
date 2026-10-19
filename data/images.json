@@ -3242,6 +3242,13 @@
         "url": "https://commons.wikimedia.org/wiki/File:Mat%C3%A9riel_de_recherche,_Horace-B%C3%A9n%C3%A9dict_de_Saussure_deuxi%C3%A8me_sch%C3%A9ma_du_cyanom%C3%A8tre,_1788_%C2%A9_Collection_Mus%C3%A9e_d%E2%80%99histoire_des_sciences,_Geneva.jpg"
       }
     ],
+    "furtherReading": [
+      {
+        "kind": "about",
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cyanometer"
+      }
+    ],
     "source": {
       "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Mat%C3%A9riel_de_recherche%2C_Horace-B%C3%A9n%C3%A9dict_de_Saussure_deuxi%C3%A8me_sch%C3%A9ma_du_cyanom%C3%A8tre%2C_1788_%C2%A9_Collection_Mus%C3%A9e_d%E2%80%99histoire_des_sciences%2C_Geneva.jpg",
       "retrieved": "2026-10-19"
