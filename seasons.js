@@ -704,6 +704,8 @@ async function initialiseSeason() {
   if (wanderButton) wanderButton.addEventListener('click', openSeasonPane);
   // So is the season's name over the reading, whose dial it opens on.
   document.getElementById('season-reading-subtitle').addEventListener('click', openSeasonPane);
+  // And the season's emblem at the foot of the reading.
+  document.getElementById('season-emblem-open').addEventListener('click', openSeasonPane);
 
   try {
     const [data, collection] = await Promise.all([

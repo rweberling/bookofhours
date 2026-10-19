@@ -904,8 +904,9 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   opacity: 0.5;
   transition: color 3s ease, opacity 0.3s ease;
 }
-/* On the Hours page the emblem opens Wander the Seasons. */
-.colophon a.season-emblem-link { display: inline-flex; text-decoration: none; }
+/* The emblem opens Wander the Seasons: a link on the Hours page, a
+   button (.pane-link) on the Seasons page, where the pane is. */
+.season-emblem-link, .colophon a.season-emblem-link { display: inline-flex; text-decoration: none; }
 .season-emblem-link:hover .season-emblem,
 .season-emblem-link:focus-visible .season-emblem { opacity: 0.9; }
 
