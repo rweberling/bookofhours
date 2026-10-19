@@ -786,14 +786,17 @@ window.addEventListener('dfossignin', e => {
    THE WEATHER
    Choosing/detecting conditions lives on its own page now
    (weather.html / weather.js). The hour page only reads back whatever
-   is active, as the #weather-line readout.
+   is active, as the #weather-line readout, which links to Wander the
+   Weather.
 ══════════════════════════════════════════════════════════════ */
 
 function renderWeatherLine() {
   const el = document.getElementById('weather-line');
   if (!el) return;
   const active = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
-  el.innerHTML = weatherConditionsHTML(active);
+  el.innerHTML = active.length
+    ? `<a class="weather-line-link" href="weather.html#wander" aria-label="Wander the Weather: ${active.map(weatherLabel).join(', ')}">${weatherConditionsHTML(active)}</a>`
+    : '';
   el.hidden = !active.length;
 }
 window.addEventListener('atmospherechange', renderWeatherLine);

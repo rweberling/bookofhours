@@ -390,6 +390,15 @@ body::before {
   transition: color 3s ease;
 }
 .weather-line .sep { color: var(--gold); margin: 0 8px; transition: color 3s ease; }
+/* The line opens Wander the Weather; it reads as the line it is until
+   hovered. */
+.weather-line-link {
+  color: inherit; text-decoration: none;
+  text-underline-offset: 4px; text-decoration-thickness: 1px;
+}
+.weather-line-link:hover, .weather-line-link:focus-visible {
+  text-decoration: underline; text-decoration-color: var(--rule);
+}
 
 /* ── Weather condition tints ─────────────────────────────────────
    Every condition name on the site (.wx spans from weatherConditionsHTML
@@ -893,8 +902,12 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   height: 52px;
   color: var(--gold);
   opacity: 0.5;
-  transition: color 3s ease;
+  transition: color 3s ease, opacity 0.3s ease;
 }
+/* On the Hours page the emblem opens Wander the Seasons. */
+.colophon a.season-emblem-link { display: inline-flex; text-decoration: none; }
+.season-emblem-link:hover .season-emblem,
+.season-emblem-link:focus-visible .season-emblem { opacity: 0.9; }
 
 /* ── Footer nav bar ───────────────────────────────────────────── */
 .site-nav {
