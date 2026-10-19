@@ -49,7 +49,8 @@ Then each kind has its own:
   where researched, a `bibliography` line and the `edition` it comes from),
   `suggestedEdition` (an ISBN for a recommended edition), `footnotes`, and
   `display` (`verse`, below; `weatherUnset` for the Weather page's reading
-  when no weather is set).
+  when no weather is set; one also tagged with conditions is drawn for
+  those as well).
 - **Verse**: a poem is marked `"display": {"verse": true}`, and the pages
   set it out a line at a time: a line too long for the page carries on
   under a hanging indent rather than passing for a new line. Its `text` is

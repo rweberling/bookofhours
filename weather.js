@@ -36,12 +36,14 @@ function activeWeather() {
 // conditions are set — nothing chosen, nothing detected. They're never
 // drawn otherwise, and "turn the page" always moves on to the ordinary
 // entries, so an unset visit can still browse everything instead of being
-// stuck on one picture. Otherwise, weighted toward the active conditions —
-// or by weightFn, when given (see readingWeight below).
+// stuck on one picture. An unset entry that is also tagged with conditions
+// (Auden's "Winds") stays in the ordinary draw as well. Otherwise, weighted
+// toward the active conditions — or by weightFn, when given (see
+// readingWeight below).
 function pickWeatherEntry(entries, excludeFn, { turning = false } = {}, weightFn = null) {
   if (!entries || !entries.length) return null;
   const unset = entries.filter(e => e.unset);
-  const ordinary = entries.filter(e => !e.unset);
+  const ordinary = entries.filter(e => !e.unset || e.weather.length);
   if (!turning && !activeWeather().length && unset.length) {
     return pickExcluding(unset, excludeFn);
   }

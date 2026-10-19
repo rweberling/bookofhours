@@ -2999,5 +2999,85 @@
       "seasons": ["autumn"],
       "species": ["sp-0024"]
     }
+  },
+  {
+    "id": "r-0104",
+    "aliases": ["r-auden-winds"],
+    "shownIn": "weather",
+    "text": "&nbsp;&nbsp;&nbsp;Winds make weather; weather<br>Is what nasty people are<br>&nbsp;&nbsp;&nbsp;Nasty about and the nice<br>Show a common joy in observing[.]",
+    "citation": {
+      "display": "W.H. Auden, from \"<a href=\"https://archive.org/details/shieldofachilles0000whau_c9s5/page/10/mode/2up\" target=\"_blank\">Winds</a>,\" in <em>The Shield of Achilles</em> (1955)",
+      "bibliography": "Auden, W.H. \"Winds.\" In <em>The Shield of Achilles</em>, 1955.",
+      "title": "Winds",
+      "written": "1952/1953",
+      "locator": {
+        "page": "11",
+        "url": "https://archive.org/details/shieldofachilles0000whau_c9s5/page/10/mode/2up"
+      },
+      "edition": {
+        "id": "e-auden-shield",
+        "type": "book",
+        "title": "The Shield of Achilles",
+        "contributors": [{ "id": "a-auden", "name": "W.H. Auden", "role": "author" }],
+        "issued": "1955",
+        "original-date": "1955",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/shieldofachilles0000whau_c9s5/page/10/mode/2up"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "in copyright — quoted as fair use"
+      }
+    },
+    "suggestedEdition": { "isbn": "", "note": "" },
+    "tags": {
+      "hours": [],
+      "weather": ["wind"],
+      "seasons": []
+    },
+    "display": { "verse": true, "weatherUnset": true }
+  },  
+  {
+    "id": "r-0104",
+    "aliases": ["r-strutt-transmission-of-light"],
+    "shownIn": "weather",
+    "text": "Closely connected with this is the interesting question whether the light from the sky can be explained by diffraction from the molecules of air themselves, or whether it is necessary to appeal to suspended particles composed of foreign matter, solid or liquid. It will appear, I think, that even in the absence of foreign particles we should still have a blue sky.",
+    "citation": {
+      "display": "John William Strutt (Lord Rayleigh), from \"<a href=\"https://archive.org/details/scientificpapers04rayliala/page/396/mode/2up?q=%22On+the+transmission+of+light%22+blue\" target=\"_blank\">On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky</a>,\" (1899) from <em><a href=\"https://bookshop.org/a/86532/9780691260921\" target=\"_blank\">The Shield of Achilles</a></em> (1955)",
+      "bibliography": "Strutt, John William (Lord Rayleigh), \“On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky.\” <em>Philosophical Magazine</em> 5.47 (1899: 375–84). Rpt. Scientific Papers, Volume 4. Cambridge University Press, 1903. 397-405.",
+      "title": "On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky",
+      "written": "1899",
+      "locator": {
+        "page": "11",
+        "url": "https://archive.org/details/scientificpapers04rayliala/page/396/mode/2up?q=%22On+the+transmission+of+light%22+blue"
+      },
+      "edition": {
+        "id": "e-strutt-transmission-of-light",
+        "type": "article",
+        "title": "",
+        "publisher": "Random House",
+        "contributors": [{ "id": "j-strutt", "name": "John William Strutt", "role": "author", "wikidata":"Q83297"}],
+        "issued": "1899",
+        "original-date": "1899",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/scientificpapers04rayliala/page/396/mode/2up?q=%22On+the+transmission+of+light%22+blue"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      }
+    },
+    "suggestedEdition": { "isbn": "9780511703997"},
+    "tags": {
+      "hours": [],
+      "weather": ["clear"],
+      "seasons": []
+    },
+    "display": { "verse": false }
   }
 ]
