@@ -9,7 +9,7 @@ Search and AI answers may quote and link to the site; training or fine-tuning AI
 ## Sections
 
 - [The Hours: Incipit](https://earthlyhours.com/hours-incipit.html): the day divided into eight three-hour blocks (Void, Hush, Chorus, Transit, Fulcrum, Doldrums, Convivium, Denouement), each with images, readings, natural phenomena and a versicle
-- [The Seasons: Incipit](https://earthlyhours.com/seasons-incipit.html): Lectio Terra, a year of weekly species studies, with readings and images for each season
+- [Lectio Terra: The Seasons](https://earthlyhours.com/seasons-incipit.html): Lectio Terra, a year of weekly species studies, with readings and images for each season
 - [The Weather: Incipit](https://earthlyhours.com/weather-incipit.html): an oracular weather service, an image and a reading for the conditions outside
 - [The Current Hour](https://earthlyhours.com/): the Hours page
 - [The Current Season](https://earthlyhours.com/seasons.html): the Seasons page

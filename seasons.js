@@ -65,7 +65,7 @@ function renderSeasonReading(entry) {
   const { species, latin, readings } = resolveSpeciesFields(entry);
   const credits = creditLine(readings);
 
-  document.title = `${species} — The Current Season`;
+  document.title = `Lectio Terra: ${species} — The Earthly Book of Hours`;
   setSeasonCanonical(entry);
   document.getElementById('season-reading-subtitle').textContent = season.subtitle;
   document.getElementById('season-reading-title').textContent = species;
