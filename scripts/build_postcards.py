@@ -357,7 +357,8 @@ def build(row, rows=()):
   </article>'''
         description = 'A postcard from The Earthly Book of Hours.'
     robots = '' if ready and row['status'] != 'draft' else '  <meta name="robots" content="noindex">\n'
-    og_image = ''
+    # Until a card has its image, link previews show the site's emblem.
+    og_image = f'  <meta property="og:image" content="{SITE}/images/emblemicon/og-card.jpg">\n'
     if ready and has(row, 'image'):
         og_image = f'  <meta property="og:image" content="{SITE}/{esc(row["image"])}">\n'
     return PAGE.format(
