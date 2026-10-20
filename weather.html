@@ -32,12 +32,15 @@
 </script>
 <!-- /shared:head -->
 <meta name="description" content="The Weather: a view from the reading room's window, with a short reading for the conditions outside.">
-<meta property="og:title" content="The Weather — The Earthly Hours">
+<meta property="og:title" content="The Weather — The Earthly Book of Hours">
 <meta property="og:description" content="The Weather: a view from the reading room's window, with a short reading for the conditions outside.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/transit_vermeer.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:url" content="https://earthlyhours.com/weather.html">
 <link rel="canonical" href="https://earthlyhours.com/weather.html">
-<meta name="application-name" content="The Earthly Hours">
+<meta name="application-name" content="The Earthly Book of Hours">
 <meta name="author" content="Ryan Weberling">
 <title>The Weather — The Earthly Book of Hours</title>
 <link rel="stylesheet" href="css/styles.css">
@@ -57,6 +60,11 @@
  <button class="weather-fold" id="weather-fold" type="button" aria-expanded="true" aria-controls="weather-card-body" aria-label="Fold the card down to the image credit"></button>
  <div class="weather-card-body" id="weather-card-body">
  <p class="publication-name">The Earthly Book of Hours</p>
+ <!-- For readers and crawlers without JavaScript, which fills in the view. -->
+ <noscript>
+ <p>An oracular weather service from <em>The Earthly Book of Hours</em>: images and readings for the conditions outside, each presented <em>ad fenestram</em> (“at the window”), a single image filling the page with a reading held in front of it. This page needs JavaScript to show them.</p>
+ <p><a href="weather-incipit.html">The Weather: Incipit</a> ✦ <a href="about.html">About</a> ✦ <a href="sources.html">Sources</a></p>
+ </noscript>
  <p class="weather-readout"><button class="pane-link" id="weather-readout" type="button" aria-describedby="weather-readout-hint"></button></p>
  <span class="visually-hidden" id="weather-readout-hint">Open the full reading</span>
 

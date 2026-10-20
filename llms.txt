@@ -1,0 +1,54 @@
+# The Earthly Book of Hours
+
+> The Earthly Book of Hours (Horae Terrenae; "The Earthly Hours" for short) is a daily primer of art, literature, and ecology: a contemplative archive of images, readings, and natural phenomena for observing the day and finding yourself in it. It is made by Ryan Weberling, a project of Otherwise, with print and digital editions beginning in 2027.
+
+The site is arranged in three sections, each introduced by its own incipit. The section pages themselves (the current hour, season and weather) are filled in by JavaScript; the incipits, About and Sources pages are plain HTML.
+
+Search and AI answers may quote and link to the site; training or fine-tuning AI models on it is not permitted without written permission (hello@earthlyhours.com). See https://earthlyhours.com/robots.txt.
+
+## Sections
+
+- [The Hours: Incipit](https://earthlyhours.com/hours-incipit.html): the day divided into eight three-hour blocks (Void, Hush, Chorus, Transit, Fulcrum, Doldrums, Convivium, Denouement), each with images, readings, natural phenomena and a versicle
+- [The Seasons: Incipit](https://earthlyhours.com/seasons-incipit.html): Lectio Terra, a year of weekly species studies, with readings and images for each season
+- [The Weather: Incipit](https://earthlyhours.com/weather-incipit.html): an oracular weather service, an image and a reading for the conditions outside
+- [The Current Hour](https://earthlyhours.com/): the Hours page
+- [The Current Season](https://earthlyhours.com/seasons.html): the Seasons page
+- [The Current Weather](https://earthlyhours.com/weather.html): the Weather page
+
+## About
+
+- [About](https://earthlyhours.com/about.html): what the book is, and how it is arranged
+- [Sources](https://earthlyhours.com/sources.html): the books, artworks, archives and records behind the images and readings
+- [Otherwise Editions](https://earthlyhours.com/editions.html): the print and digital editions
+
+## Lectio Terra readings
+
+- [Week 11: American Robin, Emily Dickinson, Robert Ridgway](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0002): spring, 2026-03-06; first published at https://laurentia.substack.com/p/week-11-american-robin-emily-dickinson
+- [Week 12: Sugar Maple, Annika Hansteen-Izora, Walter H. Crockett](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0003): spring, 2026-03-12; first published at https://laurentia.substack.com/p/week-12-sugar-maple-annika-hansteen
+- [Week 13: Paper Birch, Robert Frost, Gifford Pinchot](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0004): spring, 2026-03-20; first published at https://laurentia.substack.com/p/week-13-paper-birch-robert-frost
+- [Week 14: Nimbostratus praecipitatio, Johann Wolfgang von Goethe, Jenny Odell](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0005): spring, 2026-03-27; first published at https://laurentia.substack.com/p/week-14-nimbostratus-praecipitatio
+- [Week 15: Dutch Crocus, Guillaume Barth, William Herbert](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0006): spring, 2026-04-03; first published at https://laurentia.substack.com/p/week-15-dutch-crocus-guillaume-barth
+- [Week 16: Ostrich Fern, Martin Heidegger, Douglas Houghton Campbell](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0007): spring, 2026-04-10; first published at https://laurentia.substack.com/p/week-16-ostrich-fern-martin-heidegger
+- [Week 17: Eastern Cottontail , Zora Neale Hurston, Ernest Thompson Seton](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0008): spring, 2026-04-17; first published at https://laurentia.substack.com/p/week-17-eastern-cottontail-zora-neale
+- [Week 18: Great Mullein, Ashia Ajani, Hildegard von Bingen](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0009): spring, 2026-04-25; first published at https://laurentia.substack.com/p/week-17-great-mullein-ashia-ajani
+- [Week 19: Sheet Moss, Hildegard von Bingen, Michael Marder](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0010): spring, 2026-05-01; first published at https://laurentia.substack.com/p/week-19-sheet-moss-hildegard-von
+- [Week 20: Cambridge Argillite, Ludwig Wittgenstein, The Dana Brothers](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0011): spring, 2026-05-08; first published at https://laurentia.substack.com/p/week-20-cambridge-argillite-ludwig
+- [Week 21: Common Lilac, Amy Lowell, Ronald Firbank](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0012): spring, 2026-05-15; first published at https://laurentia.substack.com/p/week-21-common-lilac-amy-lowell-ronald
+- [Week 22: Mycobacterium vaccae, Jenifer Wightman, Graham A.W. Rook](https://earthlyhours.com/seasons.html?season=spring&entry=lt-0013): spring, 2026-05-22; first published at https://laurentia.substack.com/p/week-22-mycobacterium-vaccae-jenifer
+- [Week 23: Common Reed, Rumi, A.R. Horwood](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0014): summer, 2026-05-29; first published at https://laurentia.substack.com/p/week-23-common-reed-rumi-ar-harwood
+- [Week 24: Wool Sower Wasp, E.P. Felt, Francesco Redi of Arezzo](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0015): summer, 2026-06-06; first published at https://laurentia.substack.com/p/week-24-wool-sower-wasp-ep-felt-francesco
+- [Week 25: Pink Lady's Slipper, Grace Greylock Niles, C.S. Young](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0016): summer, 2026-06-12; first published at https://laurentia.substack.com/p/week-25-pink-ladys-slipper-grace
+- [Week 26: Maculae Solares, Galileo Galilei feat. The Roman Inquisition, Simon Barraclough](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0017): summer, 2026-06-19; first published at https://laurentia.substack.com/p/week-26-maculae-solares-galileo-galilei
+- [Week 27: Serviceberry, Robin Wall Kimmerer, K.M. Wiegand](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0018): summer, 2026-06-28; first published at https://laurentia.substack.com/p/week-27-serviceberry-robin-wall-kimmerer
+- [Week 28: Redcurrants, Maud Grieve, The Ohio Agricultural Experiment Station](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0019): summer, 2026-07-10; first published at https://laurentia.substack.com/p/week-28-redcurrants-maud-grieve-the
+- [Week 29: Corn, Haudenosaunee Storytellers, Emily Pauline Johnson](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0020): summer, 2026-07-19; first published at https://laurentia.substack.com/p/week-28-corn-haudenosaunee-storytellers
+- [Week 30: Blueberries, Joseph J. White, Inc., Alix Beeston on Ellena Savage](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0021): summer, 2026-07-25; first published at https://laurentia.substack.com/p/week-30-blueberries-joseph-j-white
+- [Week 31: Butterfly Weed, Paul Muldoon, Nathaniel Lord Britton](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0022): summer, 2026-08-01; first published at https://laurentia.substack.com/p/week-31-butterfly-weed-paul-muldoon
+- [Week 32: Dog Days, Horace, Heraclitus](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0023): summer, 2026-08-07; first published at https://laurentia.substack.com/p/week-32-dog-days-horace-heraclitus
+- [Week 33: Perseids, Han Dynasty Scribes, Henry David Thoreau](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0024): summer, 2026-08-14; first published at https://laurentia.substack.com/p/week-33-perseids-meteor-shower-han
+- [Week 34: Cucurbits, Marge Piercy, Padraig Regan](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0025): summer, 2026-08-22; first published at https://laurentia.substack.com/p/week-33-cucurbits-marge-piercy-padgraig
+- [Week 35: Cucumis, Robert Hass, Marcus Aurelius (and William Cowper, too)](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0026): summer, 2026-08-29; first published at https://laurentia.substack.com/p/week-35-cucumis-robert-hass-marcus
+- [Week 36: Watermelon, Sylvia Plath, Pliny the Elder](https://earthlyhours.com/seasons.html?season=summer&entry=lt-0027): summer, 2026-09-11; first published at https://laurentia.substack.com/p/week-36-watermelon-sylvia-plath-pliny
+- [Week 37: Northern Red Oak (Susan Fenimore Cooper, George Francis Heath, James George Frazer)](https://earthlyhours.com/seasons.html?season=autumn&entry=lt-0028): autumn, 2026-09-20; first published at https://laurentia.substack.com/p/week-37-northern-red-oak-susan-fenimore
+- [Week 38: Shagbark Hickory (Carl Sandburg, Vladimir Nabokov, Charles S. Sargent)](https://earthlyhours.com/seasons.html?season=autumn&entry=lt-0029): autumn, 2026-09-27; first published at https://laurentia.substack.com/p/week-38-shagbark-hickory-carl-sandburg
+- [Week 10: Witch Hazel, Friedrich Nietzsche, William Hamilton Gibson](https://earthlyhours.com/seasons.html?season=winter&entry=lt-0001): winter, 2026-02-27; first published at https://laurentia.substack.com/p/week-10-witch-hazel-friedrich-nietzsche

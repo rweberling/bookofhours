@@ -144,10 +144,11 @@ PAGE = '''<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title_text} — The Earthly Book of Hours</title>
   <meta name="description" content="{description}">
-{robots}  <meta name="application-name" content="The Earthly Hours">
+{robots}  <meta name="application-name" content="The Earthly Book of Hours">
   <meta property="og:title" content="{title_text}">
   <meta property="og:description" content="{description}">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Earthly Book of Hours">
   <meta property="og:url" content="{url}">
 {og_image}  <link rel="canonical" href="{url}">
   <link rel="stylesheet" href="/css/styles.css">
@@ -354,7 +355,7 @@ def build(row, rows=()):
     <p>This card is still being prepared. Its image, citation and links will appear here soon.</p>
     <p><a href="/index.html">Return to the current hour</a></p>
   </article>'''
-        description = 'A postcard from the Earthly Book of Hours.'
+        description = 'A postcard from The Earthly Book of Hours.'
     robots = '' if ready and row['status'] != 'draft' else '  <meta name="robots" content="noindex">\n'
     og_image = ''
     if ready and has(row, 'image'):

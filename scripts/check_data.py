@@ -520,6 +520,9 @@ def main():
     if missing or extra:
         print(f'\nThe sitemap is out of date ({len(missing)} address(es) to add, {len(extra)} to remove). '
               'Run: python3 scripts/build_sitemap.py')
+    from build_sitemap import llms_stale
+    if llms_stale():
+        print('\nThe list of readings in llms.txt is out of date. Run: python3 scripts/build_sitemap.py')
 
     return 1 if errors else 0
 

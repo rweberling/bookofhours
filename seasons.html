@@ -32,12 +32,15 @@
 </script>
 <!-- /shared:head -->
 <meta name="description" content="Lectio Terra: seasonal species readings from The Earthly Book of Hours.">
-<meta property="og:title" content="The Current Season — The Earthly Hours">
+<meta property="og:title" content="The Current Season — The Earthly Book of Hours">
 <meta property="og:description" content="Lectio Terra: seasonal species readings from The Earthly Book of Hours.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/transit_vermeer.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:url" content="https://earthlyhours.com/seasons.html">
 <!-- No fixed canonical link here: seasons.js adds one per reading (see setSeasonCanonical). -->
-<meta name="application-name" content="The Earthly Hours">
+<meta name="application-name" content="The Earthly Book of Hours">
 <title>The Current Season — The Earthly Book of Hours</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -80,6 +83,13 @@
   <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
   <h1 class="block-name" id="season-reading-title">The Current Season</h1>
   <div class="season-reading-meta"><em id="season-reading-latin"></em></div>
+  <!-- For readers and crawlers without JavaScript, which fills in the reading. -->
+  <noscript>
+    <div class="content-block">
+      <p><em>Lectio Terra</em> (Latin for “earth reading”) is a series of species studies from <em>The Earthly Book of Hours</em>. Each week for a year, one seasonally relevant plant, animal, landform, or other feature of the natural world, with a handful of readings and images drawn from botany, poetry, philosophy, geology, and the visual arts, and a brief headnote. This page shows a reading for the current season, and needs JavaScript to do so.</p>
+      <p><a href="seasons-incipit.html">The Seasons: Incipit</a> ✦ <a href="about.html">About</a> ✦ <a href="sources.html">Sources</a></p>
+    </div>
+  </noscript>
   <article class="season-post" aria-live="polite">
     <p class="season-post-dek" id="season-reading-dek"></p>
     <div id="season-reading-body"></div>

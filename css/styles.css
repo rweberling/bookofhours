@@ -1862,6 +1862,8 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   transition: color 3s ease;
 }
 .weather-quote-attr:not(:empty)::before { content: '— '; }
+/* The note shown without JavaScript (weather.html's <noscript>). */
+.weather-card noscript a { color: inherit; }
 /* Verse, wherever a reading is shown (readingHTML() in shared.js): a
    line that runs over carries on 2em past where the line itself starts.
    A poem's own indent arrives as --indent, a count of the &nbsp;s it was
