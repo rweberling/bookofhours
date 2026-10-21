@@ -89,6 +89,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   `executablePath: '/opt/pw-browsers/chromium'`. The headless browser can't
   play H.264 video. The DFOS sign-in script fails to load from the CDN in
   tests; that error is harmless.
+  Analytics (Google and Cloudflare) load only on earthlyhours.com, so local
+  tests count nothing; keep it that way.
 - Wikimedia needs a `User-Agent` header and rate-limits this container
   (HTTP 429). The API is often blocked; `Special:FilePath/<name>` and
   `index.php?title=File:<name>&action=raw` usually work with pauses between
