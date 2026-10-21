@@ -129,8 +129,24 @@ def json_ld(entry, subject, url, image):
         if subject.get('wikidata'):
             about['sameAs'] = f'https://www.wikidata.org/wiki/{subject["wikidata"]}'
         data['about'] = about
-    text = json.dumps(data, ensure_ascii=False, indent=2).replace('</', '<\\/')
-    return f'<script type="application/ld+json">\n{text}\n</script>\n'
+    # The trail Google shows above the result: the site, the series, the post.
+    trail = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+            {'@type': 'ListItem', 'position': n, 'name': name, 'item': link}
+            for n, (name, link) in enumerate([
+                ('The Earthly Book of Hours', f'{SITE}/'),
+                ('Lectio Terra', f'{SITE}/seasons-incipit.html'),
+                (subject_name(entry, subject), url),
+            ], start=1)
+        ],
+    }
+    return ''.join(
+        '<script type="application/ld+json">\n'
+        + json.dumps(block, ensure_ascii=False, indent=2).replace('</', '<\\/')
+        + '\n</script>\n'
+        for block in (data, trail))
 
 
 def subject_name(entry, subject):
