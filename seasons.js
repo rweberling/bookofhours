@@ -661,12 +661,15 @@ async function buildSpeciesGrid() {
     entries.forEach(entry => {
       const card = document.createElement('a');
       card.className = 'species-card';
-      card.href = POST_PAGE ? postAddress(key, entry) : `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
+      // A post with a page of its own is a plain link to it. (Opening it
+      // in place would mean putting its address in the bar while this
+      // page's relative links still point from here.)
+      card.href = postAddress(key, entry);
 
-      // The reading opens right here, in place — the link stays a real
-      // link so a new-tab/cmd-click still works the ordinary way.
+      // A post without one (not yet built) opens right here, in place;
+      // the link stays a real link so a new-tab/cmd-click still works.
       card.addEventListener('click', e => {
-        if (POST_PAGE || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        if (POST_PAGE || entry.page || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
         e.preventDefault();
         // Remember which reading was showing (it may have been reached
         // by turning pages, which the URL doesn't record), so Back
