@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Write a page of its own for each Lectio Terra post: lectio-terra/<name>/.
+"""Write a page of its own for each Lectio Terra post: lectio-terra/<name>/,
+and the series' contents page, lectio-terra/ itself.
 
 Usage:
   python3 scripts/build_lectio_pages.py            rebuild every post that has a page
@@ -46,6 +47,7 @@ from copy_lectio import EMPTY_EDGE, SUBSTACK_LINE  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 SITE = 'https://earthlyhours.com'
 TEMPLATE = ROOT / 'seasons.html'
+CONTENTS_TEMPLATE = ROOT / 'seasons-incipit.html'   # the contents page, lectio-terra/
 LECTIO = ROOT / 'data' / 'lectio-data.json'
 AUTHOR = 'Ryan Weberling'
 
@@ -115,7 +117,7 @@ def json_ld(entry, subject, url, image):
         'url': url,
         'author': {'@type': 'Person', 'name': AUTHOR},
         'isPartOf': {'@type': 'CreativeWorkSeries', 'name': 'Lectio Terra',
-                     'url': f'{SITE}/seasons-incipit.html'},
+                     'url': f'{SITE}/lectio-terra/'},
         'publisher': {'@type': 'Organization', 'name': 'The Earthly Book of Hours', 'url': f'{SITE}/'},
     }
     if entry.get('published'):
@@ -137,7 +139,7 @@ def json_ld(entry, subject, url, image):
             {'@type': 'ListItem', 'position': n, 'name': name, 'item': link}
             for n, (name, link) in enumerate([
                 ('The Earthly Book of Hours', f'{SITE}/'),
-                ('Lectio Terra', f'{SITE}/seasons-incipit.html'),
+                ('Lectio Terra', f'{SITE}/lectio-terra/'),
                 (subject_name(entry, subject), url),
             ], start=1)
         ],
@@ -238,18 +240,67 @@ def assign_pages(data, wanted, everything):
     return added
 
 
+def contents(data, by_subject):
+    """lectio-terra/ itself: every post with a page, by season, in the
+    Seasons Incipit's page (its frame, menu and type)."""
+    url = f'{SITE}/lectio-terra/'
+    description = 'Lectio Terra: every weekly species study, by season, with its readers and date.'
+    sections = []
+    for season, items in data['seasons'].items():
+        rows = []
+        for entry in sorted(items, key=lambda e: e.get('published') or ''):
+            if not entry.get('page'):
+                continue
+            subject = by_subject.get(entry.get('subject'))
+            latin = f' <em class="contents-latin">{escape(subject["scientific"])}</em>' if subject and subject.get('scientific') else ''
+            details = [escape(', '.join(entry.get('readings') or []))]
+            if entry.get('published'):
+                details.append(long_date(entry['published']))
+            rows.append(f'      <li><a href="{entry["page"]}">{escape(subject_name(entry, subject))}</a>{latin}'
+                        f'<span class="contents-details">{" · ".join(d for d in details if d)}</span></li>')
+        if rows:
+            sections.append(f'    <h2 class="content-subhead">{season.capitalize()}</h2>\n'
+                            f'    <ul class="contents-list">\n' + '\n'.join(rows) + '\n    </ul>')
+
+    t = CONTENTS_TEMPLATE.read_text(encoding='utf-8')
+    t = replace_once(t, r'<head>\n', '<head>\n<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons-incipit.html; edit those, not this. -->\n<base href="/">\n')
+    t = replace_once(t, r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{description}">')
+    t = replace_once(t, r'<meta property="og:title" content="[^"]*">', '<meta property="og:title" content="Lectio Terra: Contents — The Earthly Book of Hours">')
+    t = replace_once(t, r'<meta property="og:description" content="[^"]*">', f'<meta property="og:description" content="{description}">')
+    t = replace_once(t, r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">')
+    t = replace_once(t, r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}">')
+    t = replace_once(t, r'<title>[^<]*</title>', '<title>Lectio Terra: Contents — The Earthly Book of Hours</title>')
+    t = replace_once(t, r'<p class="page-kicker">[^<]*</p>', '<p class="page-kicker">The Seasons</p>')
+    t = replace_once(t, r'<h1 class="page-title">[^<]*</h1>', '<h1 class="page-title">Lectio Terra</h1>')
+    t = replace_once(t, r'<p class="page-subtitle">[^<]*</p>', '<p class="page-subtitle">Contents</p>')
+    t = replace_once(t, r'<article class="content-block">.*?</article>',
+                     '<article class="content-block lectio-contents">\n' + '\n\n'.join(sections) + '\n  </article>', re.S)
+    t = replace_once(t, r'<div class="turn-the-page visible incipit-onward">.*?</div>',
+                     '<div class="turn-the-page visible incipit-onward"><span class="ttp-bracket">[</span>'
+                     '<a class="page-action" href="seasons-incipit.html">the incipit</a>'
+                     '<span class="ttp-sep" aria-hidden="true">|</span>'
+                     '<a class="page-action" href="seasons.html">the current season</a>'
+                     '<span class="ttp-bracket">]</span></div>', re.S)
+    # The menu's Incipit item is the Incipit's own; nothing in it is this page.
+    t = replace_once(t, r'<a class="active" href="seasons-incipit.html">', '<a href="seasons-incipit.html">')
+    return t
+
+
 def pages():
-    """{path: html} for every post with a page."""
+    """{path: html} for every post with a page, and the contents page."""
     data = load('lectio-data')
     template = TEMPLATE.read_text(encoding='utf-8')
     by_subject = subjects()
     # Each post's page by its ID and old IDs, for links between posts.
     post_pages = {key: entry['page'] for _, entry in posts(data) if entry.get('page')
                   for key in [entry['id'], *(entry.get('aliases') or [])]}
-    return {ROOT / entry['page'] / 'index.html':
-            render(template, season, entry, by_subject.get(entry.get('subject')),
-                   len(data['seasons'][season]) < 2, post_pages)
-            for season, entry in posts(data) if entry.get('page')}
+    built = {ROOT / entry['page'] / 'index.html':
+             render(template, season, entry, by_subject.get(entry.get('subject')),
+                    len(data['seasons'][season]) < 2, post_pages)
+             for season, entry in posts(data) if entry.get('page')}
+    if built:
+        built[ROOT / 'lectio-terra' / 'index.html'] = contents(data, by_subject)
+    return built
 
 
 def stale_pages():

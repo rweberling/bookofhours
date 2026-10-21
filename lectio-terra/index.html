@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons-incipit.html; edit those, not this. -->
+<base href="/">
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.) -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "512cda5e961b4191b6f08cbcb80fc315"}'></script>
+<!-- Google tag (gtag.js); display_mode tells home-screen visits from browser ones -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4407N365M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P4407N365M', {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  });
+</script>
+<!-- /shared:head -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lectio Terra: every weekly species study, by season, with its readers and date.">
+<meta name="application-name" content="The Earthly Book of Hours">
+<meta name="author" content="Ryan Weberling">
+<meta property="og:title" content="Lectio Terra: Contents — The Earthly Book of Hours">
+<meta property="og:description" content="Lectio Terra: every weekly species study, by season, with its readers and date.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/emblemicon/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The emblem of The Earthly Book of Hours: an engraved sundial, its band of hours beneath a radiant sun.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://earthlyhours.com/lectio-terra/">
+<link rel="canonical" href="https://earthlyhours.com/lectio-terra/">
+<title>Lectio Terra: Contents — The Earthly Book of Hours</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+
+<main class="page threshold">
+
+  <p class="publication-name">The Earthly Book of Hours</p>
+
+  <div class="rule-ornament" aria-hidden="true">
+    <div class="line"></div>
+    <div class="lozenge">✦</div>
+    <div class="diamond"></div>
+    <div class="lozenge">✦</div>
+    <div class="line"></div>
+  </div>
+
+  <p class="page-kicker">The Seasons</p>
+  <h1 class="page-title">Lectio Terra</h1>
+  <p class="page-subtitle">Contents</p>
+
+  <article class="content-block lectio-contents">
+    <h2 class="content-subhead">Spring</h2>
+    <ul class="contents-list">
+      <li><a href="lectio-terra/american-robin/">American Robin</a> <em class="contents-latin">Turdus migratorius</em><span class="contents-details">Emily Dickinson, Robert Ridgway · March 6, 2026</span></li>
+      <li><a href="lectio-terra/sugar-maple/">Sugar Maple</a> <em class="contents-latin">Acer saccharum</em><span class="contents-details">Annika Hansteen-Izora, Walter H. Crockett, E. Jones · March 12, 2026</span></li>
+      <li><a href="lectio-terra/paper-birch/">Paper Birch</a> <em class="contents-latin">Betula papyrifera</em><span class="contents-details">Robert Frost, Gifford Pinchot · March 20, 2026</span></li>
+      <li><a href="lectio-terra/rain-clouds/">Rain Clouds</a><span class="contents-details">Johann Wolfgang von Goethe, Jenny Odell · March 27, 2026</span></li>
+      <li><a href="lectio-terra/dutch-crocus/">Dutch Crocus</a> <em class="contents-latin">Crocus vernus</em><span class="contents-details">Guillaume Barth, William Herbert · April 3, 2026</span></li>
+      <li><a href="lectio-terra/ostrich-fern/">Ostrich Fern</a> <em class="contents-latin">Matteuccia struthiopteris</em><span class="contents-details">Martin Heidegger, Douglas Houghton Campbell · April 10, 2026</span></li>
+      <li><a href="lectio-terra/eastern-cottontail/">Eastern Cottontail</a> <em class="contents-latin">Sylvilagus floridanus</em><span class="contents-details">Zora Neale Hurston, Ernest Thompson Seton · April 17, 2026</span></li>
+      <li><a href="lectio-terra/great-mullein/">Great Mullein</a> <em class="contents-latin">Verbascum thapsus</em><span class="contents-details">Ashia Ajani, Hildegard von Bingen · April 25, 2026</span></li>
+      <li><a href="lectio-terra/sheet-moss/">Sheet Moss</a> <em class="contents-latin">Hypnum imponens</em><span class="contents-details">Hildegard von Bingen, Michael Marder · May 1, 2026</span></li>
+      <li><a href="lectio-terra/cambridge-argillite/">Cambridge Argillite</a><span class="contents-details">Ludwig Wittgenstein, The Dana Brothers · May 8, 2026</span></li>
+      <li><a href="lectio-terra/common-lilac/">Common Lilac</a> <em class="contents-latin">Syringa vulgaris</em><span class="contents-details">Amy Lowell, Ronald Firbank · May 15, 2026</span></li>
+      <li><a href="lectio-terra/living-soil/">Living Soil</a> <em class="contents-latin">Mycobacterium vaccae</em><span class="contents-details">Jenifer Wightman, Graham A.W. Rook · May 22, 2026</span></li>
+    </ul>
+
+    <h2 class="content-subhead">Summer</h2>
+    <ul class="contents-list">
+      <li><a href="lectio-terra/common-reed/">Common Reed</a> <em class="contents-latin">Phragmites australis</em><span class="contents-details">Rumi, A.R. Horwood · May 29, 2026</span></li>
+      <li><a href="lectio-terra/wool-sower-wasp/">Wool Sower Wasp</a> <em class="contents-latin">Callirhytis seminator</em><span class="contents-details">E.P. Felt, Francesco Redi of Arezzo · June 6, 2026</span></li>
+      <li><a href="lectio-terra/pink-ladys-slipper/">Pink Lady’s Slipper</a> <em class="contents-latin">Cypripedium acaule</em><span class="contents-details">Grace Greylock Niles, C.S. Young · June 12, 2026</span></li>
+      <li><a href="lectio-terra/sunspots/">Sunspots</a><span class="contents-details">Galileo Galilei feat. The Roman Inquisition, Simon Barraclough · June 19, 2026</span></li>
+      <li><a href="lectio-terra/serviceberry/">Serviceberry</a> <em class="contents-latin">Amelanchier canadensis</em><span class="contents-details">Robin Wall Kimmerer, K.M. Wiegand · June 28, 2026</span></li>
+      <li><a href="lectio-terra/red-currant/">Red Currant</a> <em class="contents-latin">Ribes rubrum</em><span class="contents-details">Maud Grieve, The Ohio Agricultural Experiment Station · July 10, 2026</span></li>
+      <li><a href="lectio-terra/corn/">Corn</a> <em class="contents-latin">Zea mays</em><span class="contents-details">Haudenosaunee Storytellers, Emily Pauline Johnson · July 19, 2026</span></li>
+      <li><a href="lectio-terra/highbush-blueberry/">Highbush Blueberry</a> <em class="contents-latin">Vaccinium corymbosum</em><span class="contents-details">Joseph J. White, Inc., Alix Beeston on Ellena Savage · July 25, 2026</span></li>
+      <li><a href="lectio-terra/butterfly-weed/">Butterfly Weed</a> <em class="contents-latin">Asclepias tuberosa</em><span class="contents-details">Paul Muldoon, Nathaniel Lord Britton · August 1, 2026</span></li>
+      <li><a href="lectio-terra/dog-days/">Dog Days</a><span class="contents-details">Horace, Heraclitus · August 7, 2026</span></li>
+      <li><a href="lectio-terra/perseids/">Perseids</a><span class="contents-details">Han Dynasty Scribes, Henry David Thoreau · August 14, 2026</span></li>
+      <li><a href="lectio-terra/cucurbits/">Cucurbits</a> <em class="contents-latin">Cucurbitaceae</em><span class="contents-details">Marge Piercy, Padraig Regan · August 22, 2026</span></li>
+      <li><a href="lectio-terra/melons-and-cucumbers/">Melons and Cucumbers</a> <em class="contents-latin">Cucumis</em><span class="contents-details">Robert Hass, Marcus Aurelius (and William Cowper, too) · August 29, 2026</span></li>
+      <li><a href="lectio-terra/watermelon/">Watermelon</a> <em class="contents-latin">Citrullus lanatus</em><span class="contents-details">Sylvia Plath, Pliny the Elder · September 11, 2026</span></li>
+    </ul>
+
+    <h2 class="content-subhead">Autumn</h2>
+    <ul class="contents-list">
+      <li><a href="lectio-terra/northern-red-oak/">Northern Red Oak</a> <em class="contents-latin">Quercus rubra</em><span class="contents-details">Susan Fenimore Cooper, George Francis Heath, James George Frazer · September 20, 2026</span></li>
+      <li><a href="lectio-terra/shagbark-hickory/">Shagbark Hickory</a> <em class="contents-latin">Carya ovata</em><span class="contents-details">Carl Sandburg, Vladimir Nabokov, Charles S. Sargent · September 27, 2026</span></li>
+    </ul>
+
+    <h2 class="content-subhead">Winter</h2>
+    <ul class="contents-list">
+      <li><a href="lectio-terra/witch-hazel/">Witch Hazel</a> <em class="contents-latin">Hamamelis virginiana</em><span class="contents-details">Friedrich Nietzsche, William Hamilton Gibson · February 27, 2026</span></li>
+    </ul>
+  </article>
+
+  <div class="turn-the-page visible incipit-onward"><span class="ttp-bracket">[</span><a class="page-action" href="seasons-incipit.html">the incipit</a><span class="ttp-sep" aria-hidden="true">|</span><a class="page-action" href="seasons.html">the current season</a><span class="ttp-bracket">]</span></div>
+
+  <footer class="page-footer">
+    <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
+    </div>
+    <p class="colophon"><span>A project of <a href="https://otherwise.dfos.com" target="_blank">Otherwise</a></span></p>
+  </footer>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER NAV BAR
+════════════════════════════════════════════════ -->
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a href="seasons.html">The Current Season</a>
+      <a href="seasons.html#wander">Wander the Seasons</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Reading Room</button>
+    <div class="nav-hours-menu nav-embed-menu" id="nav-projects-menu">
+      <iframe data-src="https://app.dfos.com/embed/spaces/otherwise?desc=0" width="400" height="114" frameborder="0" title="Otherwise"></iframe>
+      <a href="https://otherwise.dfos.com" target="_blank">Visit Otherwise</a>
+      <a href="editions.html">Otherwise Editions</a>
+      <span class="install-divider" id="install-divider"></span>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+
+<script src="shared.js"></script>
+<script src="atmosphere.js"></script>
+<script src="nav.js"></script>
+    
+</body>
+</html>
