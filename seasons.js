@@ -15,9 +15,10 @@ let lectioSeasons = null;   // data/lectio-data.json's { spring: [...], ... }, o
 let season = null;          // the season whose readings are showing
 let currentEntryId = null;
 
-// A post's own page (lectio/<name>/, built by scripts/build_lectio_pages.py)
+// A post's own page (lectio-terra/<name>/, built by scripts/build_lectio_pages.py)
 // is this page with one post already written into it: its <body> names
-// the post, and the address doesn't.
+// the post, and the address doesn't. It loads the list of posts only
+// when a reader turns the page or opens Wander (see showPostPage()).
 const POST_PAGE = document.body.dataset.entry
   ? { key: document.body.dataset.season, entryId: document.body.dataset.entry }
   : null;
@@ -30,7 +31,6 @@ function postAddress(key, entry) {
 }
 
 function seasonFromURL() {
-  if (POST_PAGE) return POST_PAGE;
   const params = new URLSearchParams(window.location.search);
   const key = params.get('season');
   return {
@@ -99,28 +99,48 @@ function renderSeasonReading(entry) {
     : `A species reading for ${season.label}.`;
 
   const body = document.getElementById('season-reading-body');
-  // On a post page the post is already in the HTML, its images pointed at
-  // their web copies; it only needs the margin labels below.
-  const prerendered = body.dataset.prerendered === entry.id;
-  delete body.dataset.prerendered;
-  if (!prerendered) {
-    // The post's images point at the full-size masters. Their src is set
-    // aside before the HTML goes in (so the browser doesn't start fetching
-    // the masters), then each is pointed at its web copies.
-    // With ?rebuilt, a post with a list of its pieces is rebuilt from the
-    // collection (renderPostBody() in shared.js); otherwise its imported
-    // HTML is shown.
-    const html = entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`;
-    body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
-    body.querySelectorAll('img[data-master]').forEach(img => {
-      img.loading = 'lazy';
-      setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
-    });
-  }
+  // The post's images point at the full-size masters. Their src is set
+  // aside before the HTML goes in (so the browser doesn't start fetching
+  // the masters), then each is pointed at its web copies.
+  // With ?rebuilt, a post with a list of its pieces is rebuilt from the
+  // collection (renderPostBody() in shared.js); otherwise its imported
+  // HTML is shown.
+  const html = entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+  body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
+  body.querySelectorAll('img[data-master]').forEach(img => {
+    img.loading = 'lazy';
+    setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
+  });
+  finishPost(body, entry);
+}
+
+// What the page adds to a post once it's in place: play buttons for its
+// videos and the margin labels for its parts and readings.
+function finishPost(body, entry) {
   wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
   markParts(body);
   updateRunningHead();
+}
+
+// A post page: the post is already in the HTML, its images pointed at
+// their web copies, and the few details the page still needs (its
+// reading labels) are in #post-entry. The list of posts waits until
+// it's wanted.
+function showPostPage() {
+  const entry = JSON.parse(document.getElementById('post-entry').textContent);
+  currentEntryId = entry.id;
+  setSeason(POST_PAGE.key);
+  document.getElementById('season-reading-subtitle').textContent = season.subtitle;
+  finishPost(document.getElementById('season-reading-body'), entry);
+}
+
+// The list of posts, loaded on first use (at once on seasons.html; on a
+// post page, when a reader turns the page).
+async function loadSeasons() {
+  if (!lectioSeasons) lectioSeasons = (await loadLectioData()).seasons;
+  if (season && !season.entries) season.entries = lectioSeasons[season.key];
+  return lectioSeasons;
 }
 
 /* ── The post's parts, named in the margin ────────────────────────
@@ -284,9 +304,11 @@ function longDate(isoDate) {
     { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' });
 }
 
+// On a post page, before the list of posts is loaded, the season has no
+// entries yet (loadSeasons() fills them in).
 function setSeason(key) {
-  const entries = lectioSeasons[key];
-  if (!Array.isArray(entries) || !entries.length) throw new Error(`No posts assigned to ${key}.`);
+  const entries = lectioSeasons ? lectioSeasons[key] : null;
+  if (lectioSeasons && (!Array.isArray(entries) || !entries.length)) throw new Error(`No posts assigned to ${key}.`);
   // The emblem at the foot of the page is the season being read, which
   // may not be today's (Wander the Seasons).
   // (Only a decoration: if it's missing, say from an older cached
@@ -301,9 +323,10 @@ function setSeason(key) {
   };
   // Only one post assigned to this season so far — a "turn the page" that
   // always lands back on the same reading reads as broken, not quiet, so
-  // hide it until there's a second post to turn to.
+  // hide it until there's a second post to turn to. (A post page has it
+  // hidden in its HTML already.)
   const turnPageWrap = document.getElementById('season-turn-page').closest('.turn-the-page');
-  turnPageWrap.hidden = entries.length < 2;
+  if (entries) turnPageWrap.hidden = entries.length < 2;
 }
 
 // Shows a given entry (or a random one from that season, if the id is
@@ -316,7 +339,8 @@ function showSeasonEntry(key, entryId) {
 
 // The button sits at the foot of the post, so the next post opens at its
 // top, as a turned page does.
-function turnSeasonPage() {
+async function turnSeasonPage() {
+  await loadSeasons();
   const next = pickExcluding(season.entries, entry => entry.id === currentEntryId);
   // A post page holds one post: the next one is read at its own address.
   if (POST_PAGE) { window.location.href = postAddress(season.key, next); return; }
@@ -731,6 +755,11 @@ async function initialiseSeason() {
   document.getElementById('season-reading-subtitle').addEventListener('click', openSeasonPane);
   // And the season's emblem at the foot of the reading.
   document.getElementById('season-emblem-open').addEventListener('click', openSeasonPane);
+
+  if (POST_PAGE) {
+    showPostPage();
+    return;
+  }
 
   try {
     const [data, collection] = await Promise.all([

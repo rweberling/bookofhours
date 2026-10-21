@@ -39,7 +39,7 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - New or changed image files: `python3 scripts/build_images.py` (web copies).
 - Sources page: `python3 scripts/build_sources.py` (needs Chrome; see below).
 - Species registry IDs: `python3 scripts/link_species.py [--write]`.
-- Post pages (`lectio/<name>/`, on trial and noindex for now):
+- Post pages (`lectio-terra/<name>/`, on trial and noindex for now):
   `python3 scripts/build_lectio_pages.py [lt-NNNN | --all]`. Rebuild after
   editing a post, `seasons.html` or `partials/`.
 - Substack import: `scripts/import_substack.py` (runs the rest in turn).

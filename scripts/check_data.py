@@ -520,7 +520,7 @@ def main():
     if missing or extra:
         print(f'\nThe sitemap is out of date ({len(missing)} address(es) to add, {len(extra)} to remove). '
               'Run: python3 scripts/build_sitemap.py')
-    # Each post's own page (lectio/<name>/) is built from the post and
+    # Each post's own page (lectio-terra/<name>/) is built from the post and
     # seasons.html; say when one no longer matches.
     from build_lectio_pages import stale_pages as stale_post_pages
     stale = stale_post_pages()

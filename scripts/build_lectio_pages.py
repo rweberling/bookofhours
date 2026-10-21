@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write a page of its own for each Lectio Terra post: lectio/<name>/.
+"""Write a page of its own for each Lectio Terra post: lectio-terra/<name>/.
 
 Usage:
   python3 scripts/build_lectio_pages.py            rebuild every post that has a page
@@ -14,13 +14,13 @@ with JavaScript the same page, margin labels, Wander pane and all. For
 everyone else, the post's full text is there in the HTML.
 
 A post's address is kept on its record in data/lectio-data.json, as
-"page": "lectio/sugar-maple/", from its subject's name. Like an ID, it
+"page": "lectio-terra/sugar-maple/", from its subject's name. Like an ID, it
 is fixed once published: if the name changes later, the address
 doesn't. seasons.js reads it, so turning the page from a post page goes
 to the next post's own page.
 
 Each page carries <base href="/">, so the template's links, and the
-scripts' fetches of data/, work from lectio/<name>/ as they do from the
+scripts' fetches of data/, work from lectio-terra/<name>/ as they do from the
 root. Links within the post (#footnote-1) are written out in full, since
 the base would otherwise send them to the home page.
 
@@ -139,7 +139,14 @@ def replace_once(text, pattern, new, flags=0):
     return result
 
 
-def render(template, season, entry, subject):
+def post_entry(entry):
+    """The details seasons.js still needs on a post page, as JSON."""
+    data = {'id': entry['id'], 'readingLabels': entry.get('readingLabels') or []}
+    text = json.dumps(data, ensure_ascii=False).replace('</', '<\\/')
+    return f'<script type="application/json" id="post-entry">{text}</script>\n'
+
+
+def render(template, season, entry, subject, alone):
     page = entry['page']
     url = f'{SITE}/{page}'
     name = subject_name(entry, subject)
@@ -173,7 +180,11 @@ def render(template, season, entry, subject):
         t = replace_once(t, r'(?<=<em id="season-reading-latin">)', escape(subject['scientific']))
     t = replace_once(t, r'(?<=<p class="season-post-dek" id="season-reading-dek">)', escape(credits))
     t = replace_once(t, r'<div id="season-reading-body"></div>',
-                     f'<div id="season-reading-body" data-prerendered="{entry["id"]}">\n{body_html(entry, page)}\n</div>')
+                     f'<div id="season-reading-body">\n{body_html(entry, page)}\n</div>')
+    if alone:
+        # The season's only post: nothing to turn to (as setSeason() in seasons.js).
+        t = replace_once(t, r'<div class="turn-the-page visible season-turn">', '<div class="turn-the-page visible season-turn" hidden>')
+    t = replace_once(t, r'(?=<script type="module" src="dfos-siwd.js">)', post_entry(entry))
     if entry.get('published'):
         t = replace_once(t, r'(?<=<p class="phenomena-list" id="season-reading-observation">)',
                          f'Published {long_date(entry["published"])}')
@@ -195,9 +206,9 @@ def assign_pages(data, wanted, everything):
         if entry.get('page') or not (everything or entry['id'] in wanted):
             continue
         base = slug(subject_name(entry, by_subject.get(entry.get('subject'))))
-        page, n = f'lectio/{base}/', 2
+        page, n = f'lectio-terra/{base}/', 2
         while page in taken:
-            page, n = f'lectio/{base}-{n}/', n + 1
+            page, n = f'lectio-terra/{base}-{n}/', n + 1
         entry['page'] = page
         taken.add(page)
         added += 1
@@ -209,7 +220,8 @@ def pages():
     data = load('lectio-data')
     template = TEMPLATE.read_text(encoding='utf-8')
     by_subject = subjects()
-    return {ROOT / entry['page'] / 'index.html': render(template, season, entry, by_subject.get(entry.get('subject')))
+    return {ROOT / entry['page'] / 'index.html':
+            render(template, season, entry, by_subject.get(entry.get('subject')), len(data['seasons'][season]) < 2)
             for season, entry in posts(data) if entry.get('page')}
 
 
