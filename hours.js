@@ -297,28 +297,12 @@ async function init() {
 
 init();
 
-const lightbox        = document.getElementById('lightbox');
-const lightboxImg     = document.getElementById('lightbox-img');
-const lightboxCaption = document.getElementById('lightbox-caption');
-
+// The framed image, whole, in the lightbox (openLightbox() in shared.js).
 document.getElementById('image-inner').addEventListener('click', () => {
-  const img     = document.querySelector('#image-inner img');
-  const caption = document.getElementById('image-caption');
+  const img = document.querySelector('#image-inner img');
   if (!img) return;
-  setWebImage(lightboxImg, img.dataset.master || img.src, '100vw');
-  lightboxImg.alt           = img.alt || 'Expanded image';
-  lightboxCaption.innerHTML = caption.innerHTML;
-  lightbox.style.display    = 'flex';
-  lightbox.focus();
-  requestAnimationFrame(() => lightbox.classList.add('open'));
+  openLightbox(img.dataset.master || img.src, img.alt, document.getElementById('image-caption').innerHTML);
 });
-
-lightbox.addEventListener('click', closeLightbox);
-
-function closeLightbox() {
-  lightbox.classList.remove('open');
-  setTimeout(() => { lightbox.style.display = 'none'; }, 300);
-}
 
 // CX/CY/R_ARC (dial center and arc radius) live in shared.js,
 // shared with seasons.js's Wander the Seasons dial.

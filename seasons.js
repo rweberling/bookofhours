@@ -138,6 +138,7 @@ const SUBSTACK_LINE = /<p>\s*Otherwise is a reader-supported publication\.[\s\S]
 // What the page adds to a post once it's in place: play buttons for its
 // videos and the margin labels for its parts and readings.
 function finishPost(body, entry) {
+  wireFigures(body);
   wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
   markParts(body);
@@ -262,6 +263,30 @@ function markParts(body) {
 ────────────────────────────────────────────────────────────────── */
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
 const READING_BLOCKS = new Set(['P', 'OL', 'UL', 'H2', 'H3', 'H4', 'FIGURE', 'HR', 'BLOCKQUOTE']);
+
+/* ── Figures: click to see one large ──────────────────────────────
+   Each figure's image is a link to its full-size master (for readers
+   without JavaScript, and for a new tab). A plain click opens it in
+   the lightbox instead, with its caption, without leaving the post.
+────────────────────────────────────────────────────────────────── */
+function wireFigures(body) {
+  body.querySelectorAll('figure a').forEach(link => {
+    const img = link.querySelector('img');
+    if (!img) return;
+    // With wider figures, an image is drawn up to 860px wide on wide
+    // screens; its sizes says so (it sets the image's natural width).
+    if (document.body.classList.contains('figures-wide')) img.sizes = '(min-width: 1180px) 860px, (max-width: 680px) 92vw, 640px';
+    link.addEventListener('click', e => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      e.preventDefault();
+      const caption = link.closest('figure').querySelector('figcaption');
+      openLightbox(img.dataset.master || img.getAttribute('src'), img.alt, caption ? caption.innerHTML : '');
+    });
+  });
+}
+
+// Wider figures, on trial: shown only with ?wide in the address.
+if (new URLSearchParams(window.location.search).has('wide')) document.body.classList.add('figures-wide');
 
 /* ── Videos watched elsewhere: click to play ──────────────────────
    A video from YouTube sits in the post as a quiet card with its

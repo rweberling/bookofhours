@@ -172,6 +172,37 @@ const SEASON_EMBLEMS = {
            <circle cx="12" cy="12" r="0.55" fill="currentColor"/>`
 };
 
+// --- The lightbox ---------------------------------------------------------
+// An image shown whole, large, on a dark ground with its caption: the
+// Hours page's framed image (cropped to 4:3 there) and the Lectio Terra
+// posts' figures. The page holds the #lightbox markup; a click anywhere
+// or Escape closes it.
+function openLightbox(src, alt, captionHTML) {
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
+  const img = document.getElementById('lightbox-img');
+  setWebImage(img, src, '100vw');
+  img.alt = alt || 'Expanded image';
+  document.getElementById('lightbox-caption').innerHTML = captionHTML || '';
+  if (!lightbox.dataset.wired) {
+    lightbox.dataset.wired = 'yes';
+    lightbox.tabIndex = -1;
+    lightbox.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  }
+  lightbox.style.display = 'flex';
+  lightbox.focus();
+  requestAnimationFrame(() => lightbox.classList.add('open'));
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.remove('open');
+  setTimeout(() => { lightbox.style.display = 'none'; }, 300);
+}
+
 // --- Web copies of images -------------------------------------------------
 // Pages show web copies of the master images, made by
 // scripts/build_images.py: images/fulcrum_klint.jpg is shown as
