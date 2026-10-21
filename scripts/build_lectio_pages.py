@@ -40,6 +40,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from datafile import load  # noqa: E402
+from copy_lectio import EMPTY_EDGE, SUBSTACK_LINE  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = 'https://earthlyhours.com'
@@ -85,8 +86,9 @@ def long_date(iso):
 
 
 def body_html(entry, page):
-    """The post as imported, with its images pointed at their web copies."""
-    html = entry.get('bodyHtml', '')
+    """The post as imported, without Substack's subscribe line, its images
+    pointed at their web copies."""
+    html = EMPTY_EDGE.sub('', SUBSTACK_LINE.sub('', entry.get('bodyHtml', '')).strip())
 
     def image(m):
         attrs, src = m.group(1), m.group(2)

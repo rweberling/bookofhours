@@ -105,7 +105,10 @@ function renderSeasonReading(entry) {
   // With ?rebuilt, a post with a list of its pieces is rebuilt from the
   // collection (renderPostBody() in shared.js); otherwise its imported
   // HTML is shown.
-  const html = entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+  // The imported post keeps Substack's subscribe line; it isn't shown here
+  // (as SUBSTACK_LINE in scripts/copy_lectio.py).
+  const html = (entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`)
+    .replace(SUBSTACK_LINE, '').replace(/(<p>\s*<\/p>\s*)+$/, '');
   body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
   body.querySelectorAll('img[data-master]').forEach(img => {
     img.loading = 'lazy';
@@ -113,6 +116,8 @@ function renderSeasonReading(entry) {
   });
   finishPost(body, entry);
 }
+
+const SUBSTACK_LINE = /<p>\s*Otherwise is a reader-supported publication\.[\s\S]*?<\/p>/g;
 
 // What the page adds to a post once it's in place: play buttons for its
 // videos and the margin labels for its parts and readings.

@@ -2060,6 +2060,9 @@ a.page-action { text-decoration: none; }
   margin-right: 0.65em;
   opacity: 0.7;
 }
+/* An item whose text is in a paragraph (as in the Lectio Terra posts'
+   Supplementum) starts on the star's line, not below it. */
+.page ul li > p:first-child { display: inline; }
 
 .page ol {
   list-style: none;
