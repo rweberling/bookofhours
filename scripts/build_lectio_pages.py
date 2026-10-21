@@ -86,10 +86,15 @@ def long_date(iso):
     return f'{months[m - 1]} {d}, {y}'
 
 
-def body_html(entry, page):
+# A link from one post to another, as import_substack.py writes it.
+POST_LINK = re.compile(r'seasons\.html\?season=\w+&(?:amp;)?entry=([^"&#\s]+)')
+
+
+def body_html(entry, page, post_pages):
     """The post as imported, without Substack's subscribe line, its images
-    pointed at their web copies."""
+    pointed at their web copies and its links to other posts at their pages."""
     html = EMPTY_EDGE.sub('', SUBSTACK_LINE.sub('', entry.get('bodyHtml', '')).strip())
+    html = POST_LINK.sub(lambda m: post_pages.get(m.group(1), m.group(0)), html)
 
     def image(m):
         attrs, src = m.group(1), m.group(2)
@@ -149,7 +154,7 @@ def post_entry(entry):
     return f'<script type="application/json" id="post-entry">{text}</script>\n'
 
 
-def render(template, season, entry, subject, alone):
+def render(template, season, entry, subject, alone, post_pages):
     page = entry['page']
     url = f'{SITE}/{page}'
     name = subject_name(entry, subject)
@@ -182,7 +187,7 @@ def render(template, season, entry, subject, alone):
         t = replace_once(t, r'(?<=<em id="season-reading-latin">)', escape(subject['scientific']))
     t = replace_once(t, r'(?<=<p class="season-post-dek" id="season-reading-dek">)', escape(credits))
     t = replace_once(t, r'<div id="season-reading-body"></div>',
-                     f'<div id="season-reading-body">\n{body_html(entry, page)}\n</div>')
+                     f'<div id="season-reading-body">\n{body_html(entry, page, post_pages)}\n</div>')
     if alone:
         # The season's only post: nothing to turn to (as setSeason() in seasons.js).
         t = replace_once(t, r'<div class="turn-the-page visible season-turn">', '<div class="turn-the-page visible season-turn" hidden>')
@@ -222,8 +227,12 @@ def pages():
     data = load('lectio-data')
     template = TEMPLATE.read_text(encoding='utf-8')
     by_subject = subjects()
+    # Each post's page by its ID and old IDs, for links between posts.
+    post_pages = {key: entry['page'] for _, entry in posts(data) if entry.get('page')
+                  for key in [entry['id'], *(entry.get('aliases') or [])]}
     return {ROOT / entry['page'] / 'index.html':
-            render(template, season, entry, by_subject.get(entry.get('subject')), len(data['seasons'][season]) < 2)
+            render(template, season, entry, by_subject.get(entry.get('subject')),
+                   len(data['seasons'][season]) < 2, post_pages)
             for season, entry in posts(data) if entry.get('page')}
 
 

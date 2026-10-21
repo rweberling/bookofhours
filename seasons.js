@@ -111,13 +111,26 @@ function renderSeasonReading(entry) {
   // The imported post keeps Substack's subscribe line; it isn't shown here
   // (as SUBSTACK_LINE in scripts/copy_lectio.py).
   const html = (entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`)
-    .replace(SUBSTACK_LINE, '').replace(/(<p>\s*<\/p>\s*)+$/, '');
+    .replace(SUBSTACK_LINE, '').replace(/(<p>\s*<\/p>\s*)+$/, '')
+    .replace(POST_LINK, (link, id) => postPage(id) || link);
   body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
   body.querySelectorAll('img[data-master]').forEach(img => {
     img.loading = 'lazy';
     setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
   });
   finishPost(body, entry);
+}
+
+// A link from one post to another, as import_substack.py writes it; shown
+// as a link to that post's own page if it has one (postPage()).
+const POST_LINK = /seasons\.html\?season=\w+&(?:amp;)?entry=([^"&#\s]+)/g;
+
+function postPage(id) {
+  for (const entries of Object.values(lectioSeasons || {})) {
+    const entry = entries.find(e => isEntry(e, id));
+    if (entry) return entry.page || null;
+  }
+  return null;
 }
 
 const SUBSTACK_LINE = /<p>\s*Otherwise is a reader-supported publication\.[\s\S]*?<\/p>/g;
