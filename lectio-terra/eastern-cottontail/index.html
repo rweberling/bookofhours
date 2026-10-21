@@ -27,10 +27,26 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-P4407N365M', {
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
     display_mode: (window.matchMedia('(display-mode: standalone)').matches
       || window.navigator.standalone === true) ? 'standalone' : 'browser'
-  });
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
 </script>
 <!-- /shared:head -->
 <meta name="description" content="Few creatures are more storied than the rabbit and its cousin, the hare. Their manifestations extend across the globe, ranging from cosmology and folklore…">
