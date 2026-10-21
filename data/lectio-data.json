@@ -157,7 +157,8 @@
           {
             "image": "i-0123"
           }
-        ]
+        ],
+        "page": "lectio-terra/american-robin/"
       },
       {
         "id": "lt-0004",
@@ -235,7 +236,8 @@
               "i-0044"
             ]
           }
-        ]
+        ],
+        "page": "lectio-terra/paper-birch/"
       },
       {
         "id": "lt-0009",
@@ -323,7 +325,8 @@
           {
             "image": "i-0060"
           }
-        ]
+        ],
+        "page": "lectio-terra/great-mullein/"
       },
       {
         "id": "lt-0005",
@@ -401,7 +404,8 @@
           {
             "image": "i-0047"
           }
-        ]
+        ],
+        "page": "lectio-terra/rain-clouds/"
       },
       {
         "id": "lt-0007",
@@ -479,7 +483,8 @@
           {
             "image": "i-0054"
           }
-        ]
+        ],
+        "page": "lectio-terra/ostrich-fern/"
       },
       {
         "id": "lt-0006",
@@ -565,7 +570,8 @@
           {
             "image": "i-0051"
           }
-        ]
+        ],
+        "page": "lectio-terra/dutch-crocus/"
       },
       {
         "id": "lt-0008",
@@ -643,7 +649,8 @@
               1
             ]
           }
-        ]
+        ],
+        "page": "lectio-terra/eastern-cottontail/"
       },
       {
         "id": "lt-0010",
@@ -719,7 +726,8 @@
           {
             "image": "i-0124"
           }
-        ]
+        ],
+        "page": "lectio-terra/sheet-moss/"
       },
       {
         "id": "lt-0011",
@@ -805,7 +813,8 @@
           {
             "image": "i-0066"
           }
-        ]
+        ],
+        "page": "lectio-terra/cambridge-argillite/"
       },
       {
         "id": "lt-0012",
@@ -886,7 +895,8 @@
           {
             "image": "i-0069"
           }
-        ]
+        ],
+        "page": "lectio-terra/common-lilac/"
       },
       {
         "id": "lt-0013",
@@ -974,7 +984,8 @@
           {
             "image": "i-0072"
           }
-        ]
+        ],
+        "page": "lectio-terra/living-soil/"
       }
     ],
     "summer": [
@@ -1057,7 +1068,8 @@
           {
             "image": "i-0081"
           }
-        ]
+        ],
+        "page": "lectio-terra/pink-ladys-slipper/"
       },
       {
         "id": "lt-0017",
@@ -1135,7 +1147,8 @@
           {
             "image": "i-0084"
           }
-        ]
+        ],
+        "page": "lectio-terra/sunspots/"
       },
       {
         "id": "lt-0025",
@@ -1228,7 +1241,8 @@
           {
             "image": "i-0109"
           }
-        ]
+        ],
+        "page": "lectio-terra/cucurbits/"
       },
       {
         "id": "lt-0014",
@@ -1306,7 +1320,8 @@
           {
             "image": "i-0075"
           }
-        ]
+        ],
+        "page": "lectio-terra/common-reed/"
       },
       {
         "id": "lt-0015",
@@ -1384,7 +1399,8 @@
           {
             "image": "i-0078"
           }
-        ]
+        ],
+        "page": "lectio-terra/wool-sower-wasp/"
       },
       {
         "id": "lt-0018",
@@ -1462,7 +1478,8 @@
           {
             "image": "i-0087"
           }
-        ]
+        ],
+        "page": "lectio-terra/serviceberry/"
       },
       {
         "id": "lt-0019",
@@ -1547,7 +1564,8 @@
           {
             "image": "i-0090"
           }
-        ]
+        ],
+        "page": "lectio-terra/red-currant/"
       },
       {
         "id": "lt-0020",
@@ -1640,7 +1658,8 @@
           {
             "image": "i-0094"
           }
-        ]
+        ],
+        "page": "lectio-terra/corn/"
       },
       {
         "id": "lt-0021",
@@ -1728,7 +1747,8 @@
           {
             "image": "i-0126"
           }
-        ]
+        ],
+        "page": "lectio-terra/highbush-blueberry/"
       },
       {
         "id": "lt-0022",
@@ -1808,7 +1828,8 @@
           {
             "image": "i-0099"
           }
-        ]
+        ],
+        "page": "lectio-terra/butterfly-weed/"
       },
       {
         "id": "lt-0023",
@@ -1900,7 +1921,8 @@
           {
             "image": "i-0102"
           }
-        ]
+        ],
+        "page": "lectio-terra/dog-days/"
       },
       {
         "id": "lt-0024",
@@ -1985,7 +2007,8 @@
           {
             "image": "i-0105"
           }
-        ]
+        ],
+        "page": "lectio-terra/perseids/"
       },
       {
         "id": "lt-0026",
@@ -2073,7 +2096,8 @@
           {
             "image": "i-0112"
           }
-        ]
+        ],
+        "page": "lectio-terra/melons-and-cucumbers/"
       },
       {
         "id": "lt-0027",
@@ -2165,7 +2189,8 @@
           {
             "image": "i-0115"
           }
-        ]
+        ],
+        "page": "lectio-terra/watermelon/"
       }
     ],
     "autumn": [
@@ -2278,7 +2303,8 @@
           {
             "image": "i-0119"
           }
-        ]
+        ],
+        "page": "lectio-terra/northern-red-oak/"
       },
       {
         "id": "lt-0029",
@@ -2381,7 +2407,8 @@
           {
             "image": "i-0122"
           }
-        ]
+        ],
+        "page": "lectio-terra/shagbark-hickory/"
       }
     ],
     "winter": [
@@ -2460,7 +2487,8 @@
           {
             "image": "i-0036"
           }
-        ]
+        ],
+        "page": "lectio-terra/witch-hazel/"
       }
     ]
   },

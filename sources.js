@@ -225,7 +225,7 @@ function buildSources(collection, lectio) {
       const date = y ? `${Number(d)} ${MONTH_NAMES[Number(m) - 1]} ${y}` : '';
       return `
     <div class="week">
-      <p class="week-title"><a href="seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}">${escapeHTML(week.title)}</a></p>
+      <p class="week-title"><a href="${week.page ? escapeHTML(week.page) : `seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}`}">${escapeHTML(week.title)}</a></p>
       ${date ? `<p class="week-date">${date}</p>` : ''}
       ${weekGroup('Readings', piecesOf(readings, week))}${weekGroup('Figures', piecesOf(images, week))}
     </div>`;

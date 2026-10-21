@@ -24,8 +24,9 @@ scripts' fetches of data/, work from lectio-terra/<name>/ as they do from the
 root. Links within the post (#footnote-1) are written out in full, since
 the base would otherwise send them to the home page.
 
-While TRIAL is True every post page is noindex, so the sitemap leaves
-them out; set it False once the pages are approved.
+The sitemap and llms.txt list each post at its page, and seasons.html
+names the page as canonical when it shows that post, so search engines
+treat the page as the post's one address.
 
 scripts/check_data.py says when a page no longer matches its post or
 the template. Run this after editing a post, seasons.html or partials/
@@ -47,7 +48,6 @@ SITE = 'https://earthlyhours.com'
 TEMPLATE = ROOT / 'seasons.html'
 LECTIO = ROOT / 'data' / 'lectio-data.json'
 AUTHOR = 'Ryan Weberling'
-TRIAL = True
 
 # The same web copies setWebImage() in shared.js points at.
 WEB_WIDTHS = (800, 1600, 2400)
@@ -58,7 +58,8 @@ def web_version(src, width):
 
 
 def slug(name):
-    return re.sub(r'[^a-z0-9]+', '-', unescape(name).lower()).strip('-')
+    name = re.sub(r"['’]", '', unescape(name).lower())   # Lady's -> ladys
+    return re.sub(r'[^a-z0-9]+', '-', name).strip('-')
 
 
 def subjects():
@@ -168,8 +169,7 @@ def render(template, season, entry, subject, alone):
         t = replace_once(t, r'<meta property="og:image" content="[^"]*">\n(<meta property="og:image:[^\n]*\n)*',
                          f'<meta property="og:image" content="{image}">\n')
     t = replace_once(t, r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">')
-    robots = '<meta name="robots" content="noindex">\n' if TRIAL else ''
-    t = replace_once(t, r'<!-- No fixed canonical link here:[^\n]*\n', f'{robots}<link rel="canonical" href="{url}">\n')
+    t = replace_once(t, r'<!-- No fixed canonical link here:[^\n]*\n', f'<link rel="canonical" href="{url}">\n')
     t = replace_once(t, r'<title>[^<]*</title>', f'<title>{escape(title)} — The Earthly Book of Hours</title>')
     t = replace_once(t, r'</head>', json_ld(entry, subject, url, image) + '</head>')
 

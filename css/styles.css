@@ -2052,12 +2052,23 @@ a.page-action { text-decoration: none; }
   padding-left: 1em;
 }
 
+/* A hanging indent: the star sits out to the left and an item's later
+   lines line up with its first word. The star's box is as wide as the
+   indent (in rem, since the star is set in a smaller size). */
+.page ul li {
+  padding-left: 1.0625rem;
+  text-indent: -1.0625rem;
+}
+.page ul li > * { text-indent: 0; }
+
 .page ul li::before {
   content: '✦';
+  display: inline-block;
+  width: 1.0625rem;
+  text-indent: 0;
   color: var(--gold);
   font-size: 7px;
   vertical-align: middle;
-  margin-right: 0.65em;
   opacity: 0.7;
 }
 /* An item whose text is in a paragraph (as in the Lectio Terra posts'

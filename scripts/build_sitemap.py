@@ -8,8 +8,9 @@ Lists each page at its canonical address (its rel="canonical" link, or
 its path on earthlyhours.com if it has none), skipping any page marked
 noindex: the 404 page, colophon.html (which only forwards), and postcard
 pages still in draft. Then each Seasons reading at its own address,
-seasons.html?season=…&entry=…, the same address seasons.js gives it as
-canonical. Each page's lastmod is the date of its last commit.
+its own page (lectio-terra/<name>/, from build_lectio_pages.py) if it has
+one, else seasons.html?season=…&entry=…: the address seasons.js gives it
+as canonical. Each page's lastmod is the date of its last commit.
 
 build_postcards.py and import_substack.py (with --write) run this when
 they finish, so new postcards and readings are listed without a separate
@@ -66,6 +67,13 @@ def address(rel, html):
     return f'{SITE}/{rel.as_posix()}'
 
 
+def post_address(season, entry):
+    """A post's address: its own page if it has one, else on the Seasons page."""
+    if entry.get('page'):
+        return f'{SITE}/{entry["page"]}'
+    return f'{SITE}/seasons.html?season={quote(season)}&entry={quote(entry["id"])}'
+
+
 def addresses():
     """(address, lastmod or None) for every page the sitemap should list."""
     entries = []
@@ -78,7 +86,8 @@ def addresses():
     readings = json.loads((ROOT / 'data' / 'lectio-data.json').read_text(encoding='utf-8'))
     for season, items in readings['seasons'].items():
         for entry in items:
-            entries.append((f'{SITE}/seasons.html?season={quote(season)}&entry={quote(entry["id"])}', None))
+            if not entry.get('page'):   # a post page is listed with the pages above
+                entries.append((post_address(season, entry), None))
     return entries
 
 
@@ -98,7 +107,7 @@ def llms_text():
     lines = []
     for season, items in readings['seasons'].items():
         for entry in sorted(items, key=lambda e: e.get('published') or ''):
-            url = f'{SITE}/seasons.html?season={quote(season)}&entry={quote(entry["id"])}'
+            url = post_address(season, entry)
             note = f'{season}, {entry["published"]}' if entry.get('published') else season
             if entry.get('canonicalUrl'):
                 note += f'; first published at {entry["canonicalUrl"]}'

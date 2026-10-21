@@ -69,8 +69,11 @@ function setSeasonCanonical(entry) {
     link.rel = 'canonical';
     document.head.appendChild(link);
   }
+  // A post with a page of its own is canonical there, not here.
   link.href = own
-    ? `https://earthlyhours.com/seasons.html?season=${encodeURIComponent(params.get('season'))}&entry=${encodeURIComponent(entry.id)}`
+    ? (entry.page
+      ? `https://earthlyhours.com/${entry.page}`
+      : `https://earthlyhours.com/seasons.html?season=${encodeURIComponent(params.get('season'))}&entry=${encodeURIComponent(entry.id)}`)
     : 'https://earthlyhours.com/seasons.html';
 }
 

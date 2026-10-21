@@ -446,6 +446,10 @@ def main():
         listed = subprocess.run([sys.executable, str(Path(__file__).with_name('build_post_manifests.py')), '--write'])
         if listed.returncode:
             print('The posts\' lists of pieces were not made. Run: python3 scripts/build_post_manifests.py --write', file=sys.stderr)
+        # Each post gets a page of its own.
+        paged = subprocess.run([sys.executable, str(Path(__file__).with_name('build_lectio_pages.py')), '--all'])
+        if paged.returncode:
+            print('The post pages were not built. Run: python3 scripts/build_lectio_pages.py --all', file=sys.stderr)
         # New readings get their own addresses in the sitemap.
         mapped = subprocess.run([sys.executable, str(Path(__file__).with_name('build_sitemap.py'))])
         if mapped.returncode:
