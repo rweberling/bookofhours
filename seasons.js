@@ -273,9 +273,6 @@ function wireFigures(body) {
   body.querySelectorAll('figure a').forEach(link => {
     const img = link.querySelector('img');
     if (!img) return;
-    // With wider figures, an image is drawn up to 860px wide on wide
-    // screens; its sizes says so (it sets the image's natural width).
-    if (document.body.classList.contains('figures-wide')) img.sizes = '(min-width: 1180px) 860px, (max-width: 680px) 92vw, 640px';
     link.addEventListener('click', e => {
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
       e.preventDefault();
@@ -284,9 +281,6 @@ function wireFigures(body) {
     });
   });
 }
-
-// Wider figures, on trial: shown only with ?wide in the address.
-if (new URLSearchParams(window.location.search).has('wide')) document.body.classList.add('figures-wide');
 
 /* ── Videos watched elsewhere: click to play ──────────────────────
    A video from YouTube sits in the post as a quiet card with its

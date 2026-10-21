@@ -513,22 +513,6 @@ body::before {
 }
 #season-reading-body figure a:has(img) { cursor: zoom-in; }
 
-/* Wider figures, on trial (?wide; seasons.js adds .figures-wide). A
-   figure gets more room above and below, and a tall one is never taller
-   than the screen, so it's seen whole without scrolling past it. On wide
-   screens a figure may run on into the right-hand margin (the left one
-   holds the parts' and readings' labels), up to 860px; its caption
-   keeps to the text column. */
-.figures-wide #season-reading-body figure { margin: 52px 0; }
-.figures-wide #season-reading-body figure img {
-  max-height: 85vh; width: auto; margin: 0 auto 14px;
-}
-@media (min-width: 1180px) {
-  .figures-wide #season-reading-body figure a:has(img) {
-    display: block; width: min(860px, calc(50vw + 220px));
-  }
-  .figures-wide #season-reading-body figure img { margin: 0 auto 14px 0; }
-}
 #season-reading-body figure { margin: 26px 0; }
 /* A video watched elsewhere: a card until it's played (wireVideoEmbeds() in seasons.js). */
 #season-reading-body .video-play,
