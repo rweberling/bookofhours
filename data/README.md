@@ -93,6 +93,11 @@ Each post also has a `body`: its pieces in order (headings, figures,
 passages, runs of its writing), which the Seasons page rebuilds the post
 from. `scripts/build_post_manifests.py` makes these lists after an import.
 
+A post with a `page` (`"lectio/sugar-maple/"`) has a page of its own at
+that address, built by `scripts/build_lectio_pages.py`: the Seasons page
+with the post written into the HTML, for readers and search engines that
+don't run JavaScript. Like an ID, the address is fixed once published.
+
 ## Editing by hand
 
 1. Find the record by its ID, or add a new one with the next free ID of its

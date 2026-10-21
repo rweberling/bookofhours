@@ -414,6 +414,8 @@ def main():
         if slug in existing_by_slug:
             old = existing_by_slug[slug][1]
             entry['id'], entry['aliases'] = old['id'], old.get('aliases') or entry['aliases']
+            if old.get('page'):   # its own page's address (build_lectio_pages.py) is fixed
+                entry['page'] = old['page']
         else:
             entry['id'] = f'lt-{next_number:04d}'
             next_number += 1

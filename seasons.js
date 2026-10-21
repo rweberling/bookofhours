@@ -15,7 +15,22 @@ let lectioSeasons = null;   // data/lectio-data.json's { spring: [...], ... }, o
 let season = null;          // the season whose readings are showing
 let currentEntryId = null;
 
+// A post's own page (lectio/<name>/, built by scripts/build_lectio_pages.py)
+// is this page with one post already written into it: its <body> names
+// the post, and the address doesn't.
+const POST_PAGE = document.body.dataset.entry
+  ? { key: document.body.dataset.season, entryId: document.body.dataset.entry }
+  : null;
+
+// Where a post is read: its own page if it has one, else here.
+function postAddress(key, entry) {
+  return entry.page
+    ? `/${entry.page}`
+    : `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
+}
+
 function seasonFromURL() {
+  if (POST_PAGE) return POST_PAGE;
   const params = new URLSearchParams(window.location.search);
   const key = params.get('season');
   return {
@@ -41,6 +56,7 @@ function isEntry(entry, id) {
 }
 
 function setSeasonCanonical(entry) {
+  if (POST_PAGE) return;   // a post page's canonical link is its own, in the HTML
   const params = new URLSearchParams(window.location.search);
   const own = isEntry(entry, params.get('entry')) && params.get('season');
   if (own && params.get('entry') !== entry.id) {
@@ -83,18 +99,24 @@ function renderSeasonReading(entry) {
     : `A species reading for ${season.label}.`;
 
   const body = document.getElementById('season-reading-body');
-  // The post's images point at the full-size masters. Their src is set
-  // aside before the HTML goes in (so the browser doesn't start fetching
-  // the masters), then each is pointed at its web copies.
-  // With ?rebuilt, a post with a list of its pieces is rebuilt from the
-  // collection (renderPostBody() in shared.js); otherwise its imported
-  // HTML is shown.
-  const html = entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`;
-  body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
-  body.querySelectorAll('img[data-master]').forEach(img => {
-    img.loading = 'lazy';
-    setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
-  });
+  // On a post page the post is already in the HTML, its images pointed at
+  // their web copies; it only needs the margin labels below.
+  const prerendered = body.dataset.prerendered === entry.id;
+  delete body.dataset.prerendered;
+  if (!prerendered) {
+    // The post's images point at the full-size masters. Their src is set
+    // aside before the HTML goes in (so the browser doesn't start fetching
+    // the masters), then each is pointed at its web copies.
+    // With ?rebuilt, a post with a list of its pieces is rebuilt from the
+    // collection (renderPostBody() in shared.js); otherwise its imported
+    // HTML is shown.
+    const html = entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`;
+    body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
+    body.querySelectorAll('img[data-master]').forEach(img => {
+      img.loading = 'lazy';
+      setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
+    });
+  }
   wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
   markParts(body);
@@ -295,7 +317,10 @@ function showSeasonEntry(key, entryId) {
 // The button sits at the foot of the post, so the next post opens at its
 // top, as a turned page does.
 function turnSeasonPage() {
-  renderSeasonReading(pickExcluding(season.entries, entry => entry.id === currentEntryId));
+  const next = pickExcluding(season.entries, entry => entry.id === currentEntryId);
+  // A post page holds one post: the next one is read at its own address.
+  if (POST_PAGE) { window.location.href = postAddress(season.key, next); return; }
+  renderSeasonReading(next);
   window.scrollTo(0, 0);
 }
 
@@ -604,12 +629,12 @@ async function buildSpeciesGrid() {
     entries.forEach(entry => {
       const card = document.createElement('a');
       card.className = 'species-card';
-      card.href = `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
+      card.href = POST_PAGE ? postAddress(key, entry) : `seasons.html?season=${key}&entry=${encodeURIComponent(entry.id)}`;
 
       // The reading opens right here, in place — the link stays a real
       // link so a new-tab/cmd-click still works the ordinary way.
       card.addEventListener('click', e => {
-        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        if (POST_PAGE || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
         e.preventDefault();
         // Remember which reading was showing (it may have been reached
         // by turning pages, which the URL doesn't record), so Back
