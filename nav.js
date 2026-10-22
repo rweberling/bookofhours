@@ -304,3 +304,40 @@ showTip('Click the Share icon in the toolbar, or choose File, then "Add to Dock.
 }
 }
 }
+
+/* ── The site maker's own visits ────────────────────────────────────
+   Pressing and holding the ornament at the foot of a page for three
+   seconds marks this browser's visits as the site maker's own, as ?me
+   does (partials/head.html), so Google Analytics can leave them out;
+   holding it again unmarks them. For the home-screen app, which has no
+   address bar to type ?me into. A short note says which way it went;
+   the change applies from the next page.
+────────────────────────────────────────────────────────────────── */
+(() => {
+const ME_KEY = 'earthlyhours-me';
+const HOLD_MS = 3000;
+document.querySelectorAll('.page-footer .rule-ornament').forEach(ornament => {
+ornament.classList.add('quiet-switch');
+let timer = null;
+const cancel = () => { clearTimeout(timer); timer = null; };
+ornament.addEventListener('pointerdown', () => {
+cancel();
+timer = setTimeout(() => {
+timer = null;
+let marked = false;
+try {
+marked = localStorage.getItem(ME_KEY) !== '1';
+if (marked) localStorage.setItem(ME_KEY, '1');
+else localStorage.removeItem(ME_KEY);
+} catch (error) { return; }
+const note = document.createElement('p');
+note.className = 'quiet-note';
+note.textContent = marked ? 'Visits from here won’t be counted.' : 'Visits from here will be counted again.';
+document.body.appendChild(note);
+setTimeout(() => note.remove(), 3000);
+}, HOLD_MS);
+});
+['pointerup', 'pointerleave', 'pointercancel'].forEach(type => ornament.addEventListener(type, cancel));
+ornament.addEventListener('contextmenu', e => e.preventDefault());
+});
+})();

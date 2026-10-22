@@ -2323,3 +2323,15 @@ a.page-action { text-decoration: none; }
   .sources-page .part-header { margin-top: 72px; }
   .sources-page .block-header { flex-wrap: wrap; row-gap: 4px; }
 }
+
+/* The footer ornament's hidden switch (nav.js): a long press mustn't
+   select text or open the touch callout, and its note sits quietly at
+   the top of the screen for a moment. */
+.quiet-switch { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; touch-action: manipulation; }
+.quiet-note {
+  position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 300;
+  margin: 0; padding: 6px 14px; border-radius: 4px;
+  font-family: var(--font-text); font-size: 13px; font-style: italic;
+  color: var(--ink-light); background: var(--bg-dark);
+  animation: fadeIn 0.4s ease;
+}
