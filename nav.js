@@ -339,5 +339,8 @@ setTimeout(() => note.remove(), 3000);
 });
 ['pointerup', 'pointerleave', 'pointercancel'].forEach(type => ornament.addEventListener(type, cancel));
 ornament.addEventListener('contextmenu', e => e.preventDefault());
+// iOS starts its own long press (text selection, the magnifier) from a
+// touch; claiming the touch here leaves the hold to the timer above.
+ornament.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
 });
 })();
