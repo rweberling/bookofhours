@@ -21,6 +21,9 @@
    The token is this Worker's own: an HMAC-signed note of who signed in
    and when they were last checked. The site keeps it in localStorage
    and trades it in at /session when the check is stale.
+
+   It also keeps a daily tally of what it's asked (D1's tally table):
+   counts only, never who. See tally() below and README.md.
 ════════════════════════════════════════════════════════════════ */
 
 import { createClient } from '@metalabel/dfos-client';
@@ -37,25 +40,36 @@ const RECHECK_OUTSIDER_MS = 2 * 60 * 1000;
 const TOKEN_TTL_MS = 60 * 24 * 60 * 60 * 1000;  // after 60 days unseen, sign in again
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const cors = corsHeaders(request, env);
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
-    if (request.method !== 'POST') return json({ error: 'not found' }, 404, cors);
-
-    const { pathname } = new URL(request.url);
-    try {
-      const body = await request.json().catch(() => ({}));
-      if (pathname === '/login/start') return json(await loginStart(env), 200, cors);
-      if (pathname === '/login/finish') return json(await loginFinish(env, body), 200, cors);
-      if (pathname === '/session') return json(await session(env, body), 200, cors);
-      return json({ error: 'not found' }, 404, cors);
-    } catch (error) {
-      const status = error instanceof HttpError ? error.status : 500;
-      if (status === 500) console.error(error);
-      return json({ error: status === 500 ? 'internal error' : error.message }, status, cors);
-    }
+    // What each request comes to, counted once the answer has gone.
+    const events = [];
+    const response = await answer(request, env, cors, events);
+    ctx.waitUntil(tally(env, events));
+    return response;
   }
 };
+
+async function answer(request, env, cors, events) {
+  const fromSite = 'Access-Control-Allow-Origin' in cors;
+  if (request.method !== 'POST') { events.push('noise'); return json({ error: 'not found' }, 404, cors); }
+
+  const { pathname } = new URL(request.url);
+  try {
+    const body = await request.json().catch(() => ({}));
+    if (pathname === '/login/start') { events.push(fromSite ? 'start' : 'noise'); return json(await loginStart(env), 200, cors); }
+    if (pathname === '/login/finish') return json(await loginFinish(env, body, events), 200, cors);
+    if (pathname === '/session') return json(await session(env, body, events), 200, cors);
+    events.push('noise');
+    return json({ error: 'not found' }, 404, cors);
+  } catch (error) {
+    const status = error instanceof HttpError ? error.status : 500;
+    if (status === 500) console.error(error);
+    events.push(pathname === '/login/finish' ? 'signin-failed' : status === 500 ? 'error' : 'noise');
+    return json({ error: status === 500 ? 'internal error' : error.message }, status, cors);
+  }
+}
 
 /* ── Sign-in ──────────────────────────────────────────────────── */
 
@@ -76,7 +90,7 @@ async function loginStart(env) {
   return { url };
 }
 
-async function loginFinish(env, { jws, credential }) {
+async function loginFinish(env, { jws, credential }, events) {
   if (typeof jws !== 'string' || typeof credential !== 'string') throw new HttpError(400, 'jws and credential are required');
 
   // Spends the nonce: the atomic DELETE … RETURNING is the check, and
@@ -101,6 +115,9 @@ async function loginFinish(env, { jws, credential }) {
   if (!env.KEY_HOLDER_GROUP) await recordGroupsForSetup(env, did, credential);
   const keyHolder = await checkKeyHolder(env, credential);
   if (keyHolder === null) throw new HttpError(401, 'DFOS did not accept the grant');
+  const before = await env.DB.prepare('SELECT key_holder FROM grants WHERE did = ?').bind(did).first();
+  events.push(keyHolder ? 'signin-wanderer' : 'signin-other');
+  if (keyHolder && !(before && before.key_holder === 1)) events.push('new-wanderer');
   const checkedAt = Date.now();
   await env.DB.prepare(
     'INSERT INTO grants (did, credential, key_holder, checked_at) VALUES (?, ?, ?, ?) ' +
@@ -110,7 +127,8 @@ async function loginFinish(env, { jws, credential }) {
   return { did, keyHolder, token: await signToken(env, { did, kh: keyHolder, chk: checkedAt, exp: checkedAt + TOKEN_TTL_MS }) };
 }
 
-async function session(env, { token }) {
+async function session(env, { token }, events) {
+  events.push('recheck');
   const claims = await readToken(env, token);
   if (!claims) return { signedIn: false };
   const grant = await env.DB.prepare('SELECT credential, key_holder, checked_at FROM grants WHERE did = ?').bind(claims.did).first();
@@ -132,6 +150,7 @@ async function session(env, { token }) {
       await env.DB.prepare('DELETE FROM grants WHERE did = ?').bind(claims.did).run();
       return { signedIn: false };
     }
+    if (answer && !keyHolder) events.push('new-wanderer');
     keyHolder = answer;
     checkedAt = Date.now();
     await env.DB.prepare('UPDATE grants SET key_holder = ?, checked_at = ? WHERE did = ?')
@@ -192,6 +211,38 @@ async function recordGroupsForSetup(env, did, credential) {
     ]);
   } catch (error) {
     console.error('recording groups for setup failed', error);
+  }
+}
+
+/* ── The tally ────────────────────────────────────────────────── */
+
+// How many of each thing happened each day (UTC), and nothing about who:
+//   start            a sign-in begun from the site
+//   signin-wanderer  a sign-in finished by a key holder (a Wanderer)
+//   signin-other     a sign-in finished by anyone else
+//   signin-failed    a sign-in that didn't verify
+//   new-wanderer     someone counted as a key holder for the first time
+//                    (at sign-in, or a re-check after they joined)
+//   recheck          a signed-in browser trading in its token (/session)
+//   noise            anything else: other paths and methods, or a sign-in
+//                    begun from outside the site; mostly bots
+//   error            this Worker failing
+// The table makes itself, so a deploy needs no step in D1. Counting never
+// gets in the way of an answer.
+let tallyReady = false;
+async function tally(env, events) {
+  if (!events.length) return;
+  try {
+    if (!tallyReady) {
+      await env.DB.prepare('CREATE TABLE IF NOT EXISTS tally (day TEXT NOT NULL, event TEXT NOT NULL, count INTEGER NOT NULL, PRIMARY KEY (day, event))').run();
+      tallyReady = true;
+    }
+    const day = new Date().toISOString().slice(0, 10);
+    await env.DB.batch(events.map(event => env.DB.prepare(
+      'INSERT INTO tally (day, event, count) VALUES (?, ?, 1) ON CONFLICT(day, event) DO UPDATE SET count = count + 1'
+    ).bind(day, event)));
+  } catch (error) {
+    console.error('tally failed', error);
   }
 }
 

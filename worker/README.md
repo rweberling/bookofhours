@@ -39,6 +39,26 @@ npx wrangler deploy
 Then put the Worker's address (`https://earthlyhours-auth.<you>.workers.dev`)
 in `AUTH_URL` at the top of `../dfos-siwd.js`.
 
+## The tally
+
+The Worker counts what it's asked each day (UTC) in D1's `tally` table:
+counts only, never who. The events are explained above `tally()` in
+`src/index.js`: sign-ins begun (`start`), finished (`signin-wanderer`,
+`signin-other`), failed (`signin-failed`), people counted as Wanderers
+for the first time (`new-wanderer`), signed-in browsers checking back in
+(`recheck`), and everything else (`noise`, mostly bots).
+
+To read it: Cloudflare dashboard → Storage & Databases → D1 →
+`earthlyhours-auth` → Console, and run
+
+```sql
+SELECT day, event, count FROM tally ORDER BY day DESC, event;
+```
+
+or, from a computer with Node, `npx wrangler d1 execute earthlyhours-auth
+--remote --command "SELECT day, event, count FROM tally ORDER BY day DESC, event"`.
+The table makes itself on first use, so deploying needs no step in D1.
+
 ## Finding the key holders' group
 
 While `KEY_HOLDER_GROUP` is empty, nobody counts as a key holder. Every

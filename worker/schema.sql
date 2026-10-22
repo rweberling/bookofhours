@@ -16,3 +16,13 @@ CREATE TABLE IF NOT EXISTS grants (
   key_holder INTEGER NOT NULL,         -- 0 or 1, as of checked_at
   checked_at INTEGER NOT NULL          -- unix ms
 );
+
+-- A daily tally of what the Worker is asked: counts only, never who.
+-- The Worker creates it itself on first use; listed here to be complete.
+-- Events are explained above tally() in src/index.js.
+CREATE TABLE IF NOT EXISTS tally (
+  day        TEXT NOT NULL,            -- YYYY-MM-DD, UTC
+  event      TEXT NOT NULL,
+  count      INTEGER NOT NULL,
+  PRIMARY KEY (day, event)
+);
