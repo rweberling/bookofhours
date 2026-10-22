@@ -2324,10 +2324,16 @@ a.page-action { text-decoration: none; }
   .sources-page .block-header { flex-wrap: wrap; row-gap: 4px; }
 }
 
-/* The footer ornament's hidden switch (nav.js): a long press mustn't
-   select text or open the touch callout, and its note sits quietly at
+/* The footer ornament's hidden switch (nav.js). The ornament is only a
+   few pixels tall, so an invisible band around it takes the press: 30px
+   above, but only 8px below, clear of the links in the line beneath; a press there mustn't select text, open the touch callout
+   or start a scroll (which would cancel it). Its note sits quietly at
    the top of the screen for a moment. */
-.quiet-switch { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; touch-action: manipulation; }
+.quiet-switch {
+  position: relative; z-index: 1;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; touch-action: none;
+}
+.quiet-switch::after { content: ''; position: absolute; inset: -30px 0 -8px; }
 .quiet-note {
   position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 300;
   margin: 0; padding: 6px 14px; border-radius: 4px;
