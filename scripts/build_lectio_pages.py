@@ -92,10 +92,23 @@ def long_date(iso):
 POST_LINK = re.compile(r'seasons\.html\?season=\w+&(?:amp;)?entry=([^"&#\s]+)')
 
 
-def body_html(entry, page, post_pages):
+def body_html(entry, page, post_pages, alts):
     """The post as imported, without Substack's subscribe line, its images
-    pointed at their web copies and its links to other posts at their pages."""
+    pointed at their web copies and given their descriptions (alts, by
+    file), and its links to other posts at their pages."""
     html = EMPTY_EDGE.sub('', SUBSTACK_LINE.sub('', entry.get('bodyHtml', '')).strip())
+
+    def described(m):
+        tag = m.group(0)
+        src = re.search(r'\ssrc="([^"]+)"', tag)
+        if not src or src.group(1) not in alts:
+            return tag
+        alt = escape(alts[src.group(1)])
+        return re.sub(r'\salt="[^"]*"', f' alt="{alt}"', tag) if ' alt="' in tag else tag[:-1] + f' alt="{alt}">'
+    html = re.sub(r'<img\b[^>]*>', described, html)
+    html = re.sub(r'<video\b([^>]*)>(\s*<source src="([^"]+)")',
+                  lambda m: (f'<video{m.group(1)} aria-label="{escape(alts[m.group(3)])}">{m.group(2)}'
+                             if m.group(3) in alts else m.group(0)), html)
     html = POST_LINK.sub(lambda m: post_pages.get(m.group(1), m.group(0)), html)
 
     def image(m):
@@ -172,7 +185,7 @@ def post_entry(entry):
     return f'<script type="application/json" id="post-entry">{text}</script>\n'
 
 
-def render(template, season, entry, subject, alone, post_pages):
+def render(template, season, entry, subject, alone, post_pages, alts):
     page = entry['page']
     url = f'{SITE}/{page}'
     name = subject_name(entry, subject)
@@ -205,7 +218,7 @@ def render(template, season, entry, subject, alone, post_pages):
         t = replace_once(t, r'(?<=<em id="season-reading-latin">)', escape(subject['scientific']))
     t = replace_once(t, r'(?<=<p class="season-post-dek" id="season-reading-dek">)', escape(credits))
     t = replace_once(t, r'<div id="season-reading-body"></div>',
-                     f'<div id="season-reading-body">\n{body_html(entry, page, post_pages)}\n</div>')
+                     f'<div id="season-reading-body">\n{body_html(entry, page, post_pages, alts)}\n</div>')
     if alone:
         # The season's only post: nothing to turn to (as setSeason() in seasons.js).
         t = replace_once(t, r'<div class="turn-the-page visible season-turn">', '<div class="turn-the-page visible season-turn" hidden>')
@@ -291,12 +304,13 @@ def pages():
     data = load('lectio-data')
     template = TEMPLATE.read_text(encoding='utf-8')
     by_subject = subjects()
+    alts = {image['file']: image['alt'] for image in load('images') if image.get('alt')}
     # Each post's page by its ID and old IDs, for links between posts.
     post_pages = {key: entry['page'] for _, entry in posts(data) if entry.get('page')
                   for key in [entry['id'], *(entry.get('aliases') or [])]}
     built = {ROOT / entry['page'] / 'index.html':
              render(template, season, entry, by_subject.get(entry.get('subject')),
-                    len(data['seasons'][season]) < 2, post_pages)
+                    len(data['seasons'][season]) < 2, post_pages, alts)
              for season, entry in posts(data) if entry.get('page')}
     if built:
         built[ROOT / 'lectio-terra' / 'index.html'] = contents(data, by_subject)

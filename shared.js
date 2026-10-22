@@ -456,11 +456,11 @@ function figureHTML(image, number) {
   }
   if (image.media === 'video') {
     const source = (src, type) => src ? `<source src="${escapeHTML(src)}" type="${type}">` : '';
-    return `<figure><video poster="${escapeHTML(image.poster || '')}"${size} controls muted loop playsinline preload="metadata">`
+    return `<figure><video poster="${escapeHTML(image.poster || '')}"${size}${image.alt ? ` aria-label="${escapeHTML(image.alt)}"` : ''} controls muted loop playsinline preload="metadata">`
       + `${source(image.file, 'video/mp4')}${source(image.fallback, 'video/webm')}</video>${caption}</figure>`;
   }
   return `<figure><a target="_blank" href="${escapeHTML(image.link || image.file)}">`
-    + `<img src="${escapeHTML(image.file)}"${size} alt=""></a>${caption}</figure>`;
+    + `<img src="${escapeHTML(image.file)}"${size} alt="${escapeHTML(image.alt || '')}"></a>${caption}</figure>`;
 }
 
 function renderPostBody(post, byId) {
@@ -591,6 +591,7 @@ function imageView(image) {
     id: image.id,
     src: image.file,
     caption: image.caption || '',
+    alt: image.alt || '',
     weather: (image.tags && image.tags.weather) || [],
     seasons: (image.tags && image.tags.seasons) || [],
     cardPosition: display.cardPosition,

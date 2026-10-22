@@ -182,7 +182,7 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate } = {})
   const inner = document.getElementById('image-inner');
   if (img.src) {
     const el = document.createElement('img');
-    el.alt = plainText(img.caption) || block.name;
+    el.alt = img.alt || plainText(img.caption) || block.name;
     // The frame is at most 440px wide, less its padding, and narrower on phones.
     setWebImage(el, img.src, '(max-width: 480px) 85vw, 410px', [800, 1600]);
     inner.replaceChildren(el);

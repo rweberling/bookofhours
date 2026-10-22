@@ -98,7 +98,7 @@ function renderWeatherView(options) {
     const haze = new URL(webVersion(image.src, 800), document.baseURI).href;
     img.parentElement.style.setProperty('--haze', `url("${haze}")`);
   }
-  img.alt = plainText(image.caption) || 'The view from the window';
+  img.alt = image.alt || plainText(image.caption) || 'The view from the window';
   document.getElementById('weather-caption').innerHTML = image.caption || '';
 
   // No readings at all (or an empty one) still leaves the card — it

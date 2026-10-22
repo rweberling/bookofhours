@@ -62,7 +62,9 @@ Then each kind has its own:
   (`--lines` when each paragraph is a line rather than a stanza): it sets
   the text out and the flag, and never changes the words, so a Lectio Terra
   copy still matches its post. `check_data.py` reports a poem not in the form.
-- **Images**: `file`, `caption`, `display` (for a Lectio Terra figure:
+- **Images**: `file`, `caption`, `alt` (what the image shows, for screen
+  readers and as its alt text; the caption says what it is, and is the
+  fallback where there's no `alt`), `display` (for a Lectio Terra figure:
   its `size` in the post, and `noCaption` or `unlabelled` where it has no
   caption or no "Fig." number), `link` (where a figure links, if not to
   itself), `bibliography`, `creator`, `title`, `date`,

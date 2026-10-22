@@ -14,6 +14,9 @@
 let lectioSeasons = null;   // data/lectio-data.json's { spring: [...], ... }, once loaded
 let season = null;          // the season whose readings are showing
 let currentEntryId = null;
+// Each figure's description (its record's alt), by file, once the
+// collection is loaded: the imported posts' images have alt="".
+let figureAlts = new Map();
 
 // A post's own page (lectio-terra/<name>/, built by scripts/build_lectio_pages.py)
 // is this page with one post already written into it: its <body> names
@@ -117,6 +120,11 @@ function renderSeasonReading(entry) {
   body.querySelectorAll('img[data-master]').forEach(img => {
     img.loading = 'lazy';
     setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
+    if (figureAlts.has(img.dataset.master)) img.alt = figureAlts.get(img.dataset.master);
+  });
+  body.querySelectorAll('video').forEach(video => {
+    const source = video.querySelector('source');
+    if (source && figureAlts.has(source.getAttribute('src'))) video.setAttribute('aria-label', figureAlts.get(source.getAttribute('src')));
   });
   finishPost(body, entry);
 }
@@ -810,6 +818,7 @@ async function initialiseSeason() {
       loadCollection().catch(error => { console.error(error); return null; })
     ]);
     lectioSeasons = data.seasons;
+    if (collection) figureAlts = new Map(collection.images.filter(i => i.alt).map(i => [i.file, i.alt]));
     // The rebuilt posts are on trial: shown only with ?rebuilt in the
     // address, so readers keep seeing each post as imported meanwhile.
     const showRebuilt = new URLSearchParams(window.location.search).has('rebuilt');
