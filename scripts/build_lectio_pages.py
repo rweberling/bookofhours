@@ -164,6 +164,16 @@ def json_ld(entry, subject, url, image):
         for block in (data, trail))
 
 
+def citation_tags(entry, title):
+    """For Zotero and other reference managers. DC.type makes Zotero save a
+    blog post; citation_ tags alone make it a journal article."""
+    tags = [('citation_title', title), ('citation_author', 'Weberling, Ryan')]
+    if entry.get('published'):
+        tags.append(('citation_publication_date', entry['published'].replace('-', '/')))
+    tags.append(('DC.type', 'blogPost'))
+    return ''.join(f'<meta name="{name}" content="{escape(value)}">\n' for name, value in tags)
+
+
 def subject_name(entry, subject):
     if subject:
         return subject['name']
@@ -207,7 +217,7 @@ def render(template, season, entry, subject, alone, post_pages, alts):
     t = replace_once(t, r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">')
     t = replace_once(t, r'<!-- No fixed canonical link here:[^\n]*\n', f'<link rel="canonical" href="{url}">\n')
     t = replace_once(t, r'<title>[^<]*</title>', f'<title>{escape(title)} — The Earthly Book of Hours</title>')
-    t = replace_once(t, r'</head>', json_ld(entry, subject, url, image) + '</head>')
+    t = replace_once(t, r'</head>', citation_tags(entry, title) + json_ld(entry, subject, url, image) + '</head>')
 
     t = replace_once(t, r'<body class="season-reading-page">',
                      f'<body class="season-reading-page" data-season="{season}" data-entry="{entry["id"]}">')
