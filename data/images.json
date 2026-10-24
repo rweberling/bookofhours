@@ -3530,7 +3530,45 @@
     "display": { "cardPosition": "bottom-left" },
     "tags": {
       "hours": [],
-      "weather": ["dappled", "overcast", "changing"],
+      "weather": ["dappled", "changing"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0136",
+    "shownIn": "weather",
+    "file": "images/weather_frey_pontine_dawn.jpg",
+    "caption": "Johann Jakob Frey, <a href=\"https://www.fitzmuseum.cam.ac.uk/plan-your-visit/exhibitions/true-to-nature-open-air-painting-in-europe-1780-1870/labels/cloud-study-1\" target=\"_blank\"><em>Dawn on the Pontine Shore</em></a> (c. 1843)",
+    "alt": "An oil sketch of a dawn sky over a flat shore: drifts of small violet clouds high up, a band of white, pink-lit cumulus across the middle, and a thin line of low hills on the far horizon.",
+    "bibliography": "Frey, Johann Jakob. <em>Dawn on the Pontine Shore</em> (<em>Cloud Study</em>). c. 1843, oil on paper mounted on canvas, private collection. Exhibited in <em>True to Nature: Open-Air Painting in Europe, 1780–1870</em>, Fitzwilliam Museum, Cambridge, and Fondation Custodia, Paris (cat. 108).",
+    "creator": { "id": "a-johann-jakob-frey", "name": "Johann Jakob Frey", "wikidata": "Q1337730" },
+    "title": "Dawn on the Pontine Shore",
+    "container": null,
+    "date": "1843~",
+    "institution": "Private collection",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Fitzwilliam Museum",
+        "url": "https://www.fitzmuseum.cam.ac.uk/plan-your-visit/exhibitions/true-to-nature-open-air-painting-in-europe-1780-1870/labels/cloud-study-1"
+      }
+    ],
+    "furtherReading": [
+      {
+        "kind": "about",
+        "label": "Fondation Custodia catalogue entry, with the date and the series of four sky studies",
+        "url": "https://fondationcustodia.fr/108-Johann-Jakob-Frey"
+      }
+    ],
+    "source": {
+      "url": "https://fitz-cms-images.s3.eu-west-2.amazonaws.com/cat.-65-ag-frey1-2.jpeg",
+      "retrieved": "2026-10-23"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "display": { "cardPosition": "bottom-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["dappled"],
       "seasons": []
     }
   }

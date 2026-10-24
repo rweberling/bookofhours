@@ -3496,6 +3496,34 @@
         }
       ]
     },
+    "images/weather_frey_pontine_dawn.jpg": {
+      "bytes": 639881,
+      "width": 3000,
+      "height": 1920,
+      "sha256": "8b6ed8e09e5baed7837d2dc23224bc5b1add70b9c09213f2a169aee329b3cd53",
+      "settings": "89e48fac760f",
+      "credit": "b31281feeee8",
+      "copies": [
+        {
+          "file": "images/web/weather_frey_pontine_dawn-800.webp",
+          "width": 800,
+          "height": 512,
+          "bytes": 48832
+        },
+        {
+          "file": "images/web/weather_frey_pontine_dawn-1600.webp",
+          "width": 1600,
+          "height": 1024,
+          "bytes": 213898
+        },
+        {
+          "file": "images/web/weather_frey_pontine_dawn-2400.webp",
+          "width": 2400,
+          "height": 1536,
+          "bytes": 446562
+        }
+      ]
+    },
     "images/weather_hokusai_red_fuji.jpg": {
       "bytes": 3158200,
       "width": 3865,
