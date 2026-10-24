@@ -3501,7 +3501,8 @@
       "hours": [],
       "weather": ["clear"],
       "seasons": []
-    }
+    },
+    "draft": true
   },
   {
     "id": "i-0135",
