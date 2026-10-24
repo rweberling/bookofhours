@@ -3552,6 +3552,34 @@
         }
       ]
     },
+    "images/weather_marville_clouds.jpg": {
+      "bytes": 1797306,
+      "width": 3907,
+      "height": 2886,
+      "sha256": "622f7757b7d0b595de26c33c089434e9c025544b8e48f2c8d88727d2d7fc1e36",
+      "settings": "89e48fac760f",
+      "credit": "8a8efc588989",
+      "copies": [
+        {
+          "file": "images/web/weather_marville_clouds-800.webp",
+          "width": 800,
+          "height": 591,
+          "bytes": 25738
+        },
+        {
+          "file": "images/web/weather_marville_clouds-1600.webp",
+          "width": 1600,
+          "height": 1182,
+          "bytes": 93020
+        },
+        {
+          "file": "images/web/weather_marville_clouds-2400.webp",
+          "width": 2400,
+          "height": 1773,
+          "bytes": 214168
+        }
+      ]
+    },
     "images/weather_saussure_cyanometer.jpg": {
       "bytes": 456282,
       "width": 1280,

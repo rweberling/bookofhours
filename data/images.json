@@ -3502,5 +3502,36 @@
       "weather": ["clear"],
       "seasons": []
     }
+  },
+  {
+    "id": "i-0135",
+    "shownIn": "weather",
+    "file": "images/weather_marville_clouds.jpg",
+    "caption": "Charles Marville, <a href=\"https://www.metmuseum.org/art/collection/search/286336\" target=\"_blank\"><em>[Cloud Study, Paris]</em></a> (1855–56)",
+    "alt": "A sepia photograph of a broken sky over Paris: heavy dark clouds across the top, a bright band of heaped cumulus low down, and below them the dark silhouette of the city with a single domed building against the light.",
+    "bibliography": "Marville, Charles. <em>[Cloud Study, Paris]</em>. 1855–56, albumen silver print from glass negative, Metropolitan Museum of Art, New York (2005.100.353).",
+    "creator": { "id": "a-charles-marville", "name": "Charles Marville", "wikidata": "Q329387" },
+    "title": "[Cloud Study, Paris]",
+    "container": null,
+    "date": "1855/1856",
+    "institution": "Metropolitan Museum of Art",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/286336"
+      }
+    ],
+    "source": {
+      "url": "https://images.metmuseum.org/CRDImages/ph/original/DP158027.jpg",
+      "retrieved": "2026-10-23"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "bottom-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["dappled", "overcast", "changing"],
+      "seasons": []
+    }
   }
 ]
