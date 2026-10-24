@@ -706,6 +706,34 @@
         }
       ]
     },
+    "images/hush_whistler_lagoon.jpg": {
+      "bytes": 7700745,
+      "width": 5425,
+      "height": 4159,
+      "sha256": "e3fd256bf94954debd550ff319c0fd614e67fb488a54dc8a5876ff18c1e20fee",
+      "settings": "89e48fac760f",
+      "credit": "3cfa0b64cb62",
+      "copies": [
+        {
+          "file": "images/web/hush_whistler_lagoon-800.webp",
+          "width": 800,
+          "height": 613,
+          "bytes": 22866
+        },
+        {
+          "file": "images/web/hush_whistler_lagoon-1600.webp",
+          "width": 1600,
+          "height": 1227,
+          "bytes": 250496
+        },
+        {
+          "file": "images/web/hush_whistler_lagoon-2400.webp",
+          "width": 2400,
+          "height": 1840,
+          "bytes": 723612
+        }
+      ]
+    },
     "images/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-1-2363b3621c32.jpeg": {
       "bytes": 1059195,
       "width": 1416,

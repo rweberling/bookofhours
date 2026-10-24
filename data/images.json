@@ -3572,5 +3572,51 @@
       "weather": ["dappled"],
       "seasons": []
     }
+  },
+  {
+    "id": "i-0137",
+    "shownIn": "hours",
+    "file": "images/hush_whistler_lagoon.jpg",
+    "caption": "James McNeill Whistler, <a href=\"https://collections.mfa.org/objects/32837\" target=\"_blank\"><em>Nocturne in Blue and Silver: The Lagoon, Venice</em></a> (1879–80)",
+    "alt": "A dark blue-green night painting of the Venetian lagoon: a tall sailing ship at anchor on the left, a bell tower and low buildings on the right with a few lights reflected in the still water, and the dim shapes of gondolas in the foreground.",
+    "bibliography": "Whistler, James McNeill. <em>Nocturne in Blue and Silver: The Lagoon, Venice</em>. 1879–80, oil on canvas, Museum of Fine Arts, Boston (42.302).",
+    "creator": {
+      "id": "a-james-mcneill-whistler",
+      "name": "James McNeill Whistler",
+      "wikidata": "Q203643"
+    },
+    "title": "Nocturne in Blue and Silver: The Lagoon, Venice",
+    "container": null,
+    "date": "1879/1880",
+    "institution": "Museum of Fine Arts, Boston",
+    "links": [
+      {
+        "role": "cited",
+        "label": "MFA Boston",
+        "url": "https://collections.mfa.org/objects/32837"
+      },
+      {
+        "role": "copy",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:James_Abbott_McNeill_Whistler_-_Nocturne_in_Blue_and_Silver-_The_Lagoon,_Venice_-_Google_Art_Project.jpg"
+      }
+    ],
+    "furtherReading": [
+      {
+        "kind": "about",
+        "label": "The Paintings of James McNeill Whistler: A Catalogue Raisonné (University of Glasgow), YMSM 212",
+        "url": "https://www.whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y212"
+      }
+    ],
+    "source": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/James_Abbott_McNeill_Whistler_-_Nocturne_in_Blue_and_Silver-_The_Lagoon%2C_Venice_-_Google_Art_Project.jpg",
+      "retrieved": "2026-10-23"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "tags": {
+      "hours": ["hush"],
+      "weather": [],
+      "seasons": []
+    }
   }
 ]
