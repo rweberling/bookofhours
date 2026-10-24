@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you cite The Earthly Book of Hours, please cite it as below."
+type: software
+title: "The Earthly Book of Hours"
+abstract: >-
+  A contemplative book of hours for the present day: readings, images and
+  writing arranged by the hours of the day, the seasons and the weather,
+  with the Lectio Terra posts and the collection they draw on.
+authors:
+  - given-names: Ryan
+    family-names: Weberling
+    orcid: "https://orcid.org/0000-0003-1310-694X"
+url: "https://earthlyhours.com"
+repository-code: "https://github.com/rweberling/bookofhours"
+license-url: "https://github.com/rweberling/bookofhours/blob/main/LICENSE"
+keywords:
+  - book of hours
+  - contemplative practice
+  - seasons
+  - nature writing
