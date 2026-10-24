@@ -1,0 +1,26 @@
+{
+  "title": "The Earthly Book of Hours",
+  "description": "A contemplative book of hours for the present day: readings, images and writing arranged by the hours of the day, the seasons and the weather, with the Lectio Terra posts and the collection they draw on. A snapshot of the website at earthlyhours.com.",
+  "upload_type": "publication",
+  "publication_type": "other",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Weberling, Ryan",
+      "orcid": "0000-0003-1310-694X"
+    }
+  ],
+  "keywords": [
+    "book of hours",
+    "contemplative practice",
+    "seasons",
+    "nature writing"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://earthlyhours.com",
+      "relation": "isVersionOf",
+      "scheme": "url"
+    }
+  ]
+}
