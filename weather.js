@@ -5,8 +5,8 @@
    laid over it carrying the reading and the work's attribution.
    Images and readings come from the collection in data/ (weatherView()
    in shared.js: everything tagged with a condition) as two
-   separate lists, each drawn on its own, weighted toward whatever conditions are
-   active (pickWeatherAware, shared.js).
+   separate lists, each drawn on its own from the entries tagged with
+   a condition that is active (pickWeatherEntry below).
 
    Expects atmosphere.js (conditions, weatherLabel) and
    shared.js (pick helpers) loaded before this file.
@@ -33,29 +33,36 @@ function activeWeather() {
 // One pick from either list, images or readings — the same rules for both.
 // Entries flagged "unset": true (Emslie's chart of every kind of weather,
 // Lubbock's "no such thing as bad weather") are the opening view when no
-// conditions are set — nothing chosen, nothing detected. They're never
-// drawn otherwise, and "turn the page" always moves on to the ordinary
-// entries, so an unset visit can still browse everything instead of being
-// stuck on one picture. An unset entry that is also tagged with conditions
-// (Auden's "Winds") stays in the ordinary draw as well. Otherwise, weighted
-// toward the active conditions — or by weightFn, when given (see
-// readingWeight below).
+// conditions are set — nothing chosen, nothing detected. "Turn the page"
+// then moves on to the ordinary entries, so an unset visit can still
+// browse everything instead of being stuck on one picture. An unset entry
+// that is also tagged with conditions (Auden's "Winds") stays in the
+// ordinary draw as well.
+// Once conditions are set, only entries tagged with at least one of them
+// are drawn: no fog or cloud on a clear day. If none fits, the unset
+// entries stand in (every kind of weather), and failing those, everything.
+// Within the fitting entries the draw still leans toward the stronger
+// matches — or by weightFn, when given (see readingWeight below).
 function pickWeatherEntry(entries, excludeFn, { turning = false } = {}, weightFn = null) {
   if (!entries || !entries.length) return null;
+  const active = activeWeather();
   const unset = entries.filter(e => e.unset);
-  const ordinary = entries.filter(e => !e.unset || e.weather.length);
-  if (!turning && !activeWeather().length && unset.length) {
-    return pickExcluding(unset, excludeFn);
+  if (!active.length) {
+    if (!turning && unset.length) return pickExcluding(unset, excludeFn);
+    const ordinary = entries.filter(e => !e.unset || e.weather.length);
+    const pool = ordinary.length ? ordinary : entries;
+    return weightFn ? pickWeightedExcluding(pool, weightFn, excludeFn) : pickExcluding(pool, excludeFn);
   }
-  const pool = ordinary.length ? ordinary : entries;
-  return weightFn ? pickWeightedExcluding(pool, weightFn, excludeFn) : pickWeatherAware(pool, excludeFn);
+  const fitting = entries.filter(e => weatherMatchCount(e, active) > 0);
+  if (!fitting.length) return pickExcluding(unset.length ? unset : entries, excludeFn);
+  return weightFn ? pickWeightedExcluding(fitting, weightFn, excludeFn) : pickWeatherAware(fitting, excludeFn);
 }
 
 // The image is drawn first; the reading then leans toward both the weather
 // outside and the image's own tags, so the card and the picture tend to
-// agree — Whistler's fog nocturne mostly brings a mist poem — while any
-// reading can still turn up with any image. Nothing is ruled out: every
-// reading keeps the base weight.
+// agree — Whistler's fog nocturne mostly brings a mist poem. Among the
+// readings that fit the weather, none is ruled out: each keeps the base
+// weight.
 // READING_IMAGE_PULL sets how strongly the image pulls: 0 ignores the image
 // entirely (readings follow only the weather), 1 weighs it the same as the
 // weather outside, 2+ makes matching the picture the stronger pull.
