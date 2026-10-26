@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons.html; edit those, not this. -->
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+<meta name="description" content="Is it a bush? Is it a tree? Is it a poison? Is it lemonade? In the lower gaps of the forest, or in its damaged peripheries, the sumac thrives. Like the…">
+<meta property="og:title" content="Lectio Terra: Staghorn Sumac">
+<meta property="og:description" content="Is it a bush? Is it a tree? Is it a poison? Is it lemonade? In the lower gaps of the forest, or in its damaged peripheries, the sumac thrives. Like the…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-1600.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://earthlyhours.com/lectio-terra/staghorn-sumac/">
+<link rel="canonical" href="https://earthlyhours.com/lectio-terra/staghorn-sumac/">
+<meta name="application-name" content="The Earthly Book of Hours">
+<title>Lectio Terra: Staghorn Sumac — The Earthly Book of Hours</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="citation_title" content="Lectio Terra: Staghorn Sumac">
+<meta name="citation_author" content="Weberling, Ryan">
+<meta name="citation_publication_date" content="2026/10/18">
+<meta name="DC.type" content="blogPost">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lectio Terra: Staghorn Sumac",
+  "name": "Week 40: Staghorn Sumac (Cole Swanson, Katherine Lee Bates, J. Francis Macbride)",
+  "url": "https://earthlyhours.com/lectio-terra/staghorn-sumac/",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Weberling"
+  },
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Lectio Terra",
+    "url": "https://earthlyhours.com/lectio-terra/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/"
+  },
+  "datePublished": "2026-10-18",
+  "image": "https://earthlyhours.com/images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-1600.webp",
+  "about": {
+    "@type": "Thing",
+    "name": "Staghorn Sumac",
+    "alternateName": "Rhus typhina",
+    "sameAs": "https://www.wikidata.org/wiki/Q148986"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Earthly Book of Hours",
+      "item": "https://earthlyhours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lectio Terra",
+      "item": "https://earthlyhours.com/lectio-terra/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Staghorn Sumac",
+      "item": "https://earthlyhours.com/lectio-terra/staghorn-sumac/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="season-reading-page" data-season="autumn" data-entry="lt-0032">
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+<!-- The figures' lightbox (openLightbox() in shared.js) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Expanded image view" aria-modal="true">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<main class="page keepsake-frame season-reading">
+  <p class="publication-name">The Earthly Book of Hours</p>
+  <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint">Autumn</button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
+  <h1 class="block-name" id="season-reading-title">Staghorn Sumac</h1>
+  <div class="season-reading-meta"><em id="season-reading-latin">Rhus typhina</em></div>
+  <article class="season-post" aria-live="polite">
+    <p class="season-post-dek" id="season-reading-dek"></p>
+    <div id="season-reading-body">
+<figure><a target="_blank" href="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3.jpeg" rel="noopener"><img src="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-1600.webp" srcset="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-800.webp 800w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-1600.webp 1600w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3.jpeg" width="590" height="786.8071428571428" alt="Week 40: Staghorn Sumac (Cole Swanson, Katherine Lee Bates, J. Francis Macbride)" loading="lazy"></a><figcaption>Fig. 1. Emil Carlsen. <em><a href="https://emilcarlsen.org/emil-carlsen-staghorn-sumac-1883/" rel="noopener" target="_blank">Staghorn Sumac</a></em> (1883). Privately held.</figcaption></figure><h2>Headnote</h2><p>Is it a bush? Is it a tree? Is it a poison? Is it lemonade? In the lower gaps of the forest, or in its damaged peripheries, the sumac thrives. Like the <a href="lectio-terra/common-pawpaw/">pawpaw</a>, it often spreads through root suckers, producing a grove of clones in meadow edges, riverbanks, or cleared land. Its conical flowers and then spike-like berry clusters develop over the summer, and its leaves erupt into vibrant colors in the early fall. The plant’s leaves and bark contain tannins that were used for centuries, around the world, to tan light and flexible leathers and as a mordant to dye fabrics. In North America, the berries were steeped to produce a brilliant pink, slightly acidic tea comparable to lemonade. And after falling out of favor in European cuisines, the tart, peppery flavor profile persisted in the Middle East and is now poised for a global comeback. </p><p>The sumac genus (<em>Rhus</em>) contains somewhere between 35 and 100+ species, depending on who’s counting—47 is an <a href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30005665-2#children" rel="noopener" target="_blank">officially recognized number</a>—with roughly 20 species native to North America. Sumac plants can be found in temperate regions around the globe, although the genus may have originated in western North America (the oldest known fossils come from Washington State). The sumac genus lends its common name to the broader sumac family (<em>Anacardiaceae</em>), perhaps more commonly known as the cashew family, which contains approximately 80 genera and 850+ species, including those that grow mangos, cashews, pistachios, and <a href="https://www.sciencedirect.com/science/article/abs/pii/S2949824425000394" rel="noopener" target="_blank">marulas</a>. So-called poison sumac (<em>Toxicodendron vernix</em>), which I for some reason vaguely feared as a child, is in a separate genus within that larger family, along with poisons oak and ivy. These species all produce the highly inflammatory resin, <a href="https://en.wikipedia.org/wiki/Urushiol" rel="noopener" target="_blank">urushiol</a>, known for occasionally causing “<a href="https://www.verywellhealth.com/mango-allergy-82833" rel="noopener" target="_blank">mango mouth</a>” and for harming the people—<a href="https://impactpolicies.org/news/69/Cashews-are-Delicious-but-Come-with-a-Human-Cost" rel="noopener" target="_blank">many of them women, children, and forced laborers</a>—who process cashews. But of course, because botany makes so much sense, the true sumacs for which the plant family is known do <em>not </em>produce urushiol. </p><p>Both the common and Latin names have interesting etymologies. The descriptor “staghorn” is mostly transparent. It was adopted by English settlers in North America to distinguish the plant’s fuzzy, forking branches from its smoother brethren, such as the aptly named smooth sumac (<em>Rhus glabra</em>). This association with horns was formalized in the 1750s, when Carl Linnaeus and his student, Ericus Torner, identified the plant as <em>Ramis hirtis uti typhi cervini</em> (“with branches hairy like antlers in velvet"). The word “sumac” has an even longer history, descending from Arabic (<em>summaq</em>) and Classical Syriac/Aramaic (<em>summāqā</em>) words for “dark red,” which were absorbed into Medieval Latin and Old French around the 13th century. Though the word first referred specifically to the chopped berries of the plants, its meaning later expanded to include other parts of the plant used for tanning leather, dyeing textiles, or as a medicinal astringent. Finally, by the mid-1540s, it was applied to the living plants themselves. </p><p>As for the Latin, the name of the “Rhus” genus comes from the classical Latin and Greek names for sumac plants, notably Sicilian or tanner’s sumac (<em>Rhus coriaria</em>), known for its leather-tanning and dyeing properties. The <em>typhina </em>descriptor for staghorn sumac also was supplied by Linnaeus and Torner,  in their comparison of the plant to the hairy antlers of a male deer (<em>typhi cervini</em>)—although, that description itself may itself echo the cattail (<em>typha</em>), another plant named for its fuzzy spike. Some might see this as a muddle of language and taxonomy. But that muddle embodies the fuzzy perceptions and tangled analogies that have built our basic picture of the world around us.</p><figure><a target="_blank" href="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3.jpeg" rel="noopener"><img src="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3-1600.webp" srcset="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3-800.webp 800w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3-1600.webp 1600w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3.jpeg" width="1183" height="1878" alt="Week 40: Staghorn Sumac (Cole Swanson, Katherine Lee Bates, J. Francis Macbride)" loading="lazy"></a><figcaption>Fig. 2. “<a href="https://hdl.handle.net/2027/uc2.ark:/13960/t5t729682?urlappend=%3Bseq=280" rel="noopener" target="_blank">Rhus Typhina.</a>” Plate LXVIII from Lorin L. Dame and Henry Brooks. <em>Handbook of the Trees of New England. </em>Boston: Ginn &amp; Company, 1902.</figcaption></figure><hr><h2>Readings</h2><ol><li><p>In late Spring 2023, Metrolinx crews exposed swaths of land along the Railpath to non-specific chemical herbicide to control the incredible spread of dog-strangling vine (Metrolinx 2023). Regardless of species, all vegetal and terra-bound life, including the staghorns, were exposed to the poison. The West Toronto Railpath sumacs teach us that nativist prescriptions are limited in predetermining how or when flourishing and suffering occurs in multispecies life. Perhaps because they thrive in the ditches of highways and rail corridors – the same disturbed spaces colonised by their invasive companions – or because they resist neat vegetal categories situated within taxonomical hierarchies (a small tree? a large bush?), the native sumacs of the Railpath duly suffer alongside their non-native kin, as well as the countless species-assemblages who remain hidden beyond the settler-gaze.</p></li></ol>Cole Swanson. “<a href="https://www.whp-journals.co.uk/PP/article/view/1159" rel="noopener" target="_blank">Among the Drupes (Elegy for a Wasteland)</a>”. <em>Plant Perspectives</em> (February 2025).<p></p><ol><li><p>Summer fervors slacken;</p><p>   Sumac torches dim;</p><p>There’s bronze upon the bracken;</p><p>   September has a whim </p><p>For carmine, pearl and amber</p><p>   Touches on her green; </p><p>Busy squirrels clamber;</p><p>   Restless birds convene.</p><p></p><p>Where Indian pipe still blanches, </p><p>   Where hoary lichen flakes</p><p>Forest trunks and branches,</p><p>   The golden foxglove makes</p><p>A mimic wood that tosses</p><p>   Warning to the trees,</p><p>Then droops upon the mosses,</p><p>   Heavy with bloom and bees.</p></li></ol>Katherine Lee Bates. From “<a href="https://hdl.handle.net/2027/loc.ark:/13960/t1wd4qb7b?urlappend=%3Bseq=142" rel="noopener" target="_blank">Playmates</a>.” <em>The Retinue and Other Poems</em>. New York: E.P. Dutton &amp; Co., 1918. 122-123.<p></p><ol><li><p>The Sumach, especially in the fall, is a thing of beauty with its handsome pinnately divided foliage and large red bunches of fruit at the ends of the branches. Two noteworthy species are the Smooth Sumach and the Staghorn, the latter with very velvety-hairy stalks and branches. <br><br>The Poison Sumach of swamps, dangerous to touch, may easily be distinguished from the harmless kinds. Both its flowers and fruits, the latter grayish, are very loosely borne on long slender branching stalks.</p></li></ol>J. Francis Macbride. “<a href="http://www.biodiversitylibrary.org/page/2657582" rel="noopener" target="_blank">Sumach (Rhus species)</a>.” From <em>Autumn Fruits and Flowers. </em>Botany Leaflet 10. Chicago, Illinois: Field Museum, 1924. 12.<h2>Supplementum</h2><ul><li><p>Ceyhun Uçuk and Charles Spence. “<a href="https://www.sciencedirect.com/science/article/pii/S1878450X26000739" rel="noopener" target="_blank">Sumac (</a><em><a href="https://www.sciencedirect.com/science/article/pii/S1878450X26000739" rel="noopener" target="_blank">Rhus coriaria</a></em><a href="https://www.sciencedirect.com/science/article/pii/S1878450X26000739" rel="noopener" target="_blank">): The magical spice</a>.” <em>International Journal of Gastronomy and Food Science</em> 44 (June 2026).</p></li><li><p>Northeast Plant Materials Program. “<a href="https://plants.sc.egov.usda.gov/DocumentLibrary/factsheet/pdf/fs_rhhi2.pdf" rel="noopener" target="_blank">Plant Fact Sheet: STAGHORN SUMAC - </a><em><a href="https://plants.sc.egov.usda.gov/DocumentLibrary/factsheet/pdf/fs_rhhi2.pdf" rel="noopener" target="_blank">Rhus hirta</a></em><a href="https://plants.sc.egov.usda.gov/DocumentLibrary/factsheet/pdf/fs_rhhi2.pdf" rel="noopener" target="_blank"> (L.) Sudworth</a>.” <em>USDA Natural Resources Conservation Service </em>(February 5, 2002).</p></li><li><p>Fiona von Gray. “<a href="https://woodlanders.net/blogs/the-node/field-guide-to-the-sumacs-rhus" rel="noopener" target="_blank">A Guide to the Sumacs (Rhus)</a>.” <em>Woodlanders </em>(July 13, 2026).</p></li><li><p>Paula J Vester. “<a href="https://botanicalcolors.com/mordant-monday-spotlight-on-sumac/?srsltid=AU7gw4UtpQj-Kqu8BvKrOhcIVPONvaEcw-Ui9kMtPpKomtju0VF3TwQ6" rel="noopener" target="_blank">Mordant Monday: Spotlight on Sumac</a>.” <em>Botanical Colors </em>(April 28, 2024).</p></li><li><p>Yale Nature Walk. “<a href="https://naturewalk.yale.edu/trees/anacardiaceae/rhus-typhina/staghorn-sumac-103" rel="noopener" target="_blank">Staghorn Sumac</a>.” <em>Yale University</em> (February 23, 2021). </p></li></ul><figure><a target="_blank" href="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b.jpeg" rel="noopener"><img src="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b-1600.webp" srcset="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b-800.webp 800w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b-1600.webp 1600w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b.jpeg" width="242" height="680" alt="Week 40: Staghorn Sumac (Cole Swanson, Katherine Lee Bates, J. Francis Macbride)" loading="lazy"></a><figcaption>Fig. 3. F.H. Varley. “<a href="https://www.coleswanson.org/among-the-drupes-elegy-for-a-wasteland/cszzmfb7kso0knnwdjgd6bvkz1ri65" rel="noopener" target="_blank">Flower of the Staghorn Sumach</a>” (n.d.) Charcoal on paper. 25.0cm x 9.4cm. Collection of the Varley Art Gallery of Markham</figcaption></figure><figure><a target="_blank" href="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1.jpeg" rel="noopener"><img src="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1-1600.webp" srcset="images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1-800.webp 800w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1-1600.webp 1600w, images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1.jpeg" width="675" height="900" alt="Week 40: Staghorn Sumac (Cole Swanson, Katherine Lee Bates, J. Francis Macbride)" loading="lazy"></a><figcaption>Fig. 3. “<em><a href="https://portal.torcherbaria.org/portal/collections/individual/index.php?occid=28559008" rel="noopener" target="_blank">Rhus typhina</a></em><a href="https://portal.torcherbaria.org/portal/collections/individual/index.php?occid=28559008" rel="noopener" target="_blank"> L.</a>” (1966). Botanical Research Institute of Texas, Philecology Herbarium.</figcaption></figure>
+</div>
+  </article>
+  <div class="phenomena season-post-observation"><p class="phenomena-list" id="season-reading-observation">Published October 18, 2026</p></div>
+  <div class="turn-the-page visible season-turn"><span class="ttp-bracket">[</span><button class="page-action" id="season-turn-page" aria-label="Load another species reading">turn the page</button><span class="ttp-bracket">]</span></div>
+  <footer class="page-footer" style="opacity:1;"><div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true"><div class="line"></div><div class="diamond"></div><div class="line"></div></div><p class="colophon"><span>A seasonal reading from <a href="seasons-incipit.html">Lectio Terra</a></span></p><button class="pane-link season-emblem-link" id="season-emblem-open" type="button" aria-label="Wander the Seasons"><svg class="season-emblem" id="season-emblem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg></button></footer>
+</main>
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a class="active" href="seasons.html">The Current Season</a>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Reading Room</button>
+    <div class="nav-hours-menu nav-embed-menu" id="nav-projects-menu">
+      <iframe data-src="https://app.dfos.com/embed/spaces/otherwise?desc=0" width="400" height="114" frameborder="0" title="Otherwise"></iframe>
+      <a href="https://otherwise.dfos.com" target="_blank">Visit Otherwise</a>
+      <a href="editions.html">Otherwise Editions</a>
+      <span class="install-divider" id="install-divider"></span>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
+  <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
+  <p class="wander-heading">The Seasons</p>
+  <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
+  <div class="season-dial-wrap" aria-hidden="true"><svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <p class="season-dial-caption" id="season-dial-caption"></p>
+  <p class="dial-legend" aria-hidden="true"><span class="dial-key"><span class="dial-key-star">✦</span>You are here</span><span class="dial-key"><span class="dial-key-quarter"></span>Solstice or equinox</span><span class="dial-key"><span class="dial-key-cross"></span>Cross-quarter day</span></p>
+  <div class="species-grid species-season-groups" id="species-grid"></div>
+</div>
+<script type="application/json" id="post-entry">{"id": "lt-0032", "readingLabels": []}</script>
+<script type="module" src="dfos-siwd.js"></script>
+<script src="shared.js"></script>
+<script src="atmosphere.js"></script>
+<script src="seasons.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -2834,6 +2834,90 @@
         }
       ]
     },
+    "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37.jpeg": {
+      "bytes": 1326839,
+      "width": 1966,
+      "height": 3307,
+      "sha256": "dfe613596cedec72c5b4e1532770fa3383e763f794cbeba05ff32f2b0ee34388",
+      "settings": "89e48fac760f",
+      "credit": "136c8cb79f0d",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-800.webp",
+          "width": 800,
+          "height": 1346,
+          "bytes": 54382
+        },
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-1600.webp",
+          "width": 1600,
+          "height": 2691,
+          "bytes": 216774
+        },
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-2400.webp",
+          "width": 1966,
+          "height": 3307,
+          "bytes": 332178
+        }
+      ]
+    },
+    "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8.jpeg": {
+      "bytes": 1838348,
+      "width": 2213,
+      "height": 2920,
+      "sha256": "dd4afa5c11aff50d7ed61f1d51d62876cedd3713fe6f4a1b24739e6c60d7ee7f",
+      "settings": "89e48fac760f",
+      "credit": "136c8cb79f0d",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8-800.webp",
+          "width": 800,
+          "height": 1056,
+          "bytes": 51282
+        },
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8-1600.webp",
+          "width": 1600,
+          "height": 2111,
+          "bytes": 236372
+        },
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8-2400.webp",
+          "width": 2213,
+          "height": 2920,
+          "bytes": 681582
+        }
+      ]
+    },
+    "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6.jpeg": {
+      "bytes": 118723,
+      "width": 800,
+      "height": 651,
+      "sha256": "ec9dd017ef901b31a6656ef13a546bf811827a76a6abf6fe436d842f5125d09b",
+      "settings": "89e48fac760f",
+      "credit": "136c8cb79f0d",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6-800.webp",
+          "width": 800,
+          "height": 651,
+          "bytes": 65146
+        },
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6-1600.webp",
+          "width": 800,
+          "height": 651,
+          "bytes": 65146
+        },
+        {
+          "file": "images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6-2400.webp",
+          "width": 800,
+          "height": 651,
+          "bytes": 65146
+        }
+      ]
+    },
     "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-1-d28133c217f9.jpeg": {
       "bytes": 496717,
       "width": 2048,
@@ -3195,6 +3279,202 @@
           "width": 2400,
           "height": 3145,
           "bytes": 425536
+        }
+      ]
+    },
+    "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-1-3affa4daf4ca.jpeg": {
+      "bytes": 100881,
+      "width": 794,
+      "height": 862,
+      "sha256": "e2be55967bcce1e7591847f80cd21e057a354f3cbf246521a0d557a821978c5e",
+      "settings": "89e48fac760f",
+      "credit": "a09e8654025a",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-1-3affa4daf4ca-800.webp",
+          "width": 794,
+          "height": 862,
+          "bytes": 25192
+        },
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-1-3affa4daf4ca-1600.webp",
+          "width": 794,
+          "height": 862,
+          "bytes": 25192
+        },
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-1-3affa4daf4ca-2400.webp",
+          "width": 794,
+          "height": 862,
+          "bytes": 25192
+        }
+      ]
+    },
+    "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-2-df5170f81102.jpeg": {
+      "bytes": 124734,
+      "width": 896,
+      "height": 1378,
+      "sha256": "61eec10f2b837fd24ba1978a87d981524a88a6d8e61e791b8fd61604915ab98f",
+      "settings": "89e48fac760f",
+      "credit": "a09e8654025a",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-2-df5170f81102-800.webp",
+          "width": 800,
+          "height": 1230,
+          "bytes": 50438
+        },
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-2-df5170f81102-1600.webp",
+          "width": 896,
+          "height": 1378,
+          "bytes": 65944
+        },
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-2-df5170f81102-2400.webp",
+          "width": 896,
+          "height": 1378,
+          "bytes": 65944
+        }
+      ]
+    },
+    "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-3-dfedc67bb0b4.jpeg": {
+      "bytes": 239838,
+      "width": 980,
+      "height": 1531,
+      "sha256": "48a0487c9167f2fdf889c958d5de0138f9f7aee400d1054fca1933ccc7ee98de",
+      "settings": "89e48fac760f",
+      "credit": "a09e8654025a",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-3-dfedc67bb0b4-800.webp",
+          "width": 800,
+          "height": 1250,
+          "bytes": 41976
+        },
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-3-dfedc67bb0b4-1600.webp",
+          "width": 980,
+          "height": 1531,
+          "bytes": 62620
+        },
+        {
+          "file": "images/web/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-3-dfedc67bb0b4-2400.webp",
+          "width": 980,
+          "height": 1531,
+          "bytes": 62620
+        }
+      ]
+    },
+    "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3.jpeg": {
+      "bytes": 1695581,
+      "width": 1400,
+      "height": 1867,
+      "sha256": "9d51903685102d7714d45ba47de18d7d84205ef485ca8db7e44a6fe3a3e4c230",
+      "settings": "89e48fac760f",
+      "credit": "8f6b66ff6db8",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 95920
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-1600.webp",
+          "width": 1400,
+          "height": 1867,
+          "bytes": 233050
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3-2400.webp",
+          "width": 1400,
+          "height": 1867,
+          "bytes": 233050
+        }
+      ]
+    },
+    "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3.jpeg": {
+      "bytes": 949645,
+      "width": 1183,
+      "height": 1878,
+      "sha256": "e99efb075d581cd8b7047d63e73249e0d0c5f9c613cb6e9802029efa45f5dac1",
+      "settings": "89e48fac760f",
+      "credit": "8f6b66ff6db8",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3-800.webp",
+          "width": 800,
+          "height": 1270,
+          "bytes": 239490
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3-1600.webp",
+          "width": 1183,
+          "height": 1878,
+          "bytes": 487898
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3-2400.webp",
+          "width": 1183,
+          "height": 1878,
+          "bytes": 487898
+        }
+      ]
+    },
+    "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b.jpeg": {
+      "bytes": 147363,
+      "width": 242,
+      "height": 680,
+      "sha256": "ba0d1bd32c616532c52225c211d2afe309f6ebe42eb45096f50ea52e87cde1c8",
+      "settings": "89e48fac760f",
+      "credit": "8f6b66ff6db8",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b-800.webp",
+          "width": 242,
+          "height": 680,
+          "bytes": 19692
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b-1600.webp",
+          "width": 242,
+          "height": 680,
+          "bytes": 19692
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b-2400.webp",
+          "width": 242,
+          "height": 680,
+          "bytes": 19692
+        }
+      ]
+    },
+    "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1.jpeg": {
+      "bytes": 164879,
+      "width": 675,
+      "height": 900,
+      "sha256": "a6111e486bc75581d31fc4de07fd24561c3090f61f1c958e3265313f9f191c18",
+      "settings": "89e48fac760f",
+      "credit": "8f6b66ff6db8",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1-800.webp",
+          "width": 675,
+          "height": 900,
+          "bytes": 53022
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1-1600.webp",
+          "width": 675,
+          "height": 900,
+          "bytes": 53022
+        },
+        {
+          "file": "images/web/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1-2400.webp",
+          "width": 675,
+          "height": 900,
+          "bytes": 53022
         }
       ]
     },

@@ -3058,7 +3058,14 @@
         "id": "e-strutt-scientific-papers-4",
         "type": "book",
         "title": "Scientific Papers, Vol. 4",
-        "contributors": [{ "id": "a-john-william-strutt", "name": "John William Strutt", "role": "author", "wikidata": "Q83297" }],
+        "contributors": [
+          {
+            "id": "a-john-william-strutt",
+            "name": "John William Strutt",
+            "role": "author",
+            "wikidata": "Q83297"
+          }
+        ],
         "publisher": "Cambridge University Press",
         "issued": "1903",
         "original-date": "1899",
@@ -3076,6 +3083,126 @@
       "hours": [],
       "weather": ["clear"],
       "seasons": []
+    }
+  },
+  {
+    "id": "r-0106",
+    "shownIn": "seasons",
+    "text": "<p>The number of tastes perceived in objects is infinite, since every soluble body has a special flavour, in some respect differing from all others.<br><br>Flavours receive additional modifications of infinite variety, ranging from the most attractive to the most intolerable, from the strawberry to the colocynth; and all attempts to classify them may be termed failures. Nor is this to be wondered at; for, granted that there are undetermined series of simple flavours which can be modified by combining them in any number and quantity, we should require a new language to express all these results, mountains of folio volumes to define them, and newly devised numerical characters to classify and number them.<br><br>Since, up to the present time, no taste or flavour has, as a sensation, been rigorously defined, men are compelled to keep to a small number of general terms, such as \"sweet,\" \"sugary,\" \"sour,\" \"bitter,\" and so on; and, on further analysis, these can be classified under the two heads of \"agreeable to the taste,\" or \"disagreeable.\" They suffice, however, to make one's self understood, and indicate with tolerable exactness the gustatory properties of any sapid substances about which one is talking. Those who come after us will know more about such qualities, and it seems already certain that chemistry will discover to them the causes of flavours or their ultimate elements.</p>",
+    "citation": {
+      "display": "Jean Anthelme Brillat-Savarin. <em><a href=\"https://hdl.handle.net/2027/hvd.hn1bit?urlappend=%3Bseq=59%3Bownerid=27021597765846239-63\" rel=\"noopener\" target=\"_blank\">Gastronomy as a Fine Art; or, The Science of Good Living</a>.</em> Trans. R. E. Anderson. Trans. of <em>Physiologie du Goût </em>[<em>Physiology of Taste</em>]. 1826. London: Chatto and Windus, 1877. 15-16."
+    },
+    "lectio": { "post": "lt-0030", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0025"]
+    }
+  },
+  {
+    "id": "r-0107",
+    "shownIn": "seasons",
+    "text": "<p>Our discussion has focused on neotropical plants and animals, but it can be generalized to the sweet-fleshed large fruits of the Kentucky coffee bean <em>Gymnocladus dioica</em> and honey locust <em>Gleditsia triacanthos</em> (Leguminosae), osage orange <em>Maclura</em> (Moraceae), pawpaw <em>Asimina</em> (Annonaceae), and persimmon <em>Diospyros</em> (Ebenaceae). When there was a megafauna available to disperse their seeds, such genera may have been denser and had much wider ranges. The extreme spininess of various New World extra-tropical shrubs that are found in moist as well as arid regions has not been well explained. The vesicatory ripe fruits and weak-walled nuts of Gingko biloba might even have been evolved in association with a tough-mouthed herbivorous dinosaur that did not chew its food well.</p>",
+    "citation": {
+      "display": "Daniel H. Janzen and Paul S. Martin. “<a href=\"http://www.jstor.org/stable/1688516\" rel=\"noopener\" target=\"_blank\">Neotropical Anachronisms: The Fruits the Gomphotheres Ate</a>.” <em>Science</em> 215.4528 (January 1982: 19-27). 27."
+    },
+    "lectio": { "post": "lt-0030", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0025"]
+    }
+  },
+  {
+    "id": "r-0108",
+    "shownIn": "seasons",
+    "text": "<p>The pawpaw (Asimina trilby, L.) seems to have been universally used by all the tribes who lived where it flourished. Its use was apparently limited only by its distribution, for it was encountered sixteen times in the prehistoric material examined from Kentucky, Arkansas, and Ohio, as well as in historic objects made by the Menomini and Wisconsin Potawatomi. In the University of Wisconsin Museum is a bunch of prepared fiber (16422) from the caves of Kentucky. This fiber was commonly used by the cave and rock-shelter peoples of Arkansas for cords, mats, rope, and in all coarsely woven materials. A woven mat from Bushwick Cave is a fair example (MAIHF 11-6243). The Ohio cave and rock-shelter dwellers used the pawpaw for coarse bags and fabrics, for example, in a split bark bag (OSHAM 332-22). In the Milwaukee Public Museum are two bags in which this fiber was identified, one, from the Menomini (4570) in which only the weft is of pawpaw, and another (23287) from the Wisconsin Potawatomi, entirely composed of it .</p>",
+    "citation": {
+      "display": "A. C. Whitford. “<a href=\"https://hdl.handle.net/2027/uc1.b4321375?urlappend=%3Bseq=17%3Bownerid=9007199266569933-21\" rel=\"noopener\" target=\"_blank\">ANONACEAE, D. C. (Custard-Apple Family)</a>.” <em>Textile Fibers Used In Eastern Aboriginal North America</em>. <em>Anthropological Papers of the American Museum of Natural History.</em> Vol. 38. Part 1. New York: American Museum of Natural History, 1941. 9."
+    },
+    "lectio": { "post": "lt-0030", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0025"]
+    }
+  },
+  {
+    "id": "r-0109",
+    "shownIn": "seasons",
+    "text": "<p>In late Spring 2023, Metrolinx crews exposed swaths of land along the Railpath to non-specific chemical herbicide to control the incredible spread of dog-strangling vine (Metrolinx 2023). Regardless of species, all vegetal and terra-bound life, including the staghorns, were exposed to the poison. The West Toronto Railpath sumacs teach us that nativist prescriptions are limited in predetermining how or when flourishing and suffering occurs in multispecies life. Perhaps because they thrive in the ditches of highways and rail corridors – the same disturbed spaces colonised by their invasive companions – or because they resist neat vegetal categories situated within taxonomical hierarchies (a small tree? a large bush?), the native sumacs of the Railpath duly suffer alongside their non-native kin, as well as the countless species-assemblages who remain hidden beyond the settler-gaze.</p>",
+    "citation": {
+      "display": "Cole Swanson. “<a href=\"https://www.whp-journals.co.uk/PP/article/view/1159\" rel=\"noopener\" target=\"_blank\">Among the Drupes (Elegy for a Wasteland)</a>”. <em>Plant Perspectives</em> (February 2025)."
+    },
+    "lectio": { "post": "lt-0032", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0026"]
+    }
+  },
+  {
+    "id": "r-0110",
+    "shownIn": "seasons",
+    "text": "<p>Summer fervors slacken;</p><p>   Sumac torches dim;</p><p>There’s bronze upon the bracken;</p><p>   September has a whim </p><p>For carmine, pearl and amber</p><p>   Touches on her green; </p><p>Busy squirrels clamber;</p><p>   Restless birds convene.</p><p></p><p>Where Indian pipe still blanches, </p><p>   Where hoary lichen flakes</p><p>Forest trunks and branches,</p><p>   The golden foxglove makes</p><p>A mimic wood that tosses</p><p>   Warning to the trees,</p><p>Then droops upon the mosses,</p><p>   Heavy with bloom and bees.</p>",
+    "citation": {
+      "display": "Katherine Lee Bates. From “<a href=\"https://hdl.handle.net/2027/loc.ark:/13960/t1wd4qb7b?urlappend=%3Bseq=142\" rel=\"noopener\" target=\"_blank\">Playmates</a>.” <em>The Retinue and Other Poems</em>. New York: E.P. Dutton &amp; Co., 1918. 122-123."
+    },
+    "lectio": { "post": "lt-0032", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0026"]
+    }
+  },
+  {
+    "id": "r-0111",
+    "shownIn": "seasons",
+    "text": "<p>The Sumach, especially in the fall, is a thing of beauty with its handsome pinnately divided foliage and large red bunches of fruit at the ends of the branches. Two noteworthy species are the Smooth Sumach and the Staghorn, the latter with very velvety-hairy stalks and branches. <br><br>The Poison Sumach of swamps, dangerous to touch, may easily be distinguished from the harmless kinds. Both its flowers and fruits, the latter grayish, are very loosely borne on long slender branching stalks.</p>",
+    "citation": {
+      "display": "J. Francis Macbride. “<a href=\"http://www.biodiversitylibrary.org/page/2657582\" rel=\"noopener\" target=\"_blank\">Sumach (Rhus species)</a>.” From <em>Autumn Fruits and Flowers. </em>Botany Leaflet 10. Chicago, Illinois: Field Museum, 1924. 12."
+    },
+    "lectio": { "post": "lt-0032", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0026"]
+    }
+  },
+  {
+    "id": "r-0112",
+    "shownIn": "seasons",
+    "text": "<p>'Tis whiter than an Indian pipe, <br>'Tis dimmer than a lace;<br>No stature has it, like a fog, <br>When you approach the place. <br><br>Not any voice denotes it here, <br>Or intimates it there;<br>A spirit, how doth it accost? <br>What customs hath the air? <br><br>This limitless hyperbole <br>Each one of us shall be;<br>'Tis drama, if (hypothesis) <br>It be not tragedy! </p>",
+    "citation": {
+      "display": "Emily Dickinson. “<a href=\"https://archive.org/details/poemsthirdseries00dickiala/page/156/mode/2up?q=whiter\" rel=\"noopener\" target=\"_blank\">XVIII. The Spirit</a>.” [‘Tis whiter than an Indian pipe,”]. <em>Poems: Third Series. </em>Ed. Mabel Loomis Todd. Boston: Roberts Brothers, 1896. 156."
+    },
+    "lectio": { "post": "lt-0031", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0027"]
+    }
+  },
+  {
+    "id": "r-0113",
+    "shownIn": "seasons",
+    "text": "<p>Monotropa have long puzzled biologists. In the late nineteenth century, a Russian botanist, wrestling with the question of how these strange plants were able to exist, was the first to suggest that substances could pass between plants via fungal connections. The idea didn’t catch on. It was a passing conjecture buried in an obscure article and it sank more or less without a trace. The Monotropa riddle moldered away for another seventy-five years before it was picked up by the Swedish botanist Erik Björkman, who in 1960 injected trees with radioactive sugars and was able to show that radioactivity accumulated in nearby Monotropa plants. It was the first demonstration that substances might pass between plants via a fungal pathway.</p><p></p><p>Monotropa lured botanists into uncovering an entirely new biological possibility. Since the 1980s, it has become clear that Monotropa isn’t an anomaly. Most plants are promiscuous and can engage with many mycorrhizal partners. Mycorrhizal fungi, too, are promiscuous in their relationships with plants. Separate fungal networks can fuse with each other. The result? Potentially vast, complex, and collaborative systems of shared mycorrhizal networks.</p>",
+    "citation": {
+      "display": "Merlin Sheldrake. <em><a href=\"https://bookshop.org/a/86532/9780525510321\" rel=\"noopener\" target=\"_blank\">Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future</a></em>. New York: Random House, 2020. 150."
+    },
+    "lectio": { "post": "lt-0031", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0027"]
     }
   }
 ]

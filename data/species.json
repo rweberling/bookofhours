@@ -214,5 +214,32 @@
     "wikidata": "Q2601238",
     "gbif": "3054296",
     "inaturalist": "54791"
+  },
+  {
+    "id": "sp-0025",
+    "name": "Common Pawpaw",
+    "scientific": "Asimina triloba",
+    "rank": "species",
+    "wikidata": "Q948827",
+    "gbif": "3158040",
+    "inaturalist": "50897"
+  },
+  {
+    "id": "sp-0026",
+    "name": "Staghorn Sumac",
+    "scientific": "Rhus typhina",
+    "rank": "species",
+    "wikidata": "Q148986",
+    "gbif": "3190538",
+    "inaturalist": "167829"
+  },
+  {
+    "id": "sp-0027",
+    "name": "Ghost Pipe",
+    "scientific": "Monotropa uniflora",
+    "rank": "species",
+    "wikidata": "Q1156848",
+    "gbif": "2888353",
+    "inaturalist": "49477"
   }
 ]

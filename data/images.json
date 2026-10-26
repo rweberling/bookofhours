@@ -3618,5 +3618,165 @@
       "weather": [],
       "seasons": []
     }
+  },
+  {
+    "id": "i-0138",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37.jpeg",
+    "caption": "“<a href=\"https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426\" rel=\"noopener\" target=\"_blank\">Asimina triloba</a>” (1924). R. G. Steadman. USDA Pomological Watercolors. National Agricultural Library Special Collections.",
+    "lectio": { "post": "lt-0030", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0025"]
+    },
+    "display": {
+      "size": [728, 1225]
+    }
+  },
+  {
+    "id": "i-0139",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8.jpeg",
+    "caption": "John Abbot. “<a href=\"https://www.biodiversitylibrary.org/page/268949\" rel=\"noopener\" target=\"_blank\">Papilio Ajax. Annona Palustris</a>.” From <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>. Printed by T. Bensley, for J. Edwards [etc.]. 1797. Tab 4.",
+    "lectio": { "post": "lt-0030", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0025"]
+    },
+    "display": {
+      "size": [2213, 2920]
+    }
+  },
+  {
+    "id": "i-0140",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6.jpeg",
+    "caption": "Edward Edmondson, Jr. <em><a href=\"https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws?ctx=38520478c7fb2ccc497353061639c81647a92df0&amp;idx=0#\" rel=\"noopener\" target=\"_blank\">Still Life with Pawpaws</a> (c. 1870-1875).</em> Dayton Art Museum. [<a href=\"https://www.ovid.com/journals/jama/abstract/00005407-200810150-00002~still-life-with-pawpaws?redirectionsource=fulltextview\" rel=\"noopener\" target=\"_blank\">Read more</a>]",
+    "lectio": { "post": "lt-0030", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0025"]
+    },
+    "display": {
+      "size": [800, 651]
+    }
+  },
+  {
+    "id": "i-0141",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-1-53fb0af3b5f3.jpeg",
+    "caption": "Emil Carlsen. <em><a href=\"https://emilcarlsen.org/emil-carlsen-staghorn-sumac-1883/\" rel=\"noopener\" target=\"_blank\">Staghorn Sumac</a></em> (1883). Privately held.",
+    "lectio": { "post": "lt-0032", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0026"]
+    },
+    "display": {
+      "size": [590, 787]
+    }
+  },
+  {
+    "id": "i-0142",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3.jpeg",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t5t729682?urlappend=%3Bseq=280\" rel=\"noopener\" target=\"_blank\">Rhus Typhina.</a>” Plate LXVIII from Lorin L. Dame and Henry Brooks. <em>Handbook of the Trees of New England. </em>Boston: Ginn &amp; Company, 1902.",
+    "lectio": { "post": "lt-0032", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0026"]
+    },
+    "display": {
+      "size": [1183, 1878]
+    }
+  },
+  {
+    "id": "i-0143",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b.jpeg",
+    "caption": "F.H. Varley. “<a href=\"https://www.coleswanson.org/among-the-drupes-elegy-for-a-wasteland/cszzmfb7kso0knnwdjgd6bvkz1ri65\" rel=\"noopener\" target=\"_blank\">Flower of the Staghorn Sumach</a>” (n.d.) Charcoal on paper. 25.0cm x 9.4cm. Collection of the Varley Art Gallery of Markham",
+    "lectio": { "post": "lt-0032", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0026"]
+    },
+    "display": {
+      "size": [242, 680]
+    }
+  },
+  {
+    "id": "i-0144",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-4-e3a744fa75a1.jpeg",
+    "caption": "“<em><a href=\"https://portal.torcherbaria.org/portal/collections/individual/index.php?occid=28559008\" rel=\"noopener\" target=\"_blank\">Rhus typhina</a></em><a href=\"https://portal.torcherbaria.org/portal/collections/individual/index.php?occid=28559008\" rel=\"noopener\" target=\"_blank\"> L.</a>” (1966). Botanical Research Institute of Texas, Philecology Herbarium.",
+    "lectio": { "post": "lt-0032", "place": 4 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0026"]
+    },
+    "display": {
+      "size": [675, 900]
+    }
+  },
+  {
+    "id": "i-0145",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-1-3affa4daf4ca.jpeg",
+    "caption": "<em><a href=\"https://americanart.si.edu/artwork/indian-pipe-monotropa-uniflora-26082\" rel=\"noopener\" target=\"_blank\">Indian Pipe (Monotropa uniflora)</a></em> (1926) Mary Vaux Walcott. Smithsonian American Art Museum.",
+    "lectio": { "post": "lt-0031", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0027"]
+    },
+    "display": {
+      "size": [487, 529]
+    }
+  },
+  {
+    "id": "i-0146",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-2-df5170f81102.jpeg",
+    "caption": "<em><a href=\"https://www.emilydickinsonmuseum.org/roomitem/preferred-flower-of-life/\" rel=\"noopener\" target=\"_blank\">[Untitled painting gifted to Emily Dickinson]</a></em> (c. 1882). Mabel Loomis Todd. Emily Dickinson Museum.",
+    "lectio": { "post": "lt-0031", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0027"]
+    },
+    "display": {
+      "size": [636, 978]
+    }
+  },
+  {
+    "id": "i-0147",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-3-dfedc67bb0b4.jpeg",
+    "caption": "“<a href=\"https://archive.org/details/mobot31753002739826/page/n645/mode/2up\" rel=\"noopener\" target=\"_blank\">Monotropa uniflora. Indian pipe</a>.” John Torrey. <em>A Flora of the State of New-York</em>. Volume 1. Albany, New York: Carroll and Cook, 1843.",
+    "lectio": { "post": "lt-0031", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0027"]
+    },
+    "display": {
+      "size": [541, 845]
+    }
   }
 ]

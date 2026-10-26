@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons.html; edit those, not this. -->
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+<meta name="description" content="Thanks to for suggesting this week’s topic!">
+<meta property="og:title" content="Lectio Terra: Common Pawpaw">
+<meta property="og:description" content="Thanks to for suggesting this week’s topic!">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-1600.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://earthlyhours.com/lectio-terra/common-pawpaw/">
+<link rel="canonical" href="https://earthlyhours.com/lectio-terra/common-pawpaw/">
+<meta name="application-name" content="The Earthly Book of Hours">
+<title>Lectio Terra: Common Pawpaw — The Earthly Book of Hours</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="citation_title" content="Lectio Terra: Common Pawpaw">
+<meta name="citation_author" content="Weberling, Ryan">
+<meta name="citation_publication_date" content="2026/10/04">
+<meta name="DC.type" content="blogPost">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lectio Terra: Common Pawpaw",
+  "name": "Week 39: Common Pawpaw (Jean Anthelme Brillat-Savarin, Daniel H. Janzen and Paul S. Martin, A.C. Whitford)",
+  "url": "https://earthlyhours.com/lectio-terra/common-pawpaw/",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Weberling"
+  },
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Lectio Terra",
+    "url": "https://earthlyhours.com/lectio-terra/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/"
+  },
+  "datePublished": "2026-10-04",
+  "image": "https://earthlyhours.com/images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-1600.webp",
+  "about": {
+    "@type": "Thing",
+    "name": "Common Pawpaw",
+    "alternateName": "Asimina triloba",
+    "sameAs": "https://www.wikidata.org/wiki/Q948827"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Earthly Book of Hours",
+      "item": "https://earthlyhours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lectio Terra",
+      "item": "https://earthlyhours.com/lectio-terra/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Common Pawpaw",
+      "item": "https://earthlyhours.com/lectio-terra/common-pawpaw/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="season-reading-page" data-season="autumn" data-entry="lt-0030">
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+<!-- The figures' lightbox (openLightbox() in shared.js) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Expanded image view" aria-modal="true">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<main class="page keepsake-frame season-reading">
+  <p class="publication-name">The Earthly Book of Hours</p>
+  <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint">Autumn</button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
+  <h1 class="block-name" id="season-reading-title">Common Pawpaw</h1>
+  <div class="season-reading-meta"><em id="season-reading-latin">Asimina triloba</em></div>
+  <article class="season-post" aria-live="polite">
+    <p class="season-post-dek" id="season-reading-dek"></p>
+    <div id="season-reading-body">
+<figure><a target="_blank" href="images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37.jpeg" rel="noopener"><img src="images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-1600.webp" srcset="images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-800.webp 800w, images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-1600.webp 1600w, images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37.jpeg" width="728" height="1224.5656154628687" alt="Week 39: Common Pawpaw (Jean Anthelme Brillat-Savarin, Daniel H. Janzen and Paul S. Martin, A.C. Whitford)" loading="lazy"></a><figcaption>Fig. 1. “<a href="https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426" rel="noopener" target="_blank">Asimina triloba</a>” (1924). R. G. Steadman. USDA Pomological Watercolors. National Agricultural Library Special Collections.</figcaption></figure><p><em>Thanks to  for suggesting this week’s topic!</em></p><h2>Headnote</h2><p>Do you know a pawpaw fanatic? Venture more than a few minutes into conversation with someone interested in foraging or regional foodways, and you are likely to broach the subject. This custardy delectation, the largest native tree fruit in the U.S., has a curious backstory and is much beloved in such circles but otherwise hardly known. The reason is that the fruit is largely non-commercializable, because it spoils within days of picking. To find it, you’ll have more luck leaving behind the supermarket shelves and looking instead in the woods behind the store—at least for now (growers in Ohio, the <a href="https://ohiopawpawfest.com" rel="noopener" target="_blank">heart of pawpaw territory</a>, are experimenting with <a href="https://ohioline.osu.edu/factsheet/anr-0225" rel="noopener" target="_blank">new techniques and strategies</a>). Whether or not you love the fruit, which in my limited experience tastes like a cross between a banana and a mango, or a lightly cinnamoned pear, you are in for a surprise—a new constellation of flavors and sensations inviting you to find “a new language,” as Brillat-Savarin writes below, for your sapid experience. </p><p>Pawpaw (<em>Asimina triloba</em>) is a small deciduous tree or large shrub that can appear in the understory layer of forests across the eastern half of the U.S. Though its native range stops short of New England, planted trees have escaped here, and I've heard rumors of some good stands in (and tasted a few fruit from) Boston's outer suburbs. The tree grows big leaves, up to a foot long, and can reproduce via root suckers that emerge from underground as clones of the parent tree. It also produces hermaphroditic flowers, containing both stamens and carpels, that smell slightly rotten or yeasty—the tree’s ploy to attract the flies and beetles that it needs to bring pollen from other plants. </p><p>Pawpaw is a member of the soursop or “custard apple” family (<em>Annonaceae</em>), and the only one native to temperate latitudes. Its fruit is what some scientists consider a “<a href="https://www.jstor.org/stable/1688516?mag=plant-of-the-month-the-pawpaw" rel="noopener" target="_blank">neotropical anachronism</a>”: it may have been food for the gomphotheres, a long-extinct relative of the elephants that once wandered the North American landmass. In the current day, pawpaws are closely associated with a striking butterfly, the <a href="https://www.usgs.gov/media/images/zebra-swallowtail-butterfly-0" rel="noopener" target="_blank">zebra swallowtail</a> (<em>Protographium marcellus</em>, formerly <em>Eurytides marcellus</em>), whose caterpillars feed exclusively on pawpaw foliage. Their relationship parallels that of <a href="lectio-terra/butterfly-weed/">monarch and milkweed</a>, except that the zebra swallowtail is not involved in pollinating the pawpaw. Instead, it is in an obligate relationship, as the butterfly gains nourishment and a defense mechanism (through the pawpaw’s toxic acetogenins—concentrated in the leaves, bark, and seeds) in exchange for nothing but looking so beautiful. This dependency means that the butterflies are rarely found more than a few hundred yards (up to a mile) from their host patch of pawpaws; if you see one, you are probably also in the company of a special tree.</p><figure><a target="_blank" href="images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8.jpeg" rel="noopener"><img src="images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8-1600.webp" srcset="images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8-800.webp 800w, images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8-1600.webp 1600w, images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8.jpeg" width="2213" height="2920" alt="Week 39: Common Pawpaw (Jean Anthelme Brillat-Savarin, Daniel H. Janzen and Paul S. Martin, A.C. Whitford)" loading="lazy"></a><figcaption>Fig. 2. John Abbot. “<a href="https://www.biodiversitylibrary.org/page/268949" rel="noopener" target="_blank">Papilio Ajax. Annona Palustris</a>.” From <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>. Printed by T. Bensley, for J. Edwards [etc.]. 1797. Tab 4.</figcaption></figure><hr><h2>Readings</h2><ol><li><p>The number of tastes perceived in objects is infinite, since every soluble body has a special flavour, in some respect differing from all others.<br><br>Flavours receive additional modifications of infinite variety, ranging from the most attractive to the most intolerable, from the strawberry to the colocynth; and all attempts to classify them may be termed failures. Nor is this to be wondered at; for, granted that there are undetermined series of simple flavours which can be modified by combining them in any number and quantity, we should require a new language to express all these results, mountains of folio volumes to define them, and newly devised numerical characters to classify and number them.<br><br>Since, up to the present time, no taste or flavour has, as a sensation, been rigorously defined, men are compelled to keep to a small number of general terms, such as "sweet," "sugary," "sour," "bitter," and so on; and, on further analysis, these can be classified under the two heads of "agreeable to the taste," or "disagreeable." They suffice, however, to make one's self understood, and indicate with tolerable exactness the gustatory properties of any sapid substances about which one is talking. Those who come after us will know more about such qualities, and it seems already certain that chemistry will discover to them the causes of flavours or their ultimate elements.</p></li></ol>Jean Anthelme Brillat-Savarin. <em><a href="https://hdl.handle.net/2027/hvd.hn1bit?urlappend=%3Bseq=59%3Bownerid=27021597765846239-63" rel="noopener" target="_blank">Gastronomy as a Fine Art; or, The Science of Good Living</a>.</em> Trans. R. E. Anderson. Trans. of <em>Physiologie du Goût </em>[<em>Physiology of Taste</em>]. 1826. London: Chatto and Windus, 1877. 15-16.<ol><li><p>Our discussion has focused on neotropical plants and animals, but it can be generalized to the sweet-fleshed large fruits of the Kentucky coffee bean <em>Gymnocladus dioica</em> and honey locust <em>Gleditsia triacanthos</em> (Leguminosae), osage orange <em>Maclura</em> (Moraceae), pawpaw <em>Asimina</em> (Annonaceae), and persimmon <em>Diospyros</em> (Ebenaceae). When there was a megafauna available to disperse their seeds, such genera may have been denser and had much wider ranges. The extreme spininess of various New World extra-tropical shrubs that are found in moist as well as arid regions has not been well explained. The vesicatory ripe fruits and weak-walled nuts of Gingko biloba might even have been evolved in association with a tough-mouthed herbivorous dinosaur that did not chew its food well.</p></li></ol>Daniel H. Janzen and Paul S. Martin. “<a href="http://www.jstor.org/stable/1688516" rel="noopener" target="_blank">Neotropical Anachronisms: The Fruits the Gomphotheres Ate</a>.” <em>Science</em> 215.4528 (January 1982: 19-27). 27.<p></p><ol><li><p>The pawpaw (Asimina trilby, L.) seems to have been universally used by all the tribes who lived where it flourished. Its use was apparently limited only by its distribution, for it was encountered sixteen times in the prehistoric material examined from Kentucky, Arkansas, and Ohio, as well as in historic objects made by the Menomini and Wisconsin Potawatomi. In the University of Wisconsin Museum is a bunch of prepared fiber (16422) from the caves of Kentucky. This fiber was commonly used by the cave and rock-shelter peoples of Arkansas for cords, mats, rope, and in all coarsely woven materials. A woven mat from Bushwick Cave is a fair example (MAIHF 11-6243). The Ohio cave and rock-shelter dwellers used the pawpaw for coarse bags and fabrics, for example, in a split bark bag (OSHAM 332-22). In the Milwaukee Public Museum are two bags in which this fiber was identified, one, from the Menomini (4570) in which only the weft is of pawpaw, and another (23287) from the Wisconsin Potawatomi, entirely composed of it .</p></li></ol>A. C. Whitford. “<a href="https://hdl.handle.net/2027/uc1.b4321375?urlappend=%3Bseq=17%3Bownerid=9007199266569933-21" rel="noopener" target="_blank">ANONACEAE, D. C. (Custard-Apple Family)</a>.” <em>Textile Fibers Used In Eastern Aboriginal North America</em>. <em>Anthropological Papers of the American Museum of Natural History.</em> Vol. 38. Part 1. New York: American Museum of Natural History, 1941. 9.<p></p><h2>Supplementum</h2><ul><li><p>José I. Hormaza. “<a href="http://www.biodiversitylibrary.org/page/52472849" rel="noopener" target="_blank">The Pawpaw, a Forgotten North American Fruit Tree</a>.” <em>Arnoldia </em>72.1 (July 2014): 13-23.</p></li><li><p>Julia Fine. “<a href="https://daily.jstor.org/plant-of-the-month-the-pawpaw/" rel="noopener" target="_blank">Plant of the Month: The Pawpaw</a>.” <em>JSTOR Daily </em>(September 22, 2021).</p></li><li><p>Zannah Porter. “<a href="https://arboretum.harvard.edu/stories/what-about-paw-paw/" rel="noopener" target="_blank">What About Paw Paw</a>?” <em>Arnold Arboretum</em> (July 26, 2023).</p></li><li><p>Jeanette M. Smith. “<a href="https://www.ovid.com/journals/jama/abstract/00005407-200810150-00002~still-life-with-pawpaws?redirectionsource=fulltextview" rel="noopener" target="_blank">Still Life With Pawpaws</a>.” <em>JAMA: The Journal of the American Medical Association </em>300.15 (October 2008): 1734.</p></li><li><p>Bronwen Powell, et al. “<a href="https://sites.psu.edu/indigenousconnectionthroughpawpaw/about-pawpaw-2/" rel="noopener" target="_blank">About Pawpaw.</a>” <em>Indigenous Connections through Pawpaw. </em>Penn State University (n.d.).</p></li></ul><figure><a target="_blank" href="images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6.jpeg" rel="noopener"><img src="images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6-1600.webp" srcset="images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6-800.webp 800w, images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6-1600.webp 1600w, images/web/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6.jpeg" width="800" height="651" alt="Week 39: Common Pawpaw (Jean Anthelme Brillat-Savarin, Daniel H. Janzen and Paul S. Martin, A.C. Whitford)" loading="lazy"></a><figcaption>Fig. 3. Edward Edmondson, Jr. <em><a href="https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws?ctx=38520478c7fb2ccc497353061639c81647a92df0&amp;idx=0#" rel="noopener" target="_blank">Still Life with Pawpaws</a> (c. 1870-1875).</em> Dayton Art Museum. [<a href="https://www.ovid.com/journals/jama/abstract/00005407-200810150-00002~still-life-with-pawpaws?redirectionsource=fulltextview" rel="noopener" target="_blank">Read more</a>]</figcaption></figure>
+</div>
+  </article>
+  <div class="phenomena season-post-observation"><p class="phenomena-list" id="season-reading-observation">Published October 4, 2026</p></div>
+  <div class="turn-the-page visible season-turn"><span class="ttp-bracket">[</span><button class="page-action" id="season-turn-page" aria-label="Load another species reading">turn the page</button><span class="ttp-bracket">]</span></div>
+  <footer class="page-footer" style="opacity:1;"><div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true"><div class="line"></div><div class="diamond"></div><div class="line"></div></div><p class="colophon"><span>A seasonal reading from <a href="seasons-incipit.html">Lectio Terra</a></span></p><button class="pane-link season-emblem-link" id="season-emblem-open" type="button" aria-label="Wander the Seasons"><svg class="season-emblem" id="season-emblem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg></button></footer>
+</main>
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a class="active" href="seasons.html">The Current Season</a>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Reading Room</button>
+    <div class="nav-hours-menu nav-embed-menu" id="nav-projects-menu">
+      <iframe data-src="https://app.dfos.com/embed/spaces/otherwise?desc=0" width="400" height="114" frameborder="0" title="Otherwise"></iframe>
+      <a href="https://otherwise.dfos.com" target="_blank">Visit Otherwise</a>
+      <a href="editions.html">Otherwise Editions</a>
+      <span class="install-divider" id="install-divider"></span>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
+  <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
+  <p class="wander-heading">The Seasons</p>
+  <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
+  <div class="season-dial-wrap" aria-hidden="true"><svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <p class="season-dial-caption" id="season-dial-caption"></p>
+  <p class="dial-legend" aria-hidden="true"><span class="dial-key"><span class="dial-key-star">✦</span>You are here</span><span class="dial-key"><span class="dial-key-quarter"></span>Solstice or equinox</span><span class="dial-key"><span class="dial-key-cross"></span>Cross-quarter day</span></p>
+  <div class="species-grid species-season-groups" id="species-grid"></div>
+</div>
+<script type="application/json" id="post-entry">{"id": "lt-0030", "readingLabels": []}</script>
+<script type="module" src="dfos-siwd.js"></script>
+<script src="shared.js"></script>
+<script src="atmosphere.js"></script>
+<script src="seasons.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
