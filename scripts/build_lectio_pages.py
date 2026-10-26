@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Write a page of its own for each Lectio Terra post: lectio-terra/<name>/,
-and the series' contents page, lectio-terra/ itself.
+the series' contents page, lectio-terra/ itself, and its RSS feed, feed.xml.
 
 Usage:
   python3 scripts/build_lectio_pages.py            rebuild every post that has a page
@@ -37,6 +37,8 @@ the template. Run this after editing a post, seasons.html or partials/
 import json
 import re
 import sys
+from datetime import datetime, timezone
+from email.utils import format_datetime
 from html import escape, unescape
 from pathlib import Path
 
@@ -309,8 +311,59 @@ def contents(data, by_subject):
     return t
 
 
+def rfc822(iso):
+    """A post's date for RSS: noon UTC, so no reader's time zone moves it a day."""
+    return format_datetime(datetime.fromisoformat(iso).replace(hour=12, tzinfo=timezone.utc))
+
+
+def feed(data, by_subject):
+    """feed.xml: every post with a page, newest first, dated as first
+    published (so a batch added together keeps each post's own date). Each
+    item is known by its page's address, which is fixed, so correcting a
+    post doesn't show it to readers as new."""
+    entries = sorted((e for _, e in posts(data) if e.get('page') and e.get('published')),
+                     key=lambda e: e['published'], reverse=True)
+    items = []
+    for entry in entries:
+        subject = by_subject.get(entry.get('subject'))
+        url = f'{SITE}/{entry["page"]}'
+        title = f'Lectio Terra: {subject_name(entry, subject)}'
+        first = (entry.get('images') or [{}])[0].get('src', '')
+        image = web_version(first, 1600) if first.startswith('images/') else ''
+        credits = ', '.join(entry.get('readings') or [])
+        body = ''
+        if image and (ROOT / image).exists():
+            body += f'<p><img src="{SITE}/{image}" alt=""></p>'
+        if credits:
+            body += f'<p><em>{escape(credits)}</em></p>'
+        body += f'<p>{escape(summary(entry, 400))}</p><p><a href="{url}">Read the post</a></p>'
+        items.append(
+            '  <item>\n'
+            f'    <title>{escape(title)}</title>\n'
+            f'    <link>{url}</link>\n'
+            f'    <guid isPermaLink="true">{url}</guid>\n'
+            f'    <pubDate>{rfc822(entry["published"])}</pubDate>\n'
+            f'    <dc:creator>{escape(AUTHOR)}</dc:creator>\n'
+            f'    <description>{escape(body)}</description>\n'
+            '  </item>\n')
+    # The newest post's date, not the time of the build, so an unchanged
+    # feed is written the same each time.
+    updated = f'  <lastBuildDate>{rfc822(entries[0]["published"])}</lastBuildDate>\n' if entries else ''
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json; edit that, not this. -->\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
+            '<channel>\n'
+            '  <title>Lectio Terra — The Earthly Book of Hours</title>\n'
+            f'  <link>{SITE}/lectio-terra/</link>\n'
+            f'  <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>\n'
+            '  <description>Weekly species studies, with readings and images, from The Earthly Book of Hours.</description>\n'
+            '  <language>en</language>\n'
+            + updated + ''.join(items) +
+            '</channel>\n</rss>\n')
+
+
 def pages():
-    """{path: html} for every post with a page, and the contents page."""
+    """{path: html} for every post with a page, the contents page and the feed."""
     data = load('lectio-data')
     template = TEMPLATE.read_text(encoding='utf-8')
     by_subject = subjects()
@@ -324,6 +377,7 @@ def pages():
              for season, entry in posts(data) if entry.get('page')}
     if built:
         built[ROOT / 'lectio-terra' / 'index.html'] = contents(data, by_subject)
+        built[ROOT / 'feed.xml'] = feed(data, by_subject)
     return built
 
 
