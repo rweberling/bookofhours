@@ -244,10 +244,12 @@ def load_existing(path):
 # The weekly "From the Earthly Book of Hours" update section, which only
 # matters on Substack: it runs from its heading (and the <hr> above it)
 # up to the footnotes, the closing subscribe line, or the end of the post.
+# The heading's wording is matched loosely: it may carry formatting
+# ("From <em>The Earthly Book of Hours</em>", from week 41).
 HOURS_SECTION = re.compile(
-    r'(?:<hr>)?<h2>✦ From the Earthly Book of Hours ✦</h2>.*?'
+    r'(?:<hr>)?<h2>\s*✦\s*From\s+(?:<[^>]+>)*the\s+Earthly\s+Book\s+of\s+Hours(?:</[^>]+>)*\s*✦\s*</h2>.*?'
     r'(?=<a href="#footnote-anchor-|<p>Otherwise is a reader-supported|$)',
-    re.S)
+    re.S | re.I)
 
 
 def strip_hours_section(body_html, images):
