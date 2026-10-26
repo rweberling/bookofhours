@@ -55,16 +55,13 @@ registerDropup('nav-weather-trigger', 'nav-weather-menu');
 registerDropup('nav-projects-trigger', 'nav-projects-menu');
 
 // The Scriptorium holds the project's behind-the-scenes side: editions,
-// support, Otherwise, Add to Home Screen, and the DFOS space embed. The
-// iframe only gets its src the first time the menu opens, so pages don't
-// load it unasked; the install tip folds away whenever the menu is
-// toggled; clicks inside the menu don't count as clicking away.
+// support, Otherwise, and Add to Home Screen. The install tip folds away
+// whenever the menu is toggled; clicks inside the menu don't count as
+// clicking away.
 const projectsTrigger = document.getElementById('nav-projects-trigger');
 const projectsMenu = document.getElementById('nav-projects-menu');
 if (projectsTrigger && projectsMenu) {
-const embed = projectsMenu.querySelector('iframe[data-src]');
 projectsTrigger.addEventListener('click', () => {
-if (embed && !embed.src) embed.src = embed.dataset.src;
 const tip = document.getElementById('install-tip');
 if (tip) tip.classList.remove('open');
 });
@@ -260,15 +257,40 @@ const ua = navigator.userAgent;
 const isIPad = /iPad/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
 const isMobile = /Android|iPhone|iPod/i.test(ua) || isIPad;
 const isIOS = /iPhone|iPod/i.test(ua) || isIPad;
-
 const isRealMac = /Macintosh/i.test(ua) && navigator.maxTouchPoints <= 1;
 const isSafariEngine = /^((?!chrome|crios|fxios|edg|opr).)*safari/i.test(ua);
 const isDesktopSafari = isRealMac && isSafariEngine;
 
-function showTip(text) {
+// Already installed: nothing to offer. Everywhere else the item is shown,
+// worded for the device; a browser that offers an install prompt gets it
+// (Chrome, Edge, Android), and any other shows a note on how to add the
+// site itself.
+if (!standalone) {
+installBtn.textContent = isMobile ? 'Add to Home Screen' : (isRealMac ? 'Add to Dock' : 'Install App');
 installBtn.classList.add('visible');
-installTip.textContent = text;
-installBtn.addEventListener('click', () => {
+
+let tip;
+if (isIOS) tip = 'Tap the Share icon, then "Add to Home Screen."';
+else if (isMobile) tip = 'Open the browser menu, then choose "Add to Home Screen" or "Install app."';
+else if (isDesktopSafari) tip = 'Click the Share icon in the toolbar, or choose File, then "Add to Dock."';
+else if (/Firefox/i.test(ua)) tip = 'Firefox can\u2019t add sites to the desktop. Safari ("File, Add to Dock") and Chrome can.';
+else tip = 'Click the install icon in the address bar, or open the browser menu and choose "Install."';
+installTip.textContent = tip;
+
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+e.preventDefault();
+deferredPrompt = e;
+});
+installBtn.addEventListener('click', async () => {
+if (deferredPrompt) {
+deferredPrompt.prompt();
+await deferredPrompt.userChoice;
+deferredPrompt = null;
+installBtn.classList.remove('visible');
+installTip.classList.remove('open');
+return;
+}
 installTip.classList.toggle('open');
 });
 document.addEventListener('click', (e) => {
@@ -276,28 +298,6 @@ if (!installTip.contains(e.target) && e.target !== installBtn) {
 installTip.classList.remove('open');
 }
 });
-}
-
-if (!standalone) {
-if (isMobile && isIOS) {
-showTip('Tap the Share icon, then "Add to Home Screen."');
-} else if (isMobile) {
-let deferredPrompt = null;
-window.addEventListener('beforeinstallprompt', (e) => {
-e.preventDefault();
-deferredPrompt = e;
-installBtn.classList.add('visible');
-});
-installBtn.addEventListener('click', async () => {
-if (!deferredPrompt) return;
-deferredPrompt.prompt();
-await deferredPrompt.userChoice;
-deferredPrompt = null;
-installBtn.classList.remove('visible');
-});
-} else if (isDesktopSafari) {
-showTip('Click the Share icon in the toolbar, or choose File, then "Add to Dock."');
-}
 }
 }
 

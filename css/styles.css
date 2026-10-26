@@ -1139,24 +1139,14 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
 
 
-/* The Scriptorium: links, then the DFOS space embed. Anchored to the
-   trigger's right edge, since it sits at the right of the bar and the
-   embed is wider than the text menus. */
-.nav-embed-menu {
+/* The Scriptorium sits at the right end of the bar, so its menu is
+   anchored to the trigger's right edge rather than centred on it. */
+.nav-end-menu {
   left: auto;
   right: 0;
   transform: none;
-  padding: 8px 12px 4px;
 }
 .ext-arrow { font-size: 0.9em; letter-spacing: 0; margin-left: 2px; }
-.nav-embed-menu iframe {
-  display: block;
-  margin-top: 8px;
-  width: 400px;
-  max-width: calc(100vw - 48px);
-  height: 114px;
-  border: 0;
-}
 
 /* ── Responsive ───────────────────────────────────────────────── */
 /* The nav bar needs ~1150px in one row at full spacing. Below that it
@@ -1218,9 +1208,6 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
   .nav-hours-menu a:first-child,
   .nav-hours-menu .wander-btn:first-child { border-top: none; }
-  .nav-embed-menu { padding: 0; }
-  .nav-embed-menu iframe { margin: 12px auto 0; }
-  .nav-embed-menu iframe { width: 100%; max-width: 400px; }
   .nav-divider { display: none; }
   .install-btn.visible {
     font-size: 11px; letter-spacing: 0.18em;
