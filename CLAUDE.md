@@ -37,6 +37,7 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   so the house formatting is kept. A plain `json.dump` rewrites the whole
   file and makes an unreadable diff.
 - New or changed image files: `python3 scripts/build_images.py` (web copies).
+- Menu, head and frame: edit `partials/`, then `python3 scripts/build_shared.py`.
 - Sources page: `python3 scripts/build_sources.py` (needs Chrome; see below).
 - Species registry IDs: `python3 scripts/link_species.py [--write]`.
 - Post pages (`lectio-terra/<name>/`, one per post, and the RSS feed
@@ -62,8 +63,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   page, not a redirect, so the printed link never breaks.
 - `data/postcards.csv` (`pc-` IDs) → `python3 scripts/build_postcards.py`
   → `c/w26/N/index.html`. The script's docstring explains every column.
-  Pages stay `noindex` while a card's `status` is `draft`; all five still
-  are.
+  Pages stay `noindex` while a card's `status` is `draft` (or `unlisted`,
+  for good: the pages are reached only by QR code, not linked from the
+  site); all five are still drafts.
 - The cards carry no year, so the pages name the relevant December
   solstice: `postcards.js` updates it in the browser, and the build script
   writes the same line for readers without JavaScript. Both hold a table

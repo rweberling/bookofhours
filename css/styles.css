@@ -965,19 +965,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 
 /* ── Add to Home Screen ──────────────────────────────────────── */
-/* Lives at the foot of The Reading Room menu, under a short rule,
-   shown only where the device can install (nav.js). */
-.install-divider {
-  display: none;
-}
-.install-divider.visible {
-  display: block;
-  width: 40%;
-  margin: 8px auto 4px;
-  border-top: 1px solid var(--rule);
-  transition: border-color 3s ease;
-}
-
+/* Lives in The Scriptorium menu, shown only where the device can install (nav.js). */
 .install-btn {
   all: unset;
   display: none;
@@ -1151,17 +1139,19 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu .wander-btn:hover { opacity: 1; color: var(--accent); }
 
 
-/* The Reading Room: the DFOS space embed. Anchored to the trigger's right
-   edge, since it sits at the right of the bar and is wider than the
-   text menus. */
+/* The Scriptorium: links, then the DFOS space embed. Anchored to the
+   trigger's right edge, since it sits at the right of the bar and the
+   embed is wider than the text menus. */
 .nav-embed-menu {
   left: auto;
   right: 0;
   transform: none;
-  padding: 12px 12px 4px;
+  padding: 8px 12px 4px;
 }
+.ext-arrow { font-size: 0.9em; letter-spacing: 0; margin-left: 2px; }
 .nav-embed-menu iframe {
   display: block;
+  margin-top: 8px;
   width: 400px;
   max-width: calc(100vw - 48px);
   height: 114px;
@@ -1228,10 +1218,10 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
   .nav-hours-menu a:first-child,
   .nav-hours-menu .wander-btn:first-child { border-top: none; }
-  .nav-embed-menu { padding: 12px 0 0; }
+  .nav-embed-menu { padding: 0; }
+  .nav-embed-menu iframe { margin: 12px auto 0; }
   .nav-embed-menu iframe { width: 100%; max-width: 400px; }
   .nav-divider { display: none; }
-  .install-divider.visible { display: none; }
   .install-btn.visible {
     font-size: 11px; letter-spacing: 0.18em;
     padding: 10px 0;

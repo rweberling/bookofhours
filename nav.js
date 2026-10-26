@@ -54,11 +54,11 @@ registerDropup('nav-seasons-trigger', 'nav-seasons-menu');
 registerDropup('nav-weather-trigger', 'nav-weather-menu');
 registerDropup('nav-projects-trigger', 'nav-projects-menu');
 
-// The Reading Room holds the ways to join or go deeper: the DFOS space
-// embed, and Add to Home Screen beneath it. The iframe only gets its src
-// the first time the menu opens, so pages don't load it unasked; the
-// install tip folds away whenever the menu is toggled; clicks inside the
-// menu don't count as clicking away.
+// The Scriptorium holds the project's behind-the-scenes side: editions,
+// support, Otherwise, Add to Home Screen, and the DFOS space embed. The
+// iframe only gets its src the first time the menu opens, so pages don't
+// load it unasked; the install tip folds away whenever the menu is
+// toggled; clicks inside the menu don't count as clicking away.
 const projectsTrigger = document.getElementById('nav-projects-trigger');
 const projectsMenu = document.getElementById('nav-projects-menu');
 if (projectsTrigger && projectsMenu) {
@@ -250,9 +250,8 @@ history.replaceState(null, '', window.location.pathname);
 
 const installBtn = document.getElementById('install-btn');
 const installTip = document.getElementById('install-tip');
-const installDivider = document.getElementById('install-divider');
 
-if (installBtn && installTip && installDivider) {
+if (installBtn && installTip) {
 const standalone = window.matchMedia('(display-mode: standalone)').matches
 || window.navigator.standalone === true;
 
@@ -268,7 +267,6 @@ const isDesktopSafari = isRealMac && isSafariEngine;
 
 function showTip(text) {
 installBtn.classList.add('visible');
-installDivider.classList.add('visible');
 installTip.textContent = text;
 installBtn.addEventListener('click', () => {
 installTip.classList.toggle('open');
@@ -289,7 +287,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
 e.preventDefault();
 deferredPrompt = e;
 installBtn.classList.add('visible');
-installDivider.classList.add('visible');
 });
 installBtn.addEventListener('click', async () => {
 if (!deferredPrompt) return;
@@ -297,7 +294,6 @@ deferredPrompt.prompt();
 await deferredPrompt.userChoice;
 deferredPrompt = null;
 installBtn.classList.remove('visible');
-installDivider.classList.remove('visible');
 });
 } else if (isDesktopSafari) {
 showTip('Click the Share icon in the toolbar, or choose File, then "Add to Dock."');

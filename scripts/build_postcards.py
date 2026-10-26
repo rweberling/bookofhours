@@ -35,7 +35,9 @@ Columns in data/postcards.csv:
 A row with no title yet still gets a page, saying the card is being
 prepared, so a code never leads to a missing page. Drafts and such
 placeholders are kept out of search engines until their status is
-something other than "draft".
+something other than "draft". A status of "unlisted" keeps a finished
+card's page out of search engines and the sitemap for good: it is
+reached only by its QR code.
 
 Every page is rewritten on each run. Nothing else in the site is touched.
 """
@@ -356,7 +358,7 @@ def build(row, rows=()):
     <p><a href="/index.html">Return to the current hour</a></p>
   </article>'''
         description = 'A postcard from The Earthly Book of Hours.'
-    robots = '' if ready and row['status'] != 'draft' else '  <meta name="robots" content="noindex">\n'
+    robots = '' if ready and row['status'] not in ('draft', 'unlisted') else '  <meta name="robots" content="noindex">\n'
     # Until a card has its image, link previews show the site's emblem.
     og_image = f'  <meta property="og:image" content="{SITE}/images/emblemicon/og-card.jpg">\n'
     if ready and has(row, 'image'):
@@ -410,7 +412,7 @@ def main():
         print(f'wrote {page.relative_to(ROOT)}')
     for w in warnings:
         print(f'note: {w}')
-    # A card leaving draft joins the sitemap (draft pages are noindex).
+    # A card leaving draft joins the sitemap (draft and unlisted pages are noindex).
     import build_sitemap
     build_sitemap.main()
 
