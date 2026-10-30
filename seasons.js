@@ -345,11 +345,13 @@ function markReadings(body, labels) {
   });
 }
 
-/* ── Rules between the readings ───────────────────────────────────
+/* ── Rules between the parts and the readings ─────────────────────
    A short rule in the site's drawn hand (drawRule() in shared.js)
-   between one reading and the next, and in place of each plain <hr>
-   the post was imported with. Placed between the sections, not inside
-   them, so each reading's margin label still starts at its reading.
+   before each part after the first (Readings, Supplementum), between
+   one reading and the next, and in place of any other plain <hr> the
+   post was imported with (most stood just before Readings, and become
+   that part's rule). Placed between the sections, not inside them, so
+   each reading's margin label still starts at its reading.
 ────────────────────────────────────────────────────────────────── */
 function postRule(seed) {
   const svg = document.createElementNS(svgNS, 'svg');
@@ -361,6 +363,12 @@ function postRule(seed) {
 }
 
 function ruleReadings(body) {
+  const parts = [...body.children].filter(el => /^H[2-4]$/.test(el.tagName) && POST_PARTS.test(el.textContent));
+  parts.slice(1).forEach((heading, i) => {
+    const before = heading.previousElementSibling;
+    if (before && before.tagName === 'HR') before.remove();
+    heading.before(postRule(401 + i * 61));
+  });
   // Each reading's citation follows its section, so the rule goes just
   // before every reading after the first.
   body.querySelectorAll('section.reading').forEach((reading, i) => {
