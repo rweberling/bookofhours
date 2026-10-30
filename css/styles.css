@@ -438,6 +438,11 @@ body.block-convivium .band-watch, body.block-denouement .band-watch { fill: var(
   transition: color 3s ease;
 }
 .date-short { display: none; }
+/* The watch's name sits midway between the line above and the date: the
+   blackletter's room beneath its letters (GL-Morris's descent) otherwise
+   leaves it nearer the top line. Measured by eye on the letters' ink. */
+.hours-subtitle { margin-bottom: 10px; }
+.hours-title { margin-bottom: 6px; }
 .weather-line {
   color: var(--accent2);
   transition: color 3s ease;
@@ -1265,6 +1270,8 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .quote-text { font-size: clamp(14px, 4vw, 18px); }
   .block-subtitle { margin-bottom: 4px; }
   .date-line { margin-bottom: 24px; letter-spacing: 0.16em; }
+  .hours-subtitle { margin-bottom: 8px; }
+  .hours-title { margin-bottom: 6px; }
   .date-long { display: none; }
   .date-short { display: inline; }
   .hour-line { flex-direction: column; align-items: center; gap: 4px; margin-bottom: 24px; }
