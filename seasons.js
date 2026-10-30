@@ -349,7 +349,8 @@ function markReadings(body, labels) {
    A short rule in the site's drawn hand (drawRule() in shared.js)
    before each part after the first (Readings, Supplementum; these carry
    the ◆, as the larger breaks), between
-   one reading and the next, and in place of any other plain <hr> the
+   one reading and the next (none before the Headnote, where one post had
+   an <hr>), and in place of any other plain <hr> the
    post was imported with (most stood just before Readings, and become
    that part's rule). Placed between the sections, not inside them, so
    each reading's margin label still starts at its reading.
@@ -366,6 +367,11 @@ function postRule(seed, noon = false) {
 
 function ruleReadings(body) {
   const parts = [...body.children].filter(el => /^H[2-4]$/.test(el.tagName) && POST_PARTS.test(el.textContent));
+  // Nothing between the opening figure and the Headnote, as there's
+  // nothing between the Supplementum and its closing one.
+  if (parts[0] && parts[0].previousElementSibling && parts[0].previousElementSibling.tagName === 'HR') {
+    parts[0].previousElementSibling.remove();
+  }
   parts.slice(1).forEach((heading, i) => {
     const before = heading.previousElementSibling;
     if (before && before.tagName === 'HR') before.remove();
