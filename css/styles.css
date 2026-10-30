@@ -279,10 +279,13 @@ body.block-convivium .band-watch, body.block-denouement .band-watch { fill: var(
   margin: 0.08em 0.1em 0 -0.02em;
   transition: color 3s ease;
 }
-/* Verse hangs its wrapped lines (.verse-line's negative text-indent),
-   which would pull the first lines back under the initial: beside it,
-   they start plainly. */
-.hours-page .quote-text .verse-line:nth-child(-n+2) { text-indent: 0; padding-left: 0; }
+/* Verse keeps every line's indent, so its initial isn't dropped beside
+   the lines but stands large on the first one. */
+.hours-page .quote-text:has(.verse-line)::first-letter {
+  float: none;
+  font-size: 1.9em; line-height: 0;
+  margin: 0 0.04em 0 0;
+}
 body main.hours-page .versicle {
   border-left: none; background: none;
   padding: 0; text-align: center;
