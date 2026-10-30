@@ -347,18 +347,20 @@ function markReadings(body, labels) {
 
 /* ── Rules between the parts and the readings ─────────────────────
    A short rule in the site's drawn hand (drawRule() in shared.js)
-   before each part after the first (Readings, Supplementum), between
+   before each part after the first (Readings, Supplementum; these carry
+   the ◆, as the larger breaks), between
    one reading and the next, and in place of any other plain <hr> the
    post was imported with (most stood just before Readings, and become
    that part's rule). Placed between the sections, not inside them, so
    each reading's margin label still starts at its reading.
 ────────────────────────────────────────────────────────────────── */
-function postRule(seed) {
+// A part's rule carries the ◆; a rule between readings doesn't.
+function postRule(seed, noon = false) {
   const svg = document.createElementNS(svgNS, 'svg');
   svg.setAttribute('class', 'drawn-rule post-rule');
   svg.setAttribute('viewBox', '0 0 220 24');
   svg.setAttribute('aria-hidden', 'true');
-  drawRule(svg, 220, false, seed);
+  drawRule(svg, 220, noon, seed);
   return svg;
 }
 
@@ -367,7 +369,7 @@ function ruleReadings(body) {
   parts.slice(1).forEach((heading, i) => {
     const before = heading.previousElementSibling;
     if (before && before.tagName === 'HR') before.remove();
-    heading.before(postRule(401 + i * 61));
+    heading.before(postRule(401 + i * 61, true));
   });
   // Each reading's citation follows its section, so the rule goes just
   // before every reading after the first.
