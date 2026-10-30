@@ -778,6 +778,9 @@ body main.hours-page .versicle {
   border: none; border-top: 0.5px solid var(--rule);
   margin: 32px 0;
 }
+/* The drawn rules between readings and in place of the post's <hr>s
+   (ruleReadings() in seasons.js). */
+#season-reading-body .post-rule { max-width: 220px; margin: 40px auto 6px; }
 
 /* ── Image frame ──────────────────────────────────────────────── */
 .image-frame-outer {

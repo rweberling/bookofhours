@@ -149,6 +149,7 @@ function finishPost(body, entry) {
   wireFigures(body);
   wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
+  ruleReadings(body);
   markParts(body);
   updateRunningHead();
 }
@@ -341,6 +342,32 @@ function markReadings(body, labels) {
       ${label.work ? `<span class="reading-work">${escapeHTML(label.work)}</span>` : ''}
     </div>`;
     section.prepend(margin);
+  });
+}
+
+/* ── Rules between the readings ───────────────────────────────────
+   A short rule in the site's drawn hand (drawRule() in shared.js)
+   between one reading and the next, and in place of each plain <hr>
+   the post was imported with. Placed between the sections, not inside
+   them, so each reading's margin label still starts at its reading.
+────────────────────────────────────────────────────────────────── */
+function postRule(seed) {
+  const svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('class', 'drawn-rule post-rule');
+  svg.setAttribute('viewBox', '0 0 220 24');
+  svg.setAttribute('aria-hidden', 'true');
+  drawRule(svg, 220, false, seed);
+  return svg;
+}
+
+function ruleReadings(body) {
+  // Each reading's citation follows its section, so the rule goes just
+  // before every reading after the first.
+  body.querySelectorAll('section.reading').forEach((reading, i) => {
+    if (i > 0) reading.before(postRule(701 + i * 53));
+  });
+  body.querySelectorAll('hr').forEach((hr, i) => {
+    hr.replaceWith(postRule(907 + i * 29));
   });
 }
 
