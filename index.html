@@ -146,13 +146,10 @@
 <main class="page keepsake-frame">
  <p class="publication-name">The Earthly Book of Hours</p>
 
- <div class="rule-ornament" aria-hidden="true">
- <div class="line"></div>
- <div class="lozenge">✦</div>
- <div class="diamond"></div>
- <div class="lozenge">✦</div>
- <div class="line"></div>
- </div>
+ <!-- The day as a ruled line, midnight to midnight: the watch in gold,
+      ✦ for now, ◆ for noon. Drawn by drawHoursBand() in hours.js; it
+      opens Wander the Hours. -->
+ <button class="hours-band" id="hours-band" type="button"><svg viewBox="0 6 420 30" aria-hidden="true"></svg></button>
 
  <!-- The watch and its hours, then the time; the time is left out while
       wandering, when the page shows another watch than now's. -->

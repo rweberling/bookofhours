@@ -243,6 +243,26 @@ body::before {
   width: 100%;
 }
 
+/* ── The band under the Hours masthead ───────────────────────────
+   drawHoursBand() in hours.js. It stands where the ornament does on
+   other pages and opens Wander the Hours. By night the gold is near the
+   hairline's colour, so the watch takes the lighter gold there. */
+.hours-band {
+  -webkit-appearance: none; appearance: none;
+  background: none; border: none; padding: 0; cursor: pointer;
+  display: block; width: 100%; max-width: 480px; margin-bottom: 22px;
+  color: inherit;
+}
+.hours-band svg { display: block; width: 100%; height: auto; overflow: visible; opacity: 0.9; transition: opacity 0.3s ease, filter 0.3s ease; }
+.hours-band:hover svg, .hours-band:focus-visible svg { opacity: 1; filter: drop-shadow(0 0 3px var(--rule)); }
+.hours-band:focus-visible { outline: 0.5px dotted var(--accent); outline-offset: 4px; }
+.band-ink  { fill: var(--ink-faint); opacity: 0.85; transition: fill 3s ease; }
+.band-curl { fill: none; stroke: var(--ink-faint); stroke-width: 0.8; stroke-linecap: round; opacity: 0.6; transition: stroke 3s ease; }
+.band-watch, .band-noon { fill: var(--gold); transition: fill 3s ease; }
+.band-now  { fill: var(--accent); font-family: var(--font-text); font-size: 11px; transition: fill 3s ease; }
+body.block-void .band-watch, body.block-hush .band-watch,
+body.block-convivium .band-watch, body.block-denouement .band-watch { fill: var(--gold-light); }
+
 /* ── Rule ornament ────────────────────────────────────────────── */
 .rule-ornament {
   display: flex; align-items: center; gap: 14px;
@@ -1280,7 +1300,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
 
   .outer-frame, .corner, .site-nav, .page-footer,
-  .transition-veil, .rule-ornament,
+  .transition-veil, .rule-ornament, .hours-band,
   .turn-the-page, .static-divider,
   .lightbox, .wander-pane,
   .phenomena, .versicle,

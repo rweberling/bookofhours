@@ -158,6 +158,86 @@ function renderNow(now = new Date()) {
     `${SEASON_LABELS[getSeason()]} ✦ ${moonPhase(now).name}`;
 }
 
+/* ── The band under the masthead ──────────────────────────────────
+   The day laid flat as a line ruled by hand, midnight at each end: a
+   hairline that swells and thins, a short tapering stroke where each
+   watch begins, a curl at each end, as a scribe filled out a line, and
+   the ◆ at noon. The watch on the page is laid on in gold and the ✦
+   stands at the real time now, as on the Wander dial. The wobble comes
+   from fixed seeds, so the hand is the same on every visit.
+────────────────────────────────────────────────────────────────── */
+const BAND_W = 420, BAND_Y = 22, BAND_X0 = 26, BAND_X1 = BAND_W - 26;
+const bandX = h => BAND_X0 + h / 24 * (BAND_X1 - BAND_X0);
+
+function seededRandom(seed) {
+  return () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+}
+
+// A pen stroke from x0 to x1 along y: a filled shape whose width swells
+// to `weight` in the middle and thins to nothing at the ends, wavering a
+// little.
+function penStrokePath(x0, x1, y, weight, rand) {
+  const n = Math.max(6, Math.round((x1 - x0) / 14));
+  const top = [], bottom = [];
+  for (let i = 0; i <= n; i++) {
+    const f = i / n, x = x0 + f * (x1 - x0);
+    const w = weight * Math.pow(Math.sin(Math.PI * f), 0.6) * (0.85 + 0.3 * rand());
+    const dy = (rand() - 0.5) * 0.7;
+    top.push([x, y + dy - w / 2]);
+    bottom.unshift([x, y + dy + w / 2]);
+  }
+  const pts = top.concat(bottom);
+  let d = `M ${pts[0][0]} ${pts[0][1]}`;
+  for (let i = 1; i < pts.length; i++) {
+    const [px, py] = pts[i - 1], [cx, cy] = pts[i];
+    d += ` Q ${px} ${py} ${(px + cx) / 2} ${(py + cy) / 2}`;
+  }
+  return d + ' Z';
+}
+
+function bandShape(svg, tag, attrs) {
+  const el = document.createElementNS(svgNS, tag);
+  for (const k in attrs) el.setAttribute(k, attrs[k]);
+  svg.appendChild(el);
+  return el;
+}
+
+// The fixed parts, drawn once.
+function buildHoursBand(svg) {
+  const y = BAND_Y, x0 = BAND_X0, x1 = BAND_X1;
+  const rand = seededRandom(1387);
+  bandShape(svg, 'path', { class: 'band-ink', d: penStrokePath(x0 - 2, x1 + 2, y, 1.3, rand) });
+  bandShape(svg, 'path', { class: 'band-curl',
+    d: `M ${x0} ${y} C ${x0 - 10} ${y + 0.5}, ${x0 - 16} ${y - 4}, ${x0 - 12} ${y - 7.5} C ${x0 - 9} ${y - 10}, ${x0 - 4.5} ${y - 7.5}, ${x0 - 7} ${y - 5}` });
+  bandShape(svg, 'path', { class: 'band-curl',
+    d: `M ${x1} ${y} C ${x1 + 10} ${y - 0.5}, ${x1 + 16} ${y + 4}, ${x1 + 12} ${y + 7.5} C ${x1 + 9} ${y + 10}, ${x1 + 4.5} ${y + 7.5}, ${x1 + 7} ${y + 5}` });
+  for (let h = 3; h < 24; h += 3) {
+    if (h === 12) continue;
+    const len = 6 + rand() * 1.8, lean = (rand() - 0.5) * 1.6, cx = bandX(h);
+    bandShape(svg, 'path', { class: 'band-ink',
+      d: `M ${cx - 1.1} ${y + 0.6} L ${cx + lean - 0.15} ${y - len} L ${cx + lean + 0.15} ${y - len} L ${cx + 1.1} ${y + 0.6} Z` });
+    bandShape(svg, 'path', { class: 'band-ink',
+      d: `M ${cx - 0.9} ${y - 0.4} L ${cx - lean * 0.6} ${y + len * 0.6} L ${cx + 0.9} ${y - 0.4} Z` });
+  }
+  bandShape(svg, 'path', { class: 'band-watch' });
+  const nx = bandX(12);
+  bandShape(svg, 'path', { class: 'band-noon',
+    d: `M ${nx} ${y - 4.2} L ${nx + 2.9} ${y} L ${nx} ${y + 4.2} L ${nx - 2.9} ${y} Z` });
+  bandShape(svg, 'text', { class: 'band-now', y: y - 7, 'text-anchor': 'middle' }).textContent = '✦';
+}
+
+// The watch on the page in gold, and the ✦ at now.
+function drawHoursBand(block, now = new Date()) {
+  const button = document.getElementById('hours-band');
+  if (!button || !block) return;
+  const svg = button.querySelector('svg');
+  if (!svg.firstChild) buildHoursBand(svg);
+  svg.querySelector('.band-watch').setAttribute('d',
+    penStrokePath(bandX(block.startHour) + 3, bandX(block.startHour + 3) - 3, BAND_Y, 3.2, seededRandom(97 + block.startHour)));
+  svg.querySelector('.band-now').setAttribute('x', bandX(now.getHours() + now.getMinutes() / 60));
+  button.setAttribute('aria-label', `${block.subtitle}, ${watchHoursWords(block)}. Open Wander the Hours`);
+}
+
 // Writes one block's content into the DOM — shared by render()'s regular
 // tick and renderAtHour()'s hand-picked-hour view (Wander the Hours,
 // "turn the page").
@@ -183,6 +263,7 @@ function applyBlockToDOM(blocksData, block, h) {
   document.getElementById('block-name').textContent     = block.name;
   document.getElementById('hour-name').textContent      = HOUR_NAMES[getSeason()][h] || '';
   renderNow();
+  drawHoursBand(block);
   document.getElementById('quote-text').innerHTML       = q.text;
   document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
   document.getElementById('phenomena-list').innerHTML   = phenomenaHTML(block.phenomena);
@@ -210,6 +291,7 @@ function render(blocksData, force) {
   const block = blockForHour(blocksData, h);
 
   renderNow(now);
+  drawHoursBand(blocksData.find(b => b.name === currentBlockName) || block, now);
 
   // The emblem is a multi-path inline SVG — cheap to skip re-parsing on
   // every 60s tick when the season (changes ~4x/year) hasn't actually
@@ -762,6 +844,9 @@ if (wanderOpenBtn) wanderOpenBtn.addEventListener('click', openWanderPane);
 // So is the hour's name over the reading: the dial is the hour at large.
 const blockNameBtn = document.getElementById('block-name');
 if (blockNameBtn) blockNameBtn.addEventListener('click', openWanderPane);
+// And the band under the masthead: the day at large.
+const hoursBandBtn = document.getElementById('hours-band');
+if (hoursBandBtn) hoursBandBtn.addEventListener('click', openWanderPane);
 
 window.addEventListener('dfossignin', e => {
   const intent = e.detail && e.detail.intent;
