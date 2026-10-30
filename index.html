@@ -143,7 +143,7 @@
 <!-- ═══════════════════════════════════════════════
  MAIN PAGE CONTENT
 ════════════════════════════════════════════════ -->
-<main class="page keepsake-frame">
+<main class="page keepsake-frame hours-page">
  <p class="publication-name">The Earthly Book of Hours</p>
 
  <!-- The day as a ruled line, midnight to midnight: the watch in gold,
@@ -195,7 +195,8 @@
  <span class="ttp-bracket">]</span>
 </div>
 
- <div class="static-divider" aria-hidden="true"></div>
+ <!-- Drawn rules, in the hand of the band above (drawRules() in hours.js). -->
+ <svg class="drawn-rule" data-width="520" viewBox="0 0 520 24" aria-hidden="true"></svg>
 
  <div class="phenomena">
  <p class="phenomena-list" id="phenomena-list"></p>
@@ -208,8 +209,7 @@
  </p>
 
  <footer class="page-footer">
- <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
- <div class="line"></div>
+ <svg class="drawn-rule drawn-rule-short" data-width="260" data-noon viewBox="0 0 260 24" aria-hidden="true"></svg>
  <div class="diamond"></div>
  <div class="line"></div>
  </div>

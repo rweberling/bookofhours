@@ -226,6 +226,25 @@ function buildHoursBand(svg) {
   bandShape(svg, 'text', { class: 'band-now', y: y - 7, 'text-anchor': 'middle' }).textContent = '✦';
 }
 
+// The page's other rules in the same hand: the hairline and its curls,
+// no ticks, and the ◆ where data-noon asks for it. Drawn once.
+function drawRules() {
+  document.querySelectorAll('svg.drawn-rule').forEach((svg, i) => {
+    const W = Number(svg.dataset.width), y = 12, x0 = 22, x1 = W - 22;
+    bandShape(svg, 'path', { class: 'band-ink', d: penStrokePath(x0 - 2, x1 + 2, y, 1.1, seededRandom(211 + i * 37)) });
+    bandShape(svg, 'path', { class: 'band-curl',
+      d: `M ${x0} ${y} C ${x0 - 10} ${y + 0.5}, ${x0 - 16} ${y - 4}, ${x0 - 12} ${y - 7.5} C ${x0 - 9} ${y - 10}, ${x0 - 4.5} ${y - 7.5}, ${x0 - 7} ${y - 5}` });
+    bandShape(svg, 'path', { class: 'band-curl',
+      d: `M ${x1} ${y} C ${x1 + 10} ${y - 0.5}, ${x1 + 16} ${y + 4}, ${x1 + 12} ${y + 7.5} C ${x1 + 9} ${y + 10}, ${x1 + 4.5} ${y + 7.5}, ${x1 + 7} ${y + 5}` });
+    if (svg.hasAttribute('data-noon')) {
+      const nx = W / 2;
+      bandShape(svg, 'path', { class: 'band-noon',
+        d: `M ${nx} ${y - 4.2} L ${nx + 2.9} ${y} L ${nx} ${y + 4.2} L ${nx - 2.9} ${y} Z` });
+    }
+  });
+}
+drawRules();
+
 // The watch on the page in gold, and the ✦ at now.
 function drawHoursBand(block, now = new Date()) {
   const button = document.getElementById('hours-band');

@@ -263,6 +263,52 @@ body::before {
 body.block-void .band-watch, body.block-hush .band-watch,
 body.block-convivium .band-watch, body.block-denouement .band-watch { fill: var(--gold-light); }
 
+/* ── The rest of the Hours page, in the manuscript's manner ───────
+   The reading opens on a red initial (its first letter, in the title's
+   blackletter, three lines deep) in place of the gold quotation mark;
+   the versicle stands under ℣, the versicle sign, unboxed; the rules
+   between the parts are drawn in the band's hand (drawRules() in
+   hours.js); and the parts below the reading keep one even step. */
+.hours-page .quote-mark { display: none; }
+.hours-page .quote-block { padding-top: 4px; }
+.hours-page .quote-text::first-letter {
+  float: left;
+  font-family: var(--font-title); font-style: normal;
+  font-size: 3.35em; line-height: 0.82;
+  color: var(--accent);
+  margin: 0.08em 0.1em 0 -0.02em;
+  transition: color 3s ease;
+}
+/* Verse hangs its wrapped lines (.verse-line's negative text-indent),
+   which would pull the first lines back under the initial: beside it,
+   they start plainly. */
+.hours-page .quote-text .verse-line:nth-child(-n+2) { text-indent: 0; padding-left: 0; }
+body main.hours-page .versicle {
+  border-left: none; background: none;
+  padding: 0; text-align: center;
+  max-width: 460px;
+}
+.hours-page .versicle p:first-child::before {
+  content: '℣';
+  font-family: var(--font-reading); font-style: normal; font-weight: 400;
+  font-size: 1.2em; line-height: 0;
+  color: var(--accent); margin-right: 0.45em;
+  transition: color 3s ease;
+}
+.drawn-rule { display: block; width: 100%; max-width: 520px; height: auto; overflow: visible; }
+.drawn-rule-short { max-width: 260px; }
+.hours-page .turn-the-page { margin-top: 28px; }
+.hours-page .drawn-rule:not(.drawn-rule-short) { margin-top: 44px; opacity: 0; animation: fadeIn 1.4s ease forwards 1.3s; }
+.hours-page .phenomena { margin-top: 30px; }
+.hours-page .versicle { margin-top: 44px; }
+.hours-page .page-footer { margin-top: 48px; }
+@media (max-width: 600px) {
+  .hours-page .drawn-rule:not(.drawn-rule-short) { margin-top: 36px; }
+  .hours-page .phenomena { margin-top: 24px; }
+  .hours-page .versicle { margin-top: 36px; padding: 0; }
+  .hours-page .page-footer { margin-top: 40px; }
+}
+
 /* ── Rule ornament ────────────────────────────────────────────── */
 .rule-ornament {
   display: flex; align-items: center; gap: 14px;
@@ -1262,7 +1308,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     box-shadow: 0 0 0 10px var(--bg), inset 0 0 0 1px var(--rule), inset 0 0 0 15px var(--bg), inset 0 0 0 16px var(--rule);
   }
   .running-head { --frame-in: 16px; }
-  .page { padding: 44px 24px 36px; }
+  .page { padding: 44px 30px 36px; }
   .image-frame-outer { max-width: 100%; margin-bottom: 24px; }
   .image-frame { padding: 10px; }
   .quote-block { margin-bottom: 18px; }
@@ -1307,7 +1353,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
 
   .outer-frame, .corner, .site-nav, .page-footer,
-  .transition-veil, .rule-ornament, .hours-band,
+  .transition-veil, .rule-ornament, .hours-band, .drawn-rule,
   .turn-the-page, .static-divider,
   .lightbox, .wander-pane,
   .phenomena, .versicle,
