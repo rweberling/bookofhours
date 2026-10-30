@@ -169,48 +169,15 @@ function renderNow(now = new Date()) {
 const BAND_W = 420, BAND_Y = 22, BAND_X0 = 26, BAND_X1 = BAND_W - 26;
 const bandX = h => BAND_X0 + h / 24 * (BAND_X1 - BAND_X0);
 
-function seededRandom(seed) {
-  return () => (seed = (seed * 16807) % 2147483647) / 2147483647;
-}
-
-// A pen stroke from x0 to x1 along y: a filled shape whose width swells
-// to `weight` in the middle and thins to nothing at the ends, wavering a
-// little.
-function penStrokePath(x0, x1, y, weight, rand) {
-  const n = Math.max(6, Math.round((x1 - x0) / 14));
-  const top = [], bottom = [];
-  for (let i = 0; i <= n; i++) {
-    const f = i / n, x = x0 + f * (x1 - x0);
-    const w = weight * Math.pow(Math.sin(Math.PI * f), 0.6) * (0.85 + 0.3 * rand());
-    const dy = (rand() - 0.5) * 0.7;
-    top.push([x, y + dy - w / 2]);
-    bottom.unshift([x, y + dy + w / 2]);
-  }
-  const pts = top.concat(bottom);
-  let d = `M ${pts[0][0]} ${pts[0][1]}`;
-  for (let i = 1; i < pts.length; i++) {
-    const [px, py] = pts[i - 1], [cx, cy] = pts[i];
-    d += ` Q ${px} ${py} ${(px + cx) / 2} ${(py + cy) / 2}`;
-  }
-  return d + ' Z';
-}
-
-function bandShape(svg, tag, attrs) {
-  const el = document.createElementNS(svgNS, tag);
-  for (const k in attrs) el.setAttribute(k, attrs[k]);
-  svg.appendChild(el);
-  return el;
-}
+// seededRandom(), penStrokePath() and bandShape() are in shared.js, which
+// draws the other rules on every page in the same hand.
 
 // The fixed parts, drawn once.
 function buildHoursBand(svg) {
   const y = BAND_Y, x0 = BAND_X0, x1 = BAND_X1;
   const rand = seededRandom(1387);
   bandShape(svg, 'path', { class: 'band-ink', d: penStrokePath(x0 - 2, x1 + 2, y, 1.3, rand) });
-  bandShape(svg, 'path', { class: 'band-curl',
-    d: `M ${x0} ${y} C ${x0 - 10} ${y + 0.5}, ${x0 - 16} ${y - 4}, ${x0 - 12} ${y - 7.5} C ${x0 - 9} ${y - 10}, ${x0 - 4.5} ${y - 7.5}, ${x0 - 7} ${y - 5}` });
-  bandShape(svg, 'path', { class: 'band-curl',
-    d: `M ${x1} ${y} C ${x1 + 10} ${y - 0.5}, ${x1 + 16} ${y + 4}, ${x1 + 12} ${y + 7.5} C ${x1 + 9} ${y + 10}, ${x1 + 4.5} ${y + 7.5}, ${x1 + 7} ${y + 5}` });
+  drawnCurls(svg, x0, x1, y);
   for (let h = 3; h < 24; h += 3) {
     if (h === 12) continue;
     const len = 6 + rand() * 1.8, lean = (rand() - 0.5) * 1.6, cx = bandX(h);
@@ -225,25 +192,6 @@ function buildHoursBand(svg) {
     d: `M ${nx} ${y - 4.2} L ${nx + 2.9} ${y} L ${nx} ${y + 4.2} L ${nx - 2.9} ${y} Z` });
   bandShape(svg, 'text', { class: 'band-now', y: y - 7, 'text-anchor': 'middle' }).textContent = '✦';
 }
-
-// The page's other rules in the same hand: the hairline and its curls,
-// no ticks, and the ◆ where data-noon asks for it. Drawn once.
-function drawRules() {
-  document.querySelectorAll('svg.drawn-rule').forEach((svg, i) => {
-    const W = Number(svg.dataset.width), y = 12, x0 = 22, x1 = W - 22;
-    bandShape(svg, 'path', { class: 'band-ink', d: penStrokePath(x0 - 2, x1 + 2, y, 1.1, seededRandom(211 + i * 37)) });
-    bandShape(svg, 'path', { class: 'band-curl',
-      d: `M ${x0} ${y} C ${x0 - 10} ${y + 0.5}, ${x0 - 16} ${y - 4}, ${x0 - 12} ${y - 7.5} C ${x0 - 9} ${y - 10}, ${x0 - 4.5} ${y - 7.5}, ${x0 - 7} ${y - 5}` });
-    bandShape(svg, 'path', { class: 'band-curl',
-      d: `M ${x1} ${y} C ${x1 + 10} ${y - 0.5}, ${x1 + 16} ${y + 4}, ${x1 + 12} ${y + 7.5} C ${x1 + 9} ${y + 10}, ${x1 + 4.5} ${y + 7.5}, ${x1 + 7} ${y + 5}` });
-    if (svg.hasAttribute('data-noon')) {
-      const nx = W / 2;
-      bandShape(svg, 'path', { class: 'band-noon',
-        d: `M ${nx} ${y - 4.2} L ${nx + 2.9} ${y} L ${nx} ${y + 4.2} L ${nx - 2.9} ${y} Z` });
-    }
-  });
-}
-drawRules();
 
 // The watch on the page in gold, and the ✦ at now.
 function drawHoursBand(block, now = new Date()) {

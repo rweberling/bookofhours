@@ -258,6 +258,87 @@ const CX = 120, CY = 120;
 const R_ARC = 88;
 const svgNS = 'http://www.w3.org/2000/svg';
 
+/* ── Rules drawn by hand ─────────────────────────────────────────
+   The site's rules are ruled as if with a quill: a hairline that swells
+   and thins, a curl at each end, as a scribe filled out a line, and the
+   ◆ in the middle. Every page's .rule-ornament (under the masthead, at
+   the foot) is drawn over in this hand as the page loads, keeping the
+   element itself (nav.js's press-and-hold switch lives on the footer's);
+   without JavaScript the plain ornament stays. The Hours page's band
+   (hours.js) and its svg.drawn-rule divider use the same strokes. The
+   wobble comes from fixed seeds, so the hand is the same on every visit.
+────────────────────────────────────────────────────────────────── */
+function seededRandom(seed) {
+  return () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+}
+
+// A pen stroke from x0 to x1 along y: a filled shape whose width swells
+// to `weight` in the middle and thins to nothing at the ends, wavering a
+// little.
+function penStrokePath(x0, x1, y, weight, rand) {
+  const n = Math.max(6, Math.round((x1 - x0) / 14));
+  const top = [], bottom = [];
+  for (let i = 0; i <= n; i++) {
+    const f = i / n, x = x0 + f * (x1 - x0);
+    const w = weight * Math.pow(Math.sin(Math.PI * f), 0.6) * (0.85 + 0.3 * rand());
+    const dy = (rand() - 0.5) * 0.7;
+    top.push([x, y + dy - w / 2]);
+    bottom.unshift([x, y + dy + w / 2]);
+  }
+  const pts = top.concat(bottom);
+  let d = `M ${pts[0][0]} ${pts[0][1]}`;
+  for (let i = 1; i < pts.length; i++) {
+    const [px, py] = pts[i - 1], [cx, cy] = pts[i];
+    d += ` Q ${px} ${py} ${(px + cx) / 2} ${(py + cy) / 2}`;
+  }
+  return d + ' Z';
+}
+
+function bandShape(svg, tag, attrs) {
+  const el = document.createElementNS(svgNS, tag);
+  for (const k in attrs) el.setAttribute(k, attrs[k]);
+  svg.appendChild(el);
+  return el;
+}
+
+// A curl at each end of a rule from x0 to x1.
+function drawnCurls(svg, x0, x1, y) {
+  bandShape(svg, 'path', { class: 'band-curl',
+    d: `M ${x0} ${y} C ${x0 - 10} ${y + 0.5}, ${x0 - 16} ${y - 4}, ${x0 - 12} ${y - 7.5} C ${x0 - 9} ${y - 10}, ${x0 - 4.5} ${y - 7.5}, ${x0 - 7} ${y - 5}` });
+  bandShape(svg, 'path', { class: 'band-curl',
+    d: `M ${x1} ${y} C ${x1 + 10} ${y - 0.5}, ${x1 + 16} ${y + 4}, ${x1 + 12} ${y + 7.5} C ${x1 + 9} ${y + 10}, ${x1 + 4.5} ${y + 7.5}, ${x1 + 7} ${y + 5}` });
+}
+
+// One rule, W wide, into svg: the hairline, its curls, and the ◆ if noon.
+function drawRule(svg, W, noon, seed) {
+  const y = 12, x0 = 22, x1 = W - 22;
+  bandShape(svg, 'path', { class: 'band-ink', d: penStrokePath(x0 - 2, x1 + 2, y, 1.1, seededRandom(seed)) });
+  drawnCurls(svg, x0, x1, y);
+  if (noon) {
+    const nx = W / 2;
+    bandShape(svg, 'path', { class: 'band-noon',
+      d: `M ${nx} ${y - 4.2} L ${nx + 2.9} ${y} L ${nx} ${y + 4.2} L ${nx - 2.9} ${y} Z` });
+  }
+}
+
+function drawRules() {
+  document.querySelectorAll('.rule-ornament').forEach((ornament, i) => {
+    // The masthead's ornament (✦ ◆ ✦) runs wider than the footer's (◆).
+    const W = ornament.querySelector('.lozenge') ? 420 : 260;
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} 24`);
+    svg.setAttribute('aria-hidden', 'true');
+    ornament.replaceChildren(svg);
+    ornament.classList.add('is-drawn');
+    drawRule(svg, W, true, 211 + i * 37);
+  });
+  document.querySelectorAll('svg.drawn-rule').forEach((svg, i) => {
+    drawRule(svg, Number(svg.viewBox.baseVal.width), false, 503 + i * 41);
+  });
+}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', drawRules);
+else drawRules();
+
 function polarToXY(angleDeg, r) {
   const rad = angleDeg * Math.PI / 180;
   return { x: CX + r * Math.cos(rad), y: CY + r * Math.sin(rad) };

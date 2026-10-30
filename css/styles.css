@@ -268,7 +268,7 @@ body.block-convivium .band-watch, body.block-denouement .band-watch { fill: var(
    blackletter, three lines deep) in place of the gold quotation mark;
    the versicle stands under ℣, the versicle sign, unboxed; the rules
    between the parts are drawn in the band's hand (drawRules() in
-   hours.js); and the parts below the reading keep one even step. */
+   shared.js); and the parts below the reading keep one even step. */
 .hours-page .quote-mark { display: none; }
 .hours-page .quote-block { padding-top: 4px; }
 .hours-page .quote-text::first-letter {
@@ -299,9 +299,14 @@ body main.hours-page .versicle {
   transition: color 3s ease;
 }
 .drawn-rule { display: block; width: 100%; max-width: 520px; height: auto; overflow: visible; }
-.drawn-rule-short { max-width: 260px; }
+.rule-ornament.is-drawn { display: block; }
+
+/* An Incipit's opening words in red, as a manuscript's incipit was
+   written: the scribe's rubric, in the text's own face. */
+.incipit-rubric { color: var(--accent); transition: color 3s ease; }
+.rule-ornament.is-drawn svg { display: block; width: 100%; height: auto; overflow: visible; }
 .hours-page .turn-the-page { margin-top: 28px; }
-.hours-page .drawn-rule:not(.drawn-rule-short) { margin-top: 44px; opacity: 0; animation: fadeIn 1.4s ease forwards 1.3s; }
+.hours-page .drawn-rule { margin-top: 44px; opacity: 0; animation: fadeIn 1.4s ease forwards 1.3s; }
 .hours-page .phenomena { margin-top: 30px; }
 .hours-page .versicle { margin-top: 26px; }
 /* Between the phenomena and the versicle, both the hour's notes: a
@@ -317,7 +322,7 @@ body main.hours-page .versicle {
 .asterism-gap { display: inline-block; width: 0.85em; }
 .hours-page .page-footer { margin-top: 48px; }
 @media (max-width: 600px) {
-  .hours-page .drawn-rule:not(.drawn-rule-short) { margin-top: 36px; }
+  .hours-page .drawn-rule { margin-top: 36px; }
   .hours-page .phenomena { margin-top: 24px; }
   .hours-page .versicle { margin-top: 22px; padding: 0; }
   .asterism { margin-top: 26px; }
