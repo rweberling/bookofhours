@@ -69,6 +69,13 @@ function formatDate(d) {
   return `${DAY_NAMES[d.getDay()]}, ${MONTH_NAMES[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 }
 
+// "9 pm to midnight": a watch's hours (its startHour in data/vocab.json),
+// on the 12-hour clock.
+function watchHoursWords(watch) {
+  const word = h => h % 24 === 0 ? 'midnight' : h === 12 ? 'noon' : `${h % 12} ${h > 12 ? 'pm' : 'am'}`;
+  return `${word(watch.startHour)} to ${word(watch.startHour + 3)}`;
+}
+
 // "Wed, Sep 30, 2026", for narrow screens.
 function formatDateShort(d) {
   return `${DAY_NAMES[d.getDay()].slice(0, 3)}, ${MONTH_NAMES[d.getMonth()].slice(0, 3)} ${d.getDate()}, ${d.getFullYear()}`;

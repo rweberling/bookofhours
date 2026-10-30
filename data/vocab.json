@@ -5,56 +5,56 @@
       "label": "Void",
       "startHour": 0,
       "endHour": 3,
-      "subtitle": "Midnight · Hours 0 to 3"
+      "subtitle": "Overnight"
     },
     {
       "id": "hush",
       "label": "Hush",
       "startHour": 3,
       "endHour": 6,
-      "subtitle": "Pre-dawn · Hours 3 to 6"
+      "subtitle": "Pre-dawn"
     },
     {
       "id": "chorus",
       "label": "Chorus",
       "startHour": 6,
       "endHour": 9,
-      "subtitle": "Dawn · Hours 6 to 9"
+      "subtitle": "Dawn"
     },
     {
       "id": "transit",
       "label": "Transit",
       "startHour": 9,
       "endHour": 12,
-      "subtitle": "Morning · Hours 9 to 12"
+      "subtitle": "Morning"
     },
     {
       "id": "fulcrum",
       "label": "Fulcrum",
       "startHour": 12,
       "endHour": 15,
-      "subtitle": "Noon · Hours 12 to 15"
+      "subtitle": "Midday"
     },
     {
       "id": "doldrums",
       "label": "Doldrums",
       "startHour": 15,
       "endHour": 18,
-      "subtitle": "Afternoon · Hours 15 to 18"
+      "subtitle": "Afternoon"
     },
     {
       "id": "convivium",
       "label": "Convivium",
       "startHour": 18,
       "endHour": 21,
-      "subtitle": "Evening · Hours 18 to 21"
+      "subtitle": "Evening"
     },
     {
       "id": "denouement",
       "label": "Denouement",
       "startHour": 21,
       "endHour": 24,
-      "subtitle": "Night · Hours 21 to 24"
+      "subtitle": "Night"
     }
   ],
   "seasons": [

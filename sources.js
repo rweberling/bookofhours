@@ -192,7 +192,7 @@ function buildSources(collection, lectio) {
   html += partHeaderHTML('hours', 'The Hours', 'The readings and images for each of the eight watches.');
   vocab.hours.forEach(hour => {
     const tagged = r => tagsOf(r, 'hours').includes(hour.id);
-    html += sectionHTML(`hours-${hour.id}`, hour.label, hour.subtitle,
+    html += sectionHTML(`hours-${hour.id}`, hour.label, `${hour.subtitle} · ${watchHoursWords(hour)}`,
       inHours.filter(tagged), inHoursImages.filter(tagged), notesInHours, site);
   });
 

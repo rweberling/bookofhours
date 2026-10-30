@@ -144,17 +144,7 @@ let wanderHour = null; // which hour selectWanderBlock() picked — "turn the pa
 
 let lastRenderedSeason = null;
 
-// "9 pm to midnight": a watch's hours, on the 12-hour clock.
-function watchHoursWords(block) {
-  const word = h => h % 24 === 0 ? 'midnight' : h === 12 ? 'noon' : `${h % 12} ${h > 12 ? 'pm' : 'am'}`;
-  return `${word(block.startHour)} to ${word(block.startHour + 3)}`;
-}
-
-// The watch's own word ("Night"): its subtitle in data/vocab.json, less
-// the old "Hours 21 to 24", which the 12-hour clock above replaces.
-function watchWord(block) {
-  return (block.subtitle || '').split(' · ')[0];
-}
+// watchHoursWords() ("9 pm to midnight") lives in shared.js, shared with sources.js.
 
 // The time and date at the head of the page, and the season and moon at
 // its foot, as of now. The time is left out while wandering, when the
@@ -189,7 +179,7 @@ function applyBlockToDOM(blocksData, block, h) {
   lastImageSrc  = img.src;
 
   document.getElementById('block-subtitle').innerHTML =
-    `${escapeHTML(watchWord(block))}<span class="hour-sep" aria-hidden="true">✦</span>${watchHoursWords(block)}`;
+    `${escapeHTML(block.subtitle || '')}<span class="hour-sep" aria-hidden="true">✦</span>${watchHoursWords(block)}`;
   document.getElementById('block-name').textContent     = block.name;
   document.getElementById('hour-name').textContent      = HOUR_NAMES[getSeason()][h] || '';
   renderNow();
@@ -669,7 +659,7 @@ function buildWander(blocksData) {
     tile.innerHTML = `
       <span class="tile-name">${block.name}</span>
       <span class="tile-hours">${formatBlockHours(block.startHour)}</span>
-      ${block.subtitle ? `<span class="tile-subtitle">${watchWord(block)}</span>` : ''}
+      ${block.subtitle ? `<span class="tile-subtitle">${block.subtitle}</span>` : ''}
     `;
 
     tile.addEventListener('mouseenter', () => {
