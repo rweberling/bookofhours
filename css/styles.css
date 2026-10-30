@@ -303,12 +303,24 @@ body main.hours-page .versicle {
 .hours-page .turn-the-page { margin-top: 28px; }
 .hours-page .drawn-rule:not(.drawn-rule-short) { margin-top: 44px; opacity: 0; animation: fadeIn 1.4s ease forwards 1.3s; }
 .hours-page .phenomena { margin-top: 30px; }
-.hours-page .versicle { margin-top: 44px; }
+.hours-page .versicle { margin-top: 26px; }
+/* Between the phenomena and the versicle, both the hour's notes: a
+   lesser pause than the drawn rules, three ✦ set as an asterism (⁂). */
+.asterism {
+  display: flex; flex-direction: column; align-items: center;
+  margin-top: 30px;
+  font-family: var(--font-text); font-size: 11px; line-height: 1.1;
+  color: var(--gold);
+  opacity: 0; animation: fadeIn 1.4s ease forwards 1.45s;
+  transition: color 3s ease;
+}
+.asterism-gap { display: inline-block; width: 0.85em; }
 .hours-page .page-footer { margin-top: 48px; }
 @media (max-width: 600px) {
   .hours-page .drawn-rule:not(.drawn-rule-short) { margin-top: 36px; }
   .hours-page .phenomena { margin-top: 24px; }
-  .hours-page .versicle { margin-top: 36px; padding: 0; }
+  .hours-page .versicle { margin-top: 22px; padding: 0; }
+  .asterism { margin-top: 26px; }
   .hours-page .page-footer { margin-top: 40px; }
 }
 
@@ -1356,7 +1368,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
 
   .outer-frame, .corner, .site-nav, .page-footer,
-  .transition-veil, .rule-ornament, .hours-band, .drawn-rule,
+  .transition-veil, .rule-ornament, .hours-band, .drawn-rule, .asterism,
   .turn-the-page, .static-divider,
   .lightbox, .wander-pane,
   .phenomena, .versicle,
