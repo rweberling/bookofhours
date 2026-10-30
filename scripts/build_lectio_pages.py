@@ -225,7 +225,7 @@ def render(template, season, entry, subject, alone, post_pages, alts):
                      f'<body class="season-reading-page" data-season="{season}" data-entry="{entry["id"]}">')
     t = replace_once(t, r'\s*<!-- For readers and crawlers without JavaScript[^\n]*\n\s*<noscript>.*?</noscript>', '', re.S)
     t = replace_once(t, r'(?<=aria-describedby="season-reading-subtitle-hint">)(?=</button>)', season.capitalize())
-    t = replace_once(t, r'(?<=<h1 class="block-name" id="season-reading-title">)[^<]*', escape(name))
+    t = replace_once(t, r'(?<=<button class="pane-link" id="season-reading-title" type="button" aria-describedby="season-reading-subtitle-hint">)[^<]*', escape(name))
     if subject and subject.get('scientific'):
         t = replace_once(t, r'(?<=<em id="season-reading-latin">)', escape(subject['scientific']))
     t = replace_once(t, r'(?<=<p class="season-post-dek" id="season-reading-dek">)', escape(credits))
