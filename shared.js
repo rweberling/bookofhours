@@ -64,9 +64,14 @@ function formatTime(d) {
   return `${h % 12 || 12}:${String(m).padStart(2, '0')} ${h >= 12 ? 'pm' : 'am'}`;
 }
 
-// "Wednesday, 30 September 2026"
+// "Wednesday, September 30, 2026"
 function formatDate(d) {
-  return `${DAY_NAMES[d.getDay()]}, ${d.getDate()} ${MONTH_NAMES[d.getMonth()]} ${d.getFullYear()}`;
+  return `${DAY_NAMES[d.getDay()]}, ${MONTH_NAMES[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+}
+
+// "Wed, Sep 30, 2026", for narrow screens.
+function formatDateShort(d) {
+  return `${DAY_NAMES[d.getDay()].slice(0, 3)}, ${MONTH_NAMES[d.getMonth()].slice(0, 3)} ${d.getDate()}, ${d.getFullYear()}`;
 }
 
 // A caption or citation with its markup removed, e.g. for an image's alt text.

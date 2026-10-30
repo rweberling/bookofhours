@@ -399,14 +399,30 @@ body::before {
   font-size: 14px; font-weight: 300; letter-spacing: 0.18em;
   color: var(--ink-faint); transition: color 3s ease;
 }
-.weather-line {
+/* The Hours page's head, under the watch's name: its first line (the
+   watch, its hours, then the time in the watch's own colour, as a
+   rubric), and below the name the date, set as a calendar page sets it,
+   with the weather beside it when any is set. */
+.block-subtitle .hour-sep { font-style: normal; margin: 0 0.7em; }
+.block-subtitle .clock-time {
+  font: inherit; letter-spacing: inherit;
+  color: var(--accent);
+}
+.date-line {
   font-family: var(--font-text);
-  font-size: 12px; font-weight: 300; letter-spacing: 0.1em; font-style: italic;
-  color: var(--accent2); text-align: center;
-  margin-top: -24px; margin-bottom: 34px;
+  font-size: 11.5px; font-weight: 400; letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-faint); text-align: center; text-wrap: balance;
+  margin-bottom: 34px;
+  opacity: 0; animation: fadeIn 1.2s ease forwards 0.7s;
   transition: color 3s ease;
 }
-.weather-line .sep { color: var(--gold); margin: 0 8px; transition: color 3s ease; }
+.date-short { display: none; }
+.weather-line {
+  color: var(--accent2);
+  transition: color 3s ease;
+}
+.date-line .sep { color: var(--gold); margin: 0 0.6em; letter-spacing: 0; transition: color 3s ease; }
 /* The line opens Wander the Weather; it reads as the line it is until
    hovered. */
 .weather-line-link {
@@ -1228,6 +1244,9 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .block-name { font-size: clamp(24px, 7vw, 36px); }
   .quote-text { font-size: clamp(14px, 4vw, 18px); }
   .block-subtitle { margin-bottom: 4px; }
+  .date-line { margin-bottom: 24px; letter-spacing: 0.16em; }
+  .date-long { display: none; }
+  .date-short { display: inline; }
   .hour-line { flex-direction: column; align-items: center; gap: 4px; margin-bottom: 24px; }
   .versicle { padding: 16px; margin-top: 24px; }
   .versicle p { font-size: 13px; }
@@ -1265,7 +1284,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .turn-the-page, .static-divider,
   .lightbox, .wander-pane,
   .phenomena, .versicle,
-  .block-subtitle, .block-name, .hour-line { display: none !important; }
+  .block-subtitle, .block-name, .hour-line, .date-line { display: none !important; }
 
   body { background: var(--bg) !important; }
 

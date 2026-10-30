@@ -144,14 +144,34 @@ let wanderHour = null; // which hour selectWanderBlock() picked — "turn the pa
 
 let lastRenderedSeason = null;
 
+// "9 pm to midnight": a watch's hours, on the 12-hour clock.
+function watchHoursWords(block) {
+  const word = h => h % 24 === 0 ? 'midnight' : h === 12 ? 'noon' : `${h % 12} ${h > 12 ? 'pm' : 'am'}`;
+  return `${word(block.startHour)} to ${word(block.startHour + 3)}`;
+}
+
+// The watch's own word ("Night"): its subtitle in data/vocab.json, less
+// the old "Hours 21 to 24", which the 12-hour clock above replaces.
+function watchWord(block) {
+  return (block.subtitle || '').split(' · ')[0];
+}
+
+// The time and date at the head of the page, and the season and moon at
+// its foot, as of now. The time is left out while wandering, when the
+// page shows another watch than now's.
+function renderNow(now = new Date()) {
+  document.getElementById('clock-time').textContent = formatTime(now);
+  document.getElementById('clock-wrap').hidden = Date.now() < wanderHoldUntil;
+  document.getElementById('date-long').textContent  = formatDate(now);
+  document.getElementById('date-short').textContent = formatDateShort(now);
+  document.getElementById('colophon-almanac').textContent =
+    `${SEASON_LABELS[getSeason()]} ✦ ${moonPhase(now).name}`;
+}
+
 // Writes one block's content into the DOM — shared by render()'s regular
 // tick and renderAtHour()'s hand-picked-hour view (Wander the Hours,
-// "turn the page"), which used to carry two near-identical copies of the
-// same ~11 getElementById writes. clockTime/colophonDate are optional:
-// render()'s tick already wrote those once, unconditionally, before
-// deciding whether anything else needs updating, so it doesn't pass them
-// again here.
-function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate } = {}) {
+// "turn the page").
+function applyBlockToDOM(blocksData, block, h) {
   blocksData.forEach(b => {
     if (b.cssClass) document.body.classList.remove(b.cssClass);
   });
@@ -168,11 +188,11 @@ function applyBlockToDOM(blocksData, block, h, { clockTime, colophonDate } = {})
   lastQuoteText = q.text;
   lastImageSrc  = img.src;
 
-  document.getElementById('block-subtitle').textContent = block.subtitle || '';
+  document.getElementById('block-subtitle').innerHTML =
+    `${escapeHTML(watchWord(block))}<span class="hour-sep" aria-hidden="true">✦</span>${watchHoursWords(block)}`;
   document.getElementById('block-name').textContent     = block.name;
   document.getElementById('hour-name').textContent      = HOUR_NAMES[getSeason()][h] || '';
-  if (clockTime)    document.getElementById('clock-time').textContent    = clockTime;
-  if (colophonDate) document.getElementById('colophon-date').textContent = colophonDate;
+  renderNow();
   document.getElementById('quote-text').innerHTML       = q.text;
   document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
   document.getElementById('phenomena-list').innerHTML   = phenomenaHTML(block.phenomena);
@@ -199,8 +219,7 @@ function render(blocksData, force) {
   const h     = now.getHours();
   const block = blockForHour(blocksData, h);
 
-  document.getElementById('clock-time').textContent    = formatTime(now);
-  document.getElementById('colophon-date').textContent = formatDate(now);
+  renderNow(now);
 
   // The emblem is a multi-path inline SVG — cheap to skip re-parsing on
   // every 60s tick when the season (changes ~4x/year) hasn't actually
@@ -650,7 +669,7 @@ function buildWander(blocksData) {
     tile.innerHTML = `
       <span class="tile-name">${block.name}</span>
       <span class="tile-hours">${formatBlockHours(block.startHour)}</span>
-      ${block.subtitle ? `<span class="tile-subtitle">${block.subtitle}</span>` : ''}
+      ${block.subtitle ? `<span class="tile-subtitle">${watchWord(block)}</span>` : ''}
     `;
 
     tile.addEventListener('mouseenter', () => {
@@ -677,20 +696,14 @@ function updateWanderTileCurrent(blockName) {
 // toTop: start the new content at the top of the page, scrolled there
 // while the veil covers the swap ("turn the page", whose button sits
 // below the reading).
-function renderAtHour(blocksData, overrideHour, useRealTime = false, { toTop = false } = {}) {
-  const now = new Date();
+function renderAtHour(blocksData, overrideHour, { toTop = false } = {}) {
   const h = overrideHour;
-  const displayTime = useRealTime ? now : new Date(now);
-  if (!useRealTime) displayTime.setHours(overrideHour + 1, 30, 0, 0);
   const block = blockForHour(blocksData, h);
   const veil = document.getElementById('veil');
 
   veil.classList.add('active');
   setTimeout(() => {
-    applyBlockToDOM(blocksData, block, h, {
-      clockTime: formatTime(displayTime),
-      colophonDate: formatDate(now)
-    });
+    applyBlockToDOM(blocksData, block, h);
     if (toTop) window.scrollTo(0, 0);
     veil.classList.remove('active');
   }, 1200);
@@ -714,7 +727,7 @@ ttpBtn.addEventListener('click', () => {
   // hour would yank you straight back to now.
   const isWandering = Date.now() < wanderHoldUntil;
   const hour = isWandering ? wanderHour : new Date().getHours();
-  renderAtHour(blocksRef, hour, !isWandering, { toTop: true });
+  renderAtHour(blocksRef, hour, { toTop: true });
 });
 
 const keepPageBtn = document.getElementById('keep-page');
@@ -779,7 +792,7 @@ function renderWeatherLine() {
   if (!el) return;
   const active = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
   el.innerHTML = active.length
-    ? `<a class="weather-line-link" href="weather.html#wander" aria-label="Wander the Weather: ${active.map(weatherLabel).join(', ')}">${weatherConditionsHTML(active)}</a>`
+    ? `<span class="sep" aria-hidden="true">✦</span><a class="weather-line-link" href="weather.html#wander" aria-label="Wander the Weather: ${active.map(weatherLabel).join(', ')}">${weatherConditionsHTML(active)}</a>`
     : '';
   el.hidden = !active.length;
 }
