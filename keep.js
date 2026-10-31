@@ -420,8 +420,9 @@ function keepLink() {
   });
 
   printBtn.addEventListener('click', () => {
+    // Print at once, inside the tap: phone browsers refuse a print
+    // dialog opened after a delay. The print styles hide the pane.
     closeOverlayPane(pane);
-    // Let the pane go before the print dialog freezes the page.
-    setTimeout(printKeepsake, 350);
+    printKeepsake();
   });
 })();
