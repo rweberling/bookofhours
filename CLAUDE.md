@@ -59,7 +59,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   on a canvas (wide 1200×630 or tall 1080×1350, saved at 2×), the page's
   link (`/?r=<reading>&i=<image>`, which `hours.js` reopens in its watch,
   held as if wandered to) with copy, and save image · print (share on
-  phones). Print is still the whole page (`printKeepsake()`).
+  phones). Print is still the whole page (`printKeepsake()`). Saved cards
+  are named "The Earthly Book of Hours — Hush — Lispector, Lockyer.png",
+  from the records' own names (reading author, image creator).
 
 ## The postcards (`c/`)
 
@@ -94,7 +96,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   pull before pushing if the session has been open a while.
 - Testing pages: `python3 -m http.server 8765` from the repo root (run it in
   the background), then Playwright with
-  `executablePath: '/opt/pw-browsers/chromium'`. The headless browser can't
+  `executablePath: '/opt/pw-browsers/chromium'`. Run node with
+  `LANG=C.UTF-8`, or downloads with non-ASCII names come out as
+  "download". The headless browser can't
   play H.264 video. The DFOS sign-in script fails to load from the CDN in
   tests; that error is harmless.
   Analytics (Google and Cloudflare) load only on earthlyhours.com, so local

@@ -167,6 +167,7 @@ function drawKeepCard(canvas, data, shape, scale = 1) {
     while (kept.length && kept[kept.length - 1].gap) kept.pop();
     if (prose) {
       outer: for (let i = kept.length - 1; i >= Math.floor(kept.length * 2 / 3); i--) {
+        if (kept[i].gap) continue;
         const ps = kept[i].pieces;
         for (let j = ps.length - 1; j >= 0; j--) {
           if (/[.!?;]["”’)]*$/.test(ps[j].text)) {
@@ -318,6 +319,25 @@ function keepLink() {
   return base + '?' + params.toString();
 }
 
+// --- Names for the saved file ---------------------------------------------
+// From the records' own names (a reading's author, an image's creator);
+// a record without one leaves its name out. A name as it would be filed: the surname, with its particle ("von
+// Bingen"); the whole name when it reads as one ("Pliny the Elder",
+// "Hildegard of Bingen", "Limbourg brothers"); single names as they are.
+function keepSurname(name) {
+  name = (name || '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s*\([^)]*\)/g, '')
+    .replace(/,?\s+(Jr|Sr)\.?$/, '').trim();
+  if (!name) return '';
+  const words = name.split(/\s+/);
+  if (words.length === 1) return name;
+  if (words.some(w => /^(the|of)$/.test(w)) || /^[a-z]/.test(words[words.length - 1]) ||
+      /^(Institution|Society|Museum|Library|Survey|Company|Inc\.?)$/.test(words[words.length - 1])) return name;
+  let i = words.length - 1;
+  while (i > 1 && /^(von|van|de|der|den|du|da|di|del|la|le|d['’])$/i.test(words[i - 1])) i--;
+  if (i > 1 && words[i - 1] === 'y') i -= 2;   // Ramón y Cajal
+  return words.slice(i).join(' ');
+}
+
 // --- The pane -------------------------------------------------------------
 (function () {
   const btn = document.getElementById('keep-page');
@@ -342,10 +362,14 @@ function keepLink() {
     if (cardData) drawKeepCard(canvas, cardData, shape, KEEP_SCALE);
   }
 
+  // "The Earthly Book of Hours — Hush — Lispector, Lockyer.png"
   function fileName() {
     const d = keepPageData();
-    return ['earthly-hours', (d.block || '').toLowerCase(), d.readingId, d.imageId, shape]
-      .filter(Boolean).join('-') + '.png';
+    const names = [keepSurname(d.author), keepSurname(d.creator)].filter(Boolean);
+    const unique = names.filter((n, i) => names.indexOf(n) === i);
+    return ['The Earthly Book of Hours', d.block, unique.join(', ')]
+      .filter(Boolean).join(' — ')
+      .replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, ' ').trim() + '.png';
   }
 
   function cardBlob() {

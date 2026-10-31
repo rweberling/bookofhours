@@ -851,6 +851,8 @@ function keepPageData() {
     block: currentBlockName || '',
     readingId: currentQuote && currentQuote.id,
     imageId: currentImage && currentImage.id,
+    author: (currentQuote && currentQuote.author) || '',
+    creator: (currentImage && currentImage.creator) || '',
     imageMaster: currentImage && currentImage.src,
     quoteEl: document.getElementById('quote-text'),
     attrEl: document.getElementById('quote-attr'),

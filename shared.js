@@ -667,11 +667,20 @@ function readingHTML(reading) {
 // The shapes the page code reads: a quote is { text, attr, weather } and
 // an image { src, caption, weather, cardPosition, unset }. attr is the
 // hand-written display citation.
+// A reading's first author, from its edition's contributors ('' if none
+// is recorded).
+function readingAuthor(reading) {
+  const ed = reading.citation && reading.citation.edition;
+  const a = ed && (ed.contributors || []).find(c => c.role === 'author');
+  return (a && a.name) || '';
+}
+
 function quoteView(reading) {
   return {
     id: reading.id,
     text: readingHTML(reading),
     attr: reading.citation ? reading.citation.display : '',
+    author: readingAuthor(reading),
     weather: (reading.tags && reading.tags.weather) || [],
     seasons: (reading.tags && reading.tags.seasons) || [],
     unset: !!(reading.display && reading.display.weatherUnset)
@@ -684,6 +693,7 @@ function imageView(image) {
     id: image.id,
     src: image.file,
     caption: image.caption || '',
+    creator: (image.creator && !Array.isArray(image.creator) && image.creator.name) || '',
     alt: image.alt || '',
     weather: (image.tags && image.tags.weather) || [],
     seasons: (image.tags && image.tags.seasons) || [],
