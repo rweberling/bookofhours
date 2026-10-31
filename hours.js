@@ -205,6 +205,27 @@ function drawHoursBand(block, now = new Date()) {
   button.setAttribute('aria-label', `${block.subtitle}, ${watchHoursWords(block)}. Open Wander the Hours`);
 }
 
+// The light on the watch from the reader's own sky (skyNow() in
+// atmosphere.js): only on the real current watch, so a watch reached by
+// wandering or turning the page shows in its own light; ?sky= forces it.
+// Said in the subtitle too, so the changed light reads as meant.
+const SKY_WORDS = {
+  chorus: 'still dark', doldrums: 'already dark',
+  hush: 'already light', convivium: 'still light', denouement: 'still light'
+};
+function syncSky(block) {
+  const body = document.body;
+  body.classList.remove('sky-dark', 'sky-light');
+  const real = window.siteAtmosphere && window.siteAtmosphere.time;
+  const forced = new URLSearchParams(window.location.search).has('sky');
+  const skyClass = block && window.skyClassFor && (forced || block.key === real)
+    ? window.skyClassFor(block.key) : null;
+  if (skyClass) body.classList.add(skyClass);
+  const words = document.getElementById('sky-words');
+  if (words) words.innerHTML = skyClass
+    ? `<span class="hour-sep" aria-hidden="true">✦</span>${SKY_WORDS[block.key]}` : '';
+}
+
 // Writes one block's content into the DOM — shared by render()'s regular
 // tick and renderAtHour()'s hand-picked-hour view (Wander the Hours,
 // "turn the page").
@@ -226,7 +247,8 @@ function applyBlockToDOM(blocksData, block, h) {
   lastImageSrc  = img.src;
 
   document.getElementById('block-subtitle').innerHTML =
-    `${escapeHTML(block.subtitle || '')}<span class="hour-sep" aria-hidden="true">✦</span>${watchHoursWords(block)}`;
+    `${escapeHTML(block.subtitle || '')}<span class="hour-sep" aria-hidden="true">✦</span>${watchHoursWords(block)}<span id="sky-words"></span>`;
+  syncSky(block);
   document.getElementById('block-name').textContent     = block.name;
   document.getElementById('hour-name').textContent      = HOUR_NAMES[getSeason()][h] || '';
   renderNow();
@@ -271,6 +293,7 @@ function render(blocksData, force) {
 
   renderWeatherLine();
   syncWanderDial();   // the real block may have moved on, even mid-hold
+  syncSky(blocksData.find(b => b.name === currentBlockName) || block);   // the sky moves within a watch
 
   if (Date.now() < wanderHoldUntil && !force) return;
   
@@ -338,6 +361,8 @@ async function init() {
     // independently-scheduled setInterval doing the same "what time/season
     // is it now" work a few milliseconds apart.
     window.addEventListener('atmospheretick', () => render(blocks, false));
+    window.addEventListener('atmospherechange', () =>
+      syncSky(blocks.find(b => b.name === currentBlockName)));
     setTimeout(() => document.getElementById('reading-actions').classList.add('visible'), 5000);
   } catch (err) {
     showError(

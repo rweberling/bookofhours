@@ -193,6 +193,50 @@ body.block-denouement {
   --rule:rgba(170,185,225,0.30);
 }
 
+/* ── Light from the reader's sky ─────────────────────────────────
+   The watches keep the clock; the light on them comes from the reader's
+   own sky (skyNow() in atmosphere.js). The watches that meet sunrise or
+   sunset somewhere in the year each have a second state of their own
+   palette, the same hues with the light changed, never another watch's
+   colors: Chorus and Doldrums unlit while the sky is still or already
+   dark, Hush, Convivium and Denouement lit while the sun is up. Same
+   4.5:1 rule as above. */
+body.block-chorus.sky-dark {
+  --bg:#2a1d23; --bg-dark:#21161b; --bg-deep:#170f13;
+  --ink:#f4e6e2; --ink-light:#e6d0ca; --ink-faint:#caa9a4;
+  --accent:#e88a7a; --accent2:#94b4a2;
+  --gold:#dcac6c; --gold-light:#ecc284;
+  --rule:rgba(230,170,160,0.32);
+}
+body.block-doldrums.sky-dark {
+  --bg:#262014; --bg-dark:#1e190f; --bg-deep:#15110a;
+  --ink:#f2e8d6; --ink-light:#e2d4ba; --ink-faint:#c6b292;
+  --accent:#e09058; --accent2:#a8ba8c;
+  --gold:#dab262; --gold-light:#eaca7a;
+  --rule:rgba(220,190,130,0.32);
+}
+body.block-hush.sky-light {
+  --bg:#e9edf3; --bg-dark:#d9e0ea; --bg-deep:#c2ccda;
+  --ink:#141822; --ink-light:#2a3244; --ink-faint:#4e5a70;
+  --accent:#8a3e5e; --accent2:#33606c;
+  --gold:#6e5a2a; --gold-light:#9a8240;
+  --rule:rgba(40,60,90,0.22);
+}
+body.block-convivium.sky-light {
+  --bg:#f6e4d6; --bg-dark:#ecd2be; --bg-deep:#d8b89e;
+  --ink:#1e120c; --ink-light:#3c2216; --ink-faint:#6a4430;
+  --accent:#a03c1c; --accent2:#5a5a28;
+  --gold:#80501a; --gold-light:#b07028;
+  --rule:rgba(110,60,30,0.24);
+}
+body.block-denouement.sky-light {
+  --bg:#e7e6f1; --bg-dark:#d7d6e7; --bg-deep:#bdbcd5;
+  --ink:#16162a; --ink-light:#2c2c48; --ink-faint:#4e4e78;
+  --accent:#584896; --accent2:#3a5a74;
+  --gold:#625a7a; --gold-light:#8a80a8;
+  --rule:rgba(50,50,100,0.22);
+}
+
 /* ── Base ─────────────────────────────────────────────────────── */
 html { height: 100%; }
 body {
@@ -275,6 +319,8 @@ body::before {
 .band-now  { fill: var(--accent); font-family: var(--font-text); font-size: 11px; transition: fill 3s ease; }
 body.block-void .band-watch, body.block-hush .band-watch,
 body.block-convivium .band-watch, body.block-denouement .band-watch { fill: var(--gold-light); }
+body.sky-dark .band-watch { fill: var(--gold-light); }
+body.sky-light .band-watch { fill: var(--gold); }
 
 /* ── The rest of the Hours page, in the manuscript's manner ───────
    The reading opens on a red initial (its first letter, in the title's
