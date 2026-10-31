@@ -123,46 +123,59 @@
 }
 
 /* ── Per-block palettes ───────────────────────────────────────── */
+/* The palettes follow the light of the day. Chorus is rose, for dawn:
+   a low sun's light crosses the most air, which scatters the blue away.
+   Transit is a whitening yellow. Fulcrum is the brightest and most
+   neutral, for the high noon sun. Doldrums is a hazier amber running
+   toward golden hour. Convivium is sunset and lamplight.
+   The night watches are blue, and follow the dark: Denouement is the
+   evening sky going from blue to black; Void is the darkest and nearly
+   colourless, as our eyes lose colour in very dim light (the Purkinje
+   shift: reds fade first, blues and greens last, which is why the
+   rubric turns blue-grey here); Hush lifts toward dawn, with warmth
+   returning to the gold and the rubric.
+   Keep text at 4.5:1 or better against --bg, gold included: it's used
+   for small text too (the dial's watch names, the date line). */
 body.block-void {
-  --bg:#1a1825; --bg-dark:#141220; --bg-deep:#0e0c18;
-  --ink:#f0e8ff; --ink-light:#e0d4f0; --ink-faint:#c8b8e8;
-  --accent:#c9a8f0; --accent2:#a0c4d8;
-  --gold:#c0afd8; --gold-light:#d8c8f0;
-  --rule:rgba(200,180,240,0.35);
+  --bg:#111419; --bg-dark:#0d1014; --bg-deep:#08090d;
+  --ink:#d8dde6; --ink-light:#c2c8d4; --ink-faint:#97a1b2;
+  --accent:#8aa4c8; --accent2:#8cb4b0;
+  --gold:#a4acbc; --gold-light:#c0c8d6;
+  --rule:rgba(170,185,210,0.28);
 }
 body.block-hush {
-  --bg:#1e1c2a; --bg-dark:#18161f; --bg-deep:#121018;
-  --ink:#e0d8f0; --ink-light:#d0c8e0; --ink-faint:#c0b0d8;
-  --accent:#c0a0c0; --accent2:#90b0d0;
-  --gold:#b0a0c8; --gold-light:#c8b8e0;
-  --rule:rgba(200,180,240,0.35);
+  --bg:#1b2135; --bg-dark:#161b2d; --bg-deep:#0f1322;
+  --ink:#e6e6f0; --ink-light:#d2d4e6; --ink-faint:#b0b6d0;
+  --accent:#c8a0b8; --accent2:#90b0d0;
+  --gold:#c8b490; --gold-light:#dcc8a0;
+  --rule:rgba(190,195,230,0.32);
 }
 body.block-chorus {
   --bg:#f5e8e0; --bg-dark:#ead8cc; --bg-deep:#d4c0b0;
   --ink:#1a1210; --ink-light:#38261a; --ink-faint:#6a4e3c;
-  --accent:#b03828; --accent2:#7a5848;
-  --gold:#a07020; --gold-light:#c89030;
+  --accent:#b03828; --accent2:#4a6450;
+  --gold:#8a5c18; --gold-light:#c89030;
   --rule:rgba(100,60,40,0.22);
 }
 body.block-transit {
   --bg:#f8f0d8; --bg-dark:#eddfc0; --bg-deep:#d8c89a;
   --ink:#181408; --ink-light:#342810; --ink-faint:#685030;
   --accent:#904018; --accent2:#306040;
-  --gold:#987020; --gold-light:#c09030;
+  --gold:#836014; --gold-light:#c09030;
   --rule:rgba(70,40,10,0.22);
 }
 body.block-fulcrum {
-  --bg:#fdf8ec; --bg-dark:#f4ead4; --bg-deep:#e4d8b8;
+  --bg:#fcf9f1; --bg-dark:#f2ecdc; --bg-deep:#e0d8c0;
   --ink:#141008; --ink-light:#302410; --ink-faint:#604c28;
   --accent:#7a3010; --accent2:#2a5830;
-  --gold:#9a7810; --gold-light:#c8a028;
+  --gold:#84670c; --gold-light:#c8a028;
   --rule:rgba(60,36,8,0.20);
 }
 body.block-doldrums {
   --bg:#f2e4cc; --bg-dark:#e4d0b0; --bg-deep:#ccb890;
   --ink:#1a100a; --ink-light:#382010; --ink-faint:#704030;
   --accent:#8a3018; --accent2:#3a5838;
-  --gold:#906010; --gold-light:#b88020;
+  --gold:#845810; --gold-light:#b88020;
   --rule:rgba(80,40,16,0.24);
 }
 body.block-convivium {
@@ -173,11 +186,11 @@ body.block-convivium {
   --rule:rgba(240,160,100,0.35);
 }
 body.block-denouement {
-  --bg:#181420; --bg-dark:#100c18; --bg-deep:#0a0810;
-  --ink:#e8e0f0; --ink-light:#d0c0e8; --ink-faint:#b0a0d0;
-  --accent:#9888d0; --accent2:#88a8c8;
-  --gold:#9890c0; --gold-light:#b8a8d8;
-  --rule:rgba(180,160,220,0.30);
+  --bg:#171c2e; --bg-dark:#121626; --bg-deep:#0c0f1c;
+  --ink:#e4e8f4; --ink-light:#ccd4ea; --ink-faint:#a8b4d4;
+  --accent:#8fa8e0; --accent2:#88b8c8;
+  --gold:#a8b0d0; --gold-light:#c4cce4;
+  --rule:rgba(170,185,225,0.30);
 }
 
 /* ── Base ─────────────────────────────────────────────────────── */

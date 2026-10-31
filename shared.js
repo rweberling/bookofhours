@@ -14,14 +14,14 @@
 // data/vocab.json repeats the ids, names and start hours for reuse outside
 // the site; scripts/check_data.py checks that the two agree.
 const HOURS = [
-  { key: 'void', label: 'Void', start: 0, color: '#2a2440' },
-  { key: 'hush', label: 'Hush', start: 3, color: '#3a3050' },
+  { key: 'void', label: 'Void', start: 0, color: '#252b38' },
+  { key: 'hush', label: 'Hush', start: 3, color: '#3a4664' },
   { key: 'chorus', label: 'Chorus', start: 6, color: '#c89030' },
   { key: 'transit', label: 'Transit', start: 9, color: '#f0c050' },
   { key: 'fulcrum', label: 'Fulcrum', start: 12, color: '#d4b870' },
   { key: 'doldrums', label: 'Doldrums', start: 15, color: '#c08040' },
   { key: 'convivium', label: 'Convivium', start: 18, color: '#a84828' },
-  { key: 'denouement', label: 'Denouement', start: 21, color: '#404870' }
+  { key: 'denouement', label: 'Denouement', start: 21, color: '#2f3c66' }
 ];
 
 // --- Seasons and months -----------------------------------------------------
