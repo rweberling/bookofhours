@@ -55,6 +55,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   the first page of a visit is weighted; turning the page then shows the
   rest of the hour evenly, without repeats.
 - The Hours frame crops every image to 4:3; the lightbox shows it whole.
+- "keep this page" (`keep.js`) opens a pane with the page drawn as a card
+  on a canvas (wide 1200×630 or tall 1080×1350, saved at 2×), the page's
+  link (`/?r=<reading>&i=<image>`, which `hours.js` reopens in its watch,
+  held as if wandered to) with copy, and save image · print (share on
+  phones). Print is still the whole page (`printKeepsake()`).
 
 ## The postcards (`c/`)
 

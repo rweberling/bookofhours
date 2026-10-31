@@ -140,6 +140,36 @@
  <p class="lightbox-caption" id="lightbox-caption"></p>
 </div>
 
+<!-- Keep this page: the page as a card to save or share, its link, and
+     print (keep.js). -->
+<div class="keep-pane" id="keep-pane" role="dialog" aria-label="Keep this page" aria-modal="true">
+ <button class="wander-close" id="keep-close" type="button" aria-label="Close">✦ &nbsp;Close</button>
+ <canvas class="keep-card" id="keep-card" role="img" width="1200" height="630"></canvas>
+ <div class="keep-controls">
+  <div class="turn-the-page visible keep-row">
+   <span class="ttp-bracket">[</span>
+   <button class="page-action" type="button" data-keep-shape="wide" aria-pressed="false">wide</button>
+   <span class="ttp-sep" aria-hidden="true">·</span>
+   <button class="page-action" type="button" data-keep-shape="tall" aria-pressed="false">tall</button>
+   <span class="ttp-bracket">]</span>
+  </div>
+  <div class="keep-link-row">
+   <label class="visually-hidden" for="keep-link">Link to this page</label>
+   <input class="keep-link" id="keep-link" type="text" readonly spellcheck="false">
+   <button class="page-action keep-copy" id="keep-copy" type="button">copy</button>
+  </div>
+  <div class="turn-the-page visible keep-row">
+   <span class="ttp-bracket">[</span>
+   <button class="page-action" id="keep-share" type="button" hidden>share</button>
+   <span class="ttp-sep keep-share-sep" aria-hidden="true" hidden>|</span>
+   <button class="page-action" id="keep-save" type="button">save image</button>
+   <span class="ttp-sep" aria-hidden="true">|</span>
+   <button class="page-action" id="keep-print" type="button">print</button>
+   <span class="ttp-bracket">]</span>
+  </div>
+ </div>
+</div>
+
 <!-- ═══════════════════════════════════════════════
  MAIN PAGE CONTENT
 ════════════════════════════════════════════════ -->
@@ -191,7 +221,7 @@
  <span class="ttp-bracket">[</span>
  <button class="page-action" id="turn-the-page" aria-label="Load another reading">turn the page</button>
  <span class="ttp-sep" aria-hidden="true">|</span>
- <button class="page-action" id="keep-page" aria-label="Print or save this reading as a keepsake">keep this page</button>
+ <button class="page-action" id="keep-page" aria-label="Keep this page: save it as an image, copy its link, or print it">keep this page</button>
  <span class="ttp-bracket">]</span>
 </div>
 
@@ -313,6 +343,7 @@
 <script src="shared.js"></script>
 <script src="atmosphere.js"></script>
 <script src="hours.js"></script>
+<script src="keep.js"></script>
 
 <script src="nav.js"></script>
  

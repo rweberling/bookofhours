@@ -127,6 +127,8 @@ function blockForHour(blocks, h) {
 }
 
 let currentBlockName = null;
+let currentQuote = null;   // the reading and image on the page now
+let currentImage = null;
 let lastRenderedHour = null;
 let blocks = null;
 
@@ -241,8 +243,15 @@ function applyBlockToDOM(blocksData, block, h) {
     shownThisVisit.quotes.clear();
     shownThisVisit.images.clear();
   }
-  const q   = pickForVisit(block.quotes, shownThisVisit.quotes, item => item.text, lastQuoteText, firstPage) || { text: '', attr: '' };
-  const img = pickForVisit(block.images, shownThisVisit.images, item => item.src, lastImageSrc, firstPage) || { src: null, caption: '' };
+  // A shared link (?r=…&i=…) names the reading and image to open on.
+  const shared = sharedPick && sharedPick.block === block ? sharedPick : null;
+  sharedPick = null;
+  if (shared && shared.quote) shownThisVisit.quotes.add(shared.quote.text);
+  if (shared && shared.image) shownThisVisit.images.add(shared.image.src);
+  const q   = (shared && shared.quote) || pickForVisit(block.quotes, shownThisVisit.quotes, item => item.text, lastQuoteText, firstPage) || { text: '', attr: '' };
+  const img = (shared && shared.image) || pickForVisit(block.images, shownThisVisit.images, item => item.src, lastImageSrc, firstPage) || { src: null, caption: '' };
+  currentQuote = q;
+  currentImage = img;
   lastQuoteText = q.text;
   lastImageSrc  = img.src;
 
@@ -276,7 +285,9 @@ function applyBlockToDOM(blocksData, block, h) {
 
 function render(blocksData, force) {
   const now   = new Date();
-  const h     = now.getHours();
+  // While a hold is on (wandering, or a shared link), a forced render
+  // shows the held hour.
+  const h     = Date.now() < wanderHoldUntil && wanderHour !== null ? wanderHour : now.getHours();
   const block = blockForHour(blocksData, h);
 
   renderNow(now);
@@ -349,10 +360,42 @@ async function fetchWithRetry(retries = 3) {
   }
 }
 
+/* ── Shared links ────────────────────────────────────────────────
+   "keep this page" (keep.js) gives each page a link naming its reading
+   and image by ID: /?r=r-0006&i=i-0006. Opening one shows that reading
+   and image in their watch, held there as if wandered to (the clock
+   comes back after WANDER_HOLD_MS); turning the page goes on in that
+   watch. A reading in several watches opens in the one that also holds
+   the image, now's if it can. An unknown ID is ignored. */
+let sharedPick = null;
+
+function sharedFromURL(blocksData) {
+  const params = new URLSearchParams(window.location.search);
+  const r = params.get('r'), i = params.get('i');
+  if (!r && !i) return null;
+  const has = (b, kind, id) => id && b[kind].some(x => x.id === id);
+  let candidates = blocksData.filter(b => has(b, 'quotes', r) || has(b, 'images', i));
+  if (!candidates.length) return null;
+  const both = candidates.filter(b => has(b, 'quotes', r) && has(b, 'images', i));
+  if (both.length) candidates = both;
+  const nowBlock = blockForHour(blocksData, new Date().getHours());
+  const block = candidates.includes(nowBlock) ? nowBlock : candidates[0];
+  return {
+    block,
+    quote: block.quotes.find(x => x.id === r) || null,
+    image: block.images.find(x => x.id === i) || null
+  };
+}
+
 async function init() {
   try {
     blocks = await fetchWithRetry(3);
-    
+
+    sharedPick = sharedFromURL(blocks);
+    if (sharedPick && sharedPick.block !== blockForHour(blocks, new Date().getHours())) {
+      wanderHoldUntil = Date.now() + WANDER_HOLD_MS;
+      wanderHour = sharedPick.block.startHour;
+    }
     render(blocks, true);
     openWanderIfHashed();
     blocksRef = blocks;
@@ -794,13 +837,26 @@ ttpBtn.addEventListener('click', () => {
   renderAtHour(blocksRef, hour, { toTop: true });
 });
 
-const keepPageBtn = document.getElementById('keep-page');
-keepPageBtn.addEventListener('click', () => {
+// "keep this page" opens the keep pane (keep.js), which reads what the
+// page shows from keepPageData() and prints it with printKeepsake().
+function printKeepsake() {
   document.getElementById('print-block-name').textContent = currentBlockName || '';
   const now = new Date();
   document.getElementById('print-timestamp').textContent = formatDate(now) + ' · ' + formatTime(now);
   window.print();
-});
+}
+
+function keepPageData() {
+  return {
+    block: currentBlockName || '',
+    readingId: currentQuote && currentQuote.id,
+    imageId: currentImage && currentImage.id,
+    imageMaster: currentImage && currentImage.src,
+    quoteEl: document.getElementById('quote-text'),
+    attrEl: document.getElementById('quote-attr'),
+    captionEl: document.getElementById('image-caption')
+  };
+}
 
 /* ── Wander the Hours: the pane ───────────────────────────────────
    Every way in (the menu's Wander button, the hour's name over the
