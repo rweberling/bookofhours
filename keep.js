@@ -84,31 +84,15 @@ function keepTextLines(el) {
   return out;
 }
 
-// --- The card -------------------------------------------------------------
-// data: { block, lines (keepTextLines of the reading), attr, caption
-//         (keepTextLines of each), img (a decoded Image, or null),
-//         palette: { bg, title, text, faint, accent, gold, mount, rule } }
-function drawKeepCard(canvas, data, shape, scale = 1) {
-  const { w: W, h: H } = KEEP_SHAPES[shape];
-  canvas.width = W * scale; canvas.height = H * scale;
-  const c = canvas.getContext('2d');
-  c.scale(scale, scale);
-  const P = data.palette;
-  const wide = shape === 'wide';
-
-  c.fillStyle = P.bg; c.fillRect(0, 0, W, H);
-  c.textBaseline = 'alphabetic';
-
-  // The page's frame: one fine rule, inset.
-  const m = wide ? 22 : 28;
-  c.strokeStyle = P.rule; c.lineWidth = 1;
-  c.strokeRect(m + .5, m + .5, W - 2 * m - 1, H - 2 * m - 1);
-
+// --- Drawing text on a canvas ---------------------------------------------
+// Shared by the card and the printed pages: fonts, letter-spaced capitals,
+// and lines of runs laid out to a width (layout) and drawn (drawLine).
+function keepTextTools(c) {
   const STAR = '"Earthly Star"';
   const fontOf = (family, size, italic) => `${italic ? 'italic ' : ''}${size}px ${STAR}, ${family}, Georgia, serif`;
 
-  function spaced(text, x, y, size, spacing, color) {
-    c.font = fontOf('"Cormorant Garamond"', size, false); c.fillStyle = color; c.textAlign = 'left';
+  function spaced(text, x, y, size, spacing, color, italic = false) {
+    c.font = fontOf('"Cormorant Garamond"', size, italic); c.fillStyle = color; c.textAlign = 'left';
     const chars = [...text];
     const width = chars.reduce((s, ch) => s + c.measureText(ch).width + spacing, -spacing);
     let cx = x - width / 2;
@@ -159,6 +143,30 @@ function drawKeepCard(canvas, data, shape, scale = 1) {
       cx += c.measureText(p.text).width;
     });
   }
+  return { fontOf, spaced, layout, drawLine };
+}
+
+// --- The card -------------------------------------------------------------
+// data: { block, lines (keepTextLines of the reading), attr, caption
+//         (keepTextLines of each), img (a decoded Image, or null),
+//         palette: { bg, title, text, faint, accent, gold, mount, rule } }
+function drawKeepCard(canvas, data, shape, scale = 1) {
+  const { w: W, h: H } = KEEP_SHAPES[shape];
+  canvas.width = W * scale; canvas.height = H * scale;
+  const c = canvas.getContext('2d');
+  c.scale(scale, scale);
+  const P = data.palette;
+  const wide = shape === 'wide';
+
+  c.fillStyle = P.bg; c.fillRect(0, 0, W, H);
+  c.textBaseline = 'alphabetic';
+
+  // The page's frame: one fine rule, inset.
+  const m = wide ? 22 : 28;
+  c.strokeStyle = P.rule; c.lineWidth = 1;
+  c.strokeRect(m + .5, m + .5, W - 2 * m - 1, H - 2 * m - 1);
+
+  const { fontOf, spaced, layout, drawLine } = keepTextTools(c);
 
   // Ends a cut text: on prose, at the last full sentence if one ends in
   // the last third; then an ellipsis.
@@ -267,6 +275,161 @@ function drawKeepCard(canvas, data, shape, scale = 1) {
   }
 }
 
+// --- The printout, drawn ---------------------------------------------------
+// Where the browser can't print (an iPhone's home-screen app), "print"
+// shares a PDF instead, drawn here in the manner of the print stylesheet:
+// a 4.5in framed column on a letter page in the hour's colours, the
+// masthead, the image on its mount with its caption, the whole reading,
+// its citation, and the "Kept from" stamp. A long reading runs on to
+// further pages. Returns one canvas per page.
+const KEEP_DPI = 200;
+
+function drawKeepPrintPages(data, stamp) {
+  const IN = KEEP_DPI, CSS = KEEP_DPI / 96, PT = KEEP_DPI / 72;
+  const W = 8.5 * IN, H = 11 * IN;
+  const P = data.palette;
+  const colW = 4.5 * IN, colX = (W - colW) / 2;
+  const frameTop = 0.45 * IN, frameBottom = H - 0.45 * IN;
+  const pad = 18 * CSS;
+  const x = colX + pad, w = colW - 2 * pad;
+  const bottom = frameBottom - pad;
+  const pages = [];
+  let c, tools, y;
+
+  function newPage() {
+    const canvas = document.createElement('canvas');
+    canvas.width = W; canvas.height = H;
+    c = canvas.getContext('2d');
+    c.textBaseline = 'alphabetic';
+    tools = keepTextTools(c);
+    pages.push(canvas);
+    c.fillStyle = P.bg; c.fillRect(0, 0, W, H);
+    c.strokeStyle = P.gold; c.lineWidth = 1.5 * CSS;
+    c.strokeRect(colX, frameTop, colW, frameBottom - frameTop);
+    c.strokeStyle = P.rule; c.lineWidth = 0.75 * CSS;
+    c.strokeRect(colX + 5 * CSS, frameTop + 5 * CSS, colW - 10 * CSS, frameBottom - frameTop - 10 * CSS);
+    y = frameTop + pad;
+  }
+  // Room for h more below y, or a new page.
+  function room(h) { if (y + h > bottom) newPage(); }
+
+  newPage();
+  // The masthead.
+  y += 13 * CSS;
+  tools.spaced('THE EARTHLY BOOK OF HOURS', W / 2, y, 13 * CSS, 4 * CSS, P.faint);
+  y += 26 * CSS;
+
+  // The image on its mount, its caption inside the mount.
+  const mountW = 3.2 * IN, mountX = (W - mountW) / 2, mpad = 14 * CSS;
+  const imgW = mountW - 2 * mpad, imgH = imgW * 3 / 4;
+  const capSize = 12.5 * CSS, capLh = capSize * 1.6;
+  const capLaid = tools.layout(data.caption, '"Cormorant Garamond"', capSize, false, imgW, false).filter(l => !l.gap);
+  const mountH = mpad + imgH + 12 * CSS + capLaid.length * capLh + mpad * 0.6;
+  c.fillStyle = P.mount; c.fillRect(mountX, y, mountW, mountH);
+  c.strokeStyle = P.rule; c.lineWidth = CSS; c.strokeRect(mountX, y, mountW, mountH);
+  if (data.img) {
+    const img = data.img, iw = img.naturalWidth, ih = img.naturalHeight;
+    let sw = iw, sh = ih, sx = 0, sy = 0;
+    if (iw / ih > 4 / 3) { sw = ih * 4 / 3; sx = (iw - sw) / 2; } else { sh = iw * 3 / 4; sy = (ih - sh) / 2; }
+    c.drawImage(img, sx, sy, sw, sh, mountX + mpad, y + mpad, imgW, imgH);
+  }
+  let cy = y + mpad + imgH + 12 * CSS + capSize;
+  capLaid.forEach(l => { tools.drawLine(l, mountX + mpad, cy, '"Cormorant Garamond"', capSize, false, P.faint, 'center', imgW); cy += capLh; });
+  y += mountH + 26 * CSS;
+
+  // The whole reading, opening on its initial. Its last two lines stay
+  // with the citation and stamp, so a page never holds those alone.
+  const size = 12.5 * PT, lh = size * 1.4;
+  const attrSize = 14 * CSS, stampSize = 9 * PT;
+  const attrLaid = tools.layout(data.attr, '"Cormorant Garamond"', attrSize, false, w, false).filter(l => !l.gap);
+  const tailH = 16 * CSS + attrLaid.length * attrSize * 1.5 + 14 * CSS + stampSize * 3.2;
+  const laid = tools.layout(data.lines, '"IM Fell English"', size, true, w, data.verse);
+  const textLines = laid.filter(l => !l.gap).length;
+  let drawn = 0;
+  laid.forEach((l, i) => {
+    if (l.gap) { y += lh * 0.6; return; }
+    if (i === 0) y += size * 0.4;   // room for the initial
+    const left = textLines - drawn++;
+    room(left <= 2 ? left * lh + tailH : lh);
+    y += i === 0 ? size : lh;
+    if (i === 0) {
+      const first = l.pieces[0], ch = [...first.text][0] || '';
+      if (/\p{L}/u.test(ch)) {
+        c.font = tools.fontOf('"GL-Morris"', size * 1.9, false); c.fillStyle = P.accent; c.textAlign = 'left';
+        c.fillText(ch, x + (l.indent || 0), y + size * 0.12);
+        const iw = c.measureText(ch).width + size * 0.06;
+        tools.drawLine({ ...l, indent: (l.indent || 0) + iw, pieces: [{ ...first, text: first.text.slice(ch.length) }, ...l.pieces.slice(1)] },
+          x, y, '"IM Fell English"', size, true, P.text);
+        return;
+      }
+    }
+    tools.drawLine(l, x, y, '"IM Fell English"', size, true, P.text);
+  });
+
+  // The citation.
+  y += 16 * CSS;
+  attrLaid.forEach(l => {
+    room(attrSize * 1.5);
+    y += attrSize * 1.5;
+    tools.drawLine(l, x, y, '"Cormorant Garamond"', attrSize, false, P.faint);
+  });
+
+  // The stamp: what was kept, and when.
+  y += 14 * CSS;
+  room(stampSize * 3.2);
+  stamp.forEach(line => {
+    y += stampSize * 1.5;
+    tools.spaced(line.toUpperCase(), W / 2, y, stampSize, stampSize * 0.15, P.faint, true);
+  });
+  return pages;
+}
+
+// A PDF of page images (JPEG): just enough of the format for a printer,
+// a Files app or a share sheet. pages: [{ jpeg: Uint8Array, w, h }] in
+// pixels at KEEP_DPI; each fills a letter page.
+function keepPdf(pages) {
+  const enc = new TextEncoder();
+  const parts = [], offsets = [];
+  let length = 0;
+  const put = x => { const b = typeof x === 'string' ? enc.encode(x) : x; parts.push(b); length += b.length; };
+  const obj = (n, body) => { offsets[n] = length; put(`${n} 0 obj\n`); body(); put('\nendobj\n'); };
+  const n = pages.length;
+  const pageW = 612, pageH = 792;   // letter, in points
+  put('%PDF-1.4\n%\xE2\xE3\xCF\xD3\n');
+  obj(1, () => put('<< /Type /Catalog /Pages 2 0 R >>'));
+  obj(2, () => put(`<< /Type /Pages /Count ${n} /Kids [${pages.map((_, i) => `${3 + i * 3} 0 R`).join(' ')}] >>`));
+  pages.forEach((pg, i) => {
+    const pageN = 3 + i * 3, contentN = pageN + 1, imageN = pageN + 2;
+    obj(pageN, () => put(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageW} ${pageH}] ` +
+      `/Resources << /XObject << /Im${i} ${imageN} 0 R >> >> /Contents ${contentN} 0 R >>`));
+    const content = `q ${pageW} 0 0 ${pageH} 0 0 cm /Im${i} Do Q`;
+    obj(contentN, () => put(`<< /Length ${content.length} >>\nstream\n${content}\nendstream`));
+    obj(imageN, () => {
+      put(`<< /Type /XObject /Subtype /Image /Width ${pg.w} /Height ${pg.h} /ColorSpace /DeviceRGB ` +
+        `/BitsPerComponent 8 /Filter /DCTDecode /Length ${pg.jpeg.length} >>\nstream\n`);
+      put(pg.jpeg); put('\nendstream');
+    });
+  });
+  const xref = length, count = 3 + n * 3;
+  put(`xref\n0 ${count}\n0000000000 65535 f \n`);
+  for (let i = 1; i < count; i++) put(String(offsets[i]).padStart(10, '0') + ' 00000 n \n');
+  put(`trailer\n<< /Size ${count} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`);
+  return new Blob(parts, { type: 'application/pdf' });
+}
+
+async function keepPrintPdf(data, stamp) {
+  const canvases = drawKeepPrintPages(data, stamp);
+  const pages = await Promise.all(canvases.map(cv => new Promise(res =>
+    cv.toBlob(async b => res({ jpeg: new Uint8Array(await b.arrayBuffer()), w: cv.width, h: cv.height }), 'image/jpeg', 0.9))));
+  return keepPdf(pages);
+}
+
+// The browser can't print here: a site saved to an iPhone's home screen.
+function keepCantPrint() {
+  return navigator.standalone === true ||
+    (/iPhone|iPad|iPod/.test(navigator.userAgent) && window.matchMedia('(display-mode: standalone)').matches);
+}
+
 // --- The page's data, as the card wants it --------------------------------
 async function keepCardData() {
   const src = keepPageData();
@@ -355,21 +518,36 @@ function keepSurname(name) {
   let shape = window.matchMedia('(max-width: 600px)').matches ? 'tall' : 'wide';
   try { shape = localStorage.getItem('keepShape') || shape; } catch (e) {}
   let cardData = null;
+  // Files made ahead, so a tap can hand them to the share sheet at once:
+  // Safari opens it only straight from a tap, not after a wait.
+  let readyCard = null;    // { shape, blob }
+  let readyPdf = null;     // a Blob, on an iPhone's home screen only
+  let pdfMaking = null;
 
   function showShape() {
     shapeBtns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.keepShape === shape)));
     pane.dataset.shape = shape;
-    if (cardData) drawKeepCard(canvas, cardData, shape, KEEP_SCALE);
+    if (!cardData) return;
+    drawKeepCard(canvas, cardData, shape, KEEP_SCALE);
+    readyCard = null;
+    const drawn = shape;
+    cardBlob().then(blob => { if (shape === drawn) readyCard = { shape: drawn, blob }; });
+  }
+
+  function stampLines() {
+    const now = new Date();
+    return [`Kept from The Earthly Book of Hours · ${keepPageData().block}`,
+            `${formatDate(now)} · ${formatTime(now)}`];
   }
 
   // "The Earthly Book of Hours — Hush — Lispector, Lockyer.png"
-  function fileName() {
+  function fileName(ext = 'png') {
     const d = keepPageData();
     const names = [keepSurname(d.author), keepSurname(d.creator)].filter(Boolean);
     const unique = names.filter((n, i) => names.indexOf(n) === i);
     return ['The Earthly Book of Hours', d.block, unique.join(', ')]
       .filter(Boolean).join(' — ')
-      .replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, ' ').trim() + '.png';
+      .replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, ' ').trim() + '.' + ext;
   }
 
   function cardBlob() {
@@ -388,6 +566,10 @@ function keepSurname(name) {
       `A card of this page: ${d.block}, the reading and the image with their credits.`);
     showShape();
     delete pane.dataset.loading;
+    if (keepCantPrint()) {
+      readyPdf = null;
+      pdfMaking = keepPrintPdf(cardData, stampLines()).then(pdf => (readyPdf = pdf));
+    }
     // Share only where the browser can share an image file.
     const probe = new File([new Blob([''], { type: 'image/png' })], 'card.png', { type: 'image/png' });
     shareBtn.hidden = !(navigator.canShare && navigator.canShare({ files: [probe] }));
@@ -424,18 +606,27 @@ function keepSurname(name) {
   });
   linkInput.addEventListener('focus', () => linkInput.select());
 
-  saveBtn.addEventListener('click', async () => {
-    const blob = await cardBlob();
-    if (!blob) return;
+  function download(blob, name) {
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = fileName();
+    a.download = name;
     document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+    setTimeout(() => URL.revokeObjectURL(a.href), 60000);
+  }
+
+  // The card as it stands, ready made if it can be.
+  async function currentCard() {
+    if (readyCard && readyCard.shape === shape) return readyCard.blob;
+    return cardBlob();
+  }
+
+  saveBtn.addEventListener('click', async () => {
+    const blob = await currentCard();
+    if (blob) download(blob, fileName());
   });
 
   shareBtn.addEventListener('click', async () => {
-    const blob = await cardBlob();
+    const blob = await currentCard();
     if (!blob) return;
     const file = new File([blob], fileName(), { type: 'image/png' });
     try {
@@ -443,10 +634,29 @@ function keepSurname(name) {
     } catch (e) { /* the reader closed the share sheet */ }
   });
 
-  printBtn.addEventListener('click', () => {
-    // Print at once, inside the tap: phone browsers refuse a print
-    // dialog opened after a delay. The print styles hide the pane.
-    closeOverlayPane(pane);
-    printKeepsake();
+  // Print. Where the browser can print, at once, inside the tap: phone
+  // browsers refuse a print dialog opened after a delay; the print
+  // styles hide the pane. On an iPhone's home screen, which can't print,
+  // the printout goes to the share sheet as a PDF, whose Print prints it.
+  printBtn.addEventListener('click', async () => {
+    if (!keepCantPrint()) {
+      closeOverlayPane(pane);
+      printKeepsake();
+      return;
+    }
+    if (!readyPdf) {
+      // Still being made: say so, and let the next tap share it.
+      printBtn.textContent = 'print …';
+      if (pdfMaking) await pdfMaking;
+      printBtn.textContent = 'print';
+      return;
+    }
+    const file = new File([readyPdf], fileName('pdf'), { type: 'application/pdf' });
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      try { await navigator.share({ files: [file], title: 'The Earthly Book of Hours' }); }
+      catch (e) { /* the reader closed the share sheet */ }
+    } else {
+      download(readyPdf, file.name);
+    }
   });
 })();

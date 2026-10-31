@@ -59,7 +59,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   on a canvas (wide 1200×630 or tall 1080×1350, saved at 2×), the page's
   link (`/?r=<reading>&i=<image>`, which `hours.js` reopens in its watch,
   held as if wandered to) with copy, and save image · print (share on
-  phones). Print is still the whole page (`printKeepsake()`). Saved cards
+  phones). Print is still the whole page (`printKeepsake()`), except in
+  the iPhone home-screen app, which can't print: there `keep.js` draws
+  the printout as letter pages and shares a PDF (its share sheet has
+  Print). Safari opens the share sheet only straight from a tap, so the
+  files are made when the pane opens. Saved cards
   are named "The Earthly Book of Hours — Hush — Lispector, Lockyer.png",
   from the records' own names (reading author, image creator).
 
