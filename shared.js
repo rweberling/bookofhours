@@ -272,6 +272,17 @@ function seededRandom(seed) {
   return () => (seed = (seed * 16807) % 2147483647) / 2147483647;
 }
 
+// A closed outline through points, smoothed (each corner a quadratic
+// curve through the midpoints).
+function smoothOutline(pts) {
+  let d = `M ${pts[0][0]} ${pts[0][1]}`;
+  for (let i = 1; i < pts.length; i++) {
+    const [px, py] = pts[i - 1], [cx, cy] = pts[i];
+    d += ` Q ${px} ${py} ${(px + cx) / 2} ${(py + cy) / 2}`;
+  }
+  return d + ' Z';
+}
+
 // A pen stroke from x0 to x1 along y: a filled shape whose width swells
 // to `weight` in the middle and thins to nothing at the ends, wavering a
 // little.
@@ -285,13 +296,7 @@ function penStrokePath(x0, x1, y, weight, rand) {
     top.push([x, y + dy - w / 2]);
     bottom.unshift([x, y + dy + w / 2]);
   }
-  const pts = top.concat(bottom);
-  let d = `M ${pts[0][0]} ${pts[0][1]}`;
-  for (let i = 1; i < pts.length; i++) {
-    const [px, py] = pts[i - 1], [cx, cy] = pts[i];
-    d += ` Q ${px} ${py} ${(px + cx) / 2} ${(py + cy) / 2}`;
-  }
-  return d + ' Z';
+  return smoothOutline(top.concat(bottom));
 }
 
 function bandShape(svg, tag, attrs) {
@@ -301,19 +306,75 @@ function bandShape(svg, tag, attrs) {
   return el;
 }
 
-// A curl at each end of a rule from x0 to x1.
-function drawnCurls(svg, x0, x1, y) {
-  bandShape(svg, 'path', { class: 'band-curl',
-    d: `M ${x0} ${y} C ${x0 - 10} ${y + 0.5}, ${x0 - 16} ${y - 4}, ${x0 - 12} ${y - 7.5} C ${x0 - 9} ${y - 10}, ${x0 - 4.5} ${y - 7.5}, ${x0 - 7} ${y - 5}` });
-  bandShape(svg, 'path', { class: 'band-curl',
-    d: `M ${x1} ${y} C ${x1 + 10} ${y - 0.5}, ${x1 + 16} ${y + 4}, ${x1 + 12} ${y + 7.5} C ${x1 + 9} ${y + 10}, ${x1 + 4.5} ${y + 7.5}, ${x1 + 7} ${y + 5}` });
+// A rule from x0 to x1 along y with a curl at each end, drawn as one
+// stroke of the pen: from the tip of the left curl, round it and along
+// the line, and round the right curl to its tip. The line swells to
+// `weight` in the middle and wavers a little; toward each end it holds
+// steady at RULE_END_WEIGHT, the width the curl leaves it at, and the
+// curl thins as it turns to a fine point, as a quill lifting off. As one
+// outline the line and its curls meet without a seam at any zoom.
+const RULE_END_WEIGHT = 0.6;
+
+// A curl's centre line from where it leaves the rule (x, y) to its tip,
+// with the stroke's width at each point. side is -1 for the left end
+// (curling up and back), 1 for the right (down and back).
+function curlCentre(x, y, side) {
+  const s = side, X = dx => x + s * dx, Y = dy => y + s * dy;
+  const curves = [
+    [[X(0), Y(0)], [X(10), Y(-0.5)], [X(16), Y(4)], [X(12), Y(7.5)]],
+    [[X(12), Y(7.5)], [X(9), Y(10)], [X(4.5), Y(7.5)], [X(7), Y(5)]]
+  ];
+  const at = ([a, b, c, d], t) => {
+    const u = 1 - t;
+    return [0, 1].map(k => u * u * u * a[k] + 3 * u * u * t * b[k] + 3 * u * t * t * c[k] + t * t * t * d[k]);
+  };
+  const pts = [];
+  curves.forEach((cv, ci) => {
+    for (let i = ci ? 1 : 0; i <= 24; i++) pts.push(at(cv, i / 24));
+  });
+  const len = [0];
+  for (let i = 1; i < pts.length; i++) len.push(len[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
+  const total = len[len.length - 1];
+  // From the rule's width, swelling a little through the bowl of the
+  // curl (the pen's downstroke), to a fine point at the tip.
+  const widths = len.map(l => {
+    const f = l / total;
+    return Math.max(0.08, RULE_END_WEIGHT * (1 - 0.85 * Math.pow(f, 1.4)) + 0.35 * Math.sin(Math.PI * Math.min(1, f * 1.25)));
+  });
+  return { pts, widths };
+}
+
+function rulePath(x0, x1, y, weight, rand) {
+  const pts = [], widths = [];
+  // The left curl, from its tip in to the rule.
+  const left = curlCentre(x0, y, -1);
+  for (let i = left.pts.length - 1; i > 0; i--) { pts.push(left.pts[i]); widths.push(left.widths[i]); }
+  // The line.
+  const n = Math.max(6, Math.round((x1 - x0) / 14));
+  for (let i = 0; i <= n; i++) {
+    const f = i / n, swell = Math.pow(Math.sin(Math.PI * f), 0.6);
+    widths.push(RULE_END_WEIGHT + (weight - RULE_END_WEIGHT) * swell * (0.85 + 0.3 * rand()));
+    pts.push([x0 + f * (x1 - x0), y + (rand() - 0.5) * 0.7 * Math.sin(Math.PI * f)]);
+  }
+  // The right curl, from the rule out to its tip.
+  const right = curlCentre(x1, y, 1);
+  for (let i = 1; i < right.pts.length; i++) { pts.push(right.pts[i]); widths.push(right.widths[i]); }
+  // The outline: half the width either side of the centre line.
+  const top = [], bottom = [];
+  pts.forEach((p, i) => {
+    const a = pts[Math.max(0, i - 1)], b = pts[Math.min(pts.length - 1, i + 1)];
+    const tx = b[0] - a[0], ty = b[1] - a[1], tl = Math.hypot(tx, ty) || 1;
+    const nx = -ty / tl * widths[i] / 2, ny = tx / tl * widths[i] / 2;
+    top.push([p[0] + nx, p[1] + ny]);
+    bottom.unshift([p[0] - nx, p[1] - ny]);
+  });
+  return smoothOutline(top.concat(bottom));
 }
 
 // One rule, W wide, into svg: the hairline, its curls, and the ◆ if noon.
 function drawRule(svg, W, noon, seed) {
   const y = 12, x0 = 22, x1 = W - 22;
-  bandShape(svg, 'path', { class: 'band-ink', d: penStrokePath(x0 - 2, x1 + 2, y, 1.1, seededRandom(seed)) });
-  drawnCurls(svg, x0, x1, y);
+  bandShape(svg, 'path', { class: 'band-ink', d: rulePath(x0, x1, y, 1.1, seededRandom(seed)) });
   if (noon) {
     const nx = W / 2;
     bandShape(svg, 'path', { class: 'band-noon',

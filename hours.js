@@ -171,15 +171,14 @@ function renderNow(now = new Date()) {
 const BAND_W = 420, BAND_Y = 22, BAND_X0 = 26, BAND_X1 = BAND_W - 26;
 const bandX = h => BAND_X0 + h / 24 * (BAND_X1 - BAND_X0);
 
-// seededRandom(), penStrokePath() and bandShape() are in shared.js, which
+// seededRandom(), penStrokePath(), rulePath() and bandShape() are in shared.js, which
 // draws the other rules on every page in the same hand.
 
 // The fixed parts, drawn once.
 function buildHoursBand(svg) {
   const y = BAND_Y, x0 = BAND_X0, x1 = BAND_X1;
   const rand = seededRandom(1387);
-  bandShape(svg, 'path', { class: 'band-ink', d: penStrokePath(x0 - 2, x1 + 2, y, 1.3, rand) });
-  drawnCurls(svg, x0, x1, y);
+  bandShape(svg, 'path', { class: 'band-ink', d: rulePath(x0, x1, y, 1.3, rand) });
   for (let h = 3; h < 24; h += 3) {
     if (h === 12) continue;
     const len = 6 + rand() * 1.8, lean = (rand() - 0.5) * 1.6, cx = bandX(h);
