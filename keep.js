@@ -4,16 +4,28 @@
    a card (wide 1200×630 for link previews, tall 1080×1350 for phones
    and Instagram), the page's link with "copy", and save image · print
    (share · save · print where the browser can share files). Print is
-   the whole page, as before (printKeepsake() in hours.js); the card is
-   only for saving and sharing.
+   the page's own printout; the card is only for saving and sharing.
+   The pane is made here (keepPane()), so a page needs only the button
+   (#keep-page) and this script, after its own.
 
-   The page tells this file what it shows through keepPageData(),
-   defined by the page's own script (hours.js):
-     { block, readingId, imageId, imageMaster,
-       quoteEl, attrEl, captionEl }
-   The card is drawn from those elements and the page's own colours,
-   so it follows the hour and the light. drawKeepCard() knows nothing
-   of the Hours page and can draw cards for other pages later.
+   Each page's script says what it shows through keepPageData():
+     kind      'hours', 'weather' or 'season': which card to draw
+     title     for the file name and the printed stamp: the hour
+               ("Hush"), "The Weather", the species ("Common Pawpaw")
+     names     the reading's author and the image's creator, from
+               their records, for the file name ([] for none)
+     path      the page's own address from the site root ("/?r=…&i=…")
+     print     prints the page (a function), or null
+     printPdf  true where the printout can be drawn as a PDF, for an
+               iPhone's home-screen app, which can't print (Hours,
+               Weather); a Seasons post is too long to draw, so there
+               print is left out
+   and what each card is drawn from:
+     hours, weather: quoteEl, attrEl, captionEl, imageMaster
+                     (weather also readoutEl, the conditions line)
+     season:         imageMaster (the first figure), headnoteEl (its
+                     opening paragraph), species, latin, subtitle, dek
+   The cards follow the page's own colours, so the hour and the light.
 ══════════════════════════════════════════════════════════════ */
 
 const KEEP_SHAPES = {
@@ -143,31 +155,6 @@ function keepTextTools(c) {
       cx += c.measureText(p.text).width;
     });
   }
-  return { fontOf, spaced, layout, drawLine };
-}
-
-// --- The card -------------------------------------------------------------
-// data: { block, lines (keepTextLines of the reading), attr, caption
-//         (keepTextLines of each), img (a decoded Image, or null),
-//         palette: { bg, title, text, faint, accent, gold, mount, rule } }
-function drawKeepCard(canvas, data, shape, scale = 1) {
-  const { w: W, h: H } = KEEP_SHAPES[shape];
-  canvas.width = W * scale; canvas.height = H * scale;
-  const c = canvas.getContext('2d');
-  c.scale(scale, scale);
-  const P = data.palette;
-  const wide = shape === 'wide';
-
-  c.fillStyle = P.bg; c.fillRect(0, 0, W, H);
-  c.textBaseline = 'alphabetic';
-
-  // The page's frame: one fine rule, inset.
-  const m = wide ? 22 : 28;
-  c.strokeStyle = P.rule; c.lineWidth = 1;
-  c.strokeRect(m + .5, m + .5, W - 2 * m - 1, H - 2 * m - 1);
-
-  const { fontOf, spaced, layout, drawLine } = keepTextTools(c);
-
   // Ends a cut text: on prose, at the last full sentence if one ends in
   // the last third; then an ellipsis.
   function cutTo(laid, max, prose) {
@@ -193,6 +180,55 @@ function drawKeepCard(canvas, data, shape, scale = 1) {
     kept[kept.length - 1] = { ...last, pieces: ps };
     return kept;
   }
+
+  return { fontOf, spaced, layout, drawLine, cutTo };
+}
+
+// --- The cards ------------------------------------------------------------
+// Draws the card for the page's kind (keepCardData() reads the page).
+function drawKeepCardFor(canvas, data, shape, scale = 1) {
+  if (data.kind === 'weather') return drawWeatherCard(canvas, data, shape, scale);
+  if (data.kind === 'season') return drawSeasonCard(canvas, data, shape, scale);
+  return drawKeepCard(canvas, data, shape, scale);
+}
+
+// An image cut to fill a box from its middle (cover), or shown whole in
+// it (contain); contain returns where it was drawn.
+function keepCoverImage(c, img, x, y, w, h) {
+  const iw = img.naturalWidth, ih = img.naturalHeight, r = w / h;
+  let sw = iw, sh = ih, sx = 0, sy = 0;
+  if (iw / ih > r) { sw = ih * r; sx = (iw - sw) / 2; } else { sh = iw / r; sy = (ih - sh) / 2; }
+  c.drawImage(img, sx, sy, sw, sh, x, y, w, h);
+}
+function keepContainImage(c, img, x, y, w, h) {
+  const k = Math.min(w / img.naturalWidth, h / img.naturalHeight);
+  const dw = img.naturalWidth * k, dh = img.naturalHeight * k;
+  c.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
+  return { x: x + (w - dw) / 2, y: y + (h - dh) / 2, w: dw, h: dh };
+}
+
+// The Hours: the image cropped 4:3 on its mount, the hour's name, the
+// reading on its initial, its citation.
+// data: { title, lines (keepTextLines of the reading), attr, caption
+//         (keepTextLines of each), img (a decoded Image, or null),
+//         palette: { bg, title, text, faint, accent, gold, mount, rule } }
+function drawKeepCard(canvas, data, shape, scale = 1) {
+  const { w: W, h: H } = KEEP_SHAPES[shape];
+  canvas.width = W * scale; canvas.height = H * scale;
+  const c = canvas.getContext('2d');
+  c.scale(scale, scale);
+  const P = data.palette;
+  const wide = shape === 'wide';
+
+  c.fillStyle = P.bg; c.fillRect(0, 0, W, H);
+  c.textBaseline = 'alphabetic';
+
+  // The page's frame: one fine rule, inset.
+  const m = wide ? 22 : 28;
+  c.strokeStyle = P.rule; c.lineWidth = 1;
+  c.strokeRect(m + .5, m + .5, W - 2 * m - 1, H - 2 * m - 1);
+
+  const { fontOf, spaced, layout, drawLine, cutTo } = keepTextTools(c);
 
   function image(x, y, w) {
     const h = w * 3 / 4, pad = wide ? 12 : 16;
@@ -258,20 +294,140 @@ function drawKeepCard(canvas, data, shape, scale = 1) {
     const x = 640, w = 500;
     spaced('THE EARTHLY BOOK OF HOURS', x + w / 2, 78, 13, 4.2, P.faint);
     c.font = fontOf('"GL-Morris"', 44, false); c.fillStyle = P.title; c.textAlign = 'center';
-    c.fillText(data.block, x + w / 2, 132); c.textAlign = 'left';
+    c.fillText(data.title, x + w / 2, 132); c.textAlign = 'left';
     const end = reading(x, 196, w, 520 - 196 - 40, 23, 33);
     attribution(x, end + 42, w, 17);
     spaced('EARTHLYHOURS.COM', x + w / 2, 582, 12, 4, P.gold);
   } else {
     spaced('THE EARTHLY BOOK OF HOURS', W / 2, 96, 16, 5.5, P.faint);
     c.font = fontOf('"GL-Morris"', 72, false); c.fillStyle = P.title; c.textAlign = 'center';
-    c.fillText(data.block, W / 2, 182); c.textAlign = 'left';
+    c.fillText(data.title, W / 2, 182); c.textAlign = 'left';
     const iy = image(150, 236, 780);                     // 780×585
     const extra = caption(W / 2, iy + 36, 780, 19);
     const top = iy + 112 + extra;
     const end = reading(150, top, 780, H - 190 - top, 30, 43);
     attribution(150, end + 52, 780, 21);
     spaced('EARTHLYHOURS.COM', W / 2, H - 70, 15, 5, P.gold);
+  }
+}
+
+// The Weather: the picture fills the card, and the reading sits on the
+// card held in front of it, as on the page: the masthead, the conditions,
+// the reading, its citation, and under a rule the picture's credit.
+// data: { lines, attr, caption, readout, img,
+//         palette: { panel, text, faint, rule } }
+function drawWeatherCard(canvas, data, shape, scale = 1) {
+  const { w: W, h: H } = KEEP_SHAPES[shape];
+  canvas.width = W * scale; canvas.height = H * scale;
+  const c = canvas.getContext('2d');
+  c.scale(scale, scale);
+  c.textBaseline = 'alphabetic';
+  const t = keepTextTools(c), P = data.palette;
+  const wide = shape === 'wide';
+  c.fillStyle = P.panel; c.fillRect(0, 0, W, H);
+  if (data.img) keepCoverImage(c, data.img, 0, 0, W, H);
+
+  const pw = wide ? 520 : 900, px = wide ? W - pw - 44 : (W - pw) / 2;
+  const size = wide ? 21 : 30, lh = size * 1.45, small = size * 0.72, tiny = size * 0.62;
+  const pad = wide ? 32 : 44, iw = pw - 2 * pad;
+  let quote = t.layout(data.lines, '"IM Fell English"', size, true, iw, data.verse);
+  const maxLines = wide ? 6 : 7;
+  if (quote.length > maxLines) quote = t.cutTo(quote, maxLines, !data.verse);
+  const attr = t.layout(data.attr, '"Cormorant Garamond"', small, false, iw, false).filter(l => !l.gap);
+  let cap = t.layout(data.caption, '"Cormorant Garamond"', tiny, false, iw, false).filter(l => !l.gap);
+  if (cap.length > 2) cap = t.cutTo(cap, 2, false);
+  const quoteH = quote.reduce((h, l, i) => h + (l.gap ? lh * 0.5 : i ? lh : 0), 0);
+  const ph = pad + 34 + size * 1.1 + 22 + lh + quoteH + 12 + attr.length * small * 1.4 + 24 + cap.length * tiny * 1.4 + pad * 0.7;
+  const py = H - ph - (wide ? 40 : 64);
+
+  // The card, a little askew, as on the page.
+  c.save();
+  c.translate(px + pw / 2, py + ph / 2); c.rotate(-0.5 * Math.PI / 180); c.translate(-(px + pw / 2), -(py + ph / 2));
+  c.shadowColor = 'rgba(0,0,0,.35)'; c.shadowBlur = 24; c.shadowOffsetY = 6;
+  c.fillStyle = P.panel; c.fillRect(px, py, pw, ph);
+  c.shadowColor = 'transparent';
+  c.strokeStyle = P.rule; c.lineWidth = 1; c.strokeRect(px + 7.5, py + 7.5, pw - 15, ph - 15);
+
+  let y = py + pad + 6;
+  c.font = t.fontOf('"Cormorant Garamond"', size * 0.52, false); c.fillStyle = P.faint; c.textAlign = 'left';
+  let cx = px + pad;
+  for (const ch of 'THE EARTHLY BOOK OF HOURS') { c.fillText(ch, cx, y); cx += c.measureText(ch).width + size * 0.17; }
+  y += 28 + size * 0.2;
+  c.font = t.fontOf('"Cormorant Garamond"', size * 0.78, true); c.fillText(data.readout, px + pad, y);
+  y += 22;
+  quote.forEach((l, i) => {
+    if (l.gap) { y += lh * 0.5; return; }
+    y += lh;
+    t.drawLine(l, px + pad, y, '"IM Fell English"', size, true, P.text);
+  });
+  y += 12;
+  attr.forEach(l => { y += small * 1.4; t.drawLine(l, px + pad, y, '"Cormorant Garamond"', small, false, P.faint); });
+  y += 18;
+  c.strokeStyle = P.rule; c.beginPath(); c.moveTo(px + 8, y); c.lineTo(px + pw - 8, y); c.stroke();
+  y += 6;
+  cap.forEach(l => { y += tiny * 1.4; t.drawLine(l, px + pad, y, '"Cormorant Garamond"', tiny, false, P.faint); });
+  c.restore();
+
+  // The address, small, in the picture's corner.
+  c.save();
+  c.font = t.fontOf('"Cormorant Garamond"', wide ? 13 : 17, false);
+  c.fillStyle = 'rgba(255,255,255,.88)'; c.shadowColor = 'rgba(0,0,0,.7)'; c.shadowBlur = 6;
+  cx = wide ? 40 : 48;
+  for (const ch of 'EARTHLYHOURS.COM') { c.fillText(ch, cx, H - (wide ? 30 : 36)); cx += c.measureText(ch).width + 4; }
+  c.restore();
+}
+
+// The Seasons: a Lectio Terra post's species, its Latin name and season,
+// the post's first figure shown whole, the opening of its headnote, and
+// the post's readers.
+// data: { species, latin, subtitle, dek, lines, img,
+//         palette: { bg, title, text, faint, accent, gold, rule } }
+function drawSeasonCard(canvas, data, shape, scale = 1) {
+  const { w: W, h: H } = KEEP_SHAPES[shape];
+  canvas.width = W * scale; canvas.height = H * scale;
+  const c = canvas.getContext('2d');
+  c.scale(scale, scale);
+  c.textBaseline = 'alphabetic';
+  const t = keepTextTools(c), P = data.palette;
+  const wide = shape === 'wide';
+  c.fillStyle = P.bg; c.fillRect(0, 0, W, H);
+  const m = wide ? 22 : 28;
+  c.strokeStyle = P.rule; c.lineWidth = 1;
+  c.strokeRect(m + .5, m + .5, W - 2 * m - 1, H - 2 * m - 1);
+
+  // One centred line, shrunk to fit if it must.
+  function centred(text, x, y, family, size, italic, color, maxW) {
+    if (!text) return;
+    c.font = t.fontOf(family, size, italic);
+    while (c.measureText(text).width > maxW && size > 10) { size -= 1; c.font = t.fontOf(family, size, italic); }
+    c.fillStyle = color; c.textAlign = 'center'; c.fillText(text, x, y); c.textAlign = 'left';
+  }
+  function headnote(x, y, w, size, lh, maxLines) {
+    let laid = t.layout(data.lines, '"Cormorant Garamond"', size, false, w, false).filter(l => !l.gap);
+    if (laid.length > maxLines) laid = t.cutTo(laid, maxLines, true);
+    laid.forEach((l, i) => t.drawLine(l, x, y + i * lh, '"Cormorant Garamond"', size, false, P.text));
+    return y + (laid.length - 1) * lh;
+  }
+
+  if (wide) {
+    if (data.img) keepContainImage(c, data.img, 64, 70, 470, 490);
+    const x = 600, w = 540, mid = x + w / 2;
+    t.spaced('THE EARTHLY BOOK OF HOURS', mid, 80, 13, 4.2, P.faint);
+    centred(data.subtitle, mid, 112, '"Cormorant Garamond"', 17, true, P.faint, w);
+    centred(data.species, mid, 176, '"GL-Morris"', 52, false, P.title, w);
+    centred(data.latin, mid, 212, '"Cormorant Garamond"', 21, true, P.accent, w);
+    const end = headnote(x, 266, w, 21, 31, 7);
+    centred(data.dek, mid, end + 52, '"Cormorant Garamond"', 17, true, P.faint, w);
+    t.spaced('LECTIO TERRA · EARTHLYHOURS.COM', mid, 582, 12, 4, P.gold);
+  } else {
+    t.spaced('THE EARTHLY BOOK OF HOURS', W / 2, 96, 16, 5.5, P.faint);
+    centred(data.subtitle, W / 2, 140, '"Cormorant Garamond"', 22, true, P.faint, 780);
+    centred(data.species, W / 2, 222, '"GL-Morris"', 76, false, P.title, 860);
+    centred(data.latin, W / 2, 268, '"Cormorant Garamond"', 28, true, P.accent, 780);
+    if (data.img) keepContainImage(c, data.img, 150, 310, 780, 560);
+    const end = headnote(150, 940, 780, 29, 44, 5);
+    centred(data.dek, W / 2, end + 62, '"Cormorant Garamond"', 22, true, P.faint, 780);
+    t.spaced('LECTIO TERRA · EARTHLYHOURS.COM', W / 2, H - 70, 15, 5, P.gold);
   }
 }
 
@@ -435,8 +591,6 @@ async function keepCardData() {
   const src = keepPageData();
   const cs = el => getComputedStyle(el);
   const body = document.body;
-  const frame = document.querySelector('.image-frame');
-  const bracket = document.querySelector('.ttp-bracket');
   await Promise.all([
     '44px "GL-Morris"', 'italic 20px "IM Fell English"', '20px "IM Fell English"',
     '16px "Cormorant Garamond"', 'italic 16px "Cormorant Garamond"'
@@ -451,35 +605,86 @@ async function keepCardData() {
       try { img = new Image(); img.src = src.imageMaster; await img.decode(); } catch (e2) { img = null; }
     }
   }
-  return {
-    block: src.block,
+  const bracket = document.querySelector('.ttp-bracket');
+  const gold = bracket ? cs(bracket).color : '#8b6914';
+  const accent = cs(body).getPropertyValue('--accent').trim() || '#8b2020';
+
+  if (src.kind === 'season') {
+    const wrap = document.createElement('div');
+    if (src.headnoteEl) wrap.appendChild(src.headnoteEl.cloneNode(true));
+    const dek = document.getElementById('season-reading-dek');
+    return {
+      kind: 'season', title: src.title, img,
+      species: src.species, latin: src.latin, subtitle: src.subtitle, dek: src.dek,
+      lines: keepTextLines(wrap),
+      palette: {
+        bg: cs(body).backgroundColor,
+        title: cs(document.getElementById('season-reading-title')).color,
+        text: src.headnoteEl ? cs(src.headnoteEl).color : cs(body).color,
+        faint: dek ? cs(dek).color : cs(body).color,
+        accent: cs(document.getElementById('season-reading-latin')).color,
+        gold, rule: cs(body).getPropertyValue('--rule').trim() || 'rgba(128,128,128,.4)'
+      }
+    };
+  }
+
+  const common = {
+    kind: src.kind, title: src.title, img,
     verse: !!src.quoteEl.querySelector('.verse-line'),
     lines: keepTextLines(src.quoteEl),
     attr: keepTextLines(src.attrEl),
-    caption: keepTextLines(src.captionEl),
-    img,
+    caption: keepTextLines(src.captionEl)
+  };
+
+  if (src.kind === 'weather') {
+    // The weather card's own colours; the printout takes them too.
+    const card = document.getElementById('weather-card-body') || document.getElementById('weather-card');
+    let panel = cs(card).backgroundColor;
+    for (const el of [document.getElementById('weather-card'), card]) {
+      if (!/rgba\(\d+, \d+, \d+, 0\)/.test(panel) && panel !== 'transparent') break;
+      panel = cs(el).backgroundColor;
+      if (/rgba\(\d+, \d+, \d+, 0\)/.test(panel)) panel = cs(el, '::before').backgroundColor;
+    }
+    if (/rgba\(\d+, \d+, \d+, 0\)/.test(panel) || panel === 'transparent') panel = '#1b2135';
+    const faint = cs(src.attrEl).color;
+    // The page sets the citation's dash in its stylesheet; the card writes it.
+    const attr = common.attr;
+    if (attr.length && !attr[0].gap && !/^\s*—/.test(attr[0].runs[0].text)) {
+      attr[0] = { ...attr[0], runs: [{ text: '— ', flip: false }, ...attr[0].runs] };
+    }
+    return {
+      ...common,
+      readout: src.readoutEl ? src.readoutEl.textContent.trim() : '',
+      palette: {
+        panel, text: cs(src.quoteEl).color, faint,
+        rule: 'rgba(190,195,230,.32)',
+        // for the printout
+        bg: panel, mount: panel, title: cs(src.quoteEl).color, accent, gold
+      }
+    };
+  }
+
+  const frame = document.querySelector('.image-frame');
+  return {
+    ...common,
     palette: {
       bg: cs(body).backgroundColor,
       title: cs(document.getElementById('block-name')).color,
       text: cs(src.quoteEl).color,
       faint: cs(src.attrEl).color,
-      accent: cs(body).getPropertyValue('--accent').trim() || '#8b2020',
-      gold: bracket ? cs(bracket).color : '#8b6914',
+      accent, gold,
       mount: frame ? cs(frame).backgroundColor : cs(body).backgroundColor,
       rule: frame ? cs(frame).borderTopColor : cs(src.attrEl).color
     }
   };
 }
 
-// The page's own address: this reading and this image, by their IDs.
+// The page's own address, on earthlyhours.com (or wherever it's being
+// tried out).
 function keepLink() {
-  const d = keepPageData();
-  const params = new URLSearchParams();
-  if (d.readingId) params.set('r', d.readingId);
-  if (d.imageId) params.set('i', d.imageId);
   const base = location.hostname.endsWith('earthlyhours.com') || location.protocol === 'file:'
-    ? 'https://earthlyhours.com/' : location.origin + location.pathname;
-  return base + '?' + params.toString();
+    ? 'https://earthlyhours.com' : location.origin;
+  return base + keepPageData().path;
 }
 
 // --- Names for the saved file ---------------------------------------------
@@ -502,10 +707,47 @@ function keepSurname(name) {
 }
 
 // --- The pane -------------------------------------------------------------
+function keepPane() {
+  const pane = document.createElement('div');
+  pane.className = 'keep-pane';
+  pane.id = 'keep-pane';
+  pane.setAttribute('role', 'dialog');
+  pane.setAttribute('aria-label', 'Keep this page');
+  pane.setAttribute('aria-modal', 'true');
+  pane.innerHTML = `
+ <button class="wander-close" id="keep-close" type="button" aria-label="Close">✦ &nbsp;Close</button>
+ <canvas class="keep-card" id="keep-card" role="img" width="1200" height="630"></canvas>
+ <div class="keep-controls">
+  <div class="turn-the-page visible keep-row">
+   <span class="ttp-bracket">[</span>
+   <button class="page-action" type="button" data-keep-shape="wide" aria-pressed="false">wide</button>
+   <span class="ttp-sep" aria-hidden="true">·</span>
+   <button class="page-action" type="button" data-keep-shape="tall" aria-pressed="false">tall</button>
+   <span class="ttp-bracket">]</span>
+  </div>
+  <div class="keep-link-row">
+   <label class="visually-hidden" for="keep-link">Link to this page</label>
+   <input class="keep-link" id="keep-link" type="text" readonly spellcheck="false">
+   <button class="page-action keep-copy" id="keep-copy" type="button">copy</button>
+  </div>
+  <div class="turn-the-page visible keep-row">
+   <span class="ttp-bracket">[</span>
+   <button class="page-action" id="keep-share" type="button" hidden>share</button>
+   <span class="ttp-sep keep-share-sep" aria-hidden="true" hidden>|</span>
+   <button class="page-action" id="keep-save" type="button">save image</button>
+   <span class="ttp-sep keep-print-sep" aria-hidden="true">|</span>
+   <button class="page-action" id="keep-print" type="button">print</button>
+   <span class="ttp-bracket">]</span>
+  </div>
+ </div>`;
+  document.body.appendChild(pane);
+  return pane;
+}
+
 (function () {
   const btn = document.getElementById('keep-page');
-  const pane = document.getElementById('keep-pane');
-  if (!btn || !pane) return;
+  if (!btn) return;
+  const pane = document.getElementById('keep-pane') || keepPane();
   const canvas = document.getElementById('keep-card');
   const linkInput = document.getElementById('keep-link');
   const copyBtn = document.getElementById('keep-copy');
@@ -528,7 +770,7 @@ function keepSurname(name) {
     shapeBtns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.keepShape === shape)));
     pane.dataset.shape = shape;
     if (!cardData) return;
-    drawKeepCard(canvas, cardData, shape, KEEP_SCALE);
+    drawKeepCardFor(canvas, cardData, shape, KEEP_SCALE);
     readyCard = null;
     const drawn = shape;
     cardBlob().then(blob => { if (shape === drawn) readyCard = { shape: drawn, blob }; });
@@ -536,16 +778,16 @@ function keepSurname(name) {
 
   function stampLines() {
     const now = new Date();
-    return [`Kept from The Earthly Book of Hours · ${keepPageData().block}`,
+    return [`Kept from The Earthly Book of Hours · ${keepPageData().title}`,
             `${formatDate(now)} · ${formatTime(now)}`];
   }
 
   // "The Earthly Book of Hours — Hush — Lispector, Lockyer.png"
   function fileName(ext = 'png') {
     const d = keepPageData();
-    const names = [keepSurname(d.author), keepSurname(d.creator)].filter(Boolean);
+    const names = (d.names || []).map(keepSurname).filter(Boolean);
     const unique = names.filter((n, i) => names.indexOf(n) === i);
-    return ['The Earthly Book of Hours', d.block, unique.join(', ')]
+    return ['The Earthly Book of Hours', d.title, unique.join(', ')]
       .filter(Boolean).join(' — ')
       .replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, ' ').trim() + '.' + ext;
   }
@@ -562,11 +804,15 @@ function keepSurname(name) {
     closeBtn.focus();
     cardData = await keepCardData();
     const d = keepPageData();
-    canvas.setAttribute('aria-label',
-      `A card of this page: ${d.block}, the reading and the image with their credits.`);
+    canvas.setAttribute('aria-label', `A card of this page: ${d.title}, with its credits.`);
     showShape();
     delete pane.dataset.loading;
-    if (keepCantPrint()) {
+    // Print: the page's own printout; on an iPhone's home screen a PDF
+    // where one can be drawn, else none.
+    const canPrint = !!d.print && (!keepCantPrint() || d.printPdf);
+    printBtn.hidden = !canPrint;
+    pane.querySelector('.keep-print-sep').hidden = !canPrint;
+    if (canPrint && keepCantPrint()) {
       readyPdf = null;
       pdfMaking = keepPrintPdf(cardData, stampLines()).then(pdf => (readyPdf = pdf));
     }
@@ -641,7 +887,7 @@ function keepSurname(name) {
   printBtn.addEventListener('click', async () => {
     if (!keepCantPrint()) {
       closeOverlayPane(pane);
-      printKeepsake();
+      keepPageData().print();
       return;
     }
     if (!readyPdf) {

@@ -55,17 +55,24 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   the first page of a visit is weighted; turning the page then shows the
   rest of the hour evenly, without repeats.
 - The Hours frame crops every image to 4:3; the lightbox shows it whole.
-- "keep this page" (`keep.js`) opens a pane with the page drawn as a card
-  on a canvas (wide 1200×630 or tall 1080×1350, saved at 2×), the page's
-  link (`/?r=<reading>&i=<image>`, which `hours.js` reopens in its watch,
-  held as if wandered to) with copy, and save image · print (share on
-  phones). Print is still the whole page (`printKeepsake()`), except in
-  the iPhone home-screen app, which can't print: there `keep.js` draws
-  the printout as letter pages and shares a PDF (its share sheet has
-  Print). Safari opens the share sheet only straight from a tap, so the
-  files are made when the pane opens. Saved cards
-  are named "The Earthly Book of Hours — Hush — Lispector, Lockyer.png",
-  from the records' own names (reading author, image creator).
+- "keep this page" (`keep.js`) is on the Hours, Weather and Seasons
+  pages (and the post pages). It opens a pane, made by `keep.js`, with
+  the page drawn as a card on a canvas (wide 1200×630 or tall
+  1080×1350, saved at 2×), the page's link with copy, and save image ·
+  print (share on phones). Each page's script defines `keepPageData()`
+  (the contract is at the top of `keep.js`), which says which card to
+  draw: Hours (image 4:3, reading), Weather (the picture filling the
+  card, the reading on its card) or Seasons (species, first figure
+  whole, the headnote's opening, the readers). Links: Hours
+  `/?r=<reading>&i=<image>` (reopened in its watch, held as if wandered
+  to), Weather `weather.html?r=…&i=…`, Seasons the post's own page.
+  Print is the page's own printout. The iPhone home-screen app can't
+  print: there Hours and Weather share a PDF drawn by `keep.js` (its
+  share sheet has Print) and Seasons offers no print. Safari opens the
+  share sheet only straight from a tap, so the files are made when the
+  pane opens. Saved cards are named "The Earthly Book of Hours — Hush —
+  Lispector, Lockyer.png" (Weather: "— The Weather — …"; Seasons: the
+  species), from the records' own names (reading author, image creator).
 
 ## The postcards (`c/`)
 

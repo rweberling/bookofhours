@@ -21,6 +21,11 @@ let weatherImages = null;
 let weatherReadings = null;
 let lastWeatherImageSrc = null;
 let lastWeatherReadingText = null;
+let currentWeatherImage = null;     // what the window shows now, for "keep this page"
+let currentWeatherReading = null;
+// A shared link (?r=…&i=…, from "keep this page") names the reading and
+// picture to open on; used by the first view only. An unknown ID is ignored.
+let sharedWeather = null;
 
 function activeWeather() {
   return (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
@@ -85,10 +90,14 @@ function readingWeight(image) {
 
 function renderWeatherView(options) {
   if (!weatherImages || !weatherImages.length) return;
-  const image = pickWeatherEntry(weatherImages, e => e.src === lastWeatherImageSrc, options) || weatherImages[0];
+  const shared = sharedWeather;
+  sharedWeather = null;
+  const image = (shared && shared.image) || pickWeatherEntry(weatherImages, e => e.src === lastWeatherImageSrc, options) || weatherImages[0];
   // No hard exclusion for readings — readingWeight() makes the last one
   // less likely instead.
-  const reading = pickWeatherEntry(weatherReadings, () => false, options, readingWeight(image));
+  const reading = (shared && shared.reading) || pickWeatherEntry(weatherReadings, () => false, options, readingWeight(image));
+  currentWeatherImage = image;
+  currentWeatherReading = reading;
   lastWeatherImageSrc = image.src;
   lastWeatherReadingText = reading ? reading.text : null;
 
@@ -882,6 +891,11 @@ async function initWeatherPage() {
     const oracle = weatherView(await loadCollection());
     weatherImages = oracle.images;
     weatherReadings = oracle.readings;
+    const params = new URLSearchParams(window.location.search);
+    sharedWeather = {
+      image: weatherImages.find(x => x.id === params.get('i')) || null,
+      reading: weatherReadings.find(x => x.id === params.get('r')) || null
+    };
   } catch (error) {
     console.error(error);
     document.getElementById('weather-caption').textContent = 'The window could not be opened. Please return soon.';
@@ -891,3 +905,25 @@ async function initWeatherPage() {
 }
 
 window.addEventListener('DOMContentLoaded', initWeatherPage);
+
+// What "keep this page" (keep.js) keeps: the picture and the reading on
+// the card. Print is the page as it stands.
+function keepPageData() {
+  const params = new URLSearchParams();
+  const hasReading = !!(currentWeatherReading && currentWeatherReading.text);
+  if (hasReading && currentWeatherReading.id) params.set('r', currentWeatherReading.id);
+  if (currentWeatherImage && currentWeatherImage.id) params.set('i', currentWeatherImage.id);
+  return {
+    kind: 'weather',
+    title: 'The Weather',
+    names: [hasReading && currentWeatherReading.author, currentWeatherImage && currentWeatherImage.creator],
+    path: '/weather.html?' + params,
+    print: () => window.print(),
+    printPdf: true,
+    imageMaster: currentWeatherImage && currentWeatherImage.src,
+    quoteEl: document.getElementById('weather-quote-text'),
+    attrEl: document.getElementById('weather-quote-attr'),
+    captionEl: document.getElementById('weather-caption'),
+    readoutEl: document.getElementById('weather-readout')
+  };
+}

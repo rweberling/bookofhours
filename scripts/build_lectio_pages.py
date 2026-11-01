@@ -233,7 +233,7 @@ def render(template, season, entry, subject, alone, post_pages, alts):
                      f'<div id="season-reading-body">\n{body_html(entry, page, post_pages, alts)}\n</div>')
     if alone:
         # The season's only post: nothing to turn to (as setSeason() in seasons.js).
-        t = replace_once(t, r'<div class="turn-the-page visible season-turn">', '<div class="turn-the-page visible season-turn" hidden>')
+        t = replace_once(t, r'<span class="season-turn-part" id="season-turn-part">', '<span class="season-turn-part" id="season-turn-part" hidden>')
     t = replace_once(t, r'(?=<script type="module" src="dfos-siwd.js">)', post_entry(entry))
     if entry.get('published'):
         t = replace_once(t, r'(?<=<p class="phenomena-list" id="season-reading-observation">)',

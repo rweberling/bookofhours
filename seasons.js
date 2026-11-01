@@ -414,10 +414,9 @@ function setSeason(key) {
   };
   // Only one post assigned to this season so far — a "turn the page" that
   // always lands back on the same reading reads as broken, not quiet, so
-  // hide it until there's a second post to turn to. (A post page has it
-  // hidden in its HTML already.)
-  const turnPageWrap = document.getElementById('season-turn-page').closest('.turn-the-page');
-  if (entries) turnPageWrap.hidden = entries.length < 2;
+  // hide it until there's a second post to turn to; "keep this page"
+  // stays. (A post page has it hidden in its HTML already.)
+  if (entries) document.getElementById('season-turn-part').hidden = entries.length < 2;
 }
 
 // Shows a given entry (or a random one from that season, if the id is
@@ -895,3 +894,40 @@ async function initialiseSeason() {
 }
 
 window.addEventListener('DOMContentLoaded', initialiseSeason);
+
+// What "keep this page" (keep.js) keeps: the post's species, its first
+// figure and the opening of its headnote, and the post's own address
+// (its page under lectio-terra/ where it has one). Print is the whole
+// post, as the page prints it; the iPhone home-screen app, which can't
+// print, isn't offered it (a whole post is too long to draw as a PDF).
+function keepPageData() {
+  const body = document.getElementById('season-reading-body');
+  const headnote = body.querySelector('.post-part:not(.post-part-readings)') || body;
+  const opening = [...headnote.querySelectorAll('p')].find(p => p.textContent.trim().length > 40) || null;
+  const figure = body.querySelector('img[data-master]');
+  let path;
+  if (POST_PAGE) {
+    const canonical = document.querySelector('link[rel="canonical"]');
+    path = canonical ? new URL(canonical.href).pathname : window.location.pathname;
+  } else {
+    const entry = season && season.entries && season.entries.find(e => e.id === currentEntryId);
+    path = entry && entry.page
+      ? `/${entry.page}`
+      : `/seasons.html?season=${encodeURIComponent(season ? season.key : '')}&entry=${encodeURIComponent(currentEntryId || '')}`;
+  }
+  const species = document.getElementById('season-reading-title').textContent.trim();
+  return {
+    kind: 'season',
+    title: species,
+    names: [],
+    path,
+    print: () => window.print(),
+    printPdf: false,
+    imageMaster: figure ? figure.dataset.master : null,
+    headnoteEl: opening,
+    species,
+    latin: document.getElementById('season-reading-latin').textContent.trim(),
+    subtitle: document.getElementById('season-reading-subtitle').textContent.trim(),
+    dek: document.getElementById('season-reading-dek').textContent.trim()
+  };
+}
