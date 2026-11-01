@@ -986,16 +986,6 @@ body main.hours-page .versicle {
   .hours-spread .quote-text { font-size: 20px; }
 }
 
-/* ── Static zone divider ──────────────────────────────────────── */
-.static-divider {
-  width: 100%; max-width: 520px;
-  height: 0.5px;
-  background: linear-gradient(to right, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
-  margin: 36px 0 0;
-  opacity: 0; animation: fadeIn 1.4s ease forwards 1.3s;
-  transition: background 3s ease;
-}
-
 /* ── Phenomena ────────────────────────────────────────────────── */
 .phenomena {
   width: 100%; max-width: 520px; margin-top: 28px; text-align: center;
@@ -1492,7 +1482,7 @@ body:has(.keep-pane.open) { overflow: hidden; }
 
   .outer-frame, .corner, .site-nav, .page-footer,
   .transition-veil, .rule-ornament, .hours-band, .drawn-rule, .asterism,
-  .turn-the-page, .static-divider,
+  .turn-the-page,
   .lightbox, .wander-pane, .keep-pane,
   .phenomena, .versicle,
   .block-subtitle, .block-name, .hour-line, .date-line { display: none !important; }
