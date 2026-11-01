@@ -183,6 +183,19 @@ def subject_name(entry, subject):
     return re.split(r'[,(]', entry['title'].split(':', 1)[-1])[0].strip()
 
 
+def readers(entry):
+    """The post's readers: its record's list, else what its title gives,
+    as parsePostTitle() in shared.js ("Week 37: Northern Red Oak (Susan
+    Fenimore Cooper, …)" or the older "Week 12: Sugar Maple, A, B")."""
+    if entry.get('readings'):
+        return entry['readings']
+    title = entry.get('title') or ''
+    after = title.split(':', 1)[1].strip() if ':' in title else title.strip()
+    m = re.match(r'^([^,(]+?)\s*\((.+)\)\s*$', after)
+    parts = m.group(2).split(',') if m else after.split(',')[1:]
+    return [p.strip() for p in parts if p.strip()]
+
+
 def replace_once(text, pattern, new, flags=0):
     result, n = re.subn(pattern, lambda _: new, text, count=1, flags=flags)
     if n != 1:
@@ -203,7 +216,7 @@ def render(template, season, entry, subject, alone, post_pages, alts):
     name = subject_name(entry, subject)
     title = f'Lectio Terra: {name}'
     description = escape(summary(entry))
-    credits = ', '.join(entry.get('readings') or [])
+    credits = ', '.join(readers(entry))
     first = (entry.get('images') or [{}])[0].get('src', '')
     image = f'{SITE}/{web_version(first, 1600)}' if first.startswith('images/') else ''
 
@@ -330,7 +343,7 @@ def feed(data, by_subject):
         title = f'Lectio Terra: {subject_name(entry, subject)}'
         first = (entry.get('images') or [{}])[0].get('src', '')
         image = web_version(first, 1600) if first.startswith('images/') else ''
-        credits = ', '.join(entry.get('readings') or [])
+        credits = ', '.join(readers(entry))
         body = ''
         if image and (ROOT / image).exists():
             body += f'<p><img src="{SITE}/{image}" alt=""></p>'
