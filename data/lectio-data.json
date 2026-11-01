@@ -2439,6 +2439,11 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/c429b1a4-fad5-4d3b-a049-930de7a9cf3e_800x651.jpeg"
           }
         ],
+        "readings": [
+          "Jean Anthelme Brillat-Savarin",
+          "Daniel H. Janzen and Paul S. Martin",
+          "A.C. Whitford"
+        ],
         "body": [
           {
             "image": "i-0138"
@@ -2531,6 +2536,10 @@
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/53922bc4-6145-4644-a7aa-8eef98ca6d0c_980x1531.jpeg"
           }
         ],
+        "readings": [
+          "Emily Dickinson",
+          "Merlin Sheldrake"
+        ],
         "body": [
           {
             "image": "i-0145"
@@ -2620,6 +2629,11 @@
             "alt": "Week 40: Staghorn Sumac (Cole Swanson, Katherine Lee Bates, J. Francis Macbride)",
             "remoteSrc": "https://substack-post-media.s3.amazonaws.com/public/images/7cab49ee-431f-48d8-b5a7-25e3147f3bbc_675x900.jpeg"
           }
+        ],
+        "readings": [
+          "Cole Swanson",
+          "Katherine Lee Bates",
+          "J. Francis Macbride"
         ],
         "body": [
           {
