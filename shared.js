@@ -310,16 +310,19 @@ function bandShape(svg, tag, attrs) {
 // stroke of the pen: from the tip of the left curl, round it and along
 // the line, and round the right curl to its tip. The line swells to
 // `weight` in the middle and wavers a little; toward each end it holds
-// steady at RULE_END_WEIGHT, the width the curl leaves it at, and the
-// curl thins as it turns to a fine point, as a quill lifting off. As one
+// steady at RULE_END_WEIGHT, the width the curl leaves it at; the curl
+// swells a little as it turns and ends blunt and rounded, as a quill
+// lifted off the page leaves its stroke rather than a hairline. As one
 // outline the line and its curls meet without a seam at any zoom.
 const RULE_END_WEIGHT = 0.6;
+const RULE_CURL_SIZE = 0.85;   // the curl's size, against the first drawing
+const RULE_CURL_TURN = 0.7;    // how far round its inward hook it goes (0–1)
 
 // A curl's centre line from where it leaves the rule (x, y) to its tip,
 // with the stroke's width at each point. side is -1 for the left end
 // (curling up and back), 1 for the right (down and back).
 function curlCentre(x, y, side) {
-  const s = side, X = dx => x + s * dx, Y = dy => y + s * dy;
+  const s = side * RULE_CURL_SIZE, X = dx => x + s * dx, Y = dy => y + s * dy;
   const curves = [
     [[X(0), Y(0)], [X(10), Y(-0.5)], [X(16), Y(4)], [X(12), Y(7.5)]],
     [[X(12), Y(7.5)], [X(9), Y(10)], [X(4.5), Y(7.5)], [X(7), Y(5)]]
@@ -330,16 +333,17 @@ function curlCentre(x, y, side) {
   };
   const pts = [];
   curves.forEach((cv, ci) => {
-    for (let i = ci ? 1 : 0; i <= 24; i++) pts.push(at(cv, i / 24));
+    const end = ci ? RULE_CURL_TURN : 1;
+    for (let i = ci ? 1 : 0; i <= 24; i++) pts.push(at(cv, end * i / 24));
   });
   const len = [0];
   for (let i = 1; i < pts.length; i++) len.push(len[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
   const total = len[len.length - 1];
   // From the rule's width, swelling a little through the bowl of the
-  // curl (the pen's downstroke), to a fine point at the tip.
+  // curl (the pen's downstroke), easing to about 70% of it at the tip.
   const widths = len.map(l => {
     const f = l / total;
-    return Math.max(0.08, RULE_END_WEIGHT * (1 - 0.85 * Math.pow(f, 1.4)) + 0.35 * Math.sin(Math.PI * Math.min(1, f * 1.25)));
+    return RULE_END_WEIGHT * (1 - 0.3 * Math.pow(f, 1.4)) + 0.3 * Math.sin(Math.PI * Math.min(1, f * 1.25));
   });
   return { pts, widths };
 }
@@ -359,16 +363,30 @@ function rulePath(x0, x1, y, weight, rand) {
   // The right curl, from the rule out to its tip.
   const right = curlCentre(x1, y, 1);
   for (let i = 1; i < right.pts.length; i++) { pts.push(right.pts[i]); widths.push(right.widths[i]); }
-  // The outline: half the width either side of the centre line.
+  // The outline: half the width either side of the centre line, and a
+  // rounded end at each tip.
   const top = [], bottom = [];
-  pts.forEach((p, i) => {
+  const frame = i => {
     const a = pts[Math.max(0, i - 1)], b = pts[Math.min(pts.length - 1, i + 1)];
     const tx = b[0] - a[0], ty = b[1] - a[1], tl = Math.hypot(tx, ty) || 1;
-    const nx = -ty / tl * widths[i] / 2, ny = tx / tl * widths[i] / 2;
-    top.push([p[0] + nx, p[1] + ny]);
-    bottom.unshift([p[0] - nx, p[1] - ny]);
+    return { tx: tx / tl, ty: ty / tl, nx: -ty / tl, ny: tx / tl, h: widths[i] / 2 };
+  };
+  pts.forEach((p, i) => {
+    const { nx, ny, h } = frame(i);
+    top.push([p[0] + nx * h, p[1] + ny * h]);
+    bottom.unshift([p[0] - nx * h, p[1] - ny * h]);
   });
-  return smoothOutline(top.concat(bottom));
+  // Half a circle round a tip, from one side of the stroke to the other,
+  // bulging forward (dir 1, the end) or back (dir -1, the start).
+  const cap = (i, dir) => {
+    const p = pts[i], { tx, ty, nx, ny, h } = frame(i), arc = [];
+    for (let k = 1; k < 8; k++) {
+      const th = Math.PI * k / 8, c = Math.cos(th) * dir, sn = Math.sin(th) * dir;
+      arc.push([p[0] + h * (c * nx + sn * tx), p[1] + h * (c * ny + sn * ty)]);
+    }
+    return arc;
+  };
+  return smoothOutline(top.concat(cap(pts.length - 1, 1), bottom, cap(0, -1)));
 }
 
 // One rule, W wide, into svg: the hairline, its curls, and the ◆ if noon.
