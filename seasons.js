@@ -108,13 +108,10 @@ function renderSeasonReading(entry) {
   // The post's images point at the full-size masters. Their src is set
   // aside before the HTML goes in (so the browser doesn't start fetching
   // the masters), then each is pointed at its web copies.
-  // A post with a list of its pieces is rebuilt from the collection
-  // (renderPostBody() in shared.js); with ?imported, or without the
-  // collection, its imported HTML is shown.
-  // The imported post keeps Substack's subscribe line; it isn't shown here
-  // (as SUBSTACK_LINE in scripts/copy_lectio.py).
-  const html = (entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`)
-    .replace(SUBSTACK_LINE, '').replace(/(<p>\s*<\/p>\s*)+$/, '')
+  // The post as rebuilt from the collection (useCollection()); only if the
+  // collection failed to load, its imported HTML.
+  const html = (entry.renderedHtml || entry.bodyHtml || '')
+    .replace(/(<p>\s*<\/p>\s*)+$/, '')
     .replace(POST_LINK, (link, id) => postPage(id) || link);
   body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
   body.querySelectorAll('img[data-master]').forEach(img => {
@@ -141,13 +138,9 @@ function postPage(id) {
   return null;
 }
 
-const SUBSTACK_LINE = /<p>\s*Otherwise is a reader-supported publication\.[\s\S]*?<\/p>/g;
-
 // What the page adds to a post once it's in place: play buttons for its
 // videos and the margin labels for its parts and readings.
 function finishPost(body, entry) {
-  markVerse(body, entry.verse || {});
-  markFootnotes(body);
   wireFigures(body);
   wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
@@ -177,24 +170,20 @@ async function loadSeasons() {
       loadCollection().catch(error => { console.error(error); return null; })
     ]);
     lectioSeasons = data.seasons;
-    if (collection) attachVerse(lectioSeasons, collection.readings);
+    if (collection) useCollection(collection);
   }
   if (season && !season.entries) season.entries = lectioSeasons[season.key];
   return lectioSeasons;
 }
 
-// Each post's readings marked as verse, by their place in it, from the
-// collection: markVerse() sets them out from these. (A post page has its
-// own in #post-entry, from build_lectio_pages.py.)
-function attachVerse(seasons, readings) {
-  const byPost = new Map();
-  readings.forEach(r => {
-    if (!(r.lectio && r.lectio.post && r.display && r.display.verse)) return;
-    if (!byPost.has(r.lectio.post)) byPost.set(r.lectio.post, {});
-    byPost.get(r.lectio.post)[r.lectio.place] = r.text;
-  });
-  Object.values(seasons).forEach(entries => entries.forEach(entry => {
-    if (byPost.has(entry.id)) entry.verse = byPost.get(entry.id);
+// Each post rebuilt from the collection (renderPostBody() in shared.js, the
+// twin of scripts/post_render.py, which builds the post pages), and the
+// figures' descriptions.
+function useCollection(collection) {
+  figureAlts = new Map(collection.images.filter(i => i.alt).map(i => [i.file, i.alt]));
+  const byId = new Map([...collection.readings, ...collection.images, ...collection.writing].map(r => [r.id, r]));
+  Object.values(lectioSeasons).forEach(entries => entries.forEach(entry => {
+    if (entry.body) entry.renderedHtml = renderPostBody(entry, byId);
   }));
 }
 
@@ -339,88 +328,13 @@ function wireVideoEmbeds(body) {
   });
 }
 
-// The one-item lists under a post's "Readings" heading, in order: one
-// per reading.
-function readingLists(body) {
+function markReadings(body, labels) {
   let inReadings = false;
   const lists = [];
   for (const el of body.children) {
     if (/^H[2-4]$/.test(el.tagName)) inReadings = /^\s*readings\s*$/i.test(el.textContent);
     else if (inReadings && el.tagName === 'OL') lists.push(el);
   }
-  return lists;
-}
-
-/* ── Verse, set out as verse ──────────────────────────────────────
-   A poem came from Substack in whatever shape the post was written in:
-   often a paragraph to each line, which the page spaces as prose and
-   which drops the poem's indents and stanza breaks. A reading marked as
-   verse in the collection ("display": {"verse": true}, by hand) is
-   set out instead from its record, which holds the same words in the
-   house verse form (scripts/verse.py; check_data.py reports any drift
-   from the post), one line to a line as everywhere else on the site
-   (readingHTML() in shared.js). Figures inside the reading stay. verse
-   is { place: text }, place counting the post's readings from 1.
-────────────────────────────────────────────────────────────────── */
-function markVerse(body, verse) {
-  readingLists(body).forEach((list, i) => {
-    const text = verse[i + 1];
-    const item = list.querySelector(':scope > li');
-    if (item && item.querySelector('.verse-line')) item.classList.add('reading-verse');
-    if (!text || !item || item.querySelector('.verse-line')) return;
-    const figures = [...item.querySelectorAll(':scope > figure')];
-    item.innerHTML = readingHTML({ display: { verse: true }, text });
-    figures.forEach(figure => item.appendChild(figure));
-    item.classList.add('reading-verse');
-  });
-}
-
-/* ── Footnotes ────────────────────────────────────────────────────
-   Substack's footnotes arrive as a reference in the text (a link to
-   #footnote-N) and, at the end of the post, each note as a bare link
-   back (#footnote-anchor-N) followed by its paragraph, with neither end
-   carrying the id the other points at. Here the reference becomes a
-   small raised number with that id, and each note a paragraph opening on
-   its number, gathered under a short rule at the post's end. Each number
-   goes to the other.
-────────────────────────────────────────────────────────────────── */
-const FOOTNOTE_REF = /#footnote-(\d+)$/;
-const FOOTNOTE_BACK = /#footnote-anchor-(\d+)$/;
-
-function markFootnotes(body) {
-  // Links to another site's footnotes are only links.
-  const own = link => !/^[a-z]+:/i.test(link.getAttribute('href'));
-  body.querySelectorAll('a[href*="#footnote-"]').forEach(link => {
-    if (!own(link)) return;
-    const href = link.getAttribute('href');
-    const ref = href.match(FOOTNOTE_REF);
-    if (ref && !link.closest('.footnotes')) {
-      link.id = `footnote-anchor-${ref[1]}`;
-      link.classList.add('footnote-ref');
-      link.setAttribute('aria-label', `Note ${ref[1]}`);
-    }
-  });
-  const notes = [...body.querySelectorAll('a[href*="#footnote-anchor-"]')].filter(link => own(link) &&
-    FOOTNOTE_BACK.test(link.getAttribute('href')) && link.nextElementSibling && link.nextElementSibling.tagName === 'P');
-  if (!notes.length) return;
-  const aside = document.createElement('aside');
-  aside.className = 'footnotes';
-  aside.setAttribute('aria-label', 'Notes');
-  notes[0].before(aside);
-  notes.forEach(link => {
-    const n = link.getAttribute('href').match(FOOTNOTE_BACK)[1];
-    const note = link.nextElementSibling;
-    note.id = `footnote-${n}`;
-    note.classList.add('footnote');
-    link.className = 'footnote-number';
-    link.setAttribute('aria-label', `Back to the text, note ${n}`);
-    note.prepend(link);
-    aside.appendChild(note);
-  });
-}
-
-function markReadings(body, labels) {
-  const lists = readingLists(body);
   lists.forEach((list, i) => {
     const section = document.createElement('section');
     section.className = 'reading';
@@ -431,27 +345,6 @@ function markReadings(body, labels) {
       const next = node.nextSibling;
       section.appendChild(node);
       node = next;
-    }
-    // What follows the passage is its citation: one block, set a step
-    // quieter than the reading (.reading-citation).
-    if (list.nextSibling) {
-      const citation = document.createElement('div');
-      citation.className = 'reading-citation';
-      while (list.nextSibling) citation.appendChild(list.nextSibling);
-      if (citation.textContent.trim()) section.appendChild(citation);
-    }
-    // In the first posts the citation is its own paragraph just after the
-    // passage. Taken in only when it's a single paragraph standing alone
-    // (the next thing is a figure, rule, heading, list or the end), so
-    // the post's own text is never mistaken for one.
-    const after = section.nextElementSibling;
-    if (!section.querySelector(':scope > .reading-citation') && list.textContent.trim()
-        && after && after.tagName === 'P' && !after.classList.contains('preformatted')
-        && !(after.nextElementSibling && after.nextElementSibling.tagName === 'P')) {
-      const citation = document.createElement('div');
-      citation.className = 'reading-citation';
-      citation.appendChild(after);
-      section.appendChild(citation);
     }
     const label = labels[i] || {};
     const margin = document.createElement('aside');
@@ -982,19 +875,7 @@ async function initialiseSeason() {
       loadCollection().catch(error => { console.error(error); return null; })
     ]);
     lectioSeasons = data.seasons;
-    if (collection) figureAlts = new Map(collection.images.filter(i => i.alt).map(i => [i.file, i.alt]));
-    if (collection) attachVerse(lectioSeasons, collection.readings);
-    // Each post is rebuilt from the collection, as its own page is
-    // (scripts/post_render.py): the records are what readers see. With
-    // ?imported in the address, a post is shown as it came from Substack
-    // instead, for comparison.
-    const showImported = new URLSearchParams(window.location.search).has('imported');
-    if (collection && !showImported) {
-      const byId = new Map([...collection.readings, ...collection.images, ...collection.writing].map(r => [r.id, r]));
-      Object.values(lectioSeasons).forEach(entries => entries.forEach(entry => {
-        if (entry.body) entry.renderedHtml = renderPostBody(entry, byId);
-      }));
-    }
+    if (collection) useCollection(collection);
     const { key, entryId } = seasonFromURL();
     showSeasonEntry(key, entryId);
   } catch (error) {

@@ -45,11 +45,6 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   file and makes an unreadable diff.
 - New or changed image files: `python3 scripts/build_images.py` (web copies).
 - Menu, head and frame: edit `partials/`, then `python3 scripts/build_shared.py`.
-  It also stamps each page's links to `css/styles.css` and the scripts
-  with `?v=` and a fingerprint of the file, so browsers fetch them afresh
-  when they change. So after editing the CSS or a script, run it, then
-  `build_lectio_pages.py --all` (the post pages copy `seasons.html`);
-  `check_data.py` says when either is due.
 - Sources page: `python3 scripts/build_sources.py` (needs Chrome; see below).
 - Species registry IDs: `python3 scripts/link_species.py [--write]`.
 - Post pages (`lectio-terra/<name>/`, one per post, and the RSS feed
@@ -151,7 +146,7 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   from them in Python (`scripts/post_render.py`, run by
   `build_lectio_pages.py`), and the Seasons page draws the same in the
   browser (`renderPostBody()` in `shared.js`); the two are twins, and
-  `check_pages.js` checks that every post reads the same in both. The
-  page then finishes the post in the browser (seasons.js: parts,
-  numerals, footnotes, citations, rules). `?imported` on a Seasons
-  address shows a post as it came from Substack, for comparison.
+  `check_pages.js` checks that every post reads the same in both. They
+  write the finished markup (verse, citations, footnotes); the browser
+  adds only the margin labels and numerals, the drawn rules, the
+  lightbox and the video players (seasons.js).

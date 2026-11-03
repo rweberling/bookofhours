@@ -659,7 +659,10 @@ function renderPostBody(post, byId) {
       if (!reading) return '';
       noteFrom(reading);
       const inside = (item.figures || []).map(figure).join('');
-      return `<ol><li>${readingHTML(reading)}${inside}</li></ol>${(reading.citation && reading.citation.display) || ''}`;
+      const verse = reading.display && reading.display.verse ? ' class="reading-verse"' : '';
+      const citation = (reading.citation && reading.citation.display) || '';
+      return `<ol><li${verse}>${readingHTML(reading)}${inside}</li></ol>`
+        + (citation ? `<div class="reading-citation">${citation}</div>` : '');
     }
     if (item.writing) {
       const piece = byId.get(item.writing);
@@ -676,9 +679,26 @@ function renderPostBody(post, byId) {
     return '';
   });
   footnotes.sort((a, b) => a.marker - b.marker);
-  const notes = footnotes.map(note =>
-    `<a href="#footnote-anchor-${note.marker}" target="_self">${note.marker}</a>${note.text}`);
-  return parts.join('') + notes.join('');
+  return markFootnoteRefs(parts.join('')) + footnotesHTML(footnotes);
+}
+
+// A footnote's reference in the text, as the records hold it (a link to
+// #footnote-N): a small raised number with the id its note links back to.
+function markFootnoteRefs(html) {
+  return html.replace(/<a href="#footnote-(\d+)"[^>]*>\1<\/a>/g, (link, n) =>
+    `<a class="footnote-ref" id="footnote-anchor-${n}" href="#footnote-${n}" aria-label="Note ${n}">${n}</a>`);
+}
+
+// The notes, at the post's end under a short rule: each a paragraph opening
+// on its number, which links back to the reference.
+function footnotesHTML(footnotes) {
+  if (!footnotes.length) return '';
+  const notes = footnotes.map(({ marker: n, text }) => {
+    const number = `<a class="footnote-number" href="#footnote-anchor-${n}" aria-label="Back to the text, note ${n}">${n}</a>`;
+    const html = /^\s*<p>/.test(text) ? text : `<p>${text}</p>`;
+    return html.replace(/^\s*<p>/, `<p class="footnote" id="footnote-${n}">${number}`);
+  });
+  return `<aside class="footnotes" aria-label="Notes">${notes.join('')}</aside>`;
 }
 
 // --- The collection ---------------------------------------------------------

@@ -105,8 +105,10 @@ def render_post_body(post, by_id):
                 continue
             note_from(reading)
             inside = ''.join(figure(f) for f in item.get('figures') or [])
+            verse = ' class="reading-verse"' if (reading.get('display') or {}).get('verse') else ''
             citation = (reading.get('citation') or {}).get('display') or ''
-            parts.append(f'<ol><li>{reading_html(reading)}{inside}</li></ol>{citation}')
+            parts.append(f'<ol><li{verse}>{reading_html(reading)}{inside}</li></ol>'
+                         + (f'<div class="reading-citation">{citation}</div>' if citation else ''))
         elif item.get('writing'):
             piece = by_id.get(item['writing'])
             if not piece:
@@ -119,5 +121,28 @@ def render_post_body(post, by_id):
                 html = re.sub(r'((?:<p>\s*</p>)*</li>\s*</[uo]l>\s*)$', lambda m: inside + m.group(1), html)
             parts.append(html)
     footnotes.sort(key=lambda n: n['marker'])
-    notes = [f'<a href="#footnote-anchor-{n["marker"]}" target="_self">{n["marker"]}</a>{n["text"]}' for n in footnotes]
-    return ''.join(parts) + ''.join(notes)
+    return mark_footnote_refs(''.join(parts)) + footnotes_html(footnotes)
+
+
+def mark_footnote_refs(html):
+    """As markFootnoteRefs() in shared.js: a reference (a link to
+    #footnote-N) a small raised number with the id its note links back to."""
+    return re.sub(r'<a href="#footnote-(\d+)"[^>]*>\1</a>',
+                  lambda m: (f'<a class="footnote-ref" id="footnote-anchor-{m.group(1)}" '
+                             f'href="#footnote-{m.group(1)}" aria-label="Note {m.group(1)}">{m.group(1)}</a>'),
+                  html)
+
+
+def footnotes_html(footnotes):
+    """As footnotesHTML() in shared.js: the notes under a short rule, each
+    opening on its number, which links back to the reference."""
+    if not footnotes:
+        return ''
+    notes = []
+    for note in footnotes:
+        n, text = note['marker'], note['text']
+        number = (f'<a class="footnote-number" href="#footnote-anchor-{n}" '
+                  f'aria-label="Back to the text, note {n}">{n}</a>')
+        html = text if re.match(r'^\s*<p>', text) else f'<p>{text}</p>'
+        notes.append(re.sub(r'^\s*<p>', lambda _: f'<p class="footnote" id="footnote-{n}">{number}', html, count=1))
+    return f'<aside class="footnotes" aria-label="Notes">{"".join(notes)}</aside>'

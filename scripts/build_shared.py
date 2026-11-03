@@ -111,33 +111,11 @@ def pages():
             yield path.relative_to(ROOT).as_posix()
 
 
-# The site's own stylesheet and scripts, as a page links them: css/styles.css,
-# shared.js and so on, with or without a leading / and an earlier stamp.
-ASSET = re.compile(r'((?:href|src)=")(/?)((?:css/)?[\w-]+\.(?:css|js))(?:\?v=[0-9a-f]+)?(")')
-
-
-def stamp_assets(text):
-    """Each link to the site's own stylesheet and scripts carries ?v= and a
-    fingerprint of the file, so a browser fetches it afresh when it changes
-    and keeps it cached while it doesn't (a page and its script or styles
-    never mismatch after an update)."""
-    import hashlib
-
-    def stamp(m):
-        file = ROOT / m.group(3)
-        if not file.is_file():
-            return m.group(0)
-        digest = hashlib.sha1(file.read_bytes()).hexdigest()[:8]
-        return f'{m.group(1)}{m.group(2)}{m.group(3)}?v={digest}{m.group(4)}'
-    return ASSET.sub(stamp, text)
-
-
 def build(page, text):
-    """`text` with every shared piece it carries brought up to date, and its
-    stylesheet and scripts stamped."""
+    """`text` with every shared piece it carries brought up to date."""
     for name in NAMES:
         text = block(name).sub(lambda _: render(name, page), text, count=1)
-    return stamp_assets(text)
+    return text
 
 
 def stale_pages():
