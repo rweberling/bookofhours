@@ -209,9 +209,21 @@ def replace_once(text, pattern, new, flags=0):
     return result
 
 
+def verse_readings(entry):
+    """The post's readings marked as verse, by their place in it: the
+    house verse form the page sets them out in (markVerse() in
+    seasons.js), whatever shape the post itself gave them."""
+    return {str(r['lectio']['place']): r['text'] for r in load('readings')
+            if (r.get('lectio') or {}).get('post') == entry['id']
+            and (r.get('display') or {}).get('verse') and not r.get('draft')}
+
+
 def post_entry(entry):
     """The details seasons.js still needs on a post page, as JSON."""
     data = {'id': entry['id'], 'readingLabels': entry.get('readingLabels') or []}
+    verse = verse_readings(entry)
+    if verse:
+        data['verse'] = verse
     text = json.dumps(data, ensure_ascii=False).replace('</', '<\\/')
     return f'<script type="application/json" id="post-entry">{text}</script>\n'
 

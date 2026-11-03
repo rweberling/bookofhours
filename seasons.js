@@ -146,6 +146,8 @@ const SUBSTACK_LINE = /<p>\s*Otherwise is a reader-supported publication\.[\s\S]
 // What the page adds to a post once it's in place: play buttons for its
 // videos and the margin labels for its parts and readings.
 function finishPost(body, entry) {
+  markVerse(body, entry.verse || {});
+  markFootnotes(body);
   wireFigures(body);
   wireVideoEmbeds(body);
   markReadings(body, entry.readingLabels || []);
@@ -169,9 +171,31 @@ function showPostPage() {
 // The list of posts, loaded on first use (at once on seasons.html; on a
 // post page, when a reader turns the page).
 async function loadSeasons() {
-  if (!lectioSeasons) lectioSeasons = (await loadLectioData()).seasons;
+  if (!lectioSeasons) {
+    const [data, collection] = await Promise.all([
+      loadLectioData(),
+      loadCollection().catch(error => { console.error(error); return null; })
+    ]);
+    lectioSeasons = data.seasons;
+    if (collection) attachVerse(lectioSeasons, collection.readings);
+  }
   if (season && !season.entries) season.entries = lectioSeasons[season.key];
   return lectioSeasons;
+}
+
+// Each post's readings marked as verse, by their place in it, from the
+// collection: markVerse() sets them out from these. (A post page has its
+// own in #post-entry, from build_lectio_pages.py.)
+function attachVerse(seasons, readings) {
+  const byPost = new Map();
+  readings.forEach(r => {
+    if (!(r.lectio && r.lectio.post && r.display && r.display.verse)) return;
+    if (!byPost.has(r.lectio.post)) byPost.set(r.lectio.post, {});
+    byPost.get(r.lectio.post)[r.lectio.place] = r.text;
+  });
+  Object.values(seasons).forEach(entries => entries.forEach(entry => {
+    if (byPost.has(entry.id)) entry.verse = byPost.get(entry.id);
+  }));
 }
 
 /* ── The post's parts, named in the margin ────────────────────────
@@ -315,13 +339,88 @@ function wireVideoEmbeds(body) {
   });
 }
 
-function markReadings(body, labels) {
+// The one-item lists under a post's "Readings" heading, in order: one
+// per reading.
+function readingLists(body) {
   let inReadings = false;
   const lists = [];
   for (const el of body.children) {
     if (/^H[2-4]$/.test(el.tagName)) inReadings = /^\s*readings\s*$/i.test(el.textContent);
     else if (inReadings && el.tagName === 'OL') lists.push(el);
   }
+  return lists;
+}
+
+/* ── Verse, set out as verse ──────────────────────────────────────
+   A poem came from Substack in whatever shape the post was written in:
+   often a paragraph to each line, which the page spaces as prose and
+   which drops the poem's indents and stanza breaks. A reading marked as
+   verse in the collection ("display": {"verse": true}, by hand) is
+   set out instead from its record, which holds the same words in the
+   house verse form (scripts/verse.py; check_data.py reports any drift
+   from the post), one line to a line as everywhere else on the site
+   (readingHTML() in shared.js). Figures inside the reading stay. verse
+   is { place: text }, place counting the post's readings from 1.
+────────────────────────────────────────────────────────────────── */
+function markVerse(body, verse) {
+  readingLists(body).forEach((list, i) => {
+    const text = verse[i + 1];
+    const item = list.querySelector(':scope > li');
+    if (item && item.querySelector('.verse-line')) item.classList.add('reading-verse');
+    if (!text || !item || item.querySelector('.verse-line')) return;
+    const figures = [...item.querySelectorAll(':scope > figure')];
+    item.innerHTML = readingHTML({ display: { verse: true }, text });
+    figures.forEach(figure => item.appendChild(figure));
+    item.classList.add('reading-verse');
+  });
+}
+
+/* ── Footnotes ────────────────────────────────────────────────────
+   Substack's footnotes arrive as a reference in the text (a link to
+   #footnote-N) and, at the end of the post, each note as a bare link
+   back (#footnote-anchor-N) followed by its paragraph, with neither end
+   carrying the id the other points at. Here the reference becomes a
+   small raised number with that id, and each note a paragraph opening on
+   its number, gathered under a short rule at the post's end. Each number
+   goes to the other.
+────────────────────────────────────────────────────────────────── */
+const FOOTNOTE_REF = /#footnote-(\d+)$/;
+const FOOTNOTE_BACK = /#footnote-anchor-(\d+)$/;
+
+function markFootnotes(body) {
+  // Links to another site's footnotes are only links.
+  const own = link => !/^[a-z]+:/i.test(link.getAttribute('href'));
+  body.querySelectorAll('a[href*="#footnote-"]').forEach(link => {
+    if (!own(link)) return;
+    const href = link.getAttribute('href');
+    const ref = href.match(FOOTNOTE_REF);
+    if (ref && !link.closest('.footnotes')) {
+      link.id = `footnote-anchor-${ref[1]}`;
+      link.classList.add('footnote-ref');
+      link.setAttribute('aria-label', `Note ${ref[1]}`);
+    }
+  });
+  const notes = [...body.querySelectorAll('a[href*="#footnote-anchor-"]')].filter(link => own(link) &&
+    FOOTNOTE_BACK.test(link.getAttribute('href')) && link.nextElementSibling && link.nextElementSibling.tagName === 'P');
+  if (!notes.length) return;
+  const aside = document.createElement('aside');
+  aside.className = 'footnotes';
+  aside.setAttribute('aria-label', 'Notes');
+  notes[0].before(aside);
+  notes.forEach(link => {
+    const n = link.getAttribute('href').match(FOOTNOTE_BACK)[1];
+    const note = link.nextElementSibling;
+    note.id = `footnote-${n}`;
+    note.classList.add('footnote');
+    link.className = 'footnote-number';
+    link.setAttribute('aria-label', `Back to the text, note ${n}`);
+    note.prepend(link);
+    aside.appendChild(note);
+  });
+}
+
+function markReadings(body, labels) {
+  const lists = readingLists(body);
   lists.forEach((list, i) => {
     const section = document.createElement('section');
     section.className = 'reading';
@@ -863,6 +962,7 @@ async function initialiseSeason() {
     ]);
     lectioSeasons = data.seasons;
     if (collection) figureAlts = new Map(collection.images.filter(i => i.alt).map(i => [i.file, i.alt]));
+    if (collection) attachVerse(lectioSeasons, collection.readings);
     // The rebuilt posts are on trial: shown only with ?rebuilt in the
     // address, so readers keep seeing each post as imported meanwhile.
     const showRebuilt = new URLSearchParams(window.location.search).has('rebuilt');
