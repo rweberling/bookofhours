@@ -54,7 +54,10 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   `feed.xml`, dated by each post's first publication):
   `python3 scripts/build_lectio_pages.py [lt-NNNN | --all]`. Rebuild after
   editing a post, `seasons.html` or `partials/`.
-- Substack import: `scripts/import_substack.py` (runs the rest in turn).
+- Substack import: `python3 scripts/import_substack.py --fetch --write`
+  takes every new post from Substack (no export needed), gives each
+  "Week NN:" post its season by month, runs the rest in turn, and ends
+  with what needs a person (a subject record, possible poems).
 
 ## The pages
 

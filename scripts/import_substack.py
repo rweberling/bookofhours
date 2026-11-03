@@ -2,6 +2,7 @@
 """Import a Substack export into the static Lectio Terra data file.
 
 Usage:
+  python3 scripts/import_substack.py --fetch --write
   python3 scripts/import_substack.py --export /path/to/substack-export --template
   python3 scripts/import_substack.py --export /path/to/substack-export --assignments season-assignments.json
   python3 scripts/import_substack.py --export /path/to/substack-export --assignments season-assignments.json --write
@@ -12,6 +13,19 @@ shows (and removing those of any image no longer there), then
 scripts/copy_lectio.py, adding each new passage and figure to
 data/readings.json and data/images.json, and then scripts/build_sitemap.py, listing the new
 readings.
+
+--fetch is the weekly way in: no export is needed. It reads the
+publication's archive (SUBSTACK below), takes every post not yet imported,
+writes them in the export's layout to a folder of its own, and gives each
+"Week NN: ..." post its season by the month it was published (spring
+March to May, summer June to August, autumn September to November,
+winter December to February) in season-assignments.json, unless it has
+one already. Other posts (Works in Progress and the like) stay unassigned,
+as before. With --write, images a new post downloaded but doesn't show
+(those in the Hours section that is dropped) are deleted before the web
+copies are made. It ends with what needs a person: a new post with no
+subject record, passages that may be poems (from copy_lectio.py), and
+posts left without a season.
 """
 
 import argparse
@@ -59,7 +73,9 @@ def spell_out_ligatures(text):
 
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--export', required=True, type=Path, help='Substack export directory')
+    parser.add_argument('--export', type=Path, help='Substack export directory')
+    parser.add_argument('--fetch', action='store_true',
+                        help='fetch the posts not yet imported from the Substack archive, instead of an export')
     parser.add_argument('--assignments', type=Path, default=Path('season-assignments.json'))
     parser.add_argument('--output', type=Path, default=Path('data/lectio-data.json'))
     parser.add_argument('--images', type=Path, default=Path('images/lectio-terra'))
@@ -68,7 +84,10 @@ def parse_args():
     parser.add_argument('--refresh', nargs='*', default=[], metavar='SLUG',
                          help='Re-import these already-imported posts from the export instead of leaving them untouched '
                               '(discards any hand edits made to that entry in the existing output file)')
-    return parser.parse_args()
+    args = parser.parse_args()
+    if not args.export and not args.fetch:
+        parser.error('give --export with a Substack export, or --fetch')
+    return args
 
 
 class SafeHTML(HTMLParser):
@@ -368,8 +387,109 @@ def link_internally(grouped):
             entry['bodyHtml'] = SUBSTACK_IMAGE_LINK.sub(r'\1\3\2', body)
 
 
+SUBSTACK = 'https://laurentia.substack.com'
+WEEK_POST = re.compile(r'^Week \d+:')
+SEASON_OF_MONTH = {12: 'winter', 1: 'winter', 2: 'winter', 3: 'spring', 4: 'spring', 5: 'spring',
+                   6: 'summer', 7: 'summer', 8: 'summer', 9: 'autumn', 10: 'autumn', 11: 'autumn'}
+
+
+def substack_json(path):
+    request = urllib.request.Request(f'{SUBSTACK}{path}', headers={'User-Agent': 'EarthlyHours importer'})
+    with urllib.request.urlopen(request, timeout=60) as response:
+        return json.load(response)
+
+
+def fetch_export(export_dir, known_slugs, since=''):
+    """Every published post since the date `since` (the newest one already
+    imported) and not in known_slugs, written as a Substack export
+    (posts.csv and posts/<id>.<slug>.html) under export_dir. The archive
+    comes newest first, so the reading stops at the first older post."""
+    (export_dir / 'posts').mkdir(parents=True, exist_ok=True)
+    rows, offset = [], 0
+    while True:
+        page = substack_json(f'/api/v1/archive?sort=new&offset={offset}&limit=12')
+        if not page:
+            break
+        done = False
+        for item in page:
+            slug = item['slug']
+            if since and (item.get('post_date') or '')[:10] < since:
+                done = True
+                break
+            if slug in known_slugs or item.get('type') != 'newsletter':
+                continue
+            post = substack_json(f'/api/v1/posts/{slug}')
+            post_id = f"{post['id']}.{slug}"
+            (export_dir / 'posts' / f'{post_id}.html').write_text(post.get('body_html') or '', encoding='utf-8')
+            rows.append({'post_id': post_id, 'post_date': post['post_date'], 'is_published': 'true',
+                         'title': post.get('title') or '', 'subtitle': post.get('subtitle') or ''})
+            print(f'Fetched {slug}')
+        if done:
+            break
+        offset += len(page)
+    with (export_dir / 'posts.csv').open('w', newline='', encoding='utf-8') as out:
+        writer = csv.DictWriter(out, fieldnames=['post_id', 'post_date', 'is_published', 'title', 'subtitle'])
+        writer.writeheader()
+        writer.writerows(rows)
+    return rows
+
+
+def assign_seasons(rows, assignments, path):
+    """A season for each fetched "Week NN:" post that has none, by the month
+    it was published; saved to the assignments file."""
+    added = []
+    for row in rows:
+        slug = row['post_id'].split('.', 1)[1]
+        if slug in assignments or not WEEK_POST.match(row['title']):
+            continue
+        assignments[slug] = SEASON_OF_MONTH[int(row['post_date'][5:7])]
+        added.append(f'{slug} [{assignments[slug]}]')
+    if added:
+        path.write_text(json.dumps(assignments, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print('Seasons assigned by publication month: ' + ', '.join(added))
+    return added
+
+
+def prune_unused_images(entry, image_dir):
+    """Images a post downloaded that it doesn't show (the dropped Hours
+    section's, most often): deleted, so no web copies are made of them."""
+    shown = {Path(image['src']).name for image in entry.get('images', [])}
+    prefix = entry['postId'].split('.', 1)[0] + '.'
+    for path in sorted(image_dir.glob(f'{prefix}*')):
+        if path.name not in shown:
+            path.unlink()
+            print(f'  removed {path.name}, which the post does not show')
+
+
+def report_for_a_person(imported, copy_output, unassigned):
+    """What the import can't decide: printed last, so it's what's seen."""
+    notes = []
+    for entry in imported:
+        if not entry.get('subject'):
+            notes.append(f'{entry["id"]} ({entry["title"]}) has no subject: give it an sp- record in '
+                         f'data/species.json or a ph- one in data/phenomena.json, with its Latin name, '
+                         f'and set "subject" on the post')
+    poems = [line.strip() for line in copy_output.splitlines() if 'may be a poem' in line]
+    notes += poems
+    notes += [f'{u["id"]} has no season, so it was not imported (add it to season-assignments.json '
+              f'if it is a Lectio Terra post)' for u in unassigned if WEEK_POST.match(u.get('title', ''))]
+    print('\nFor a person:' if notes else '\nNothing needs a person.')
+    for note in notes:
+        print(f'  - {note}')
+
+
 def main():
     args = parse_args()
+    if args.fetch:
+        import tempfile
+        existing = load_existing(args.output)
+        since = max((entry.get('published') or '' for _, entry in existing.values()), default='')
+        args.export = Path(tempfile.mkdtemp(prefix='substack-export-'))
+        fetched = fetch_export(args.export, set(existing), since)
+        if not fetched:
+            print('No new posts on Substack.')
+            return
+        assign_seasons(fetched, load_assignments(args.assignments), args.assignments)
     posts = read_posts(args.export)
     assignments = load_assignments(args.assignments)
     existing_by_slug = load_existing(args.output)
@@ -397,6 +517,7 @@ def main():
     next_number = max(taken, default=0) + 1
 
     unassigned = []
+    imported = []
     new_count = 0
     skipped_count = 0
     for row, path in posts:
@@ -422,8 +543,16 @@ def main():
             entry['id'] = f'lt-{next_number:04d}'
             next_number += 1
         grouped[season].append(entry)
+        imported.append(entry)
         new_count += 1
 
+    # Posts set aside earlier (not Lectio Terra, or not yet given a season)
+    # stay listed, unless this run has imported them.
+    if args.output.exists():
+        listed = {u['id'] for u in unassigned} | {substack_slug(e) for items in grouped.values() for e in items}
+        for stub in json.loads(args.output.read_text(encoding='utf-8')).get('unassigned') or []:
+            if stub.get('id') not in listed:
+                unassigned.append(stub)
     print(f'{new_count} new/refreshed post(s), {skipped_count} left untouched.')
     link_internally(grouped)
 
@@ -436,12 +565,17 @@ def main():
     if args.write:
         args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print(f'Wrote {args.output} with {sum(len(items) for items in grouped.values())} assigned posts.')
+        for entry in imported:
+            prune_unused_images(entry, args.images)
         print('Making web copies of the images:')
         built = subprocess.run([sys.executable, str(Path(__file__).with_name('build_images.py'))])
         if built.returncode:
             print('The web copies were not all made. Run: python3 scripts/build_images.py', file=sys.stderr)
         # Their passages and figures become records of their own.
-        copied = subprocess.run([sys.executable, str(Path(__file__).with_name('copy_lectio.py')), '--write'])
+        copied = subprocess.run([sys.executable, str(Path(__file__).with_name('copy_lectio.py')), '--write'],
+                                capture_output=True, text=True)
+        print(copied.stdout, end='')
+        print(copied.stderr, end='', file=sys.stderr)
         if copied.returncode:
             print('The passages and figures were not copied. Run: python3 scripts/copy_lectio.py --write', file=sys.stderr)
         # Each post's list of its pieces, which the Seasons page rebuilds it from.
@@ -456,6 +590,7 @@ def main():
         mapped = subprocess.run([sys.executable, str(Path(__file__).with_name('build_sitemap.py'))])
         if mapped.returncode:
             print('The sitemap was not updated. Run: python3 scripts/build_sitemap.py', file=sys.stderr)
+        report_for_a_person(imported, copied.stdout, unassigned)
     else:
         print(json.dumps({season: len(items) for season, items in grouped.items()}, indent=2))
         print(f'Unassigned posts: {len(unassigned)}. Use --template to create assignment entries.')
