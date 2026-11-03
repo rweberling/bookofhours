@@ -2196,6 +2196,12 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   opacity: 0.5;
   font-size: 13px;
 }
+/* On the Seasons and post pages "turn the page" and its divider are
+   wrapped together (hidden when the season has one post), so the
+   wrapper keeps the row's spacing: the divider sits clear of both
+   words, as on the Hours page. */
+.turn-the-page .season-turn-part { display: inline-flex; align-items: center; gap: inherit; }
+.turn-the-page .season-turn-part[hidden] { display: none; }
 
 .page-action {
   background: none; border: none; cursor: pointer;
