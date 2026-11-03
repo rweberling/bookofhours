@@ -696,6 +696,12 @@ body main.hours-page .versicle {
 #season-reading-body figure a:has(img) { cursor: zoom-in; }
 
 #season-reading-body figure { margin: 26px 0; }
+/* A figure or list that ends the post sits as near the "Published"
+   line as closing text does. */
+#season-reading-body > :last-child > :is(figure, ul, ol):last-child,
+#season-reading-body > :is(figure, ul, ol):last-child,
+#season-reading-body > :last-child > :is(ul, ol):last-child > li:last-child > figure:not(:has(~ :not(:empty))),
+#season-reading-body > :last-child > :is(ul, ol):last-child > li:last-child > figure ~ p:empty { margin-bottom: 0; }
 /* A video watched elsewhere: a card until it's played (wireVideoEmbeds() in seasons.js). */
 #season-reading-body .video-play,
 #season-reading-body .video-frame {
