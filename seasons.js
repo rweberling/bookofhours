@@ -432,6 +432,27 @@ function markReadings(body, labels) {
       section.appendChild(node);
       node = next;
     }
+    // What follows the passage is its citation: one block, set a step
+    // quieter than the reading (.reading-citation).
+    if (list.nextSibling) {
+      const citation = document.createElement('div');
+      citation.className = 'reading-citation';
+      while (list.nextSibling) citation.appendChild(list.nextSibling);
+      if (citation.textContent.trim()) section.appendChild(citation);
+    }
+    // In the first posts the citation is its own paragraph just after the
+    // passage. Taken in only when it's a single paragraph standing alone
+    // (the next thing is a figure, rule, heading, list or the end), so
+    // the post's own text is never mistaken for one.
+    const after = section.nextElementSibling;
+    if (!section.querySelector(':scope > .reading-citation') && list.textContent.trim()
+        && after && after.tagName === 'P' && !after.classList.contains('preformatted')
+        && !(after.nextElementSibling && after.nextElementSibling.tagName === 'P')) {
+      const citation = document.createElement('div');
+      citation.className = 'reading-citation';
+      citation.appendChild(after);
+      section.appendChild(citation);
+    }
     const label = labels[i] || {};
     const margin = document.createElement('aside');
     margin.className = 'reading-margin';
