@@ -14,9 +14,6 @@
 let lectioSeasons = null;   // data/lectio-data.json's { spring: [...], ... }, once loaded
 let season = null;          // the season whose readings are showing
 let currentEntryId = null;
-// Each figure's description (its record's alt), by file, once the
-// collection is loaded: the imported posts' images have alt="".
-let figureAlts = new Map();
 
 // A post's own page (lectio-terra/<name>/, built by scripts/build_lectio_pages.py)
 // is this page with one post already written into it: its <body> names
@@ -104,38 +101,43 @@ function renderSeasonReading(entry) {
     ? `Published ${longDate(entry.published)}`
     : `A species reading for ${season.label}.`;
 
+  // The post itself is its own page's (lectio-terra/<name>/, built from the
+  // records by scripts/build_lectio_pages.py), fetched and shown here.
   const body = document.getElementById('season-reading-body');
-  // The post's images point at the full-size masters. Their src is set
-  // aside before the HTML goes in (so the browser doesn't start fetching
-  // the masters), then each is pointed at its web copies.
-  // The post as rebuilt from the collection (useCollection()); only if the
-  // collection failed to load, its imported HTML.
-  const html = (entry.renderedHtml || entry.bodyHtml || '')
-    .replace(/(<p>\s*<\/p>\s*)+$/, '')
-    .replace(POST_LINK, (link, id) => postPage(id) || link);
-  body.innerHTML = html.replace(/<img\b([^>]*?)\ssrc="(images\/[^"]+)"/g, '<img$1 data-master="$2"');
-  body.querySelectorAll('img[data-master]').forEach(img => {
-    img.loading = 'lazy';
-    setWebImage(img, img.dataset.master, '(max-width: 680px) 92vw, 640px');
-    if (figureAlts.has(img.dataset.master)) img.alt = figureAlts.get(img.dataset.master);
+  const shown = entry.id;
+  body.innerHTML = '';
+  postBody(entry).then(html => {
+    if (currentEntryId !== shown) return;   // another post was opened meanwhile
+    body.innerHTML = html;
+    finishPost(body, entry);
+  }).catch(error => {
+    if (currentEntryId !== shown) return;
+    console.error(error);
+    body.innerHTML = `<p>This reading could not be opened here. <a href="${escapeHTML(entry.page || '')}">Read it on its own page</a>.</p>`;
   });
-  body.querySelectorAll('video').forEach(video => {
-    const source = video.querySelector('source');
-    if (source && figureAlts.has(source.getAttribute('src'))) video.setAttribute('aria-label', figureAlts.get(source.getAttribute('src')));
-  });
-  finishPost(body, entry);
 }
 
-// A link from one post to another, as import_substack.py writes it; shown
-// as a link to that post's own page if it has one (postPage()).
-const POST_LINK = /seasons\.html\?season=\w+&(?:amp;)?entry=([^"&#\s]+)/g;
-
-function postPage(id) {
-  for (const entries of Object.values(lectioSeasons || {})) {
-    const entry = entries.find(e => isEntry(e, id));
-    if (entry) return entry.page || null;
+// A post's text, from its own page: kept once fetched. That page writes its
+// in-page links (footnotes) with its own address in front, as its <base>
+// needs; here they're in-page again.
+const postBodies = new Map();
+function postBody(entry) {
+  if (!entry.page) return Promise.reject(new Error(`${entry.id} has no page of its own.`));
+  if (!postBodies.has(entry.page)) {
+    postBodies.set(entry.page, fetch(entry.page)
+      .then(response => {
+        if (!response.ok) throw new Error(`Unable to load ${entry.page} (${response.status}).`);
+        return response.text();
+      })
+      .then(text => {
+        const page = new DOMParser().parseFromString(text, 'text/html');
+        const post = page.getElementById('season-reading-body');
+        if (!post) throw new Error(`${entry.page} has no post in it.`);
+        return post.innerHTML.split(`href="${entry.page}#`).join('href="#');
+      })
+      .catch(error => { postBodies.delete(entry.page); throw error; }));
   }
-  return null;
+  return postBodies.get(entry.page);
 }
 
 // What the page adds to a post once it's in place: play buttons for its
@@ -165,26 +167,10 @@ function showPostPage() {
 // post page, when a reader turns the page).
 async function loadSeasons() {
   if (!lectioSeasons) {
-    const [data, collection] = await Promise.all([
-      loadLectioData(),
-      loadCollection().catch(error => { console.error(error); return null; })
-    ]);
-    lectioSeasons = data.seasons;
-    if (collection) useCollection(collection);
+    lectioSeasons = (await loadLectioData()).seasons;
   }
   if (season && !season.entries) season.entries = lectioSeasons[season.key];
   return lectioSeasons;
-}
-
-// Each post rebuilt from the collection (renderPostBody() in shared.js, the
-// twin of scripts/post_render.py, which builds the post pages), and the
-// figures' descriptions.
-function useCollection(collection) {
-  figureAlts = new Map(collection.images.filter(i => i.alt).map(i => [i.file, i.alt]));
-  const byId = new Map([...collection.readings, ...collection.images, ...collection.writing].map(r => [r.id, r]));
-  Object.values(lectioSeasons).forEach(entries => entries.forEach(entry => {
-    if (entry.body) entry.renderedHtml = renderPostBody(entry, byId);
-  }));
 }
 
 /* ── The post's parts, named in the margin ────────────────────────
@@ -870,12 +856,7 @@ async function initialiseSeason() {
   }
 
   try {
-    const [data, collection] = await Promise.all([
-      loadLectioData(),
-      loadCollection().catch(error => { console.error(error); return null; })
-    ]);
-    lectioSeasons = data.seasons;
-    if (collection) useCollection(collection);
+    lectioSeasons = (await loadLectioData()).seasons;
     const { key, entryId } = seasonFromURL();
     showSeasonEntry(key, entryId);
   } catch (error) {

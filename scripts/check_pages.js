@@ -16,8 +16,8 @@
      - the Latin name under the title, where the subject has one
      - the gap from the end of the post to its "Published" line: the same
        on every post, within a few pixels
-     - the same words as the same post on the Seasons page (the page is
-       built in Python, the Seasons page in the browser)
+     - the same words on the Seasons page, which fetches the post from
+       this page, with its footnotes linking within the page
    and the Hours, Weather and Seasons pages for script errors and for the
    "turn the page | keep this page" divider sitting evenly between its words.
    Exits 1 if anything fails, so a session can run it before pushing. */
@@ -126,13 +126,17 @@ const load = name => JSON.parse(fs.readFileSync(path.join(ROOT, 'data', `${name}
     if (r.gap === null || r.gap < PUBLISHED_GAP.min || r.gap > PUBLISHED_GAP.max) {
       fail(where, `${r.gap} px from the post's end to "Published" (expected ${PUBLISHED_GAP.min}–${PUBLISHED_GAP.max})`);
     }
-    // The page is built in Python (post_render.py), the Seasons page draws
-    // the same post in the browser (renderPostBody() in shared.js): the
-    // two must read the same.
+    // The Seasons page shows the post by fetching this page (postBody() in
+    // seasons.js): it must read the same there, with its footnotes linking
+    // within the page.
     const words = () => page.evaluate(() => document.getElementById('season-reading-body').innerText.replace(/\s+/g, ' ').trim());
     const onPage = await words();
     await page.goto(`${base}/seasons.html?season=${post.season}&entry=${post.id}`, {waitUntil: 'networkidle'});
+    await page.waitForFunction(() => document.querySelector('#season-reading-body section.reading, #season-reading-body p'), null, {timeout: 15000}).catch(() => {});
     const onSeasons = await words();
+    const outward = await page.evaluate(() => [...document.querySelectorAll('#season-reading-body :is(a.footnote-ref, a.footnote-number)')]
+      .filter(a => !a.getAttribute('href').startsWith('#')).length);
+    if (outward) fail(where, `${outward} footnote link(s) on the Seasons page leave the page`);
     if (onPage !== onSeasons) {
       let i = 0;
       while (i < onPage.length && onPage[i] === onSeasons[i]) i++;

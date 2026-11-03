@@ -1,18 +1,18 @@
-"""A Lectio Terra post, rebuilt from the collection: the Python twin of
-renderPostBody() in shared.js.
+"""A Lectio Terra post, rebuilt from the collection: the site's one renderer
+of a post.
 
 A post's "body" (scripts/build_post_manifests.py) lists its pieces in
 order: headings, rules, figures (image records), passages (reading
 records) and runs of its own writing (writing records). render_post_body()
-turns that list back into the post's HTML, in the markup the Seasons page
-finishes (seasons.js): each passage a one-item list followed by its
-citation, figures numbered in order, footnotes after everything else.
+turns that list back into the post's HTML: each passage a one-item list
+(marked as verse where it is) followed by its citation in a block of its
+own, figures numbered in order, footnotes linked both ways and gathered
+at the end.
 
 build_lectio_pages.py writes it into each post's page, so the page holds
-the post as the records have it, readers without JavaScript included;
-the Seasons page draws the same from the records in the browser. The two
-are kept in step: scripts/check_pages.js compares them on every post.
-Change one, change the other.
+the post as the records have it, readers without JavaScript included.
+The Seasons page shows a post by fetching that page (postBody() in
+seasons.js), and seasons.js adds the margin labels, numerals and rules.
 """
 
 import re
@@ -22,7 +22,7 @@ from post_html import blocks
 
 
 def escape(text):
-    """As escapeHTML() in shared.js: &, <, > and " made safe."""
+    """&, <, > and " made safe."""
     return _escape('' if text is None else str(text), quote=False).replace('"', '&quot;')
 
 
@@ -31,8 +31,9 @@ def plain(html):
 
 
 def reading_html(reading):
-    """As readingHTML() in shared.js: verse one line to a line (the house
-    verse form, scripts/verse.py), prose as written."""
+    """Verse one line to a line (the house verse form, scripts/verse.py),
+    prose as written; as readingHTML() in shared.js sets a reading out on
+    the Hours and Weather pages."""
     text = reading.get('text') or ''
     if not (reading.get('display') or {}).get('verse'):
         return text
@@ -125,8 +126,8 @@ def render_post_body(post, by_id):
 
 
 def mark_footnote_refs(html):
-    """As markFootnoteRefs() in shared.js: a reference (a link to
-    #footnote-N) a small raised number with the id its note links back to."""
+    """A footnote's reference in the text (a link to #footnote-N): a
+    small raised number with the id its note links back to."""
     return re.sub(r'<a href="#footnote-(\d+)"[^>]*>\1</a>',
                   lambda m: (f'<a class="footnote-ref" id="footnote-anchor-{m.group(1)}" '
                              f'href="#footnote-{m.group(1)}" aria-label="Note {m.group(1)}">{m.group(1)}</a>'),
@@ -134,8 +135,8 @@ def mark_footnote_refs(html):
 
 
 def footnotes_html(footnotes):
-    """As footnotesHTML() in shared.js: the notes under a short rule, each
-    opening on its number, which links back to the reference."""
+    """The notes under a short rule, each opening on its number, which
+    links back to the reference."""
     if not footnotes:
         return ''
     notes = []

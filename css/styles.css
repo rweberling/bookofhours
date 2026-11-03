@@ -677,7 +677,7 @@ body main.hours-page .versicle {
   margin-bottom: 20px;
 }
 #season-reading-body p:last-child { margin-bottom: 0; }
-/* Footnotes (footnotesHTML() in shared.js, footnotes_html() in post_render.py): the reference a small raised
+/* Footnotes (footnotes_html() in scripts/post_render.py): the reference a small raised
    number; the notes at the post's end under a short rule, a step smaller
    than the text, each opening on its number in gold. */
 #season-reading-body a.footnote-ref {
@@ -702,7 +702,7 @@ body main.hours-page .versicle {
   color: var(--gold); text-decoration: none;
   margin-right: 0.5em; font-size: 0.92em;
 }
-/* A reading's citation (renderPostBody() in shared.js): a step smaller
+/* A reading's citation (scripts/post_render.py): a step smaller
    than the passage and in the captions' fainter ink, so the reading
    leads and the citation reads as its source line. On trial. */
 #season-reading-body .reading-citation {

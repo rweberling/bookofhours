@@ -143,10 +143,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - Rebuilt posts (since 3 November 2026, after the October trial): each
   post in `lectio-data.json` has a `body` listing its pieces
   (`scripts/build_post_manifests.py` makes the lists). Its page is built
-  from them in Python (`scripts/post_render.py`, run by
-  `build_lectio_pages.py`), and the Seasons page draws the same in the
-  browser (`renderPostBody()` in `shared.js`); the two are twins, and
-  `check_pages.js` checks that every post reads the same in both. They
-  write the finished markup (verse, citations, footnotes); the browser
-  adds only the margin labels and numerals, the drawn rules, the
+  from them by `scripts/post_render.py` (run by `build_lectio_pages.py`),
+  the one renderer of a post: verse, citations, footnotes and figures are
+  written there. The Seasons page shows a post by fetching its page, so a
+  change to how posts look shows there once the pages are rebuilt. The
+  browser adds only the margin labels and numerals, the drawn rules, the
   lightbox and the video players (seasons.js).

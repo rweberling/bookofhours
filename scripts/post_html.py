@@ -8,8 +8,7 @@ comes back to the top. Text between top-level elements (a citation
 written straight after a reading's list) is a block of its own; text
 that is only whitespace is dropped.
 
-shared.js does the same split in the browser (topLevelBlocks()), so a
-range of blocks means the same thing to both.
+post_render.py uses it to take a range of a writing record's blocks.
 """
 
 import re

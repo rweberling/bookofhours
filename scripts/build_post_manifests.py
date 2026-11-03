@@ -7,7 +7,7 @@ Usage:
 
 A post's HTML (bodyHtml in data/lectio-data.json) is read block by block
 and matched to the records copy_lectio.py made from it, so the post can
-be rebuilt from the records alone (renderPostBody() in shared.js). Each
+be rebuilt from the records alone (scripts/post_render.py). Each
 item in a post's body is one of:
 
   {"heading": "Headnote", "tag": "h3"}   a part's heading, as the post has it
