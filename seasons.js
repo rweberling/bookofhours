@@ -108,9 +108,9 @@ function renderSeasonReading(entry) {
   // The post's images point at the full-size masters. Their src is set
   // aside before the HTML goes in (so the browser doesn't start fetching
   // the masters), then each is pointed at its web copies.
-  // With ?rebuilt, a post with a list of its pieces is rebuilt from the
-  // collection (renderPostBody() in shared.js); otherwise its imported
-  // HTML is shown.
+  // A post with a list of its pieces is rebuilt from the collection
+  // (renderPostBody() in shared.js); with ?imported, or without the
+  // collection, its imported HTML is shown.
   // The imported post keeps Substack's subscribe line; it isn't shown here
   // (as SUBSTACK_LINE in scripts/copy_lectio.py).
   const html = (entry.renderedHtml || entry.bodyHtml || `<p>${entry.body || ''}</p>`)
@@ -984,10 +984,12 @@ async function initialiseSeason() {
     lectioSeasons = data.seasons;
     if (collection) figureAlts = new Map(collection.images.filter(i => i.alt).map(i => [i.file, i.alt]));
     if (collection) attachVerse(lectioSeasons, collection.readings);
-    // The rebuilt posts are on trial: shown only with ?rebuilt in the
-    // address, so readers keep seeing each post as imported meanwhile.
-    const showRebuilt = new URLSearchParams(window.location.search).has('rebuilt');
-    if (collection && showRebuilt) {
+    // Each post is rebuilt from the collection, as its own page is
+    // (scripts/post_render.py): the records are what readers see. With
+    // ?imported in the address, a post is shown as it came from Substack
+    // instead, for comparison.
+    const showImported = new URLSearchParams(window.location.search).has('imported');
+    if (collection && !showImported) {
       const byId = new Map([...collection.readings, ...collection.images, ...collection.writing].map(r => [r.id, r]));
       Object.values(lectioSeasons).forEach(entries => entries.forEach(entry => {
         if (entry.body) entry.renderedHtml = renderPostBody(entry, byId);

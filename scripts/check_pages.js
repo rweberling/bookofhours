@@ -16,6 +16,8 @@
      - the Latin name under the title, where the subject has one
      - the gap from the end of the post to its "Published" line: the same
        on every post, within a few pixels
+     - the same words as the same post on the Seasons page (the page is
+       built in Python, the Seasons page in the browser)
    and the Hours, Weather and Seasons pages for script errors and for the
    "turn the page | keep this page" divider sitting evenly between its words.
    Exits 1 if anything fails, so a session can run it before pushing. */
@@ -55,7 +57,7 @@ const load = name => JSON.parse(fs.readFileSync(path.join(ROOT, 'data', `${name}
 
 (async () => {
   const lectio = load('lectio-data');
-  const posts = Object.values(lectio.seasons).flat().filter(p => p.page);
+  const posts = Object.entries(lectio.seasons).flatMap(([season, items]) => items.map(p => ({...p, season}))).filter(p => p.page);
   const subjects = new Map([...load('species'), ...load('phenomena')].map(s => [s.id, s]));
   const verseCount = new Map();
   for (const r of load('readings')) {
@@ -123,6 +125,18 @@ const load = name => JSON.parse(fs.readFileSync(path.join(ROOT, 'data', `${name}
     if (latin && r.latin.trim() !== latin) fail(where, `Latin line reads "${r.latin.trim()}", not "${latin}"`);
     if (r.gap === null || r.gap < PUBLISHED_GAP.min || r.gap > PUBLISHED_GAP.max) {
       fail(where, `${r.gap} px from the post's end to "Published" (expected ${PUBLISHED_GAP.min}–${PUBLISHED_GAP.max})`);
+    }
+    // The page is built in Python (post_render.py), the Seasons page draws
+    // the same post in the browser (renderPostBody() in shared.js): the
+    // two must read the same.
+    const words = () => page.evaluate(() => document.getElementById('season-reading-body').innerText.replace(/\s+/g, ' ').trim());
+    const onPage = await words();
+    await page.goto(`${base}/seasons.html?season=${post.season}&entry=${post.id}`, {waitUntil: 'networkidle'});
+    const onSeasons = await words();
+    if (onPage !== onSeasons) {
+      let i = 0;
+      while (i < onPage.length && onPage[i] === onSeasons[i]) i++;
+      fail(where, `its page and the Seasons page differ at character ${i}: «${onPage.slice(i, i + 40)}» / «${onSeasons.slice(i, i + 40)}»`);
     }
     await page.close();
   }

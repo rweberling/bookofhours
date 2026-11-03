@@ -24,9 +24,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   `"draft": true`.
 - `shownIn` (hours / weather / seasons) controls where a piece appears;
   `tags` only describe it (and lean the weighting).
-- The Lectio Terra posts (`lectio-data.json`) are the master copy of their
-  passages, figures and writing; `scripts/copy_lectio.py` copies them out.
-  Correct a post and its copy together.
+- Readers see each Lectio Terra post rebuilt from its records (the
+  readings, images and writing it lists in its `body`), so a correction
+  goes on the record. Each post's imported `bodyHtml` in `lectio-data.json`
+  is kept as the Substack original, and `scripts/copy_lectio.py` reports
+  where it and the records disagree: correct a post's text in both.
 - Write each fact once, on its own record; other records name it by ID.
 
 ## Commands
@@ -143,8 +145,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   holds the data collection's map, ID rule and open items; a bibliography
   review doc tracks citation questions. Record decisions and open items
   there, not on side branches or in a session's local files.
-- Rebuilt posts (on trial): each post in `lectio-data.json` has a `body`
-  listing its pieces, and `renderPostBody()` in `shared.js` rebuilds the post
-  from the records (`scripts/build_post_manifests.py` makes the lists). The
-  Seasons page shows the rebuilt post only with `?rebuilt` in the address;
-  otherwise each post's imported `bodyHtml`, which is kept unchanged.
+- Rebuilt posts (since 3 November 2026, after the October trial): each
+  post in `lectio-data.json` has a `body` listing its pieces
+  (`scripts/build_post_manifests.py` makes the lists). Its page is built
+  from them in Python (`scripts/post_render.py`, run by
+  `build_lectio_pages.py`), and the Seasons page draws the same in the
+  browser (`renderPostBody()` in `shared.js`); the two are twins, and
+  `check_pages.js` checks that every post reads the same in both. The
+  page then finishes the post in the browser (seasons.js: parts,
+  numerals, footnotes, citations, rules). `?imported` on a Seasons
+  address shows a post as it came from Substack, for comparison.

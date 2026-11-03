@@ -45,6 +45,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from datafile import load  # noqa: E402
 from copy_lectio import EMPTY_EDGE, SUBSTACK_LINE  # noqa: E402
+from post_render import render_post_body  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = 'https://earthlyhours.com'
@@ -100,11 +101,27 @@ def long_date(iso):
 POST_LINK = re.compile(r'seasons\.html\?season=\w+&(?:amp;)?entry=([^"&#\s]+)')
 
 
+_BY_ID = None
+
+
+def records():
+    """The collection's readings, images and writing by ID (drafts aside)."""
+    global _BY_ID
+    if _BY_ID is None:
+        _BY_ID = {r['id']: r for name in ('readings', 'images', 'writing') for r in load(name) if not r.get('draft')}
+    return _BY_ID
+
+
 def body_html(entry, page, post_pages, alts):
-    """The post as imported, without Substack's subscribe line, its images
-    pointed at their web copies and given their descriptions (alts, by
-    file), and its links to other posts at their pages."""
-    html = EMPTY_EDGE.sub('', SUBSTACK_LINE.sub('', entry.get('bodyHtml', '')).strip())
+    """The post rebuilt from the collection (post_render.py), as the
+    Seasons page shows it; a post without a list of its pieces, as
+    imported, without Substack's subscribe line. Its images pointed at
+    their web copies and given their descriptions (alts, by file), and its
+    links to other posts at their pages."""
+    if entry.get('body'):
+        html = render_post_body(entry, records())
+    else:
+        html = EMPTY_EDGE.sub('', SUBSTACK_LINE.sub('', entry.get('bodyHtml', '')).strip())
 
     def described(m):
         tag = m.group(0)
@@ -209,21 +226,9 @@ def replace_once(text, pattern, new, flags=0):
     return result
 
 
-def verse_readings(entry):
-    """The post's readings marked as verse, by their place in it: the
-    house verse form the page sets them out in (markVerse() in
-    seasons.js), whatever shape the post itself gave them."""
-    return {str(r['lectio']['place']): r['text'] for r in load('readings')
-            if (r.get('lectio') or {}).get('post') == entry['id']
-            and (r.get('display') or {}).get('verse') and not r.get('draft')}
-
-
 def post_entry(entry):
     """The details seasons.js still needs on a post page, as JSON."""
     data = {'id': entry['id'], 'readingLabels': entry.get('readingLabels') or []}
-    verse = verse_readings(entry)
-    if verse:
-        data['verse'] = verse
     text = json.dumps(data, ensure_ascii=False).replace('</', '<\\/')
     return f'<script type="application/json" id="post-entry">{text}</script>\n'
 
