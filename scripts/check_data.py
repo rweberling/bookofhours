@@ -80,6 +80,80 @@ def load(name):
     return json.loads((DATA / f'{name}.json').read_text())
 
 
+def post_readings(post):
+    """The passages under a post's Readings heading, in order: what each
+    reading's one-item list holds."""
+    m = re.search(r'<h[2-4]>\s*Readings\s*</h[2-4]>(.*?)(?=<h[2-4]>\s*(?:Supplementum|More)\s*</h[2-4]>|$)',
+                  post.get('bodyHtml', ''), re.S | re.I)
+    return re.findall(r'<ol>\s*<li>(.*?)</li>\s*</ol>', m.group(1), re.S) if m else []
+
+
+INDENTED = re.compile(r'(?:^|<p>|<br>)(?: |&nbsp;| ){2,}\S')
+
+
+def post_text_problems(lectio, readings, subjects):
+    """What would show wrongly on a post's page, though the data is whole:
+    a reading with nothing in its list (its passage strayed outside it,
+    as American Robin's once did), a poem whose record has lost indents
+    its post has (as Hardy's once had), a footnote reference with no note
+    or a note with no reference, and a subject with no Latin name for the
+    line under the title."""
+    problems = []
+    posts = [e for items in lectio.get('seasons', {}).values() for e in items]
+    by_post = defaultdict(dict)
+    for r in readings:
+        if (r.get('lectio') or {}).get('post') and not r.get('draft'):
+            by_post[r['lectio']['post']][r['lectio']['place']] = r
+    names = {s['id']: s for s in subjects}
+    for post in posts:
+        pid, html = post['id'], post.get('bodyHtml', '')
+        passages = post_readings(post)
+        for place, passage in enumerate(passages, 1):
+            if not re.sub(r'<[^>]+>|&nbsp;|\s', '', passage):
+                problems.append(f'{pid}: reading {place} has an empty list item; its passage belongs inside it')
+            record = by_post[pid].get(place)
+            if record and (record.get('display') or {}).get('verse'):
+                in_post = len(INDENTED.findall(passage))
+                in_record = len(re.findall(r'(?:^|<br>)(?:&nbsp;){2,}', record.get('text', '')))
+                if in_post > in_record:
+                    problems.append(f'{record["id"]}: its post indents {in_post} line(s) of the poem, '
+                                    f'its record {in_record}; set the record\'s indents from the post')
+        own = lambda href: not re.match(r'^[a-z]+:', href, re.I)
+        refs = {m.group(2) for m in re.finditer(r'href="([^"]*)#footnote-(\d+)"', html) if own(m.group(1))}
+        notes = {m.group(2) for m in re.finditer(r'href="([^"]*)#footnote-anchor-(\d+)"[^>]*>\d+</a>\s*<p>', html)
+                 if own(m.group(1))}
+        for n in sorted(refs - notes, key=int):
+            problems.append(f'{pid}: footnote reference {n} has no note')
+        for n in sorted(notes - refs, key=int):
+            problems.append(f'{pid}: footnote {n} is never referred to in the text')
+        subject = names.get(post.get('subject'))
+        if subject and not (subject.get('scientific') or subject.get('latin')):
+            problems.append(f'{subject["id"]}: no Latin name ("scientific" or "latin") for the line under '
+                            f'the title of {pid}')
+    return problems
+
+
+def conflict_markers():
+    """Files committed in the middle of a merge, as sitemap.xml once was."""
+    import subprocess
+    try:
+        files = subprocess.run(['git', 'ls-files'], cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+    except (OSError, subprocess.CalledProcessError):
+        return []
+    marker = re.compile(r'^(<{7}|>{7})( |$)|^={7}$', re.M)
+    found = []
+    for name in files:
+        if not name.endswith(('.html', '.js', '.css', '.json', '.xml', '.txt', '.md', '.py', '.csv', '.cff')):
+            continue
+        try:
+            text = (ROOT / name).read_text(encoding='utf-8')
+        except (OSError, UnicodeDecodeError):
+            continue
+        if marker.search(text):
+            found.append(f'{name}: merge-conflict markers (<<<<<<< / >>>>>>>) left in the file')
+    return found
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--gaps', action='store_true', help='list gaps by record')
@@ -204,6 +278,9 @@ def main():
             problem = in_verse_form(r.get('text') or '')
             if problem:
                 errors.append(f'{r["id"]}: marked as verse, but {problem}; run: python3 scripts/verse.py {r["id"]}')
+
+    errors.extend(post_text_problems(lectio, readings, species + phenomena))
+    errors.extend(conflict_markers())
 
     # Writing: a known kind and some text; in the Hours, one versicle per
     # hour, and its phenomenon lines numbered 1, 2, 3... by place.
