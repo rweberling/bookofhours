@@ -33,6 +33,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 
 - After any data edit: `python3 scripts/check_data.py` (it says what else
   to rebuild; `--gaps` lists missing details).
+- After changing a page, its script or styles, or a post:
+  `LANG=C.UTF-8 node scripts/check_pages.js [post-name ...]` (about a
+  minute for all; it serves the repo itself). It checks the posts in a
+  browser: verse set out as verse, footnotes linked both ways, citations,
+  the Latin line, even spacing, no script errors. Run it before pushing.
 - Save JSON with `scripts/datafile.py` (`load('images')`, `save('images', d)`)
   so the house formatting is kept. A plain `json.dump` rewrites the whole
   file and makes an unreadable diff.
