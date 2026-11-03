@@ -7,7 +7,15 @@
   <atom:link href="https://earthlyhours.com/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Weekly species studies, with readings and images, from The Earthly Book of Hours.</description>
   <language>en</language>
-  <lastBuildDate>Sun, 25 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Lectio Terra: First Frost</title>
+    <link>https://earthlyhours.com/lectio-terra/first-frost/</link>
+    <guid isPermaLink="true">https://earthlyhours.com/lectio-terra/first-frost/</guid>
+    <pubDate>Sun, 01 Nov 2026 12:00:00 +0000</pubDate>
+    <dc:creator>Ryan Weberling</dc:creator>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-1600.webp&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy&lt;/em&gt;&lt;/p&gt;&lt;p&gt;We interrupt this fall’s journey through the northeast woodlands with a reflection on the threshold that is the first frost (prima pruina, if it were a Latin binomial).&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/lectio-terra/first-frost/&quot;&gt;Read the post&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
   <item>
     <title>Lectio Terra: Ghost Pipe</title>
     <link>https://earthlyhours.com/lectio-terra/ghost-pipe/</link>

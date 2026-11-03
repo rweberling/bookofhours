@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons.html; edit those, not this. -->
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+<meta name="description" content="We interrupt this fall’s journey through the northeast woodlands with a reflection on the threshold that is the first frost (prima pruina, if it were a…">
+<meta property="og:title" content="Lectio Terra: First Frost">
+<meta property="og:description" content="We interrupt this fall’s journey through the northeast woodlands with a reflection on the threshold that is the first frost (prima pruina, if it were a…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-1600.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://earthlyhours.com/lectio-terra/first-frost/">
+<link rel="canonical" href="https://earthlyhours.com/lectio-terra/first-frost/">
+<meta name="application-name" content="The Earthly Book of Hours">
+<title>Lectio Terra: First Frost — The Earthly Book of Hours</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="citation_title" content="Lectio Terra: First Frost">
+<meta name="citation_author" content="Weberling, Ryan">
+<meta name="citation_publication_date" content="2026/11/01">
+<meta name="DC.type" content="blogPost">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lectio Terra: First Frost",
+  "name": "Week 42: First Frost (William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy)",
+  "url": "https://earthlyhours.com/lectio-terra/first-frost/",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Weberling"
+  },
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Lectio Terra",
+    "url": "https://earthlyhours.com/lectio-terra/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/"
+  },
+  "datePublished": "2026-11-01",
+  "image": "https://earthlyhours.com/images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-1600.webp",
+  "about": {
+    "@type": "Thing",
+    "name": "First Frost"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Earthly Book of Hours",
+      "item": "https://earthlyhours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lectio Terra",
+      "item": "https://earthlyhours.com/lectio-terra/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "First Frost",
+      "item": "https://earthlyhours.com/lectio-terra/first-frost/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="season-reading-page" data-season="autumn" data-entry="lt-0033">
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+<!-- The figures' lightbox (openLightbox() in shared.js) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Expanded image view" aria-modal="true">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<main class="page keepsake-frame season-reading">
+  <p class="publication-name">The Earthly Book of Hours</p>
+  <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint">Autumn</button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
+  <h1 class="block-name"><button class="pane-link" id="season-reading-title" type="button" aria-describedby="season-reading-subtitle-hint">First Frost</button></h1>
+  <div class="season-reading-meta"><em id="season-reading-latin"></em></div>
+  <article class="season-post" aria-live="polite">
+    <p class="season-post-dek" id="season-reading-dek">William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy</p>
+    <div id="season-reading-body">
+<figure><a target="_blank" href="images/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9.jpeg" rel="noopener"><img src="images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-1600.webp" srcset="images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-800.webp 800w, images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-1600.webp 1600w, images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9.jpeg" width="934" height="765" alt="Week 42: First Frost (William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy)" loading="lazy"></a><figcaption>Fig. 1. <em><a href="https://www.metmuseum.org/art/collection/search/669362" rel="noopener" target="_blank">[Frost]</a> </em>(circa 1910)<em>. </em>Wilson Alwyn Bentley. The Metropolitan Museum of Art.</figcaption></figure><h2>Headnote</h2><p>We interrupt this fall’s journey through the <a href="lectio-terra/northern-red-oak/">northeast woodlands</a> with a reflection on the threshold that is the first frost (<em>prima pruina</em>, if it were a Latin binomial).</p><p>Is it death or birth that defines the earthly conditions of the human? Hannah Arendt famously argued that, while the biggest questions of philosophy tend to be oriented around the fact of our mortality, it is in fact natality—biologically, the birth of new people; and politically, the possibility of new beginnings—that grounds and enables our individual and collective life. As she writes in her book, <em>The Human Condition</em>, “Only the full experience of this capacity [i.e., natality] can bestow upon human affairs faith and hope” (247). In a looser sense, natality is a feature of the natural and plant worlds as well as human life and history. We can see it even in the first frost, whether the slow dying of a gentle freeze or the harsh punctuation of <a href="https://www.usbg.gov/blog/frostbitten-flora-what-happens-plant-cells-when-it-freezes" rel="noopener" target="_blank">necrosis</a>. </p><p>Yes, the first frost (<em>prima pruina</em>) marks a turning point, for many plants, between anthesis and senescence—that is, between the developmental phase in which a flower is fully open, functional, and capable of pollination; and the protective process through which plants dismantle themselves in order to preserve their vital nutrients and core architecture. But it’s more of a gradient than a line: a dip in temperatures may blacken tender basil leaves or dahlias, but hardy kale and asters will persist for a while longer. Here in the Boston area, first frost typically falls sometime in the days after Halloween—a few weeks later than in <a href="https://www.ncei.noaa.gov/news/when-expect-first-fall-freeze" rel="noopener" target="_blank">surrounding areas </a>of New England, due to the combined influences of <a href="https://www.jove.com/topics/biology/coastal-climate-moderation" rel="noopener" target="_blank">coastal climate moderation</a> and <a href="https://science.nasa.gov/kids/earth/what-is-an-urban-heat-island/" rel="noopener" target="_blank">urban heat islands</a>. Yet the changes introduced by the first frost involve life and nuance as much as sharp loss. </p><p>Let me count some of the ways: </p><ol><li><p>Samuel Taylor Coleridge was only half correct when he <a href="https://www.poetryfoundation.org/poems/43986/frost-at-midnight" rel="noopener" target="_blank">observed</a> that “The Frost performs its secret ministry, / Unhelped by any wind.” For the frost does accept the help of a bacterium, <em>Pseudomonas syringae</em>, which lives on leaf surfaces and “seeds” ice a few degrees below freezing, when plain water would stay liquid. Some frost damage, in other words, is partly microbial: a living thing is part of the freeze.</p></li><li><p>Frost is also a sweetener. Hardy crops such as kale and parsnips convert stored starch to sugar as temperatures fall, lowering the freezing point of their sap and protecting their cells, so that the plant’s defense becomes our flavor. Likewise, fruits such as persimmon and medlar benefit from some degree of <a href="https://www.bbc.com/future/article/20210325-the-strange-medieval-fruit-the-world-forgot" rel="noopener" target="_blank">bletting</a>, as they linger in that amorphous transition between ripening and decay.</p></li><li><p>As the nights cool, the decay of a leaf reveals some of its true colors. The yellows and oranges of autumn foliage, at least, are carotenoids present all summer, unmasked as the chlorophyll disintegrates and its nutrients are reclaimed by the tree (the red anthocyanins, however, are made fresh in the fall).</p></li><li><p>Some plants make frost of their own. This is not merely the bloom of powdery <a href="https://en.wikipedia.org/wiki/Pruinescence" rel="noopener" target="_blank">pruina</a> you may have noticed on grapes or blueberries (or other living things), itself named after the frost. Instead, various species commonly called “<a href="https://dn720005.ca.archive.org/0/items/biostor-276043/biostor-276043.pdf" rel="noopener" target="_blank">frostweed</a>” draw water up through their stems, which split in the cold and release the water as <a href="https://arboretum.harvard.edu/stories/frost-flowers" rel="noopener" target="_blank">curling ribbons of ice</a>. Neither frost nor flower, these “<a href="https://dn760107.eu.archive.org/0/items/biostor-210709/biostor-210709.pdf" rel="noopener" target="_blank">freak[y]</a>” blooms are the plants’ own sap, produced as they shut down for winter.</p></li><li><p>As a necessary phase in the life cycle of some plants, winter also can serve as an instruction. Milkweed and several native coneflowers cannot germinate until they undergo what gardeners call cold stratification: weeks in cold, moist conditions, which reset the chemical and hormonal clocks for germination. For such seeds, natality requires the cold.</p></li><li><p>Some plants simply decline to stop. Several native and immigrant species bloom in autumn or winter; for example, witch hazel’s ribbon-like petals curl in the cold and unroll when it warms, while hellebores and snowdrops open in late winter, sometimes through snow. For them, anthesis is not interrupted by the cold but persists through it.</p></li><li><p>In the concept of “<a href="https://floralandfield.substack.com/p/what-the-heck-is-frostmas" rel="noopener" target="_blank">frostmas</a>,” which has spread on social media over the past few years, primarily among small-scale flower growers and farmers, the death of the plants can bring a rush of beauty and much-needed rest—and new economic questions and challenges, as sources of income necessarily shift.</p></li></ol><figure><a target="_blank" href="images/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0.jpeg" rel="noopener"><img src="images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0-1600.webp" srcset="images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0-800.webp 800w, images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0-1600.webp 1600w, images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0.jpeg" width="1573" height="2074" alt="Week 42: First Frost (William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy)" loading="lazy"></a><figcaption>Fig. 2. “<a href="https://hdl.handle.net/2027/uc1.$b117574?urlappend=%3Bseq=265%3Bownerid=9007199258917903-265" rel="noopener" target="_blank">1 to 10 Maple. 11 to 18 Spindle Tree</a>.” From Francis George Heath, <em>Autumnal Leaves. </em>1881. Third Edition. London: Kegan Paul, Trench, and Co., 1885.</figcaption></figure><hr><h2>Readings</h2><ol><li><p>The wind-flower and the violet, they perished long ago,<br>And the brier-rose and the orchids died amid the summer glow;<br>But on the hills the golden-rod, and the aster in the wood,<br>And the yellow sun-flower by the brook in autumn beauty stood,<br>Till fell the frost from the clear cold heaven, as falls the plague on men,<br>And the brightness of their smile was gone, from upland, glade, and glen.</p></li></ol>William Cullen Bryant. “<a href="https://quod.lib.umich.edu/a/amverse/BAD0508.0001.001/1:107?rgn=div1&amp;view=fulltext" rel="noopener" target="_blank">The Death of the Flowers</a>.” <em>New York Review and Athenaeum Magazine</em> (November 1825). Rpt. <em><a href="https://archive.org/details/autumnpastoralde00brya/page/n23/mode/2up" rel="noopener" target="_blank">An Autumn Pastoral: The Death of the Flowers</a>. </em>Illus. C. E. Phillips. Troy, New York: Nims and Knight, 1888. n.p.<p></p><ol><li><p>The miracle that saves the world, the realm of human affairs, from its normal, “natural” ruin is ultimately the fact of natality, in which the faculty of action is ontologically rooted. It is, in other words, the birth of new men and the new beginning, the action they are capable of by virtue of being born. Only the full experience of this capacity can bestow upon human affairs faith and hope, those two essential characteristics of human existence which Greek antiquity ignored altogether, discounting the keeping of faith as a very uncommon and not too important virtue and counting hope among the evils of illusion in Pandora’s box. It is this faith in and hope for the world that found perhaps its most glorious and most succinct expression in the few words with which the Gospels announced their “glad tidings”: “A child has been born unto us.”</p></li></ol>Hannah Arendt. <em><a href="https://bookshop.org/a/86532/9780226586601" rel="noopener" target="_blank">The Human Condition</a>. </em>1958. Second Edition. Chicago: University of Chicago Press, 1998. 247.<p></p><ol><li><p>VON MOHL (13) in 1860 was the first to announce that previous to the fall of the leaf there is formed near the base of the petiole a definite separation layer in which abscission always occurs by the separation of the cells from each other with their walls still intact. The xylem tubes not being included in this separation layer are finally ruptured mechanically, and the leaf falls. He also called attention to the fact that abscission and the formation of a protective tissue are two very distinct processes, and that the latter process might either precede or follow the former. […] The external factors capable of accelerating leaf-fall are extremely diversified. These have been summarized in the main by LLOYD (8). The more important are high and low light intensity, high and low water supply, high temperatures and frost, low concentrations of anesthetics, toxic concentrations of acids and salts, and wounding of the blade. On the other hand, low concentrations of oxygen and high concentrations of anesthetics retard leaf-fall, a state of rigor being produced by the latter.</p></li></ol>Homer C. Sampson. “<a href="https://www.journals.uchicago.edu/doi/epdf/10.1086/332301?__cf_chl_tk=4HUvdnrlPK4POzJVkR_PKuvSQZJ9L4eKKRa1QP0s9IE-1793501603-1.0.1.1-nOEa7XIwl1jx.ZzNIQUAHqRonIB.8Vj0vOnuMPArChI" rel="noopener" target="_blank">Chemical Changes Accompanying Abscission in Coleus Blumei.</a>” <em>Botanical Gazette </em>66.1 (July 1918: 32-53). 32, 33.<p></p><ol><li><p>I leant upon a coppice gate</p><p>   When Frost was spectre-grey,</p><p>And Winter’s dregs made desolate</p><p>   The weakening eye of day.</p><p>The tangled bine-stems scored the sky</p><p>   Like strings of broken lyres,</p><p>And all mankind that haunted nigh</p><p>   Had sought their household fires.</p><p></p><p>The land’s sharp features seemed to be</p><p>   The Century’s corpse outleant,</p><p>His crypt the cloudy canopy,</p><p>   The wind his death-lament.</p><p>The ancient pulse of germ and birth</p><p>   Was shrunken hard and dry,</p><p>And every spirit upon earth</p><p>   Seemed fervourless as I.</p><p></p><p>At once a voice arose among</p><p>   The bleak twigs overhead</p><p>In a full-hearted evensong</p><p>   Of joy illimited;</p><p>An aged thrush, frail, gaunt, and small,</p><p>   In blast-beruffled plume,</p><p>Had chosen thus to fling his soul</p><p>   Upon the growing gloom.</p><p></p><p>So little cause for carolings</p><p>   Of such ecstatic sound</p><p>Was written on terrestrial things</p><p>   Afar or nigh around,</p><p>That I could think there trembled through</p><p>   His happy good-night air</p><p>Some blessed Hope, whereof he knew</p><p>   And I was unaware.</p></li></ol>Thomas Hardy. “<a href="https://hdl.handle.net/2027/mdp.39015031237822" rel="noopener" target="_blank">The Darkling Thrush</a>.” <em>The Graphic</em> (December 29, 1900). Rpt. <em><strong>Poems of the Past and the Present</strong></em><strong>.</strong> Second Edition. New York and London: Harper &amp; Brothers, 1902. 169-171.<p></p><h2>Supplementum</h2><ul><li><p>National Centers for Environmental Information. “<a href="https://www.ncei.noaa.gov/news/when-expect-first-fall-freeze" rel="noopener" target="_blank">When to Expect the First Fall Freeze</a>.” National Oceanic and Atmospheric Association  (October 23, 2023).</p></li><li><p>Keith C. Heidorn. “<a href="https://publicdomainreview.org/essay/the-snowflake-man-of-vermont/" rel="noopener" target="_blank">The Snowflake Man of Vermont</a>.” <em>The Public Domain Review </em>(February 14, 2011).</p></li><li><p>Wilson A. Bentley. “<a href="https://siarchives.si.edu/sites/default/files/pdfs/WAB_Frost.pdf" rel="noopener" target="_blank">Jack Frost Designs Jewels of His Own: A Consummate Winter Artist, He Exhibits His Crystal Treasures on Snow Bank and Window Pane</a>.” <em>The New York Times </em>(February 19, 1928).</p></li><li><p>Cynthia D. Kelly, Thomas J. Fellers and Michael W. Davidson. “<a href="https://micro.magnet.fsu.edu/optics/olympusmicd/galleries/darkfield/abscissionlayerlow.html" rel="noopener" target="_blank">Parenchyma Abscission Layer.</a>” Tallahassee, Florida: The Florida State University National High Magnetic Field Laboratory, 2015.</p></li><li><p>Fanny Söderbäck. “<a href="https://philpapers.org/rec/SDENOB" rel="noopener" target="_blank">Natality or Birth? Arendt and Cavarero on the Human Condition of Being Born</a>.” <em>Hypatia</em> 33.2 (Spring 2018): 273–88.</p></li><li><p>Moreno Nourizadeh. “<a href="https://zenodo.org/records/17554590" rel="noopener" target="_blank">To Begin Anew: Natality, Forgetting, and the Politics of Beginning</a>.” Version 1.0 (Preprint). <em>Zenodo</em> (November 7, 2025).</p></li></ul><figure><a target="_blank" href="images/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178.jpeg" rel="noopener"><img src="images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178-1600.webp" srcset="images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178-800.webp 800w, images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178-1600.webp 1600w, images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178.jpeg" width="576" height="908.4513618677042" alt="Week 42: First Frost (William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy)" loading="lazy"></a><figcaption>Fig. 3. “Photographs of two plates of drawings from Prillieux (1869) of transverse sections of frost-frozen petioles of <em>Chelidonium quercifolium</em> (upper drawing) and <em>Symphytum tauricum</em> (lower drawing).” <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4242212/figure/FIG1/" rel="noopener" target="_blank">Fig. 1</a> from M. E. McCully, et al. “The management of extracellular ice by petioles of frost-resistant herbaceous plants.” <em>Annals of Botany</em> 94.5 (2004): 665-74.</figcaption></figure>
+</div>
+  </article>
+  <div class="phenomena season-post-observation"><p class="phenomena-list" id="season-reading-observation">Published November 1, 2026</p></div>
+  <div class="turn-the-page visible season-turn"><span class="ttp-bracket">[</span><span class="season-turn-part" id="season-turn-part"><button class="page-action" id="season-turn-page" aria-label="Load another species reading">turn the page</button><span class="ttp-sep" aria-hidden="true">|</span></span><button class="page-action" id="keep-page" type="button" aria-label="Keep this page: save it as an image or copy its link">keep this page</button><span class="ttp-bracket">]</span></div>
+  <footer class="page-footer" style="opacity:1;"><div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true"><div class="line"></div><div class="diamond"></div><div class="line"></div></div><p class="colophon"><span>A seasonal reading from <a href="seasons-incipit.html">Lectio Terra</a></span></p><button class="pane-link season-emblem-link" id="season-emblem-open" type="button" aria-label="Wander the Seasons"><svg class="season-emblem" id="season-emblem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg></button></footer>
+</main>
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a class="active" href="seasons.html">The Current Season</a>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
+    <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
+      <a href="editions.html">Otherwise Editions</a>
+      <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
+      <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Visit Otherwise <span class="ext-arrow" aria-hidden="true">↗</span></a>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
+  <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
+  <p class="wander-heading">The Seasons</p>
+  <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
+  <div class="season-dial-wrap" aria-hidden="true"><svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <p class="season-dial-caption" id="season-dial-caption"></p>
+  <p class="dial-legend" aria-hidden="true"><span class="dial-key"><span class="dial-key-star">✦</span>You are here</span><span class="dial-key"><span class="dial-key-quarter"></span>Solstice or equinox</span><span class="dial-key"><span class="dial-key-cross"></span>Cross-quarter day</span></p>
+  <div class="species-grid species-season-groups" id="species-grid"></div>
+</div>
+<script type="application/json" id="post-entry">{"id": "lt-0033", "readingLabels": []}</script>
+<script type="module" src="dfos-siwd.js"></script>
+<script src="shared.js"></script>
+<script src="atmosphere.js"></script>
+<script src="seasons.js"></script>
+<script src="keep.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

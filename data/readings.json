@@ -3204,5 +3204,67 @@
       "seasons": ["autumn"],
       "species": ["sp-0027"]
     }
+  },
+  {
+    "id": "r-0114",
+    "shownIn": "seasons",
+    "text": "The wind-flower and the violet, they perished long ago,<br>And the brier-rose and the orchids died amid the summer glow;<br>But on the hills the golden-rod, and the aster in the wood,<br>And the yellow sun-flower by the brook in autumn beauty stood,<br>Till fell the frost from the clear cold heaven, as falls the plague on men,<br>And the brightness of their smile was gone, from upland, glade, and glen.",
+    "citation": {
+      "display": "William Cullen Bryant. “<a href=\"https://quod.lib.umich.edu/a/amverse/BAD0508.0001.001/1:107?rgn=div1&amp;view=fulltext\" rel=\"noopener\" target=\"_blank\">The Death of the Flowers</a>.” <em>New York Review and Athenaeum Magazine</em> (November 1825). Rpt. <em><a href=\"https://archive.org/details/autumnpastoralde00brya/page/n23/mode/2up\" rel=\"noopener\" target=\"_blank\">An Autumn Pastoral: The Death of the Flowers</a>. </em>Illus. C. E. Phillips. Troy, New York: Nims and Knight, 1888. n.p."
+    },
+    "lectio": { "post": "lt-0033", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0006"]
+    },
+    "display": { "verse": true }
+  },
+  {
+    "id": "r-0115",
+    "shownIn": "seasons",
+    "text": "<p>The miracle that saves the world, the realm of human affairs, from its normal, “natural” ruin is ultimately the fact of natality, in which the faculty of action is ontologically rooted. It is, in other words, the birth of new men and the new beginning, the action they are capable of by virtue of being born. Only the full experience of this capacity can bestow upon human affairs faith and hope, those two essential characteristics of human existence which Greek antiquity ignored altogether, discounting the keeping of faith as a very uncommon and not too important virtue and counting hope among the evils of illusion in Pandora’s box. It is this faith in and hope for the world that found perhaps its most glorious and most succinct expression in the few words with which the Gospels announced their “glad tidings”: “A child has been born unto us.”</p>",
+    "citation": {
+      "display": "Hannah Arendt. <em><a href=\"https://bookshop.org/a/86532/9780226586601\" rel=\"noopener\" target=\"_blank\">The Human Condition</a>. </em>1958. Second Edition. Chicago: University of Chicago Press, 1998. 247."
+    },
+    "lectio": { "post": "lt-0033", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0006"]
+    }
+  },
+  {
+    "id": "r-0116",
+    "shownIn": "seasons",
+    "text": "<p>VON MOHL (13) in 1860 was the first to announce that previous to the fall of the leaf there is formed near the base of the petiole a definite separation layer in which abscission always occurs by the separation of the cells from each other with their walls still intact. The xylem tubes not being included in this separation layer are finally ruptured mechanically, and the leaf falls. He also called attention to the fact that abscission and the formation of a protective tissue are two very distinct processes, and that the latter process might either precede or follow the former. […] The external factors capable of accelerating leaf-fall are extremely diversified. These have been summarized in the main by LLOYD (8). The more important are high and low light intensity, high and low water supply, high temperatures and frost, low concentrations of anesthetics, toxic concentrations of acids and salts, and wounding of the blade. On the other hand, low concentrations of oxygen and high concentrations of anesthetics retard leaf-fall, a state of rigor being produced by the latter.</p>",
+    "citation": {
+      "display": "Homer C. Sampson. “<a href=\"https://www.journals.uchicago.edu/doi/epdf/10.1086/332301?__cf_chl_tk=4HUvdnrlPK4POzJVkR_PKuvSQZJ9L4eKKRa1QP0s9IE-1793501603-1.0.1.1-nOEa7XIwl1jx.ZzNIQUAHqRonIB.8Vj0vOnuMPArChI\" rel=\"noopener\" target=\"_blank\">Chemical Changes Accompanying Abscission in Coleus Blumei.</a>” <em>Botanical Gazette </em>66.1 (July 1918: 32-53). 32, 33."
+    },
+    "lectio": { "post": "lt-0033", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0006"]
+    }
+  },
+  {
+    "id": "r-0117",
+    "shownIn": "seasons",
+    "text": "I leant upon a coppice gate<br>When Frost was spectre-grey,<br>And Winter’s dregs made desolate<br>The weakening eye of day.<br>The tangled bine-stems scored the sky<br>Like strings of broken lyres,<br>And all mankind that haunted nigh<br>Had sought their household fires.<br><br>The land’s sharp features seemed to be<br>The Century’s corpse outleant,<br>His crypt the cloudy canopy,<br>The wind his death-lament.<br>The ancient pulse of germ and birth<br>Was shrunken hard and dry,<br>And every spirit upon earth<br>Seemed fervourless as I.<br><br>At once a voice arose among<br>The bleak twigs overhead<br>In a full-hearted evensong<br>Of joy illimited;<br>An aged thrush, frail, gaunt, and small,<br>In blast-beruffled plume,<br>Had chosen thus to fling his soul<br>Upon the growing gloom.<br><br>So little cause for carolings<br>Of such ecstatic sound<br>Was written on terrestrial things<br>Afar or nigh around,<br>That I could think there trembled through<br>His happy good-night air<br>Some blessed Hope, whereof he knew<br>And I was unaware.",
+    "citation": {
+      "display": "Thomas Hardy. “<a href=\"https://hdl.handle.net/2027/mdp.39015031237822\" rel=\"noopener\" target=\"_blank\">The Darkling Thrush</a>.” <em>The Graphic</em> (December 29, 1900). Rpt. <em><strong>Poems of the Past and the Present</strong></em><strong>.</strong> Second Edition. New York and London: Harper &amp; Brothers, 1902. 169-171."
+    },
+    "lectio": { "post": "lt-0033", "place": 4 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0006"]
+    },
+    "display": { "verse": true }
   }
 ]

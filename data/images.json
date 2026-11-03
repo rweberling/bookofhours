@@ -3788,5 +3788,53 @@
       "size": [541, 845]
     },
     "alt": "A hand-coloured botanical plate of Indian pipe: three pale, scaly white stems rising from a small brown root ball, two curling over into nodding flowers and one upright, with five numbered details of the flower parts and seed capsule below."
+  },
+  {
+    "id": "i-0148",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9.jpeg",
+    "caption": "<em><a href=\"https://www.metmuseum.org/art/collection/search/669362\" rel=\"noopener\" target=\"_blank\">[Frost]</a> </em>(circa 1910)<em>. </em>Wilson Alwyn Bentley. The Metropolitan Museum of Art.",
+    "lectio": { "post": "lt-0033", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0006"]
+    },
+    "display": {
+      "size": [934, 765]
+    }
+  },
+  {
+    "id": "i-0149",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0.jpeg",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.$b117574?urlappend=%3Bseq=265%3Bownerid=9007199258917903-265\" rel=\"noopener\" target=\"_blank\">1 to 10 Maple. 11 to 18 Spindle Tree</a>.” From Francis George Heath, <em>Autumnal Leaves. </em>1881. Third Edition. London: Kegan Paul, Trench, and Co., 1885.",
+    "lectio": { "post": "lt-0033", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0006"]
+    },
+    "display": {
+      "size": [1573, 2074]
+    }
+  },
+  {
+    "id": "i-0150",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178.jpeg",
+    "caption": "“Photographs of two plates of drawings from Prillieux (1869) of transverse sections of frost-frozen petioles of <em>Chelidonium quercifolium</em> (upper drawing) and <em>Symphytum tauricum</em> (lower drawing).” <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4242212/figure/FIG1/\" rel=\"noopener\" target=\"_blank\">Fig. 1</a> from M. E. McCully, et al. “The management of extracellular ice by petioles of frost-resistant herbaceous plants.” <em>Annals of Botany</em> 94.5 (2004): 665-74.",
+    "lectio": { "post": "lt-0033", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0006"]
+    },
+    "display": {
+      "size": [576, 908]
+    }
   }
 ]

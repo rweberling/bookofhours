@@ -3478,6 +3478,90 @@
         }
       ]
     },
+    "images/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9.jpeg": {
+      "bytes": 246219,
+      "width": 934,
+      "height": 765,
+      "sha256": "af2c10eb73de73567279b146533eb54a2a55fea97d5372b6b0a7eb9b5095425a",
+      "settings": "89e48fac760f",
+      "credit": "be4a07674f3e",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-800.webp",
+          "width": 800,
+          "height": 655,
+          "bytes": 200318
+        },
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-1600.webp",
+          "width": 934,
+          "height": 765,
+          "bytes": 277882
+        },
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-2400.webp",
+          "width": 934,
+          "height": 765,
+          "bytes": 277882
+        }
+      ]
+    },
+    "images/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0.jpeg": {
+      "bytes": 367281,
+      "width": 1456,
+      "height": 1920,
+      "sha256": "65a55351ae45c26f14f50d55c4a48710a0af80e81909cd5a000882a3ac65c6bb",
+      "settings": "89e48fac760f",
+      "credit": "be4a07674f3e",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0-800.webp",
+          "width": 800,
+          "height": 1055,
+          "bytes": 116358
+        },
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0-1600.webp",
+          "width": 1456,
+          "height": 1920,
+          "bytes": 266106
+        },
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0-2400.webp",
+          "width": 1456,
+          "height": 1920,
+          "bytes": 266106
+        }
+      ]
+    },
+    "images/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178.jpeg": {
+      "bytes": 275734,
+      "width": 771,
+      "height": 1216,
+      "sha256": "2315107f876254906c31edd74e6cc93e22205461a13ccf2f123f8ed4bc637463",
+      "settings": "89e48fac760f",
+      "credit": "be4a07674f3e",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178-800.webp",
+          "width": 771,
+          "height": 1216,
+          "bytes": 141892
+        },
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178-1600.webp",
+          "width": 771,
+          "height": 1216,
+          "bytes": 141892
+        },
+        {
+          "file": "images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178-2400.webp",
+          "width": 771,
+          "height": 1216,
+          "bytes": 141892
+        }
+      ]
+    },
     "images/transit_abbott.jpg": {
       "bytes": 194717,
       "width": 1297,
