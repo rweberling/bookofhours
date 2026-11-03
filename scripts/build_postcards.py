@@ -51,7 +51,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from build_shared import render as render_shared
+from build_shared import render as render_shared, stamp_assets
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data' / 'postcards.csv'
@@ -408,7 +408,7 @@ def main():
     for row in rows:
         page = OUT / row['path'] / 'index.html'
         page.parent.mkdir(parents=True, exist_ok=True)
-        page.write_text(build(row, rows), encoding='utf-8')
+        page.write_text(stamp_assets(build(row, rows)), encoding='utf-8')
         print(f'wrote {page.relative_to(ROOT)}')
     for w in warnings:
         print(f'note: {w}')

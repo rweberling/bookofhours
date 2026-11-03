@@ -43,6 +43,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   file and makes an unreadable diff.
 - New or changed image files: `python3 scripts/build_images.py` (web copies).
 - Menu, head and frame: edit `partials/`, then `python3 scripts/build_shared.py`.
+  It also stamps each page's links to `css/styles.css` and the scripts
+  with `?v=` and a fingerprint of the file, so browsers fetch them afresh
+  when they change. So after editing the CSS or a script, run it, then
+  `build_lectio_pages.py --all` (the post pages copy `seasons.html`);
+  `check_data.py` says when either is due.
 - Sources page: `python3 scripts/build_sources.py` (needs Chrome; see below).
 - Species registry IDs: `python3 scripts/link_species.py [--write]`.
 - Post pages (`lectio-terra/<name>/`, one per post, and the RSS feed
