@@ -70,6 +70,12 @@ def subjects():
     return {r['id']: r for r in load('species') + load('phenomena')}
 
 
+def latin_name(subject):
+    """A species' scientific name, or a phenomenon's Latin one (as
+    resolveSpeciesFields() in shared.js)."""
+    return (subject or {}).get('scientific') or (subject or {}).get('latin')
+
+
 def plain(html):
     return re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', '', html))).strip()
 
@@ -239,8 +245,8 @@ def render(template, season, entry, subject, alone, post_pages, alts):
     t = replace_once(t, r'\s*<!-- For readers and crawlers without JavaScript[^\n]*\n\s*<noscript>.*?</noscript>', '', re.S)
     t = replace_once(t, r'(?<=aria-describedby="season-reading-subtitle-hint">)(?=</button>)', season.capitalize())
     t = replace_once(t, r'(?<=<button class="pane-link" id="season-reading-title" type="button" aria-describedby="season-reading-subtitle-hint">)[^<]*', escape(name))
-    if subject and subject.get('scientific'):
-        t = replace_once(t, r'(?<=<em id="season-reading-latin">)', escape(subject['scientific']))
+    if latin_name(subject):
+        t = replace_once(t, r'(?<=<em id="season-reading-latin">)', escape(latin_name(subject)))
     t = replace_once(t, r'(?<=<p class="season-post-dek" id="season-reading-dek">)', escape(credits))
     t = replace_once(t, r'<div id="season-reading-body"></div>',
                      f'<div id="season-reading-body">\n{body_html(entry, page, post_pages, alts)}\n</div>')
@@ -290,7 +296,7 @@ def contents(data, by_subject):
             if not entry.get('page'):
                 continue
             subject = by_subject.get(entry.get('subject'))
-            latin = f' <em class="contents-latin">{escape(subject["scientific"])}</em>' if subject and subject.get('scientific') else ''
+            latin = f' <em class="contents-latin">{escape(latin_name(subject))}</em>' if latin_name(subject) else ''
             details = [escape(', '.join(entry.get('readings') or []))]
             if entry.get('published'):
                 details.append(long_date(entry['published']))
