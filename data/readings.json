@@ -1254,7 +1254,10 @@
             "url": "https://hdl.handle.net/2027/hvd.32044106450414?urlappend=%3Bseq=230%3Bownerid=27021597765883035-246"
           }
         ],
-        "identifiers": { "hathitrust": "007679974", "oclc": "7688631" }
+        "identifiers": { "hathitrust": "007679974", "oclc": "7688631" },
+        "contributors": [
+          { "id": "a-william-hamilton-gibson", "name": "William Hamilton Gibson", "role": "author" }
+        ]
       }
     },
     "lectio": { "post": "lt-0001", "place": 1 },
@@ -1284,7 +1287,11 @@
             "url": "https://archive.org/details/NietzscheSchopenhauerAsEducatorCollins/page/n3/mode/2up"
           }
         ],
-        "identifiers": { "internetArchive": "NietzscheSchopenhauerAsEducatorCollins" }
+        "identifiers": { "internetArchive": "NietzscheSchopenhauerAsEducatorCollins" },
+        "contributors": [
+          { "id": "a-friedrich-nietzsche", "name": "Friedrich Nietzsche", "role": "author" },
+          { "id": "a-adrian-collins", "name": "Adrian Collins", "role": "translator" }
+        ]
       }
     },
     "lectio": { "post": "lt-0001", "place": 2 },
@@ -1312,7 +1319,8 @@
             "label": "White Heat (Dartmouth)",
             "url": "https://journeys.dartmouth.edu/whiteheat/the-robin-is-the-one-f501c-j828/"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-emily-dickinson", "name": "Emily Dickinson", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0002", "place": 1 },
@@ -1343,7 +1351,8 @@
             "url": "https://hdl.handle.net/2027/osu.32435029594769?urlappend=%3Bseq=29%3Bownerid=115636920-33"
           }
         ],
-        "identifiers": { "hathitrust": "001501611", "oclc": "857360", "lccn": "11035036" }
+        "identifiers": { "hathitrust": "001501611", "oclc": "857360", "lccn": "11035036" },
+        "contributors": [{ "id": "a-robert-ridgway", "name": "Robert Ridgway", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0002", "place": 2 },
@@ -1373,7 +1382,8 @@
             "url": "https://hdl.handle.net/2027/chi.086806303?urlappend=%3Bseq=5%3Bownerid=13510798902081697-9"
           }
         ],
-        "identifiers": { "hathitrust": "011437149", "oclc": "5161201" }
+        "identifiers": { "hathitrust": "011437149", "oclc": "5161201" },
+        "contributors": [{ "id": "a-e-jones", "name": "E. Jones", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0003", "place": 1 },
@@ -1403,7 +1413,8 @@
             "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=5%3Bownerid=13510798902017243-11"
           }
         ],
-        "identifiers": { "hathitrust": "011274049", "oclc": "18660713" }
+        "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
+        "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0003", "place": 2 },
@@ -1431,7 +1442,8 @@
             "label": "Substack",
             "url": "https://annikahansteenizora.substack.com/p/time-is-water"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-annika-hansteen-izora", "name": "Annika Hansteen-Izora", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0003", "place": 3 },
@@ -1460,7 +1472,8 @@
             "url": "https://hdl.handle.net/2027/umn.31951d02459776j?urlappend=%3Bseq=1%3Bownerid=22365483-0"
           }
         ],
-        "identifiers": { "hathitrust": "007425308", "oclc": "21507897", "lccn": "agr09000825" }
+        "identifiers": { "hathitrust": "007425308", "oclc": "21507897", "lccn": "agr09000825" },
+        "contributors": [{ "id": "a-gifford-pinchot", "name": "Gifford Pinchot", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0004", "place": 1 },
@@ -1494,7 +1507,8 @@
             "label": "Internet Archive",
             "url": "https://dn721805.ca.archive.org/0/items/mountaininterval0000fros/mountaininterval0000fros.pdf"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-robert-frost", "name": "Robert Frost", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0004", "place": 2 },
@@ -1524,6 +1538,15 @@
             "label": "DailyGood",
             "url": "https://www.dailygood.org/story/1160/the-invention-of-clouds-goethe-s-poems-for-the-skies-maria-popova/"
           }
+        ],
+        "contributors": [
+          {
+            "id": "a-johann-wolfgang-von-goethe",
+            "name": "Johann Wolfgang von Goethe",
+            "role": "author"
+          },
+          { "id": "a-george-soane", "name": "George Soane", "role": "translator" },
+          { "id": "a-john-bowring", "name": "John Bowring", "role": "translator" }
         ]
       }
     },
@@ -1553,7 +1576,8 @@
             "label": "Buttondown",
             "url": "https://buttondown.com/jennitaur/archive/what-does-it-mean-to-watch-clouds-what-can-it-mean/"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-jenny-odell", "name": "Jenny Odell", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0005", "place": 2 },
@@ -1582,6 +1606,10 @@
             "label": "Google Books",
             "url": "https://www.google.com/books/edition/A_History_of_the_species_of_crocus_Edite/f6VWAAAAcAAJ?hl=en&amp;gbpv=0"
           }
+        ],
+        "contributors": [
+          { "id": "a-william-herbert", "name": "William Herbert", "role": "author" },
+          { "id": "a-john-lindley", "name": "John Lindley", "role": "editor" }
         ]
       }
     },
@@ -1610,7 +1638,8 @@
             "label": "Guillaume Barth",
             "url": "https://guillaumebarth.com/en/works/crocus-sativus-flower-of-happiness"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-guillaume-barth", "name": "Guillaume Barth", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0006", "place": 2 },
@@ -1631,7 +1660,14 @@
       "title": "Introduction to Metaphysics",
       "written": "1935",
       "locator": { "page": "14–16" },
-      "edition": { "id": "e-0050" }
+      "edition": {
+        "id": "e-0050",
+        "contributors": [
+          { "id": "a-martin-heidegger", "name": "Martin Heidegger", "role": "author" },
+          { "id": "a-gregory-fried", "name": "Gregory Fried", "role": "translator" },
+          { "id": "a-richard-polt", "name": "Richard Polt", "role": "translator" }
+        ]
+      }
     },
     "suggestedEdition": { "isbn": "9780300186123" },
     "lectio": { "post": "lt-0007", "place": 1 },
@@ -1661,7 +1697,14 @@
             "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=20%3Bownerid=13510798900618097-26"
           }
         ],
-        "identifiers": { "hathitrust": "001993770", "oclc": "14366384" }
+        "identifiers": { "hathitrust": "001993770", "oclc": "14366384" },
+        "contributors": [
+          {
+            "id": "a-douglas-houghton-campbell",
+            "name": "Douglas Houghton Campbell",
+            "role": "author"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0007", "place": 2 },
@@ -1688,7 +1731,10 @@
       "title": "Mules and Men",
       "written": "1935",
       "locator": { "page": "106–107" },
-      "edition": { "id": "e-0052" }
+      "edition": {
+        "id": "e-0052",
+        "contributors": [{ "id": "a-zora-neale-hurston", "name": "Zora Neale Hurston", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0008", "place": 1 },
     "tags": {
@@ -1717,7 +1763,8 @@
             "url": "https://hdl.handle.net/2027/uc1.$b235977?urlappend=%3Bseq=9%3Bownerid=9007199259750403-13"
           }
         ],
-        "identifiers": { "hathitrust": "001496609", "oclc": "1319978", "lccn": "25012152" }
+        "identifiers": { "hathitrust": "001496609", "oclc": "1319978", "lccn": "25012152" },
+        "contributors": [{ "id": "a-ernest-thompson-seton", "name": "Ernest Thompson Seton", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0008", "place": 2 },
@@ -1745,6 +1792,10 @@
             "label": "Substack",
             "url": "https://plantcraft.substack.com/p/plantcraft-ashia-ajani-mulls-over"
           }
+        ],
+        "contributors": [
+          { "id": "a-ashia-ajani", "name": "Ashia Ajani", "role": "author" },
+          { "id": "a-amirio-freeman", "name": "Amirio Freeman", "role": "author" }
         ]
       }
     },
@@ -1796,7 +1847,13 @@
       "title": "Physica",
       "written": "1150~",
       "locator": { "page": "115–116" },
-      "edition": { "id": "e-0056" }
+      "edition": {
+        "id": "e-0056",
+        "contributors": [
+          { "id": "a-hildegard-of-bingen", "name": "Hildegard of Bingen", "role": "author" },
+          { "id": "a-bruce-w-hozeski", "name": "Bruce W. Hozeski", "role": "translator" }
+        ]
+      }
     },
     "suggestedEdition": { "isbn": "9780807021095" },
     "lectio": { "post": "lt-0009", "place": 3 },
@@ -1825,6 +1882,11 @@
             "label": "ProQuest Ebook Central",
             "url": "http://ebookcentral.proquest.com/lib/utxa/detail.action?docID=3052322."
           }
+        ],
+        "contributors": [
+          { "id": "a-hildegard-of-bingen", "name": "Hildegard of Bingen", "role": "author" },
+          { "id": "a-joseph-l-baird", "name": "Joseph L. Baird", "role": "translator" },
+          { "id": "a-radd-k-ehrman", "name": "Radd K. Ehrman", "role": "translator" }
         ]
       }
     },
@@ -1846,7 +1908,13 @@
       "title": "Plants in Place: A Phenomenology of the Vegetal",
       "written": "2024",
       "locator": { "page": "76" },
-      "edition": { "id": "e-0058" }
+      "edition": {
+        "id": "e-0058",
+        "contributors": [
+          { "id": "a-michael-marder", "name": "Michael Marder", "role": "author" },
+          { "id": "a-edward-s-casey", "name": "Edward S. Casey", "role": "author" }
+        ]
+      }
     },
     "lectio": { "post": "lt-0010", "place": 2 },
     "tags": {
@@ -1894,7 +1962,13 @@
       "title": "Philosophical Investigations",
       "written": "1953",
       "locator": { "page": "85" },
-      "edition": { "id": "e-0060" }
+      "edition": {
+        "id": "e-0060",
+        "contributors": [
+          { "id": "a-ludwig-wittgenstein", "name": "Ludwig Wittgenstein", "role": "author" },
+          { "id": "a-g-e-m-anscombe", "name": "G. E. M. Anscombe", "role": "translator" }
+        ]
+      }
     },
     "suggestedEdition": { "isbn": "9781405159289" },
     "lectio": { "post": "lt-0011", "place": 1 },
@@ -1924,7 +1998,11 @@
             "url": "https://hdl.handle.net/2027/nyp.33433090753579?urlappend=%3Bseq=67%3Bownerid=27021597770124163-71"
           }
         ],
-        "identifiers": { "hathitrust": "012307100", "oclc": "6900683", "lccn": "05015479" }
+        "identifiers": { "hathitrust": "012307100", "oclc": "6900683", "lccn": "05015479" },
+        "contributors": [
+          { "id": "a-james-freeman-dana", "name": "James Freeman Dana", "role": "author" },
+          { "id": "a-samuel-l-dana", "name": "Samuel L. Dana", "role": "author" }
+        ]
       }
     },
     "lectio": { "post": "lt-0011", "place": 2 },
@@ -1954,7 +2032,8 @@
             "url": "https://hdl.handle.net/2027/uc1.b4857815?urlappend=%3Bseq=82%3Bownerid=116673599-86"
           }
         ],
-        "identifiers": { "hathitrust": "000629649", "oclc": "1268281", "lccn": "25016810" }
+        "identifiers": { "hathitrust": "000629649", "oclc": "1268281", "lccn": "25016810" },
+        "contributors": [{ "id": "a-amy-lowell", "name": "Amy Lowell", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0012", "place": 1 },
@@ -1985,7 +2064,8 @@
             "url": "https://hdl.handle.net/2027/hvd.32044107247413?urlappend=%3Bseq=8%3Bownerid=27021597765978726-12"
           }
         ],
-        "identifiers": { "hathitrust": "100451368", "oclc": "17570555" }
+        "identifiers": { "hathitrust": "100451368", "oclc": "17570555" },
+        "contributors": [{ "id": "a-william-c-barry", "name": "William C. Barry", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0012", "place": 2 },
@@ -2006,7 +2086,10 @@
       "title": "Sorrow in Sunlight",
       "written": "1924",
       "locator": { "page": "27–28" },
-      "edition": { "id": "e-0064" }
+      "edition": {
+        "id": "e-0064",
+        "contributors": [{ "id": "a-ronald-firbank", "name": "Ronald Firbank", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0012", "place": 3 },
     "tags": {
@@ -2026,7 +2109,10 @@
       "title": "Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape",
       "written": "2008-12",
       "locator": { "page": "312" },
-      "edition": { "id": "e-0065" }
+      "edition": {
+        "id": "e-0065",
+        "contributors": [{ "id": "a-jenifer-wightman", "name": "Jenifer Wightman", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0013", "place": 1 },
     "tags": {
@@ -2049,7 +2135,8 @@
       "edition": {
         "id": "e-0066",
         "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.3389/falgy.2023.1220481" }],
-        "identifiers": { "doi": "10.3389/falgy.2023.1220481" }
+        "identifiers": { "doi": "10.3389/falgy.2023.1220481" },
+        "contributors": [{ "id": "a-graham-a-w-rook", "name": "Graham A. W. Rook", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0013", "place": 2 },
@@ -2079,7 +2166,12 @@
             "url": "https://doi.org/10.1001/archgenpsychiatry.2010.161"
           }
         ],
-        "identifiers": { "doi": "10.1001/archgenpsychiatry.2010.161" }
+        "identifiers": { "doi": "10.1001/archgenpsychiatry.2010.161" },
+        "contributors": [
+          { "id": "a-charles-l-raison", "name": "Charles L. Raison", "role": "author" },
+          { "id": "a-christopher-a-lowry", "name": "Christopher A. Lowry", "role": "author" },
+          { "id": "a-graham-a-w-rook", "name": "Graham A. W. Rook", "role": "author" }
+        ]
       }
     },
     "lectio": { "post": "lt-0013", "place": 3 },
@@ -2109,7 +2201,15 @@
             "url": "https://hdl.handle.net/2027/inu.30000011921974?urlappend=%3Bseq=33%3Bownerid=13510798897570173-37"
           }
         ],
-        "identifiers": { "hathitrust": "001005718", "oclc": "1444113", "lccn": "26022478" }
+        "identifiers": { "hathitrust": "001005718", "oclc": "1444113", "lccn": "26022478" },
+        "contributors": [
+          {
+            "id": "a-jalal-al-din-muhammad-rumi",
+            "name": "Jalāl al-Dīn Muḥammad Rūmī",
+            "role": "author"
+          },
+          { "id": "a-reynold-a-nicholson", "name": "Reynold A. Nicholson", "role": "translator" }
+        ]
       }
     },
     "lectio": { "post": "lt-0014", "place": 1 },
@@ -2140,7 +2240,8 @@
             "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=233%3Bownerid=13510798901296899-237"
           }
         ],
-        "identifiers": { "hathitrust": "001997177", "oclc": "10314294" }
+        "identifiers": { "hathitrust": "001997177", "oclc": "10314294" },
+        "contributors": [{ "id": "a-a-r-horwood", "name": "A. R. Horwood", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0014", "place": 2 },
@@ -2169,7 +2270,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0015", "place": 1 },
@@ -2198,6 +2300,10 @@
             "label": "Biodiversity Heritage Library",
             "url": "https://www.biodiversitylibrary.org/page/8177947"
           }
+        ],
+        "contributors": [
+          { "id": "a-francesco-redi", "name": "Francesco Redi", "role": "author" },
+          { "id": "a-mab-bigelow", "name": "Mab Bigelow", "role": "translator" }
         ]
       }
     },
@@ -2219,7 +2325,10 @@
       "title": "Bog-Trotting for Orchids",
       "written": "1904",
       "locator": { "page": "vi, 147" },
-      "edition": { "id": "e-0072" }
+      "edition": {
+        "id": "e-0072",
+        "contributors": [{ "id": "a-grace-greylock-niles", "name": "Grace Greylock Niles", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0016", "place": 1 },
     "tags": {
@@ -2244,7 +2353,8 @@
             "url": "https://hdl.handle.net/2027/hvd.32044107229023?urlappend=%3Bseq=30%3Bownerid=27021597765947657-34"
           }
         ],
-        "identifiers": { "hathitrust": "100451015", "oclc": "80597640" }
+        "identifiers": { "hathitrust": "100451015", "oclc": "80597640" },
+        "contributors": [{ "id": "a-f-desbois", "name": "F. Desbois", "role": "author" }]
       },
       "bibliography": "Desbois, F. \"Cypripedium de pleine terre.\" <em>Monographie des Cypripedium</em>, Librairie Générale de Ad. Hoste, 1888.",
       "title": "Cypripedium de pleine terre",
@@ -2276,7 +2386,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=27"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0016", "place": 3 },
@@ -2312,7 +2423,20 @@
           "openlibrary": "OL16820783M",
           "isbn": "9780872209374",
           "lccn": "2008018659"
-        }
+        },
+        "contributors": [
+          {
+            "id": "a-felice-cardinal-dascoli",
+            "name": "Felice Cardinal d’Ascoli",
+            "role": "author"
+          },
+          { "id": "a-maurice-a-finocchiaro", "name": "Maurice A. Finocchiaro", "role": "editor" },
+          {
+            "id": "a-maurice-a-finocchiaro",
+            "name": "Maurice A. Finocchiaro",
+            "role": "translator"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0017", "place": 1 },
@@ -2332,7 +2456,10 @@
       "bibliography": "Barraclough, Simon. <em>Sunspots</em>. Penned in the Margins, 2015.",
       "title": "Sunspots",
       "written": "2015",
-      "edition": { "id": "e-0076" }
+      "edition": {
+        "id": "e-0076",
+        "contributors": [{ "id": "a-simon-barraclough", "name": "Simon Barraclough", "role": "author" }]
+      }
     },
     "suggestedEdition": { "isbn": "9781908058416" },
     "lectio": { "post": "lt-0017", "place": 2 },
@@ -2354,7 +2481,10 @@
       "title": "The Serviceberry: Abundance and Reciprocity in the Natural World",
       "written": "2024",
       "locator": { "page": "9–10" },
-      "edition": { "id": "e-0077" }
+      "edition": {
+        "id": "e-0077",
+        "contributors": [{ "id": "a-robin-wall-kimmerer", "name": "Robin Wall Kimmerer", "role": "author" }]
+      }
     },
     "suggestedEdition": { "isbn": "9781668072240" },
     "lectio": { "post": "lt-0018", "place": 1 },
@@ -2389,7 +2519,8 @@
             "url": "https://www.biodiversitylibrary.org/part/187785"
           }
         ],
-        "identifiers": { "hathitrust": "009125368", "oclc": "4850178" }
+        "identifiers": { "hathitrust": "009125368", "oclc": "4850178" },
+        "contributors": [{ "id": "a-k-m-wiegand", "name": "K. M. Wiegand", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0018", "place": 2 },
@@ -2417,7 +2548,8 @@
             "label": "Botanical.com",
             "url": "https://www.botanical.com/botanical/mgmh/c/currd132.html"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-maud-grieve", "name": "Maud Grieve", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0019", "place": 1 },
@@ -2447,7 +2579,8 @@
             "url": "https://hdl.handle.net/2027/coo.31924018437917?urlappend=%3Bseq=367%3Bownerid=27021597768559051-381"
           }
         ],
-        "identifiers": { "hathitrust": "009120458", "oclc": "12767094" }
+        "identifiers": { "hathitrust": "009120458", "oclc": "12767094" },
+        "contributors": [{ "id": "a-fred-w-card", "name": "Fred W. Card", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0019", "place": 2 },
@@ -2476,6 +2609,11 @@
             "label": "Who Built America?",
             "url": "https://www.whobuiltamerica.org/item/haudenosaunee-iroquois-creation-myth-1816"
           }
+        ],
+        "contributors": [
+          { "id": "a-john-norton", "name": "John Norton", "role": "author" },
+          { "id": "a-carl-f-klinck", "name": "Carl F. Klinck", "role": "editor" },
+          { "id": "a-james-j-talman", "name": "James J. Talman", "role": "editor" }
         ]
       }
     },
@@ -2504,6 +2642,13 @@
             "role": "cited",
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9v125b8j?urlappend=%3Bseq=181"
+          }
+        ],
+        "contributors": [
+          {
+            "id": "a-e-pauline-johnson",
+            "name": "E. Pauline Johnson (Tekahionwake)",
+            "role": "author"
           }
         ]
       }
@@ -2534,7 +2679,8 @@
             "label": "Biodiversity Heritage Library",
             "url": "https://www.biodiversitylibrary.org/bibliography/134115#/summary"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-joseph-j-white-inc", "name": "Joseph J. White, Inc.", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0021", "place": 1 },
@@ -2559,7 +2705,8 @@
             "label": "Sydney Review of Books",
             "url": "https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-alix-beeston", "name": "Alix Beeston", "role": "author" }]
       },
       "bibliography": "Beeston, Alix. \"Fingers Stained with Fruit and Ink.\" Review of <em>Blueberries: Essays Concerning Understanding</em>, by Ellena Savage. <em>Sydney Review of Books</em>, 15 June 2020.",
       "title": "Fingers Stained with Fruit and Ink",
@@ -2583,7 +2730,10 @@
       "title": "Milkweed and Monarch",
       "written": "1994",
       "locator": { "page": "10–11" },
-      "edition": { "id": "e-0085" }
+      "edition": {
+        "id": "e-0085",
+        "contributors": [{ "id": "a-paul-muldoon", "name": "Paul Muldoon", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0022", "place": 1 },
     "tags": {
@@ -2613,7 +2763,11 @@
             "url": "https://archive.org/details/illustratedflor03brit/page/24/mode/2up?q=butterfly"
           }
         ],
-        "identifiers": { "internetArchive": "illustratedflor03brit", "openlibrary": "OL24445409M" }
+        "identifiers": { "internetArchive": "illustratedflor03brit", "openlibrary": "OL24445409M" },
+        "contributors": [
+          { "id": "a-nathaniel-lord-britton", "name": "Nathaniel Lord Britton", "role": "author" },
+          { "id": "a-addison-brown", "name": "Addison Brown", "role": "author" }
+        ]
       }
     },
     "lectio": { "post": "lt-0022", "place": 2 },
@@ -2641,6 +2795,10 @@
             "label": "Poetry in Translation",
             "url": "https://www.poetryintranslation.com/PITBR/Latin/HoraceOdesBkIII.php#anchor_Toc40263858"
           }
+        ],
+        "contributors": [
+          { "id": "a-horace", "name": "Horace", "role": "author" },
+          { "id": "a-a-s-kline", "name": "A. S. Kline", "role": "translator" }
         ]
       }
     },
@@ -2676,7 +2834,11 @@
           "internetArchive": "fragmentsofworko00hera",
           "openlibrary": "OL21854788M",
           "lccn": "11010817"
-        }
+        },
+        "contributors": [
+          { "id": "a-heraclitus", "name": "Heraclitus", "role": "author" },
+          { "id": "a-g-t-w-patrick", "name": "G. T. W. Patrick", "role": "translator" }
+        ]
       }
     },
     "lectio": { "post": "lt-0023", "place": 2 },
@@ -2706,7 +2868,8 @@
             "url": "https://hdl.handle.net/2027/hvd.32044027957927?urlappend=%3Bseq=16%3Bownerid=27021597765377222-20"
           }
         ],
-        "identifiers": { "hathitrust": "011549434", "oclc": "77784890", "lccn": "35025565" }
+        "identifiers": { "hathitrust": "011549434", "oclc": "77784890", "lccn": "35025565" },
+        "contributors": [{ "id": "a-edouard-biot", "name": "Édouard Biot", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0024", "place": 1 },
@@ -2735,6 +2898,10 @@
             "label": "The Walden Woods Project",
             "url": "https://www.walden.org/wp-content/uploads/2016/02/Journal-2-Chapter-7.pdf"
           }
+        ],
+        "contributors": [
+          { "id": "a-henry-david-thoreau", "name": "Henry David Thoreau", "role": "author" },
+          { "id": "a-bradford-torrey", "name": "Bradford Torrey", "role": "editor" }
         ]
       }
     },
@@ -2763,7 +2930,8 @@
             "label": "Representative Poetry Online",
             "url": "https://rpo.library.utoronto.ca/content/attack-squash-people"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-marge-piercy", "name": "Marge Piercy", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0025", "place": 1 },
@@ -2792,7 +2960,8 @@
             "label": "The Poetry Society",
             "url": "https://poems.poetrysociety.org.uk/poems/notes-on-various-squashes/"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-padraig-regan", "name": "Padraig Regan", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0025", "place": 2 },
@@ -2821,7 +2990,8 @@
             "label": "JSTOR",
             "url": "https://www.jstor.org/stable/20683657?searchText=Robert%20hass%20poem%20with%20a%20cucumber%20in%20it&amp;searchUri=%2Faction%2FdoBasicSearch%3FQuery%3DRobert%2Bhass%2Bpoem%2Bwith%2Ba%2Bcucumber%2Bin%2Bit%26so%3Drel&amp;ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&amp;refreqid=fastly-default%3Af2747166e2520d3b8e67b7c4fbdd96a7"
           }
-        ]
+        ],
+        "contributors": [{ "id": "a-robert-hass", "name": "Robert Hass", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0026", "place": 1 },
@@ -2851,6 +3021,10 @@
             "label": "Google Books",
             "url": "https://www.google.com/books/edition/The_Thoughts_of_the_Emperor_Marcus_Aurel/i9iUswYUMmUC?hl=en&amp;gbpv=1&amp;pg=PA209&amp;printsec=frontcover"
           }
+        ],
+        "contributors": [
+          { "id": "a-marcus-aurelius", "name": "Marcus Aurelius", "role": "author" },
+          { "id": "a-george-long", "name": "George Long", "role": "translator" }
         ]
       }
     },
@@ -2880,6 +3054,10 @@
             "label": "Wikisource",
             "url": "https://en.wikisource.org/wiki/The_Poetical_Works_of_William_Cowper_(Benham)/The_Task/Book_3"
           }
+        ],
+        "contributors": [
+          { "id": "a-william-cowper", "name": "William Cowper", "role": "author" },
+          { "id": "a-william-benham", "name": "William Benham", "role": "editor" }
         ]
       }
     },
@@ -2902,7 +3080,13 @@
       "title": "Fiesta Melons",
       "written": "1956",
       "locator": { "page": "46–47" },
-      "edition": { "id": "e-0095" }
+      "edition": {
+        "id": "e-0095",
+        "contributors": [
+          { "id": "a-sylvia-plath", "name": "Sylvia Plath", "role": "author" },
+          { "id": "a-ted-hughes", "name": "Ted Hughes", "role": "editor" }
+        ]
+      }
     },
     "suggestedEdition": { "isbn": "9780061558894" },
     "lectio": { "post": "lt-0027", "place": 1 },
@@ -2931,6 +3115,11 @@
             "label": "Perseus Digital Library",
             "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D20%3Achapter%3D6#note1"
           }
+        ],
+        "contributors": [
+          { "id": "a-pliny-the-elder", "name": "Pliny the Elder", "role": "author" },
+          { "id": "a-john-bostock", "name": "John Bostock", "role": "translator" },
+          { "id": "a-h-t-riley", "name": "H. T. Riley", "role": "translator" }
         ]
       }
     },
@@ -2966,7 +3155,8 @@
           "oclc": "3339732",
           "openlibrary": "OL6947305M",
           "lccn": "04030235"
-        }
+        },
+        "contributors": [{ "id": "a-susan-fenimore-cooper", "name": "Susan Fenimore Cooper", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0028", "place": 1 },
@@ -2996,7 +3186,8 @@
             "url": "https://hdl.handle.net/2027/mdp.39015011690990?urlappend=%3Bseq=196%3Bownerid=13510798890518092-202"
           }
         ],
-        "identifiers": { "hathitrust": "001881232", "oclc": "12747590" }
+        "identifiers": { "hathitrust": "001881232", "oclc": "12747590" },
+        "contributors": [{ "id": "a-francis-george-heath", "name": "Francis George Heath", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0028", "place": 2 },
@@ -3031,7 +3222,8 @@
             "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=185%3Bownerid=1284933-191"
           }
         ],
-        "identifiers": { "hathitrust": "100323859", "oclc": "263836", "lccn": "22021418" }
+        "identifiers": { "hathitrust": "100323859", "oclc": "263836", "lccn": "22021418" },
+        "contributors": [{ "id": "a-james-george-frazer", "name": "James George Frazer", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0028", "place": 3 },
@@ -3061,7 +3253,8 @@
             "url": "https://hdl.handle.net/2027/uiug.30112039325284?urlappend=%3Bseq=180%3Bownerid=13510798903473000-184"
           }
         ],
-        "identifiers": { "hathitrust": "001055000", "oclc": "906880", "lccn": "20017899" }
+        "identifiers": { "hathitrust": "001055000", "oclc": "906880", "lccn": "20017899" },
+        "contributors": [{ "id": "a-carl-sandburg", "name": "Carl Sandburg", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0029", "place": 1 },
@@ -3092,7 +3285,8 @@
             "url": "https://archive.org/details/in.ernet.dli.2015.458629/page/n21/mode/2up"
           }
         ],
-        "identifiers": { "internetArchive": "in.ernet.dli.2015.458629" }
+        "identifiers": { "internetArchive": "in.ernet.dli.2015.458629" },
+        "contributors": [{ "id": "a-vladimir-nabokov", "name": "Vladimir Nabokov", "role": "author" }]
       }
     },
     "suggestedEdition": { "isbn": "9780679723424" },
@@ -3124,7 +3318,10 @@
             "url": "https://hdl.handle.net/2027/uc1.31175024284567?urlappend=%3Bseq=149%3Bownerid=120949887-153"
           }
         ],
-        "identifiers": { "hathitrust": "103315786", "oclc": "26601282", "isbn": "9780883544327" }
+        "identifiers": { "hathitrust": "103315786", "oclc": "26601282", "isbn": "9780883544327" },
+        "contributors": [
+          { "id": "a-charles-sprague-sargent", "name": "Charles Sprague Sargent", "role": "author" }
+        ]
       }
     },
     "lectio": { "post": "lt-0029", "place": 3 },
@@ -3230,7 +3427,15 @@
       "display": "Jean Anthelme Brillat-Savarin. <em><a href=\"https://hdl.handle.net/2027/hvd.hn1bit?urlappend=%3Bseq=59%3Bownerid=27021597765846239-63\" rel=\"noopener\" target=\"_blank\">Gastronomy as a Fine Art; or, The Science of Good Living</a>.</em> Trans. R. E. Anderson. Trans. of <em>Physiologie du Goût </em>[<em>Physiology of Taste</em>]. 1826. London: Chatto and Windus, 1877. 15-16.",
       "edition": {
         "id": "e-0105",
-        "identifiers": { "hathitrust": "100499037", "oclc": "2881650" }
+        "identifiers": { "hathitrust": "100499037", "oclc": "2881650" },
+        "contributors": [
+          {
+            "id": "a-jean-anthelme-brillat-savarin",
+            "name": "Jean Anthelme Brillat-Savarin",
+            "role": "author"
+          },
+          { "id": "a-r-e-anderson", "name": "R. E. Anderson", "role": "translator" }
+        ]
       }
     },
     "lectio": { "post": "lt-0030", "place": 1 },
@@ -3247,7 +3452,13 @@
     "text": "<p>Our discussion has focused on neotropical plants and animals, but it can be generalized to the sweet-fleshed large fruits of the Kentucky coffee bean <em>Gymnocladus dioica</em> and honey locust <em>Gleditsia triacanthos</em> (Leguminosae), osage orange <em>Maclura</em> (Moraceae), pawpaw <em>Asimina</em> (Annonaceae), and persimmon <em>Diospyros</em> (Ebenaceae). When there was a megafauna available to disperse their seeds, such genera may have been denser and had much wider ranges. The extreme spininess of various New World extra-tropical shrubs that are found in moist as well as arid regions has not been well explained. The vesicatory ripe fruits and weak-walled nuts of Gingko biloba might even have been evolved in association with a tough-mouthed herbivorous dinosaur that did not chew its food well.</p>",
     "citation": {
       "display": "Daniel H. Janzen and Paul S. Martin. “<a href=\"http://www.jstor.org/stable/1688516\" rel=\"noopener\" target=\"_blank\">Neotropical Anachronisms: The Fruits the Gomphotheres Ate</a>.” <em>Science</em> 215.4528 (January 1982: 19-27). 27.",
-      "edition": { "id": "e-0106" }
+      "edition": {
+        "id": "e-0106",
+        "contributors": [
+          { "id": "a-daniel-h-janzen", "name": "Daniel H. Janzen", "role": "author" },
+          { "id": "a-paul-s-martin", "name": "Paul S. Martin", "role": "author" }
+        ]
+      }
     },
     "lectio": { "post": "lt-0030", "place": 2 },
     "tags": {
@@ -3265,7 +3476,8 @@
       "display": "A. C. Whitford. “<a href=\"https://hdl.handle.net/2027/uc1.b4321375?urlappend=%3Bseq=17%3Bownerid=9007199266569933-21\" rel=\"noopener\" target=\"_blank\">ANONACEAE, D. C. (Custard-Apple Family)</a>.” <em>Textile Fibers Used In Eastern Aboriginal North America</em>. <em>Anthropological Papers of the American Museum of Natural History.</em> Vol. 38. Part 1. New York: American Museum of Natural History, 1941. 9.",
       "edition": {
         "id": "e-0107",
-        "identifiers": { "hathitrust": "001632236", "oclc": "1609195", "lccn": "41022534" }
+        "identifiers": { "hathitrust": "001632236", "oclc": "1609195", "lccn": "41022534" },
+        "contributors": [{ "id": "a-a-c-whitford", "name": "A. C. Whitford", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0030", "place": 3 },
@@ -3282,7 +3494,10 @@
     "text": "<p>In late Spring 2023, Metrolinx crews exposed swaths of land along the Railpath to non-specific chemical herbicide to control the incredible spread of dog-strangling vine (Metrolinx 2023). Regardless of species, all vegetal and terra-bound life, including the staghorns, were exposed to the poison. The West Toronto Railpath sumacs teach us that nativist prescriptions are limited in predetermining how or when flourishing and suffering occurs in multispecies life. Perhaps because they thrive in the ditches of highways and rail corridors – the same disturbed spaces colonised by their invasive companions – or because they resist neat vegetal categories situated within taxonomical hierarchies (a small tree? a large bush?), the native sumacs of the Railpath duly suffer alongside their non-native kin, as well as the countless species-assemblages who remain hidden beyond the settler-gaze.</p>",
     "citation": {
       "display": "Cole Swanson. “<a href=\"https://www.whp-journals.co.uk/PP/article/view/1159\" rel=\"noopener\" target=\"_blank\">Among the Drupes (Elegy for a Wasteland)</a>”. <em>Plant Perspectives</em> (February 2025).",
-      "edition": { "id": "e-0108" }
+      "edition": {
+        "id": "e-0108",
+        "contributors": [{ "id": "a-cole-swanson", "name": "Cole Swanson", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0032", "place": 1 },
     "tags": {
@@ -3298,7 +3513,10 @@
     "text": "<p>Summer fervors slacken;</p><p>   Sumac torches dim;</p><p>There’s bronze upon the bracken;</p><p>   September has a whim </p><p>For carmine, pearl and amber</p><p>   Touches on her green; </p><p>Busy squirrels clamber;</p><p>   Restless birds convene.</p><p></p><p>Where Indian pipe still blanches, </p><p>   Where hoary lichen flakes</p><p>Forest trunks and branches,</p><p>   The golden foxglove makes</p><p>A mimic wood that tosses</p><p>   Warning to the trees,</p><p>Then droops upon the mosses,</p><p>   Heavy with bloom and bees.</p>",
     "citation": {
       "display": "Katherine Lee Bates. From “<a href=\"https://hdl.handle.net/2027/loc.ark:/13960/t1wd4qb7b?urlappend=%3Bseq=142\" rel=\"noopener\" target=\"_blank\">Playmates</a>.” <em>The Retinue and Other Poems</em>. New York: E.P. Dutton &amp; Co., 1918. 122-123.",
-      "edition": { "id": "e-0109" }
+      "edition": {
+        "id": "e-0109",
+        "contributors": [{ "id": "a-katharine-lee-bates", "name": "Katharine Lee Bates", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0032", "place": 2 },
     "tags": {
@@ -3314,7 +3532,10 @@
     "text": "<p>The Sumach, especially in the fall, is a thing of beauty with its handsome pinnately divided foliage and large red bunches of fruit at the ends of the branches. Two noteworthy species are the Smooth Sumach and the Staghorn, the latter with very velvety-hairy stalks and branches. <br><br>The Poison Sumach of swamps, dangerous to touch, may easily be distinguished from the harmless kinds. Both its flowers and fruits, the latter grayish, are very loosely borne on long slender branching stalks.</p>",
     "citation": {
       "display": "J. Francis Macbride. “<a href=\"http://www.biodiversitylibrary.org/page/2657582\" rel=\"noopener\" target=\"_blank\">Sumach (Rhus species)</a>.” From <em>Autumn Fruits and Flowers. </em>Botany Leaflet 10. Chicago, Illinois: Field Museum, 1924. 12.",
-      "edition": { "id": "e-0110" }
+      "edition": {
+        "id": "e-0110",
+        "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0032", "place": 3 },
     "tags": {
@@ -3332,7 +3553,11 @@
       "display": "Emily Dickinson. “<a href=\"https://archive.org/details/poemsthirdseries00dickiala/page/156/mode/2up?q=whiter\" rel=\"noopener\" target=\"_blank\">XVIII. The Spirit</a>.” [‘Tis whiter than an Indian pipe,”]. <em>Poems: Third Series. </em>Ed. Mabel Loomis Todd. Boston: Roberts Brothers, 1896. 156.",
       "edition": {
         "id": "e-0111",
-        "identifiers": { "internetArchive": "poemsthirdseries00dickiala", "oclc": "10424229" }
+        "identifiers": { "internetArchive": "poemsthirdseries00dickiala", "oclc": "10424229" },
+        "contributors": [
+          { "id": "a-emily-dickinson", "name": "Emily Dickinson", "role": "author" },
+          { "id": "a-mabel-loomis-todd", "name": "Mabel Loomis Todd", "role": "editor" }
+        ]
       }
     },
     "lectio": { "post": "lt-0031", "place": 1 },
@@ -3349,7 +3574,10 @@
     "text": "<p>Monotropa have long puzzled biologists. In the late nineteenth century, a Russian botanist, wrestling with the question of how these strange plants were able to exist, was the first to suggest that substances could pass between plants via fungal connections. The idea didn’t catch on. It was a passing conjecture buried in an obscure article and it sank more or less without a trace. The Monotropa riddle moldered away for another seventy-five years before it was picked up by the Swedish botanist Erik Björkman, who in 1960 injected trees with radioactive sugars and was able to show that radioactivity accumulated in nearby Monotropa plants. It was the first demonstration that substances might pass between plants via a fungal pathway.</p><p></p><p>Monotropa lured botanists into uncovering an entirely new biological possibility. Since the 1980s, it has become clear that Monotropa isn’t an anomaly. Most plants are promiscuous and can engage with many mycorrhizal partners. Mycorrhizal fungi, too, are promiscuous in their relationships with plants. Separate fungal networks can fuse with each other. The result? Potentially vast, complex, and collaborative systems of shared mycorrhizal networks.</p>",
     "citation": {
       "display": "Merlin Sheldrake. <em><a href=\"https://bookshop.org/a/86532/9780525510321\" rel=\"noopener\" target=\"_blank\">Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future</a></em>. New York: Random House, 2020. 150.",
-      "edition": { "id": "e-0112" }
+      "edition": {
+        "id": "e-0112",
+        "contributors": [{ "id": "a-merlin-sheldrake", "name": "Merlin Sheldrake", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0031", "place": 2 },
     "tags": {
@@ -3365,7 +3593,10 @@
     "text": "The wind-flower and the violet, they perished long ago,<br>And the brier-rose and the orchids died amid the summer glow;<br>But on the hills the golden-rod, and the aster in the wood,<br>And the yellow sun-flower by the brook in autumn beauty stood,<br>Till fell the frost from the clear cold heaven, as falls the plague on men,<br>And the brightness of their smile was gone, from upland, glade, and glen.",
     "citation": {
       "display": "William Cullen Bryant. “<a href=\"https://quod.lib.umich.edu/a/amverse/BAD0508.0001.001/1:107?rgn=div1&amp;view=fulltext\" rel=\"noopener\" target=\"_blank\">The Death of the Flowers</a>.” <em>New York Review and Athenaeum Magazine</em> (November 1825). Rpt. <em><a href=\"https://archive.org/details/autumnpastoralde00brya/page/n23/mode/2up\" rel=\"noopener\" target=\"_blank\">An Autumn Pastoral: The Death of the Flowers</a>. </em>Illus. C. E. Phillips. Troy, New York: Nims and Knight, 1888. n.p.",
-      "edition": { "id": "e-0113" }
+      "edition": {
+        "id": "e-0113",
+        "contributors": [{ "id": "a-william-cullen-bryant", "name": "William Cullen Bryant", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0033", "place": 1 },
     "tags": {
@@ -3382,7 +3613,10 @@
     "text": "<p>The miracle that saves the world, the realm of human affairs, from its normal, “natural” ruin is ultimately the fact of natality, in which the faculty of action is ontologically rooted. It is, in other words, the birth of new men and the new beginning, the action they are capable of by virtue of being born. Only the full experience of this capacity can bestow upon human affairs faith and hope, those two essential characteristics of human existence which Greek antiquity ignored altogether, discounting the keeping of faith as a very uncommon and not too important virtue and counting hope among the evils of illusion in Pandora’s box. It is this faith in and hope for the world that found perhaps its most glorious and most succinct expression in the few words with which the Gospels announced their “glad tidings”: “A child has been born unto us.”</p>",
     "citation": {
       "display": "Hannah Arendt. <em><a href=\"https://bookshop.org/a/86532/9780226586601\" rel=\"noopener\" target=\"_blank\">The Human Condition</a>. </em>1958. Second Edition. Chicago: University of Chicago Press, 1998. 247.",
-      "edition": { "id": "e-0114" }
+      "edition": {
+        "id": "e-0114",
+        "contributors": [{ "id": "a-hannah-arendt", "name": "Hannah Arendt", "role": "author" }]
+      }
     },
     "lectio": { "post": "lt-0033", "place": 2 },
     "tags": {
@@ -3400,7 +3634,8 @@
       "display": "Homer C. Sampson. “<a href=\"https://www.journals.uchicago.edu/doi/epdf/10.1086/332301?__cf_chl_tk=4HUvdnrlPK4POzJVkR_PKuvSQZJ9L4eKKRa1QP0s9IE-1793501603-1.0.1.1-nOEa7XIwl1jx.ZzNIQUAHqRonIB.8Vj0vOnuMPArChI\" rel=\"noopener\" target=\"_blank\">Chemical Changes Accompanying Abscission in Coleus Blumei.</a>” <em>Botanical Gazette </em>66.1 (July 1918: 32-53). 32, 33.",
       "edition": {
         "id": "e-0115",
-        "identifiers": { "doi": "10.1086/332301" }
+        "identifiers": { "doi": "10.1086/332301" },
+        "contributors": [{ "id": "a-homer-c-sampson", "name": "Homer C. Sampson", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0033", "place": 3 },
@@ -3419,7 +3654,8 @@
       "display": "Thomas Hardy. “<a href=\"https://hdl.handle.net/2027/mdp.39015031237822\" rel=\"noopener\" target=\"_blank\">The Darkling Thrush</a>.” <em>The Graphic</em> (December 29, 1900). Rpt. <em><strong>Poems of the Past and the Present</strong></em><strong>.</strong> Second Edition. New York and London: Harper &amp; Brothers, 1902. 169-171.",
       "edition": {
         "id": "e-0116",
-        "identifiers": { "hathitrust": "000433137", "oclc": "52928563", "lccn": "02011001" }
+        "identifiers": { "hathitrust": "000433137", "oclc": "52928563", "lccn": "02011001" },
+        "contributors": [{ "id": "a-thomas-hardy", "name": "Thomas Hardy", "role": "author" }]
       }
     },
     "lectio": { "post": "lt-0033", "place": 4 },
