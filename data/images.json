@@ -4093,5 +4093,98 @@
       "size": [576, 908]
     },
     "alt": "Two engraved cross-sections of frozen leaf stalks, numbered 16 and 4: each a ring of small cells around a large open cavity, with darker vein bundles set in the tissue and strands of cells and fine hairs around the edges."
+  },
+  {
+    "id": "i-0151",
+    "shownIn": "weather",
+    "file": "images/weather_hiroshige_sudden_shower.jpg",
+    "caption": "Utagawa Hiroshige, <a href=\"https://www.metmuseum.org/art/collection/search/37386\" target=\"_blank\"><em>Sudden Shower over Shin-Ōhashi Bridge and Atake</em></a> (1857)",
+    "alt": "A woodblock print: dark slanting lines of rain fall across a wide river under a black sky, while small figures under hats and straw mats hurry over a long wooden bridge, and a lone raft drifts on the grey water beyond.",
+    "bibliography": "Utagawa Hiroshige. <em>Sudden Shower over Shin-Ōhashi Bridge and Atake</em> (<em>Ōhashi Atake no yūdachi</em>), from <em>One Hundred Famous Views of Edo</em>. 1857, woodblock print, The Metropolitan Museum of Art, New York, JP3174.",
+    "creator": { "id": "a-utagawa-hiroshige", "name": "Utagawa Hiroshige" },
+    "title": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
+    "container": "One Hundred Famous Views of Edo",
+    "date": "1857",
+    "institution": "The Metropolitan Museum of Art",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/37386"
+      }
+    ],
+    "source": {
+      "url": "https://images.metmuseum.org/CRDImages/as/original/DP123602.jpg",
+      "retrieved": "2026-11-05"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "top-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["rain"],
+      "seasons": ["summer"]
+    }
+  },
+  {
+    "id": "i-0152",
+    "shownIn": "weather",
+    "file": "images/weather_moussette_lightning.jpg",
+    "caption": "Charles Moussette, <a href=\"https://www.metmuseum.org/art/collection/search/287289\" target=\"_blank\"><em>[Spiral of Lightning in a Thunderstorm]</em></a> (1886)",
+    "alt": "An early photograph of lightning: a single jagged white bolt, coiled near its top, crossing an almost black night sky.",
+    "bibliography": "Moussette, Charles. <em>[Spiral of Lightning in a Thunderstorm]</em>. 12 May 1886, albumen silver print from glass negative, The Metropolitan Museum of Art, New York, Gilman Collection, 2005.100.651.",
+    "creator": { "id": "a-charles-moussette", "name": "Charles Moussette" },
+    "title": "[Spiral of Lightning in a Thunderstorm]",
+    "container": null,
+    "date": "1886-05-12",
+    "institution": "The Metropolitan Museum of Art",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/287289"
+      }
+    ],
+    "source": {
+      "url": "https://images.metmuseum.org/CRDImages/ph/original/DP156451.jpg",
+      "retrieved": "2026-11-05"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "bottom-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["thunder"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0153",
+    "shownIn": "weather",
+    "file": "images/weather_tohaku_pine_trees.jpg",
+    "caption": "Hasegawa Tōhaku, <a href=\"https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg\" target=\"_blank\"><em>Pine Trees</em></a>, right-hand screen (c. 1595)",
+    "alt": "An ink painting on a six-panel folding screen: groups of pine trees, some dark and sharp, most fading to grey, standing in a mist that leaves much of the paper empty.",
+    "bibliography": "Hasegawa Tōhaku. <em>Pine Trees</em> (<em>Shōrin-zu byōbu</em>), right-hand screen of a pair of six-fold screens. c. 1595, ink on paper, Tokyo National Museum (National Treasure).",
+    "creator": { "id": "a-hasegawa-tohaku", "name": "Hasegawa Tōhaku" },
+    "title": "Pine Trees",
+    "container": null,
+    "date": "1595~",
+    "institution": "Tokyo National Museum",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg"
+      }
+    ],
+    "source": {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg",
+      "retrieved": "2026-11-05"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "display": { "cardPosition": "bottom-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["mist", "fog"],
+      "seasons": []
+    }
   }
 ]

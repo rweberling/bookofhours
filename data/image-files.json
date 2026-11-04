@@ -3916,6 +3916,34 @@
         }
       ]
     },
+    "images/weather_hiroshige_sudden_shower.jpg": {
+      "bytes": 2914707,
+      "width": 2515,
+      "height": 3828,
+      "sha256": "42460b32c73fa7fab2afadd642131f9cefe9ade1fcb0218cd68ca9ab1557b455",
+      "settings": "89e48fac760f",
+      "credit": "6af1dc681f3e",
+      "copies": [
+        {
+          "file": "images/web/weather_hiroshige_sudden_shower-800.webp",
+          "width": 800,
+          "height": 1218,
+          "bytes": 166978
+        },
+        {
+          "file": "images/web/weather_hiroshige_sudden_shower-1600.webp",
+          "width": 1600,
+          "height": 2435,
+          "bytes": 641402
+        },
+        {
+          "file": "images/web/weather_hiroshige_sudden_shower-2400.webp",
+          "width": 2400,
+          "height": 3653,
+          "bytes": 1327430
+        }
+      ]
+    },
     "images/weather_hokusai_red_fuji.jpg": {
       "bytes": 3158200,
       "width": 3865,
@@ -4000,6 +4028,34 @@
         }
       ]
     },
+    "images/weather_moussette_lightning.jpg": {
+      "bytes": 1899867,
+      "width": 2659,
+      "height": 3834,
+      "sha256": "4146b30546e499147eb57975970a13ccd2c4c22c8debd079dc488e4bcdd25844",
+      "settings": "89e48fac760f",
+      "credit": "c0a558500f84",
+      "copies": [
+        {
+          "file": "images/web/weather_moussette_lightning-800.webp",
+          "width": 800,
+          "height": 1154,
+          "bytes": 43772
+        },
+        {
+          "file": "images/web/weather_moussette_lightning-1600.webp",
+          "width": 1600,
+          "height": 2307,
+          "bytes": 255146
+        },
+        {
+          "file": "images/web/weather_moussette_lightning-2400.webp",
+          "width": 2400,
+          "height": 3461,
+          "bytes": 536222
+        }
+      ]
+    },
     "images/weather_saussure_cyanometer.jpg": {
       "bytes": 456282,
       "width": 1280,
@@ -4025,6 +4081,34 @@
           "width": 1280,
           "height": 1137,
           "bytes": 54440
+        }
+      ]
+    },
+    "images/weather_tohaku_pine_trees.jpg": {
+      "bytes": 1256098,
+      "width": 3840,
+      "height": 1797,
+      "sha256": "446732ab4d5b4d521173e89045679e8b21c7be1096d710ac7c5895a302db0634",
+      "settings": "89e48fac760f",
+      "credit": "599083f55e95",
+      "copies": [
+        {
+          "file": "images/web/weather_tohaku_pine_trees-800.webp",
+          "width": 800,
+          "height": 374,
+          "bytes": 19622
+        },
+        {
+          "file": "images/web/weather_tohaku_pine_trees-1600.webp",
+          "width": 1600,
+          "height": 749,
+          "bytes": 73090
+        },
+        {
+          "file": "images/web/weather_tohaku_pine_trees-2400.webp",
+          "width": 2400,
+          "height": 1123,
+          "bytes": 186516
         }
       ]
     },

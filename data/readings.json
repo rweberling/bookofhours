@@ -4256,5 +4256,240 @@
       "phenomena": ["ph-0006"]
     },
     "display": { "verse": true }
+  },
+  {
+    "id": "r-0118",
+    "shownIn": "weather",
+    "text": "You ask me when I am coming. I do not know.<br>I dream of your mountains and autumn pools brimming all night with the rain.<br>Oh, when shall we be trimming wicks again, together in your western window?<br>When shall I be hearing your voice again, all night in the rain?",
+    "citation": {
+      "display": "Li Shangyin, \"A Note on a Rainy Night to a Friend in the North\" (c. 850, trans. <a href=\"https://archive.org/details/jademountainchin00heng/page/73/mode/1up\" target=\"_blank\">Bynner and Kiang, 1929</a>)",
+      "bibliography": "Li Shang-yin. \"A Note on a Rainy Night to a Friend in the North.\" <em>The Jade Mountain: A Chinese Anthology, Being Three Hundred Poems of the T'ang Dynasty, 618–906</em>, translated by Witter Bynner from the texts of Kiang Kang-hu, Alfred A. Knopf, 1929, p. 73. Written c. 850.",
+      "title": "A Note on a Rainy Night to a Friend in the North",
+      "written": "0850~",
+      "locator": {
+        "page": "73",
+        "url": "https://archive.org/details/jademountainchin00heng/page/73/mode/1up"
+      },
+      "edition": {
+        "id": "e-0155",
+        "type": "book",
+        "title": "The Jade Mountain: A Chinese Anthology",
+        "contributors": [
+          { "id": "a-li-shangyin", "name": "Li Shangyin", "role": "author" },
+          { "id": "a-witter-bynner", "name": "Witter Bynner", "role": "translator" },
+          { "id": "a-kiang-kang-hu", "name": "Kiang Kang-hu", "role": "translator" }
+        ],
+        "publisher": "Alfred A. Knopf",
+        "issued": "1929",
+        "original-date": "0850~",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/jademountainchin00heng/page/73/mode/1up"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "jademountainchin00heng" },
+        "rightsNote": "Public domain in the United States (published 1929). Bynner died in 1968, so the translation is still in copyright where the term is the author's life plus 70 years."
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["rain"],
+      "seasons": ["autumn"]
+    },
+    "display": { "verse": true }
+  },
+  {
+    "id": "r-0119",
+    "shownIn": "weather",
+    "text": "The divine voice of thunder repeats the same, Da Da Da, that is, Be subdued, Give, Be merciful.",
+    "citation": {
+      "display": "<em>Bṛhadāraṇyaka Upaniṣad</em> V.2 (c. 700 BCE, trans. <a href=\"https://archive.org/details/wg915/page/190/mode/1up\" target=\"_blank\">Müller, 1884</a>)",
+      "bibliography": "<em>Bṛhadāraṇyaka Upaniṣad</em>, V.2.3. <em>The Upanishads, Part II</em>, translated by F. Max Müller, Sacred Books of the East 15, Clarendon Press, 1884, p. 190. Composed c. 700 BCE.",
+      "title": "Bṛhadāraṇyaka Upaniṣad",
+      "written": "-0700~",
+      "locator": { "page": "190", "url": "https://archive.org/details/wg915/page/190/mode/1up" },
+      "edition": {
+        "id": "e-0156",
+        "type": "book",
+        "title": "The Upanishads, Part II (Sacred Books of the East 15)",
+        "contributors": [{ "id": "a-f-max-muller", "name": "F. Max Müller", "role": "translator" }],
+        "publisher": "Clarendon Press",
+        "issued": "1884",
+        "original-date": "-0700~",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/wg915/page/190/mode/1up"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "wg915" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["thunder"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "r-0120",
+    "shownIn": "weather",
+    "text": "The conclusions drawn from these experiments are: (1) that whenever water vapour condenses in the atmosphere it always does so on some solid nucleus; (2) that dust-particles in the air form the nuclei on which the vapour condenses; (3) that if there was no dust there would be no fogs, no clouds, no mists, and probably no rain, and that the supersaturated air would convert every object on the surface of the earth into a condenser on which it would deposit; (4) our breath when it becomes visible on a cold morning, and every puff of steam as it escapes into the air, show the impure and dusty condition of our atmosphere.",
+    "citation": {
+      "display": "John Aitken, from \"<a href=\"https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up\" target=\"_blank\">On Dust, Fogs, and Clouds</a>\" (1880)",
+      "bibliography": "Aitken, John. \"On Dust, Fogs, and Clouds.\" Abstract of a paper read to the Royal Society of Edinburgh. <em>Nature</em>, vol. 23, 30 December 1880, pp. 195–197.",
+      "title": "On Dust, Fogs, and Clouds",
+      "written": "1880",
+      "locator": {
+        "page": "196",
+        "url": "https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up"
+      },
+      "edition": {
+        "id": "e-0157",
+        "type": "article",
+        "title": "On Dust, Fogs, and Clouds",
+        "contributors": [{ "id": "a-john-aitken", "name": "John Aitken", "role": "author" }],
+        "container": "Nature",
+        "volume": "23",
+        "pages": "195–197",
+        "issued": "1880-12-30",
+        "original-date": "1880",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "doi": "10.1038/023195d0", "internetArchive": "paper-doi-10_1038_023195d0" },
+        "rightsNote": "An abstract of Aitken's paper, supplied to Nature by the Royal Society of Edinburgh; the full paper is in its Transactions, vol. 30."
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["mist", "fog"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "r-0121",
+    "shownIn": "weather",
+    "text": "The Frost performs it's secret ministry,<br>Unhelp'd by any wind. The owlet's cry<br>Came loud—and hark, again! loud as before.",
+    "citation": {
+      "display": "Samuel Taylor Coleridge, from \"<a href=\"https://archive.org/details/fearsinsolitudew00cole/page/n26/mode/1up\" target=\"_blank\">Frost at Midnight</a>\" (1798)",
+      "bibliography": "Coleridge, Samuel Taylor. \"Frost at Midnight.\" <em>Fears in Solitude, Written in 1798, During the Alarm of an Invasion. To Which Are Added, France, an Ode; and Frost at Midnight</em>, J. Johnson, 1798, p. 19.",
+      "title": "Frost at Midnight",
+      "written": "1798",
+      "locator": {
+        "page": "19",
+        "url": "https://archive.org/details/fearsinsolitudew00cole/page/n26/mode/1up"
+      },
+      "edition": {
+        "id": "e-0158",
+        "type": "book",
+        "title": "Fears in Solitude ... and Frost at Midnight",
+        "contributors": [
+          { "id": "a-samuel-taylor-coleridge", "name": "Samuel Taylor Coleridge", "role": "author" }
+        ],
+        "publisher": "J. Johnson",
+        "issued": "1798",
+        "original-date": "1798",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/fearsinsolitudew00cole/page/n26/mode/1up"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "fearsinsolitudew00cole" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["frost", "cold"],
+      "seasons": ["winter"]
+    },
+    "display": { "verse": true }
+  },
+  {
+    "id": "r-0122",
+    "shownIn": "weather",
+    "text": "Happening, in that season, to be in the country, on a clear and calm night, I laid a thermometer upon dewy grass, and suspended a second, in the air, two feet above the other. An hour afterwards, the thermometer on the grass was found to be 8° lower, by Fahrenheit's division, than the one in the air.",
+    "citation": {
+      "display": "William Charles Wells, from <em><a href=\"https://archive.org/details/b21299742/page/n11/mode/1up\" target=\"_blank\">An Essay on Dew</a></em> (1814)",
+      "bibliography": "Wells, William Charles. <em>An Essay on Dew, and Several Appearances Connected with It</em>. Taylor and Hessey, 1814, p. 2.",
+      "title": "An Essay on Dew",
+      "written": "1814",
+      "locator": { "page": "2", "url": "https://archive.org/details/b21299742/page/n11/mode/1up" },
+      "edition": {
+        "id": "e-0159",
+        "type": "book",
+        "title": "An Essay on Dew, and Several Appearances Connected with It",
+        "contributors": [{ "id": "a-william-charles-wells", "name": "William Charles Wells", "role": "author" }],
+        "publisher": "Taylor and Hessey",
+        "issued": "1814",
+        "original-date": "1814",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/b21299742/page/n11/mode/1up"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "b21299742" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["dew", "clear"],
+      "seasons": ["autumn"]
+    }
+  },
+  {
+    "id": "r-0123",
+    "shownIn": "weather",
+    "text": "And yet to me not this or that<br>&nbsp;&nbsp;&nbsp;Is always sharp or always sweet;<br>In the sloped shadow of my hat<br>&nbsp;&nbsp;&nbsp;I lean at rest, and drain the heat;<br>Nay more, I think some blessèd power<br>&nbsp;&nbsp;&nbsp;Hath brought me wandering idly here:<br>In the full furnace of this hour<br>&nbsp;&nbsp;&nbsp;My thoughts grow keen and clear.",
+    "citation": {
+      "display": "Archibald Lampman, from \"<a href=\"https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up\" target=\"_blank\">Heat</a>\" (1888)",
+      "bibliography": "Lampman, Archibald. \"Heat.\" <em>Among the Millet, and Other Poems</em>, J. Durie and Son, 1888, pp. 12–13.",
+      "title": "Heat",
+      "written": "1888",
+      "locator": {
+        "page": "13",
+        "url": "https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up"
+      },
+      "edition": {
+        "id": "e-0160",
+        "type": "book",
+        "title": "Among the Millet, and Other Poems",
+        "contributors": [{ "id": "a-archibald-lampman", "name": "Archibald Lampman", "role": "author" }],
+        "publisher": "J. Durie and Son",
+        "issued": "1888",
+        "original-date": "1888",
+        "links": [
+          {
+            "role": "cited",
+            "label": "Internet Archive",
+            "url": "https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up"
+          }
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "amongmilletother00lampuoft" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["heat"],
+      "seasons": ["summer"]
+    },
+    "display": { "verse": true }
   }
 ]
