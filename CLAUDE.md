@@ -139,6 +139,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      `later` or `no`; `later` rows are nominated again in a later week)
      and Ryan's note after the Notes, marked "Ryan:". Only then acts on
      the approvals, as before.
+  1a. Brings back each "not now" (`later`) record whose `decidedAt` is
+     three weeks old or more, or sooner when the week's nominations are
+     for its condition (its `for`): the same record, not a new
+     nomination, updated with `decision: null`, `returned: <today>` and
+     `setAside: <its decidedAt>`, keeping Ryan's note. Its Sheet row's
+     decision reads `later (back <today>)`. Counting what a condition
+     still lacks, a returned piece counts as pending.
   2. Writes the new nominations to the Sheet, then puts them on the
      desk: save the new rows as JSON, run `python3 scripts/desk.py
      <rows.json> <scratch dir>` (records, previews, and the batch), upload
