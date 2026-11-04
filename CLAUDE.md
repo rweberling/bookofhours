@@ -138,7 +138,10 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      decided record into its Sheet row: "Ryan's decision" (`add`,
      `later` or `no`; `later` rows are nominated again in a later week)
      and Ryan's note after the Notes, marked "Ryan:". Only then acts on
-     the approvals, as before.
+     the approvals, as before, skipping any already added (an "Added
+     as" in the Sheet, or `addedAs` on the desk record). Each piece it
+     adds gets its new ID in both: the Sheet's "Added as" and
+     `addedAs` on the desk record.
   1a. Brings back each "not now" (`later`) record whose `decidedAt` is
      three weeks old or more, or sooner when the week's nominations are
      for its condition (its `for`): the same record, not a new
