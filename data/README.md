@@ -52,6 +52,17 @@ Then each kind has its own:
   `display` (`verse`, below; `weatherUnset` for the Weather page's reading
   when no weather is set; one also tagged with conditions is drawn for
   those as well).
+- **Editions**: the edition a reading quotes is kept with the reading, in
+  `citation.edition`, so each reading reads whole in one place (editions
+  are rarely shared: the collection avoids repeating authors and works).
+  Each has a neutral, permanent ID, `e-0001`, like every other record. A
+  new reading takes the next free number (`copy_lectio.py` gives one to
+  each passage it copies). Two readings quoting the same edition (as the
+  Hours and Dog Days quote Patrick's 1889 Heraclitus, `e-0017`) share its
+  ID, and `check_data.py` checks their copies of its details agree. An
+  edition one reading quotes inside another (`citation.quotes`) has its
+  own. The details themselves (title, contributors, publisher, dates) are
+  still being filled in for the Lectio Terra readings.
 - **Verse**: a poem is marked `"display": {"verse": true}`, and the pages
   set it out a line at a time: a line too long for the page carries on
   under a hanging indent rather than passing for a new line. Its `text` is

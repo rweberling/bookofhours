@@ -213,6 +213,21 @@ def next_number(records, retired, prefix):
     return max(used, default=0) + 1
 
 
+def edition_ids(readings):
+    """Every edition ID on the readings, the ones they quote included."""
+    for r in readings:
+        cit = r.get('citation') or {}
+        for edition in [cit.get('edition')] + [q.get('edition') for q in cit.get('quotes') or []]:
+            if edition and edition.get('id'):
+                yield edition['id']
+
+
+def next_edition(readings, retired):
+    form = re.compile(r'^e-(\d{4})$')
+    used = [int(m.group(1)) for i in [*edition_ids(readings), *retired] if (m := form.match(i))]
+    return max(used, default=0) + 1
+
+
 def same(a, b):
     """Whether two copies say the same: the same words and the same links."""
     links = lambda h: re.findall(r'href="([^"]+)"', h or '')
@@ -251,6 +266,7 @@ def main():
     copied_w = {(w['lectio']['post'], w['kind']): w for w in writing if w.get('lectio')}
     next_r, next_i = next_number(readings, retired, 'r'), next_number(images, retired, 'i')
     next_w = next_number(writing, retired, 'w')
+    next_e = next_edition(readings, retired)
 
     added_r, added_i, added_w, differ, unlinked = [], [], [], [], set()
     for season, post in posts:
@@ -273,12 +289,16 @@ def main():
                 'id': f'r-{next_r:04d}',
                 'shownIn': 'seasons',
                 'text': text,
-                'citation': {'display': citation},
+                # Its edition's own ID (e-), to be filled in with the
+                # edition's details; a reading quoting an edition another
+                # already has takes that ID instead (data/README.md).
+                'citation': {'display': citation, 'edition': {'id': f'e-{next_e:04d}'}},
                 'lectio': {'post': post['id'], 'place': place},
                 'tags': subject_tags(post, season)
             }
             record = with_footnotes(record, notes.get(('passage', place)))
             next_r += 1
+            next_e += 1
             readings.append(record)
             added_r.append(record)
         for place, file, caption in figures(post):

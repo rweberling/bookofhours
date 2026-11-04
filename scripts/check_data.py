@@ -66,6 +66,7 @@ ID_FORMS = {
     'r': re.compile(r'^r-\d{4}$'), 'i': re.compile(r'^i-\d{4}$'), 'lt': re.compile(r'^lt-\d{4}$'),
     'w': re.compile(r'^w-\d{4}$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
     'sp': re.compile(r'^sp-\d{4}$'), 'ph': re.compile(r'^ph-\d{4}$'),
+    'e': re.compile(r'^e-\d{4}$'),
 }
 # Where a reading, image or piece of writing can be shown on the site.
 SHOWN_IN = ('hours', 'weather', 'seasons')
@@ -401,6 +402,21 @@ def main():
     for img in images:
         if img.get('creator'):
             copies[img['creator']['id']].append((img['id'], img['creator']))
+    # Each edition a reading quotes from (and any it quotes in turn) has a
+    # neutral, permanent ID, e-0001; readings quoting the same edition share
+    # it, and their copies of its details must agree (above).
+    for r in readings:
+        if r.get('draft'):
+            continue
+        cit = r.get('citation') or {}
+        for edition in [cit.get('edition')] + [q.get('edition') for q in cit.get('quotes') or [] if 'edition' in q]:
+            eid = (edition or {}).get('id')
+            if not eid:
+                errors.append(f'{r["id"]}: its edition has no ID; give it the next e- number')
+            elif not ID_FORMS['e'].match(eid):
+                errors.append(f'{r["id"]}: edition ID {eid} is not in the form e-0001')
+            elif eid in retired:
+                errors.append(f'{r["id"]}: {eid} is a retired ID; give the edition a new one')
     for cid, found in copies.items():
         first_owner, first = found[0]
         for owner, other in found[1:]:
