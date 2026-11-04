@@ -123,6 +123,33 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - Open: the back of the Orion card reads *Uranographia* "(1960)"; it
   should be 1690.
 
+## The review desk
+
+- Each week's candidates (new readings and images, nominated by the
+  weekly candidates task) are reviewed on the review desk, a private
+  Claude artifact: https://claude.ai/artifact/JmjvhTBxkpjsudYL1mg1hw.
+  Ryan reads one candidate at a time and chooses "add it", "not now" or
+  "no", with a note. The page's database (collection `candidates`, one
+  record per nomination, id `<proposed date>-NN`) holds them; sessions
+  read and write it with the ArtifactData tool, and upload image
+  previews with the Artifact tool (`asset: true`).
+- The candidates Google Sheet stays the lasting copy. Each weekly run:
+  1. Reads the desk's decisions (ArtifactData `list`) and copies each
+     decided record into its Sheet row: "Ryan's decision" (`add`,
+     `later` or `no`; `later` rows are nominated again in a later week)
+     and Ryan's note after the Notes, marked "Ryan:". Only then acts on
+     the approvals, as before.
+  2. Writes the new nominations to the Sheet, then puts them on the
+     desk: save the new rows as JSON, run `python3 scripts/desk.py
+     <rows.json> <scratch dir>` (records, previews, and the batch), upload
+     the previews, set each one's id with `desk.py --preview`, and send
+     the batch. Its docstring has the steps.
+  3. If any desk read or write is refused or fails, carries on with the
+     Sheet alone and says so in the email.
+- The page's own source can be fetched with the Artifact tool (`read`);
+  republish to the same URL. Its records are never edited by hand except
+  to fix a nomination's text; decisions are Ryan's.
+
 ## Working in the cloud container
 
 - A start-up script (`.claude/hooks/session-start.sh`) runs as each
