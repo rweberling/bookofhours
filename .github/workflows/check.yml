@@ -1,0 +1,44 @@
+# Every check, after every push to main (scripts/check.sh): the built
+# files are up to date with the data, the data is whole, and the pages
+# work in a browser. GitHub emails the account behind a push when this
+# fails. Runs in about four minutes; it changes nothing.
+name: Check the site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Python packages (the image and font scripts)
+        run: pip install pillow==12.3.0 fonttools==4.68.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Playwright and its Chromium (the browser check)
+        run: |
+          npm install --no-save --prefix "$RUNNER_TEMP/pw" playwright@1.63.0
+          "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+          echo "NODE_PATH=$RUNNER_TEMP/pw/node_modules" >> "$GITHUB_ENV"
+
+      - name: Every check
+        run: scripts/check.sh
