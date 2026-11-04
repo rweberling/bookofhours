@@ -101,7 +101,12 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   → `c/w26/N/index.html`. The script's docstring explains every column.
   Pages stay `noindex` while a card's `status` is `draft` (or `unlisted`,
   for good: the pages are reached only by QR code, not linked from the
-  site); all five are still drafts.
+  site). The five are printed and in circulation (November 2026), all
+  `unlisted`. Each card links to its Lectio Terra essay (`post`) once
+  there is one: Paper Birch and Witch Hazel do; Orion and Snowy Owl are
+  due before the solstice, Aurora about February. The Substack import
+  links a waiting card to a new post on the same subject by itself and
+  says so in its report.
 - The cards carry no year, so the pages name the relevant December
   solstice: `postcards.js` updates it in the browser, and the build script
   writes the same line for readers without JavaScript. Both hold a table

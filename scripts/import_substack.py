@@ -463,9 +463,58 @@ def prune_unused_images(entry, image_dir):
             print(f'  removed {path.name}, which the post does not show')
 
 
-def report_for_a_person(imported, copy_output, unassigned):
+POSTCARDS = Path(__file__).resolve().parent.parent / 'data' / 'postcards.csv'
+
+
+def subject_of(title):
+    """A card's or post's subject, for matching one to the other:
+    "Snowy Owl (*Bubo scandiacus*)" and "Week 47: Snowy Owl (Audubon, ...)"
+    are both "snowy owl"."""
+    title = re.sub(r'^Week \d+:\s*', '', title or '')
+    return re.sub(r'[*_]', '', title.split(' (')[0]).strip().lower()
+
+
+def link_postcards(imported):
+    """Point each postcard still waiting for its essay at a new post about
+    the same subject (its "post" column), and rebuild the card pages. Returns
+    (linked, still waiting): lines for the report."""
+    import csv
+    import io
+    if not POSTCARDS.exists():
+        return [], []
+    text = POSTCARDS.read_text(encoding='utf-8')
+    rows = list(csv.DictReader(io.StringIO(text)))
+    pages = load_posts().get('seasons', {})
+    page_of = {e['id']: e.get('page') for entries in pages.values() for e in entries}
+    linked = []
+    for entry in imported:
+        page = page_of.get(entry['id'])
+        if not page:
+            continue
+        for row in rows:
+            if not row.get('post') and row.get('title') and subject_of(row['title']) == subject_of(entry['title']):
+                row['post'] = f'https://earthlyhours.com/{page}'
+                linked.append(f'{row["id"]} ({row["title"]}) now links to its essay, {row["post"]}')
+    if linked:
+        out = io.StringIO()
+        writer = csv.DictWriter(out, fieldnames=list(rows[0]), lineterminator='\n')
+        writer.writeheader()
+        writer.writerows(rows)
+        POSTCARDS.write_text(out.getvalue(), encoding='utf-8')
+        subprocess.run([sys.executable, str(Path(__file__).with_name('build_postcards.py'))])
+    waiting = [f'{row["id"]} ({row["title"]})' for row in rows if row.get('title') and not row.get('post')]
+    return linked, waiting
+
+
+def report_for_a_person(imported, copy_output, unassigned, linked=([], [])):
     """What the import can't decide: printed last, so it's what's seen."""
+    cards, waiting = linked
+    for line in cards:
+        print(f'Postcard: {line}')
     notes = []
+    if imported and waiting:
+        notes.append('postcards still waiting for their essay (link a card by hand, in the "post" column of '
+                     'data/postcards.csv, if its essay came under another name): ' + '; '.join(waiting))
     for entry in imported:
         if not entry.get('subject'):
             notes.append(f'{entry["id"]} ({entry["title"]}) has no subject: give it an sp- record in '
@@ -592,7 +641,8 @@ def main():
         mapped = subprocess.run([sys.executable, str(Path(__file__).with_name('build_sitemap.py'))])
         if mapped.returncode:
             print('The sitemap was not updated. Run: python3 scripts/build_sitemap.py', file=sys.stderr)
-        report_for_a_person(imported, copied.stdout, unassigned)
+        linked = link_postcards(imported)
+        report_for_a_person(imported, copied.stdout, unassigned, linked)
     else:
         print(json.dumps({season: len(items) for season, items in grouped.items()}, indent=2))
         print(f'Unassigned posts: {len(unassigned)}. Use --template to create assignment entries.')
