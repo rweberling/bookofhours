@@ -374,12 +374,25 @@ def build(row, rows=()):
         lightbox=LIGHTBOX if ready and has(row, 'image') and has(row, 'image_full') else '')
 
 
-def main():
+def load_rows():
     with DATA.open(encoding='utf-8', newline='') as f:
         rows = [{k: (v or '').strip() for k, v in r.items()} for r in csv.DictReader(f)]
     for row in rows:
         for col in ('context', 'context_label'):
             row.setdefault(col, '')
+    return rows
+
+
+def stale_pages():
+    """Card pages that don't match data/postcards.csv and the template."""
+    rows = load_rows()
+    return [f'c/{row["path"]}/index.html' for row in rows
+            if not (OUT / row['path'] / 'index.html').exists()
+            or (OUT / row['path'] / 'index.html').read_text(encoding='utf-8') != build(row, rows)]
+
+
+def main():
+    rows = load_rows()
 
     errors, warnings, seen = [], [], set()
     for row in rows:
@@ -405,16 +418,26 @@ def main():
         print('\n'.join(errors), file=sys.stderr)
         sys.exit(1)
 
+    written = 0
     for row in rows:
         page = OUT / row['path'] / 'index.html'
+        html = build(row, rows)
+        if page.exists() and page.read_text(encoding='utf-8') == html:
+            continue
         page.parent.mkdir(parents=True, exist_ok=True)
-        page.write_text(build(row, rows), encoding='utf-8')
+        page.write_text(html, encoding='utf-8')
         print(f'wrote {page.relative_to(ROOT)}')
+        written += 1
+    if not written:
+        print('Every card page is up to date.')
     for w in warnings:
         print(f'note: {w}')
-    # A card leaving draft joins the sitemap (draft and unlisted pages are noindex).
+    # A card leaving draft joins the sitemap (draft and unlisted pages are
+    # noindex); the sitemap is rewritten only when its list changes, since
+    # its dates come from the commits.
     import build_sitemap
-    build_sitemap.main()
+    if any(build_sitemap.stale_addresses()):
+        build_sitemap.main()
 
 
 if __name__ == '__main__':

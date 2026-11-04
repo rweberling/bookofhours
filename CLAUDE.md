@@ -33,24 +33,28 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 
 ## Commands
 
-- After any data edit: `python3 scripts/check_data.py` (it says what else
-  to rebuild; `--gaps` lists missing details).
-- After changing a page, its script or styles, or a post:
-  `LANG=C.UTF-8 node scripts/check_pages.js [post-name ...]` (about a
-  minute for all; it serves the repo itself). It checks the posts in a
-  browser: verse set out as verse, footnotes linked both ways, citations,
-  the Latin line, even spacing, no script errors. Run it before pushing.
+- **Build:** `python3 scripts/build.py` brings every built file up to date
+  with the data, running only the steps that are due, in order (image web
+  copies, shared parts, postcard pages, post pages and feed, sitemap,
+  Sources page). `--check` only says what's due.
+- **Check, before every push:** `scripts/check.sh` (about two minutes): the
+  built files are current, the data is whole (`check_data.py`), and the
+  pages work in a browser (`check_pages.js`: verse, footnotes, citations,
+  the Latin line, spacing, script errors). `scripts/check.sh first-frost`
+  limits the browser part to the posts named. The same checks run on
+  GitHub after every push to `main` and email Ryan if one fails.
+- `python3 scripts/check_data.py --gaps` lists missing details (rights,
+  bibliography lines) by record: a to-do list, not a failure.
 - Save JSON with `scripts/datafile.py` (`load('images')`, `save('images', d)`)
   so the house formatting is kept. A plain `json.dump` rewrites the whole
   file and makes an unreadable diff.
-- New or changed image files: `python3 scripts/build_images.py` (web copies).
-- Menu, head and frame: edit `partials/`, then `python3 scripts/build_shared.py`.
-- Sources page: `python3 scripts/build_sources.py` (needs Chrome; see below).
+- The build's parts, if one is wanted alone: `build_images.py` (web
+  copies), `build_shared.py` (menu, head and frame, from `partials/`),
+  `build_postcards.py`, `build_lectio_pages.py [lt-NNNN | --all]` (post
+  pages, one per post, and the RSS feed `feed.xml`, dated by each post's
+  first publication), `build_sitemap.py`, `build_sources.py` (needs
+  Chrome; see below).
 - Species registry IDs: `python3 scripts/link_species.py [--write]`.
-- Post pages (`lectio-terra/<name>/`, one per post, and the RSS feed
-  `feed.xml`, dated by each post's first publication):
-  `python3 scripts/build_lectio_pages.py [lt-NNNN | --all]`. Rebuild after
-  editing a post, `seasons.html` or `partials/`.
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends
