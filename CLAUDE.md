@@ -26,9 +26,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   `tags` only describe it (and lean the weighting).
 - Readers see each Lectio Terra post rebuilt from its records (the
   readings, images and writing it lists in its `body`), so a correction
-  goes on the record. Each post's imported `bodyHtml` in `lectio-data.json`
-  is kept as the Substack original, and `scripts/copy_lectio.py` reports
-  where it and the records disagree: correct a post's text in both.
+  goes on the record. Each post's Substack original is kept in
+  `data/substack/<post id>.html` (not downloaded by the pages), and
+  `scripts/copy_lectio.py` reports where it and the records disagree:
+  correct a post's text in both. Read and save the posts through
+  `datafile.py` (`load('lectio-data')`), which joins the two.
 - Write each fact once, on its own record; other records name it by ID.
 
 ## Commands

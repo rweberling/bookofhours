@@ -169,7 +169,8 @@ def main():
     # section of the metadata notes), unique across everything, aliases
     # (the old IDs they replaced) included, and never one that's retired.
     # The old ed- IDs of the hour notes live on as aliases of the versicles.
-    lectio = json.loads((DATA / 'lectio-data.json').read_text())
+    from datafile import load_posts
+    lectio = load_posts()
     posts = [e for items in lectio.get('seasons', {}).values() for e in items]
     with (DATA / 'postcards.csv').open(encoding='utf-8', newline='') as f:
         cards = list(csv.DictReader(f))

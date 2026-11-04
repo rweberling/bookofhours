@@ -43,7 +43,7 @@ from html import escape, unescape
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from datafile import load  # noqa: E402
+from datafile import load, save  # noqa: E402
 from copy_lectio import EMPTY_EDGE, SUBSTACK_LINE  # noqa: E402
 from post_render import render_post_body  # noqa: E402
 
@@ -434,7 +434,7 @@ def main(args):
         return 1
     if assign_pages(data, wanted, everything):
         # Written as import_substack.py writes it.
-        LECTIO.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        save('lectio-data', data)
     for path, html in pages().items():
         path.parent.mkdir(parents=True, exist_ok=True)
         if not path.exists() or path.read_text(encoding='utf-8') != html:

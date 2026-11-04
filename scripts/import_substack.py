@@ -43,6 +43,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from datafile import load_posts, save_posts  # noqa: E402
+
 SEASONS = ('spring', 'summer', 'autumn', 'winter')
 ALLOWED_TAGS = {
     'a', 'blockquote', 'br', 'em', 'figcaption', 'figure', 'h2', 'h3', 'h4',
@@ -251,8 +254,7 @@ def load_existing(path):
     """
     if not path.exists():
         return {}
-    with path.open(encoding='utf-8') as source:
-        data = json.load(source)
+    data = load_posts(path)
     existing_by_slug = {}
     for season in SEASONS:
         for entry in data.get('seasons', {}).get(season, []):
@@ -550,7 +552,7 @@ def main():
     # stay listed, unless this run has imported them.
     if args.output.exists():
         listed = {u['id'] for u in unassigned} | {substack_slug(e) for items in grouped.values() for e in items}
-        for stub in json.loads(args.output.read_text(encoding='utf-8')).get('unassigned') or []:
+        for stub in load_posts(args.output).get('unassigned') or []:
             if stub.get('id') not in listed:
                 unassigned.append(stub)
     print(f'{new_count} new/refreshed post(s), {skipped_count} left untouched.')
@@ -563,7 +565,7 @@ def main():
         'unassigned': unassigned
     }
     if args.write:
-        args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        save_posts(result, args.output)
         print(f'Wrote {args.output} with {sum(len(items) for items in grouped.values())} assigned posts.')
         for entry in imported:
             prune_unused_images(entry, args.images)

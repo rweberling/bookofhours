@@ -40,7 +40,7 @@ import json
 import re
 import sys
 
-from datafile import ROOT, load, save
+from datafile import ROOT, load, load_posts, save, save_posts
 from copy_lectio import FIGURE, SECTION_HEADING, SUBSTACK_LINE, LECTIO
 from post_html import blocks
 
@@ -166,7 +166,7 @@ def main():
     args = parser.parse_args()
 
     readings, images, writing = load('readings'), load('images'), load('writing')
-    lectio = json.loads(LECTIO.read_text(encoding='utf-8'))
+    lectio = load_posts()
     all_updates, failed = {}, 0
     for season, items in lectio['seasons'].items():
         for post in items:
@@ -190,7 +190,7 @@ def main():
             if update and update.get('size'):
                 img.setdefault('display', {})['size'] = update['size']
         save('images', images)
-        LECTIO.write_text(json.dumps(lectio, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        save_posts(lectio)
         print('Saved.')
 
 

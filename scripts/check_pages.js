@@ -116,8 +116,11 @@ const load = name => JSON.parse(fs.readFileSync(path.join(ROOT, 'data', `${name}
     if (r.brokenRefs) fail(where, `${r.brokenRefs} footnote reference(s) going nowhere`);
     if (r.brokenBacks) fail(where, `${r.brokenBacks} footnote(s) without a way back`);
     if (r.refs !== r.notes) fail(where, `${r.refs} footnote reference(s) but ${r.notes} note(s)`);
-    // As many as the post has (its own #footnote-N links; another site's are only links).
-    const expectRefs = [...(post.bodyHtml || '').matchAll(/href="([^"]*)#footnote-\d+"/g)]
+    // As many as the post has in its Substack original (data/substack/<id>.html):
+    // its own #footnote-N links; another site's are only links.
+    const originalFile = path.join(ROOT, 'data', 'substack', `${post.id}.html`);
+    const original = fs.existsSync(originalFile) ? fs.readFileSync(originalFile, 'utf8') : '';
+    const expectRefs = [...original.matchAll(/href="([^"]*)#footnote-\d+"/g)]
       .filter(m => !/^[a-z]+:/i.test(m[1])).length;
     if (r.refs !== expectRefs) fail(where, `${r.refs} of ${expectRefs} footnote reference(s) marked`);
     const subject = subjects.get(post.subject);

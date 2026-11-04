@@ -12,7 +12,8 @@ is no database and nothing generated in between.
 | `readings.json` | Readings: passages quoted from other writers, one record each (`r-`) |
 | `images.json` | Images: plates, photographs, scans and the figures in the Lectio Terra posts (`i-`) |
 | `writing.json` | Writing: the site's own words, such as versicles, phenomenon lines, and the posts' headnotes, supplementa and notes (`w-`) |
-| `lectio-data.json` | The Lectio Terra posts, whole, as imported from Substack (`lt-`) |
+| `lectio-data.json` | The Lectio Terra posts' records (`lt-`): title, season, subject, page, and `body`, the list of their pieces |
+| `substack/` | Each post's text as it came from Substack, `<post id>.html`: the original, kept for reference and checks |
 | `species.json` | The species and other organisms the posts are about (`sp-`) |
 | `phenomena.json` | The posts' subjects that aren't organisms, such as clouds or the Perseids (`ph-`) |
 | `vocab.json` | The terms everything is tagged with: the eight hours, the four seasons, the twenty weather conditions |
@@ -84,12 +85,15 @@ means "about 1872 to about 1878").
 
 ## The Lectio Terra posts
 
-The posts in `lectio-data.json` are the master copy of their passages,
-figures and writing. `scripts/copy_lectio.py` copies each into its own
-record in `readings.json`, `images.json` and `writing.json`. It runs after
-every Substack import. It only ever adds new pieces, never changes one
-already copied, and reports when a post and its copy no longer match. If you
-correct a post, correct its copy too (or the other way round).
+Readers see each post rebuilt from its records. On import, each post's
+text as it came from Substack is kept in `substack/<post id>.html`, and
+`scripts/copy_lectio.py` copies its passages, figures and writing into
+records of their own in `readings.json`, `images.json` and `writing.json`.
+It only ever adds new pieces, never changes one already copied, and reports
+when an original and its records no longer match. A correction goes on the
+record; correct the original too, so the two still match. Scripts read the
+posts through `scripts/datafile.py` (`load('lectio-data')`), which puts
+each original back on its post as `bodyHtml`.
 
 Each post also has a `body`: its pieces in order (headings, figures,
 passages, runs of its writing), which the Seasons page rebuilds the post

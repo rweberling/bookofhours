@@ -51,7 +51,7 @@ import sys
 from html import unescape
 from pathlib import Path
 
-from datafile import ROOT, load, save
+from datafile import ROOT, load, load_posts, save, save_posts
 
 LECTIO = ROOT / 'data' / 'lectio-data.json'
 PASSAGE = re.compile(r'<ol\b[^>]*>\s*<li>(.*?)</li>\s*</ol>', re.S)
@@ -242,7 +242,7 @@ def main():
 
     readings, images, writing = load('readings'), load('images'), load('writing')
     retired = json.loads((ROOT / 'data' / 'retired-ids.json').read_text())
-    lectio = json.loads(LECTIO.read_text(encoding='utf-8'))
+    lectio = load_posts()
     posts = sorted(((season, post) for season, items in lectio['seasons'].items() for post in items),
                    key=lambda sp: (sp[1].get('published') or '', sp[1]['id']))
 
