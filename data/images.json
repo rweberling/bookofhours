@@ -24,6 +24,16 @@
       "hours": ["void"],
       "weather": [],
       "seasons": []
+    },
+    "edition": {
+      "id": "e-0117",
+      "title": "Geometrical psychology, or, The science of representation : an abstract of the theories and diagrams of B. W. Betts",
+      "issued": "1887",
+      "identifiers": {
+        "internetArchive": "geometricalpsych00cook",
+        "oclc": "22040934",
+        "openlibrary": "OL24404552M"
+      }
     }
   },
   {
@@ -89,6 +99,17 @@
       "hours": ["void"],
       "weather": [],
       "seasons": []
+    },
+    "edition": {
+      "id": "e-0118",
+      "title": "The 1900 solar eclipse expedition of the Astrophysical observatory of the Smithsonian institution",
+      "issued": "1904",
+      "identifiers": {
+        "internetArchive": "1900solareclipse00smitrich",
+        "oclc": "5899479",
+        "openlibrary": "OL7126704M",
+        "lccn": "04033116"
+      }
     }
   },
   {
@@ -351,6 +372,12 @@
       "hours": ["transit"],
       "weather": [],
       "seasons": []
+    },
+    "edition": {
+      "id": "e-0119",
+      "title": "The power of movement in plants",
+      "issued": "1880",
+      "identifiers": { "hathitrust": "008595207", "oclc": "1221788" }
     }
   },
   {
@@ -827,6 +854,12 @@
       "hours": ["denouement"],
       "weather": [],
       "seasons": []
+    },
+    "edition": {
+      "id": "e-0120",
+      "title": "The story of the sun, moon, and stars",
+      "issued": "1908",
+      "identifiers": { "hathitrust": "008630234", "oclc": "25600297" }
     }
   },
   {
@@ -854,6 +887,12 @@
       "hours": ["denouement"],
       "weather": [],
       "seasons": []
+    },
+    "edition": {
+      "id": "e-0121",
+      "title": "Monographie der Medusen",
+      "issued": "1879",
+      "identifiers": { "internetArchive": "monographiederme11879haec", "oclc": "12433415" }
     }
   },
   {
@@ -951,6 +990,12 @@
     },
     "display": {
       "size": [329, 547]
+    },
+    "edition": {
+      "id": "e-0122",
+      "title": "The Witch Hazel Family (Hamamelidaceae)",
+      "issued": "1976",
+      "identifiers": { "doi": "10.5962/p.249681" }
     }
   },
   {
@@ -1033,6 +1078,12 @@
     },
     "display": {
       "size": [370, 441]
+    },
+    "edition": {
+      "id": "e-0123",
+      "title": "An illustrated manual of British birds",
+      "issued": "1889",
+      "identifiers": { "hathitrust": "100448239", "oclc": "78616471" }
     }
   },
   {
@@ -1058,6 +1109,12 @@
     },
     "display": {
       "size": [1416, 2151]
+    },
+    "edition": {
+      "id": "e-0042",
+      "title": "How Vermont maple sugar is made",
+      "issued": "1915",
+      "identifiers": { "hathitrust": "011274049", "oclc": "18660713" }
     }
   },
   {
@@ -1083,6 +1140,12 @@
     },
     "display": {
       "size": [1456, 1378]
+    },
+    "edition": {
+      "id": "e-0125",
+      "title": "Sugar maple (Acer saccharum Marsh.)",
+      "issued": "1980",
+      "identifiers": { "hathitrust": "103030992", "oclc": "6401561" }
     }
   },
   {
@@ -1133,6 +1196,12 @@
     },
     "display": {
       "size": [1440, 1501]
+    },
+    "edition": {
+      "id": "e-0126",
+      "title": "An American wood",
+      "issued": "1937",
+      "identifiers": { "hathitrust": "002137949", "oclc": "2752530", "lccn": "agr54000002" }
     }
   },
   {
@@ -1288,6 +1357,12 @@
     },
     "display": {
       "size": [497, 750]
+    },
+    "edition": {
+      "id": "e-0127",
+      "title": "A handbook of Crocus and Colchicum for gardeners,",
+      "issued": "1924",
+      "identifiers": { "hathitrust": "002010826", "oclc": "4584067", "lccn": "agr24001012" }
     }
   },
   {
@@ -1338,6 +1413,12 @@
     },
     "display": {
       "size": [314, 392]
+    },
+    "edition": {
+      "id": "e-0128",
+      "title": "The mignonette ; The crocus",
+      "issued": "1856",
+      "identifiers": { "hathitrust": "101757298", "oclc": "68896576" }
     }
   },
   {
@@ -1389,6 +1470,12 @@
     },
     "display": {
       "size": [466, 645]
+    },
+    "edition": {
+      "id": "e-0129",
+      "title": "The fern lover's companion; a guide for the Northeastern states and Canada",
+      "issued": "1922",
+      "identifiers": { "hathitrust": "100429762", "oclc": "6141524", "lccn": "23005467" }
     }
   },
   {
@@ -1414,6 +1501,12 @@
     },
     "display": {
       "size": [564, 806]
+    },
+    "edition": {
+      "id": "e-0051",
+      "title": "The development of the ostrich fern, Onoclea struthiopteris",
+      "issued": "1887",
+      "identifiers": { "hathitrust": "001993770", "oclc": "14366384" }
     }
   },
   {
@@ -1469,6 +1562,12 @@
     },
     "display": {
       "size": [1465, 1821]
+    },
+    "edition": {
+      "id": "e-0131",
+      "title": "North American fauna",
+      "issued": "1889",
+      "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
     }
   },
   {
@@ -1494,6 +1593,12 @@
     },
     "display": {
       "size": [1462, 2405]
+    },
+    "edition": {
+      "id": "e-0131",
+      "title": "North American fauna",
+      "issued": "1889",
+      "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
     }
   },
   {
@@ -1549,6 +1654,12 @@
     },
     "display": {
       "size": [341, 521]
+    },
+    "edition": {
+      "id": "e-0133",
+      "title": "The book of wild flowers; an introduction to the ways of plant life, together with biographies of 250 representative species and chapters on our state flowers and familiar grasses; with color plates of 250 familiar wild flowers and grasses ... .",
+      "issued": "1924",
+      "identifiers": { "hathitrust": "009164350", "oclc": "1241838", "lccn": "24031492" }
     }
   },
   {
@@ -1592,6 +1703,12 @@
     },
     "display": {
       "size": [534, 691]
+    },
+    "edition": {
+      "id": "e-0134",
+      "title": "British mosses, their homes, aspects, structure and uses. With a coloured figure of each species etched from nature",
+      "issued": "1874",
+      "identifiers": { "internetArchive": "britishmossesthe21874trip", "oclc": "4854519" }
     }
   },
   {
@@ -1617,6 +1734,12 @@
     },
     "display": {
       "size": [532, 614]
+    },
+    "edition": {
+      "id": "e-0135",
+      "title": "Mosses with hand-lens and microscope; a non-technical hand-book of the more common mosses of the northeastern United States",
+      "issued": "1900",
+      "identifiers": { "hathitrust": "010668807", "oclc": "1027478", "lccn": "01029714" }
     }
   },
   {
@@ -1642,6 +1765,12 @@
     },
     "display": {
       "size": [480, 749]
+    },
+    "edition": {
+      "id": "e-0136",
+      "title": "Field evaluation of advanced methods of geotechnical instrumentation for transit tunneling : final report",
+      "issued": "1983",
+      "identifiers": { "hathitrust": "101655331", "oclc": "10178867" }
     }
   },
   {
@@ -1667,6 +1796,12 @@
     },
     "display": {
       "size": [1337, 1183]
+    },
+    "edition": {
+      "id": "e-0137",
+      "title": "The origin of continents and oceans",
+      "issued": "1924",
+      "identifiers": { "hathitrust": "001272669", "oclc": "3010882" }
     }
   },
   {
@@ -1892,6 +2027,12 @@
     },
     "display": {
       "size": [2228, 1597]
+    },
+    "edition": {
+      "id": "e-0069",
+      "title": "A new British flora : British wild flowers in their natural haunts",
+      "issued": "1919",
+      "identifiers": { "hathitrust": "001997177", "oclc": "10314294" }
     }
   },
   {
@@ -1917,6 +2058,12 @@
     },
     "display": {
       "size": [1452, 1013]
+    },
+    "edition": {
+      "id": "e-0139",
+      "title": "Circular",
+      "issued": "1941",
+      "identifiers": { "hathitrust": "003923103", "oclc": "1695369", "lccn": "41051406" }
     }
   },
   {
@@ -2192,6 +2339,12 @@
     },
     "display": {
       "size": [523, 717]
+    },
+    "edition": {
+      "id": "e-0140",
+      "title": "The silva of North America; a description of the trees which grow naturally in North America exclusive of Mexico",
+      "issued": "1891",
+      "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
     }
   },
   {
@@ -2217,6 +2370,12 @@
     },
     "display": {
       "size": [455, 572]
+    },
+    "edition": {
+      "id": "e-0141",
+      "title": "Atlas of United States trees",
+      "issued": "1971",
+      "identifiers": { "hathitrust": "009818689", "lccn": "79653298" }
     }
   },
   {
@@ -2247,6 +2406,12 @@
     },
     "display": {
       "size": [345, 613]
+    },
+    "edition": {
+      "id": "e-0142",
+      "title": "Hough's encyclopaedia of American woods",
+      "issued": "1957",
+      "identifiers": { "hathitrust": "003143342", "oclc": "1268560", "lccn": "57010592" }
     }
   },
   {
@@ -2297,6 +2462,12 @@
     },
     "display": {
       "size": [551, 542]
+    },
+    "edition": {
+      "id": "e-0143",
+      "title": "The red and white currants",
+      "issued": "1923",
+      "identifiers": { "hathitrust": "011465852", "oclc": "18840173" }
     }
   },
   {
@@ -2322,6 +2493,12 @@
     },
     "display": {
       "size": [459, 532]
+    },
+    "edition": {
+      "id": "e-0144",
+      "title": "Farmers' bulletin",
+      "issued": "1889",
+      "identifiers": { "hathitrust": "000505320", "oclc": "1696411", "lccn": "agr16000325" }
     }
   },
   {
@@ -2366,6 +2543,12 @@
     },
     "display": {
       "size": [1456, 826]
+    },
+    "edition": {
+      "id": "e-0145",
+      "title": "Out of America: tracing the genetic footprints of the global diffusion of maize",
+      "issued": "2013",
+      "identifiers": { "doi": "10.1007/s00122-013-2164-z" }
     }
   },
   {
@@ -2471,6 +2654,12 @@
     },
     "display": {
       "size": [1466, 2464]
+    },
+    "edition": {
+      "id": "e-0146",
+      "title": "Directions for blueberry culture, 1921",
+      "issued": "1921",
+      "identifiers": { "hathitrust": "100199018", "oclc": "9452320" }
     }
   },
   {
@@ -2515,6 +2704,16 @@
     },
     "display": {
       "size": [500, 745]
+    },
+    "edition": {
+      "id": "e-0147",
+      "title": "Flora conspicua : a selection of the most ornamental flowering, hardy, exotic and indigenous trees, shrubs, and herbaceous plants, for embellishing flower-gardens and pleasure-grounds",
+      "issued": "1826",
+      "identifiers": {
+        "internetArchive": "floraconspicuase00morr",
+        "openlibrary": "OL13520643M",
+        "lccn": "11032777"
+      }
     }
   },
   {
@@ -2994,6 +3193,12 @@
     },
     "display": {
       "size": [597, 673]
+    },
+    "edition": {
+      "id": "e-0148",
+      "title": "Atlas of United States trees",
+      "issued": "1971",
+      "identifiers": { "internetArchive": "CAT87209954", "lccn": "79653298" }
     }
   },
   {
@@ -3019,6 +3224,12 @@
     },
     "display": {
       "size": [2282, 1679]
+    },
+    "edition": {
+      "id": "e-0149",
+      "title": "The natural history of Carolina, Florida and the Bahama Islands : containing the figures of birds, beasts, fishes, serpents, insects, and plants : particularly, the forest-trees, shrubs, and other plants, not hitherto described, or very incorrectly figured by authors : together with their descriptions in English and French : to which, are added observations on the air, soil, and waters : with remarks upon agriculture, grain, pulse, roots, &c. : to the whole, is prefixed a new and correct map of the countries treated of",
+      "issued": "1729",
+      "identifiers": { "internetArchive": "naturalhistoryCC1V1Cate", "lccn": "agr02000176" }
     }
   },
   {
@@ -3044,6 +3255,17 @@
     },
     "display": {
       "size": [1197, 1803]
+    },
+    "edition": {
+      "id": "e-0150",
+      "title": "The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia ... to which is added a description of the most useful of the European forest trees ..",
+      "issued": "1819",
+      "identifiers": {
+        "internetArchive": "northamericansyl01michin",
+        "oclc": "4598632",
+        "openlibrary": "OL24158910M",
+        "lccn": "agr28000778"
+      }
     }
   },
   {
@@ -3119,6 +3341,12 @@
     },
     "display": {
       "size": [2679, 3511]
+    },
+    "edition": {
+      "id": "e-0151",
+      "title": "The silva of North America; a description of the trees which grow naturally in North America exclusive of Mexico",
+      "issued": "1891",
+      "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
     }
   },
   {
@@ -3277,6 +3505,12 @@
       "hours": ["hush"],
       "weather": ["snow"],
       "seasons": ["winter"]
+    },
+    "edition": {
+      "id": "e-0152",
+      "title": "STUDIES AMONG THE SNOW CRYSTALS DURING THE WINTER OF 1901–2, WITH ADDITIONAL DATA COLLECTED DURING PREVIOUS WINTERS",
+      "issued": "1902",
+      "identifiers": { "doi": "10.1175/1520-0493-30.13.607" }
     }
   },
   {
@@ -3787,7 +4021,13 @@
     "display": {
       "size": [541, 845]
     },
-    "alt": "A hand-coloured botanical plate of Indian pipe: three pale, scaly white stems rising from a small brown root ball, two curling over into nodding flowers and one upright, with five numbered details of the flower parts and seed capsule below."
+    "alt": "A hand-coloured botanical plate of Indian pipe: three pale, scaly white stems rising from a small brown root ball, two curling over into nodding flowers and one upright, with five numbered details of the flower parts and seed capsule below.",
+    "edition": {
+      "id": "e-0153",
+      "title": "A flora of the state of New-York :comprising full descriptions of all the indigenous and naturalized plants hitherto discovered in the state : with remarks on their economical and medicinal properties /by John Torrey.",
+      "issued": "1843",
+      "identifiers": { "internetArchive": "mobot31753002739826" }
+    }
   },
   {
     "id": "i-0148",
@@ -3821,7 +4061,13 @@
     "display": {
       "size": [1573, 2074]
     },
-    "alt": "A colour plate headed “Autumnal Leaves,” Plate 6: eighteen numbered leaves on a pale page, lobed maple leaves at the top in reds, oranges and greens, and narrow, pointed spindle-tree leaves below in purples, browns and yellow-greens."
+    "alt": "A colour plate headed “Autumnal Leaves,” Plate 6: eighteen numbered leaves on a pale page, lobed maple leaves at the top in reds, oranges and greens, and narrow, pointed spindle-tree leaves below in purples, browns and yellow-greens.",
+    "edition": {
+      "id": "e-0154",
+      "title": "Autumnal leaves",
+      "issued": "1885",
+      "identifiers": { "hathitrust": "006610218", "oclc": "12747619" }
+    }
   },
   {
     "id": "i-0150",

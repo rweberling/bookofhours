@@ -61,8 +61,22 @@ Then each kind has its own:
   Hours and Dog Days quote Patrick's 1889 Heraclitus, `e-0017`) share its
   ID, and `check_data.py` checks their copies of its details agree. An
   edition one reading quotes inside another (`citation.quotes`) has its
-  own. The details themselves (title, contributors, publisher, dates) are
-  still being filled in for the Lectio Terra readings.
+  own. An image from a printed volume has an `edition` too, from the same
+  series, shared with a reading quoting the same book (the Sugar Maple
+  reading and figure share Crockett's pamphlet, `e-0042`); two volumes of
+  one set are two editions.
+- **What an edition holds**: what the site shows of it (title,
+  contributors, dates, publisher), and `identifiers` pointing to the
+  authority records that hold the rest, rather than copies of them:
+  `doi`; for a book `hathitrust` (its catalogue record), `oclc`
+  (WorldCat), `lccn`, `openlibrary`, `isbn` (none before about 1970),
+  `internetArchive`; and `wikidata` for the work. The copy actually used
+  (the scan) is the edition's link marked `cited`. `python3
+  scripts/link_editions.py [--write]` reads the identifiers off the cited
+  copies (HathiTrust, Internet Archive, DOIs), only ever adding, and lists
+  records whose copies share a catalogue record, for a person to decide
+  whether they're one edition. `check_data.py` checks each identifier's
+  form. Citations stay hand-written in the house style.
 - **Verse**: a poem is marked `"display": {"verse": true}`, and the pages
   set it out a line at a time: a line too long for the page carries on
   under a hanging indent rather than passing for a new line. Its `text` is

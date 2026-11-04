@@ -402,6 +402,9 @@ def main():
     for img in images:
         if img.get('creator'):
             copies[img['creator']['id']].append((img['id'], img['creator']))
+        # An image from a printed volume has an edition of its own, which a
+        # reading quoting the same book shares.
+        collect(img['id'], img.get('edition'))
     # Each edition a reading quotes from (and any it quotes in turn) has a
     # neutral, permanent ID, e-0001; readings quoting the same edition share
     # it, and their copies of its details must agree (above).
@@ -417,6 +420,26 @@ def main():
                 errors.append(f'{r["id"]}: edition ID {eid} is not in the form e-0001')
             elif eid in retired:
                 errors.append(f'{r["id"]}: {eid} is a retired ID; give the edition a new one')
+    for img in images:
+        eid = (img.get('edition') or {}).get('id')
+        if img.get('edition') and not (eid and ID_FORMS['e'].match(eid)):
+            errors.append(f'{img["id"]}: its edition needs an ID in the form e-0001')
+    # An edition's identifiers point to authority records (data/README.md,
+    # Editions); each in its own form, so a lookup can follow it.
+    IDENTIFIER_FORMS = {
+        'doi': r'10\.\d{4,9}/\S+', 'hathitrust': r'\d{9}', 'oclc': r'\d+', 'lccn': r'[a-z]*\d+',
+        'isbn': r'97[89]\d{10}|\d{9}[\dX]', 'openlibrary': r'OL\d+[MW]', 'wikidata': r'Q\d+',
+        'internetArchive': r'[\w.-]+',
+    }
+    editions = [((r.get('citation') or {}).get('edition'), r['id']) for r in readings] + \
+               [(img.get('edition'), img['id']) for img in images]
+    for edition, owner in editions:
+        for key, value in ((edition or {}).get('identifiers') or {}).items():
+            form = IDENTIFIER_FORMS.get(key)
+            if not form:
+                errors.append(f'{owner}: unknown identifier "{key}" (known: {", ".join(IDENTIFIER_FORMS)})')
+            elif not re.fullmatch(form, str(value)):
+                errors.append(f'{owner}: {key} "{value}" is not in its form')
     for cid, found in copies.items():
         first_owner, first = found[0]
         for owner, other in found[1:]:

@@ -54,7 +54,12 @@
             "url": "https://archive.org/details/dionysiusareopag00pseu"
           }
         ],
-        "rights": null
+        "rights": null,
+        "identifiers": {
+          "internetArchive": "dionysiusareopag00pseu",
+          "openlibrary": "OL7064638M",
+          "lccn": "20020096"
+        }
       }
     },
     "tags": {
@@ -447,7 +452,8 @@
             "url": "https://hdl.handle.net/2027/hvd.32044010369874?urlappend=%3Bseq=35%3Bownerid=27021597766923349-39"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "100326276", "oclc": "2233259" }
       }
     },
     "tags": {
@@ -516,7 +522,12 @@
             "url": "https://archive.org/details/carolingduskanth00cull/page/220/mode/2up"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": {
+          "internetArchive": "carolingduskanth00cull",
+          "openlibrary": "OL6707519M",
+          "lccn": "27023175"
+        }
       }
     },
     "tags": {
@@ -553,7 +564,12 @@
             "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": {
+          "internetArchive": "fragmentsofworko00hera",
+          "openlibrary": "OL21854788M",
+          "lccn": "11010817"
+        }
       }
     },
     "tags": {
@@ -588,7 +604,8 @@
             "url": "https://archive.org/details/freytagstechniqu00freyuoft"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "freytagstechniqu00freyuoft", "openlibrary": "OL7168981M" }
       }
     },
     "tags": {
@@ -691,7 +708,13 @@
             "url": "https://archive.org/details/seagarden00hdhirich/page/6/mode/2up"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": {
+          "internetArchive": "seagarden00hdhirich",
+          "oclc": "3890178",
+          "openlibrary": "OL7041086M",
+          "lccn": "17028831"
+        }
       }
     },
     "tags": {
@@ -725,7 +748,8 @@
             "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044004518320&seq=183&q1=stream"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "100330090", "oclc": "2412919", "lccn": "05002582" }
       }
     },
     "tags": {
@@ -1229,7 +1253,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/hvd.32044106450414?urlappend=%3Bseq=230%3Bownerid=27021597765883035-246"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "007679974", "oclc": "7688631" }
       }
     },
     "lectio": { "post": "lt-0001", "place": 1 },
@@ -1258,7 +1283,8 @@
             "label": "Internet Archive",
             "url": "https://archive.org/details/NietzscheSchopenhauerAsEducatorCollins/page/n3/mode/2up"
           }
-        ]
+        ],
+        "identifiers": { "internetArchive": "NietzscheSchopenhauerAsEducatorCollins" }
       }
     },
     "lectio": { "post": "lt-0001", "place": 2 },
@@ -1316,7 +1342,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/osu.32435029594769?urlappend=%3Bseq=29%3Bownerid=115636920-33"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "001501611", "oclc": "857360", "lccn": "11035036" }
       }
     },
     "lectio": { "post": "lt-0002", "place": 2 },
@@ -1345,7 +1372,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/chi.086806303?urlappend=%3Bseq=5%3Bownerid=13510798902081697-9"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "011437149", "oclc": "5161201" }
       }
     },
     "lectio": { "post": "lt-0003", "place": 1 },
@@ -1374,7 +1402,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=5%3Bownerid=13510798902017243-11"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "011274049", "oclc": "18660713" }
       }
     },
     "lectio": { "post": "lt-0003", "place": 2 },
@@ -1430,7 +1459,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/umn.31951d02459776j?urlappend=%3Bseq=1%3Bownerid=22365483-0"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "007425308", "oclc": "21507897", "lccn": "agr09000825" }
       }
     },
     "lectio": { "post": "lt-0004", "place": 1 },
@@ -1630,7 +1660,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=20%3Bownerid=13510798900618097-26"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "001993770", "oclc": "14366384" }
       }
     },
     "lectio": { "post": "lt-0007", "place": 2 },
@@ -1685,7 +1716,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/uc1.$b235977?urlappend=%3Bseq=9%3Bownerid=9007199259750403-13"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "001496609", "oclc": "1319978", "lccn": "25012152" }
       }
     },
     "lectio": { "post": "lt-0008", "place": 2 },
@@ -1742,7 +1774,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/uiug.30112067700937?urlappend=%3Bseq=39%3Bownerid=115203246-43"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "102436036", "oclc": "1319259", "lccn": "41023319" }
       }
     },
     "lectio": { "post": "lt-0009", "place": 2 },
@@ -1890,7 +1923,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/nyp.33433090753579?urlappend=%3Bseq=67%3Bownerid=27021597770124163-71"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "012307100", "oclc": "6900683", "lccn": "05015479" }
       }
     },
     "lectio": { "post": "lt-0011", "place": 2 },
@@ -1919,7 +1953,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/uc1.b4857815?urlappend=%3Bseq=82%3Bownerid=116673599-86"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "000629649", "oclc": "1268281", "lccn": "25016810" }
       }
     },
     "lectio": { "post": "lt-0012", "place": 1 },
@@ -1949,7 +1984,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/hvd.32044107247413?urlappend=%3Bseq=8%3Bownerid=27021597765978726-12"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "100451368", "oclc": "17570555" }
       }
     },
     "lectio": { "post": "lt-0012", "place": 2 },
@@ -2012,7 +2048,8 @@
       "locator": { "page": "8" },
       "edition": {
         "id": "e-0066",
-        "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.3389/falgy.2023.1220481" }]
+        "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.3389/falgy.2023.1220481" }],
+        "identifiers": { "doi": "10.3389/falgy.2023.1220481" }
       }
     },
     "lectio": { "post": "lt-0013", "place": 2 },
@@ -2041,7 +2078,8 @@
             "label": "DOI",
             "url": "https://doi.org/10.1001/archgenpsychiatry.2010.161"
           }
-        ]
+        ],
+        "identifiers": { "doi": "10.1001/archgenpsychiatry.2010.161" }
       }
     },
     "lectio": { "post": "lt-0013", "place": 3 },
@@ -2070,7 +2108,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/inu.30000011921974?urlappend=%3Bseq=33%3Bownerid=13510798897570173-37"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "001005718", "oclc": "1444113", "lccn": "26022478" }
       }
     },
     "lectio": { "post": "lt-0014", "place": 1 },
@@ -2100,7 +2139,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=233%3Bownerid=13510798901296899-237"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "001997177", "oclc": "10314294" }
       }
     },
     "lectio": { "post": "lt-0014", "place": 2 },
@@ -2203,7 +2243,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/hvd.32044107229023?urlappend=%3Bseq=30%3Bownerid=27021597765947657-34"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "100451015", "oclc": "80597640" }
       },
       "bibliography": "Desbois, F. \"Cypripedium de pleine terre.\" <em>Monographie des Cypripedium</em>, Librairie Générale de Ad. Hoste, 1888.",
       "title": "Cypripedium de pleine terre",
@@ -2264,7 +2305,14 @@
             "label": "Internet Archive",
             "url": "https://archive.org/details/essentialgalileo0000gali"
           }
-        ]
+        ],
+        "identifiers": {
+          "internetArchive": "essentialgalileo0000gali",
+          "oclc": "226308166",
+          "openlibrary": "OL16820783M",
+          "isbn": "9780872209374",
+          "lccn": "2008018659"
+        }
       }
     },
     "lectio": { "post": "lt-0017", "place": 1 },
@@ -2340,7 +2388,8 @@
             "label": "Biodiversity Heritage Library",
             "url": "https://www.biodiversitylibrary.org/part/187785"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "009125368", "oclc": "4850178" }
       }
     },
     "lectio": { "post": "lt-0018", "place": 2 },
@@ -2397,7 +2446,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/coo.31924018437917?urlappend=%3Bseq=367%3Bownerid=27021597768559051-381"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "009120458", "oclc": "12767094" }
       }
     },
     "lectio": { "post": "lt-0019", "place": 2 },
@@ -2562,7 +2612,8 @@
             "label": "Internet Archive",
             "url": "https://archive.org/details/illustratedflor03brit/page/24/mode/2up?q=butterfly"
           }
-        ]
+        ],
+        "identifiers": { "internetArchive": "illustratedflor03brit", "openlibrary": "OL24445409M" }
       }
     },
     "lectio": { "post": "lt-0022", "place": 2 },
@@ -2620,7 +2671,12 @@
             "label": "Internet Archive",
             "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126"
           }
-        ]
+        ],
+        "identifiers": {
+          "internetArchive": "fragmentsofworko00hera",
+          "openlibrary": "OL21854788M",
+          "lccn": "11010817"
+        }
       }
     },
     "lectio": { "post": "lt-0023", "place": 2 },
@@ -2649,7 +2705,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/hvd.32044027957927?urlappend=%3Bseq=16%3Bownerid=27021597765377222-20"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "011549434", "oclc": "77784890", "lccn": "35025565" }
       }
     },
     "lectio": { "post": "lt-0024", "place": 1 },
@@ -2903,7 +2960,13 @@
             "label": "Internet Archive",
             "url": "https://archive.org/details/ruralhours00coop/page/202/mode/2up"
           }
-        ]
+        ],
+        "identifiers": {
+          "internetArchive": "ruralhours00coop",
+          "oclc": "3339732",
+          "openlibrary": "OL6947305M",
+          "lccn": "04030235"
+        }
       }
     },
     "lectio": { "post": "lt-0028", "place": 1 },
@@ -2932,7 +2995,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/mdp.39015011690990?urlappend=%3Bseq=196%3Bownerid=13510798890518092-202"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "001881232", "oclc": "12747590" }
       }
     },
     "lectio": { "post": "lt-0028", "place": 2 },
@@ -2966,7 +3030,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=185%3Bownerid=1284933-191"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "100323859", "oclc": "263836", "lccn": "22021418" }
       }
     },
     "lectio": { "post": "lt-0028", "place": 3 },
@@ -2995,7 +3060,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/uiug.30112039325284?urlappend=%3Bseq=180%3Bownerid=13510798903473000-184"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "001055000", "oclc": "906880", "lccn": "20017899" }
       }
     },
     "lectio": { "post": "lt-0029", "place": 1 },
@@ -3025,7 +3091,8 @@
             "label": "Internet Archive",
             "url": "https://archive.org/details/in.ernet.dli.2015.458629/page/n21/mode/2up"
           }
-        ]
+        ],
+        "identifiers": { "internetArchive": "in.ernet.dli.2015.458629" }
       }
     },
     "suggestedEdition": { "isbn": "9780679723424" },
@@ -3056,7 +3123,8 @@
             "label": "HathiTrust",
             "url": "https://hdl.handle.net/2027/uc1.31175024284567?urlappend=%3Bseq=149%3Bownerid=120949887-153"
           }
-        ]
+        ],
+        "identifiers": { "hathitrust": "103315786", "oclc": "26601282", "isbn": "9780883544327" }
       }
     },
     "lectio": { "post": "lt-0029", "place": 3 },
@@ -3096,7 +3164,8 @@
           }
         ],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "in copyright — quoted as fair use"
+        "rightsNote": "in copyright — quoted as fair use",
+        "identifiers": { "internetArchive": "shieldofachilles0000whau_c9s5" }
       }
     },
     "suggestedEdition": { "isbn": "9780691260921", "note": "Recent critical edition" },
@@ -3143,7 +3212,8 @@
             "url": "https://archive.org/details/scientificpapers04rayliala/page/397/mode/1up"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "scientificpapers04rayliala", "oclc": "2316730", "lccn": "03015047" }
       }
     },
     "tags": {
@@ -3158,7 +3228,10 @@
     "text": "<p>The number of tastes perceived in objects is infinite, since every soluble body has a special flavour, in some respect differing from all others.<br><br>Flavours receive additional modifications of infinite variety, ranging from the most attractive to the most intolerable, from the strawberry to the colocynth; and all attempts to classify them may be termed failures. Nor is this to be wondered at; for, granted that there are undetermined series of simple flavours which can be modified by combining them in any number and quantity, we should require a new language to express all these results, mountains of folio volumes to define them, and newly devised numerical characters to classify and number them.<br><br>Since, up to the present time, no taste or flavour has, as a sensation, been rigorously defined, men are compelled to keep to a small number of general terms, such as \"sweet,\" \"sugary,\" \"sour,\" \"bitter,\" and so on; and, on further analysis, these can be classified under the two heads of \"agreeable to the taste,\" or \"disagreeable.\" They suffice, however, to make one's self understood, and indicate with tolerable exactness the gustatory properties of any sapid substances about which one is talking. Those who come after us will know more about such qualities, and it seems already certain that chemistry will discover to them the causes of flavours or their ultimate elements.</p>",
     "citation": {
       "display": "Jean Anthelme Brillat-Savarin. <em><a href=\"https://hdl.handle.net/2027/hvd.hn1bit?urlappend=%3Bseq=59%3Bownerid=27021597765846239-63\" rel=\"noopener\" target=\"_blank\">Gastronomy as a Fine Art; or, The Science of Good Living</a>.</em> Trans. R. E. Anderson. Trans. of <em>Physiologie du Goût </em>[<em>Physiology of Taste</em>]. 1826. London: Chatto and Windus, 1877. 15-16.",
-      "edition": { "id": "e-0105" }
+      "edition": {
+        "id": "e-0105",
+        "identifiers": { "hathitrust": "100499037", "oclc": "2881650" }
+      }
     },
     "lectio": { "post": "lt-0030", "place": 1 },
     "tags": {
@@ -3190,7 +3263,10 @@
     "text": "<p>The pawpaw (Asimina trilby, L.) seems to have been universally used by all the tribes who lived where it flourished. Its use was apparently limited only by its distribution, for it was encountered sixteen times in the prehistoric material examined from Kentucky, Arkansas, and Ohio, as well as in historic objects made by the Menomini and Wisconsin Potawatomi. In the University of Wisconsin Museum is a bunch of prepared fiber (16422) from the caves of Kentucky. This fiber was commonly used by the cave and rock-shelter peoples of Arkansas for cords, mats, rope, and in all coarsely woven materials. A woven mat from Bushwick Cave is a fair example (MAIHF 11-6243). The Ohio cave and rock-shelter dwellers used the pawpaw for coarse bags and fabrics, for example, in a split bark bag (OSHAM 332-22). In the Milwaukee Public Museum are two bags in which this fiber was identified, one, from the Menomini (4570) in which only the weft is of pawpaw, and another (23287) from the Wisconsin Potawatomi, entirely composed of it .</p>",
     "citation": {
       "display": "A. C. Whitford. “<a href=\"https://hdl.handle.net/2027/uc1.b4321375?urlappend=%3Bseq=17%3Bownerid=9007199266569933-21\" rel=\"noopener\" target=\"_blank\">ANONACEAE, D. C. (Custard-Apple Family)</a>.” <em>Textile Fibers Used In Eastern Aboriginal North America</em>. <em>Anthropological Papers of the American Museum of Natural History.</em> Vol. 38. Part 1. New York: American Museum of Natural History, 1941. 9.",
-      "edition": { "id": "e-0107" }
+      "edition": {
+        "id": "e-0107",
+        "identifiers": { "hathitrust": "001632236", "oclc": "1609195", "lccn": "41022534" }
+      }
     },
     "lectio": { "post": "lt-0030", "place": 3 },
     "tags": {
@@ -3254,7 +3330,10 @@
     "text": "<p>'Tis whiter than an Indian pipe, <br>'Tis dimmer than a lace;<br>No stature has it, like a fog, <br>When you approach the place. <br><br>Not any voice denotes it here, <br>Or intimates it there;<br>A spirit, how doth it accost? <br>What customs hath the air? <br><br>This limitless hyperbole <br>Each one of us shall be;<br>'Tis drama, if (hypothesis) <br>It be not tragedy! </p>",
     "citation": {
       "display": "Emily Dickinson. “<a href=\"https://archive.org/details/poemsthirdseries00dickiala/page/156/mode/2up?q=whiter\" rel=\"noopener\" target=\"_blank\">XVIII. The Spirit</a>.” [‘Tis whiter than an Indian pipe,”]. <em>Poems: Third Series. </em>Ed. Mabel Loomis Todd. Boston: Roberts Brothers, 1896. 156.",
-      "edition": { "id": "e-0111" }
+      "edition": {
+        "id": "e-0111",
+        "identifiers": { "internetArchive": "poemsthirdseries00dickiala", "oclc": "10424229" }
+      }
     },
     "lectio": { "post": "lt-0031", "place": 1 },
     "tags": {
@@ -3319,7 +3398,10 @@
     "text": "<p>VON MOHL (13) in 1860 was the first to announce that previous to the fall of the leaf there is formed near the base of the petiole a definite separation layer in which abscission always occurs by the separation of the cells from each other with their walls still intact. The xylem tubes not being included in this separation layer are finally ruptured mechanically, and the leaf falls. He also called attention to the fact that abscission and the formation of a protective tissue are two very distinct processes, and that the latter process might either precede or follow the former. […] The external factors capable of accelerating leaf-fall are extremely diversified. These have been summarized in the main by LLOYD (8). The more important are high and low light intensity, high and low water supply, high temperatures and frost, low concentrations of anesthetics, toxic concentrations of acids and salts, and wounding of the blade. On the other hand, low concentrations of oxygen and high concentrations of anesthetics retard leaf-fall, a state of rigor being produced by the latter.</p>",
     "citation": {
       "display": "Homer C. Sampson. “<a href=\"https://www.journals.uchicago.edu/doi/epdf/10.1086/332301?__cf_chl_tk=4HUvdnrlPK4POzJVkR_PKuvSQZJ9L4eKKRa1QP0s9IE-1793501603-1.0.1.1-nOEa7XIwl1jx.ZzNIQUAHqRonIB.8Vj0vOnuMPArChI\" rel=\"noopener\" target=\"_blank\">Chemical Changes Accompanying Abscission in Coleus Blumei.</a>” <em>Botanical Gazette </em>66.1 (July 1918: 32-53). 32, 33.",
-      "edition": { "id": "e-0115" }
+      "edition": {
+        "id": "e-0115",
+        "identifiers": { "doi": "10.1086/332301" }
+      }
     },
     "lectio": { "post": "lt-0033", "place": 3 },
     "tags": {
@@ -3335,7 +3417,10 @@
     "text": "I leant upon a coppice gate<br>&nbsp;&nbsp;&nbsp;When Frost was spectre-grey,<br>And Winter’s dregs made desolate<br>&nbsp;&nbsp;&nbsp;The weakening eye of day.<br>The tangled bine-stems scored the sky<br>&nbsp;&nbsp;&nbsp;Like strings of broken lyres,<br>And all mankind that haunted nigh<br>&nbsp;&nbsp;&nbsp;Had sought their household fires.<br><br>The land’s sharp features seemed to be<br>&nbsp;&nbsp;&nbsp;The Century’s corpse outleant,<br>His crypt the cloudy canopy,<br>&nbsp;&nbsp;&nbsp;The wind his death-lament.<br>The ancient pulse of germ and birth<br>&nbsp;&nbsp;&nbsp;Was shrunken hard and dry,<br>And every spirit upon earth<br>&nbsp;&nbsp;&nbsp;Seemed fervourless as I.<br><br>At once a voice arose among<br>&nbsp;&nbsp;&nbsp;The bleak twigs overhead<br>In a full-hearted evensong<br>&nbsp;&nbsp;&nbsp;Of joy illimited;<br>An aged thrush, frail, gaunt, and small,<br>&nbsp;&nbsp;&nbsp;In blast-beruffled plume,<br>Had chosen thus to fling his soul<br>&nbsp;&nbsp;&nbsp;Upon the growing gloom.<br><br>So little cause for carolings<br>&nbsp;&nbsp;&nbsp;Of such ecstatic sound<br>Was written on terrestrial things<br>&nbsp;&nbsp;&nbsp;Afar or nigh around,<br>That I could think there trembled through<br>&nbsp;&nbsp;&nbsp;His happy good-night air<br>Some blessed Hope, whereof he knew<br>&nbsp;&nbsp;&nbsp;And I was unaware.",
     "citation": {
       "display": "Thomas Hardy. “<a href=\"https://hdl.handle.net/2027/mdp.39015031237822\" rel=\"noopener\" target=\"_blank\">The Darkling Thrush</a>.” <em>The Graphic</em> (December 29, 1900). Rpt. <em><strong>Poems of the Past and the Present</strong></em><strong>.</strong> Second Edition. New York and London: Harper &amp; Brothers, 1902. 169-171.",
-      "edition": { "id": "e-0116" }
+      "edition": {
+        "id": "e-0116",
+        "identifiers": { "hathitrust": "000433137", "oclc": "52928563", "lccn": "02011001" }
+      }
     },
     "lectio": { "post": "lt-0033", "place": 4 },
     "tags": {

@@ -213,11 +213,12 @@ def next_number(records, retired, prefix):
     return max(used, default=0) + 1
 
 
-def edition_ids(readings):
-    """Every edition ID on the readings, the ones they quote included."""
-    for r in readings:
+def edition_ids(records):
+    """Every edition ID on the readings (the ones they quote included) and
+    the images given (an image from a printed volume has its own)."""
+    for r in records:
         cit = r.get('citation') or {}
-        for edition in [cit.get('edition')] + [q.get('edition') for q in cit.get('quotes') or []]:
+        for edition in [cit.get('edition'), r.get('edition')] + [q.get('edition') for q in cit.get('quotes') or []]:
             if edition and edition.get('id'):
                 yield edition['id']
 
@@ -266,7 +267,7 @@ def main():
     copied_w = {(w['lectio']['post'], w['kind']): w for w in writing if w.get('lectio')}
     next_r, next_i = next_number(readings, retired, 'r'), next_number(images, retired, 'i')
     next_w = next_number(writing, retired, 'w')
-    next_e = next_edition(readings, retired)
+    next_e = next_edition(readings + images, retired)
 
     added_r, added_i, added_w, differ, unlinked = [], [], [], [], set()
     for season, post in posts:
