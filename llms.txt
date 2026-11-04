@@ -4,7 +4,7 @@
 
 The site is arranged in three sections, each introduced by its own incipit. The section pages themselves (the current hour, season and weather) are filled in by JavaScript; the incipits, About and Sources pages are plain HTML.
 
-Search and AI answers may quote and link to the site; training or fine-tuning AI models on it is not permitted without written permission (hello@earthlyhours.com). See https://earthlyhours.com/robots.txt.
+Search and AI answers may quote and link to the site; training or fine-tuning AI models on its writing, readings or images is not permitted without written permission (hello@earthlyhours.com). See https://earthlyhours.com/robots.txt. The collection's metadata (citations, identifiers, people, dates, tags) is licensed CC BY-NC 4.0: non-commercial use with credit; commercial use, including training commercial AI systems, needs a licence, available on request (https://github.com/rweberling/bookofhours/blob/main/data/LICENSE.md).
 
 ## Sections
 

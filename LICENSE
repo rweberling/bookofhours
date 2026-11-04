@@ -7,6 +7,14 @@ selection, arrangement, tagging and description of readings, images and
 sources, the data files, the site's design, the Earthly Star glyph
 (fonts/earthly-star), the postcards, and the code (including worker/).
 
+The collection's metadata in data/ (its records' citations, identifiers,
+people, dates, tags and the like) is licensed more openly, under Creative
+Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0), for research,
+teaching and other non-commercial use with credit. data/LICENSE.md says
+exactly what that covers; the writing, the quoted texts and the images in
+those files are not part of it. Commercial use of the metadata, including
+training commercial AI systems, needs a licence (hello@earthlyhours.com).
+
 This repository is public so that the site can be served from it, and the
 site is meant to be read and shared.
 

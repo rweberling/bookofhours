@@ -149,14 +149,23 @@ don't run JavaScript. Like an ID, the address is fixed once published.
 
 ## Rights
 
-The selection, arrangement, tagging and description in these files, and the
-writing in `writing.json` and `lectio-data.json`, are © Ryan Weberling, all
-rights reserved, with the permissions given in the repository's
-[LICENSE](../LICENSE): quoting short passages with credit, linking, sharing
-screenshots, and printing for personal, devotional or classroom use. Please
-ask first (hello@earthlyhours.com) before copying the collection in bulk,
-republishing it, using it commercially, or using it to train AI systems.
+The collection's metadata (each record's citations, identifiers, people,
+dates, tags, links and rights statements, and the selection and
+arrangement of the records) is licensed under Creative Commons
+Attribution-NonCommercial 4.0 (CC BY-NC 4.0): free to reuse for research,
+teaching and other non-commercial work, with credit. Commercial use,
+including training commercial AI systems, needs a licence, available on
+request (hello@earthlyhours.com). [LICENSE.md](LICENSE.md) says exactly
+what's covered and how to credit it.
+
+Not covered, and © Ryan Weberling, all rights reserved, with the
+permissions in the repository's [LICENSE](../LICENSE) (quoting short
+passages with credit, linking, sharing screenshots, printing for personal,
+devotional or classroom use): the writing in `writing.json` and the
+Lectio Terra posts as written (`substack/`).
 
 Works in the public domain that the collection quotes or reproduces stay in
 the public domain; each image's `rights` field says which. Texts and images
-credited to another person or institution keep their own terms.
+credited to another person or institution keep their own terms; the
+licence above doesn't extend to the quoted passages or the image files, so
+a published dataset carries the metadata and only public-domain texts.
