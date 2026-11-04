@@ -77,6 +77,15 @@ Then each kind has its own:
   records whose copies share a catalogue record, for a person to decide
   whether they're one edition. `check_data.py` checks each identifier's
   form. Citations stay hand-written in the house style.
+- **People**: an edition's `contributors` (each `name`, `role`: author,
+  translator, editor) and an image's `creator`. The collection gives
+  people no IDs of its own beyond informal keys (`a-robert-ridgway`, the
+  same on every copy of a person); its link out is `wikidata` (a QID),
+  the hub of linked open data for people, leading on to VIAF, the Library
+  of Congress and the rest. `python3 scripts/link_people.py [--write]`
+  adds confident matches only (the name agreeing, initials included; a
+  person born before the work and not dead a century before it; the only
+  one who fits), and lists the rest with their candidates.
 - **Verse**: a poem is marked `"display": {"verse": true}`, and the pages
   set it out a line at a time: a line too long for the page carries on
   under a hanging indent rather than passing for a new line. Its `text` is

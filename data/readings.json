@@ -11,7 +11,14 @@
         "id": "e-0001",
         "type": "book",
         "title": "To the Lighthouse",
-        "contributors": [{ "id": "a-virginia-woolf", "name": "Virginia Woolf", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-virginia-woolf",
+            "name": "Virginia Woolf",
+            "role": "author",
+            "wikidata": "Q40909"
+          }
+        ],
         "publisher": "Hogarth Press",
         "issued": "1927",
         "original-date": "1927",
@@ -42,7 +49,8 @@
           {
             "id": "a-dionysius-the-areopagite",
             "name": "Pseudo-Dionysius the Areopagite",
-            "role": "author"
+            "role": "author",
+            "wikidata": "Q312816"
           }
         ],
         "issued": null,
@@ -80,7 +88,7 @@
         "id": "e-0003",
         "type": "book",
         "title": "Mūlamadhyamakakārikā",
-        "contributors": [{ "id": "a-nagarjuna", "name": "Nāgārjuna", "role": "author" }],
+        "contributors": [{ "id": "a-nagarjuna", "name": "Nāgārjuna", "role": "author", "wikidata": "Q171195" }],
         "issued": null,
         "original-date": "0150~",
         "links": [
@@ -112,7 +120,12 @@
         "type": "book",
         "title": "Thomas the Obscure",
         "contributors": [
-          { "id": "a-maurice-blanchot", "name": "Maurice Blanchot", "role": "author" },
+          {
+            "id": "a-maurice-blanchot",
+            "name": "Maurice Blanchot",
+            "role": "author",
+            "wikidata": "Q315210"
+          },
           { "id": "a-robert-lamberton", "name": "Robert Lamberton", "role": "translator" }
         ],
         "publisher": "Station Hill Press",
@@ -143,8 +156,18 @@
         "type": "book",
         "title": "The Passion According to G.H.",
         "contributors": [
-          { "id": "a-clarice-lispector", "name": "Clarice Lispector", "role": "author" },
-          { "id": "a-idra-novey", "name": "Idra Novey", "role": "translator" }
+          {
+            "id": "a-clarice-lispector",
+            "name": "Clarice Lispector",
+            "role": "author",
+            "wikidata": "Q235955"
+          },
+          {
+            "id": "a-idra-novey",
+            "name": "Idra Novey",
+            "role": "translator",
+            "wikidata": "Q15439606"
+          }
         ],
         "publisher": "New Directions",
         "issued": "2012",
@@ -173,7 +196,9 @@
         "id": "e-0006",
         "type": "book",
         "title": "Book of Hours",
-        "contributors": [{ "id": "a-kevin-young", "name": "Kevin Young", "role": "author" }],
+        "contributors": [
+          { "id": "a-kevin-young", "name": "Kevin Young", "role": "author", "wikidata": "Q6397805" }
+        ],
         "publisher": "Knopf",
         "issued": "2014",
         "original-date": "2014",
@@ -204,7 +229,7 @@
         "id": "e-0007",
         "type": "book",
         "title": "Silence: Lectures and Writings",
-        "contributors": [{ "id": "a-john-cage", "name": "John Cage", "role": "author" }],
+        "contributors": [{ "id": "a-john-cage", "name": "John Cage", "role": "author", "wikidata": "Q180727" }],
         "publisher": "Wesleyan University Press",
         "issued": "1961",
         "original-date": "1961",
@@ -234,8 +259,13 @@
         "type": "book",
         "title": "Rampolli: Growths from a Long-Planted Root",
         "contributors": [
-          { "id": "a-novalis", "name": "Novalis", "role": "author" },
-          { "id": "a-george-macdonald", "name": "George MacDonald", "role": "translator" }
+          { "id": "a-novalis", "name": "Novalis", "role": "author", "wikidata": "Q60684" },
+          {
+            "id": "a-george-macdonald",
+            "name": "George MacDonald",
+            "role": "translator",
+            "wikidata": "Q368519"
+          }
         ],
         "publisher": "Longmans, Green",
         "issued": "1897",
@@ -269,7 +299,14 @@
         "id": "e-0009",
         "type": "book",
         "title": "Wake-Robin",
-        "contributors": [{ "id": "a-john-burroughs", "name": "John Burroughs", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-john-burroughs",
+            "name": "John Burroughs",
+            "role": "author",
+            "wikidata": "Q938841"
+          }
+        ],
         "publisher": "Hurd and Houghton",
         "issued": "1871",
         "original-date": "1871",
@@ -340,8 +377,18 @@
         "type": "book",
         "title": "The Book of Disquiet",
         "contributors": [
-          { "id": "a-fernando-pessoa", "name": "Fernando Pessoa", "role": "author" },
-          { "id": "a-richard-zenith", "name": "Richard Zenith", "role": "translator" }
+          {
+            "id": "a-fernando-pessoa",
+            "name": "Fernando Pessoa",
+            "role": "author",
+            "wikidata": "Q173481"
+          },
+          {
+            "id": "a-richard-zenith",
+            "name": "Richard Zenith",
+            "role": "translator",
+            "wikidata": "Q7330152"
+          }
         ],
         "publisher": "Penguin",
         "issued": "2002",
@@ -374,8 +421,18 @@
         "type": "book",
         "title": "The Pillow Book of Sei Shōnagon",
         "contributors": [
-          { "id": "a-sei-shonagon", "name": "Sei Shōnagon", "role": "author" },
-          { "id": "a-ivan-morris", "name": "Ivan Morris", "role": "translator" }
+          {
+            "id": "a-sei-shonagon",
+            "name": "Sei Shōnagon",
+            "role": "author",
+            "wikidata": "Q231603"
+          },
+          {
+            "id": "a-ivan-morris",
+            "name": "Ivan Morris",
+            "role": "translator",
+            "wikidata": "Q3826587"
+          }
         ],
         "publisher": "Columbia University Press",
         "issued": "1971",
@@ -405,7 +462,9 @@
         "id": "e-0013",
         "type": "book",
         "title": "Leaves of Grass",
-        "contributors": [{ "id": "a-walt-whitman", "name": "Walt Whitman", "role": "author" }],
+        "contributors": [
+          { "id": "a-walt-whitman", "name": "Walt Whitman", "role": "author", "wikidata": "Q81438" }
+        ],
         "edition": "1892 ed.",
         "publisher": "David McKay",
         "issued": "1892",
@@ -441,7 +500,14 @@
         "id": "e-0014",
         "type": "book",
         "title": "The Golden Threshold",
-        "contributors": [{ "id": "a-sarojini-naidu", "name": "Sarojini Naidu", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-sarojini-naidu",
+            "name": "Sarojini Naidu",
+            "role": "author",
+            "wikidata": "Q250165"
+          }
+        ],
         "publisher": "William Heinemann",
         "issued": "1906",
         "original-date": "1906",
@@ -477,7 +543,7 @@
         "id": "e-0015",
         "type": "book",
         "title": "Four Quartets",
-        "contributors": [{ "id": "a-t-s-eliot", "name": "T. S. Eliot", "role": "author" }],
+        "contributors": [{ "id": "a-t-s-eliot", "name": "T. S. Eliot", "role": "author", "wikidata": "Q37767" }],
         "publisher": "Harcourt, Brace",
         "issued": "1943",
         "original-date": "1942",
@@ -509,8 +575,18 @@
         "type": "book",
         "title": "Caroling Dusk: An Anthology of Verse by Negro Poets",
         "contributors": [
-          { "id": "a-helene-johnson", "name": "Helene Johnson", "role": "author" },
-          { "id": "a-countee-cullen", "name": "Countee Cullen", "role": "editor" }
+          {
+            "id": "a-helene-johnson",
+            "name": "Helene Johnson",
+            "role": "author",
+            "wikidata": "Q1601979"
+          },
+          {
+            "id": "a-countee-cullen",
+            "name": "Countee Cullen",
+            "role": "editor",
+            "wikidata": "Q1137066"
+          }
         ],
         "publisher": "Harper & Brothers",
         "issued": "1927",
@@ -552,8 +628,13 @@
         "type": "book",
         "title": "On Nature",
         "contributors": [
-          { "id": "a-heraclitus", "name": "Heraclitus", "role": "author" },
-          { "id": "a-g-t-w-patrick", "name": "G. T. W. Patrick", "role": "translator" }
+          { "id": "a-heraclitus", "name": "Heraclitus", "role": "author", "wikidata": "Q41155" },
+          {
+            "id": "a-g-t-w-patrick",
+            "name": "G. T. W. Patrick",
+            "role": "translator",
+            "wikidata": "Q18910706"
+          }
         ],
         "issued": "1889",
         "original-date": "-0500~",
@@ -591,7 +672,12 @@
         "type": "book",
         "title": "Technique of the Drama",
         "contributors": [
-          { "id": "a-gustav-freytag", "name": "Gustav Freytag", "role": "author" },
+          {
+            "id": "a-gustav-freytag",
+            "name": "Gustav Freytag",
+            "role": "author",
+            "wikidata": "Q58811"
+          },
           { "id": "a-elias-j-macewan", "name": "Elias J. MacEwan", "role": "translator" }
         ],
         "publisher": "Scott, Foresman",
@@ -629,9 +715,19 @@
         "type": "book",
         "title": "C. P. Cavafy: Collected Poems",
         "contributors": [
-          { "id": "a-c-p-cavafy", "name": "C. P. Cavafy", "role": "author" },
-          { "id": "a-edmund-keeley", "name": "Edmund Keeley", "role": "translator" },
-          { "id": "a-philip-sherrard", "name": "Philip Sherrard", "role": "translator" }
+          { "id": "a-c-p-cavafy", "name": "C. P. Cavafy", "role": "author", "wikidata": "Q216980" },
+          {
+            "id": "a-edmund-keeley",
+            "name": "Edmund Keeley",
+            "role": "translator",
+            "wikidata": "Q5339604"
+          },
+          {
+            "id": "a-philip-sherrard",
+            "name": "Philip Sherrard",
+            "role": "translator",
+            "wikidata": "Q1732710"
+          }
         ],
         "publisher": "Princeton University Press",
         "issued": "1975",
@@ -664,7 +760,7 @@
         "type": "book",
         "title": "Gravity and Grace",
         "contributors": [
-          { "id": "a-simone-weil", "name": "Simone Weil", "role": "author" },
+          { "id": "a-simone-weil", "name": "Simone Weil", "role": "author", "wikidata": "Q157309" },
           { "id": "a-emma-crawford", "name": "Emma Crawford", "role": "translator" },
           { "id": "a-mario-von-der-ruhr", "name": "Mario von der Ruhr", "role": "translator" }
         ],
@@ -697,7 +793,7 @@
         "id": "e-0021",
         "type": "book",
         "title": "Sea Garden",
-        "contributors": [{ "id": "a-h-d", "name": "H.D.", "role": "author" }],
+        "contributors": [{ "id": "a-h-d", "name": "H.D.", "role": "author", "wikidata": "Q236469" }],
         "publisher": "Constable",
         "issued": "1916",
         "original-date": "1915/1916",
@@ -774,7 +870,14 @@
         "id": "e-0023",
         "type": "book",
         "title": "The Anatomy of Melancholy",
-        "contributors": [{ "id": "a-robert-burton", "name": "Robert Burton", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-robert-burton",
+            "name": "Robert Burton",
+            "role": "author",
+            "wikidata": "Q259132"
+          }
+        ],
         "issued": "1621",
         "original-date": "1621",
         "links": [
@@ -808,9 +911,19 @@
         "type": "book",
         "title": "The Arcades Project",
         "contributors": [
-          { "id": "a-walter-benjamin", "name": "Walter Benjamin", "role": "author" },
+          {
+            "id": "a-walter-benjamin",
+            "name": "Walter Benjamin",
+            "role": "author",
+            "wikidata": "Q61078"
+          },
           { "id": "a-howard-eiland", "name": "Howard Eiland", "role": "translator" },
-          { "id": "a-kevin-mclaughlin", "name": "Kevin McLaughlin", "role": "translator" }
+          {
+            "id": "a-kevin-mclaughlin",
+            "name": "Kevin McLaughlin",
+            "role": "translator",
+            "wikidata": "Q28229402"
+          }
         ],
         "publisher": "Belknap Press of Harvard University Press",
         "issued": "1999",
@@ -840,7 +953,14 @@
         "id": "e-0025",
         "type": "manuscript",
         "title": null,
-        "contributors": [{ "id": "a-emily-dickinson", "name": "Emily Dickinson", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-emily-dickinson",
+            "name": "Emily Dickinson",
+            "role": "author",
+            "wikidata": "Q4441"
+          }
+        ],
         "archive": "Emily Dickinson Archive, Houghton Library, Harvard University",
         "issued": null,
         "original-date": "1861~",
@@ -875,11 +995,12 @@
         "type": "book",
         "title": "Sappho: Memoir, Text, Selected Renderings, and a Literal Translation",
         "contributors": [
-          { "id": "a-sappho", "name": "Sappho", "role": "author" },
+          { "id": "a-sappho", "name": "Sappho", "role": "author", "wikidata": "Q17892" },
           {
             "id": "a-henry-thornton-wharton",
             "name": "Henry Thornton Wharton",
-            "role": "translator"
+            "role": "translator",
+            "wikidata": "Q18917198"
           }
         ],
         "publisher": "John Lane",
@@ -915,7 +1036,14 @@
         "id": "e-0027",
         "type": "book",
         "title": "Tender Buttons",
-        "contributors": [{ "id": "a-gertrude-stein", "name": "Gertrude Stein", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-gertrude-stein",
+            "name": "Gertrude Stein",
+            "role": "author",
+            "wikidata": "Q188385"
+          }
+        ],
         "publisher": "Claire Marie",
         "issued": "1914",
         "original-date": "1914",
@@ -948,12 +1076,23 @@
         "type": "book",
         "title": "In Praise of Shadows",
         "contributors": [
-          { "id": "a-jun-ichiro-tanizaki", "name": "Jun'ichirō Tanizaki", "role": "author" },
-          { "id": "a-thomas-j-harper", "name": "Thomas J. Harper", "role": "translator" },
+          {
+            "id": "a-jun-ichiro-tanizaki",
+            "name": "Jun'ichirō Tanizaki",
+            "role": "author",
+            "wikidata": "Q316213"
+          },
+          {
+            "id": "a-thomas-j-harper",
+            "name": "Thomas J. Harper",
+            "role": "translator",
+            "wikidata": "Q138307176"
+          },
           {
             "id": "a-edward-g-seidensticker",
             "name": "Edward G. Seidensticker",
-            "role": "translator"
+            "role": "translator",
+            "wikidata": "Q3272933"
           }
         ],
         "publisher": "Leete's Island Books",
@@ -983,7 +1122,14 @@
         "id": "e-0029",
         "type": "book",
         "title": "The Gastronomical Me",
-        "contributors": [{ "id": "a-m-f-k-fisher", "name": "M. F. K. Fisher", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-m-f-k-fisher",
+            "name": "M. F. K. Fisher",
+            "role": "author",
+            "wikidata": "Q272889"
+          }
+        ],
         "publisher": "Duell, Sloan and Pearce",
         "issued": "1943",
         "original-date": "1943",
@@ -1012,7 +1158,14 @@
         "id": "e-0030",
         "type": "book",
         "title": "Poems",
-        "contributors": [{ "id": "a-rainer-maria-rilke", "name": "Rainer Maria Rilke", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-rainer-maria-rilke",
+            "name": "Rainer Maria Rilke",
+            "role": "author",
+            "wikidata": "Q76483"
+          }
+        ],
         "issued": "1918",
         "original-date": "1918",
         "links": [
@@ -1046,7 +1199,14 @@
         "id": "e-0031",
         "type": "book",
         "title": "Haiku: This Other World",
-        "contributors": [{ "id": "a-richard-wright", "name": "Richard Wright", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-richard-wright",
+            "name": "Richard Wright",
+            "role": "author",
+            "wikidata": "Q319820"
+          }
+        ],
         "publisher": "Arcade Publishing",
         "issued": "1998",
         "original-date": "1998",
@@ -1078,7 +1238,14 @@
         "id": "e-0032",
         "type": "book",
         "title": "Watt",
-        "contributors": [{ "id": "a-samuel-beckett", "name": "Samuel Beckett", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-samuel-beckett",
+            "name": "Samuel Beckett",
+            "role": "author",
+            "wikidata": "Q37327"
+          }
+        ],
         "publisher": "Olympia Press",
         "issued": "1953",
         "original-date": "1953",
@@ -1109,7 +1276,14 @@
         "id": "e-0033",
         "type": "book",
         "title": "Last Poems",
-        "contributors": [{ "id": "a-edward-thomas", "name": "Edward Thomas", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-edward-thomas",
+            "name": "Edward Thomas",
+            "role": "author",
+            "wikidata": "Q1293865"
+          }
+        ],
         "publisher": "Selwyn & Blount",
         "issued": "1918",
         "original-date": "1918",
@@ -1215,7 +1389,7 @@
         "id": "e-0036",
         "type": "book",
         "title": null,
-        "contributors": [{ "id": "a-jones-very", "name": "Jones Very", "role": "author" }],
+        "contributors": [{ "id": "a-jones-very", "name": "Jones Very", "role": "author", "wikidata": "Q2797629" }],
         "issued": null,
         "original-date": "1883/1886",
         "links": [
@@ -1256,7 +1430,12 @@
         ],
         "identifiers": { "hathitrust": "007679974", "oclc": "7688631" },
         "contributors": [
-          { "id": "a-william-hamilton-gibson", "name": "William Hamilton Gibson", "role": "author" }
+          {
+            "id": "a-william-hamilton-gibson",
+            "name": "William Hamilton Gibson",
+            "role": "author",
+            "wikidata": "Q8010768"
+          }
         ]
       }
     },
@@ -1289,8 +1468,18 @@
         ],
         "identifiers": { "internetArchive": "NietzscheSchopenhauerAsEducatorCollins" },
         "contributors": [
-          { "id": "a-friedrich-nietzsche", "name": "Friedrich Nietzsche", "role": "author" },
-          { "id": "a-adrian-collins", "name": "Adrian Collins", "role": "translator" }
+          {
+            "id": "a-friedrich-nietzsche",
+            "name": "Friedrich Nietzsche",
+            "role": "author",
+            "wikidata": "Q9358"
+          },
+          {
+            "id": "a-adrian-collins",
+            "name": "Adrian Collins",
+            "role": "translator",
+            "wikidata": "Q15627018"
+          }
         ]
       }
     },
@@ -1320,7 +1509,14 @@
             "url": "https://journeys.dartmouth.edu/whiteheat/the-robin-is-the-one-f501c-j828/"
           }
         ],
-        "contributors": [{ "id": "a-emily-dickinson", "name": "Emily Dickinson", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-emily-dickinson",
+            "name": "Emily Dickinson",
+            "role": "author",
+            "wikidata": "Q4441"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0002", "place": 1 },
@@ -1352,7 +1548,14 @@
           }
         ],
         "identifiers": { "hathitrust": "001501611", "oclc": "857360", "lccn": "11035036" },
-        "contributors": [{ "id": "a-robert-ridgway", "name": "Robert Ridgway", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-robert-ridgway",
+            "name": "Robert Ridgway",
+            "role": "author",
+            "wikidata": "Q940473"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0002", "place": 2 },
@@ -1473,7 +1676,14 @@
           }
         ],
         "identifiers": { "hathitrust": "007425308", "oclc": "21507897", "lccn": "agr09000825" },
-        "contributors": [{ "id": "a-gifford-pinchot", "name": "Gifford Pinchot", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-gifford-pinchot",
+            "name": "Gifford Pinchot",
+            "role": "author",
+            "wikidata": "Q534301"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0004", "place": 1 },
@@ -1508,7 +1718,14 @@
             "url": "https://dn721805.ca.archive.org/0/items/mountaininterval0000fros/mountaininterval0000fros.pdf"
           }
         ],
-        "contributors": [{ "id": "a-robert-frost", "name": "Robert Frost", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-robert-frost",
+            "name": "Robert Frost",
+            "role": "author",
+            "wikidata": "Q168728"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0004", "place": 2 },
@@ -1543,10 +1760,21 @@
           {
             "id": "a-johann-wolfgang-von-goethe",
             "name": "Johann Wolfgang von Goethe",
-            "role": "author"
+            "role": "author",
+            "wikidata": "Q5879"
           },
-          { "id": "a-george-soane", "name": "George Soane", "role": "translator" },
-          { "id": "a-john-bowring", "name": "John Bowring", "role": "translator" }
+          {
+            "id": "a-george-soane",
+            "name": "George Soane",
+            "role": "translator",
+            "wikidata": "Q16066130"
+          },
+          {
+            "id": "a-john-bowring",
+            "name": "John Bowring",
+            "role": "translator",
+            "wikidata": "Q332508"
+          }
         ]
       }
     },
@@ -1577,7 +1805,14 @@
             "url": "https://buttondown.com/jennitaur/archive/what-does-it-mean-to-watch-clouds-what-can-it-mean/"
           }
         ],
-        "contributors": [{ "id": "a-jenny-odell", "name": "Jenny Odell", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-jenny-odell",
+            "name": "Jenny Odell",
+            "role": "author",
+            "wikidata": "Q68924784"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0005", "place": 2 },
@@ -1609,7 +1844,12 @@
         ],
         "contributors": [
           { "id": "a-william-herbert", "name": "William Herbert", "role": "author" },
-          { "id": "a-john-lindley", "name": "John Lindley", "role": "editor" }
+          {
+            "id": "a-john-lindley",
+            "name": "John Lindley",
+            "role": "editor",
+            "wikidata": "Q378629"
+          }
         ]
       }
     },
@@ -1663,9 +1903,19 @@
       "edition": {
         "id": "e-0050",
         "contributors": [
-          { "id": "a-martin-heidegger", "name": "Martin Heidegger", "role": "author" },
+          {
+            "id": "a-martin-heidegger",
+            "name": "Martin Heidegger",
+            "role": "author",
+            "wikidata": "Q48301"
+          },
           { "id": "a-gregory-fried", "name": "Gregory Fried", "role": "translator" },
-          { "id": "a-richard-polt", "name": "Richard Polt", "role": "translator" }
+          {
+            "id": "a-richard-polt",
+            "name": "Richard Polt",
+            "role": "translator",
+            "wikidata": "Q7328471"
+          }
         ]
       }
     },
@@ -1702,7 +1952,8 @@
           {
             "id": "a-douglas-houghton-campbell",
             "name": "Douglas Houghton Campbell",
-            "role": "author"
+            "role": "author",
+            "wikidata": "Q4251095"
           }
         ]
       }
@@ -1733,7 +1984,14 @@
       "locator": { "page": "106–107" },
       "edition": {
         "id": "e-0052",
-        "contributors": [{ "id": "a-zora-neale-hurston", "name": "Zora Neale Hurston", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-zora-neale-hurston",
+            "name": "Zora Neale Hurston",
+            "role": "author",
+            "wikidata": "Q220480"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0008", "place": 1 },
@@ -1764,7 +2022,14 @@
           }
         ],
         "identifiers": { "hathitrust": "001496609", "oclc": "1319978", "lccn": "25012152" },
-        "contributors": [{ "id": "a-ernest-thompson-seton", "name": "Ernest Thompson Seton", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-ernest-thompson-seton",
+            "name": "Ernest Thompson Seton",
+            "role": "author",
+            "wikidata": "Q505017"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0008", "place": 2 },
@@ -1850,7 +2115,12 @@
       "edition": {
         "id": "e-0056",
         "contributors": [
-          { "id": "a-hildegard-of-bingen", "name": "Hildegard of Bingen", "role": "author" },
+          {
+            "id": "a-hildegard-of-bingen",
+            "name": "Hildegard of Bingen",
+            "role": "author",
+            "wikidata": "Q70991"
+          },
           { "id": "a-bruce-w-hozeski", "name": "Bruce W. Hozeski", "role": "translator" }
         ]
       }
@@ -1884,7 +2154,12 @@
           }
         ],
         "contributors": [
-          { "id": "a-hildegard-of-bingen", "name": "Hildegard of Bingen", "role": "author" },
+          {
+            "id": "a-hildegard-of-bingen",
+            "name": "Hildegard of Bingen",
+            "role": "author",
+            "wikidata": "Q70991"
+          },
           { "id": "a-joseph-l-baird", "name": "Joseph L. Baird", "role": "translator" },
           { "id": "a-radd-k-ehrman", "name": "Radd K. Ehrman", "role": "translator" }
         ]
@@ -1911,8 +2186,18 @@
       "edition": {
         "id": "e-0058",
         "contributors": [
-          { "id": "a-michael-marder", "name": "Michael Marder", "role": "author" },
-          { "id": "a-edward-s-casey", "name": "Edward S. Casey", "role": "author" }
+          {
+            "id": "a-michael-marder",
+            "name": "Michael Marder",
+            "role": "author",
+            "wikidata": "Q16221045"
+          },
+          {
+            "id": "a-edward-s-casey",
+            "name": "Edward S. Casey",
+            "role": "author",
+            "wikidata": "Q17276513"
+          }
         ]
       }
     },
@@ -1965,8 +2250,18 @@
       "edition": {
         "id": "e-0060",
         "contributors": [
-          { "id": "a-ludwig-wittgenstein", "name": "Ludwig Wittgenstein", "role": "author" },
-          { "id": "a-g-e-m-anscombe", "name": "G. E. M. Anscombe", "role": "translator" }
+          {
+            "id": "a-ludwig-wittgenstein",
+            "name": "Ludwig Wittgenstein",
+            "role": "author",
+            "wikidata": "Q9391"
+          },
+          {
+            "id": "a-g-e-m-anscombe",
+            "name": "G. E. M. Anscombe",
+            "role": "translator",
+            "wikidata": "Q229646"
+          }
         ]
       }
     },
@@ -2000,7 +2295,12 @@
         ],
         "identifiers": { "hathitrust": "012307100", "oclc": "6900683", "lccn": "05015479" },
         "contributors": [
-          { "id": "a-james-freeman-dana", "name": "James Freeman Dana", "role": "author" },
+          {
+            "id": "a-james-freeman-dana",
+            "name": "James Freeman Dana",
+            "role": "author",
+            "wikidata": "Q11203460"
+          },
           { "id": "a-samuel-l-dana", "name": "Samuel L. Dana", "role": "author" }
         ]
       }
@@ -2033,7 +2333,7 @@
           }
         ],
         "identifiers": { "hathitrust": "000629649", "oclc": "1268281", "lccn": "25016810" },
-        "contributors": [{ "id": "a-amy-lowell", "name": "Amy Lowell", "role": "author" }]
+        "contributors": [{ "id": "a-amy-lowell", "name": "Amy Lowell", "role": "author", "wikidata": "Q265841" }]
       }
     },
     "lectio": { "post": "lt-0012", "place": 1 },
@@ -2088,7 +2388,14 @@
       "locator": { "page": "27–28" },
       "edition": {
         "id": "e-0064",
-        "contributors": [{ "id": "a-ronald-firbank", "name": "Ronald Firbank", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-ronald-firbank",
+            "name": "Ronald Firbank",
+            "role": "author",
+            "wikidata": "Q2706580"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0012", "place": 3 },
@@ -2111,7 +2418,14 @@
       "locator": { "page": "312" },
       "edition": {
         "id": "e-0065",
-        "contributors": [{ "id": "a-jenifer-wightman", "name": "Jenifer Wightman", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-jenifer-wightman",
+            "name": "Jenifer Wightman",
+            "role": "author",
+            "wikidata": "Q95646046"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0013", "place": 1 },
@@ -2136,7 +2450,14 @@
         "id": "e-0066",
         "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.3389/falgy.2023.1220481" }],
         "identifiers": { "doi": "10.3389/falgy.2023.1220481" },
-        "contributors": [{ "id": "a-graham-a-w-rook", "name": "Graham A. W. Rook", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-graham-a-w-rook",
+            "name": "Graham A. W. Rook",
+            "role": "author",
+            "wikidata": "Q112435644"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0013", "place": 2 },
@@ -2168,9 +2489,24 @@
         ],
         "identifiers": { "doi": "10.1001/archgenpsychiatry.2010.161" },
         "contributors": [
-          { "id": "a-charles-l-raison", "name": "Charles L. Raison", "role": "author" },
-          { "id": "a-christopher-a-lowry", "name": "Christopher A. Lowry", "role": "author" },
-          { "id": "a-graham-a-w-rook", "name": "Graham A. W. Rook", "role": "author" }
+          {
+            "id": "a-charles-l-raison",
+            "name": "Charles L. Raison",
+            "role": "author",
+            "wikidata": "Q23732255"
+          },
+          {
+            "id": "a-christopher-a-lowry",
+            "name": "Christopher A. Lowry",
+            "role": "author",
+            "wikidata": "Q58885271"
+          },
+          {
+            "id": "a-graham-a-w-rook",
+            "name": "Graham A. W. Rook",
+            "role": "author",
+            "wikidata": "Q112435644"
+          }
         ]
       }
     },
@@ -2206,9 +2542,15 @@
           {
             "id": "a-jalal-al-din-muhammad-rumi",
             "name": "Jalāl al-Dīn Muḥammad Rūmī",
-            "role": "author"
+            "role": "author",
+            "wikidata": "Q43347"
           },
-          { "id": "a-reynold-a-nicholson", "name": "Reynold A. Nicholson", "role": "translator" }
+          {
+            "id": "a-reynold-a-nicholson",
+            "name": "Reynold A. Nicholson",
+            "role": "translator",
+            "wikidata": "Q2265889"
+          }
         ]
       }
     },
@@ -2241,7 +2583,14 @@
           }
         ],
         "identifiers": { "hathitrust": "001997177", "oclc": "10314294" },
-        "contributors": [{ "id": "a-a-r-horwood", "name": "A. R. Horwood", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-a-r-horwood",
+            "name": "A. R. Horwood",
+            "role": "author",
+            "wikidata": "Q21341246"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0014", "place": 2 },
@@ -2271,7 +2620,7 @@
             "url": "https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189"
           }
         ],
-        "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author" }]
+        "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author", "wikidata": "Q5382324" }]
       }
     },
     "lectio": { "post": "lt-0015", "place": 1 },
@@ -2302,7 +2651,12 @@
           }
         ],
         "contributors": [
-          { "id": "a-francesco-redi", "name": "Francesco Redi", "role": "author" },
+          {
+            "id": "a-francesco-redi",
+            "name": "Francesco Redi",
+            "role": "author",
+            "wikidata": "Q311187"
+          },
           { "id": "a-mab-bigelow", "name": "Mab Bigelow", "role": "translator" }
         ]
       }
@@ -2327,7 +2681,14 @@
       "locator": { "page": "vi, 147" },
       "edition": {
         "id": "e-0072",
-        "contributors": [{ "id": "a-grace-greylock-niles", "name": "Grace Greylock Niles", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-grace-greylock-niles",
+            "name": "Grace Greylock Niles",
+            "role": "author",
+            "wikidata": "Q21393563"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0016", "place": 1 },
@@ -2430,11 +2791,17 @@
             "name": "Felice Cardinal d’Ascoli",
             "role": "author"
           },
-          { "id": "a-maurice-a-finocchiaro", "name": "Maurice A. Finocchiaro", "role": "editor" },
           {
             "id": "a-maurice-a-finocchiaro",
             "name": "Maurice A. Finocchiaro",
-            "role": "translator"
+            "role": "editor",
+            "wikidata": "Q55754273"
+          },
+          {
+            "id": "a-maurice-a-finocchiaro",
+            "name": "Maurice A. Finocchiaro",
+            "role": "translator",
+            "wikidata": "Q55754273"
           }
         ]
       }
@@ -2483,7 +2850,14 @@
       "locator": { "page": "9–10" },
       "edition": {
         "id": "e-0077",
-        "contributors": [{ "id": "a-robin-wall-kimmerer", "name": "Robin Wall Kimmerer", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-robin-wall-kimmerer",
+            "name": "Robin Wall Kimmerer",
+            "role": "author",
+            "wikidata": "Q7352852"
+          }
+        ]
       }
     },
     "suggestedEdition": { "isbn": "9781668072240" },
@@ -2520,7 +2894,14 @@
           }
         ],
         "identifiers": { "hathitrust": "009125368", "oclc": "4850178" },
-        "contributors": [{ "id": "a-k-m-wiegand", "name": "K. M. Wiegand", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-k-m-wiegand",
+            "name": "K. M. Wiegand",
+            "role": "author",
+            "wikidata": "Q5958294"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0018", "place": 2 },
@@ -2549,7 +2930,9 @@
             "url": "https://www.botanical.com/botanical/mgmh/c/currd132.html"
           }
         ],
-        "contributors": [{ "id": "a-maud-grieve", "name": "Maud Grieve", "role": "author" }]
+        "contributors": [
+          { "id": "a-maud-grieve", "name": "Maud Grieve", "role": "author", "wikidata": "Q6792224" }
+        ]
       }
     },
     "lectio": { "post": "lt-0019", "place": 1 },
@@ -2612,8 +2995,18 @@
         ],
         "contributors": [
           { "id": "a-john-norton", "name": "John Norton", "role": "author" },
-          { "id": "a-carl-f-klinck", "name": "Carl F. Klinck", "role": "editor" },
-          { "id": "a-james-j-talman", "name": "James J. Talman", "role": "editor" }
+          {
+            "id": "a-carl-f-klinck",
+            "name": "Carl F. Klinck",
+            "role": "editor",
+            "wikidata": "Q5040429"
+          },
+          {
+            "id": "a-james-j-talman",
+            "name": "James J. Talman",
+            "role": "editor",
+            "wikidata": "Q140645688"
+          }
         ]
       }
     },
@@ -2648,7 +3041,8 @@
           {
             "id": "a-e-pauline-johnson",
             "name": "E. Pauline Johnson (Tekahionwake)",
-            "role": "author"
+            "role": "author",
+            "wikidata": "Q2716914"
           }
         ]
       }
@@ -2732,7 +3126,14 @@
       "locator": { "page": "10–11" },
       "edition": {
         "id": "e-0085",
-        "contributors": [{ "id": "a-paul-muldoon", "name": "Paul Muldoon", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-paul-muldoon",
+            "name": "Paul Muldoon",
+            "role": "author",
+            "wikidata": "Q2061388"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0022", "place": 1 },
@@ -2765,8 +3166,18 @@
         ],
         "identifiers": { "internetArchive": "illustratedflor03brit", "openlibrary": "OL24445409M" },
         "contributors": [
-          { "id": "a-nathaniel-lord-britton", "name": "Nathaniel Lord Britton", "role": "author" },
-          { "id": "a-addison-brown", "name": "Addison Brown", "role": "author" }
+          {
+            "id": "a-nathaniel-lord-britton",
+            "name": "Nathaniel Lord Britton",
+            "role": "author",
+            "wikidata": "Q553714"
+          },
+          {
+            "id": "a-addison-brown",
+            "name": "Addison Brown",
+            "role": "author",
+            "wikidata": "Q1149854"
+          }
         ]
       }
     },
@@ -2797,8 +3208,13 @@
           }
         ],
         "contributors": [
-          { "id": "a-horace", "name": "Horace", "role": "author" },
-          { "id": "a-a-s-kline", "name": "A. S. Kline", "role": "translator" }
+          { "id": "a-horace", "name": "Horace", "role": "author", "wikidata": "Q6197" },
+          {
+            "id": "a-a-s-kline",
+            "name": "A. S. Kline",
+            "role": "translator",
+            "wikidata": "Q112502365"
+          }
         ]
       }
     },
@@ -2836,8 +3252,13 @@
           "lccn": "11010817"
         },
         "contributors": [
-          { "id": "a-heraclitus", "name": "Heraclitus", "role": "author" },
-          { "id": "a-g-t-w-patrick", "name": "G. T. W. Patrick", "role": "translator" }
+          { "id": "a-heraclitus", "name": "Heraclitus", "role": "author", "wikidata": "Q41155" },
+          {
+            "id": "a-g-t-w-patrick",
+            "name": "G. T. W. Patrick",
+            "role": "translator",
+            "wikidata": "Q18910706"
+          }
         ]
       }
     },
@@ -2869,7 +3290,14 @@
           }
         ],
         "identifiers": { "hathitrust": "011549434", "oclc": "77784890", "lccn": "35025565" },
-        "contributors": [{ "id": "a-edouard-biot", "name": "Édouard Biot", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-edouard-biot",
+            "name": "Édouard Biot",
+            "role": "author",
+            "wikidata": "Q274233"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0024", "place": 1 },
@@ -2900,8 +3328,18 @@
           }
         ],
         "contributors": [
-          { "id": "a-henry-david-thoreau", "name": "Henry David Thoreau", "role": "author" },
-          { "id": "a-bradford-torrey", "name": "Bradford Torrey", "role": "editor" }
+          {
+            "id": "a-henry-david-thoreau",
+            "name": "Henry David Thoreau",
+            "role": "author",
+            "wikidata": "Q131149"
+          },
+          {
+            "id": "a-bradford-torrey",
+            "name": "Bradford Torrey",
+            "role": "editor",
+            "wikidata": "Q2923472"
+          }
         ]
       }
     },
@@ -2931,7 +3369,14 @@
             "url": "https://rpo.library.utoronto.ca/content/attack-squash-people"
           }
         ],
-        "contributors": [{ "id": "a-marge-piercy", "name": "Marge Piercy", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-marge-piercy",
+            "name": "Marge Piercy",
+            "role": "author",
+            "wikidata": "Q273385"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0025", "place": 1 },
@@ -2961,7 +3406,14 @@
             "url": "https://poems.poetrysociety.org.uk/poems/notes-on-various-squashes/"
           }
         ],
-        "contributors": [{ "id": "a-padraig-regan", "name": "Padraig Regan", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-padraig-regan",
+            "name": "Padraig Regan",
+            "role": "author",
+            "wikidata": "Q117744904"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0025", "place": 2 },
@@ -2991,7 +3443,9 @@
             "url": "https://www.jstor.org/stable/20683657?searchText=Robert%20hass%20poem%20with%20a%20cucumber%20in%20it&amp;searchUri=%2Faction%2FdoBasicSearch%3FQuery%3DRobert%2Bhass%2Bpoem%2Bwith%2Ba%2Bcucumber%2Bin%2Bit%26so%3Drel&amp;ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&amp;refreqid=fastly-default%3Af2747166e2520d3b8e67b7c4fbdd96a7"
           }
         ],
-        "contributors": [{ "id": "a-robert-hass", "name": "Robert Hass", "role": "author" }]
+        "contributors": [
+          { "id": "a-robert-hass", "name": "Robert Hass", "role": "author", "wikidata": "Q370513" }
+        ]
       }
     },
     "lectio": { "post": "lt-0026", "place": 1 },
@@ -3023,8 +3477,18 @@
           }
         ],
         "contributors": [
-          { "id": "a-marcus-aurelius", "name": "Marcus Aurelius", "role": "author" },
-          { "id": "a-george-long", "name": "George Long", "role": "translator" }
+          {
+            "id": "a-marcus-aurelius",
+            "name": "Marcus Aurelius",
+            "role": "author",
+            "wikidata": "Q1430"
+          },
+          {
+            "id": "a-george-long",
+            "name": "George Long",
+            "role": "translator",
+            "wikidata": "Q1507776"
+          }
         ]
       }
     },
@@ -3056,8 +3520,18 @@
           }
         ],
         "contributors": [
-          { "id": "a-william-cowper", "name": "William Cowper", "role": "author" },
-          { "id": "a-william-benham", "name": "William Benham", "role": "editor" }
+          {
+            "id": "a-william-cowper",
+            "name": "William Cowper",
+            "role": "author",
+            "wikidata": "Q315537"
+          },
+          {
+            "id": "a-william-benham",
+            "name": "William Benham",
+            "role": "editor",
+            "wikidata": "Q15955418"
+          }
         ]
       }
     },
@@ -3083,8 +3557,13 @@
       "edition": {
         "id": "e-0095",
         "contributors": [
-          { "id": "a-sylvia-plath", "name": "Sylvia Plath", "role": "author" },
-          { "id": "a-ted-hughes", "name": "Ted Hughes", "role": "editor" }
+          {
+            "id": "a-sylvia-plath",
+            "name": "Sylvia Plath",
+            "role": "author",
+            "wikidata": "Q133054"
+          },
+          { "id": "a-ted-hughes", "name": "Ted Hughes", "role": "editor", "wikidata": "Q272194" }
         ]
       }
     },
@@ -3117,9 +3596,24 @@
           }
         ],
         "contributors": [
-          { "id": "a-pliny-the-elder", "name": "Pliny the Elder", "role": "author" },
-          { "id": "a-john-bostock", "name": "John Bostock", "role": "translator" },
-          { "id": "a-h-t-riley", "name": "H. T. Riley", "role": "translator" }
+          {
+            "id": "a-pliny-the-elder",
+            "name": "Pliny the Elder",
+            "role": "author",
+            "wikidata": "Q82778"
+          },
+          {
+            "id": "a-john-bostock",
+            "name": "John Bostock",
+            "role": "translator",
+            "wikidata": "Q6222522"
+          },
+          {
+            "id": "a-h-t-riley",
+            "name": "H. T. Riley",
+            "role": "translator",
+            "wikidata": "Q5729156"
+          }
         ]
       }
     },
@@ -3156,7 +3650,14 @@
           "openlibrary": "OL6947305M",
           "lccn": "04030235"
         },
-        "contributors": [{ "id": "a-susan-fenimore-cooper", "name": "Susan Fenimore Cooper", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-susan-fenimore-cooper",
+            "name": "Susan Fenimore Cooper",
+            "role": "author",
+            "wikidata": "Q4865481"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0028", "place": 1 },
@@ -3187,7 +3688,14 @@
           }
         ],
         "identifiers": { "hathitrust": "001881232", "oclc": "12747590" },
-        "contributors": [{ "id": "a-francis-george-heath", "name": "Francis George Heath", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-francis-george-heath",
+            "name": "Francis George Heath",
+            "role": "author",
+            "wikidata": "Q105764193"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0028", "place": 2 },
@@ -3223,7 +3731,14 @@
           }
         ],
         "identifiers": { "hathitrust": "100323859", "oclc": "263836", "lccn": "22021418" },
-        "contributors": [{ "id": "a-james-george-frazer", "name": "James George Frazer", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-james-george-frazer",
+            "name": "James George Frazer",
+            "role": "author",
+            "wikidata": "Q151936"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0028", "place": 3 },
@@ -3254,7 +3769,14 @@
           }
         ],
         "identifiers": { "hathitrust": "001055000", "oclc": "906880", "lccn": "20017899" },
-        "contributors": [{ "id": "a-carl-sandburg", "name": "Carl Sandburg", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-carl-sandburg",
+            "name": "Carl Sandburg",
+            "role": "author",
+            "wikidata": "Q193608"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0029", "place": 1 },
@@ -3286,7 +3808,14 @@
           }
         ],
         "identifiers": { "internetArchive": "in.ernet.dli.2015.458629" },
-        "contributors": [{ "id": "a-vladimir-nabokov", "name": "Vladimir Nabokov", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-vladimir-nabokov",
+            "name": "Vladimir Nabokov",
+            "role": "author",
+            "wikidata": "Q36591"
+          }
+        ]
       }
     },
     "suggestedEdition": { "isbn": "9780679723424" },
@@ -3320,7 +3849,12 @@
         ],
         "identifiers": { "hathitrust": "103315786", "oclc": "26601282", "isbn": "9780883544327" },
         "contributors": [
-          { "id": "a-charles-sprague-sargent", "name": "Charles Sprague Sargent", "role": "author" }
+          {
+            "id": "a-charles-sprague-sargent",
+            "name": "Charles Sprague Sargent",
+            "role": "author",
+            "wikidata": "Q1066128"
+          }
         ]
       }
     },
@@ -3350,7 +3884,7 @@
         "id": "e-0103",
         "type": "book",
         "title": "The Shield of Achilles",
-        "contributors": [{ "id": "a-auden", "name": "W.H. Auden", "role": "author" }],
+        "contributors": [{ "id": "a-auden", "name": "W.H. Auden", "role": "author", "wikidata": "Q178698" }],
         "issued": "1955",
         "original-date": "1955",
         "links": [
@@ -3432,7 +3966,8 @@
           {
             "id": "a-jean-anthelme-brillat-savarin",
             "name": "Jean Anthelme Brillat-Savarin",
-            "role": "author"
+            "role": "author",
+            "wikidata": "Q313027"
           },
           { "id": "a-r-e-anderson", "name": "R. E. Anderson", "role": "translator" }
         ]
@@ -3455,8 +3990,18 @@
       "edition": {
         "id": "e-0106",
         "contributors": [
-          { "id": "a-daniel-h-janzen", "name": "Daniel H. Janzen", "role": "author" },
-          { "id": "a-paul-s-martin", "name": "Paul S. Martin", "role": "author" }
+          {
+            "id": "a-daniel-h-janzen",
+            "name": "Daniel H. Janzen",
+            "role": "author",
+            "wikidata": "Q1161184"
+          },
+          {
+            "id": "a-paul-s-martin",
+            "name": "Paul S. Martin",
+            "role": "author",
+            "wikidata": "Q2062122"
+          }
         ]
       }
     },
@@ -3515,7 +4060,14 @@
       "display": "Katherine Lee Bates. From “<a href=\"https://hdl.handle.net/2027/loc.ark:/13960/t1wd4qb7b?urlappend=%3Bseq=142\" rel=\"noopener\" target=\"_blank\">Playmates</a>.” <em>The Retinue and Other Poems</em>. New York: E.P. Dutton &amp; Co., 1918. 122-123.",
       "edition": {
         "id": "e-0109",
-        "contributors": [{ "id": "a-katharine-lee-bates", "name": "Katharine Lee Bates", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-katharine-lee-bates",
+            "name": "Katharine Lee Bates",
+            "role": "author",
+            "wikidata": "Q2363035"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0032", "place": 2 },
@@ -3555,8 +4107,18 @@
         "id": "e-0111",
         "identifiers": { "internetArchive": "poemsthirdseries00dickiala", "oclc": "10424229" },
         "contributors": [
-          { "id": "a-emily-dickinson", "name": "Emily Dickinson", "role": "author" },
-          { "id": "a-mabel-loomis-todd", "name": "Mabel Loomis Todd", "role": "editor" }
+          {
+            "id": "a-emily-dickinson",
+            "name": "Emily Dickinson",
+            "role": "author",
+            "wikidata": "Q4441"
+          },
+          {
+            "id": "a-mabel-loomis-todd",
+            "name": "Mabel Loomis Todd",
+            "role": "editor",
+            "wikidata": "Q2103861"
+          }
         ]
       }
     },
@@ -3576,7 +4138,14 @@
       "display": "Merlin Sheldrake. <em><a href=\"https://bookshop.org/a/86532/9780525510321\" rel=\"noopener\" target=\"_blank\">Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future</a></em>. New York: Random House, 2020. 150.",
       "edition": {
         "id": "e-0112",
-        "contributors": [{ "id": "a-merlin-sheldrake", "name": "Merlin Sheldrake", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-merlin-sheldrake",
+            "name": "Merlin Sheldrake",
+            "role": "author",
+            "wikidata": "Q89428526"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0031", "place": 2 },
@@ -3595,7 +4164,14 @@
       "display": "William Cullen Bryant. “<a href=\"https://quod.lib.umich.edu/a/amverse/BAD0508.0001.001/1:107?rgn=div1&amp;view=fulltext\" rel=\"noopener\" target=\"_blank\">The Death of the Flowers</a>.” <em>New York Review and Athenaeum Magazine</em> (November 1825). Rpt. <em><a href=\"https://archive.org/details/autumnpastoralde00brya/page/n23/mode/2up\" rel=\"noopener\" target=\"_blank\">An Autumn Pastoral: The Death of the Flowers</a>. </em>Illus. C. E. Phillips. Troy, New York: Nims and Knight, 1888. n.p.",
       "edition": {
         "id": "e-0113",
-        "contributors": [{ "id": "a-william-cullen-bryant", "name": "William Cullen Bryant", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-william-cullen-bryant",
+            "name": "William Cullen Bryant",
+            "role": "author",
+            "wikidata": "Q454840"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0033", "place": 1 },
@@ -3615,7 +4191,14 @@
       "display": "Hannah Arendt. <em><a href=\"https://bookshop.org/a/86532/9780226586601\" rel=\"noopener\" target=\"_blank\">The Human Condition</a>. </em>1958. Second Edition. Chicago: University of Chicago Press, 1998. 247.",
       "edition": {
         "id": "e-0114",
-        "contributors": [{ "id": "a-hannah-arendt", "name": "Hannah Arendt", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-hannah-arendt",
+            "name": "Hannah Arendt",
+            "role": "author",
+            "wikidata": "Q60025"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0033", "place": 2 },
@@ -3655,7 +4238,14 @@
       "edition": {
         "id": "e-0116",
         "identifiers": { "hathitrust": "000433137", "oclc": "52928563", "lccn": "02011001" },
-        "contributors": [{ "id": "a-thomas-hardy", "name": "Thomas Hardy", "role": "author" }]
+        "contributors": [
+          {
+            "id": "a-thomas-hardy",
+            "name": "Thomas Hardy",
+            "role": "author",
+            "wikidata": "Q132805"
+          }
+        ]
       }
     },
     "lectio": { "post": "lt-0033", "place": 4 },

@@ -58,7 +58,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   Chrome; see below).
 - Species registry IDs: `python3 scripts/link_species.py [--write]`.
   Edition identifiers (DOI, HathiTrust, OCLC and the like, read off the
-  cited scans): `python3 scripts/link_editions.py [--write]`.
+  cited scans): `python3 scripts/link_editions.py [--write]`. People to
+  Wikidata (confident matches only; the query service may allow only one
+  request a minute): `python3 scripts/link_people.py [--write]`.
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends

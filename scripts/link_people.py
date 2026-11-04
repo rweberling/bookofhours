@@ -161,8 +161,12 @@ def main(args):
             review.append((person['name'], 'the query failed; run again', []))
             continue
         year = min(person['years']) if person['years'] else None
+        # Born before the work, and not dead more than a century before it
+        # (a namesake from an earlier age); an ancient author in a modern
+        # edition falls outside that and is left for a person.
         fit = [c for c in found if names_agree(person['name'], c['label'])
-               and (year is None or c['born'] is None or c['born'] < year)]
+               and (year is None or c['born'] is None or c['born'] < year)
+               and (year is None or c['died'] is None or c['died'] >= year - 100)]
         if len(fit) == 1 and (fit[0]['born'] is not None or year is None):
             match = fit[0]
             for copy in person['copies']:
