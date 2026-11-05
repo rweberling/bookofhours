@@ -22,7 +22,9 @@
                print is left out
    and what each card is drawn from:
      hours, weather: quoteEl, attrEl, captionEl, imageMaster
-                     (weather also readoutEl, the conditions line)
+                     (weather also readoutEl, the conditions line, and
+                     position, the card's data-position: the image's
+                     cardPosition, so the drawn card keeps clear of it too)
      season:         imageMaster (the first figure), headnoteEl (its
                      opening paragraph), species, latin, subtitle, dek
    The cards follow the page's own colours, so the hour and the light.
@@ -314,7 +316,7 @@ function drawKeepCard(canvas, data, shape, scale = 1) {
 // The Weather: the picture fills the card, and the reading sits on the
 // card held in front of it, as on the page: the masthead, the conditions,
 // the reading, its citation, and under a rule the picture's credit.
-// data: { lines, attr, caption, readout, img,
+// data: { lines, attr, caption, readout, position, img,
 //         palette: { panel, text, faint, rule } }
 function drawWeatherCard(canvas, data, shape, scale = 1) {
   const { w: W, h: H } = KEEP_SHAPES[shape];
@@ -327,7 +329,14 @@ function drawWeatherCard(canvas, data, shape, scale = 1) {
   c.fillStyle = P.panel; c.fillRect(0, 0, W, H);
   if (data.img) keepCoverImage(c, data.img, 0, 0, W, H);
 
-  const pw = wide ? 520 : 900, px = wide ? W - pw - 44 : (W - pw) / 2;
+  // Where the card sits follows the image's cardPosition, as on the page
+  // (top/bottom, left/right/center); the tall card is nearly as wide as
+  // the picture, so there, as on a phone, only top or bottom counts.
+  const pos = data.position || 'bottom-right';
+  const top = pos.startsWith('top');
+  const side = pos.endsWith('left') ? 'left' : pos.endsWith('right') ? 'right' : 'center';
+  const pw = wide ? 520 : 900;
+  const px = !wide || side === 'center' ? (W - pw) / 2 : side === 'left' ? 44 : W - pw - 44;
   const size = wide ? 21 : 30, lh = size * 1.45, small = size * 0.72, tiny = size * 0.62;
   const pad = wide ? 32 : 44, iw = pw - 2 * pad;
   let quote = t.layout(data.lines, '"IM Fell English"', size, true, iw, data.verse);
@@ -338,11 +347,14 @@ function drawWeatherCard(canvas, data, shape, scale = 1) {
   if (cap.length > 2) cap = t.cutTo(cap, 2, false);
   const quoteH = quote.reduce((h, l, i) => h + (l.gap ? lh * 0.5 : i ? lh : 0), 0);
   const ph = pad + 34 + size * 1.1 + 22 + lh + quoteH + 12 + attr.length * small * 1.4 + 24 + cap.length * tiny * 1.4 + pad * 0.7;
-  const py = H - ph - (wide ? 40 : 64);
+  const py = top ? (wide ? 40 : 64) : H - ph - (wide ? 40 : 64);
+  // Tipped as on the page: the right-hand cards the other way, the
+  // centred one level.
+  const tilt = wide && side === 'center' ? 0 : wide && side === 'right' ? 0.5 : -0.5;
 
   // The card, a little askew, as on the page.
   c.save();
-  c.translate(px + pw / 2, py + ph / 2); c.rotate(-0.5 * Math.PI / 180); c.translate(-(px + pw / 2), -(py + ph / 2));
+  c.translate(px + pw / 2, py + ph / 2); c.rotate(tilt * Math.PI / 180); c.translate(-(px + pw / 2), -(py + ph / 2));
   c.shadowColor = 'rgba(0,0,0,.35)'; c.shadowBlur = 24; c.shadowOffsetY = 6;
   c.fillStyle = P.panel; c.fillRect(px, py, pw, ph);
   c.shadowColor = 'transparent';
@@ -372,7 +384,10 @@ function drawWeatherCard(canvas, data, shape, scale = 1) {
   c.save();
   c.font = t.fontOf('"Cormorant Garamond"', wide ? 13 : 17, false);
   c.fillStyle = 'rgba(255,255,255,.88)'; c.shadowColor = 'rgba(0,0,0,.7)'; c.shadowBlur = 6;
-  cx = wide ? 40 : 48;
+  // In the bottom corner the card leaves clear: the left, unless the card
+  // sits there (wide, bottom-left), then the right.
+  const spacedW = [...'EARTHLYHOURS.COM'].reduce((s, ch) => s + c.measureText(ch).width + 4, -4);
+  cx = wide && !top && side === 'left' ? W - 40 - spacedW : wide ? 40 : 48;
   for (const ch of 'EARTHLYHOURS.COM') { c.fillText(ch, cx, H - (wide ? 30 : 36)); cx += c.measureText(ch).width + 4; }
   c.restore();
 }
@@ -655,6 +670,7 @@ async function keepCardData() {
     return {
       ...common,
       readout: src.readoutEl ? src.readoutEl.textContent.trim() : '',
+      position: src.position,
       palette: {
         panel, text: cs(src.quoteEl).color, faint,
         rule: cs(document.getElementById('weather-card'), '::after').borderTopColor || 'rgba(190,195,230,.32)',

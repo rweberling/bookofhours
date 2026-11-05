@@ -924,6 +924,7 @@ function keepPageData() {
     quoteEl: document.getElementById('weather-quote-text'),
     attrEl: document.getElementById('weather-quote-attr'),
     captionEl: document.getElementById('weather-caption'),
-    readoutEl: document.getElementById('weather-readout')
+    readoutEl: document.getElementById('weather-readout'),
+    position: document.getElementById('weather-card').dataset.position
   };
 }
