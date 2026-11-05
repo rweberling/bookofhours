@@ -736,26 +736,23 @@ function weatherView(collection) {
 
 // ── The solstice rubric ─────────────────────────────────────────────
 // One red line under the page's date (Hours), readers (Seasons) or
-// readout (Weather) pointing to the winter-solstice postcards, shown until
-// the solstice ends (SOLSTICE_RUBRIC.until, local time). The × hides it
-// for that reader for the season (browser storage only). For another
-// season, change the text, link, until and key.
+// readout (Weather) pointing to the winter-solstice postcards, and again,
+// a size smaller and without its ×, under the dial's key in Wander the
+// Seasons. Shown until the solstice ends (SOLSTICE_RUBRIC.until, local
+// time). The × hides both for that reader for the season (browser storage
+// only). For another season, change the text, link, until and key.
 const SOLSTICE_RUBRIC = {
   key: 'eh-rubric-w26',
   until: new Date(2026, 11, 22),   // the start of 22 December, local time
   href: 'https://otherwise.metalabel.com/wintersolstice26?variantId=1',
   label: 'for the longest night:',
-  text: 'five winter‑solstice postcards.',
-  link: 'Order the set →'
+  text: 'five winter\u2011solstice postcards.',
+  link: 'Order the set\u00a0\u2192'
 };
-function showSolsticeRubric() {
+function solsticeRubricLine(withDismiss) {
   const r = SOLSTICE_RUBRIC;
-  if (new Date() >= r.until) return;
-  try { if (localStorage.getItem(r.key)) return; } catch (e) { /* storage blocked: show it */ }
-  const anchor = document.querySelector('.hours-page .date-line, .season-reading .season-post-dek, .weather-readout');
-  if (!anchor || document.querySelector('.solstice-rubric')) return;
   const p = document.createElement('p');
-  p.className = 'solstice-rubric';
+  p.className = 'solstice-rubric' + (withDismiss ? '' : ' in-pane');
   const label = document.createElement('span');
   label.className = 'rubric-label';
   label.innerHTML = '<span class="rubric-pilcrow" aria-hidden="true">¶</span> ';
@@ -763,16 +760,29 @@ function showSolsticeRubric() {
   const a = document.createElement('a');
   a.href = r.href; a.target = '_blank'; a.rel = 'noopener';
   a.textContent = r.link;
-  const x = document.createElement('button');
-  x.type = 'button'; x.className = 'rubric-dismiss';
-  x.setAttribute('aria-label', 'Hide this notice');
-  x.textContent = '×';
-  x.addEventListener('click', () => {
-    p.remove();
-    try { localStorage.setItem(r.key, '1'); } catch (e) { /* hidden for this visit only */ }
-  });
-  p.append(label, ' ' + r.text + ' ', a, x);
-  anchor.after(p);
+  p.append(label, ' ' + r.text + ' ', a);
+  if (withDismiss) {
+    const x = document.createElement('button');
+    x.type = 'button'; x.className = 'rubric-dismiss';
+    x.setAttribute('aria-label', 'Hide this notice');
+    x.textContent = '×';
+    x.addEventListener('click', () => {
+      document.querySelectorAll('.solstice-rubric').forEach(el => el.remove());
+      try { localStorage.setItem(r.key, '1'); } catch (e) { /* hidden for this visit only */ }
+    });
+    p.append(x);
+  }
+  return p;
+}
+function showSolsticeRubric() {
+  const r = SOLSTICE_RUBRIC;
+  if (new Date() >= r.until) return;
+  try { if (localStorage.getItem(r.key)) return; } catch (e) { /* storage blocked: show it */ }
+  if (document.querySelector('.solstice-rubric')) return;
+  const page = document.querySelector('.hours-page .date-line, .season-reading .season-post-dek, .weather-readout');
+  if (page) page.after(solsticeRubricLine(true));
+  const pane = document.querySelector('#season-pane .dial-legend');
+  if (pane) pane.after(solsticeRubricLine(false));
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showSolsticeRubric);
 else showSolsticeRubric();

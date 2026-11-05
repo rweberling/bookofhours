@@ -1550,6 +1550,8 @@ body:has(.keep-pane.open) { overflow: hidden; }
 .season-reading .solstice-rubric { margin: -16px auto 30px; }
 .weather-card .solstice-rubric { margin: -6px 0 18px; padding: 0 22px 0 0; text-align: left; font-size: 14px; }
 .weather-card .solstice-rubric .rubric-label { font-size: 12px; }
+.solstice-rubric.in-pane { margin: 18px auto 36px; padding: 0; font-size: 14px; }
+.solstice-rubric.in-pane .rubric-label { font-size: 12px; }
 @media print { .solstice-rubric { display: none !important; } }
 
 @media print {
