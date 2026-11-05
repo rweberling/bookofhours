@@ -1523,6 +1523,35 @@ body:has(.keep-pane.open) { overflow: hidden; }
 /* ── Print / Keepsake styles ─────────────────────────────────── */
 .print-only { display: none; }
 
+/* ── The solstice rubric (showSolsticeRubric() in shared.js) ───── */
+.solstice-rubric {
+  position: relative; width: 100%; max-width: 560px; box-sizing: border-box;
+  margin: 14px auto 22px; padding: 0 26px;
+  text-align: center; text-wrap: balance;
+  font-family: var(--font-reading); font-size: 15px; line-height: 1.5;
+  color: var(--ink-faint); transition: color 3s ease;
+}
+.solstice-rubric .rubric-label {
+  font-family: var(--font-label); font-size: 13px; letter-spacing: 0.12em;
+  text-transform: lowercase; color: var(--accent); transition: color 3s ease;
+}
+.solstice-rubric .rubric-pilcrow { letter-spacing: 0; }
+.solstice-rubric a {
+  color: var(--accent); font-style: italic; text-decoration: none;
+  border-bottom: 0.5px solid currentColor; transition: color 3s ease;
+}
+.solstice-rubric a:hover { border-bottom-width: 1px; }
+.solstice-rubric .rubric-dismiss {
+  position: absolute; right: 0; top: 0;
+  background: none; border: 0; padding: 0 4px; cursor: pointer;
+  font: inherit; color: var(--ink-faint); opacity: 0.6;
+}
+.solstice-rubric .rubric-dismiss:hover, .solstice-rubric .rubric-dismiss:focus-visible { opacity: 1; }
+.season-reading .solstice-rubric { margin: -16px auto 30px; }
+.weather-card .solstice-rubric { margin: -6px 0 18px; padding: 0 22px 0 0; text-align: left; font-size: 14px; }
+.weather-card .solstice-rubric .rubric-label { font-size: 12px; }
+@media print { .solstice-rubric { display: none !important; } }
+
 @media print {
   * {
     -webkit-print-color-adjust: exact;

@@ -733,3 +733,46 @@ function weatherView(collection) {
     readings: collection.readings.filter(onWeatherPage).map(quoteView)
   };
 }
+
+// ── The solstice rubric ─────────────────────────────────────────────
+// One red line under the page's date (Hours), readers (Seasons) or
+// readout (Weather) pointing to the winter-solstice postcards, shown until
+// the solstice ends (SOLSTICE_RUBRIC.until, local time). The × hides it
+// for that reader for the season (browser storage only). For another
+// season, change the text, link, until and key.
+const SOLSTICE_RUBRIC = {
+  key: 'eh-rubric-w26',
+  until: new Date(2026, 11, 22),   // the start of 22 December, local time
+  href: 'https://otherwise.metalabel.com/wintersolstice26?variantId=1',
+  label: 'for the longest night:',
+  text: 'five winter‑solstice postcards.',
+  link: 'Order the set →'
+};
+function showSolsticeRubric() {
+  const r = SOLSTICE_RUBRIC;
+  if (new Date() >= r.until) return;
+  try { if (localStorage.getItem(r.key)) return; } catch (e) { /* storage blocked: show it */ }
+  const anchor = document.querySelector('.hours-page .date-line, .season-reading .season-post-dek, .weather-readout');
+  if (!anchor || document.querySelector('.solstice-rubric')) return;
+  const p = document.createElement('p');
+  p.className = 'solstice-rubric';
+  const label = document.createElement('span');
+  label.className = 'rubric-label';
+  label.innerHTML = '<span class="rubric-pilcrow" aria-hidden="true">¶</span> ';
+  label.append(r.label);
+  const a = document.createElement('a');
+  a.href = r.href; a.target = '_blank'; a.rel = 'noopener';
+  a.textContent = r.link;
+  const x = document.createElement('button');
+  x.type = 'button'; x.className = 'rubric-dismiss';
+  x.setAttribute('aria-label', 'Hide this notice');
+  x.textContent = '×';
+  x.addEventListener('click', () => {
+    p.remove();
+    try { localStorage.setItem(r.key, '1'); } catch (e) { /* hidden for this visit only */ }
+  });
+  p.append(label, ' ' + r.text + ' ', a, x);
+  anchor.after(p);
+}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showSolsticeRubric);
+else showSolsticeRubric();
