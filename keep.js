@@ -589,7 +589,7 @@ function keepCantPrint() {
 // --- The page's data, as the card wants it --------------------------------
 async function keepCardData() {
   const src = keepPageData();
-  const cs = el => getComputedStyle(el);
+  const cs = (el, pseudo) => getComputedStyle(el, pseudo);
   const body = document.body;
   await Promise.all([
     '44px "GL-Morris"', 'italic 20px "IM Fell English"', '20px "IM Fell English"',
@@ -657,7 +657,7 @@ async function keepCardData() {
       readout: src.readoutEl ? src.readoutEl.textContent.trim() : '',
       palette: {
         panel, text: cs(src.quoteEl).color, faint,
-        rule: 'rgba(190,195,230,.32)',
+        rule: cs(document.getElementById('weather-card'), '::after').borderTopColor || 'rgba(190,195,230,.32)',
         // for the printout
         bg: panel, mount: panel, title: cs(src.quoteEl).color, accent, gold
       }
