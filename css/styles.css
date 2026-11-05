@@ -2201,14 +2201,16 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 
 @media (max-width: 600px) {
   /* No room to float the fragment over the picture on a phone — it
-     settles at the foot of the window, full width, whatever the view's
-     cardPosition says. */
+     runs full width, at the foot of the window, or at the head of it
+     when the view's cardPosition puts it at the top (a picture whose
+     subject is low in the frame, like Hiroshige's bridge). */
   .weather-spread { min-height: calc(100svh - 60px); padding: 40px 18px 24px; }
   .weather-card,
   .weather-card[data-position] {
     align-self: end; justify-self: stretch;
     max-width: none; transform: none;
   }
+  .weather-card[data-position^="top"] { align-self: start; }
   /* Phone sizes — the desktop ones above are tuned for reading at
      arm's length over a large picture; these were already comfortable. */
   .weather-card { --card-pad-x: 30px; --card-pad-b: 22px; padding-top: 28px; }
