@@ -254,7 +254,7 @@ async function subscribe(env, request, { email, turnstile, source, website }, fr
   const result = await env.DB.prepare('INSERT INTO subscribers (email, added_at, source) VALUES (?, ?, ?) ON CONFLICT(email) DO NOTHING')
     .bind(email, Date.now(), page).run();
   events.push(result.meta.changes ? 'subscribe' : 'subscribe-again');
-  if (result.meta.changes) ctx.waitUntil(notifySignup(env, email, page));
+  if (result.meta.changes) ctx.waitUntil(notifySignup(env, email, page, new URL(request.url).origin));
   return { ok: true };
 }
 
@@ -262,12 +262,16 @@ async function subscribe(env, request, { email, turnstile, source, website }, fr
 // (the NOTIFY binding in wrangler.jsonc). The address it goes to is the
 // NOTIFY_TO secret, kept out of this public repository; it must be a
 // verified destination in Email Routing. Without it, nothing is sent.
-async function notifySignup(env, email, page) {
+// The note carries the export links (with EXPORT_KEY), so it stays
+// private: it goes only to that one address.
+async function notifySignup(env, email, page, origin) {
   if (!env.NOTIFY || !env.NOTIFY_TO) return;
   try {
     const { total } = await env.DB.prepare('SELECT COUNT(*) AS total FROM subscribers').first();
     const from = `signups@${env.SITE_DOMAIN}`;
     const when = new Date().toUTCString();
+    const today = new Date().toISOString().slice(0, 10);
+    const list = `${origin}/subscribers.csv?key=${encodeURIComponent(env.EXPORT_KEY || '')}`;
     const body = [
       `${email} signed up for Letters from Otherwise.`,
       '',
@@ -275,7 +279,11 @@ async function notifySignup(env, email, page) {
       `When: ${when}`,
       `On the list: ${total}`,
       '',
-      'The list for DFOS: the subscribers.csv link in worker/README.md.'
+      'The list for DFOS (Studio → Reach → Audience → import):',
+      `Everyone: ${list}`,
+      `Added today: ${list}&since=${today}`,
+      '',
+      'Keep these links private: anyone with them can download the list.'
     ].join('\r\n');
     const raw = [
       `From: Earthly Hours sign-ups <${from}>`,
