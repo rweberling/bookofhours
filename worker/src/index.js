@@ -38,6 +38,7 @@ import { createClient } from '@metalabel/dfos-client';
 import { createSiwdLoginRequest, restoreSiwdClientIdentity, verifySiwd } from '@metalabel/dfos-client/siwd';
 import { createApiAuthFetch } from '@metalabel/dfos-client/api-auth';
 import { decodeDFOSCredentialUnsafe } from '@metalabel/dfos-protocol/credentials';
+import { EmailMessage } from 'cloudflare:email';
 
 const NONCE_TTL_MS = 10 * 60 * 1000;            // a sign-in must finish within 10 minutes
 // How often to re-ask DFOS about the group: rarely for key holders, but
@@ -53,13 +54,13 @@ export default {
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
     // What each request comes to, counted once the answer has gone.
     const events = [];
-    const response = await answer(request, env, cors, events);
+    const response = await answer(request, env, cors, events, ctx);
     ctx.waitUntil(tally(env, events));
     return response;
   }
 };
 
-async function answer(request, env, cors, events) {
+async function answer(request, env, cors, events, ctx) {
   const fromSite = 'Access-Control-Allow-Origin' in cors;
   const url = new URL(request.url);
   if (request.method === 'GET' && url.pathname === '/subscribers.csv') return exportSubscribers(env, url);
@@ -68,7 +69,7 @@ async function answer(request, env, cors, events) {
   const { pathname } = url;
   try {
     const body = await request.json().catch(() => ({}));
-    if (pathname === '/subscribe') return json(await subscribe(env, request, body, fromSite, events), 200, cors);
+    if (pathname === '/subscribe') return json(await subscribe(env, request, body, fromSite, events, ctx), 200, cors);
     if (pathname === '/login/start') { events.push(fromSite ? 'start' : 'noise'); return json(await loginStart(env), 200, cors); }
     if (pathname === '/login/finish') return json(await loginFinish(env, body, events), 200, cors);
     if (pathname === '/session') return json(await session(env, body, events), 200, cors);
@@ -241,7 +242,7 @@ async function subscribersTable(env) {
   subscribersReady = true;
 }
 
-async function subscribe(env, request, { email, turnstile, source, website }, fromSite, events) {
+async function subscribe(env, request, { email, turnstile, source, website }, fromSite, events, ctx) {
   if (!fromSite) { events.push('noise'); throw new HttpError(403, 'not allowed'); }
   // A field people never see; only a bot fills it in. Thanked, not kept.
   if (website) { events.push('subscribe-refused'); return { ok: true }; }
@@ -253,7 +254,45 @@ async function subscribe(env, request, { email, turnstile, source, website }, fr
   const result = await env.DB.prepare('INSERT INTO subscribers (email, added_at, source) VALUES (?, ?, ?) ON CONFLICT(email) DO NOTHING')
     .bind(email, Date.now(), page).run();
   events.push(result.meta.changes ? 'subscribe' : 'subscribe-again');
+  if (result.meta.changes) ctx.waitUntil(notifySignup(env, email, page));
   return { ok: true };
+}
+
+// A note to Ryan for each new address, through Cloudflare Email Routing
+// (the NOTIFY binding in wrangler.jsonc). The address it goes to is the
+// NOTIFY_TO secret, kept out of this public repository; it must be a
+// verified destination in Email Routing. Without it, nothing is sent.
+async function notifySignup(env, email, page) {
+  if (!env.NOTIFY || !env.NOTIFY_TO) return;
+  try {
+    const { total } = await env.DB.prepare('SELECT COUNT(*) AS total FROM subscribers').first();
+    const from = `signups@${env.SITE_DOMAIN}`;
+    const when = new Date().toUTCString();
+    const body = [
+      `${email} signed up for Letters from Otherwise.`,
+      '',
+      `Page: https://${env.SITE_DOMAIN}${page || '/'}`,
+      `When: ${when}`,
+      `On the list: ${total}`,
+      '',
+      'The list for DFOS: the subscribers.csv link in worker/README.md.'
+    ].join('\r\n');
+    const raw = [
+      `From: Earthly Hours sign-ups <${from}>`,
+      `To: ${env.NOTIFY_TO}`,
+      `Subject: New subscriber: ${email}`,
+      `Date: ${when}`,
+      `Message-ID: <${crypto.randomUUID()}@${env.SITE_DOMAIN}>`,
+      'MIME-Version: 1.0',
+      'Content-Type: text/plain; charset=utf-8',
+      'Content-Transfer-Encoding: 8bit',
+      '',
+      body
+    ].join('\r\n');
+    await env.NOTIFY.send(new EmailMessage(from, env.NOTIFY_TO, raw));
+  } catch (error) {
+    console.error('sign-up note failed', error);
+  }
 }
 
 async function turnstileOk(env, request, token) {

@@ -804,7 +804,7 @@ const SUBSCRIBE = {
     ? '1x00000000000000000000AA'
     : '0x4AAAAAAF2e6SL85amyATjD',
   label: 'Letters from Otherwise',
-  text: 'New readings, postcards and editions from Otherwise and The Earthly Book of Hours, by email.',
+  text: 'New weekly readings and occasional print offerings, sent via email.',
   note: 'Your address is kept privately and used only for these letters. Each has a link to unsubscribe.',
   thanks: 'Thank you. The next letter will find you.'
 };

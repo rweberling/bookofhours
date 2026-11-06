@@ -9,6 +9,11 @@
   "compatibility_date": "2026-10-01",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
+  // A note to Ryan for each new sign-up (notifySignup() in src/index.js),
+  // through Email Routing. The address is the NOTIFY_TO secret.
+  "send_email": [
+    { "name": "NOTIFY" }
+  ],
   "d1_databases": [
     { "binding": "DB", "database_name": "earthlyhours-auth", "database_id": "1e31b50d-88de-459d-911e-f084c471f96d" }
   ],

@@ -80,6 +80,9 @@ Two more secrets, set in the dashboard like the others:
 - `TURNSTILE_SECRET`, the secret half of the Turnstile widget
   "earthlyhours.com sign-up" (its public site key is in `../shared.js`)
 - `EXPORT_KEY`, the key in the export link; change it to retire an old link
+- `NOTIFY_TO`, where a note about each new sign-up is sent (from
+  signups@earthlyhours.com, through Email Routing). It must be a verified
+  destination address in Email Routing. Delete it to stop the notes.
 
 The tally counts `subscribe`, `subscribe-again` and `subscribe-refused`.
 
