@@ -896,11 +896,55 @@ function subscribeForm() {
   return form;
 }
 function showSubscribe() {
-  if (document.querySelector('.subscribe')) return;
-  const postcard = document.querySelector('.postcard-follow');
-  if (postcard) { postcard.after(subscribeForm()); return; }
-  const footer = document.querySelector('main.hours-page > .page-footer, main.season-reading > .page-footer');
-  if (footer) footer.before(subscribeForm());
+  if (!document.querySelector('main .subscribe')) {
+    // Postcard pages: straight after the links to the original, where
+    // someone who came by the QR code is still reading.
+    const postcard = document.querySelector('.postcard-links');
+    const footer = document.querySelector('main.hours-page > .page-footer, main.season-reading > .page-footer');
+    if (postcard) postcard.after(subscribeForm());
+    else if (footer) footer.before(subscribeForm());
+  }
+  // "Letters from Otherwise" in the menu (partials/nav.html), and any
+  // link to #letters, open the form in a pane of its own: on every page,
+  // the Weather page included. earthlyhours.com/#letters opens it too.
+  document.addEventListener('click', e => {
+    const link = e.target.closest && e.target.closest('a[href="#letters"]');
+    if (!link) return;
+    e.preventDefault();
+    e.stopPropagation();
+    openLettersPane();
+  }, true);   // before the menu's own handlers, which may stop the click
+  if (location.hash === '#letters') {
+    history.replaceState(null, '', location.pathname + location.search);
+    openLettersPane();
+  }
+}
+function openLettersPane() {
+  let pane = document.getElementById('letters-pane');
+  if (!pane) {
+    pane = document.createElement('div');
+    pane.className = 'wander-pane letters-pane';
+    pane.id = 'letters-pane';
+    pane.setAttribute('role', 'dialog');
+    pane.setAttribute('aria-modal', 'true');
+    pane.setAttribute('aria-label', SUBSCRIBE.label);
+    pane.innerHTML = '<button class="wander-close" type="button" aria-label="Close">✦ &nbsp;Close</button>'
+      + '<p class="wander-heading">Letters</p>';
+    const form = subscribeForm();
+    form.classList.add('in-pane');
+    pane.append(form);
+    document.body.append(pane);
+    const close = () => {
+      if (typeof closeOverlayPane === 'function') closeOverlayPane(pane);
+      else { pane.classList.remove('open'); pane.style.display = 'none'; }
+    };
+    pane.querySelector('.wander-close').addEventListener('click', close);
+    pane.addEventListener('click', e => { if (e.target === pane) close(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && pane.classList.contains('open')) close(); });
+  }
+  if (typeof openOverlayPane === 'function') openOverlayPane(pane);
+  else { pane.style.display = 'flex'; requestAnimationFrame(() => pane.classList.add('open')); }
+  setTimeout(() => { const f = pane.querySelector('.subscribe-email'); if (f) f.focus(); }, 350);
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showSubscribe);
 else showSubscribe();

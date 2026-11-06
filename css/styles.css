@@ -1531,13 +1531,23 @@ body:has(.keep-pane.open) { overflow: hidden; }
 
 /* ── Letters from Otherwise (showSubscribe() in shared.js) ─────── */
 .subscribe {
-  width: 100%; max-width: 460px; box-sizing: border-box;
-  margin: 44px auto 0; padding: 0 8px; text-align: center;
+  position: relative; width: 100%; max-width: 440px; box-sizing: border-box;
+  margin: 56px auto 8px; padding: 28px 28px 22px; text-align: center;
   font-family: var(--font-text); color: var(--ink-faint);
+  background: var(--bg-dark);
+  border: 1px solid var(--rule); outline: 0.5px solid var(--rule); outline-offset: -6px;
+  transition: background 3s ease;
+}
+.subscribe::before { content: '✉'; display: block; font-size: 18px; line-height: 1; color: var(--gold); margin-bottom: 10px; }
+/* In the Letters pane: the pane is the frame. */
+.subscribe.in-pane { margin: 24px auto 0; background: none; border: 0; outline: 0; padding: 0 4px; }
+@media (max-width: 480px) {
+  .subscribe { padding: 24px 18px 18px; }
+  .subscribe-label { letter-spacing: 0.08em !important; }
 }
 .subscribe p { margin: 0; }
 .subscribe-label {
-  font-family: var(--font-label); font-size: 13px; letter-spacing: 0.12em;
+  font-family: var(--font-label); font-size: 14px; letter-spacing: 0.14em;
   text-transform: lowercase; color: var(--accent); transition: color 3s ease;
 }
 .subscribe-text {
@@ -1546,15 +1556,16 @@ body:has(.keep-pane.open) { overflow: hidden; }
 }
 .subscribe-row {
   display: flex; align-items: baseline; gap: 12px;
-  margin-top: 16px; border-bottom: 0.5px solid var(--rule);
+  margin-top: 18px; padding: 2px 12px;
+  background: var(--bg); border: 0.5px solid var(--rule);
 }
 .subscribe-email {
-  flex: 1; min-width: 0; padding: 6px 2px;
+  flex: 1; min-width: 0; width: 0; padding: 6px 2px;
   background: transparent; border: 0; outline: none;
   font-family: var(--font-text); font-size: 16px; color: var(--ink);
 }
 .subscribe-email::placeholder { color: var(--ink-faint); opacity: 0.7; font-style: italic; }
-.subscribe-row:focus-within { border-bottom-color: var(--accent); }
+.subscribe-row:focus-within { border-color: var(--accent); }
 .subscribe-button {
   background: none; border: 0; padding: 6px 2px; cursor: pointer;
   font-family: var(--font-label); font-size: 12px; letter-spacing: 0.2em;
@@ -1570,7 +1581,8 @@ body:has(.keep-pane.open) { overflow: hidden; }
 }
 .subscribe-note.is-error { color: var(--accent); opacity: 1; }
 .subscribe-thanks { font-family: var(--font-reading); font-style: italic; font-size: 16px; color: var(--ink-light); }
-.season-reading .subscribe { margin-top: 52px; }
+.season-reading .subscribe { margin-top: 60px; }
+.postcard-links + .subscribe { margin-top: 44px; }
 @media print { .subscribe { display: none !important; } }
 
 /* ── The solstice rubric (showSolsticeRubric() in shared.js) ───── */
