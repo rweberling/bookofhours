@@ -970,6 +970,12 @@ body main.hours-page .versicle {
   color: var(--accent); border-bottom: 0.5px solid currentColor;
   padding-bottom: 3px; text-align: center;
 }
+.postcard-links .postcard-coming {
+  margin: 10px 0 0; font-family: var(--font-text);
+  font-size: 13.5px; font-style: italic; color: var(--ink-faint);
+  text-align: center; text-wrap: balance;
+}
+.postcard-links .postcard-coming em { font-style: normal; }
 .postcard-links .postcard-link {
   font-size: 13.5px; font-style: italic; opacity: 0.8;
 }

@@ -25,6 +25,9 @@ Columns in data/postcards.csv:
   image_full    the whole, uncropped image, e.g. c/w26/1/1-full.jpg;
                 clicking the card opens it full screen. Optional.
   post          the Lectio Terra entry about the card, once there is one
+  post_due      optional: while there is no post, when it is expected, finishing
+                "Its Lectio Terra entry is coming …", e.g. "before the solstice"
+                (left empty: "soon"). Ignored once there is a post.
   context       optional: a further text about the image, e.g. the artist's own
                 description of it
   context_label how the context link reads on the page, e.g. "Read Trouvelot's
@@ -270,6 +273,9 @@ def links(row):
         label = row.get('context_label') or 'Read more about this image'
         items.append(f'<a class="postcard-link postcard-context" href="{esc(row["context"])}" '
                      f'target="_blank">{rich(label)}</a>')
+    if not row['post'] and row['title']:
+        due = row.get('post_due') or 'soon'
+        items.append(f'<p class="postcard-coming">Its <em>Lectio Terra</em> entry is coming {esc(due)}.</p>')
     if not items:
         return ''
     inner = '\n    '.join(items)
@@ -378,7 +384,7 @@ def load_rows():
     with DATA.open(encoding='utf-8', newline='') as f:
         rows = [{k: (v or '').strip() for k, v in r.items()} for r in csv.DictReader(f)]
     for row in rows:
-        for col in ('context', 'context_label'):
+        for col in ('context', 'context_label', 'post_due'):
             row.setdefault(col, '')
     return rows
 
