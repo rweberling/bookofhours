@@ -22,6 +22,8 @@ Columns in data/postcards.csv:
   citation      the full citation; *asterisks* mark italics
   image         the card's front as printed (cropped to the postcard), from
                 the site root, e.g. c/w26/1/1.jpg (next to its page)
+                A small copy, <image>-thumb.webp (480 px wide), is made next to
+                it for the Correspondence pane's row of cards (shared.js).
   image_full    the whole, uncropped image, e.g. c/w26/1/1-full.jpg;
                 clicking the card opens it full screen. Optional.
   post          the Lectio Terra entry about the card, once there is one
@@ -398,6 +400,24 @@ def stale_pages():
             or (OUT / row['path'] / 'index.html').read_text(encoding='utf-8') != build(row, rows)]
 
 
+def make_thumb(row):
+    """The card's front, 480 px wide, as <image>-thumb.webp: for the
+    Correspondence pane, which shows the set together. Remade when the
+    image is newer."""
+    if not has(row, 'image'):
+        return
+    src = ROOT / row['image']
+    thumb = src.with_name(src.stem + '-thumb.webp')
+    if thumb.exists() and thumb.stat().st_mtime >= src.stat().st_mtime:
+        return
+    from PIL import Image
+    with Image.open(src) as im:
+        im = im.convert('RGB')
+        im.thumbnail((480, 480))
+        im.save(thumb, 'WEBP', quality=80, method=6)
+    print(f'wrote {thumb.relative_to(ROOT)}')
+
+
 def main():
     rows = load_rows()
 
@@ -424,6 +444,9 @@ def main():
     if errors:
         print('\n'.join(errors), file=sys.stderr)
         sys.exit(1)
+
+    for row in rows:
+        make_thumb(row)
 
     written = 0
     for row in rows:

@@ -1585,6 +1585,47 @@ body:has(.keep-pane.open) { overflow: hidden; }
 .postcard-links + .subscribe { margin-top: 44px; }
 @media print { .subscribe { display: none !important; } }
 
+/* The Correspondence pane's offerings (offeringCard() in shared.js). */
+.offering {
+  width: 100%; max-width: 560px; box-sizing: border-box;
+  margin: 52px auto 0; padding-top: 40px; text-align: center;
+  border-top: 0.5px solid var(--rule);
+}
+.offering-label {
+  margin: 0; font-family: var(--font-label); font-size: 13px; letter-spacing: 0.12em;
+  text-transform: lowercase; color: var(--accent); transition: color 3s ease;
+}
+.offering-title {
+  margin: 6px 0 18px; font-family: var(--font-title); font-weight: 400;
+  font-size: 30px; line-height: 1.1; color: var(--ink); transition: color 3s ease;
+}
+.offering-cards {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;
+  text-decoration: none;
+}
+.offering-cards img {
+  display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover;
+  border: 0.5px solid var(--rule); box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+.offering-cards:hover img { transform: translateY(-2px); }
+.offering-text {
+  margin: 18px auto 0; max-width: 440px;
+  font-family: var(--font-reading); font-size: 15px; line-height: 1.5;
+  color: var(--ink-light); text-wrap: balance;
+}
+.offering-link {
+  display: inline-block; margin-top: 14px;
+  font-family: var(--font-label); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); text-decoration: none; border-bottom: 0.5px solid currentColor; padding-bottom: 2px;
+}
+.offering-link:hover { color: var(--ink); }
+@media (max-width: 600px) {
+  .offering-cards { grid-template-columns: repeat(6, 1fr); }
+  .offering-cards img { grid-column: span 2; }
+  .offering-cards img:nth-child(4) { grid-column: 2 / span 2; }
+}
+
 /* ── The solstice rubric (showSolsticeRubric() in shared.js) ───── */
 .solstice-rubric {
   position: relative; width: 100%; max-width: 560px; box-sizing: border-box;

@@ -919,6 +919,46 @@ function showSubscribe() {
     openLettersPane();
   }
 }
+// What's for sale, shown under the form in the Correspondence pane: the
+// postcard sets, newest first. The cards' own pages (c/) stay reached
+// only by their QR codes, so the pictures here link to the shop.
+const OFFERINGS = [
+  {
+    label: 'Postcards for the longest night',
+    title: 'Winter Solstice',
+    text: 'Five postcards: Orion, the aurora, the snowy owl, paper birch and witch hazel, sold as a set.',
+    href: 'https://otherwise.metalabel.com/wintersolstice26?variantId=1',
+    link: 'Order the set\u00a0\u2192',
+    cards: [
+      ['/c/w26/1/1-thumb.webp', 'Orion, from Johannes Hevelius’s star atlas (1690)'],
+      ['/c/w26/2/2-thumb.webp', 'The aurora borealis, drawn by É. L. Trouvelot (1872)'],
+      ['/c/w26/3/3-thumb.webp', 'A snowy owl, from Audubon’s Birds of America'],
+      ['/c/w26/4/4-thumb.webp', 'Paper birch in winter, from New England Trees in Winter (1911)'],
+      ['/c/w26/5/5-thumb.webp', 'Vernal witch hazel, from Curtis’s Botanical Magazine (1914)']
+    ]
+  }
+];
+function offeringCard(o) {
+  const section = document.createElement('section');
+  section.className = 'offering';
+  const shop = document.createElement('a');
+  shop.className = 'offering-cards';
+  shop.href = o.href; shop.target = '_blank'; shop.rel = 'noopener';
+  shop.setAttribute('aria-label', `${o.title}: ${o.link.replace(/\s*\u2192/, '')}`);
+  o.cards.forEach(([src, alt]) => {
+    const img = document.createElement('img');
+    img.src = src; img.alt = alt; img.loading = 'lazy'; img.width = 480; img.height = 320;
+    shop.append(img);
+  });
+  const label = Object.assign(document.createElement('p'), { className: 'offering-label' });
+  label.innerHTML = '<span aria-hidden="true">¶</span> ';
+  label.append(o.label);
+  const title = Object.assign(document.createElement('h2'), { className: 'offering-title', textContent: o.title });
+  const text = Object.assign(document.createElement('p'), { className: 'offering-text', textContent: o.text });
+  const link = Object.assign(document.createElement('a'), { className: 'offering-link', href: o.href, target: '_blank', rel: 'noopener', textContent: o.link });
+  section.append(label, title, shop, text, link);
+  return section;
+}
 function openLettersPane() {
   let pane = document.getElementById('letters-pane');
   if (!pane) {
@@ -928,11 +968,14 @@ function openLettersPane() {
     pane.setAttribute('role', 'dialog');
     pane.setAttribute('aria-modal', 'true');
     pane.setAttribute('aria-label', SUBSCRIBE.label);
+    pane.setAttribute('aria-label', 'Correspondence');
     pane.innerHTML = '<button class="wander-close" type="button" aria-label="Close">✦ &nbsp;Close</button>'
-      + '<p class="wander-heading">Letters</p>';
+      + '<p class="wander-heading">Correspondence</p>'
+      + '<p class="wander-subheading">Letters and postcards from Otherwise</p>';
     const form = subscribeForm();
     form.classList.add('in-pane');
     pane.append(form);
+    OFFERINGS.forEach(o => pane.append(offeringCard(o)));
     document.body.append(pane);
     const close = () => {
       if (typeof closeOverlayPane === 'function') closeOverlayPane(pane);
