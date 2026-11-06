@@ -786,3 +786,121 @@ function showSolsticeRubric() {
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showSolsticeRubric);
 else showSolsticeRubric();
+
+// ── Letters from Otherwise: the sign-up form ─────────────────────────
+// A short form above the footer of the Hours, the Seasons, each Lectio
+// Terra post and each postcard page. Addresses go to the earthlyhours-auth
+// Worker (worker/src/index.js, /subscribe), which keeps them privately
+// until they're imported into the DFOS space's subscribers. A Cloudflare
+// Turnstile check keeps bots out; its script loads only once someone
+// starts typing an address, so the pages load nothing extra for it.
+const SUBSCRIBE = {
+  url: /^(localhost|127\.0\.0\.1)$/.test(location.hostname)
+    ? 'http://localhost:8787/subscribe'
+    : 'https://earthlyhours-auth.earthlyhours-com.workers.dev/subscribe',
+  // The Turnstile widget's public key; Cloudflare's always-passing test
+  // key when the pages are served locally.
+  siteKey: /^(localhost|127\.0\.0\.1)$/.test(location.hostname)
+    ? '1x00000000000000000000AA'
+    : '0x4AAAAAAF2e6SL85amyATjD',
+  label: 'Letters from Otherwise',
+  text: 'New readings, postcards and editions from Otherwise and The Earthly Book of Hours, by email.',
+  note: 'Your address is kept privately and used only for these letters. Each has a link to unsubscribe.',
+  thanks: 'Thank you. The next letter will find you.'
+};
+let turnstileLoading = null;
+function loadTurnstile() {
+  if (!turnstileLoading) {
+    turnstileLoading = new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      s.async = true;
+      s.onload = () => resolve(window.turnstile);
+      s.onerror = reject;
+      document.head.append(s);
+    });
+  }
+  return turnstileLoading;
+}
+function subscribeForm() {
+  const n = document.querySelectorAll('.subscribe').length;
+  const form = document.createElement('form');
+  form.className = 'subscribe';
+  form.noValidate = true;
+  form.innerHTML = `
+    <p class="subscribe-label"><span class="subscribe-pilcrow" aria-hidden="true">¶</span> <span></span></p>
+    <p class="subscribe-text"></p>
+    <div class="subscribe-row">
+      <label class="visually-hidden" for="subscribe-email-${n}">Email address</label>
+      <input class="subscribe-email" id="subscribe-email-${n}" type="email" name="email" autocomplete="email" inputmode="email" placeholder="your email" required>
+      <button class="subscribe-button" type="submit">Subscribe</button>
+    </div>
+    <input class="subscribe-trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="subscribe-check"></div>
+    <p class="subscribe-note" aria-live="polite"></p>`;
+  form.querySelector('.subscribe-label span:last-child').textContent = SUBSCRIBE.label;
+  form.querySelector('.subscribe-text').textContent = SUBSCRIBE.text;
+  const note = form.querySelector('.subscribe-note');
+  note.textContent = SUBSCRIBE.note;
+  const email = form.querySelector('.subscribe-email');
+  const button = form.querySelector('.subscribe-button');
+
+  // Turnstile, rendered (invisibly, unless it has a question to ask) on
+  // the first keystroke; its token is waited for at submit.
+  let widget = null, token = null, waiting = [];
+  const check = () => {
+    if (widget !== null) return;
+    widget = 'loading';
+    loadTurnstile().then(ts => {
+      widget = ts.render(form.querySelector('.subscribe-check'), {
+        sitekey: SUBSCRIBE.siteKey,
+        appearance: 'interaction-only',
+        action: 'subscribe',
+        callback: t => { token = t; waiting.splice(0).forEach(f => f(t)); },
+        'expired-callback': () => { token = null; },
+        'error-callback': () => { token = null; }
+      });
+    }).catch(() => { widget = null; });
+  };
+  email.addEventListener('focus', check, { once: true });
+  email.addEventListener('input', check, { once: true });
+  const tokenReady = () => token ? Promise.resolve(token)
+    : new Promise((resolve, reject) => { waiting.push(resolve); setTimeout(() => reject(new Error('timeout')), 20000); });
+
+  const say = (text, isError) => { note.textContent = text; note.classList.toggle('is-error', !!isError); };
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const address = email.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(address)) { say('That address doesn’t look complete.', true); email.focus(); return; }
+    button.disabled = true;
+    say('Sending…');
+    check();
+    try {
+      const turnstile = await tokenReady();
+      const response = await fetch(SUBSCRIBE.url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: address, turnstile, source: location.pathname, website: form.website.value })
+      });
+      const answer = await response.json().catch(() => ({}));
+      if (!response.ok || !answer.ok) throw new Error(answer.error || 'failed');
+      form.classList.add('is-done');
+      form.replaceChildren(Object.assign(document.createElement('p'), { className: 'subscribe-thanks', textContent: SUBSCRIBE.thanks }));
+    } catch (error) {
+      button.disabled = false;
+      token = null;
+      if (window.turnstile && typeof widget === 'string' && widget !== 'loading') window.turnstile.reset(widget);
+      say(error.message === 'invalid email' ? 'That address doesn’t look complete.' : 'Something went wrong. Please try again in a moment.', true);
+    }
+  });
+  return form;
+}
+function showSubscribe() {
+  if (document.querySelector('.subscribe')) return;
+  const postcard = document.querySelector('.postcard-follow');
+  if (postcard) { postcard.after(subscribeForm()); return; }
+  const footer = document.querySelector('main.hours-page > .page-footer, main.season-reading > .page-footer');
+  if (footer) footer.before(subscribeForm());
+}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showSubscribe);
+else showSubscribe();

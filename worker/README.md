@@ -59,6 +59,30 @@ or, from a computer with Node, `npx wrangler d1 execute earthlyhours-auth
 --remote --command "SELECT day, event, count FROM tally ORDER BY day DESC, event"`.
 The table makes itself on first use, so deploying needs no step in D1.
 
+## Sign-ups (Letters from Otherwise)
+
+The form above the footers (`showSubscribe()` in `../shared.js`) sends
+an address to `POST /subscribe`. The Worker checks it with Cloudflare
+Turnstile and keeps it in D1's `subscribers` table (email, the day it was
+added, the page it came from). DFOS has no way for a site to add a
+subscriber, so the list goes over by hand:
+
+1. Open `https://earthlyhours-auth.earthlyhours-com.workers.dev/subscribers.csv?key=<EXPORT_KEY>`
+   (add `&since=YYYY-MM-DD` for only the newer ones). It downloads a CSV.
+2. In DFOS: Studio → Reach → Audience → import it.
+
+Importing the whole list again is harmless. Someone who asks to be taken
+off: unsubscribe them in DFOS, and in the D1 console run
+`DELETE FROM subscribers WHERE email = '…'`.
+
+Two more secrets, set in the dashboard like the others:
+
+- `TURNSTILE_SECRET`, the secret half of the Turnstile widget
+  "earthlyhours.com sign-up" (its public site key is in `../shared.js`)
+- `EXPORT_KEY`, the key in the export link; change it to retire an old link
+
+The tally counts `subscribe`, `subscribe-again` and `subscribe-refused`.
+
 ## Finding the key holders' group
 
 While `KEY_HOLDER_GROUP` is empty, nobody counts as a key holder. Every

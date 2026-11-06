@@ -18,6 +18,14 @@
    POST /login/finish  { jws, credential } → { did, keyHolder, token }
    POST /session       { token } → { did, keyHolder, token } | { signedIn: false }
 
+   It also takes sign-ups for the Otherwise / Earthly Hours letters, kept
+   here until they're imported into the DFOS space's subscribers (DFOS
+   has no way for a site to add one directly):
+   POST /subscribe     { email, turnstile, source } → { ok: true }
+   GET  /subscribers.csv?key=…[&since=YYYY-MM-DD]   the list, for DFOS's
+                       import (Studio → Reach → Audience); the key is the
+                       EXPORT_KEY secret. See subscribe() below.
+
    The token is this Worker's own: an HMAC-signed note of who signed in
    and when they were last checked. The site keeps it in localStorage
    and trades it in at /session when the check is stale.
@@ -53,11 +61,14 @@ export default {
 
 async function answer(request, env, cors, events) {
   const fromSite = 'Access-Control-Allow-Origin' in cors;
+  const url = new URL(request.url);
+  if (request.method === 'GET' && url.pathname === '/subscribers.csv') return exportSubscribers(env, url);
   if (request.method !== 'POST') { events.push('noise'); return json({ error: 'not found' }, 404, cors); }
 
-  const { pathname } = new URL(request.url);
+  const { pathname } = url;
   try {
     const body = await request.json().catch(() => ({}));
+    if (pathname === '/subscribe') return json(await subscribe(env, request, body, fromSite, events), 200, cors);
     if (pathname === '/login/start') { events.push(fromSite ? 'start' : 'noise'); return json(await loginStart(env), 200, cors); }
     if (pathname === '/login/finish') return json(await loginFinish(env, body, events), 200, cors);
     if (pathname === '/session') return json(await session(env, body, events), 200, cors);
@@ -66,7 +77,7 @@ async function answer(request, env, cors, events) {
   } catch (error) {
     const status = error instanceof HttpError ? error.status : 500;
     if (status === 500) console.error(error);
-    events.push(pathname === '/login/finish' ? 'signin-failed' : status === 500 ? 'error' : 'noise');
+    if (pathname !== '/subscribe' || status === 500) events.push(pathname === '/login/finish' ? 'signin-failed' : status === 500 ? 'error' : 'noise');
     return json({ error: status === 500 ? 'internal error' : error.message }, status, cors);
   }
 }
@@ -214,6 +225,75 @@ async function recordGroupsForSetup(env, did, credential) {
   }
 }
 
+/* ── Sign-ups ─────────────────────────────────────────────────── */
+
+// An address from the form on the site, checked by Cloudflare Turnstile
+// (TURNSTILE_SECRET), kept in D1's subscribers table. The answer is the
+// same whether the address is new or already there, so the form can't be
+// used to find out who has signed up. Someone who asks to be taken off:
+// DELETE FROM subscribers WHERE email = '…' (and unsubscribe them in DFOS).
+const EMAIL = /^[^\s@<>(),;:"\[\]]+@[^\s@<>(),;:"\[\]]+\.[^\s@<>(),;:"\[\]]{2,}$/;
+let subscribersReady = false;
+
+async function subscribersTable(env) {
+  if (subscribersReady) return;
+  await env.DB.prepare('CREATE TABLE IF NOT EXISTS subscribers (email TEXT PRIMARY KEY, added_at INTEGER NOT NULL, source TEXT)').run();
+  subscribersReady = true;
+}
+
+async function subscribe(env, request, { email, turnstile, source, website }, fromSite, events) {
+  if (!fromSite) { events.push('noise'); throw new HttpError(403, 'not allowed'); }
+  // A field people never see; only a bot fills it in. Thanked, not kept.
+  if (website) { events.push('subscribe-refused'); return { ok: true }; }
+  email = typeof email === 'string' ? email.trim().toLowerCase() : '';
+  if (email.length > 254 || !EMAIL.test(email)) { events.push('subscribe-refused'); throw new HttpError(400, 'invalid email'); }
+  if (!(await turnstileOk(env, request, turnstile))) { events.push('subscribe-refused'); throw new HttpError(400, 'verification failed'); }
+  await subscribersTable(env);
+  const page = typeof source === 'string' ? source.slice(0, 120) : null;
+  const result = await env.DB.prepare('INSERT INTO subscribers (email, added_at, source) VALUES (?, ?, ?) ON CONFLICT(email) DO NOTHING')
+    .bind(email, Date.now(), page).run();
+  events.push(result.meta.changes ? 'subscribe' : 'subscribe-again');
+  return { ok: true };
+}
+
+async function turnstileOk(env, request, token) {
+  if (typeof token !== 'string' || !token || !env.TURNSTILE_SECRET) return false;
+  const form = new FormData();
+  form.append('secret', env.TURNSTILE_SECRET);
+  form.append('response', token);
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (ip) form.append('remoteip', ip);
+  const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body: form });
+  const outcome = await response.json().catch(() => ({}));
+  return outcome.success === true;
+}
+
+// The list as CSV, newest last: email, the day it was added (UTC) and the
+// page it came from. ?since=YYYY-MM-DD gives only those added that day or
+// later. Importing the whole list again is harmless: DFOS keeps one entry
+// per address and doesn't re-subscribe anyone who unsubscribed.
+async function exportSubscribers(env, url) {
+  const key = url.searchParams.get('key') || '';
+  if (!env.EXPORT_KEY || !(await sameText(key, env.EXPORT_KEY))) return new Response('not found', { status: 404 });
+  await subscribersTable(env);
+  const since = /^\d{4}-\d{2}-\d{2}$/.test(url.searchParams.get('since') || '') ? Date.parse(url.searchParams.get('since') + 'T00:00:00Z') : 0;
+  const { results } = await env.DB.prepare('SELECT email, added_at, source FROM subscribers WHERE added_at >= ? ORDER BY added_at').bind(since).all();
+  const cell = v => /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
+  const lines = ['email,added,source', ...results.map(r => [r.email, new Date(r.added_at).toISOString().slice(0, 10), r.source || ''].map(cell).join(','))];
+  const day = new Date().toISOString().slice(0, 10);
+  return new Response(lines.join('\n') + '\n', { headers: {
+    'Content-Type': 'text/csv; charset=utf-8',
+    'Content-Disposition': `attachment; filename="earthlyhours-subscribers-${day}.csv"`,
+    'Cache-Control': 'no-store',
+    'X-Robots-Tag': 'noindex'
+  } });
+}
+
+async function sameText(a, b) {
+  const [x, y] = await Promise.all([a, b].map(t => crypto.subtle.digest('SHA-256', new TextEncoder().encode(t))));
+  return crypto.subtle.timingSafeEqual(x, y);
+}
+
 /* ── The tally ────────────────────────────────────────────────── */
 
 // How many of each thing happened each day (UTC), and nothing about who:
@@ -224,6 +304,10 @@ async function recordGroupsForSetup(env, did, credential) {
 //   new-wanderer     someone counted as a key holder for the first time
 //                    (at sign-in, or a re-check after they joined)
 //   recheck          a signed-in browser trading in its token (/session)
+//   subscribe        a new address signed up for the letters
+//   subscribe-again  an address that was already on the list
+//   subscribe-refused  a sign-up turned away: a bad address, a failed
+//                    Turnstile check, or the hidden field filled in
 //   noise            anything else: other paths and methods, or a sign-in
 //                    begun from outside the site; mostly bots
 //   error            this Worker failing

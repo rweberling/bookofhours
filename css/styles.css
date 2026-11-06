@@ -1529,6 +1529,50 @@ body:has(.keep-pane.open) { overflow: hidden; }
 /* ── Print / Keepsake styles ─────────────────────────────────── */
 .print-only { display: none; }
 
+/* ── Letters from Otherwise (showSubscribe() in shared.js) ─────── */
+.subscribe {
+  width: 100%; max-width: 460px; box-sizing: border-box;
+  margin: 44px auto 0; padding: 0 8px; text-align: center;
+  font-family: var(--font-text); color: var(--ink-faint);
+}
+.subscribe p { margin: 0; }
+.subscribe-label {
+  font-family: var(--font-label); font-size: 13px; letter-spacing: 0.12em;
+  text-transform: lowercase; color: var(--accent); transition: color 3s ease;
+}
+.subscribe-text {
+  margin-top: 6px !important; font-family: var(--font-reading);
+  font-size: 15px; line-height: 1.5; color: var(--ink-light); text-wrap: balance;
+}
+.subscribe-row {
+  display: flex; align-items: baseline; gap: 12px;
+  margin-top: 16px; border-bottom: 0.5px solid var(--rule);
+}
+.subscribe-email {
+  flex: 1; min-width: 0; padding: 6px 2px;
+  background: transparent; border: 0; outline: none;
+  font-family: var(--font-text); font-size: 16px; color: var(--ink);
+}
+.subscribe-email::placeholder { color: var(--ink-faint); opacity: 0.7; font-style: italic; }
+.subscribe-row:focus-within { border-bottom-color: var(--accent); }
+.subscribe-button {
+  background: none; border: 0; padding: 6px 2px; cursor: pointer;
+  font-family: var(--font-label); font-size: 12px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--accent); transition: color 3s ease;
+}
+.subscribe-button:hover, .subscribe-button:focus-visible { color: var(--ink); }
+.subscribe-button:disabled { opacity: 0.5; cursor: default; }
+.subscribe-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.subscribe-check:not(:empty) { margin-top: 10px; display: flex; justify-content: center; }
+.subscribe-note {
+  margin-top: 10px !important; font-size: 12.5px; font-style: italic;
+  line-height: 1.5; opacity: 0.85; text-wrap: balance;
+}
+.subscribe-note.is-error { color: var(--accent); opacity: 1; }
+.subscribe-thanks { font-family: var(--font-reading); font-style: italic; font-size: 16px; color: var(--ink-light); }
+.season-reading .subscribe { margin-top: 52px; }
+@media print { .subscribe { display: none !important; } }
+
 /* ── The solstice rubric (showSolsticeRubric() in shared.js) ───── */
 .solstice-rubric {
   position: relative; width: 100%; max-width: 560px; box-sizing: border-box;

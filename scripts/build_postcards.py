@@ -179,8 +179,9 @@ PAGE = '''<!DOCTYPE html>
 {body}
 {turn}
   <p class="postcard-follow">These cards are the first of <a href="/editions.html">Otherwise Editions</a>;
-    a new set follows each solstice and equinox. To hear when the next arrives,
-    subscribe to <a href="https://laurentia.substack.com" target="_blank"><em>Lectio Terra</em></a> on Substack.</p>
+    a new set follows each solstice and equinox.</p>
+  <noscript><p class="postcard-follow">To hear when the next arrives, subscribe at
+    <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank">Otherwise</a>.</p></noscript>
 
   <footer class="page-footer">
     <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
