@@ -885,6 +885,7 @@ function subscribeForm() {
       const answer = await response.json().catch(() => ({}));
       if (!response.ok || !answer.ok) throw new Error(answer.error || 'failed');
       form.classList.add('is-done');
+      lettersRemember({ subscribed: new Date().toISOString().slice(0, 10) });
       form.replaceChildren(Object.assign(document.createElement('p'), { className: 'subscribe-thanks', textContent: SUBSCRIBE.thanks }));
     } catch (error) {
       button.disabled = false;
@@ -895,14 +896,54 @@ function subscribeForm() {
   });
   return form;
 }
+// Whether the card on the page is shown, kept in this browser only
+// (localStorage 'eh-letters'): once someone has signed up here it stays
+// away; its × puts it away for LETTERS_REST_DAYS. Signed-in Wanderers
+// never see it: as members of the DFOS space they already get the
+// letters. The Correspondence pane in the menu is always there.
+const LETTERS_KEY = 'eh-letters';
+const LETTERS_REST_DAYS = 30;
+function lettersState() {
+  try { return JSON.parse(localStorage.getItem(LETTERS_KEY)) || {}; } catch (e) { return {}; }
+}
+function lettersRemember(change) {
+  try { localStorage.setItem(LETTERS_KEY, JSON.stringify({ ...lettersState(), ...change })); } catch (e) { /* this visit only */ }
+}
+function lettersCardWanted() {
+  const state = lettersState();
+  if (state.subscribed) return false;
+  if (state.restUntil && Date.now() < state.restUntil) return false;
+  try {
+    const session = JSON.parse(localStorage.getItem('earthly-hours-dfos-session'));   // dfos-siwd.js
+    if (session && session.keyHolder) return false;
+  } catch (e) { /* not signed in */ }
+  return true;
+}
+function pageCard() {
+  const form = subscribeForm();
+  const x = document.createElement('button');
+  x.type = 'button'; x.className = 'subscribe-dismiss';
+  x.setAttribute('aria-label', `Hide this for ${LETTERS_REST_DAYS} days`);
+  x.title = `Hide for ${LETTERS_REST_DAYS} days`;
+  x.textContent = '×';
+  x.addEventListener('click', () => {
+    lettersRemember({ restUntil: Date.now() + LETTERS_REST_DAYS * 86400000 });
+    const note = document.createElement('p');
+    note.className = 'subscribe-put-away';
+    note.innerHTML = 'Put away for now. Letters are always under <a href="#letters">The Scriptorium</a> in the menu.';
+    form.replaceWith(note);
+  });
+  form.prepend(x);
+  return form;
+}
 function showSubscribe() {
-  if (!document.querySelector('main .subscribe')) {
+  if (!document.querySelector('main .subscribe') && lettersCardWanted()) {
     // Postcard pages: straight after the links to the original, where
     // someone who came by the QR code is still reading.
     const postcard = document.querySelector('.postcard-links');
     const footer = document.querySelector('main.hours-page > .page-footer, main.season-reading > .page-footer');
-    if (postcard) postcard.after(subscribeForm());
-    else if (footer) footer.before(subscribeForm());
+    if (postcard) postcard.after(pageCard());
+    else if (footer) footer.before(pageCard());
   }
   // "Letters from Otherwise" in the menu (partials/nav.html), and any
   // link to #letters, open the form in a pane of its own: on every page,
