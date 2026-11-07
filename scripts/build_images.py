@@ -108,6 +108,7 @@ def credits():
             continue
         links = rec.get('links') or []
         source = ((rec.get('source') or {}).get('url')
+                  or (rec.get('locator') or {}).get('url')
                   or next((l['url'] for l in links if l['role'] == 'cited'), None)
                   or next((l['url'] for l in links if l['role'] in ('original', 'copy')), None))
         out[rec['file']] = {

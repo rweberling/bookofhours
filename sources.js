@@ -55,14 +55,23 @@ function linkGroupHTML(label, links) {
   return `<span class="links-label">${label}</span>${anchors}`;
 }
 
-// A reading's citation links live on its edition (and on the editions of
-// any texts it quotes); an image's live on the image itself.
+// A record's cited link is its locator: where in the book to look, as
+// directly as a click can go (a reading's, each text it quotes, a book
+// plate's; one locator, or a list when a reading joins two places).
+// Editions keep links to the book as a whole; other images their own.
+function locatorLinks(holder) {
+  const loc = holder && holder.locator;
+  return (Array.isArray(loc) ? loc : loc ? [loc] : [])
+    .filter(l => l.url)
+    .map(l => ({ role: 'cited', label: l.label, url: l.url }));
+}
+
 function citationLinks(record) {
   if (record.citation) {
-    const editions = [record.citation.edition, ...(record.citation.quotes || []).map(q => q.edition)];
-    return editions.filter(Boolean).flatMap(e => e.links || []);
+    const holders = [record.citation, ...(record.citation.quotes || [])];
+    return [...holders.flatMap(locatorLinks), ...holders.flatMap(h => (h.edition && h.edition.links) || [])];
   }
-  return record.links || [];
+  return [...locatorLinks(record), ...(record.links || [])];
 }
 
 function entryHTML(record, notes = [], site = null) {

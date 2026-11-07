@@ -85,6 +85,13 @@ def tag_id(t):
     return t if isinstance(t, str) else (t.get('id') or t.get('term'))
 
 
+def locators(holder):
+    """A citation's (or a book plate's) locators, as a list: one, or one
+    for each place a reading is cut from."""
+    loc = (holder or {}).get('locator')
+    return loc if isinstance(loc, list) else [loc] if loc else []
+
+
 def load(name):
     return json.loads((DATA / f'{name}.json').read_text())
 
@@ -400,9 +407,9 @@ def main():
 
     # Embedded editions and people: every copy that shares an id is the
     # same, field for field; a fact on one copy and missing from another
-    # is reported too, so the copies can't drift apart. Two things belong
-    # to the use, not the edition: its links (the cited copy, at the page
-    # this record quotes) and a person's role on it.
+    # is reported too, so the copies can't drift apart. A person's role
+    # belongs to the edition they're on, not the person. (The page a
+    # record quotes is in its locator, not on the edition.)
     copies = defaultdict(list)
     def collect(owner, edition):
         # An edition without an ID (a Lectio reading's links, until Stage 3
@@ -410,7 +417,7 @@ def main():
         if not edition or 'id' not in edition:
             return
         people = edition.get('contributors') or []
-        fields = {k: v for k, v in edition.items() if k not in ('contributors', 'links')}
+        fields = {k: v for k, v in edition.items() if k != 'contributors'}
         fields['contributors'] = [(p['id'], p.get('role')) for p in people] or None
         copies[edition['id']].append((owner, fields))
         for p in people:
@@ -498,6 +505,23 @@ def main():
             if 'bookshop.org' in str(link.get('url', '')):
                 errors.append(f'{rid}: Bookshop link stored as a citation link; use suggestedEdition with its ISBN')
 
+    def check_edition_links(rid, edition):
+        # An edition links to the book as a whole; the page is the locator's.
+        for link in (edition or {}).get('links') or []:
+            if link.get('role') == 'cited':
+                errors.append(f'{rid}: edition {(edition or {}).get("id")} has a "cited" link; '
+                              f'the page link belongs in the locator')
+
+    def check_locator(rid, loc):
+        if not isinstance(loc, dict) or not (loc.get('page') or loc.get('url')):
+            errors.append(f'{rid}: a locator needs a page or a link: {loc}')
+            return
+        if loc.get('url'):
+            if not str(loc['url']).startswith(('http://', 'https://')):
+                errors.append(f'{rid}: locator without a web address: {loc}')
+            if not loc.get('label'):
+                errors.append(f'{rid}: locator link without a label (the site it\'s on): {loc["url"]}')
+
     def check_further(rid, further):
         for item in further or []:
             if item.get('kind') not in FURTHER_KINDS:
@@ -524,15 +548,21 @@ def main():
         ed = cit.get('edition') or {}
         if not cit.get('display'):
             errors.append(f'{rid}: no display citation')
-        check_links(rid, ed.get('links'))
-        for q in cit.get('quotes') or []:
-            check_links(rid, (q.get('edition') or {}).get('links'))
+        shown = set(re.findall(r'href="([^"]+)"', cit.get('display') or ''))
+        for holder in [cit] + (cit.get('quotes') or []):
+            check_links(rid, (holder.get('edition') or {}).get('links'))
+            check_edition_links(rid, holder.get('edition'))
+            for loc in locators(holder):
+                check_locator(rid, loc)
+                # The display line takes the reader to the passage.
+                if loc.get('url') and loc['url'] not in shown:
+                    errors.append(f'{rid}: the display line doesn\'t link to its locator ({loc["url"]})')
         check_further(rid, r.get('furtherReading'))
         check_suggested(rid, r.get('suggestedEdition'))
         check_display_links(rid, cit.get('display'))
         # A print-only citation needs no link when a suggested edition
         # leads the reader to the book.
-        if not any(l.get('role') == 'cited' for l in ed.get('links') or []) and not r.get('suggestedEdition'):
+        if not any(loc.get('url') for loc in locators(cit)) and not r.get('suggestedEdition'):
             gaps[rid].append('cited link or suggested edition')
         if not cit.get('bibliography'):
             gaps[rid].append('bibliography line')
@@ -557,7 +587,7 @@ def main():
             gaps[rid].append('work title')
         if not (cit.get('written') or ed.get('original-date')):
             gaps[rid].append('date written')
-        if not ((cit.get('locator') or {}).get('page') or (cit.get('locator') or {}).get('url')):
+        if not any(loc.get('page') or loc.get('url') for loc in locators(cit)):
             gaps[rid].append('page or exact link')
         if not any(p.get('wikidata') for p in ed.get('contributors') or []):
             gaps[rid].append('author Wikidata ID')
@@ -569,6 +599,14 @@ def main():
         check_date(iid, 'date', img.get('date'))
         check_rights(iid, img.get('rights'))
         check_links(iid, img.get('links'))
+        if img.get('edition'):
+            check_edition_links(iid, img['edition'])
+            for loc in locators(img):
+                check_locator(iid, loc)
+            if not locators(img):
+                gaps[iid].append('locator (page and link in the book)')
+            if any(l.get('role') == 'cited' for l in img.get('links') or []):
+                errors.append(f'{iid}: a plate from a book is cited by its locator, not a "cited" link')
         # source: where the image file itself was downloaded, and when.
         # The cited link is the work; this is the exact file, so a better
         # copy or a broken link can be traced later.

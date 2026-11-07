@@ -22,7 +22,6 @@
         "publisher": "Hogarth Press",
         "issued": "1927",
         "original-date": "1927",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -41,6 +40,10 @@
     "citation": {
       "display": "Dionysius the Areopagite [Pseudo-Dionysius], <a href=\"https://archive.org/details/dionysiusareopag00pseu\" target=\"_blank\"><em>The Mystical Theology</em></a> (c. 500 CE)",
       "bibliography": "Pseudo-Dionysius the Areopagite. <em>The Mystical Theology</em>. c. 500 CE.",
+      "locator": {
+        "url": "https://archive.org/details/dionysiusareopag00pseu",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0002",
         "type": "book",
@@ -55,13 +58,6 @@
         ],
         "issued": null,
         "original-date": "0500~",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/dionysiusareopag00pseu"
-          }
-        ],
         "rights": null,
         "identifiers": {
           "internetArchive": "dionysiusareopag00pseu",
@@ -84,6 +80,10 @@
     "citation": {
       "display": "Nāgārjuna, <a href=\"https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&view=fulltext&vid=1124\" target=\"_blank\"><em>Mūlamadhyamakakārikā</em></a> (c. 150 CE)",
       "bibliography": "Nāgārjuna. <em>Mūlamadhyamakakārikā</em>. c. 150 CE.",
+      "locator": {
+        "url": "https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&view=fulltext&vid=1124",
+        "label": "Polyglotta Comparative Text Archive, University of Oslo"
+      },
       "edition": {
         "id": "e-0003",
         "type": "book",
@@ -91,13 +91,6 @@
         "contributors": [{ "id": "a-nagarjuna", "name": "Nāgārjuna", "role": "author", "wikidata": "Q171195" }],
         "issued": null,
         "original-date": "0150~",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Polyglotta Comparative Text Archive, University of Oslo",
-            "url": "https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&view=fulltext&vid=1124"
-          }
-        ],
         "rights": null
       }
     },
@@ -131,7 +124,6 @@
         "publisher": "Station Hill Press",
         "issued": "1988",
         "original-date": "1941",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation in copyright"
       }
@@ -172,7 +164,6 @@
         "publisher": "New Directions",
         "issued": "2012",
         "original-date": "1964",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation in copyright"
       }
@@ -202,7 +193,6 @@
         "publisher": "Knopf",
         "issued": "2014",
         "original-date": "2014",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright"
       }
@@ -233,7 +223,6 @@
         "publisher": "Wesleyan University Press",
         "issued": "1961",
         "original-date": "1961",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright"
       }
@@ -254,6 +243,10 @@
       "display": "Novalis, \"Hymn to the Night\" (1800, trans. <a href=\"https://www.george-macdonald.com/etexts/hymns_to_night.html\" target=\"_blank\">MacDonald, 1897</a>)",
       "bibliography": "Novalis. \"Hymns to the Night.\" <em>Rampolli: Growths from a Long-Planted Root</em>, translated by George MacDonald, Longmans, Green, 1897. Originally published 1800.",
       "title": "Hymns to the Night",
+      "locator": {
+        "url": "https://www.george-macdonald.com/etexts/hymns_to_night.html",
+        "label": "george-macdonald.com"
+      },
       "edition": {
         "id": "e-0008",
         "type": "book",
@@ -270,13 +263,6 @@
         "publisher": "Longmans, Green",
         "issued": "1897",
         "original-date": "1800",
-        "links": [
-          {
-            "role": "cited",
-            "label": "george-macdonald.com",
-            "url": "https://www.george-macdonald.com/etexts/hymns_to_night.html"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -294,7 +280,10 @@
     "citation": {
       "display": "John Burroughs, <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t0ms3kq78?urlappend=%3Bseq=177\" target=\"_blank\"><em>Wake-Robin</em></a> (1871)",
       "bibliography": "Burroughs, John. <em>Wake-Robin</em>. Hurd and Houghton, 1871.",
-      "locator": { "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t0ms3kq78?urlappend=%3Bseq=177" },
+      "locator": {
+        "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t0ms3kq78?urlappend=%3Bseq=177",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0009",
         "type": "book",
@@ -310,13 +299,6 @@
         "publisher": "Hurd and Houghton",
         "issued": "1871",
         "original-date": "1871",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t0ms3kq78?urlappend=%3Bseq=177"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -335,7 +317,10 @@
       "display": "Michael Field, \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102\" target=\"_blank\">The Depths of the Grass</a>\" (1898)",
       "bibliography": "Field, Michael. \"The Depths of the Grass.\" <em>Wild Honey from Various Thyme</em>, T. Fisher Unwin, 1908.",
       "title": "The Depths of the Grass",
-      "locator": { "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102" },
+      "locator": {
+        "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0010",
         "type": "book",
@@ -344,13 +329,6 @@
         "publisher": "T. Fisher Unwin",
         "issued": "1908",
         "original-date": "1898",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "rightsNote": "date as captioned (1898); verify edition"
       }
@@ -393,7 +371,6 @@
         "publisher": "Penguin",
         "issued": "2002",
         "original-date": "1982",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation in copyright"
       }
@@ -437,7 +414,6 @@
         "publisher": "Columbia University Press",
         "issued": "1971",
         "original-date": "1002~",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation in copyright"
       }
@@ -469,7 +445,6 @@
         "publisher": "David McKay",
         "issued": "1892",
         "original-date": "1892",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -494,7 +469,8 @@
       "bibliography": "Naidu, Sarojini. \"Palanquin-Bearers.\" <em>The Golden Threshold</em>, William Heinemann, 1906.",
       "title": "Palanquin-Bearers",
       "locator": {
-        "url": "https://hdl.handle.net/2027/hvd.32044010369874?urlappend=%3Bseq=35%3Bownerid=27021597766923349-39"
+        "url": "https://hdl.handle.net/2027/hvd.32044010369874?urlappend=%3Bseq=35%3Bownerid=27021597766923349-39",
+        "label": "HathiTrust"
       },
       "edition": {
         "id": "e-0014",
@@ -511,13 +487,6 @@
         "publisher": "William Heinemann",
         "issued": "1906",
         "original-date": "1906",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/hvd.32044010369874?urlappend=%3Bseq=35%3Bownerid=27021597766923349-39"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "hathitrust": "100326276", "oclc": "2233259" }
       }
@@ -547,7 +516,6 @@
         "publisher": "Harcourt, Brace",
         "issued": "1943",
         "original-date": "1942",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright — estate actively enforces"
       }
@@ -569,7 +537,10 @@
       "display": "Helene Johnson, \"<a href=\"https://archive.org/details/carolingduskanth00cull/page/220/mode/2up\" target=\"_blank\">The Road</a>\" (1926/1927)",
       "bibliography": "Johnson, Helene. \"The Road.\" <em>Caroling Dusk: An Anthology of Verse by Negro Poets</em>, edited by Countee Cullen, Harper &amp; Brothers, 1927.",
       "title": "The Road",
-      "locator": { "url": "https://archive.org/details/carolingduskanth00cull/page/220/mode/2up" },
+      "locator": {
+        "url": "https://archive.org/details/carolingduskanth00cull/page/220/mode/2up",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0016",
         "type": "book",
@@ -591,13 +562,6 @@
         "publisher": "Harper & Brothers",
         "issued": "1927",
         "original-date": "1926/1927",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/carolingduskanth00cull/page/220/mode/2up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": {
           "internetArchive": "carolingduskanth00cull",
@@ -622,7 +586,10 @@
       "display": "Heraclitus, fragments 41-42, from <em>On Nature</em> (c. 500 BCE, <a href=\"https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126\" target=\"_blank\">trans. 1889</a>)",
       "bibliography": "Heraclitus. \"Fragments 41–42.\" <em>On Nature</em>, translated by G. T. W. Patrick, 1889. Composed c. 500 BCE.",
       "title": "Fragments 41–42",
-      "locator": { "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126" },
+      "locator": {
+        "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0017",
         "type": "book",
@@ -638,13 +605,6 @@
         ],
         "issued": "1889",
         "original-date": "-0500~",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": {
           "internetArchive": "fragmentsofworko00hera",
@@ -667,6 +627,10 @@
     "citation": {
       "display": "Gustav Freytag, <a href=\"https://archive.org/details/freytagstechniqu00freyuoft\" target=\"_blank\"><em>Technique of the Drama</em></a> (1894)",
       "bibliography": "Freytag, Gustav. <em>Technique of the Drama</em>. Translated by Elias J. MacEwan, Scott, Foresman, 1894.",
+      "locator": {
+        "url": "https://archive.org/details/freytagstechniqu00freyuoft",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0018",
         "type": "book",
@@ -683,13 +647,6 @@
         "publisher": "Scott, Foresman",
         "issued": "1894",
         "original-date": "1894",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/freytagstechniqu00freyuoft"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "internetArchive": "freytagstechniqu00freyuoft", "openlibrary": "OL7168981M" }
       }
@@ -732,7 +689,6 @@
         "publisher": "Princeton University Press",
         "issued": "1975",
         "original-date": null,
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation copyright — pending resolution"
       }
@@ -767,7 +723,6 @@
         "publisher": "Routledge",
         "issued": "2002",
         "original-date": "1947",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation in copyright"
       }
@@ -788,7 +743,10 @@
       "display": "H.D., \"<a href=\"https://archive.org/details/seagarden00hdhirich/page/6/mode/2up\" target=\"_blank\">Mid-Day</a>\" (1915/1916)",
       "bibliography": "H.D. \"Mid-day.\" <em>Sea Garden</em>, Constable, 1916.",
       "title": "Mid-Day",
-      "locator": { "url": "https://archive.org/details/seagarden00hdhirich/page/6/mode/2up" },
+      "locator": {
+        "url": "https://archive.org/details/seagarden00hdhirich/page/6/mode/2up",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0021",
         "type": "book",
@@ -797,13 +755,6 @@
         "publisher": "Constable",
         "issued": "1916",
         "original-date": "1915/1916",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/seagarden00hdhirich/page/6/mode/2up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": {
           "internetArchive": "seagarden00hdhirich",
@@ -828,7 +779,10 @@
     "citation": {
       "display": "William James, from <a href=\"https://babel.hathitrust.org/cgi/pt?id=hvd.32044004518320&seq=183&q1=stream\" target=\"_blank\"><em>Psychology</em></a> (1892)",
       "bibliography": "James, William. <em>Psychology: The Briefer Course</em>. Henry Holt, 1892.",
-      "locator": { "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044004518320&seq=183&q1=stream" },
+      "locator": {
+        "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044004518320&seq=183&q1=stream",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0022",
         "type": "book",
@@ -837,13 +791,6 @@
         "publisher": "Henry Holt",
         "issued": "1892",
         "original-date": "1892",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.32044004518320&seq=183&q1=stream"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "hathitrust": "100330090", "oclc": "2412919", "lccn": "05002582" }
       }
@@ -864,7 +811,8 @@
       "bibliography": "Burton, Robert. \"The Author's Abstract of Melancholy.\" <em>The Anatomy of Melancholy</em>, 1621.",
       "title": "The Author's Abstract of Melancholy",
       "locator": {
-        "url": "https://www.google.com/books/edition/The_Anatomy_of_Melancholy/cPgveWnCdRcC?hl=en&gbpv=1&pg=PP17&printsec=frontcover"
+        "url": "https://www.google.com/books/edition/The_Anatomy_of_Melancholy/cPgveWnCdRcC?hl=en&gbpv=1&pg=PP17&printsec=frontcover",
+        "label": "Google Books"
       },
       "edition": {
         "id": "e-0023",
@@ -880,13 +828,6 @@
         ],
         "issued": "1621",
         "original-date": "1621",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Google Books",
-            "url": "https://www.google.com/books/edition/The_Anatomy_of_Melancholy/cPgveWnCdRcC?hl=en&gbpv=1&pg=PP17&printsec=frontcover"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -928,7 +869,6 @@
         "publisher": "Belknap Press of Harvard University Press",
         "issued": "1999",
         "original-date": null,
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation in copyright"
       }
@@ -949,6 +889,10 @@
       "display": "Emily Dickinson, \"<a href=\"https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA4310_P90-75\" target=\"_blank\">There's a certain Slant of light,</a>\" (c. 1861)",
       "bibliography": "Dickinson, Emily. \"There's a certain Slant of light.\" c. 1861. Emily Dickinson Archive, Houghton Library, Harvard University.",
       "title": "There’s a certain Slant of light",
+      "locator": {
+        "url": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA4310_P90-75",
+        "label": "Harvard Emily Dickinson Archive"
+      },
       "edition": {
         "id": "e-0025",
         "type": "manuscript",
@@ -964,13 +908,6 @@
         "archive": "Emily Dickinson Archive, Houghton Library, Harvard University",
         "issued": null,
         "original-date": "1861~",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Harvard Emily Dickinson Archive",
-            "url": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA4310_P90-75"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -990,6 +927,10 @@
       "display": "Sappho, <em>fragment 104a</em> (c. 630–580 BCE, trans. <a href=\"https://www.gutenberg.org/files/57390/57390-h/57390-h.htm\" target=\"_blank\">Wharton, 1908</a>)",
       "bibliography": "Sappho. \"Fragment 104a.\" <em>Sappho: Memoir, Text, Selected Renderings, and a Literal Translation</em>, translated by Henry Thornton Wharton, John Lane, 1908. Composed c. 630–580 BCE.",
       "title": "Fragment 104a",
+      "locator": {
+        "url": "https://www.gutenberg.org/files/57390/57390-h/57390-h.htm",
+        "label": "Project Gutenberg"
+      },
       "edition": {
         "id": "e-0026",
         "type": "book",
@@ -1006,13 +947,6 @@
         "publisher": "John Lane",
         "issued": "1908",
         "original-date": "-0630~/-0580~",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Project Gutenberg",
-            "url": "https://www.gutenberg.org/files/57390/57390-h/57390-h.htm"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -1032,6 +966,10 @@
       "display": "Gertrude Stein, <a href=\"https://writing.upenn.edu/library/Stein_Gertrude_Tender_Buttons_1914.pdf\" target=\"_blank\"><em>Tender Buttons</em></a> (1914)",
       "bibliography": "Stein, Gertrude. \"Celery,\" \"Veal,\" \"Vegetable,\" \"Way Lay Vegetable.\" <em>Tender Buttons</em>, Claire Marie, 1914.",
       "title": "Celery; Veal; Vegetable; Way Lay Vegetable",
+      "locator": {
+        "url": "https://writing.upenn.edu/library/Stein_Gertrude_Tender_Buttons_1914.pdf",
+        "label": "University of Pennsylvania"
+      },
       "edition": {
         "id": "e-0027",
         "type": "book",
@@ -1047,13 +985,6 @@
         "publisher": "Claire Marie",
         "issued": "1914",
         "original-date": "1914",
-        "links": [
-          {
-            "role": "cited",
-            "label": "University of Pennsylvania",
-            "url": "https://writing.upenn.edu/library/Stein_Gertrude_Tender_Buttons_1914.pdf"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -1098,7 +1029,6 @@
         "publisher": "Leete's Island Books",
         "issued": "1977",
         "original-date": "1933",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation in copyright"
       }
@@ -1133,7 +1063,6 @@
         "publisher": "Duell, Sloan and Pearce",
         "issued": "1943",
         "original-date": "1943",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright — actively republished"
       }
@@ -1154,6 +1083,10 @@
       "display": "Rainer Maria Rilke, \"<a href=\"https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening\" target=\"_blank\">Evening</a>\" (1918)",
       "bibliography": "Rilke, Rainer Maria. \"Evening.\" <em>Poems</em>, 1918.",
       "title": "Evening",
+      "locator": {
+        "url": "https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening",
+        "label": "Wikisource"
+      },
       "edition": {
         "id": "e-0030",
         "type": "book",
@@ -1168,13 +1101,6 @@
         ],
         "issued": "1918",
         "original-date": "1918",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Wikisource",
-            "url": "https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -1210,7 +1136,6 @@
         "publisher": "Arcade Publishing",
         "issued": "1998",
         "original-date": "1998",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright — estate actively protective"
       }
@@ -1249,7 +1174,6 @@
         "publisher": "Olympia Press",
         "issued": "1953",
         "original-date": "1953",
-        "links": [],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright — estate aggressively enforces"
       }
@@ -1271,7 +1195,10 @@
       "bibliography": "Thomas, Edward. \"Lights Out.\" <em>Last Poems</em>, Selwyn &amp; Blount, 1918. Written 1917.",
       "title": "Lights Out",
       "written": "1917",
-      "locator": { "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109" },
+      "locator": {
+        "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0033",
         "type": "book",
@@ -1287,13 +1214,6 @@
         "publisher": "Selwyn & Blount",
         "issued": "1918",
         "original-date": "1918",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -1312,7 +1232,10 @@
     "citation": {
       "display": "John Lubbock, <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81\" target=\"_blank\"><em>The Use of Life</em></a> (1894), quot. John Ruskin, <a href=\"https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52\" target=\"_blank\"><em>The Art of England</em></a> (1884)",
       "bibliography": "Lubbock, John. <em>The Use of Life</em>. 1894. Quoting John Ruskin, <em>The Art of England</em>, 1884.",
-      "locator": { "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81" },
+      "locator": {
+        "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0034",
         "type": "book",
@@ -1320,20 +1243,14 @@
         "contributors": [{ "id": "a-john-lubbock", "name": "John Lubbock", "role": "author" }],
         "issued": null,
         "original-date": "1894",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       },
       "quotes": [
         {
           "title": null,
           "locator": {
-            "url": "https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52"
+            "url": "https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52",
+            "label": "HathiTrust"
           },
           "edition": {
             "id": "e-0035",
@@ -1342,13 +1259,6 @@
             "contributors": [{ "id": "a-john-ruskin", "name": "John Ruskin", "role": "author" }],
             "issued": null,
             "original-date": "1884",
-            "links": [
-              {
-                "role": "cited",
-                "label": "HathiTrust",
-                "url": "https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52"
-              }
-            ],
             "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
           }
         }
@@ -1384,7 +1294,10 @@
       "bibliography": "Very, Jones. \"The Clouded Morning.\" Written 1864; published 1883/1886.",
       "title": "The Clouded Morning",
       "written": "1864",
-      "locator": { "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t1bk17p1r?urlappend=%3Bseq=436" },
+      "locator": {
+        "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t1bk17p1r?urlappend=%3Bseq=436",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0036",
         "type": "book",
@@ -1392,13 +1305,6 @@
         "contributors": [{ "id": "a-jones-very", "name": "Jones Very", "role": "author", "wikidata": "Q2797629" }],
         "issued": null,
         "original-date": "1883/1886",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t1bk17p1r?urlappend=%3Bseq=436"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
@@ -1418,16 +1324,13 @@
       "bibliography": "Gibson, William Hamilton. \"The Witch Hazel Bombardment.\" <em>Sharp Eyes: A Rambler’s Calendar</em>, Harper &amp; Brothers, 1904. Originally published 1892.",
       "title": "The Witch Hazel Bombardment",
       "written": "1892",
-      "locator": { "page": "230" },
+      "locator": {
+        "page": "230",
+        "url": "https://hdl.handle.net/2027/hvd.32044106450414?urlappend=%3Bseq=230%3Bownerid=27021597765883035-246",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0037",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/hvd.32044106450414?urlappend=%3Bseq=230%3Bownerid=27021597765883035-246"
-          }
-        ],
         "identifiers": { "hathitrust": "007679974", "oclc": "7688631" },
         "contributors": [
           {
@@ -1462,16 +1365,13 @@
       "bibliography": "Nietzsche, Friedrich. \"Schopenhauer as Educator.\" <em>Thoughts Out of Season, Part II</em>, translated by Adrian Collins, T. N. Foulis, 1909. Written 1874.",
       "title": "Schopenhauer as Educator",
       "written": "1874",
-      "locator": { "page": "105–106, 107–108" },
+      "locator": {
+        "page": "105–106, 107–108",
+        "url": "https://archive.org/details/NietzscheSchopenhauerAsEducatorCollins/page/n3/mode/2up",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0038",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/NietzscheSchopenhauerAsEducatorCollins/page/n3/mode/2up"
-          }
-        ],
         "identifiers": { "internetArchive": "NietzscheSchopenhauerAsEducatorCollins" },
         "contributors": [
           {
@@ -1512,15 +1412,12 @@
       "bibliography": "Dickinson, Emily. \"The Robin is the One.\" c. 1863; published 1891.",
       "title": "The Robin is the One",
       "written": "1863~",
+      "locator": {
+        "url": "https://journeys.dartmouth.edu/whiteheat/the-robin-is-the-one-f501c-j828/",
+        "label": "White Heat (Dartmouth)"
+      },
       "edition": {
         "id": "e-0039",
-        "links": [
-          {
-            "role": "cited",
-            "label": "White Heat (Dartmouth)",
-            "url": "https://journeys.dartmouth.edu/whiteheat/the-robin-is-the-one-f501c-j828/"
-          }
-        ],
         "contributors": [
           {
             "id": "a-emily-dickinson",
@@ -1555,16 +1452,13 @@
       "bibliography": "Ridgway, Robert. \"Family Turdidae. The Thrushes.\" <em>The Birds of North and Middle America: A Descriptive Catalog</em>, part 4, Bulletin of the United States National Museum 50, Government Printing Office, 1907.",
       "title": "Family Turdidae. The Thrushes",
       "written": "1907",
-      "locator": { "page": "1–4" },
+      "locator": {
+        "page": "1–4",
+        "url": "https://hdl.handle.net/2027/osu.32435029594769?urlappend=%3Bseq=29%3Bownerid=115636920-33",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0040",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/osu.32435029594769?urlappend=%3Bseq=29%3Bownerid=115636920-33"
-          }
-        ],
         "identifiers": { "hathitrust": "001501611", "oclc": "857360", "lccn": "11035036" },
         "contributors": [
           {
@@ -1599,16 +1493,13 @@
       "bibliography": "Jones, E. \"Address.\" <em>Review of Facts and Observations, Made by Naturalists, Botanists, Historians, and Travellers, on the Properties and Productions of the Sugar Maple Tree</em>, E. Colyer, 1832.",
       "title": "Address",
       "written": "1832",
-      "locator": { "page": "v" },
+      "locator": {
+        "page": "v",
+        "url": "https://hdl.handle.net/2027/chi.086806303?urlappend=%3Bseq=5%3Bownerid=13510798902081697-9",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0041",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/chi.086806303?urlappend=%3Bseq=5%3Bownerid=13510798902081697-9"
-          }
-        ],
         "identifiers": { "hathitrust": "011437149", "oclc": "5161201" },
         "contributors": [{ "id": "a-e-jones", "name": "E. Jones", "role": "author" }]
       }
@@ -1630,18 +1521,15 @@
       "bibliography": "Crockett, Walter H. \"Vermont Maple Sugar.\" <em>How Vermont Maple Sugar Is Made</em>, Vermont Department of Agriculture, 1915.",
       "title": "Vermont Maple Sugar",
       "written": "1915",
-      "locator": { "page": "5" },
+      "locator": {
+        "page": "5",
+        "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=5%3Bownerid=13510798902017243-11",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0042",
         "title": "How Vermont maple sugar is made",
         "issued": "1915",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=5%3Bownerid=13510798902017243-11"
-          }
-        ],
         "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
         "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }]
       }
@@ -1663,15 +1551,9 @@
       "bibliography": "Hansteen-Izora, Annika. \"Time is Water.\" <em>Annika is Dreaming</em>, 30 May 2022.",
       "title": "Time is Water",
       "written": "2022-05-30",
+      "locator": { "url": "https://annikahansteenizora.substack.com/p/time-is-water", "label": "Substack" },
       "edition": {
         "id": "e-0043",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Substack",
-            "url": "https://annikahansteenizora.substack.com/p/time-is-water"
-          }
-        ],
         "contributors": [{ "id": "a-annika-hansteen-izora", "name": "Annika Hansteen-Izora", "role": "author" }]
       }
     },
@@ -1698,15 +1580,12 @@
       "bibliography": "Pinchot, Gifford. <em>Silvical Leaflet 38: Paper Birch</em>. United States Department of Agriculture, Forest Service, 29 Oct. 1908.",
       "title": "Silvical Leaflet 38: Paper Birch",
       "written": "1908-10-29",
+      "locator": {
+        "url": "https://hdl.handle.net/2027/umn.31951d02459776j?urlappend=%3Bseq=1%3Bownerid=22365483-0",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0044",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/umn.31951d02459776j?urlappend=%3Bseq=1%3Bownerid=22365483-0"
-          }
-        ],
         "identifiers": { "hathitrust": "007425308", "oclc": "21507897", "lccn": "agr09000825" },
         "contributors": [
           {
@@ -1735,19 +1614,18 @@
       "bibliography": "Frost, Robert. \"Birches.\" <em>Mountain Interval</em>, Henry Holt, 1916. First published in <em>The Atlantic Monthly</em>, Aug. 1915.",
       "title": "Birches",
       "written": "1915-08",
-      "locator": { "page": "29–30" },
+      "locator": {
+        "page": "29–30",
+        "url": "https://dn721805.ca.archive.org/0/items/mountaininterval0000fros/mountaininterval0000fros.pdf",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0045",
         "links": [
           {
-            "role": "cited",
+            "role": "original",
             "label": "The Atlantic",
             "url": "https://www.theatlantic.com/magazine/archive/1915/08/birches/645301/"
-          },
-          {
-            "role": "copy",
-            "label": "Internet Archive",
-            "url": "https://dn721805.ca.archive.org/0/items/mountaininterval0000fros/mountaininterval0000fros.pdf"
           }
         ],
         "contributors": [
@@ -1757,7 +1635,10 @@
             "role": "author",
             "wikidata": "Q168728"
           }
-        ]
+        ],
+        "title": "Mountain Interval",
+        "publisher": "Henry Holt and Company",
+        "issued": "1916"
       }
     },
     "lectio": { "post": "lt-0004", "place": 2 },
@@ -1784,16 +1665,13 @@
       "bibliography": "Goethe, Johann Wolfgang von. \"In Honour of Mr. Howard.\" Translated by George Soane and John Bowring, <em>Gold’s London Magazine</em>, vol. 4, no. 19, July 1821, pp. 59–63. Written c. 1820.",
       "title": "In Honour of Mr. Howard",
       "written": "1820~",
-      "locator": { "page": "59–63" },
+      "locator": {
+        "page": "59–63",
+        "url": "https://www.dailygood.org/story/1160/the-invention-of-clouds-goethe-s-poems-for-the-skies-maria-popova/",
+        "label": "DailyGood"
+      },
       "edition": {
         "id": "e-0046",
-        "links": [
-          {
-            "role": "cited",
-            "label": "DailyGood",
-            "url": "https://www.dailygood.org/story/1160/the-invention-of-clouds-goethe-s-poems-for-the-skies-maria-popova/"
-          }
-        ],
         "contributors": [
           {
             "id": "a-johann-wolfgang-von-goethe",
@@ -1840,15 +1718,12 @@
       "bibliography": "Odell, Jenny. \"What Does It Mean to Watch Clouds? What Can It Mean?\" <em>Jenny Odell’s Newsletter</em>, 4 July 2025.",
       "title": "What Does It Mean to Watch Clouds? What Can It Mean?",
       "written": "2025-07-04",
+      "locator": {
+        "url": "https://buttondown.com/jennitaur/archive/what-does-it-mean-to-watch-clouds-what-can-it-mean/",
+        "label": "Buttondown"
+      },
       "edition": {
         "id": "e-0047",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Buttondown",
-            "url": "https://buttondown.com/jennitaur/archive/what-does-it-mean-to-watch-clouds-what-can-it-mean/"
-          }
-        ],
         "contributors": [
           {
             "id": "a-jenny-odell",
@@ -1882,16 +1757,13 @@
       "bibliography": "Herbert, William. <em>A History of the Species of Crocus</em>. Edited by John Lindley, William Clowes and Sons, 1847.",
       "title": "A History of the Species of Crocus",
       "written": "1847",
-      "locator": { "page": "25–26" },
+      "locator": {
+        "page": "25–26",
+        "url": "https://www.google.com/books/edition/A_History_of_the_species_of_crocus_Edite/f6VWAAAAcAAJ?hl=en&amp;gbpv=0",
+        "label": "Google Books"
+      },
       "edition": {
         "id": "e-0048",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Google Books",
-            "url": "https://www.google.com/books/edition/A_History_of_the_species_of_crocus_Edite/f6VWAAAAcAAJ?hl=en&amp;gbpv=0"
-          }
-        ],
         "contributors": [
           { "id": "a-william-herbert", "name": "William Herbert", "role": "author" },
           {
@@ -1920,15 +1792,12 @@
       "bibliography": "Barth, Guillaume. <em>Crocus sativus, fleur du bonheur</em>. Gallery text, Le Fresnoy – Studio national des arts contemporains, 2021.",
       "title": "Crocus sativus, fleur du bonheur",
       "written": "2021",
+      "locator": {
+        "url": "https://guillaumebarth.com/en/works/crocus-sativus-flower-of-happiness",
+        "label": "Guillaume Barth"
+      },
       "edition": {
         "id": "e-0049",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Guillaume Barth",
-            "url": "https://guillaumebarth.com/en/works/crocus-sativus-flower-of-happiness"
-          }
-        ],
         "contributors": [{ "id": "a-guillaume-barth", "name": "Guillaume Barth", "role": "author" }]
       }
     },
@@ -1993,18 +1862,15 @@
       "bibliography": "Campbell, Douglas Houghton. <em>The Development of the Ostrich Fern</em>. Boston Society of Natural History, 1887.",
       "title": "The Development of the Ostrich Fern",
       "written": "1887-04",
-      "locator": { "page": "29" },
+      "locator": {
+        "page": "29",
+        "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=20%3Bownerid=13510798900618097-26",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0051",
         "title": "The development of the ostrich fern, Onoclea struthiopteris",
         "issued": "1887",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=20%3Bownerid=13510798900618097-26"
-          }
-        ],
         "identifiers": { "hathitrust": "001993770", "oclc": "14366384" },
         "contributors": [
           {
@@ -2075,16 +1941,13 @@
       "bibliography": "Seton, Ernest Thompson. <em>Lives of Game Animals</em>, vol. 4, part 2, <em>Rodents, Etc.</em>, Doubleday, Doran, 1929.",
       "title": "Lives of Game Animals",
       "written": "1929",
-      "locator": { "page": "806, 807" },
+      "locator": {
+        "page": "806, 807",
+        "url": "https://hdl.handle.net/2027/uc1.$b235977?urlappend=%3Bseq=9%3Bownerid=9007199259750403-13",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0053",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc1.$b235977?urlappend=%3Bseq=9%3Bownerid=9007199259750403-13"
-          }
-        ],
         "identifiers": { "hathitrust": "001496609", "oclc": "1319978", "lccn": "25012152" },
         "contributors": [
           {
@@ -2113,15 +1976,12 @@
       "bibliography": "Ajani, Ashia, with Amirio Freeman. \"Ashia Ajani Mulls Over Mullein.\" <em>PLANTCRAFT</em>, 5 May 2025.",
       "title": "Ashia Ajani Mulls Over Mullein",
       "written": "2025-05-05",
+      "locator": {
+        "url": "https://plantcraft.substack.com/p/plantcraft-ashia-ajani-mulls-over",
+        "label": "Substack"
+      },
       "edition": {
         "id": "e-0054",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Substack",
-            "url": "https://plantcraft.substack.com/p/plantcraft-ashia-ajani-mulls-over"
-          }
-        ],
         "contributors": [
           { "id": "a-ashia-ajani", "name": "Ashia Ajani", "role": "author" },
           { "id": "a-amirio-freeman", "name": "Amirio Freeman", "role": "author" }
@@ -2151,16 +2011,13 @@
       "bibliography": "<em>The Old Herb Doctor: His Secrets and Treatments</em>. Hammond Book Company, 1941.",
       "title": "The Old Herb Doctor: His Secrets and Treatments",
       "written": "1941",
-      "locator": { "page": "35" },
+      "locator": {
+        "page": "35",
+        "url": "https://hdl.handle.net/2027/uiug.30112067700937?urlappend=%3Bseq=39%3Bownerid=115203246-43",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0055",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uiug.30112067700937?urlappend=%3Bseq=39%3Bownerid=115203246-43"
-          }
-        ],
         "identifiers": { "hathitrust": "102436036", "oclc": "1319259", "lccn": "41023319" }
       }
     },
@@ -2213,16 +2070,13 @@
       "bibliography": "Hildegard of Bingen. \"334. Letter to Secular People.\" <em>The Letters of Hildegard of Bingen</em>, vol. 3, translated by Joseph L. Baird and Radd K. Ehrman, Oxford University Press, 2004. Written c. 1153.",
       "title": "334. Letter to Secular People",
       "written": "1153~",
-      "locator": { "page": "136" },
+      "locator": {
+        "page": "136",
+        "url": "http://ebookcentral.proquest.com/lib/utxa/detail.action?docID=3052322.",
+        "label": "ProQuest Ebook Central"
+      },
       "edition": {
         "id": "e-0057",
-        "links": [
-          {
-            "role": "cited",
-            "label": "ProQuest Ebook Central",
-            "url": "http://ebookcentral.proquest.com/lib/utxa/detail.action?docID=3052322."
-          }
-        ],
         "contributors": [
           {
             "id": "a-hildegard-of-bingen",
@@ -2288,16 +2142,11 @@
       "bibliography": "\"Mosses of Maine: A Brief Guide.\" <em>Oxford County CTS</em>, 15 Oct. 2025.",
       "title": "Mosses of Maine: A Brief Guide",
       "written": "2025-10-15",
-      "edition": {
-        "id": "e-0059",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Substack",
-            "url": "https://oxfordcountycts.substack.com/p/mosses-of-maine-a-brief-guide"
-          }
-        ]
-      }
+      "locator": {
+        "url": "https://oxfordcountycts.substack.com/p/mosses-of-maine-a-brief-guide",
+        "label": "Substack"
+      },
+      "edition": { "id": "e-0059" }
     },
     "lectio": { "post": "lt-0010", "place": 3 },
     "tags": {
@@ -2359,16 +2208,13 @@
       "bibliography": "Dana, James Freeman, and Samuel L. Dana. \"Argillaceous Slate.\" <em>Outlines of the Mineralogy and Geology of Boston and Its Vicinity, with a Geological Map</em>, Cummings and Hilliard, 1818.",
       "title": "Argillaceous Slate",
       "written": "1818",
-      "locator": { "page": "57" },
+      "locator": {
+        "page": "57",
+        "url": "https://hdl.handle.net/2027/nyp.33433090753579?urlappend=%3Bseq=67%3Bownerid=27021597770124163-71",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0061",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/nyp.33433090753579?urlappend=%3Bseq=67%3Bownerid=27021597770124163-71"
-          }
-        ],
         "identifiers": { "hathitrust": "012307100", "oclc": "6900683", "lccn": "05015479" },
         "contributors": [
           {
@@ -2404,16 +2250,13 @@
       "bibliography": "Lowell, Amy. \"Lilacs.\" <em>What’s O’Clock</em>, Houghton Mifflin, 1925. First published in <em>The New York Evening Post</em>, 1920.",
       "title": "Lilacs",
       "written": "1920",
-      "locator": { "page": "68–74" },
+      "locator": {
+        "page": "68–74",
+        "url": "https://hdl.handle.net/2027/uc1.b4857815?urlappend=%3Bseq=82%3Bownerid=116673599-86",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0062",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc1.b4857815?urlappend=%3Bseq=82%3Bownerid=116673599-86"
-          }
-        ],
         "identifiers": { "hathitrust": "000629649", "oclc": "1268281", "lccn": "25016810" },
         "contributors": [{ "id": "a-amy-lowell", "name": "Amy Lowell", "role": "author", "wikidata": "Q265841" }]
       }
@@ -2436,16 +2279,13 @@
       "bibliography": "Barry, William C. <em>The Lilac</em>. Mount Hope Nurseries, n.d. Reprinted from <em>Horticulture</em>, 9 Oct. 1909.",
       "title": "The Lilac",
       "written": "1909-10-09",
-      "locator": { "page": "[2]" },
+      "locator": {
+        "page": "[2]",
+        "url": "https://hdl.handle.net/2027/hvd.32044107247413?urlappend=%3Bseq=8%3Bownerid=27021597765978726-12",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0063",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/hvd.32044107247413?urlappend=%3Bseq=8%3Bownerid=27021597765978726-12"
-          }
-        ],
         "identifiers": { "hathitrust": "100451368", "oclc": "17570555" },
         "contributors": [{ "id": "a-william-c-barry", "name": "William C. Barry", "role": "author" }]
       }
@@ -2527,10 +2367,9 @@
       "bibliography": "Rook, Graham A. W. \"The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs.\" <em>Frontiers in Allergy</em>, vol. 4, 12 Sept. 2023.",
       "title": "The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs",
       "written": "2023-09-12",
-      "locator": { "page": "8" },
+      "locator": { "page": "8", "url": "https://doi.org/10.3389/falgy.2023.1220481", "label": "DOI" },
       "edition": {
         "id": "e-0066",
-        "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.3389/falgy.2023.1220481" }],
         "identifiers": { "doi": "10.3389/falgy.2023.1220481" },
         "contributors": [
           {
@@ -2559,16 +2398,13 @@
       "bibliography": "Raison, Charles L., Christopher A. Lowry, and Graham A. W. Rook. \"Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression.\" <em>Archives of General Psychiatry</em>, vol. 67, no. 12, Dec. 2010, pp. 1211–1224.",
       "title": "Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression",
       "written": "2010-12",
-      "locator": { "page": "1211–1224" },
+      "locator": {
+        "page": "1211–1224",
+        "url": "https://doi.org/10.1001/archgenpsychiatry.2010.161",
+        "label": "DOI"
+      },
       "edition": {
         "id": "e-0067",
-        "links": [
-          {
-            "role": "cited",
-            "label": "DOI",
-            "url": "https://doi.org/10.1001/archgenpsychiatry.2010.161"
-          }
-        ],
         "identifiers": { "doi": "10.1001/archgenpsychiatry.2010.161" },
         "contributors": [
           {
@@ -2615,16 +2451,13 @@
       "bibliography": "Rūmī, Jalāl al-Dīn Muḥammad. \"Proem to Book 1.\" <em>The Mathnawí of Jalálu’ddín Rúmí</em>, vol. 2, translated by Reynold A. Nicholson, E. J. W. Gibb Memorial, 1960. Originally published 1926.",
       "title": "Proem to Book 1",
       "written": "1260~",
-      "locator": { "page": "5" },
+      "locator": {
+        "page": "5",
+        "url": "https://hdl.handle.net/2027/inu.30000011921974?urlappend=%3Bseq=33%3Bownerid=13510798897570173-37",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0068",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/inu.30000011921974?urlappend=%3Bseq=33%3Bownerid=13510798897570173-37"
-          }
-        ],
         "identifiers": { "hathitrust": "001005718", "oclc": "1444113", "lccn": "26022478" },
         "contributors": [
           {
@@ -2660,18 +2493,15 @@
       "bibliography": "Horwood, A. R. \"Reed (Phragmites communis, Trin.).\" <em>A New British Flora: British Wild Flowers in Their Natural Haunts</em>, vol. 4, Gresham Publishing, 1919.",
       "title": "Reed (Phragmites communis, Trin.)",
       "written": "1919",
-      "locator": { "page": "161–164" },
+      "locator": {
+        "page": "161–164",
+        "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=233%3Bownerid=13510798901296899-237",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0069",
         "title": "A new British flora : British wild flowers in their natural haunts",
         "issued": "1919",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=233%3Bownerid=13510798901296899-237"
-          }
-        ],
         "identifiers": { "hathitrust": "001997177", "oclc": "10314294" },
         "contributors": [
           {
@@ -2700,16 +2530,13 @@
       "bibliography": "Felt, E. P. \"Gall Insects and Their Relations to Plants.\" <em>The Scientific Monthly</em>, June 1918, pp. 509–525.",
       "title": "Gall Insects and Their Relations to Plants",
       "written": "1918-06",
-      "locator": { "page": "510–511" },
+      "locator": {
+        "page": "510–511",
+        "url": "https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0070",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189"
-          }
-        ],
         "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author", "wikidata": "Q5382324" }]
       }
     },
@@ -2730,16 +2557,13 @@
       "bibliography": "Redi, Francesco. <em>Experiments on the Generation of Insects</em>. Translated from the Italian edition of 1688 by Mab Bigelow, Open Court, 1909. First published 1668.",
       "title": "Experiments on the Generation of Insects",
       "written": "1668",
-      "locator": { "page": "91–92, 94" },
+      "locator": {
+        "page": "91–92, 94",
+        "url": "https://www.biodiversitylibrary.org/page/8177947",
+        "label": "Biodiversity Heritage Library"
+      },
       "edition": {
         "id": "e-0071",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Biodiversity Heritage Library",
-            "url": "https://www.biodiversitylibrary.org/page/8177947"
-          }
-        ],
         "contributors": [
           {
             "id": "a-francesco-redi",
@@ -2795,22 +2619,19 @@
     "text": "<p>C'est une belle espèce qui pousse court; elle est originaire de l'Amérique du nord. Elle est bien distincte. Les fleurs sont très grandes; elles ont 5 cent . et plus de longueur, et sortent de feuilles larges, opposées, ovales, poilues, supportées sur des tiges de 15 centimètres de hauteur. Les fleurs sont de couleurvariable; elles sont ordinairement d'un beau rose, quelquefois ombré de blanc. C'est un des genres que l'on cultive le plus facilement en bordure ou dans une partie ombrée sur un rocher. Fleurit en juin.</p>",
     "citation": {
       "display": "F. Desbois. “<a href=\"https://hdl.handle.net/2027/hvd.32044107229023?urlappend=%3Bseq=30%3Bownerid=27021597765947657-34\">Cypripedium De Plein Terre</a>.” <em>Monographie de Cypripedium</em> (Gand [Ghent]: Librairie Générale de Ad. Hoste, 1888), p. 26.",
+      "locator": {
+        "page": "26",
+        "url": "https://hdl.handle.net/2027/hvd.32044107229023?urlappend=%3Bseq=30%3Bownerid=27021597765947657-34",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0073",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/hvd.32044107229023?urlappend=%3Bseq=30%3Bownerid=27021597765947657-34"
-          }
-        ],
         "identifiers": { "hathitrust": "100451015", "oclc": "80597640" },
         "contributors": [{ "id": "a-f-desbois", "name": "F. Desbois", "role": "author" }]
       },
       "bibliography": "Desbois, F. \"Cypripedium de pleine terre.\" <em>Monographie des Cypripedium</em>, Librairie Générale de Ad. Hoste, 1888.",
       "title": "Cypripedium de pleine terre",
-      "written": "1888",
-      "locator": { "page": "26" }
+      "written": "1888"
     },
     "lectio": { "post": "lt-0016", "place": 2 },
     "tags": {
@@ -2829,15 +2650,12 @@
       "bibliography": "Young, C. S. \"Fashion Five. Cypripedium acaule, Stemless Lady’s Slipper.\" <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em>, Bradlee Whidden, 1885.",
       "title": "Fashion Five. Cypripedium acaule, Stemless Lady’s Slipper",
       "written": "1885",
+      "locator": {
+        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=27",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0074",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=27"
-          }
-        ],
         "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }]
       }
     },
@@ -2858,16 +2676,13 @@
       "bibliography": "d’Ascoli, Felice Cardinal, et al. \"Inquisition’s Sentence (22 June 1633).\" <em>The Essential Galileo</em>, edited and translated by Maurice A. Finocchiaro, Hackett, 2008.",
       "title": "Inquisition’s Sentence (22 June 1633)",
       "written": "1633-06-22",
-      "locator": { "page": "279, 282" },
+      "locator": {
+        "page": "279, 282",
+        "url": "https://archive.org/details/essentialgalileo0000gali",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0075",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/essentialgalileo0000gali"
-          }
-        ],
         "identifiers": {
           "internetArchive": "essentialgalileo0000gali",
           "oclc": "226308166",
@@ -2980,15 +2795,14 @@
       "bibliography": "Wiegand, K. M. \"The Genus Amelanchier in Eastern North America.\" <em>Rhodora: Journal of the New England Botanical Club</em>, vol. 14, no. 163, July 1912, pp. 117–161.",
       "title": "The Genus Amelanchier in Eastern North America",
       "written": "1912-07",
-      "locator": { "page": "117" },
+      "locator": {
+        "page": "117",
+        "url": "https://hdl.handle.net/2027/coo.31924001829971?urlappend=%3Bseq=5%3Bownerid=27021597768700384-9",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0078",
         "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/coo.31924001829971?urlappend=%3Bseq=5%3Bownerid=27021597768700384-9"
-          },
           {
             "role": "copy",
             "label": "Biodiversity Heritage Library",
@@ -3023,15 +2837,12 @@
       "bibliography": "Grieve, Mrs. M. \"Currant, Red.\" <em>A Modern Herbal</em>, Jonathan Cape, 1931.",
       "title": "Currant, Red",
       "written": "1931",
+      "locator": {
+        "url": "https://www.botanical.com/botanical/mgmh/c/currd132.html",
+        "label": "Botanical.com"
+      },
       "edition": {
         "id": "e-0079",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Botanical.com",
-            "url": "https://www.botanical.com/botanical/mgmh/c/currd132.html"
-          }
-        ],
         "contributors": [
           { "id": "a-maud-grieve", "name": "Maud Grieve", "role": "author", "wikidata": "Q6792224" }
         ]
@@ -3054,16 +2865,13 @@
       "bibliography": "Card, Fred W. <em>Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits</em>. Macmillan, 1903. Originally published 1898.",
       "title": "Bush-Fruits",
       "written": "1898",
-      "locator": { "page": "351" },
+      "locator": {
+        "page": "351",
+        "url": "https://hdl.handle.net/2027/coo.31924018437917?urlappend=%3Bseq=367%3Bownerid=27021597768559051-381",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0080",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/coo.31924018437917?urlappend=%3Bseq=367%3Bownerid=27021597768559051-381"
-          }
-        ],
         "identifiers": { "hathitrust": "009120458", "oclc": "12767094" },
         "contributors": [{ "id": "a-fred-w-card", "name": "Fred W. Card", "role": "author" }]
       }
@@ -3085,16 +2893,13 @@
       "bibliography": "\"Haudenosaunee (Iroquois) Creation Myth.\" Recorded by John Norton, 1816. <em>The Journal of Major John Norton, 1816</em>, edited by Carl F. Klinck and James J. Talman, Champlain Society, 1970.",
       "title": "Haudenosaunee (Iroquois) Creation Myth",
       "written": "1816",
-      "locator": { "page": "88–91" },
+      "locator": {
+        "page": "88–91",
+        "url": "https://www.whobuiltamerica.org/item/haudenosaunee-iroquois-creation-myth-1816",
+        "label": "Who Built America?"
+      },
       "edition": {
         "id": "e-0081",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Who Built America?",
-            "url": "https://www.whobuiltamerica.org/item/haudenosaunee-iroquois-creation-myth-1816"
-          }
-        ],
         "contributors": [
           { "id": "a-john-norton", "name": "John Norton", "role": "author" },
           {
@@ -3129,16 +2934,13 @@
       "bibliography": "Johnson, Emily Pauline (Tekahionwake). \"The Indian Corn Planter.\" <em>Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)</em>, Musson Book Company, 1917. Originally published 1912.",
       "title": "The Indian Corn Planter",
       "written": "1912",
-      "locator": { "page": "137" },
+      "locator": {
+        "page": "137",
+        "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9v125b8j?urlappend=%3Bseq=181",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0082",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9v125b8j?urlappend=%3Bseq=181"
-          }
-        ],
         "contributors": [
           {
             "id": "a-e-pauline-johnson",
@@ -3167,15 +2969,12 @@
       "bibliography": "Joseph J. White, Inc. <em>Whitesbog Blueberries</em>. Joseph J. White, Inc., 1925. National Agricultural Library, U.S. Department of Agriculture.",
       "title": "Whitesbog Blueberries",
       "written": "1925",
+      "locator": {
+        "url": "https://www.biodiversitylibrary.org/bibliography/134115#/summary",
+        "label": "Biodiversity Heritage Library"
+      },
       "edition": {
         "id": "e-0083",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Biodiversity Heritage Library",
-            "url": "https://www.biodiversitylibrary.org/bibliography/134115#/summary"
-          }
-        ],
         "contributors": [{ "id": "a-joseph-j-white-inc", "name": "Joseph J. White, Inc.", "role": "author" }]
       }
     },
@@ -3193,15 +2992,12 @@
     "text": "<p>Eat one blueberry and you’ll eat them all. In Robert McCloskey’s <em>Blueberries for Sal</em>, an award-winning illustrated children’s book published in 1948, plucky Sal sets out with her mother to pick fruit on Blueberry Hill. ‘We will take our berries home and can them,’ her mother says. ‘Then we will have food for the winter.’ Sal can’t help herself. The blueberries barely hit the bottom of her tin pail – ‘<em>kuplink, kuplank, kuplunk!</em>’ – before they’re scooped into her mouth, a cheeky smile on her lips.</p><p></p><p>In Roald Dahl’s <em>Charlie and the Chocolate Factory</em> (1964), Willy Wonka forbids Miss Violet Beauregarde from chewing his magic gum, a new and untested invention. But she, a self-proclaimed chewing-gum champion, grabs a stick and shoves it into her mouth. The gum contains a three-course dinner, with blueberry pie for dessert, and it’s in this final course that things go wrong. From nose to cheeks, hands to arms and legs, a ‘brilliant, purplish-blue, the colour of blueberry juice’ spreads like a dye over Violet’s skin and hair. ‘Violet, you’re turning violet, Violet!’ shrieks her mother, as her daughter becomes ‘an enormous round blue ball – a gigantic blueberry, in fact – and all that remained of Violet Beauregarde herself was a tiny pair of legs and a tiny pair of arms sticking out of the great round fruit and little head on top’. In the 1971 <a href=\"https://www.youtube.com/watch?reload=9&amp;v=8Yqw_f26SvM\">film adaptation</a>, <em>Willy Wonka &amp; the Chocolate Factory</em>, Violet’s red belt makes a satisfying <em>pop</em> as it gives under the pressure of her expanding stomach. Ballooning with berry juice, consumed by that which she consumes, she’s rolled off by the Oompa Loompas as they sing their smug, moralising song: ‘It’s repulsive, revolting, and wrong, chewing all day long – the way that a cow does!’</p><p></p><p>Violet, that rude little cow! So disdainful, in her marathon mastication, of the manners and prohibitions of adults, with the perfectly devastating contempt of an almost-teenaged girl. And so unseemly in her bald-faced competitiveness, her elbow-jostling self-interest.</p><p></p><p>By design – Dahl’s design, his un-prim but still reactionary morality tale – the prideful and indecorous Violet is far less likeable than the cheerful Sal. Yet both of these girls are rebellious blueberry-eaters. They refuse to defer to the adults or to delay the gratification of their desires. Blueberries, in these stories, are associated with young women’s illicit acts of consumption, illicit in both timing and excess. The girls eat when they shouldn’t and they eat too much. Once they start, in different ways, they can’t stop.</p>",
     "citation": {
       "display": "Alix Beeston. “<a href=\"https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink\">Fingers Stained With Fruit and Ink</a>.” Rev. of Ellena Savage, <em>Blueberries: Essays Concerning Understanding </em>(2020). <em>The Sydney Review of Books </em>(June 15, 2020)<em>.</em>",
+      "locator": {
+        "url": "https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink",
+        "label": "Sydney Review of Books"
+      },
       "edition": {
         "id": "e-0084",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Sydney Review of Books",
-            "url": "https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink"
-          }
-        ],
         "contributors": [{ "id": "a-alix-beeston", "name": "Alix Beeston", "role": "author" }]
       },
       "bibliography": "Beeston, Alix. \"Fingers Stained with Fruit and Ink.\" Review of <em>Blueberries: Essays Concerning Understanding</em>, by Ellena Savage. <em>Sydney Review of Books</em>, 15 June 2020.",
@@ -3256,16 +3052,13 @@
       "bibliography": "Britton, Nathaniel Lord, and Addison Brown. \"Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.\" <em>An Illustrated Flora of the Northern United States, Canada and the British Possessions</em>, 2nd ed., vol. 3, Charles Scribner’s Sons, 1913. Originally published 1898.",
       "title": "Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.",
       "written": "1898",
-      "locator": { "page": "25" },
+      "locator": {
+        "page": "25",
+        "url": "https://archive.org/details/illustratedflor03brit/page/24/mode/2up?q=butterfly",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0086",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/illustratedflor03brit/page/24/mode/2up?q=butterfly"
-          }
-        ],
         "identifiers": { "internetArchive": "illustratedflor03brit", "openlibrary": "OL24445409M" },
         "contributors": [
           {
@@ -3300,15 +3093,12 @@
       "bibliography": "Horace. \"Odes, Book III: XIII.\" Translated by A. S. Kline, <em>Poetry in Translation</em>, 2003.",
       "title": "Odes, Book III: XIII",
       "written": "-0022~",
+      "locator": {
+        "url": "https://www.poetryintranslation.com/PITBR/Latin/HoraceOdesBkIII.php#anchor_Toc40263858",
+        "label": "Poetry in Translation"
+      },
       "edition": {
         "id": "e-0087",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Poetry in Translation",
-            "url": "https://www.poetryintranslation.com/PITBR/Latin/HoraceOdesBkIII.php#anchor_Toc40263858"
-          }
-        ],
         "contributors": [
           { "id": "a-horace", "name": "Horace", "role": "author", "wikidata": "Q6197" },
           {
@@ -3344,7 +3134,11 @@
       "bibliography": "Heraclitus. \"Fragments 39–42.\" <em>The Fragments of the Work of Heraclitus of Ephesus on Nature</em>, translated by G. T. W. Patrick, N. Murray, 1889. Composed c. 500 BCE.",
       "title": "Fragments 39–42",
       "written": "-0499~",
-      "locator": { "page": "93–94" },
+      "locator": {
+        "page": "93–94",
+        "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0017",
         "type": "book",
@@ -3352,13 +3146,6 @@
         "issued": "1889",
         "original-date": "-0500~",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126"
-          }
-        ],
         "identifiers": {
           "internetArchive": "fragmentsofworko00hera",
           "openlibrary": "OL21854788M",
@@ -3398,16 +3185,13 @@
       "bibliography": "Biot, Édouard. <em>Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles</em>. Imprimerie royale, 1841.",
       "title": "Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles",
       "written": "1841",
-      "locator": { "page": "138" },
+      "locator": {
+        "page": "138",
+        "url": "https://hdl.handle.net/2027/hvd.32044027957927?urlappend=%3Bseq=16%3Bownerid=27021597765377222-20",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0088",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/hvd.32044027957927?urlappend=%3Bseq=16%3Bownerid=27021597765377222-20"
-          }
-        ],
         "identifiers": { "hathitrust": "011549434", "oclc": "77784890", "lccn": "35025565" },
         "contributors": [
           {
@@ -3442,16 +3226,13 @@
       "bibliography": "Thoreau, Henry David. \"August 19, 1851.\" <em>Journal</em>, vol. 2, edited by Bradford Torrey, Houghton Mifflin, 1906.",
       "title": "August 19, 1851",
       "written": "1851-08-19",
-      "locator": { "page": "403" },
+      "locator": {
+        "page": "403",
+        "url": "https://www.walden.org/wp-content/uploads/2016/02/Journal-2-Chapter-7.pdf",
+        "label": "The Walden Woods Project"
+      },
       "edition": {
         "id": "e-0089",
-        "links": [
-          {
-            "role": "cited",
-            "label": "The Walden Woods Project",
-            "url": "https://www.walden.org/wp-content/uploads/2016/02/Journal-2-Chapter-7.pdf"
-          }
-        ],
         "contributors": [
           {
             "id": "a-henry-david-thoreau",
@@ -3491,15 +3272,12 @@
       "bibliography": "Piercy, Marge. \"Attack of the Squash People.\" <em>Circles on the Water: Selected Poems of Marge Piercy</em>, Alfred A. Knopf, 1982. Originally published 1978.",
       "title": "Attack of the Squash People",
       "written": "1978",
+      "locator": {
+        "url": "https://rpo.library.utoronto.ca/content/attack-squash-people",
+        "label": "Representative Poetry Online"
+      },
       "edition": {
         "id": "e-0090",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Representative Poetry Online",
-            "url": "https://rpo.library.utoronto.ca/content/attack-squash-people"
-          }
-        ],
         "contributors": [
           {
             "id": "a-marge-piercy",
@@ -3528,15 +3306,12 @@
       "bibliography": "Regan, Padraig. \"Notes on Various Squashes.\" <em>The Poetry Review</em>, Autumn 2017.",
       "title": "Notes on Various Squashes",
       "written": "2017",
+      "locator": {
+        "url": "https://poems.poetrysociety.org.uk/poems/notes-on-various-squashes/",
+        "label": "The Poetry Society"
+      },
       "edition": {
         "id": "e-0091",
-        "links": [
-          {
-            "role": "cited",
-            "label": "The Poetry Society",
-            "url": "https://poems.poetrysociety.org.uk/poems/notes-on-various-squashes/"
-          }
-        ],
         "contributors": [
           {
             "id": "a-padraig-regan",
@@ -3564,16 +3339,13 @@
       "bibliography": "Hass, Robert. \"Poem with a Cucumber in It.\" <em>The American Poetry Review</em>, vol. 36, no. 5, Sept./Oct. 2007, p. 34.",
       "title": "Poem with a Cucumber in It",
       "written": "2007-09/2007-10",
-      "locator": { "page": "34" },
+      "locator": {
+        "page": "34",
+        "url": "https://www.jstor.org/stable/20683657?searchText=Robert%20hass%20poem%20with%20a%20cucumber%20in%20it&amp;searchUri=%2Faction%2FdoBasicSearch%3FQuery%3DRobert%2Bhass%2Bpoem%2Bwith%2Ba%2Bcucumber%2Bin%2Bit%26so%3Drel&amp;ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&amp;refreqid=fastly-default%3Af2747166e2520d3b8e67b7c4fbdd96a7",
+        "label": "JSTOR"
+      },
       "edition": {
         "id": "e-0092",
-        "links": [
-          {
-            "role": "cited",
-            "label": "JSTOR",
-            "url": "https://www.jstor.org/stable/20683657?searchText=Robert%20hass%20poem%20with%20a%20cucumber%20in%20it&amp;searchUri=%2Faction%2FdoBasicSearch%3FQuery%3DRobert%2Bhass%2Bpoem%2Bwith%2Ba%2Bcucumber%2Bin%2Bit%26so%3Drel&amp;ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&amp;refreqid=fastly-default%3Af2747166e2520d3b8e67b7c4fbdd96a7"
-          }
-        ],
         "contributors": [
           { "id": "a-robert-hass", "name": "Robert Hass", "role": "author", "wikidata": "Q370513" }
         ]
@@ -3597,16 +3369,13 @@
       "bibliography": "Marcus Aurelius. <em>The Thoughts of the Emperor Marcus Aurelius Antoninus</em>. Translated by George Long, Little, Brown, 1899. Written c. 175 CE.",
       "title": "Meditations, Book VIII, Section 50",
       "written": "0175~",
-      "locator": { "page": "209" },
+      "locator": {
+        "page": "209",
+        "url": "https://www.google.com/books/edition/The_Thoughts_of_the_Emperor_Marcus_Aurel/i9iUswYUMmUC?hl=en&amp;gbpv=1&amp;pg=PA209&amp;printsec=frontcover",
+        "label": "Google Books"
+      },
       "edition": {
         "id": "e-0093",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Google Books",
-            "url": "https://www.google.com/books/edition/The_Thoughts_of_the_Emperor_Marcus_Aurel/i9iUswYUMmUC?hl=en&amp;gbpv=1&amp;pg=PA209&amp;printsec=frontcover"
-          }
-        ],
         "contributors": [
           {
             "id": "a-marcus-aurelius",
@@ -3640,16 +3409,13 @@
       "bibliography": "Cowper, William. \"The Task, Book III: The Garden.\" <em>The Poetical Works of William Cowper</em>, edited by William Benham, Macmillan, 1870. Originally published 1785.",
       "title": "The Task, Book III: The Garden",
       "written": "1785",
-      "locator": { "page": "446–462" },
+      "locator": {
+        "page": "446–462",
+        "url": "https://en.wikisource.org/wiki/The_Poetical_Works_of_William_Cowper_(Benham)/The_Task/Book_3",
+        "label": "Wikisource"
+      },
       "edition": {
         "id": "e-0094",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Wikisource",
-            "url": "https://en.wikisource.org/wiki/The_Poetical_Works_of_William_Cowper_(Benham)/The_Task/Book_3"
-          }
-        ],
         "contributors": [
           {
             "id": "a-william-cowper",
@@ -3717,15 +3483,12 @@
       "bibliography": "Pliny the Elder. <em>The Natural History</em>. Translated by John Bostock and H. T. Riley, Taylor and Francis, 1855. Written c. 77 CE.",
       "title": "Naturalis Historia, Book XX: Remedies Derived from the Garden Plants",
       "written": "0077~",
+      "locator": {
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D20%3Achapter%3D6#note1",
+        "label": "Perseus Digital Library"
+      },
       "edition": {
         "id": "e-0096",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Perseus Digital Library",
-            "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D20%3Achapter%3D6#note1"
-          }
-        ],
         "contributors": [
           {
             "id": "a-pliny-the-elder",
@@ -3765,16 +3528,13 @@
       "bibliography": "Cooper, Susan Fenimore. \"Saturday, 28th [June]—Passed the afternoon in the woods.\" <em>Rural Hours</em>, 3rd ed., George P. Putnam, 1851. First published 1850, as by \"A Lady.\"",
       "title": "Saturday, 28th [June]—Passed the afternoon in the woods.",
       "written": "1850",
-      "locator": { "page": "203–204" },
+      "locator": {
+        "page": "203–204",
+        "url": "https://archive.org/details/ruralhours00coop/page/202/mode/2up",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0097",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/ruralhours00coop/page/202/mode/2up"
-          }
-        ],
         "identifiers": {
           "internetArchive": "ruralhours00coop",
           "oclc": "3339732",
@@ -3808,16 +3568,13 @@
       "bibliography": "Heath, Francis George. \"Oak Antiquity.\" <em>Tree Lore</em>, Charles H. Kelly, 1912.",
       "title": "Oak Antiquity",
       "written": "1912",
-      "locator": { "page": "190–191" },
+      "locator": {
+        "page": "190–191",
+        "url": "https://hdl.handle.net/2027/mdp.39015011690990?urlappend=%3Bseq=196%3Bownerid=13510798890518092-202",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0098",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/mdp.39015011690990?urlappend=%3Bseq=196%3Bownerid=13510798890518092-202"
-          }
-        ],
         "identifiers": { "hathitrust": "001881232", "oclc": "12747590" },
         "contributors": [
           {
@@ -3846,21 +3603,21 @@
       "bibliography": "Frazer, James George. \"Tree-Worship\" and \"The Worship of the Oak.\" <em>The Golden Bough: A Study in Magic and Religion</em>, abridged ed., Macmillan, 1922.",
       "title": "Tree-Worship; The Worship of the Oak",
       "written": "1922",
-      "locator": { "page": "110–111, 159" },
+      "locator": [
+        {
+          "page": "110–111",
+          "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=136%3Bownerid=1284933-142",
+          "label": "HathiTrust"
+        },
+        {
+          "page": "159",
+          "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=185%3Bownerid=1284933-191",
+          "label": "HathiTrust"
+        }
+      ],
       "edition": {
         "id": "e-0099",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=136%3Bownerid=1284933-142"
-          },
-          {
-            "role": "copy",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=185%3Bownerid=1284933-191"
-          }
-        ],
+        "links": [],
         "identifiers": { "hathitrust": "100323859", "oclc": "263836", "lccn": "22021418" },
         "contributors": [
           {
@@ -3889,16 +3646,13 @@
       "bibliography": "Sandburg, Carl. \"Shag-Bark Hickory.\" <em>Smoke and Steel</em>, Harcourt, Brace and Howe, 1920.",
       "title": "Shag-Bark Hickory",
       "written": "1920",
-      "locator": { "page": "164" },
+      "locator": {
+        "page": "164",
+        "url": "https://hdl.handle.net/2027/uiug.30112039325284?urlappend=%3Bseq=180%3Bownerid=13510798903473000-184",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0100",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uiug.30112039325284?urlappend=%3Bseq=180%3Bownerid=13510798903473000-184"
-          }
-        ],
         "identifiers": { "hathitrust": "001055000", "oclc": "906880", "lccn": "20017899" },
         "contributors": [
           {
@@ -3928,16 +3682,13 @@
       "bibliography": "Nabokov, Vladimir. <em>Pale Fire</em>. Lancer Books, 1963. Originally published 1962. Quoting John Shade, \"Canto One,\" lines 49–57.",
       "title": "Canto One",
       "written": "1962",
-      "locator": { "page": "24" },
+      "locator": {
+        "page": "24",
+        "url": "https://archive.org/details/in.ernet.dli.2015.458629/page/n21/mode/2up",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0101",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/in.ernet.dli.2015.458629/page/n21/mode/2up"
-          }
-        ],
         "identifiers": { "internetArchive": "in.ernet.dli.2015.458629" },
         "contributors": [
           {
@@ -3968,16 +3719,13 @@
       "bibliography": "Sargent, Charles S. \"Shell-Bark Hickory. Shag-Bark Hickory.\" <em>Report on the Forests of North America (Exclusive of Mexico)</em>, Government Printing Office, 1884.",
       "title": "Shell-Bark Hickory. Shag-Bark Hickory.",
       "written": "1884",
-      "locator": { "page": "133" },
+      "locator": {
+        "page": "133",
+        "url": "https://hdl.handle.net/2027/uc1.31175024284567?urlappend=%3Bseq=149%3Bownerid=120949887-153",
+        "label": "HathiTrust"
+      },
       "edition": {
         "id": "e-0102",
-        "links": [
-          {
-            "role": "cited",
-            "label": "HathiTrust",
-            "url": "https://hdl.handle.net/2027/uc1.31175024284567?urlappend=%3Bseq=149%3Bownerid=120949887-153"
-          }
-        ],
         "identifiers": { "hathitrust": "103315786", "oclc": "26601282", "isbn": "9780883544327" },
         "contributors": [
           {
@@ -4009,7 +3757,8 @@
       "written": "1952/1953",
       "locator": {
         "page": "11",
-        "url": "https://archive.org/details/shieldofachilles0000whau_c9s5/page/10/mode/2up"
+        "url": "https://archive.org/details/shieldofachilles0000whau_c9s5/page/10/mode/2up",
+        "label": "Internet Archive"
       },
       "edition": {
         "id": "e-0103",
@@ -4018,13 +3767,6 @@
         "contributors": [{ "id": "a-auden", "name": "W.H. Auden", "role": "author", "wikidata": "Q178698" }],
         "issued": "1955",
         "original-date": "1955",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/shieldofachilles0000whau_c9s5/page/10/mode/2up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright — quoted as fair use",
         "identifiers": { "internetArchive": "shieldofachilles0000whau_c9s5" }
@@ -4050,7 +3792,8 @@
       "written": "1899",
       "locator": {
         "page": "397",
-        "url": "https://archive.org/details/scientificpapers04rayliala/page/397/mode/1up"
+        "url": "https://archive.org/details/scientificpapers04rayliala/page/397/mode/1up",
+        "label": "Internet Archive"
       },
       "edition": {
         "id": "e-0104",
@@ -4067,13 +3810,6 @@
         "publisher": "Cambridge University Press",
         "issued": "1903",
         "original-date": "1899",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/scientificpapers04rayliala/page/397/mode/1up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "internetArchive": "scientificpapers04rayliala", "oclc": "2316730", "lccn": "03015047" }
       }
@@ -4399,7 +4135,8 @@
       "written": "0850~",
       "locator": {
         "page": "73",
-        "url": "https://archive.org/details/jademountainchin00heng/page/73/mode/1up"
+        "url": "https://archive.org/details/jademountainchin00heng/page/73/mode/1up",
+        "label": "Internet Archive"
       },
       "edition": {
         "id": "e-0155",
@@ -4413,13 +4150,6 @@
         "publisher": "Alfred A. Knopf",
         "issued": "1929",
         "original-date": "0850~",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/jademountainchin00heng/page/73/mode/1up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "internetArchive": "jademountainchin00heng" },
         "rightsNote": "Public domain in the United States (published 1929). Bynner died in 1968, so the translation is still in copyright where the term is the author's life plus 70 years."
@@ -4441,7 +4171,11 @@
       "bibliography": "<em>Bṛhadāraṇyaka Upaniṣad</em>, V.2.3. <em>The Upanishads, Part II</em>, translated by F. Max Müller, Sacred Books of the East 15, Clarendon Press, 1884, p. 190. Composed c. 700 BCE.",
       "title": "Bṛhadāraṇyaka Upaniṣad",
       "written": "-0700~",
-      "locator": { "page": "190", "url": "https://archive.org/details/wg915/page/190/mode/1up" },
+      "locator": {
+        "page": "190",
+        "url": "https://archive.org/details/wg915/page/190/mode/1up",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0156",
         "type": "book",
@@ -4450,13 +4184,6 @@
         "publisher": "Clarendon Press",
         "issued": "1884",
         "original-date": "-0700~",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/wg915/page/190/mode/1up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "internetArchive": "wg915" }
       }
@@ -4478,7 +4205,8 @@
       "written": "1880",
       "locator": {
         "page": "196",
-        "url": "https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up"
+        "url": "https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up",
+        "label": "Internet Archive"
       },
       "edition": {
         "id": "e-0157",
@@ -4490,13 +4218,6 @@
         "pages": "195–197",
         "issued": "1880-12-30",
         "original-date": "1880",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "doi": "10.1038/023195d0", "internetArchive": "paper-doi-10_1038_023195d0" },
         "rightsNote": "An abstract of Aitken's paper, supplied to Nature by the Royal Society of Edinburgh; the full paper is in its Transactions, vol. 30."
@@ -4519,7 +4240,8 @@
       "written": "1798",
       "locator": {
         "page": "19",
-        "url": "https://archive.org/details/fearsinsolitudew00cole/page/n26/mode/1up"
+        "url": "https://archive.org/details/fearsinsolitudew00cole/page/n26/mode/1up",
+        "label": "Internet Archive"
       },
       "edition": {
         "id": "e-0158",
@@ -4531,13 +4253,6 @@
         "publisher": "J. Johnson",
         "issued": "1798",
         "original-date": "1798",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/fearsinsolitudew00cole/page/n26/mode/1up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "internetArchive": "fearsinsolitudew00cole" }
       }
@@ -4558,7 +4273,11 @@
       "bibliography": "Wells, William Charles. <em>An Essay on Dew, and Several Appearances Connected with It</em>. Taylor and Hessey, 1814, p. 2.",
       "title": "An Essay on Dew",
       "written": "1814",
-      "locator": { "page": "2", "url": "https://archive.org/details/b21299742/page/n11/mode/1up" },
+      "locator": {
+        "page": "2",
+        "url": "https://archive.org/details/b21299742/page/n11/mode/1up",
+        "label": "Internet Archive"
+      },
       "edition": {
         "id": "e-0159",
         "type": "book",
@@ -4567,13 +4286,6 @@
         "publisher": "Taylor and Hessey",
         "issued": "1814",
         "original-date": "1814",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/b21299742/page/n11/mode/1up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "internetArchive": "b21299742" }
       }
@@ -4595,7 +4307,8 @@
       "written": "1888",
       "locator": {
         "page": "13",
-        "url": "https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up"
+        "url": "https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up",
+        "label": "Internet Archive"
       },
       "edition": {
         "id": "e-0160",
@@ -4605,13 +4318,6 @@
         "publisher": "J. Durie and Son",
         "issued": "1888",
         "original-date": "1888",
-        "links": [
-          {
-            "role": "cited",
-            "label": "Internet Archive",
-            "url": "https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up"
-          }
-        ],
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "internetArchive": "amongmilletother00lampuoft" }
       }

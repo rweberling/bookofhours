@@ -27,9 +27,9 @@ It doesn't merge editions. Two records whose copies share a HathiTrust
 record may be the same edition or two volumes of one set, so they are
 listed at the end, for a person to decide (then give them one e- ID).
 
-The cited copy: for a reading, its edition's link marked "cited", else the
-first link in its citation; for an image, its link marked "cited", else
-the first link in its caption. HathiTrust and Internet Archive need pauses
+The cited copy: a reading's or book plate's locator (the first, if a
+reading has two), else an image's link marked "cited", else the first
+link in the citation or caption. HathiTrust and Internet Archive need pauses
 between requests; this keeps to about two a second.
 """
 
@@ -71,7 +71,10 @@ def get_json(url):
             return None
 
 
-def cited_url(links, html):
+def cited_url(links, html, locator=None):
+    for loc in (locator if isinstance(locator, list) else [locator]):
+        if loc and loc.get('url'):
+            return loc['url']
     for link in links or []:
         if link.get('role') == 'cited' and link.get('url'):
             return link['url']
@@ -156,7 +159,7 @@ def main(args):
         edition = cit.get('edition')
         if not edition:
             continue
-        found = identify(cited_url(edition.get('links'), cit.get('display')))
+        found = identify(cited_url(edition.get('links'), cit.get('display'), cit.get('locator')))
         if not found:
             continue
         ids, _, _ = found
@@ -172,7 +175,7 @@ def main(args):
     for img in images:
         if img.get('draft'):
             continue
-        found = identify(cited_url(img.get('links'), img.get('caption')))
+        found = identify(cited_url(img.get('links'), img.get('caption'), img.get('locator')))
         if not found:
             continue
         ids, title, issued = found

@@ -3782,25 +3782,25 @@
       "height": 1033,
       "sha256": "936aa2887e672fa4ba0799f9fa7dc93ac6aa50b0406456bdedc0f21f75e34ab1",
       "settings": "89e48fac760f",
-      "credit": "d5c123508e06",
+      "credit": "df329aec3561",
       "copies": [
         {
           "file": "images/web/void_smithsonian-800.webp",
           "width": 800,
           "height": 619,
-          "bytes": 32600
+          "bytes": 32618
         },
         {
           "file": "images/web/void_smithsonian-1600.webp",
           "width": 1336,
           "height": 1033,
-          "bytes": 109820
+          "bytes": 109838
         },
         {
           "file": "images/web/void_smithsonian-2400.webp",
           "width": 1336,
           "height": 1033,
-          "bytes": 109820
+          "bytes": 109838
         }
       ]
     },

@@ -12,13 +12,6 @@
     "publisher": "George Redway",
     "date": "1887",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive",
-        "url": "https://archive.org/details/geometricalpsych00cook/geometricalpsych00cook"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["void"],
@@ -34,6 +27,10 @@
         "oclc": "22040934",
         "openlibrary": "OL24404552M"
       }
+    },
+    "locator": {
+      "url": "https://archive.org/details/geometricalpsych00cook/geometricalpsych00cook",
+      "label": "Internet Archive"
     }
   },
   {
@@ -82,18 +79,6 @@
     "publisher": "Smithsonian Institution",
     "date": "1900/1904",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive (volume)",
-        "url": "https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich"
-      },
-      {
-        "role": "cited",
-        "label": "Internet Archive (page)",
-        "url": "https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich/page/n71/mode/2up"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["void"],
@@ -110,6 +95,10 @@
         "openlibrary": "OL7126704M",
         "lccn": "04033116"
       }
+    },
+    "locator": {
+      "url": "https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich/page/n71/mode/2up",
+      "label": "Internet Archive"
     }
   },
   {
@@ -364,13 +353,6 @@
     "publisher": "John Murray",
     "date": "1880",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://babel.hathitrust.org/cgi/pt?id=nyp.33433007351665&seq=293&view=1up"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["transit"],
@@ -382,6 +364,10 @@
       "title": "The power of movement in plants",
       "issued": "1880",
       "identifiers": { "hathitrust": "008595207", "oclc": "1221788" }
+    },
+    "locator": {
+      "url": "https://babel.hathitrust.org/cgi/pt?id=nyp.33433007351665&seq=293&view=1up",
+      "label": "HathiTrust"
     }
   },
   {
@@ -854,13 +840,6 @@
     "publisher": "Seeley",
     "date": "1898",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["denouement"],
@@ -872,6 +851,10 @@
       "title": "The story of the sun, moon, and stars",
       "issued": "1908",
       "identifiers": { "hathitrust": "008630234", "oclc": "25600297" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232",
+      "label": "HathiTrust"
     }
   },
   {
@@ -887,13 +870,6 @@
     "publisher": "Gustav Fischer",
     "date": "1879",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive",
-        "url": "https://archive.org/details/monographiederme11879haec/page/n70/mode/1up"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["denouement"],
@@ -905,6 +881,10 @@
       "title": "Monographie der Medusen",
       "issued": "1879",
       "identifiers": { "internetArchive": "monographiederme11879haec", "oclc": "12433415" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/monographiederme11879haec/page/n70/mode/1up",
+      "label": "Internet Archive"
     }
   },
   {
@@ -992,7 +972,6 @@
     "caption": "<em>Leaves of the Witch Hazel Family - 1/3 life size</em>, from Richard E. Weaver, “<a href=\"https://doi.org/10.5962/p.249681\">The Witch Hazel Family (Hamamelidaceae)</a>,” Arnoldia 36.3 (1976), pp. 69-109.",
     "alt": "Line drawings of fourteen leaves from the witch hazel family, lettered A to N: broad ovals with wavy or toothed edges and strong parallel veins.",
     "bibliography": "Weaver, Richard E. \"Leaves of the Witch Hazel Family – 1/3 Life Size.\" \"The Witch Hazel Family (Hamamelidaceae),\" <em>Arnoldia</em>, vol. 36, no. 3, 1976, pp. 69–109.",
-    "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.5962/p.249681" }],
     "lectio": { "post": "lt-0001", "place": 2 },
     "tags": {
       "hours": [],
@@ -1008,7 +987,8 @@
       "title": "The Witch Hazel Family (Hamamelidaceae)",
       "issued": "1976",
       "identifiers": { "doi": "10.5962/p.249681" }
-    }
+    },
+    "locator": { "url": "https://doi.org/10.5962/p.249681", "label": "DOI" }
   },
   {
     "id": "i-0037",
@@ -1074,13 +1054,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95\">The Redbreast</a>,” or European Robin, from <a href=\"https://en.wikipedia.org/wiki/Howard_Saunders#:~:text=Howard%20Saunders%20(16%20September%201835,specialising%20in%20gulls%20and%20terns.\">Howard Saunders</a> (1835-1907), <em>An Illustrated Manual of British Birds</em> (London: Gurney and Jackson, 1889), p. 37.",
     "alt": "An engraving of two European robins on a mossy stump among grasses and wildflowers, one standing just behind the other.",
     "bibliography": "Saunders, Howard. \"The Redbreast.\" <em>An Illustrated Manual of British Birds</em>, Gurney and Jackson, 1889.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95"
-      }
-    ],
     "lectio": { "post": "lt-0002", "place": 3 },
     "tags": {
       "hours": [],
@@ -1096,6 +1069,10 @@
       "title": "An illustrated manual of British birds",
       "issued": "1889",
       "identifiers": { "hathitrust": "100448239", "oclc": "78616471" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1105,13 +1082,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12\">Tapping the Grove, Boiling the Sap</a>,” from Crockett, <em>How Vermont Maple Sugar is Made</em>, p. 6.",
     "alt": "Two photographs on a book page: a man tapping a tall maple in a snowy, leafless grove, with buckets on the trunks and a horse and sled beyond; and the inside of a sugarhouse, steam rising from long wooden pans of boiling sap.",
     "bibliography": "Crockett, Walter H. \"Tapping the Grove, Boiling the Sap.\" <em>How Vermont Maple Sugar Is Made</em>, Vermont Department of Agriculture, 1915.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12"
-      }
-    ],
     "lectio": { "post": "lt-0003", "place": 1 },
     "tags": {
       "hours": [],
@@ -1128,6 +1098,10 @@
       "issued": "1915",
       "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
       "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }]
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1137,13 +1111,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1\">Natural range of sugar maple</a>,” from <em>Sugar Maple: An American Wood</em> (Washington: Dept. of Agriculture, Forest Service, 1980), p. 2.",
     "alt": "A map of the eastern United States and Canada with the sugar maple’s range shaded, from Minnesota and Missouri east to Nova Scotia and south to Tennessee and Arkansas.",
     "bibliography": "United States Forest Service. \"Natural Range of Sugar Maple.\" <em>Sugar Maple: An American Wood</em>, U.S. Department of Agriculture, Forest Service, 1980.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1"
-      }
-    ],
     "lectio": { "post": "lt-0003", "place": 2 },
     "tags": {
       "hours": [],
@@ -1159,6 +1126,10 @@
       "title": "Sugar maple (Acer saccharum Marsh.)",
       "issued": "1980",
       "identifiers": { "hathitrust": "103030992", "oclc": "6401561" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1193,13 +1164,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21\">Paper Birch (Betula papyrifera) Botanical and Commercial Range</a>,” from <em>Birch</em>, American Woods (Washington, D.C.: U.S. Dept. of Agriculture, Forest Service, 1940), p. 15.",
     "alt": "A map of the eastern United States with the paper birch’s range hatched across the northern states from Minnesota to Maine, darkest in the north woods and northern New England, where most was cut commercially.",
     "bibliography": "United States Forest Service. \"Paper Birch (Betula papyrifera) Botanical and Commercial Range.\" <em>Birch</em>, American Woods, U.S. Department of Agriculture, Forest Service, 1940.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21"
-      }
-    ],
     "lectio": { "post": "lt-0004", "place": 2 },
     "tags": {
       "hours": [],
@@ -1215,6 +1179,10 @@
       "title": "An American wood",
       "issued": "1937",
       "identifiers": { "hathitrust": "002137949", "oclc": "2752530", "lccn": "agr54000002" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1354,13 +1322,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41\">The Parts of Crocus and Colchicum Flowers</a>,” from E. A. Bowles, <em>A Handbook of Crocus and Colchicum for Gardeners</em> (London : M. Hopkinson &amp; Company Ltd., 1924).",
     "alt": "Labelled line drawings comparing a crocus and a colchicum, each cut lengthwise from flower to corm, naming the stamens, styles, perianth tube, leaves, scales and roots.",
     "bibliography": "Bowles, E. A. \"The Parts of Crocus and Colchicum Flowers.\" <em>A Handbook of Crocus and Colchicum for Gardeners</em>, M. Hopkinson, 1924.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41"
-      }
-    ],
     "lectio": { "post": "lt-0006", "place": 2 },
     "tags": {
       "hours": [],
@@ -1376,6 +1337,10 @@
       "title": "A handbook of Crocus and Colchicum for gardeners,",
       "issued": "1924",
       "identifiers": { "hathitrust": "002010826", "oclc": "4584067", "lccn": "agr24001012" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1410,13 +1375,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2\">The Crocus</a>,” from Adolph Baumbach, <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano </em>(Cleveland, Ohio: S. Brainard’s Sons, 1851).",
     "alt": "A page of printed sheet music, “The Crocus,” a short piano piece marked Allegretto, in five systems of treble and bass staves.",
     "bibliography": "Baumbach, Adolph. \"The Crocus.\" <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano</em>, S. Brainard’s Sons, 1851.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2"
-      }
-    ],
     "lectio": { "post": "lt-0006", "place": 4 },
     "tags": {
       "hours": [],
@@ -1432,6 +1390,10 @@
       "title": "The mignonette ; The crocus",
       "issued": "1856",
       "identifiers": { "hathitrust": "101757298", "oclc": "68896576" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1467,13 +1429,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183\">Ostrich Fern. Sterile Fronds (New Hampshire)</a>,” from George Henry Tilton, <em>The Fern Lover’s Companion: A Guide for the Northeastern States and Canada</em> (Boston, Massachusetts: 1922), p. 175.",
     "alt": "A black-and-white photograph of a dense stand of ostrich ferns, their tall plume-like fronds pale against a dark, misty woodland.",
     "bibliography": "Tilton, George Henry. \"Ostrich Fern. Sterile Fronds (New Hampshire).\" <em>The Fern Lover’s Companion: A Guide for the Northeastern States and Canada</em>, Little, Brown, 1922.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183"
-      }
-    ],
     "lectio": { "post": "lt-0007", "place": 2 },
     "tags": {
       "hours": [],
@@ -1489,6 +1444,10 @@
       "title": "The fern lover's companion; a guide for the Northeastern states and Canada",
       "issued": "1922",
       "identifiers": { "hathitrust": "100429762", "oclc": "6141524", "lccn": "23005467" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1498,13 +1457,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59\">Development of the Ostrich Fern</a>,” Plate 6 from <em>The Development of the Ostrich Fern</em>, Douglas Houghton Campbell (Boston: Society of Natural History, April 1887).",
     "alt": "A plate of microscope drawings showing the early growth of the ostrich fern, numbered 1 to 15: cell after cell in rounded and elongated clusters, cross-sections of tissue, and a tiny young fern rising from its prothallus.",
     "bibliography": "Campbell, Douglas Houghton. \"Development of the Ostrich Fern.\" Plate 6, <em>The Development of the Ostrich Fern</em>, Boston Society of Natural History, 1887.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59"
-      }
-    ],
     "lectio": { "post": "lt-0007", "place": 3 },
     "tags": {
       "hours": [],
@@ -1528,6 +1480,10 @@
           "wikidata": "Q4251095"
         }
       ]
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1567,13 +1523,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57\">Distribution in North America of rabbits of the genus </a><em><a href=\"https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57\">Sylvilagus</a></em>,” from E. W. Nelson, <em>North American Fauna, No. 29: The Rabbits of North America</em> (Washington, DC: Government Printing Office, 1909), p. 43.",
     "alt": "A map of North and Central America with the range of the cottontail rabbits shaded across nearly all of the United States, Mexico and Central America, stopping short of Canada.",
     "bibliography": "Nelson, E. W. \"Distribution in North America of Rabbits of the Genus <em>Sylvilagus</em>.\" <em>The Rabbits of North America</em>, North American Fauna 29, Government Printing Office, 1909.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57"
-      }
-    ],
     "lectio": { "post": "lt-0008", "place": 2 },
     "tags": {
       "hours": [],
@@ -1589,6 +1538,10 @@
       "title": "North American fauna",
       "issued": "1889",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1598,13 +1551,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397\">Skulls of Sylvilagus</a>,” from E. W. Nelson, <em>North American Fauna, No. 29: The Rabbits of North America </em>(Washington, DC: Government Printing Office, 1909), p. 302.",
     "alt": "A photographic plate of seven cottontail rabbit skulls on black: three seen from above and four from the side, numbered 1 to 7.",
     "bibliography": "Nelson, E. W. \"Skulls of Sylvilagus.\" <em>The Rabbits of North America</em>, North American Fauna 29, Government Printing Office, 1909.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397"
-      }
-    ],
     "lectio": { "post": "lt-0008", "place": 3 },
     "tags": {
       "hours": [],
@@ -1620,6 +1566,10 @@
       "title": "North American fauna",
       "issued": "1889",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1659,13 +1609,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127\">Common Mullein.</a>” from <em>The Book of Wild Flowers: An Introduction to the Ways of Plant Life</em> (Washington, DC: The National Geographic Society, 1924 [1915]), p. <strong>111.</strong>",
     "alt": "A color painting of a common mullein plant: a tall stem with a dense spike of small yellow flowers at its top, rising from large, soft, grey-green leaves.",
     "bibliography": "\"Common Mullein.\" <em>The Book of Wild Flowers: An Introduction to the Ways of Plant Life</em>, National Geographic Society, 1924.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127"
-      }
-    ],
     "lectio": { "post": "lt-0009", "place": 2 },
     "tags": {
       "hours": [],
@@ -1681,6 +1624,10 @@
       "title": "The book of wild flowers; an introduction to the ways of plant life, together with biographies of 250 representative species and chapters on our state flowers and familiar grasses; with color plates of 250 familiar wild flowers and grasses ... .",
       "issued": "1924",
       "identifiers": { "hathitrust": "009164350", "oclc": "1241838", "lccn": "24031492" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1708,13 +1655,6 @@
     "caption": "“<a href=\"https://archive.org/details/britishmossesthe21874trip\">Plate XXXIII. HYPNEAE (continued)</a>,” from F.E. Tripp, <em>British Mosses: Their Homes, Aspects, Structure, and Uses, Vol. II </em>(London: George Bell and Sons, 1874).",
     "alt": "A colored plate of mosses: about twenty small studies of feathery green shoots, single leaves and slender stalks with spore capsules, numbered and arranged in rows.",
     "bibliography": "Tripp, F. E. \"Plate XXXIII. Hypneae (continued).\" <em>British Mosses: Their Homes, Aspects, Structure, and Uses</em>, vol. 2, George Bell and Sons, 1874.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive",
-        "url": "https://archive.org/details/britishmossesthe21874trip"
-      }
-    ],
     "lectio": { "post": "lt-0010", "place": 1 },
     "tags": {
       "hours": [],
@@ -1730,6 +1670,10 @@
       "title": "British mosses, their homes, aspects, structure and uses. With a coloured figure of each species etched from nature",
       "issued": "1874",
       "identifiers": { "internetArchive": "britishmossesthe21874trip", "oclc": "4854519" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/britishmossesthe21874trip",
+      "label": "Internet Archive"
     }
   },
   {
@@ -1739,13 +1683,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69\">Mosses</a>,” from A. J. Grout, <em>Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States</em>, illus. Mary V. Thayer (New York: Self-published, 1900), p. 37.",
     "alt": "A book page of pen drawings of two feather mosses: two branching, fern-like shoots; a magnified branch with curled leaves; and close-ups of their curved spore capsules.",
     "bibliography": "Grout, A. J. \"Mosses.\" <em>Mosses with Hand-Lens and Microscope: A Non-Technical Hand-Book of the More Common Mosses of the Northeastern United States</em>, illustrated by Mary V. Thayer, 1900.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69"
-      }
-    ],
     "lectio": { "post": "lt-0010", "place": 2 },
     "tags": {
       "hours": [],
@@ -1761,6 +1698,10 @@
       "title": "Mosses with hand-lens and microscope; a non-technical hand-book of the more common mosses of the northeastern United States",
       "issued": "1900",
       "identifiers": { "hathitrust": "010668807", "oclc": "1027478", "lccn": "01029714" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1770,13 +1711,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60\">Structure discontinuities, Porter Square pilot tunnel</a>,” from D.E. Thompson et al., <em>Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report </em>(Washington, D.C.: Urban Mass Transportation Administration, 1983).",
     "alt": "A dim black-and-white photograph inside a tunnel under construction: a dark, fractured rock face, lit by a lamp, with a pipe running along the floor.",
     "bibliography": "Thompson, D. E., et al. \"Structure Discontinuities, Porter Square Pilot Tunnel.\" <em>Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report</em>, Urban Mass Transportation Administration, 1983.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60"
-      }
-    ],
     "lectio": { "post": "lt-0011", "place": 1 },
     "tags": {
       "hours": [],
@@ -1792,6 +1726,10 @@
       "title": "Field evaluation of advanced methods of geotechnical instrumentation for transit tunneling : final report",
       "issued": "1983",
       "identifiers": { "hathitrust": "101655331", "oclc": "10178867" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60",
+      "label": "HathiTrust"
     }
   },
   {
@@ -1801,13 +1739,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147\">Reconstruction of the continental blocks for the Great Ice Age</a>,” from Alfred Wegener, <em>The Origin of Continents and Oceans, </em>third ed. (1922), trans. J.G.A. Skerl (New York: E.P. Dutton, [1924]), p. 111.",
     "alt": "A line map of the northern continents fitted together as Wegener imagined them during the last Ice Age, North America, Greenland, Europe and Africa joined, with dashed lines marking the edges of the ice sheets.",
     "bibliography": "Wegener, Alfred. \"Reconstruction of the Continental Blocks for the Great Ice Age.\" <em>The Origin of Continents and Oceans</em>, 3rd ed., translated by J. G. A. Skerl, E. P. Dutton, 1924. Originally published 1922.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147"
-      }
-    ],
     "lectio": { "post": "lt-0011", "place": 2 },
     "tags": {
       "hours": [],
@@ -1823,6 +1754,10 @@
       "title": "The origin of continents and oceans",
       "issued": "1924",
       "identifiers": { "hathitrust": "001272669", "oclc": "3010882" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2032,13 +1967,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109\">Reed Swamp at the Margin of a Norfolk Broad,</a>” from A.R. Horwood, <em><strong>A New British Flora: British Wild Flowers in Their Natural Haunts,   Vol. IV</strong></em> (London: The Gresham Publishing Company, Ltd., 1919), p. 63.",
     "alt": "A black-and-white photograph of reeds growing out of still, open water at the edge of a broad lake, with a low line of trees on the far shore.",
     "bibliography": "Horwood, A. R. \"Reed Swamp at the Margin of a Norfolk Broad.\" <em>A New British Flora: British Wild Flowers in Their Natural Haunts</em>, vol. 4, Gresham Publishing, 1919.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109"
-      }
-    ],
     "lectio": { "post": "lt-0014", "place": 1 },
     "tags": {
       "hours": [],
@@ -2062,6 +1990,10 @@
           "wikidata": "Q21341246"
         }
       ]
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2071,13 +2003,6 @@
     "caption": "<a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\">Habitat illustration and range map for </a><em><a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\">Phragmites communis</a></em><a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\"> [sic]</a>, from  Alex C. Martin, Ray C. Erickson, and John H. Steenis, <em>Improving Duck Marshes by Weed Control </em>(Washington, DC: U.S. Department of the Interior Fish and Wildlife Service, 1957), p. 35.",
     "alt": "A drawing of tall, plumed reeds at the water’s edge with two Canada geese swimming past, below a map of the United States hatched to show where the reed grows: nearly everywhere but the Southeast.",
     "bibliography": "Martin, Alex C., Ray C. Erickson, and John H. Steenis. <em>Improving Duck Marshes by Weed Control</em>. U.S. Department of the Interior, Fish and Wildlife Service, 1957.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49"
-      }
-    ],
     "lectio": { "post": "lt-0014", "place": 2 },
     "tags": {
       "hours": [],
@@ -2093,6 +2018,10 @@
       "title": "Circular",
       "issued": "1941",
       "identifiers": { "hathitrust": "003923103", "oclc": "1695369", "lccn": "41051406" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2352,13 +2281,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349\">Amelanchier Canadensis</a>,” Plate CXCIV from Charles Sprague Sargent, <em>The Silva of North America, Vol. IV: Rosaceae-Saxifragaceae</em> (Boston: Houghton Mifflin, 1892), p. 133.",
     "alt": "A botanical engraving of serviceberry: a branch of five-petalled white blossoms and a branch of round berries among oval, finely toothed leaves, with numbered close-ups of the flower and fruit.",
     "bibliography": "Sargent, Charles Sprague. \"Amelanchier canadensis.\" Plate CXCIV, <em>The Silva of North America</em>, vol. 4, Houghton Mifflin, 1892.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349"
-      }
-    ],
     "lectio": { "post": "lt-0018", "place": 1 },
     "tags": {
       "hours": [],
@@ -2374,6 +2296,10 @@
       "title": "The silva of North America; a description of the trees which grow naturally in North America exclusive of Mexico",
       "issued": "1891",
       "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2383,13 +2309,6 @@
     "caption": "“<em><a href=\"https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63\">Amelanchier arborea</a></em><a href=\"https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63\"> (Michx. f.) Fern., downy serviceberry,</a>” from Elbert L. Little Jr., <em>Atlas of United States Trees, Vol. 4: Minor Eastern Hardwoods</em> (Washington, DC: USDA Forest Service, 1976), p. 51.",
     "alt": "A map of North America with the downy serviceberry’s range shaded red across the eastern United States and southeastern Canada, from the Great Lakes and New England south to the Gulf states.",
     "bibliography": "Little, Elbert L., Jr. \"<em>Amelanchier arborea</em> (Michx. f.) Fern., Downy Serviceberry.\" <em>Atlas of United States Trees</em>, vol. 4, <em>Minor Eastern Hardwoods</em>, USDA Forest Service, 1976.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63"
-      }
-    ],
     "lectio": { "post": "lt-0018", "place": 2 },
     "tags": {
       "hours": [],
@@ -2405,6 +2324,10 @@
       "title": "Atlas of United States trees",
       "issued": "1971",
       "identifiers": { "hathitrust": "009818689", "lccn": "79653298" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2415,11 +2338,6 @@
     "alt": "Three color photographs of pale, honey-colored serviceberry wood, each in a green border: the end grain with its growth rings, and two lengthwise cuts showing the straight grain.",
     "bibliography": "Harrar, E. S. \"Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section.\" <em>Hough’s Encyclopaedia of American Woods</em>, Robert Speller &amp; Sons, 1957.",
     "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30"
-      },
       {
         "role": "copy",
         "label": "The Met",
@@ -2441,6 +2359,10 @@
       "title": "Hough's encyclopaedia of American woods",
       "issued": "1957",
       "identifiers": { "hathitrust": "003143342", "oclc": "1268560", "lccn": "57010592" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2475,13 +2397,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18\">Red Dutch. Raceme and detail of flower</a>.” <em>The Red and White Currants. </em>Wooster, Ohio: Ohio Agricultural Experiment Station, 1923.",
     "alt": "A photograph of a red currant’s drooping spray of small flowers, beside labelled drawings of a single flower seen from above and cut in half, naming its sepals, petals, stamens, pistil and ovary.",
     "bibliography": "\"Red Dutch. Raceme and Detail of Flower.\" <em>The Red and White Currants</em>, Ohio Agricultural Experiment Station, 1923.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18"
-      }
-    ],
     "lectio": { "post": "lt-0019", "place": 2 },
     "tags": {
       "hours": [],
@@ -2497,6 +2412,10 @@
       "title": "The red and white currants",
       "issued": "1923",
       "identifiers": { "hathitrust": "011465852", "oclc": "18840173" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2506,13 +2425,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/coo.31924081974929?urlappend=%3Bseq=32%3Bownerid=120575415-36\">A currant bush before pruning</a>,” <em>Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust</em> (Washington, DC: U.S. Department of Agriculture Farmer’s Bulletin 1398, September 1929), p. 10.",
     "alt": "A pen drawing of a currant bush before pruning: a crowded fan of long, bare, upright stems rising from the ground.",
     "bibliography": "\"A Currant Bush before Pruning.\" <em>Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust</em>, Farmers’ Bulletin 1398, U.S. Department of Agriculture, Sept. 1929.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/coo.31924081974929?urlappend=%3Bseq=32%3Bownerid=120575415-36"
-      }
-    ],
     "lectio": { "post": "lt-0019", "place": 3 },
     "tags": {
       "hours": [],
@@ -2528,6 +2440,10 @@
       "title": "Farmers' bulletin",
       "issued": "1889",
       "identifiers": { "hathitrust": "000505320", "oclc": "1696411", "lccn": "agr16000325" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/coo.31924081974929?urlappend=%3Bseq=32%3Bownerid=120575415-36",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2562,7 +2478,6 @@
     "caption": "C. Mir, et al. “<a href=\"https://doi.org/10.1007/s00122-013-2164-z\">Out of America: Tracing the Genetic Footprints of the Global Diffusion of Maize</a>.” <em>Theoretical and Applied Genetics </em>[Berlin/Heidelberg] 126.11 (November 2013: 2671–2682), p. 2679.",
     "alt": "A world map tracing how maize spread from the Americas, with colored arrows labelled “Spanish,” “Portuguese” and with dates crossing to Europe, Africa and Asia, and colored patches marking where each strain took hold.",
     "bibliography": "Mir, C., et al. \"Out of America: Tracing the Genetic Footprints of the Global Diffusion of Maize.\" <em>Theoretical and Applied Genetics</em>, vol. 126, no. 11, Nov. 2013, pp. 2671–2682.",
-    "links": [{ "role": "cited", "label": "DOI", "url": "https://doi.org/10.1007/s00122-013-2164-z" }],
     "lectio": { "post": "lt-0020", "place": 2 },
     "tags": {
       "hours": [],
@@ -2578,7 +2493,8 @@
       "title": "Out of America: tracing the genetic footprints of the global diffusion of maize",
       "issued": "2013",
       "identifiers": { "doi": "10.1007/s00122-013-2164-z" }
-    }
+    },
+    "locator": { "url": "https://doi.org/10.1007/s00122-013-2164-z", "label": "DOI" }
   },
   {
     "id": "i-0093",
@@ -2667,13 +2583,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52\">Plate XII. Blueberry Propagation Frames.</a>” Frederick V. Coville, <em>Directions for Blueberry Culture</em>. U.S. Department of Agriculture, Bulletin No. 974. Washington, DC: Government Printing Office, 1921.",
     "alt": "Two photographs on a book page of blueberry propagation frames: long rows of low wooden cold frames under a timber framework, one shaded with muslin and one with slatted wooden covers.",
     "bibliography": "Coville, Frederick V. \"Plate XII. Blueberry Propagation Frames.\" <em>Directions for Blueberry Culture</em>, Bulletin 974, U.S. Department of Agriculture, Government Printing Office, 1921.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52"
-      }
-    ],
     "lectio": { "post": "lt-0021", "place": 2 },
     "tags": {
       "hours": [],
@@ -2689,6 +2598,10 @@
       "title": "Directions for blueberry culture, 1921",
       "issued": "1921",
       "identifiers": { "hathitrust": "100199018", "oclc": "9452320" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52",
+      "label": "HathiTrust"
     }
   },
   {
@@ -2717,13 +2630,6 @@
     "caption": "William Clark, “<a href=\"https://archive.org/details/floraconspicuase00morr/page/226/mode/2up\">Asclepias tuberosa. Tuberous Swallow-wort</a>.” From Richard Morris, <em>Flora Conspicua: A Selection of the Most Ornamental Flowering, Hardy, Exotic and Indigenous Trees, Shrubs, and Herbaceous plants, for Embellishing Flower-Gardens and Pleasure-Grounds. </em>London: Longman, 1826.",
     "alt": "A hand-colored botanical plate of butterfly weed: a sturdy stem with long, narrow leaves, crowned by a broad flat cluster of bright orange flowers, with drawings of its seed pod and flower parts.",
     "bibliography": "Clark, William. \"Asclepias tuberosa. Tuberous Swallow-wort.\" Richard Morris, <em>Flora Conspicua</em>, Longman, 1826.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive",
-        "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up"
-      }
-    ],
     "lectio": { "post": "lt-0022", "place": 1 },
     "tags": {
       "hours": [],
@@ -2743,6 +2649,10 @@
         "openlibrary": "OL13520643M",
         "lccn": "11032777"
       }
+    },
+    "locator": {
+      "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up",
+      "label": "Internet Archive"
     }
   },
   {
@@ -3206,13 +3116,6 @@
     "caption": "“<a href=\"https://archive.org/details/CAT87209954/page/n291/mode/2up\" rel=\"noopener\" target=\"_blank\">Map 180-E. northern red oak, </a><em><a href=\"https://archive.org/details/CAT87209954/page/n291/mode/2up\" rel=\"noopener\" target=\"_blank\">Quercus rubra L</a>.” </em>Elbert L. Little, Jr. <em>Atlas of United States Trees, Vol. 1: Conifers and Important Hardwoods</em>. Washington, DC: U.S. Department of Agriculture Forest Service, 1971.",
     "alt": "A map of the eastern United States with the northern red oak’s range shaded grey, from Minnesota and Nova Scotia south to Arkansas, Alabama and Georgia, missing only the Gulf coast and Florida.",
     "bibliography": "Little, Elbert L., Jr. \"Map 180-E. Northern Red Oak, <em>Quercus rubra</em> L.\" <em>Atlas of United States Trees</em>, vol. 1, <em>Conifers and Important Hardwoods</em>, U.S. Department of Agriculture, Forest Service, 1971.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive",
-        "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up"
-      }
-    ],
     "lectio": { "post": "lt-0028", "place": 2 },
     "tags": {
       "hours": [],
@@ -3228,6 +3131,10 @@
       "title": "Atlas of United States trees",
       "issued": "1971",
       "identifiers": { "internetArchive": "CAT87209954", "lccn": "79653298" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up",
+      "label": "Internet Archive"
     }
   },
   {
@@ -3237,13 +3144,6 @@
     "caption": "“<a href=\"https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22\" rel=\"noopener\" target=\"_blank\">Red Oak and The Pigeon of Passage</a>.” Mark Catesby. <em>The Natural History of Carolina, Florida and the Bahama Islands, Vol. 1</em>. London, England: n.p., 1729-1732. 22.",
     "alt": "A hand-colored engraving of a passenger pigeon, grey-blue with a rosy breast, perched on a large, deeply lobed red oak leaf, with acorns below.",
     "bibliography": "Catesby, Mark. \"Red Oak and the Pigeon of Passage.\" <em>The Natural History of Carolina, Florida and the Bahama Islands</em>, vol. 1, 1729–1732.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive",
-        "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22"
-      }
-    ],
     "lectio": { "post": "lt-0028", "place": 3 },
     "tags": {
       "hours": [],
@@ -3259,6 +3159,10 @@
       "title": "The natural history of Carolina, Florida and the Bahama Islands : containing the figures of birds, beasts, fishes, serpents, insects, and plants : particularly, the forest-trees, shrubs, and other plants, not hitherto described, or very incorrectly figured by authors : together with their descriptions in English and French : to which, are added observations on the air, soil, and waters : with remarks upon agriculture, grain, pulse, roots, &c. : to the whole, is prefixed a new and correct map of the countries treated of",
       "issued": "1729",
       "identifiers": { "internetArchive": "naturalhistoryCC1V1Cate", "lccn": "agr02000176" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22",
+      "label": "Internet Archive"
     }
   },
   {
@@ -3268,13 +3172,6 @@
     "caption": "“<a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">Red Oak. </a><em><a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">Quercus rubra</a></em><a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">.</a>” From François André Michaux. <em>The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia. </em>Paris, France: 1819.",
     "alt": "A color engraving of a red oak leaf, large, glossy green and sharply lobed, with two acorns on a twig at its base, one shown cut in half.",
     "bibliography": "Michaux, François André. \"Red Oak. <em>Quercus rubra</em>.\" <em>The North American Sylva, or a Description of the Forest Trees of the United States, Canada and Nova Scotia</em>, 1819.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Internet Archive",
-        "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up"
-      }
-    ],
     "lectio": { "post": "lt-0028", "place": 4 },
     "tags": {
       "hours": [],
@@ -3295,6 +3192,10 @@
         "openlibrary": "OL24158910M",
         "lccn": "agr28000778"
       }
+    },
+    "locator": {
+      "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up",
+      "label": "Internet Archive"
     }
   },
   {
@@ -3354,13 +3255,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263\" rel=\"noopener\" target=\"_blank\">Hicoria ovata</a>.” From Charles Sprague Sargent. <em>The Silva of North America, Vol. VII: Lauraceae - Juglandaceae. </em>Boston: Houghton Mifflin, 1895.",
     "alt": "A botanical engraving of shagbark hickory: a large compound leaf of five toothed leaflets above a pair of round nuts in their husks, with numbered drawings of the nut whole, opened and cut through.",
     "bibliography": "Sargent, Charles Sprague. \"Hicoria ovata.\" <em>The Silva of North America</em>, vol. 7, Houghton Mifflin, 1895.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263"
-      }
-    ],
     "lectio": { "post": "lt-0029", "place": 3 },
     "tags": {
       "hours": [],
@@ -3376,6 +3270,10 @@
       "title": "The silva of North America; a description of the trees which grow naturally in North America exclusive of Mexico",
       "issued": "1891",
       "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263",
+      "label": "HathiTrust"
     }
   },
   {
@@ -3522,7 +3420,6 @@
     "date": "1902",
     "institution": "NOAA Photo Library (Historic NWS Collection, wea02087)",
     "links": [
-      { "role": "cited", "label": "DOI", "url": "https://doi.org/10.1175/1520-0493-30.13.607" },
       {
         "role": "copy",
         "label": "Wikimedia Commons",
@@ -3540,7 +3437,8 @@
       "title": "STUDIES AMONG THE SNOW CRYSTALS DURING THE WINTER OF 1901–2, WITH ADDITIONAL DATA COLLECTED DURING PREVIOUS WINTERS",
       "issued": "1902",
       "identifiers": { "doi": "10.1175/1520-0493-30.13.607" }
-    }
+    },
+    "locator": { "url": "https://doi.org/10.1175/1520-0493-30.13.607", "label": "DOI" }
   },
   {
     "id": "i-0129",
@@ -4056,6 +3954,10 @@
       "title": "A flora of the state of New-York :comprising full descriptions of all the indigenous and naturalized plants hitherto discovered in the state : with remarks on their economical and medicinal properties /by John Torrey.",
       "issued": "1843",
       "identifiers": { "internetArchive": "mobot31753002739826" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/mobot31753002739826/page/n645/mode/2up",
+      "label": "Internet Archive"
     }
   },
   {
@@ -4096,6 +3998,10 @@
       "title": "Autumnal leaves",
       "issued": "1885",
       "identifiers": { "hathitrust": "006610218", "oclc": "12747619" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc1.$b117574?urlappend=%3Bseq=265%3Bownerid=9007199258917903-265",
+      "label": "HathiTrust"
     }
   },
   {
