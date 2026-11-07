@@ -1012,7 +1012,7 @@ function openLettersPane() {
     pane.setAttribute('aria-label', 'Correspondence');
     pane.innerHTML = '<button class="wander-close" type="button" aria-label="Close">✦ &nbsp;Close</button>'
       + '<p class="wander-heading">Correspondence</p>'
-      + '<p class="wander-subheading">Letters and postcards from Otherwise</p>';
+      + '<p class="wander-subheading">Letters, postcards, etc.</p>';
     const form = subscribeForm();
     form.classList.add('in-pane');
     pane.append(form);
