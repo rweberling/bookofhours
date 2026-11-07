@@ -18,7 +18,7 @@ is no database and nothing generated in between.
 | `phenomena.json` | The posts' subjects that aren't organisms, such as clouds or the Perseids (`ph-`) |
 | `vocab.json` | The terms everything is tagged with: the eight hours, the four seasons, the twenty weather conditions |
 | `postcards.csv` | The postcards, one row each (`pc-`) |
-| `site.json` | Site settings, such as the pattern for suggested-edition links |
+| `site.json` | Site settings: `suggestedEditionUrl`, the pattern for suggested-edition links (`{isbn}` where the ISBN goes) |
 | `retired-ids.json` | IDs that were published and then retired, so they're never issued again |
 | `image-files.json` | Written by `scripts/build_images.py`: the web copies made of each image. Don't edit it |
 
@@ -74,10 +74,15 @@ Then each kind has its own:
   series, shared with a reading quoting the same book (the Sugar Maple
   reading and figure share Crockett's pamphlet, `e-0042`); two volumes of
   one set are two editions.
-- **What an edition holds**: what the site shows of it (title,
-  contributors, dates, publisher), and `identifiers` pointing to the
-  authority records that hold the rest, rather than copies of them:
-  `doi`; for a book `hathitrust` (its catalogue record), `oclc`
+- **What an edition holds**: what the site shows of it, and
+  `identifiers` pointing to the authority records that hold the rest.
+  What it shows: `type` (`book`, `article` or `manuscript`), `title`,
+  `contributors`, `publisher`, `issued` (the edition's date) and
+  `original-date` (when the work first appeared, if earlier); for an
+  article, `container` (the journal), `volume` and `pages`; for a
+  manuscript, `archive` (where it's held); `rights` and `rightsNote`, as
+  for images. The `identifiers`, pointing to the
+  records rather than copying them: `doi`; for a book `hathitrust` (its catalogue record), `oclc`
   (WorldCat), `lccn`, `openlibrary`, `isbn` (none before about 1970),
   `internetArchive`; and `wikidata` for the work. `python3
   scripts/link_editions.py [--write]` reads the identifiers off the cited
@@ -139,10 +144,14 @@ Then each kind has its own:
   readers and as its alt text; the caption says what it is, and is the
   fallback where there's no `alt`), `display` (for a Lectio Terra figure:
   its `size` in the post, and `noCaption` or `unlabelled` where it has no
-  caption or no "Fig." number), `link` (where a figure links, if not to
+  caption or no "Fig." number; for a Weather image, `cardPosition`, the
+  corner the reading's card sits in, clear of what matters in the
+  picture: `top-left`, `top-right`, `bottom-left`, `bottom-right` or
+  `bottom-center`; `weatherUnset`, as for readings), `link` (where a figure links, if not to
   itself), `bibliography`, `creator`, `title`, `date` (when the image
   was made, which for a plate may be before the edition it's cited from),
-  `institution` (who holds it), `edition` and `locator` (for a plate or
+  `institution` (who holds it), `shelfmark` (its call number there, for
+  a manuscript), `edition` and `locator` (for a plate or
   figure from a book, above: the book's title and publisher are the
   edition's), `partOf` (the larger work an image belongs to when that
   isn't a printed book: a manuscript, a print series), `links` (where the work was cited from: `cited`, and any
@@ -150,14 +159,21 @@ Then each kind has its own:
   `source` (the exact file downloaded and when: `url`, `retrieved`),
   `rights` (a
   [RightsStatements.org](https://rightsstatements.org) or Creative Commons
-  URI) and `rightsNote` (a word on it, where the status needs one).
+  URI) and `rightsNote` (a word on it, where the status needs one). A
+  video figure has `"media": "video"`, its `file` an MP4, with a WebM
+  `fallback` and a still `poster` shown before it plays.
 - **Writing**: `kind` (`versicle`, `phenomenon`, `note`, `headnote` or
   `supplementum`), `text` (HTML), `place` (a phenomenon line's order within
   its hour), and `footnotes`.
 - **Footnotes** belong to the piece their references are in: a list of
   `{"marker": 1, "text": "…"}`, each referred to in the piece's text.
-- **Species**: `name`, `scientific` (name), `rank`, and their Wikidata, GBIF
-  and iNaturalist IDs. **Phenomena**: `name`, `latin`, and a Wikidata ID.
+- **Species**: `name`, `scientific` (name), `rank`, and their IDs in
+  Wikidata (`wikidata`), GBIF (`gbif`) and iNaturalist (`inaturalist`). **Phenomena**: `name`, `latin`, and a Wikidata ID.
+
+The vocabularies in `vocab.json`: each watch of the Hours with its
+`label`, `startHour` and `endHour` (on the clock) and `subtitle`; each
+season with its `months`; each weather condition with the `group` it sits
+in on the Weather page (The Sky, What Falls, The Air, The Ground).
 
 Dates follow [EDTF](https://www.loc.gov/standards/datetime/) (`1872~/1878~`
 means "about 1872 to about 1878").
@@ -174,9 +190,21 @@ record; correct the original too, so the two still match. Scripts read the
 posts through `scripts/datafile.py` (`load('lectio-data')`), which puts
 each original back on its post as `bodyHtml`.
 
+A post's record holds its `id` (`lt-`), Substack's `postId`, `season`,
+`title`, `subtitle`, `published` (first publication), `canonicalUrl` (on
+Substack), `subject` (its `sp-` or `ph-` record), `readings` (the names
+of the writers it pairs, in order) and, where the post itself labels them
+differently, `readingLabels` (each `author` and `work` as shown), and
+`images` (each figure's `src`, its `alt`, and `remoteSrc`, where Substack
+served it). Posts not yet set in a season (Works in Progress) are listed
+under `unassigned`; `generatedBy` and `generatedAt` say what last wrote
+the file.
+
 Each post also has a `body`: its pieces in order (headings, figures,
 passages, runs of its writing), which the Seasons page rebuilds the post
-from. `scripts/build_post_manifests.py` makes these lists after an import.
+from. `scripts/build_post_manifests.py` makes these lists after an import,
+and its opening describes each kind of piece (`heading`, `hr`, `image`,
+`reading`, `writing`, with `blocks` and `figures`).
 
 A post with a `page` (`"lectio-terra/sugar-maple/"`) has a page of its own at
 that address, built by `scripts/build_lectio_pages.py`: the Seasons page
