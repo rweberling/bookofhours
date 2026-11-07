@@ -54,6 +54,8 @@ Then each kind has its own:
 - **Readings**: `text` (lines joined by `<br>`, stanzas or paragraphs by
   `<br><br>`; a Lectio Terra passage of prose keeps the post's own paragraphs), `citation` (`display`, the line shown with the reading; and,
   where researched, a `bibliography` line and the `edition` it comes from),
+  `title` (the work quoted: a poem, essay or chapter), `written` (when),
+  `locator` (where in the edition, below),
   `suggestedEdition` (an ISBN for a recommended edition), `footnotes`, and
   `display` (`verse`, below; `weatherUnset` for the Weather page's reading
   when no weather is set; one also tagged with conditions is drawn for
@@ -65,7 +67,8 @@ Then each kind has its own:
   new reading takes the next free number (`copy_lectio.py` gives one to
   each passage it copies). Two readings quoting the same edition (as the
   Hours and Dog Days quote Patrick's 1889 Heraclitus, `e-0017`) share its
-  ID, and `check_data.py` checks their copies of its details agree. An
+  ID, and `check_data.py` checks their copies are the same, field for field
+  (only a contributor's `role` may differ). An
   edition one reading quotes inside another (`citation.quotes`) has its
   own. An image from a printed volume has an `edition` too, from the same
   series, shared with a reading quoting the same book (the Sugar Maple
@@ -76,13 +79,39 @@ Then each kind has its own:
   authority records that hold the rest, rather than copies of them:
   `doi`; for a book `hathitrust` (its catalogue record), `oclc`
   (WorldCat), `lccn`, `openlibrary`, `isbn` (none before about 1970),
-  `internetArchive`; and `wikidata` for the work. The copy actually used
-  (the scan) is the edition's link marked `cited`. `python3
+  `internetArchive`; and `wikidata` for the work. `python3
   scripts/link_editions.py [--write]` reads the identifiers off the cited
   copies (HathiTrust, Internet Archive, DOIs), only ever adding, and lists
   records whose copies share a catalogue record, for a person to decide
   whether they're one edition. `check_data.py` checks each identifier's
   form. Citations stay hand-written in the house style.
+- **Links: the book, and the page.** Each link has one job. An edition
+  says where to find the book as a whole: its `identifiers` lead to its
+  catalogue records, and the pages build those links from them, so an
+  edition stores a link of its own (in `links`) only where no catalogue
+  has it, such as a text on Wikisource or a personal site, and then it is
+  the text's front page. An edition never holds a link to one page, so
+  every copy of it is the same. The reading or image says where in the
+  book to look, as directly as a click can take a reader there:
+  - A reading's `citation.locator`: `{"page": "230", "url": "…"}`. The
+    `page` is the number printed in the book (a range, or ranges, as
+    `"105–106, 107–108"`), and the `url` the most direct link to the
+    passage: the scan opened at that page (the scan's own page number may
+    differ, as scans count the cover and front matter). Where nothing
+    links to the page (a Google Books result, a scan that can't open at a
+    page), the `url` is the closest link there is and the `page` says
+    where to turn; a print-only reading has a `page` and no `url`. The
+    link in the reading's `display` line is its `locator.url`.
+  - An image from a book (a plate or figure, with an `edition`) has a
+    `locator` the same way: `{"page": "Plate XIX", "url": "…"}`, the
+    plate or page as the book numbers it, and the scan opened there.
+  - Any other image (a museum object, a photograph) keeps its cited link
+    in `links`, marked `cited`: the object's own page at the institution.
+    A caption may link elsewhere when that serves readers better (the
+    cyanometer links to Wikipedia's article), but the cited link stays.
+
+  Older records still carry the page link on their edition, as its
+  `cited` link; they are being moved to `locator`.
 - **People**: an edition's `contributors` (each `name`, `role`: author,
   translator, editor) and an image's `creator`. The collection gives
   people no IDs of its own beyond informal keys (`a-robert-ridgway`, the
@@ -109,9 +138,13 @@ Then each kind has its own:
   its `size` in the post, and `noCaption` or `unlabelled` where it has no
   caption or no "Fig." number), `link` (where a figure links, if not to
   itself), `bibliography`, `creator`, `title`, `date`,
-  `institution`, `links` (where the work was cited from), `rights` (a
+  `institution`, `edition` and `locator` (for a plate or figure from a
+  book, above), `links` (where the work was cited from: `cited`, and any
+  `copy`), `furtherReading` (`about` or `related` pages for readers),
+  `source` (the exact file downloaded and when: `url`, `retrieved`),
+  `rights` (a
   [RightsStatements.org](https://rightsstatements.org) or Creative Commons
-  URI).
+  URI) and `rightsNote` (a word on it, where the status needs one).
 - **Writing**: `kind` (`versicle`, `phenomenon`, `note`, `headnote` or
   `supplementum`), `text` (HTML), `place` (a phenomenon line's order within
   its hour), and `footnotes`.
