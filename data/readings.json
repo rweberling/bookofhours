@@ -1444,7 +1444,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["winter"],
-      "species": ["sp-0001"]
+      "species": [
+        {
+          "id": "sp-0001",
+          "basis": "grounded",
+          "note": "Describes witch hazel's late-October bloom after the frosts."
+        }
+      ]
     }
   },
   {
@@ -1488,7 +1494,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["winter"],
-      "species": ["sp-0001"]
+      "species": [
+        {
+          "id": "sp-0001",
+          "basis": "thematic",
+          "note": "Culture as clearing weeds for tender shoots; nature as mother and stepmother. Witch hazel isn't mentioned."
+        }
+      ]
     }
   },
   {
@@ -1524,7 +1536,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0002"]
+      "species": [
+        {
+          "id": "sp-0002",
+          "basis": "grounded",
+          "note": "The poem names the robin and dates its song to March and April."
+        }
+      ]
     },
     "display": { "verse": true }
   },
@@ -1563,7 +1581,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0002"]
+      "species": [
+        {
+          "id": "sp-0002",
+          "basis": "grounded",
+          "note": "Scientific description of the thrush family, which includes the robin; family rank, not species."
+        }
+      ]
     }
   },
   {
@@ -1654,7 +1678,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0003"]
+      "species": [
+        {
+          "id": "sp-0003",
+          "basis": "thematic",
+          "note": "Plants' cycles of life and death offered as alternative clocks. Maples aren't mentioned."
+        }
+      ]
     }
   },
   {
@@ -1733,7 +1763,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0004"]
+      "species": [
+        {
+          "id": "sp-0004",
+          "basis": "both",
+          "note": "Real ice-bent birches, and a climb toward heaven."
+        }
+      ]
     },
     "display": { "verse": true }
   },
@@ -1783,7 +1819,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "phenomena": ["ph-0001"]
+      "phenomena": [
+        {
+          "id": "ph-0001",
+          "basis": "both",
+          "note": "Goethe's poem on Howard's nimbus cloud, ending on the spirit rising."
+        }
+      ]
     },
     "display": { "verse": true }
   },
@@ -1820,7 +1862,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "phenomena": ["ph-0001"]
+      "phenomena": [
+        {
+          "id": "ph-0001",
+          "basis": "grounded",
+          "note": "About watching clouds generally, not nimbostratus specifically."
+        }
+      ]
     }
   },
   {
@@ -1925,7 +1973,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0006"]
+      "species": [
+        {
+          "id": "sp-0006",
+          "basis": "thematic",
+          "note": "Phusis as emergence and unfolding. A rose is the only plant named; the fern is the pairing."
+        }
+      ]
     }
   },
   {
@@ -1963,7 +2017,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0006"]
+      "species": [
+        {
+          "id": "sp-0006",
+          "basis": "grounded",
+          "note": "Botanical description of the ostrich fern's embryo."
+        }
+      ]
     }
   },
   {
@@ -2069,7 +2129,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0008"]
+      "species": [
+        {
+          "id": "sp-0008",
+          "basis": "both",
+          "note": "Mullein seed dormancy is real; the passage turns it into a figure for anger."
+        }
+      ]
     }
   },
   {
@@ -2271,7 +2337,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "phenomena": ["ph-0002"]
+      "phenomena": [
+        {
+          "id": "ph-0002",
+          "basis": "thematic",
+          "note": "Bedrock as the limit of justification. Cambridge argillite supplies the literal bedrock."
+        }
+      ]
     }
   },
   {
@@ -2310,7 +2382,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "phenomena": ["ph-0002"]
+      "phenomena": [
+        {
+          "id": "ph-0002",
+          "basis": "grounded",
+          "note": "Mineralogical description of Boston-area argillaceous slate."
+        }
+      ]
     }
   },
   {
@@ -2515,7 +2593,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["spring"],
-      "species": ["sp-0011"]
+      "species": [
+        {
+          "id": "sp-0011",
+          "basis": "grounded",
+          "note": "Soil microbes and depression generally; M. vaccae isn't named in this excerpt. Confirm."
+        }
+      ]
     }
   },
   {
@@ -2811,7 +2895,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["summer"],
-      "phenomena": ["ph-0003"]
+      "phenomena": [
+        {
+          "id": "ph-0003",
+          "basis": "thematic",
+          "note": "Sunspots appear only as a book title; the passage is the sentence that followed."
+        }
+      ]
     }
   },
   {
@@ -2834,7 +2924,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["summer"],
-      "phenomena": ["ph-0003"]
+      "phenomena": [
+        {
+          "id": "ph-0003",
+          "basis": "both",
+          "note": "Personifies the sun and names real solar phenomena: flares, flux ropes, neutrinos, sunspots."
+        }
+      ]
     },
     "display": { "verse": true }
   },
@@ -3223,7 +3319,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["summer"],
-      "phenomena": ["ph-0004"]
+      "phenomena": [
+        {
+          "id": "ph-0004",
+          "basis": "grounded",
+          "note": "Names the dog-star's hour; the spring offers relief from it."
+        }
+      ]
     },
     "display": { "verse": true }
   },
@@ -3267,7 +3369,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["summer"],
-      "phenomena": ["ph-0004"]
+      "phenomena": [
+        {
+          "id": "ph-0004",
+          "basis": "thematic",
+          "note": "Flux and reversal (warm becomes cold) set against the season of fixed heat."
+        }
+      ]
     }
   },
   {
@@ -3305,7 +3413,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["summer"],
-      "phenomena": ["ph-0005"]
+      "phenomena": [
+        {
+          "id": "ph-0005",
+          "basis": "grounded",
+          "note": "Records of meteors seen in China; shooting stars in general, not the Perseids."
+        }
+      ]
     }
   },
   {
@@ -3348,7 +3462,13 @@
       "hours": [],
       "weather": [],
       "seasons": ["summer"],
-      "phenomena": ["ph-0005"]
+      "phenomena": [
+        {
+          "id": "ph-0005",
+          "basis": "both",
+          "note": "Real shooting stars, and a figure for thoughts crossing the mind. Dated August 19, in Perseid season."
+        }
+      ]
     }
   },
   {

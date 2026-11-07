@@ -36,7 +36,13 @@ Every record has an `id`, and most share a few fields:
 - **`tags`**: what it's about. They only describe a piece; they never move it.
   `hours`, `seasons` and `weather` take terms from `vocab.json` (`void`,
   `autumn`, `fog`); `species` and `phenomena` take IDs from `species.json`
-  and `phenomena.json`.
+  and `phenomena.json`. A tag is a plain ID, or an object carrying one with
+  a `basis` and a `note`: `{"id": "sp-0001", "basis": "thematic", "note":
+  "…"}`. The `basis` says how the piece bears on the tag: `grounded` (it
+  is about the thing itself), `thematic` (it is paired for its ideas) or
+  `both`. A tag with no basis is unclassified, not assumed grounded. The
+  notes are working notes for now; the pages don't show them, and read
+  either form of tag alike.
 - **`lectio`**: for a piece copied from a Lectio Terra post, the post's ID
   and its place there (`{"post": "lt-0004", "place": 2}`: the post's second
   passage, or second figure).

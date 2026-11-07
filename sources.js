@@ -129,7 +129,7 @@ function weatherRows(vocab) {
 }
 
 function tagsOf(record, scheme) {
-  return (record.tags && record.tags[scheme]) || [];
+  return ((record.tags && record.tags[scheme]) || []).map(tagId);
 }
 
 function isWeatherUnset(record) {

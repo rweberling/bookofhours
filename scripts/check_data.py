@@ -73,8 +73,16 @@ SHOWN_IN = ('hours', 'weather', 'seasons')
 # The kinds of the site's own writing (data/writing.json). A new genre is
 # a new kind here, not a new kind of ID.
 WRITING_KINDS = ('versicle', 'phenomenon', 'note', 'headnote', 'supplementum')
+# How a piece bears on a tag (a tag object's "basis"; see data/README.md).
+TAG_BASES = ('grounded', 'thematic', 'both')
 # A link to a Seasons entry, as written in post bodies (&amp;) or the CSV (&).
 SEASONS_LINK = re.compile(r'seasons\.html\?season=(\w+)&(?:amp;)?entry=([^"&#\s]+)')
+
+
+def tag_id(t):
+    """A tag's ID, whether the tag is a plain string or an object
+    ({"id": ..., "basis": ..., "note": ...})."""
+    return t if isinstance(t, str) else (t.get('id') or t.get('term'))
 
 
 def load(name):
@@ -241,7 +249,8 @@ def main():
                 errors.append(f'{r["id"]}: the same {piece} as {copied[key]} ({key[0]})')
             copied[key] = r['id']
 
-    # Tags point at the vocabularies.
+    # Tags point at the vocabularies. A tag is a plain ID, or an object
+    # carrying one (with a basis and a note).
     schemes = {name: {c['id'] for c in concepts} for name, concepts in vocab.items()}
     schemes['species'] = {r['id'] for r in species}
     schemes['phenomena'] = {r['id'] for r in phenomena}
@@ -250,9 +259,15 @@ def main():
             if scheme not in schemes:
                 errors.append(f'{rid}: unknown tag scheme "{scheme}"')
                 continue
-            for v in values:
+            for v in map(tag_id, values):
                 if v not in schemes[scheme]:
                     errors.append(f'{rid}: "{v}" is not in the {scheme} vocabulary')
+            # A tag object's basis says how the piece bears on the tag;
+            # without one the tag is unclassified.
+            for t in values:
+                if isinstance(t, dict) and 'basis' in t and t['basis'] not in TAG_BASES:
+                    errors.append(f'{rid}: {scheme} tag "{tag_id(t)}" has basis {t["basis"]!r}; '
+                                  f'it must be one of {", ".join(TAG_BASES)}')
     for rec in readings + images + writing:
         check_tags(rec['id'], rec.get('tags'))
 
@@ -293,7 +308,7 @@ def main():
         if not (w.get('text') or '').strip():
             errors.append(f'{w["id"]}: no text')
         if w.get('shownIn') == 'hours' and not w.get('draft'):
-            for hour in (w.get('tags') or {}).get('hours') or []:
+            for hour in map(tag_id, (w.get('tags') or {}).get('hours') or []):
                 per_hour[hour][w.get('kind')].append(w)
     # A post's body (its pieces in order, which the Seasons page rebuilds
     # it from) names each of its passages, figures and pieces of writing,

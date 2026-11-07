@@ -636,8 +636,13 @@ function suggestedEditionUrl(suggestedEdition, site) {
     : null;
 }
 
+// A tag is either a plain ID ("sp-0001", "spring") or an object that
+// carries one ({ "id": "sp-0001", "basis": "thematic", "note": "..." });
+// this reads the ID from either.
+const tagId = t => (typeof t === 'string' ? t : (t.id || t.term));
+
 function taggedWith(record, scheme, id) {
-  return !!(record.tags && Array.isArray(record.tags[scheme]) && record.tags[scheme].includes(id));
+  return !!(record.tags && Array.isArray(record.tags[scheme]) && record.tags[scheme].some(t => tagId(t) === id));
 }
 
 // A reading as the page shows it. Verse ("display": {"verse": true}) is
@@ -674,8 +679,8 @@ function quoteView(reading) {
     text: readingHTML(reading),
     attr: reading.citation ? reading.citation.display : '',
     author: readingAuthor(reading),
-    weather: (reading.tags && reading.tags.weather) || [],
-    seasons: (reading.tags && reading.tags.seasons) || [],
+    weather: ((reading.tags && reading.tags.weather) || []).map(tagId),
+    seasons: ((reading.tags && reading.tags.seasons) || []).map(tagId),
     unset: !!(reading.display && reading.display.weatherUnset)
   };
 }
@@ -688,8 +693,8 @@ function imageView(image) {
     caption: image.caption || '',
     creator: (image.creator && !Array.isArray(image.creator) && image.creator.name) || '',
     alt: image.alt || '',
-    weather: (image.tags && image.tags.weather) || [],
-    seasons: (image.tags && image.tags.seasons) || [],
+    weather: ((image.tags && image.tags.weather) || []).map(tagId),
+    seasons: ((image.tags && image.tags.seasons) || []).map(tagId),
     cardPosition: display.cardPosition,
     unset: !!display.weatherUnset
   };
