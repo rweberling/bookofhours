@@ -627,7 +627,7 @@ def main():
             gaps[iid].append('rights')
         # Plates from books are cited by the book; stand-alone works by
         # the institution that holds them.
-        if not img.get('container') and not img.get('institution'):
+        if not img.get('edition') and not img.get('institution'):
             gaps[iid].append('holding institution')
         if img.get('creator') and not img['creator'].get('wikidata'):
             gaps[iid].append('creator Wikidata ID')

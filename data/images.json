@@ -8,8 +8,6 @@
     "bibliography": "Cook, Louisa S. <em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em>. George Redway, 1887.",
     "creator": { "id": "a-louisa-s-cook", "name": "Louisa S. Cook" },
     "title": null,
-    "container": "Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts",
-    "publisher": "George Redway",
     "date": "1887",
     "institution": null,
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -20,7 +18,8 @@
     },
     "edition": {
       "id": "e-0117",
-      "title": "Geometrical psychology, or, The science of representation : an abstract of the theories and diagrams of B. W. Betts",
+      "title": "Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts",
+      "publisher": "George Redway",
       "issued": "1887",
       "identifiers": {
         "internetArchive": "geometricalpsych00cook",
@@ -42,7 +41,7 @@
     "bibliography": "Allais, Alphonse. \"Ronde de pochards dans le brouillard.\" <em>Album primo-avrilesque</em>, 1897.",
     "creator": { "id": "a-alphonse-allais", "name": "Alphonse Allais", "wikidata": "Q371905" },
     "title": "Ronde de pochards dans le brouillard [Dance of drunks in the fog]",
-    "container": "Album primo-avrilesque",
+    "edition": { "id": "e-0161", "title": "Album primo-avrilesque", "issued": "1897" },
     "date": "1897",
     "institution": null,
     "links": [
@@ -75,8 +74,6 @@
     "bibliography": "Smithsonian Institution. <em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em>. Smithsonian Institution, 1904.",
     "creator": { "id": "a-smithsonian-institution", "name": "Smithsonian Institution" },
     "title": null,
-    "container": "The 1900 Solar Eclipse Expedition of the Astrophysical Observatory",
-    "publisher": "Smithsonian Institution",
     "date": "1900/1904",
     "institution": null,
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -87,7 +84,8 @@
     },
     "edition": {
       "id": "e-0118",
-      "title": "The 1900 solar eclipse expedition of the Astrophysical observatory of the Smithsonian institution",
+      "title": "The 1900 Solar Eclipse Expedition of the Astrophysical Observatory",
+      "publisher": "Smithsonian Institution",
       "issued": "1904",
       "identifiers": {
         "internetArchive": "1900solareclipse00smitrich",
@@ -110,7 +108,6 @@
     "bibliography": "Redon, Odilon. <em>The Eye, Like a Strange Balloon, Mounts toward Infinity</em>. 1882, Los Angeles County Museum of Art, Los Angeles.",
     "creator": { "id": "a-odilon-redon", "name": "Odilon Redon", "wikidata": "Q154349" },
     "title": "The Eye, Like a Strange Balloon, Mounts toward Infinity",
-    "container": null,
     "date": "1882",
     "institution": "Los Angeles County Museum of Art",
     "links": [
@@ -132,7 +129,6 @@
     "bibliography": "Bentley, Wilson Alwyn. <em>[Snow Crystal]</em>. c. 1910, The Metropolitan Museum of Art, New York.",
     "creator": { "id": "a-wilson-alwyn-bentley", "name": "Wilson Alwyn Bentley" },
     "title": "[Snow Crystal]",
-    "container": null,
     "date": "1910~",
     "institution": "The Metropolitan Museum of Art",
     "links": [
@@ -160,16 +156,13 @@
     "bibliography": "Lockyer, J. Norman. \"Superposition of Two Wave-Systems.\" \"Water-Waves and Sound-Waves,\" <em>Popular Science Monthly</em>, vol. 13, June 1878.",
     "creator": { "id": "a-j-norman-lockyer", "name": "J. Norman Lockyer", "wikidata": "Q127959" },
     "title": "Superposition of Two Wave-Systems",
-    "container": "Popular Science Monthly, vol. 13",
+    "edition": { "id": "e-0162", "title": "Popular Science Monthly, vol. 13", "issued": "1878" },
+    "locator": {
+      "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/June_1878/Water-Waves_and_Sound-Waves",
+      "label": "Wikisource"
+    },
     "date": "1878",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "Wikisource",
-        "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/June_1878/Water-Waves_and_Sound-Waves"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["hush"],
@@ -190,7 +183,6 @@
       "wikidata": "Q203643"
     },
     "title": "Nocturne, Blue and Silver: Battersea Reach",
-    "container": null,
     "date": "1872~/1878~",
     "institution": "Isabella Stewart Gardner Museum",
     "links": [
@@ -217,7 +209,6 @@
     "bibliography": "Steichen, Edward. <em>Moonlight: The Pond</em>. 1904, printed 1906.",
     "creator": { "id": "a-edward-steichen", "name": "Edward Steichen", "wikidata": "Q313899" },
     "title": "Moonlight: The Pond",
-    "container": null,
     "date": "1904/1906",
     "institution": "Brown University Library",
     "links": [
@@ -243,7 +234,7 @@
     "bibliography": "Limbourg Brothers. <em>Anatomical Zodiac Man</em>. c. 1412–1416, Musée Condé, Chantilly. <em>Les Très Riches Heures du Duc de Berry</em>.",
     "creator": { "id": "a-limbourg-brothers", "name": "Limbourg brothers" },
     "title": "Anatomical Zodiac Man (or L'Homme anatomique)",
-    "container": "Les Très Riches Heures du Duc de Berry",
+    "partOf": "Les Très Riches Heures du Duc de Berry",
     "date": "1412~/1416~",
     "institution": "Musée Condé, Chantilly",
     "links": [
@@ -269,17 +260,18 @@
     "bibliography": "Sivartha, Alesha. <em>The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man</em>. Sivartha Publishing, 1898.",
     "creator": { "id": "a-alesha-sivartha", "name": "Alesha Sivartha" },
     "title": null,
-    "container": "The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man",
-    "publisher": "Sivartha Publishing",
+    "edition": {
+      "id": "e-0163",
+      "title": "The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man",
+      "publisher": "Sivartha Publishing",
+      "issued": "1898"
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t77s7n156?urlappend=%3Bseq=65",
+      "label": "HathiTrust"
+    },
     "date": "1898",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t77s7n156?urlappend=%3Bseq=65"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["chorus"],
@@ -296,17 +288,18 @@
     "bibliography": "Smith, Arthur E. \"Human Blood x1000.\" <em>Nature Through Microscope &amp; Camera</em>, by Richard Kerr, Religious Tract Society, 1909.",
     "creator": { "id": "a-arthur-e-smith", "name": "Arthur E. Smith" },
     "title": "Human Blood x1000",
-    "container": "Nature Through Microscope & Camera",
-    "publisher": "Religious Tract Society",
+    "edition": {
+      "id": "e-0164",
+      "title": "Nature Through Microscope & Camera",
+      "publisher": "Religious Tract Society",
+      "issued": "1909"
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270",
+      "label": "HathiTrust"
+    },
     "date": "1909",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["chorus"],
@@ -323,16 +316,13 @@
     "bibliography": "Harris, Moses. <em>Prismatic Colour Wheel</em>. <em>The Natural System of Colours</em>, 1766, Royal Academy of Arts, London.",
     "creator": { "id": "a-moses-harris", "name": "Moses Harris", "wikidata": "Q720166" },
     "title": "Prismatic Colour Wheel",
-    "container": "The Natural System of Colours",
+    "edition": { "id": "e-0165", "title": "The Natural System of Colours", "issued": "1766" },
+    "locator": {
+      "url": "https://www.royalacademy.org.uk/art-artists/work-of-art/prismatic-colour-wheel",
+      "label": "Royal Academy"
+    },
     "date": "1766",
     "institution": "Royal Academy of Arts",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Royal Academy",
-        "url": "https://www.royalacademy.org.uk/art-artists/work-of-art/prismatic-colour-wheel"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["chorus"],
@@ -349,8 +339,6 @@
     "bibliography": "Darwin, Charles. <em>The Power of Movement in Plants</em>. John Murray, 1880.",
     "creator": { "id": "a-charles-darwin", "name": "Charles Darwin", "wikidata": "Q1035" },
     "title": null,
-    "container": "The Power of Movement in Plants",
-    "publisher": "John Murray",
     "date": "1880",
     "institution": null,
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -361,7 +349,8 @@
     },
     "edition": {
       "id": "e-0119",
-      "title": "The power of movement in plants",
+      "title": "The Power of Movement in Plants",
+      "publisher": "John Murray",
       "issued": "1880",
       "identifiers": { "hathitrust": "008595207", "oclc": "1221788" }
     },
@@ -379,7 +368,6 @@
     "bibliography": "Vermeer, Johannes. <em>Woman Reading a Letter</em>. c. 1663, Rijksmuseum, Amsterdam.",
     "creator": { "id": "a-johannes-vermeer", "name": "Johannes Vermeer", "wikidata": "Q41264" },
     "title": "Woman Reading a Letter",
-    "container": null,
     "date": "1663~",
     "institution": "Rijksmuseum",
     "links": [
@@ -405,7 +393,6 @@
     "bibliography": "Unknown. <em>Diagram of the Winds (I)</em>. c. 1170–1200, The Walters Art Museum, Baltimore, MS W.73.",
     "creator": null,
     "title": "Diagram of the Winds (I)",
-    "container": null,
     "date": "1170~/1200~",
     "institution": "The Walters Art Museum",
     "shelfmark": "MS W.73",
@@ -433,16 +420,13 @@
     "bibliography": "Muybridge, Eadweard. Plate 169. <em>Animal Locomotion</em>, vol. 7, 1887.",
     "creator": { "id": "a-eadweard-muybridge", "name": "Eadweard Muybridge", "wikidata": "Q190568" },
     "title": "Plate 169",
-    "container": "Animal Locomotion, vol. 7",
+    "edition": { "id": "e-0166", "title": "Animal Locomotion, vol. 7", "issued": "1887" },
+    "locator": {
+      "url": "https://drive.google.com/file/d/1o04qBq3W3oJwDVsCxWqRQ3XvUffcBVJ6/view?pli=1",
+      "label": "digitized plate"
+    },
     "date": "1887",
     "institution": null,
-    "links": [
-      {
-        "role": "cited",
-        "label": "digitized plate",
-        "url": "https://drive.google.com/file/d/1o04qBq3W3oJwDVsCxWqRQ3XvUffcBVJ6/view?pli=1"
-      }
-    ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "tags": {
       "hours": ["transit"],
@@ -459,7 +443,6 @@
     "bibliography": "Abbott, Berenice. <em>Seventh Avenue Looking South from 35th Street</em>. 1935, New York Public Library Digital Collections.",
     "creator": { "id": "a-berenice-abbott", "name": "Berenice Abbott", "wikidata": "Q231861" },
     "title": "Seventh Avenue looking south from 35th Street",
-    "container": null,
     "date": "1935",
     "institution": "New York Public Library",
     "links": [
@@ -486,7 +469,6 @@
     "bibliography": "af Klint, Hilma. <em>Group IX/UW, No. 25, The Dove, No. 1</em>. 1915, Guggenheim Museum Bilbao.",
     "creator": { "id": "a-hilma-af-klint", "name": "Hilma af Klint", "wikidata": "Q436267" },
     "title": "Group IX/UW, No. 25, The Dove, No. 1",
-    "container": null,
     "date": "1915",
     "institution": "Guggenheim Museum Bilbao",
     "links": [
@@ -512,7 +494,6 @@
     "bibliography": "Campbell, A. J. A. <em>Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</em>. 2025, Wikimedia Commons.",
     "creator": { "id": "a-a-j-a-campbell", "name": "A. J. A. Campbell" },
     "title": "Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification",
-    "container": null,
     "date": "2025",
     "institution": null,
     "links": [
@@ -539,7 +520,6 @@
     "bibliography": "Hitchcock, Orra White. <em>Epochs of Elevation</em>. c. 1828–1840, Amherst College Archives &amp; Special Collections.",
     "creator": { "id": "a-orra-white-hitchcock", "name": "Orra White Hitchcock", "wikidata": "Q1422010" },
     "title": "Epochs of Elevation",
-    "container": null,
     "date": "1828~/1840~",
     "institution": "Amherst College Archives & Special Collections",
     "links": [
@@ -565,7 +545,6 @@
     "bibliography": "Caillebotte, Gustave. <em>Raboteurs de parquet</em>. 1875, Musée d'Orsay, Paris.",
     "creator": { "id": "a-gustave-caillebotte", "name": "Gustave Caillebotte", "wikidata": "Q295144" },
     "title": "Raboteurs de parquet",
-    "container": null,
     "date": "1875",
     "institution": "Musée d'Orsay",
     "links": [
@@ -591,7 +570,6 @@
     "bibliography": "Monet, Claude. <em>Stacks of Wheat (End of Summer)</em>. 1890–1891, Art Institute of Chicago.",
     "creator": { "id": "a-claude-monet", "name": "Claude Monet", "wikidata": "Q296" },
     "title": "Stacks of Wheat (End of Summer)",
-    "container": null,
     "date": "1890/1891",
     "institution": "Art Institute of Chicago",
     "links": [
@@ -621,7 +599,6 @@
       "wikidata": "Q150526"
     },
     "title": "A purkinje neuron from the human cerebellum",
-    "container": null,
     "date": "1900~",
     "institution": "Cajal Institute (CSIC), Madrid",
     "links": [
@@ -647,7 +624,6 @@
     "bibliography": "Brigman, Anne. <em>Infinitude</em>. c. 1910.",
     "creator": { "id": "a-anne-brigman", "name": "Anne Brigman", "wikidata": "Q434674" },
     "title": "Infinitude",
-    "container": null,
     "date": "1910~",
     "institution": null,
     "links": [
@@ -674,7 +650,6 @@
     "bibliography": "Degas, Edgar. <em>A Woman Ironing</em>. 1873, The Metropolitan Museum of Art, New York.",
     "creator": { "id": "a-edgar-degas", "name": "Edgar Degas", "wikidata": "Q46373" },
     "title": "A Woman Ironing",
-    "container": null,
     "date": "1873",
     "institution": "The Metropolitan Museum of Art",
     "links": [
@@ -700,7 +675,6 @@
     "bibliography": "Davis, Harold. <em>Salad Mandala</em>. 2020.",
     "creator": { "id": "a-harold-davis", "name": "Harold Davis", "wikidata": "Q5660456" },
     "title": "Salad Mandala",
-    "container": null,
     "date": "2020",
     "institution": null,
     "links": [
@@ -731,7 +705,6 @@
       "wikidata": "Q3680435"
     },
     "title": "Sunset, G2",
-    "container": null,
     "date": "1905",
     "institution": "Auckland War Memorial Museum",
     "links": [
@@ -757,7 +730,6 @@
     "bibliography": "Cézanne, Paul. <em>The Basket of Apples</em>. c. 1893, Art Institute of Chicago.",
     "creator": { "id": "a-paul-cezanne", "name": "Paul Cézanne", "wikidata": "Q35548" },
     "title": "The Basket of Apples",
-    "container": null,
     "date": "1893~",
     "institution": "Art Institute of Chicago",
     "links": [
@@ -783,7 +755,6 @@
     "bibliography": "Hiroshige, Utagawa. <em>Cooling Off in the Evening at Shijogawara</em>. c. 1834, The Metropolitan Museum of Art, New York.",
     "creator": { "id": "a-utagawa-hiroshige", "name": "Utagawa Hiroshige", "wikidata": "Q200798" },
     "title": "Cooling off in the Evening at Shijogawara",
-    "container": null,
     "date": "1834~",
     "institution": "The Metropolitan Museum of Art",
     "links": [
@@ -809,7 +780,6 @@
     "bibliography": "Kuindzhi, Arkhip. <em>Moonlit Night on the Dnieper</em>. 1880, State Tretyakov Gallery, Moscow.",
     "creator": { "id": "a-arkhip-kuindzhi", "name": "Arkhip Kuindzhi", "wikidata": "Q353628" },
     "title": "Moonlit Night on the Dnieper",
-    "container": null,
     "date": "1880",
     "institution": "State Tretyakov Gallery",
     "links": [],
@@ -836,8 +806,6 @@
     "bibliography": "Giberne, Agnes. <em>The Story of the Sun, Moon, and Stars</em>. Seeley, 1898.",
     "creator": { "id": "a-agnes-giberne", "name": "Agnes Giberne", "wikidata": "Q4693039" },
     "title": null,
-    "container": "The Story of the Sun, Moon, and Stars",
-    "publisher": "Seeley",
     "date": "1898",
     "institution": null,
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -848,7 +816,8 @@
     },
     "edition": {
       "id": "e-0120",
-      "title": "The story of the sun, moon, and stars",
+      "title": "The Story of the Sun, Moon, and Stars",
+      "publisher": "Seeley",
       "issued": "1908",
       "identifiers": { "hathitrust": "008630234", "oclc": "25600297" }
     },
@@ -866,8 +835,6 @@
     "bibliography": "Haeckel, Ernst. \"Leptomedusae.\" <em>Das System der Medusen</em>, vol. 1, Gustav Fischer, 1879.",
     "creator": { "id": "a-ernst-haeckel", "name": "Ernst Haeckel", "wikidata": "Q48246" },
     "title": "Leptomedusae",
-    "container": "Das System der Medusen, vol. 1",
-    "publisher": "Gustav Fischer",
     "date": "1879",
     "institution": null,
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -878,7 +845,8 @@
     },
     "edition": {
       "id": "e-0121",
-      "title": "Monographie der Medusen",
+      "title": "Das System der Medusen, vol. 1",
+      "publisher": "Gustav Fischer",
       "issued": "1879",
       "identifiers": { "internetArchive": "monographiederme11879haec", "oclc": "12433415" }
     },
@@ -896,7 +864,6 @@
     "bibliography": "Tryon, Dwight William. <em>After Sunset: Looking East</em>. 1915, National Museum of Asian Art, Smithsonian Institution.",
     "creator": { "id": "a-dwight-william-tryon", "name": "Dwight William Tryon", "wikidata": "Q1268511" },
     "title": "After Sunset: Looking East",
-    "container": null,
     "date": "1915",
     "institution": "National Museum of Asian Art, Smithsonian Institution",
     "links": [
@@ -922,7 +889,6 @@
     "bibliography": "Emslie, John. <em>Diagram of Meteorology, Displaying the Various Phenomena of the Atmosphere</em>. c. 1845–1860, Royal Museums Greenwich, London.",
     "creator": { "id": "a-john-emslie", "name": "John Emslie", "wikidata": "Q29480502" },
     "title": "Diagram of Meteorology, displaying the various phenomena of the atmosphere",
-    "container": null,
     "date": "1845~/1860~",
     "institution": "Royal Museums Greenwich",
     "links": [
@@ -3385,7 +3351,6 @@
     "bibliography": "Bentley, Wilson Alwyn. <em>Untitled (Snowflake)</em>. c. 1905, gelatin silver photomicrograph print, Museum of Photographic Arts, San Diego (2010.010.001).",
     "creator": { "id": "a-wilson-alwyn-bentley", "name": "Wilson Alwyn Bentley" },
     "title": "Untitled (Snowflake)",
-    "container": null,
     "date": "1905~",
     "institution": "Museum of Photographic Arts",
     "links": [
@@ -3416,7 +3381,6 @@
     "bibliography": "Bentley, Wilson A. Plate XIX. In “Studies among the Snow Crystals during the Winter of 1901–2, with Additional Data Collected during Previous Winters.” <em>Monthly Weather Review</em> 30, no. 13 (1902): 607–616.",
     "creator": { "id": "a-wilson-alwyn-bentley", "name": "Wilson Alwyn Bentley" },
     "title": "Plate XIX",
-    "container": "Studies among the Snow Crystals during the Winter of 1901–2",
     "date": "1902",
     "institution": "NOAA Photo Library (Historic NWS Collection, wea02087)",
     "links": [
@@ -3434,7 +3398,7 @@
     },
     "edition": {
       "id": "e-0152",
-      "title": "STUDIES AMONG THE SNOW CRYSTALS DURING THE WINTER OF 1901–2, WITH ADDITIONAL DATA COLLECTED DURING PREVIOUS WINTERS",
+      "title": "Studies among the Snow Crystals during the Winter of 1901–2",
       "issued": "1902",
       "identifiers": { "doi": "10.1175/1520-0493-30.13.607" }
     },
@@ -3448,7 +3412,7 @@
     "bibliography": "Katsushika Hokusai. <em>South Wind, Clear Sky (Gaifū kaisei)</em>, also known as <em>Red Fuji</em>, from the series <em>Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)</em>. c. 1830–32, woodblock print, ink and color on paper, Metropolitan Museum of Art, New York (JP9).",
     "creator": { "id": "a-katsushika-hokusai", "name": "Katsushika Hokusai", "wikidata": "Q5586" },
     "title": "South Wind, Clear Sky (Gaifū kaisei)",
-    "container": null,
+    "partOf": "Thirty-six Views of Mount Fuji",
     "date": "1830~/1832~",
     "institution": "Metropolitan Museum of Art",
     "links": [
@@ -3482,7 +3446,6 @@
       "wikidata": "Q115525"
     },
     "title": "Deuxième schéma du cyanomètre",
-    "container": null,
     "date": "1788",
     "institution": "Musée d’histoire des sciences, Geneva",
     "links": [
@@ -3518,16 +3481,19 @@
     "bibliography": "Tyndall, John. Fig. 3. In “New Chemical Reactions Produced by Light,” <em>Fragments of Science: A Series of Detached Essays, Addresses, and Reviews</em>, 6th ed., vol. 1. Longmans, Green, and Co., 1879.",
     "creator": { "id": "a-john-tyndall", "name": "John Tyndall", "wikidata": "Q360808" },
     "title": "Fig. 3",
-    "container": "Fragments of Science: A Series of Detached Essays, Addresses, and Reviews, vol. 1",
-    "publisher": "Longmans, Green, and Co.",
+    "edition": {
+      "id": "e-0167",
+      "title": "Fragments of Science: A Series of Detached Essays, Addresses, and Reviews, vol. 1",
+      "publisher": "Longmans, Green, and Co.",
+      "issued": "1879"
+    },
+    "locator": {
+      "url": "https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601",
+      "label": "Project Gutenberg"
+    },
     "date": "1879",
     "institution": null,
     "links": [
-      {
-        "role": "cited",
-        "label": "Project Gutenberg",
-        "url": "https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601"
-      },
       {
         "role": "copy",
         "label": "Wikimedia Commons",
@@ -3561,7 +3527,6 @@
     "bibliography": "Kandinsky, Wassily. <em>Bleu de ciel</em> [Sky Blue]. 1940, oil on canvas, Musée national d’art moderne, Centre Pompidou, Paris (AM 1976-862).",
     "creator": { "id": "a-wassily-kandinsky", "name": "Wassily Kandinsky", "wikidata": "Q61064" },
     "title": "Bleu de ciel",
-    "container": null,
     "date": "1940",
     "institution": "Musée national d’art moderne, Centre Pompidou",
     "links": [
@@ -3600,7 +3565,6 @@
       "wikidata": "Q334946"
     },
     "title": "Fabriques à la villa Farnèse : les deux peupliers",
-    "container": null,
     "date": "1782~/1784~",
     "institution": "Musée du Louvre",
     "links": [
@@ -3635,7 +3599,6 @@
     "bibliography": "Frey, Johann Jakob. <em>Rome: The Roman Forum in the Evening Sun</em>. 1859, oil on canvas, private collection. Van Ham Kunstauktionen, Cologne, <em>Fine Art</em>, 21 November 2025, lot 1081.",
     "creator": { "id": "a-johann-jakob-frey", "name": "Johann Jakob Frey", "wikidata": "Q1337730" },
     "title": "Rome: The Roman Forum in the Evening Sun",
-    "container": null,
     "date": "1859",
     "institution": "Private collection",
     "links": [
@@ -3674,7 +3637,6 @@
     "bibliography": "Marville, Charles. <em>[Cloud Study, Paris]</em>. 1855–56, albumen silver print from glass negative, Metropolitan Museum of Art, New York (2005.100.353).",
     "creator": { "id": "a-charles-marville", "name": "Charles Marville", "wikidata": "Q329387" },
     "title": "[Cloud Study, Paris]",
-    "container": null,
     "date": "1855/1856",
     "institution": "Metropolitan Museum of Art",
     "links": [
@@ -3705,7 +3667,6 @@
     "bibliography": "Frey, Johann Jakob. <em>Dawn on the Pontine Shore</em> (<em>Cloud Study</em>). c. 1843, oil on paper mounted on canvas, private collection. Exhibited in <em>True to Nature: Open-Air Painting in Europe, 1780–1870</em>, Fitzwilliam Museum, Cambridge, and Fondation Custodia, Paris (cat. 108).",
     "creator": { "id": "a-johann-jakob-frey", "name": "Johann Jakob Frey", "wikidata": "Q1337730" },
     "title": "Dawn on the Pontine Shore",
-    "container": null,
     "date": "1843~",
     "institution": "Private collection",
     "links": [
@@ -3747,7 +3708,6 @@
       "wikidata": "Q203643"
     },
     "title": "Nocturne in Blue and Silver: The Lagoon, Venice",
-    "container": null,
     "date": "1879/1880",
     "institution": "Museum of Fine Arts, Boston",
     "links": [
@@ -4030,7 +3990,7 @@
     "bibliography": "Utagawa Hiroshige. <em>Sudden Shower over Shin-Ōhashi Bridge and Atake</em> (<em>Ōhashi Atake no yūdachi</em>), from <em>One Hundred Famous Views of Edo</em>. 1857, woodblock print, The Metropolitan Museum of Art, New York, JP3174.",
     "creator": { "id": "a-utagawa-hiroshige", "name": "Utagawa Hiroshige", "wikidata": "Q200798" },
     "title": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
-    "container": "One Hundred Famous Views of Edo",
+    "partOf": "One Hundred Famous Views of Edo",
     "date": "1857",
     "institution": "The Metropolitan Museum of Art",
     "links": [
@@ -4061,7 +4021,6 @@
     "bibliography": "Moussette, Charles. <em>[Spiral of Lightning in a Thunderstorm]</em>. 12 May 1886, albumen silver print from glass negative, The Metropolitan Museum of Art, New York, Gilman Collection, 2005.100.651.",
     "creator": { "id": "a-charles-moussette", "name": "Charles Moussette" },
     "title": "[Spiral of Lightning in a Thunderstorm]",
-    "container": null,
     "date": "1886-05-12",
     "institution": "The Metropolitan Museum of Art",
     "links": [
@@ -4092,7 +4051,6 @@
     "bibliography": "Hasegawa Tōhaku. <em>Pine Trees</em> (<em>Shōrin-zu byōbu</em>), right-hand screen of a pair of six-fold screens. c. 1595, ink on paper, Tokyo National Museum (National Treasure).",
     "creator": { "id": "a-hasegawa-tohaku", "name": "Hasegawa Tōhaku" },
     "title": "Pine Trees",
-    "container": null,
     "date": "1595~",
     "institution": "Tokyo National Museum",
     "links": [

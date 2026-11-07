@@ -140,9 +140,12 @@ Then each kind has its own:
   fallback where there's no `alt`), `display` (for a Lectio Terra figure:
   its `size` in the post, and `noCaption` or `unlabelled` where it has no
   caption or no "Fig." number), `link` (where a figure links, if not to
-  itself), `bibliography`, `creator`, `title`, `date`,
-  `institution`, `edition` and `locator` (for a plate or figure from a
-  book, above), `links` (where the work was cited from: `cited`, and any
+  itself), `bibliography`, `creator`, `title`, `date` (when the image
+  was made, which for a plate may be before the edition it's cited from),
+  `institution` (who holds it), `edition` and `locator` (for a plate or
+  figure from a book, above: the book's title and publisher are the
+  edition's), `partOf` (the larger work an image belongs to when that
+  isn't a printed book: a manuscript, a print series), `links` (where the work was cited from: `cited`, and any
   `copy`), `furtherReading` (`about` or `related` pages for readers),
   `source` (the exact file downloaded and when: `url`, `retrieved`),
   `rights` (a
