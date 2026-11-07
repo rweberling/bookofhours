@@ -1633,6 +1633,8 @@
       "locator": { "page": "5" },
       "edition": {
         "id": "e-0042",
+        "title": "How Vermont maple sugar is made",
+        "issued": "1915",
         "links": [
           {
             "role": "cited",
@@ -1994,6 +1996,8 @@
       "locator": { "page": "29" },
       "edition": {
         "id": "e-0051",
+        "title": "The development of the ostrich fern, Onoclea struthiopteris",
+        "issued": "1887",
         "links": [
           {
             "role": "cited",
@@ -2659,6 +2663,8 @@
       "locator": { "page": "161–164" },
       "edition": {
         "id": "e-0069",
+        "title": "A new British flora : British wild flowers in their natural haunts",
+        "issued": "1919",
         "links": [
           {
             "role": "cited",
@@ -3341,6 +3347,11 @@
       "locator": { "page": "93–94" },
       "edition": {
         "id": "e-0017",
+        "type": "book",
+        "title": "On Nature",
+        "issued": "1889",
+        "original-date": "-0500~",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "links": [
           {
             "role": "cited",

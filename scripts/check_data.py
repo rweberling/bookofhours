@@ -398,7 +398,11 @@ def main():
         if not img['file'].startswith(('http://', 'https://')) and not (ROOT / img['file']).exists():
             errors.append(f'{img["id"]}: missing file {img["file"]}')
 
-    # Embedded editions and people: every copy that shares an id agrees.
+    # Embedded editions and people: every copy that shares an id is the
+    # same, field for field; a fact on one copy and missing from another
+    # is reported too, so the copies can't drift apart. Two things belong
+    # to the use, not the edition: its links (the cited copy, at the page
+    # this record quotes) and a person's role on it.
     copies = defaultdict(list)
     def collect(owner, edition):
         # An edition without an ID (a Lectio reading's links, until Stage 3
@@ -406,7 +410,9 @@ def main():
         if not edition or 'id' not in edition:
             return
         people = edition.get('contributors') or []
-        copies[edition['id']].append((owner, {k: v for k, v in edition.items() if k != 'contributors'}))
+        fields = {k: v for k, v in edition.items() if k not in ('contributors', 'links')}
+        fields['contributors'] = [(p['id'], p.get('role')) for p in people] or None
+        copies[edition['id']].append((owner, fields))
         for p in people:
             copies[p['id']].append((owner, {k: v for k, v in p.items() if k != 'role'}))
     for r in readings:
@@ -460,7 +466,12 @@ def main():
         for owner, other in found[1:]:
             for k in sorted(set(first) | set(other)):
                 a, b = first.get(k), other.get(k)
-                if a is not None and b is not None and a != b:
+                if a == b:
+                    continue
+                if a is None or b is None:
+                    has, lacks = (first_owner, owner) if b is None else (owner, first_owner)
+                    errors.append(f'{cid}: "{k}" is on its copy in {has} but missing in {lacks}')
+                else:
                     errors.append(f'{cid}: "{k}" is {a!r} in {first_owner} but {b!r} in {owner}')
 
     # Dates and rights are well formed where present.

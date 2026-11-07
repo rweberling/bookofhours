@@ -195,7 +195,11 @@
     "file": "images/hush_whistler.jpg",
     "caption": "James McNeill Whistler, <a href=\"https://www.gardnermuseum.org/experience/collection/10900\" target=\"_blank\"><em>Nocturne, Blue and Silver: Battersea Reach</em></a> (c. 1872-1878)",
     "bibliography": "Whistler, James McNeill. <em>Nocturne, Blue and Silver: Battersea Reach</em>. c. 1872–1878, Isabella Stewart Gardner Museum, Boston.",
-    "creator": { "id": "a-james-mcneill-whistler", "name": "James McNeill Whistler" },
+    "creator": {
+      "id": "a-james-mcneill-whistler",
+      "name": "James McNeill Whistler",
+      "wikidata": "Q203643"
+    },
     "title": "Nocturne, Blue and Silver: Battersea Reach",
     "container": null,
     "date": "1872~/1878~",
@@ -1122,7 +1126,8 @@
       "id": "e-0042",
       "title": "How Vermont maple sugar is made",
       "issued": "1915",
-      "identifiers": { "hathitrust": "011274049", "oclc": "18660713" }
+      "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
+      "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }]
     }
   },
   {
@@ -1514,7 +1519,15 @@
       "id": "e-0051",
       "title": "The development of the ostrich fern, Onoclea struthiopteris",
       "issued": "1887",
-      "identifiers": { "hathitrust": "001993770", "oclc": "14366384" }
+      "identifiers": { "hathitrust": "001993770", "oclc": "14366384" },
+      "contributors": [
+        {
+          "id": "a-douglas-houghton-campbell",
+          "name": "Douglas Houghton Campbell",
+          "role": "author",
+          "wikidata": "Q4251095"
+        }
+      ]
     }
   },
   {
@@ -2040,7 +2053,15 @@
       "id": "e-0069",
       "title": "A new British flora : British wild flowers in their natural haunts",
       "issued": "1919",
-      "identifiers": { "hathitrust": "001997177", "oclc": "10314294" }
+      "identifiers": { "hathitrust": "001997177", "oclc": "10314294" },
+      "contributors": [
+        {
+          "id": "a-a-r-horwood",
+          "name": "A. R. Horwood",
+          "role": "author",
+          "wikidata": "Q21341246"
+        }
+      ]
     }
   },
   {
@@ -4101,7 +4122,7 @@
     "caption": "Utagawa Hiroshige, <a href=\"https://www.metmuseum.org/art/collection/search/37386\" target=\"_blank\"><em>Sudden Shower over Shin-Ōhashi Bridge and Atake</em></a> (1857)",
     "alt": "A woodblock print: dark slanting lines of rain fall across a wide river under a black sky, while small figures under hats and straw mats hurry over a long wooden bridge, and a lone raft drifts on the grey water beyond.",
     "bibliography": "Utagawa Hiroshige. <em>Sudden Shower over Shin-Ōhashi Bridge and Atake</em> (<em>Ōhashi Atake no yūdachi</em>), from <em>One Hundred Famous Views of Edo</em>. 1857, woodblock print, The Metropolitan Museum of Art, New York, JP3174.",
-    "creator": { "id": "a-utagawa-hiroshige", "name": "Utagawa Hiroshige" },
+    "creator": { "id": "a-utagawa-hiroshige", "name": "Utagawa Hiroshige", "wikidata": "Q200798" },
     "title": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
     "container": "One Hundred Famous Views of Edo",
     "date": "1857",
