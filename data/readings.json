@@ -1331,6 +1331,8 @@
       },
       "edition": {
         "id": "e-0037",
+        "type": "book",
+        "title": "Sharp Eyes: A Rambler’s Calendar",
         "identifiers": { "hathitrust": "007679974", "oclc": "7688631" },
         "contributors": [
           {
@@ -1339,7 +1341,10 @@
             "role": "author",
             "wikidata": "Q8010768"
           }
-        ]
+        ],
+        "publisher": "Harper & Brothers",
+        "issued": "1904",
+        "original-date": "1892"
       }
     },
     "lectio": { "post": "lt-0001", "place": 1 },
@@ -1372,6 +1377,8 @@
       },
       "edition": {
         "id": "e-0038",
+        "type": "book",
+        "title": "Thoughts Out of Season, Part II",
         "identifiers": { "internetArchive": "NietzscheSchopenhauerAsEducatorCollins" },
         "contributors": [
           {
@@ -1386,7 +1393,9 @@
             "role": "translator",
             "wikidata": "Q15627018"
           }
-        ]
+        ],
+        "publisher": "T. N. Foulis",
+        "issued": "1909"
       }
     },
     "lectio": { "post": "lt-0001", "place": 2 },
@@ -1459,6 +1468,8 @@
       },
       "edition": {
         "id": "e-0040",
+        "type": "book",
+        "title": "The Birds of North and Middle America: A Descriptive Catalog, part 4",
         "identifiers": { "hathitrust": "001501611", "oclc": "857360", "lccn": "11035036" },
         "contributors": [
           {
@@ -1467,7 +1478,9 @@
             "role": "author",
             "wikidata": "Q940473"
           }
-        ]
+        ],
+        "publisher": "Government Printing Office",
+        "issued": "1907"
       }
     },
     "lectio": { "post": "lt-0002", "place": 2 },
@@ -1500,8 +1513,12 @@
       },
       "edition": {
         "id": "e-0041",
+        "type": "book",
+        "title": "Review of Facts and Observations, Made by Naturalists, Botanists, Historians, and Travellers, on the Properties and Productions of the Sugar Maple Tree",
         "identifiers": { "hathitrust": "011437149", "oclc": "5161201" },
-        "contributors": [{ "id": "a-e-jones", "name": "E. Jones", "role": "author" }]
+        "contributors": [{ "id": "a-e-jones", "name": "E. Jones", "role": "author" }],
+        "publisher": "E. Colyer",
+        "issued": "1832"
       }
     },
     "lectio": { "post": "lt-0003", "place": 1 },
@@ -1554,7 +1571,11 @@
       "locator": { "url": "https://annikahansteenizora.substack.com/p/time-is-water", "label": "Substack" },
       "edition": {
         "id": "e-0043",
-        "contributors": [{ "id": "a-annika-hansteen-izora", "name": "Annika Hansteen-Izora", "role": "author" }]
+        "type": "article",
+        "title": "Time is Water",
+        "container": "Annika is Dreaming",
+        "contributors": [{ "id": "a-annika-hansteen-izora", "name": "Annika Hansteen-Izora", "role": "author" }],
+        "issued": "2022-05-30"
       }
     },
     "lectio": { "post": "lt-0003", "place": 3 },
@@ -1586,6 +1607,8 @@
       },
       "edition": {
         "id": "e-0044",
+        "type": "book",
+        "title": "Silvical Leaflet 38: Paper Birch",
         "identifiers": { "hathitrust": "007425308", "oclc": "21507897", "lccn": "agr09000825" },
         "contributors": [
           {
@@ -1594,7 +1617,9 @@
             "role": "author",
             "wikidata": "Q534301"
           }
-        ]
+        ],
+        "publisher": "United States Department of Agriculture, Forest Service",
+        "issued": "1908-10-29"
       }
     },
     "lectio": { "post": "lt-0004", "place": 1 },
@@ -1672,6 +1697,11 @@
       },
       "edition": {
         "id": "e-0046",
+        "type": "article",
+        "title": "In Honour of Mr. Howard",
+        "container": "Gold’s London Magazine",
+        "volume": "4",
+        "pages": "59–63",
         "contributors": [
           {
             "id": "a-johann-wolfgang-von-goethe",
@@ -1691,7 +1721,8 @@
             "role": "translator",
             "wikidata": "Q332508"
           }
-        ]
+        ],
+        "issued": "1821-07"
       }
     },
     "lectio": { "post": "lt-0005", "place": 1 },
@@ -1724,6 +1755,9 @@
       },
       "edition": {
         "id": "e-0047",
+        "type": "article",
+        "title": "What Does It Mean to Watch Clouds? What Can It Mean?",
+        "container": "Jenny Odell’s Newsletter",
         "contributors": [
           {
             "id": "a-jenny-odell",
@@ -1731,7 +1765,8 @@
             "role": "author",
             "wikidata": "Q68924784"
           }
-        ]
+        ],
+        "issued": "2025-07-04"
       }
     },
     "lectio": { "post": "lt-0005", "place": 2 },
@@ -1764,6 +1799,8 @@
       },
       "edition": {
         "id": "e-0048",
+        "type": "book",
+        "title": "A History of the Species of Crocus",
         "contributors": [
           { "id": "a-william-herbert", "name": "William Herbert", "role": "author" },
           {
@@ -1772,7 +1809,9 @@
             "role": "editor",
             "wikidata": "Q378629"
           }
-        ]
+        ],
+        "publisher": "William Clowes and Sons",
+        "issued": "1847"
       }
     },
     "lectio": { "post": "lt-0006", "place": 1 },
@@ -1798,7 +1837,10 @@
       },
       "edition": {
         "id": "e-0049",
-        "contributors": [{ "id": "a-guillaume-barth", "name": "Guillaume Barth", "role": "author" }]
+        "title": "Crocus sativus, fleur du bonheur",
+        "contributors": [{ "id": "a-guillaume-barth", "name": "Guillaume Barth", "role": "author" }],
+        "publisher": "Le Fresnoy – Studio national des arts contemporains",
+        "issued": "2021"
       }
     },
     "lectio": { "post": "lt-0006", "place": 2 },
@@ -1821,6 +1863,8 @@
       "locator": { "page": "14–16" },
       "edition": {
         "id": "e-0050",
+        "type": "book",
+        "title": "Introduction to Metaphysics",
         "contributors": [
           {
             "id": "a-martin-heidegger",
@@ -1835,7 +1879,9 @@
             "role": "translator",
             "wikidata": "Q7328471"
           }
-        ]
+        ],
+        "publisher": "Yale University Press",
+        "issued": "2000"
       }
     },
     "suggestedEdition": { "isbn": "9780300186123" },
@@ -1914,6 +1960,8 @@
       "locator": { "page": "106–107" },
       "edition": {
         "id": "e-0052",
+        "type": "book",
+        "title": "Mules and Men",
         "contributors": [
           {
             "id": "a-zora-neale-hurston",
@@ -1921,7 +1969,10 @@
             "role": "author",
             "wikidata": "Q220480"
           }
-        ]
+        ],
+        "publisher": "Harper Perennial",
+        "issued": "1990",
+        "original-date": "1935"
       }
     },
     "lectio": { "post": "lt-0008", "place": 1 },
@@ -1948,6 +1999,8 @@
       },
       "edition": {
         "id": "e-0053",
+        "type": "book",
+        "title": "Lives of Game Animals, vol. 4, part 2: Rodents, Etc.",
         "identifiers": { "hathitrust": "001496609", "oclc": "1319978", "lccn": "25012152" },
         "contributors": [
           {
@@ -1956,7 +2009,9 @@
             "role": "author",
             "wikidata": "Q505017"
           }
-        ]
+        ],
+        "publisher": "Doubleday, Doran",
+        "issued": "1929"
       }
     },
     "lectio": { "post": "lt-0008", "place": 2 },
@@ -1982,10 +2037,14 @@
       },
       "edition": {
         "id": "e-0054",
+        "type": "article",
+        "title": "Ashia Ajani Mulls Over Mullein",
+        "container": "PLANTCRAFT",
         "contributors": [
           { "id": "a-ashia-ajani", "name": "Ashia Ajani", "role": "author" },
           { "id": "a-amirio-freeman", "name": "Amirio Freeman", "role": "author" }
-        ]
+        ],
+        "issued": "2025-05-05"
       }
     },
     "lectio": { "post": "lt-0009", "place": 1 },
@@ -2018,7 +2077,11 @@
       },
       "edition": {
         "id": "e-0055",
-        "identifiers": { "hathitrust": "102436036", "oclc": "1319259", "lccn": "41023319" }
+        "type": "book",
+        "title": "The Old Herb Doctor: His Secrets and Treatments",
+        "identifiers": { "hathitrust": "102436036", "oclc": "1319259", "lccn": "41023319" },
+        "publisher": "Hammond Book Company",
+        "issued": "1941"
       }
     },
     "lectio": { "post": "lt-0009", "place": 2 },
@@ -2041,6 +2104,8 @@
       "locator": { "page": "115–116" },
       "edition": {
         "id": "e-0056",
+        "type": "book",
+        "title": "Hildegard’s Healing Plants: From Her Medieval Classic Physica",
         "contributors": [
           {
             "id": "a-hildegard-of-bingen",
@@ -2049,7 +2114,9 @@
             "wikidata": "Q70991"
           },
           { "id": "a-bruce-w-hozeski", "name": "Bruce W. Hozeski", "role": "translator" }
-        ]
+        ],
+        "publisher": "Beacon Press",
+        "issued": "2001"
       }
     },
     "suggestedEdition": { "isbn": "9780807021095" },
@@ -2077,6 +2144,8 @@
       },
       "edition": {
         "id": "e-0057",
+        "type": "book",
+        "title": "The Letters of Hildegard of Bingen, vol. 3",
         "contributors": [
           {
             "id": "a-hildegard-of-bingen",
@@ -2086,7 +2155,9 @@
           },
           { "id": "a-joseph-l-baird", "name": "Joseph L. Baird", "role": "translator" },
           { "id": "a-radd-k-ehrman", "name": "Radd K. Ehrman", "role": "translator" }
-        ]
+        ],
+        "publisher": "Oxford University Press",
+        "issued": "2004"
       }
     },
     "lectio": { "post": "lt-0010", "place": 1 },
@@ -2109,6 +2180,8 @@
       "locator": { "page": "76" },
       "edition": {
         "id": "e-0058",
+        "type": "book",
+        "title": "Plants in Place: A Phenomenology of the Vegetal",
         "contributors": [
           {
             "id": "a-michael-marder",
@@ -2122,7 +2195,9 @@
             "role": "author",
             "wikidata": "Q17276513"
           }
-        ]
+        ],
+        "publisher": "Columbia University Press",
+        "issued": "2024"
       }
     },
     "lectio": { "post": "lt-0010", "place": 2 },
@@ -2146,7 +2221,13 @@
         "url": "https://oxfordcountycts.substack.com/p/mosses-of-maine-a-brief-guide",
         "label": "Substack"
       },
-      "edition": { "id": "e-0059" }
+      "edition": {
+        "id": "e-0059",
+        "type": "article",
+        "title": "Mosses of Maine: A Brief Guide",
+        "container": "Oxford County CTS",
+        "issued": "2025-10-15"
+      }
     },
     "lectio": { "post": "lt-0010", "place": 3 },
     "tags": {
@@ -2168,6 +2249,8 @@
       "locator": { "page": "85" },
       "edition": {
         "id": "e-0060",
+        "type": "book",
+        "title": "Philosophical Investigations",
         "contributors": [
           {
             "id": "a-ludwig-wittgenstein",
@@ -2181,7 +2264,9 @@
             "role": "translator",
             "wikidata": "Q229646"
           }
-        ]
+        ],
+        "publisher": "Basil Blackwell",
+        "issued": "1953"
       }
     },
     "suggestedEdition": { "isbn": "9781405159289" },
@@ -2215,6 +2300,8 @@
       },
       "edition": {
         "id": "e-0061",
+        "type": "book",
+        "title": "Outlines of the Mineralogy and Geology of Boston and Its Vicinity, with a Geological Map",
         "identifiers": { "hathitrust": "012307100", "oclc": "6900683", "lccn": "05015479" },
         "contributors": [
           {
@@ -2224,7 +2311,9 @@
             "wikidata": "Q11203460"
           },
           { "id": "a-samuel-l-dana", "name": "Samuel L. Dana", "role": "author" }
-        ]
+        ],
+        "publisher": "Cummings and Hilliard",
+        "issued": "1818"
       }
     },
     "lectio": { "post": "lt-0011", "place": 2 },
@@ -2257,8 +2346,12 @@
       },
       "edition": {
         "id": "e-0062",
+        "type": "book",
+        "title": "What’s O’Clock",
         "identifiers": { "hathitrust": "000629649", "oclc": "1268281", "lccn": "25016810" },
-        "contributors": [{ "id": "a-amy-lowell", "name": "Amy Lowell", "role": "author", "wikidata": "Q265841" }]
+        "contributors": [{ "id": "a-amy-lowell", "name": "Amy Lowell", "role": "author", "wikidata": "Q265841" }],
+        "publisher": "Houghton Mifflin",
+        "issued": "1925"
       }
     },
     "lectio": { "post": "lt-0012", "place": 1 },
@@ -2286,8 +2379,11 @@
       },
       "edition": {
         "id": "e-0063",
+        "type": "book",
+        "title": "The Lilac",
         "identifiers": { "hathitrust": "100451368", "oclc": "17570555" },
-        "contributors": [{ "id": "a-william-c-barry", "name": "William C. Barry", "role": "author" }]
+        "contributors": [{ "id": "a-william-c-barry", "name": "William C. Barry", "role": "author" }],
+        "publisher": "Mount Hope Nurseries"
       }
     },
     "lectio": { "post": "lt-0012", "place": 2 },
@@ -2310,6 +2406,8 @@
       "locator": { "page": "27–28" },
       "edition": {
         "id": "e-0064",
+        "type": "book",
+        "title": "Sorrow in Sunlight",
         "contributors": [
           {
             "id": "a-ronald-firbank",
@@ -2317,7 +2415,9 @@
             "role": "author",
             "wikidata": "Q2706580"
           }
-        ]
+        ],
+        "publisher": "Brentano’s",
+        "issued": "1924"
       }
     },
     "lectio": { "post": "lt-0012", "place": 3 },
@@ -2340,6 +2440,11 @@
       "locator": { "page": "312" },
       "edition": {
         "id": "e-0065",
+        "type": "article",
+        "title": "Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape",
+        "container": "Journal of Visual Culture",
+        "volume": "7",
+        "pages": "309–334",
         "contributors": [
           {
             "id": "a-jenifer-wightman",
@@ -2347,7 +2452,8 @@
             "role": "author",
             "wikidata": "Q95646046"
           }
-        ]
+        ],
+        "issued": "2008-12"
       }
     },
     "lectio": { "post": "lt-0013", "place": 1 },
@@ -2370,6 +2476,10 @@
       "locator": { "page": "8", "url": "https://doi.org/10.3389/falgy.2023.1220481", "label": "DOI" },
       "edition": {
         "id": "e-0066",
+        "type": "article",
+        "title": "The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs",
+        "container": "Frontiers in Allergy",
+        "volume": "4",
         "identifiers": { "doi": "10.3389/falgy.2023.1220481" },
         "contributors": [
           {
@@ -2378,7 +2488,8 @@
             "role": "author",
             "wikidata": "Q112435644"
           }
-        ]
+        ],
+        "issued": "2023-09-12"
       }
     },
     "lectio": { "post": "lt-0013", "place": 2 },
@@ -2405,6 +2516,11 @@
       },
       "edition": {
         "id": "e-0067",
+        "type": "article",
+        "title": "Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression",
+        "container": "Archives of General Psychiatry",
+        "volume": "67",
+        "pages": "1211–1224",
         "identifiers": { "doi": "10.1001/archgenpsychiatry.2010.161" },
         "contributors": [
           {
@@ -2425,7 +2541,8 @@
             "role": "author",
             "wikidata": "Q112435644"
           }
-        ]
+        ],
+        "issued": "2010-12"
       }
     },
     "lectio": { "post": "lt-0013", "place": 3 },
@@ -2458,6 +2575,8 @@
       },
       "edition": {
         "id": "e-0068",
+        "type": "book",
+        "title": "The Mathnawí of Jalálu’ddín Rúmí, vol. 2",
         "identifiers": { "hathitrust": "001005718", "oclc": "1444113", "lccn": "26022478" },
         "contributors": [
           {
@@ -2472,7 +2591,10 @@
             "role": "translator",
             "wikidata": "Q2265889"
           }
-        ]
+        ],
+        "publisher": "E. J. W. Gibb Memorial",
+        "issued": "1960",
+        "original-date": "1926"
       }
     },
     "lectio": { "post": "lt-0014", "place": 1 },
@@ -2537,7 +2659,12 @@
       },
       "edition": {
         "id": "e-0070",
-        "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author", "wikidata": "Q5382324" }]
+        "type": "article",
+        "title": "Gall Insects and Their Relations to Plants",
+        "container": "The Scientific Monthly",
+        "pages": "509–525",
+        "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author", "wikidata": "Q5382324" }],
+        "issued": "1918-06"
       }
     },
     "lectio": { "post": "lt-0015", "place": 1 },
@@ -2564,6 +2691,8 @@
       },
       "edition": {
         "id": "e-0071",
+        "type": "book",
+        "title": "Experiments on the Generation of Insects",
         "contributors": [
           {
             "id": "a-francesco-redi",
@@ -2572,7 +2701,10 @@
             "wikidata": "Q311187"
           },
           { "id": "a-mab-bigelow", "name": "Mab Bigelow", "role": "translator" }
-        ]
+        ],
+        "publisher": "Open Court",
+        "issued": "1909",
+        "original-date": "1668"
       }
     },
     "lectio": { "post": "lt-0015", "place": 2 },
@@ -2595,6 +2727,8 @@
       "locator": { "page": "vi, 147" },
       "edition": {
         "id": "e-0072",
+        "type": "book",
+        "title": "Bog-Trotting for Orchids",
         "contributors": [
           {
             "id": "a-grace-greylock-niles",
@@ -2602,7 +2736,9 @@
             "role": "author",
             "wikidata": "Q21393563"
           }
-        ]
+        ],
+        "publisher": "Knickerbocker Press",
+        "issued": "1904"
       }
     },
     "lectio": { "post": "lt-0016", "place": 1 },
@@ -2629,8 +2765,12 @@
       },
       "edition": {
         "id": "e-0073",
+        "type": "book",
+        "title": "Monographie des Cypripedium",
         "identifiers": { "hathitrust": "100451015", "oclc": "80597640" },
-        "contributors": [{ "id": "a-f-desbois", "name": "F. Desbois", "role": "author" }]
+        "contributors": [{ "id": "a-f-desbois", "name": "F. Desbois", "role": "author" }],
+        "publisher": "Librairie Générale de Ad. Hoste",
+        "issued": "1888"
       }
     },
     "lectio": { "post": "lt-0016", "place": 2 },
@@ -2656,7 +2796,11 @@
       },
       "edition": {
         "id": "e-0074",
-        "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }]
+        "type": "book",
+        "title": "All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States",
+        "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }],
+        "publisher": "Bradlee Whidden",
+        "issued": "1885"
       }
     },
     "lectio": { "post": "lt-0016", "place": 3 },
@@ -2683,6 +2827,8 @@
       },
       "edition": {
         "id": "e-0075",
+        "type": "book",
+        "title": "The Essential Galileo",
         "identifiers": {
           "internetArchive": "essentialgalileo0000gali",
           "oclc": "226308166",
@@ -2708,7 +2854,9 @@
             "role": "translator",
             "wikidata": "Q55754273"
           }
-        ]
+        ],
+        "publisher": "Hackett",
+        "issued": "2008"
       }
     },
     "lectio": { "post": "lt-0017", "place": 1 },
@@ -2736,7 +2884,11 @@
       "written": "2015",
       "edition": {
         "id": "e-0076",
-        "contributors": [{ "id": "a-simon-barraclough", "name": "Simon Barraclough", "role": "author" }]
+        "type": "book",
+        "title": "Sunspots",
+        "contributors": [{ "id": "a-simon-barraclough", "name": "Simon Barraclough", "role": "author" }],
+        "publisher": "Penned in the Margins",
+        "issued": "2015"
       }
     },
     "suggestedEdition": { "isbn": "9781908058416" },
@@ -2767,6 +2919,8 @@
       "locator": { "page": "9–10" },
       "edition": {
         "id": "e-0077",
+        "type": "book",
+        "title": "The Serviceberry: Abundance and Reciprocity in the Natural World",
         "contributors": [
           {
             "id": "a-robin-wall-kimmerer",
@@ -2774,7 +2928,9 @@
             "role": "author",
             "wikidata": "Q7352852"
           }
-        ]
+        ],
+        "publisher": "Scribner",
+        "issued": "2024"
       }
     },
     "suggestedEdition": { "isbn": "9781668072240" },
@@ -2802,6 +2958,11 @@
       },
       "edition": {
         "id": "e-0078",
+        "type": "article",
+        "title": "The Genus Amelanchier in Eastern North America",
+        "container": "Rhodora: Journal of the New England Botanical Club",
+        "volume": "14",
+        "pages": "117–161",
         "links": [
           {
             "role": "copy",
@@ -2817,7 +2978,8 @@
             "role": "author",
             "wikidata": "Q5958294"
           }
-        ]
+        ],
+        "issued": "1912-07"
       }
     },
     "lectio": { "post": "lt-0018", "place": 2 },
@@ -2843,9 +3005,13 @@
       },
       "edition": {
         "id": "e-0079",
+        "type": "book",
+        "title": "A Modern Herbal",
         "contributors": [
           { "id": "a-maud-grieve", "name": "Maud Grieve", "role": "author", "wikidata": "Q6792224" }
-        ]
+        ],
+        "publisher": "Jonathan Cape",
+        "issued": "1931"
       }
     },
     "lectio": { "post": "lt-0019", "place": 1 },
@@ -2872,8 +3038,13 @@
       },
       "edition": {
         "id": "e-0080",
+        "type": "book",
+        "title": "Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits",
         "identifiers": { "hathitrust": "009120458", "oclc": "12767094" },
-        "contributors": [{ "id": "a-fred-w-card", "name": "Fred W. Card", "role": "author" }]
+        "contributors": [{ "id": "a-fred-w-card", "name": "Fred W. Card", "role": "author" }],
+        "publisher": "Macmillan",
+        "issued": "1903",
+        "original-date": "1898"
       }
     },
     "lectio": { "post": "lt-0019", "place": 2 },
@@ -2900,6 +3071,8 @@
       },
       "edition": {
         "id": "e-0081",
+        "type": "book",
+        "title": "The Journal of Major John Norton, 1816",
         "contributors": [
           { "id": "a-john-norton", "name": "John Norton", "role": "author" },
           {
@@ -2914,7 +3087,9 @@
             "role": "editor",
             "wikidata": "Q140645688"
           }
-        ]
+        ],
+        "publisher": "Champlain Society",
+        "issued": "1970"
       }
     },
     "lectio": { "post": "lt-0020", "place": 1 },
@@ -2941,6 +3116,8 @@
       },
       "edition": {
         "id": "e-0082",
+        "type": "book",
+        "title": "Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)",
         "contributors": [
           {
             "id": "a-e-pauline-johnson",
@@ -2948,7 +3125,10 @@
             "role": "author",
             "wikidata": "Q2716914"
           }
-        ]
+        ],
+        "publisher": "Musson Book Company",
+        "issued": "1917",
+        "original-date": "1912"
       }
     },
     "lectio": { "post": "lt-0020", "place": 2 },
@@ -2975,7 +3155,11 @@
       },
       "edition": {
         "id": "e-0083",
-        "contributors": [{ "id": "a-joseph-j-white-inc", "name": "Joseph J. White, Inc.", "role": "author" }]
+        "type": "book",
+        "title": "Whitesbog Blueberries",
+        "contributors": [{ "id": "a-joseph-j-white-inc", "name": "Joseph J. White, Inc.", "role": "author" }],
+        "publisher": "Joseph J. White, Inc.",
+        "issued": "1925"
       }
     },
     "lectio": { "post": "lt-0021", "place": 1 },
@@ -3001,7 +3185,11 @@
       },
       "edition": {
         "id": "e-0084",
-        "contributors": [{ "id": "a-alix-beeston", "name": "Alix Beeston", "role": "author" }]
+        "type": "article",
+        "title": "Fingers Stained with Fruit and Ink",
+        "container": "Sydney Review of Books",
+        "contributors": [{ "id": "a-alix-beeston", "name": "Alix Beeston", "role": "author" }],
+        "issued": "2020-06-15"
       }
     },
     "lectio": { "post": "lt-0021", "place": 2 },
@@ -3024,6 +3212,8 @@
       "locator": { "page": "10–11" },
       "edition": {
         "id": "e-0085",
+        "type": "book",
+        "title": "The Annals of Chile",
         "contributors": [
           {
             "id": "a-paul-muldoon",
@@ -3031,7 +3221,9 @@
             "role": "author",
             "wikidata": "Q2061388"
           }
-        ]
+        ],
+        "publisher": "Faber & Faber",
+        "issued": "1994"
       }
     },
     "lectio": { "post": "lt-0022", "place": 1 },
@@ -3059,6 +3251,8 @@
       },
       "edition": {
         "id": "e-0086",
+        "type": "book",
+        "title": "An Illustrated Flora of the Northern United States, Canada and the British Possessions, 2nd ed., vol. 3",
         "identifiers": { "internetArchive": "illustratedflor03brit", "openlibrary": "OL24445409M" },
         "contributors": [
           {
@@ -3073,7 +3267,10 @@
             "role": "author",
             "wikidata": "Q1149854"
           }
-        ]
+        ],
+        "publisher": "Charles Scribner’s Sons",
+        "issued": "1913",
+        "original-date": "1898"
       }
     },
     "lectio": { "post": "lt-0022", "place": 2 },
@@ -3099,6 +3296,9 @@
       },
       "edition": {
         "id": "e-0087",
+        "type": "article",
+        "title": "Odes, Book III: XIII",
+        "container": "Poetry in Translation",
         "contributors": [
           { "id": "a-horace", "name": "Horace", "role": "author", "wikidata": "Q6197" },
           {
@@ -3107,7 +3307,8 @@
             "role": "translator",
             "wikidata": "Q112502365"
           }
-        ]
+        ],
+        "issued": "2003"
       }
     },
     "lectio": { "post": "lt-0023", "place": 1 },
@@ -3192,6 +3393,8 @@
       },
       "edition": {
         "id": "e-0088",
+        "type": "book",
+        "title": "Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles",
         "identifiers": { "hathitrust": "011549434", "oclc": "77784890", "lccn": "35025565" },
         "contributors": [
           {
@@ -3200,7 +3403,9 @@
             "role": "author",
             "wikidata": "Q274233"
           }
-        ]
+        ],
+        "publisher": "Imprimerie royale",
+        "issued": "1841"
       }
     },
     "lectio": { "post": "lt-0024", "place": 1 },
@@ -3233,6 +3438,8 @@
       },
       "edition": {
         "id": "e-0089",
+        "type": "book",
+        "title": "Journal, vol. 2",
         "contributors": [
           {
             "id": "a-henry-david-thoreau",
@@ -3246,7 +3453,9 @@
             "role": "editor",
             "wikidata": "Q2923472"
           }
-        ]
+        ],
+        "publisher": "Houghton Mifflin",
+        "issued": "1906"
       }
     },
     "lectio": { "post": "lt-0024", "place": 2 },
@@ -3278,6 +3487,8 @@
       },
       "edition": {
         "id": "e-0090",
+        "type": "book",
+        "title": "Circles on the Water: Selected Poems of Marge Piercy",
         "contributors": [
           {
             "id": "a-marge-piercy",
@@ -3285,7 +3496,9 @@
             "role": "author",
             "wikidata": "Q273385"
           }
-        ]
+        ],
+        "publisher": "Alfred A. Knopf",
+        "issued": "1982"
       }
     },
     "lectio": { "post": "lt-0025", "place": 1 },
@@ -3312,6 +3525,9 @@
       },
       "edition": {
         "id": "e-0091",
+        "type": "article",
+        "title": "Notes on Various Squashes",
+        "container": "The Poetry Review",
         "contributors": [
           {
             "id": "a-padraig-regan",
@@ -3319,7 +3535,8 @@
             "role": "author",
             "wikidata": "Q117744904"
           }
-        ]
+        ],
+        "issued": "2017"
       }
     },
     "lectio": { "post": "lt-0025", "place": 2 },
@@ -3346,9 +3563,15 @@
       },
       "edition": {
         "id": "e-0092",
+        "type": "article",
+        "title": "Poem with a Cucumber in It",
+        "container": "The American Poetry Review",
+        "volume": "36",
+        "pages": "34",
         "contributors": [
           { "id": "a-robert-hass", "name": "Robert Hass", "role": "author", "wikidata": "Q370513" }
-        ]
+        ],
+        "issued": "2007-09/2007-10"
       }
     },
     "lectio": { "post": "lt-0026", "place": 1 },
@@ -3376,6 +3599,8 @@
       },
       "edition": {
         "id": "e-0093",
+        "type": "book",
+        "title": "The Thoughts of the Emperor Marcus Aurelius Antoninus",
         "contributors": [
           {
             "id": "a-marcus-aurelius",
@@ -3389,7 +3614,9 @@
             "role": "translator",
             "wikidata": "Q1507776"
           }
-        ]
+        ],
+        "publisher": "Little, Brown",
+        "issued": "1899"
       }
     },
     "lectio": { "post": "lt-0026", "place": 2 },
@@ -3416,6 +3643,8 @@
       },
       "edition": {
         "id": "e-0094",
+        "type": "book",
+        "title": "The Poetical Works of William Cowper",
         "contributors": [
           {
             "id": "a-william-cowper",
@@ -3429,7 +3658,9 @@
             "role": "editor",
             "wikidata": "Q15955418"
           }
-        ]
+        ],
+        "publisher": "Macmillan",
+        "issued": "1870"
       }
     },
     "lectio": { "post": "lt-0026", "place": 3 },
@@ -3453,6 +3684,8 @@
       "locator": { "page": "46–47" },
       "edition": {
         "id": "e-0095",
+        "type": "book",
+        "title": "The Collected Poems",
         "contributors": [
           {
             "id": "a-sylvia-plath",
@@ -3461,7 +3694,9 @@
             "wikidata": "Q133054"
           },
           { "id": "a-ted-hughes", "name": "Ted Hughes", "role": "editor", "wikidata": "Q272194" }
-        ]
+        ],
+        "publisher": "Faber & Faber",
+        "issued": "1981"
       }
     },
     "suggestedEdition": { "isbn": "9780061558894" },
@@ -3489,6 +3724,8 @@
       },
       "edition": {
         "id": "e-0096",
+        "type": "book",
+        "title": "The Natural History",
         "contributors": [
           {
             "id": "a-pliny-the-elder",
@@ -3508,7 +3745,9 @@
             "role": "translator",
             "wikidata": "Q5729156"
           }
-        ]
+        ],
+        "publisher": "Taylor and Francis",
+        "issued": "1855"
       }
     },
     "lectio": { "post": "lt-0027", "place": 2 },
@@ -3535,6 +3774,8 @@
       },
       "edition": {
         "id": "e-0097",
+        "type": "book",
+        "title": "Rural Hours",
         "identifiers": {
           "internetArchive": "ruralhours00coop",
           "oclc": "3339732",
@@ -3548,7 +3789,10 @@
             "role": "author",
             "wikidata": "Q4865481"
           }
-        ]
+        ],
+        "publisher": "George P. Putnam",
+        "issued": "1851",
+        "original-date": "1850"
       }
     },
     "lectio": { "post": "lt-0028", "place": 1 },
@@ -3575,6 +3819,8 @@
       },
       "edition": {
         "id": "e-0098",
+        "type": "book",
+        "title": "Tree Lore",
         "identifiers": { "hathitrust": "001881232", "oclc": "12747590" },
         "contributors": [
           {
@@ -3583,7 +3829,9 @@
             "role": "author",
             "wikidata": "Q105764193"
           }
-        ]
+        ],
+        "publisher": "Charles H. Kelly",
+        "issued": "1912"
       }
     },
     "lectio": { "post": "lt-0028", "place": 2 },
@@ -3617,6 +3865,8 @@
       ],
       "edition": {
         "id": "e-0099",
+        "type": "book",
+        "title": "The Golden Bough: A Study in Magic and Religion",
         "links": [],
         "identifiers": { "hathitrust": "100323859", "oclc": "263836", "lccn": "22021418" },
         "contributors": [
@@ -3626,7 +3876,9 @@
             "role": "author",
             "wikidata": "Q151936"
           }
-        ]
+        ],
+        "publisher": "Macmillan",
+        "issued": "1922"
       }
     },
     "lectio": { "post": "lt-0028", "place": 3 },
@@ -3653,6 +3905,8 @@
       },
       "edition": {
         "id": "e-0100",
+        "type": "book",
+        "title": "Smoke and Steel",
         "identifiers": { "hathitrust": "001055000", "oclc": "906880", "lccn": "20017899" },
         "contributors": [
           {
@@ -3661,7 +3915,9 @@
             "role": "author",
             "wikidata": "Q193608"
           }
-        ]
+        ],
+        "publisher": "Harcourt, Brace and Howe",
+        "issued": "1920"
       }
     },
     "lectio": { "post": "lt-0029", "place": 1 },
@@ -3689,6 +3945,8 @@
       },
       "edition": {
         "id": "e-0101",
+        "type": "book",
+        "title": "Pale Fire",
         "identifiers": { "internetArchive": "in.ernet.dli.2015.458629" },
         "contributors": [
           {
@@ -3697,7 +3955,10 @@
             "role": "author",
             "wikidata": "Q36591"
           }
-        ]
+        ],
+        "publisher": "Lancer Books",
+        "issued": "1963",
+        "original-date": "1962"
       }
     },
     "suggestedEdition": { "isbn": "9780679723424" },
@@ -3726,6 +3987,8 @@
       },
       "edition": {
         "id": "e-0102",
+        "type": "book",
+        "title": "Report on the Forests of North America (Exclusive of Mexico)",
         "identifiers": { "hathitrust": "103315786", "oclc": "26601282", "isbn": "9780883544327" },
         "contributors": [
           {
@@ -3734,7 +3997,9 @@
             "role": "author",
             "wikidata": "Q1066128"
           }
-        ]
+        ],
+        "publisher": "Government Printing Office",
+        "issued": "1884"
       }
     },
     "lectio": { "post": "lt-0029", "place": 3 },
@@ -4153,7 +4418,11 @@
         "issued": "1929",
         "original-date": "0850~",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "identifiers": { "internetArchive": "jademountainchin00heng" },
+        "identifiers": {
+          "internetArchive": "jademountainchin00heng",
+          "oclc": "20143640",
+          "openlibrary": "OL24441208M"
+        },
         "rightsNote": "Public domain in the United States (published 1929). Bynner died in 1968, so the translation is still in copyright where the term is the author's life plus 70 years."
       }
     },
@@ -4256,7 +4525,12 @@
         "issued": "1798",
         "original-date": "1798",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "identifiers": { "internetArchive": "fearsinsolitudew00cole" }
+        "identifiers": {
+          "internetArchive": "fearsinsolitudew00cole",
+          "oclc": "3780109",
+          "openlibrary": "OL13562830M",
+          "lccn": "22009804"
+        }
       }
     },
     "tags": {
@@ -4321,7 +4595,7 @@
         "issued": "1888",
         "original-date": "1888",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "identifiers": { "internetArchive": "amongmilletother00lampuoft" }
+        "identifiers": { "internetArchive": "amongmilletother00lampuoft", "openlibrary": "OL7232206M" }
       }
     },
     "tags": {
