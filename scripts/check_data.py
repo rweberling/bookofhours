@@ -528,6 +528,13 @@ def main():
                 errors.append(f'{rid}: further reading kind "{item.get("kind")}" is not one of {", ".join(sorted(FURTHER_KINDS))}')
             if not str(item.get('url', '')).startswith(('http://', 'https://')):
                 errors.append(f'{rid}: further reading without a web address: {item}')
+            # Who published it, the piece's title and why it's worth
+            # reading are kept apart (data/README.md), not run together.
+            if not item.get('source'):
+                errors.append(f'{rid}: further reading without its source (who published it): {item.get("url")}')
+            extra = set(item) - {'kind', 'source', 'title', 'note', 'url'}
+            if extra:
+                errors.append(f'{rid}: further reading with unknown field(s) {", ".join(sorted(extra))}: {item.get("url")}')
 
     def check_suggested(rid, suggested):
         if not suggested:

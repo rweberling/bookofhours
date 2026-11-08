@@ -47,6 +47,16 @@ function listWords(words) {
 
 /* ── One entry ────────────────────────────────────────────────── */
 
+// A further-reading entry as one link: who published it, the piece's
+// title, and why it's worth reading, as "Royal Institution, “John
+// Tyndall's blue sky apparatus”" or "Fondation Custodia (its catalogue
+// entry, with …)".
+function furtherLink(item) {
+  const title = item.title ? `, “${item.title}”` : '';
+  const note = item.note ? ` (${item.note})` : '';
+  return { label: `${item.source}${title}${note}`, url: item.url };
+}
+
 function linkGroupHTML(label, links) {
   if (!links.length) return '';
   const anchors = links.map(link =>
@@ -90,7 +100,7 @@ function entryHTML(record, notes = [], site = null) {
     const note = suggested.note ? ` <span class="entry-inline-note">(${suggested.note})</span>` : '';
     groups.push(linkGroupHTML(SUGGESTED_LABEL, [{ label: 'Bookshop.org', url: suggestedEditionUrl(suggested, site) }]) + note);
   }
-  groups.push(linkGroupHTML(FURTHER_LABEL, record.furtherReading || []));
+  groups.push(linkGroupHTML(FURTHER_LABEL, (record.furtherReading || []).map(furtherLink)));
 
   const linkLine = groups.filter(Boolean).join('<span class="sep">·</span>');
   return `

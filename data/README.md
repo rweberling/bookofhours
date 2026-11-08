@@ -162,13 +162,22 @@ Then each kind has its own:
   figure from a book, above: the book's title and publisher are the
   edition's), `partOf` (the larger work an image belongs to when that
   isn't a printed book: a manuscript, a print series), `links` (where the work was cited from: `cited`, and any
-  `copy`), `furtherReading` (`about` or `related` pages for readers),
+  `copy`), `furtherReading` (pages worth reading next, below),
   `source` (the exact file downloaded and when: `url`, `retrieved`),
   `rights` (a
   [RightsStatements.org](https://rightsstatements.org) or Creative Commons
   URI) and `rightsNote` (a word on it, where the status needs one). A
   video figure has `"media": "video"`, its `file` an MP4, with a WebM
   `fallback` and a still `poster` shown before it plays.
+- **Further reading** (`furtherReading`, a list): pages for a reader who
+  wants more, each with its `kind` (`about`: on this work itself;
+  `related`: on its subject, its maker or its context), `source` (who
+  published it: "Royal Institution", "Wikipedia"), `title` (the piece's
+  own title, where it has one), `note` (why it's worth reading, where the
+  title doesn't say: "its catalogue entry, with the date and the series of
+  four sky studies") and `url`. The three are kept apart so any page can
+  set them out its own way; the Sources page writes them as one link:
+  Royal Institution, "John Tyndall's blue sky apparatus".
 - **Writing**: `kind` (`versicle`, `phenomenon`, `note`, `headnote` or
   `supplementum`), `text` (HTML), `place` (a phenomenon line's order within
   its hour), and `footnotes`.

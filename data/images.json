@@ -54,7 +54,8 @@
     "furtherReading": [
       {
         "kind": "about",
-        "label": "Public Domain Review, \"April Fools' Album\"",
+        "source": "Public Domain Review",
+        "title": "April Fools' Album",
         "url": "https://publicdomainreview.org/collection/alphonse-allais-april-fools-album/"
       }
     ],
@@ -786,7 +787,8 @@
     "furtherReading": [
       {
         "kind": "about",
-        "label": "Wikipedia",
+        "source": "Wikipedia",
+        "title": "Moonlit Night on the Dnieper",
         "url": "https://en.wikipedia.org/wiki/Moonlit_Night_on_the_Dnieper"
       }
     ],
@@ -3466,7 +3468,8 @@
     "furtherReading": [
       {
         "kind": "about",
-        "label": "Wikipedia",
+        "source": "Wikipedia",
+        "title": "Cyanometer",
         "url": "https://en.wikipedia.org/wiki/Cyanometer"
       }
     ],
@@ -3511,7 +3514,8 @@
     "furtherReading": [
       {
         "kind": "about",
-        "label": "Royal Institution, \"John Tyndall's blue sky apparatus\"",
+        "source": "Royal Institution",
+        "title": "John Tyndall's blue sky apparatus",
         "url": "https://www.rigb.org/explore-science/explore/collection/john-tyndalls-blue-sky-apparatus"
       }
     ],
@@ -3619,7 +3623,9 @@
     "furtherReading": [
       {
         "kind": "about",
-        "label": "Van Ham catalogue entry, with provenance (on Invaluable)",
+        "source": "Invaluable",
+        "title": "Johann Jakob Frey: Rome",
+        "note": "Van Ham's catalogue entry, with its provenance",
         "url": "https://www.invaluable.com/auction-lot/johann-jakob-frey-rome-1081-c-698622e000"
       }
     ],
@@ -3687,7 +3693,8 @@
     "furtherReading": [
       {
         "kind": "about",
-        "label": "Fondation Custodia catalogue entry, with the date and the series of four sky studies",
+        "source": "Fondation Custodia",
+        "note": "its catalogue entry, with the date and the series of four sky studies",
         "url": "https://fondationcustodia.fr/108-Johann-Jakob-Frey"
       }
     ],
@@ -3733,7 +3740,8 @@
     "furtherReading": [
       {
         "kind": "about",
-        "label": "The Paintings of James McNeill Whistler: A Catalogue Raisonné (University of Glasgow), YMSM 212",
+        "source": "University of Glasgow",
+        "title": "The Paintings of James McNeill Whistler: A Catalogue Raisonné, YMSM 212",
         "url": "https://www.whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y212"
       }
     ],
