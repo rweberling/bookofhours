@@ -948,13 +948,20 @@
     "caption": "<em>From J. Francis Macbride, <a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t1td9rd5z?urlappend=%3Bseq=1\">Autumn Flowers and Fruits</a></em> <em>(Chicago: Field Museum of Natural History, 1924), p. 103.</em>",
     "alt": "A book page with a black-and-white photograph of witch-hazel branches covered in spidery, ribbon-like blossoms, above the heading “Witch-Hazel (Hamamelis virginiana)” and a paragraph about the shrub.",
     "bibliography": "Macbride, J. Francis. <em>Autumn Flowers and Fruits</em>. Field Museum of Natural History, 1924.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t1td9rd5z?urlappend=%3Bseq=1"
-      }
-    ],
+    "edition": {
+      "id": "e-0110",
+      "type": "book",
+      "title": "Autumn Flowers and Fruits",
+      "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }],
+      "publisher": "Field Museum of Natural History",
+      "issued": "1924-10",
+      "identifiers": { "hathitrust": "100697661", "internetArchive": "autumnflowersfru10macb" }
+    },
+    "locator": {
+      "page": "103",
+      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t1td9rd5z?urlappend=%3Bseq=1",
+      "label": "HathiTrust"
+    },
     "lectio": { "post": "lt-0001", "place": 1 },
     "tags": {
       "hours": [],

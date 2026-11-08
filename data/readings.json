@@ -4215,10 +4215,20 @@
     "shownIn": "seasons",
     "text": "<p>The Sumach, especially in the fall, is a thing of beauty with its handsome pinnately divided foliage and large red bunches of fruit at the ends of the branches. Two noteworthy species are the Smooth Sumach and the Staghorn, the latter with very velvety-hairy stalks and branches. <br><br>The Poison Sumach of swamps, dangerous to touch, may easily be distinguished from the harmless kinds. Both its flowers and fruits, the latter grayish, are very loosely borne on long slender branching stalks.</p>",
     "citation": {
-      "display": "J. Francis Macbride. “<a href=\"http://www.biodiversitylibrary.org/page/2657582\" rel=\"noopener\" target=\"_blank\">Sumach (Rhus species)</a>.” From <em>Autumn Fruits and Flowers. </em>Botany Leaflet 10. Chicago, Illinois: Field Museum, 1924. 12.",
+      "display": "J. Francis Macbride. “<a href=\"http://www.biodiversitylibrary.org/page/2657582\" rel=\"noopener\" target=\"_blank\">Sumach (Rhus species)</a>.” From <em>Autumn Flowers and Fruits. </em>Botany Leaflet 10. Chicago, Illinois: Field Museum, 1924. 12.",
+      "locator": {
+        "page": "12",
+        "url": "http://www.biodiversitylibrary.org/page/2657582",
+        "label": "Biodiversity Heritage Library"
+      },
       "edition": {
         "id": "e-0110",
-        "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }]
+        "type": "book",
+        "title": "Autumn Flowers and Fruits",
+        "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }],
+        "publisher": "Field Museum of Natural History",
+        "issued": "1924-10",
+        "identifiers": { "hathitrust": "100697661", "internetArchive": "autumnflowersfru10macb" }
       }
     },
     "lectio": { "post": "lt-0032", "place": 3 },
