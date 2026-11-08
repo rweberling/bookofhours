@@ -787,7 +787,14 @@
         "id": "e-0022",
         "type": "book",
         "title": "Psychology: The Briefer Course",
-        "contributors": [{ "id": "a-william-james", "name": "William James", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-william-james",
+            "name": "William James",
+            "role": "author",
+            "wikidata": "Q125249"
+          }
+        ],
         "publisher": "Henry Holt",
         "issued": "1892",
         "original-date": "1892",
@@ -4420,9 +4427,19 @@
         "type": "book",
         "title": "The Jade Mountain: A Chinese Anthology",
         "contributors": [
-          { "id": "a-li-shangyin", "name": "Li Shangyin", "role": "author" },
-          { "id": "a-witter-bynner", "name": "Witter Bynner", "role": "translator" },
-          { "id": "a-kiang-kang-hu", "name": "Kiang Kang-hu", "role": "translator" }
+          { "id": "a-li-shangyin", "name": "Li Shangyin", "role": "author", "wikidata": "Q203782" },
+          {
+            "id": "a-witter-bynner",
+            "name": "Witter Bynner",
+            "role": "translator",
+            "wikidata": "Q2586777"
+          },
+          {
+            "id": "a-kiang-kang-hu",
+            "name": "Kiang Kang-hu",
+            "role": "translator",
+            "wikidata": "Q466306"
+          }
         ],
         "publisher": "Alfred A. Knopf",
         "issued": "1929",
@@ -4461,7 +4478,14 @@
         "id": "e-0156",
         "type": "book",
         "title": "The Upanishads, Part II (Sacred Books of the East 15)",
-        "contributors": [{ "id": "a-f-max-muller", "name": "F. Max Müller", "role": "translator" }],
+        "contributors": [
+          {
+            "id": "a-f-max-muller",
+            "name": "F. Max Müller",
+            "role": "translator",
+            "wikidata": "Q60074"
+          }
+        ],
         "publisher": "Clarendon Press",
         "issued": "1884",
         "original-date": "-0700~",
@@ -4529,7 +4553,12 @@
         "type": "book",
         "title": "Fears in Solitude ... and Frost at Midnight",
         "contributors": [
-          { "id": "a-samuel-taylor-coleridge", "name": "Samuel Taylor Coleridge", "role": "author" }
+          {
+            "id": "a-samuel-taylor-coleridge",
+            "name": "Samuel Taylor Coleridge",
+            "role": "author",
+            "wikidata": "Q82409"
+          }
         ],
         "publisher": "J. Johnson",
         "issued": "1798",
@@ -4568,7 +4597,14 @@
         "id": "e-0159",
         "type": "book",
         "title": "An Essay on Dew, and Several Appearances Connected with It",
-        "contributors": [{ "id": "a-william-charles-wells", "name": "William Charles Wells", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-william-charles-wells",
+            "name": "William Charles Wells",
+            "role": "author",
+            "wikidata": "Q3180413"
+          }
+        ],
         "publisher": "Taylor and Hessey",
         "issued": "1814",
         "original-date": "1814",
@@ -4600,7 +4636,14 @@
         "id": "e-0160",
         "type": "book",
         "title": "Among the Millet, and Other Poems",
-        "contributors": [{ "id": "a-archibald-lampman", "name": "Archibald Lampman", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-archibald-lampman",
+            "name": "Archibald Lampman",
+            "role": "author",
+            "wikidata": "Q2228698"
+          }
+        ],
         "publisher": "J. Durie and Son",
         "issued": "1888",
         "original-date": "1888",
