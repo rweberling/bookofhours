@@ -168,7 +168,10 @@ Then each kind has its own:
   [RightsStatements.org](https://rightsstatements.org) or Creative Commons
   URI) and `rightsNote` (a word on it, where the status needs one). A
   video figure has `"media": "video"`, its `file` an MP4, with a WebM
-  `fallback` and a still `poster` shown before it plays.
+  `fallback` and a still `poster` shown before it plays; its `alt`
+  describes the video. A YouTube figure (its `file` the YouTube address)
+  shows no picture, only a play button named from its caption, so it
+  takes no `alt`.
 - **Further reading** (`furtherReading`, a list): pages for a reader who
   wants more, each with its `kind` (`about`: on this work itself;
   `related`: on its subject, its maker or its context), `source` (who
