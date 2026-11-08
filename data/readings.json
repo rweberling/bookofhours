@@ -58,7 +58,7 @@
         ],
         "issued": null,
         "original-date": "0500~",
-        "rights": null,
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": {
           "internetArchive": "dionysiusareopag00pseu",
           "openlibrary": "OL7064638M",
@@ -1351,7 +1351,8 @@
         ],
         "publisher": "Harper & Brothers",
         "issued": "1904",
-        "original-date": "1892"
+        "original-date": "1892",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0001", "place": 1 },
@@ -1402,7 +1403,8 @@
           }
         ],
         "publisher": "T. N. Foulis",
-        "issued": "1909"
+        "issued": "1909",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0001", "place": 2 },
@@ -1441,7 +1443,8 @@
             "role": "author",
             "wikidata": "Q4441"
           }
-        ]
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0002", "place": 1 },
@@ -1487,7 +1490,8 @@
           }
         ],
         "publisher": "Government Printing Office",
-        "issued": "1907"
+        "issued": "1907",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0002", "place": 2 },
@@ -1525,7 +1529,8 @@
         "identifiers": { "hathitrust": "011437149", "oclc": "5161201" },
         "contributors": [{ "id": "a-e-jones", "name": "E. Jones", "role": "author" }],
         "publisher": "E. Colyer",
-        "issued": "1832"
+        "issued": "1832",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0003", "place": 1 },
@@ -1555,7 +1560,8 @@
         "title": "How Vermont Maple Sugar is Made",
         "issued": "1915",
         "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
-        "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }]
+        "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0003", "place": 2 },
@@ -1582,7 +1588,8 @@
         "title": "Time is Water",
         "container": "Annika is Dreaming",
         "contributors": [{ "id": "a-annika-hansteen-izora", "name": "Annika Hansteen-Izora", "role": "author" }],
-        "issued": "2022-05-30"
+        "issued": "2022-05-30",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0003", "place": 3 },
@@ -1626,7 +1633,9 @@
           }
         ],
         "publisher": "United States Department of Agriculture, Forest Service",
-        "issued": "1908-10-29"
+        "issued": "1908-10-29",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "rightsNote": "a U.S. government work"
       }
     },
     "lectio": { "post": "lt-0004", "place": 1 },
@@ -1670,7 +1679,8 @@
         ],
         "title": "Mountain Interval",
         "publisher": "Henry Holt and Company",
-        "issued": "1916"
+        "issued": "1916",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0004", "place": 2 },
@@ -1729,7 +1739,8 @@
             "wikidata": "Q332508"
           }
         ],
-        "issued": "1821-07"
+        "issued": "1821-07",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0005", "place": 1 },
@@ -1773,7 +1784,8 @@
             "wikidata": "Q68924784"
           }
         ],
-        "issued": "2025-07-04"
+        "issued": "2025-07-04",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0005", "place": 2 },
@@ -1818,7 +1830,8 @@
           }
         ],
         "publisher": "William Clowes and Sons",
-        "issued": "1847"
+        "issued": "1847",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0006", "place": 1 },
@@ -1847,7 +1860,8 @@
         "title": "Crocus sativus, fleur du bonheur",
         "contributors": [{ "id": "a-guillaume-barth", "name": "Guillaume Barth", "role": "author" }],
         "publisher": "Le Fresnoy – Studio national des arts contemporains",
-        "issued": "2021"
+        "issued": "2021",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0006", "place": 2 },
@@ -1888,7 +1902,9 @@
           }
         ],
         "publisher": "Yale University Press",
-        "issued": "2000"
+        "issued": "2000",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "translation in copyright"
       }
     },
     "suggestedEdition": { "isbn": "9780300186123" },
@@ -1932,7 +1948,8 @@
             "role": "author",
             "wikidata": "Q4251095"
           }
-        ]
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0007", "place": 2 },
@@ -1979,7 +1996,8 @@
         ],
         "publisher": "Harper Perennial",
         "issued": "1990",
-        "original-date": "1935"
+        "original-date": "1935",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0008", "place": 1 },
@@ -2018,7 +2036,8 @@
           }
         ],
         "publisher": "Doubleday, Doran",
-        "issued": "1929"
+        "issued": "1929",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0008", "place": 2 },
@@ -2051,7 +2070,8 @@
           { "id": "a-ashia-ajani", "name": "Ashia Ajani", "role": "author" },
           { "id": "a-amirio-freeman", "name": "Amirio Freeman", "role": "author" }
         ],
-        "issued": "2025-05-05"
+        "issued": "2025-05-05",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0009", "place": 1 },
@@ -2088,7 +2108,9 @@
         "title": "The Old Herb Doctor: His Secrets and Treatments",
         "identifiers": { "hathitrust": "102436036", "oclc": "1319259", "lccn": "41023319" },
         "publisher": "Hammond Book Company",
-        "issued": "1941"
+        "issued": "1941",
+        "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+        "rightsNote": "published 1941; whether its copyright was renewed is unchecked"
       }
     },
     "lectio": { "post": "lt-0009", "place": 2 },
@@ -2123,7 +2145,9 @@
           { "id": "a-bruce-w-hozeski", "name": "Bruce W. Hozeski", "role": "translator" }
         ],
         "publisher": "Beacon Press",
-        "issued": "2001"
+        "issued": "2001",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "translation in copyright"
       }
     },
     "suggestedEdition": { "isbn": "9780807021095" },
@@ -2164,7 +2188,9 @@
           { "id": "a-radd-k-ehrman", "name": "Radd K. Ehrman", "role": "translator" }
         ],
         "publisher": "Oxford University Press",
-        "issued": "2004"
+        "issued": "2004",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "translation in copyright"
       }
     },
     "lectio": { "post": "lt-0010", "place": 1 },
@@ -2204,7 +2230,8 @@
           }
         ],
         "publisher": "Columbia University Press",
-        "issued": "2024"
+        "issued": "2024",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0010", "place": 2 },
@@ -2233,7 +2260,8 @@
         "type": "article",
         "title": "Mosses of Maine: A Brief Guide",
         "container": "Oxford County CTS",
-        "issued": "2025-10-15"
+        "issued": "2025-10-15",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0010", "place": 3 },
@@ -2273,7 +2301,9 @@
           }
         ],
         "publisher": "Basil Blackwell",
-        "issued": "1953"
+        "issued": "1953",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "translation in copyright"
       }
     },
     "suggestedEdition": { "isbn": "9781405159289" },
@@ -2320,7 +2350,8 @@
           { "id": "a-samuel-l-dana", "name": "Samuel L. Dana", "role": "author" }
         ],
         "publisher": "Cummings and Hilliard",
-        "issued": "1818"
+        "issued": "1818",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0011", "place": 2 },
@@ -2358,7 +2389,8 @@
         "identifiers": { "hathitrust": "000629649", "oclc": "1268281", "lccn": "25016810" },
         "contributors": [{ "id": "a-amy-lowell", "name": "Amy Lowell", "role": "author", "wikidata": "Q265841" }],
         "publisher": "Houghton Mifflin",
-        "issued": "1925"
+        "issued": "1925",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0012", "place": 1 },
@@ -2390,7 +2422,8 @@
         "title": "The Lilac",
         "identifiers": { "hathitrust": "100451368", "oclc": "17570555" },
         "contributors": [{ "id": "a-william-c-barry", "name": "William C. Barry", "role": "author" }],
-        "publisher": "Mount Hope Nurseries"
+        "publisher": "Mount Hope Nurseries",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0012", "place": 2 },
@@ -2424,7 +2457,8 @@
           }
         ],
         "publisher": "Brentano’s",
-        "issued": "1924"
+        "issued": "1924",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0012", "place": 3 },
@@ -2460,7 +2494,8 @@
             "wikidata": "Q95646046"
           }
         ],
-        "issued": "2008-12"
+        "issued": "2008-12",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0013", "place": 1 },
@@ -2496,7 +2531,9 @@
             "wikidata": "Q112435644"
           }
         ],
-        "issued": "2023-09-12"
+        "issued": "2023-09-12",
+        "rights": "https://creativecommons.org/licenses/by/4.0/",
+        "rightsNote": "open access (Frontiers)"
       }
     },
     "lectio": { "post": "lt-0013", "place": 2 },
@@ -2549,7 +2586,8 @@
             "wikidata": "Q112435644"
           }
         ],
-        "issued": "2010-12"
+        "issued": "2010-12",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0013", "place": 3 },
@@ -2601,7 +2639,9 @@
         ],
         "publisher": "E. J. W. Gibb Memorial",
         "issued": "1960",
-        "original-date": "1926"
+        "original-date": "1926",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "rightsNote": "Nicholson's translation was first published in 1926"
       }
     },
     "lectio": { "post": "lt-0014", "place": 1 },
@@ -2639,7 +2679,8 @@
             "role": "author",
             "wikidata": "Q21341246"
           }
-        ]
+        ],
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0014", "place": 2 },
@@ -2671,7 +2712,8 @@
         "container": "The Scientific Monthly",
         "pages": "509–525",
         "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author", "wikidata": "Q5382324" }],
-        "issued": "1918-06"
+        "issued": "1918-06",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0015", "place": 1 },
@@ -2711,7 +2753,8 @@
         ],
         "publisher": "Open Court",
         "issued": "1909",
-        "original-date": "1668"
+        "original-date": "1668",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0015", "place": 2 },
@@ -2745,7 +2788,8 @@
           }
         ],
         "publisher": "Knickerbocker Press",
-        "issued": "1904"
+        "issued": "1904",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0016", "place": 1 },
@@ -2777,7 +2821,8 @@
         "identifiers": { "hathitrust": "100451015", "oclc": "80597640" },
         "contributors": [{ "id": "a-f-desbois", "name": "F. Desbois", "role": "author" }],
         "publisher": "Librairie Générale de Ad. Hoste",
-        "issued": "1888"
+        "issued": "1888",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0016", "place": 2 },
@@ -2807,7 +2852,8 @@
         "title": "All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States",
         "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }],
         "publisher": "Bradlee Whidden",
-        "issued": "1885"
+        "issued": "1885",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0016", "place": 3 },
@@ -2863,7 +2909,9 @@
           }
         ],
         "publisher": "Hackett",
-        "issued": "2008"
+        "issued": "2008",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "translation in copyright"
       }
     },
     "lectio": { "post": "lt-0017", "place": 1 },
@@ -2895,7 +2943,8 @@
         "title": "Sunspots",
         "contributors": [{ "id": "a-simon-barraclough", "name": "Simon Barraclough", "role": "author" }],
         "publisher": "Penned in the Margins",
-        "issued": "2015"
+        "issued": "2015",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "suggestedEdition": { "isbn": "9781908058416" },
@@ -2937,7 +2986,8 @@
           }
         ],
         "publisher": "Scribner",
-        "issued": "2024"
+        "issued": "2024",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "suggestedEdition": { "isbn": "9781668072240" },
@@ -2986,7 +3036,8 @@
             "wikidata": "Q5958294"
           }
         ],
-        "issued": "1912-07"
+        "issued": "1912-07",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0018", "place": 2 },
@@ -3018,7 +3069,9 @@
           { "id": "a-maud-grieve", "name": "Maud Grieve", "role": "author", "wikidata": "Q6792224" }
         ],
         "publisher": "Jonathan Cape",
-        "issued": "1931"
+        "issued": "1931",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "published 1931; enters the U.S. public domain on 1 January 2027"
       }
     },
     "lectio": { "post": "lt-0019", "place": 1 },
@@ -3051,7 +3104,8 @@
         "contributors": [{ "id": "a-fred-w-card", "name": "Fred W. Card", "role": "author" }],
         "publisher": "Macmillan",
         "issued": "1903",
-        "original-date": "1898"
+        "original-date": "1898",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0019", "place": 2 },
@@ -3096,7 +3150,9 @@
           }
         ],
         "publisher": "Champlain Society",
-        "issued": "1970"
+        "issued": "1970",
+        "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+        "rightsNote": "written 1816, first published 1970"
       }
     },
     "lectio": { "post": "lt-0020", "place": 1 },
@@ -3135,7 +3191,8 @@
         ],
         "publisher": "Musson Book Company",
         "issued": "1917",
-        "original-date": "1912"
+        "original-date": "1912",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0020", "place": 2 },
@@ -3166,7 +3223,8 @@
         "title": "Whitesbog Blueberries",
         "contributors": [{ "id": "a-joseph-j-white-inc", "name": "Joseph J. White, Inc.", "role": "author" }],
         "publisher": "Joseph J. White, Inc.",
-        "issued": "1925"
+        "issued": "1925",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0021", "place": 1 },
@@ -3196,7 +3254,8 @@
         "title": "Fingers Stained with Fruit and Ink",
         "container": "Sydney Review of Books",
         "contributors": [{ "id": "a-alix-beeston", "name": "Alix Beeston", "role": "author" }],
-        "issued": "2020-06-15"
+        "issued": "2020-06-15",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0021", "place": 2 },
@@ -3230,7 +3289,8 @@
           }
         ],
         "publisher": "Faber & Faber",
-        "issued": "1994"
+        "issued": "1994",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0022", "place": 1 },
@@ -3277,7 +3337,8 @@
         ],
         "publisher": "Charles Scribner’s Sons",
         "issued": "1913",
-        "original-date": "1898"
+        "original-date": "1898",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0022", "place": 2 },
@@ -3315,7 +3376,9 @@
             "wikidata": "Q112502365"
           }
         ],
-        "issued": "2003"
+        "issued": "2003",
+        "rights": "http://rightsstatements.org/vocab/InC-NC/1.0/",
+        "rightsNote": "the translator allows non-commercial reproduction"
       }
     },
     "lectio": { "post": "lt-0023", "place": 1 },
@@ -3412,7 +3475,8 @@
           }
         ],
         "publisher": "Imprimerie royale",
-        "issued": "1841"
+        "issued": "1841",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0024", "place": 1 },
@@ -3462,7 +3526,8 @@
           }
         ],
         "publisher": "Houghton Mifflin",
-        "issued": "1906"
+        "issued": "1906",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0024", "place": 2 },
@@ -3505,7 +3570,8 @@
           }
         ],
         "publisher": "Alfred A. Knopf",
-        "issued": "1982"
+        "issued": "1982",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0025", "place": 1 },
@@ -3543,7 +3609,8 @@
             "wikidata": "Q117744904"
           }
         ],
-        "issued": "2017"
+        "issued": "2017",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0025", "place": 2 },
@@ -3578,7 +3645,8 @@
         "contributors": [
           { "id": "a-robert-hass", "name": "Robert Hass", "role": "author", "wikidata": "Q370513" }
         ],
-        "issued": "2007-09/2007-10"
+        "issued": "2007-09/2007-10",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0026", "place": 1 },
@@ -3623,7 +3691,8 @@
           }
         ],
         "publisher": "Little, Brown",
-        "issued": "1899"
+        "issued": "1899",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0026", "place": 2 },
@@ -3667,7 +3736,8 @@
           }
         ],
         "publisher": "Macmillan",
-        "issued": "1870"
+        "issued": "1870",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0026", "place": 3 },
@@ -3703,7 +3773,8 @@
           { "id": "a-ted-hughes", "name": "Ted Hughes", "role": "editor", "wikidata": "Q272194" }
         ],
         "publisher": "Faber & Faber",
-        "issued": "1981"
+        "issued": "1981",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "suggestedEdition": { "isbn": "9780061558894" },
@@ -3754,7 +3825,8 @@
           }
         ],
         "publisher": "Taylor and Francis",
-        "issued": "1855"
+        "issued": "1855",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0027", "place": 2 },
@@ -3799,7 +3871,8 @@
         ],
         "publisher": "George P. Putnam",
         "issued": "1851",
-        "original-date": "1850"
+        "original-date": "1850",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0028", "place": 1 },
@@ -3838,7 +3911,8 @@
           }
         ],
         "publisher": "Charles H. Kelly",
-        "issued": "1912"
+        "issued": "1912",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0028", "place": 2 },
@@ -3885,7 +3959,8 @@
           }
         ],
         "publisher": "Macmillan",
-        "issued": "1922"
+        "issued": "1922",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0028", "place": 3 },
@@ -3924,7 +3999,8 @@
           }
         ],
         "publisher": "Harcourt, Brace and Howe",
-        "issued": "1920"
+        "issued": "1920",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0029", "place": 1 },
@@ -3965,7 +4041,8 @@
         ],
         "publisher": "Lancer Books",
         "issued": "1963",
-        "original-date": "1962"
+        "original-date": "1962",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "suggestedEdition": { "isbn": "9780679723424" },
@@ -4006,7 +4083,8 @@
           }
         ],
         "publisher": "Government Printing Office",
-        "issued": "1884"
+        "issued": "1884",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0029", "place": 3 },
@@ -4121,7 +4199,8 @@
         ],
         "publisher": "Chatto and Windus",
         "issued": "1877",
-        "original-date": "1826"
+        "original-date": "1826",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0030", "place": 1 },
@@ -4162,7 +4241,8 @@
             "wikidata": "Q2062122"
           }
         ],
-        "issued": "1982-01"
+        "issued": "1982-01",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0030", "place": 2 },
@@ -4194,7 +4274,9 @@
         "identifiers": { "hathitrust": "001632236", "oclc": "1609195", "lccn": "41022534" },
         "contributors": [{ "id": "a-a-c-whitford", "name": "A. C. Whitford", "role": "author" }],
         "publisher": "American Museum of Natural History",
-        "issued": "1941"
+        "issued": "1941",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "rightsNote": "a U.S. government work"
       }
     },
     "lectio": { "post": "lt-0030", "place": 3 },
@@ -4223,7 +4305,8 @@
         "title": "Among the Drupes (Elegy for a Wasteland)",
         "container": "Plant Perspectives",
         "contributors": [{ "id": "a-cole-swanson", "name": "Cole Swanson", "role": "author" }],
-        "issued": "2025-02"
+        "issued": "2025-02",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0032", "place": 1 },
@@ -4261,7 +4344,8 @@
           }
         ],
         "publisher": "E. P. Dutton & Co.",
-        "issued": "1918"
+        "issued": "1918",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0032", "place": 2 },
@@ -4299,7 +4383,8 @@
           "oclc": "7548180",
           "openlibrary": "OL7115465M",
           "lccn": "cd30000015"
-        }
+        },
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0032", "place": 3 },
@@ -4343,7 +4428,8 @@
           }
         ],
         "publisher": "Roberts Brothers",
-        "issued": "1896"
+        "issued": "1896",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0031", "place": 1 },
@@ -4376,7 +4462,8 @@
           }
         ],
         "publisher": "Random House",
-        "issued": "2020"
+        "issued": "2020",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0031", "place": 2 },
@@ -4415,7 +4502,8 @@
         ],
         "publisher": "Nims and Knight",
         "issued": "1888",
-        "identifiers": { "internetArchive": "autumnpastoralde00brya", "oclc": "5749216", "lccn": "21013050" }
+        "identifiers": { "internetArchive": "autumnpastoralde00brya", "oclc": "5749216", "lccn": "21013050" },
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0033", "place": 1 },
@@ -4450,7 +4538,8 @@
         ],
         "publisher": "University of Chicago Press",
         "issued": "1998",
-        "original-date": "1958"
+        "original-date": "1958",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     },
     "lectio": { "post": "lt-0033", "place": 2 },
@@ -4480,7 +4569,8 @@
         "pages": "32–53",
         "identifiers": { "doi": "10.1086/332301" },
         "contributors": [{ "id": "a-homer-c-sampson", "name": "Homer C. Sampson", "role": "author" }],
-        "issued": "1918-07"
+        "issued": "1918-07",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0033", "place": 3 },
@@ -4519,7 +4609,8 @@
           }
         ],
         "publisher": "Harper & Brothers",
-        "issued": "1902"
+        "issued": "1902",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
     },
     "lectio": { "post": "lt-0033", "place": 4 },

@@ -488,25 +488,25 @@
       "height": 1400,
       "sha256": "99f3c242da92737e2ea887ac80f6af187cdc94e8f441a94ee091031ed286e105",
       "settings": "89e48fac760f",
-      "credit": "f3dd2aa56256",
+      "credit": "ece91154c963",
       "copies": [
         {
           "file": "images/web/fulcrum_campbell-800.webp",
           "width": 800,
           "height": 450,
-          "bytes": 176596
+          "bytes": 176832
         },
         {
           "file": "images/web/fulcrum_campbell-1600.webp",
           "width": 1600,
           "height": 900,
-          "bytes": 581726
+          "bytes": 581962
         },
         {
           "file": "images/web/fulcrum_campbell-2400.webp",
           "width": 2400,
           "height": 1350,
-          "bytes": 1079602
+          "bytes": 1079838
         }
       ]
     },

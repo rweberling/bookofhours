@@ -522,7 +522,7 @@
         "url": "https://commons.wikimedia.org/wiki/Category:Leaf_epidermis_and_stomata_prints#/media/File:09-_Fraxinus_gooddingii_20x_obj_leaf_print.jpg"
       }
     ],
-    "rights": null,
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
     "rightsNote": "recent, living creator — verify CC license terms",
     "tags": {
       "hours": ["fulcrum"],
@@ -961,7 +961,8 @@
         "oclc": "7548180",
         "openlibrary": "OL7115465M",
         "lccn": "cd30000015"
-      }
+      },
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
     },
     "locator": {
       "page": "103",
@@ -984,7 +985,8 @@
     },
     "display": {
       "size": [400, 656]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0036",
@@ -1009,7 +1011,8 @@
       "issued": "1976",
       "identifiers": { "doi": "10.5962/p.249681" }
     },
-    "locator": { "url": "https://doi.org/10.5962/p.249681", "label": "DOI" }
+    "locator": { "url": "https://doi.org/10.5962/p.249681", "label": "DOI" },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0037",
@@ -1040,7 +1043,8 @@
     },
     "display": {
       "size": [1906, 921]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0038",
@@ -1066,7 +1070,8 @@
     "link": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA0695_F501C",
     "display": {
       "size": [270, 427]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0039",
@@ -1094,7 +1099,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0040",
@@ -1118,12 +1124,14 @@
       "title": "How Vermont Maple Sugar is Made",
       "issued": "1915",
       "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
-      "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }]
+      "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }],
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0041",
@@ -1151,7 +1159,9 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0042",
@@ -1176,7 +1186,9 @@
     },
     "display": {
       "size": [721, 600]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "the painter died in 1939"
   },
   {
     "id": "i-0043",
@@ -1204,7 +1216,9 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0044",
@@ -1234,7 +1248,9 @@
     },
     "display": {
       "size": [1456, 1117]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+    "rightsNote": "published 1951; whether its copyright was renewed is unchecked"
   },
   {
     "id": "i-0045",
@@ -1259,7 +1275,8 @@
     },
     "display": {
       "size": [3767, 2636]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0046",
@@ -1284,7 +1301,8 @@
     },
     "display": {
       "size": [647, 326]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0047",
@@ -1309,7 +1327,8 @@
     },
     "display": {
       "size": [2172, 1486]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0048",
@@ -1334,7 +1353,8 @@
     },
     "display": {
       "size": [422, 527]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0049",
@@ -1362,7 +1382,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0050",
@@ -1387,7 +1408,8 @@
     },
     "display": {
       "size": [1259, 837]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0051",
@@ -1415,7 +1437,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0052",
@@ -1441,7 +1464,8 @@
     "display": {
       "unlabelled": true,
       "size": [448, 672]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0053",
@@ -1469,7 +1493,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0054",
@@ -1500,12 +1525,14 @@
           "role": "author",
           "wikidata": "Q4251095"
         }
-      ]
+      ],
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0055",
@@ -1535,7 +1562,8 @@
     },
     "display": {
       "size": [1574, 1229]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0056",
@@ -1557,13 +1585,15 @@
     "edition": {
       "id": "e-0131",
       "title": "North American Fauna, No. 29: The Rabbits of North America",
-      "issued": "1889",
+      "issued": "1909",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0057",
@@ -1585,13 +1615,15 @@
     "edition": {
       "id": "e-0131",
       "title": "North American Fauna, No. 29: The Rabbits of North America",
-      "issued": "1889",
+      "issued": "1909",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0058",
@@ -1621,7 +1653,8 @@
     },
     "display": {
       "size": [354, 646]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0059",
@@ -1649,7 +1682,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0060",
@@ -1667,7 +1701,8 @@
     },
     "display": {
       "size": [370, 466]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0061",
@@ -1695,7 +1730,8 @@
     "locator": {
       "url": "https://archive.org/details/britishmossesthe21874trip",
       "label": "Internet Archive"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0062",
@@ -1723,7 +1759,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0063",
@@ -1751,7 +1788,9 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+    "rightsNote": "a report for the Urban Mass Transportation Administration, written by contractors"
   },
   {
     "id": "i-0064",
@@ -1779,7 +1818,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0065",
@@ -1804,7 +1844,8 @@
     },
     "display": {
       "size": [696, 629]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0066",
@@ -1829,7 +1870,9 @@
     },
     "display": {
       "size": [1456, 737]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0067",
@@ -1854,7 +1897,9 @@
     },
     "display": {
       "size": [590, 761]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+    "rightsNote": "undated cigarette card"
   },
   {
     "id": "i-0068",
@@ -1879,7 +1924,8 @@
     },
     "display": {
       "size": [575, 822]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0069",
@@ -1904,7 +1950,8 @@
     },
     "display": {
       "size": [723, 440]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0070",
@@ -1929,7 +1976,8 @@
     },
     "display": {
       "size": [740, 588]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0071",
@@ -1954,7 +2002,8 @@
     },
     "display": {
       "size": [471, 800]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0072",
@@ -1979,7 +2028,8 @@
     },
     "display": {
       "size": [688, 471]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0073",
@@ -2010,12 +2060,14 @@
           "role": "author",
           "wikidata": "Q21341246"
         }
-      ]
+      ],
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0074",
@@ -2043,7 +2095,9 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0075",
@@ -2068,7 +2122,8 @@
     },
     "display": {
       "size": [557, 831]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0076",
@@ -2093,7 +2148,8 @@
     },
     "display": {
       "size": [2171, 2954]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0077",
@@ -2137,7 +2193,8 @@
     },
     "display": {
       "size": [1404, 820]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0079",
@@ -2162,7 +2219,8 @@
     },
     "display": {
       "size": [459, 689]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0080",
@@ -2187,7 +2245,8 @@
     },
     "display": {
       "size": [439, 735]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0081",
@@ -2212,7 +2271,8 @@
     },
     "display": {
       "size": [443, 695]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0082",
@@ -2237,7 +2297,8 @@
     },
     "display": {
       "size": [578, 655]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0083",
@@ -2267,7 +2328,8 @@
     },
     "display": {
       "size": [394, 639]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0084",
@@ -2293,7 +2355,9 @@
     },
     "display": {
       "size": [1381, 428]
-    }
+    },
+    "rights": "https://creativecommons.org/licenses/by/4.0/",
+    "rightsNote": "open access (Living Reviews in Solar Physics)"
   },
   {
     "id": "i-0085",
@@ -2322,7 +2386,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0086",
@@ -2343,14 +2408,16 @@
     },
     "edition": {
       "id": "e-0141",
-      "title": "Atlas of United States Trees",
-      "issued": "1971",
+      "title": "Atlas of United States Trees, vol. 4",
+      "issued": "1976",
       "identifiers": { "hathitrust": "009818689", "lccn": "79653298" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0087",
@@ -2385,7 +2452,9 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+    "rightsNote": "published 1957; whether its copyright was renewed is unchecked"
   },
   {
     "id": "i-0088",
@@ -2410,7 +2479,8 @@
     },
     "display": {
       "size": [460, 718]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0089",
@@ -2438,7 +2508,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0090",
@@ -2460,13 +2531,15 @@
     "edition": {
       "id": "e-0144",
       "title": "Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust",
-      "issued": "1889",
+      "issued": "1929-09",
       "identifiers": { "hathitrust": "000505320", "oclc": "1696411", "lccn": "agr16000325" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/coo.31924081974929?urlappend=%3Bseq=32%3Bownerid=120575415-36",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0091",
@@ -2491,7 +2564,8 @@
     },
     "display": {
       "size": [452, 603]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0092",
@@ -2520,7 +2594,8 @@
       "issued": "2013",
       "identifiers": { "doi": "10.1007/s00122-013-2164-z" }
     },
-    "locator": { "url": "https://doi.org/10.1007/s00122-013-2164-z", "label": "DOI" }
+    "locator": { "url": "https://doi.org/10.1007/s00122-013-2164-z", "label": "DOI" },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0093",
@@ -2550,7 +2625,8 @@
     },
     "display": {
       "size": [440, 666]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0094",
@@ -2575,7 +2651,8 @@
     },
     "display": {
       "size": [612, 848]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0095",
@@ -2600,7 +2677,9 @@
     },
     "display": {
       "size": [415, 584]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0096",
@@ -2628,7 +2707,9 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0097",
@@ -2647,7 +2728,8 @@
     "display": {
       "noCaption": true,
       "size": [655, 860]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0098",
@@ -2679,7 +2761,8 @@
     "locator": {
       "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up",
       "label": "Internet Archive"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0099",
@@ -2704,7 +2787,8 @@
     },
     "display": {
       "size": [655, 445]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0100",
@@ -2734,7 +2818,8 @@
     },
     "display": {
       "size": [591, 682]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0101",
@@ -2760,7 +2845,8 @@
     },
     "display": {
       "size": [1437, 1182]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0102",
@@ -2785,7 +2871,8 @@
     },
     "display": {
       "size": [587, 563]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0103",
@@ -2810,7 +2897,8 @@
     },
     "display": {
       "size": [727, 477]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0104",
@@ -2835,7 +2923,8 @@
     },
     "display": {
       "size": [1456, 874]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0105",
@@ -2860,7 +2949,9 @@
     },
     "display": {
       "size": [970, 809]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0106",
@@ -2885,7 +2976,8 @@
     },
     "display": {
       "size": [577, 886]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0107",
@@ -2910,7 +3002,8 @@
     },
     "display": {
       "size": [1288, 1706]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0108",
@@ -2935,7 +3028,9 @@
     },
     "display": {
       "size": [902, 596]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a reproduction of drawings made in 1771"
   },
   {
     "id": "i-0109",
@@ -2960,7 +3055,8 @@
     },
     "display": {
       "size": [759, 716]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0110",
@@ -2985,7 +3081,8 @@
     },
     "display": {
       "size": [1456, 844]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0111",
@@ -3010,7 +3107,8 @@
     },
     "display": {
       "size": [650, 667]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0112",
@@ -3028,7 +3126,8 @@
     },
     "display": {
       "size": [1456, 1177]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0113",
@@ -3053,7 +3152,8 @@
     },
     "display": {
       "size": [3194, 2088]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0114",
@@ -3083,7 +3183,9 @@
     },
     "display": {
       "size": [705, 1179]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "reproductions of manuscripts made about 1385–1395"
   },
   {
     "id": "i-0115",
@@ -3108,7 +3210,8 @@
     },
     "display": {
       "size": [533, 1006]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0116",
@@ -3133,7 +3236,9 @@
     },
     "display": {
       "size": [1456, 924]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "the painter died in 1944"
   },
   {
     "id": "i-0117",
@@ -3154,14 +3259,16 @@
     },
     "edition": {
       "id": "e-0148",
-      "title": "Atlas of United States Trees",
+      "title": "Atlas of United States Trees, vol. 1",
       "issued": "1971",
       "identifiers": { "internetArchive": "CAT87209954", "lccn": "79653298" }
     },
     "locator": {
       "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up",
       "label": "Internet Archive"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0118",
@@ -3189,7 +3296,8 @@
     "locator": {
       "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22",
       "label": "Internet Archive"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0119",
@@ -3222,7 +3330,8 @@
     "locator": {
       "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up",
       "label": "Internet Archive"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0120",
@@ -3247,7 +3356,8 @@
     },
     "display": {
       "size": [530, 778]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0121",
@@ -3272,7 +3382,8 @@
     },
     "display": {
       "size": [800, 634]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0122",
@@ -3301,7 +3412,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263",
       "label": "HathiTrust"
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0123",
@@ -3331,7 +3443,8 @@
     "link": "https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse",
     "display": {
       "size": [1280, 582]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0124",
@@ -3353,7 +3466,8 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0009"]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0125",
@@ -3375,7 +3489,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0019"]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0126",
@@ -3402,7 +3517,8 @@
       "weather": [],
       "seasons": ["summer"],
       "species": ["sp-0018"]
-    }
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0127",
@@ -3850,7 +3966,9 @@
         "url": "https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426"
       }
     ],
-    "partOf": "USDA Pomological Watercolor Collection"
+    "partOf": "USDA Pomological Watercolor Collection",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "a U.S. government work"
   },
   {
     "id": "i-0139",
@@ -3887,7 +4005,8 @@
       "url": "https://www.biodiversitylibrary.org/page/268949",
       "label": "Biodiversity Heritage Library"
     },
-    "bibliography": "Abbot, John. \"Papilio Ajax. Annona Palustris.\" <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>, by James Edward Smith, T. Bensley for J. Edwards, 1797, tab. 4."
+    "bibliography": "Abbot, John. \"Papilio Ajax. Annona Palustris.\" <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>, by James Edward Smith, T. Bensley for J. Edwards, 1797, tab. 4.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0140",
@@ -3916,7 +4035,8 @@
         "label": "Dayton Art Institute",
         "url": "https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws"
       }
-    ]
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0141",
@@ -3944,7 +4064,9 @@
         "label": "Emil Carlsen Archives",
         "url": "https://emilcarlsen.org/emil-carlsen-staghorn-sumac-1883/"
       }
-    ]
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "the painter died in 1932"
   },
   {
     "id": "i-0142",
@@ -3979,7 +4101,8 @@
       "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t5t729682?urlappend=%3Bseq=280",
       "label": "HathiTrust"
     },
-    "bibliography": "Dame, Lorin L., and Henry Brooks. \"<em>Rhus typhina</em>.\" <em>Handbook of the Trees of New England</em>, Ginn &amp; Company, 1902, plate LXVIII."
+    "bibliography": "Dame, Lorin L., and Henry Brooks. \"<em>Rhus typhina</em>.\" <em>Handbook of the Trees of New England</em>, Ginn &amp; Company, 1902, plate LXVIII.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0143",
@@ -4007,7 +4130,8 @@
         "label": "Cole Swanson",
         "url": "https://www.coleswanson.org/among-the-drupes-elegy-for-a-wasteland/cszzmfb7kso0knnwdjgd6bvkz1ri65"
       }
-    ]
+    ],
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
   },
   {
     "id": "i-0144",
@@ -4036,7 +4160,8 @@
         "label": "TORCH Portal",
         "url": "https://portal.torcherbaria.org/portal/collections/individual/index.php?occid=28559008"
       }
-    ]
+    ],
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/"
   },
   {
     "id": "i-0145",
@@ -4065,13 +4190,14 @@
         "label": "Smithsonian American Art Museum",
         "url": "https://americanart.si.edu/artwork/indian-pipe-monotropa-uniflora-26082"
       }
-    ]
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0146",
     "shownIn": "seasons",
     "file": "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-2-df5170f81102.jpeg",
-    "caption": "<em><a href=\"https://www.emilydickinsonmuseum.org/roomitem/preferred-flower-of-life/\" rel=\"noopener\" target=\"_blank\">[Untitled painting gifted to Emily Dickinson]</a></em> (c. 1882). Mabel Loomis Todd. Emily Dickinson Museum.",
+    "caption": "<em><a href=\"https://www.emilydickinsonmuseum.org/roomitem/preferred-flower-of-life/\" rel=\"noopener\" target=\"_blank\">[Untitled painting gifted to Emily Dickinson]</a></em> (c. 1882). Mabel Loomis Todd. Amherst College Archives &amp; Special Collections.",
     "lectio": { "post": "lt-0031", "place": 2 },
     "tags": {
       "hours": [],
@@ -4094,7 +4220,9 @@
         "label": "Emily Dickinson Museum",
         "url": "https://www.emilydickinsonmuseum.org/roomitem/preferred-flower-of-life/"
       }
-    ]
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "the painter died in 1932"
   },
   {
     "id": "i-0147",
@@ -4127,7 +4255,8 @@
       "label": "Internet Archive"
     },
     "title": "Monotropa uniflora. Indian pipe",
-    "bibliography": "Torrey, John. \"<em>Monotropa uniflora</em>. Indian Pipe.\" <em>A Flora of the State of New-York</em>, vol. 1, Carroll and Cook, 1843."
+    "bibliography": "Torrey, John. \"<em>Monotropa uniflora</em>. Indian Pipe.\" <em>A Flora of the State of New-York</em>, vol. 1, Carroll and Cook, 1843.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0148",
@@ -4157,7 +4286,9 @@
         "url": "https://www.metmuseum.org/art/collection/search/669362"
       }
     ],
-    "shelfmark": "2015.201"
+    "shelfmark": "2015.201",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "the photographer died in 1931; the Met doesn't mark it open access"
   },
   {
     "id": "i-0149",
@@ -4198,7 +4329,8 @@
       "label": "HathiTrust"
     },
     "title": "1 to 10 Maple. 11 to 18 Spindle Tree",
-    "bibliography": "Heath, Francis George. \"1 to 10 Maple. 11 to 18 Spindle Tree.\" <em>Autumnal Leaves</em>, 3rd ed., Kegan Paul, Trench, &amp; Co., 1885."
+    "bibliography": "Heath, Francis George. \"1 to 10 Maple. 11 to 18 Spindle Tree.\" <em>Autumnal Leaves</em>, 3rd ed., Kegan Paul, Trench, &amp; Co., 1885.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0150",
@@ -4238,7 +4370,9 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4242212/figure/FIG1/",
       "label": "PubMed Central"
     },
-    "bibliography": "McCully, M. E., et al. \"The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants.\" <em>Annals of Botany</em>, vol. 94, no. 5, 2004, pp. 665–674, fig. 1."
+    "bibliography": "McCully, M. E., et al. \"The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants.\" <em>Annals of Botany</em>, vol. 94, no. 5, 2004, pp. 665–674, fig. 1.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "photographs of plates published in 1869"
   },
   {
     "id": "i-0151",
