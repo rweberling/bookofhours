@@ -3816,7 +3816,7 @@
     "id": "i-0138",
     "shownIn": "seasons",
     "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37.jpeg",
-    "caption": "“<a href=\"https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426\" rel=\"noopener\" target=\"_blank\">Asimina triloba</a>” (1924). R. G. Steadman. USDA Pomological Watercolors. National Agricultural Library Special Collections.",
+    "caption": "“<a href=\"https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426\" rel=\"noopener\" target=\"_blank\">Asimina triloba</a>” (1924). R. C. Steadman. USDA Pomological Watercolors. National Agricultural Library Special Collections.",
     "lectio": { "post": "lt-0030", "place": 1 },
     "tags": {
       "hours": [],
@@ -3827,7 +3827,24 @@
     "display": {
       "size": [728, 1225]
     },
-    "alt": "A watercolour of two pawpaw fruits inside a pale geometric border: above, a whole fruit with dark brown-black skin; below, one cut open lengthwise to show creamy yellow flesh set with large, glossy dark brown seeds."
+    "alt": "A watercolour of two pawpaw fruits inside a pale geometric border: above, a whole fruit with dark brown-black skin; below, one cut open lengthwise to show creamy yellow flesh set with large, glossy dark brown seeds.",
+    "creator": {
+      "id": "a-royal-charles-steadman",
+      "name": "Royal Charles Steadman",
+      "wikidata": "Q20685659"
+    },
+    "title": "Asimina triloba",
+    "date": "1924-10-14",
+    "institution": "National Agricultural Library",
+    "bibliography": "Steadman, Royal Charles. <em>Asimina triloba</em>. 1924, USDA Pomological Watercolor Collection, National Agricultural Library, Beltsville, Maryland.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "National Agricultural Library",
+        "url": "https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426"
+      }
+    ],
+    "partOf": "USDA Pomological Watercolor Collection"
   },
   {
     "id": "i-0139",
@@ -3844,13 +3861,33 @@
     "display": {
       "size": [2213, 2920]
     },
-    "alt": "A hand-coloured engraving of a pawpaw branch with broad green leaves and a single small green fruit, a pale green caterpillar resting on the stem, and two black-and-white striped zebra swallowtail butterflies with red and blue markings, one above the branch and one below."
+    "alt": "A hand-coloured engraving of a pawpaw branch with broad green leaves and a single small green fruit, a pale green caterpillar resting on the stem, and two black-and-white striped zebra swallowtail butterflies with red and blue markings, one above the branch and one below.",
+    "creator": { "id": "a-john-abbot", "name": "John Abbot" },
+    "title": "Papilio Ajax. Annona Palustris",
+    "date": "1797",
+    "edition": {
+      "id": "e-0168",
+      "type": "book",
+      "title": "The Natural History of the Rarer Lepidopterous Insects of Georgia",
+      "contributors": [
+        { "id": "a-james-edward-smith", "name": "James Edward Smith", "role": "author" },
+        { "id": "a-john-abbot", "name": "John Abbot", "role": "illustrator" }
+      ],
+      "publisher": "J. Edwards",
+      "issued": "1797"
+    },
+    "locator": {
+      "page": "Tab. 4",
+      "url": "https://www.biodiversitylibrary.org/page/268949",
+      "label": "Biodiversity Heritage Library"
+    },
+    "bibliography": "Abbot, John. \"Papilio Ajax. Annona Palustris.\" <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>, by James Edward Smith, T. Bensley for J. Edwards, 1797, tab. 4."
   },
   {
     "id": "i-0140",
     "shownIn": "seasons",
     "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6.jpeg",
-    "caption": "Edward Edmondson, Jr. <em><a href=\"https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws?ctx=38520478c7fb2ccc497353061639c81647a92df0&amp;idx=0#\" rel=\"noopener\" target=\"_blank\">Still Life with Pawpaws</a> (c. 1870-1875).</em> Dayton Art Museum. [<a href=\"https://www.ovid.com/journals/jama/abstract/00005407-200810150-00002~still-life-with-pawpaws?redirectionsource=fulltextview\" rel=\"noopener\" target=\"_blank\">Read more</a>]",
+    "caption": "Edward Edmondson, Jr. <em><a href=\"https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws?ctx=38520478c7fb2ccc497353061639c81647a92df0&amp;idx=0#\" rel=\"noopener\" target=\"_blank\">Still Life with Pawpaws</a> (c. 1870-1875).</em> Dayton Art Institute. [<a href=\"https://www.ovid.com/journals/jama/abstract/00005407-200810150-00002~still-life-with-pawpaws?redirectionsource=fulltextview\" rel=\"noopener\" target=\"_blank\">Read more</a>]",
     "lectio": { "post": "lt-0030", "place": 3 },
     "tags": {
       "hours": [],
@@ -3861,7 +3898,19 @@
     "display": {
       "size": [800, 651]
     },
-    "alt": "An oil painting in a gilt frame: a cluster of pale green pawpaws hanging from a bare twig with a single large leaf, laid on a mossy rock beside dark water, against a shadowy wooded bank."
+    "alt": "An oil painting in a gilt frame: a cluster of pale green pawpaws hanging from a bare twig with a single large leaf, laid on a mossy rock beside dark water, against a shadowy wooded bank.",
+    "creator": { "id": "a-edward-edmondson-jr", "name": "Edward Edmondson, Jr." },
+    "title": "Still Life with Pawpaws",
+    "date": "1870~/1875~",
+    "institution": "Dayton Art Institute",
+    "bibliography": "Edmondson, Edward, Jr. <em>Still Life with Pawpaws</em>. c. 1870–1875, Dayton Art Institute, Dayton, Ohio.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Dayton Art Institute",
+        "url": "https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws"
+      }
+    ]
   },
   {
     "id": "i-0141",
@@ -3878,7 +3927,18 @@
     "display": {
       "size": [590, 787]
     },
-    "alt": "An oil painting of a thicket of staghorn sumac in autumn: tall upright cones of deep red fruit rising above long, feathery rust-red leaves, against a blue sky with soft clouds, with two small pale butterflies among the stems."
+    "alt": "An oil painting of a thicket of staghorn sumac in autumn: tall upright cones of deep red fruit rising above long, feathery rust-red leaves, against a blue sky with soft clouds, with two small pale butterflies among the stems.",
+    "creator": { "id": "a-emil-carlsen", "name": "Emil Carlsen" },
+    "title": "Staghorn Sumac",
+    "date": "1883",
+    "bibliography": "Carlsen, Emil. <em>Staghorn Sumac</em>. 1883, private collection.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Emil Carlsen Archives",
+        "url": "https://emilcarlsen.org/emil-carlsen-staghorn-sumac-1883/"
+      }
+    ]
   },
   {
     "id": "i-0142",
@@ -3895,7 +3955,25 @@
     "display": {
       "size": [1183, 1878]
     },
-    "alt": "A black-and-white botanical plate of staghorn sumac: a long compound leaf of many toothed leaflets, a dense cone-shaped cluster of fruit, branching sprays of flowers, and small numbered details of a hairy twig, single flowers and a fuzzy seed."
+    "alt": "A black-and-white botanical plate of staghorn sumac: a long compound leaf of many toothed leaflets, a dense cone-shaped cluster of fruit, branching sprays of flowers, and small numbered details of a hairy twig, single flowers and a fuzzy seed.",
+    "title": "Rhus Typhina",
+    "edition": {
+      "id": "e-0169",
+      "type": "book",
+      "title": "Handbook of the Trees of New England",
+      "contributors": [
+        { "id": "a-lorin-l-dame", "name": "Lorin L. Dame", "role": "author" },
+        { "id": "a-henry-brooks", "name": "Henry Brooks", "role": "author" }
+      ],
+      "publisher": "Ginn & Company",
+      "issued": "1902"
+    },
+    "locator": {
+      "page": "Plate LXVIII",
+      "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t5t729682?urlappend=%3Bseq=280",
+      "label": "HathiTrust"
+    },
+    "bibliography": "Dame, Lorin L., and Henry Brooks. \"<em>Rhus typhina</em>.\" <em>Handbook of the Trees of New England</em>, Ginn &amp; Company, 1902, plate LXVIII."
   },
   {
     "id": "i-0143",
@@ -3912,7 +3990,18 @@
     "display": {
       "size": [242, 680]
     },
-    "alt": "A tall, narrow charcoal drawing on creased paper of a single staghorn sumac flower head: a loose, knobbly cone of blossom on a thick, bare stalk."
+    "alt": "A tall, narrow charcoal drawing on creased paper of a single staghorn sumac flower head: a loose, knobbly cone of blossom on a thick, bare stalk.",
+    "creator": { "id": "a-f-h-varley", "name": "F. H. Varley" },
+    "title": "Flower of the Staghorn Sumach",
+    "institution": "Varley Art Gallery of Markham",
+    "bibliography": "Varley, F. H. <em>Flower of the Staghorn Sumach</em>. N.d., Varley Art Gallery of Markham, Markham, Ontario.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Cole Swanson",
+        "url": "https://www.coleswanson.org/among-the-drupes-elegy-for-a-wasteland/cszzmfb7kso0knnwdjgd6bvkz1ri65"
+      }
+    ]
   },
   {
     "id": "i-0144",
@@ -3929,7 +4018,19 @@
     "display": {
       "size": [675, 900]
     },
-    "alt": "A pressed herbarium specimen of staghorn sumac on a white sheet: long compound leaves faded to tan, a few still red, and a deep red cone of fruit at the base of a cut woody stem, with handwritten labels, a barcode and a colour scale beside it."
+    "alt": "A pressed herbarium specimen of staghorn sumac on a white sheet: long compound leaves faded to tan, a few still red, and a deep red cone of fruit at the base of a cut woody stem, with handwritten labels, a barcode and a colour scale beside it.",
+    "title": "Rhus typhina L.",
+    "date": "1966",
+    "institution": "Botanical Research Institute of Texas, Philecology Herbarium",
+    "shelfmark": "BRIT666324",
+    "bibliography": "<em>Rhus typhina</em> L. Herbarium specimen BRIT666324, 1966, Botanical Research Institute of Texas, Philecology Herbarium, Fort Worth.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "TORCH Portal",
+        "url": "https://portal.torcherbaria.org/portal/collections/individual/index.php?occid=28559008"
+      }
+    ]
   },
   {
     "id": "i-0145",
@@ -3946,7 +4047,19 @@
     "display": {
       "size": [487, 529]
     },
-    "alt": "A watercolour of a cluster of ghost pipes: pale, waxy white stems tinged with pink, each bowing at the top into a drooping bell-shaped flower, one turned up to show a dark centre, on a plain grey-brown ground."
+    "alt": "A watercolour of a cluster of ghost pipes: pale, waxy white stems tinged with pink, each bowing at the top into a drooping bell-shaped flower, one turned up to show a dark centre, on a plain grey-brown ground.",
+    "creator": { "id": "a-mary-vaux-walcott", "name": "Mary Vaux Walcott" },
+    "title": "Indian Pipe (Monotropa uniflora)",
+    "date": "1926",
+    "institution": "Smithsonian American Art Museum",
+    "bibliography": "Walcott, Mary Vaux. <em>Indian Pipe (Monotropa uniflora)</em>. 1926, Smithsonian American Art Museum, Washington, D.C.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Smithsonian American Art Museum",
+        "url": "https://americanart.si.edu/artwork/indian-pipe-monotropa-uniflora-26082"
+      }
+    ]
   },
   {
     "id": "i-0146",
@@ -3963,7 +4076,19 @@
     "display": {
       "size": [636, 978]
     },
-    "alt": "A small painting on a black panel with a gilt edge: a clump of ghostly white Indian pipe plants rising from a tuft of dark grass, their stems bending over into nodding bell-shaped flowers, one turned to show a yellow centre."
+    "alt": "A small painting on a black panel with a gilt edge: a clump of ghostly white Indian pipe plants rising from a tuft of dark grass, their stems bending over into nodding bell-shaped flowers, one turned to show a yellow centre.",
+    "creator": { "id": "a-mabel-loomis-todd", "name": "Mabel Loomis Todd", "wikidata": "Q2103861" },
+    "title": "[Indian pipes]",
+    "date": "1882",
+    "institution": "Amherst College Archives & Special Collections",
+    "bibliography": "Todd, Mabel Loomis. [Painting of Indian pipes, given to Emily Dickinson]. 1882, Amherst College Archives &amp; Special Collections, Amherst, Massachusetts.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Emily Dickinson Museum",
+        "url": "https://www.emilydickinsonmuseum.org/roomitem/preferred-flower-of-life/"
+      }
+    ]
   },
   {
     "id": "i-0147",
@@ -3985,12 +4110,18 @@
       "id": "e-0153",
       "title": "A Flora of the State of New-York",
       "issued": "1843",
-      "identifiers": { "internetArchive": "mobot31753002739826" }
+      "identifiers": { "internetArchive": "mobot31753002739826" },
+      "type": "book",
+      "volume": "1",
+      "contributors": [{ "id": "a-john-torrey", "name": "John Torrey", "role": "author" }],
+      "publisher": "Carroll and Cook"
     },
     "locator": {
       "url": "https://archive.org/details/mobot31753002739826/page/n645/mode/2up",
       "label": "Internet Archive"
-    }
+    },
+    "title": "Monotropa uniflora. Indian pipe",
+    "bibliography": "Torrey, John. \"<em>Monotropa uniflora</em>. Indian Pipe.\" <em>A Flora of the State of New-York</em>, vol. 1, Carroll and Cook, 1843."
   },
   {
     "id": "i-0148",
@@ -4007,7 +4138,20 @@
     "display": {
       "size": [934, 765]
     },
-    "alt": "A sepia photograph of frost on a windowpane: dense, fern-like feathers of ice crystals branching across a dark ground."
+    "alt": "A sepia photograph of frost on a windowpane: dense, fern-like feathers of ice crystals branching across a dark ground.",
+    "creator": { "id": "a-wilson-alwyn-bentley", "name": "Wilson Alwyn Bentley", "wikidata": "Q218471" },
+    "title": "[Frost]",
+    "date": "1910~",
+    "institution": "The Metropolitan Museum of Art",
+    "bibliography": "Bentley, Wilson Alwyn. <em>[Frost]</em>. c. 1910, The Metropolitan Museum of Art, New York.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/669362"
+      }
+    ],
+    "shelfmark": "2015.201"
   },
   {
     "id": "i-0149",
@@ -4029,12 +4173,26 @@
       "id": "e-0154",
       "title": "Autumnal Leaves",
       "issued": "1885",
-      "identifiers": { "hathitrust": "006610218", "oclc": "12747619" }
+      "identifiers": { "hathitrust": "006610218", "oclc": "12747619" },
+      "type": "book",
+      "contributors": [
+        {
+          "id": "a-francis-george-heath",
+          "name": "Francis George Heath",
+          "role": "author",
+          "wikidata": "Q105764193"
+        }
+      ],
+      "publisher": "Kegan Paul, Trench, & Co.",
+      "original-date": "1881",
+      "edition": "3rd ed."
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.$b117574?urlappend=%3Bseq=265%3Bownerid=9007199258917903-265",
       "label": "HathiTrust"
-    }
+    },
+    "title": "1 to 10 Maple. 11 to 18 Spindle Tree",
+    "bibliography": "Heath, Francis George. \"1 to 10 Maple. 11 to 18 Spindle Tree.\" <em>Autumnal Leaves</em>, 3rd ed., Kegan Paul, Trench, &amp; Co., 1885."
   },
   {
     "id": "i-0150",
@@ -4051,7 +4209,30 @@
     "display": {
       "size": [576, 908]
     },
-    "alt": "Two engraved cross-sections of frozen leaf stalks, numbered 16 and 4: each a ring of small cells around a large open cavity, with darker vein bundles set in the tissue and strands of cells and fine hairs around the edges."
+    "alt": "Two engraved cross-sections of frozen leaf stalks, numbered 16 and 4: each a ring of small cells around a large open cavity, with darker vein bundles set in the tissue and strands of cells and fine hairs around the edges.",
+    "title": "Fig. 1",
+    "edition": {
+      "id": "e-0170",
+      "type": "article",
+      "title": "The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants",
+      "container": "Annals of Botany",
+      "volume": "94",
+      "issue": "5",
+      "pages": "665–674",
+      "contributors": [
+        { "id": "a-m-e-mccully", "name": "M. E. McCully", "role": "author" },
+        { "id": "a-m-j-canny", "name": "M. J. Canny", "role": "author" },
+        { "id": "a-c-x-huang", "name": "C. X. Huang", "role": "author" }
+      ],
+      "issued": "2004",
+      "identifiers": { "doi": "10.1093/aob/mch191" }
+    },
+    "locator": {
+      "page": "Fig. 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4242212/figure/FIG1/",
+      "label": "PubMed Central"
+    },
+    "bibliography": "McCully, M. E., et al. \"The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants.\" <em>Annals of Botany</em>, vol. 94, no. 5, 2004, pp. 665–674, fig. 1."
   },
   {
     "id": "i-0151",
