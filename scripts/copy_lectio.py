@@ -199,6 +199,10 @@ def same_notes(record, notes):
            [(n['marker'], plain(n['text'])) for n in notes or []]
 
 
+# The ISBN at the end of a Bookshop link (an affiliate link or a plain one).
+BOOKSHOP_ISBN = re.compile(r'bookshop\.org/(?:a/\d+/|book/)?(97[89]\d{10})')
+
+
 def subject_tags(post, season):
     tags = {'hours': [], 'weather': [], 'seasons': [season]}
     subject = post.get('subject') or ''
@@ -295,6 +299,10 @@ def main():
                 # already has takes that ID instead (data/README.md).
                 'citation': {'display': citation, 'edition': {'id': f'e-{next_e:04d}'}},
                 'lectio': {'post': post['id'], 'place': place},
+                # A book the post links to on Bookshop is the reading's
+                # suggested edition: its ISBN, recorded once.
+                **({'suggestedEdition': {'isbn': m.group(1)}}
+                   if (m := BOOKSHOP_ISBN.search(citation)) else {}),
                 'tags': subject_tags(post, season)
             }
             record = with_footnotes(record, notes.get(('passage', place)))

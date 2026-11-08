@@ -56,7 +56,11 @@ Then each kind has its own:
   where researched, a `bibliography` line and the `edition` it comes from),
   `title` (the work quoted: a poem, essay or chapter), `written` (when),
   `locator` (where in the edition, below),
-  `suggestedEdition` (an ISBN for a recommended edition), `footnotes`, and
+  `suggestedEdition` (an edition to buy, recommended: its `isbn`, and a
+  `note` where it differs from the one quoted, as a translation or an
+  annotated edition does; the Sources page links it at Bookshop.org through
+  `site.json`, and a display line that links the book there uses the same
+  ISBN), `footnotes`, and
   `display` (`verse`, below; `weatherUnset` for the Weather page's reading
   when no weather is set; one also tagged with conditions is drawn for
   those as well).
@@ -106,7 +110,10 @@ Then each kind has its own:
     links to the page (a Google Books result, a scan that can't open at a
     page), the `url` is the closest link there is and the `page` says
     where to turn; a print-only reading has a `page` and no `url`. The
-    link in the reading's `display` line is its `locator.url`. A reading
+    link in the reading's `display` line is its `locator.url`, or, where
+    the reading recommends an edition, its Bookshop link (Auden's
+    "Winds"); the locator is then still the reading's Source on the
+    Sources page. A reading
     cut from two places has a list, one locator for each (Frazer's
     *Golden Bough*, pp. 110–111 and 159), and a text it quotes
     (`citation.quotes`) has its own.

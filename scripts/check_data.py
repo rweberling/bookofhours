@@ -535,11 +535,17 @@ def main():
         if not isbn13_valid(suggested.get('isbn')):
             errors.append(f'{rid}: suggested edition ISBN "{suggested.get("isbn")}" is not a valid 13-digit ISBN')
 
-    def check_display_links(rid, text):
-        # Bookshop links written into display text must carry the affiliate ID.
+    def check_display_links(rid, text, suggested=None):
+        # Bookshop links written into display text must carry the affiliate ID
+        # and lead to the reading's suggested edition, the one ISBN it records.
+        isbn = (suggested or {}).get('isbn')
         for url in re.findall(r'href="(https?://(?:www\.)?bookshop\.org/[^"]*)"', text or ''):
             if affiliate and not url.startswith(affiliate):
                 errors.append(f'{rid}: Bookshop link without the affiliate ID: {url}')
+            elif not isbn:
+                errors.append(f'{rid}: a Bookshop link in the display line, but no suggestedEdition: {url}')
+            elif url != pattern.replace('{isbn}', isbn):
+                errors.append(f'{rid}: the display line\'s Bookshop link isn\'t its suggested edition ({isbn}): {url}')
 
     for r in readings:
         if r.get('draft'):
@@ -549,17 +555,20 @@ def main():
         if not cit.get('display'):
             errors.append(f'{rid}: no display citation')
         shown = set(re.findall(r'href="([^"]+)"', cit.get('display') or ''))
+        # Where the display line leads to a suggested edition instead, the
+        # locator stays the Source on the Sources page.
+        to_bookshop = any('bookshop.org' in h for h in shown) and r.get('suggestedEdition')
         for holder in [cit] + (cit.get('quotes') or []):
             check_links(rid, (holder.get('edition') or {}).get('links'))
             check_edition_links(rid, holder.get('edition'))
             for loc in locators(holder):
                 check_locator(rid, loc)
                 # The display line takes the reader to the passage.
-                if loc.get('url') and loc['url'] not in shown:
+                if loc.get('url') and loc['url'] not in shown and not to_bookshop:
                     errors.append(f'{rid}: the display line doesn\'t link to its locator ({loc["url"]})')
         check_further(rid, r.get('furtherReading'))
         check_suggested(rid, r.get('suggestedEdition'))
-        check_display_links(rid, cit.get('display'))
+        check_display_links(rid, cit.get('display'), r.get('suggestedEdition'))
         # A print-only citation needs no link when a suggested edition
         # leads the reader to the book.
         if not any(loc.get('url') for loc in locators(cit)) and not r.get('suggestedEdition'):
