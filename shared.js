@@ -685,6 +685,15 @@ function quoteView(reading) {
   };
 }
 
+// A further-reading entry described in words: who published it, the
+// piece's title and why it's worth reading, as "Royal Institution, “John
+// Tyndall's blue sky apparatus”" (data/README.md keeps the three apart).
+function furtherReadingText(item) {
+  const title = item.title ? `, “${item.title}”` : '';
+  const note = item.note ? ` (${item.note})` : '';
+  return `${item.source}${title}${note}`;
+}
+
 function imageView(image) {
   const display = image.display || {};
   return {
@@ -696,6 +705,7 @@ function imageView(image) {
     weather: ((image.tags && image.tags.weather) || []).map(tagId),
     seasons: ((image.tags && image.tags.seasons) || []).map(tagId),
     cardPosition: display.cardPosition,
+    further: image.furtherReading || [],
     unset: !!display.weatherUnset
   };
 }

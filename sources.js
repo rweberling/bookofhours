@@ -47,14 +47,10 @@ function listWords(words) {
 
 /* ── One entry ────────────────────────────────────────────────── */
 
-// A further-reading entry as one link: who published it, the piece's
-// title, and why it's worth reading, as "Royal Institution, “John
-// Tyndall's blue sky apparatus”" or "Fondation Custodia (its catalogue
-// entry, with …)".
+// A further-reading entry as one link, named in full (furtherReadingText,
+// in shared.js): this page is where readers see where each link goes.
 function furtherLink(item) {
-  const title = item.title ? `, “${item.title}”` : '';
-  const note = item.note ? ` (${item.note})` : '';
-  return { label: `${item.source}${title}${note}`, url: item.url };
+  return { label: furtherReadingText(item), url: item.url };
 }
 
 function linkGroupHTML(label, links) {

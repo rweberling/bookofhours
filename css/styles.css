@@ -2303,6 +2303,23 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-caption a, .weather-quote-text a, .weather-quote-attr a {
   color: inherit; text-decoration: underline; text-underline-offset: 2px;
 }
+/* Further reading on the picture, under its credit: set like the card's
+   controls (look outside, turn the page), as something to do. */
+.weather-further {
+  margin-top: 6px;
+  font-family: var(--font-text);
+  font-size: 13.5px; letter-spacing: 0.2em;
+  color: var(--ink-faint);
+  transition: color 3s ease;
+}
+.weather-further[hidden] { display: none; }
+.weather-further a {
+  color: inherit; text-decoration: none;
+  border-bottom: 0.5px solid currentColor;
+  transition: color 0.3s ease;
+}
+.weather-further a:hover, .weather-further a:focus-visible { color: var(--accent); }
+.weather-further .sep { margin: 0 0.5em; opacity: 0.6; }
 
 /* Scoped under .weather-card so it outranks the base .turn-the-page
    rule, which comes later in this file and sets margin-top: 32px. */
@@ -2338,6 +2355,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-card.is-folded .weather-fold::before { content: '+'; }
 .weather-card.is-folded .weather-card-body { display: none; }
 .weather-card.is-folded .weather-caption { font-size: 14px; }
+.weather-card.is-folded .weather-further { display: none; }
 
 .visually-hidden {
   position: absolute; width: 1px; height: 1px;
@@ -2365,6 +2383,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   .weather-quote-attr, .weather-caption { font-size: 13.5px; }
   .weather-card.is-folded .weather-caption { font-size: 12.5px; }
   .weather-card .weather-actions { font-size: 12px; gap: 7px; letter-spacing: 0.14em; }
+  .weather-further { font-size: 12px; letter-spacing: 0.14em; }
 }
 
 /* ── Turn the page ────────────────────────────────────────────── */

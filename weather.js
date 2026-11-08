@@ -116,6 +116,21 @@ function renderWeatherView(options) {
   }
   img.alt = image.alt || plainText(image.caption) || 'The view from the window';
   document.getElementById('weather-caption').innerHTML = image.caption || '';
+  // Further reading on the picture: a quiet link under the credit that
+  // says only what it is; where it goes is said on hover and to screen
+  // readers (the Sources page names it in full). Only a decoration: from
+  // an older cached shared.js (no image.further, no furtherReadingText)
+  // the card shows without it.
+  const further = document.getElementById('weather-further');
+  const items = typeof furtherReadingText === 'function' ? image.further || [] : [];
+  further.innerHTML = items.map(item => {
+    const text = items.length > 1 ? escapeHTML(item.source) : 'Further reading';
+    const about = escapeHTML(furtherReadingText(item));
+    return `<a href="${escapeHTML(item.url)}" target="_blank" title="${about}" aria-label="Further reading: ${about}">${text}</a>`;
+  }).join('<span class="sep">·</span>');
+  if (items.length > 1) further.insertAdjacentHTML('afterbegin', 'Further reading: ');
+  else if (items.length) further.insertAdjacentHTML('beforeend', ' →');
+  further.hidden = !items.length;
 
   // No readings at all (or an empty one) still leaves the card — it
   // carries the image credit and the page's controls — just without the
