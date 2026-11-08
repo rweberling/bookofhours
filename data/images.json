@@ -955,7 +955,13 @@
       "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }],
       "publisher": "Field Museum of Natural History",
       "issued": "1924-10",
-      "identifiers": { "hathitrust": "100697661", "internetArchive": "autumnflowersfru10macb" }
+      "identifiers": {
+        "hathitrust": "100697661",
+        "internetArchive": "autumnflowersfru10macb",
+        "oclc": "7548180",
+        "openlibrary": "OL7115465M",
+        "lccn": "cd30000015"
+      }
     },
     "locator": {
       "page": "103",

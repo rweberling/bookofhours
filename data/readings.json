@@ -4293,7 +4293,13 @@
         "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }],
         "publisher": "Field Museum of Natural History",
         "issued": "1924-10",
-        "identifiers": { "hathitrust": "100697661", "internetArchive": "autumnflowersfru10macb" }
+        "identifiers": {
+          "hathitrust": "100697661",
+          "internetArchive": "autumnflowersfru10macb",
+          "oclc": "7548180",
+          "openlibrary": "OL7115465M",
+          "lccn": "cd30000015"
+        }
       }
     },
     "lectio": { "post": "lt-0032", "place": 3 },
@@ -4408,7 +4414,8 @@
           }
         ],
         "publisher": "Nims and Knight",
-        "issued": "1888"
+        "issued": "1888",
+        "identifiers": { "internetArchive": "autumnpastoralde00brya", "oclc": "5749216", "lccn": "21013050" }
       }
     },
     "lectio": { "post": "lt-0033", "place": 1 },
