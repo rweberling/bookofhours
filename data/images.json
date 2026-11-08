@@ -2294,8 +2294,9 @@
     },
     "edition": {
       "id": "e-0140",
-      "title": "The Silva of North America",
-      "issued": "1891",
+      "title": "The Silva of North America, vol. 4",
+      "publisher": "Houghton Mifflin",
+      "issued": "1892",
       "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
     },
     "locator": {
@@ -3272,8 +3273,9 @@
     },
     "edition": {
       "id": "e-0151",
-      "title": "The Silva of North America",
-      "issued": "1891",
+      "title": "The Silva of North America, vol. 7",
+      "publisher": "Houghton Mifflin",
+      "issued": "1895",
       "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
     },
     "locator": {
