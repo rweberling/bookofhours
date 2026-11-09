@@ -467,10 +467,15 @@
         "role": "cited",
         "label": "NYPL Digital Collections",
         "url": "https://digitalcollections.nypl.org/items/32f22aa0-878a-013a-95ad-0242ac110002?canvasIndex=0"
+      },
+      {
+        "role": "copy",
+        "label": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Seventh_Avenue_looking_south_from_35th_Street,_Manhattan_(NYPL_b13668355-482802).jpg"
       }
     ],
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-    "rightsNote": "in copyright — estate licenses actively",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "made for the Federal Art Project (WPA), for Changing New York: a U.S. government work",
     "tags": {
       "hours": ["transit"],
       "weather": [],

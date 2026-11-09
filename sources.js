@@ -102,7 +102,7 @@ function entryHTML(record, notes = [], site = null) {
   return `
     <div class="entry" id="${escapeHTML(record.id)}">${(record.aliases || []).map(a =>
       `<span class="anchor-alias" id="${escapeHTML(a)}"></span>`).join('')}
-      <p class="citation">${citation || ''}${rightsNote ? `<span class="flag-note">${escapeHTML(rightsNote)}</span>` : ''}</p>
+      <p class="citation">${citation || ''}${rightsNote ? `<span class="flag-note">${escapeHTML(rightsNote)}</span>` : ''}<a class="record-mark" href="/id/${escapeHTML(record.id)}/" title="The record: ${escapeHTML(record.id)}" aria-label="The record, ${escapeHTML(record.id)}">¶</a></p>
       ${linkLine ? `<p class="entry-links">${linkLine}</p>` : ''}
       ${notes.length ? `<p class="entry-note">${notes.map(escapeHTML).join(' · ')}</p>` : ''}
     </div>`;

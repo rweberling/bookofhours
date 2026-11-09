@@ -2623,6 +2623,14 @@ a.page-action { text-decoration: none; }
 
 .sources-page .citation a:hover { color: var(--accent); }
 
+/* A quiet mark after each citation, leading to its record page (id/<id>/). */
+.sources-page .citation a.record-mark {
+  margin-left: 0.4em; text-decoration: none;
+  font-size: 0.85em; color: var(--rule);
+}
+.sources-page .citation a.record-mark:hover,
+.sources-page .citation a.record-mark:focus-visible { color: var(--accent); }
+
 .sources-page .entry-links {
   margin-top: 5px;
   padding-left: 1.5em;

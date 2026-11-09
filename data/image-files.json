@@ -3568,25 +3568,25 @@
       "height": 1601,
       "sha256": "61635b7d4a96ae3523bde2807c39164818d2a1e0b31a70fd41350d04609c6af6",
       "settings": "89e48fac760f",
-      "credit": "490a656d9184",
+      "credit": "1761fd425bfb",
       "copies": [
         {
           "file": "images/web/transit_abbott-800.webp",
           "width": 800,
           "height": 988,
-          "bytes": 46728
+          "bytes": 46748
         },
         {
           "file": "images/web/transit_abbott-1600.webp",
           "width": 1297,
           "height": 1601,
-          "bytes": 101786
+          "bytes": 101806
         },
         {
           "file": "images/web/transit_abbott-2400.webp",
           "width": 1297,
           "height": 1601,
-          "bytes": 101786
+          "bytes": 101806
         }
       ]
     },
