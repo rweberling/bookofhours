@@ -2813,3 +2813,25 @@ a.page-action { text-decoration: none; }
   .record-fields { grid-template-columns: 1fr; gap: 2px 0; }
   .record-fields dd { margin-bottom: 8px; }
 }
+
+/* The clasp (nav.js): a drawn arrow hanging from the frame's inner rule
+   into the margin on long pages, leading to the foot of the page. The
+   frame's rules sit 0 and 23px from the window's edge. */
+.frame-clasp {
+  position: fixed; left: 50%; bottom: 3px; z-index: 52;
+  transform: translateX(-50%);
+  display: block; line-height: 0; text-decoration: none;
+  padding: 12px 14px 0; /* a larger tap target; nothing is drawn there */
+  color: var(--gold);
+  opacity: 0; pointer-events: none;
+  transition: opacity 1.2s ease, color 0.3s ease;
+}
+.frame-clasp svg { width: 12px; height: 20px; display: block; }
+.frame-clasp.shown { opacity: 0.9; pointer-events: auto; }
+.frame-clasp:hover, .frame-clasp:focus-visible { opacity: 1; color: var(--accent); }
+@media (max-width: 600px) {
+  /* The phone frame's rules sit 0 and 15px from the edge. */
+  .frame-clasp { bottom: 2px; }
+  .frame-clasp svg { width: 9px; height: 14px; }
+}
+@media print { .frame-clasp { display: none; } }

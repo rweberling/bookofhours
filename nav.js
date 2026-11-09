@@ -340,3 +340,46 @@ ornament.addEventListener('contextmenu', e => e.preventDefault());
 ornament.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
 });
 })();
+
+/* ── The clasp ────────────────────────────────────────────────────
+   On a long page, once the reader has gone a screen or so down, a small
+   drawn arrow comes up in the middle of the frame's lower edge. A tap goes to the
+   foot of the page: the turn-the-page row where there is one, otherwise
+   the menu. It fades away while either is in view, and never shows on
+   a page short enough to see the foot without much scrolling.
+────────────────────────────────────────────────────────────────── */
+(() => {
+const nav = document.getElementById('site-nav');
+if (!nav) return;
+const foot = () => document.querySelector('.turn-the-page.visible') || nav;
+const clasp = document.createElement('a');
+clasp.className = 'frame-clasp';
+clasp.href = '#site-nav';
+// A drawn downward arrow hanging from the frame's inner rule into the
+// margin, in the corners' fine gold line.
+clasp.innerHTML = '<svg viewBox="0 0 12 20" aria-hidden="true">'
+  + '<path d="M6 0 L6 18.5" stroke="currentColor" stroke-width="1"/>'
+  + '<path d="M1.5 12.5 Q5 14.5 6 19 Q7 14.5 10.5 12.5" stroke="currentColor" stroke-width="1" fill="none"/>'
+  + '</svg>';
+clasp.title = 'To the foot of the page';
+clasp.setAttribute('aria-label', 'To the foot of the page');
+clasp.addEventListener('click', event => {
+  event.preventDefault();
+  foot().scrollIntoView({ behavior: 'smooth', block: 'center' });
+  clasp.blur();
+});
+document.body.appendChild(clasp);
+// Hidden while the foot (the turn-the-page row or the menu) is on screen.
+const onScreen = el => {
+  const r = el.getBoundingClientRect();
+  return r.height > 0 && r.top < window.innerHeight && r.bottom > 0;
+};
+function update() {
+  const long = document.documentElement.scrollHeight > window.innerHeight * 3;
+  const down = window.scrollY > window.innerHeight * 0.8;
+  const atFoot = [nav, ...document.querySelectorAll('.turn-the-page')].some(onScreen);
+  clasp.classList.toggle('shown', long && down && !atFoot);
+}
+window.addEventListener('scroll', update, { passive: true });
+window.addEventListener('resize', update);
+})();
