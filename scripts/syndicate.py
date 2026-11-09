@@ -424,11 +424,13 @@ def main():
             describe(compose_essay(c, p), out)
         return
 
-    if not due:
-        print('Nothing due.')
-        return
+    # Signing in and checking the publication record on every live run
+    # shows straight away if the password stops working.
     bs = Bluesky(c.config['account'], password)
     publication = ensure_publication(bs, c)
+    if not due:
+        out.write('Signed in; the publication record is there. Nothing due.\n')
+        return
     for p in due:
         plan = compose_essay(c, p)
         describe(plan, out)
