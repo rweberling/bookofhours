@@ -1,0 +1,65 @@
+# Post the site's own content to Bluesky as earthlyhours.com
+# (scripts/syndicate.py): each new Lectio Terra essay, with its
+# standard.site record. Runs daily and after each push that changes the
+# posts. Without the BLUESKY_APP_PASSWORD secret (Settings → Secrets and
+# variables → Actions) it only says what it would post, in the run's
+# summary. "Run workflow" by hand can also ask for a dry run.
+name: Syndicate
+
+on:
+  schedule:
+    - cron: '7 17 * * *'          # about noon Eastern
+  push:
+    branches: [main]
+    paths: ['data/lectio-data.json']
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only say what would be posted'
+        type: boolean
+        default: true
+
+concurrency:
+  group: syndicate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  syndicate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Python packages (JPEG copies of the figures)
+        run: pip install pillow==12.3.0
+
+      - name: Post what is due
+        env:
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 scripts/syndicate.py --dry-run
+          else
+            python3 scripts/syndicate.py
+          fi
+
+      - name: Save what was posted, and the page's record link
+        run: |
+          git diff --quiet data/syndication.json && exit 0
+          python3 scripts/build_lectio_pages.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/syndication.json lectio-terra/
+          git commit -m 'Syndication: what was posted to Bluesky'
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1

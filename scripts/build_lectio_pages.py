@@ -226,6 +226,13 @@ def replace_once(text, pattern, new, flags=0):
     return result
 
 
+def standard_site_link(entry):
+    """The post's standard.site document record, once scripts/syndicate.py
+    has made it: the tag that shows the record is the site's own."""
+    document = ((load('syndication').get('essays') or {}).get(entry['id']) or {}).get('document')
+    return f'<link rel="site.standard.document" href="{escape(document)}">\n' if document else ''
+
+
 def post_entry(entry):
     """The details seasons.js still needs on a post page, as JSON."""
     data = {'id': entry['id'], 'readingLabels': entry.get('readingLabels') or []}
@@ -253,7 +260,7 @@ def render(template, season, entry, subject, alone, post_pages, alts):
         t = replace_once(t, r'<meta property="og:image" content="[^"]*">\n(<meta property="og:image:[^\n]*\n)*',
                          f'<meta property="og:image" content="{image}">\n')
     t = replace_once(t, r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">')
-    t = replace_once(t, r'<!-- No fixed canonical link here:[^\n]*\n', f'<link rel="canonical" href="{url}">\n')
+    t = replace_once(t, r'<!-- No fixed canonical link here:[^\n]*\n', f'<link rel="canonical" href="{url}">\n' + standard_site_link(entry))
     t = replace_once(t, r'<title>[^<]*</title>', f'<title>{escape(title)} — The Earthly Book of Hours</title>')
     t = replace_once(t, r'</head>', citation_tags(entry, title) + json_ld(entry, subject, url, image) + '</head>')
 

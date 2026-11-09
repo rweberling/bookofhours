@@ -62,6 +62,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   cited scans): `python3 scripts/link_editions.py [--write]`. People to
   Wikidata (confident matches only; the query service may allow only one
   request a minute): `python3 scripts/link_people.py [--write]`.
+- Bluesky (`scripts/syndicate.py`, run by `.github/workflows/syndicate.yml`
+  daily and after posts change): posts each new essay as earthlyhours.com
+  and makes its standard.site record. `--dry-run` says what it would
+  post; `--preview lt-NNNN` shows any essay's post. The plan is the
+  "Syndication Plan" doc (https://claude.ai/artifact/89YN6Mjfc3v31muCrCDNQC).
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends

@@ -18,6 +18,7 @@ is no database and nothing generated in between.
 | `phenomena.json` | The posts' subjects that aren't organisms, such as clouds or the Perseids (`ph-`) |
 | `vocab.json` | The terms everything is tagged with: the eight hours, the four seasons, the twenty weather conditions |
 | `postcards.csv` | The postcards, one row each (`pc-`) |
+| `syndication.json` | What `scripts/syndicate.py` posts to Bluesky: the account, the standard.site publication, the standing hashtags, the streams, and what was posted: each essay's records (`essays`) and the `log` of every post made (both written by the script) |
 | `site.json` | Site settings: `suggestedEditionUrl`, the pattern for suggested-edition links (`{isbn}` where the ISBN goes) |
 | `retired-ids.json` | IDs that were published and then retired, so they're never issued again |
 | `image-files.json` | Written by `scripts/build_images.py`: the web copies made of each image. Don't edit it |
@@ -218,6 +219,15 @@ differently, `readingLabels` (each `author` and `work` as shown), and
 served it). Posts not yet set in a season (Works in Progress) are listed
 under `unassigned`; `generatedBy` and `generatedAt` say what last wrote
 the file.
+
+When a post has gone out on Bluesky, `scripts/syndicate.py` records it in
+`syndication.json`, under `essays` and the post's ID: the `card` post
+(`uri`, `cid`), its `reply` with more figures, and the post's
+standard.site `document` record, whose address the post's page names in
+its head. A post may also carry `syndication`: `hashtags`
+for that essay and `excerpts` (each `from`, a record ID, and `text`, word
+for word from it) for its Bluesky posts. A species or phenomenon record's
+`hashtags` are used for every post about it.
 
 Each post also has a `body`: its pieces in order (headings, figures,
 passages, runs of its writing), which the Seasons page rebuilds the post

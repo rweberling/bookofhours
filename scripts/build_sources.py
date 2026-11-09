@@ -42,7 +42,10 @@ def inputs_digest():
     # shared.js supplies the season month ranges and the loader.
     # data/image-files.json is build_images.py's record of the web copies,
     # which this page doesn't use.
-    paths = sorted(p for p in (ROOT / 'data').glob('*.json') if p.name != 'image-files.json') + [
+    # data/syndication.json is syndicate.py's log of Bluesky posts, which
+    # this page doesn't list either.
+    paths = sorted(p for p in (ROOT / 'data').glob('*.json')
+                   if p.name not in ('image-files.json', 'syndication.json')) + [
         ROOT / 'sources.js', ROOT / 'shared.js']
     digest = hashlib.sha256()
     for path in paths:

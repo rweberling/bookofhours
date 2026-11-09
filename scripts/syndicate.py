@@ -1,0 +1,439 @@
+#!/usr/bin/env python3
+"""Post the site's own content to Bluesky, as earthlyhours.com, and keep
+the essays' standard.site records.
+
+Usage:
+  python3 scripts/syndicate.py                  post what is due (needs BLUESKY_APP_PASSWORD)
+  python3 scripts/syndicate.py --dry-run        say what would be posted; send nothing
+  python3 scripts/syndicate.py --preview lt-0033
+                                                show the essay post for any post; send nothing
+
+Run by .github/workflows/syndicate.yml once a day and after each push that
+changes data/lectio-data.json. Without the password it does a dry run.
+
+What it posts (the streams in data/syndication.json; the plan is in the
+"Syndication Plan" doc):
+
+  essay   A Lectio Terra post first published on or after the stream's
+          "since" date, once it has a page: a link card to the page (its
+          first shareable figure as the picture), then a reply with up to
+          four more of its figures. With it, a site.standard.document
+          record for the essay, its bskyPostRef pointing at the card.
+
+What the text is made of, all from the records:
+
+  - the post's first curated excerpt (syndication.excerpts on the post;
+    a reading's line in quotation marks and signed with its author),
+    or else the post's subtitle
+  - hashtags: the subject's (hashtags on its sp- or ph- record), the
+    post's own (syndication.hashtags), then the account's standingTags.
+    As many as fit show in the text; the rest go in the post's unseen
+    tags (at most 8).
+
+Figures are used only when their record's rights allow it (No Copyright
+in the US, or public domain), sent as JPEG copies under Bluesky's 1 MB.
+
+What it writes back, all in data/syndication.json (so the posts' own
+records, and the pages built from them, don't change daily): each
+essay's at:// addresses under "essays" ("card": {uri, cid}, "reply",
+"document"), and every Bluesky post made in the "log". build_lectio_pages.py then
+puts <link rel="site.standard.document"> in the page's head. The
+publication record (rkey fixed in syndication.json) is made on the first
+live run if it isn't there; /.well-known/site.standard.publication names it.
+
+A run that fails part way keeps what it finished: the next run carries
+on (a card already posted is not posted again; a missing reply or
+document record is made).
+"""
+
+import argparse
+import html
+import io
+import json
+import os
+import re
+import sys
+import urllib.error
+import urllib.request
+from datetime import date, datetime, timezone
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from datafile import load, save  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+SITE = 'https://earthlyhours.com'
+SERVICE = 'https://bsky.social'
+LIMIT = 300                    # Bluesky's limit on a post's text (graphemes)
+HIDDEN_TAGS = 8                # the post record's unseen tags
+IMAGE_BYTES = 950_000          # under the 1 MB blob limit
+OPEN_RIGHTS = (
+    'http://rightsstatements.org/vocab/NoC-US/',
+    'https://creativecommons.org/publicdomain/',
+)
+
+
+# ---------- reading the collection ----------
+
+def plain(text):
+    text = re.sub(r'<br\s*/?>', '\n', text or '')
+    text = re.sub(r'</p>\s*', '\n\n', text)
+    text = html.unescape(re.sub(r'<[^>]+>', '', text)).replace(' ', ' ')
+    text = re.sub(r'[ \t]+', ' ', text)
+    return re.sub(r'\n{3,}', '\n\n', text).strip()
+
+
+def posts(data):
+    for items in data['seasons'].values():
+        yield from items
+
+
+class Collection:
+    def __init__(self):
+        self.data = load('lectio-data')
+        self.config = load('syndication')
+        self.subjects = {r['id']: r for r in load('species') + load('phenomena')}
+        self.readings = {r['id']: r for r in load('readings')}
+        self.writing = {r['id']: r for r in load('writing')}
+        self.images = load('images')
+
+    def post(self, pid):
+        for p in posts(self.data):
+            if p['id'] == pid:
+                return p
+        raise SystemExit(f'No post {pid}')
+
+    def subject(self, post):
+        return self.subjects.get(post.get('subject')) or {}
+
+    def figures(self, post):
+        """The post's figures that may be shared, in the post's order."""
+        mine = [i for i in self.images
+                if (i.get('lectio') or {}).get('post') == post['id'] and not i.get('draft')]
+        mine.sort(key=lambda i: i['lectio'].get('place', 0))
+        return [i for i in mine
+                if (i.get('rights') or '').startswith(OPEN_RIGHTS) and (ROOT / i['file']).exists()]
+
+    def author(self, rid):
+        edition = (self.readings[rid].get('citation') or {}).get('edition') or {}
+        names = [c['name'] for c in edition.get('contributors', []) if c.get('role') == 'author']
+        return names[0] if names else None
+
+    def hashtags(self, post):
+        tags = (self.subject(post).get('hashtags') or []) \
+            + ((post.get('syndication') or {}).get('hashtags') or []) \
+            + (self.config.get('standingTags') or [])
+        seen = []
+        for t in tags:
+            if t not in seen:
+                seen.append(t)
+        return seen
+
+    def own_text(self, post):
+        """The post's own writing (headnote, notes, supplementum), as plain text."""
+        parts = []
+        for piece in post.get('body', []):
+            w = self.writing.get(piece.get('writing', ''))
+            if w and w.get('kind') in ('headnote', 'note', 'supplementum'):
+                text = plain(w.get('text'))
+                if text and text not in parts:
+                    parts.append(text)
+        return '\n\n'.join(parts)
+
+
+# ---------- composing ----------
+
+def utf8_len(s):
+    return len(s.encode('utf-8'))
+
+
+def opening(c, post):
+    """The line the card post leads with."""
+    excerpts = (post.get('syndication') or {}).get('excerpts') or []
+    if excerpts:
+        ex = excerpts[0]
+        if ex['from'].startswith('r-'):
+            who = c.author(ex['from'])
+            return f'“{ex["text"]}”' + (f' — {who}' if who else '')
+        return ex['text']
+    return post.get('subtitle') or ''
+
+
+def with_tags(text, tags):
+    """Text plus as many #tags as fit, their facets, and the tags left over."""
+    shown = []
+    for t in tags:
+        trial = text + '\n\n' + ' '.join('#' + x for x in shown + [t])
+        if len(trial) <= LIMIT and len(shown) < 4:
+            shown.append(t)
+    facets = []
+    if shown:
+        text += '\n\n'
+        for t in shown:
+            start = utf8_len(text)
+            text += '#' + t
+            facets.append({'index': {'byteStart': start, 'byteEnd': utf8_len(text)},
+                           'features': [{'$type': 'app.bsky.richtext.facet#tag', 'tag': t}]})
+            text += ' '
+        text = text.rstrip()
+    rest = [t for t in tags if t not in shown][:HIDDEN_TAGS]
+    return text, facets, rest
+
+
+def card_title(c, post):
+    return f'Lectio Terra: {c.subject(post).get("name") or post["title"]}'
+
+
+def card_description(post):
+    from build_lectio_pages import summary
+    return summary(post)
+
+
+def compose_essay(c, post):
+    """Everything the essay stream would send for a post, without sending it."""
+    text, facets, hidden = with_tags(opening(c, post), c.hashtags(post))
+    if len(text) > LIMIT:
+        raise SystemExit(f'{post["id"]}: the opening alone is over {LIMIT} characters')
+    figures = c.figures(post)
+    return {
+        'post': post['id'],
+        'url': f'{SITE}/{post["page"]}',
+        'text': text, 'facets': facets, 'tags': hidden,
+        'title': card_title(c, post),
+        'description': card_description(post),
+        'thumb': figures[0] if figures else None,
+        'more': figures[1:5],
+    }
+
+
+def document_record(c, post, publication, card, cover):
+    record = {
+        '$type': 'site.standard.document',
+        'site': publication,
+        'path': '/' + post['page'],
+        'title': card_title(c, post),
+        'publishedAt': post['published'] + 'T12:00:00.000Z',
+    }
+    if post.get('subtitle'):
+        record['description'] = post['subtitle']
+    if cover:
+        record['coverImage'] = cover
+    text = c.own_text(post)
+    if text:
+        record['textContent'] = text
+    tags = [t for t in c.hashtags(post) if t not in (c.config.get('standingTags') or [])]
+    if tags:
+        record['tags'] = tags
+    if card:
+        record['bskyPostRef'] = card
+    return record
+
+
+def jpeg(path):
+    """A JPEG copy under the blob limit, and its size in pixels."""
+    from PIL import Image
+    img = Image.open(path)
+    img = img.convert('RGB')
+    img.thumbnail((2000, 2000))
+    quality = 85
+    while True:
+        buf = io.BytesIO()
+        img.save(buf, 'JPEG', quality=quality, optimize=True)
+        if buf.tell() <= IMAGE_BYTES or quality <= 40:
+            break
+        if quality > 60:
+            quality -= 10
+        else:
+            img.thumbnail((int(img.width * 0.8), int(img.height * 0.8)))
+    return buf.getvalue(), img.size
+
+
+# ---------- sending ----------
+
+class Bluesky:
+    def __init__(self, handle, password):
+        session = self.call('com.atproto.server.createSession',
+                            {'identifier': handle, 'password': password}, auth=False)
+        self.did = session['did']
+        self.token = session['accessJwt']
+
+    def call(self, method, body=None, auth=True, raw=None, mime=None, query=None):
+        url = f'{SERVICE}/xrpc/{method}'
+        if query:
+            url += '?' + '&'.join(f'{k}={urllib.request.quote(str(v))}' for k, v in query.items())
+        headers = {}
+        data = None
+        if raw is not None:
+            data, headers['Content-Type'] = raw, mime
+        elif body is not None:
+            data, headers['Content-Type'] = json.dumps(body).encode(), 'application/json'
+        if auth:
+            headers['Authorization'] = f'Bearer {self.token}'
+        req = urllib.request.Request(url, data=data, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read() or b'{}')
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode(errors='replace')
+            if e.code in (400, 404) and 'RecordNotFound' in detail:
+                return None
+            raise SystemExit(f'{method}: HTTP {e.code} {detail}')
+
+    def blob(self, path):
+        data, size = jpeg(path)
+        return self.call('com.atproto.repo.uploadBlob', raw=data, mime='image/jpeg')['blob'], size
+
+    def create(self, collection, record):
+        r = self.call('com.atproto.repo.createRecord',
+                      {'repo': self.did, 'collection': collection, 'record': record})
+        return {'uri': r['uri'], 'cid': r['cid']}
+
+    def get(self, collection, rkey):
+        return self.call('com.atproto.repo.getRecord',
+                         query={'repo': self.did, 'collection': collection, 'rkey': rkey})
+
+    def put(self, collection, rkey, record):
+        r = self.call('com.atproto.repo.putRecord',
+                      {'repo': self.did, 'collection': collection, 'rkey': rkey, 'record': record})
+        return {'uri': r['uri'], 'cid': r['cid']}
+
+
+def now():
+    return datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
+
+
+def ensure_publication(bs, c):
+    p = c.config['publication']
+    if bs.get('site.standard.publication', p['rkey']):
+        return f'at://{bs.did}/site.standard.publication/{p["rkey"]}'
+    record = {'$type': 'site.standard.publication', 'url': p['url'], 'name': p['name'],
+              'description': p['description'], 'preferences': {'showInDiscover': True}}
+    if p.get('icon'):
+        record['icon'] = bs.blob(ROOT / p['icon'])[0]
+    print(f'Made the publication record {p["rkey"]}.')
+    return bs.put('site.standard.publication', p['rkey'], record)['uri']
+
+
+def send_essay(bs, c, post, plan, publication):
+    """Post an essay's card and reply and make its document record,
+    skipping whatever an earlier run already did."""
+    done = c.config.setdefault('essays', {}).setdefault(post['id'], {})
+    log = c.config.setdefault('log', [])
+    cover = None
+    if 'card' not in done:
+        thumb = None
+        if plan['thumb']:
+            thumb, _ = bs.blob(ROOT / plan['thumb']['file'])
+            cover = thumb
+        external = {'uri': plan['url'], 'title': plan['title'], 'description': plan['description']}
+        if thumb:
+            external['thumb'] = thumb
+        record = {'$type': 'app.bsky.feed.post', 'text': plan['text'], 'createdAt': now(),
+                  'langs': ['en'], 'embed': {'$type': 'app.bsky.embed.external', 'external': external}}
+        if plan['facets']:
+            record['facets'] = plan['facets']
+        if plan['tags']:
+            record['tags'] = plan['tags']
+        done['card'] = bs.create('app.bsky.feed.post', record)
+        log.append({'date': date.today().isoformat(), 'stream': 'essay', 'post': post['id'],
+                    'uri': done['card']['uri']})
+        save_all(c)
+        print(f'{post["id"]}: posted {done["card"]["uri"]}')
+    if plan['more'] and 'reply' not in done:
+        images = []
+        for fig in plan['more']:
+            blob, (w, h) = bs.blob(ROOT / fig['file'])
+            images.append({'image': blob, 'alt': plain(fig.get('alt') or ''),
+                           'aspectRatio': {'width': w, 'height': h}})
+        record = {'$type': 'app.bsky.feed.post', 'text': '', 'createdAt': now(), 'langs': ['en'],
+                  'reply': {'root': done['card'], 'parent': done['card']},
+                  'embed': {'$type': 'app.bsky.embed.images', 'images': images}}
+        reply = bs.create('app.bsky.feed.post', record)
+        done['reply'] = reply['uri']
+        log.append({'date': date.today().isoformat(), 'stream': 'essay', 'post': post['id'],
+                    'uri': reply['uri']})
+        save_all(c)
+        print(f'{post["id"]}: replied with {len(images)} figures')
+    if 'document' not in done:
+        if cover is None and plan['thumb']:
+            cover, _ = bs.blob(ROOT / plan['thumb']['file'])
+        record = document_record(c, post, publication, done['card'], cover)
+        done['document'] = bs.create('site.standard.document', record)['uri']
+        save_all(c)
+        print(f'{post["id"]}: document record {done["document"]}')
+
+
+def save_all(c):
+    save('syndication', c.config)
+
+
+# ---------- what is due ----------
+
+def due_essays(c):
+    stream = c.config['streams'].get('essay') or {}
+    if not stream.get('on'):
+        return []
+    since = stream.get('since', '9999')
+    out = []
+    for p in posts(c.data):
+        done = (c.config.get('essays') or {}).get(p['id']) or {}
+        if (p.get('page') and p.get('published', '') >= since
+                and (ROOT / p['page'] / 'index.html').exists()
+                and not ('card' in done and 'document' in done)):
+            out.append(p)
+    return sorted(out, key=lambda p: p['published'])
+
+
+def describe(plan, out):
+    out.write(f'### {plan["post"]}: {plan["title"]}\n\n')
+    out.write('Card post text:\n\n```\n' + plan['text'] + '\n```\n\n')
+    out.write(f'- Link: {plan["url"]}\n')
+    out.write(f'- Card description: {plan["description"]}\n')
+    out.write(f'- Card picture: {plan["thumb"]["id"] + " " + plan["thumb"]["file"] if plan["thumb"] else "none"}\n')
+    out.write(f'- Unseen tags: {" ".join(plan["tags"]) or "none"}\n')
+    if plan['more']:
+        out.write(f'- Reply with {len(plan["more"])} figures: {", ".join(f["id"] for f in plan["more"])}\n')
+    else:
+        out.write('- No reply (no more shareable figures)\n')
+    out.write('\n')
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
+    ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--preview', metavar='POST')
+    args = ap.parse_args()
+    c = Collection()
+    summary = os.environ.get('GITHUB_STEP_SUMMARY')
+    out = open(summary, 'a') if summary else sys.stdout
+
+    if args.preview:
+        describe(compose_essay(c, c.post(args.preview)), sys.stdout)
+        return
+
+    due = due_essays(c)
+    password = os.environ.get('BLUESKY_APP_PASSWORD')
+    dry = args.dry_run or not password
+    if dry:
+        out.write('## Syndication: dry run, nothing sent\n\n')
+        if not password and not args.dry_run:
+            out.write('(No BLUESKY_APP_PASSWORD secret yet.)\n\n')
+        if not due:
+            out.write('Nothing due.\n')
+        for p in due:
+            describe(compose_essay(c, p), out)
+        return
+
+    if not due:
+        print('Nothing due.')
+        return
+    bs = Bluesky(c.config['account'], password)
+    publication = ensure_publication(bs, c)
+    for p in due:
+        plan = compose_essay(c, p)
+        describe(plan, out)
+        send_essay(bs, c, p, plan, publication)
+
+
+if __name__ == '__main__':
+    main()
