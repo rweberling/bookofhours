@@ -225,7 +225,10 @@ def document_record(c, post, publication, card, cover):
         record['coverImage'] = cover
     text = c.own_text(post)
     if text:
-        record['textContent'] = text
+        # The readings and figures aren't in the record (the readings'
+        # rights), so it ends by pointing to the page that has them.
+        record['textContent'] = (text + '\n\nThe full essay, with its readings and figures, is at '
+                                 f'{SITE}/{post["page"]}')
     tags = [t for t in c.hashtags(post) if t not in (c.config.get('standingTags') or [])]
     if tags:
         record['tags'] = tags

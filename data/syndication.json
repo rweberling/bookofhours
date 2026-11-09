@@ -11,7 +11,7 @@
   "standingTags": ["phenology", "naturewriting"],
   "streams": {
     "essay": { "on": true, "since": "2026-11-09" },
-    "records": { "on": false }
+    "records": { "on": true }
   },
   "log": []
 }
