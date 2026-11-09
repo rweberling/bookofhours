@@ -271,7 +271,7 @@ def links(row):
     def out(url, text):
         return f'<a href="{esc(url)}" target="_blank">{text}</a>'
 
-    lectio = ('<span class="postcard-gloss">An essay from The Earthly Book of Hours, '
+    lectio = ('<span class="postcard-gloss">An essay from <em>The Earthly Book of Hours</em>, '
               'with readings and related images.</span>')
     items = []
     if row['post']:

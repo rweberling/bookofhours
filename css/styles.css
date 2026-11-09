@@ -976,9 +976,9 @@ body main.hours-page .versicle {
 .page .postcard-links .postcard-lectio { font-weight: 600; }
 /* What a Lectio Terra entry is, for readers new to the site. */
 .postcard-links .postcard-gloss {
-  display: block; font-size: 13px; font-style: italic; font-weight: 300; color: var(--ink-faint);
+  display: block; font-size: 13px; font-style: normal; font-weight: 300; color: var(--ink-faint);
 }
-.postcard-links .postcard-gloss em { font-style: normal; }
+.postcard-links .postcard-gloss em { font-style: italic; }
 /* "turn the page" leads on to the next card; a link here, not a button. */
 .postcard-turn { margin-top: 40px; }
 .postcard-turn a { text-decoration: none; }
