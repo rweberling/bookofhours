@@ -47,20 +47,21 @@ function activeWeather() {
 // are drawn: no fog or cloud on a clear day. If none fits, the unset
 // entries stand in (every kind of weather), and failing those, everything.
 // Within the fitting entries the draw still leans toward the stronger
-// matches — or by weightFn, when given (see readingWeight below).
+// matches and the current season (pickAtmosphereAware, in shared.js, as
+// on the Hours page) — or by weightFn, when given (see readingWeight below).
 function pickWeatherEntry(entries, excludeFn, { turning = false } = {}, weightFn = null) {
   if (!entries || !entries.length) return null;
   const active = activeWeather();
   const unset = entries.filter(e => e.unset);
   if (!active.length) {
-    if (!turning && unset.length) return pickExcluding(unset, excludeFn);
+    if (!turning && unset.length) return pickAtmosphereAware(unset, excludeFn);
     const ordinary = entries.filter(e => !e.unset || e.weather.length);
     const pool = ordinary.length ? ordinary : entries;
-    return weightFn ? pickWeightedExcluding(pool, weightFn, excludeFn) : pickExcluding(pool, excludeFn);
+    return weightFn ? pickWeightedExcluding(pool, weightFn, excludeFn) : pickAtmosphereAware(pool, excludeFn);
   }
   const fitting = entries.filter(e => weatherMatchCount(e, active) > 0);
-  if (!fitting.length) return pickExcluding(unset.length ? unset : entries, excludeFn);
-  return weightFn ? pickWeightedExcluding(fitting, weightFn, excludeFn) : pickWeatherAware(fitting, excludeFn);
+  if (!fitting.length) return pickAtmosphereAware(unset.length ? unset : entries, excludeFn);
+  return weightFn ? pickWeightedExcluding(fitting, weightFn, excludeFn) : pickAtmosphereAware(fitting, excludeFn);
 }
 
 // The image is drawn first; the reading then leans toward both the weather
@@ -82,9 +83,11 @@ const READING_REPEAT_FACTOR = 0.25;
 function readingWeight(image) {
   const active = activeWeather();
   const imageTags = (image && image.weather) || [];
+  const season = currentSeason();
   return reading => (WEATHER_BASE_WEIGHT
     + weatherMatchCount(reading, active) ** 2
     + READING_IMAGE_PULL * weatherMatchCount(reading, imageTags) ** 2)
+    * seasonFactor(reading, season)
     * (reading.text === lastWeatherReadingText ? READING_REPEAT_FACTOR : 1);
 }
 

@@ -484,29 +484,32 @@ function weatherMatchWeight(item, weather) {
   return WEATHER_BASE_WEIGHT + weatherMatchCount(item, weather) ** 2;
 }
 
-// The season leans the Hours the same gentle way: a piece tagged with
-// the season it is now is three times as likely; any other piece, untagged
-// or tagged for other seasons, keeps the ordinary weight. Season tags only
-// ever add weight, never take it away, so a piece is never pushed out of
-// sight for most of the year (with only a few pieces to an hour, a penalty
-// out of season would all but hide it).
+// The season leans the picks the same gentle way, on the Hours and the
+// Weather alike: a piece tagged with the season it is now is three times
+// as likely; any other piece, untagged or tagged for other seasons, keeps
+// the ordinary weight. Season tags only ever add weight, never take it
+// away, so a piece is never pushed out of sight for most of the year
+// (with only a few pieces to an hour or a condition, a penalty out of
+// season would all but hide it). On the Weather page the weather has
+// already chosen which pieces can appear (weather.js); the season only
+// re-ranks those.
 const SEASON_MATCH_FACTOR = 3;
 function seasonFactor(item, season) {
   return Array.isArray(item.seasons) && item.seasons.includes(season) ? SEASON_MATCH_FACTOR : 1;
 }
 
-// hours.js's picks: weather and season both lean the odds.
-function pickHoursAware(items, excludeFn) {
-  const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
-  const season = currentSeason();
-  return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather) * seasonFactor(item, season), excludeFn);
+// The one lean both pages use: the weather outside (more matching
+// conditions, much likelier) times the season.
+function atmosphereWeight(item, weather, season) {
+  return weatherMatchWeight(item, weather) * seasonFactor(item, season);
 }
 
-// weather.js's window views (and any page that leans on weather alone).
-function pickWeatherAware(items, excludeFn) {
+// A pick leaning on the weather and the season: the Hours page's first
+// page of a visit (hours.js), and every Weather page view (weather.js).
+function pickAtmosphereAware(items, excludeFn) {
   const weather = (window.siteAtmosphere && window.siteAtmosphere.weather) || [];
-  if (!weather.length) return pickExcluding(items, excludeFn);
-  return pickWeightedExcluding(items, item => weatherMatchWeight(item, weather), excludeFn);
+  const season = currentSeason();
+  return pickWeightedExcluding(items, item => atmosphereWeight(item, weather, season), excludeFn);
 }
 
 // --- Species cards and reading pages ----------------------------------------

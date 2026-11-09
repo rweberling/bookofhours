@@ -48,14 +48,14 @@ const HOUR_NAMES = {
 // pick() / pickExcluding() now live in shared.js, loaded before
 // this file — shared with seasons.js instead of duplicated here.
 
-// pickHoursAware() (picks leaning on the weather and the season) lives
-// there too, beside weather.js's pickWeatherAware().
+// pickAtmosphereAware() (picks leaning on the weather and the season,
+// the same lean the Weather page uses) lives there too.
 
 let lastQuoteText = null;
 let lastImageSrc  = null;
 
 // The first page of an hour is the "magic" one: picked leaning on the
-// weather and the season (pickHoursAware). Every turn of the page after
+// weather and the season (pickAtmosphereAware). Every turn of the page after
 // that opens up the whole hour instead, drawing evenly from the pieces
 // not yet shown on this visit, so a reader who keeps turning sees all of
 // it before anything comes round again. Arriving at a different hour
@@ -67,7 +67,7 @@ function pickForVisit(items, shown, keyOf, lastKey, firstPage) {
   if (!items || items.length === 0) return null;
   let pick;
   if (firstPage) {
-    pick = pickHoursAware(items, item => keyOf(item) === lastKey);
+    pick = pickAtmosphereAware(items, item => keyOf(item) === lastKey);
   } else {
     let unseen = items.filter(item => !shown.has(keyOf(item)));
     if (unseen.length === 0) {

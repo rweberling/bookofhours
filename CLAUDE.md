@@ -76,10 +76,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 
 - The Hours page is `index.html` + `hours.js` (there is no hours.html).
   `?block=hush` (etc.) forces an hour.
-- Weighting lives in `shared.js`: weather matches and the current season
-  lean the picks (season tags only add weight, ×3). On the Hours page only
-  the first page of a visit is weighted; turning the page then shows the
-  rest of the hour evenly, without repeats.
+- Weighting lives in `shared.js` (`pickAtmosphereAware`, one lean for
+  both pages): weather matches and the current season lean the picks
+  (season tags only add weight, ×3). On the Hours page only the first
+  page of a visit is weighted; turning the page then shows the rest of
+  the hour evenly, without repeats. On the Weather page the set weather
+  first decides which pieces can appear; the lean then applies on every
+  turn, and the reading also leans toward the image's tags.
 - The Hours frame crops every image to 4:3; the lightbox shows it whole.
 - "keep this page" (`keep.js`) is on the Hours, Weather and Seasons
   pages (and the post pages). It opens a pane, made by `keep.js`, with
