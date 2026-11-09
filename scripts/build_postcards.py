@@ -261,28 +261,38 @@ def figure(row):
 
 
 def links(row):
-    """Onward links: the Lectio Terra entry, the original, its backup."""
+    """Onward links, one marked line each: the card's Lectio Terra entry
+    (or when it is due), with a line saying what Lectio Terra is; the
+    original with its backup; any further text about the image."""
+    def line(html, cls=''):
+        attr = f' class="{cls}"' if cls else ''
+        return f'<li{attr}>{html}</li>'
+
+    def out(url, text):
+        return f'<a href="{esc(url)}" target="_blank">{text}</a>'
+
+    lectio = ('<span class="postcard-gloss"><em>Lectio Terra</em> is the site’s '
+              'year of weekly species studies.</span>')
     items = []
     if row['post']:
-        items.append(f'<a class="postcard-link-main" href="{esc(row["post"])}">Read the Lectio Terra entry</a>')
+        items.append(line(f'<a href="{esc(row["post"])}">Read this card’s '
+                          f'<em>Lectio Terra</em> entry</a>{lectio}'))
+    elif row['title']:
+        due = row.get('post_due') or 'soon'
+        items.append(line(f'This card’s <em>Lectio Terra</em> entry is coming {esc(due)}.{lectio}',
+                          'postcard-coming'))
     if row['destination']:
-        cls = 'postcard-link' if row['post'] else 'postcard-link-main'
-        items.append(f'<a class="{cls}" href="{esc(row["destination"])}" target="_blank">'
-                     f'See the original at {esc(holder(row["destination"]))}</a>')
-    if row['backup']:
-        items.append(f'<a class="postcard-link" href="{esc(row["backup"])}" target="_blank">'
-                     f'or at {esc(holder(row["backup"]))}</a>')
+        original = 'See the original at ' + out(row['destination'], esc(holder(row['destination'])))
+        if row['backup']:
+            original += ', or at ' + out(row['backup'], esc(holder(row['backup'])))
+        items.append(line(original))
     if row.get('context'):
         label = row.get('context_label') or 'Read more about this image'
-        items.append(f'<a class="postcard-link postcard-context" href="{esc(row["context"])}" '
-                     f'target="_blank">{rich(label)}</a>')
-    if not row['post'] and row['title']:
-        due = row.get('post_due') or 'soon'
-        items.append(f'<p class="postcard-coming">Its <em>Lectio Terra</em> entry is coming {esc(due)}.</p>')
+        items.append(line(out(row['context'], rich(label))))
     if not items:
         return ''
     inner = '\n    '.join(items)
-    return f'  <div class="postcard-links">\n    {inner}\n  </div>'
+    return f'  <ul class="postcard-links">\n    {inner}\n  </ul>'
 
 
 # The hours' lightbox (css/styles.css), for the whole image. Without
@@ -321,9 +331,8 @@ LIGHTBOX = '''
 
 
 def intro(row):
-    note = ('The image on this card is in the public domain. Follow the link below '
-            'to see it in its first setting—the book, print, or plate it comes from—'
-            'in the digital collection that keeps it.')
+    note = ('The image on this card is in the public domain. Follow the links below '
+            'to learn more about this subject or to see the image in its original context.')
     return f'''  <article class="content-block postcard-note">
     <p>{note}</p>
   </article>'''
