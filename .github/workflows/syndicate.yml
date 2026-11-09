@@ -57,7 +57,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/syndication.json lectio-terra/
-          git commit -m 'Syndication: what was posted to Bluesky'
+          git commit -m 'Syndication: Bluesky posts and standard.site records made'
           for i in 1 2 3; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
             sleep 5
