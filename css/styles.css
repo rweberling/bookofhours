@@ -972,9 +972,11 @@ body main.hours-page .versicle {
 .postcard-links a:hover { color: var(--ink); }
 .postcard-links .postcard-coming { font-style: italic; }
 .postcard-links .postcard-coming em { font-style: normal; }
-/* What Lectio Terra is, for readers new to the site. */
+/* The Lectio Terra line leads, in bold; its gloss stays light. */
+.page .postcard-links .postcard-lectio { font-weight: 600; }
+/* What a Lectio Terra entry is, for readers new to the site. */
 .postcard-links .postcard-gloss {
-  display: block; font-size: 13px; font-style: italic; color: var(--ink-faint);
+  display: block; font-size: 13px; font-style: italic; font-weight: 300; color: var(--ink-faint);
 }
 .postcard-links .postcard-gloss em { font-style: normal; }
 /* "turn the page" leads on to the next card; a link here, not a button. */

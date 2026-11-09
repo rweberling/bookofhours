@@ -271,16 +271,16 @@ def links(row):
     def out(url, text):
         return f'<a href="{esc(url)}" target="_blank">{text}</a>'
 
-    lectio = ('<span class="postcard-gloss"><em>Lectio Terra</em> is the site’s '
-              'year of weekly species studies.</span>')
+    lectio = ('<span class="postcard-gloss">An essay from The Earthly Book of Hours, '
+              'with readings and related images.</span>')
     items = []
     if row['post']:
         items.append(line(f'<a href="{esc(row["post"])}">Read this card’s '
-                          f'<em>Lectio Terra</em> entry</a>{lectio}'))
+                          f'<em>Lectio Terra</em> entry</a>{lectio}', 'postcard-lectio'))
     elif row['title']:
         due = row.get('post_due') or 'soon'
         items.append(line(f'This card’s <em>Lectio Terra</em> entry is coming {esc(due)}.{lectio}',
-                          'postcard-coming'))
+                          'postcard-lectio postcard-coming'))
     if row['destination']:
         original = 'See the original at ' + out(row['destination'], esc(holder(row['destination'])))
         if row['backup']:
