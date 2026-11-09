@@ -13,5 +13,271 @@
     "essay": { "on": true, "since": "2026-11-09" },
     "records": { "on": true }
   },
-  "log": []
+  "log": [],
+  "essays": {
+    "lt-0001": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuhqlgjt2q",
+      "digest": "0ce9f5ebe329d9b5",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mfwswzsj3c2q",
+        "cid": "bafyreig4ijq7pp7szuzu3zd3ewboj7eqjimjof4nf5bj4e4xgz2gs6pq4e"
+      }
+    },
+    "lt-0002": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuhsizae27",
+      "digest": "4c0f6195f3973fa6",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mgggwhinz22a",
+        "cid": "bafyreidjy7voy755qaotqzhrdf3ceokgxryki2gbq6d4erg7sw3knoc6yy"
+      }
+    },
+    "lt-0003": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuhue5ru25",
+      "digest": "d2aa4200963ed085",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mgv7qcjbbc2f",
+        "cid": "bafyreiepzbenyn4iv55d26l3h6sir77wav4otrlhxlqh6gz2qbycio3t4a"
+      }
+    },
+    "lt-0004": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuhw4rgw25",
+      "digest": "cd3230a350a8fd6a",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mhjwt3yrrk2d",
+        "cid": "bafyreicmvbvvbuvikhj4pvyr6xjgn735ajqwisbgivi3tsu5jyz53t6jpu"
+      }
+    },
+    "lt-0005": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuhy4ob32q",
+      "digest": "0641bdcb1f6fb4ef",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mi4vuwq77k2z",
+        "cid": "bafyreiavsciczymsx6kcqk5dyfotsmk2lgqxqfns646swzl4l6iqui4e6y"
+      }
+    },
+    "lt-0006": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvui2boa72k",
+      "digest": "c5a762da0bb47bf3",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3miuo5tsmx22x",
+        "cid": "bafyreieecctsna2zp2mxb2qmm6rpxn7wf7y2wvysojgxb5ibbgrobahgxy"
+      }
+    },
+    "lt-0007": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvui44dcf2m",
+      "digest": "5f6b63d19bdac0b3",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mj6ijyne722d",
+        "cid": "bafyreiarizibbdm7seayekiprkwocnwpuym6ai6nnqchuxgbupdu6d4kay"
+      }
+    },
+    "lt-0008": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvui63csr2e",
+      "digest": "d067855414f4d1c3",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mjsexukljc2b",
+        "cid": "bafyreigljbcc67bat6vtwny5nhkovicjrgjfg5q2y7cybv7qmvatckhlsq"
+      }
+    },
+    "lt-0009": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvui7uh3o2z",
+      "digest": "fe3e3996ca8f9caa",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mkg6mqdvcc2s",
+        "cid": "bafyreic4v3gkh6s4hzymvltpzeij4eyikm4kowak5z26mdevuokofz5uje"
+      }
+    },
+    "lt-0010": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuibptdb2e",
+      "digest": "35dee0e3d9a0ca4d",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mktbcbr4tk2v",
+        "cid": "bafyreif3da5ssb2s6a7q646bqq7u4eetqndxaz622brnqgqkn5v2se2fa4"
+      }
+    },
+    "lt-0011": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuidgie425",
+      "digest": "cbe2705560135659",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mle63ie42c2k",
+        "cid": "bafyreibe4fiw7zbgkfwjxhwv3a4zzqb73ra3kgjpy4gatyahmm3ckru73i"
+      }
+    },
+    "lt-0012": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuif3cvf2m",
+      "digest": "c9cae9a0e0278c5f",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mm5ed6km7k2a",
+        "cid": "bafyreiexh65tssivz43zc3i55nfrgmrwbhgob44songqzzgizhwvd4k7gu"
+      }
+    },
+    "lt-0013": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuifyift2q",
+      "digest": "e460c4f792eafbe3",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mmi5irwfrc2g",
+        "cid": "bafyreigoicclcjwjsnqkv3hnqj5mwhzqjjwylsuuwgetdzp6znuguezpcq"
+      }
+    },
+    "lt-0014": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuih3do62k",
+      "digest": "44d690fb58c149c8",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mn3z3rza5k2l",
+        "cid": "bafyreicgmutvfnq6fudzonlda7iibtcdoqdsgpblju4zu6g4v4abxegbbe"
+      }
+    },
+    "lt-0015": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuiiwwvg2k",
+      "digest": "cb492d78f3560e09",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mnnhas7q7c2e",
+        "cid": "bafyreidnbiryu5sjvxzs4hcksdhzmbasr4xfzynob2kcp7ltdx4dw7kt6i"
+      }
+    },
+    "lt-0016": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuikkxup2k",
+      "digest": "dd231a0bdc34eace",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3moeghusf2s2u",
+        "cid": "bafyreihxqk5h5j7nsapgxjxzyui53inouoxdpanjyacbllbmvr2g3kbene"
+      }
+    },
+    "lt-0017": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuimlwz427",
+      "digest": "d17cc363bcd0042f",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3monz7ycndk2n",
+        "cid": "bafyreibo7uvzchms7bky244ksrmws2ttgyon7pcs6db3dv6rniqr75m544"
+      }
+    },
+    "lt-0018": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuiol6gc2g",
+      "digest": "9f86a280802aacc0",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mvxkxmkpmd2p",
+        "cid": "bafyreiendl6w63yri4lng5hosfkvgqtwwo2vn6k26vdjwoqpua5xudouam"
+      }
+    },
+    "lt-0019": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuiqfnk427",
+      "digest": "d68ed730704f6c74",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mqh57izgrk27",
+        "cid": "bafyreidhtl4r6uqnod7tkkhbwbq5mwk6uglpqinj7jtyv4qpbr7gd363na"
+      }
+    },
+    "lt-0020": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuisfne72k",
+      "digest": "992cf2ee23ef344a",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mr4n33eyrk2p",
+        "cid": "bafyreihqne5cma2eclzkyrmmlnzi3hbt3jgrckbyzwkj742vefgubmwiz4"
+      }
+    },
+    "lt-0021": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuiudfw72k",
+      "digest": "41fa57920bfefff1",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mycyxws4og2q",
+        "cid": "bafyreicu5gjm4jbweeoqxhrsiwxrxvl4re54n7dmpimpsftd3k6a2zvg4m"
+      }
+    },
+    "lt-0022": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuiw7hu62k",
+      "digest": "6d9cec027d62a347",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3ms2gcoykjc24",
+        "cid": "bafyreids3pg7xnrk45njkmo7f5p7aykaa2ozt5pcq4rd4kswdwdhk37ihe"
+      }
+    },
+    "lt-0023": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuixulym25",
+      "digest": "a3151241fd85113a",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3msluax332c2h",
+        "cid": "bafyreigit3beomz5voqetluv5kmcr7v5i7iq5ralcioqvs5cf3sfdqqk3u"
+      }
+    },
+    "lt-0024": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuizbbtg2z",
+      "digest": "4aa287417de22346",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mt4oh4fp422i",
+        "cid": "bafyreiclga7tus466nnxmsp34z2ldxg3uks3bmrdew2r73hvu4exygi52a"
+      }
+    },
+    "lt-0025": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuj3233t2q",
+      "digest": "cf4179f4b142e968",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mttubcrcvs2u",
+        "cid": "bafyreiehm47ax3bfdo3hh6rxyvn45m5zsc6wfxfh56dejkdcexhnourlyu"
+      }
+    },
+    "lt-0026": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuj4wnmv2p",
+      "digest": "0cb95753d7648fd6",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mueqjbtpac2n",
+        "cid": "bafyreie66j5rx26le3iek2ckfsvx43jkqnykqwhnbb3nd2i5vxa4zss2yy"
+      }
+    },
+    "lt-0027": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvuj6swfo2z",
+      "digest": "6d0da186cb084723",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mvqi5h54po2k",
+        "cid": "bafyreif6i7ssqpagz4chee5iqe773cgskzbnprspddcfsfxo2pq75kf5ky"
+      }
+    },
+    "lt-0028": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvujahzm625",
+      "digest": "c3fe50ba4a5ddeae",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mwgnr6p6vc2e",
+        "cid": "bafyreiewne7m3w5kzlxposoy3q5r3swvg4n327hqe7ijkm3ds5nwd5e6ye"
+      }
+    },
+    "lt-0029": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvujc3iww2u",
+      "digest": "159878860370e9bf",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mwta3uvl3i2f",
+        "cid": "bafyreifkz5v2cgw4kvimppdq5qyjn7ah5b62dznhundnugfwnevuauhbzu"
+      }
+    },
+    "lt-0030": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvujdudgg25",
+      "digest": "e5e1ac43c4efa0f0",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mx5bxlqtzg2c",
+        "cid": "bafyreiajuzayguxd6kxnn342xftbhl56txx6medhy4dcq5647bbh5mxwxi"
+      }
+    },
+    "lt-0032": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvujfn4ok2g",
+      "digest": "01ae003b1168be3a",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3myaiizwtps2c",
+        "cid": "bafyreigwnsw5gm4zc3d6sb2ul2nrst7xxhd2jna6flwzhj3gxk6e4sgdga"
+      }
+    },
+    "lt-0031": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvujh7d6g2k",
+      "digest": "acfea8cf54e61d67",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3myx4p7uhfx2a",
+        "cid": "bafyreibbhiro3akrgfryzt4iqkuer2wn6rkrwsj5atjg2kdblxfw7beoty"
+      }
+    },
+    "lt-0033": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzvujivz462m",
+      "digest": "44ad10bfccda54fa",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mzgctfgdc22l",
+        "cid": "bafyreififhytl25o6bl5hrry2cqwgtxl37qialvnn4rhrjdgrkvnkn2xoi"
+      }
+    }
+  }
 }
