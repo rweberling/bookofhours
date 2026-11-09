@@ -129,7 +129,13 @@
         "issued": "1988",
         "original-date": "1941",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "translation in copyright"
+        "rightsNote": "translation in copyright",
+        "identifiers": {
+          "isbn": "9780882680767",
+          "oclc": "18163478",
+          "hathitrust": "001547988",
+          "lccn": "88020051"
+        }
       }
     },
     "suggestedEdition": { "isbn": "9780882680767" },
@@ -169,7 +175,13 @@
         "issued": "2012",
         "original-date": "1964",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "translation in copyright"
+        "rightsNote": "translation in copyright",
+        "identifiers": {
+          "isbn": "9780811219686",
+          "openlibrary": "OL25223653M",
+          "oclc": "759908624",
+          "lccn": "2012005502"
+        }
       }
     },
     "suggestedEdition": { "isbn": "9780811219686" },
@@ -228,7 +240,8 @@
         "issued": "1961",
         "original-date": "1961",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "in copyright"
+        "rightsNote": "in copyright",
+        "identifiers": { "lccn": "61014238" }
       }
     },
     "suggestedEdition": { "isbn": "9780819573650" },
@@ -303,7 +316,13 @@
         "publisher": "Hurd and Houghton",
         "issued": "1871",
         "original-date": "1871",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": {
+          "hathitrust": "001027118",
+          "openlibrary": "OL6957435M",
+          "oclc": "1819857",
+          "lccn": "05021547"
+        }
       }
     },
     "tags": {
@@ -334,7 +353,8 @@
         "issued": "1908",
         "original-date": "1898",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "rightsNote": "date as captioned (1898); verify edition"
+        "rightsNote": "date as captioned (1898); verify edition",
+        "identifiers": { "hathitrust": "009794369", "openlibrary": "OL38613918M", "oclc": "1648765" }
       }
     },
     "tags": {
@@ -449,7 +469,8 @@
         "publisher": "David McKay",
         "issued": "1892",
         "original-date": "1892",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "openlibrary": "OL16479300M", "lccn": "43036789" }
       }
     },
     "suggestedEdition": {
@@ -521,7 +542,14 @@
         "issued": "1943",
         "original-date": "1942",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "in copyright — estate actively enforces"
+        "rightsNote": "in copyright — estate actively enforces",
+        "identifiers": {
+          "hathitrust": "000540494",
+          "openlibrary": "OL13537656M",
+          "oclc": "1577294",
+          "lccn": "43007996",
+          "internetArchive": "fourquartets00eliorich"
+        }
       }
     },
     "suggestedEdition": { "isbn": "9780547538211", "note": "In <em>Collected Poems 1909–1962</em>" },
@@ -728,7 +756,8 @@
         "issued": "2002",
         "original-date": "1947",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "translation in copyright"
+        "rightsNote": "translation in copyright",
+        "identifiers": { "isbn": "9780415290012", "openlibrary": "OL3563189M", "lccn": "2002031674" }
       }
     },
     "suggestedEdition": { "isbn": "9780415290012" },
@@ -958,7 +987,8 @@
         "publisher": "John Lane",
         "issued": "1908",
         "original-date": "-0630~/-0580~",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "openlibrary": "OL19001214M" }
       }
     },
     "tags": {
@@ -996,7 +1026,8 @@
         "publisher": "Claire Marie",
         "issued": "1914",
         "original-date": "1914",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "openlibrary": "OL53657461M", "oclc": "1013448044" }
       }
     },
     "tags": {
@@ -1075,7 +1106,13 @@
         "issued": "1943",
         "original-date": "1943",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "in copyright — actively republished"
+        "rightsNote": "in copyright — actively republished",
+        "identifiers": {
+          "hathitrust": "103315791",
+          "openlibrary": "OL6456575M",
+          "oclc": "1371130",
+          "lccn": "43017876"
+        }
       }
     },
     "suggestedEdition": { "isbn": "9780764542619", "note": "In <em>The Art of Eating</em>" },
@@ -1186,7 +1223,8 @@
         "issued": "1953",
         "original-date": "1953",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "in copyright — estate aggressively enforces"
+        "rightsNote": "in copyright — estate aggressively enforces",
+        "identifiers": { "openlibrary": "OL16635912M" }
       }
     },
     "suggestedEdition": { "isbn": "9780802144485" },
@@ -2799,7 +2837,7 @@
         "publisher": "Knickerbocker Press",
         "issued": "1904",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "identifiers": { "internetArchive": "bogtrottingfo00nile" }
+        "identifiers": { "internetArchive": "bogtrottingfo00nile", "lccn": "04010080" }
       }
     },
     "lectio": { "post": "lt-0016", "place": 1 },

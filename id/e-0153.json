@@ -12,7 +12,8 @@
     {
       "id": "a-john-torrey",
       "name": "John Torrey",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q1346660"
     }
   ],
   "publisher": "Carroll and Cook",

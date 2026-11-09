@@ -16,6 +16,9 @@
   "original-date": "1961",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "rightsNote": "in copyright",
+  "identifiers": {
+    "lccn": "61014238"
+  },
   "citedBy": [
     "r-0007"
   ],

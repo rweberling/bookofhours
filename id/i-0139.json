@@ -27,7 +27,8 @@
   "alt": "A hand-coloured engraving of a pawpaw branch with broad green leaves and a single small green fruit, a pale green caterpillar resting on the stem, and two black-and-white striped zebra swallowtail butterflies with red and blue markings, one above the branch and one below.",
   "creator": {
     "id": "a-john-abbot",
-    "name": "John Abbot"
+    "name": "John Abbot",
+    "wikidata": "Q303380"
   },
   "title": "Papilio Ajax. Annona Palustris",
   "date": "1797",
@@ -39,12 +40,14 @@
       {
         "id": "a-james-edward-smith",
         "name": "James Edward Smith",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q458004"
       },
       {
         "id": "a-john-abbot",
         "name": "John Abbot",
-        "role": "illustrator"
+        "role": "illustrator",
+        "wikidata": "Q303380"
       }
     ],
     "publisher": "J. Edwards",

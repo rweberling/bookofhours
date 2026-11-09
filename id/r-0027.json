@@ -29,7 +29,11 @@
       "publisher": "Claire Marie",
       "issued": "1914",
       "original-date": "1914",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "openlibrary": "OL53657461M",
+        "oclc": "1013448044"
+      }
     }
   },
   "tags": {

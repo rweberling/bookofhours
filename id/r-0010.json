@@ -29,7 +29,12 @@
       "issued": "1908",
       "original-date": "1898",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "rightsNote": "date as captioned (1898); verify edition"
+      "rightsNote": "date as captioned (1898); verify edition",
+      "identifiers": {
+        "hathitrust": "009794369",
+        "openlibrary": "OL38613918M",
+        "oclc": "1648765"
+      }
     }
   },
   "tags": {

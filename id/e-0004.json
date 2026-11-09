@@ -21,6 +21,12 @@
   "original-date": "1941",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "rightsNote": "translation in copyright",
+  "identifiers": {
+    "isbn": "9780882680767",
+    "oclc": "18163478",
+    "hathitrust": "001547988",
+    "lccn": "88020051"
+  },
   "citedBy": [
     "r-0004"
   ],

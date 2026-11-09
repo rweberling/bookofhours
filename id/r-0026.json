@@ -35,7 +35,10 @@
       "publisher": "John Lane",
       "issued": "1908",
       "original-date": "-0630~/-0580~",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "openlibrary": "OL19001214M"
+      }
     }
   },
   "tags": {

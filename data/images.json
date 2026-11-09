@@ -76,7 +76,11 @@
     "caption": "The Smithsonian Institution, <a href=\"https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich/page/n71/mode/2up\" target=\"_blank\"><em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em></a> (1900/1904)",
     "alt": "A photograph of the eclipsed Sun’s edge: the dark curve of the Moon across the lower half, with pale, flame-like prominences and a soft glow rising from its rim into a black sky, marked 230° and 270°.",
     "bibliography": "Smithsonian Institution. <em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em>. Smithsonian Institution, 1904.",
-    "creator": { "id": "a-smithsonian-institution", "name": "Smithsonian Institution" },
+    "creator": {
+      "id": "a-smithsonian-institution",
+      "name": "Smithsonian Institution",
+      "wikidata": "Q131626"
+    },
     "title": null,
     "date": "1900/1904",
     "institution": null,
@@ -241,7 +245,7 @@
     "caption": "Limbourg brothers, <em>Anatomical Zodiac Man (or L'Homme anatomique)</em>, from <a href=\"https://les-tres-riches-heures.chateaudechantilly.fr\" target=\"_blank\"><em>Les Très Riches Heures du Duc de Berry</em></a> (c. 1412–1416)",
     "alt": "A medieval manuscript page in blue, gold and green: two nude figures stand back to back inside an almond-shaped frame, their bodies marked with the signs of the zodiac, which also fill the round medallions of the border.",
     "bibliography": "Limbourg Brothers. <em>Anatomical Zodiac Man</em>. c. 1412–1416, Musée Condé, Chantilly. <em>Les Très Riches Heures du Duc de Berry</em>.",
-    "creator": { "id": "a-limbourg-brothers", "name": "Limbourg brothers" },
+    "creator": { "id": "a-limbourg-brothers", "name": "Limbourg brothers", "wikidata": "Q217816" },
     "title": "Anatomical Zodiac Man (or L'Homme anatomique)",
     "partOf": "Les Très Riches Heures du Duc de Berry",
     "date": "1412~/1416~",
@@ -3991,7 +3995,7 @@
       "size": [2213, 2920]
     },
     "alt": "A hand-coloured engraving of a pawpaw branch with broad green leaves and a single small green fruit, a pale green caterpillar resting on the stem, and two black-and-white striped zebra swallowtail butterflies with red and blue markings, one above the branch and one below.",
-    "creator": { "id": "a-john-abbot", "name": "John Abbot" },
+    "creator": { "id": "a-john-abbot", "name": "John Abbot", "wikidata": "Q303380" },
     "title": "Papilio Ajax. Annona Palustris",
     "date": "1797",
     "edition": {
@@ -3999,8 +4003,18 @@
       "type": "book",
       "title": "The Natural History of the Rarer Lepidopterous Insects of Georgia",
       "contributors": [
-        { "id": "a-james-edward-smith", "name": "James Edward Smith", "role": "author" },
-        { "id": "a-john-abbot", "name": "John Abbot", "role": "illustrator" }
+        {
+          "id": "a-james-edward-smith",
+          "name": "James Edward Smith",
+          "role": "author",
+          "wikidata": "Q458004"
+        },
+        {
+          "id": "a-john-abbot",
+          "name": "John Abbot",
+          "role": "illustrator",
+          "wikidata": "Q303380"
+        }
       ],
       "publisher": "J. Edwards",
       "issued": "1797"
@@ -4029,7 +4043,7 @@
       "size": [800, 651]
     },
     "alt": "An oil painting in a gilt frame: a cluster of pale green pawpaws hanging from a bare twig with a single large leaf, laid on a mossy rock beside dark water, against a shadowy wooded bank.",
-    "creator": { "id": "a-edward-edmondson-jr", "name": "Edward Edmondson, Jr." },
+    "creator": { "id": "a-edward-edmondson-jr", "name": "Edward Edmondson, Jr.", "wikidata": "Q7778659" },
     "title": "Still Life with Pawpaws",
     "date": "1870~/1875~",
     "institution": "Dayton Art Institute",
@@ -4059,7 +4073,7 @@
       "size": [590, 787]
     },
     "alt": "An oil painting of a thicket of staghorn sumac in autumn: tall upright cones of deep red fruit rising above long, feathery rust-red leaves, against a blue sky with soft clouds, with two small pale butterflies among the stems.",
-    "creator": { "id": "a-emil-carlsen", "name": "Emil Carlsen" },
+    "creator": { "id": "a-emil-carlsen", "name": "Emil Carlsen", "wikidata": "Q5371205" },
     "title": "Staghorn Sumac",
     "date": "1883",
     "bibliography": "Carlsen, Emil. <em>Staghorn Sumac</em>. 1883, private collection.",
@@ -4095,7 +4109,12 @@
       "type": "book",
       "title": "Handbook of the Trees of New England",
       "contributors": [
-        { "id": "a-lorin-l-dame", "name": "Lorin L. Dame", "role": "author" },
+        {
+          "id": "a-lorin-l-dame",
+          "name": "Lorin L. Dame",
+          "role": "author",
+          "wikidata": "Q18911198"
+        },
         { "id": "a-henry-brooks", "name": "Henry Brooks", "role": "author" }
       ],
       "publisher": "Ginn & Company",
@@ -4125,7 +4144,7 @@
       "size": [242, 680]
     },
     "alt": "A tall, narrow charcoal drawing on creased paper of a single staghorn sumac flower head: a loose, knobbly cone of blossom on a thick, bare stalk.",
-    "creator": { "id": "a-f-h-varley", "name": "F. H. Varley" },
+    "creator": { "id": "a-f-h-varley", "name": "F. H. Varley", "wikidata": "Q2301935" },
     "title": "Flower of the Staghorn Sumach",
     "institution": "Varley Art Gallery of Markham",
     "bibliography": "Varley, F. H. <em>Flower of the Staghorn Sumach</em>. N.d., Varley Art Gallery of Markham, Markham, Ontario.",
@@ -4184,7 +4203,7 @@
       "size": [487, 529]
     },
     "alt": "A watercolour of a cluster of ghost pipes: pale, waxy white stems tinged with pink, each bowing at the top into a drooping bell-shaped flower, one turned up to show a dark centre, on a plain grey-brown ground.",
-    "creator": { "id": "a-mary-vaux-walcott", "name": "Mary Vaux Walcott" },
+    "creator": { "id": "a-mary-vaux-walcott", "name": "Mary Vaux Walcott", "wikidata": "Q6780882" },
     "title": "Indian Pipe (Monotropa uniflora)",
     "date": "1926",
     "institution": "Smithsonian American Art Museum",
@@ -4252,7 +4271,9 @@
       "identifiers": { "internetArchive": "mobot31753002739826" },
       "type": "book",
       "volume": "1",
-      "contributors": [{ "id": "a-john-torrey", "name": "John Torrey", "role": "author" }],
+      "contributors": [
+        { "id": "a-john-torrey", "name": "John Torrey", "role": "author", "wikidata": "Q1346660" }
+      ],
       "publisher": "Carroll and Cook"
     },
     "locator": {

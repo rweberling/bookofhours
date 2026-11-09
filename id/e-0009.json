@@ -15,6 +15,12 @@
   "issued": "1871",
   "original-date": "1871",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "001027118",
+    "openlibrary": "OL6957435M",
+    "oclc": "1819857",
+    "lccn": "05021547"
+  },
   "citedBy": [
     "r-0009"
   ],

@@ -26,6 +26,11 @@
   "original-date": "1947",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "rightsNote": "translation in copyright",
+  "identifiers": {
+    "isbn": "9780415290012",
+    "openlibrary": "OL3563189M",
+    "lccn": "2002031674"
+  },
   "citedBy": [
     "r-0020"
   ],

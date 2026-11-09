@@ -22,6 +22,12 @@
   "original-date": "1964",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "rightsNote": "translation in copyright",
+  "identifiers": {
+    "isbn": "9780811219686",
+    "openlibrary": "OL25223653M",
+    "oclc": "759908624",
+    "lccn": "2012005502"
+  },
   "citedBy": [
     "r-0005"
   ],

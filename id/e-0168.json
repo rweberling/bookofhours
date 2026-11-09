@@ -7,12 +7,14 @@
     {
       "id": "a-james-edward-smith",
       "name": "James Edward Smith",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q458004"
     },
     {
       "id": "a-john-abbot",
       "name": "John Abbot",
-      "role": "illustrator"
+      "role": "illustrator",
+      "wikidata": "Q303380"
     }
   ],
   "publisher": "J. Edwards",

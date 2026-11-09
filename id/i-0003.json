@@ -11,7 +11,8 @@
   "bibliography": "Smithsonian Institution. <em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em>. Smithsonian Institution, 1904.",
   "creator": {
     "id": "a-smithsonian-institution",
-    "name": "Smithsonian Institution"
+    "name": "Smithsonian Institution",
+    "wikidata": "Q131626"
   },
   "title": null,
   "date": "1900/1904",

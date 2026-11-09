@@ -15,6 +15,10 @@
   "issued": "1914",
   "original-date": "1914",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "openlibrary": "OL53657461M",
+    "oclc": "1013448044"
+  },
   "citedBy": [
     "r-0027"
   ],

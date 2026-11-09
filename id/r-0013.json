@@ -26,7 +26,11 @@
       "publisher": "David McKay",
       "issued": "1892",
       "original-date": "1892",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "openlibrary": "OL16479300M",
+        "lccn": "43036789"
+      }
     }
   },
   "suggestedEdition": {
