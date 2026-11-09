@@ -129,6 +129,22 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - Open: the back of the Orion card reads *Uranographia* "(1960)"; it
   should be 1690.
 
+## Rights
+
+- Ryan's standing decision (9 November 2026): Claude applies rights
+  statements on its own judgment and brings him only questions and limit
+  cases. Clear cases go straight in: the holding institution's own
+  statement (its page as the basis), or the facts (published in the US
+  before 1931, or abroad before 1931 by an author dead over 70 years →
+  NoC-US; an explicit Creative Commons licence or public-domain mark →
+  that URI). Each is still logged in the Rights review sheet as "applied
+  by Claude <date>", so he can see it.
+- Always Ryan's: permission from a living artist or rights holder, the
+  excerpt-use rule for in-copyright texts (`rights.excerptUse`), whether
+  a rights note stays public on the Sources page, and any case where the
+  evidence conflicts. These go in the sheet as "needs Ryan: <question>",
+  and he hears about them by email only when there are some.
+
 ## The review desk
 
 - Each week's candidates (new readings and images, nominated by the
@@ -162,6 +178,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      the batch. Its docstring has the steps.
   3. If any desk read or write is refused or fails, carries on with the
      Sheet alone and says so in the email.
+- Records with `kind: "season"` (ids `<date>-sNN`) are season-tag
+  proposals for pieces already on the site, not nominations: never copy
+  them to the Sheet or count them as candidates. Each run applies the
+  decided ones: "Tag it" (`add`) sets the piece's (`piece`) `tags.seasons`
+  to `seasons`, or to what Ryan's note says instead; "Leave untagged"
+  (`no`) changes nothing. Then set `addedAs` to the piece's ID on the
+  desk record, and push with the week's other changes.
 - The page's own source can be fetched with the Artifact tool (`read`);
   republish to the same URL. Its records are never edited by hand except
   to fix a nomination's text; decisions are Ryan's.
