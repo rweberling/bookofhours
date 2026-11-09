@@ -328,7 +328,7 @@
     "tags": {
       "hours": ["chorus"],
       "weather": [],
-      "seasons": []
+      "seasons": ["spring"]
     }
   },
   {
@@ -360,7 +360,7 @@
     "tags": {
       "hours": ["chorus"],
       "weather": [],
-      "seasons": []
+      "seasons": ["summer"]
     },
     "display": { "verse": true }
   },
@@ -800,7 +800,7 @@
     "tags": {
       "hours": ["fulcrum"],
       "weather": [],
-      "seasons": []
+      "seasons": ["summer"]
     },
     "display": { "verse": true }
   },
@@ -954,7 +954,7 @@
     "tags": {
       "hours": ["doldrums"],
       "weather": [],
-      "seasons": []
+      "seasons": ["winter"]
     },
     "display": { "verse": true }
   },
@@ -1195,7 +1195,7 @@
     "tags": {
       "hours": ["denouement"],
       "weather": [],
-      "seasons": []
+      "seasons": ["summer"]
     },
     "display": { "verse": true }
   },
@@ -1231,7 +1231,7 @@
     "tags": {
       "hours": ["denouement"],
       "weather": [],
-      "seasons": []
+      "seasons": ["summer"]
     }
   },
   {

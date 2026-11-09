@@ -42,7 +42,9 @@
       "chorus"
     ],
     "weather": [],
-    "seasons": []
+    "seasons": [
+      "summer"
+    ]
   },
   "display": {
     "verse": true

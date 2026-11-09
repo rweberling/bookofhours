@@ -37,7 +37,9 @@
       "doldrums"
     ],
     "weather": [],
-    "seasons": []
+    "seasons": [
+      "winter"
+    ]
   },
   "display": {
     "verse": true

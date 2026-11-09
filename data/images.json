@@ -614,7 +614,7 @@
     "tags": {
       "hours": ["doldrums"],
       "weather": [],
-      "seasons": []
+      "seasons": ["summer", "autumn"]
     }
   },
   {
@@ -780,7 +780,7 @@
     "tags": {
       "hours": ["convivium"],
       "weather": [],
-      "seasons": []
+      "seasons": ["autumn"]
     }
   },
   {
@@ -806,7 +806,7 @@
     "tags": {
       "hours": ["convivium"],
       "weather": [],
-      "seasons": []
+      "seasons": ["summer"]
     }
   },
   {

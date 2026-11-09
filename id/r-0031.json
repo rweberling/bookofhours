@@ -38,7 +38,9 @@
       "denouement"
     ],
     "weather": [],
-    "seasons": []
+    "seasons": [
+      "summer"
+    ]
   },
   "display": {
     "verse": true
