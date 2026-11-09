@@ -20,6 +20,11 @@ What it posts (the streams in data/syndication.json; the plan is in the
           four more of its figures. With it, a site.standard.document
           record for the essay, its bskyPostRef pointing at the card.
 
+  records The essays published before the essay stream's "since" date:
+          a site.standard.document record for each, with no new post.
+          Its bskyPostRef is the earliest Bluesky post of the account
+          that linked to the essay (on Substack or the site), if any.
+
 What the text is made of, all from the records:
 
   - the post's first curated excerpt (syndication.excerpts on the post;
@@ -229,6 +234,14 @@ def document_record(c, post, publication, card, cover):
     return record
 
 
+def digest(record):
+    """A fingerprint of a document record's content, its picture aside
+    (a fresh upload of the same figure would differ)."""
+    import hashlib
+    rest = {k: v for k, v in record.items() if k != 'coverImage'}
+    return hashlib.sha256(json.dumps(rest, sort_keys=True).encode()).hexdigest()[:16]
+
+
 def jpeg(path):
     """A JPEG copy under the blob limit, and its size in pixels."""
     from PIL import Image
@@ -359,6 +372,7 @@ def send_essay(bs, c, post, plan, publication):
             cover, _ = bs.blob(ROOT / plan['thumb']['file'])
         record = document_record(c, post, publication, done['card'], cover)
         done['document'] = bs.create('site.standard.document', record)['uri']
+        done['digest'] = digest(record)
         save_all(c)
         print(f'{post["id"]}: document record {done["document"]}')
 
@@ -382,6 +396,108 @@ def due_essays(c):
                 and not ('card' in done and 'document' in done)):
             out.append(p)
     return sorted(out, key=lambda p: p['published'])
+
+
+def due_records(c):
+    if not (c.config['streams'].get('records') or {}).get('on'):
+        return []
+    since = (c.config['streams'].get('essay') or {}).get('since', '9999')
+    essays = c.config.get('essays') or {}
+    return sorted((p for p in posts(c.data)
+                   if p.get('page') and p.get('published', '9999') < since
+                   and (ROOT / p['page'] / 'index.html').exists()
+                   and 'document' not in (essays.get(p['id']) or {})),
+                  key=lambda p: p['published'])
+
+
+def public(method, **query):
+    url = f'https://public.api.bsky.app/xrpc/{method}?' + '&'.join(
+        f'{k}={urllib.request.quote(str(v))}' for k, v in query.items() if v is not None)
+    with urllib.request.urlopen(url, timeout=60) as r:
+        return json.loads(r.read())
+
+
+def announcements(c):
+    """The account's earliest Bluesky post linking to each essay, by post ID:
+    a link card to its Substack post (either address) or its page here."""
+    did = public('com.atproto.identity.resolveHandle', handle=c.config['account'])['did']
+    keys = {}
+    for p in posts(c.data):
+        for alias in [p.get('canonicalUrl', '').rstrip('/').rsplit('/', 1)[-1]] + (p.get('aliases') or []):
+            if alias:
+                keys[alias] = p['id']
+        if p.get('page'):
+            keys[f'{SITE}/{p["page"]}'.rstrip('/')] = p['id']
+    found, cursor = {}, None
+    while True:
+        page = public('app.bsky.feed.getAuthorFeed', actor=did, limit=100,
+                      filter='posts_no_replies', cursor=cursor)
+        for item in page['feed']:
+            post = item['post']
+            embed = post['record'].get('embed') or {}
+            if item.get('reason') or embed.get('$type') != 'app.bsky.embed.external':
+                continue
+            link = embed['external']['uri'].split('?')[0].split('#')[0].rstrip('/')
+            pid = keys.get(link) or (keys.get(link.rsplit('/', 1)[-1]) if '.substack.com' in link else None)
+            when = post['record'].get('createdAt', '')
+            if pid and (pid not in found or when < found[pid][0]):
+                found[pid] = (when, {'uri': post['uri'], 'cid': post['cid']})
+        cursor = page.get('cursor')
+        if not cursor or not page['feed']:
+            break
+    return {pid: ref for pid, (when, ref) in found.items()}
+
+
+def describe_record(c, post, ref, out):
+    figures = c.figures(post)
+    record = document_record(c, post, 'at://…/site.standard.publication/' + c.config['publication']['rkey'],
+                             ref, None)
+    out.write(f'### {post["id"]}: {record["title"]}\n\n')
+    out.write(f'- Path: {record["path"]} · published {record["publishedAt"][:10]}\n')
+    out.write(f'- Description: {record.get("description", "none")}\n')
+    out.write(f'- Cover: {figures[0]["id"] if figures else "none"}\n')
+    out.write(f'- Tags: {" ".join(record.get("tags", [])) or "none"}\n')
+    out.write(f'- Text: {len(record.get("textContent", ""))} characters of your own writing\n')
+    out.write(f'- Bluesky post: {ref["uri"] if ref else "none found"}\n\n')
+
+
+def send_record(bs, c, post, ref, publication):
+    figures = c.figures(post)
+    cover = bs.blob(ROOT / figures[0]['file'])[0] if figures else None
+    done = c.config.setdefault('essays', {}).setdefault(post['id'], {})
+    record = document_record(c, post, publication, ref, cover)
+    done['document'] = bs.create('site.standard.document', record)['uri']
+    done['digest'] = digest(record)
+    if ref:
+        done['ref'] = ref
+    save_all(c)
+    print(f'{post["id"]}: document record {done["document"]}')
+
+
+def due_updates(c, publication):
+    """Essays whose document record no longer matches their data (a
+    corrected title, new hashtags, edited writing): (post, record) pairs."""
+    out = []
+    for pid, done in (c.config.get('essays') or {}).items():
+        if 'document' not in done or 'digest' not in done:
+            continue
+        post = c.post(pid)
+        record = document_record(c, post, publication, done.get('card') or done.get('ref'), None)
+        if digest(record) != done['digest']:
+            out.append((post, record))
+    return out
+
+
+def send_update(bs, c, post, record):
+    done = c.config['essays'][post['id']]
+    rkey = done['document'].rsplit('/', 1)[-1]
+    old = bs.get('site.standard.document', rkey)
+    if old and old['value'].get('coverImage'):
+        record['coverImage'] = old['value']['coverImage']
+    bs.put('site.standard.document', rkey, record)
+    done['digest'] = digest({k: v for k, v in record.items()})
+    save_all(c)
+    print(f'{post["id"]}: updated its document record')
 
 
 def describe(plan, out):
@@ -412,29 +528,46 @@ def main():
         return
 
     due = due_essays(c)
+    records = due_records(c)
+    found = announcements(c) if records else {}
     password = os.environ.get('BLUESKY_APP_PASSWORD')
     dry = args.dry_run or not password
     if dry:
         out.write('## Syndication: dry run, nothing sent\n\n')
         if not password and not args.dry_run:
             out.write('(No BLUESKY_APP_PASSWORD secret yet.)\n\n')
-        if not due:
+        pub = f'at://{c.config.get("did", "…")}/site.standard.publication/{c.config["publication"]["rkey"]}'
+        updates = due_updates(c, pub)
+        if not due and not records and not updates:
             out.write('Nothing due.\n')
+        for p, _ in updates:
+            out.write(f'- {p["id"]}: its document record would be updated to match its data\n')
         for p in due:
             describe(compose_essay(c, p), out)
+        if records:
+            out.write(f'## {len(records)} standard.site records for earlier essays (no posts)\n\n')
+        for p in records:
+            describe_record(c, p, found.get(p['id']), out)
         return
 
     # Signing in and checking the publication record on every live run
     # shows straight away if the password stops working.
     bs = Bluesky(c.config['account'], password)
     publication = ensure_publication(bs, c)
-    if not due:
+    updates = due_updates(c, publication)
+    if not due and not records and not updates:
         out.write('Signed in; the publication record is there. Nothing due.\n')
         return
+    for p, record in updates:
+        out.write(f'- {p["id"]}: document record updated to match its data\n')
+        send_update(bs, c, p, record)
     for p in due:
         plan = compose_essay(c, p)
         describe(plan, out)
         send_essay(bs, c, p, plan, publication)
+    for p in records:
+        describe_record(c, p, found.get(p['id']), out)
+        send_record(bs, c, p, found.get(p['id']), publication)
 
 
 if __name__ == '__main__':

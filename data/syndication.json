@@ -1,5 +1,6 @@
 {
   "account": "earthlyhours.com",
+  "did": "did:plc:22xbcrtgxutvljovuq4p4ymf",
   "publication": {
     "rkey": "3mzvrybmcqm3x",
     "name": "Lectio Terra",
@@ -9,7 +10,8 @@
   },
   "standingTags": ["phenology", "naturewriting"],
   "streams": {
-    "essay": { "on": true, "since": "2026-11-10" }
+    "essay": { "on": true, "since": "2026-11-09" },
+    "records": { "on": false }
   },
   "log": []
 }

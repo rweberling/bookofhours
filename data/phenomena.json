@@ -3,21 +3,42 @@
     "id": "ph-0001",
     "name": "Rain Clouds",
     "latin": "Nimbostratus praecipitatio",
-    "wikidata": null
+    "wikidata": null,
+    "hashtags": ["clouds", "rain", "weather"]
   },
   {
     "id": "ph-0002",
     "name": "Cambridge Argillite",
     "latin": "Argillita cantabrigiensis",
-    "wikidata": null
+    "wikidata": null,
+    "hashtags": ["geology", "bedrock", "rocks"]
   },
-  { "id": "ph-0003", "name": "Sunspots", "latin": "Maculae solares", "wikidata": null },
-  { "id": "ph-0004", "name": "Dog Days", "latin": "Dies caniculares", "wikidata": null },
+  {
+    "id": "ph-0003",
+    "name": "Sunspots",
+    "latin": "Maculae solares",
+    "wikidata": null,
+    "hashtags": ["sunspots", "sun", "astronomy"]
+  },
+  {
+    "id": "ph-0004",
+    "name": "Dog Days",
+    "latin": "Dies caniculares",
+    "wikidata": null,
+    "hashtags": ["dogdays", "sirius", "summer"]
+  },
   {
     "id": "ph-0005",
     "name": "Perseids",
     "latin": "Lacrimae Sancti Laurentii",
-    "wikidata": null
+    "wikidata": null,
+    "hashtags": ["perseids", "meteors", "astronomy"]
   },
-  { "id": "ph-0006", "name": "First Frost", "latin": "Prima pruina", "wikidata": null }
+  {
+    "id": "ph-0006",
+    "name": "First Frost",
+    "latin": "Prima pruina",
+    "wikidata": null,
+    "hashtags": ["frost", "firstfrost", "weather"]
+  }
 ]

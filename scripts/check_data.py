@@ -107,6 +107,35 @@ def post_readings(post):
 INDENTED = re.compile(r'(?:^|<p>|<br>)(?: |&nbsp;| ){2,}\S')
 
 
+TAG = re.compile(r'[a-z0-9]{1,64}')
+
+
+def syndication_problems(lectio, readings, writing, subjects):
+    """What scripts/syndicate.py would send wrongly: a hashtag that isn't
+    one lower-case word, or an excerpt that is no longer word for word in
+    the record it names (after a correction to that record, say)."""
+    from syndicate import plain as syn_plain
+    problems = []
+    texts = {r['id']: re.sub(r'\s+', ' ', syn_plain(r.get('text') or '')).replace('\u2060', '')
+             for r in readings + writing}
+    for s in subjects:
+        for tag in s.get('hashtags') or []:
+            if not TAG.fullmatch(tag):
+                problems.append(f'{s["id"]}: hashtag "{tag}" is not one lower-case word')
+    for post in (e for items in lectio.get('seasons', {}).values() for e in items):
+        syn = post.get('syndication') or {}
+        for tag in syn.get('hashtags') or []:
+            if not TAG.fullmatch(tag):
+                problems.append(f'{post["id"]}: hashtag "{tag}" is not one lower-case word')
+        for ex in syn.get('excerpts') or []:
+            text = re.sub(r'\s+', ' ', ex.get('text') or '').replace('\u2060', '')
+            if ex.get('from') not in texts:
+                problems.append(f'{post["id"]}: excerpt from {ex.get("from")}, which is not a reading or writing record')
+            elif text not in texts[ex['from']]:
+                problems.append(f'{post["id"]}: excerpt no longer word for word in {ex["from"]}: "{text[:50]}…"')
+    return problems
+
+
 def post_text_problems(lectio, readings, subjects):
     """What would show wrongly on a post's page, though the data is whole:
     a reading with nothing in its list (its passage strayed outside it,
@@ -304,6 +333,7 @@ def main():
                 errors.append(f'{r["id"]}: marked as verse, but {problem}; run: python3 scripts/verse.py {r["id"]}')
 
     errors.extend(post_text_problems(lectio, readings, species + phenomena))
+    errors.extend(syndication_problems(lectio, readings, writing, species + phenomena))
     errors.extend(conflict_markers())
 
     # Writing: a known kind and some text; in the Hours, one versicle per

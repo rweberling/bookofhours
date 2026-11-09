@@ -226,7 +226,7 @@ When a post has gone out on Bluesky, `scripts/syndicate.py` records it in
 standard.site `document` record, whose address the post's page names in
 its head. A post may also carry `syndication`: `hashtags`
 for that essay and `excerpts` (each `from`, a record ID, and `text`, word
-for word from it) for its Bluesky posts. A species or phenomenon record's
+for word from it) for its Bluesky posts (`check_data.py` checks each is still word for word in its record). A species or phenomenon record's
 `hashtags` are used for every post about it.
 
 Each post also has a `body`: its pieces in order (headings, figures,

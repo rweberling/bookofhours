@@ -75,7 +75,27 @@
             "image": "i-0041"
           }
         ],
-        "page": "lectio-terra/sugar-maple/"
+        "page": "lectio-terra/sugar-maple/",
+        "syndication": {
+          "hashtags": [
+            "maplesyrup",
+            "kairos"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0038",
+              "text": "Welcome to maple time, if you live in my corner of North America."
+            },
+            {
+              "from": "w-0038",
+              "text": "Which is all to say that maple season is a time of contingency and kairos—that is, of indeterminate chances aligning to produce the fullness of time, the ripe moment."
+            },
+            {
+              "from": "w-0038",
+              "text": "And seize the moment this spring, as the motivational content might say, but also realize that the moment may seize you back."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0002",
@@ -156,7 +176,27 @@
             "image": "i-0123"
           }
         ],
-        "page": "lectio-terra/american-robin/"
+        "page": "lectio-terra/american-robin/",
+        "syndication": {
+          "hashtags": [
+            "emilydickinson",
+            "migration"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0036",
+              "text": "Last week were the first morning bird songs that I have noticed, riding quietly in the car with my partner after dropping our kids at school."
+            },
+            {
+              "from": "w-0036",
+              "text": "I didn’t know it at the time, but that bright morning lay roughly equidistant between the final blizzard of the winter (a nor’easter, as they call it) and a season finale of delicate snow turned into freezing rain."
+            },
+            {
+              "from": "w-0036",
+              "text": "Thrushes are passerine, or perching, birds within the order Passeriformes, a highly diverse clade comprising approximately half of the world’s bird species."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0004",
@@ -234,7 +274,27 @@
             ]
           }
         ],
-        "page": "lectio-terra/paper-birch/"
+        "page": "lectio-terra/paper-birch/",
+        "syndication": {
+          "hashtags": [
+            "robertfrost",
+            "succession"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0040",
+              "text": "Betulin’s protective qualities make the paper birch a sort of superhero tree, allowing it to serve as a ruderal, or early successional species."
+            },
+            {
+              "from": "w-0040",
+              "text": "It arrives first in disturbed and vulnerable landscapes, growing quickly to create a habitat for other trees."
+            },
+            {
+              "from": "r-0044",
+              "text": "After fires and clearings, paper birch, with aspen, is often the first species to occupy the ground."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0009",
@@ -322,7 +382,27 @@
             "image": "i-0060"
           }
         ],
-        "page": "lectio-terra/great-mullein/"
+        "page": "lectio-terra/great-mullein/",
+        "syndication": {
+          "hashtags": [
+            "herbalism",
+            "hildegardofbingen"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0051",
+              "text": "Soft shelter or overpowering intruder, symbol of resilience and rage, a cure but also a poison, mullein survives our weeding and may, in the long run, survive us."
+            },
+            {
+              "from": "w-0051",
+              "text": "Its seeds can lie dormant in soil for more than 100 years, until disturbed into the light."
+            },
+            {
+              "from": "w-0051",
+              "text": "The wooly, silver-green leaves were hard to miss in my community garden plot last spring."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0005",
@@ -400,7 +480,28 @@
             "image": "i-0047"
           }
         ],
-        "page": "lectio-terra/rain-clouds/"
+        "page": "lectio-terra/rain-clouds/",
+        "syndication": {
+          "hashtags": [
+            "goethe",
+            "jennyodell",
+            "cloudspotting"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0042",
+              "text": "Have I mentioned that springtime can be a polarized, multitudinous season?"
+            },
+            {
+              "from": "w-0042",
+              "text": "Cloud-reading is a fitting activity for such a season, with its paradoxical fusion of attention and lethargy, strain and relaxation, precision and imagination."
+            },
+            {
+              "from": "w-0042",
+              "text": "If you didn’t know that The International Cloud Atlas exists, then you do now."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0007",
@@ -478,7 +579,27 @@
             "image": "i-0054"
           }
         ],
-        "page": "lectio-terra/ostrich-fern/"
+        "page": "lectio-terra/ostrich-fern/",
+        "syndication": {
+          "hashtags": [
+            "heidegger",
+            "physis"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0046",
+              "text": "Both a being as such and a symbol of existence itself, the fern is older, gentler, queerer—and tastier—even than Heidegger’s metaphysics."
+            },
+            {
+              "from": "r-0051",
+              "text": "The young leaf grows much more rapidly than the stem, and soon projects beyond it."
+            },
+            {
+              "from": "w-0046",
+              "text": "The Matteuccia genus is named after Italian physicist Carlo Matteucci (1800–1868), and the struthiopteris species is from the Greek strouthós, “bird,” plus pteron, “wing” or “feather.”"
+            }
+          ]
+        }
       },
       {
         "id": "lt-0006",
@@ -564,7 +685,27 @@
             "image": "i-0051"
           }
         ],
-        "page": "lectio-terra/dutch-crocus/"
+        "page": "lectio-terra/dutch-crocus/",
+        "syndication": {
+          "hashtags": [
+            "saffron",
+            "earlyspring"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0044",
+              "text": "They can return each spring almost too early, before the snow melts, before the robins return, before the atmosphere warms (let alone the soil)."
+            },
+            {
+              "from": "w-0044",
+              "text": "Here in my urban neighborhood, the Dutch crocus (Crocus vernus) blooms in tandem with the snowdrops (Galanthus nivalis) and just prior to the daffodils (Narcissus pseudonarcissus)."
+            },
+            {
+              "from": "w-0044",
+              "text": "Though long associated with the cradle(s) of civilization, the saffron crocus (Crocus sativus), source of the world’s most expensive spice, now is being cultivated across New England, all the way out to Provincetown."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0008",
@@ -642,7 +783,27 @@
             ]
           }
         ],
-        "page": "lectio-terra/eastern-cottontail/"
+        "page": "lectio-terra/eastern-cottontail/",
+        "syndication": {
+          "hashtags": [
+            "zoranealehurston",
+            "folklore"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0048",
+              "text": "Few creatures are more storied than the rabbit and its cousin, the hare."
+            },
+            {
+              "from": "w-0048",
+              "text": "I like to think the kids and the rabbits share a special connection, as both introduce a mix of docile dependence and feral wildness into the adult- and concrete-dominated cityscape."
+            },
+            {
+              "from": "r-0053",
+              "text": "The snow heaps up, shutting her into a sort of crystal-white cavern."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0010",
@@ -718,7 +879,27 @@
             "image": "i-0124"
           }
         ],
-        "page": "lectio-terra/sheet-moss/"
+        "page": "lectio-terra/sheet-moss/",
+        "syndication": {
+          "hashtags": [
+            "hildegardofbingen",
+            "viriditas"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0053",
+              "text": "If there’s a plant that reminds me of God, it’s probably moss."
+            },
+            {
+              "from": "w-0053",
+              "text": "Indeed, the plant’s biology is as ornate and rarefied as any systematic theology."
+            },
+            {
+              "from": "w-0053",
+              "text": "Look to the decaying ground and the rocky crevices for a soft brush with the Creator."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0011",
@@ -804,7 +985,28 @@
             "image": "i-0066"
           }
         ],
-        "page": "lectio-terra/cambridge-argillite/"
+        "page": "lectio-terra/cambridge-argillite/",
+        "syndication": {
+          "hashtags": [
+            "wittgenstein",
+            "avalonia",
+            "boston"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0055",
+              "text": "You may find a surprising history beneath your feet."
+            },
+            {
+              "from": "w-0055",
+              "text": "A while back, when the continents were arranged much differently, the bedrock of present-day Boston was adrift on the Iapetus Ocean as part of a microcontinent called Avalonia."
+            },
+            {
+              "from": "r-0061",
+              "text": "The surface is sometimes rendered beautifully pavonine, irised and chatoyant from the presence of Oxide of Iron."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0012",
@@ -885,7 +1087,27 @@
             "image": "i-0069"
           }
         ],
-        "page": "lectio-terra/common-lilac/"
+        "page": "lectio-terra/common-lilac/",
+        "syndication": {
+          "hashtags": [
+            "amylowell",
+            "arnoldarboretum"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0057",
+              "text": "Although only 20 to 25 species of lilacs exist in the wild, more than 2,000 named cultivars (according to the official International Lilac Registrar) have been developed, most over the past 150 years."
+            },
+            {
+              "from": "r-0063",
+              "text": "This year at Highland Park, when the lilacs were at their best, they were inspected by over 30,000 visitors in one day, who had only words of appreciation and admiration for them."
+            },
+            {
+              "from": "r-0064",
+              "text": "Offering a light, lilac wine, sweet and heady, Miami circled, here and there."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0013",
@@ -973,7 +1195,27 @@
             "image": "i-0072"
           }
         ],
-        "page": "lectio-terra/living-soil/"
+        "page": "lectio-terra/living-soil/",
+        "syndication": {
+          "hashtags": [
+            "microbiome",
+            "soilhealth"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0060",
+              "text": "Indeed, recent research suggests that more than half of all species on Earth dwell primarily beneath our feet, in the microcosmos of infinitesimal life."
+            },
+            {
+              "from": "w-0060",
+              "text": "When the eccentric Dutch experimentalist Antonie van Leeuwenhoek first observed bacteria in 1676, he referred to the amusing little things he observed squirming in water as “animalcules.”"
+            },
+            {
+              "from": "w-0060",
+              "text": "The existence of good germs means that sterility is not synonymous with health; and while hygiene is still crucial, so is biodiversity—not just out in nature, but around us and inside us."
+            }
+          ]
+        }
       }
     ],
     "summer": [
@@ -1056,7 +1298,27 @@
             "image": "i-0081"
           }
         ],
-        "page": "lectio-terra/pink-ladys-slipper/"
+        "page": "lectio-terra/pink-ladys-slipper/",
+        "syndication": {
+          "hashtags": [
+            "gracegreylockniles",
+            "botany"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0066",
+              "text": "It has a delicate yet visceral form, immediately striking and beautiful but a bit gory if you think about it for too long."
+            },
+            {
+              "from": "w-0066",
+              "text": "It’s the type of plant that seems to have nearly universal appeal, spawning refined social and scientific clubs while also luring weirdos out into the woods."
+            },
+            {
+              "from": "r-0074",
+              "text": "To the unscientific lover of flowers the name Lady’s Slipper brings up a delightful vision of a quaint rose-colored flower, with an airy balloon-like pouch."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0017",
@@ -1134,7 +1396,28 @@
             "image": "i-0084"
           }
         ],
-        "page": "lectio-terra/sunspots/"
+        "page": "lectio-terra/sunspots/",
+        "syndication": {
+          "hashtags": [
+            "galileo",
+            "spaceweather",
+            "solstice"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0068",
+              "text": "Though normal human persons rarely notice it, the solar cycle influences the type and intensity of radiation surging toward our planet at any given moment."
+            },
+            {
+              "from": "w-0068",
+              "text": "They were made infamous by Galileo Galilei in 1612, when he circulated a pamphlet challenging Aristotle’s view that the sun was an unblemished, immutable sphere."
+            },
+            {
+              "from": "w-0068",
+              "text": "Sunspots (maculae solares in Latin) were first observed in China nearly 3000 years ago, in the I Ching, preceding Theophrastus’ observations in Ancient Greece by several centuries."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0025",
@@ -1227,7 +1510,27 @@
             "image": "i-0109"
           }
         ],
-        "page": "lectio-terra/cucurbits/"
+        "page": "lectio-terra/cucurbits/",
+        "syndication": {
+          "hashtags": [
+            "margepiercy",
+            "harvest"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0085",
+              "text": "The cucurbits are a messy family despite being domesticated approximately 11,000 years ago across Asia, Africa, and the Americas (ask them about their transatlantic and trans-Siberian journeys)."
+            },
+            {
+              "from": "w-0085",
+              "text": "Like the butterfly weed, cucurbits produce bitter, toxic steroids as a defense mechanism."
+            },
+            {
+              "from": "r-0092",
+              "text": "Courgettes are a type of squash: their flowers can be male or female, but both wear skirts of yellow taffeta."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0014",
@@ -1305,7 +1608,27 @@
             "image": "i-0075"
           }
         ],
-        "page": "lectio-terra/common-reed/"
+        "page": "lectio-terra/common-reed/",
+        "syndication": {
+          "hashtags": [
+            "rumi",
+            "poetry"
+          ],
+          "excerpts": [
+            {
+              "from": "r-0068",
+              "text": "Listen to the reed how it tells a tale, complaining of separations—"
+            },
+            {
+              "from": "w-0062",
+              "text": "When he also compares the reed to wine, I can’t help but think that he is imagining its maroon-burgundy tassel, or panicle—one of my favorite sights in the blowing summer wind."
+            },
+            {
+              "from": "r-0069",
+              "text": "In a wind the leaf turns partly round like a flag."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0015",
@@ -1383,7 +1706,27 @@
             "image": "i-0078"
           }
         ],
-        "page": "lectio-terra/wool-sower-wasp/"
+        "page": "lectio-terra/wool-sower-wasp/",
+        "syndication": {
+          "hashtags": [
+            "oaks",
+            "parasites"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0064",
+              "text": "The cecidiologists who dedicate themselves to the study of plant galls are like kids in an alien candy shop filled with strange slimes, jellies, hunks, orbs, and pellets."
+            },
+            {
+              "from": "w-0064",
+              "text": "And the gall wasps themselves are as surprising as their genetically pirated abodes."
+            },
+            {
+              "from": "w-0064",
+              "text": "Now, instead of growing branches, buds, and leaves, the tree instead creates a novel structure specifically tailored to feed and protect the larva."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0018",
@@ -1461,7 +1804,27 @@
             "image": "i-0087"
           }
         ],
-        "page": "lectio-terra/serviceberry/"
+        "page": "lectio-terra/serviceberry/",
+        "syndication": {
+          "hashtags": [
+            "robinwallkimmerer",
+            "foraging"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0070",
+              "text": "It’s not every day you get to experience a new taste, a new texture—a new food—at the same time as your child, while both perched atop a long-tail cargo bicycle behind their elementary school."
+            },
+            {
+              "from": "w-0070",
+              "text": "We rolled off a few minutes later to meet the rest of the family, sweetened and sated."
+            },
+            {
+              "from": "r-0078",
+              "text": "It is with some hesitation that the writer attempts a treatment of a genus which in the past has been subject to so much difference of opinion as Amelanchier."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0019",
@@ -1546,7 +1909,27 @@
             "image": "i-0090"
           }
         ],
-        "page": "lectio-terra/red-currant/"
+        "page": "lectio-terra/red-currant/",
+        "syndication": {
+          "hashtags": [
+            "fruit",
+            "gardening"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0072",
+              "text": "Unlike the misleading serviceberry, which is in fact a pome, the red currant or (if you’re British) redcurrant is a true berry."
+            },
+            {
+              "from": "w-0072",
+              "text": "To propagate it, you need only chop a few branches and stick them into dirt or water."
+            },
+            {
+              "from": "r-0080",
+              "text": "Currant shrub is a pleasant summer drink, made from the ripe fruit crushed and compounded like lemonade."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0020",
@@ -1639,7 +2022,27 @@
             "image": "i-0094"
           }
         ],
-        "page": "lectio-terra/corn/"
+        "page": "lectio-terra/corn/",
+        "syndication": {
+          "hashtags": [
+            "haudenosaunee",
+            "foodhistory"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0074",
+              "text": "In my personal opinion, much resisted by the chatbots I consulted, corn is the berries of the vegetable world."
+            },
+            {
+              "from": "w-0074",
+              "text": "In other words, it’s a grass that produces sweet clusters that you eat like a carrot."
+            },
+            {
+              "from": "w-0074",
+              "text": "You may have noticed that corn does not exist in the wild; you can’t pluck an ear from your nearby nature trail."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0021",
@@ -1727,7 +2130,27 @@
             "image": "i-0126"
           }
         ],
-        "page": "lectio-terra/highbush-blueberry/"
+        "page": "lectio-terra/highbush-blueberry/",
+        "syndication": {
+          "hashtags": [
+            "agriculture",
+            "foodhistory"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0076",
+              "text": "The recentness of this history makes the process of domestication much more visible than for other cultured plants."
+            },
+            {
+              "from": "w-0076",
+              "text": "These wild varieties emerged in the northeastern corner of the continent some 10,000 years ago, when glaciers receded and left behind fields of thin, acidic topsoil."
+            },
+            {
+              "from": "w-0076",
+              "text": "You can visit them today and look out over ancient tangles of stems, roots, and berries, spreading and multiplying via underground clones."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0022",
@@ -1807,7 +2230,28 @@
             "image": "i-0099"
           }
         ],
-        "page": "lectio-terra/butterfly-weed/"
+        "page": "lectio-terra/butterfly-weed/",
+        "syndication": {
+          "hashtags": [
+            "monarchs",
+            "pollinators",
+            "paulmuldoon"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0078",
+              "text": "I came to appreciate butterfly weed through my wife Meghan’s occasional summer pickings."
+            },
+            {
+              "from": "w-0078",
+              "text": "The poison is a family affair—milkweeds are part of the dogbane (Apocynaceae) family, some members of which were traditionally used to make the ends of darts and arrows deadly toxic."
+            },
+            {
+              "from": "w-0078",
+              "text": "Unlike other milkweeds, which produce a milky latex that they release when damaged, butterfly weed runs a clear or greenish sap."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0023",
@@ -1899,7 +2343,28 @@
             "image": "i-0102"
           }
         ],
-        "page": "lectio-terra/dog-days/"
+        "page": "lectio-terra/dog-days/",
+        "syndication": {
+          "hashtags": [
+            "heraclitus",
+            "horace",
+            "heat"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0081",
+              "text": "You’ve probably heard or perhaps used the phrase in casual conversation, but did you know that it originates in a bit of astronomical confusion from thousands of years ago?"
+            },
+            {
+              "from": "w-0081",
+              "text": "When the ancient Greeks and Romans noticed this phenomena, they reasoned incorrectly that the light of Sirius was combining with that of the sun and thereby multiplying the summer’s heat."
+            },
+            {
+              "from": "w-0081",
+              "text": "“Dog-days,” apparently, are a great time to think about queens and catalog them with a lover."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0024",
@@ -1984,7 +2449,27 @@
             "image": "i-0105"
           }
         ],
-        "page": "lectio-terra/perseids/"
+        "page": "lectio-terra/perseids/",
+        "syndication": {
+          "hashtags": [
+            "thoreau",
+            "meteorshower"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0083",
+              "text": "Although it offers no liquid relief to the summer heat, this shower is a long debris trail with an equally long tale to tell."
+            },
+            {
+              "from": "r-0090",
+              "text": "The poet must be continually watching the moods of his mind as the astronomer watches the aspects of the heavens."
+            },
+            {
+              "from": "r-0090",
+              "text": "You shall observe what occurs in your latitude, I in mine."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0026",
@@ -2072,7 +2557,27 @@
             "image": "i-0112"
           }
         ],
-        "page": "lectio-terra/melons-and-cucumbers/"
+        "page": "lectio-terra/melons-and-cucumbers/",
+        "syndication": {
+          "hashtags": [
+            "marcusaurelius",
+            "etymology"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0087",
+              "text": "Which is messier, the history of words or of plants?"
+            },
+            {
+              "from": "w-0087",
+              "text": "While Kabocha's name wandered from the truth, cucumber's name never moved at all—but the plant beneath it did."
+            },
+            {
+              "from": "r-0094",
+              "text": "A cucumber is bitter.⁠—Throw it away.⁠—There are briars in the road.⁠—Turn aside from them.⁠—This is enough."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0027",
@@ -2164,7 +2669,27 @@
             "image": "i-0115"
           }
         ],
-        "page": "lectio-terra/watermelon/"
+        "page": "lectio-terra/watermelon/",
+        "syndication": {
+          "hashtags": [
+            "sylviaplath",
+            "summer"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0089",
+              "text": "This week's post is dedicated to my dad, who always has a watermelon-in-progress in his fridge, covered with an elastic shower cap."
+            },
+            {
+              "from": "w-0090",
+              "text": "Indeed, the watermelon has such a high water content that it used to be carried on journeys like “a kind of nature-made canteen.”"
+            },
+            {
+              "from": "w-0090",
+              "text": "But that literalness conceals an apparent contradiction: wild and ancestral watermelons are xerophytic (“dry” + “plant”), requiring little water to grow."
+            }
+          ]
+        }
       }
     ],
     "autumn": [
@@ -2277,7 +2802,27 @@
             "image": "i-0119"
           }
         ],
-        "page": "lectio-terra/northern-red-oak/"
+        "page": "lectio-terra/northern-red-oak/",
+        "syndication": {
+          "hashtags": [
+            "forests",
+            "susanfenimorecooper"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0092",
+              "text": "Whether scenery or sustenance, god or gallows, the oak reaches and tangles and expands, like the famous Angel Oak in South Carolina."
+            },
+            {
+              "from": "r-0098",
+              "text": "It is the peculiar nature of the forest, that life and death may ever be found within its bounds, in immediate presence of each other"
+            },
+            {
+              "from": "r-0099",
+              "text": "Nevertheless, nine hundred years is by no means the limit of oak life."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0029",
@@ -2380,7 +2925,27 @@
             "image": "i-0122"
           }
         ],
-        "page": "lectio-terra/shagbark-hickory/"
+        "page": "lectio-terra/shagbark-hickory/",
+        "syndication": {
+          "hashtags": [
+            "carlsandburg",
+            "forests"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0094",
+              "text": "A fully shagged-out trunk embodies something between an elegant cascade and a strewn-out mess—a poise we might all hope to achieve, if we are so lucky."
+            },
+            {
+              "from": "w-0094",
+              "text": "Hickory trees found their name in English by shortening the Algonquin or Powhatan word, pawcohiccora, which refers to the flour or milk made from crushing hickory nuts dry or in water."
+            },
+            {
+              "from": "w-0094",
+              "text": "Massachusetts, as the state likes to brag, is the third-densest state in the U.S. but also the 11th-most-forested."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0030",
@@ -2476,7 +3041,27 @@
           }
         ],
         "page": "lectio-terra/common-pawpaw/",
-        "subject": "sp-0025"
+        "subject": "sp-0025",
+        "syndication": {
+          "hashtags": [
+            "foraging",
+            "megafauna"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0097",
+              "text": "This custardy delectation, the largest native tree fruit in the U.S., has a curious backstory and is much beloved in such circles but otherwise hardly known."
+            },
+            {
+              "from": "w-0097",
+              "text": "The reason is that the fruit is largely non-commercializable, because it spoils within days of picking."
+            },
+            {
+              "from": "r-0107",
+              "text": "When there was a megafauna available to disperse their seeds, such genera may have been denser and had much wider ranges."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0031",
@@ -2564,7 +3149,28 @@
           }
         ],
         "page": "lectio-terra/ghost-pipe/",
-        "subject": "sp-0027"
+        "subject": "sp-0027",
+        "syndication": {
+          "hashtags": [
+            "emilydickinson",
+            "fungi",
+            "mycorrhizae"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0101",
+              "text": "But in the spirit of veering, I present instead a more mysterious offering: a non-photosynthesizing parasite nonetheless described by Emily Dickinson as “the preferred flower of life.”"
+            },
+            {
+              "from": "w-0101",
+              "text": "By autumn, however, the plant has turned from ghost to zombie, as its nodding head lifts to release its seeds, and the now-erect stalk dries into blacks and browns."
+            },
+            {
+              "from": "r-0113",
+              "text": "Monotropa lured botanists into uncovering an entirely new biological possibility."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0032",
@@ -2661,7 +3267,27 @@
           }
         ],
         "page": "lectio-terra/staghorn-sumac/",
-        "subject": "sp-0026"
+        "subject": "sp-0026",
+        "syndication": {
+          "hashtags": [
+            "naturaldye",
+            "autumnleaves"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0099",
+              "text": "In the lower gaps of the forest, or in its damaged peripheries, the sumac thrives."
+            },
+            {
+              "from": "w-0099",
+              "text": "In North America, the berries were steeped to produce a brilliant pink, slightly acidic tea comparable to lemonade."
+            },
+            {
+              "from": "r-0111",
+              "text": "The Sumach, especially in the fall, is a thing of beauty with its handsome pinnately divided foliage and large red bunches of fruit at the ends of the branches."
+            }
+          ]
+        }
       },
       {
         "id": "lt-0033",
@@ -2748,7 +3374,27 @@
           }
         ],
         "page": "lectio-terra/first-frost/",
-        "subject": "ph-0006"
+        "subject": "ph-0006",
+        "syndication": {
+          "hashtags": [
+            "hannaharendt",
+            "natality"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0103",
+              "text": "Is it death or birth that defines the earthly conditions of the human?"
+            },
+            {
+              "from": "w-0103",
+              "text": "But it’s more of a gradient than a line: a dip in temperatures may blacken tender basil leaves or dahlias, but hardy kale and asters will persist for a while longer."
+            },
+            {
+              "from": "r-0114",
+              "text": "Till fell the frost from the clear cold heaven, as falls the plague on men,"
+            }
+          ]
+        }
       }
     ],
     "winter": [
@@ -2827,7 +3473,27 @@
             "image": "i-0036"
           }
         ],
-        "page": "lectio-terra/witch-hazel/"
+        "page": "lectio-terra/witch-hazel/",
+        "syndication": {
+          "hashtags": [
+            "nietzsche",
+            "winterbloom"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0034",
+              "text": "The plant’s strange time-keeping can remind us to look again at dormant life and feel something different in the cold air."
+            },
+            {
+              "from": "w-0034",
+              "text": "In that spirit, may witch hazel be an “encouragement,” as Nietzsche writes, “to live after our own rule and measure.”"
+            },
+            {
+              "from": "r-0037",
+              "text": "October 20th - One by one the lingering wild flowers have succumbed to the frosts; a few of the hardy asters being the only reminders of the regal glory of the October copses."
+            }
+          ]
+        }
       }
     ]
   },
