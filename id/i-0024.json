@@ -1,0 +1,38 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0024/",
+  "id": "i-0024",
+  "aliases": [
+    "i-brigman-infinitude"
+  ],
+  "shownIn": "hours",
+  "file": "images/doldrums_brigman.jpg",
+  "caption": "Anne Brigman, <a href=\"https://www.photola.com/virtual/galleries/2020/44/images/15_big.jpg\" target=\"_blank\"><em>Infinitude</em></a> (c. 1910)",
+  "alt": "A soft-focus photograph: a tall black cliff and a windswept pine frame a pale, misty sea, and a tiny white-robed figure stands alone on the rocks at its foot.",
+  "bibliography": "Brigman, Anne. <em>Infinitude</em>. c. 1910.",
+  "creator": {
+    "id": "a-anne-brigman",
+    "name": "Anne Brigman",
+    "wikidata": "Q434674"
+  },
+  "title": "Infinitude",
+  "date": "1910~",
+  "institution": null,
+  "links": [
+    {
+      "role": "cited",
+      "label": "photola.com",
+      "url": "https://www.photola.com/virtual/galleries/2020/44/images/15_big.jpg"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "hosted scan may carry separate rights — consider sourcing museum copy",
+  "tags": {
+    "hours": [
+      "doldrums"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

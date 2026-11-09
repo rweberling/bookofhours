@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0065/",
+  "id": "i-0065",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-3-3b53b178df53.jpg",
+  "caption": "View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al., “<a href=\"https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf\">Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows</a>” (2014).",
+  "alt": "A photograph of a ridge of dark grey, finely layered rock on a pebbly island shore, with a notebook and compass resting on it and the sea and a distant coastline behind.",
+  "bibliography": "Thompson, Peter J., et al. View of Cambridge Argillite in the Boston Harbor Islands. \"Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows,\" <em>Guidebook to Field Trips in Southeastern New England (MA-NH-RI)</em>, edited by Margaret D. Thompson, New England Intercollegiate Geological Conference, 2014, pp. C1-1–C1-32.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wellesley College",
+      "url": "https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0011",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "phenomena": [
+      "ph-0002"
+    ]
+  },
+  "display": {
+    "size": [
+      696,
+      629
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

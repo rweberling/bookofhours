@@ -21,6 +21,12 @@
       "identifier": "https://earthlyhours.com",
       "relation": "isVersionOf",
       "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/rweberling/bookofhours",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
     }
-  ]
+  ],
+  "notes": "A snapshot of the site's repository. Copyright Ryan Weberling, all rights reserved, except the collection's metadata in data/, licensed CC BY-NC 4.0 (data/LICENSE.md), and the public-domain works the site quotes or reproduces. Quoted texts and images still in copyright are included only as the site presents them, and keep their own terms. Full terms: LICENSE."
 }

@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0110/",
+  "id": "e-0110",
+  "type": "book",
+  "title": "Autumn Flowers and Fruits",
+  "contributors": [
+    {
+      "id": "a-j-francis-macbride",
+      "name": "J. Francis Macbride",
+      "role": "author"
+    }
+  ],
+  "publisher": "Field Museum of Natural History",
+  "issued": "1924-10",
+  "identifiers": {
+    "hathitrust": "100697661",
+    "internetArchive": "autumnflowersfru10macb",
+    "oclc": "7548180",
+    "openlibrary": "OL7115465M",
+    "lccn": "cd30000015"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0111",
+    "i-0035"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

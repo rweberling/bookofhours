@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0076/",
+  "id": "r-0076",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Simon Barraclough. <em><a href=\"https://bookshop.org/a/86532/9781908058416\">Sunspots</a>. </em>London, England: Penned in the Margins, 2015.",
+    "bibliography": "Barraclough, Simon. <em>Sunspots</em>. Penned in the Margins, 2015.",
+    "title": "Sunspots",
+    "written": "2015",
+    "edition": {
+      "id": "e-0076",
+      "type": "book",
+      "title": "Sunspots",
+      "contributors": [
+        {
+          "id": "a-simon-barraclough",
+          "name": "Simon Barraclough",
+          "role": "author"
+        }
+      ],
+      "publisher": "Penned in the Margins",
+      "issued": "2015",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9781908058416"
+  },
+  "lectio": {
+    "post": "lt-0017",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0003",
+        "basis": "both",
+        "note": "Personifies the sun and names real solar phenomena: flares, flux ropes, neutrinos, sunspots."
+      }
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "For having risen and settled into her groove she begins to consider herself. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

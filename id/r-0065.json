@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0065/",
+  "id": "r-0065",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Jenifer Wightman, “<a href=\"https://doi.org/10.1177/1470412908096339\" target=\"_blank\"><em>Winogradsky Rothko</em>: Bacterial Ecosystem as Pastoral Landscape</a>.” <em>Journal of Visual Culture</em> 7.3 (December 2008: 309-334), p. 312.",
+    "bibliography": "Wightman, Jenifer. \"<em>Winogradsky Rothko</em>: Bacterial Ecosystem as Pastoral Landscape.\" <em>Journal of Visual Culture</em>, vol. 7, no. 3, Dec. 2008, pp. 309–334.",
+    "title": "Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape",
+    "written": "2008-12",
+    "locator": {
+      "page": "312",
+      "url": "https://doi.org/10.1177/1470412908096339",
+      "label": "DOI"
+    },
+    "edition": {
+      "id": "e-0065",
+      "type": "article",
+      "title": "Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape",
+      "container": "Journal of Visual Culture",
+      "volume": "7",
+      "pages": "309–334",
+      "contributors": [
+        {
+          "id": "a-jenifer-wightman",
+          "name": "Jenifer Wightman",
+          "role": "author",
+          "wikidata": "Q95646046"
+        }
+      ],
+      "issued": "2008-12",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "identifiers": {
+        "doi": "10.1177/1470412908096339"
+      }
+    }
+  },
+  "lectio": {
+    "post": "lt-0013",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0011"
+    ]
+  },
+  "firstLine": "Bacteria are the original synthesizers. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

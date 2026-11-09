@@ -1,0 +1,60 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0086/",
+  "id": "r-0086",
+  "shownIn": "seasons",
+  "text": "<p>Hirsute-pubescent; stems stout, simple, or branched near the summit, ascending or erect, very leafy, 1°-2° high, the milky sap scanty. Leaves alternate, lanceolate or oblong, acute or sometimes obtuse at the apex, narrowed, rounded or cordate at the base, sessile or short-petioled, 2’- 6’ long, 2”-12” wide; umbels cymose, terminal, many-flowered; peduncles shorter than the leaves; pedicels 1/2’-1’ long; corolla-segments about 3” long, greenish orange; corona-column about 1\\2” long; hoods erect, oblong, bright orange, or yellow, 2-3 times as long as the stamens, longer than the filiform horns; fruiting pedicels decurved; follicles nearly erect, finely pubescent, 4’-5’ long.</p><p></p><p>In dry fields, Maine and Ontario to Minnesota, Florida, Texas, Chihuahua and Arizona. Consists of numerous races, differing in shape and size of the leaves and color of the flowers. June-Sept. Wind-or orange-root. Canada-, flux-, tuber- or white-root. Orange swallow-wort. Yellow milkweed. Indian-posy.</p>",
+  "citation": {
+    "display": "“<a href=\"https://archive.org/details/illustratedflor03brit/page/24/mode/2up?q=butterfly\">Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root. Fig. 3383</a>.” From Nathaniel Lord Britton and Addison Brown. <em>An Illustrated Flora of the Northern United States, Canada and the British Possessions, Vol. III: Gentianaceae to Compositae (Gentian to Thistle)</em>. 1898. Second Edition. New York: Charles Scribner’s Sons, 1913. 25.",
+    "bibliography": "Britton, Nathaniel Lord, and Addison Brown. \"Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.\" <em>An Illustrated Flora of the Northern United States, Canada and the British Possessions</em>, 2nd ed., vol. 3, Charles Scribner’s Sons, 1913. Originally published 1898.",
+    "title": "Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.",
+    "written": "1898",
+    "locator": {
+      "page": "25",
+      "url": "https://archive.org/details/illustratedflor03brit/page/24/mode/2up?q=butterfly",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0086",
+      "type": "book",
+      "title": "An Illustrated Flora of the Northern United States, Canada and the British Possessions, 2nd ed., vol. 3",
+      "identifiers": {
+        "internetArchive": "illustratedflor03brit",
+        "openlibrary": "OL24445409M"
+      },
+      "contributors": [
+        {
+          "id": "a-nathaniel-lord-britton",
+          "name": "Nathaniel Lord Britton",
+          "role": "author",
+          "wikidata": "Q553714"
+        },
+        {
+          "id": "a-addison-brown",
+          "name": "Addison Brown",
+          "role": "author",
+          "wikidata": "Q1149854"
+        }
+      ],
+      "publisher": "Charles Scribner’s Sons",
+      "issued": "1913",
+      "original-date": "1898",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0022",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0019"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

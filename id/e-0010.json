@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0010/",
+  "id": "e-0010",
+  "type": "book",
+  "title": "Wild Honey from Various Thyme",
+  "contributors": [
+    {
+      "id": "a-michael-field",
+      "name": "Michael Field",
+      "role": "author"
+    }
+  ],
+  "publisher": "T. Fisher Unwin",
+  "issued": "1908",
+  "original-date": "1898",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "date as captioned (1898); verify edition",
+  "citedBy": [
+    "r-0010"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

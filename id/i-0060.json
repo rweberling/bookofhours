@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0060/",
+  "id": "i-0060",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-3-bfd5392ed171.jpeg",
+  "caption": "Louise A. Field, <em>Peter Rabbit and His Pa</em>, illustr. Virginia Albert (Chicago, Illinois:  The Saalfield Publishing Company, 1917), p. 27.",
+  "alt": "A children’s-book illustration of a white rabbit in a blue jacket, standing among tall flowering mullein stalks and broad green leaves, beside a hazy pink-and-orange cloud of dust.",
+  "bibliography": "Field, Louise A. <em>Peter Rabbit and His Pa</em>. Illustrated by Virginia Albert, Saalfield Publishing, 1917.",
+  "lectio": {
+    "post": "lt-0009",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0008"
+    ]
+  },
+  "display": {
+    "size": [
+      370,
+      466
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

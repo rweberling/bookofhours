@@ -1,0 +1,57 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0142/",
+  "id": "i-0142",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-2-1c7f6c8e26a3.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t5t729682?urlappend=%3Bseq=280\" rel=\"noopener\" target=\"_blank\">Rhus Typhina.</a>” Plate LXVIII from Lorin L. Dame and Henry Brooks. <em>Handbook of the Trees of New England. </em>Boston: Ginn &amp; Company, 1902.",
+  "lectio": {
+    "post": "lt-0032",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0026"
+    ]
+  },
+  "display": {
+    "size": [
+      1183,
+      1878
+    ]
+  },
+  "alt": "A black-and-white botanical plate of staghorn sumac: a long compound leaf of many toothed leaflets, a dense cone-shaped cluster of fruit, branching sprays of flowers, and small numbered details of a hairy twig, single flowers and a fuzzy seed.",
+  "title": "Rhus Typhina",
+  "edition": {
+    "id": "e-0169",
+    "type": "book",
+    "title": "Handbook of the Trees of New England",
+    "contributors": [
+      {
+        "id": "a-lorin-l-dame",
+        "name": "Lorin L. Dame",
+        "role": "author"
+      },
+      {
+        "id": "a-henry-brooks",
+        "name": "Henry Brooks",
+        "role": "author"
+      }
+    ],
+    "publisher": "Ginn & Company",
+    "issued": "1902"
+  },
+  "locator": {
+    "page": "Plate LXVIII",
+    "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t5t729682?urlappend=%3Bseq=280",
+    "label": "HathiTrust"
+  },
+  "bibliography": "Dame, Lorin L., and Henry Brooks. \"<em>Rhus typhina</em>.\" <em>Handbook of the Trees of New England</em>, Ginn &amp; Company, 1902, plate LXVIII.",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

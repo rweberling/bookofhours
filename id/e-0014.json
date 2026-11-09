@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0014/",
+  "id": "e-0014",
+  "type": "book",
+  "title": "The Golden Threshold",
+  "contributors": [
+    {
+      "id": "a-sarojini-naidu",
+      "name": "Sarojini Naidu",
+      "role": "author",
+      "wikidata": "Q250165"
+    }
+  ],
+  "publisher": "William Heinemann",
+  "issued": "1906",
+  "original-date": "1906",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "100326276",
+    "oclc": "2233259"
+  },
+  "citedBy": [
+    "r-0014"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

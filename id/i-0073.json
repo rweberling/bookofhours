@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0073/",
+  "id": "i-0073",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-1-1d144754afb2.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109\">Reed Swamp at the Margin of a Norfolk Broad,</a>” from A.R. Horwood, <em><strong>A New British Flora: British Wild Flowers in Their Natural Haunts,   Vol. IV</strong></em> (London: The Gresham Publishing Company, Ltd., 1919), p. 63.",
+  "alt": "A black-and-white photograph of reeds growing out of still, open water at the edge of a broad lake, with a low line of trees on the far shore.",
+  "bibliography": "Horwood, A. R. \"Reed Swamp at the Margin of a Norfolk Broad.\" <em>A New British Flora: British Wild Flowers in Their Natural Haunts</em>, vol. 4, Gresham Publishing, 1919.",
+  "lectio": {
+    "post": "lt-0014",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0012"
+    ]
+  },
+  "display": {
+    "size": [
+      2228,
+      1597
+    ]
+  },
+  "edition": {
+    "id": "e-0069",
+    "title": "A New British Flora: British Wild Flowers in Their Natural Haunts",
+    "issued": "1919",
+    "identifiers": {
+      "hathitrust": "001997177",
+      "oclc": "10314294"
+    },
+    "contributors": [
+      {
+        "id": "a-a-r-horwood",
+        "name": "A. R. Horwood",
+        "role": "author",
+        "wikidata": "Q21341246"
+      }
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

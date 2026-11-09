@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0149/",
+  "id": "e-0149",
+  "title": "The Natural History of Carolina, Florida and the Bahama Islands",
+  "issued": "1729",
+  "identifiers": {
+    "internetArchive": "naturalhistoryCC1V1Cate",
+    "lccn": "agr02000176"
+  },
+  "citedBy": [
+    "i-0118"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0005/",
+  "id": "ph-0005",
+  "name": "Perseids",
+  "latin": "Lacrimae Sancti Laurentii",
+  "wikidata": null,
+  "records": [
+    "r-0089",
+    "r-0090",
+    "i-0103",
+    "i-0104",
+    "i-0105"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

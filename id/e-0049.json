@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0049/",
+  "id": "e-0049",
+  "title": "Crocus sativus, fleur du bonheur",
+  "contributors": [
+    {
+      "id": "a-guillaume-barth",
+      "name": "Guillaume Barth",
+      "role": "author"
+    }
+  ],
+  "publisher": "Le Fresnoy – Studio national des arts contemporains",
+  "issued": "2021",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0049"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

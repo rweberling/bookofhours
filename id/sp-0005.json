@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0005/",
+  "id": "sp-0005",
+  "name": "Dutch Crocus",
+  "scientific": "Crocus vernus",
+  "rank": "species",
+  "wikidata": "Q165077",
+  "gbif": "2747567",
+  "inaturalist": "55769",
+  "records": [
+    "r-0048",
+    "r-0049",
+    "i-0048",
+    "i-0049",
+    "i-0050",
+    "i-0051"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

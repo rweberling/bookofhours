@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0009/",
+  "id": "i-0009",
+  "aliases": [
+    "i-limbourg-anatomical-zodiac-man-or"
+  ],
+  "shownIn": "hours",
+  "file": "images/chorus_tres_riches.jpg",
+  "caption": "Limbourg brothers, <em>Anatomical Zodiac Man (or L'Homme anatomique)</em>, from <a href=\"https://les-tres-riches-heures.chateaudechantilly.fr\" target=\"_blank\"><em>Les Très Riches Heures du Duc de Berry</em></a> (c. 1412–1416)",
+  "alt": "A medieval manuscript page in blue, gold and green: two nude figures stand back to back inside an almond-shaped frame, their bodies marked with the signs of the zodiac, which also fill the round medallions of the border.",
+  "bibliography": "Limbourg Brothers. <em>Anatomical Zodiac Man</em>. c. 1412–1416, Musée Condé, Chantilly. <em>Les Très Riches Heures du Duc de Berry</em>.",
+  "creator": {
+    "id": "a-limbourg-brothers",
+    "name": "Limbourg brothers"
+  },
+  "title": "Anatomical Zodiac Man (or L'Homme anatomique)",
+  "partOf": "Les Très Riches Heures du Duc de Berry",
+  "date": "1412~/1416~",
+  "institution": "Musée Condé, Chantilly",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Château de Chantilly",
+      "url": "https://les-tres-riches-heures.chateaudechantilly.fr"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "chorus"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

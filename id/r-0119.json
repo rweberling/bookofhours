@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0119/",
+  "id": "r-0119",
+  "shownIn": "weather",
+  "text": "The divine voice of thunder repeats the same, Da Da Da, that is, Be subdued, Give, Be merciful.",
+  "citation": {
+    "display": "<em>Bṛhadāraṇyaka Upaniṣad</em> V.2 (c. 700 BCE, trans. <a href=\"https://archive.org/details/wg915/page/190/mode/1up\" target=\"_blank\">Müller, 1884</a>)",
+    "bibliography": "<em>Bṛhadāraṇyaka Upaniṣad</em>, V.2.3. <em>The Upanishads, Part II</em>, translated by F. Max Müller, Sacred Books of the East 15, Clarendon Press, 1884, p. 190. Composed c. 700 BCE.",
+    "title": "Bṛhadāraṇyaka Upaniṣad",
+    "written": "-0700~",
+    "locator": {
+      "page": "190",
+      "url": "https://archive.org/details/wg915/page/190/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0156",
+      "type": "book",
+      "title": "The Upanishads, Part II (Sacred Books of the East 15)",
+      "contributors": [
+        {
+          "id": "a-f-max-muller",
+          "name": "F. Max Müller",
+          "role": "translator",
+          "wikidata": "Q60074"
+        }
+      ],
+      "publisher": "Clarendon Press",
+      "issued": "1884",
+      "original-date": "-0700~",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "wg915"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "thunder"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

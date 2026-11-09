@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0018/",
+  "id": "r-0018",
+  "aliases": [
+    "r-freytag-technique-of-the-drama"
+  ],
+  "shownIn": "hours",
+  "text": "The climax of the drama is the place in the piece where the results of the rising movement come out strong and decisively; it is almost always the crowning point of a great, amplified scene, enclosed by the smaller connecting scenes of the rising, and of the falling action. The poet needs to use all the splendor of poetry, all the dramatic skill of his art, in order to make vividly conspicuous the middle point of his artistic creation. [...] This outburst of deed from the soul of the hero, or the influx of portentous impressions into the soul; the first great result of a sublime struggle, or the beginning of a mortal inward conflict,--must appear inseparably connected with what goes before as well as with what follows; it will be brought into relief through broad treatment or strong effect; but it will, as a rule, be represented in its development from the rising movement and its effect on the environment; therefore, the climax naturally forms the middle point of a group of forces, which, darting in either direction, course upward and downward.",
+  "citation": {
+    "display": "Gustav Freytag, <a href=\"https://archive.org/details/freytagstechniqu00freyuoft\" target=\"_blank\"><em>Technique of the Drama</em></a> (1894)",
+    "bibliography": "Freytag, Gustav. <em>Technique of the Drama</em>. Translated by Elias J. MacEwan, Scott, Foresman, 1894.",
+    "locator": {
+      "url": "https://archive.org/details/freytagstechniqu00freyuoft",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0018",
+      "type": "book",
+      "title": "Technique of the Drama",
+      "contributors": [
+        {
+          "id": "a-gustav-freytag",
+          "name": "Gustav Freytag",
+          "role": "author",
+          "wikidata": "Q58811"
+        },
+        {
+          "id": "a-elias-j-macewan",
+          "name": "Elias J. MacEwan",
+          "role": "translator"
+        }
+      ],
+      "publisher": "Scott, Foresman",
+      "issued": "1894",
+      "original-date": "1894",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "freytagstechniqu00freyuoft",
+        "openlibrary": "OL7168981M"
+      }
+    }
+  },
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

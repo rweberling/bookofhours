@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0052/",
+  "id": "e-0052",
+  "type": "book",
+  "title": "Mules and Men",
+  "contributors": [
+    {
+      "id": "a-zora-neale-hurston",
+      "name": "Zora Neale Hurston",
+      "role": "author",
+      "wikidata": "Q220480"
+    }
+  ],
+  "publisher": "Harper Perennial",
+  "issued": "1990",
+  "original-date": "1935",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0052"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

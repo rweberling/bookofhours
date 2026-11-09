@@ -1,0 +1,48 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0033/",
+  "id": "r-0033",
+  "aliases": [
+    "r-thomas-lights-out"
+  ],
+  "shownIn": "hours",
+  "text": "I have come to the borders of sleep,<br>The unfathomable deep<br>Forest where all must lose<br>Their way, however straight,<br>Or winding, soon or late;<br>They cannot choose.<br><br>Many a road and track<br>That, since the dawn’s first crack,<br>Up to the forest brink,<br>Deceived the travellers,<br>Suddenly now blurs,<br>And in they sink.",
+  "citation": {
+    "display": "Edward Thomas, from \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109\" target=\"_blank\">Lights Out</a>\" (1917)",
+    "bibliography": "Thomas, Edward. \"Lights Out.\" <em>Last Poems</em>, Selwyn &amp; Blount, 1918. Written 1917.",
+    "title": "Lights Out",
+    "written": "1917",
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0033",
+      "type": "book",
+      "title": "Last Poems",
+      "contributors": [
+        {
+          "id": "a-edward-thomas",
+          "name": "Edward Thomas",
+          "role": "author",
+          "wikidata": "Q1293865"
+        }
+      ],
+      "publisher": "Selwyn & Blount",
+      "issued": "1918",
+      "original-date": "1918",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "tags": {
+    "hours": [
+      "denouement"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

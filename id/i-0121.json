@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0121/",
+  "id": "i-0121",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-2-fcfa5da7839c.jpeg",
+  "caption": "Sophia Thoreau. <a href=\"https://concord.emuseum.com/objects/45741/specimens\" rel=\"noopener\" target=\"_blank\">Inscribed hickory leaves in memory of her brother, Henry</a> (1868). Concord Museum.",
+  "alt": "A dried, golden-brown hickory leaf of five leaflets, each covered in lines of faded handwriting.",
+  "bibliography": "Thoreau, Sophia. Inscribed hickory leaves in memory of her brother, Henry. 1868, Concord Museum, Concord, Massachusetts.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Concord Museum",
+      "url": "https://concord.emuseum.com/objects/45741/specimens"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0029",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0024"
+    ]
+  },
+  "display": {
+    "size": [
+      800,
+      634
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

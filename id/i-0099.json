@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0099/",
+  "id": "i-0099",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-2-8c1877b23c1d.webp",
+  "caption": "Craig Holdrege. <em><a href=\"https://www.natureinstitute.org/article/craig-holdrege/the-story-of-an-organism-common-milkweed\">Shoot development in common milkweed (Asclepias syriaca). Shoots from one colony, drawn to scale</a></em> (Summer 2007).",
+  "alt": "Pencil drawings of common milkweed shoots, drawn to scale, from bare spear-shaped tips in mid-May to a tall, leafy plant with buds by early July, each dated.",
+  "bibliography": "Holdrege, Craig. <em>Shoot Development in Common Milkweed (Asclepias syriaca)</em>. Drawing, Summer 2007.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Nature Institute",
+      "url": "https://www.natureinstitute.org/article/craig-holdrege/the-story-of-an-organism-common-milkweed"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0022",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0019"
+    ]
+  },
+  "display": {
+    "size": [
+      655,
+      445
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

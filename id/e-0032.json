@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0032/",
+  "id": "e-0032",
+  "type": "book",
+  "title": "Watt",
+  "contributors": [
+    {
+      "id": "a-samuel-beckett",
+      "name": "Samuel Beckett",
+      "role": "author",
+      "wikidata": "Q37327"
+    }
+  ],
+  "publisher": "Olympia Press",
+  "issued": "1953",
+  "original-date": "1953",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "in copyright — estate aggressively enforces",
+  "citedBy": [
+    "r-0032"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

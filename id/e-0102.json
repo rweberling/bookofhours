@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0102/",
+  "id": "e-0102",
+  "type": "book",
+  "title": "Report on the Forests of North America (Exclusive of Mexico)",
+  "identifiers": {
+    "hathitrust": "103315786",
+    "oclc": "26601282",
+    "isbn": "9780883544327"
+  },
+  "contributors": [
+    {
+      "id": "a-charles-sprague-sargent",
+      "name": "Charles Sprague Sargent",
+      "role": "author",
+      "wikidata": "Q1066128"
+    }
+  ],
+  "publisher": "Government Printing Office",
+  "issued": "1884",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0103"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

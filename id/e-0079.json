@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0079/",
+  "id": "e-0079",
+  "type": "book",
+  "title": "A Modern Herbal",
+  "contributors": [
+    {
+      "id": "a-maud-grieve",
+      "name": "Maud Grieve",
+      "role": "author",
+      "wikidata": "Q6792224"
+    }
+  ],
+  "publisher": "Jonathan Cape",
+  "issued": "1931",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "published 1931; enters the U.S. public domain on 1 January 2027",
+  "citedBy": [
+    "r-0079"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0015/",
+  "id": "i-0015",
+  "aliases": [
+    "i-unknown-diagram-of-the-winds"
+  ],
+  "shownIn": "weather",
+  "file": "images/transit_winds.jpg",
+  "caption": "Unknown, <a href=\"https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W73\" target=\"_blank\"><em>Diagram of the Winds (I)</em></a> (c. 1170-1200)",
+  "alt": "A round medieval diagram in red, green and brown ink: twelve faces on the outer ring blow streams of wind toward a small central circle, with Latin names written along the spokes between them.",
+  "bibliography": "Unknown. <em>Diagram of the Winds (I)</em>. c. 1170–1200, The Walters Art Museum, Baltimore, MS W.73.",
+  "creator": null,
+  "title": "Diagram of the Winds (I)",
+  "date": "1170~/1200~",
+  "institution": "The Walters Art Museum",
+  "shelfmark": "MS W.73",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Digital Walters",
+      "url": "https://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W73"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "display": {
+    "cardPosition": "bottom-center"
+  },
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [
+      "wind"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

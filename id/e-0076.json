@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0076/",
+  "id": "e-0076",
+  "type": "book",
+  "title": "Sunspots",
+  "contributors": [
+    {
+      "id": "a-simon-barraclough",
+      "name": "Simon Barraclough",
+      "role": "author"
+    }
+  ],
+  "publisher": "Penned in the Margins",
+  "issued": "2015",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0076"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

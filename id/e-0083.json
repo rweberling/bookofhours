@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0083/",
+  "id": "e-0083",
+  "type": "book",
+  "title": "Whitesbog Blueberries",
+  "contributors": [
+    {
+      "id": "a-joseph-j-white-inc",
+      "name": "Joseph J. White, Inc.",
+      "role": "author"
+    }
+  ],
+  "publisher": "Joseph J. White, Inc.",
+  "issued": "1925",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0083"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

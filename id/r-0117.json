@@ -1,0 +1,57 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0117/",
+  "id": "r-0117",
+  "shownIn": "seasons",
+  "text": "I leant upon a coppice gate<br>&nbsp;&nbsp;&nbsp;When Frost was spectre-grey,<br>And Winter’s dregs made desolate<br>&nbsp;&nbsp;&nbsp;The weakening eye of day.<br>The tangled bine-stems scored the sky<br>&nbsp;&nbsp;&nbsp;Like strings of broken lyres,<br>And all mankind that haunted nigh<br>&nbsp;&nbsp;&nbsp;Had sought their household fires.<br><br>The land’s sharp features seemed to be<br>&nbsp;&nbsp;&nbsp;The Century’s corpse outleant,<br>His crypt the cloudy canopy,<br>&nbsp;&nbsp;&nbsp;The wind his death-lament.<br>The ancient pulse of germ and birth<br>&nbsp;&nbsp;&nbsp;Was shrunken hard and dry,<br>And every spirit upon earth<br>&nbsp;&nbsp;&nbsp;Seemed fervourless as I.<br><br>At once a voice arose among<br>&nbsp;&nbsp;&nbsp;The bleak twigs overhead<br>In a full-hearted evensong<br>&nbsp;&nbsp;&nbsp;Of joy illimited;<br>An aged thrush, frail, gaunt, and small,<br>&nbsp;&nbsp;&nbsp;In blast-beruffled plume,<br>Had chosen thus to fling his soul<br>&nbsp;&nbsp;&nbsp;Upon the growing gloom.<br><br>So little cause for carolings<br>&nbsp;&nbsp;&nbsp;Of such ecstatic sound<br>Was written on terrestrial things<br>&nbsp;&nbsp;&nbsp;Afar or nigh around,<br>That I could think there trembled through<br>&nbsp;&nbsp;&nbsp;His happy good-night air<br>Some blessed Hope, whereof he knew<br>&nbsp;&nbsp;&nbsp;And I was unaware.",
+  "citation": {
+    "display": "Thomas Hardy. “<a href=\"https://hdl.handle.net/2027/mdp.39015031237822\" rel=\"noopener\" target=\"_blank\">The Darkling Thrush</a>.” <em>The Graphic</em> (December 29, 1900). Rpt. <em><strong>Poems of the Past and the Present</strong></em><strong>.</strong> Second Edition. New York and London: Harper &amp; Brothers, 1902. 169-171.",
+    "bibliography": "Hardy, Thomas. \"The Darkling Thrush.\" <em>Poems of the Past and the Present</em>, 2nd ed., Harper &amp; Brothers, 1902. First published in <em>The Graphic</em>, 29 Dec. 1900.",
+    "title": "The Darkling Thrush",
+    "written": "1900",
+    "locator": {
+      "page": "169–171",
+      "url": "https://hdl.handle.net/2027/mdp.39015031237822",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0116",
+      "type": "book",
+      "title": "Poems of the Past and the Present",
+      "identifiers": {
+        "hathitrust": "000433137",
+        "oclc": "52928563",
+        "lccn": "02011001"
+      },
+      "contributors": [
+        {
+          "id": "a-thomas-hardy",
+          "name": "Thomas Hardy",
+          "role": "author",
+          "wikidata": "Q132805"
+        }
+      ],
+      "publisher": "Harper & Brothers",
+      "issued": "1902",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0033",
+    "place": 4
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0006"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

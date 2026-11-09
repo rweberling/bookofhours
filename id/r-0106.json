@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0106/",
+  "id": "r-0106",
+  "shownIn": "seasons",
+  "text": "<p>The number of tastes perceived in objects is infinite, since every soluble body has a special flavour, in some respect differing from all others.<br><br>Flavours receive additional modifications of infinite variety, ranging from the most attractive to the most intolerable, from the strawberry to the colocynth; and all attempts to classify them may be termed failures. Nor is this to be wondered at; for, granted that there are undetermined series of simple flavours which can be modified by combining them in any number and quantity, we should require a new language to express all these results, mountains of folio volumes to define them, and newly devised numerical characters to classify and number them.<br><br>Since, up to the present time, no taste or flavour has, as a sensation, been rigorously defined, men are compelled to keep to a small number of general terms, such as \"sweet,\" \"sugary,\" \"sour,\" \"bitter,\" and so on; and, on further analysis, these can be classified under the two heads of \"agreeable to the taste,\" or \"disagreeable.\" They suffice, however, to make one's self understood, and indicate with tolerable exactness the gustatory properties of any sapid substances about which one is talking. Those who come after us will know more about such qualities, and it seems already certain that chemistry will discover to them the causes of flavours or their ultimate elements.</p>",
+  "citation": {
+    "display": "Jean Anthelme Brillat-Savarin. <em><a href=\"https://hdl.handle.net/2027/hvd.hn1bit?urlappend=%3Bseq=59%3Bownerid=27021597765846239-63\" rel=\"noopener\" target=\"_blank\">Gastronomy as a Fine Art; or, The Science of Good Living</a>.</em> Trans. R. E. Anderson. Trans. of <em>Physiologie du Goût </em>[<em>Physiology of Taste</em>]. 1826. London: Chatto and Windus, 1877. 15-16.",
+    "bibliography": "Brillat-Savarin, Jean Anthelme. <em>Gastronomy as a Fine Art; or, The Science of Good Living</em>. Translated by R. E. Anderson, Chatto and Windus, 1877. Originally published as <em>Physiologie du goût</em>, 1826.",
+    "written": "1826",
+    "locator": {
+      "page": "15–16",
+      "url": "https://hdl.handle.net/2027/hvd.hn1bit?urlappend=%3Bseq=59%3Bownerid=27021597765846239-63",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0105",
+      "type": "book",
+      "title": "Gastronomy as a Fine Art; or, The Science of Good Living",
+      "identifiers": {
+        "hathitrust": "100499037",
+        "oclc": "2881650"
+      },
+      "contributors": [
+        {
+          "id": "a-jean-anthelme-brillat-savarin",
+          "name": "Jean Anthelme Brillat-Savarin",
+          "role": "author",
+          "wikidata": "Q313027"
+        },
+        {
+          "id": "a-r-e-anderson",
+          "name": "R. E. Anderson",
+          "role": "translator"
+        }
+      ],
+      "publisher": "Chatto and Windus",
+      "issued": "1877",
+      "original-date": "1826",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0030",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0025"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

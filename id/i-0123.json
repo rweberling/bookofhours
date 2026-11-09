@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0123/",
+  "id": "i-0123",
+  "shownIn": "seasons",
+  "file": "video/lectio-terra/robin-migration-2026.mp4",
+  "fallback": "video/lectio-terra/robin-migration-2026.webm",
+  "poster": "video/lectio-terra/robin-migration-2026-poster.jpg",
+  "media": "video",
+  "caption": "Annual migration of American Robins, created using the National Audubon Society’s <a href=\"https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse\">Bird Migration Explorer</a> (March 6, 2026).",
+  "alt": "A silent, 18-second screen recording of Audubon’s migration map running through a year: brown circles marking where American robins are most abundant spread north across the United States and into Canada through spring and summer, then draw back south in autumn, with yellow dots for individually tracked birds moving among them.",
+  "bibliography": "National Audubon Society. \"American Robin: Annual Migration.\" <em>Bird Migration Explorer</em>. Screen recording, 6 Mar. 2026.",
+  "date": "2026-03-06",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Bird Migration Explorer",
+      "url": "https://explorer.audubon.org/explore/species/1055/american-robin/migration"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0002",
+    "place": 4
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0002"
+    ]
+  },
+  "link": "https://explorer.audubon.org/explore/species/1055/american-robin/migration?sidebar=collapse&amp;zoom=5&amp;x=95342.75364301578&amp;y=2535298.069420062&amp;range=0.0617%2C0.1350&amp;layersPanel=expand&amp;legend=collapse",
+  "display": {
+    "size": [
+      1280,
+      582
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

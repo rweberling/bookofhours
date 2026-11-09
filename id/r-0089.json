@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0089/",
+  "id": "r-0089",
+  "shownIn": "seasons",
+  "text": "<p>36. Période <em>Khien-wou</em>, 12e année, 1re lune, jour <em>ki-oueï</em> (9 février), on vit de petites étoiles filantes au nombre d’un cent au plus : les unes allaient au N. O. d’autres allaient directement au N. et d’autres au N. E. Après deux nuits, ce phénomène cessa.—A la 6e lune , jour <em>wou-yn</em> (27 juin), <strong>au lever du jour, on vit une centaine de petites étoiles filantes allant vers les quatre points cardinaux; elles étaient semblables à un peuple nombreux qui émigre. A</strong> la 10e lune , jour <em>ting-mao</em> (14 octobre ou 13 décembre), on vit une grande étoile filante , très-lumineuse, qui partit de l’astérisme <em>Tsing</em> (μ, γ, ε, ζ, Gémeaux), se dirigea de l’orient à l’occident, et fit un grand bruit.</p><p><br>[36. <em>Xianwu</em> period, 12th year, 1st month, <em>jiwei</em> day (February 9): about a hundred small shooting stars were seen; some moved toward the northwest, others directly north, and others toward the northeast. This phenomenon ceased after two nights. — In the 6th month, <em>wuyin</em> day (June 27), at daybreak, ab<strong>out a hundred small shooting stars were seen moving toward the four cardinal points; they resembled a vast migrating crowd.</strong> In the 10th month, <em>dingmao</em> day (October 14 or December 13), a large, very bright shooting star was seen; it originated from the <em>Jing</em> asterism (μ, γ, ε, ζ, Gemini), traveled from east to west, and produced a loud noise.]</p>",
+  "citation": {
+    "display": "Edouard Biot. <em><a href=\"https://hdl.handle.net/2027/hvd.32044027957927?urlappend=%3Bseq=16%3Bownerid=27021597765377222-20\">Catalogue Général Des étoiles Filantes Et Des Autres Météores Observés En Chine Pendant Vingt-quatre Siècles</a></em>. Paris: Impr. royale, 1841. 138. [Trans. courtesy of Google; emphasis added.]",
+    "bibliography": "Biot, Édouard. <em>Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles</em>. Imprimerie royale, 1841.",
+    "title": "Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles",
+    "written": "1841",
+    "locator": {
+      "page": "138",
+      "url": "https://hdl.handle.net/2027/hvd.32044027957927?urlappend=%3Bseq=16%3Bownerid=27021597765377222-20",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0088",
+      "type": "book",
+      "title": "Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles",
+      "identifiers": {
+        "hathitrust": "011549434",
+        "oclc": "77784890",
+        "lccn": "35025565"
+      },
+      "contributors": [
+        {
+          "id": "a-edouard-biot",
+          "name": "Édouard Biot",
+          "role": "author",
+          "wikidata": "Q274233"
+        }
+      ],
+      "publisher": "Imprimerie royale",
+      "issued": "1841",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0024",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0005",
+        "basis": "grounded",
+        "note": "Records of meteors seen in China; shooting stars in general, not the Perseids."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

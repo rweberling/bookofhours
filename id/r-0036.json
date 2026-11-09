@@ -1,0 +1,48 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0036/",
+  "id": "r-0036",
+  "aliases": [
+    "r-very-the-clouded-morning"
+  ],
+  "shownIn": "weather",
+  "text": "Dissolved in mists the hills and trees appear,<br>&nbsp;&nbsp;&nbsp;Their outlines lost and blended with the sky;<br>And well-known objects, that to all are near,<br>&nbsp;&nbsp;&nbsp;No longer seem familiar to the eye,<br>But with fantastic forms they mock the sight,<br>As when we grope amid the gloom of night.",
+  "citation": {
+    "display": "Jones Very, from \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t1bk17p1r?urlappend=%3Bseq=436\" target=\"_blank\">The Clouded Morning</a>\" (1864, pub. 1883/6)",
+    "bibliography": "Very, Jones. \"The Clouded Morning.\" Written 1864; published 1883/1886.",
+    "title": "The Clouded Morning",
+    "written": "1864",
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t1bk17p1r?urlappend=%3Bseq=436",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0036",
+      "type": "book",
+      "title": null,
+      "contributors": [
+        {
+          "id": "a-jones-very",
+          "name": "Jones Very",
+          "role": "author",
+          "wikidata": "Q2797629"
+        }
+      ],
+      "issued": null,
+      "original-date": "1883/1886",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "fog",
+      "overcast"
+    ],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

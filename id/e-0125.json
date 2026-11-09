@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0125/",
+  "id": "e-0125",
+  "title": "Sugar Maple: An American Wood",
+  "issued": "1980",
+  "identifiers": {
+    "hathitrust": "103030992",
+    "oclc": "6401561"
+  },
+  "citedBy": [
+    "i-0041"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

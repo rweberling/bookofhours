@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0063/",
+  "id": "i-0063",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-1-8d49b51fb432.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60\">Structure discontinuities, Porter Square pilot tunnel</a>,” from D.E. Thompson et al., <em>Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report </em>(Washington, D.C.: Urban Mass Transportation Administration, 1983).",
+  "alt": "A dim black-and-white photograph inside a tunnel under construction: a dark, fractured rock face, lit by a lamp, with a pipe running along the floor.",
+  "bibliography": "Thompson, D. E., et al. \"Structure Discontinuities, Porter Square Pilot Tunnel.\" <em>Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report</em>, Urban Mass Transportation Administration, 1983.",
+  "lectio": {
+    "post": "lt-0011",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "phenomena": [
+      "ph-0002"
+    ]
+  },
+  "display": {
+    "size": [
+      480,
+      749
+    ]
+  },
+  "edition": {
+    "id": "e-0136",
+    "title": "Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report",
+    "issued": "1983",
+    "identifiers": {
+      "hathitrust": "101655331",
+      "oclc": "10178867"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+  "rightsNote": "a report for the Urban Mass Transportation Administration, written by contractors",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

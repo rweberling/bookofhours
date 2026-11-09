@@ -52,7 +52,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   file and makes an unreadable diff.
 - The build's parts, if one is wanted alone: `build_images.py` (web
   copies), `build_shared.py` (menu, head and frame, from `partials/`),
-  `build_postcards.py`, `build_lectio_pages.py [lt-NNNN | --all]` (post
+  `build_postcards.py`, `build_records.py` (a page and JSON copy for every
+  record at `id/<id>/`, noindex for now), `build_lectio_pages.py [lt-NNNN | --all]` (post
   pages, one per post, and the RSS feed `feed.xml`, dated by each post's
   first publication), `build_sitemap.py`, `build_sources.py` (needs
   Chrome; see below).

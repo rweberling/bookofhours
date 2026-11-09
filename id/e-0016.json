@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0016/",
+  "id": "e-0016",
+  "type": "book",
+  "title": "Caroling Dusk: An Anthology of Verse by Negro Poets",
+  "contributors": [
+    {
+      "id": "a-helene-johnson",
+      "name": "Helene Johnson",
+      "role": "author",
+      "wikidata": "Q1601979"
+    },
+    {
+      "id": "a-countee-cullen",
+      "name": "Countee Cullen",
+      "role": "editor",
+      "wikidata": "Q1137066"
+    }
+  ],
+  "publisher": "Harper & Brothers",
+  "issued": "1927",
+  "original-date": "1926/1927",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "carolingduskanth00cull",
+    "openlibrary": "OL6707519M",
+    "lccn": "27023175"
+  },
+  "citedBy": [
+    "r-0016"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

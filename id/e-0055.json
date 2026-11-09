@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0055/",
+  "id": "e-0055",
+  "type": "book",
+  "title": "The Old Herb Doctor: His Secrets and Treatments",
+  "identifiers": {
+    "hathitrust": "102436036",
+    "oclc": "1319259",
+    "lccn": "41023319"
+  },
+  "publisher": "Hammond Book Company",
+  "issued": "1941",
+  "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+  "rightsNote": "published 1941; whether its copyright was renewed is unchecked",
+  "citedBy": [
+    "r-0055"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

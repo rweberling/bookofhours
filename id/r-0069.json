@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0069/",
+  "id": "r-0069",
+  "shownIn": "seasons",
+  "text": "<p>The Reed may be said to be ubiquitous in both time and space, for it is found in Britain alone in Preglacial beds everywhere, Interglacial beds in Hants, Sussex, Lincs, Neolithic beds in the Thames Valley, Yorks, Glamorgan. It is found in the N. Temperate and Arctic regions in Europe, Asia, Africa, America, and in Australia. This common aquatic plant is found throughout Great Britain, except in East Sutherland, as far north as the Shetlands, and in the Channel Islands.</p><p></p><p>The common Reed is one of those familiar aquatic plants which has a place in the popular mind on account of its very universality, and because it forms in itself a characteristic botanical formation, a reed-swamp association. It grows in still water as well as running water, in lakes and rivers, nowhere more luxuriantly than in the meres of the E. counties or the tarns and lochs of Scotland, at two very different elevations.</p><p></p><p>The stem is round, tall, graceful, erect, arising from a jointed creeping rhizome, and stoloniferous, with creeping shoots. The leaves are long, flat, broad, rigid, with the margins hairy, and bluish-green below. The leaf-sheath is round, turned one way, and smooth. In a wind the leaf turns partly round like a flag.</p><p></p><p>The panicle is nodding, purple, soft and silky, branched, large, and dense, with smooth branches. The spikelets are 5-flowered, the flowers longer than the glumes, and glossy. The empty ones are the flowering glumes, awl-shaped, and longer. The florets in the spikelet are distant, with long silky hairs which form a parachute.</p><p></p><p>The Reed is 3—10 ft. high. It flowers in July and August. The plant is a herbaceous perennial, propagated by soboles or creeping runners. The lower flowers are male, the others are bisexual, the panicles containing <br>3—6 flowers, being densely crowded. As in most other grasses the stamens are 3, the styles short, and the stigmas feathery. The lowest glumes are 1—3-androus, the others 3-androus. The flowers are anemophilous, proterogynous.</p><p></p><p>The fruit is enveloped in the glume, and this in long silky hairs, and is light, and adapted to dispersal by the wind.</p><p></p><p>The Reed is a peat-loving plant, luxuriating in peat soil or clay soil, and it is then a clay-loving plant.</p><p>[…]</p><p><em>Phragmites</em>, Trinius, is from the Greek phragma, fence, with reference to a spurious dissepiment at the nodes; and the second name indicates its universal character.</p><p></p><p>This graceful grass is called Bennels, Bog Reed, Ditch Reed, Doudle, Pole Reed, Pull Reed, Pull Spear, Reed, Speargrass, Spire, Streeds, Windlestraws. The name Bennels is applied to a kind of mat, made of reeds woven together, used for forming partitions in cottages, or laid across the rafters to form an inner roof. The name Doudle is “the root of the common reed grass found partially decayed in morasses, of which the children in the south of Scotland make a sort of musical instrument similar to the oaten pipe of the ancients.”</p><p></p><p>The Reed was used traditionally by witches to fly upon. It is used for thatching, and a specimen thus used a hundred years ago is as fresh as if recently gathered. It is used for protecting sea embankments, for ceilings to cottages, verandas, rustic buildings, for plaster floors, for screens, and for hot-beds in kitchen gardens. Wool is dyed green by the flowers. The roots have been used for liver complaints. Mats are made of it, and formerly it was used for pens for black-letter type.</p>",
+  "citation": {
+    "display": "A.R. Horwood, “<a href=\"https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=233%3Bownerid=13510798901296899-237\">Reed (Phragmites communis, Trin.)</a>,” <em><strong>A New British Flora:<br>British Wild Flowers in Their Natural Haunts, Vol. IV</strong></em> (London: The Gresham Publishing Company, Ltd., 1919), pp. 161-164.",
+    "bibliography": "Horwood, A. R. \"Reed (Phragmites communis, Trin.).\" <em>A New British Flora: British Wild Flowers in Their Natural Haunts</em>, vol. 4, Gresham Publishing, 1919.",
+    "title": "Reed (Phragmites communis, Trin.)",
+    "written": "1919",
+    "locator": {
+      "page": "161–164",
+      "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=233%3Bownerid=13510798901296899-237",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0069",
+      "title": "A New British Flora: British Wild Flowers in Their Natural Haunts",
+      "issued": "1919",
+      "identifiers": {
+        "hathitrust": "001997177",
+        "oclc": "10314294"
+      },
+      "contributors": [
+        {
+          "id": "a-a-r-horwood",
+          "name": "A. R. Horwood",
+          "role": "author",
+          "wikidata": "Q21341246"
+        }
+      ],
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0014",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0012"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

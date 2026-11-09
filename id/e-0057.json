@@ -1,0 +1,33 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0057/",
+  "id": "e-0057",
+  "type": "book",
+  "title": "The Letters of Hildegard of Bingen, vol. 3",
+  "contributors": [
+    {
+      "id": "a-hildegard-of-bingen",
+      "name": "Hildegard of Bingen",
+      "role": "author",
+      "wikidata": "Q70991"
+    },
+    {
+      "id": "a-joseph-l-baird",
+      "name": "Joseph L. Baird",
+      "role": "translator"
+    },
+    {
+      "id": "a-radd-k-ehrman",
+      "name": "Radd K. Ehrman",
+      "role": "translator"
+    }
+  ],
+  "publisher": "Oxford University Press",
+  "issued": "2004",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0057"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

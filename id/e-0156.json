@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0156/",
+  "id": "e-0156",
+  "type": "book",
+  "title": "The Upanishads, Part II (Sacred Books of the East 15)",
+  "contributors": [
+    {
+      "id": "a-f-max-muller",
+      "name": "F. Max Müller",
+      "role": "translator",
+      "wikidata": "Q60074"
+    }
+  ],
+  "publisher": "Clarendon Press",
+  "issued": "1884",
+  "original-date": "-0700~",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "wg915"
+  },
+  "citedBy": [
+    "r-0119"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

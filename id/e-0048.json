@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0048/",
+  "id": "e-0048",
+  "type": "book",
+  "title": "A History of the Species of Crocus",
+  "contributors": [
+    {
+      "id": "a-william-herbert",
+      "name": "William Herbert",
+      "role": "author"
+    },
+    {
+      "id": "a-john-lindley",
+      "name": "John Lindley",
+      "role": "editor",
+      "wikidata": "Q378629"
+    }
+  ],
+  "publisher": "William Clowes and Sons",
+  "issued": "1847",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0048"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

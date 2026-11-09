@@ -1,0 +1,61 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0081/",
+  "id": "r-0081",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "<a href=\"https://www.whobuiltamerica.org/item/haudenosaunee-iroquois-creation-myth-1816\">Haudenosaunee (Iroquois) Creation Myth, 1816</a>. From Carl F. Klinck and James J. Talman, Eds. <em>The Journal of Major John Norton, 1816</em>. Toronto: Champlain Society, 1970. 88-91.",
+    "bibliography": "\"Haudenosaunee (Iroquois) Creation Myth.\" Recorded by John Norton, 1816. <em>The Journal of Major John Norton, 1816</em>, edited by Carl F. Klinck and James J. Talman, Champlain Society, 1970.",
+    "title": "Haudenosaunee (Iroquois) Creation Myth",
+    "written": "1816",
+    "locator": {
+      "page": "88–91",
+      "url": "https://www.whobuiltamerica.org/item/haudenosaunee-iroquois-creation-myth-1816",
+      "label": "Who Built America?"
+    },
+    "edition": {
+      "id": "e-0081",
+      "type": "book",
+      "title": "The Journal of Major John Norton, 1816",
+      "contributors": [
+        {
+          "id": "a-john-norton",
+          "name": "John Norton",
+          "role": "author"
+        },
+        {
+          "id": "a-carl-f-klinck",
+          "name": "Carl F. Klinck",
+          "role": "editor",
+          "wikidata": "Q5040429"
+        },
+        {
+          "id": "a-james-j-talman",
+          "name": "James J. Talman",
+          "role": "editor",
+          "wikidata": "Q140645688"
+        }
+      ],
+      "publisher": "Champlain Society",
+      "issued": "1970",
+      "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+      "rightsNote": "written 1816, first published 1970"
+    }
+  },
+  "lectio": {
+    "post": "lt-0020",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0017"
+    ]
+  },
+  "firstLine": "“The twin brothers were nurtured and raised by their Grandmother; …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

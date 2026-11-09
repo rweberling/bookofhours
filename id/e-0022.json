@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0022/",
+  "id": "e-0022",
+  "type": "book",
+  "title": "Psychology: The Briefer Course",
+  "contributors": [
+    {
+      "id": "a-william-james",
+      "name": "William James",
+      "role": "author",
+      "wikidata": "Q125249"
+    }
+  ],
+  "publisher": "Henry Holt",
+  "issued": "1892",
+  "original-date": "1892",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "100330090",
+    "oclc": "2412919",
+    "lccn": "05002582"
+  },
+  "citedBy": [
+    "r-0022"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

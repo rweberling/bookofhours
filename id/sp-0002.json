@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0002/",
+  "id": "sp-0002",
+  "name": "American Robin",
+  "scientific": "Turdus migratorius",
+  "rank": "species",
+  "wikidata": "Q460967",
+  "gbif": "9510564",
+  "inaturalist": "12727",
+  "records": [
+    "r-0039",
+    "r-0040",
+    "i-0037",
+    "i-0038",
+    "i-0039",
+    "i-0123"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

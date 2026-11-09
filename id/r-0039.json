@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0039/",
+  "id": "r-0039",
+  "shownIn": "seasons",
+  "text": "The Robin is the One<br>That interrupt the Morn<br>With hurried – few –<br>express Reports<br>When March is scarcely on –<br><br>The Robin is the One<br>That overflow the Noon<br>With her cherubic<br>quantity –<br>An April but begun –<br><br>The Robin is the One<br>That speechless from<br>her Nest<br>Submit that Home –<br>and Certainty<br>And Sanctity, are best",
+  "citation": {
+    "display": "Emily Dickinson, “<a href=\"https://journeys.dartmouth.edu/whiteheat/the-robin-is-the-one-f501c-j828/\">The Robin is the One</a>” (cir. 1863, pub. 1891).",
+    "bibliography": "Dickinson, Emily. \"The Robin is the One.\" c. 1863; published 1891.",
+    "title": "The Robin is the One",
+    "written": "1863~",
+    "locator": {
+      "url": "https://journeys.dartmouth.edu/whiteheat/the-robin-is-the-one-f501c-j828/",
+      "label": "White Heat (Dartmouth)"
+    },
+    "edition": {
+      "id": "e-0039",
+      "contributors": [
+        {
+          "id": "a-emily-dickinson",
+          "name": "Emily Dickinson",
+          "role": "author",
+          "wikidata": "Q4441"
+        }
+      ],
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0002",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0002",
+        "basis": "grounded",
+        "note": "The poem names the robin and dates its song to March and April."
+      }
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

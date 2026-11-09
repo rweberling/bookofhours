@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0107/",
+  "id": "e-0107",
+  "type": "book",
+  "title": "Textile Fibers Used in Eastern Aboriginal North America",
+  "identifiers": {
+    "hathitrust": "001632236",
+    "oclc": "1609195",
+    "lccn": "41022534"
+  },
+  "contributors": [
+    {
+      "id": "a-a-c-whitford",
+      "name": "A. C. Whitford",
+      "role": "author"
+    }
+  ],
+  "publisher": "American Museum of Natural History",
+  "issued": "1941",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "citedBy": [
+    "r-0108"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

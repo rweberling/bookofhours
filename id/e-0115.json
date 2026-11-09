@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0115/",
+  "id": "e-0115",
+  "type": "article",
+  "title": "Chemical Changes Accompanying Abscission in Coleus Blumei",
+  "container": "Botanical Gazette",
+  "volume": "66",
+  "pages": "32–53",
+  "identifiers": {
+    "doi": "10.1086/332301"
+  },
+  "contributors": [
+    {
+      "id": "a-homer-c-sampson",
+      "name": "Homer C. Sampson",
+      "role": "author"
+    }
+  ],
+  "issued": "1918-07",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0116"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

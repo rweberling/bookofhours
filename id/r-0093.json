@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0093/",
+  "id": "r-0093",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Robert Hass. From “<a href=\"https://www.jstor.org/stable/20683657?searchText=Robert%20hass%20poem%20with%20a%20cucumber%20in%20it&amp;searchUri=%2Faction%2FdoBasicSearch%3FQuery%3DRobert%2Bhass%2Bpoem%2Bwith%2Ba%2Bcucumber%2Bin%2Bit%26so%3Drel&amp;ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&amp;refreqid=fastly-default%3Af2747166e2520d3b8e67b7c4fbdd96a7\">Poem with a Cucumber in It.</a>” <em>The American Poetry Review</em> 36.5 (September/October 2007): 34.",
+    "bibliography": "Hass, Robert. \"Poem with a Cucumber in It.\" <em>The American Poetry Review</em>, vol. 36, no. 5, Sept./Oct. 2007, p. 34.",
+    "title": "Poem with a Cucumber in It",
+    "written": "2007-09/2007-10",
+    "locator": {
+      "page": "34",
+      "url": "https://www.jstor.org/stable/20683657?searchText=Robert%20hass%20poem%20with%20a%20cucumber%20in%20it&amp;searchUri=%2Faction%2FdoBasicSearch%3FQuery%3DRobert%2Bhass%2Bpoem%2Bwith%2Ba%2Bcucumber%2Bin%2Bit%26so%3Drel&amp;ab_segments=0%2Fbasic_search_gsv2%2Fcontrol&amp;refreqid=fastly-default%3Af2747166e2520d3b8e67b7c4fbdd96a7",
+      "label": "JSTOR"
+    },
+    "edition": {
+      "id": "e-0092",
+      "type": "article",
+      "title": "Poem with a Cucumber in It",
+      "container": "The American Poetry Review",
+      "volume": "36",
+      "pages": "34",
+      "contributors": [
+        {
+          "id": "a-robert-hass",
+          "name": "Robert Hass",
+          "role": "author",
+          "wikidata": "Q370513"
+        }
+      ],
+      "issued": "2007-09/2007-10",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0026",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0021"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "In the old torment of the earth …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

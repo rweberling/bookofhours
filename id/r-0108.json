@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0108/",
+  "id": "r-0108",
+  "shownIn": "seasons",
+  "text": "<p>The pawpaw (Asimina trilby, L.) seems to have been universally used by all the tribes who lived where it flourished. Its use was apparently limited only by its distribution, for it was encountered sixteen times in the prehistoric material examined from Kentucky, Arkansas, and Ohio, as well as in historic objects made by the Menomini and Wisconsin Potawatomi. In the University of Wisconsin Museum is a bunch of prepared fiber (16422) from the caves of Kentucky. This fiber was commonly used by the cave and rock-shelter peoples of Arkansas for cords, mats, rope, and in all coarsely woven materials. A woven mat from Bushwick Cave is a fair example (MAIHF 11-6243). The Ohio cave and rock-shelter dwellers used the pawpaw for coarse bags and fabrics, for example, in a split bark bag (OSHAM 332-22). In the Milwaukee Public Museum are two bags in which this fiber was identified, one, from the Menomini (4570) in which only the weft is of pawpaw, and another (23287) from the Wisconsin Potawatomi, entirely composed of it .</p>",
+  "citation": {
+    "display": "A. C. Whitford. “<a href=\"https://hdl.handle.net/2027/uc1.b4321375?urlappend=%3Bseq=17%3Bownerid=9007199266569933-21\" rel=\"noopener\" target=\"_blank\">ANONACEAE, D. C. (Custard-Apple Family)</a>.” <em>Textile Fibers Used In Eastern Aboriginal North America</em>. <em>Anthropological Papers of the American Museum of Natural History.</em> Vol. 38. Part 1. New York: American Museum of Natural History, 1941. 9.",
+    "bibliography": "Whitford, A. C. \"Anonaceae, D. C. (Custard-Apple Family).\" <em>Textile Fibers Used in Eastern Aboriginal North America</em>, Anthropological Papers of the American Museum of Natural History, vol. 38, part 1, American Museum of Natural History, 1941.",
+    "title": "ANONACEAE, D. C. (Custard-Apple Family)",
+    "written": "1941",
+    "locator": {
+      "page": "9",
+      "url": "https://hdl.handle.net/2027/uc1.b4321375?urlappend=%3Bseq=17%3Bownerid=9007199266569933-21",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0107",
+      "type": "book",
+      "title": "Textile Fibers Used in Eastern Aboriginal North America",
+      "identifiers": {
+        "hathitrust": "001632236",
+        "oclc": "1609195",
+        "lccn": "41022534"
+      },
+      "contributors": [
+        {
+          "id": "a-a-c-whitford",
+          "name": "A. C. Whitford",
+          "role": "author"
+        }
+      ],
+      "publisher": "American Museum of Natural History",
+      "issued": "1941",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "rightsNote": "a U.S. government work"
+    }
+  },
+  "lectio": {
+    "post": "lt-0030",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0025"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

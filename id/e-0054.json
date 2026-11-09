@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0054/",
+  "id": "e-0054",
+  "type": "article",
+  "title": "Ashia Ajani Mulls Over Mullein",
+  "container": "PLANTCRAFT",
+  "contributors": [
+    {
+      "id": "a-ashia-ajani",
+      "name": "Ashia Ajani",
+      "role": "author"
+    },
+    {
+      "id": "a-amirio-freeman",
+      "name": "Amirio Freeman",
+      "role": "author"
+    }
+  ],
+  "issued": "2025-05-05",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0054"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

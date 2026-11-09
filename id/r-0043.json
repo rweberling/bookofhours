@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0043/",
+  "id": "r-0043",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Annika Hansteen-Izora, “<a href=\"https://annikahansteenizora.substack.com/p/time-is-water\">Time is Water</a>,” <em>Annika is Dreaming</em> (May 30, 2022).",
+    "bibliography": "Hansteen-Izora, Annika. \"Time is Water.\" <em>Annika is Dreaming</em>, 30 May 2022.",
+    "title": "Time is Water",
+    "written": "2022-05-30",
+    "locator": {
+      "url": "https://annikahansteenizora.substack.com/p/time-is-water",
+      "label": "Substack"
+    },
+    "edition": {
+      "id": "e-0043",
+      "type": "article",
+      "title": "Time is Water",
+      "container": "Annika is Dreaming",
+      "contributors": [
+        {
+          "id": "a-annika-hansteen-izora",
+          "name": "Annika Hansteen-Izora",
+          "role": "author"
+        }
+      ],
+      "issued": "2022-05-30",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0003",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0003",
+        "basis": "thematic",
+        "note": "Plants' cycles of life and death offered as alternative clocks. Maples aren't mentioned."
+      }
+    ]
+  },
+  "firstLine": "It is in our best interest to question the metronome of capitalism and the ways it arranges time, both structurally and interpersonally. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

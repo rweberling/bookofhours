@@ -1,0 +1,56 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0054/",
+  "id": "r-0054",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Ashia Ajani, with Amirio Freeman, “<a href=\"https://plantcraft.substack.com/p/plantcraft-ashia-ajani-mulls-over\">Ashia Ajani Mulls Over Mullein</a>,” <em>PLANTCRAFT </em>(May 5, 2025).",
+    "bibliography": "Ajani, Ashia, with Amirio Freeman. \"Ashia Ajani Mulls Over Mullein.\" <em>PLANTCRAFT</em>, 5 May 2025.",
+    "title": "Ashia Ajani Mulls Over Mullein",
+    "written": "2025-05-05",
+    "locator": {
+      "url": "https://plantcraft.substack.com/p/plantcraft-ashia-ajani-mulls-over",
+      "label": "Substack"
+    },
+    "edition": {
+      "id": "e-0054",
+      "type": "article",
+      "title": "Ashia Ajani Mulls Over Mullein",
+      "container": "PLANTCRAFT",
+      "contributors": [
+        {
+          "id": "a-ashia-ajani",
+          "name": "Ashia Ajani",
+          "role": "author"
+        },
+        {
+          "id": "a-amirio-freeman",
+          "name": "Amirio Freeman",
+          "role": "author"
+        }
+      ],
+      "issued": "2025-05-05",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0009",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0008",
+        "basis": "both",
+        "note": "Mullein seed dormancy is real; the passage turns it into a figure for anger."
+      }
+    ]
+  },
+  "firstLine": "One of my favorite facts about mullein is that it can produce hundreds of seeds—and these seeds can lay dormant for decades. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

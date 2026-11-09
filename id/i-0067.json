@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0067/",
+  "id": "i-0067",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-1-57c87d7b83e9.jpeg",
+  "caption": "“<a href=\"https://digitalcollections.nypl.org/items/249ee980-c561-012f-c3ed-58d385a7bc34\">Wills’s Cigarettes, Lilac</a>” (n.d.), cigarette card from The George Arents Collection, The New York Public Library Digital Collections.",
+  "alt": "A cigarette card with a color painting of a cluster of pink lilac flowers among dark green leaves, labelled “Lilac.”",
+  "bibliography": "W. D. &amp; H. O. Wills. \"Lilac.\" Cigarette card, George Arents Collection, New York Public Library.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "NYPL Digital Collections",
+      "url": "https://digitalcollections.nypl.org/items/249ee980-c561-012f-c3ed-58d385a7bc34"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0012",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0010"
+    ]
+  },
+  "display": {
+    "size": [
+      590,
+      761
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+  "rightsNote": "undated cigarette card",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

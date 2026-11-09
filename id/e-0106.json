@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0106/",
+  "id": "e-0106",
+  "type": "article",
+  "title": "Neotropical Anachronisms: The Fruits the Gomphotheres Ate",
+  "container": "Science",
+  "volume": "215",
+  "pages": "19–27",
+  "contributors": [
+    {
+      "id": "a-daniel-h-janzen",
+      "name": "Daniel H. Janzen",
+      "role": "author",
+      "wikidata": "Q1161184"
+    },
+    {
+      "id": "a-paul-s-martin",
+      "name": "Paul S. Martin",
+      "role": "author",
+      "wikidata": "Q2062122"
+    }
+  ],
+  "issued": "1982-01",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0107"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

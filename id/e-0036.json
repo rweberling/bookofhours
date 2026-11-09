@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0036/",
+  "id": "e-0036",
+  "type": "book",
+  "title": null,
+  "contributors": [
+    {
+      "id": "a-jones-very",
+      "name": "Jones Very",
+      "role": "author",
+      "wikidata": "Q2797629"
+    }
+  ],
+  "issued": null,
+  "original-date": "1883/1886",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0036"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

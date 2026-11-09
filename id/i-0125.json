@@ -1,0 +1,33 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0125/",
+  "id": "i-0125",
+  "shownIn": "seasons",
+  "file": "https://www.youtube.com/watch?v=n2WHV7qlAeI",
+  "media": "video",
+  "caption": "<em><a href=\"https://www.youtube.com/watch?v=n2WHV7qlAeI\">Monarch and Milkweed, by Helen Frost and Leonid Gore. Read Aloud by Reading Rhino</a></em> (July 30, 2026).",
+  "bibliography": "Frost, Helen, and Leonid Gore. <em>Monarch and Milkweed</em>. Read aloud by Reading Rhino. Video, YouTube, 30 July 2026.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/watch?v=n2WHV7qlAeI"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0022",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0019"
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

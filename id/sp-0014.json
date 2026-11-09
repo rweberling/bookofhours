@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0014/",
+  "id": "sp-0014",
+  "name": "Pink Lady’s Slipper",
+  "scientific": "Cypripedium acaule",
+  "rank": "species",
+  "wikidata": "Q744706",
+  "gbif": "2820380",
+  "inaturalist": "47588",
+  "records": [
+    "r-0072",
+    "r-0073",
+    "r-0074",
+    "i-0079",
+    "i-0080",
+    "i-0081"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

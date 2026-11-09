@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0098/",
+  "id": "e-0098",
+  "type": "book",
+  "title": "Tree Lore",
+  "identifiers": {
+    "hathitrust": "001881232",
+    "oclc": "12747590"
+  },
+  "contributors": [
+    {
+      "id": "a-francis-george-heath",
+      "name": "Francis George Heath",
+      "role": "author",
+      "wikidata": "Q105764193"
+    }
+  ],
+  "publisher": "Charles H. Kelly",
+  "issued": "1912",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0099"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

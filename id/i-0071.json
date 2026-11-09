@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0071/",
+  "id": "i-0071",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/197007595.week-22-mycobacterium-vaccae-jenifer-2-ea33a4d4d5d9.jpg",
+  "caption": "Jenifer Wightman, <em><a href=\"https://exhibits.library.cornell.edu/mud-painting/feature/winogradsky-rothko-d701f1f4-6960-4eab-9e42-0f3036ce57ec\">Winogradsky Rothko</a></em> (2004). Six weeks after installation. Photo: Johnna MacArthur (September 11, 2004).",
+  "alt": "A tall glass panel framed in rusted steel, filled with layers of mud and water: dark soil at the bottom, a band of green, and a hazy amber-gold above.",
+  "bibliography": "Wightman, Jenifer. <em>Winogradsky Rothko</em>. 2004. Photograph by Johnna MacArthur, 11 Sept. 2004.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Cornell University Library",
+      "url": "https://exhibits.library.cornell.edu/mud-painting/feature/winogradsky-rothko-d701f1f4-6960-4eab-9e42-0f3036ce57ec"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0013",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0011"
+    ]
+  },
+  "display": {
+    "size": [
+      471,
+      800
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

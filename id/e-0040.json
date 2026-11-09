@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0040/",
+  "id": "e-0040",
+  "type": "book",
+  "title": "The Birds of North and Middle America: A Descriptive Catalog, part 4",
+  "identifiers": {
+    "hathitrust": "001501611",
+    "oclc": "857360",
+    "lccn": "11035036"
+  },
+  "contributors": [
+    {
+      "id": "a-robert-ridgway",
+      "name": "Robert Ridgway",
+      "role": "author",
+      "wikidata": "Q940473"
+    }
+  ],
+  "publisher": "Government Printing Office",
+  "issued": "1907",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0040"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

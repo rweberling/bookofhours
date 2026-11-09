@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0059/",
+  "id": "r-0059",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "“<a href=\"https://oxfordcountycts.substack.com/p/mosses-of-maine-a-brief-guide\">Mosses of Maine: A Brief Guide</a>,” <em>Oxford County CTS</em> (October 15, 2025).",
+    "bibliography": "\"Mosses of Maine: A Brief Guide.\" <em>Oxford County CTS</em>, 15 Oct. 2025.",
+    "title": "Mosses of Maine: A Brief Guide",
+    "written": "2025-10-15",
+    "locator": {
+      "url": "https://oxfordcountycts.substack.com/p/mosses-of-maine-a-brief-guide",
+      "label": "Substack"
+    },
+    "edition": {
+      "id": "e-0059",
+      "type": "article",
+      "title": "Mosses of Maine: A Brief Guide",
+      "container": "Oxford County CTS",
+      "issued": "2025-10-15",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0010",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0009"
+    ]
+  },
+  "firstLine": "Along with lichens, bryophytes are often the first actors in primary succession : …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

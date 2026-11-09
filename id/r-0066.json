@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0066/",
+  "id": "r-0066",
+  "shownIn": "seasons",
+  "text": "<p>Which organisms from the natural environment are important in addition to those from animals? Although there is no direct evidence linking soil consumption to health benefits, it is evident that soil is a significant source of microbial exposure in natural settings. Soil microorganisms become airborne in dust during dry conditions, but also when raindrops impact the soil, because tiny explosions of soil organisms occur, releasing them into the air. Additionally, soil organisms settle on food, particularly in farmers' markets where washing and packaging are minimal. Moreover geophagy (consumption of soil) is an evolved behaviour. It is probable that all vertebrates, especially in early life, engage in it, and the green iguana is a well-studied example of this. Many primate species, including gorillas, orangutans, and chimpanzees have been observed eating soil. Geophagy is a common practice in many cultures, and is frequently observed during pregnancy, not only in underdeveloped rural societies but also in Western cultures where it is often considered a pathological manifestation of pica. Many of the Treg-inducing and immunoregulation-enhancing strains of bacteria are found in soil.</p>",
+  "citation": {
+    "display": "Graham A.W. Rook. “<a href=\"https://doi.org/10.3389/falgy.2023.1220481\">The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs</a>.” <em>Frontiers in Allergy</em> 4 (September 12, 2023), p. 8.",
+    "bibliography": "Rook, Graham A. W. \"The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs.\" <em>Frontiers in Allergy</em>, vol. 4, 12 Sept. 2023.",
+    "title": "The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs",
+    "written": "2023-09-12",
+    "locator": {
+      "page": "8",
+      "url": "https://doi.org/10.3389/falgy.2023.1220481",
+      "label": "DOI"
+    },
+    "edition": {
+      "id": "e-0066",
+      "type": "article",
+      "title": "The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs",
+      "container": "Frontiers in Allergy",
+      "volume": "4",
+      "identifiers": {
+        "doi": "10.3389/falgy.2023.1220481"
+      },
+      "contributors": [
+        {
+          "id": "a-graham-a-w-rook",
+          "name": "Graham A. W. Rook",
+          "role": "author",
+          "wikidata": "Q112435644"
+        }
+      ],
+      "issued": "2023-09-12",
+      "rights": "https://creativecommons.org/licenses/by/4.0/",
+      "rightsNote": "open access (Frontiers)"
+    }
+  },
+  "lectio": {
+    "post": "lt-0013",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0011"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

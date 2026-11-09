@@ -1,0 +1,59 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0102/",
+  "id": "r-0102",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "John Shade [pseud.]. “Canto One.” <a href=\"https://archive.org/details/in.ernet.dli.2015.458629/page/n21/mode/2up\" rel=\"noopener\" target=\"_blank\">Lines 49-57</a>. From Vladimir Nabokov. <em><a href=\"https://bookshop.org/a/86532/9780679723424\" rel=\"noopener\" target=\"_blank\">Pale Fire</a>. </em>1962. New York: Lancer Books, 1963. 24.",
+    "bibliography": "Nabokov, Vladimir. <em>Pale Fire</em>. Lancer Books, 1963. Originally published 1962. Quoting John Shade, \"Canto One,\" lines 49–57.",
+    "title": "Canto One",
+    "written": "1962",
+    "locator": {
+      "page": "24",
+      "url": "https://archive.org/details/in.ernet.dli.2015.458629/page/n21/mode/2up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0101",
+      "type": "book",
+      "title": "Pale Fire",
+      "identifiers": {
+        "internetArchive": "in.ernet.dli.2015.458629"
+      },
+      "contributors": [
+        {
+          "id": "a-vladimir-nabokov",
+          "name": "Vladimir Nabokov",
+          "role": "author",
+          "wikidata": "Q36591"
+        }
+      ],
+      "publisher": "Lancer Books",
+      "issued": "1963",
+      "original-date": "1962",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780679723424"
+  },
+  "lectio": {
+    "post": "lt-0029",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0024"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "I had a favorite young shagbark there …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

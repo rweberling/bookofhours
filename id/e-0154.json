@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0154/",
+  "id": "e-0154",
+  "title": "Autumnal Leaves",
+  "issued": "1885",
+  "identifiers": {
+    "hathitrust": "006610218",
+    "oclc": "12747619"
+  },
+  "type": "book",
+  "contributors": [
+    {
+      "id": "a-francis-george-heath",
+      "name": "Francis George Heath",
+      "role": "author",
+      "wikidata": "Q105764193"
+    }
+  ],
+  "publisher": "Kegan Paul, Trench, & Co.",
+  "original-date": "1881",
+  "edition": "3rd ed.",
+  "citedBy": [
+    "i-0149"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

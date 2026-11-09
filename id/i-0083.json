@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0083/",
+  "id": "i-0083",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-2-d9b47253f1e3.jpeg",
+  "caption": "Étienne Léopold Trouvelot, “<a href=\"https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f\">Plate IV. Solar Prominences</a>.” (Wellcome Collection). Rpt. from <em><a href=\"https://hdl.handle.net/2027/coo.31924056091709?urlappend=%3Bseq=151%3Bownerid=27021597769875425-161\">Annals of the Astronomical Observatory of Harvard College</a>, </em>Vol. VIII<em> </em>(Cambridge: John Wilson and Son, 1876).",
+  "alt": "A plate of four strips of drawings, bright red on black, showing solar prominences: flame-like jets, arches and plumes of gas rising from the sun’s edge, with a scale in miles below.",
+  "bibliography": "Trouvelot, Étienne Léopold. \"Plate IV. Solar Prominences.\" <em>Annals of the Astronomical Observatory of Harvard College</em>, vol. 8, John Wilson and Son, 1876. Wellcome Collection, London.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wellcome Collection",
+      "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f"
+    },
+    {
+      "role": "copy",
+      "label": "HathiTrust",
+      "url": "https://hdl.handle.net/2027/coo.31924056091709?urlappend=%3Bseq=151%3Bownerid=27021597769875425-161"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0017",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      "ph-0003"
+    ]
+  },
+  "display": {
+    "size": [
+      394,
+      639
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

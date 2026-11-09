@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0042/",
+  "id": "i-0042",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/190031542.week-13-paper-birch-robert-frost-1-9644353e30e2.jpeg",
+  "caption": "<em><a href=\"https://www.phillipscollection.org/collection/new-england-birches\">New England Birches</a> </em>(n.d.), Ernest Lawson (1873-1939). Oil on cradled plywood panel. Held in The Phillips Collection (Washington, D.C.).",
+  "alt": "An oil painting of slender white birches on a green hillside, a red barn among them, with a blue mountain under a pale sky beyond.",
+  "bibliography": "Lawson, Ernest. <em>New England Birches</em>. n.d., The Phillips Collection, Washington, D.C.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Phillips Collection",
+      "url": "https://www.phillipscollection.org/collection/new-england-birches"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0004",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0004"
+    ]
+  },
+  "display": {
+    "size": [
+      721,
+      600
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "the painter died in 1939",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

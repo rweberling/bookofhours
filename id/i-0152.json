@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0152/",
+  "id": "i-0152",
+  "shownIn": "weather",
+  "file": "images/weather_moussette_lightning.jpg",
+  "caption": "Charles Moussette, <a href=\"https://www.metmuseum.org/art/collection/search/287289\" target=\"_blank\"><em>[Spiral of Lightning in a Thunderstorm]</em></a> (1886)",
+  "alt": "An early photograph of lightning: a single jagged white bolt, coiled near its top, crossing an almost black night sky.",
+  "bibliography": "Moussette, Charles. <em>[Spiral of Lightning in a Thunderstorm]</em>. 12 May 1886, albumen silver print from glass negative, The Metropolitan Museum of Art, New York, Gilman Collection, 2005.100.651.",
+  "creator": {
+    "id": "a-charles-moussette",
+    "name": "Charles Moussette"
+  },
+  "title": "[Spiral of Lightning in a Thunderstorm]",
+  "date": "1886-05-12",
+  "institution": "The Metropolitan Museum of Art",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/287289"
+    }
+  ],
+  "source": {
+    "url": "https://images.metmuseum.org/CRDImages/ph/original/DP156451.jpg",
+    "retrieved": "2026-11-05"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "display": {
+    "cardPosition": "bottom-left"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "thunder"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

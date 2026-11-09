@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0081/",
+  "id": "e-0081",
+  "type": "book",
+  "title": "The Journal of Major John Norton, 1816",
+  "contributors": [
+    {
+      "id": "a-john-norton",
+      "name": "John Norton",
+      "role": "author"
+    },
+    {
+      "id": "a-carl-f-klinck",
+      "name": "Carl F. Klinck",
+      "role": "editor",
+      "wikidata": "Q5040429"
+    },
+    {
+      "id": "a-james-j-talman",
+      "name": "James J. Talman",
+      "role": "editor",
+      "wikidata": "Q140645688"
+    }
+  ],
+  "publisher": "Champlain Society",
+  "issued": "1970",
+  "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+  "rightsNote": "written 1816, first published 1970",
+  "citedBy": [
+    "r-0081"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

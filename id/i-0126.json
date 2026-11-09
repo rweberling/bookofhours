@@ -1,0 +1,38 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0126/",
+  "id": "i-0126",
+  "shownIn": "seasons",
+  "file": "https://www.youtube.com/watch?v=_0Se52vR7j0",
+  "media": "video",
+  "caption": "<em><a href=\"https://www.voicesfromthebarrens.com\">Voices from the Barrens: Native Peoples, Blueberries, and Sovereignty</a></em> (2020, dir. Nancy Ghertner).",
+  "bibliography": "Ghertner, Nancy, director. <em>Voices from the Barrens: Native Peoples, Blueberries, and Sovereignty</em>. 2020. Video, YouTube.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/watch?v=_0Se52vR7j0"
+    },
+    {
+      "role": "copy",
+      "label": "Voices from the Barrens",
+      "url": "https://www.voicesfromthebarrens.com"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0021",
+    "place": 4
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0018"
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

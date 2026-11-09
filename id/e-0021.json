@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0021/",
+  "id": "e-0021",
+  "type": "book",
+  "title": "Sea Garden",
+  "contributors": [
+    {
+      "id": "a-h-d",
+      "name": "H.D.",
+      "role": "author",
+      "wikidata": "Q236469"
+    }
+  ],
+  "publisher": "Constable",
+  "issued": "1916",
+  "original-date": "1915/1916",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "seagarden00hdhirich",
+    "oclc": "3890178",
+    "openlibrary": "OL7041086M",
+    "lccn": "17028831"
+  },
+  "citedBy": [
+    "r-0021"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0093/",
+  "id": "i-0093",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-3-943bb839029c.jpeg",
+  "caption": "<em><a href=\"https://www.europeana.eu/en/stories/corn-a-versatile-plant-with-a-long-history\">Zea Mays L</a> (1892/1893), </em>from <em><a href=\"https://www.europeana.eu/en/item/165/https___bibdigital_rjb_csic_es_idviewer_14310_169\">Atlas des plantes de France</a></em>, Royal Botanic Garden of Madrid.",
+  "alt": "A color botanical plate of corn: a tall stalk with long green leaves and a tasselled top, and a large ear peeled open to show rows of golden kernels.",
+  "bibliography": "<em>Zea mays L.</em> 1892/1893. <em>Atlas des plantes de France</em>, Real Jardín Botánico, Madrid.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Europeana",
+      "url": "https://www.europeana.eu/en/stories/corn-a-versatile-plant-with-a-long-history"
+    },
+    {
+      "role": "copy",
+      "label": "Europeana",
+      "url": "https://www.europeana.eu/en/item/165/https___bibdigital_rjb_csic_es_idviewer_14310_169"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0020",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0017"
+    ]
+  },
+  "display": {
+    "size": [
+      440,
+      666
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

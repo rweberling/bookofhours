@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0063/",
+  "id": "e-0063",
+  "type": "book",
+  "title": "The Lilac",
+  "identifiers": {
+    "hathitrust": "100451368",
+    "oclc": "17570555"
+  },
+  "contributors": [
+    {
+      "id": "a-william-c-barry",
+      "name": "William C. Barry",
+      "role": "author"
+    }
+  ],
+  "publisher": "Mount Hope Nurseries",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0063"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

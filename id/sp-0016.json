@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0016/",
+  "id": "sp-0016",
+  "name": "Red Currant",
+  "scientific": "Ribes rubrum",
+  "rank": "species",
+  "wikidata": "Q146661",
+  "gbif": "2986097",
+  "inaturalist": "54431",
+  "records": [
+    "r-0079",
+    "r-0080",
+    "i-0088",
+    "i-0089",
+    "i-0090"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

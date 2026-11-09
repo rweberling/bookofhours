@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0043/",
+  "id": "e-0043",
+  "type": "article",
+  "title": "Time is Water",
+  "container": "Annika is Dreaming",
+  "contributors": [
+    {
+      "id": "a-annika-hansteen-izora",
+      "name": "Annika Hansteen-Izora",
+      "role": "author"
+    }
+  ],
+  "issued": "2022-05-30",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0043"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

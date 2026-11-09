@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0159/",
+  "id": "e-0159",
+  "type": "book",
+  "title": "An Essay on Dew, and Several Appearances Connected with It",
+  "contributors": [
+    {
+      "id": "a-william-charles-wells",
+      "name": "William Charles Wells",
+      "role": "author",
+      "wikidata": "Q3180413"
+    }
+  ],
+  "publisher": "Taylor and Hessey",
+  "issued": "1814",
+  "original-date": "1814",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "b21299742"
+  },
+  "citedBy": [
+    "r-0122"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

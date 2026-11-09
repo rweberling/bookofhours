@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="record-page">
+<head>
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+  <!-- Built by scripts/build_records.py from data/; edit those, not this. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E. P. Felt, “Gall Insects and Their Relations to Plants” — The Earthly Book of Hours</title>
+  <meta name="description" content="Reading r-0070: E. P. Felt, “Gall Insects and Their Relations to Plants”">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://earthlyhours.com/id/r-0070/">
+  <link rel="alternate" type="application/json" href="https://earthlyhours.com/id/r-0070.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quotation",
+  "@id": "https://earthlyhours.com/id/r-0070/",
+  "name": "Gall Insects and Their Relations to Plants",
+  "url": "https://earthlyhours.com/id/r-0070/",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "E. P. Felt",
+      "sameAs": "https://www.wikidata.org/wiki/Q5382324"
+    }
+  ],
+  "isBasedOn": "https://earthlyhours.com/id/e-0070/",
+  "about": [
+    {
+      "@id": "https://earthlyhours.com/id/sp-0013/",
+      "name": "Wool Sower Wasp"
+    }
+  ],
+  "license": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "isPartOf": {
+    "@type": "Collection",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/id/"
+  }
+}
+  </script>
+</head>
+<body>
+
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+
+<main class="page">
+  <p class="publication-name"><a href="/id/">The Earthly Book of Hours · Records</a></p>
+
+  <div class="rule-ornament" aria-hidden="true">
+    <div class="line"></div>
+    <div class="lozenge">✦</div>
+    <div class="diamond"></div>
+    <div class="lozenge">✦</div>
+    <div class="line"></div>
+  </div>
+
+  <h1 class="page-title">E. P. Felt, “Gall Insects and Their Relations to Plants”</h1>
+  <p class="page-subtitle">Reading · r-0070</p>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">The text</h2>
+    <blockquote class="record-text"><p>Before going further, let us glance for a moment at the different types of insects possessing this gall-making habit.<br><br>The Hymenoptera, best known because of the industrious honeybee, has two important families, the Cynipidae and the Tenthredinidae, members of which live in this questionable manner. The first named are minute, four-winged gall flies with legless white maggots. They are moderately numerous in species and remarkable for an alternation of generations: the structural variations between the adults in different generations being so marked, that before the relationship was suspected, they were referred to separate genera. Certain Cynipids or gall wasps are believed to reproduce only by parthenogenesis. These little insects display a marked partiality for oaks and roses and produce striking types of galls, such as the cortical swellings of the gouty oak gall, a species occasionally becoming so abundant that five hundred thousand individuals may be reared from one tree and its conspicuous galls form giant, bead-like swellings on almost all the smaller branches of a large oak. Occasionally the peculiar bud-like swellings of Andricus gemmarius Ashm. are very abundant on pin oaks and the sweet exudation issuing therefrom attracts hosts of bees, flies and similar insects. Another oak gall occasionally numerous is the oak leaf stalk gall.? The gall of the wool sower? is another striking type and results from the female depositing eggs in a ring of buds around white oak stems, and from the series of wounds inflicted, there develops a seemingly delicate, globose, white, pink-spotted mass which on examination is found to consist of numerous cells, each supported and guarded by a thick fungoid, hairy growth. A more ordinary type may be seen in the familiar banded bullet gall,* a representative of a considerable series generally known as “bullet galls.”</p></blockquote>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">The work</h2>
+    <dl class="record-fields">
+      <dt>Title</dt><dd>Gall Insects and Their Relations to Plants</dd>
+      <dt>By</dt><dd><a href="https://www.wikidata.org/wiki/Q5382324" target="_blank">E. P. Felt</a></dd>
+      <dt>Written</dt><dd>1918-06</dd>
+      <dt>Citation</dt><dd>E.P. Felt, “<a href="https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189">Gall Insects and Their Relations to Plants</a>.” [Gaul Insect Papers]. Np, n.d. Rpt. <em>The Scientific Monthly </em>(June 1918: 509-525). pp. 510-511.</dd>
+      <dt>Bibliography</dt><dd>Felt, E. P. "Gall Insects and Their Relations to Plants." <em>The Scientific Monthly</em>, June 1918, pp. 509–525.</dd>
+      <dt>Edition</dt><dd><a href="/id/e-0070/"><em>Gall Insects and Their Relations to Plants</em></a></dd>
+      <dt>Where to read it</dt><dd><a href="https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189" target="_blank">p. 510–511, HathiTrust</a></dd>
+    </dl>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">In the collection</h2>
+    <dl class="record-fields">
+      <dt>Appears in</dt><dd><a href="/lectio-terra/wool-sower-wasp/">Week 24: Wool Sower Wasp, E.P. Felt, Francesco Redi of Arezzo</a> (Lectio Terra, 2026-06-06)</dd>
+      <dt>Seasons</dt><dd>Summer</dd>
+      <dt>About</dt><dd><a href="/id/sp-0013/">Wool Sower Wasp</a></dd>
+    </dl>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Rights</h2>
+    <dl class="record-fields">
+      <dt>Status</dt><dd>In the public domain in the United States</dd>
+    </dl>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Cite this record</h2>
+    <p class="record-cite">E. P. Felt, “Gall Insects and Their Relations to Plants.” Record r-0070, <em>The Earthly Book of Hours</em>, ed. Ryan Weberling. <a href="https://earthlyhours.com/id/r-0070/">https://earthlyhours.com/id/r-0070/</a>. Dataset: <a href="https://doi.org/10.5281/zenodo.23603918" target="_blank">https://doi.org/10.5281/zenodo.23603918</a>.</p>
+    <p class="record-data">This record as data: <a href="/id/r-0070.json">r-0070.json</a> · <a href="/id/">All records</a></p>
+  </section>
+
+  <footer class="page-footer">
+    <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
+    </div>
+    <p class="colophon">A project of <a href="https://otherwise.dfos.com" target="_blank">Otherwise</a></p>
+  </footer>
+</main>
+
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a href="seasons.html">The Current Season</a>
+      <a href="seasons.html#wander">Wander the Seasons</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
+    <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
+      <a href="editions.html">Otherwise Editions</a>
+      <a href="#letters">Letters from Otherwise</a>
+      <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
+      <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Visit Otherwise <span class="ext-arrow" aria-hidden="true">↗</span></a>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+
+<script src="/shared.js"></script>
+<script src="/atmosphere.js"></script>
+<script src="/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0038/",
+  "id": "r-0038",
+  "shownIn": "seasons",
+  "text": "<p>But even if the future leave us nothing to hope for, the wonderful fact of our existing at this present moment of time gives us the greatest encouragement to live after our own rule and measure; so inexplicable is it, that we should be living just to-day, though there have been an infinity of time wherein we might have arisen; that we own nothing but a span’s length of it, this “to-day,” and must show in it wherefore and whereunto we have arisen. We have to answer for our existence to ourselves; and will therefore be our own true pilots, and not admit that our being resembles a blind fortuity. […] The true educators and moulders reveal to thee the real groundwork and import of thy being, something that in itself cannot be moulded or educated, but is anyhow difficult of approach, bound and crippled: thy educators can be nothing but thy deliverers. And that is the secret of all culture: it does not give artificial limbs, wax noses, or spectacles for the eyes—a thing that could buy such gifts is but the base coin of education. But it is rather a liberation, a removal of all the weeds and rubbish and vermin that attack the delicate shoots, the streaming forth of light and warmth, the tender dropping of the night rain; it is the following and the adoring of Nature when she is pitifully-minded as a mother;—her completion, when it bends before her fierce and ruthless blasts and turns them to good, and draws a veil over all expression of her tragic unreason—for she is a step-mother too, sometimes.</p>",
+  "citation": {
+    "display": "“<a href=\"https://archive.org/details/NietzscheSchopenhauerAsEducatorCollins/page/n3/mode/2up\">Schopenhauer as Educator</a>,” from Friedrich Nietzsche, <em>Untimely Meditations </em>(1873-1876),<em> </em>pp. 105-106, 107-108.",
+    "bibliography": "Nietzsche, Friedrich. \"Schopenhauer as Educator.\" <em>Thoughts Out of Season, Part II</em>, translated by Adrian Collins, T. N. Foulis, 1909. Written 1874.",
+    "title": "Schopenhauer as Educator",
+    "written": "1874",
+    "locator": {
+      "page": "105–106, 107–108",
+      "url": "https://archive.org/details/NietzscheSchopenhauerAsEducatorCollins/page/n3/mode/2up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0038",
+      "type": "book",
+      "title": "Thoughts Out of Season, Part II",
+      "identifiers": {
+        "internetArchive": "NietzscheSchopenhauerAsEducatorCollins"
+      },
+      "contributors": [
+        {
+          "id": "a-friedrich-nietzsche",
+          "name": "Friedrich Nietzsche",
+          "role": "author",
+          "wikidata": "Q9358"
+        },
+        {
+          "id": "a-adrian-collins",
+          "name": "Adrian Collins",
+          "role": "translator",
+          "wikidata": "Q15627018"
+        }
+      ],
+      "publisher": "T. N. Foulis",
+      "issued": "1909",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0001",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0001",
+        "basis": "thematic",
+        "note": "Culture as clearing weeds for tender shoots; nature as mother and stepmother. Witch hazel isn't mentioned."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

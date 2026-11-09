@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0013/",
+  "id": "sp-0013",
+  "name": "Wool Sower Wasp",
+  "scientific": "Callirhytis seminator",
+  "rank": "species",
+  "wikidata": "Q104177631",
+  "gbif": null,
+  "inaturalist": "123900",
+  "records": [
+    "r-0070",
+    "r-0071",
+    "i-0076",
+    "i-0077",
+    "i-0078"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

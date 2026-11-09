@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0135/",
+  "id": "e-0135",
+  "title": "Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States",
+  "issued": "1900",
+  "identifiers": {
+    "hathitrust": "010668807",
+    "oclc": "1027478",
+    "lccn": "01029714"
+  },
+  "citedBy": [
+    "i-0062"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0006/",
+  "id": "sp-0006",
+  "name": "Ostrich Fern",
+  "scientific": "Matteuccia struthiopteris",
+  "rank": "species",
+  "wikidata": "Q1130386",
+  "gbif": "2650999",
+  "inaturalist": "82574",
+  "records": [
+    "r-0050",
+    "r-0051",
+    "i-0052",
+    "i-0053",
+    "i-0054"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,14 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0122/",
+  "id": "e-0122",
+  "title": "The Witch Hazel Family (Hamamelidaceae)",
+  "issued": "1976",
+  "identifiers": {
+    "doi": "10.5962/p.249681"
+  },
+  "citedBy": [
+    "i-0036"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

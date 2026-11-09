@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0123/",
+  "id": "r-0123",
+  "shownIn": "weather",
+  "text": "And yet to me not this or that<br>&nbsp;&nbsp;&nbsp;Is always sharp or always sweet;<br>In the sloped shadow of my hat<br>&nbsp;&nbsp;&nbsp;I lean at rest, and drain the heat;<br>Nay more, I think some blessèd power<br>&nbsp;&nbsp;&nbsp;Hath brought me wandering idly here:<br>In the full furnace of this hour<br>&nbsp;&nbsp;&nbsp;My thoughts grow keen and clear.",
+  "citation": {
+    "display": "Archibald Lampman, from \"<a href=\"https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up\" target=\"_blank\">Heat</a>\" (1888)",
+    "bibliography": "Lampman, Archibald. \"Heat.\" <em>Among the Millet, and Other Poems</em>, J. Durie and Son, 1888, pp. 12–13.",
+    "title": "Heat",
+    "written": "1888",
+    "locator": {
+      "page": "13",
+      "url": "https://archive.org/details/amongmilletother00lampuoft/page/13/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0160",
+      "type": "book",
+      "title": "Among the Millet, and Other Poems",
+      "contributors": [
+        {
+          "id": "a-archibald-lampman",
+          "name": "Archibald Lampman",
+          "role": "author",
+          "wikidata": "Q2228698"
+        }
+      ],
+      "publisher": "J. Durie and Son",
+      "issued": "1888",
+      "original-date": "1888",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "amongmilletother00lampuoft",
+        "openlibrary": "OL7232206M"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "heat"
+    ],
+    "seasons": [
+      "summer"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

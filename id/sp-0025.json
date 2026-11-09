@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0025/",
+  "id": "sp-0025",
+  "name": "Common Pawpaw",
+  "scientific": "Asimina triloba",
+  "rank": "species",
+  "wikidata": "Q948827",
+  "gbif": "3158040",
+  "inaturalist": "50897",
+  "records": [
+    "r-0106",
+    "r-0107",
+    "r-0108",
+    "i-0138",
+    "i-0139",
+    "i-0140"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

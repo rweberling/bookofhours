@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0047/",
+  "id": "r-0047",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Jenny Odell, “<a href=\"https://buttondown.com/jennitaur/archive/what-does-it-mean-to-watch-clouds-what-can-it-mean/\">What Does It Mean to Watch Clouds? What Can It Mean?</a>” <em>Jenny Odell’s Newsletter </em>(July 4, 2025).",
+    "bibliography": "Odell, Jenny. \"What Does It Mean to Watch Clouds? What Can It Mean?\" <em>Jenny Odell’s Newsletter</em>, 4 July 2025.",
+    "title": "What Does It Mean to Watch Clouds? What Can It Mean?",
+    "written": "2025-07-04",
+    "locator": {
+      "url": "https://buttondown.com/jennitaur/archive/what-does-it-mean-to-watch-clouds-what-can-it-mean/",
+      "label": "Buttondown"
+    },
+    "edition": {
+      "id": "e-0047",
+      "type": "article",
+      "title": "What Does It Mean to Watch Clouds? What Can It Mean?",
+      "container": "Jenny Odell’s Newsletter",
+      "contributors": [
+        {
+          "id": "a-jenny-odell",
+          "name": "Jenny Odell",
+          "role": "author",
+          "wikidata": "Q68924784"
+        }
+      ],
+      "issued": "2025-07-04",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0005",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0001",
+        "basis": "grounded",
+        "note": "About watching clouds generally, not nimbostratus specifically."
+      }
+    ]
+  },
+  "firstLine": "It is possible, even likely, that you’d feel terror, heartbreak, and rage while looking at clouds, at the exact same time that you feel a self-annihilating love of this world. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

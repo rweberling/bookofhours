@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0132/",
+  "id": "i-0132",
+  "shownIn": "weather",
+  "file": "images/weather_kandinsky_sky_blue.jpg",
+  "caption": "Wassily Kandinsky, <a href=\"https://www.centrepompidou.fr/en/ressources/oeuvre/cEbLda\" target=\"_blank\"><em>Sky Blue</em></a> (1940)",
+  "alt": "A painting of a soft sky-blue ground scattered with small, bright shapes in red, yellow, green and pink, floating like strange birds, fish and insects.",
+  "bibliography": "Kandinsky, Wassily. <em>Bleu de ciel</em> [Sky Blue]. 1940, oil on canvas, Musée national d’art moderne, Centre Pompidou, Paris (AM 1976-862).",
+  "creator": {
+    "id": "a-wassily-kandinsky",
+    "name": "Wassily Kandinsky",
+    "wikidata": "Q61064"
+  },
+  "title": "Bleu de ciel",
+  "date": "1940",
+  "institution": "Musée national d’art moderne, Centre Pompidou",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Centre Pompidou",
+      "url": "https://www.centrepompidou.fr/en/ressources/oeuvre/cEbLda"
+    },
+    {
+      "role": "copy",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_-_Sky_Blue,_1940.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Wassily_Kandinsky_-_Sky_Blue%2C_1940.jpg",
+    "retrieved": "2026-10-19"
+  },
+  "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+  "rightsNote": "public domain in France and the EU (Centre Pompidou); US status uncertain",
+  "tags": {
+    "hours": [],
+    "weather": [
+      "clear"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

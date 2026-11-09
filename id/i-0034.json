@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0034/",
+  "id": "i-0034",
+  "aliases": [
+    "i-emslie-diagram-of-meteorology-displaying"
+  ],
+  "shownIn": "weather",
+  "file": "images/weather_emslie.jpg",
+  "caption": "John Emslie, <a href=\"https://www.rmg.co.uk/collections/objects/rmgc-object-263842\" target=\"_blank\"><em>Diagram of Meteorology, displaying the various phenomena of the atmosphere</em></a> (c. 1845-1860)",
+  "alt": "A hand-coloured print with all kinds of weather in one landscape: a rainbow, snowy mountains, storm clouds and lightning, a waterspout, a lighthouse, a whirlpool swallowing a boat and haloes around the sun, each numbered and keyed in a table below.",
+  "bibliography": "Emslie, John. <em>Diagram of Meteorology, Displaying the Various Phenomena of the Atmosphere</em>. c. 1845–1860, Royal Museums Greenwich, London.",
+  "creator": {
+    "id": "a-john-emslie",
+    "name": "John Emslie",
+    "wikidata": "Q29480502"
+  },
+  "title": "Diagram of Meteorology, displaying the various phenomena of the atmosphere",
+  "date": "1845~/1860~",
+  "institution": "Royal Museums Greenwich",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Royal Museums Greenwich",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-263842"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "display": {
+    "cardPosition": "bottom-right",
+    "weatherUnset": true
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

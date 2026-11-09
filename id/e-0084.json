@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0084/",
+  "id": "e-0084",
+  "type": "article",
+  "title": "Fingers Stained with Fruit and Ink",
+  "container": "Sydney Review of Books",
+  "contributors": [
+    {
+      "id": "a-alix-beeston",
+      "name": "Alix Beeston",
+      "role": "author"
+    }
+  ],
+  "issued": "2020-06-15",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0084"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

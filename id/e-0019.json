@@ -1,0 +1,36 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0019/",
+  "id": "e-0019",
+  "type": "book",
+  "title": "C. P. Cavafy: Collected Poems",
+  "contributors": [
+    {
+      "id": "a-c-p-cavafy",
+      "name": "C. P. Cavafy",
+      "role": "author",
+      "wikidata": "Q216980"
+    },
+    {
+      "id": "a-edmund-keeley",
+      "name": "Edmund Keeley",
+      "role": "translator",
+      "wikidata": "Q5339604"
+    },
+    {
+      "id": "a-philip-sherrard",
+      "name": "Philip Sherrard",
+      "role": "translator",
+      "wikidata": "Q1732710"
+    }
+  ],
+  "publisher": "Princeton University Press",
+  "issued": "1975",
+  "original-date": null,
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation copyright — pending resolution",
+  "citedBy": [
+    "r-0019"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

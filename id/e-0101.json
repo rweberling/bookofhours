@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0101/",
+  "id": "e-0101",
+  "type": "book",
+  "title": "Pale Fire",
+  "identifiers": {
+    "internetArchive": "in.ernet.dli.2015.458629"
+  },
+  "contributors": [
+    {
+      "id": "a-vladimir-nabokov",
+      "name": "Vladimir Nabokov",
+      "role": "author",
+      "wikidata": "Q36591"
+    }
+  ],
+  "publisher": "Lancer Books",
+  "issued": "1963",
+  "original-date": "1962",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0102"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

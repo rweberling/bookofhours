@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0001/",
+  "id": "ph-0001",
+  "name": "Rain Clouds",
+  "latin": "Nimbostratus praecipitatio",
+  "wikidata": null,
+  "records": [
+    "r-0046",
+    "r-0047",
+    "i-0045",
+    "i-0046",
+    "i-0047"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

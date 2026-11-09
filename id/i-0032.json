@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0032/",
+  "id": "i-0032",
+  "aliases": [
+    "i-haeckel-leptomedusae"
+  ],
+  "shownIn": "hours",
+  "file": "images/denouement_haeckel.jpg",
+  "caption": "Ernst Haeckel, \"<a href=\"https://archive.org/details/monographiederme11879haec/page/n70/mode/1up\" target=\"_blank\">Leptomedusae</a>,\" from <em>Das System der Medusen</em> (Vol. 1, 1879)",
+  "alt": "A plate of drawings in white line on a pale turquoise ground: about a dozen jellyfish, some bell-shaped with long trailing tentacles, others seen from above as round discs, filling the page.",
+  "bibliography": "Haeckel, Ernst. \"Leptomedusae.\" <em>Das System der Medusen</em>, vol. 1, Gustav Fischer, 1879.",
+  "creator": {
+    "id": "a-ernst-haeckel",
+    "name": "Ernst Haeckel",
+    "wikidata": "Q48246"
+  },
+  "title": "Leptomedusae",
+  "date": "1879",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "denouement"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "edition": {
+    "id": "e-0121",
+    "title": "Das System der Medusen, vol. 1",
+    "publisher": "Gustav Fischer",
+    "issued": "1879",
+    "identifiers": {
+      "internetArchive": "monographiederme11879haec",
+      "oclc": "12433415"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/monographiederme11879haec/page/n70/mode/1up",
+    "label": "Internet Archive"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

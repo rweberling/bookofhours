@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0054/",
+  "id": "i-0054",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-3-fcab5e16f57a.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59\">Development of the Ostrich Fern</a>,” Plate 6 from <em>The Development of the Ostrich Fern</em>, Douglas Houghton Campbell (Boston: Society of Natural History, April 1887).",
+  "alt": "A plate of microscope drawings showing the early growth of the ostrich fern, numbered 1 to 15: cell after cell in rounded and elongated clusters, cross-sections of tissue, and a tiny young fern rising from its prothallus.",
+  "bibliography": "Campbell, Douglas Houghton. \"Development of the Ostrich Fern.\" Plate 6, <em>The Development of the Ostrich Fern</em>, Boston Society of Natural History, 1887.",
+  "lectio": {
+    "post": "lt-0007",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0006"
+    ]
+  },
+  "display": {
+    "size": [
+      564,
+      806
+    ]
+  },
+  "edition": {
+    "id": "e-0051",
+    "title": "The Development of the Ostrich Fern",
+    "issued": "1887",
+    "identifiers": {
+      "hathitrust": "001993770",
+      "oclc": "14366384"
+    },
+    "contributors": [
+      {
+        "id": "a-douglas-houghton-campbell",
+        "name": "Douglas Houghton Campbell",
+        "role": "author",
+        "wikidata": "Q4251095"
+      }
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

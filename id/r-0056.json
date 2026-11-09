@@ -1,0 +1,56 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0056/",
+  "id": "r-0056",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Hildegard von Bingen, from <em>Physica </em>(c. 1150), <em><a href=\"https://bookshop.org/a/86532/9780807021095\">Hildegard’s Healing Plants: From Her Medieval Classic Physica</a>,</em> trans. Bruce W. Hozeski (Boston: Beacon Press, 2001), pp. 115-116.",
+    "bibliography": "Hildegard von Bingen. <em>Hildegard’s Healing Plants: From Her Medieval Classic Physica</em>. Translated by Bruce W. Hozeski, Beacon Press, 2001. Written c. 1150.",
+    "title": "Physica",
+    "written": "1150~",
+    "locator": {
+      "page": "115–116"
+    },
+    "edition": {
+      "id": "e-0056",
+      "type": "book",
+      "title": "Hildegard’s Healing Plants: From Her Medieval Classic Physica",
+      "contributors": [
+        {
+          "id": "a-hildegard-of-bingen",
+          "name": "Hildegard of Bingen",
+          "role": "author",
+          "wikidata": "Q70991"
+        },
+        {
+          "id": "a-bruce-w-hozeski",
+          "name": "Bruce W. Hozeski",
+          "role": "translator"
+        }
+      ],
+      "publisher": "Beacon Press",
+      "issued": "2001",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780807021095"
+  },
+  "lectio": {
+    "post": "lt-0009",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0008"
+    ]
+  },
+  "firstLine": "Mullein [ wullena ] is warm and dry and somewhat cold. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

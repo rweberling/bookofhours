@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0128/",
+  "id": "i-0128",
+  "shownIn": "hours",
+  "file": "images/hush_bentley_plate.jpg",
+  "caption": "Wilson Alwyn Bentley, <a href=\"https://doi.org/10.1175/1520-0493-30.13.607\" target=\"_blank\">Plate XIX</a>, <em>Monthly Weather Review</em> (1902)",
+  "alt": "A printed plate of twelve photographs of snowflakes in four rows, each a white six-sided crystal on a black square, numbered 889 to 900, from solid plates to feathery stars.",
+  "bibliography": "Bentley, Wilson A. Plate XIX. In “Studies among the Snow Crystals during the Winter of 1901–2, with Additional Data Collected during Previous Winters.” <em>Monthly Weather Review</em> 30, no. 13 (1902): 607–616.",
+  "creator": {
+    "id": "a-wilson-alwyn-bentley",
+    "name": "Wilson Alwyn Bentley",
+    "wikidata": "Q218471"
+  },
+  "title": "Plate XIX",
+  "date": "1902",
+  "institution": "NOAA Photo Library (Historic NWS Collection, wea02087)",
+  "links": [
+    {
+      "role": "copy",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:SnowflakesWilsonBentley.jpg"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "hush"
+    ],
+    "weather": [
+      "snow"
+    ],
+    "seasons": [
+      "winter"
+    ]
+  },
+  "edition": {
+    "id": "e-0152",
+    "type": "article",
+    "title": "Studies among the Snow Crystals during the Winter of 1901–2, with Additional Data Collected during Previous Winters",
+    "container": "Monthly Weather Review",
+    "volume": "30",
+    "pages": "607–616",
+    "issued": "1902",
+    "identifiers": {
+      "doi": "10.1175/1520-0493-30.13.607"
+    }
+  },
+  "locator": {
+    "url": "https://doi.org/10.1175/1520-0493-30.13.607",
+    "label": "DOI"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

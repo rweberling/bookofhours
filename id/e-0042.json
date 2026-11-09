@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0042/",
+  "id": "e-0042",
+  "title": "How Vermont Maple Sugar is Made",
+  "issued": "1915",
+  "identifiers": {
+    "hathitrust": "011274049",
+    "oclc": "18660713"
+  },
+  "contributors": [
+    {
+      "id": "a-walter-h-crockett",
+      "name": "Walter H. Crockett",
+      "role": "author"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0042",
+    "i-0040"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

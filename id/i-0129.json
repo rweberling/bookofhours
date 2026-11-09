@@ -1,0 +1,43 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0129/",
+  "id": "i-0129",
+  "shownIn": "weather",
+  "file": "images/weather_hokusai_red_fuji.jpg",
+  "caption": "Katsushika Hokusai, <a href=\"https://www.metmuseum.org/art/collection/search/36490\" target=\"_blank\"><em>South Wind, Clear Sky</em></a>, from <em>Thirty-six Views of Mount Fuji</em> (c. 1830–32)",
+  "alt": "A woodblock print of Mount Fuji turned deep red, its peak streaked with snow and its lower slopes darkened with forest, rising into a blue sky filled with rows of small white clouds.",
+  "bibliography": "Katsushika Hokusai. <em>South Wind, Clear Sky (Gaifū kaisei)</em>, also known as <em>Red Fuji</em>, from the series <em>Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)</em>. c. 1830–32, woodblock print, ink and color on paper, Metropolitan Museum of Art, New York (JP9).",
+  "creator": {
+    "id": "a-katsushika-hokusai",
+    "name": "Katsushika Hokusai",
+    "wikidata": "Q5586"
+  },
+  "title": "South Wind, Clear Sky (Gaifū kaisei)",
+  "partOf": "Thirty-six Views of Mount Fuji",
+  "date": "1830~/1832~",
+  "institution": "Metropolitan Museum of Art",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/36490"
+    }
+  ],
+  "source": {
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP141062.jpg",
+    "retrieved": "2026-10-19"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "display": {
+    "cardPosition": "bottom-left"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "clear",
+      "wind"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

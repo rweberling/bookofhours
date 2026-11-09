@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0001/",
+  "id": "i-0001",
+  "aliases": [
+    "i-cook-geometrical-psychology-or-the"
+  ],
+  "shownIn": "hours",
+  "file": "images/void_betts.jpg",
+  "caption": "Louisa S. Cook, <a href=\"https://archive.org/details/geometricalpsych00cook/geometricalpsych00cook\" target=\"_blank\"><em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em></a> (1887)",
+  "alt": "A geometric diagram in fine black line: overlapping circles and arcs ringed by dotted spokes, joined by straight lines to a slanted triangle below, scattered with small letters and Greek symbols, and labelled “Fig. 14.”",
+  "bibliography": "Cook, Louisa S. <em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em>. George Redway, 1887.",
+  "creator": {
+    "id": "a-louisa-s-cook",
+    "name": "Louisa S. Cook"
+  },
+  "title": null,
+  "date": "1887",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "void"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "edition": {
+    "id": "e-0117",
+    "title": "Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts",
+    "publisher": "George Redway",
+    "issued": "1887",
+    "identifiers": {
+      "internetArchive": "geometricalpsych00cook",
+      "oclc": "22040934",
+      "openlibrary": "OL24404552M"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/geometricalpsych00cook/geometricalpsych00cook",
+    "label": "Internet Archive"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

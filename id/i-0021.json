@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0021/",
+  "id": "i-0021",
+  "aliases": [
+    "i-caillebotte-raboteurs-de-parquets"
+  ],
+  "shownIn": "hours",
+  "file": "images/fulcrum_caillebotte.jpg",
+  "caption": "Gustave Caillebotte, <a href=\"https://www.musee-orsay.fr/en/artworks/raboteurs-de-parquet-105\" target=\"_blank\"><em>Raboteurs de parquets</em></a> (1875)",
+  "alt": "A painting of three shirtless men on their knees, scraping a wooden floor in an empty Paris room, with curls of wood shavings around them and light from a balconied window falling across the boards.",
+  "bibliography": "Caillebotte, Gustave. <em>Raboteurs de parquet</em>. 1875, Musée d'Orsay, Paris.",
+  "creator": {
+    "id": "a-gustave-caillebotte",
+    "name": "Gustave Caillebotte",
+    "wikidata": "Q295144"
+  },
+  "title": "Raboteurs de parquet",
+  "date": "1875",
+  "institution": "Musée d'Orsay",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Musée d'Orsay",
+      "url": "https://www.musee-orsay.fr/en/artworks/raboteurs-de-parquet-105"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

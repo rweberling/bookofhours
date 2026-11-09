@@ -1,0 +1,57 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0101/",
+  "id": "r-0101",
+  "shownIn": "seasons",
+  "text": "In the moonlight under a shag-bark hickory tree<br>Watching the yellow shadows melt in hoof-pools,<br>Listening to the yes and the no of a woman’s hands,<br><br>I kept my guess why the night was glad.<br><br>The night was lit with a woman’s eyes.<br>The night was crossed with a woman’s hands,<br>The night kept humming an undersong.",
+  "citation": {
+    "display": "Carl Sandburg. “<a href=\"https://hdl.handle.net/2027/uiug.30112039325284?urlappend=%3Bseq=180%3Bownerid=13510798903473000-184\" rel=\"noopener\" target=\"_blank\">Shag-Bark Hickory</a>.” <em>Smoke and Steel</em>. New York: Harcourt, Brace and Howe, 1920. 164.",
+    "bibliography": "Sandburg, Carl. \"Shag-Bark Hickory.\" <em>Smoke and Steel</em>, Harcourt, Brace and Howe, 1920.",
+    "title": "Shag-Bark Hickory",
+    "written": "1920",
+    "locator": {
+      "page": "164",
+      "url": "https://hdl.handle.net/2027/uiug.30112039325284?urlappend=%3Bseq=180%3Bownerid=13510798903473000-184",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0100",
+      "type": "book",
+      "title": "Smoke and Steel",
+      "identifiers": {
+        "hathitrust": "001055000",
+        "oclc": "906880",
+        "lccn": "20017899"
+      },
+      "contributors": [
+        {
+          "id": "a-carl-sandburg",
+          "name": "Carl Sandburg",
+          "role": "author",
+          "wikidata": "Q193608"
+        }
+      ],
+      "publisher": "Harcourt, Brace and Howe",
+      "issued": "1920",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0029",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0024"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

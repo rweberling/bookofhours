@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0080/",
+  "id": "e-0080",
+  "type": "book",
+  "title": "Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits",
+  "identifiers": {
+    "hathitrust": "009120458",
+    "oclc": "12767094"
+  },
+  "contributors": [
+    {
+      "id": "a-fred-w-card",
+      "name": "Fred W. Card",
+      "role": "author"
+    }
+  ],
+  "publisher": "Macmillan",
+  "issued": "1903",
+  "original-date": "1898",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0080"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

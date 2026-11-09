@@ -1,0 +1,45 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0003/",
+  "id": "i-0003",
+  "aliases": [
+    "i-smithsonian-the-1900-solar-eclipse"
+  ],
+  "shownIn": "hours",
+  "file": "images/void_smithsonian.jpg",
+  "caption": "The Smithsonian Institution, <a href=\"https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich/page/n71/mode/2up\" target=\"_blank\"><em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em></a> (1900/1904)",
+  "alt": "A photograph of the eclipsed Sun’s edge: the dark curve of the Moon across the lower half, with pale, flame-like prominences and a soft glow rising from its rim into a black sky, marked 230° and 270°.",
+  "bibliography": "Smithsonian Institution. <em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em>. Smithsonian Institution, 1904.",
+  "creator": {
+    "id": "a-smithsonian-institution",
+    "name": "Smithsonian Institution"
+  },
+  "title": null,
+  "date": "1900/1904",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "void"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "edition": {
+    "id": "e-0118",
+    "title": "The 1900 Solar Eclipse Expedition of the Astrophysical Observatory",
+    "publisher": "Smithsonian Institution",
+    "issued": "1904",
+    "identifiers": {
+      "internetArchive": "1900solareclipse00smitrich",
+      "oclc": "5899479",
+      "openlibrary": "OL7126704M",
+      "lccn": "04033116"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/1900solareclipse00smitrich/1900solareclipse00smitrich/page/n71/mode/2up",
+    "label": "Internet Archive"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

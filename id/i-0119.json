@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0119/",
+  "id": "i-0119",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-4-1c13e3ca35a8.jpeg",
+  "caption": "“<a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">Red Oak. </a><em><a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">Quercus rubra</a></em><a href=\"https://archive.org/details/northamericansyl01michin/page/n173/mode/2up\" rel=\"noopener\" target=\"_blank\">.</a>” From François André Michaux. <em>The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia. </em>Paris, France: 1819.",
+  "alt": "A color engraving of a red oak leaf, large, glossy green and sharply lobed, with two acorns on a twig at its base, one shown cut in half.",
+  "bibliography": "Michaux, François André. \"Red Oak. <em>Quercus rubra</em>.\" <em>The North American Sylva, or a Description of the Forest Trees of the United States, Canada and Nova Scotia</em>, 1819.",
+  "lectio": {
+    "post": "lt-0028",
+    "place": 4
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0023"
+    ]
+  },
+  "display": {
+    "size": [
+      1197,
+      1803
+    ]
+  },
+  "edition": {
+    "id": "e-0150",
+    "title": "The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia",
+    "issued": "1819",
+    "identifiers": {
+      "internetArchive": "northamericansyl01michin",
+      "oclc": "4598632",
+      "openlibrary": "OL24158910M",
+      "lccn": "agr28000778"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up",
+    "label": "Internet Archive"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

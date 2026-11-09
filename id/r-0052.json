@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0052/",
+  "id": "r-0052",
+  "shownIn": "seasons",
+  "footnotes": [
+    {
+      "marker": 1,
+      "text": "<p>Lightwood, fat pine. So called because it is frequently used as a torch.</p>"
+    }
+  ],
+  "citation": {
+    "display": "Zora Neale Hurston, <em>Mules and Men </em>(1935; New York: Harper Perennial, 1990), pp. 106-107.",
+    "bibliography": "Hurston, Zora Neale. <em>Mules and Men</em>. Harper Perennial, 1990. Originally published 1935.",
+    "title": "Mules and Men",
+    "written": "1935",
+    "locator": {
+      "page": "106–107"
+    },
+    "edition": {
+      "id": "e-0052",
+      "type": "book",
+      "title": "Mules and Men",
+      "contributors": [
+        {
+          "id": "a-zora-neale-hurston",
+          "name": "Zora Neale Hurston",
+          "role": "author",
+          "wikidata": "Q220480"
+        }
+      ],
+      "publisher": "Harper Perennial",
+      "issued": "1990",
+      "original-date": "1935",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0008",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0007"
+    ]
+  },
+  "firstLine": "… Well, de ‘gator was a pretty white varmint wid coal black eyes. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

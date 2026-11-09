@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0080/",
+  "id": "r-0080",
+  "shownIn": "seasons",
+  "text": "<p>The paramount use of the currant is in making jelly, for which purpose it is unsurpassed. The red varieties are preferred owing to their higher color, but it is said that if white currants are scalded before pressing, they make a rich, red jelly, not as dark as that from red varieties, but very handsome. The fruit, either green or ripe, makes excellent pies or sauce. It is especially satisfactory when used in combination with fruits which lack sprightliness or acidity. With a few currants added, even the Russian mulberry becomes a most appetizing fruit, and the juneberry seems to be all that one could wish. The currant supplies the requisite acidity, and these fruits furnish the richness of flavor which the currant lacks. In canning it preserves its qualities intact, so that it is nearly as available in winter as in summer. Currant shrub is a pleasant summer drink, made from the ripe fruit crushed and compounded like lemonade. The juice is said to be very useful in soothing fevers. At one time the fruit was reported as having a steady demand in St. Louis for use as a flavoring in soda water.</p>",
+  "citation": {
+    "display": "Fred W. Card. <em><a href=\"https://hdl.handle.net/2027/coo.31924018437917?urlappend=%3Bseq=367%3Bownerid=27021597768559051-381\">Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits</a></em>. New York, New York: Macmillan, 1903 (1898). p. 351.",
+    "bibliography": "Card, Fred W. <em>Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits</em>. Macmillan, 1903. Originally published 1898.",
+    "title": "Bush-Fruits",
+    "written": "1898",
+    "locator": {
+      "page": "351",
+      "url": "https://hdl.handle.net/2027/coo.31924018437917?urlappend=%3Bseq=367%3Bownerid=27021597768559051-381",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0080",
+      "type": "book",
+      "title": "Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits",
+      "identifiers": {
+        "hathitrust": "009120458",
+        "oclc": "12767094"
+      },
+      "contributors": [
+        {
+          "id": "a-fred-w-card",
+          "name": "Fred W. Card",
+          "role": "author"
+        }
+      ],
+      "publisher": "Macmillan",
+      "issued": "1903",
+      "original-date": "1898",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0019",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0016"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

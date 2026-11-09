@@ -1,0 +1,66 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0118/",
+  "id": "r-0118",
+  "shownIn": "weather",
+  "text": "You ask me when I am coming. I do not know.<br>I dream of your mountains and autumn pools brimming all night with the rain.<br>Oh, when shall we be trimming wicks again, together in your western window?<br>When shall I be hearing your voice again, all night in the rain?",
+  "citation": {
+    "display": "Li Shangyin, \"A Note on a Rainy Night to a Friend in the North\" (c. 850, trans. <a href=\"https://archive.org/details/jademountainchin00heng/page/73/mode/1up\" target=\"_blank\">Bynner and Kiang, 1929</a>)",
+    "bibliography": "Li Shang-yin. \"A Note on a Rainy Night to a Friend in the North.\" <em>The Jade Mountain: A Chinese Anthology, Being Three Hundred Poems of the T'ang Dynasty, 618–906</em>, translated by Witter Bynner from the texts of Kiang Kang-hu, Alfred A. Knopf, 1929, p. 73. Written c. 850.",
+    "title": "A Note on a Rainy Night to a Friend in the North",
+    "written": "0850~",
+    "locator": {
+      "page": "73",
+      "url": "https://archive.org/details/jademountainchin00heng/page/73/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0155",
+      "type": "book",
+      "title": "The Jade Mountain: A Chinese Anthology",
+      "contributors": [
+        {
+          "id": "a-li-shangyin",
+          "name": "Li Shangyin",
+          "role": "author",
+          "wikidata": "Q203782"
+        },
+        {
+          "id": "a-witter-bynner",
+          "name": "Witter Bynner",
+          "role": "translator",
+          "wikidata": "Q2586777"
+        },
+        {
+          "id": "a-kiang-kang-hu",
+          "name": "Kiang Kang-hu",
+          "role": "translator",
+          "wikidata": "Q466306"
+        }
+      ],
+      "publisher": "Alfred A. Knopf",
+      "issued": "1929",
+      "original-date": "0850~",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "jademountainchin00heng",
+        "oclc": "20143640",
+        "openlibrary": "OL24441208M"
+      },
+      "rightsNote": "Public domain in the United States (published 1929). Bynner died in 1968, so the translation is still in copyright where the term is the author's life plus 70 years."
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "rain"
+    ],
+    "seasons": [
+      "autumn"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0144/",
+  "id": "e-0144",
+  "title": "Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust",
+  "issued": "1929-09",
+  "identifiers": {
+    "hathitrust": "000505320",
+    "oclc": "1696411",
+    "lccn": "agr16000325"
+  },
+  "citedBy": [
+    "i-0090"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

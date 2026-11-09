@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0050/",
+  "id": "e-0050",
+  "type": "book",
+  "title": "Introduction to Metaphysics",
+  "contributors": [
+    {
+      "id": "a-martin-heidegger",
+      "name": "Martin Heidegger",
+      "role": "author",
+      "wikidata": "Q48301"
+    },
+    {
+      "id": "a-gregory-fried",
+      "name": "Gregory Fried",
+      "role": "translator"
+    },
+    {
+      "id": "a-richard-polt",
+      "name": "Richard Polt",
+      "role": "translator",
+      "wikidata": "Q7328471"
+    }
+  ],
+  "publisher": "Yale University Press",
+  "issued": "2000",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0050"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

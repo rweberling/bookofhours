@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0006/",
+  "id": "r-0006",
+  "aliases": [
+    "r-young-book-of-hours"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Kevin Young, from <a href=\"https://bookshop.org/a/86532/9780375711886\" target=\"_blank\"><em>Book of Hours</em></a> (2014)",
+    "bibliography": "Young, Kevin. <em>Book of Hours</em>. Knopf, 2014.",
+    "edition": {
+      "id": "e-0006",
+      "type": "book",
+      "title": "Book of Hours",
+      "contributors": [
+        {
+          "id": "a-kevin-young",
+          "name": "Kevin Young",
+          "role": "author",
+          "wikidata": "Q6397805"
+        }
+      ],
+      "publisher": "Knopf",
+      "issued": "2014",
+      "original-date": "2014",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780375711886"
+  },
+  "tags": {
+    "hours": [
+      "hush"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "Black like an eye …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

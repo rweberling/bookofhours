@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0038/",
+  "id": "e-0038",
+  "type": "book",
+  "title": "Thoughts Out of Season, Part II",
+  "identifiers": {
+    "internetArchive": "NietzscheSchopenhauerAsEducatorCollins"
+  },
+  "contributors": [
+    {
+      "id": "a-friedrich-nietzsche",
+      "name": "Friedrich Nietzsche",
+      "role": "author",
+      "wikidata": "Q9358"
+    },
+    {
+      "id": "a-adrian-collins",
+      "name": "Adrian Collins",
+      "role": "translator",
+      "wikidata": "Q15627018"
+    }
+  ],
+  "publisher": "T. N. Foulis",
+  "issued": "1909",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0038"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0086/",
+  "id": "i-0086",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-2-f4d49ea44be6.jpeg",
+  "caption": "“<em><a href=\"https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63\">Amelanchier arborea</a></em><a href=\"https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63\"> (Michx. f.) Fern., downy serviceberry,</a>” from Elbert L. Little Jr., <em>Atlas of United States Trees, Vol. 4: Minor Eastern Hardwoods</em> (Washington, DC: USDA Forest Service, 1976), p. 51.",
+  "alt": "A map of North America with the downy serviceberry’s range shaded red across the eastern United States and southeastern Canada, from the Great Lakes and New England south to the Gulf states.",
+  "bibliography": "Little, Elbert L., Jr. \"<em>Amelanchier arborea</em> (Michx. f.) Fern., Downy Serviceberry.\" <em>Atlas of United States Trees</em>, vol. 4, <em>Minor Eastern Hardwoods</em>, USDA Forest Service, 1976.",
+  "lectio": {
+    "post": "lt-0018",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0015"
+    ]
+  },
+  "display": {
+    "size": [
+      455,
+      572
+    ]
+  },
+  "edition": {
+    "id": "e-0141",
+    "title": "Atlas of United States Trees, vol. 4",
+    "issued": "1976",
+    "identifiers": {
+      "hathitrust": "009818689",
+      "lccn": "79653298"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

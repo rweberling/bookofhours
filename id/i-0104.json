@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0104/",
+  "id": "i-0104",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208575477.week-33-perseids-meteor-shower-han-2-f75cd88ec792.png",
+  "caption": "W.F. Denning. “<a href=\"https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D\">Horary number of Perseïds</a>.” From “The August Perseïds, 1877.” <em>The Observatory</em> 1 (September 1877): 164-166.",
+  "alt": "A printed table of a night’s meteor watch in August 1877, giving the number of Perseids and other meteors seen in each half hour, with notes on the weather.",
+  "bibliography": "Denning, W. F. \"Horary Number of Perseïds.\" \"The August Perseïds, 1877,\" <em>The Observatory</em>, vol. 1, Sept. 1877, pp. 164–166.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "NASA ADS",
+      "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0024",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      "ph-0005"
+    ]
+  },
+  "display": {
+    "size": [
+      1456,
+      874
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

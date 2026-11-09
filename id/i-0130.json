@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0130/",
+  "id": "i-0130",
+  "shownIn": "weather",
+  "file": "images/weather_saussure_cyanometer.jpg",
+  "caption": "Horace-Bénédict de Saussure, <a href=\"https://en.wikipedia.org/wiki/Cyanometer\" target=\"_blank\"><em>Cyanometer</em></a> (1788), Musée d’histoire des sciences, Geneva",
+  "alt": "A ring of painted paper squares shading from the palest blue through deep blue to near-black, each numbered by hand from 0 to 52, around an empty white centre.",
+  "bibliography": "Saussure, Horace-Bénédict de. <em>Deuxième schéma du cyanomètre</em> [Second cyanometer]. 1788, watercolour on paper, Musée d’histoire des sciences, Geneva.",
+  "creator": {
+    "id": "a-horace-benedict-de-saussure",
+    "name": "Horace-Bénédict de Saussure",
+    "wikidata": "Q115525"
+  },
+  "title": "Deuxième schéma du cyanomètre",
+  "date": "1788",
+  "institution": "Musée d’histoire des sciences, Geneva",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Mat%C3%A9riel_de_recherche,_Horace-B%C3%A9n%C3%A9dict_de_Saussure_deuxi%C3%A8me_sch%C3%A9ma_du_cyanom%C3%A8tre,_1788_%C2%A9_Collection_Mus%C3%A9e_d%E2%80%99histoire_des_sciences,_Geneva.jpg"
+    }
+  ],
+  "furtherReading": [
+    {
+      "kind": "about",
+      "source": "Wikipedia",
+      "title": "Cyanometer",
+      "url": "https://en.wikipedia.org/wiki/Cyanometer"
+    }
+  ],
+  "source": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Mat%C3%A9riel_de_recherche%2C_Horace-B%C3%A9n%C3%A9dict_de_Saussure_deuxi%C3%A8me_sch%C3%A9ma_du_cyanom%C3%A8tre%2C_1788_%C2%A9_Collection_Mus%C3%A9e_d%E2%80%99histoire_des_sciences%2C_Geneva.jpg",
+    "retrieved": "2026-10-19"
+  },
+  "rights": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "tags": {
+    "hours": [],
+    "weather": [
+      "clear"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

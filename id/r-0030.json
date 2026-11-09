@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0030/",
+  "id": "r-0030",
+  "aliases": [
+    "r-rilke-evening"
+  ],
+  "shownIn": "hours",
+  "text": "The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.<br><br>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.",
+  "citation": {
+    "display": "Rainer Maria Rilke, \"<a href=\"https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening\" target=\"_blank\">Evening</a>\" (1918)",
+    "bibliography": "Rilke, Rainer Maria. \"Evening.\" <em>Poems</em>, 1918.",
+    "title": "Evening",
+    "locator": {
+      "url": "https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening",
+      "label": "Wikisource"
+    },
+    "edition": {
+      "id": "e-0030",
+      "type": "book",
+      "title": "Poems",
+      "contributors": [
+        {
+          "id": "a-rainer-maria-rilke",
+          "name": "Rainer Maria Rilke",
+          "role": "author",
+          "wikidata": "Q76483"
+        }
+      ],
+      "issued": "1918",
+      "original-date": "1918",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "tags": {
+    "hours": [
+      "denouement"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

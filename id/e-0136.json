@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0136/",
+  "id": "e-0136",
+  "title": "Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report",
+  "issued": "1983",
+  "identifiers": {
+    "hathitrust": "101655331",
+    "oclc": "10178867"
+  },
+  "citedBy": [
+    "i-0063"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,60 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0097/",
+  "id": "r-0097",
+  "shownIn": "seasons",
+  "text": "<p>The fruit known as pepones are a cool and refreshing diet, and are slightly relaxing to the stomach. Applications are used of the pulpy flesh in defluxions or pains of the eyes. The root, too, of this plant cures the hard ulcers known to us as \"ceria,\" from their resemblance to a honeycomb, and it acts as an emetic. Dried and reduced to a powder, it is given in doses of four oboli in hydromel, the patient, immediately after taking it, being made to walk half a mile. This powder is employed also in cosmetics for smoothing the skin. The rind, too, has the effect of promoting vomiting, and, when applied to the face, of clearing the skin; a result which is equally produced by an external application of the leaves of all the cultivated cucumbers. These leaves, mixed with honey, are employed for the cure of the pustules known as \"epinyctis;\" steeped in wine, they are good, too, for the bites of dogs and of multipedes, insects known to the Greeks by the name of \"seps,\" of an elongated form, with hairy legs, and noxious to cattle more particularly; the sting being followed by swelling, and the wound rapidly putrifying.</p>",
+  "citation": {
+    "display": "Pliny the Elder. <em><a href=\"https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D20%3Achapter%3D6#note1\" rel=\"noopener\" target=\"_blank\">Naturalis Historia [The Natural History], Book XX: Remedies Derived from the Garden Plants</a>.</em> Circa 77 CE. Trans. John Bostock. London, England: Taylor and Francis, 1855.",
+    "bibliography": "Pliny the Elder. <em>The Natural History</em>. Translated by John Bostock and H. T. Riley, Taylor and Francis, 1855. Written c. 77 CE.",
+    "title": "Naturalis Historia, Book XX: Remedies Derived from the Garden Plants",
+    "written": "0077~",
+    "locator": {
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D20%3Achapter%3D6#note1",
+      "label": "Perseus Digital Library"
+    },
+    "edition": {
+      "id": "e-0096",
+      "type": "book",
+      "title": "The Natural History",
+      "contributors": [
+        {
+          "id": "a-pliny-the-elder",
+          "name": "Pliny the Elder",
+          "role": "author",
+          "wikidata": "Q82778"
+        },
+        {
+          "id": "a-john-bostock",
+          "name": "John Bostock",
+          "role": "translator",
+          "wikidata": "Q6222522"
+        },
+        {
+          "id": "a-h-t-riley",
+          "name": "H. T. Riley",
+          "role": "translator",
+          "wikidata": "Q5729156"
+        }
+      ],
+      "publisher": "Taylor and Francis",
+      "issued": "1855",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0027",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0022"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

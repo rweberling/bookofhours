@@ -1,0 +1,48 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0146/",
+  "id": "i-0146",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-2-df5170f81102.jpeg",
+  "caption": "<em><a href=\"https://www.emilydickinsonmuseum.org/roomitem/preferred-flower-of-life/\" rel=\"noopener\" target=\"_blank\">[Untitled painting gifted to Emily Dickinson]</a></em> (c. 1882). Mabel Loomis Todd. Amherst College Archives &amp; Special Collections.",
+  "lectio": {
+    "post": "lt-0031",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0027"
+    ]
+  },
+  "display": {
+    "size": [
+      636,
+      978
+    ]
+  },
+  "alt": "A small painting on a black panel with a gilt edge: a clump of ghostly white Indian pipe plants rising from a tuft of dark grass, their stems bending over into nodding bell-shaped flowers, one turned to show a yellow centre.",
+  "creator": {
+    "id": "a-mabel-loomis-todd",
+    "name": "Mabel Loomis Todd",
+    "wikidata": "Q2103861"
+  },
+  "title": "[Indian pipes]",
+  "date": "1882",
+  "institution": "Amherst College Archives & Special Collections",
+  "bibliography": "Todd, Mabel Loomis. [Painting of Indian pipes, given to Emily Dickinson]. 1882, Amherst College Archives &amp; Special Collections, Amherst, Massachusetts.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Emily Dickinson Museum",
+      "url": "https://www.emilydickinsonmuseum.org/roomitem/preferred-flower-of-life/"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "the painter died in 1932",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

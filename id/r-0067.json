@@ -1,0 +1,70 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0067/",
+  "id": "r-0067",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Charles L. Raison, Christopher A. Lowry, and Graham A.W. Rook. \"<a href=\"https://doi.org/10.1001/archgenpsychiatry.2010.161\">Inflammation, Sanitation, and Consternation: Loss of Contact With Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression</a>.\" <em>Archives of General Psychiatry</em> 67.12 (December 2010): 1211–1224.",
+    "bibliography": "Raison, Charles L., Christopher A. Lowry, and Graham A. W. Rook. \"Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression.\" <em>Archives of General Psychiatry</em>, vol. 67, no. 12, Dec. 2010, pp. 1211–1224.",
+    "title": "Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression",
+    "written": "2010-12",
+    "locator": {
+      "page": "1211–1224",
+      "url": "https://doi.org/10.1001/archgenpsychiatry.2010.161",
+      "label": "DOI"
+    },
+    "edition": {
+      "id": "e-0067",
+      "type": "article",
+      "title": "Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression",
+      "container": "Archives of General Psychiatry",
+      "volume": "67",
+      "pages": "1211–1224",
+      "identifiers": {
+        "doi": "10.1001/archgenpsychiatry.2010.161"
+      },
+      "contributors": [
+        {
+          "id": "a-charles-l-raison",
+          "name": "Charles L. Raison",
+          "role": "author",
+          "wikidata": "Q23732255"
+        },
+        {
+          "id": "a-christopher-a-lowry",
+          "name": "Christopher A. Lowry",
+          "role": "author",
+          "wikidata": "Q58885271"
+        },
+        {
+          "id": "a-graham-a-w-rook",
+          "name": "Graham A. W. Rook",
+          "role": "author",
+          "wikidata": "Q112435644"
+        }
+      ],
+      "issued": "2010-12",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0013",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0011",
+        "basis": "grounded",
+        "note": "Soil microbes and depression generally; M. vaccae isn't named in this excerpt. Confirm."
+      }
+    ]
+  },
+  "firstLine": "Context Inflammation is increasingly recognized as contributing to the pathogenesis of major depressive disorder (MDD), even in individuals who are otherwise medically healthy. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

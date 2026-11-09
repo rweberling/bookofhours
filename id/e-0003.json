@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0003/",
+  "id": "e-0003",
+  "type": "book",
+  "title": "Mūlamadhyamakakārikā",
+  "contributors": [
+    {
+      "id": "a-nagarjuna",
+      "name": "Nāgārjuna",
+      "role": "author",
+      "wikidata": "Q171195"
+    },
+    {
+      "id": "a-stephen-batchelor",
+      "name": "Stephen Batchelor",
+      "role": "translator"
+    }
+  ],
+  "issued": null,
+  "original-date": "0150~",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright (Batchelor, Verses from the Center, 2000)",
+  "citedBy": [
+    "r-0003"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0025/",
+  "id": "r-0025",
+  "aliases": [
+    "r-dickinson-there-s-a-certain"
+  ],
+  "shownIn": "hours",
+  "text": "There's a certain Slant of light,<br>Winter Afternoons -<br>That oppresses, like the Heft<br>Of Cathedral Tunes -<br><br>Heavenly Hurt, it gives us -<br>We can find no scar,<br>But internal difference -<br>Where the Meanings, are -<br><br>None may teach it - Any -<br>'Tis the seal Despair -<br>An imperial affliction<br>Sent us of the Air -<br><br>When it comes, the Landscape listens -<br>Shadows - hold their breath -<br>When it goes, 'tis like the Distance<br>On the look of Death -",
+  "citation": {
+    "display": "Emily Dickinson, \"<a href=\"https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA4310_P90-75\" target=\"_blank\">There's a certain Slant of light,</a>\" (c. 1861)",
+    "bibliography": "Dickinson, Emily. \"There's a certain Slant of light.\" c. 1861. Emily Dickinson Archive, Houghton Library, Harvard University.",
+    "title": "There’s a certain Slant of light",
+    "locator": {
+      "url": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA4310_P90-75",
+      "label": "Harvard Emily Dickinson Archive"
+    },
+    "edition": {
+      "id": "e-0025",
+      "type": "manuscript",
+      "title": null,
+      "contributors": [
+        {
+          "id": "a-emily-dickinson",
+          "name": "Emily Dickinson",
+          "role": "author",
+          "wikidata": "Q4441"
+        }
+      ],
+      "archive": "Emily Dickinson Archive, Houghton Library, Harvard University",
+      "issued": null,
+      "original-date": "1861~",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "tags": {
+    "hours": [
+      "doldrums"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0023/",
+  "id": "i-0023",
+  "aliases": [
+    "i-cajal-a-purkinje-neuron-from"
+  ],
+  "shownIn": "hours",
+  "file": "images/doldrums_cajal.jpg",
+  "caption": "Santiago Ramón y Cajal, <a href=\"https://commons.wikimedia.org/wiki/File:Cajal_-_a_purkinje_neuron_from_the_human_cerebellum.jpg\" target=\"_blank\"><em>A purkinje neuron from the human cerebellum</em></a> (c. 1900)",
+  "alt": "A pen drawing of a single nerve cell: a dark body near the bottom from which a dense crown of branching, twig-like fibres spreads upward to fill the sheet, with a few lines lettered a to d.",
+  "bibliography": "Ramón y Cajal, Santiago. <em>A Purkinje Neuron from the Human Cerebellum</em>. c. 1900, Wikimedia Commons.",
+  "creator": {
+    "id": "a-santiago-ramon-y-cajal",
+    "name": "Santiago Ramón y Cajal",
+    "wikidata": "Q150526"
+  },
+  "title": "A purkinje neuron from the human cerebellum",
+  "date": "1900~",
+  "institution": "Cajal Institute (CSIC), Madrid",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Cajal_-_a_purkinje_neuron_from_the_human_cerebellum.jpg"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "doldrums"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

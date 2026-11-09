@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0079/",
+  "id": "i-0079",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-1-1d31a365a7a0.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">The Pink Moccasin-Flower. (</a><em><a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">Cypripedium acaule.</a></em><a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">)</a>,” from Grace Greylock Niles, <em>Bog-Trotting for Orchids </em>(New York: The Knickerbocker Press, 1904), colored frontispiece.",
+  "alt": "A color photograph of pink lady’s slippers growing in a shady wood: several tall stems, each with a single pink, pouch-shaped flower, above broad, ribbed leaves.",
+  "bibliography": "Niles, Grace Greylock. \"The Pink Moccasin-Flower (<em>Cypripedium acaule</em>).\" Frontispiece, <em>Bog-Trotting for Orchids</em>, Knickerbocker Press, 1904.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "HathiTrust",
+      "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0016",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0014"
+    ]
+  },
+  "display": {
+    "size": [
+      459,
+      689
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

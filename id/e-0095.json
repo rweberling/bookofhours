@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0095/",
+  "id": "e-0095",
+  "type": "book",
+  "title": "The Collected Poems",
+  "contributors": [
+    {
+      "id": "a-sylvia-plath",
+      "name": "Sylvia Plath",
+      "role": "author",
+      "wikidata": "Q133054"
+    },
+    {
+      "id": "a-ted-hughes",
+      "name": "Ted Hughes",
+      "role": "editor",
+      "wikidata": "Q272194"
+    }
+  ],
+  "publisher": "Faber & Faber",
+  "issued": "1981",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0096"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

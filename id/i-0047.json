@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0047/",
+  "id": "i-0047",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/190719638.week-14-nimbostratus-praecipitatio-3-ec7c167df443.jpeg",
+  "caption": "“Nimbostratus,” from <em><a href=\"https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf\">International Cloud Atlas, Volume II</a></em> (Geneva, Switzerland: World Meteorological Organization, 1987), p. 52.",
+  "alt": "A photograph of a dark blue-grey sky of nimbostratus over flat Colorado farmland, with a single tree, a small white trailer and low mountains on the horizon; arrows at the edges point out the cloud layers.",
+  "bibliography": "World Meteorological Organization. \"Nimbostratus.\" <em>International Cloud Atlas</em>, vol. 2, World Meteorological Organization, 1987.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "WMO Cloud Atlas",
+      "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0005",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "phenomena": [
+      "ph-0001"
+    ]
+  },
+  "display": {
+    "size": [
+      2172,
+      1486
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

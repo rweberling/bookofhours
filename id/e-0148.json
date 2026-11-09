@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0148/",
+  "id": "e-0148",
+  "title": "Atlas of United States Trees, vol. 1",
+  "issued": "1971",
+  "identifiers": {
+    "internetArchive": "CAT87209954",
+    "lccn": "79653298"
+  },
+  "citedBy": [
+    "i-0117"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

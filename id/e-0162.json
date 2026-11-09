@@ -1,0 +1,11 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0162/",
+  "id": "e-0162",
+  "title": "Popular Science Monthly, vol. 13",
+  "issued": "1878",
+  "citedBy": [
+    "i-0006"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

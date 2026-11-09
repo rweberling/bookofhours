@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0070/",
+  "id": "r-0070",
+  "shownIn": "seasons",
+  "text": "<p>Before going further, let us glance for a moment at the different types of insects possessing this gall-making habit.<br><br>The Hymenoptera, best known because of the industrious honeybee, has two important families, the Cynipidae and the Tenthredinidae, members of which live in this questionable manner. The first named are minute, four-winged gall flies with legless white maggots. They are moderately numerous in species and remarkable for an alternation of generations: the structural variations between the adults in different generations being so marked, that before the relationship was suspected, they were referred to separate genera. Certain Cynipids or gall wasps are believed to reproduce only by parthenogenesis. These little insects display a marked partiality for oaks and roses and produce striking types of galls, such as the cortical swellings of the gouty oak gall, a species occasionally becoming so abundant that five hundred thousand individuals may be reared from one tree and its conspicuous galls form giant, bead-like swellings on almost all the smaller branches of a large oak. Occasionally the peculiar bud-like swellings of Andricus gemmarius Ashm. are very abundant on pin oaks and the sweet exudation issuing therefrom attracts hosts of bees, flies and similar insects. Another oak gall occasionally numerous is the oak leaf stalk gall.? The gall of the wool sower? is another striking type and results from the female depositing eggs in a ring of buds around white oak stems, and from the series of wounds inflicted, there develops a seemingly delicate, globose, white, pink-spotted mass which on examination is found to consist of numerous cells, each supported and guarded by a thick fungoid, hairy growth. A more ordinary type may be seen in the familiar banded bullet gall,* a representative of a considerable series generally known as “bullet galls.”</p>",
+  "citation": {
+    "display": "E.P. Felt, “<a href=\"https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189\">Gall Insects and Their Relations to Plants</a>.” [Gaul Insect Papers]. Np, n.d. Rpt. <em>The Scientific Monthly </em>(June 1918: 509-525). pp. 510-511.",
+    "bibliography": "Felt, E. P. \"Gall Insects and Their Relations to Plants.\" <em>The Scientific Monthly</em>, June 1918, pp. 509–525.",
+    "title": "Gall Insects and Their Relations to Plants",
+    "written": "1918-06",
+    "locator": {
+      "page": "510–511",
+      "url": "https://hdl.handle.net/2027/ucbk.ark:/28722/h2rf5m126?urlappend=%3Bseq=189",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0070",
+      "type": "article",
+      "title": "Gall Insects and Their Relations to Plants",
+      "container": "The Scientific Monthly",
+      "pages": "509–525",
+      "contributors": [
+        {
+          "id": "a-e-p-felt",
+          "name": "E. P. Felt",
+          "role": "author",
+          "wikidata": "Q5382324"
+        }
+      ],
+      "issued": "1918-06",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0015",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0013"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

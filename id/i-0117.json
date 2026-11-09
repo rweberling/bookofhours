@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0117/",
+  "id": "i-0117",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-2-34e8a8fd3d56.jpeg",
+  "caption": "“<a href=\"https://archive.org/details/CAT87209954/page/n291/mode/2up\" rel=\"noopener\" target=\"_blank\">Map 180-E. northern red oak, </a><em><a href=\"https://archive.org/details/CAT87209954/page/n291/mode/2up\" rel=\"noopener\" target=\"_blank\">Quercus rubra L</a>.” </em>Elbert L. Little, Jr. <em>Atlas of United States Trees, Vol. 1: Conifers and Important Hardwoods</em>. Washington, DC: U.S. Department of Agriculture Forest Service, 1971.",
+  "alt": "A map of the eastern United States with the northern red oak’s range shaded grey, from Minnesota and Nova Scotia south to Arkansas, Alabama and Georgia, missing only the Gulf coast and Florida.",
+  "bibliography": "Little, Elbert L., Jr. \"Map 180-E. Northern Red Oak, <em>Quercus rubra</em> L.\" <em>Atlas of United States Trees</em>, vol. 1, <em>Conifers and Important Hardwoods</em>, U.S. Department of Agriculture, Forest Service, 1971.",
+  "lectio": {
+    "post": "lt-0028",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0023"
+    ]
+  },
+  "display": {
+    "size": [
+      597,
+      673
+    ]
+  },
+  "edition": {
+    "id": "e-0148",
+    "title": "Atlas of United States Trees, vol. 1",
+    "issued": "1971",
+    "identifiers": {
+      "internetArchive": "CAT87209954",
+      "lccn": "79653298"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up",
+    "label": "Internet Archive"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

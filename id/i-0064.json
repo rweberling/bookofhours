@@ -1,0 +1,45 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0064/",
+  "id": "i-0064",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-2-450349531675.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147\">Reconstruction of the continental blocks for the Great Ice Age</a>,” from Alfred Wegener, <em>The Origin of Continents and Oceans, </em>third ed. (1922), trans. J.G.A. Skerl (New York: E.P. Dutton, [1924]), p. 111.",
+  "alt": "A line map of the northern continents fitted together as Wegener imagined them during the last Ice Age, North America, Greenland, Europe and Africa joined, with dashed lines marking the edges of the ice sheets.",
+  "bibliography": "Wegener, Alfred. \"Reconstruction of the Continental Blocks for the Great Ice Age.\" <em>The Origin of Continents and Oceans</em>, 3rd ed., translated by J. G. A. Skerl, E. P. Dutton, 1924. Originally published 1922.",
+  "lectio": {
+    "post": "lt-0011",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "phenomena": [
+      "ph-0002"
+    ]
+  },
+  "display": {
+    "size": [
+      1337,
+      1183
+    ]
+  },
+  "edition": {
+    "id": "e-0137",
+    "title": "The Origin of Continents and Oceans",
+    "issued": "1924",
+    "identifiers": {
+      "hathitrust": "001272669",
+      "oclc": "3010882"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

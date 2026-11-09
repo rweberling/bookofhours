@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0090/",
+  "id": "e-0090",
+  "type": "book",
+  "title": "Circles on the Water: Selected Poems of Marge Piercy",
+  "contributors": [
+    {
+      "id": "a-marge-piercy",
+      "name": "Marge Piercy",
+      "role": "author",
+      "wikidata": "Q273385"
+    }
+  ],
+  "publisher": "Alfred A. Knopf",
+  "issued": "1982",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0091"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

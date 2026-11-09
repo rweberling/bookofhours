@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0084/",
+  "id": "r-0084",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Alix Beeston. “<a href=\"https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink\">Fingers Stained With Fruit and Ink</a>.” Rev. of Ellena Savage, <em>Blueberries: Essays Concerning Understanding </em>(2020). <em>The Sydney Review of Books </em>(June 15, 2020)<em>.</em>",
+    "bibliography": "Beeston, Alix. \"Fingers Stained with Fruit and Ink.\" Review of <em>Blueberries: Essays Concerning Understanding</em>, by Ellena Savage. <em>Sydney Review of Books</em>, 15 June 2020.",
+    "title": "Fingers Stained with Fruit and Ink",
+    "written": "2020-06-15",
+    "locator": {
+      "url": "https://sydneyreviewofbooks.com/reviews/fingers-stained-with-fruit-and-ink",
+      "label": "Sydney Review of Books"
+    },
+    "edition": {
+      "id": "e-0084",
+      "type": "article",
+      "title": "Fingers Stained with Fruit and Ink",
+      "container": "Sydney Review of Books",
+      "contributors": [
+        {
+          "id": "a-alix-beeston",
+          "name": "Alix Beeston",
+          "role": "author"
+        }
+      ],
+      "issued": "2020-06-15",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0021",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0018"
+    ]
+  },
+  "firstLine": "Eat one blueberry and you’ll eat them all. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

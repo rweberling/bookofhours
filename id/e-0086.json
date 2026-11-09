@@ -1,0 +1,33 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0086/",
+  "id": "e-0086",
+  "type": "book",
+  "title": "An Illustrated Flora of the Northern United States, Canada and the British Possessions, 2nd ed., vol. 3",
+  "identifiers": {
+    "internetArchive": "illustratedflor03brit",
+    "openlibrary": "OL24445409M"
+  },
+  "contributors": [
+    {
+      "id": "a-nathaniel-lord-britton",
+      "name": "Nathaniel Lord Britton",
+      "role": "author",
+      "wikidata": "Q553714"
+    },
+    {
+      "id": "a-addison-brown",
+      "name": "Addison Brown",
+      "role": "author",
+      "wikidata": "Q1149854"
+    }
+  ],
+  "publisher": "Charles Scribner’s Sons",
+  "issued": "1913",
+  "original-date": "1898",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0086"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

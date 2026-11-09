@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" class="record-page">
+<head>
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+  <!-- Built by scripts/build_records.py from data/; edit those, not this. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Records — The Earthly Book of Hours</title>
+  <meta name="description" content="Every record in The Earthly Book of Hours.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://earthlyhours.com/id/">
+  <link rel="alternate" type="application/json" href="https://earthlyhours.com/id/index.json">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+
+<main class="page">
+  <p class="publication-name">The Earthly Book of Hours</p>
+
+  <div class="rule-ornament" aria-hidden="true">
+    <div class="line"></div>
+    <div class="lozenge">✦</div>
+    <div class="diamond"></div>
+    <div class="lozenge">✦</div>
+    <div class="line"></div>
+  </div>
+
+  <h1 class="page-title">The Records</h1>
+  <p class="page-subtitle">The collection · 471 records</p>
+
+  <article class="content-block">
+    <p>Every record in the collection, each at its permanent address. The whole collection is archived, with each version, at <a href="https://doi.org/10.5281/zenodo.23603918" target="_blank">Zenodo</a>; its metadata is licensed CC BY-NC 4.0.</p>
+  </article>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Readings (122)</h2>
+    <ul class="record-index">
+      <li><a href="/id/r-0001/">r-0001</a> Virginia Woolf, “To the Lighthouse”</li>
+      <li><a href="/id/r-0002/">r-0002</a> Pseudo-Dionysius the Areopagite, “The Mystical Theology”</li>
+      <li><a href="/id/r-0003/">r-0003</a> Nāgārjuna, “Mūlamadhyamakakārikā”</li>
+      <li><a href="/id/r-0004/">r-0004</a> Maurice Blanchot, “Thomas the Obscure”</li>
+      <li><a href="/id/r-0005/">r-0005</a> Clarice Lispector, “The Passion According to G.H.”</li>
+      <li><a href="/id/r-0006/">r-0006</a> Kevin Young, “Book of Hours”</li>
+      <li><a href="/id/r-0007/">r-0007</a> John Cage, “Experimental Music”</li>
+      <li><a href="/id/r-0008/">r-0008</a> Novalis, “Hymns to the Night”</li>
+      <li><a href="/id/r-0009/">r-0009</a> John Burroughs, “Wake-Robin”</li>
+      <li><a href="/id/r-0010/">r-0010</a> Michael Field, “The Depths of the Grass”</li>
+      <li><a href="/id/r-0011/">r-0011</a> Fernando Pessoa, “Fragment 1”</li>
+      <li><a href="/id/r-0012/">r-0012</a> Sei Shōnagon, “The Pillow Book of Sei Shōnagon”</li>
+      <li><a href="/id/r-0013/">r-0013</a> Walt Whitman, “Song of Myself”</li>
+      <li><a href="/id/r-0014/">r-0014</a> Sarojini Naidu, “Palanquin-Bearers”</li>
+      <li><a href="/id/r-0015/">r-0015</a> T. S. Eliot, “Little Gidding”</li>
+      <li><a href="/id/r-0016/">r-0016</a> Helene Johnson, “The Road”</li>
+      <li><a href="/id/r-0017/">r-0017</a> Heraclitus, “Fragments 41–42”</li>
+      <li><a href="/id/r-0018/">r-0018</a> Gustav Freytag, “Technique of the Drama”</li>
+      <li><a href="/id/r-0019/">r-0019</a> C. P. Cavafy, “When They Come Alive”</li>
+      <li><a href="/id/r-0020/">r-0020</a> Simone Weil, “The Mysticism of Work”</li>
+      <li><a href="/id/r-0021/">r-0021</a> H.D., “Mid-Day”</li>
+      <li><a href="/id/r-0022/">r-0022</a> William James, “Psychology: The Briefer Course”</li>
+      <li><a href="/id/r-0023/">r-0023</a> Robert Burton, “The Author&#x27;s Abstract of Melancholy”</li>
+      <li><a href="/id/r-0024/">r-0024</a> Walter Benjamin, “The Arcades Project”</li>
+      <li><a href="/id/r-0025/">r-0025</a> Emily Dickinson, “There’s a certain Slant of light”</li>
+      <li><a href="/id/r-0026/">r-0026</a> Sappho, “Fragment 104a”</li>
+      <li><a href="/id/r-0027/">r-0027</a> Gertrude Stein, “Celery; Veal; Vegetable; Way Lay Vegetable”</li>
+      <li><a href="/id/r-0028/">r-0028</a> Jun&#x27;ichirō Tanizaki, “In Praise of Shadows”</li>
+      <li><a href="/id/r-0029/">r-0029</a> M. F. K. Fisher, “The Gastronomical Me”</li>
+      <li><a href="/id/r-0030/">r-0030</a> Rainer Maria Rilke, “Evening”</li>
+      <li><a href="/id/r-0031/">r-0031</a> Richard Wright, “#9”</li>
+      <li><a href="/id/r-0032/">r-0032</a> Samuel Beckett, “Watt”</li>
+      <li><a href="/id/r-0033/">r-0033</a> Edward Thomas, “Lights Out”</li>
+      <li><a href="/id/r-0034/">r-0034</a> John Lubbock, “The Use of Life”</li>
+      <li><a href="/id/r-0036/">r-0036</a> Jones Very, “The Clouded Morning”</li>
+      <li><a href="/id/r-0037/">r-0037</a> William Hamilton Gibson, “The Witch Hazel Bombardment”</li>
+      <li><a href="/id/r-0038/">r-0038</a> Friedrich Nietzsche, “Schopenhauer as Educator”</li>
+      <li><a href="/id/r-0039/">r-0039</a> Emily Dickinson, “The Robin is the One”</li>
+      <li><a href="/id/r-0040/">r-0040</a> Robert Ridgway, “Family Turdidae. The Thrushes”</li>
+      <li><a href="/id/r-0041/">r-0041</a> E. Jones, “Address”</li>
+      <li><a href="/id/r-0042/">r-0042</a> Walter H. Crockett, “Vermont Maple Sugar”</li>
+      <li><a href="/id/r-0043/">r-0043</a> Annika Hansteen-Izora, “Time is Water”</li>
+      <li><a href="/id/r-0044/">r-0044</a> Gifford Pinchot, “Silvical Leaflet 38: Paper Birch”</li>
+      <li><a href="/id/r-0045/">r-0045</a> Robert Frost, “Birches”</li>
+      <li><a href="/id/r-0046/">r-0046</a> Johann Wolfgang von Goethe, “In Honour of Mr. Howard”</li>
+      <li><a href="/id/r-0047/">r-0047</a> Jenny Odell, “What Does It Mean to Watch Clouds? What Can It Mean?”</li>
+      <li><a href="/id/r-0048/">r-0048</a> William Herbert, “A History of the Species of Crocus”</li>
+      <li><a href="/id/r-0049/">r-0049</a> Guillaume Barth, “Crocus sativus, fleur du bonheur”</li>
+      <li><a href="/id/r-0050/">r-0050</a> Martin Heidegger, “Introduction to Metaphysics”</li>
+      <li><a href="/id/r-0051/">r-0051</a> Douglas Houghton Campbell, “The Development of the Ostrich Fern”</li>
+      <li><a href="/id/r-0052/">r-0052</a> Zora Neale Hurston, “Mules and Men”</li>
+      <li><a href="/id/r-0053/">r-0053</a> Ernest Thompson Seton, “Lives of Game Animals”</li>
+      <li><a href="/id/r-0054/">r-0054</a> Ashia Ajani, Amirio Freeman, “Ashia Ajani Mulls Over Mullein”</li>
+      <li><a href="/id/r-0055/">r-0055</a> “The Old Herb Doctor: His Secrets and Treatments”</li>
+      <li><a href="/id/r-0056/">r-0056</a> Hildegard of Bingen, “Physica”</li>
+      <li><a href="/id/r-0057/">r-0057</a> Hildegard of Bingen, “334. Letter to Secular People”</li>
+      <li><a href="/id/r-0058/">r-0058</a> Michael Marder, Edward S. Casey, “Plants in Place: A Phenomenology of the Vegetal”</li>
+      <li><a href="/id/r-0059/">r-0059</a> “Mosses of Maine: A Brief Guide”</li>
+      <li><a href="/id/r-0060/">r-0060</a> Ludwig Wittgenstein, “Philosophical Investigations”</li>
+      <li><a href="/id/r-0061/">r-0061</a> James Freeman Dana, Samuel L. Dana, “Argillaceous Slate”</li>
+      <li><a href="/id/r-0062/">r-0062</a> Amy Lowell, “Lilacs”</li>
+      <li><a href="/id/r-0063/">r-0063</a> William C. Barry, “The Lilac”</li>
+      <li><a href="/id/r-0064/">r-0064</a> Ronald Firbank, “Sorrow in Sunlight”</li>
+      <li><a href="/id/r-0065/">r-0065</a> Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”</li>
+      <li><a href="/id/r-0066/">r-0066</a> Graham A. W. Rook, “The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs”</li>
+      <li><a href="/id/r-0067/">r-0067</a> Charles L. Raison, Christopher A. Lowry, Graham A. W. Rook, “Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression”</li>
+      <li><a href="/id/r-0068/">r-0068</a> Jalāl al-Dīn Muḥammad Rūmī, “Proem to Book 1”</li>
+      <li><a href="/id/r-0069/">r-0069</a> A. R. Horwood, “Reed (Phragmites communis, Trin.)”</li>
+      <li><a href="/id/r-0070/">r-0070</a> E. P. Felt, “Gall Insects and Their Relations to Plants”</li>
+      <li><a href="/id/r-0071/">r-0071</a> Francesco Redi, “Experiments on the Generation of Insects”</li>
+      <li><a href="/id/r-0072/">r-0072</a> Grace Greylock Niles, “Bog-Trotting for Orchids”</li>
+      <li><a href="/id/r-0073/">r-0073</a> F. Desbois, “Cypripedium de pleine terre”</li>
+      <li><a href="/id/r-0074/">r-0074</a> C. S. Young, “Fashion Five. Cypripedium acaule, Stemless Lady’s Slipper”</li>
+      <li><a href="/id/r-0075/">r-0075</a> Felice Cardinal d’Ascoli, “Inquisition’s Sentence (22 June 1633)”</li>
+      <li><a href="/id/r-0076/">r-0076</a> Simon Barraclough, “Sunspots”</li>
+      <li><a href="/id/r-0077/">r-0077</a> Robin Wall Kimmerer, “The Serviceberry: Abundance and Reciprocity in the Natural World”</li>
+      <li><a href="/id/r-0078/">r-0078</a> K. M. Wiegand, “The Genus Amelanchier in Eastern North America”</li>
+      <li><a href="/id/r-0079/">r-0079</a> Maud Grieve, “Currant, Red”</li>
+      <li><a href="/id/r-0080/">r-0080</a> Fred W. Card, “Bush-Fruits”</li>
+      <li><a href="/id/r-0081/">r-0081</a> John Norton, “Haudenosaunee (Iroquois) Creation Myth”</li>
+      <li><a href="/id/r-0082/">r-0082</a> E. Pauline Johnson (Tekahionwake), “The Indian Corn Planter”</li>
+      <li><a href="/id/r-0083/">r-0083</a> Joseph J. White, Inc., “Whitesbog Blueberries”</li>
+      <li><a href="/id/r-0084/">r-0084</a> Alix Beeston, “Fingers Stained with Fruit and Ink”</li>
+      <li><a href="/id/r-0085/">r-0085</a> Paul Muldoon, “Milkweed and Monarch”</li>
+      <li><a href="/id/r-0086/">r-0086</a> Nathaniel Lord Britton, Addison Brown, “Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.”</li>
+      <li><a href="/id/r-0087/">r-0087</a> Horace, “Odes, Book III: XIII”</li>
+      <li><a href="/id/r-0088/">r-0088</a> Heraclitus, “Fragments 39–42”</li>
+      <li><a href="/id/r-0089/">r-0089</a> Édouard Biot, “Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles”</li>
+      <li><a href="/id/r-0090/">r-0090</a> Henry David Thoreau, “August 19, 1851”</li>
+      <li><a href="/id/r-0091/">r-0091</a> Marge Piercy, “Attack of the Squash People”</li>
+      <li><a href="/id/r-0092/">r-0092</a> Padraig Regan, “Notes on Various Squashes”</li>
+      <li><a href="/id/r-0093/">r-0093</a> Robert Hass, “Poem with a Cucumber in It”</li>
+      <li><a href="/id/r-0094/">r-0094</a> Marcus Aurelius, “Meditations, Book VIII, Section 50”</li>
+      <li><a href="/id/r-0095/">r-0095</a> William Cowper, “The Task, Book III: The Garden”</li>
+      <li><a href="/id/r-0096/">r-0096</a> Sylvia Plath, “Fiesta Melons”</li>
+      <li><a href="/id/r-0097/">r-0097</a> Pliny the Elder, “Naturalis Historia, Book XX: Remedies Derived from the Garden Plants”</li>
+      <li><a href="/id/r-0098/">r-0098</a> Susan Fenimore Cooper, “Saturday, 28th [June]—Passed the afternoon in the woods.”</li>
+      <li><a href="/id/r-0099/">r-0099</a> Francis George Heath, “Oak Antiquity”</li>
+      <li><a href="/id/r-0100/">r-0100</a> James George Frazer, “Tree-Worship; The Worship of the Oak”</li>
+      <li><a href="/id/r-0101/">r-0101</a> Carl Sandburg, “Shag-Bark Hickory”</li>
+      <li><a href="/id/r-0102/">r-0102</a> Vladimir Nabokov, “Canto One”</li>
+      <li><a href="/id/r-0103/">r-0103</a> Charles Sprague Sargent, “Shell-Bark Hickory. Shag-Bark Hickory.”</li>
+      <li><a href="/id/r-0104/">r-0104</a> W.H. Auden, “Winds”</li>
+      <li><a href="/id/r-0105/">r-0105</a> John William Strutt, “On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky”</li>
+      <li><a href="/id/r-0106/">r-0106</a> Jean Anthelme Brillat-Savarin, “Gastronomy as a Fine Art; or, The Science of Good Living”</li>
+      <li><a href="/id/r-0107/">r-0107</a> Daniel H. Janzen, Paul S. Martin, “Neotropical Anachronisms: The Fruits the Gomphotheres Ate”</li>
+      <li><a href="/id/r-0108/">r-0108</a> A. C. Whitford, “ANONACEAE, D. C. (Custard-Apple Family)”</li>
+      <li><a href="/id/r-0109/">r-0109</a> Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”</li>
+      <li><a href="/id/r-0110/">r-0110</a> Katharine Lee Bates, “Playmates”</li>
+      <li><a href="/id/r-0111/">r-0111</a> J. Francis Macbride, “Sumach (Rhus species)”</li>
+      <li><a href="/id/r-0112/">r-0112</a> Emily Dickinson, “The Spirit”</li>
+      <li><a href="/id/r-0113/">r-0113</a> Merlin Sheldrake, “Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future”</li>
+      <li><a href="/id/r-0114/">r-0114</a> William Cullen Bryant, “The Death of the Flowers”</li>
+      <li><a href="/id/r-0115/">r-0115</a> Hannah Arendt, “The Human Condition”</li>
+      <li><a href="/id/r-0116/">r-0116</a> Homer C. Sampson, “Chemical Changes Accompanying Abscission in Coleus Blumei”</li>
+      <li><a href="/id/r-0117/">r-0117</a> Thomas Hardy, “The Darkling Thrush”</li>
+      <li><a href="/id/r-0118/">r-0118</a> Li Shangyin, “A Note on a Rainy Night to a Friend in the North”</li>
+      <li><a href="/id/r-0119/">r-0119</a> “Bṛhadāraṇyaka Upaniṣad”</li>
+      <li><a href="/id/r-0120/">r-0120</a> John Aitken, “On Dust, Fogs, and Clouds”</li>
+      <li><a href="/id/r-0121/">r-0121</a> Samuel Taylor Coleridge, “Frost at Midnight”</li>
+      <li><a href="/id/r-0122/">r-0122</a> William Charles Wells, “An Essay on Dew”</li>
+      <li><a href="/id/r-0123/">r-0123</a> Archibald Lampman, “Heat”</li>
+    </ul>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Images (151)</h2>
+    <ul class="record-index">
+      <li><a href="/id/i-0001/">i-0001</a> Louisa S. Cook, Louisa S. Cook, Geometrical Psychology, or, The Science of Representation: An Abstract of …</li>
+      <li><a href="/id/i-0002/">i-0002</a> Alphonse Allais, Ronde de pochards dans le brouillard [Dance of drunks in the fog]</li>
+      <li><a href="/id/i-0003/">i-0003</a> Smithsonian Institution, The Smithsonian Institution, The 1900 Solar Eclipse Expedition of the Astrophysical …</li>
+      <li><a href="/id/i-0004/">i-0004</a> Odilon Redon, The Eye, Like a Strange Balloon, Mounts toward Infinity</li>
+      <li><a href="/id/i-0006/">i-0006</a> J. Norman Lockyer, Superposition of Two Wave-Systems</li>
+      <li><a href="/id/i-0007/">i-0007</a> James McNeill Whistler, Nocturne, Blue and Silver: Battersea Reach</li>
+      <li><a href="/id/i-0008/">i-0008</a> Edward Steichen, Moonlight: The Pond</li>
+      <li><a href="/id/i-0009/">i-0009</a> Limbourg brothers, Anatomical Zodiac Man (or L&#x27;Homme anatomique)</li>
+      <li><a href="/id/i-0010/">i-0010</a> Alesha Sivartha, Alesha Sivartha, from The Book of Life; or, The Spiritual, Social, and Physical …</li>
+      <li><a href="/id/i-0011/">i-0011</a> Arthur E. Smith, Human Blood x1000</li>
+      <li><a href="/id/i-0012/">i-0012</a> Moses Harris, Prismatic Colour Wheel</li>
+      <li><a href="/id/i-0013/">i-0013</a> Charles Darwin, Charles Darwin, from The Power of Movement in Plants (1880)</li>
+      <li><a href="/id/i-0014/">i-0014</a> Johannes Vermeer, Woman Reading a Letter</li>
+      <li><a href="/id/i-0015/">i-0015</a> Diagram of the Winds (I)</li>
+      <li><a href="/id/i-0016/">i-0016</a> Eadweard Muybridge, Plate 169</li>
+      <li><a href="/id/i-0017/">i-0017</a> Berenice Abbott, Seventh Avenue looking south from 35th Street</li>
+      <li><a href="/id/i-0018/">i-0018</a> Hilma af Klint, Group IX/UW, No. 25, The Dove, No. 1</li>
+      <li><a href="/id/i-0019/">i-0019</a> A. J. A. Campbell, Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</li>
+      <li><a href="/id/i-0020/">i-0020</a> Orra White Hitchcock, Epochs of Elevation</li>
+      <li><a href="/id/i-0021/">i-0021</a> Gustave Caillebotte, Raboteurs de parquet</li>
+      <li><a href="/id/i-0022/">i-0022</a> Claude Monet, Stacks of Wheat (End of Summer)</li>
+      <li><a href="/id/i-0023/">i-0023</a> Santiago Ramón y Cajal, A purkinje neuron from the human cerebellum</li>
+      <li><a href="/id/i-0024/">i-0024</a> Anne Brigman, Infinitude</li>
+      <li><a href="/id/i-0025/">i-0025</a> Edgar Degas, A Woman Ironing</li>
+      <li><a href="/id/i-0026/">i-0026</a> Harold Davis, Salad Mandala</li>
+      <li><a href="/id/i-0027/">i-0027</a> Clement Lindley Wragge, Sunset, G2</li>
+      <li><a href="/id/i-0028/">i-0028</a> Paul Cézanne, The Basket of Apples</li>
+      <li><a href="/id/i-0029/">i-0029</a> Utagawa Hiroshige, Cooling off in the Evening at Shijogawara</li>
+      <li><a href="/id/i-0030/">i-0030</a> Arkhip Kuindzhi, Moonlit Night on the Dnieper</li>
+      <li><a href="/id/i-0031/">i-0031</a> Agnes Giberne, Agnes Giberne, from The Story of the Sun, Moon, and Stars (1898)</li>
+      <li><a href="/id/i-0032/">i-0032</a> Ernst Haeckel, Leptomedusae</li>
+      <li><a href="/id/i-0033/">i-0033</a> Dwight William Tryon, After Sunset: Looking East</li>
+      <li><a href="/id/i-0034/">i-0034</a> John Emslie, Diagram of Meteorology, displaying the various phenomena of the atmosphere</li>
+      <li><a href="/id/i-0035/">i-0035</a> From J. Francis Macbride, Autumn Flowers and Fruits (Chicago: Field Museum of Natural …</li>
+      <li><a href="/id/i-0036/">i-0036</a> Leaves of the Witch Hazel Family - 1/3 life size , from Richard E. Weaver, “ The Witch …</li>
+      <li><a href="/id/i-0037/">i-0037</a> Species migration map for American Robins, March 5-12 , created using the National …</li>
+      <li><a href="/id/i-0038/">i-0038</a> 1863 manuscript of “The Robin is the One,” Amherst College, collected in Emily Dickinson …</li>
+      <li><a href="/id/i-0039/">i-0039</a> “ The Redbreast ,” or European Robin, from Howard Saunders (1835-1907), An Illustrated …</li>
+      <li><a href="/id/i-0040/">i-0040</a> “ Tapping the Grove, Boiling the Sap ,” from Crockett, How Vermont Maple Sugar is Made  …</li>
+      <li><a href="/id/i-0041/">i-0041</a> “ Natural range of sugar maple ,” from Sugar Maple: An American Wood (Washington: Dept. …</li>
+      <li><a href="/id/i-0042/">i-0042</a> New England Birches (n.d.), Ernest Lawson (1873-1939). Oil on cradled plywood panel. Held …</li>
+      <li><a href="/id/i-0043/">i-0043</a> “ Paper Birch (Betula papyrifera) Botanical and Commercial Range ,” from Birch , American …</li>
+      <li><a href="/id/i-0044/">i-0044</a> Birch and Evergreens (Gallitzin, PA: Nordstrom Nurseries, 1951). From the Henry G. …</li>
+      <li><a href="/id/i-0045/">i-0045</a> “Alto-Stratus,” from Atlas International Des Nuages (Paris, France: Gauthier-Villars et …</li>
+      <li><a href="/id/i-0046/">i-0046</a> “Nimbostratus,” from International Atlas of Clouds and of States of the Sky (Paris …</li>
+      <li><a href="/id/i-0047/">i-0047</a> “Nimbostratus,” from International Cloud Atlas, Volume II (Geneva, Switzerland: World …</li>
+      <li><a href="/id/i-0048/">i-0048</a> The Saffron Gatherers (circa 1650 BCE), from the Frescoes at Akrotiri, Santorini …</li>
+      <li><a href="/id/i-0049/">i-0049</a> “ The Parts of Crocus and Colchicum Flowers ,” from E. A. Bowles, A Handbook of Crocus …</li>
+      <li><a href="/id/i-0050/">i-0050</a> “ Geographical Distribution of the Genus Crocus ,” from George Maw, A Monograph of the …</li>
+      <li><a href="/id/i-0051/">i-0051</a> “ The Crocus ,” from Adolph Baumbach, The Floral Cyclus: 12 Simple Instructive Melodies …</li>
+      <li><a href="/id/i-0052/">i-0052</a> Heidi Brickell, Safe Euphoric Ara with Hine Kōrako (2025).</li>
+      <li><a href="/id/i-0053/">i-0053</a> “ Ostrich Fern. Sterile Fronds (New Hampshire) ,” from George Henry Tilton, The Fern …</li>
+      <li><a href="/id/i-0054/">i-0054</a> “ Development of the Ostrich Fern ,” Plate 6 from The Development of the Ostrich Fern  …</li>
+      <li><a href="/id/i-0055/">i-0055</a> “ Lepus Sylvaticus, Grey Rabbit. Natural Size. Old &amp; young .” Lithograph from John James …</li>
+      <li><a href="/id/i-0056/">i-0056</a> “ Distribution in North America of rabbits of the genus Sylvilagus ,” from E. W. Nelson …</li>
+      <li><a href="/id/i-0057/">i-0057</a> “ Skulls of Sylvilagus ,” from E. W. Nelson, North American Fauna, No. 29: The Rabbits of …</li>
+      <li><a href="/id/i-0058/">i-0058</a> “ Common mullein (Verbascum thapsus) with an associated moth and its anatomical segments …</li>
+      <li><a href="/id/i-0059/">i-0059</a> “ Common Mullein. ” from The Book of Wild Flowers: An Introduction to the Ways of Plant …</li>
+      <li><a href="/id/i-0060/">i-0060</a> Louise A. Field, Peter Rabbit and His Pa , illustr. Virginia Albert (Chicago, Illinois …</li>
+      <li><a href="/id/i-0061/">i-0061</a> “ Plate XXXIII. HYPNEAE (continued) ,” from F.E. Tripp, British Mosses: Their Homes …</li>
+      <li><a href="/id/i-0062/">i-0062</a> “ Mosses ,” from A. J. Grout, Mosses With Hand-lens And Microscope: a Non-technical …</li>
+      <li><a href="/id/i-0063/">i-0063</a> “ Structure discontinuities, Porter Square pilot tunnel ,” from D.E. Thompson et al. …</li>
+      <li><a href="/id/i-0064/">i-0064</a> “ Reconstruction of the continental blocks for the Great Ice Age ,” from Alfred Wegener …</li>
+      <li><a href="/id/i-0065/">i-0065</a> View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al. …</li>
+      <li><a href="/id/i-0066/">i-0066</a> Screenshot from The National Geologic Map Database (U.S. Department of the Interior and …</li>
+      <li><a href="/id/i-0067/">i-0067</a> “ Wills’s Cigarettes, Lilac ” (n.d.), cigarette card from The George Arents Collection …</li>
+      <li><a href="/id/i-0068/">i-0068</a> “ Lilas ,” from Répertoire de couleurs pour aider à la détermination des couleurs des …</li>
+      <li><a href="/id/i-0069/">i-0069</a> “ Flower fancies: calendar with text; depicting lilacs ” (1865), from The Miriam and Ira …</li>
+      <li><a href="/id/i-0070/">i-0070</a> Mycobacterium vaccae , from Microbiology in Pictures, n.d.</li>
+      <li><a href="/id/i-0071/">i-0071</a> Jenifer Wightman, Winogradsky Rothko (2004). Six weeks after installation. Photo: Johnna …</li>
+      <li><a href="/id/i-0072/">i-0072</a> “Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) …</li>
+      <li><a href="/id/i-0073/">i-0073</a> “ Reed Swamp at the Margin of a Norfolk Broad, ” from A.R. Horwood, A New British Flora …</li>
+      <li><a href="/id/i-0074/">i-0074</a> Habitat illustration and range map for Phragmites communis [sic] , from Alex C. Martin …</li>
+      <li><a href="/id/i-0075/">i-0075</a> Calligraphed and illuminated Persian manuscript edition of “ Mas̲navī-i Ma‘navī, Book 1 ” …</li>
+      <li><a href="/id/i-0076/">i-0076</a> “ Oak Galls, ” from Millett Taylor Thompson, An Illustrated Catalogue of American Insect …</li>
+      <li><a href="/id/i-0077/">i-0077</a> Wool Sower Wasp Galls, Tisbury, Massachusetts (May 25, 2026).</li>
+      <li><a href="/id/i-0078/">i-0078</a> “ Wool Sower Gall, ” from Carl F. Gronemann, Fifty Common Plant Galls of the Chicago Area …</li>
+      <li><a href="/id/i-0079/">i-0079</a> “ The Pink Moccasin-Flower. ( Cypripedium acaule. ) ,” from Grace Greylock Niles …</li>
+      <li><a href="/id/i-0080/">i-0080</a> “ Cypripedium acaule ,” from All of Nature’s Fashions in Lady’s Slippers for the Northern …</li>
+      <li><a href="/id/i-0081/">i-0081</a> “ The Pink Moccasin-Flower - The Stemless Lady’s Slipper ,” from Grace Greylock Niles …</li>
+      <li><a href="/id/i-0082/">i-0082</a> Richard William Seale, “ The Course of the Solar Maculae over the Sun’s Disk ” (n.d.).</li>
+      <li><a href="/id/i-0083/">i-0083</a> Étienne Léopold Trouvelot, “ Plate IV. Solar Prominences .” (Wellcome Collection). Rpt. …</li>
+      <li><a href="/id/i-0084/">i-0084</a> “ Early sunspot drawings from naked-eye observations ,” rpt. from R. Arlt and J.M. …</li>
+      <li><a href="/id/i-0085/">i-0085</a> “ Amelanchier Canadensis ,” Plate CXCIV from Charles Sprague Sargent, The Silva of North …</li>
+      <li><a href="/id/i-0086/">i-0086</a> “ Amelanchier arborea (Michx. f.) Fern., downy serviceberry, ” from Elbert L. Little Jr. …</li>
+      <li><a href="/id/i-0087/">i-0087</a> “ Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section ,” from …</li>
+      <li><a href="/id/i-0088/">i-0088</a> “ Fay’s Prolific ,” from Fruit Culture, Volume 2 (Scranton, Pennsylvania: International …</li>
+      <li><a href="/id/i-0089/">i-0089</a> “ Red Dutch. Raceme and detail of flower .” The Red and White Currants. Wooster, Ohio …</li>
+      <li><a href="/id/i-0090/">i-0090</a> “ A currant bush before pruning ,” Currants and Gooseberries: Their Culture and Relation …</li>
+      <li><a href="/id/i-0091/">i-0091</a> Nasca artist(s), Corn Stalk-Shaped Vessel (c. 1-600 CE).</li>
+      <li><a href="/id/i-0092/">i-0092</a> C. Mir, et al. “ Out of America: Tracing the Genetic Footprints of the Global Diffusion …</li>
+      <li><a href="/id/i-0093/">i-0093</a> Zea Mays L (1892/1893), from Atlas des plantes de France , Royal Botanic Garden of Madrid.</li>
+      <li><a href="/id/i-0094/">i-0094</a> “ Plate XIV ,” from George Ashley Crosthwait, Indian Corn (Zea mays): Production …</li>
+      <li><a href="/id/i-0095/">i-0095</a> “ Vaccinium corymbosum: Stanley .” J. Marion Shull, USDA Pomological Watercolor Collection</li>
+      <li><a href="/id/i-0096/">i-0096</a> “ Plate XII. Blueberry Propagation Frames. ” Frederick V. Coville, Directions for …</li>
+      <li><a href="/id/i-0097/">i-0097</a> An image in the Lectio Terra post “Week 30: Blueberries, Joseph J. White, Inc., Alix …</li>
+      <li><a href="/id/i-0098/">i-0098</a> William Clark, “ Asclepias tuberosa. Tuberous Swallow-wort .” From Richard Morris, Flora …</li>
+      <li><a href="/id/i-0099/">i-0099</a> Craig Holdrege. Shoot development in common milkweed (Asclepias syriaca). Shoots from one …</li>
+      <li><a href="/id/i-0100/">i-0100</a> Illustration of the Constellation Sirius, with text . From The Harley Aratus (c. 820-840) …</li>
+      <li><a href="/id/i-0101/">i-0101</a> Plate a03507 (May 2, 1899). Marked-up astronomical plate from Arequipa, Peru, featuring …</li>
+      <li><a href="/id/i-0102/">i-0102</a> “ It’s Dog Days, But ‘Dog Days’ is Biggest Hoax Yet .” The Tacoma Times [Tacoma …</li>
+      <li><a href="/id/i-0103/">i-0103</a> W.F. Denning. “ Positions of the Perseid Radiant Point, July 15, to August 20 .” From …</li>
+      <li><a href="/id/i-0104/">i-0104</a> W.F. Denning. “ Horary number of Perseïds .” From “The August Perseïds, 1877.” The …</li>
+      <li><a href="/id/i-0105/">i-0105</a> Perseid meteors photo collage (August 10-15, 2011). NASA/MSFC/Meteoroid Environment …</li>
+      <li><a href="/id/i-0106/">i-0106</a> “ Courd, Courge, Der Kürbiss .” Eugène Grasset and M. P. Verneuil. La plante et ses …</li>
+      <li><a href="/id/i-0107/">i-0107</a> “ Fruit Shape of Each of the Eight Cultivar Groups of Cucurbita Pepo. Proximal (stem) end …</li>
+      <li><a href="/id/i-0108/">i-0108</a> “ 67. 18 Juin 1771 .” Antoine Nicolas Duchesne. The Essai sur l’Histoire Naturelle des …</li>
+      <li><a href="/id/i-0109/">i-0109</a> Quegourdes de turquie (left), Quegourdes (centre) and Concombres (right) . Paintings from …</li>
+      <li><a href="/id/i-0110/">i-0110</a> Fede Galizia. Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon (c. …</li>
+      <li><a href="/id/i-0111/">i-0111</a> Depiction labelled Qawoun (melon, Cucumis melo ) . From Kitab al-Hasha&#x27;ish fi Hayula …</li>
+      <li><a href="/id/i-0112/">i-0112</a> Juan Sánchez Cotán. Still Life with Quince, Cabbage, Melon, and Cucumber (c. 1602)</li>
+      <li><a href="/id/i-0113/">i-0113</a> “ [Man Cutting Watermelon] ” (c. 1898-1903). Johnson Photography Studio. The Metropolitan …</li>
+      <li><a href="/id/i-0114/">i-0114</a> “ Images of watermelon drawn from approx. 1385 to 1395 .” Harry S. Paris, et al. “ …</li>
+      <li><a href="/id/i-0115/">i-0115</a> “ Rose Coghlan as &quot;The Watermelon,&quot; from the series Fancy Dress Ball Costumes (N73) for …</li>
+      <li><a href="/id/i-0116/">i-0116</a> Piet Mondrian. Field with Oak Trees at Dusk (1907-1908). Privately held.</li>
+      <li><a href="/id/i-0117/">i-0117</a> “ Map 180-E. northern red oak, Quercus rubra L .” Elbert L. Little, Jr. Atlas of United …</li>
+      <li><a href="/id/i-0118/">i-0118</a> “ Red Oak and The Pigeon of Passage .” Mark Catesby. The Natural History of Carolina …</li>
+      <li><a href="/id/i-0119/">i-0119</a> “ Red Oak. Quercus rubra . ” From François André Michaux. The North American sylva, or A …</li>
+      <li><a href="/id/i-0120/">i-0120</a> Bertha E. Jaques. Young Leaves and Blossoms of Hickory Tree (c. 1910). Smithsonian …</li>
+      <li><a href="/id/i-0121/">i-0121</a> Sophia Thoreau. Inscribed hickory leaves in memory of her brother, Henry (1868). Concord …</li>
+      <li><a href="/id/i-0122/">i-0122</a> “ Hicoria ovata .” From Charles Sprague Sargent. The Silva of North America, Vol. VII …</li>
+      <li><a href="/id/i-0123/">i-0123</a> Annual migration of American Robins, created using the National Audubon Society’s Bird …</li>
+      <li><a href="/id/i-0124/">i-0124</a> “ O Nobilissima Viriditas ,” written by Hildegard von Bingen, composed/arranged by Bryce …</li>
+      <li><a href="/id/i-0125/">i-0125</a> Monarch and Milkweed, by Helen Frost and Leonid Gore. Read Aloud by Reading Rhino (July …</li>
+      <li><a href="/id/i-0126/">i-0126</a> Voices from the Barrens: Native Peoples, Blueberries, and Sovereignty (2020, dir. Nancy …</li>
+      <li><a href="/id/i-0127/">i-0127</a> Wilson Alwyn Bentley, Untitled (Snowflake)</li>
+      <li><a href="/id/i-0128/">i-0128</a> Wilson Alwyn Bentley, Plate XIX</li>
+      <li><a href="/id/i-0129/">i-0129</a> Katsushika Hokusai, South Wind, Clear Sky (Gaifū kaisei)</li>
+      <li><a href="/id/i-0130/">i-0130</a> Horace-Bénédict de Saussure, Deuxième schéma du cyanomètre</li>
+      <li><a href="/id/i-0131/">i-0131</a> John Tyndall, Fig. 3</li>
+      <li><a href="/id/i-0132/">i-0132</a> Wassily Kandinsky, Bleu de ciel</li>
+      <li><a href="/id/i-0133/">i-0133</a> Pierre-Henri de Valenciennes, Fabriques à la villa Farnèse : les deux peupliers</li>
+      <li><a href="/id/i-0135/">i-0135</a> Charles Marville, [Cloud Study, Paris]</li>
+      <li><a href="/id/i-0136/">i-0136</a> Johann Jakob Frey, Dawn on the Pontine Shore</li>
+      <li><a href="/id/i-0137/">i-0137</a> James McNeill Whistler, Nocturne in Blue and Silver: The Lagoon, Venice</li>
+      <li><a href="/id/i-0138/">i-0138</a> Royal Charles Steadman, Asimina triloba</li>
+      <li><a href="/id/i-0139/">i-0139</a> John Abbot, Papilio Ajax. Annona Palustris</li>
+      <li><a href="/id/i-0140/">i-0140</a> Edward Edmondson, Jr., Still Life with Pawpaws</li>
+      <li><a href="/id/i-0141/">i-0141</a> Emil Carlsen, Staghorn Sumac</li>
+      <li><a href="/id/i-0142/">i-0142</a> Rhus Typhina</li>
+      <li><a href="/id/i-0143/">i-0143</a> F. H. Varley, Flower of the Staghorn Sumach</li>
+      <li><a href="/id/i-0144/">i-0144</a> Rhus typhina L.</li>
+      <li><a href="/id/i-0145/">i-0145</a> Mary Vaux Walcott, Indian Pipe (Monotropa uniflora)</li>
+      <li><a href="/id/i-0146/">i-0146</a> Mabel Loomis Todd, [Indian pipes]</li>
+      <li><a href="/id/i-0147/">i-0147</a> Monotropa uniflora. Indian pipe</li>
+      <li><a href="/id/i-0148/">i-0148</a> Wilson Alwyn Bentley, [Frost]</li>
+      <li><a href="/id/i-0149/">i-0149</a> 1 to 10 Maple. 11 to 18 Spindle Tree</li>
+      <li><a href="/id/i-0150/">i-0150</a> Fig. 1</li>
+      <li><a href="/id/i-0151/">i-0151</a> Utagawa Hiroshige, Sudden Shower over Shin-Ōhashi Bridge and Atake</li>
+      <li><a href="/id/i-0152/">i-0152</a> Charles Moussette, [Spiral of Lightning in a Thunderstorm]</li>
+      <li><a href="/id/i-0153/">i-0153</a> Hasegawa Tōhaku, Pine Trees</li>
+    </ul>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Editions (165)</h2>
+    <ul class="record-index">
+      <li><a href="/id/e-0001/">e-0001</a> <em>To the Lighthouse</em></li>
+      <li><a href="/id/e-0002/">e-0002</a> <em>The Mystical Theology</em></li>
+      <li><a href="/id/e-0003/">e-0003</a> <em>Mūlamadhyamakakārikā</em></li>
+      <li><a href="/id/e-0004/">e-0004</a> <em>Thomas the Obscure</em></li>
+      <li><a href="/id/e-0005/">e-0005</a> <em>The Passion According to G.H.</em></li>
+      <li><a href="/id/e-0006/">e-0006</a> <em>Book of Hours</em></li>
+      <li><a href="/id/e-0007/">e-0007</a> <em>Silence: Lectures and Writings</em></li>
+      <li><a href="/id/e-0008/">e-0008</a> <em>Rampolli: Growths from a Long-Planted Root</em></li>
+      <li><a href="/id/e-0009/">e-0009</a> <em>Wake-Robin</em></li>
+      <li><a href="/id/e-0010/">e-0010</a> <em>Wild Honey from Various Thyme</em></li>
+      <li><a href="/id/e-0011/">e-0011</a> <em>The Book of Disquiet</em></li>
+      <li><a href="/id/e-0012/">e-0012</a> <em>The Pillow Book of Sei Shōnagon</em></li>
+      <li><a href="/id/e-0013/">e-0013</a> <em>Leaves of Grass</em></li>
+      <li><a href="/id/e-0014/">e-0014</a> <em>The Golden Threshold</em></li>
+      <li><a href="/id/e-0015/">e-0015</a> <em>Four Quartets</em></li>
+      <li><a href="/id/e-0016/">e-0016</a> <em>Caroling Dusk: An Anthology of Verse by Negro Poets</em></li>
+      <li><a href="/id/e-0017/">e-0017</a> <em>On Nature</em></li>
+      <li><a href="/id/e-0018/">e-0018</a> <em>Technique of the Drama</em></li>
+      <li><a href="/id/e-0019/">e-0019</a> <em>C. P. Cavafy: Collected Poems</em></li>
+      <li><a href="/id/e-0020/">e-0020</a> <em>Gravity and Grace</em></li>
+      <li><a href="/id/e-0021/">e-0021</a> <em>Sea Garden</em></li>
+      <li><a href="/id/e-0022/">e-0022</a> <em>Psychology: The Briefer Course</em></li>
+      <li><a href="/id/e-0023/">e-0023</a> <em>The Anatomy of Melancholy</em></li>
+      <li><a href="/id/e-0024/">e-0024</a> <em>The Arcades Project</em></li>
+      <li><a href="/id/e-0025/">e-0025</a> <em>e-0025</em></li>
+      <li><a href="/id/e-0026/">e-0026</a> <em>Sappho: Memoir, Text, Selected Renderings, and a Literal Translation</em></li>
+      <li><a href="/id/e-0027/">e-0027</a> <em>Tender Buttons</em></li>
+      <li><a href="/id/e-0028/">e-0028</a> <em>In Praise of Shadows</em></li>
+      <li><a href="/id/e-0029/">e-0029</a> <em>The Gastronomical Me</em></li>
+      <li><a href="/id/e-0030/">e-0030</a> <em>Poems</em></li>
+      <li><a href="/id/e-0031/">e-0031</a> <em>Haiku: This Other World</em></li>
+      <li><a href="/id/e-0032/">e-0032</a> <em>Watt</em></li>
+      <li><a href="/id/e-0033/">e-0033</a> <em>Last Poems</em></li>
+      <li><a href="/id/e-0034/">e-0034</a> <em>The Use of Life</em></li>
+      <li><a href="/id/e-0036/">e-0036</a> <em>e-0036</em></li>
+      <li><a href="/id/e-0037/">e-0037</a> <em>Sharp Eyes: A Rambler’s Calendar</em></li>
+      <li><a href="/id/e-0038/">e-0038</a> <em>Thoughts Out of Season, Part II</em></li>
+      <li><a href="/id/e-0039/">e-0039</a> <em>e-0039</em></li>
+      <li><a href="/id/e-0040/">e-0040</a> <em>The Birds of North and Middle America: A Descriptive Catalog, part 4</em></li>
+      <li><a href="/id/e-0041/">e-0041</a> <em>Review of Facts and Observations, Made by Naturalists, Botanists, Historians, and Travellers, on the Properties and Productions of the Sugar Maple Tree</em></li>
+      <li><a href="/id/e-0042/">e-0042</a> <em>How Vermont Maple Sugar is Made</em></li>
+      <li><a href="/id/e-0043/">e-0043</a> <em>Time is Water</em></li>
+      <li><a href="/id/e-0044/">e-0044</a> <em>Silvical Leaflet 38: Paper Birch</em></li>
+      <li><a href="/id/e-0045/">e-0045</a> <em>Mountain Interval</em></li>
+      <li><a href="/id/e-0046/">e-0046</a> <em>In Honour of Mr. Howard</em></li>
+      <li><a href="/id/e-0047/">e-0047</a> <em>What Does It Mean to Watch Clouds? What Can It Mean?</em></li>
+      <li><a href="/id/e-0048/">e-0048</a> <em>A History of the Species of Crocus</em></li>
+      <li><a href="/id/e-0049/">e-0049</a> <em>Crocus sativus, fleur du bonheur</em></li>
+      <li><a href="/id/e-0050/">e-0050</a> <em>Introduction to Metaphysics</em></li>
+      <li><a href="/id/e-0051/">e-0051</a> <em>The Development of the Ostrich Fern</em></li>
+      <li><a href="/id/e-0052/">e-0052</a> <em>Mules and Men</em></li>
+      <li><a href="/id/e-0053/">e-0053</a> <em>Lives of Game Animals, vol. 4, part 2: Rodents, Etc.</em></li>
+      <li><a href="/id/e-0054/">e-0054</a> <em>Ashia Ajani Mulls Over Mullein</em></li>
+      <li><a href="/id/e-0055/">e-0055</a> <em>The Old Herb Doctor: His Secrets and Treatments</em></li>
+      <li><a href="/id/e-0056/">e-0056</a> <em>Hildegard’s Healing Plants: From Her Medieval Classic Physica</em></li>
+      <li><a href="/id/e-0057/">e-0057</a> <em>The Letters of Hildegard of Bingen, vol. 3</em></li>
+      <li><a href="/id/e-0058/">e-0058</a> <em>Plants in Place: A Phenomenology of the Vegetal</em></li>
+      <li><a href="/id/e-0059/">e-0059</a> <em>Mosses of Maine: A Brief Guide</em></li>
+      <li><a href="/id/e-0060/">e-0060</a> <em>Philosophical Investigations</em></li>
+      <li><a href="/id/e-0061/">e-0061</a> <em>Outlines of the Mineralogy and Geology of Boston and Its Vicinity, with a Geological Map</em></li>
+      <li><a href="/id/e-0062/">e-0062</a> <em>What’s O’Clock</em></li>
+      <li><a href="/id/e-0063/">e-0063</a> <em>The Lilac</em></li>
+      <li><a href="/id/e-0064/">e-0064</a> <em>Sorrow in Sunlight</em></li>
+      <li><a href="/id/e-0065/">e-0065</a> <em>Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape</em></li>
+      <li><a href="/id/e-0066/">e-0066</a> <em>The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs</em></li>
+      <li><a href="/id/e-0067/">e-0067</a> <em>Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression</em></li>
+      <li><a href="/id/e-0068/">e-0068</a> <em>The Mathnawí of Jalálu’ddín Rúmí, vol. 2</em></li>
+      <li><a href="/id/e-0069/">e-0069</a> <em>A New British Flora: British Wild Flowers in Their Natural Haunts</em></li>
+      <li><a href="/id/e-0070/">e-0070</a> <em>Gall Insects and Their Relations to Plants</em></li>
+      <li><a href="/id/e-0071/">e-0071</a> <em>Experiments on the Generation of Insects</em></li>
+      <li><a href="/id/e-0072/">e-0072</a> <em>Bog-Trotting for Orchids</em></li>
+      <li><a href="/id/e-0073/">e-0073</a> <em>Monographie des Cypripedium</em></li>
+      <li><a href="/id/e-0074/">e-0074</a> <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em></li>
+      <li><a href="/id/e-0075/">e-0075</a> <em>The Essential Galileo</em></li>
+      <li><a href="/id/e-0076/">e-0076</a> <em>Sunspots</em></li>
+      <li><a href="/id/e-0077/">e-0077</a> <em>The Serviceberry: Abundance and Reciprocity in the Natural World</em></li>
+      <li><a href="/id/e-0078/">e-0078</a> <em>The Genus Amelanchier in Eastern North America</em></li>
+      <li><a href="/id/e-0079/">e-0079</a> <em>A Modern Herbal</em></li>
+      <li><a href="/id/e-0080/">e-0080</a> <em>Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits</em></li>
+      <li><a href="/id/e-0081/">e-0081</a> <em>The Journal of Major John Norton, 1816</em></li>
+      <li><a href="/id/e-0082/">e-0082</a> <em>Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)</em></li>
+      <li><a href="/id/e-0083/">e-0083</a> <em>Whitesbog Blueberries</em></li>
+      <li><a href="/id/e-0084/">e-0084</a> <em>Fingers Stained with Fruit and Ink</em></li>
+      <li><a href="/id/e-0085/">e-0085</a> <em>The Annals of Chile</em></li>
+      <li><a href="/id/e-0086/">e-0086</a> <em>An Illustrated Flora of the Northern United States, Canada and the British Possessions, 2nd ed., vol. 3</em></li>
+      <li><a href="/id/e-0087/">e-0087</a> <em>Odes, Book III: XIII</em></li>
+      <li><a href="/id/e-0088/">e-0088</a> <em>Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles</em></li>
+      <li><a href="/id/e-0089/">e-0089</a> <em>Journal, vol. 2</em></li>
+      <li><a href="/id/e-0090/">e-0090</a> <em>Circles on the Water: Selected Poems of Marge Piercy</em></li>
+      <li><a href="/id/e-0091/">e-0091</a> <em>Notes on Various Squashes</em></li>
+      <li><a href="/id/e-0092/">e-0092</a> <em>Poem with a Cucumber in It</em></li>
+      <li><a href="/id/e-0093/">e-0093</a> <em>The Thoughts of the Emperor Marcus Aurelius Antoninus</em></li>
+      <li><a href="/id/e-0094/">e-0094</a> <em>The Poetical Works of William Cowper</em></li>
+      <li><a href="/id/e-0095/">e-0095</a> <em>The Collected Poems</em></li>
+      <li><a href="/id/e-0096/">e-0096</a> <em>The Natural History</em></li>
+      <li><a href="/id/e-0097/">e-0097</a> <em>Rural Hours</em></li>
+      <li><a href="/id/e-0098/">e-0098</a> <em>Tree Lore</em></li>
+      <li><a href="/id/e-0099/">e-0099</a> <em>The Golden Bough: A Study in Magic and Religion</em></li>
+      <li><a href="/id/e-0100/">e-0100</a> <em>Smoke and Steel</em></li>
+      <li><a href="/id/e-0101/">e-0101</a> <em>Pale Fire</em></li>
+      <li><a href="/id/e-0102/">e-0102</a> <em>Report on the Forests of North America (Exclusive of Mexico)</em></li>
+      <li><a href="/id/e-0103/">e-0103</a> <em>The Shield of Achilles</em></li>
+      <li><a href="/id/e-0104/">e-0104</a> <em>Scientific Papers, Vol. 4</em></li>
+      <li><a href="/id/e-0105/">e-0105</a> <em>Gastronomy as a Fine Art; or, The Science of Good Living</em></li>
+      <li><a href="/id/e-0106/">e-0106</a> <em>Neotropical Anachronisms: The Fruits the Gomphotheres Ate</em></li>
+      <li><a href="/id/e-0107/">e-0107</a> <em>Textile Fibers Used in Eastern Aboriginal North America</em></li>
+      <li><a href="/id/e-0108/">e-0108</a> <em>Among the Drupes (Elegy for a Wasteland)</em></li>
+      <li><a href="/id/e-0109/">e-0109</a> <em>The Retinue and Other Poems</em></li>
+      <li><a href="/id/e-0110/">e-0110</a> <em>Autumn Flowers and Fruits</em></li>
+      <li><a href="/id/e-0111/">e-0111</a> <em>Poems: Third Series</em></li>
+      <li><a href="/id/e-0112/">e-0112</a> <em>Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future</em></li>
+      <li><a href="/id/e-0113/">e-0113</a> <em>An Autumn Pastoral: The Death of the Flowers</em></li>
+      <li><a href="/id/e-0114/">e-0114</a> <em>The Human Condition</em></li>
+      <li><a href="/id/e-0115/">e-0115</a> <em>Chemical Changes Accompanying Abscission in Coleus Blumei</em></li>
+      <li><a href="/id/e-0116/">e-0116</a> <em>Poems of the Past and the Present</em></li>
+      <li><a href="/id/e-0117/">e-0117</a> <em>Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts</em></li>
+      <li><a href="/id/e-0118/">e-0118</a> <em>The 1900 Solar Eclipse Expedition of the Astrophysical Observatory</em></li>
+      <li><a href="/id/e-0119/">e-0119</a> <em>The Power of Movement in Plants</em></li>
+      <li><a href="/id/e-0120/">e-0120</a> <em>The Story of the Sun, Moon, and Stars</em></li>
+      <li><a href="/id/e-0121/">e-0121</a> <em>Das System der Medusen, vol. 1</em></li>
+      <li><a href="/id/e-0122/">e-0122</a> <em>The Witch Hazel Family (Hamamelidaceae)</em></li>
+      <li><a href="/id/e-0123/">e-0123</a> <em>An Illustrated Manual of British Birds</em></li>
+      <li><a href="/id/e-0125/">e-0125</a> <em>Sugar Maple: An American Wood</em></li>
+      <li><a href="/id/e-0126/">e-0126</a> <em>Birch</em></li>
+      <li><a href="/id/e-0127/">e-0127</a> <em>A Handbook of Crocus and Colchicum for Gardeners</em></li>
+      <li><a href="/id/e-0128/">e-0128</a> <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano</em></li>
+      <li><a href="/id/e-0129/">e-0129</a> <em>The Fern Lover’s Companion: A Guide for the Northeastern States and Canada</em></li>
+      <li><a href="/id/e-0131/">e-0131</a> <em>North American Fauna, No. 29: The Rabbits of North America</em></li>
+      <li><a href="/id/e-0133/">e-0133</a> <em>The Book of Wild Flowers: An Introduction to the Ways of Plant Life</em></li>
+      <li><a href="/id/e-0134/">e-0134</a> <em>British Mosses: Their Homes, Aspects, Structure, and Uses</em></li>
+      <li><a href="/id/e-0135/">e-0135</a> <em>Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States</em></li>
+      <li><a href="/id/e-0136/">e-0136</a> <em>Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report</em></li>
+      <li><a href="/id/e-0137/">e-0137</a> <em>The Origin of Continents and Oceans</em></li>
+      <li><a href="/id/e-0139/">e-0139</a> <em>Circular</em></li>
+      <li><a href="/id/e-0140/">e-0140</a> <em>The Silva of North America, vol. 4</em></li>
+      <li><a href="/id/e-0141/">e-0141</a> <em>Atlas of United States Trees, vol. 4</em></li>
+      <li><a href="/id/e-0142/">e-0142</a> <em>Hough’s Encyclopaedia of American Woods</em></li>
+      <li><a href="/id/e-0143/">e-0143</a> <em>The Red and White Currants</em></li>
+      <li><a href="/id/e-0144/">e-0144</a> <em>Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust</em></li>
+      <li><a href="/id/e-0145/">e-0145</a> <em>Out of America: Tracing the Genetic Footprints of the Global Diffusion of Maize</em></li>
+      <li><a href="/id/e-0146/">e-0146</a> <em>Directions for Blueberry Culture</em></li>
+      <li><a href="/id/e-0147/">e-0147</a> <em>Flora Conspicua: A Selection of the Most Ornamental Flowering, Hardy, Exotic and Indigenous Trees, Shrubs, and Herbaceous plants, for Embellishing Flower-Gardens and Pleasure-Grounds</em></li>
+      <li><a href="/id/e-0148/">e-0148</a> <em>Atlas of United States Trees, vol. 1</em></li>
+      <li><a href="/id/e-0149/">e-0149</a> <em>The Natural History of Carolina, Florida and the Bahama Islands</em></li>
+      <li><a href="/id/e-0150/">e-0150</a> <em>The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia</em></li>
+      <li><a href="/id/e-0151/">e-0151</a> <em>The Silva of North America, vol. 7</em></li>
+      <li><a href="/id/e-0152/">e-0152</a> <em>Studies among the Snow Crystals during the Winter of 1901–2, with Additional Data Collected during Previous Winters</em></li>
+      <li><a href="/id/e-0153/">e-0153</a> <em>A Flora of the State of New-York</em></li>
+      <li><a href="/id/e-0154/">e-0154</a> <em>Autumnal Leaves</em></li>
+      <li><a href="/id/e-0155/">e-0155</a> <em>The Jade Mountain: A Chinese Anthology</em></li>
+      <li><a href="/id/e-0156/">e-0156</a> <em>The Upanishads, Part II (Sacred Books of the East 15)</em></li>
+      <li><a href="/id/e-0157/">e-0157</a> <em>On Dust, Fogs, and Clouds</em></li>
+      <li><a href="/id/e-0158/">e-0158</a> <em>Fears in Solitude ... and Frost at Midnight</em></li>
+      <li><a href="/id/e-0159/">e-0159</a> <em>An Essay on Dew, and Several Appearances Connected with It</em></li>
+      <li><a href="/id/e-0160/">e-0160</a> <em>Among the Millet, and Other Poems</em></li>
+      <li><a href="/id/e-0161/">e-0161</a> <em>Album primo-avrilesque</em></li>
+      <li><a href="/id/e-0162/">e-0162</a> <em>Popular Science Monthly, vol. 13</em></li>
+      <li><a href="/id/e-0163/">e-0163</a> <em>The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man</em></li>
+      <li><a href="/id/e-0164/">e-0164</a> <em>Nature Through Microscope &amp; Camera</em></li>
+      <li><a href="/id/e-0165/">e-0165</a> <em>The Natural System of Colours</em></li>
+      <li><a href="/id/e-0166/">e-0166</a> <em>Animal Locomotion, vol. 7</em></li>
+      <li><a href="/id/e-0167/">e-0167</a> <em>Fragments of Science: A Series of Detached Essays, Addresses, and Reviews, vol. 1</em></li>
+      <li><a href="/id/e-0168/">e-0168</a> <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em></li>
+      <li><a href="/id/e-0169/">e-0169</a> <em>Handbook of the Trees of New England</em></li>
+      <li><a href="/id/e-0170/">e-0170</a> <em>The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants</em></li>
+    </ul>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Species (27)</h2>
+    <ul class="record-index">
+      <li><a href="/id/sp-0001/">sp-0001</a> Witch Hazel</li>
+      <li><a href="/id/sp-0002/">sp-0002</a> American Robin</li>
+      <li><a href="/id/sp-0003/">sp-0003</a> Sugar Maple</li>
+      <li><a href="/id/sp-0004/">sp-0004</a> Paper Birch</li>
+      <li><a href="/id/sp-0005/">sp-0005</a> Dutch Crocus</li>
+      <li><a href="/id/sp-0006/">sp-0006</a> Ostrich Fern</li>
+      <li><a href="/id/sp-0007/">sp-0007</a> Eastern Cottontail</li>
+      <li><a href="/id/sp-0008/">sp-0008</a> Great Mullein</li>
+      <li><a href="/id/sp-0009/">sp-0009</a> Sheet Moss</li>
+      <li><a href="/id/sp-0010/">sp-0010</a> Common Lilac</li>
+      <li><a href="/id/sp-0011/">sp-0011</a> Living Soil</li>
+      <li><a href="/id/sp-0012/">sp-0012</a> Common Reed</li>
+      <li><a href="/id/sp-0013/">sp-0013</a> Wool Sower Wasp</li>
+      <li><a href="/id/sp-0014/">sp-0014</a> Pink Lady’s Slipper</li>
+      <li><a href="/id/sp-0015/">sp-0015</a> Serviceberry</li>
+      <li><a href="/id/sp-0016/">sp-0016</a> Red Currant</li>
+      <li><a href="/id/sp-0017/">sp-0017</a> Corn</li>
+      <li><a href="/id/sp-0018/">sp-0018</a> Highbush Blueberry</li>
+      <li><a href="/id/sp-0019/">sp-0019</a> Butterfly Weed</li>
+      <li><a href="/id/sp-0020/">sp-0020</a> Cucurbits</li>
+      <li><a href="/id/sp-0021/">sp-0021</a> Melons and Cucumbers</li>
+      <li><a href="/id/sp-0022/">sp-0022</a> Watermelon</li>
+      <li><a href="/id/sp-0023/">sp-0023</a> Northern Red Oak</li>
+      <li><a href="/id/sp-0024/">sp-0024</a> Shagbark Hickory</li>
+      <li><a href="/id/sp-0025/">sp-0025</a> Common Pawpaw</li>
+      <li><a href="/id/sp-0026/">sp-0026</a> Staghorn Sumac</li>
+      <li><a href="/id/sp-0027/">sp-0027</a> Ghost Pipe</li>
+    </ul>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Phenomena (6)</h2>
+    <ul class="record-index">
+      <li><a href="/id/ph-0001/">ph-0001</a> Rain Clouds</li>
+      <li><a href="/id/ph-0002/">ph-0002</a> Cambridge Argillite</li>
+      <li><a href="/id/ph-0003/">ph-0003</a> Sunspots</li>
+      <li><a href="/id/ph-0004/">ph-0004</a> Dog Days</li>
+      <li><a href="/id/ph-0005/">ph-0005</a> Perseids</li>
+      <li><a href="/id/ph-0006/">ph-0006</a> First Frost</li>
+    </ul>
+  </section>
+
+  <footer class="page-footer">
+    <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
+    </div>
+    <p class="colophon">A project of <a href="https://otherwise.dfos.com" target="_blank">Otherwise</a></p>
+  </footer>
+</main>
+
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a href="seasons.html">The Current Season</a>
+      <a href="seasons.html#wander">Wander the Seasons</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
+    <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
+      <a href="editions.html">Otherwise Editions</a>
+      <a href="#letters">Letters from Otherwise</a>
+      <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
+      <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Visit Otherwise <span class="ext-arrow" aria-hidden="true">↗</span></a>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+
+<script src="/shared.js"></script>
+<script src="/atmosphere.js"></script>
+<script src="/nav.js"></script>
+</body>
+</html>

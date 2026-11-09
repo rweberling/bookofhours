@@ -1,0 +1,62 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0100/",
+  "id": "r-0100",
+  "shownIn": "seasons",
+  "text": "<p>From an examination of the Teutonic words for \"temple\" Grimm has made it probable that amongst the Germans the oldest sanctuaries were natural woods. However that may be, tree-worship is well attested for all the great European families of the Aryan stock. Amongst the Celts the oak-worship of the Druids is familiar to every one, and their old word for sanctuary seems to be identical in origin and meaning with the Latin <em>nemus,</em> a grove or woodland glade, which still survives in the name of Nemi. Sacred groves were common among the ancient Germans, and tree-worship is hardly extinct amongst their descendants at the present day. How serious that worship was in former times may be gathered from the ferocious penalty appointed by the old German laws for such as dared to peel the bark of a standing tree. The culprit's navel was to be cut out and nailed to the part of the tree which he had peeled, and he was to be driven round and round the tree till all his guts were wound about its trunk. The intention of the punishment clearly was to replace the dead bark by a living substitute taken from the culprit; it was a life for a life, the life of a man for the life of a tree. At Upsala, the old religious capital of Sweden, there was a sacred grove in which every tree was regarded as divine. The heathen Slavs worshipped trees and groves. The Lithuanians were not converted to Christianity till towards the close of the fourteenth century, and amongst them at the date of their conversion the worship of trees was prominent. Some of them revered remarkable oaks and other great shady trees, from which they received oracular responses. Some maintained holy groves about their villages or houses, where even to break a twig would have been a sin. They thought that he who cut a bough in such a grove either died suddenly or was crippled in one of his limbs.</p><p>[…]</p><p>The worship of the oak tree or of the oak god appears to have been shared by all the branches of the Aryan stock in Europe. Both Greeks and Italians associated the tree with their highest god, Zeus or Jupiter, the divinity of the sky, the rain, and the thunder. Perhaps the oldest and certainly one of the most famous sanctuaries in Greece was that of Dodona, where Zeus was revered in the oracular oak. The thunder-storms which are said to rage at Dodona more frequently than anywhere else in Europe, would render the spot a fitting home for the god whose voice was heard alike in the rustling of the oak leaves and in the crash of thunder. Perhaps the bronze gongs which kept up a humming in the wind round the sanctuary were meant to mimick the thunder that might so often be heard rolling and rumbling in the coombs of the stern and barren mountains which shut in the gloomy valley. In Boeotia, as we have seen, the sacred marriage of Zeus and Hera, the oak god and the oak goddess, appears to have been celebrated with much pomp by a religious federation of states. And on Mount Lycaeus in Arcadia the character of Zeus as god both of the oak and of the rain comes out clearly in the rain charm practised by the priest of Zeus, who dipped an oak branch in a sacred spring. In his latter capacity Zeus was the god to whom the Greeks regularly prayed for rain. Nothing could be more natural; for often, though not always, he had his seat on the mountains where the clouds gather and the oaks grow.</p>",
+  "citation": {
+    "display": "James George Frazer. From “<a href=\"https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=136%3Bownerid=1284933-142\" rel=\"noopener\" target=\"_blank\">Tree-Worship</a>” and “<a href=\"https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=185%3Bownerid=1284933-191\" rel=\"noopener\" target=\"_blank\">The Worship of the Oak</a>.” <em>The Golden Bough: A Study in Magic and Religion</em>.<em> </em>New York: The Macmillan Company, 1922.<em> </em>110-111, 159.",
+    "bibliography": "Frazer, James George. \"Tree-Worship\" and \"The Worship of the Oak.\" <em>The Golden Bough: A Study in Magic and Religion</em>, abridged ed., Macmillan, 1922.",
+    "title": "Tree-Worship; The Worship of the Oak",
+    "written": "1922",
+    "locator": [
+      {
+        "page": "110–111",
+        "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=136%3Bownerid=1284933-142",
+        "label": "HathiTrust, pp. 110–111"
+      },
+      {
+        "page": "159",
+        "url": "https://hdl.handle.net/2027/hvd.32044010213973?urlappend=%3Bseq=185%3Bownerid=1284933-191",
+        "label": "HathiTrust, p. 159"
+      }
+    ],
+    "edition": {
+      "id": "e-0099",
+      "type": "book",
+      "title": "The Golden Bough: A Study in Magic and Religion",
+      "links": [],
+      "identifiers": {
+        "hathitrust": "100323859",
+        "oclc": "263836",
+        "lccn": "22021418"
+      },
+      "contributors": [
+        {
+          "id": "a-james-george-frazer",
+          "name": "James George Frazer",
+          "role": "author",
+          "wikidata": "Q151936"
+        }
+      ],
+      "publisher": "Macmillan",
+      "issued": "1922",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0028",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0023"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

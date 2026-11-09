@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0116/",
+  "id": "e-0116",
+  "type": "book",
+  "title": "Poems of the Past and the Present",
+  "identifiers": {
+    "hathitrust": "000433137",
+    "oclc": "52928563",
+    "lccn": "02011001"
+  },
+  "contributors": [
+    {
+      "id": "a-thomas-hardy",
+      "name": "Thomas Hardy",
+      "role": "author",
+      "wikidata": "Q132805"
+    }
+  ],
+  "publisher": "Harper & Brothers",
+  "issued": "1902",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0117"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

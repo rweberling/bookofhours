@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0031/",
+  "id": "i-0031",
+  "aliases": [
+    "i-giberne-the-story-of-the"
+  ],
+  "shownIn": "hours",
+  "file": "images/denouement_giberne.jpg",
+  "caption": "Agnes Giberne, from <a href=\"https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232\" target=\"_blank\"><em>The Story of the Sun, Moon, and Stars</em></a> (1898)",
+  "alt": "A black engraving of a starry sky crossed by the broad pale bands of Saturn’s rings, rising from the planet’s curved edge at the bottom, with several moons, full and crescent, among the stars.",
+  "bibliography": "Giberne, Agnes. <em>The Story of the Sun, Moon, and Stars</em>. Seeley, 1898.",
+  "creator": {
+    "id": "a-agnes-giberne",
+    "name": "Agnes Giberne",
+    "wikidata": "Q4693039"
+  },
+  "title": null,
+  "date": "1898",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "denouement"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "edition": {
+    "id": "e-0120",
+    "title": "The Story of the Sun, Moon, and Stars",
+    "publisher": "Seeley",
+    "issued": "1908",
+    "identifiers": {
+      "hathitrust": "008630234",
+      "oclc": "25600297"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232",
+    "label": "HathiTrust"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

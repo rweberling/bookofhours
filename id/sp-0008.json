@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0008/",
+  "id": "sp-0008",
+  "name": "Great Mullein",
+  "scientific": "Verbascum thapsus",
+  "rank": "species",
+  "wikidata": "Q160095",
+  "gbif": "3171949",
+  "inaturalist": "59029",
+  "records": [
+    "r-0054",
+    "r-0055",
+    "r-0056",
+    "i-0058",
+    "i-0059",
+    "i-0060"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

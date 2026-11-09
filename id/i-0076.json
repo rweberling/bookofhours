@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0076/",
+  "id": "i-0076",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-1-6cb71e4bb4b7.jpeg",
+  "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/33339968\">Oak Galls,</a>” from Millett Taylor Thompson, <em>An Illustrated Catalogue of American Insect Galls</em>, ed. E.P. Felt (Nassau, New York: Rensselaer Co., 1915), p. 71<em>.</em>",
+  "alt": "A plate of thirteen photographs of oak galls: round and knobbly growths on twigs, buds and leaves, each numbered.",
+  "bibliography": "Thompson, Millett Taylor. \"Oak Galls.\" <em>An Illustrated Catalogue of American Insect Galls</em>, edited by E. P. Felt, Rensselaer, 1915.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Biodiversity Heritage Library",
+      "url": "https://www.biodiversitylibrary.org/page/33339968"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0015",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0013"
+    ]
+  },
+  "display": {
+    "size": [
+      2171,
+      2954
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

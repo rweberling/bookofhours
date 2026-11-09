@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0147/",
+  "id": "e-0147",
+  "title": "Flora Conspicua: A Selection of the Most Ornamental Flowering, Hardy, Exotic and Indigenous Trees, Shrubs, and Herbaceous plants, for Embellishing Flower-Gardens and Pleasure-Grounds",
+  "issued": "1826",
+  "identifiers": {
+    "internetArchive": "floraconspicuase00morr",
+    "openlibrary": "OL13520643M",
+    "lccn": "11032777"
+  },
+  "citedBy": [
+    "i-0098"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

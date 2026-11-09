@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0068/",
+  "id": "e-0068",
+  "type": "book",
+  "title": "The Mathnawí of Jalálu’ddín Rúmí, vol. 2",
+  "identifiers": {
+    "hathitrust": "001005718",
+    "oclc": "1444113",
+    "lccn": "26022478"
+  },
+  "contributors": [
+    {
+      "id": "a-jalal-al-din-muhammad-rumi",
+      "name": "Jalāl al-Dīn Muḥammad Rūmī",
+      "role": "author",
+      "wikidata": "Q43347"
+    },
+    {
+      "id": "a-reynold-a-nicholson",
+      "name": "Reynold A. Nicholson",
+      "role": "translator",
+      "wikidata": "Q2265889"
+    }
+  ],
+  "publisher": "E. J. W. Gibb Memorial",
+  "issued": "1960",
+  "original-date": "1926",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "Nicholson's translation was first published in 1926",
+  "citedBy": [
+    "r-0068"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

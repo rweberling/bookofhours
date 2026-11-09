@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0100/",
+  "id": "i-0100",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-1-98c605574152.jpeg",
+  "caption": "<a href=\"https://www.flickr.com/photos/britishlibrary/12459060295\">Illustration of the Constellation Sirius, with text</a>. From<a href=\"https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/\"> </a><em><a href=\"https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/\">The Harley Aratus </a></em><a href=\"https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/\">(c. 820-840)</a>. Rheims, France. From the British Library, <a href=\"https://en.wikipedia.org/wiki/Harleian_Library\">Harley Collection</a>.",
+  "alt": "A page from a ninth-century manuscript: the dog star, Sirius, drawn as a large dog whose body is made of lines of tiny written text, with a dark blue head ringed by rays, above lines of Latin verse.",
+  "bibliography": "\"Sirius.\" Illustration with text, <em>The Harley Aratus</em>, c. 820–840, Rheims. British Library, Harley MS 647.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Flickr",
+      "url": "https://www.flickr.com/photos/britishlibrary/12459060295"
+    },
+    {
+      "role": "copy",
+      "label": "The Public Domain Review",
+      "url": "https://publicdomainreview.org/collection/aratea-making-pictures-with-words-in-the-9th-century/"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0023",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      "ph-0004"
+    ]
+  },
+  "display": {
+    "size": [
+      591,
+      682
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

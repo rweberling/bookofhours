@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0020/",
+  "id": "i-0020",
+  "aliases": [
+    "i-hitchcock-epochs-of-elevation"
+  ],
+  "shownIn": "hours",
+  "file": "images/fulcrum_hitchcock.jpg",
+  "caption": "Orra White Hitchcock, <a href=\"https://acdc.amherst.edu/view/OrraClassroomDrawings/ma01020-0033#page/1\" target=\"_blank\"><em>Epochs of Elevation</em></a> (c. 1828-1840)",
+  "alt": "A hand-painted teaching diagram on cloth: a cross-section of the earth, a dark green arch of bent rock layers pushed up through flat yellow and grey strata, titled “Epochs of Elevation.”",
+  "bibliography": "Hitchcock, Orra White. <em>Epochs of Elevation</em>. c. 1828–1840, Amherst College Archives &amp; Special Collections.",
+  "creator": {
+    "id": "a-orra-white-hitchcock",
+    "name": "Orra White Hitchcock",
+    "wikidata": "Q1422010"
+  },
+  "title": "Epochs of Elevation",
+  "date": "1828~/1840~",
+  "institution": "Amherst College Archives & Special Collections",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Amherst College Digital Collections",
+      "url": "https://acdc.amherst.edu/view/OrraClassroomDrawings/ma01020-0033#page/1"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

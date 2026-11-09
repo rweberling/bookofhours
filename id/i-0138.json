@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0138/",
+  "id": "i-0138",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-1-bdb639cbcb37.jpeg",
+  "caption": "“<a href=\"https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426\" rel=\"noopener\" target=\"_blank\">Asimina triloba</a>” (1924). R. C. Steadman. USDA Pomological Watercolors. National Agricultural Library Special Collections.",
+  "lectio": {
+    "post": "lt-0030",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0025"
+    ]
+  },
+  "display": {
+    "size": [
+      728,
+      1225
+    ]
+  },
+  "alt": "A watercolour of two pawpaw fruits inside a pale geometric border: above, a whole fruit with dark brown-black skin; below, one cut open lengthwise to show creamy yellow flesh set with large, glossy dark brown seeds.",
+  "creator": {
+    "id": "a-royal-charles-steadman",
+    "name": "Royal Charles Steadman",
+    "wikidata": "Q20685659"
+  },
+  "title": "Asimina triloba",
+  "date": "1924-10-14",
+  "institution": "National Agricultural Library",
+  "bibliography": "Steadman, Royal Charles. <em>Asimina triloba</em>. 1924, USDA Pomological Watercolor Collection, National Agricultural Library, Beltsville, Maryland.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "National Agricultural Library",
+      "url": "https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12286332200007426"
+    }
+  ],
+  "partOf": "USDA Pomological Watercolor Collection",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

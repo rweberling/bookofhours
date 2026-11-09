@@ -1,0 +1,56 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0107/",
+  "id": "r-0107",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Daniel H. Janzen and Paul S. Martin. “<a href=\"http://www.jstor.org/stable/1688516\" rel=\"noopener\" target=\"_blank\">Neotropical Anachronisms: The Fruits the Gomphotheres Ate</a>.” <em>Science</em> 215.4528 (January 1982: 19-27). 27.",
+    "bibliography": "Janzen, Daniel H., and Paul S. Martin. \"Neotropical Anachronisms: The Fruits the Gomphotheres Ate.\" <em>Science</em>, vol. 215, no. 4528, Jan. 1982, pp. 19–27.",
+    "written": "1982",
+    "locator": {
+      "page": "27",
+      "url": "http://www.jstor.org/stable/1688516",
+      "label": "JSTOR"
+    },
+    "edition": {
+      "id": "e-0106",
+      "type": "article",
+      "title": "Neotropical Anachronisms: The Fruits the Gomphotheres Ate",
+      "container": "Science",
+      "volume": "215",
+      "pages": "19–27",
+      "contributors": [
+        {
+          "id": "a-daniel-h-janzen",
+          "name": "Daniel H. Janzen",
+          "role": "author",
+          "wikidata": "Q1161184"
+        },
+        {
+          "id": "a-paul-s-martin",
+          "name": "Paul S. Martin",
+          "role": "author",
+          "wikidata": "Q2062122"
+        }
+      ],
+      "issued": "1982-01",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0030",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0025"
+    ]
+  },
+  "firstLine": "Our discussion has focused on neotropical plants and animals, but it can be generalized to the sweet-fleshed large fruits of the Kentucky coffee bean Gymnocladus dioica and honey locust Gleditsia …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

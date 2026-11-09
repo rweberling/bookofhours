@@ -1,0 +1,41 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0155/",
+  "id": "e-0155",
+  "type": "book",
+  "title": "The Jade Mountain: A Chinese Anthology",
+  "contributors": [
+    {
+      "id": "a-li-shangyin",
+      "name": "Li Shangyin",
+      "role": "author",
+      "wikidata": "Q203782"
+    },
+    {
+      "id": "a-witter-bynner",
+      "name": "Witter Bynner",
+      "role": "translator",
+      "wikidata": "Q2586777"
+    },
+    {
+      "id": "a-kiang-kang-hu",
+      "name": "Kiang Kang-hu",
+      "role": "translator",
+      "wikidata": "Q466306"
+    }
+  ],
+  "publisher": "Alfred A. Knopf",
+  "issued": "1929",
+  "original-date": "0850~",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "jademountainchin00heng",
+    "oclc": "20143640",
+    "openlibrary": "OL24441208M"
+  },
+  "rightsNote": "Public domain in the United States (published 1929). Bynner died in 1968, so the translation is still in copyright where the term is the author's life plus 70 years.",
+  "citedBy": [
+    "r-0118"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,55 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0024/",
+  "id": "r-0024",
+  "aliases": [
+    "r-benjamin-the-arcades-project"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Walter Benjamin, <a href=\"https://bookshop.org/a/86532/9780674008021\" target=\"_blank\"><em>The Arcades Project</em></a> (1927–1940)",
+    "bibliography": "Benjamin, Walter. <em>The Arcades Project</em>. Translated by Howard Eiland and Kevin McLaughlin, Belknap Press of Harvard University Press, 1999. Written 1927–1940.",
+    "written": "1927/1940",
+    "edition": {
+      "id": "e-0024",
+      "type": "book",
+      "title": "The Arcades Project",
+      "contributors": [
+        {
+          "id": "a-walter-benjamin",
+          "name": "Walter Benjamin",
+          "role": "author",
+          "wikidata": "Q61078"
+        },
+        {
+          "id": "a-howard-eiland",
+          "name": "Howard Eiland",
+          "role": "translator"
+        },
+        {
+          "id": "a-kevin-mclaughlin",
+          "name": "Kevin McLaughlin",
+          "role": "translator",
+          "wikidata": "Q28229402"
+        }
+      ],
+      "publisher": "Belknap Press of Harvard University Press",
+      "issued": "1999",
+      "original-date": null,
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780674008021"
+  },
+  "tags": {
+    "hours": [
+      "doldrums"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "Boredom is a warm gray fabric lined on the inside with the most lustrous and colorful of silks. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

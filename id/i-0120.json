@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0120/",
+  "id": "i-0120",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-1-ba367b435c4e.jpeg",
+  "caption": "Bertha E. Jaques. <em><a href=\"https://americanart.si.edu/artwork/young-leaves-and-blossoms-hickory-tree-34276\" rel=\"noopener\" target=\"_blank\">Young Leaves and Blossoms of Hickory Tree</a></em> (c. 1910). Smithsonian American Art Museum.",
+  "alt": "Two cyanotypes on brown card, white shapes on deep blue: a hickory twig with young, pointed leaflets; and its long, drooping catkins of blossom.",
+  "bibliography": "Jaques, Bertha E. <em>Young Leaves and Blossoms of Hickory Tree</em>. c. 1910, Smithsonian American Art Museum, Washington, D.C.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Smithsonian American Art Museum",
+      "url": "https://americanart.si.edu/artwork/young-leaves-and-blossoms-hickory-tree-34276"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0029",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0024"
+    ]
+  },
+  "display": {
+    "size": [
+      530,
+      778
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0031/",
+  "id": "e-0031",
+  "type": "book",
+  "title": "Haiku: This Other World",
+  "contributors": [
+    {
+      "id": "a-richard-wright",
+      "name": "Richard Wright",
+      "role": "author",
+      "wikidata": "Q319820"
+    }
+  ],
+  "publisher": "Arcade Publishing",
+  "issued": "1998",
+  "original-date": "1998",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "in copyright — estate actively protective",
+  "citedBy": [
+    "r-0031"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

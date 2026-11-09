@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0041/",
+  "id": "e-0041",
+  "type": "book",
+  "title": "Review of Facts and Observations, Made by Naturalists, Botanists, Historians, and Travellers, on the Properties and Productions of the Sugar Maple Tree",
+  "identifiers": {
+    "hathitrust": "011437149",
+    "oclc": "5161201"
+  },
+  "contributors": [
+    {
+      "id": "a-e-jones",
+      "name": "E. Jones",
+      "role": "author"
+    }
+  ],
+  "publisher": "E. Colyer",
+  "issued": "1832",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0041"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

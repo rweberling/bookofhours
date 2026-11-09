@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0158/",
+  "id": "e-0158",
+  "type": "book",
+  "title": "Fears in Solitude ... and Frost at Midnight",
+  "contributors": [
+    {
+      "id": "a-samuel-taylor-coleridge",
+      "name": "Samuel Taylor Coleridge",
+      "role": "author",
+      "wikidata": "Q82409"
+    }
+  ],
+  "publisher": "J. Johnson",
+  "issued": "1798",
+  "original-date": "1798",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "fearsinsolitudew00cole",
+    "oclc": "3780109",
+    "openlibrary": "OL13562830M",
+    "lccn": "22009804"
+  },
+  "citedBy": [
+    "r-0121"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

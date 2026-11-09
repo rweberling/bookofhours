@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0082/",
+  "id": "r-0082",
+  "shownIn": "seasons",
+  "text": "So goes he forth beneath the planter’s moon<br>&nbsp;&nbsp;&nbsp;&nbsp;With sack of seed that pledges large increase,<br>His simple pagan faith knows night and noon,<br>&nbsp;&nbsp;&nbsp;&nbsp;Heat, cold, seedtime and harvest shall not cease.<br><br>And yielding to his needs, this honest sod,<br>&nbsp;&nbsp;&nbsp;&nbsp;Brown as the hand that tills it, moist with rain,<br>Teeming with ripe fulfillment, true as God,<br>&nbsp;&nbsp;&nbsp;&nbsp;With fostering richness, mothers every grain.",
+  "citation": {
+    "display": "Emily Pauline Johnson (Tekahionwake). “<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t9v125b8j?urlappend=%3Bseq=181\">The Indian Corn Planter</a>.” <em>Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)</em>. 1912. Toronto, Ontario: The Musson Book Company Limited, 1917. 137.",
+    "bibliography": "Johnson, Emily Pauline (Tekahionwake). \"The Indian Corn Planter.\" <em>Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)</em>, Musson Book Company, 1917. Originally published 1912.",
+    "title": "The Indian Corn Planter",
+    "written": "1912",
+    "locator": {
+      "page": "137",
+      "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9v125b8j?urlappend=%3Bseq=181",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0082",
+      "type": "book",
+      "title": "Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)",
+      "contributors": [
+        {
+          "id": "a-e-pauline-johnson",
+          "name": "E. Pauline Johnson (Tekahionwake)",
+          "role": "author",
+          "wikidata": "Q2716914"
+        }
+      ],
+      "publisher": "Musson Book Company",
+      "issued": "1917",
+      "original-date": "1912",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0020",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0017"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0104/",
+  "id": "e-0104",
+  "type": "book",
+  "title": "Scientific Papers, Vol. 4",
+  "contributors": [
+    {
+      "id": "a-john-william-strutt",
+      "name": "John William Strutt",
+      "role": "author",
+      "wikidata": "Q83297"
+    }
+  ],
+  "publisher": "Cambridge University Press",
+  "issued": "1903",
+  "original-date": "1899",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "scientificpapers04rayliala",
+    "oclc": "2316730",
+    "lccn": "03015047"
+  },
+  "citedBy": [
+    "r-0105"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

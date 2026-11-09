@@ -1,0 +1,57 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0104/",
+  "id": "r-0104",
+  "aliases": [
+    "r-auden-winds"
+  ],
+  "shownIn": "weather",
+  "citation": {
+    "display": "W.H. Auden, from \"Winds,\" in <a href=\"https://bookshop.org/a/86532/9780691260921\" target=\"_blank\"><em>The Shield of Achilles</em></a> (1955)",
+    "bibliography": "Auden, W.H. \"Winds.\" In <em>The Shield of Achilles</em>, 1955.",
+    "title": "Winds",
+    "written": "1952/1953",
+    "locator": {
+      "page": "11",
+      "url": "https://archive.org/details/shieldofachilles0000whau_c9s5/page/10/mode/2up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0103",
+      "type": "book",
+      "title": "The Shield of Achilles",
+      "contributors": [
+        {
+          "id": "a-auden",
+          "name": "W.H. Auden",
+          "role": "author",
+          "wikidata": "Q178698"
+        }
+      ],
+      "issued": "1955",
+      "original-date": "1955",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "in copyright — quoted as fair use",
+      "identifiers": {
+        "internetArchive": "shieldofachilles0000whau_c9s5"
+      }
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780691260921",
+    "note": "Recent critical edition"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "wind"
+    ],
+    "seasons": []
+  },
+  "display": {
+    "verse": true,
+    "weatherUnset": true
+  },
+  "firstLine": "Winds make weather; weather …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

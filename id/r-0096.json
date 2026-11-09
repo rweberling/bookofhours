@@ -1,0 +1,59 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0096/",
+  "id": "r-0096",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Sylvia Plath. From “Fiesta Melons.” 1956. <em><a href=\"https://bookshop.org/a/86532/9780061558894\" rel=\"noopener\" target=\"_blank\">The Collected Poems</a>. </em>London, England: Faber &amp; Faber, 1981. 46-47.",
+    "bibliography": "Plath, Sylvia. \"Fiesta Melons.\" <em>The Collected Poems</em>, edited by Ted Hughes, Faber &amp; Faber, 1981. Written 1956.",
+    "title": "Fiesta Melons",
+    "written": "1956",
+    "locator": {
+      "page": "46–47"
+    },
+    "edition": {
+      "id": "e-0095",
+      "type": "book",
+      "title": "The Collected Poems",
+      "contributors": [
+        {
+          "id": "a-sylvia-plath",
+          "name": "Sylvia Plath",
+          "role": "author",
+          "wikidata": "Q133054"
+        },
+        {
+          "id": "a-ted-hughes",
+          "name": "Ted Hughes",
+          "role": "editor",
+          "wikidata": "Q272194"
+        }
+      ],
+      "publisher": "Faber & Faber",
+      "issued": "1981",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780061558894"
+  },
+  "lectio": {
+    "post": "lt-0027",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0022"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "In Benidorm there are melons, …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0117/",
+  "id": "e-0117",
+  "title": "Geometrical Psychology, or, The Science of Representation: An Abstract of the Theories and Diagrams of B. W. Betts",
+  "publisher": "George Redway",
+  "issued": "1887",
+  "identifiers": {
+    "internetArchive": "geometricalpsych00cook",
+    "oclc": "22040934",
+    "openlibrary": "OL24404552M"
+  },
+  "citedBy": [
+    "i-0001"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

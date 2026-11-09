@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0074/",
+  "id": "i-0074",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-2-a3e4848cd3d1.jpeg",
+  "caption": "<a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\">Habitat illustration and range map for </a><em><a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\">Phragmites communis</a></em><a href=\"https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49\"> [sic]</a>, from  Alex C. Martin, Ray C. Erickson, and John H. Steenis, <em>Improving Duck Marshes by Weed Control </em>(Washington, DC: U.S. Department of the Interior Fish and Wildlife Service, 1957), p. 35.",
+  "alt": "A drawing of tall, plumed reeds at the water’s edge with two Canada geese swimming past, below a map of the United States hatched to show where the reed grows: nearly everywhere but the Southeast.",
+  "bibliography": "Martin, Alex C., Ray C. Erickson, and John H. Steenis. <em>Improving Duck Marshes by Weed Control</em>. U.S. Department of the Interior, Fish and Wildlife Service, 1957.",
+  "lectio": {
+    "post": "lt-0014",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0012"
+    ]
+  },
+  "display": {
+    "size": [
+      1452,
+      1013
+    ]
+  },
+  "edition": {
+    "id": "e-0139",
+    "title": "Circular",
+    "issued": "1941",
+    "identifiers": {
+      "hathitrust": "003923103",
+      "oclc": "1695369",
+      "lccn": "41051406"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

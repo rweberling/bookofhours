@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0062/",
+  "id": "i-0062",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/194929862.week-19-sheet-moss-hildegard-von-2-5068bd45d325.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69\">Mosses</a>,” from A. J. Grout, <em>Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States</em>, illus. Mary V. Thayer (New York: Self-published, 1900), p. 37.",
+  "alt": "A book page of pen drawings of two feather mosses: two branching, fern-like shoots; a magnified branch with curled leaves; and close-ups of their curved spore capsules.",
+  "bibliography": "Grout, A. J. \"Mosses.\" <em>Mosses with Hand-Lens and Microscope: A Non-Technical Hand-Book of the More Common Mosses of the Northeastern United States</em>, illustrated by Mary V. Thayer, 1900.",
+  "lectio": {
+    "post": "lt-0010",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0009"
+    ]
+  },
+  "display": {
+    "size": [
+      532,
+      614
+    ]
+  },
+  "edition": {
+    "id": "e-0135",
+    "title": "Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States",
+    "issued": "1900",
+    "identifiers": {
+      "hathitrust": "010668807",
+      "oclc": "1027478",
+      "lccn": "01029714"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

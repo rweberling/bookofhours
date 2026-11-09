@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0099/",
+  "id": "r-0099",
+  "shownIn": "seasons",
+  "text": "<p>It is impossible to obtain exact evidence of the antiquity of the oak, or of the greatest span of its age. The inference derivable from Dryden’s poetical reference:<br><br>Three centuries he grows; and three he stays,<br>Supreme in state; and in three more decays,<br></p><p>is only, of course, vague, and not founded on fact. Nevertheless, nine hundred years is by no means the limit of oak life. The ancient ‘Yule log’ was always of oak, and King Arthur’s famous ‘round table’ was made of oak wood. The famous Yardley oak, a favourite of Cowper, was believed to have been in existence at the time of William the Conqueror. Addressing it, the poet said:<br></p><p>Oh, couldst thou speak <br>As in Dodona once thy kindred trees <br>Oracular, I would not curious ask<br>The future best unknown; but at thy mouth<br>Inquisitive, the less ambiguous past!<br>By thee I might correct erroneous oft<br>The clock of history; facts and events<br>Timing more punctual, unrecorded facts<br>Recovering, and misstated setting right.<br></p><p>The famous Cowthorpe oak in this country, still, we believe, alive, is believed to be not far short of seventeen hundred years old! Geology tells us a good deal of the antiquity of the oak, fossil remains being abundant. An oak was discovered in Hatfield bog, Yorkshire, that, it was thought, must have lain there a thousand years at least, because some coins of the Emperor Vespasian were found in the bog close by. It must have been an enormous tree, for a portion only of the trunk found was 120 feet long; where broken off at the upper end it was 18 feet in circumference, and at the lower end 36 feet in girth, or a diameter of 12 feet from side to side!</p><p>Incidentally, in proof of the prior claim of the oak for antiquity, it may be mentioned that in this country there are many more names, both of people and of places, called after that tree than after other trees: such as Aclands, Actons, Acringtons, Akenhams, Oakleys, &amp; c.</p>",
+  "citation": {
+    "display": "Francis George Heath. “<a href=\"https://hdl.handle.net/2027/mdp.39015011690990?urlappend=%3Bseq=196%3Bownerid=13510798890518092-202\" rel=\"noopener\" target=\"_blank\">Oak Antiquity</a>.” <em>Tree Lore. </em>London, England: Charles H. Kelly, 1912.<em> </em>190-191.",
+    "bibliography": "Heath, Francis George. \"Oak Antiquity.\" <em>Tree Lore</em>, Charles H. Kelly, 1912.",
+    "title": "Oak Antiquity",
+    "written": "1912",
+    "locator": {
+      "page": "190–191",
+      "url": "https://hdl.handle.net/2027/mdp.39015011690990?urlappend=%3Bseq=196%3Bownerid=13510798890518092-202",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0098",
+      "type": "book",
+      "title": "Tree Lore",
+      "identifiers": {
+        "hathitrust": "001881232",
+        "oclc": "12747590"
+      },
+      "contributors": [
+        {
+          "id": "a-francis-george-heath",
+          "name": "Francis George Heath",
+          "role": "author",
+          "wikidata": "Q105764193"
+        }
+      ],
+      "publisher": "Charles H. Kelly",
+      "issued": "1912",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0028",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0023"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

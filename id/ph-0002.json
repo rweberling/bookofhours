@@ -1,0 +1,17 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0002/",
+  "id": "ph-0002",
+  "name": "Cambridge Argillite",
+  "latin": "Argillita cantabrigiensis",
+  "wikidata": null,
+  "records": [
+    "r-0060",
+    "r-0061",
+    "i-0063",
+    "i-0064",
+    "i-0065",
+    "i-0066"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

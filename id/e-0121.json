@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0121/",
+  "id": "e-0121",
+  "title": "Das System der Medusen, vol. 1",
+  "publisher": "Gustav Fischer",
+  "issued": "1879",
+  "identifiers": {
+    "internetArchive": "monographiederme11879haec",
+    "oclc": "12433415"
+  },
+  "citedBy": [
+    "i-0032"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

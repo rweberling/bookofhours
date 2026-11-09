@@ -1,0 +1,55 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0020/",
+  "id": "r-0020",
+  "aliases": [
+    "r-weil-the-mysticism-of-work"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Simone Weil, \"The Mysticism of Work\" (c. 1935), from <a href=\"https://bookshop.org/a/86532/9780415290012\" target=\"_blank\"><em>Gravity and Grace</em></a> (1947)",
+    "bibliography": "Weil, Simone. \"The Mysticism of Work.\" <em>Gravity and Grace</em>, translated by Emma Crawford and Mario von der Ruhr, Routledge, 2002. Written c. 1935; first published 1947.",
+    "title": "The Mysticism of Work",
+    "written": "1935~",
+    "edition": {
+      "id": "e-0020",
+      "type": "book",
+      "title": "Gravity and Grace",
+      "contributors": [
+        {
+          "id": "a-simone-weil",
+          "name": "Simone Weil",
+          "role": "author",
+          "wikidata": "Q157309"
+        },
+        {
+          "id": "a-emma-crawford",
+          "name": "Emma Crawford",
+          "role": "translator"
+        },
+        {
+          "id": "a-mario-von-der-ruhr",
+          "name": "Mario von der Ruhr",
+          "role": "translator"
+        }
+      ],
+      "publisher": "Routledge",
+      "issued": "2002",
+      "original-date": "1947",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780415290012"
+  },
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "The secret of the human condition is that there is no equilibrium between man and the surrounding forces of nature, which infinitely exceed him when in inaction; …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

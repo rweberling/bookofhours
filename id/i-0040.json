@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0040/",
+  "id": "i-0040",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/188643843.week-12-sugar-maple-annika-hansteen-1-2363b3621c32.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12\">Tapping the Grove, Boiling the Sap</a>,” from Crockett, <em>How Vermont Maple Sugar is Made</em>, p. 6.",
+  "alt": "Two photographs on a book page: a man tapping a tall maple in a snowy, leafless grove, with buckets on the trunks and a horse and sled beyond; and the inside of a sugarhouse, steam rising from long wooden pans of boiling sap.",
+  "bibliography": "Crockett, Walter H. \"Tapping the Grove, Boiling the Sap.\" <em>How Vermont Maple Sugar Is Made</em>, Vermont Department of Agriculture, 1915.",
+  "lectio": {
+    "post": "lt-0003",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0003"
+    ]
+  },
+  "display": {
+    "size": [
+      1416,
+      2151
+    ]
+  },
+  "edition": {
+    "id": "e-0042",
+    "title": "How Vermont Maple Sugar is Made",
+    "issued": "1915",
+    "identifiers": {
+      "hathitrust": "011274049",
+      "oclc": "18660713"
+    },
+    "contributors": [
+      {
+        "id": "a-walter-h-crockett",
+        "name": "Walter H. Crockett",
+        "role": "author"
+      }
+    ],
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

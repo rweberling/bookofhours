@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0102/",
+  "id": "i-0102",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-3-f2eaea1474db.png",
+  "caption": "“<a href=\"https://www.loc.gov/resource/sn88085187/1909-08-02/ed-1/?sp=8&amp;q=%22dog+days%22&amp;r=-0.386,-0.177,1.735,0.872,0\">It’s Dog Days, But ‘Dog Days’ is Biggest Hoax Yet</a>.” <em>The Tacoma Times</em> [Tacoma, Washington] (August 2, 1909).",
+  "alt": "A newspaper drawing of a calendar page for August 1909 with a bulldog’s head bursting through its middle, captioned “Dog Days.”",
+  "bibliography": "\"It’s Dog Days, But ‘Dog Days’ Is Biggest Hoax Yet.\" <em>The Tacoma Times</em>, 2 Aug. 1909.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Library of Congress",
+      "url": "https://www.loc.gov/resource/sn88085187/1909-08-02/ed-1/?sp=8&amp;q=%22dog+days%22&amp;r=-0.386,-0.177,1.735,0.872,0"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0023",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      "ph-0004"
+    ]
+  },
+  "display": {
+    "size": [
+      587,
+      563
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

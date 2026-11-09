@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0105/",
+  "id": "i-0105",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208575477.week-33-perseids-meteor-shower-han-3-477f8b130120.webp",
+  "caption": "<a href=\"https://www.space.com/33706-perseid-meteor-shower-legend-science.html\">Perseid meteors photo collage</a> (August 10-15, 2011). NASA/MSFC/Meteoroid Environment Office.",
+  "alt": "A grid of about fifty blue-tinted night-sky photographs, each showing a single bright streak of a Perseid meteor.",
+  "bibliography": "NASA/MSFC Meteoroid Environment Office. Perseid meteors photo collage, 10–15 Aug. 2011.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Space.com",
+      "url": "https://www.space.com/33706-perseid-meteor-shower-legend-science.html"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0024",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      "ph-0005"
+    ]
+  },
+  "display": {
+    "size": [
+      970,
+      809
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

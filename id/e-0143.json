@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0143/",
+  "id": "e-0143",
+  "title": "The Red and White Currants",
+  "issued": "1923",
+  "identifiers": {
+    "hathitrust": "011465852",
+    "oclc": "18840173"
+  },
+  "citedBy": [
+    "i-0089"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

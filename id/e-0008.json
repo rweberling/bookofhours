@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0008/",
+  "id": "e-0008",
+  "type": "book",
+  "title": "Rampolli: Growths from a Long-Planted Root",
+  "contributors": [
+    {
+      "id": "a-novalis",
+      "name": "Novalis",
+      "role": "author",
+      "wikidata": "Q60684"
+    },
+    {
+      "id": "a-george-macdonald",
+      "name": "George MacDonald",
+      "role": "translator",
+      "wikidata": "Q368519"
+    }
+  ],
+  "publisher": "Longmans, Green",
+  "issued": "1897",
+  "original-date": "1800",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0008"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

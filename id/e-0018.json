@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0018/",
+  "id": "e-0018",
+  "type": "book",
+  "title": "Technique of the Drama",
+  "contributors": [
+    {
+      "id": "a-gustav-freytag",
+      "name": "Gustav Freytag",
+      "role": "author",
+      "wikidata": "Q58811"
+    },
+    {
+      "id": "a-elias-j-macewan",
+      "name": "Elias J. MacEwan",
+      "role": "translator"
+    }
+  ],
+  "publisher": "Scott, Foresman",
+  "issued": "1894",
+  "original-date": "1894",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "freytagstechniqu00freyuoft",
+    "openlibrary": "OL7168981M"
+  },
+  "citedBy": [
+    "r-0018"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

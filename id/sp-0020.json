@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0020/",
+  "id": "sp-0020",
+  "name": "Cucurbits",
+  "scientific": "Cucurbitaceae",
+  "rank": "family",
+  "wikidata": "Q8314",
+  "gbif": "6634",
+  "inaturalist": "48620",
+  "records": [
+    "r-0091",
+    "r-0092",
+    "i-0106",
+    "i-0107",
+    "i-0108",
+    "i-0109"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0004/",
+  "id": "e-0004",
+  "type": "book",
+  "title": "Thomas the Obscure",
+  "contributors": [
+    {
+      "id": "a-maurice-blanchot",
+      "name": "Maurice Blanchot",
+      "role": "author",
+      "wikidata": "Q315210"
+    },
+    {
+      "id": "a-robert-lamberton",
+      "name": "Robert Lamberton",
+      "role": "translator"
+    }
+  ],
+  "publisher": "Station Hill Press",
+  "issued": "1988",
+  "original-date": "1941",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0004"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

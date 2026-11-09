@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0011/",
+  "id": "i-0011",
+  "aliases": [
+    "i-smith-human-blood-x1000"
+  ],
+  "shownIn": "hours",
+  "file": "images/chorus_smithblood.jpg",
+  "caption": "Arthur E. Smith, \"<a href=\"https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270\" target=\"_blank\">Human Blood x1000</a>,\" from Richard Kerr, <em>Nature Through Microscope & Camera</em> (1909)",
+  "alt": "A black-and-white photomicrograph crowded with small round blood cells, each with a pale ring and a darker centre, and a few larger blurred cells among them, captioned “Fig. 51. Human blood. ×1000.”",
+  "bibliography": "Smith, Arthur E. \"Human Blood x1000.\" <em>Nature Through Microscope &amp; Camera</em>, by Richard Kerr, Religious Tract Society, 1909.",
+  "creator": {
+    "id": "a-arthur-e-smith",
+    "name": "Arthur E. Smith"
+  },
+  "title": "Human Blood x1000",
+  "edition": {
+    "id": "e-0164",
+    "title": "Nature Through Microscope & Camera",
+    "publisher": "Religious Tract Society",
+    "issued": "1909"
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270",
+    "label": "HathiTrust"
+  },
+  "date": "1909",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "chorus"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

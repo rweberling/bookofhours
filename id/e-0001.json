@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0001/",
+  "id": "e-0001",
+  "type": "book",
+  "title": "To the Lighthouse",
+  "contributors": [
+    {
+      "id": "a-virginia-woolf",
+      "name": "Virginia Woolf",
+      "role": "author",
+      "wikidata": "Q40909"
+    }
+  ],
+  "publisher": "Hogarth Press",
+  "issued": "1927",
+  "original-date": "1927",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0001"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

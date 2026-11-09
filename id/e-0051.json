@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0051/",
+  "id": "e-0051",
+  "title": "The Development of the Ostrich Fern",
+  "issued": "1887",
+  "identifiers": {
+    "hathitrust": "001993770",
+    "oclc": "14366384"
+  },
+  "contributors": [
+    {
+      "id": "a-douglas-houghton-campbell",
+      "name": "Douglas Houghton Campbell",
+      "role": "author",
+      "wikidata": "Q4251095"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0051",
+    "i-0054"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

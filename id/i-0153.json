@@ -1,0 +1,42 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0153/",
+  "id": "i-0153",
+  "shownIn": "weather",
+  "file": "images/weather_tohaku_pine_trees.jpg",
+  "caption": "Hasegawa Tōhaku, <a href=\"https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg\" target=\"_blank\"><em>Pine Trees</em></a>, right-hand screen (c. 1595)",
+  "alt": "An ink painting on a six-panel folding screen: groups of pine trees, some dark and sharp, most fading to grey, standing in a mist that leaves much of the paper empty.",
+  "bibliography": "Hasegawa Tōhaku. <em>Pine Trees</em> (<em>Shōrin-zu byōbu</em>), right-hand screen of a pair of six-fold screens. c. 1595, ink on paper, Tokyo National Museum (National Treasure).",
+  "creator": {
+    "id": "a-hasegawa-tohaku",
+    "name": "Hasegawa Tōhaku",
+    "wikidata": "Q719668"
+  },
+  "title": "Pine Trees",
+  "date": "1595~",
+  "institution": "Tokyo National Museum",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg",
+    "retrieved": "2026-11-05"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "display": {
+    "cardPosition": "bottom-left"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "mist",
+      "fog"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

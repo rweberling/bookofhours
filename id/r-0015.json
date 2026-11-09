@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0015/",
+  "id": "r-0015",
+  "aliases": [
+    "r-eliot-little-gidding"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "T. S. Eliot, from \"Little Gidding\" (1942), <a href=\"https://bookshop.org/a/86532/9780547538211\" target=\"_blank\"><em>Four Quartets</em></a> (1943)",
+    "bibliography": "Eliot, T. S. \"Little Gidding.\" <em>Four Quartets</em>, Harcourt, Brace, 1943.",
+    "title": "Little Gidding",
+    "written": "1942",
+    "edition": {
+      "id": "e-0015",
+      "type": "book",
+      "title": "Four Quartets",
+      "contributors": [
+        {
+          "id": "a-t-s-eliot",
+          "name": "T. S. Eliot",
+          "role": "author",
+          "wikidata": "Q37767"
+        }
+      ],
+      "publisher": "Harcourt, Brace",
+      "issued": "1943",
+      "original-date": "1942",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "in copyright — estate actively enforces"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780547538211",
+    "note": "In <em>Collected Poems 1909–1962</em>"
+  },
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "We shall not cease from exploration …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

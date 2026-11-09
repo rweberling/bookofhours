@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0082/",
+  "id": "i-0082",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/195490523.week-26-maculae-solares-galileo-galilei-1-0273491a2acc.jpeg",
+  "caption": "Richard William Seale, “<a href=\"https://wellcomecollection.org/works/xrjnyg2g\">The Course of the Solar Maculae over the Sun’s Disk</a>” (n.d.).",
+  "alt": "An engraved diagram of the sun as a large circle, with rows of numbered dark spots crossing it from east to west to show how the sunspots moved over several days.",
+  "bibliography": "Seale, Richard William. \"The Course of the Solar Maculae over the Sun’s Disk.\" n.d.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wellcome Collection",
+      "url": "https://wellcomecollection.org/works/xrjnyg2g"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0017",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      "ph-0003"
+    ]
+  },
+  "display": {
+    "size": [
+      578,
+      655
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

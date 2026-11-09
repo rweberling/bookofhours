@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0066/",
+  "id": "i-0066",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/196307082.week-20-cambridge-argillite-ludwig-4-8d3fa41dd229.jpg",
+  "caption": "Screenshot from <a href=\"https://ngmdb.usgs.gov/mapview/?center=-97,39.6&amp;zoom=4\">The National Geologic Map Database</a> (U.S. Department of the Interior and the U.S. Geological Survey).",
+  "alt": "A screenshot of an online geologic map of the United States: a patchwork of bright colors, each a different kind of bedrock, laid over the outlines of cities and states.",
+  "bibliography": "U.S. Geological Survey. Screenshot of the National Geologic Map Database. U.S. Department of the Interior.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "National Geologic Map Database",
+      "url": "https://ngmdb.usgs.gov/mapview/?center=-97,39.6&amp;zoom=4"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0011",
+    "place": 4
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "phenomena": [
+      "ph-0002"
+    ]
+  },
+  "display": {
+    "size": [
+      1456,
+      737
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

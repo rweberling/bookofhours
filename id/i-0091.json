@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0091/",
+  "id": "i-0091",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/206437308.week-28-corn-haudenosaunee-storytellers-1-812537cc22a0.jpeg",
+  "caption": "Nasca artist(s), <em><a href=\"https://www.metmuseum.org/art/collection/search/316270\">Corn Stalk-Shaped Vessel</a> </em>(c. 1-600 CE).",
+  "alt": "A ceramic vessel in the shape of a corn stalk, painted dark red with thin cream bands at the joints, with two cream ears of corn, cross-hatched in brown, branching from its sides.",
+  "bibliography": "Nasca artist(s). <em>Corn Stalk-Shaped Vessel</em>. c. 1–600 CE.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/316270"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0020",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0017"
+    ]
+  },
+  "display": {
+    "size": [
+      452,
+      603
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

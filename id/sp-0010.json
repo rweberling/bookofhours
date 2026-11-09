@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0010/",
+  "id": "sp-0010",
+  "name": "Common Lilac",
+  "scientific": "Syringa vulgaris",
+  "rank": "species",
+  "wikidata": "Q6565319",
+  "gbif": "5415039",
+  "inaturalist": "83072",
+  "records": [
+    "r-0062",
+    "r-0063",
+    "r-0064",
+    "i-0067",
+    "i-0068",
+    "i-0069"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

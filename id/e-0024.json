@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0024/",
+  "id": "e-0024",
+  "type": "book",
+  "title": "The Arcades Project",
+  "contributors": [
+    {
+      "id": "a-walter-benjamin",
+      "name": "Walter Benjamin",
+      "role": "author",
+      "wikidata": "Q61078"
+    },
+    {
+      "id": "a-howard-eiland",
+      "name": "Howard Eiland",
+      "role": "translator"
+    },
+    {
+      "id": "a-kevin-mclaughlin",
+      "name": "Kevin McLaughlin",
+      "role": "translator",
+      "wikidata": "Q28229402"
+    }
+  ],
+  "publisher": "Belknap Press of Harvard University Press",
+  "issued": "1999",
+  "original-date": null,
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0024"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

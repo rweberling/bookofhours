@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0110/",
+  "id": "i-0110",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-1-126d608eed31.jpeg",
+  "caption": "Fede Galizia. <a href=\"https://www.nga.gov/artworks/226411-still-life-apples-pears-cucumbers-figs-plums-and-melon\">Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon</a> (c. 1625-1630).",
+  "alt": "A still-life painting on a dark ground: a woven basket heaped with pears and apples, a bowl of figs and plums, a cut melon showing its orange flesh, cucumbers and peaches on a wooden ledge.",
+  "bibliography": "Galizia, Fede. <em>Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon</em>. c. 1625–1630.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "National Gallery of Art",
+      "url": "https://www.nga.gov/artworks/226411-still-life-apples-pears-cucumbers-figs-plums-and-melon"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0026",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0021"
+    ]
+  },
+  "display": {
+    "size": [
+      1456,
+      844
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

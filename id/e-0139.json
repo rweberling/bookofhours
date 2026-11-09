@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0139/",
+  "id": "e-0139",
+  "title": "Circular",
+  "issued": "1941",
+  "identifiers": {
+    "hathitrust": "003923103",
+    "oclc": "1695369",
+    "lccn": "41051406"
+  },
+  "citedBy": [
+    "i-0074"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

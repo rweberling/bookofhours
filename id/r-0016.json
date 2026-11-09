@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0016/",
+  "id": "r-0016",
+  "aliases": [
+    "r-johnson-the-road"
+  ],
+  "shownIn": "hours",
+  "text": "Ah, little road all whirry in the breeze,<br>A leaping clay hill lost among the trees,<br>The bleeding note of rapture streaming thrush<br>Caught in a drowsy hush<br>And stretched out in a single singing line of dusky song.<br>Ah little road, brown as my race is brown,<br>Your trodden beauty like our trodden pride,<br>Dust of the dust, they must not bruise you down.<br>Rise to one brimming golden, spilling cry!",
+  "citation": {
+    "display": "Helene Johnson, \"<a href=\"https://archive.org/details/carolingduskanth00cull/page/220/mode/2up\" target=\"_blank\">The Road</a>\" (1926/1927)",
+    "bibliography": "Johnson, Helene. \"The Road.\" <em>Caroling Dusk: An Anthology of Verse by Negro Poets</em>, edited by Countee Cullen, Harper &amp; Brothers, 1927.",
+    "title": "The Road",
+    "locator": {
+      "url": "https://archive.org/details/carolingduskanth00cull/page/220/mode/2up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0016",
+      "type": "book",
+      "title": "Caroling Dusk: An Anthology of Verse by Negro Poets",
+      "contributors": [
+        {
+          "id": "a-helene-johnson",
+          "name": "Helene Johnson",
+          "role": "author",
+          "wikidata": "Q1601979"
+        },
+        {
+          "id": "a-countee-cullen",
+          "name": "Countee Cullen",
+          "role": "editor",
+          "wikidata": "Q1137066"
+        }
+      ],
+      "publisher": "Harper & Brothers",
+      "issued": "1927",
+      "original-date": "1926/1927",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "carolingduskanth00cull",
+        "openlibrary": "OL6707519M",
+        "lccn": "27023175"
+      }
+    }
+  },
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

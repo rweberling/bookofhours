@@ -1,0 +1,62 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0045/",
+  "id": "r-0045",
+  "shownIn": "seasons",
+  "text": "I’d like to get away from earth awhile<br>And then come back to it and begin over.<br>May no fate willfully misunderstand me<br>And half grant what I wish and snatch me away<br>Not to return. Earth’s the right place for love:<br>I don’t know where it’s likely to go better.<br>I’d like to go by climbing a birch tree,<br>And climb black branches up a snow-white trunk<br><em>Toward</em> heaven, till the tree could bear no more,<br>But dipped its top and set me down again.<br>That would be good both going and coming back.<br>One could do worse than be a swinger of birches.",
+  "citation": {
+    "display": "Robert Frost, “Birches,” <em><a href=\"https://www.theatlantic.com/magazine/archive/1915/08/birches/645301/\">Atlantic Monthly</a></em> (August 1915). Rpt. Robert Frost, <em><a href=\"https://dn721805.ca.archive.org/0/items/mountaininterval0000fros/mountaininterval0000fros.pdf\">Mountain Interval</a> </em>(New York: Henry Holt and Company, 1916), pp. 29-30.",
+    "bibliography": "Frost, Robert. \"Birches.\" <em>Mountain Interval</em>, Henry Holt, 1916. First published in <em>The Atlantic Monthly</em>, Aug. 1915.",
+    "title": "Birches",
+    "written": "1915-08",
+    "locator": {
+      "page": "29–30",
+      "url": "https://dn721805.ca.archive.org/0/items/mountaininterval0000fros/mountaininterval0000fros.pdf",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0045",
+      "links": [
+        {
+          "role": "original",
+          "label": "The Atlantic",
+          "url": "https://www.theatlantic.com/magazine/archive/1915/08/birches/645301/"
+        }
+      ],
+      "contributors": [
+        {
+          "id": "a-robert-frost",
+          "name": "Robert Frost",
+          "role": "author",
+          "wikidata": "Q168728"
+        }
+      ],
+      "title": "Mountain Interval",
+      "publisher": "Henry Holt and Company",
+      "issued": "1916",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0004",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0004",
+        "basis": "both",
+        "note": "Real ice-bent birches, and a climb toward heaven."
+      }
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

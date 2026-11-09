@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0096/",
+  "id": "e-0096",
+  "type": "book",
+  "title": "The Natural History",
+  "contributors": [
+    {
+      "id": "a-pliny-the-elder",
+      "name": "Pliny the Elder",
+      "role": "author",
+      "wikidata": "Q82778"
+    },
+    {
+      "id": "a-john-bostock",
+      "name": "John Bostock",
+      "role": "translator",
+      "wikidata": "Q6222522"
+    },
+    {
+      "id": "a-h-t-riley",
+      "name": "H. T. Riley",
+      "role": "translator",
+      "wikidata": "Q5729156"
+    }
+  ],
+  "publisher": "Taylor and Francis",
+  "issued": "1855",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0097"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0152/",
+  "id": "e-0152",
+  "type": "article",
+  "title": "Studies among the Snow Crystals during the Winter of 1901–2, with Additional Data Collected during Previous Winters",
+  "container": "Monthly Weather Review",
+  "volume": "30",
+  "pages": "607–616",
+  "issued": "1902",
+  "identifiers": {
+    "doi": "10.1175/1520-0493-30.13.607"
+  },
+  "citedBy": [
+    "i-0128"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

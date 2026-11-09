@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0110/",
+  "id": "r-0110",
+  "shownIn": "seasons",
+  "text": "<p>Summer fervors slacken;</p><p>   Sumac torches dim;</p><p>There’s bronze upon the bracken;</p><p>   September has a whim </p><p>For carmine, pearl and amber</p><p>   Touches on her green; </p><p>Busy squirrels clamber;</p><p>   Restless birds convene.</p><p></p><p>Where Indian pipe still blanches, </p><p>   Where hoary lichen flakes</p><p>Forest trunks and branches,</p><p>   The golden foxglove makes</p><p>A mimic wood that tosses</p><p>   Warning to the trees,</p><p>Then droops upon the mosses,</p><p>   Heavy with bloom and bees.</p>",
+  "citation": {
+    "display": "Katharine Lee Bates. From “<a href=\"https://hdl.handle.net/2027/loc.ark:/13960/t1wd4qb7b?urlappend=%3Bseq=142\" rel=\"noopener\" target=\"_blank\">Playmates</a>.” <em>The Retinue and Other Poems</em>. New York: E.P. Dutton &amp; Co., 1918. 122-123.",
+    "bibliography": "Bates, Katharine Lee. \"Playmates.\" <em>The Retinue and Other Poems</em>, E. P. Dutton &amp; Co., 1918.",
+    "title": "Playmates",
+    "written": "1918",
+    "locator": {
+      "page": "122–123",
+      "url": "https://hdl.handle.net/2027/loc.ark:/13960/t1wd4qb7b?urlappend=%3Bseq=142",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0109",
+      "type": "book",
+      "title": "The Retinue and Other Poems",
+      "contributors": [
+        {
+          "id": "a-katharine-lee-bates",
+          "name": "Katharine Lee Bates",
+          "role": "author",
+          "wikidata": "Q2363035"
+        }
+      ],
+      "publisher": "E. P. Dutton & Co.",
+      "issued": "1918",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0032",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0026"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

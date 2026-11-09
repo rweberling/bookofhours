@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0082/",
+  "id": "e-0082",
+  "type": "book",
+  "title": "Flint and Feather: The Complete Poems of Emily Pauline Johnson (Tekahionwake)",
+  "contributors": [
+    {
+      "id": "a-e-pauline-johnson",
+      "name": "E. Pauline Johnson (Tekahionwake)",
+      "role": "author",
+      "wikidata": "Q2716914"
+    }
+  ],
+  "publisher": "Musson Book Company",
+  "issued": "1917",
+  "original-date": "1912",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0082"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

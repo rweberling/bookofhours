@@ -1,0 +1,57 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0062/",
+  "id": "r-0062",
+  "shownIn": "seasons",
+  "text": "Lilacs,<br>False blue,<br>White,<br>Purple,<br>Color of lilac.<br>Heart-leaves of lilac all over New England,<br>Roots of lilac under all the soil of New England,<br>Lilac in me because I am New England,<br>Because my roots are in it,<br>Because my leaves are of it,<br>Because my flowers are for it,<br>Because it is my country<br>And I speak to it of itself<br>And sing of it with my own voice<br>Since certainly it is mine.",
+  "citation": {
+    "display": "Amy Lowell, “<a href=\"https://hdl.handle.net/2027/uc1.b4857815?urlappend=%3Bseq=82%3Bownerid=116673599-86\">Lilacs</a>” (<em>The New York Evening Post</em>, 1920), rpt. <em>What’s O’Clock </em>(Boston: Houghton Mifflin Company, 1925), pp. 68-74.",
+    "bibliography": "Lowell, Amy. \"Lilacs.\" <em>What’s O’Clock</em>, Houghton Mifflin, 1925. First published in <em>The New York Evening Post</em>, 1920.",
+    "title": "Lilacs",
+    "written": "1920",
+    "locator": {
+      "page": "68–74",
+      "url": "https://hdl.handle.net/2027/uc1.b4857815?urlappend=%3Bseq=82%3Bownerid=116673599-86",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0062",
+      "type": "book",
+      "title": "What’s O’Clock",
+      "identifiers": {
+        "hathitrust": "000629649",
+        "oclc": "1268281",
+        "lccn": "25016810"
+      },
+      "contributors": [
+        {
+          "id": "a-amy-lowell",
+          "name": "Amy Lowell",
+          "role": "author",
+          "wikidata": "Q265841"
+        }
+      ],
+      "publisher": "Houghton Mifflin",
+      "issued": "1925",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0012",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0010"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

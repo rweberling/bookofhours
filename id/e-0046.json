@@ -1,0 +1,36 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0046/",
+  "id": "e-0046",
+  "type": "article",
+  "title": "In Honour of Mr. Howard",
+  "container": "Gold’s London Magazine",
+  "volume": "4",
+  "pages": "59–63",
+  "contributors": [
+    {
+      "id": "a-johann-wolfgang-von-goethe",
+      "name": "Johann Wolfgang von Goethe",
+      "role": "author",
+      "wikidata": "Q5879"
+    },
+    {
+      "id": "a-george-soane",
+      "name": "George Soane",
+      "role": "translator",
+      "wikidata": "Q16066130"
+    },
+    {
+      "id": "a-john-bowring",
+      "name": "John Bowring",
+      "role": "translator",
+      "wikidata": "Q332508"
+    }
+  ],
+  "issued": "1821-07",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0046"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

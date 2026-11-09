@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0057/",
+  "id": "i-0057",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-3-1a7d9846c02f.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397\">Skulls of Sylvilagus</a>,” from E. W. Nelson, <em>North American Fauna, No. 29: The Rabbits of North America </em>(Washington, DC: Government Printing Office, 1909), p. 302.",
+  "alt": "A photographic plate of seven cottontail rabbit skulls on black: three seen from above and four from the side, numbered 1 to 7.",
+  "bibliography": "Nelson, E. W. \"Skulls of Sylvilagus.\" <em>The Rabbits of North America</em>, North American Fauna 29, Government Printing Office, 1909.",
+  "lectio": {
+    "post": "lt-0008",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0007"
+    ]
+  },
+  "display": {
+    "size": [
+      1462,
+      2405
+    ]
+  },
+  "edition": {
+    "id": "e-0131",
+    "title": "North American Fauna, No. 29: The Rabbits of North America",
+    "issued": "1909",
+    "identifiers": {
+      "hathitrust": "007858342",
+      "oclc": "71848387",
+      "lccn": "78001249"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

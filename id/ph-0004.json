@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0004/",
+  "id": "ph-0004",
+  "name": "Dog Days",
+  "latin": "Dies caniculares",
+  "wikidata": null,
+  "records": [
+    "r-0087",
+    "r-0088",
+    "i-0100",
+    "i-0101",
+    "i-0102"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

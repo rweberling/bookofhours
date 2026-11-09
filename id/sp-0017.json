@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0017/",
+  "id": "sp-0017",
+  "name": "Corn",
+  "scientific": "Zea mays",
+  "rank": "species",
+  "wikidata": "Q11575",
+  "gbif": "5290052",
+  "inaturalist": "48448",
+  "records": [
+    "r-0081",
+    "r-0082",
+    "i-0091",
+    "i-0092",
+    "i-0093",
+    "i-0094"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

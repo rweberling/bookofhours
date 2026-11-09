@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0025/",
+  "id": "e-0025",
+  "type": "manuscript",
+  "title": null,
+  "contributors": [
+    {
+      "id": "a-emily-dickinson",
+      "name": "Emily Dickinson",
+      "role": "author",
+      "wikidata": "Q4441"
+    }
+  ],
+  "archive": "Emily Dickinson Archive, Houghton Library, Harvard University",
+  "issued": null,
+  "original-date": "1861~",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0025"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

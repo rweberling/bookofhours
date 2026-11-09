@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0113/",
+  "id": "e-0113",
+  "type": "book",
+  "title": "An Autumn Pastoral: The Death of the Flowers",
+  "contributors": [
+    {
+      "id": "a-william-cullen-bryant",
+      "name": "William Cullen Bryant",
+      "role": "author",
+      "wikidata": "Q454840"
+    }
+  ],
+  "publisher": "Nims and Knight",
+  "issued": "1888",
+  "identifiers": {
+    "internetArchive": "autumnpastoralde00brya",
+    "oclc": "5749216",
+    "lccn": "21013050"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0114"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

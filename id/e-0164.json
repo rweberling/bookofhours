@@ -1,0 +1,12 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0164/",
+  "id": "e-0164",
+  "title": "Nature Through Microscope & Camera",
+  "publisher": "Religious Tract Society",
+  "issued": "1909",
+  "citedBy": [
+    "i-0011"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

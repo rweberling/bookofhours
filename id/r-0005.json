@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0005/",
+  "id": "r-0005",
+  "aliases": [
+    "r-lispector-the-passion-according-to"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Clarice Lispector, <a href=\"https://bookshop.org/a/86532/9780811219686\" target=\"_blank\"><em>The Passion According to G.H.</em></a> (1964)",
+    "bibliography": "Lispector, Clarice. <em>The Passion According to G.H.</em> Translated by Idra Novey, New Directions, 2012. Originally published 1964.",
+    "edition": {
+      "id": "e-0005",
+      "type": "book",
+      "title": "The Passion According to G.H.",
+      "contributors": [
+        {
+          "id": "a-clarice-lispector",
+          "name": "Clarice Lispector",
+          "role": "author",
+          "wikidata": "Q235955"
+        },
+        {
+          "id": "a-idra-novey",
+          "name": "Idra Novey",
+          "role": "translator",
+          "wikidata": "Q15439606"
+        }
+      ],
+      "publisher": "New Directions",
+      "issued": "2012",
+      "original-date": "1964",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780811219686"
+  },
+  "tags": {
+    "hours": [
+      "hush"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "Give me your hand: Now I'm going to tell you how I went into that inexpressiveness that was always my blind, secret quest. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0087/",
+  "id": "e-0087",
+  "type": "article",
+  "title": "Odes, Book III: XIII",
+  "container": "Poetry in Translation",
+  "contributors": [
+    {
+      "id": "a-horace",
+      "name": "Horace",
+      "role": "author",
+      "wikidata": "Q6197"
+    },
+    {
+      "id": "a-a-s-kline",
+      "name": "A. S. Kline",
+      "role": "translator",
+      "wikidata": "Q112502365"
+    }
+  ],
+  "issued": "2003",
+  "rights": "http://rightsstatements.org/vocab/InC-NC/1.0/",
+  "rightsNote": "the translator allows non-commercial reproduction",
+  "citedBy": [
+    "r-0087"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

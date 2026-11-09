@@ -1,0 +1,38 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0017/",
+  "id": "i-0017",
+  "aliases": [
+    "i-abbott-seventh-avenue-looking-south"
+  ],
+  "shownIn": "hours",
+  "file": "images/transit_abbott.jpg",
+  "caption": "Berenice Abbott, <a href=\"https://digitalcollections.nypl.org/items/32f22aa0-878a-013a-95ad-0242ac110002?canvasIndex=0\" target=\"_blank\"><em>Seventh Avenue looking south from 35th Street</em></a> (1935)",
+  "alt": "A black-and-white photograph looking straight down a long Manhattan avenue from high above: dark skyscrapers on both sides, and a sunlit street crowded with cars and buses narrowing into the haze.",
+  "bibliography": "Abbott, Berenice. <em>Seventh Avenue Looking South from 35th Street</em>. 1935, New York Public Library Digital Collections.",
+  "creator": {
+    "id": "a-berenice-abbott",
+    "name": "Berenice Abbott",
+    "wikidata": "Q231861"
+  },
+  "title": "Seventh Avenue looking south from 35th Street",
+  "date": "1935",
+  "institution": "New York Public Library",
+  "links": [
+    {
+      "role": "cited",
+      "label": "NYPL Digital Collections",
+      "url": "https://digitalcollections.nypl.org/items/32f22aa0-878a-013a-95ad-0242ac110002?canvasIndex=0"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "in copyright — estate licenses actively",
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

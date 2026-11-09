@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0037/",
+  "id": "e-0037",
+  "type": "book",
+  "title": "Sharp Eyes: A Rambler’s Calendar",
+  "identifiers": {
+    "hathitrust": "007679974",
+    "oclc": "7688631"
+  },
+  "contributors": [
+    {
+      "id": "a-william-hamilton-gibson",
+      "name": "William Hamilton Gibson",
+      "role": "author",
+      "wikidata": "Q8010768"
+    }
+  ],
+  "publisher": "Harper & Brothers",
+  "issued": "1904",
+  "original-date": "1892",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0037"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

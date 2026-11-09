@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0080/",
+  "id": "i-0080",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-2-00d8e45baf8d.jpeg",
+  "caption": "“<em><a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29\">Cypripedium acaule</a></em>,” from <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em> (Boston: Bradlee Whidden, 1885), n.p.",
+  "alt": "A black-and-white photograph of a single lady’s slipper orchid: one drooping, pouch-shaped flower atop a tall bare stem, above two broad leaves.",
+  "bibliography": "Young, C. S. \"<em>Cypripedium acaule</em>.\" <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em>, Bradlee Whidden, 1885.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "HathiTrust",
+      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0016",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0014"
+    ]
+  },
+  "display": {
+    "size": [
+      439,
+      735
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

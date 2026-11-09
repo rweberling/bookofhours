@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0019/",
+  "id": "i-0019",
+  "aliases": [
+    "i-campbell-brightfield-light-microscopy-leaf"
+  ],
+  "shownIn": "hours",
+  "file": "images/fulcrum_campbell.jpg",
+  "caption": "A.J.A. Campbell, <a href=\"https://commons.wikimedia.org/wiki/Category:Leaf_epidermis_and_stomata_prints#/media/File:09-_Fraxinus_gooddingii_20x_obj_leaf_print.jpg\" target=\"_blank\"><em>Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</em></a> (2025)",
+  "alt": "A microscope image of a leaf’s surface: a pale green field of wavy textures dotted with dark, spiky starburst shapes, fibres running across the right side, and a scale bar marked 100 micrometres.",
+  "bibliography": "Campbell, A. J. A. <em>Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification</em>. 2025, Wikimedia Commons.",
+  "creator": {
+    "id": "a-a-j-a-campbell",
+    "name": "A. J. A. Campbell"
+  },
+  "title": "Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification",
+  "date": "2025",
+  "institution": null,
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Leaf_epidermis_and_stomata_prints#/media/File:09-_Fraxinus_gooddingii_20x_obj_leaf_print.jpg"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "recent, living creator — verify CC license terms",
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

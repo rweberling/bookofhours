@@ -1,0 +1,36 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0028/",
+  "id": "e-0028",
+  "type": "book",
+  "title": "In Praise of Shadows",
+  "contributors": [
+    {
+      "id": "a-jun-ichiro-tanizaki",
+      "name": "Jun'ichirō Tanizaki",
+      "role": "author",
+      "wikidata": "Q316213"
+    },
+    {
+      "id": "a-thomas-j-harper",
+      "name": "Thomas J. Harper",
+      "role": "translator",
+      "wikidata": "Q138307176"
+    },
+    {
+      "id": "a-edward-g-seidensticker",
+      "name": "Edward G. Seidensticker",
+      "role": "translator",
+      "wikidata": "Q3272933"
+    }
+  ],
+  "publisher": "Leete's Island Books",
+  "issued": "1977",
+  "original-date": "1933",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0028"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

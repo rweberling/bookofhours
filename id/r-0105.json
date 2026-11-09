@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0105/",
+  "id": "r-0105",
+  "aliases": [
+    "r-strutt-transmission-of-light"
+  ],
+  "shownIn": "weather",
+  "text": "Closely connected with this is the interesting question whether the light from the sky can be explained by diffraction from the molecules of air themselves, or whether it is necessary to appeal to suspended particles composed of foreign matter, solid or liquid. It will appear, I think, that even in the absence of foreign particles we should still have a blue sky.",
+  "citation": {
+    "display": "John William Strutt (Lord Rayleigh), from \"<a href=\"https://archive.org/details/scientificpapers04rayliala/page/397/mode/1up\" target=\"_blank\">On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky</a>\" (1899)",
+    "bibliography": "Strutt, John William (Lord Rayleigh). \"On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky.\" <em>Philosophical Magazine</em>, 5th ser., 47 (1899): 375–84. Reprinted in <em>Scientific Papers</em>, vol. 4, 397–405. Cambridge University Press, 1903.",
+    "title": "On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky",
+    "written": "1899",
+    "locator": {
+      "page": "397",
+      "url": "https://archive.org/details/scientificpapers04rayliala/page/397/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0104",
+      "type": "book",
+      "title": "Scientific Papers, Vol. 4",
+      "contributors": [
+        {
+          "id": "a-john-william-strutt",
+          "name": "John William Strutt",
+          "role": "author",
+          "wikidata": "Q83297"
+        }
+      ],
+      "publisher": "Cambridge University Press",
+      "issued": "1903",
+      "original-date": "1899",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "scientificpapers04rayliala",
+        "oclc": "2316730",
+        "lccn": "03015047"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "clear"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0020/",
+  "id": "e-0020",
+  "type": "book",
+  "title": "Gravity and Grace",
+  "contributors": [
+    {
+      "id": "a-simone-weil",
+      "name": "Simone Weil",
+      "role": "author",
+      "wikidata": "Q157309"
+    },
+    {
+      "id": "a-emma-crawford",
+      "name": "Emma Crawford",
+      "role": "translator"
+    },
+    {
+      "id": "a-mario-von-der-ruhr",
+      "name": "Mario von der Ruhr",
+      "role": "translator"
+    }
+  ],
+  "publisher": "Routledge",
+  "issued": "2002",
+  "original-date": "1947",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0020"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

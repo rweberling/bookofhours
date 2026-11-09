@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0012/",
+  "id": "i-0012",
+  "aliases": [
+    "i-harris-prismatic-colour-wheel"
+  ],
+  "shownIn": "hours",
+  "file": "images/chorus_harris.avif",
+  "caption": "Moses Harris, <a href=\"https://www.royalacademy.org.uk/art-artists/work-of-art/prismatic-colour-wheel\" target=\"_blank\"><em>Prismatic Colour Wheel</em></a>, from <em>The Natural System of Colours</em> (1766)",
+  "alt": "A hand-coloured colour wheel headed “Prismatic”: wedges of graded colour running from red through orange, yellow, green and blue to purple, around a white disc holding red, yellow and blue triangles that overlap in black.",
+  "bibliography": "Harris, Moses. <em>Prismatic Colour Wheel</em>. <em>The Natural System of Colours</em>, 1766, Royal Academy of Arts, London.",
+  "creator": {
+    "id": "a-moses-harris",
+    "name": "Moses Harris",
+    "wikidata": "Q720166"
+  },
+  "title": "Prismatic Colour Wheel",
+  "edition": {
+    "id": "e-0165",
+    "title": "The Natural System of Colours",
+    "issued": "1766"
+  },
+  "locator": {
+    "url": "https://www.royalacademy.org.uk/art-artists/work-of-art/prismatic-colour-wheel",
+    "label": "Royal Academy"
+  },
+  "date": "1766",
+  "institution": "Royal Academy of Arts",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "chorus"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

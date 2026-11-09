@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0008/",
+  "id": "i-0008",
+  "aliases": [
+    "i-steichen-moonlight-the-pond"
+  ],
+  "shownIn": "hours",
+  "file": "images/hush_steichen.jpg",
+  "caption": "Edward Steichen, <a href=\"https://repository.library.brown.edu/viewers/readers/set/bdr:565092/0/#page/15/mode/1up\" target=\"_blank\"><em>Moonlight: The Pond</em></a> (1904/1906)",
+  "alt": "A dark photograph of a woodland pond at night: a row of tall, thin trees across the top, with moonlight glimmering between them and reflected in long pale streaks on the black water.",
+  "bibliography": "Steichen, Edward. <em>Moonlight: The Pond</em>. 1904, printed 1906.",
+  "creator": {
+    "id": "a-edward-steichen",
+    "name": "Edward Steichen",
+    "wikidata": "Q313899"
+  },
+  "title": "Moonlight: The Pond",
+  "date": "1904/1906",
+  "institution": "Brown University Library",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Brown University Library Digital Repository",
+      "url": "https://repository.library.brown.edu/viewers/readers/set/bdr:565092/0/#page/15/mode/1up"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "hush"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

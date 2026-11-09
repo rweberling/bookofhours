@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0052/",
+  "id": "i-0052",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/192408338.week-16-ostrich-fern-martin-heidegger-1-cc94b0a0c820.jpeg",
+  "caption": "Heidi Brickell, <em><a href=\"https://lareepaynegallery.com/artists/79-heidi-brickell/works/1653-heidi-brickell-safe-euphoric-ara-with-hine-korako-2025/\">Safe Euphoric Ara with Hine Kōrako</a> </em>(2025).",
+  "alt": "A sculpture hanging from a thread against a white wall: a looping, hook-shaped form wrapped in bright green cord, curling around a ring of dried brown seaweed with a pale stone hung at its center.",
+  "bibliography": "Brickell, Heidi. <em>Safe Euphoric Ara with Hine Kōrako</em>. 2025.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Laree Payne Gallery",
+      "url": "https://lareepaynegallery.com/artists/79-heidi-brickell/works/1653-heidi-brickell-safe-euphoric-ara-with-hine-korako-2025/"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0007",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0006"
+    ]
+  },
+  "display": {
+    "unlabelled": true,
+    "size": [
+      448,
+      672
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

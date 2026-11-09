@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0012/",
+  "id": "sp-0012",
+  "name": "Common Reed",
+  "scientific": "Phragmites australis",
+  "rank": "species",
+  "wikidata": "Q28557",
+  "gbif": "5290149",
+  "inaturalist": "64237",
+  "records": [
+    "r-0068",
+    "r-0069",
+    "i-0073",
+    "i-0074",
+    "i-0075"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

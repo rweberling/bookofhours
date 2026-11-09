@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0108/",
+  "id": "e-0108",
+  "type": "article",
+  "title": "Among the Drupes (Elegy for a Wasteland)",
+  "container": "Plant Perspectives",
+  "contributors": [
+    {
+      "id": "a-cole-swanson",
+      "name": "Cole Swanson",
+      "role": "author"
+    }
+  ],
+  "issued": "2025-02",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0109"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

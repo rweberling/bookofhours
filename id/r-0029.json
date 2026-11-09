@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0029/",
+  "id": "r-0029",
+  "aliases": [
+    "r-fisher-the-gastronomical-me"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "M.F.K. Fisher, <a href=\"https://bookshop.org/a/86532/9780764542619\" target=\"_blank\"><em>The Gastronomical Me</em></a> (1943)",
+    "bibliography": "Fisher, M. F. K. <em>The Gastronomical Me</em>. Duell, Sloan and Pearce, 1943.",
+    "edition": {
+      "id": "e-0029",
+      "type": "book",
+      "title": "The Gastronomical Me",
+      "contributors": [
+        {
+          "id": "a-m-f-k-fisher",
+          "name": "M. F. K. Fisher",
+          "role": "author",
+          "wikidata": "Q272889"
+        }
+      ],
+      "publisher": "Duell, Sloan and Pearce",
+      "issued": "1943",
+      "original-date": "1943",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "in copyright — actively republished"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780764542619",
+    "note": "In <em>The Art of Eating</em>"
+  },
+  "tags": {
+    "hours": [
+      "convivium"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "It seems to me that our three basic needs, for food and security and love, are so mixed and mingled and entwined that we cannot straightly think of one without the others. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

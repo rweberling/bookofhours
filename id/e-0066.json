@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0066/",
+  "id": "e-0066",
+  "type": "article",
+  "title": "The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs",
+  "container": "Frontiers in Allergy",
+  "volume": "4",
+  "identifiers": {
+    "doi": "10.3389/falgy.2023.1220481"
+  },
+  "contributors": [
+    {
+      "id": "a-graham-a-w-rook",
+      "name": "Graham A. W. Rook",
+      "role": "author",
+      "wikidata": "Q112435644"
+    }
+  ],
+  "issued": "2023-09-12",
+  "rights": "https://creativecommons.org/licenses/by/4.0/",
+  "rightsNote": "open access (Frontiers)",
+  "citedBy": [
+    "r-0066"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

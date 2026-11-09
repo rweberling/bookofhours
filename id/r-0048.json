@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0048/",
+  "id": "r-0048",
+  "shownIn": "seasons",
+  "text": "<p>C. vernus is one of the most widely extended Croci, and of the easiest culture, producing seeds abundantly, which, as neither the birds nor the mice seem to eat them, become almost a nuisance from the multitude of self-sown seedlings, which come up spontaneously, and intrude where they are not wanted. It is the Crocus of the Alps, but its flower is small there, promiscuously purple and white or whitish, generally with the throat purple on the outside, but always white and hairy within. It reaches Cevennes; and I am told it is to be found, though rare, on the Pyrenees. Brotero states it to be found in the north of Portugal, but his plant is perhaps C. Carpetanus. It extends, with white acute flowers, into Carinthia, and is found white, with very blunt obovate flowers, on the Bavarians Alps, sometimes assuming a blush of purple. I believe it is only found in particular spots on the Pyrenees, affecting the oolite or Jurassic limestone. On the Alps it reaches above 5000 feet of altitude. I have seen it both white and purple from the Tyrol. The finer purple Neapolitan variety inhabits the loftiest mountains of Calabria and Lucania, not descending lower than 5000 feet. On Monte Pollino it flowers as late as June and July, reaching an elevation of 6000 feet. On the Wengern Alp its flowers actually pierce the remaining snow in June.</p>",
+  "citation": {
+    "display": "William Herbert, <em><a href=\"https://www.google.com/books/edition/A_History_of_the_species_of_crocus_Edite/f6VWAAAAcAAJ?hl=en&amp;gbpv=0\">A History of the Species of Crocus</a></em>, ed. John Lindley (London, England: William Clowes and Sons, [1847]), pp. 25-26.",
+    "bibliography": "Herbert, William. <em>A History of the Species of Crocus</em>. Edited by John Lindley, William Clowes and Sons, 1847.",
+    "title": "A History of the Species of Crocus",
+    "written": "1847",
+    "locator": {
+      "page": "25–26",
+      "url": "https://www.google.com/books/edition/A_History_of_the_species_of_crocus_Edite/f6VWAAAAcAAJ?hl=en&amp;gbpv=0",
+      "label": "Google Books"
+    },
+    "edition": {
+      "id": "e-0048",
+      "type": "book",
+      "title": "A History of the Species of Crocus",
+      "contributors": [
+        {
+          "id": "a-william-herbert",
+          "name": "William Herbert",
+          "role": "author"
+        },
+        {
+          "id": "a-john-lindley",
+          "name": "John Lindley",
+          "role": "editor",
+          "wikidata": "Q378629"
+        }
+      ],
+      "publisher": "William Clowes and Sons",
+      "issued": "1847",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0006",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0005"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

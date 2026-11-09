@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0010/",
+  "id": "r-0010",
+  "aliases": [
+    "r-michael-field-the-depths-of-the"
+  ],
+  "shownIn": "hours",
+  "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look, in the early light,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down to the infinite<br>&nbsp;&nbsp;&nbsp;&nbsp;Depths at the deep grass-roots;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where the sun shoots<br>In golden veins, as looking through<br>&nbsp;&nbsp;&nbsp;&nbsp;A dear pool one sees it do;<br>&nbsp;&nbsp;&nbsp;&nbsp;Where campion drifts<br>Its bladders, iris-brinded, through the rifts<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of rising, falling seed<br>&nbsp;&nbsp;&nbsp;&nbsp;That the winds lightly scour&mdash;<br>Down to the matted earth where over<br>&nbsp;&nbsp;&nbsp;&nbsp;And over again crow’s-foot and clover<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And pink bindweed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dimly, steadily flower.",
+  "citation": {
+    "display": "Michael Field, \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102\" target=\"_blank\">The Depths of the Grass</a>\" (1898)",
+    "bibliography": "Field, Michael. \"The Depths of the Grass.\" <em>Wild Honey from Various Thyme</em>, T. Fisher Unwin, 1908.",
+    "title": "The Depths of the Grass",
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0010",
+      "type": "book",
+      "title": "Wild Honey from Various Thyme",
+      "contributors": [
+        {
+          "id": "a-michael-field",
+          "name": "Michael Field",
+          "role": "author"
+        }
+      ],
+      "publisher": "T. Fisher Unwin",
+      "issued": "1908",
+      "original-date": "1898",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "rightsNote": "date as captioned (1898); verify edition"
+    }
+  },
+  "tags": {
+    "hours": [
+      "chorus"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

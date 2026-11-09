@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0105/",
+  "id": "e-0105",
+  "type": "book",
+  "title": "Gastronomy as a Fine Art; or, The Science of Good Living",
+  "identifiers": {
+    "hathitrust": "100499037",
+    "oclc": "2881650"
+  },
+  "contributors": [
+    {
+      "id": "a-jean-anthelme-brillat-savarin",
+      "name": "Jean Anthelme Brillat-Savarin",
+      "role": "author",
+      "wikidata": "Q313027"
+    },
+    {
+      "id": "a-r-e-anderson",
+      "name": "R. E. Anderson",
+      "role": "translator"
+    }
+  ],
+  "publisher": "Chatto and Windus",
+  "issued": "1877",
+  "original-date": "1826",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0106"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

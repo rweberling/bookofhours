@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0016/",
+  "id": "i-0016",
+  "aliases": [
+    "i-muybridge-plate-169"
+  ],
+  "shownIn": "hours",
+  "file": "images/transit_muybridge.jpg",
+  "caption": "Eadweard Muybridge, Plate 169 from <a href=\"https://drive.google.com/file/d/1o04qBq3W3oJwDVsCxWqRQ3XvUffcBVJ6/view?pli=1\" target=\"_blank\"><em>Animal Locomotion, Vol. VII</em></a> (1887)",
+  "alt": "A grid of eighteen photographs in three rows showing two men in hats at leapfrog, frame by frame: one bends forward while the other runs up and vaults over his back.",
+  "bibliography": "Muybridge, Eadweard. Plate 169. <em>Animal Locomotion</em>, vol. 7, 1887.",
+  "creator": {
+    "id": "a-eadweard-muybridge",
+    "name": "Eadweard Muybridge",
+    "wikidata": "Q190568"
+  },
+  "title": "Plate 169",
+  "edition": {
+    "id": "e-0166",
+    "title": "Animal Locomotion, vol. 7",
+    "issued": "1887"
+  },
+  "locator": {
+    "url": "https://drive.google.com/file/d/1o04qBq3W3oJwDVsCxWqRQ3XvUffcBVJ6/view?pli=1",
+    "label": "digitized plate"
+  },
+  "date": "1887",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

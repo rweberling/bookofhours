@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0009/",
+  "id": "e-0009",
+  "type": "book",
+  "title": "Wake-Robin",
+  "contributors": [
+    {
+      "id": "a-john-burroughs",
+      "name": "John Burroughs",
+      "role": "author",
+      "wikidata": "Q938841"
+    }
+  ],
+  "publisher": "Hurd and Houghton",
+  "issued": "1871",
+  "original-date": "1871",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0009"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

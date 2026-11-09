@@ -1,0 +1,56 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0098/",
+  "id": "r-0098",
+  "shownIn": "seasons",
+  "text": "<p>But, although the forests are great and old, yet the ancient trees within their bounds must each bend individually beneath the doom of every earthly existence; they have their allotted period when the mosses of Time gather upon their branches; when, touched by decay, they break and crumble to dust. Like man, they are decked in living beauty; like man, they fall a prey to death; and while we admire their duration, so far beyond our own brief years, we also acknowledge that especial interest which can only belong to the graces of life and to the desolation of death. We raise our eyes and we see collected in one company vigorous trunks, the oak, the ash, the pine, firm in the strength of maturity; by their side stand a young group, elm, and birch, and maple, their supple branches playing in the breezes, gay and fresh as youth itself; and yonder, rising in unheeded gloom, we behold a skeleton trunk, an old spruce, every branch broken, every leaf fallen, — dull, still, sad, like the finger of Death.</p><p></p><p>It is the peculiar nature of the forest, that life and death may ever be found within its bounds, in immediate presence of each other […]</p>",
+  "citation": {
+    "display": "A Lady [Susan Fenimore Cooper]. “<a href=\"https://archive.org/details/ruralhours00coop/page/202/mode/2up\" rel=\"noopener\" target=\"_blank\">Saturday, 28th [June]</a>—Passed the afternoon in the woods.” <em>Rural Hours.</em> 1850. Third edition. New York, New York: George P. Putnam, 1851. 203-204.",
+    "bibliography": "Cooper, Susan Fenimore. \"Saturday, 28th [June]—Passed the afternoon in the woods.\" <em>Rural Hours</em>, 3rd ed., George P. Putnam, 1851. First published 1850, as by \"A Lady.\"",
+    "title": "Saturday, 28th [June]—Passed the afternoon in the woods.",
+    "written": "1850",
+    "locator": {
+      "page": "203–204",
+      "url": "https://archive.org/details/ruralhours00coop/page/202/mode/2up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0097",
+      "type": "book",
+      "title": "Rural Hours",
+      "identifiers": {
+        "internetArchive": "ruralhours00coop",
+        "oclc": "3339732",
+        "openlibrary": "OL6947305M",
+        "lccn": "04030235"
+      },
+      "contributors": [
+        {
+          "id": "a-susan-fenimore-cooper",
+          "name": "Susan Fenimore Cooper",
+          "role": "author",
+          "wikidata": "Q4865481"
+        }
+      ],
+      "publisher": "George P. Putnam",
+      "issued": "1851",
+      "original-date": "1850",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0028",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0023"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

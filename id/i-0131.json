@@ -1,0 +1,59 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0131/",
+  "id": "i-0131",
+  "shownIn": "weather",
+  "file": "images/weather_tyndall_tube.gif",
+  "caption": "John Tyndall, Fig. 3, from <a href=\"https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601\" target=\"_blank\"><em>Fragments of Science</em></a>, vol. 1 (1879)",
+  "alt": "An engraving of laboratory apparatus on a table: a tall lamp at the left shining into a long horizontal glass tube on two stands, joined by thin pipes to a small test tube and two upright jars on the right, labelled “Fig. 3.”",
+  "bibliography": "Tyndall, John. Fig. 3. In “New Chemical Reactions Produced by Light,” <em>Fragments of Science: A Series of Detached Essays, Addresses, and Reviews</em>, 6th ed., vol. 1. Longmans, Green, and Co., 1879.",
+  "creator": {
+    "id": "a-john-tyndall",
+    "name": "John Tyndall",
+    "wikidata": "Q360808"
+  },
+  "title": "Fig. 3",
+  "edition": {
+    "id": "e-0167",
+    "title": "Fragments of Science: A Series of Detached Essays, Addresses, and Reviews, vol. 1",
+    "publisher": "Longmans, Green, and Co.",
+    "issued": "1879"
+  },
+  "locator": {
+    "url": "https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601",
+    "label": "Project Gutenberg"
+  },
+  "date": "1879",
+  "institution": null,
+  "links": [
+    {
+      "role": "copy",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Tyndall%27s_glass_tube.gif"
+    }
+  ],
+  "furtherReading": [
+    {
+      "kind": "about",
+      "source": "Royal Institution",
+      "title": "John Tyndall's blue sky apparatus",
+      "url": "https://www.rigb.org/explore-science/explore/collection/john-tyndalls-blue-sky-apparatus"
+    }
+  ],
+  "source": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Tyndall%27s_glass_tube.gif",
+    "retrieved": "2026-10-19"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "display": {
+    "cardPosition": "top-right"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "clear"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0007/",
+  "id": "e-0007",
+  "type": "book",
+  "title": "Silence: Lectures and Writings",
+  "contributors": [
+    {
+      "id": "a-john-cage",
+      "name": "John Cage",
+      "role": "author",
+      "wikidata": "Q180727"
+    }
+  ],
+  "publisher": "Wesleyan University Press",
+  "issued": "1961",
+  "original-date": "1961",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "in copyright",
+  "citedBy": [
+    "r-0007"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

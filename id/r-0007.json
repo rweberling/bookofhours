@@ -1,0 +1,45 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0007/",
+  "id": "r-0007",
+  "aliases": [
+    "r-cage-experimental-music"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "John Cage, \"<a href=\"https://bookshop.org/a/86532/9780819573650\" target=\"_blank\">Experimental Music</a>\" (1957)",
+    "bibliography": "Cage, John. \"Experimental Music.\" <em>Silence: Lectures and Writings</em>, Wesleyan University Press, 1961. Lecture delivered 1957.",
+    "title": "Experimental Music",
+    "written": "1957",
+    "edition": {
+      "id": "e-0007",
+      "type": "book",
+      "title": "Silence: Lectures and Writings",
+      "contributors": [
+        {
+          "id": "a-john-cage",
+          "name": "John Cage",
+          "role": "author",
+          "wikidata": "Q180727"
+        }
+      ],
+      "publisher": "Wesleyan University Press",
+      "issued": "1961",
+      "original-date": "1961",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780819573650"
+  },
+  "tags": {
+    "hours": [
+      "hush"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "There is no such thing as an empty space or an empty time. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0023/",
+  "id": "e-0023",
+  "type": "book",
+  "title": "The Anatomy of Melancholy",
+  "contributors": [
+    {
+      "id": "a-robert-burton",
+      "name": "Robert Burton",
+      "role": "author",
+      "wikidata": "Q259132"
+    }
+  ],
+  "issued": "1621",
+  "original-date": "1621",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0023"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

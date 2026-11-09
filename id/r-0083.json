@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0083/",
+  "id": "r-0083",
+  "shownIn": "seasons",
+  "text": "<p>Whitesbog Blueberries are a real money-maker for the commercial grower.</p><p></p><p>Note that the photographed branch of these remarkable berries is reproduced here <em>actual size</em>. No picture, however, can convey any idea of the delicious flavor, which while keeping the delightful tang of wild blueberries, is sweeter and smoother. Whitesbog Blueberries are practically seedless; they are firm and keep well. They are exceptionally heavy yielders, with all the requirements for a marketable and highly profitable fruit, commanding highest prices wherever sold.</p><p></p><p>Read inside the whole story of this remarkable berry. Learn how carefully the different varieties are propagated in the Whitesbog Nurseries. How the commercial plantations which are now in bearing are realizing a yearly return of more than $1000 an acre. How land now unprofitable for any other crop may be well adapted to blueberry cultivation.</p>",
+  "citation": {
+    "display": "Joseph J. White, Inc. <em><a href=\"https://www.biodiversitylibrary.org/bibliography/134115#/summary\">Whitesbog Blueberries</a> (</em>1925). U.S. Department of Agriculture, National Agriculture Library.",
+    "bibliography": "Joseph J. White, Inc. <em>Whitesbog Blueberries</em>. Joseph J. White, Inc., 1925. National Agricultural Library, U.S. Department of Agriculture.",
+    "title": "Whitesbog Blueberries",
+    "written": "1925",
+    "locator": {
+      "url": "https://www.biodiversitylibrary.org/bibliography/134115#/summary",
+      "label": "Biodiversity Heritage Library"
+    },
+    "edition": {
+      "id": "e-0083",
+      "type": "book",
+      "title": "Whitesbog Blueberries",
+      "contributors": [
+        {
+          "id": "a-joseph-j-white-inc",
+          "name": "Joseph J. White, Inc.",
+          "role": "author"
+        }
+      ],
+      "publisher": "Joseph J. White, Inc.",
+      "issued": "1925",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0021",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0018"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

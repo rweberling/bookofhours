@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0122/",
+  "id": "i-0122",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/216669290.week-38-shagbark-hickory-carl-sandburg-3-96701b4632e9.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263\" rel=\"noopener\" target=\"_blank\">Hicoria ovata</a>.” From Charles Sprague Sargent. <em>The Silva of North America, Vol. VII: Lauraceae - Juglandaceae. </em>Boston: Houghton Mifflin, 1895.",
+  "alt": "A botanical engraving of shagbark hickory: a large compound leaf of five toothed leaflets above a pair of round nuts in their husks, with numbered drawings of the nut whole, opened and cut through.",
+  "bibliography": "Sargent, Charles Sprague. \"Hicoria ovata.\" <em>The Silva of North America</em>, vol. 7, Houghton Mifflin, 1895.",
+  "lectio": {
+    "post": "lt-0029",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0024"
+    ]
+  },
+  "display": {
+    "size": [
+      2679,
+      3511
+    ]
+  },
+  "edition": {
+    "id": "e-0151",
+    "title": "The Silva of North America, vol. 7",
+    "publisher": "Houghton Mifflin",
+    "issued": "1895",
+    "identifiers": {
+      "hathitrust": "001494765",
+      "oclc": "1439327",
+      "lccn": "99000211"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

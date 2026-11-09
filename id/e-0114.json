@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0114/",
+  "id": "e-0114",
+  "type": "book",
+  "title": "The Human Condition",
+  "contributors": [
+    {
+      "id": "a-hannah-arendt",
+      "name": "Hannah Arendt",
+      "role": "author",
+      "wikidata": "Q60025"
+    }
+  ],
+  "publisher": "University of Chicago Press",
+  "issued": "1998",
+  "original-date": "1958",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0115"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

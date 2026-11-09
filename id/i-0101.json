@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0101/",
+  "id": "i-0101",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208574613.week-32-dog-days-horace-heraclitus-2-60ab1f8abd8f.jpeg",
+  "caption": "<a href=\"https://starglass.cfa.harvard.edu/plate/a03507\">Plate a03507</a> (May 2, 1899). Marked-up astronomical plate from Arequipa, Peru, featuring Sirius. Harvard College Observatory, <a href=\"https://starglass.cfa.harvard.edu/about\">StarGlass</a>.",
+  "alt": "A glass photographic plate of the night sky, pale green-grey, with a dark, blurred disc of light from Sirius on the right and hundreds of faint stars circled and numbered in ink.",
+  "bibliography": "Harvard College Observatory. Plate a03507, Arequipa, Peru, 2 May 1899. StarGlass.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "StarGlass",
+      "url": "https://starglass.cfa.harvard.edu/plate/a03507"
+    },
+    {
+      "role": "copy",
+      "label": "StarGlass",
+      "url": "https://starglass.cfa.harvard.edu/about"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0023",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      "ph-0004"
+    ]
+  },
+  "display": {
+    "size": [
+      1437,
+      1182
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

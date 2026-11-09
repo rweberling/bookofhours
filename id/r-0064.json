@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0064/",
+  "id": "r-0064",
+  "shownIn": "seasons",
+  "text": "<p>Offering a light, lilac wine, sweet and heady, Miami circled, here and there. She had a cincture of white rose-oleanders, and a bandeau of blue convolvoli. She held a fan.<br><br>“Or do you care for anyt’ing else?” she was enquiring, automatically, of Mr. Musket (the Father of three very common girls), as a melodious tinkle of strings announced the advent of the minstrels from Broken Hill.<br><br>Following the exodus roadward, it was agreeable to reach the outer air.<br><br>Under the high trees by the yard-door gate, the array of vehicles and browsing quadrupeds was almost as numerous as upon a Market day. Coming and going between the little Café of the “Forty Parrots” (with its Bar, spelled <em>Biar</em> in twinkling lights), the quiet village road was agog, with bustling folk, as perhaps never before. All iris in the dusk, a few loosely-loinclothed young men, had commenced dancing aloofly among themselves, bringing down some light (if bitter) banter from the belles.<br><br>Pirouetting with these, Miami recognized the twinkling feet of her brother Charlie, a lad who preferred roaming the wide savannah country after butterflies with his net, to the ever-increasing etiquette of his home.</p>",
+  "citation": {
+    "display": "Ronald Firbank, <em>Sorrow in Sunlight </em>(London: Brentano’s Ltd., 1924), pp. 27-28.",
+    "bibliography": "Firbank, Ronald. <em>Sorrow in Sunlight</em>. Brentano’s, 1924.",
+    "title": "Sorrow in Sunlight",
+    "written": "1924",
+    "locator": {
+      "page": "27–28"
+    },
+    "edition": {
+      "id": "e-0064",
+      "type": "book",
+      "title": "Sorrow in Sunlight",
+      "contributors": [
+        {
+          "id": "a-ronald-firbank",
+          "name": "Ronald Firbank",
+          "role": "author",
+          "wikidata": "Q2706580"
+        }
+      ],
+      "publisher": "Brentano’s",
+      "issued": "1924",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0012",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0010"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

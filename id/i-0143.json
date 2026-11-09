@@ -1,0 +1,45 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0143/",
+  "id": "i-0143",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/217936797.week-40-staghorn-sumac-cole-swanson-3-307561f37e8b.jpeg",
+  "caption": "F.H. Varley. “<a href=\"https://www.coleswanson.org/among-the-drupes-elegy-for-a-wasteland/cszzmfb7kso0knnwdjgd6bvkz1ri65\" rel=\"noopener\" target=\"_blank\">Flower of the Staghorn Sumach</a>” (n.d.) Charcoal on paper. 25.0cm x 9.4cm. Collection of the Varley Art Gallery of Markham",
+  "lectio": {
+    "post": "lt-0032",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0026"
+    ]
+  },
+  "display": {
+    "size": [
+      242,
+      680
+    ]
+  },
+  "alt": "A tall, narrow charcoal drawing on creased paper of a single staghorn sumac flower head: a loose, knobbly cone of blossom on a thick, bare stalk.",
+  "creator": {
+    "id": "a-f-h-varley",
+    "name": "F. H. Varley"
+  },
+  "title": "Flower of the Staghorn Sumach",
+  "institution": "Varley Art Gallery of Markham",
+  "bibliography": "Varley, F. H. <em>Flower of the Staghorn Sumach</em>. N.d., Varley Art Gallery of Markham, Markham, Ontario.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Cole Swanson",
+      "url": "https://www.coleswanson.org/among-the-drupes-elegy-for-a-wasteland/cszzmfb7kso0knnwdjgd6bvkz1ri65"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

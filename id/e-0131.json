@@ -1,0 +1,17 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0131/",
+  "id": "e-0131",
+  "title": "North American Fauna, No. 29: The Rabbits of North America",
+  "issued": "1909",
+  "identifiers": {
+    "hathitrust": "007858342",
+    "oclc": "71848387",
+    "lccn": "78001249"
+  },
+  "citedBy": [
+    "i-0056",
+    "i-0057"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

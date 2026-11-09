@@ -1,0 +1,62 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0139/",
+  "id": "i-0139",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-2-6c83482b75a8.jpeg",
+  "caption": "John Abbot. “<a href=\"https://www.biodiversitylibrary.org/page/268949\" rel=\"noopener\" target=\"_blank\">Papilio Ajax. Annona Palustris</a>.” From <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>. Printed by T. Bensley, for J. Edwards [etc.]. 1797. Tab 4.",
+  "lectio": {
+    "post": "lt-0030",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0025"
+    ]
+  },
+  "display": {
+    "size": [
+      2213,
+      2920
+    ]
+  },
+  "alt": "A hand-coloured engraving of a pawpaw branch with broad green leaves and a single small green fruit, a pale green caterpillar resting on the stem, and two black-and-white striped zebra swallowtail butterflies with red and blue markings, one above the branch and one below.",
+  "creator": {
+    "id": "a-john-abbot",
+    "name": "John Abbot"
+  },
+  "title": "Papilio Ajax. Annona Palustris",
+  "date": "1797",
+  "edition": {
+    "id": "e-0168",
+    "type": "book",
+    "title": "The Natural History of the Rarer Lepidopterous Insects of Georgia",
+    "contributors": [
+      {
+        "id": "a-james-edward-smith",
+        "name": "James Edward Smith",
+        "role": "author"
+      },
+      {
+        "id": "a-john-abbot",
+        "name": "John Abbot",
+        "role": "illustrator"
+      }
+    ],
+    "publisher": "J. Edwards",
+    "issued": "1797"
+  },
+  "locator": {
+    "page": "Tab. 4",
+    "url": "https://www.biodiversitylibrary.org/page/268949",
+    "label": "Biodiversity Heritage Library"
+  },
+  "bibliography": "Abbot, John. \"Papilio Ajax. Annona Palustris.\" <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>, by James Edward Smith, T. Bensley for J. Edwards, 1797, tab. 4.",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

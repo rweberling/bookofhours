@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0093/",
+  "id": "e-0093",
+  "type": "book",
+  "title": "The Thoughts of the Emperor Marcus Aurelius Antoninus",
+  "contributors": [
+    {
+      "id": "a-marcus-aurelius",
+      "name": "Marcus Aurelius",
+      "role": "author",
+      "wikidata": "Q1430"
+    },
+    {
+      "id": "a-george-long",
+      "name": "George Long",
+      "role": "translator",
+      "wikidata": "Q1507776"
+    }
+  ],
+  "publisher": "Little, Brown",
+  "issued": "1899",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0094"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

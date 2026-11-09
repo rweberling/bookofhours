@@ -1,0 +1,41 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0075/",
+  "id": "e-0075",
+  "type": "book",
+  "title": "The Essential Galileo",
+  "identifiers": {
+    "internetArchive": "essentialgalileo0000gali",
+    "oclc": "226308166",
+    "openlibrary": "OL16820783M",
+    "isbn": "9780872209374",
+    "lccn": "2008018659"
+  },
+  "contributors": [
+    {
+      "id": "a-felice-cardinal-dascoli",
+      "name": "Felice Cardinal d’Ascoli",
+      "role": "author"
+    },
+    {
+      "id": "a-maurice-a-finocchiaro",
+      "name": "Maurice A. Finocchiaro",
+      "role": "editor",
+      "wikidata": "Q55754273"
+    },
+    {
+      "id": "a-maurice-a-finocchiaro",
+      "name": "Maurice A. Finocchiaro",
+      "role": "translator",
+      "wikidata": "Q55754273"
+    }
+  ],
+  "publisher": "Hackett",
+  "issued": "2008",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0075"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

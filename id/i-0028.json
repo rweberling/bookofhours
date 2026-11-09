@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0028/",
+  "id": "i-0028",
+  "aliases": [
+    "i-cezanne-the-basket-of-apples"
+  ],
+  "shownIn": "hours",
+  "file": "images/convivium_cezanne.jpg",
+  "caption": "Paul Cezanne, <a href=\"https://www.artic.edu/artworks/111436/the-basket-of-apples\" target=\"_blank\"><em>The Basket of Apples</em></a> (c. 1893)",
+  "alt": "A still-life painting: a tilted basket spilling red and green apples onto a rumpled white cloth on a table, beside a dark bottle and a plate of biscuits.",
+  "bibliography": "Cézanne, Paul. <em>The Basket of Apples</em>. c. 1893, Art Institute of Chicago.",
+  "creator": {
+    "id": "a-paul-cezanne",
+    "name": "Paul Cézanne",
+    "wikidata": "Q35548"
+  },
+  "title": "The Basket of Apples",
+  "date": "1893~",
+  "institution": "Art Institute of Chicago",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/111436/the-basket-of-apples"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "convivium"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

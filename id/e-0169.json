@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0169/",
+  "id": "e-0169",
+  "type": "book",
+  "title": "Handbook of the Trees of New England",
+  "contributors": [
+    {
+      "id": "a-lorin-l-dame",
+      "name": "Lorin L. Dame",
+      "role": "author"
+    },
+    {
+      "id": "a-henry-brooks",
+      "name": "Henry Brooks",
+      "role": "author"
+    }
+  ],
+  "publisher": "Ginn & Company",
+  "issued": "1902",
+  "citedBy": [
+    "i-0142"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

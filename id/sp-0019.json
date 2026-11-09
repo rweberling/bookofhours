@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0019/",
+  "id": "sp-0019",
+  "name": "Butterfly Weed",
+  "scientific": "Asclepias tuberosa",
+  "rank": "species",
+  "wikidata": "Q311131",
+  "gbif": "3170305",
+  "inaturalist": "47912",
+  "records": [
+    "r-0085",
+    "r-0086",
+    "i-0098",
+    "i-0099",
+    "i-0125"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

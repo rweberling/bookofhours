@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0017/",
+  "id": "r-0017",
+  "aliases": [
+    "r-heraclitus-fragments-41-42"
+  ],
+  "shownIn": "hours",
+  "text": "XLI. — Into the same river you could not step twice, for other and still other waters are flowing.<br><br>XLII. — To those entering the same river, other and still other waters flow.",
+  "citation": {
+    "display": "Heraclitus, fragments 41-42, from <em>On Nature</em> (c. 500 BCE, <a href=\"https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126\" target=\"_blank\">trans. 1889</a>)",
+    "bibliography": "Heraclitus. \"Fragments 41–42.\" <em>On Nature</em>, translated by G. T. W. Patrick, 1889. Composed c. 500 BCE.",
+    "title": "Fragments 41–42",
+    "locator": {
+      "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0017",
+      "type": "book",
+      "title": "On Nature",
+      "contributors": [
+        {
+          "id": "a-heraclitus",
+          "name": "Heraclitus",
+          "role": "author",
+          "wikidata": "Q41155"
+        },
+        {
+          "id": "a-g-t-w-patrick",
+          "name": "G. T. W. Patrick",
+          "role": "translator",
+          "wikidata": "Q18910706"
+        }
+      ],
+      "issued": "1889",
+      "original-date": "-0500~",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "fragmentsofworko00hera",
+        "openlibrary": "OL21854788M",
+        "lccn": "11010817"
+      }
+    }
+  },
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

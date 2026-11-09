@@ -1,0 +1,17 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0151/",
+  "id": "e-0151",
+  "title": "The Silva of North America, vol. 7",
+  "publisher": "Houghton Mifflin",
+  "issued": "1895",
+  "identifiers": {
+    "hathitrust": "001494765",
+    "oclc": "1439327",
+    "lccn": "99000211"
+  },
+  "citedBy": [
+    "i-0122"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

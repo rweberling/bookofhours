@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0009/",
+  "id": "sp-0009",
+  "name": "Sheet Moss",
+  "scientific": "Hypnum imponens",
+  "rank": "species",
+  "wikidata": "Q4329447",
+  "gbif": "2681995",
+  "inaturalist": "154640",
+  "records": [
+    "r-0057",
+    "r-0058",
+    "r-0059",
+    "i-0061",
+    "i-0062",
+    "i-0124"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

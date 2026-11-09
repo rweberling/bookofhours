@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0112/",
+  "id": "i-0112",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/211186158.week-35-cucumis-robert-hass-marcus-3-5f65fc835311.jpeg",
+  "caption": "Juan Sánchez Cotán. <em><a href=\"https://en.wikipedia.org/wiki/Quince,_Cabbage,_Melon_and_Cucumber\">Still Life with Quince, Cabbage, Melon, and Cucumber</a></em> (c. 1602)",
+  "alt": "A still-life painting of a quince and a cabbage hanging on strings in a stone window frame against a black background, with a cut melon, a slice of it and a cucumber on the ledge below.",
+  "bibliography": "Sánchez Cotán, Juan. <em>Still Life with Quince, Cabbage, Melon, and Cucumber</em>. c. 1602, San Diego Museum of Art.",
+  "lectio": {
+    "post": "lt-0026",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0021"
+    ]
+  },
+  "display": {
+    "size": [
+      1456,
+      1177
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

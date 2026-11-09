@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0047/",
+  "id": "e-0047",
+  "type": "article",
+  "title": "What Does It Mean to Watch Clouds? What Can It Mean?",
+  "container": "Jenny Odell’s Newsletter",
+  "contributors": [
+    {
+      "id": "a-jenny-odell",
+      "name": "Jenny Odell",
+      "role": "author",
+      "wikidata": "Q68924784"
+    }
+  ],
+  "issued": "2025-07-04",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0047"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

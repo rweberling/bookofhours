@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0071/",
+  "id": "e-0071",
+  "type": "book",
+  "title": "Experiments on the Generation of Insects",
+  "contributors": [
+    {
+      "id": "a-francesco-redi",
+      "name": "Francesco Redi",
+      "role": "author",
+      "wikidata": "Q311187"
+    },
+    {
+      "id": "a-mab-bigelow",
+      "name": "Mab Bigelow",
+      "role": "translator"
+    }
+  ],
+  "publisher": "Open Court",
+  "issued": "1909",
+  "original-date": "1668",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0071"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

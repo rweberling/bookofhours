@@ -1,0 +1,38 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0026/",
+  "id": "i-0026",
+  "aliases": [
+    "i-davis-salad-mandala"
+  ],
+  "shownIn": "hours",
+  "file": "images/convivium_davis.jpg",
+  "caption": "Harold Davis, <a href=\"https://www.digitalfieldguide.com/blog/18487\" target=\"_blank\"><em>Salad Mandala</em></a> (2020)",
+  "alt": "A photograph of sliced vegetables laid out like a mandala on white: red onion halves, cucumber rounds, long cucumber strips and small tomato slices in rings around a sliced tomato at the centre.",
+  "bibliography": "Davis, Harold. <em>Salad Mandala</em>. 2020.",
+  "creator": {
+    "id": "a-harold-davis",
+    "name": "Harold Davis",
+    "wikidata": "Q5660456"
+  },
+  "title": "Salad Mandala",
+  "date": "2020",
+  "institution": null,
+  "links": [
+    {
+      "role": "cited",
+      "label": "digitalfieldguide.com",
+      "url": "https://www.digitalfieldguide.com/blog/18487"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "living photographer — active commercial licensing",
+  "tags": {
+    "hours": [
+      "convivium"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

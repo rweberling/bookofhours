@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0029/",
+  "id": "i-0029",
+  "aliases": [
+    "i-hiroshige-cooling-off-in-the"
+  ],
+  "shownIn": "hours",
+  "file": "images/convivium_hiroshige.jpg",
+  "caption": "Utagawa Hiroshige, <a href=\"https://www.metmuseum.org/art/collection/search/55278\" target=\"_blank\"><em>Cooling off in the Evening at Shijogawara</em></a> (c. 1834)",
+  "alt": "A woodblock print of an evening by a river in Kyoto: people in kimono sit and drink on a low wooden platform by the bright blue water, with lantern-lit teahouses along the far bank and grey hills beyond.",
+  "bibliography": "Hiroshige, Utagawa. <em>Cooling Off in the Evening at Shijogawara</em>. c. 1834, The Metropolitan Museum of Art, New York.",
+  "creator": {
+    "id": "a-utagawa-hiroshige",
+    "name": "Utagawa Hiroshige",
+    "wikidata": "Q200798"
+  },
+  "title": "Cooling off in the Evening at Shijogawara",
+  "date": "1834~",
+  "institution": "The Metropolitan Museum of Art",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/55278"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "convivium"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

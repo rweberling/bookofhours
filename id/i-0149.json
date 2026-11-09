@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0149/",
+  "id": "i-0149",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/221679509.week-42-first-frost-william-cullen-2-839042b1b5c0.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uc1.$b117574?urlappend=%3Bseq=265%3Bownerid=9007199258917903-265\" rel=\"noopener\" target=\"_blank\">1 to 10 Maple. 11 to 18 Spindle Tree</a>.” From Francis George Heath, <em>Autumnal Leaves. </em>1881. Third Edition. London: Kegan Paul, Trench, and Co., 1885.",
+  "lectio": {
+    "post": "lt-0033",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0006"
+    ]
+  },
+  "display": {
+    "size": [
+      1573,
+      2074
+    ]
+  },
+  "alt": "A colour plate headed “Autumnal Leaves,” Plate 6: eighteen numbered leaves on a pale page, lobed maple leaves at the top in reds, oranges and greens, and narrow, pointed spindle-tree leaves below in purples, browns and yellow-greens.",
+  "edition": {
+    "id": "e-0154",
+    "title": "Autumnal Leaves",
+    "issued": "1885",
+    "identifiers": {
+      "hathitrust": "006610218",
+      "oclc": "12747619"
+    },
+    "type": "book",
+    "contributors": [
+      {
+        "id": "a-francis-george-heath",
+        "name": "Francis George Heath",
+        "role": "author",
+        "wikidata": "Q105764193"
+      }
+    ],
+    "publisher": "Kegan Paul, Trench, & Co.",
+    "original-date": "1881",
+    "edition": "3rd ed."
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uc1.$b117574?urlappend=%3Bseq=265%3Bownerid=9007199258917903-265",
+    "label": "HathiTrust"
+  },
+  "title": "1 to 10 Maple. 11 to 18 Spindle Tree",
+  "bibliography": "Heath, Francis George. \"1 to 10 Maple. 11 to 18 Spindle Tree.\" <em>Autumnal Leaves</em>, 3rd ed., Kegan Paul, Trench, &amp; Co., 1885.",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

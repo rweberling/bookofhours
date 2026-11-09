@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0061/",
+  "id": "e-0061",
+  "type": "book",
+  "title": "Outlines of the Mineralogy and Geology of Boston and Its Vicinity, with a Geological Map",
+  "identifiers": {
+    "hathitrust": "012307100",
+    "oclc": "6900683",
+    "lccn": "05015479"
+  },
+  "contributors": [
+    {
+      "id": "a-james-freeman-dana",
+      "name": "James Freeman Dana",
+      "role": "author",
+      "wikidata": "Q11203460"
+    },
+    {
+      "id": "a-samuel-l-dana",
+      "name": "Samuel L. Dana",
+      "role": "author"
+    }
+  ],
+  "publisher": "Cummings and Hilliard",
+  "issued": "1818",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0061"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

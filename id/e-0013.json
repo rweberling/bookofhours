@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0013/",
+  "id": "e-0013",
+  "type": "book",
+  "title": "Leaves of Grass",
+  "contributors": [
+    {
+      "id": "a-walt-whitman",
+      "name": "Walt Whitman",
+      "role": "author",
+      "wikidata": "Q81438"
+    }
+  ],
+  "edition": "1892 ed.",
+  "publisher": "David McKay",
+  "issued": "1892",
+  "original-date": "1892",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0013"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

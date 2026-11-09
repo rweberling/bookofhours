@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0005/",
+  "id": "e-0005",
+  "type": "book",
+  "title": "The Passion According to G.H.",
+  "contributors": [
+    {
+      "id": "a-clarice-lispector",
+      "name": "Clarice Lispector",
+      "role": "author",
+      "wikidata": "Q235955"
+    },
+    {
+      "id": "a-idra-novey",
+      "name": "Idra Novey",
+      "role": "translator",
+      "wikidata": "Q15439606"
+    }
+  ],
+  "publisher": "New Directions",
+  "issued": "2012",
+  "original-date": "1964",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0005"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

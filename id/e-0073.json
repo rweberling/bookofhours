@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0073/",
+  "id": "e-0073",
+  "type": "book",
+  "title": "Monographie des Cypripedium",
+  "identifiers": {
+    "hathitrust": "100451015",
+    "oclc": "80597640"
+  },
+  "contributors": [
+    {
+      "id": "a-f-desbois",
+      "name": "F. Desbois",
+      "role": "author"
+    }
+  ],
+  "publisher": "Librairie Générale de Ad. Hoste",
+  "issued": "1888",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0073"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0126/",
+  "id": "e-0126",
+  "title": "Birch",
+  "issued": "1937",
+  "identifiers": {
+    "hathitrust": "002137949",
+    "oclc": "2752530",
+    "lccn": "agr54000002"
+  },
+  "citedBy": [
+    "i-0043"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

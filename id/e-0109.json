@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0109/",
+  "id": "e-0109",
+  "type": "book",
+  "title": "The Retinue and Other Poems",
+  "contributors": [
+    {
+      "id": "a-katharine-lee-bates",
+      "name": "Katharine Lee Bates",
+      "role": "author",
+      "wikidata": "Q2363035"
+    }
+  ],
+  "publisher": "E. P. Dutton & Co.",
+  "issued": "1918",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0110"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

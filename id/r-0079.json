@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0079/",
+  "id": "r-0079",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Mrs. M. Grieve. “<a href=\"https://www.botanical.com/botanical/mgmh/c/currd132.html\">Currant, Red.</a>” <em>A Modern Herbal. </em>London, England: Jonathan Cape, 1931. n.p.",
+    "bibliography": "Grieve, Mrs. M. \"Currant, Red.\" <em>A Modern Herbal</em>, Jonathan Cape, 1931.",
+    "title": "Currant, Red",
+    "written": "1931",
+    "locator": {
+      "url": "https://www.botanical.com/botanical/mgmh/c/currd132.html",
+      "label": "Botanical.com"
+    },
+    "edition": {
+      "id": "e-0079",
+      "type": "book",
+      "title": "A Modern Herbal",
+      "contributors": [
+        {
+          "id": "a-maud-grieve",
+          "name": "Maud Grieve",
+          "role": "author",
+          "wikidata": "Q6792224"
+        }
+      ],
+      "publisher": "Jonathan Cape",
+      "issued": "1931",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "published 1931; enters the U.S. public domain on 1 January 2027"
+    }
+  },
+  "lectio": {
+    "post": "lt-0019",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0016"
+    ]
+  },
+  "firstLine": "Description: This plant is equally at home in hedges and ditches, trained against the wall of a house, or as a shrub cultivated in gardens. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,62 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0087/",
+  "id": "r-0087",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Horace. “<a href=\"https://www.poetryintranslation.com/PITBR/Latin/HoraceOdesBkIII.php#anchor_Toc40263858\">Odes, Book III: XIII</a>.” Trans. A. S. Kline. <em>Poetry in Translation</em>, 2003.",
+    "bibliography": "Horace. \"Odes, Book III: XIII.\" Translated by A. S. Kline, <em>Poetry in Translation</em>, 2003.",
+    "title": "Odes, Book III: XIII",
+    "written": "-0022~",
+    "locator": {
+      "url": "https://www.poetryintranslation.com/PITBR/Latin/HoraceOdesBkIII.php#anchor_Toc40263858",
+      "label": "Poetry in Translation"
+    },
+    "edition": {
+      "id": "e-0087",
+      "type": "article",
+      "title": "Odes, Book III: XIII",
+      "container": "Poetry in Translation",
+      "contributors": [
+        {
+          "id": "a-horace",
+          "name": "Horace",
+          "role": "author",
+          "wikidata": "Q6197"
+        },
+        {
+          "id": "a-a-s-kline",
+          "name": "A. S. Kline",
+          "role": "translator",
+          "wikidata": "Q112502365"
+        }
+      ],
+      "issued": "2003",
+      "rights": "http://rightsstatements.org/vocab/InC-NC/1.0/",
+      "rightsNote": "the translator allows non-commercial reproduction"
+    }
+  },
+  "lectio": {
+    "post": "lt-0023",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0004",
+        "basis": "grounded",
+        "note": "Names the dog-star's hour; the spring offers relief from it."
+      }
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "O Bandusian fountain, brighter than crystal, …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

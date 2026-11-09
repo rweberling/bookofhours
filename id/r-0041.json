@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0041/",
+  "id": "r-0041",
+  "shownIn": "seasons",
+  "text": "<p>The facts related by learned naturalists, botanists, historians, and travellers, and their reflections on the properties and productions of the North American and Canadian Sugar Maple Tree, here presented to the consideration of the reader, cannot fail to interest every nobleman and gentleman possessed of landed property in England, Ireland, and Scotland, and convince them of the certainty of what is here reported[…] The source here presented seems so promising, that if, from revolutions or other causes, all Europe were deprived of foreign sugars, this tree alone, planted in sufficient number, and properly attended to, would supply all its wants; and it may not perhaps be too much to say, that the time may come when that shall take place, either from turbulent causes, or from experience of its convenience and utility.</p>",
+  "citation": {
+    "display": "“<a href=\"https://hdl.handle.net/2027/chi.086806303?urlappend=%3Bseq=5%3Bownerid=13510798902081697-9\">Address</a>,” from E. Jones, <em>Review of Facts And Observations, Made by Naturalists, Botanists, Historians, And Travellers, On the Properties And Productions of the Sugar Maple Tree: the Process of Extracting Its Sap, Converting it Into Sugar, &amp;c., &amp;c.</em> (London: E. Colyer, 1832), p. v.",
+    "bibliography": "Jones, E. \"Address.\" <em>Review of Facts and Observations, Made by Naturalists, Botanists, Historians, and Travellers, on the Properties and Productions of the Sugar Maple Tree</em>, E. Colyer, 1832.",
+    "title": "Address",
+    "written": "1832",
+    "locator": {
+      "page": "v",
+      "url": "https://hdl.handle.net/2027/chi.086806303?urlappend=%3Bseq=5%3Bownerid=13510798902081697-9",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0041",
+      "type": "book",
+      "title": "Review of Facts and Observations, Made by Naturalists, Botanists, Historians, and Travellers, on the Properties and Productions of the Sugar Maple Tree",
+      "identifiers": {
+        "hathitrust": "011437149",
+        "oclc": "5161201"
+      },
+      "contributors": [
+        {
+          "id": "a-e-jones",
+          "name": "E. Jones",
+          "role": "author"
+        }
+      ],
+      "publisher": "E. Colyer",
+      "issued": "1832",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0003",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0003"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

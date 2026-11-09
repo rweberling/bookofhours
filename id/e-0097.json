@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0097/",
+  "id": "e-0097",
+  "type": "book",
+  "title": "Rural Hours",
+  "identifiers": {
+    "internetArchive": "ruralhours00coop",
+    "oclc": "3339732",
+    "openlibrary": "OL6947305M",
+    "lccn": "04030235"
+  },
+  "contributors": [
+    {
+      "id": "a-susan-fenimore-cooper",
+      "name": "Susan Fenimore Cooper",
+      "role": "author",
+      "wikidata": "Q4865481"
+    }
+  ],
+  "publisher": "George P. Putnam",
+  "issued": "1851",
+  "original-date": "1850",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0098"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

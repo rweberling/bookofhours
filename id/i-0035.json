@@ -1,0 +1,66 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0035/",
+  "id": "i-0035",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-1-c165fe52c430.jpeg",
+  "caption": "<em>From J. Francis Macbride, <a href=\"https://archive.org/details/autumnflowersfru10macb/page/n16/mode/1up\">Autumn Flowers and Fruits</a></em> <em>(Chicago: Field Museum of Natural History, 1924), p. 103.</em>",
+  "alt": "A book page with a black-and-white photograph of witch-hazel branches covered in spidery, ribbon-like blossoms, above the heading “Witch-Hazel (Hamamelis virginiana)” and a paragraph about the shrub.",
+  "bibliography": "Macbride, J. Francis. <em>Autumn Flowers and Fruits</em>. Field Museum of Natural History, 1924.",
+  "edition": {
+    "id": "e-0110",
+    "type": "book",
+    "title": "Autumn Flowers and Fruits",
+    "contributors": [
+      {
+        "id": "a-j-francis-macbride",
+        "name": "J. Francis Macbride",
+        "role": "author"
+      }
+    ],
+    "publisher": "Field Museum of Natural History",
+    "issued": "1924-10",
+    "identifiers": {
+      "hathitrust": "100697661",
+      "internetArchive": "autumnflowersfru10macb",
+      "oclc": "7548180",
+      "openlibrary": "OL7115465M",
+      "lccn": "cd30000015"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  "locator": {
+    "page": "103",
+    "url": "https://archive.org/details/autumnflowersfru10macb/page/n16/mode/1up",
+    "label": "Internet Archive"
+  },
+  "links": [
+    {
+      "role": "copy",
+      "label": "HathiTrust",
+      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t1td9rd5z?urlappend=%3Bseq=1"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0001",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0001"
+    ]
+  },
+  "display": {
+    "size": [
+      400,
+      656
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

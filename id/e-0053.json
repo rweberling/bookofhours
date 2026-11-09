@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0053/",
+  "id": "e-0053",
+  "type": "book",
+  "title": "Lives of Game Animals, vol. 4, part 2: Rodents, Etc.",
+  "identifiers": {
+    "hathitrust": "001496609",
+    "oclc": "1319978",
+    "lccn": "25012152"
+  },
+  "contributors": [
+    {
+      "id": "a-ernest-thompson-seton",
+      "name": "Ernest Thompson Seton",
+      "role": "author",
+      "wikidata": "Q505017"
+    }
+  ],
+  "publisher": "Doubleday, Doran",
+  "issued": "1929",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0053"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

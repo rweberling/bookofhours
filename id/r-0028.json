@@ -1,0 +1,55 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0028/",
+  "id": "r-0028",
+  "aliases": [
+    "r-tanizaki-in-praise-of-shadows"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Jun'ichirō Tanizaki, <em>In Praise of Shadows</em> (1933, trans. <a href=\"https://bookshop.org/a/86532/9780918172020\" target=\"_blank\">Seidensticker and Harper, 1977</a>)",
+    "bibliography": "Tanizaki, Jun'ichirō. <em>In Praise of Shadows</em>. Translated by Thomas J. Harper and Edward G. Seidensticker, Leete's Island Books, 1977. Originally published 1933.",
+    "edition": {
+      "id": "e-0028",
+      "type": "book",
+      "title": "In Praise of Shadows",
+      "contributors": [
+        {
+          "id": "a-jun-ichiro-tanizaki",
+          "name": "Jun'ichirō Tanizaki",
+          "role": "author",
+          "wikidata": "Q316213"
+        },
+        {
+          "id": "a-thomas-j-harper",
+          "name": "Thomas J. Harper",
+          "role": "translator",
+          "wikidata": "Q138307176"
+        },
+        {
+          "id": "a-edward-g-seidensticker",
+          "name": "Edward G. Seidensticker",
+          "role": "translator",
+          "wikidata": "Q3272933"
+        }
+      ],
+      "publisher": "Leete's Island Books",
+      "issued": "1977",
+      "original-date": "1933",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780918172020"
+  },
+  "tags": {
+    "hours": [
+      "convivium"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "A light room would no doubt have been more convenient for us, too, than a dark room. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

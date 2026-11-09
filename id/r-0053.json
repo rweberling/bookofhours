@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0053/",
+  "id": "r-0053",
+  "shownIn": "seasons",
+  "text": "<p>WINTER DENS<br>In cold winter, the Cottontail is seldom found in a form or bed, unless it be very well sheltered. She much prefers a hole under a stone pile, a hollow log or tree, at such times. She uses these for more than mere snoozing places, as we shall see. Indeed, she would not be true to rodent tradition if she did not at some time assume the deathlike torpor that may be called a “cold sleep.” A driving storm sets in. Molly is ensconced under a thicket of briers and fern in one of her best forms, one most nearly weatherproof. The snow heaps up, shutting her into a sort of crystal-white cavern. Deeper and deeper piles the snow. Then the temperature falls, so that, though protected, she is numbed into a sort of frozen sleep. The raging of the storm outside kills every desire to venture forth. So long as the blizzard lasts, she rests, cold but not unhappy; a little hungry, perhaps, but not frozen—only drowsy—so drowsy that the easiest thing is to “lay low” and wait for better days.<br>[…]<br>TAMABILITY<br>It is a curious fact in the history of wild things that many of the wildest become most completely tame when properly managed; and many of those that, in their native state, are half-tame, can never be made domesticated or docile. Thus, the superferal Elephant, Wild Horse, Wild Dog, Wild-cat, Mink, Antelope, falcon, wild duck, respond completely when taken young, become members of the family. But the half-tame Fox, Hyena, pheasant, Canada jay, wood duck, and Cottontail, have never yet been tamed. They may be taken young and brought up so they tolerate our dwellings and our company, but never do they become truly members of the household-that is, domesticated—never do they learn to come at call, and rejoice in our company; never do they elect to stay with us when given the choice of returning to their wildwood kindred.</p>",
+  "citation": {
+    "display": "Ernest Thompson Seton, <em><a href=\"https://hdl.handle.net/2027/uc1.$b235977?urlappend=%3Bseq=9%3Bownerid=9007199259750403-13\">Lives of Game Animals, Volume IV, Part II: Rodents, Etc.</a></em> (Garden City: Doubleday, Doran, and Co., 1929), p. 806, 807.",
+    "bibliography": "Seton, Ernest Thompson. <em>Lives of Game Animals</em>, vol. 4, part 2, <em>Rodents, Etc.</em>, Doubleday, Doran, 1929.",
+    "title": "Lives of Game Animals",
+    "written": "1929",
+    "locator": {
+      "page": "806, 807",
+      "url": "https://hdl.handle.net/2027/uc1.$b235977?urlappend=%3Bseq=9%3Bownerid=9007199259750403-13",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0053",
+      "type": "book",
+      "title": "Lives of Game Animals, vol. 4, part 2: Rodents, Etc.",
+      "identifiers": {
+        "hathitrust": "001496609",
+        "oclc": "1319978",
+        "lccn": "25012152"
+      },
+      "contributors": [
+        {
+          "id": "a-ernest-thompson-seton",
+          "name": "Ernest Thompson Seton",
+          "role": "author",
+          "wikidata": "Q505017"
+        }
+      ],
+      "publisher": "Doubleday, Doran",
+      "issued": "1929",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0008",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0007"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

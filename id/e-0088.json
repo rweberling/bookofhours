@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0088/",
+  "id": "e-0088",
+  "type": "book",
+  "title": "Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles",
+  "identifiers": {
+    "hathitrust": "011549434",
+    "oclc": "77784890",
+    "lccn": "35025565"
+  },
+  "contributors": [
+    {
+      "id": "a-edouard-biot",
+      "name": "Édouard Biot",
+      "role": "author",
+      "wikidata": "Q274233"
+    }
+  ],
+  "publisher": "Imprimerie royale",
+  "issued": "1841",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0089"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

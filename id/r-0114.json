@@ -1,0 +1,56 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0114/",
+  "id": "r-0114",
+  "shownIn": "seasons",
+  "text": "The wind-flower and the violet, they perished long ago,<br>And the brier-rose and the orchids died amid the summer glow;<br>But on the hills the golden-rod, and the aster in the wood,<br>And the yellow sun-flower by the brook in autumn beauty stood,<br>Till fell the frost from the clear cold heaven, as falls the plague on men,<br>And the brightness of their smile was gone, from upland, glade, and glen.",
+  "citation": {
+    "display": "William Cullen Bryant. “<a href=\"https://quod.lib.umich.edu/a/amverse/BAD0508.0001.001/1:107?rgn=div1&amp;view=fulltext\" rel=\"noopener\" target=\"_blank\">The Death of the Flowers</a>.” <em>New York Review and Athenaeum Magazine</em> (November 1825). Rpt. <em><a href=\"https://archive.org/details/autumnpastoralde00brya/page/n23/mode/2up\" rel=\"noopener\" target=\"_blank\">An Autumn Pastoral: The Death of the Flowers</a>. </em>Illus. C. E. Phillips. Troy, New York: Nims and Knight, 1888. n.p.",
+    "bibliography": "Bryant, William Cullen. \"The Death of the Flowers.\" <em>An Autumn Pastoral: The Death of the Flowers</em>, illustrated by C. E. Phillips, Nims and Knight, 1888. First published in <em>The New York Review and Athenaeum Magazine</em>, Nov. 1825.",
+    "title": "The Death of the Flowers",
+    "written": "1825",
+    "locator": {
+      "url": "https://archive.org/details/autumnpastoralde00brya/page/n23/mode/2up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0113",
+      "type": "book",
+      "title": "An Autumn Pastoral: The Death of the Flowers",
+      "contributors": [
+        {
+          "id": "a-william-cullen-bryant",
+          "name": "William Cullen Bryant",
+          "role": "author",
+          "wikidata": "Q454840"
+        }
+      ],
+      "publisher": "Nims and Knight",
+      "issued": "1888",
+      "identifiers": {
+        "internetArchive": "autumnpastoralde00brya",
+        "oclc": "5749216",
+        "lccn": "21013050"
+      },
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0033",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0006"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

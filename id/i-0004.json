@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0004/",
+  "id": "i-0004",
+  "aliases": [
+    "i-redon-the-eye-like-a"
+  ],
+  "shownIn": "hours",
+  "file": "images/void_redon.jpg",
+  "caption": "Odilon Redon, <a href=\"https://collections.lacma.org/object/75354\" target=\"_blank\"><em>The Eye, Like a Strange Balloon, Mounts toward Infinity</em></a> (1882)",
+  "alt": "A charcoal lithograph: a huge eye, its gaze turned upward, floats like a hot-air balloon over a flat marsh, carrying beneath it on fine cords a small platform that holds a severed head.",
+  "bibliography": "Redon, Odilon. <em>The Eye, Like a Strange Balloon, Mounts toward Infinity</em>. 1882, Los Angeles County Museum of Art, Los Angeles.",
+  "creator": {
+    "id": "a-odilon-redon",
+    "name": "Odilon Redon",
+    "wikidata": "Q154349"
+  },
+  "title": "The Eye, Like a Strange Balloon, Mounts toward Infinity",
+  "date": "1882",
+  "institution": "Los Angeles County Museum of Art",
+  "links": [
+    {
+      "role": "cited",
+      "label": "LACMA",
+      "url": "https://collections.lacma.org/object/75354"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "void"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

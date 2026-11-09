@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0058/",
+  "id": "e-0058",
+  "type": "book",
+  "title": "Plants in Place: A Phenomenology of the Vegetal",
+  "contributors": [
+    {
+      "id": "a-michael-marder",
+      "name": "Michael Marder",
+      "role": "author",
+      "wikidata": "Q16221045"
+    },
+    {
+      "id": "a-edward-s-casey",
+      "name": "Edward S. Casey",
+      "role": "author",
+      "wikidata": "Q17276513"
+    }
+  ],
+  "publisher": "Columbia University Press",
+  "issued": "2024",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0058"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

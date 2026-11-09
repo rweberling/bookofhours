@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0106/",
+  "id": "i-0106",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-1-7e6f285c22aa.jpeg",
+  "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/44254481\">Courd, Courge, Der Kürbiss</a>.” Eugène Grasset and M. P. Verneuil. <em>La plante et ses applications ornementales</em>. Paris, France: Librairie Centrale des Beaux-Arts, 1896. Plate 14.",
+  "alt": "An Art Nouveau design plate of gourds: orange, bottle-shaped gourds and pale yellow flowers among large green leaves and twining blue tendrils, with matching decorative borders.",
+  "bibliography": "Grasset, Eugène, and M. P. Verneuil. \"Courge.\" Plate 14, <em>La plante et ses applications ornementales</em>, Librairie Centrale des Beaux-Arts, 1896.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Biodiversity Heritage Library",
+      "url": "https://www.biodiversitylibrary.org/page/44254481"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0025",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0020"
+    ]
+  },
+  "display": {
+    "size": [
+      577,
+      886
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0103/",
+  "id": "r-0103",
+  "shownIn": "seasons",
+  "text": "<p>Valley of the Saint Lawrence river, along the northern shores of lakes Ontario and Erie to southern Michigan and southeastern Minnesota, south to the Chattaloochee region of western Florida, central Alabaina and Mississippi, and west to eastern Kansas, the Indian territory, and eastern Texas. <br><br>A large tree of the first economic value, 24 to 30 or, exceptionally, 39 to 45 meters in height (<em>Ridgeway</em>), with a trunk 0.90 to 1.20 meter in diameter; rich billsides and sandy ridges; common and reaching its greatest development west of the Alleghany mountains; varying greatly in the size and shape of the fruit. A form with small, thin-shelled nuts (<em>C. microcarpa, Nuttall l. c.</em>) is not rare from Delaware southward, and in Michigan.<br><br>Wood heavy, very hard and strong, tough, close-grained, compact, flexible; layers of annual growth clearly marked with one to three rows of large open ducts; medullary rays numerous, thin; color, brown, the thin and more valuable sap-wood nearly white; specific gravity, 0.8372; ash, 0.73; largely used in the manufacture of agricultural implements, carriages, ax handles, baskets, etc.<br></p><p>The sweet and edible nuts afford an important article of commerce.</p>",
+  "citation": {
+    "display": "Charles S. Sargent. “<a href=\"https://hdl.handle.net/2027/uc1.31175024284567?urlappend=%3Bseq=149%3Bownerid=120949887-153\" rel=\"noopener\" target=\"_blank\">Shell-Bark Hickory. Shag-Bark Hickory.</a>” Report on the forests of North America (exclusive of Mexico). Washington, DC: Government Printing Office, 1884. 133.",
+    "bibliography": "Sargent, Charles S. \"Shell-Bark Hickory. Shag-Bark Hickory.\" <em>Report on the Forests of North America (Exclusive of Mexico)</em>, Government Printing Office, 1884.",
+    "title": "Shell-Bark Hickory. Shag-Bark Hickory.",
+    "written": "1884",
+    "locator": {
+      "page": "133",
+      "url": "https://hdl.handle.net/2027/uc1.31175024284567?urlappend=%3Bseq=149%3Bownerid=120949887-153",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0102",
+      "type": "book",
+      "title": "Report on the Forests of North America (Exclusive of Mexico)",
+      "identifiers": {
+        "hathitrust": "103315786",
+        "oclc": "26601282",
+        "isbn": "9780883544327"
+      },
+      "contributors": [
+        {
+          "id": "a-charles-sprague-sargent",
+          "name": "Charles Sprague Sargent",
+          "role": "author",
+          "wikidata": "Q1066128"
+        }
+      ],
+      "publisher": "Government Printing Office",
+      "issued": "1884",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0029",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0024"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

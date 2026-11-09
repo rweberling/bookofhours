@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0072/",
+  "id": "e-0072",
+  "type": "book",
+  "title": "Bog-Trotting for Orchids",
+  "contributors": [
+    {
+      "id": "a-grace-greylock-niles",
+      "name": "Grace Greylock Niles",
+      "role": "author",
+      "wikidata": "Q21393563"
+    }
+  ],
+  "publisher": "Knickerbocker Press",
+  "issued": "1904",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "bogtrottingfo00nile"
+  },
+  "citedBy": [
+    "r-0072"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

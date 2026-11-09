@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0003/",
+  "id": "ph-0003",
+  "name": "Sunspots",
+  "latin": "Maculae solares",
+  "wikidata": null,
+  "records": [
+    "r-0075",
+    "r-0076",
+    "i-0082",
+    "i-0083",
+    "i-0084"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

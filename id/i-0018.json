@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0018/",
+  "id": "i-0018",
+  "aliases": [
+    "i-klint-group-ix-uw-no"
+  ],
+  "shownIn": "hours",
+  "file": "images/fulcrum_klint.jpg",
+  "caption": "Hilma af Klint, <a href=\"https://www.guggenheim-bilbao.eus/en/exhibition/the-dove-1915\" target=\"_blank\"><em>Group IX/UW, No. 25, The Dove, No. 1</em></a> (1915)",
+  "alt": "An abstract painting: a large pale circle with a pink heart shape at its centre, cut by a vertical band of twisting coloured spirals, over a ground divided into blue, yellow, grey and brown, with a fan of rainbow colours at the bottom.",
+  "bibliography": "af Klint, Hilma. <em>Group IX/UW, No. 25, The Dove, No. 1</em>. 1915, Guggenheim Museum Bilbao.",
+  "creator": {
+    "id": "a-hilma-af-klint",
+    "name": "Hilma af Klint",
+    "wikidata": "Q436267"
+  },
+  "title": "Group IX/UW, No. 25, The Dove, No. 1",
+  "date": "1915",
+  "institution": "Guggenheim Museum Bilbao",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Guggenheim Bilbao",
+      "url": "https://www.guggenheim-bilbao.eus/en/exhibition/the-dove-1915"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

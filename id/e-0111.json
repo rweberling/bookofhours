@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0111/",
+  "id": "e-0111",
+  "type": "book",
+  "title": "Poems: Third Series",
+  "identifiers": {
+    "internetArchive": "poemsthirdseries00dickiala",
+    "oclc": "10424229"
+  },
+  "contributors": [
+    {
+      "id": "a-emily-dickinson",
+      "name": "Emily Dickinson",
+      "role": "author",
+      "wikidata": "Q4441"
+    },
+    {
+      "id": "a-mabel-loomis-todd",
+      "name": "Mabel Loomis Todd",
+      "role": "editor",
+      "wikidata": "Q2103861"
+    }
+  ],
+  "publisher": "Roberts Brothers",
+  "issued": "1896",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0112"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

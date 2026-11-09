@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0012/",
+  "id": "r-0012",
+  "aliases": [
+    "r-sei-shonagon-the-pillow-book"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Sei Shōnagon, from <em>The Pillow Book</em> (c. 1002, trans. <a href=\"https://bookshop.org/a/86532/9780231073370\" target=\"_blank\">Morris 1971</a>)",
+    "bibliography": "Sei Shōnagon. <em>The Pillow Book of Sei Shōnagon</em>. Translated by Ivan Morris, Columbia University Press, 1971. Originally composed c. 1002.",
+    "edition": {
+      "id": "e-0012",
+      "type": "book",
+      "title": "The Pillow Book of Sei Shōnagon",
+      "contributors": [
+        {
+          "id": "a-sei-shonagon",
+          "name": "Sei Shōnagon",
+          "role": "author",
+          "wikidata": "Q231603"
+        },
+        {
+          "id": "a-ivan-morris",
+          "name": "Ivan Morris",
+          "role": "translator",
+          "wikidata": "Q3826587"
+        }
+      ],
+      "publisher": "Columbia University Press",
+      "issued": "1971",
+      "original-date": "1002~",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780231073370"
+  },
+  "tags": {
+    "hours": [
+      "chorus"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "In spring it is the dawn that is most beautiful. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

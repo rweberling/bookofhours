@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0056/",
+  "id": "e-0056",
+  "type": "book",
+  "title": "Hildegard’s Healing Plants: From Her Medieval Classic Physica",
+  "contributors": [
+    {
+      "id": "a-hildegard-of-bingen",
+      "name": "Hildegard of Bingen",
+      "role": "author",
+      "wikidata": "Q70991"
+    },
+    {
+      "id": "a-bruce-w-hozeski",
+      "name": "Bruce W. Hozeski",
+      "role": "translator"
+    }
+  ],
+  "publisher": "Beacon Press",
+  "issued": "2001",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0056"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

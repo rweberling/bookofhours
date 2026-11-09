@@ -1,0 +1,62 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0078/",
+  "id": "r-0078",
+  "shownIn": "seasons",
+  "text": "<p>It is with some hesitation that the writer attempts a treatment of a genus which in the past has been subject to so much difference of opinion as <em>Amelanchier</em>. His only excuse is that field and herbarium studies covering a period of sixteen years, but more especially of four years, have led him to conclusions in regard to specific identity, relationship, and nomenclature which differ rather widely from those generally accepted at present.<br>[…] The principal cause of most of the difficulty experienced by the students of <em>Amelanchier</em> in the past in drawing specific lines [of relationship], is to be found undoubtedly in the wonderful variability which seems to exist within the genus, a variability so extreme that rarely did it seem possible to find two plants as much alike as specific identity in other groups would demand. Indeed, if the sheets of any large collection are sorted on any assumed basis, almost as many transitional sheets will be found as sheets typical of the supposed species. For this reason many taxonomists have been inclined to believe that no real specific lines exist, at least so far as the eastern species are concerned. Because of this wealth of form two courses have seemed possible: a conservative treatment in which very few species, sometimes only one, are recognized; or a radical one in which a great many species are supposed to exist.<br></p>",
+  "citation": {
+    "display": "K.M. Wiegand, “<a href=\"https://hdl.handle.net/2027/coo.31924001829971?urlappend=%3Bseq=5%3Bownerid=27021597768700384-9\">The Genus Amelanchier in Eastern North America</a>,” <em>Rhodora: Journal of the New England Botanical Club </em>14.163 (July 1912: 117-161), p. 117.",
+    "bibliography": "Wiegand, K. M. \"The Genus Amelanchier in Eastern North America.\" <em>Rhodora: Journal of the New England Botanical Club</em>, vol. 14, no. 163, July 1912, pp. 117–161.",
+    "title": "The Genus Amelanchier in Eastern North America",
+    "written": "1912-07",
+    "locator": {
+      "page": "117",
+      "url": "https://hdl.handle.net/2027/coo.31924001829971?urlappend=%3Bseq=5%3Bownerid=27021597768700384-9",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0078",
+      "type": "article",
+      "title": "The Genus Amelanchier in Eastern North America",
+      "container": "Rhodora: Journal of the New England Botanical Club",
+      "volume": "14",
+      "pages": "117–161",
+      "links": [
+        {
+          "role": "copy",
+          "label": "Biodiversity Heritage Library",
+          "url": "https://www.biodiversitylibrary.org/part/187785"
+        }
+      ],
+      "identifiers": {
+        "hathitrust": "009125368",
+        "oclc": "4850178"
+      },
+      "contributors": [
+        {
+          "id": "a-k-m-wiegand",
+          "name": "K. M. Wiegand",
+          "role": "author",
+          "wikidata": "Q5958294"
+        }
+      ],
+      "issued": "1912-07",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0018",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0015"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0148/",
+  "id": "i-0148",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9.jpeg",
+  "caption": "<em><a href=\"https://www.metmuseum.org/art/collection/search/669362\" rel=\"noopener\" target=\"_blank\">[Frost]</a> </em>(circa 1910)<em>. </em>Wilson Alwyn Bentley. The Metropolitan Museum of Art.",
+  "lectio": {
+    "post": "lt-0033",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0006"
+    ]
+  },
+  "display": {
+    "size": [
+      934,
+      765
+    ]
+  },
+  "alt": "A sepia photograph of frost on a windowpane: dense, fern-like feathers of ice crystals branching across a dark ground.",
+  "creator": {
+    "id": "a-wilson-alwyn-bentley",
+    "name": "Wilson Alwyn Bentley",
+    "wikidata": "Q218471"
+  },
+  "title": "[Frost]",
+  "date": "1910~",
+  "institution": "The Metropolitan Museum of Art",
+  "bibliography": "Bentley, Wilson Alwyn. <em>[Frost]</em>. c. 1910, The Metropolitan Museum of Art, New York.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/669362"
+    }
+  ],
+  "shelfmark": "2015.201",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "the photographer died in 1931; the Met doesn't mark it open access",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

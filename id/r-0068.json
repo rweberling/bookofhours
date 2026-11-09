@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0068/",
+  "id": "r-0068",
+  "shownIn": "seasons",
+  "text": "Listen to the reed how it tells a tale, complaining of separations—<br><br>Saying, “Ever since I was parted from the reed-bed, my lament hath caused man and woman to moan.<br><br>I want a bosom torn by severance, that I may unfold (to such a one) the pain of love-desire.<br><br>Every one who is left far from his source wishes back the time when he was united with it.<br><br>In every company I uttered my wailful notes, I consorted with the unhappy and with them that rejoice.<br><br>Every one became my friend from his own opinion; none sought out my secrets from within me.<br><br>My secret is not far from my plaint, but ear and eye lack the light (whereby it should be apprehended).<br><br>Body is not veiled from soul, nor soul from body, yet none is permitted to see the soul.<br><br>This noise of the reed is fire, it is not wind: whoso hath not this fire, may he be naught!<br><br>‘Tis the fire of Love that is in the reed, ‘tis the fervour of Love that is in the wine.<br><br>The reed is the comrade of every one who has been parted from a friend: its strains pierced our hearts.<br><br>Who ever saw a poison and antidote like the reed? Who ever saw a sympathiser and a longing lover like the reed?",
+  "citation": {
+    "display": "Jalāl al-Dīn Muḥammad Rūmī, from “<a href=\"https://hdl.handle.net/2027/inu.30000011921974?urlappend=%3Bseq=33%3Bownerid=13510798897570173-37\">Proem to Book 1</a>,” <em>The Mathnawi of Jalalu’ddin Rumi, Volume II</em>. Trans. Reynold A. Nicholson. (London: E.J.W. Gibb Memorial, 1960 [1926]), p. 5.",
+    "bibliography": "Rūmī, Jalāl al-Dīn Muḥammad. \"Proem to Book 1.\" <em>The Mathnawí of Jalálu’ddín Rúmí</em>, vol. 2, translated by Reynold A. Nicholson, E. J. W. Gibb Memorial, 1960. Originally published 1926.",
+    "title": "Proem to Book 1",
+    "written": "1260~",
+    "locator": {
+      "page": "5",
+      "url": "https://hdl.handle.net/2027/inu.30000011921974?urlappend=%3Bseq=33%3Bownerid=13510798897570173-37",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0068",
+      "type": "book",
+      "title": "The Mathnawí of Jalálu’ddín Rúmí, vol. 2",
+      "identifiers": {
+        "hathitrust": "001005718",
+        "oclc": "1444113",
+        "lccn": "26022478"
+      },
+      "contributors": [
+        {
+          "id": "a-jalal-al-din-muhammad-rumi",
+          "name": "Jalāl al-Dīn Muḥammad Rūmī",
+          "role": "author",
+          "wikidata": "Q43347"
+        },
+        {
+          "id": "a-reynold-a-nicholson",
+          "name": "Reynold A. Nicholson",
+          "role": "translator",
+          "wikidata": "Q2265889"
+        }
+      ],
+      "publisher": "E. J. W. Gibb Memorial",
+      "issued": "1960",
+      "original-date": "1926",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "rightsNote": "Nicholson's translation was first published in 1926"
+    }
+  },
+  "lectio": {
+    "post": "lt-0014",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0012"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,72 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0075/",
+  "id": "r-0075",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Felice Cardinal d’Ascoli, et al. “Inquisition’s Sentence (22 June 1633).” <em><a href=\"https://archive.org/details/essentialgalileo0000gali\">The Essential Galileo</a>. </em>Edited and translated by Maurice A. Finocchiaro. Indianapolis, Indiana: Hackett, 2008. 279, 282.",
+    "bibliography": "d’Ascoli, Felice Cardinal, et al. \"Inquisition’s Sentence (22 June 1633).\" <em>The Essential Galileo</em>, edited and translated by Maurice A. Finocchiaro, Hackett, 2008.",
+    "title": "Inquisition’s Sentence (22 June 1633)",
+    "written": "1633-06-22",
+    "locator": {
+      "page": "279, 282",
+      "url": "https://archive.org/details/essentialgalileo0000gali",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0075",
+      "type": "book",
+      "title": "The Essential Galileo",
+      "identifiers": {
+        "internetArchive": "essentialgalileo0000gali",
+        "oclc": "226308166",
+        "openlibrary": "OL16820783M",
+        "isbn": "9780872209374",
+        "lccn": "2008018659"
+      },
+      "contributors": [
+        {
+          "id": "a-felice-cardinal-dascoli",
+          "name": "Felice Cardinal d’Ascoli",
+          "role": "author"
+        },
+        {
+          "id": "a-maurice-a-finocchiaro",
+          "name": "Maurice A. Finocchiaro",
+          "role": "editor",
+          "wikidata": "Q55754273"
+        },
+        {
+          "id": "a-maurice-a-finocchiaro",
+          "name": "Maurice A. Finocchiaro",
+          "role": "translator",
+          "wikidata": "Q55754273"
+        }
+      ],
+      "publisher": "Hackett",
+      "issued": "2008",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "lectio": {
+    "post": "lt-0017",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0003",
+        "basis": "thematic",
+        "note": "Sunspots appear only as a book title; the passage is the sentence that followed."
+      }
+    ]
+  },
+  "firstLine": "Whereas you, Galileo, son of the late Vincenzio Galilei, Florentine, aged seventy years, were denounced to this Holy Office in 1615 for holding as true the false doctrine taught by some that the sun …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

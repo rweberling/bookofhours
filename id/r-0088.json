@@ -1,0 +1,64 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0088/",
+  "id": "r-0088",
+  "shownIn": "seasons",
+  "text": "<p>XXXIX. — Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.</p><p><br>XL. —  It disperses and gathers, it comes and goes.</p><p><br>XLI. — Into the same river you could not step twice, for other and still other waters are flowing.</p><p><br>XLII. — To those entering the same river, other and still other waters flow.</p>",
+  "citation": {
+    "display": "Heraclitus. “<a href=\"https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126\">Fragments 39-42</a>.” <em>The Fragments of the Work of Heraclitus of Ephesus on Nature</em>.<em> </em>Trans. G.T.W. Patrick, from the Greek text of Ingram Bywater. Baltimore, Maryland: N. Murray, 1889. 93-94.",
+    "bibliography": "Heraclitus. \"Fragments 39–42.\" <em>The Fragments of the Work of Heraclitus of Ephesus on Nature</em>, translated by G. T. W. Patrick, N. Murray, 1889. Composed c. 500 BCE.",
+    "title": "Fragments 39–42",
+    "written": "-0499~",
+    "locator": {
+      "page": "93–94",
+      "url": "https://archive.org/details/fragmentsofworko00hera/page/92/mode/2up?q=126",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0017",
+      "type": "book",
+      "title": "On Nature",
+      "issued": "1889",
+      "original-date": "-0500~",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "fragmentsofworko00hera",
+        "openlibrary": "OL21854788M",
+        "lccn": "11010817"
+      },
+      "contributors": [
+        {
+          "id": "a-heraclitus",
+          "name": "Heraclitus",
+          "role": "author",
+          "wikidata": "Q41155"
+        },
+        {
+          "id": "a-g-t-w-patrick",
+          "name": "G. T. W. Patrick",
+          "role": "translator",
+          "wikidata": "Q18910706"
+        }
+      ]
+    }
+  },
+  "lectio": {
+    "post": "lt-0023",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0004",
+        "basis": "thematic",
+        "note": "Flux and reversal (warm becomes cold) set against the season of fixed heat."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

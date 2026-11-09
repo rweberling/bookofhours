@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0153/",
+  "id": "e-0153",
+  "title": "A Flora of the State of New-York",
+  "issued": "1843",
+  "identifiers": {
+    "internetArchive": "mobot31753002739826"
+  },
+  "type": "book",
+  "volume": "1",
+  "contributors": [
+    {
+      "id": "a-john-torrey",
+      "name": "John Torrey",
+      "role": "author"
+    }
+  ],
+  "publisher": "Carroll and Cook",
+  "citedBy": [
+    "i-0147"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

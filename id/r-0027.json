@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0027/",
+  "id": "r-0027",
+  "aliases": [
+    "r-stein-tender-buttons"
+  ],
+  "shownIn": "hours",
+  "text": "CELERY.<br><br>Celery tastes tastes where in curled lashes and little bits and mostly in remains.<br><br>A green acre is so selfish and so pure and so enlivened.<br><br>VEAL.<br><br>Very well very well, washing is old, washing is washing.<br><br>Cold soup, cold soup clear and particular and a principal a principal question to put into.<br><br>VEGETABLE.<br><br>What is cut. What is cut by it. What is cut by it in.<br><br>It was a cress a crescent a cross and an unequal scream, it was upslanting, it was radiant and reasonable with little ins and red.<br><br>News. News capable of glees, cut in shoes, belike under pump of wide chalk, all this combing.<br><br>WAY LAY VEGETABLE.<br><br>Leaves in grass and mow potatoes, have a skip, hurry you up flutter.<br><br>Suppose it is ex a cake suppose it is new mercy and leave charlotte and nervous bed rows. Suppose it is meal. Suppose it is sam.",
+  "citation": {
+    "display": "Gertrude Stein, <a href=\"https://writing.upenn.edu/library/Stein_Gertrude_Tender_Buttons_1914.pdf\" target=\"_blank\"><em>Tender Buttons</em></a> (1914)",
+    "bibliography": "Stein, Gertrude. \"Celery,\" \"Veal,\" \"Vegetable,\" \"Way Lay Vegetable.\" <em>Tender Buttons</em>, Claire Marie, 1914.",
+    "title": "Celery; Veal; Vegetable; Way Lay Vegetable",
+    "locator": {
+      "url": "https://writing.upenn.edu/library/Stein_Gertrude_Tender_Buttons_1914.pdf",
+      "label": "University of Pennsylvania"
+    },
+    "edition": {
+      "id": "e-0027",
+      "type": "book",
+      "title": "Tender Buttons",
+      "contributors": [
+        {
+          "id": "a-gertrude-stein",
+          "name": "Gertrude Stein",
+          "role": "author",
+          "wikidata": "Q188385"
+        }
+      ],
+      "publisher": "Claire Marie",
+      "issued": "1914",
+      "original-date": "1914",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "tags": {
+    "hours": [
+      "convivium"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

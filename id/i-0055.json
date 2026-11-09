@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0055/",
+  "id": "i-0055",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/193964785.week-17-eastern-cottontail-zora-neale-1-613f6cf604e0.jpeg",
+  "caption": "“<a href=\"https://digitalcollections.nypl.org/items/285d1d50-c6bd-012f-0dc4-58d385a7bc34?canvasIndex=0\">Lepus Sylvaticus, Grey Rabbit. Natural Size. Old &amp; young</a>.” Lithograph from John James Audubon and John Bachman, <em><a href=\"https://digitalcollections.nypl.org/items/21c9b4c0-c6bd-012f-bbbb-58d385a7bc34?canvasIndex=0\">The Viviparous Quadrupeds of North America, Vol. 1</a></em> (New York: J.J. Audubon, 1845).",
+  "alt": "A colored lithograph of three cottontail rabbits on grass: one leaping, one crouched, and a small young one sitting beside it.",
+  "bibliography": "Audubon, John James, and John Bachman. \"Lepus sylvaticus, Grey Rabbit.\" Lithograph, <em>The Viviparous Quadrupeds of North America</em>, vol. 1, J. J. Audubon, 1845.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "NYPL Digital Collections",
+      "url": "https://digitalcollections.nypl.org/items/285d1d50-c6bd-012f-0dc4-58d385a7bc34?canvasIndex=0"
+    },
+    {
+      "role": "copy",
+      "label": "NYPL Digital Collections",
+      "url": "https://digitalcollections.nypl.org/items/21c9b4c0-c6bd-012f-bbbb-58d385a7bc34?canvasIndex=0"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0008",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0007"
+    ]
+  },
+  "display": {
+    "size": [
+      1574,
+      1229
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

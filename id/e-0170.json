@@ -1,0 +1,36 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0170/",
+  "id": "e-0170",
+  "type": "article",
+  "title": "The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants",
+  "container": "Annals of Botany",
+  "volume": "94",
+  "issue": "5",
+  "pages": "665–674",
+  "contributors": [
+    {
+      "id": "a-m-e-mccully",
+      "name": "M. E. McCully",
+      "role": "author"
+    },
+    {
+      "id": "a-m-j-canny",
+      "name": "M. J. Canny",
+      "role": "author"
+    },
+    {
+      "id": "a-c-x-huang",
+      "name": "C. X. Huang",
+      "role": "author"
+    }
+  ],
+  "issued": "2004",
+  "identifiers": {
+    "doi": "10.1093/aob/mch191"
+  },
+  "citedBy": [
+    "i-0150"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

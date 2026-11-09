@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0011/",
+  "id": "sp-0011",
+  "name": "Living Soil",
+  "scientific": "Mycobacterium vaccae",
+  "rank": "species",
+  "wikidata": "Q655983",
+  "gbif": "3225191",
+  "inaturalist": null,
+  "records": [
+    "r-0065",
+    "r-0066",
+    "r-0067",
+    "i-0070",
+    "i-0071",
+    "i-0072"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

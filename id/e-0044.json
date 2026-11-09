@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0044/",
+  "id": "e-0044",
+  "type": "book",
+  "title": "Silvical Leaflet 38: Paper Birch",
+  "identifiers": {
+    "hathitrust": "007425308",
+    "oclc": "21507897",
+    "lccn": "agr09000825"
+  },
+  "contributors": [
+    {
+      "id": "a-gifford-pinchot",
+      "name": "Gifford Pinchot",
+      "role": "author",
+      "wikidata": "Q534301"
+    }
+  ],
+  "publisher": "United States Department of Agriculture, Forest Service",
+  "issued": "1908-10-29",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "citedBy": [
+    "r-0044"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0127/",
+  "id": "e-0127",
+  "title": "A Handbook of Crocus and Colchicum for Gardeners",
+  "issued": "1924",
+  "identifiers": {
+    "hathitrust": "002010826",
+    "oclc": "4584067",
+    "lccn": "agr24001012"
+  },
+  "citedBy": [
+    "i-0049"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

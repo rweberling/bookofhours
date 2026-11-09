@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0030/",
+  "id": "e-0030",
+  "type": "book",
+  "title": "Poems",
+  "contributors": [
+    {
+      "id": "a-rainer-maria-rilke",
+      "name": "Rainer Maria Rilke",
+      "role": "author",
+      "wikidata": "Q76483"
+    }
+  ],
+  "issued": "1918",
+  "original-date": "1918",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0030"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

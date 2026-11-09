@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0070/",
+  "id": "e-0070",
+  "type": "article",
+  "title": "Gall Insects and Their Relations to Plants",
+  "container": "The Scientific Monthly",
+  "pages": "509–525",
+  "contributors": [
+    {
+      "id": "a-e-p-felt",
+      "name": "E. P. Felt",
+      "role": "author",
+      "wikidata": "Q5382324"
+    }
+  ],
+  "issued": "1918-06",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0070"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

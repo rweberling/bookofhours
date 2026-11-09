@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0115/",
+  "id": "i-0115",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/211186214.week-36-watermelon-sylvia-plath-pliny-3-9c65227e690b.jpeg",
+  "caption": "“<a href=\"https://www.metmuseum.org/art/collection/search/423219\" rel=\"noopener\" target=\"_blank\">Rose Coghlan as \"The Watermelon,\" from the series Fancy Dress Ball Costumes (N73) for Duke brand cigarettes</a>” (1889). <em>The Metropolitan Museum of Art</em>.",
+  "alt": "A cigarette card portrait of the actress Rose Coghlan in costume as “The Watermelon,” wearing a slice of watermelon as a hat and a red collar trimmed with fruit.",
+  "bibliography": "\"Rose Coghlan as ‘The Watermelon,’ from the Series Fancy Dress Ball Costumes (N73) for Duke Brand Cigarettes.\" 1889, The Metropolitan Museum of Art, New York.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/423219"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0027",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0022"
+    ]
+  },
+  "display": {
+    "size": [
+      533,
+      1006
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

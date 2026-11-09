@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0022/",
+  "id": "sp-0022",
+  "name": "Watermelon",
+  "scientific": "Citrullus lanatus",
+  "rank": "species",
+  "wikidata": "Q17507129",
+  "gbif": "2874621",
+  "inaturalist": "70054",
+  "records": [
+    "r-0096",
+    "r-0097",
+    "i-0113",
+    "i-0114",
+    "i-0115"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

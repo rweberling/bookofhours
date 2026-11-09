@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0069/",
+  "id": "i-0069",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/196425624.week-21-common-lilac-amy-lowell-ronald-3-17dcc15a1e7b.jpeg",
+  "caption": "“<a href=\"https://digitalcollections.nypl.org/items/7db28480-c5c5-012f-f36a-58d385a7bc34\">Flower fancies: calendar with text; depicting lilacs</a>” (1865), from The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Print Collection, The New York Public Library Digital Collections.",
+  "alt": "Two pages of an illustrated calendar, each framed by sprays of purple lilac and leaves, with lines of a poem about a lilac hand-lettered in brown.",
+  "bibliography": "\"Flower Fancies: Calendar with Text; Depicting Lilacs.\" 1865, Miriam and Ira D. Wallach Division of Art, Prints and Photographs, New York Public Library.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "NYPL Digital Collections",
+      "url": "https://digitalcollections.nypl.org/items/7db28480-c5c5-012f-f36a-58d385a7bc34"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0012",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0010"
+    ]
+  },
+  "display": {
+    "size": [
+      723,
+      440
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

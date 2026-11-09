@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0137/",
+  "id": "e-0137",
+  "title": "The Origin of Continents and Oceans",
+  "issued": "1924",
+  "identifiers": {
+    "hathitrust": "001272669",
+    "oclc": "3010882"
+  },
+  "citedBy": [
+    "i-0064"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

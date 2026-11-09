@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0011/",
+  "id": "r-0011",
+  "aliases": [
+    "r-pessoa-fragment-1"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Fernando Pessoa, fragment 1 (c. 1913), from <a href=\"https://bookshop.org/a/86532/9780811226936\" target=\"_blank\"><em>The Book of Disquiet</em></a> (1982)",
+    "bibliography": "Pessoa, Fernando. <em>The Book of Disquiet</em>. Translated by Richard Zenith, Penguin, 2002. Fragment written c. 1913; first assembled and published 1982.",
+    "title": "Fragment 1",
+    "written": "1913~",
+    "edition": {
+      "id": "e-0011",
+      "type": "book",
+      "title": "The Book of Disquiet",
+      "contributors": [
+        {
+          "id": "a-fernando-pessoa",
+          "name": "Fernando Pessoa",
+          "role": "author",
+          "wikidata": "Q173481"
+        },
+        {
+          "id": "a-richard-zenith",
+          "name": "Richard Zenith",
+          "role": "translator",
+          "wikidata": "Q7330152"
+        }
+      ],
+      "publisher": "Penguin",
+      "issued": "2002",
+      "original-date": "1982",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780811226936",
+    "note": "Translated by Margaret Jull Costa; a different translation from the one quoted"
+  },
+  "tags": {
+    "hours": [
+      "chorus"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "My soul is a hidden orchestra; …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

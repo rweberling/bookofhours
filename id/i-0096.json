@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0096/",
+  "id": "i-0096",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/207622717.week-30-blueberries-joseph-j-white-2-5d2317404650.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52\">Plate XII. Blueberry Propagation Frames.</a>” Frederick V. Coville, <em>Directions for Blueberry Culture</em>. U.S. Department of Agriculture, Bulletin No. 974. Washington, DC: Government Printing Office, 1921.",
+  "alt": "Two photographs on a book page of blueberry propagation frames: long rows of low wooden cold frames under a timber framework, one shaded with muslin and one with slatted wooden covers.",
+  "bibliography": "Coville, Frederick V. \"Plate XII. Blueberry Propagation Frames.\" <em>Directions for Blueberry Culture</em>, Bulletin 974, U.S. Department of Agriculture, Government Printing Office, 1921.",
+  "lectio": {
+    "post": "lt-0021",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0018"
+    ]
+  },
+  "display": {
+    "size": [
+      1466,
+      2464
+    ]
+  },
+  "edition": {
+    "id": "e-0146",
+    "title": "Directions for Blueberry Culture",
+    "issued": "1921",
+    "identifiers": {
+      "hathitrust": "100199018",
+      "oclc": "9452320"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0107/",
+  "id": "i-0107",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/198132813.week-33-cucurbits-marge-piercy-padgraig-2-c9b22a2920de.jpeg",
+  "caption": "“<a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Fruit Shape of Each of the Eight Cultivar Groups of </a><em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Cucurbita Pepo.</a></em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\"> Proximal (stem) end is at top, distal (blossom end at bottom</a>.” Harry S. Paris. “A Proposed Subspecific Classification for Cucurbita-Pepo.” <em>Phytologia</em> 61.3 (November 1986: 133-138), 136.",
+  "alt": "Outline drawings of the fruit shapes of eight kinds of summer and winter squash, each labelled: round pumpkin, flat scallop, ribbed acorn, curved crookneck, straightneck, vegetable marrow, long cocozelle and zucchini.",
+  "bibliography": "Paris, Harry S. \"Fruit Shape of Each of the Eight Cultivar Groups of <em>Cucurbita pepo</em>.\" \"A Proposed Subspecific Classification for <em>Cucurbita pepo</em>,\" <em>Phytologia</em>, vol. 61, no. 3, Nov. 1986, pp. 133–138.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Biodiversity Heritage Library",
+      "url": "https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0025",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0020"
+    ]
+  },
+  "display": {
+    "size": [
+      1288,
+      1706
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

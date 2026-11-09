@@ -1,0 +1,12 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0163/",
+  "id": "e-0163",
+  "title": "The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man",
+  "publisher": "Sivartha Publishing",
+  "issued": "1898",
+  "citedBy": [
+    "i-0010"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

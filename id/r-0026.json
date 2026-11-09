@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0026/",
+  "id": "r-0026",
+  "aliases": [
+    "r-sappho-fragment-104a"
+  ],
+  "shownIn": "hours",
+  "text": "Evening, thou that bringest all that bright morning scattered;<br>thou bringest the sheep, the goat, the child back to her mother.",
+  "citation": {
+    "display": "Sappho, <em>fragment 104a</em> (c. 630–580 BCE, trans. <a href=\"https://www.gutenberg.org/files/57390/57390-h/57390-h.htm\" target=\"_blank\">Wharton, 1908</a>)",
+    "bibliography": "Sappho. \"Fragment 104a.\" <em>Sappho: Memoir, Text, Selected Renderings, and a Literal Translation</em>, translated by Henry Thornton Wharton, John Lane, 1908. Composed c. 630–580 BCE.",
+    "title": "Fragment 104a",
+    "locator": {
+      "url": "https://www.gutenberg.org/files/57390/57390-h/57390-h.htm",
+      "label": "Project Gutenberg"
+    },
+    "edition": {
+      "id": "e-0026",
+      "type": "book",
+      "title": "Sappho: Memoir, Text, Selected Renderings, and a Literal Translation",
+      "contributors": [
+        {
+          "id": "a-sappho",
+          "name": "Sappho",
+          "role": "author",
+          "wikidata": "Q17892"
+        },
+        {
+          "id": "a-henry-thornton-wharton",
+          "name": "Henry Thornton Wharton",
+          "role": "translator",
+          "wikidata": "Q18917198"
+        }
+      ],
+      "publisher": "John Lane",
+      "issued": "1908",
+      "original-date": "-0630~/-0580~",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "tags": {
+    "hours": [
+      "convivium"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

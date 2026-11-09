@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="record-page">
+<head>
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+  <!-- Built by scripts/build_records.py from data/; edit those, not this. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grace Greylock Niles, “Bog-Trotting for Orchids” — The Earthly Book of Hours</title>
+  <meta name="description" content="Reading r-0072: Grace Greylock Niles, “Bog-Trotting for Orchids”">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://earthlyhours.com/id/r-0072/">
+  <link rel="alternate" type="application/json" href="https://earthlyhours.com/id/r-0072.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quotation",
+  "@id": "https://earthlyhours.com/id/r-0072/",
+  "name": "Bog-Trotting for Orchids",
+  "url": "https://earthlyhours.com/id/r-0072/",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Grace Greylock Niles",
+      "sameAs": "https://www.wikidata.org/wiki/Q21393563"
+    }
+  ],
+  "isBasedOn": "https://earthlyhours.com/id/e-0072/",
+  "about": [
+    {
+      "@id": "https://earthlyhours.com/id/sp-0014/",
+      "name": "Pink Lady’s Slipper"
+    }
+  ],
+  "license": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "isPartOf": {
+    "@type": "Collection",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/id/"
+  }
+}
+  </script>
+</head>
+<body>
+
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+
+<main class="page">
+  <p class="publication-name"><a href="/id/">The Earthly Book of Hours · Records</a></p>
+
+  <div class="rule-ornament" aria-hidden="true">
+    <div class="line"></div>
+    <div class="lozenge">✦</div>
+    <div class="diamond"></div>
+    <div class="lozenge">✦</div>
+    <div class="line"></div>
+  </div>
+
+  <h1 class="page-title">Grace Greylock Niles, “Bog-Trotting for Orchids”</h1>
+  <p class="page-subtitle">Reading · r-0072</p>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">The text</h2>
+    <blockquote class="record-text"><p>Many people are accustomed to think of the orchid as a tropical flower which grows in our country only in cultivation and under highly artificial conditions. It is, however, true that many of the most attractive species of this beautiful group are endemic to most parts of the United States. There are to-day, accord- ing to conservative reports, from twenty-seven to thirty genera and from one hundred and fifty to one hundred and sixty species of native orchids found in North America, north of Mexico. Most of these are terrestrial or earth-loving. There are eleven epiphytes, all of which are found only in the Southern States. The range of the North American orchids extends wherever sunshine and moisture prevail, nearly as far north as the Arctic Circle. Four Cypripediums grow between latitudes 54° and 64°, and from fifteen to eighteen species of the Orchid Family are natives of Alaska.</p><p></p><p>[…]</p><p></p><p><strong>Two-Leaved Lady’s Slipper — Stemless Pink Moccasin-Flower</strong></p><p>The specific name, <em>acaule</em>, refers to the lowly and humble (acaulescent), growth of the species, since the flower is stemless, arising from a short or subterranean stem.</p><p></p><p>Sphagnous bogland, conifer or mixed woodland orchid with fleshy-fibrous roots. May 19th-June 20th.</p><p></p><p>Flowers large, pink-purple, solitary, terminal, stemless. Labellum shoe-shaped, 2-2 1/2 inches long, bi-lobed, pendulous, with closed fissure down its whole length, edges inflected, downy interiorly; pink-purple with darker veining of purple. (Rarely pure white flowers occur, with crome yellow sepals and petals.) Sepals and petals brown-purple and green, shorter than labellum; two lower sepals wholly united. Stem very short, obscured by the basal leaves. Scape naked, 8-18 inches high, single-flowered, terminal. Few instances where two flowers or buds in embryo have occurred. Leaves 2, sheathing the base of peduncle, oblanceolate 3-5 nerved, hirsute and thickened; 6-8 inches long, 2-3 inches wide, resembling the leaves of <em>Orchis spedabilis</em> Linnaeus.</p><p></p><p><em>Continental Range</em> — From Newfoundland, and Fort Franklin, in latitude 54°-64° North; southward to Lookout Mountain, Mentone, and Cullman, Alabama; westward to northern Indiana, Minnesota, and Kentucky.</p><p></p><p><em>New England Range</em> — Maine, common; New Hampshire, common; Vermont, abundant; Massachusetts, abundant; Rhode Island, common; Connecticut, common.</p></blockquote>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">The work</h2>
+    <dl class="record-fields">
+      <dt>Title</dt><dd>Bog-Trotting for Orchids</dd>
+      <dt>By</dt><dd><a href="https://www.wikidata.org/wiki/Q21393563" target="_blank">Grace Greylock Niles</a></dd>
+      <dt>Written</dt><dd>1904</dd>
+      <dt>Citation</dt><dd>Grace Greylock Niles. <a href="https://archive.org/details/bogtrottingfo00nile/page/147/mode/1up" target="_blank"><em>Bog-Trotting for Orchids</em></a> (New York: The Knickerbocker Press, 1904), p. vi, 147.</dd>
+      <dt>Bibliography</dt><dd>Niles, Grace Greylock. <em>Bog-Trotting for Orchids</em>. Knickerbocker Press, 1904.</dd>
+      <dt>Edition</dt><dd><a href="/id/e-0072/"><em>Bog-Trotting for Orchids</em></a></dd>
+      <dt>Where to read it</dt><dd><a href="https://archive.org/details/bogtrottingfo00nile/page/147/mode/1up" target="_blank">vi, 147, Internet Archive</a></dd>
+    </dl>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">In the collection</h2>
+    <dl class="record-fields">
+      <dt>Appears in</dt><dd><a href="/lectio-terra/pink-ladys-slipper/">Week 25: Pink Lady&#x27;s Slipper, Grace Greylock Niles, C.S. Young</a> (Lectio Terra, 2026-06-12)</dd>
+      <dt>Seasons</dt><dd>Summer</dd>
+      <dt>About</dt><dd><a href="/id/sp-0014/">Pink Lady’s Slipper</a></dd>
+    </dl>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Rights</h2>
+    <dl class="record-fields">
+      <dt>Status</dt><dd>In the public domain in the United States</dd>
+    </dl>
+  </section>
+
+  <section class="content-block record-section">
+    <h2 class="content-subhead">Cite this record</h2>
+    <p class="record-cite">Grace Greylock Niles, “Bog-Trotting for Orchids.” Record r-0072, <em>The Earthly Book of Hours</em>, ed. Ryan Weberling. <a href="https://earthlyhours.com/id/r-0072/">https://earthlyhours.com/id/r-0072/</a>. Dataset: <a href="https://doi.org/10.5281/zenodo.23603918" target="_blank">https://doi.org/10.5281/zenodo.23603918</a>.</p>
+    <p class="record-data">This record as data: <a href="/id/r-0072.json">r-0072.json</a> · <a href="/id/">All records</a></p>
+  </section>
+
+  <footer class="page-footer">
+    <div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
+    </div>
+    <p class="colophon">A project of <a href="https://otherwise.dfos.com" target="_blank">Otherwise</a></p>
+  </footer>
+</main>
+
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a href="seasons.html">The Current Season</a>
+      <a href="seasons.html#wander">Wander the Seasons</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
+    <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
+      <a href="editions.html">Otherwise Editions</a>
+      <a href="#letters">Letters from Otherwise</a>
+      <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
+      <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Visit Otherwise <span class="ext-arrow" aria-hidden="true">↗</span></a>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+
+<script src="/shared.js"></script>
+<script src="/atmosphere.js"></script>
+<script src="/nav.js"></script>
+</body>
+</html>

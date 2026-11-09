@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0140/",
+  "id": "i-0140",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208576000.week-39-common-pawpaw-jean-anthelme-3-d65a30dc4ee6.jpeg",
+  "caption": "Edward Edmondson, Jr. <em><a href=\"https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws?ctx=38520478c7fb2ccc497353061639c81647a92df0&amp;idx=0#\" rel=\"noopener\" target=\"_blank\">Still Life with Pawpaws</a> (c. 1870-1875).</em> Dayton Art Institute. [<a href=\"https://www.ovid.com/journals/jama/abstract/00005407-200810150-00002~still-life-with-pawpaws?redirectionsource=fulltextview\" rel=\"noopener\" target=\"_blank\">Read more</a>]",
+  "lectio": {
+    "post": "lt-0030",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0025"
+    ]
+  },
+  "display": {
+    "size": [
+      800,
+      651
+    ]
+  },
+  "alt": "An oil painting in a gilt frame: a cluster of pale green pawpaws hanging from a bare twig with a single large leaf, laid on a mossy rock beside dark water, against a shadowy wooded bank.",
+  "creator": {
+    "id": "a-edward-edmondson-jr",
+    "name": "Edward Edmondson, Jr."
+  },
+  "title": "Still Life with Pawpaws",
+  "date": "1870~/1875~",
+  "institution": "Dayton Art Institute",
+  "bibliography": "Edmondson, Edward, Jr. <em>Still Life with Pawpaws</em>. c. 1870–1875, Dayton Art Institute, Dayton, Ohio.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Dayton Art Institute",
+      "url": "https://daytonart.emuseum.com/objects/451/still-life-with-pawpaws"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

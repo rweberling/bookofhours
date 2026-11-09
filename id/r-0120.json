@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0120/",
+  "id": "r-0120",
+  "shownIn": "weather",
+  "text": "The conclusions drawn from these experiments are: (1) that whenever water vapour condenses in the atmosphere it always does so on some solid nucleus; (2) that dust-particles in the air form the nuclei on which the vapour condenses; (3) that if there was no dust there would be no fogs, no clouds, no mists, and probably no rain, and that the supersaturated air would convert every object on the surface of the earth into a condenser on which it would deposit; (4) our breath when it becomes visible on a cold morning, and every puff of steam as it escapes into the air, show the impure and dusty condition of our atmosphere.",
+  "citation": {
+    "display": "John Aitken, from \"<a href=\"https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up\" target=\"_blank\">On Dust, Fogs, and Clouds</a>\" (1880)",
+    "bibliography": "Aitken, John. \"On Dust, Fogs, and Clouds.\" Abstract of a paper read to the Royal Society of Edinburgh. <em>Nature</em>, vol. 23, 30 December 1880, pp. 195–197.",
+    "title": "On Dust, Fogs, and Clouds",
+    "written": "1880",
+    "locator": {
+      "page": "196",
+      "url": "https://archive.org/details/paper-doi-10_1038_023195d0/page/n1/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0157",
+      "type": "article",
+      "title": "On Dust, Fogs, and Clouds",
+      "contributors": [
+        {
+          "id": "a-john-aitken",
+          "name": "John Aitken",
+          "role": "author"
+        }
+      ],
+      "container": "Nature",
+      "volume": "23",
+      "pages": "195–197",
+      "issued": "1880-12-30",
+      "original-date": "1880",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "doi": "10.1038/023195d0",
+        "internetArchive": "paper-doi-10_1038_023195d0"
+      },
+      "rightsNote": "An abstract of Aitken's paper, supplied to Nature by the Royal Society of Edinburgh; the full paper is in its Transactions, vol. 30."
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "mist",
+      "fog"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

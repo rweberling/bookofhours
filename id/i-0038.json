@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0038/",
+  "id": "i-0038",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/189887776.week-11-american-robin-emily-dickinson-2-3dbe507824f0.jpeg",
+  "caption": "1863 manuscript of “The Robin is the One,” Amherst College, collected in <em><a href=\"https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA0695_F501C\">Emily Dickinson Archive</a></em>.",
+  "alt": "A page of Emily Dickinson’s handwriting on lined paper: three stanzas of “The Robin is the One,” in large, widely spaced pencil script.",
+  "bibliography": "Dickinson, Emily. \"The Robin is the One.\" Manuscript, 1863, Amherst College. <em>Emily Dickinson Archive</em>.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Harvard Emily Dickinson Archive",
+      "url": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA0695_F501C"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0002",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0002"
+    ]
+  },
+  "link": "https://curiosity.lib.harvard.edu/emily-dickinson-archive/catalog/195-EDA0695_F501C",
+  "display": {
+    "size": [
+      270,
+      427
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

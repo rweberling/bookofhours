@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0015/",
+  "id": "e-0015",
+  "type": "book",
+  "title": "Four Quartets",
+  "contributors": [
+    {
+      "id": "a-t-s-eliot",
+      "name": "T. S. Eliot",
+      "role": "author",
+      "wikidata": "Q37767"
+    }
+  ],
+  "publisher": "Harcourt, Brace",
+  "issued": "1943",
+  "original-date": "1942",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "in copyright — estate actively enforces",
+  "citedBy": [
+    "r-0015"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

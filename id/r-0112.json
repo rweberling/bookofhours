@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0112/",
+  "id": "r-0112",
+  "shownIn": "seasons",
+  "text": "<p>'Tis whiter than an Indian pipe, <br>'Tis dimmer than a lace;<br>No stature has it, like a fog, <br>When you approach the place. <br><br>Not any voice denotes it here, <br>Or intimates it there;<br>A spirit, how doth it accost? <br>What customs hath the air? <br><br>This limitless hyperbole <br>Each one of us shall be;<br>'Tis drama, if (hypothesis) <br>It be not tragedy! </p>",
+  "citation": {
+    "display": "Emily Dickinson. “<a href=\"https://archive.org/details/poemsthirdseries00dickiala/page/156/mode/2up?q=whiter\" rel=\"noopener\" target=\"_blank\">XVIII. The Spirit</a>.” [‘Tis whiter than an Indian pipe,”]. <em>Poems: Third Series. </em>Ed. Mabel Loomis Todd. Boston: Roberts Brothers, 1896. 156.",
+    "bibliography": "Dickinson, Emily. \"XVIII. The Spirit.\" <em>Poems: Third Series</em>, edited by Mabel Loomis Todd, Roberts Brothers, 1896.",
+    "title": "The Spirit",
+    "locator": {
+      "page": "156",
+      "url": "https://archive.org/details/poemsthirdseries00dickiala/page/156/mode/2up?q=whiter",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0111",
+      "type": "book",
+      "title": "Poems: Third Series",
+      "identifiers": {
+        "internetArchive": "poemsthirdseries00dickiala",
+        "oclc": "10424229"
+      },
+      "contributors": [
+        {
+          "id": "a-emily-dickinson",
+          "name": "Emily Dickinson",
+          "role": "author",
+          "wikidata": "Q4441"
+        },
+        {
+          "id": "a-mabel-loomis-todd",
+          "name": "Mabel Loomis Todd",
+          "role": "editor",
+          "wikidata": "Q2103861"
+        }
+      ],
+      "publisher": "Roberts Brothers",
+      "issued": "1896",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0031",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0027"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

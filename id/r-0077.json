@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0077/",
+  "id": "r-0077",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Robin Wall Kimmerer, <em><a href=\"https://bookshop.org/a/86532/9781668072240\">The Serviceberry: Abundance and Reciprocity in the Natural World</a></em>. New York: Scribner, 2024. 9-10.",
+    "bibliography": "Kimmerer, Robin Wall. <em>The Serviceberry: Abundance and Reciprocity in the Natural World</em>. Scribner, 2024.",
+    "title": "The Serviceberry: Abundance and Reciprocity in the Natural World",
+    "written": "2024",
+    "locator": {
+      "page": "9–10"
+    },
+    "edition": {
+      "id": "e-0077",
+      "type": "book",
+      "title": "The Serviceberry: Abundance and Reciprocity in the Natural World",
+      "contributors": [
+        {
+          "id": "a-robin-wall-kimmerer",
+          "name": "Robin Wall Kimmerer",
+          "role": "author",
+          "wikidata": "Q7352852"
+        }
+      ],
+      "publisher": "Scribner",
+      "issued": "2024",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9781668072240"
+  },
+  "lectio": {
+    "post": "lt-0018",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0015"
+    ]
+  },
+  "firstLine": "Saskatoon, Juneberry, Shadbush, Shadblow, Sugarplum, Sarvice, Serviceberry—these are among the many names for Amelanchier . …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

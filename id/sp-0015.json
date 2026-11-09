@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0015/",
+  "id": "sp-0015",
+  "name": "Serviceberry",
+  "scientific": "Amelanchier canadensis",
+  "rank": "species",
+  "wikidata": "Q159030",
+  "gbif": "3023833",
+  "inaturalist": "133382",
+  "records": [
+    "r-0077",
+    "r-0078",
+    "i-0085",
+    "i-0086",
+    "i-0087"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

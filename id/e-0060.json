@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0060/",
+  "id": "e-0060",
+  "type": "book",
+  "title": "Philosophical Investigations",
+  "contributors": [
+    {
+      "id": "a-ludwig-wittgenstein",
+      "name": "Ludwig Wittgenstein",
+      "role": "author",
+      "wikidata": "Q9391"
+    },
+    {
+      "id": "a-g-e-m-anscombe",
+      "name": "G. E. M. Anscombe",
+      "role": "translator",
+      "wikidata": "Q229646"
+    }
+  ],
+  "publisher": "Basil Blackwell",
+  "issued": "1953",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "translation in copyright",
+  "citedBy": [
+    "r-0060"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

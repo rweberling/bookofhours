@@ -1,0 +1,45 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0039/",
+  "id": "i-0039",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/189887776.week-11-american-robin-emily-dickinson-3-0ecd09119a8c.png",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95\">The Redbreast</a>,” or European Robin, from <a href=\"https://en.wikipedia.org/wiki/Howard_Saunders#:~:text=Howard%20Saunders%20(16%20September%201835,specialising%20in%20gulls%20and%20terns.\">Howard Saunders</a> (1835-1907), <em>An Illustrated Manual of British Birds</em> (London: Gurney and Jackson, 1889), p. 37.",
+  "alt": "An engraving of two European robins on a mossy stump among grasses and wildflowers, one standing just behind the other.",
+  "bibliography": "Saunders, Howard. \"The Redbreast.\" <em>An Illustrated Manual of British Birds</em>, Gurney and Jackson, 1889.",
+  "lectio": {
+    "post": "lt-0002",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0002"
+    ]
+  },
+  "display": {
+    "size": [
+      370,
+      441
+    ]
+  },
+  "edition": {
+    "id": "e-0123",
+    "title": "An Illustrated Manual of British Birds",
+    "issued": "1889",
+    "identifiers": {
+      "hathitrust": "100448239",
+      "oclc": "78616471"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

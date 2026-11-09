@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0010/",
+  "id": "i-0010",
+  "aliases": [
+    "i-sivartha-the-book-of-life"
+  ],
+  "shownIn": "hours",
+  "file": "images/chorus_sivartha.jpg",
+  "caption": "Alesha Sivartha, from <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t77s7n156?urlappend=%3Bseq=65\" target=\"_blank\"><em>The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man</em></a> (1898)",
+  "alt": "A printed chart of a man’s face in profile, every part of it covered in hand-lettered words for faculties and traits, such as Hope, Memory, Caution, Dignity and Authority, titled “A Chart of the Face.”",
+  "bibliography": "Sivartha, Alesha. <em>The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man</em>. Sivartha Publishing, 1898.",
+  "creator": {
+    "id": "a-alesha-sivartha",
+    "name": "Alesha Sivartha"
+  },
+  "title": null,
+  "edition": {
+    "id": "e-0163",
+    "title": "The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man",
+    "publisher": "Sivartha Publishing",
+    "issued": "1898"
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t77s7n156?urlappend=%3Bseq=65",
+    "label": "HathiTrust"
+  },
+  "date": "1898",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "chorus"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

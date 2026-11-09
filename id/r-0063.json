@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0063/",
+  "id": "r-0063",
+  "shownIn": "seasons",
+  "text": "<p>In May when the lilac is in flower, admiration is expressed for it on every side; even the most indifferent observer cannot restrain himself from manifesting his appreciation of the flower, praising its beauty and expressing a wish that it might be employed more frequently than it is in garden work. The gardener realizes that in this shrub we have particularly valuable material for gardens and parks, and recently unusual interest has been taken in it. Great collections, embracing hundreds of varieties, have been planted at the Arnold Arboretum in Boston, and at Highland Park in Rochester. This year at Highland Park, when the lilacs were at their best, they were inspected by over 30,000 visitors in one day, who had only words of appreciation and admiration for them.</p>",
+  "citation": {
+    "display": "William C. Barry, <em><a href=\"https://hdl.handle.net/2027/hvd.32044107247413?urlappend=%3Bseq=8%3Bownerid=27021597765978726-12\">The Lilac</a></em> (Rochester, NY: Mount Hope Nurseries), p. [2]. Rpt. from <em>Horticulture </em>(Oct. 9, 1909).",
+    "bibliography": "Barry, William C. <em>The Lilac</em>. Mount Hope Nurseries, n.d. Reprinted from <em>Horticulture</em>, 9 Oct. 1909.",
+    "title": "The Lilac",
+    "written": "1909-10-09",
+    "locator": {
+      "page": "[2]",
+      "url": "https://hdl.handle.net/2027/hvd.32044107247413?urlappend=%3Bseq=8%3Bownerid=27021597765978726-12",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0063",
+      "type": "book",
+      "title": "The Lilac",
+      "identifiers": {
+        "hathitrust": "100451368",
+        "oclc": "17570555"
+      },
+      "contributors": [
+        {
+          "id": "a-william-c-barry",
+          "name": "William C. Barry",
+          "role": "author"
+        }
+      ],
+      "publisher": "Mount Hope Nurseries",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0012",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0010"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0085/",
+  "id": "e-0085",
+  "type": "book",
+  "title": "The Annals of Chile",
+  "contributors": [
+    {
+      "id": "a-paul-muldoon",
+      "name": "Paul Muldoon",
+      "role": "author",
+      "wikidata": "Q2061388"
+    }
+  ],
+  "publisher": "Faber & Faber",
+  "issued": "1994",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0085"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

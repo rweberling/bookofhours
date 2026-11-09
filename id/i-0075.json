@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0075/",
+  "id": "i-0075",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/199196456.week-23-common-reed-rumi-ar-harwood-3-2ebd8614c020.jpeg",
+  "caption": "Calligraphed and illuminated Persian manuscript edition of “<a href=\"https://www.digitalcollections.manchester.ac.uk/view/MS-PERSIAN-00072/10\">Mas̲navī-i Ma‘navī, Book 1</a>” (1487), p. 2b. Persian MS 72, The John Rylands Library, The University of Manchester, England.",
+  "alt": "A page of a Persian manuscript: four columns of black calligraphy on tan paper beneath a band of gold and blue illumination, with a few lines picked out in red.",
+  "bibliography": "Rūmī, Jalāl al-Dīn Muḥammad. <em>Mas̲navī-i Ma‘navī</em>, book 1. Illuminated manuscript, 1487, Persian MS 72, John Rylands Library, University of Manchester.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Manchester Digital Collections",
+      "url": "https://www.digitalcollections.manchester.ac.uk/view/MS-PERSIAN-00072/10"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0014",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0012"
+    ]
+  },
+  "display": {
+    "size": [
+      557,
+      831
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

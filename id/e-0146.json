@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0146/",
+  "id": "e-0146",
+  "title": "Directions for Blueberry Culture",
+  "issued": "1921",
+  "identifiers": {
+    "hathitrust": "100199018",
+    "oclc": "9452320"
+  },
+  "citedBy": [
+    "i-0096"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

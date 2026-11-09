@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0115/",
+  "id": "r-0115",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Hannah Arendt. <em><a href=\"https://bookshop.org/a/86532/9780226586601\" rel=\"noopener\" target=\"_blank\">The Human Condition</a>. </em>1958. Second Edition. Chicago: University of Chicago Press, 1998. 247.",
+    "bibliography": "Arendt, Hannah. <em>The Human Condition</em>. 2nd ed., University of Chicago Press, 1998. Originally published 1958.",
+    "written": "1958",
+    "locator": {
+      "page": "247"
+    },
+    "edition": {
+      "id": "e-0114",
+      "type": "book",
+      "title": "The Human Condition",
+      "contributors": [
+        {
+          "id": "a-hannah-arendt",
+          "name": "Hannah Arendt",
+          "role": "author",
+          "wikidata": "Q60025"
+        }
+      ],
+      "publisher": "University of Chicago Press",
+      "issued": "1998",
+      "original-date": "1958",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0033",
+    "place": 2
+  },
+  "suggestedEdition": {
+    "isbn": "9780226586601"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0006"
+    ]
+  },
+  "firstLine": "The miracle that saves the world, the realm of human affairs, from its normal, “natural” ruin is ultimately the fact of natality, in which the faculty of action is ontologically rooted. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

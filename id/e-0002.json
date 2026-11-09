@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0002/",
+  "id": "e-0002",
+  "type": "book",
+  "title": "The Mystical Theology",
+  "contributors": [
+    {
+      "id": "a-dionysius-the-areopagite",
+      "name": "Pseudo-Dionysius the Areopagite",
+      "role": "author",
+      "wikidata": "Q312816"
+    }
+  ],
+  "issued": null,
+  "original-date": "0500~",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "dionysiusareopag00pseu",
+    "openlibrary": "OL7064638M",
+    "lccn": "20020096"
+  },
+  "citedBy": [
+    "r-0002"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

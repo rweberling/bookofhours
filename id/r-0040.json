@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0040/",
+  "id": "r-0040",
+  "shownIn": "seasons",
+  "text": "<p class=\"preformatted\">Slender-billed or small-billed, ten-primaried acutiplantar Oscines, having the acrotarsium undivided or “booted,” except for lower portion, and the young in first plumage more or less distinctly spotted above as well as below, even in species which are unspotted in the adult stage. […]\n\nThe Turdidae comprise a great variety of forms which, though all possessing the characters given above as diagnostic of the group, present wide differences in general appearance, form and coloration, and habits. They may be arboreal, terrestrial, or saxicoline; frugivorous or insectivorous—though many kinds feed both upon fruits and berries and insects; plainly colored or of brilliant hues, though the latter is exceptional, the former being the rule. The family is remarkable for the number of excellent songsters which it contains, several of them, as the Nightingale, the Song Thrush, and the Blackbird (Planesticus merula) being renowned in this respect, while the American Wood Thrushes (genus Hylocichla) and some of the Nightingale Thrushes (genus Catharus) and Solitaires (genus Myadestes) are scarcely less remarkable for the quality of their melody. The Turdidae, as a group, are nearly cosmopolitan, only parts of Polynesia being without representatives. They are most numerously represented in the extensive area of the Palearctic Region, which possesses many peculiar genera; but the family is well developed in America, especially in the mountainous districts extending from Mexico to the central Andes, the total number of species and subspecies now known to occur in America being about one hundred and fifty, belonging to nineteen genera.”</p>",
+  "citation": {
+    "display": "Robert Ridgway, “<a href=\"https://hdl.handle.net/2027/osu.32435029594769?urlappend=%3Bseq=29%3Bownerid=115636920-33\">Family Turdidae. The Thrushes</a>,” from <em>The Birds of North and Middle America: A Descriptive Catalog,</em> The Smithsonian Institution (Washington: Government Printing Office, 1907), pp. 1-4.",
+    "bibliography": "Ridgway, Robert. \"Family Turdidae. The Thrushes.\" <em>The Birds of North and Middle America: A Descriptive Catalog</em>, part 4, Bulletin of the United States National Museum 50, Government Printing Office, 1907.",
+    "title": "Family Turdidae. The Thrushes",
+    "written": "1907",
+    "locator": {
+      "page": "1–4",
+      "url": "https://hdl.handle.net/2027/osu.32435029594769?urlappend=%3Bseq=29%3Bownerid=115636920-33",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0040",
+      "type": "book",
+      "title": "The Birds of North and Middle America: A Descriptive Catalog, part 4",
+      "identifiers": {
+        "hathitrust": "001501611",
+        "oclc": "857360",
+        "lccn": "11035036"
+      },
+      "contributors": [
+        {
+          "id": "a-robert-ridgway",
+          "name": "Robert Ridgway",
+          "role": "author",
+          "wikidata": "Q940473"
+        }
+      ],
+      "publisher": "Government Printing Office",
+      "issued": "1907",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0002",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0002",
+        "basis": "grounded",
+        "note": "Scientific description of the thrush family, which includes the robin; family rank, not species."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

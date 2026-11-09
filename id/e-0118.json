@@ -1,0 +1,18 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0118/",
+  "id": "e-0118",
+  "title": "The 1900 Solar Eclipse Expedition of the Astrophysical Observatory",
+  "publisher": "Smithsonian Institution",
+  "issued": "1904",
+  "identifiers": {
+    "internetArchive": "1900solareclipse00smitrich",
+    "oclc": "5899479",
+    "openlibrary": "OL7126704M",
+    "lccn": "04033116"
+  },
+  "citedBy": [
+    "i-0003"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

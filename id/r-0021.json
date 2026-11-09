@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0021/",
+  "id": "r-0021",
+  "aliases": [
+    "r-h-d-mid-day"
+  ],
+  "shownIn": "hours",
+  "text": "The light beats upon me.<br>I am startled—<br>a split leaf crackles on the paved floor—<br>I am anguished—defeated.<br><br>A slight wind shakes the seed-pods—<br>my thoughts are spent<br>as the black seeds.<br>My thoughts tear me,<br>I dread their fever.<br>I am scattered in its whirl.<br>I am scattered like<br>the hot shrivelled seeds.<br><br>The shrivelled seeds<br>are spilt on the path—<br>the grass bends with dust,<br>the grape slips<br>under its crackled leaf:<br>yet far beyond the spent seed-pods,<br>and the blackened stalks of mint,<br>the poplar is bright on the hill,<br>the poplar spreads out,<br>deep-rooted among trees.<br><br>O poplar, you are great<br>among the hill-stones,<br>while I perish on the path<br>among the crevices of the rocks.",
+  "citation": {
+    "display": "H.D., \"<a href=\"https://archive.org/details/seagarden00hdhirich/page/6/mode/2up\" target=\"_blank\">Mid-Day</a>\" (1915/1916)",
+    "bibliography": "H.D. \"Mid-day.\" <em>Sea Garden</em>, Constable, 1916.",
+    "title": "Mid-Day",
+    "locator": {
+      "url": "https://archive.org/details/seagarden00hdhirich/page/6/mode/2up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0021",
+      "type": "book",
+      "title": "Sea Garden",
+      "contributors": [
+        {
+          "id": "a-h-d",
+          "name": "H.D.",
+          "role": "author",
+          "wikidata": "Q236469"
+        }
+      ],
+      "publisher": "Constable",
+      "issued": "1916",
+      "original-date": "1915/1916",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "seagarden00hdhirich",
+        "oclc": "3890178",
+        "openlibrary": "OL7041086M",
+        "lccn": "17028831"
+      }
+    }
+  },
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

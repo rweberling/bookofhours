@@ -1,0 +1,20 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0024/",
+  "id": "sp-0024",
+  "name": "Shagbark Hickory",
+  "scientific": "Carya ovata",
+  "rank": "species",
+  "wikidata": "Q2601238",
+  "gbif": "3054296",
+  "inaturalist": "54791",
+  "records": [
+    "r-0101",
+    "r-0102",
+    "r-0103",
+    "i-0120",
+    "i-0121",
+    "i-0122"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

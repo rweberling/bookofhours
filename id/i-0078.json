@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0078/",
+  "id": "i-0078",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/199327746.week-24-wool-sower-wasp-ep-felt-francesco-3-966babe61d36.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21\">Wool Sower Gall,</a>” from Carl F. Gronemann, <em>Fifty Common Plant Galls of the Chicago Area</em>, Botany Leaflet 16<em> </em>(Chicago: Chicago Field Museum, 1930), p. 13.",
+  "alt": "A book page describing the wool sower gall, beside a pen drawing of an oak twig bearing a round, woolly gall, with a single small gall drawn next to it.",
+  "bibliography": "Gronemann, Carl F. \"Wool Sower Gall.\" <em>Fifty Common Plant Galls of the Chicago Area</em>, Botany Leaflet 16, Field Museum of Natural History, 1930.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "HathiTrust",
+      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0015",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0013"
+    ]
+  },
+  "display": {
+    "size": [
+      1404,
+      820
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

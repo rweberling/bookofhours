@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0087/",
+  "id": "i-0087",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/202724114.week-27-serviceberry-robin-wall-kimmerer-3-4e1073d0fee4.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30\">Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section</a>,” from E.S. Harrar, <em><a href=\"https://www.metmuseum.org/perspectives/wood-samples\">Hough’s Encyclopaedia of American Woods</a> </em>(New York: Robert Speller &amp; Sons, 1957), specimen 287.",
+  "alt": "Three color photographs of pale, honey-colored serviceberry wood, each in a green border: the end grain with its growth rings, and two lengthwise cuts showing the straight grain.",
+  "bibliography": "Harrar, E. S. \"Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section.\" <em>Hough’s Encyclopaedia of American Woods</em>, Robert Speller &amp; Sons, 1957.",
+  "links": [
+    {
+      "role": "copy",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/perspectives/wood-samples"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0018",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0015"
+    ]
+  },
+  "display": {
+    "size": [
+      345,
+      613
+    ]
+  },
+  "edition": {
+    "id": "e-0142",
+    "title": "Hough’s Encyclopaedia of American Woods",
+    "issued": "1957",
+    "identifiers": {
+      "hathitrust": "003143342",
+      "oclc": "1268560",
+      "lccn": "57010592"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+  "rightsNote": "published 1957; whether its copyright was renewed is unchecked",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

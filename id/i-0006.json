@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0006/",
+  "id": "i-0006",
+  "aliases": [
+    "i-lockyer-superposition-of-two-wave"
+  ],
+  "shownIn": "hours",
+  "file": "images/hush_lockyer1.jpg",
+  "caption": "J. Norman Lockyer, \"Superposition of Two Wave-Systems,\" from <a href=\"https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/June_1878/Water-Waves_and_Sound-Waves\" target=\"_blank\"><em>Water-Waves and Sound-Waves</em></a> (1878)",
+  "alt": "A black-and-white engraving of two sets of ripples spreading from two points side by side, their rings crossing in a dense checkerboard pattern that fills the whole picture.",
+  "bibliography": "Lockyer, J. Norman. \"Superposition of Two Wave-Systems.\" \"Water-Waves and Sound-Waves,\" <em>Popular Science Monthly</em>, vol. 13, June 1878.",
+  "creator": {
+    "id": "a-j-norman-lockyer",
+    "name": "J. Norman Lockyer",
+    "wikidata": "Q127959"
+  },
+  "title": "Superposition of Two Wave-Systems",
+  "edition": {
+    "id": "e-0162",
+    "title": "Popular Science Monthly, vol. 13",
+    "issued": "1878"
+  },
+  "locator": {
+    "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/June_1878/Water-Waves_and_Sound-Waves",
+    "label": "Wikisource"
+  },
+  "date": "1878",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "hush"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

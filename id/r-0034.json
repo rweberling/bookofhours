@@ -1,0 +1,66 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0034/",
+  "id": "r-0034",
+  "aliases": [
+    "r-lubbock-use-of-life"
+  ],
+  "shownIn": "weather",
+  "text": "Sunshine is delicious, rain is refreshing, wind braces us up, snow is exhilarating. As Ruskin says, \"There is really no such thing as bad weather, only different kinds of good weather.\"",
+  "citation": {
+    "display": "John Lubbock, <a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81\" target=\"_blank\"><em>The Use of Life</em></a> (1894), quot. John Ruskin, <a href=\"https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52\" target=\"_blank\"><em>The Art of England</em></a> (1884)",
+    "bibliography": "Lubbock, John. <em>The Use of Life</em>. 1894. Quoting John Ruskin, <em>The Art of England</em>, 1884.",
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t7pn91g8f?urlappend=%3Bseq=81",
+      "label": "HathiTrust"
+    },
+    "quotes": [
+      {
+        "title": null,
+        "locator": {
+          "url": "https://hdl.handle.net/2027/nyp.33433090708086?urlappend=%3Bseq=48%3Bownerid=117046130-52",
+          "label": "HathiTrust"
+        },
+        "edition": {
+          "id": "e-0035",
+          "type": "book",
+          "title": "The Art of England",
+          "contributors": [
+            {
+              "id": "a-john-ruskin",
+              "name": "John Ruskin",
+              "role": "author"
+            }
+          ],
+          "issued": null,
+          "original-date": "1884",
+          "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        }
+      }
+    ],
+    "edition": {
+      "id": "e-0034",
+      "type": "book",
+      "title": "The Use of Life",
+      "contributors": [
+        {
+          "id": "a-john-lubbock",
+          "name": "John Lubbock",
+          "role": "author"
+        }
+      ],
+      "issued": null,
+      "original-date": "1894",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "display": {
+    "weatherUnset": true
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

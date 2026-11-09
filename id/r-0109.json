@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0109/",
+  "id": "r-0109",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Cole Swanson. “<a href=\"https://www.whp-journals.co.uk/PP/article/view/1159\" rel=\"noopener\" target=\"_blank\">Among the Drupes (Elegy for a Wasteland)</a>”. <em>Plant Perspectives</em> (February 2025).",
+    "bibliography": "Swanson, Cole. \"Among the Drupes (Elegy for a Wasteland).\" <em>Plant Perspectives</em>, Feb. 2025.",
+    "written": "2025",
+    "locator": {
+      "url": "https://www.whp-journals.co.uk/PP/article/view/1159",
+      "label": "White Horse Press"
+    },
+    "edition": {
+      "id": "e-0108",
+      "type": "article",
+      "title": "Among the Drupes (Elegy for a Wasteland)",
+      "container": "Plant Perspectives",
+      "contributors": [
+        {
+          "id": "a-cole-swanson",
+          "name": "Cole Swanson",
+          "role": "author"
+        }
+      ],
+      "issued": "2025-02",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0032",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0026"
+    ]
+  },
+  "firstLine": "In late Spring 2023, Metrolinx crews exposed swaths of land along the Railpath to non-specific chemical herbicide to control the incredible spread of dog-strangling vine (Metrolinx 2023). …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

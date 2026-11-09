@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0058/",
+  "id": "i-0058",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/190719469.week-17-great-mullein-ashia-ajani-1-4a420f30d874.jpeg",
+  "caption": "“<a href=\"https://wellcomecollection.org/search/images?query=hdwqcqdn#wc5s9ag5\">Common mullein (Verbascum thapsus) with an associated moth and its anatomical segments</a>.” Etching with watercolor. London: J. Curtis, 1831. From the <a href=\"https://wellcomecollection.org/works/hdwqcqdn\">Wellcome Collection</a>.",
+  "alt": "A hand-colored etching of a common mullein stalk, its tall spike crowded with yellow flowers above broad, woolly leaves, with a brown moth beside it and small drawings of the moth’s parts below.",
+  "bibliography": "Curtis, J. \"Common Mullein (Verbascum thapsus) with an Associated Moth and Its Anatomical Segments.\" Etching with watercolour, 1831, Wellcome Collection, London.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wellcome Collection",
+      "url": "https://wellcomecollection.org/search/images?query=hdwqcqdn#wc5s9ag5"
+    },
+    {
+      "role": "copy",
+      "label": "Wellcome Collection",
+      "url": "https://wellcomecollection.org/works/hdwqcqdn"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0009",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0008"
+    ]
+  },
+  "display": {
+    "size": [
+      354,
+      646
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

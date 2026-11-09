@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0017/",
+  "id": "e-0017",
+  "type": "book",
+  "title": "On Nature",
+  "contributors": [
+    {
+      "id": "a-heraclitus",
+      "name": "Heraclitus",
+      "role": "author",
+      "wikidata": "Q41155"
+    },
+    {
+      "id": "a-g-t-w-patrick",
+      "name": "G. T. W. Patrick",
+      "role": "translator",
+      "wikidata": "Q18910706"
+    }
+  ],
+  "issued": "1889",
+  "original-date": "-0500~",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "fragmentsofworko00hera",
+    "openlibrary": "OL21854788M",
+    "lccn": "11010817"
+  },
+  "citedBy": [
+    "r-0017",
+    "r-0088"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

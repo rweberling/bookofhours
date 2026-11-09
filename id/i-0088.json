@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0088/",
+  "id": "i-0088",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/204910597.week-28-redcurrants-maud-grieve-the-1-97f4e35f82f5.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499\">Fay’s Prolific</a>,” from <em>Fruit Culture, Volume 2</em> (Scranton, Pennsylvania: International Textbook Company, 1913), Section 19.",
+  "alt": "A color painting of red currants: three long, hanging clusters of glossy, translucent red berries on a woody stem among lobed green leaves.",
+  "bibliography": "\"Fay’s Prolific.\" <em>Fruit Culture</em>, vol. 2, International Textbook Company, 1913.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "HathiTrust",
+      "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0019",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0016"
+    ]
+  },
+  "display": {
+    "size": [
+      460,
+      718
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

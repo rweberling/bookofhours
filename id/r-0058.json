@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0058/",
+  "id": "r-0058",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Michael Marder and Edward S. Casey, <em>Plants in Place: A Phenomenology of the Vegetal</em> (New York: Columbia University Press, 2024), p. 76.",
+    "bibliography": "Marder, Michael, and Edward S. Casey. <em>Plants in Place: A Phenomenology of the Vegetal</em>. Columbia University Press, 2024.",
+    "title": "Plants in Place: A Phenomenology of the Vegetal",
+    "written": "2024",
+    "locator": {
+      "page": "76"
+    },
+    "edition": {
+      "id": "e-0058",
+      "type": "book",
+      "title": "Plants in Place: A Phenomenology of the Vegetal",
+      "contributors": [
+        {
+          "id": "a-michael-marder",
+          "name": "Michael Marder",
+          "role": "author",
+          "wikidata": "Q16221045"
+        },
+        {
+          "id": "a-edward-s-casey",
+          "name": "Edward S. Casey",
+          "role": "author",
+          "wikidata": "Q17276513"
+        }
+      ],
+      "publisher": "Columbia University Press",
+      "issued": "2024",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0010",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0009"
+    ]
+  },
+  "firstLine": "Why is our conceptualization of time, drawing on metaphysical order and stability, ineffectual when it comes to the time of moss? …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

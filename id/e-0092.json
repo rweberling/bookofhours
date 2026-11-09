@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0092/",
+  "id": "e-0092",
+  "type": "article",
+  "title": "Poem with a Cucumber in It",
+  "container": "The American Poetry Review",
+  "volume": "36",
+  "pages": "34",
+  "contributors": [
+    {
+      "id": "a-robert-hass",
+      "name": "Robert Hass",
+      "role": "author",
+      "wikidata": "Q370513"
+    }
+  ],
+  "issued": "2007-09/2007-10",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0093"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

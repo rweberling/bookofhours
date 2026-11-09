@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0049/",
+  "id": "i-0049",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-2-daffb419a6a3.jpeg",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41\">The Parts of Crocus and Colchicum Flowers</a>,” from E. A. Bowles, <em>A Handbook of Crocus and Colchicum for Gardeners</em> (London : M. Hopkinson &amp; Company Ltd., 1924).",
+  "alt": "Labelled line drawings comparing a crocus and a colchicum, each cut lengthwise from flower to corm, naming the stamens, styles, perianth tube, leaves, scales and roots.",
+  "bibliography": "Bowles, E. A. \"The Parts of Crocus and Colchicum Flowers.\" <em>A Handbook of Crocus and Colchicum for Gardeners</em>, M. Hopkinson, 1924.",
+  "lectio": {
+    "post": "lt-0006",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0005"
+    ]
+  },
+  "display": {
+    "size": [
+      497,
+      750
+    ]
+  },
+  "edition": {
+    "id": "e-0127",
+    "title": "A Handbook of Crocus and Colchicum for Gardeners",
+    "issued": "1924",
+    "identifiers": {
+      "hathitrust": "002010826",
+      "oclc": "4584067",
+      "lccn": "agr24001012"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41",
+    "label": "HathiTrust"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0133/",
+  "id": "e-0133",
+  "title": "The Book of Wild Flowers: An Introduction to the Ways of Plant Life",
+  "issued": "1924",
+  "identifiers": {
+    "hathitrust": "009164350",
+    "oclc": "1241838",
+    "lccn": "24031492"
+  },
+  "citedBy": [
+    "i-0059"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

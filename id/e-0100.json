@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0100/",
+  "id": "e-0100",
+  "type": "book",
+  "title": "Smoke and Steel",
+  "identifiers": {
+    "hathitrust": "001055000",
+    "oclc": "906880",
+    "lccn": "20017899"
+  },
+  "contributors": [
+    {
+      "id": "a-carl-sandburg",
+      "name": "Carl Sandburg",
+      "role": "author",
+      "wikidata": "Q193608"
+    }
+  ],
+  "publisher": "Harcourt, Brace and Howe",
+  "issued": "1920",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0101"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

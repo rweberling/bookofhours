@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0027/",
+  "id": "sp-0027",
+  "name": "Ghost Pipe",
+  "scientific": "Monotropa uniflora",
+  "rank": "species",
+  "wikidata": "Q1156848",
+  "gbif": "2888353",
+  "inaturalist": "49477",
+  "records": [
+    "r-0112",
+    "r-0113",
+    "i-0145",
+    "i-0146",
+    "i-0147"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

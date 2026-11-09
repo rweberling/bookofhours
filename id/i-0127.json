@@ -1,0 +1,45 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0127/",
+  "id": "i-0127",
+  "shownIn": "weather",
+  "file": "images/weather_bentley_mopa.jpg",
+  "caption": "Wilson Alwyn Bentley, <a href=\"https://www.flickr.com/photos/mopa1/5711526202/\" target=\"_blank\"><em>Untitled (Snowflake)</em></a> (c. 1905)",
+  "alt": "A black-and-white photograph of a single snowflake through a microscope: a six-lobed crystal of flat, rounded plates around a small hexagon at its centre, against a black circle.",
+  "bibliography": "Bentley, Wilson Alwyn. <em>Untitled (Snowflake)</em>. c. 1905, gelatin silver photomicrograph print, Museum of Photographic Arts, San Diego (2010.010.001).",
+  "creator": {
+    "id": "a-wilson-alwyn-bentley",
+    "name": "Wilson Alwyn Bentley",
+    "wikidata": "Q218471"
+  },
+  "title": "Untitled (Snowflake)",
+  "date": "1905~",
+  "institution": "Museum of Photographic Arts",
+  "links": [
+    {
+      "role": "cited",
+      "label": "MoPA on Flickr",
+      "url": "https://www.flickr.com/photos/mopa1/5711526202/"
+    },
+    {
+      "role": "copy",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Snowflake_-_By_Wilson_Bentley_ca._1905_-_MoPA.jpg"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "display": {
+    "cardPosition": "bottom-left"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "snow",
+      "cold"
+    ],
+    "seasons": [
+      "winter"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

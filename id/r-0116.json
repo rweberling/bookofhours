@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0116/",
+  "id": "r-0116",
+  "shownIn": "seasons",
+  "text": "<p>VON MOHL (13) in 1860 was the first to announce that previous to the fall of the leaf there is formed near the base of the petiole a definite separation layer in which abscission always occurs by the separation of the cells from each other with their walls still intact. The xylem tubes not being included in this separation layer are finally ruptured mechanically, and the leaf falls. He also called attention to the fact that abscission and the formation of a protective tissue are two very distinct processes, and that the latter process might either precede or follow the former. […] The external factors capable of accelerating leaf-fall are extremely diversified. These have been summarized in the main by LLOYD (8). The more important are high and low light intensity, high and low water supply, high temperatures and frost, low concentrations of anesthetics, toxic concentrations of acids and salts, and wounding of the blade. On the other hand, low concentrations of oxygen and high concentrations of anesthetics retard leaf-fall, a state of rigor being produced by the latter.</p>",
+  "citation": {
+    "display": "Homer C. Sampson. “<a href=\"https://doi.org/10.1086/332301\" rel=\"noopener\" target=\"_blank\">Chemical Changes Accompanying Abscission in Coleus Blumei.</a>” <em>Botanical Gazette </em>66.1 (July 1918: 32-53). 32, 33.",
+    "bibliography": "Sampson, Homer C. \"Chemical Changes Accompanying Abscission in Coleus Blumei.\" <em>Botanical Gazette</em>, vol. 66, no. 1, July 1918, pp. 32–53.",
+    "written": "1918",
+    "locator": {
+      "page": "32, 33",
+      "url": "https://doi.org/10.1086/332301",
+      "label": "DOI"
+    },
+    "edition": {
+      "id": "e-0115",
+      "type": "article",
+      "title": "Chemical Changes Accompanying Abscission in Coleus Blumei",
+      "container": "Botanical Gazette",
+      "volume": "66",
+      "pages": "32–53",
+      "identifiers": {
+        "doi": "10.1086/332301"
+      },
+      "contributors": [
+        {
+          "id": "a-homer-c-sampson",
+          "name": "Homer C. Sampson",
+          "role": "author"
+        }
+      ],
+      "issued": "1918-07",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0033",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0006"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

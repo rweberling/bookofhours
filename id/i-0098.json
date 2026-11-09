@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0098/",
+  "id": "i-0098",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208569512.week-31-butterfly-weed-paul-muldoon-1-a64cad04972b.jpeg",
+  "caption": "William Clark, “<a href=\"https://archive.org/details/floraconspicuase00morr/page/226/mode/2up\">Asclepias tuberosa. Tuberous Swallow-wort</a>.” From Richard Morris, <em>Flora Conspicua: A Selection of the Most Ornamental Flowering, Hardy, Exotic and Indigenous Trees, Shrubs, and Herbaceous plants, for Embellishing Flower-Gardens and Pleasure-Grounds. </em>London: Longman, 1826.",
+  "alt": "A hand-colored botanical plate of butterfly weed: a sturdy stem with long, narrow leaves, crowned by a broad flat cluster of bright orange flowers, with drawings of its seed pod and flower parts.",
+  "bibliography": "Clark, William. \"Asclepias tuberosa. Tuberous Swallow-wort.\" Richard Morris, <em>Flora Conspicua</em>, Longman, 1826.",
+  "lectio": {
+    "post": "lt-0022",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0019"
+    ]
+  },
+  "display": {
+    "size": [
+      500,
+      745
+    ]
+  },
+  "edition": {
+    "id": "e-0147",
+    "title": "Flora Conspicua: A Selection of the Most Ornamental Flowering, Hardy, Exotic and Indigenous Trees, Shrubs, and Herbaceous plants, for Embellishing Flower-Gardens and Pleasure-Grounds",
+    "issued": "1826",
+    "identifiers": {
+      "internetArchive": "floraconspicuase00morr",
+      "openlibrary": "OL13520643M",
+      "lccn": "11032777"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up",
+    "label": "Internet Archive"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

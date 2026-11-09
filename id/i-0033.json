@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0033/",
+  "id": "i-0033",
+  "aliases": [
+    "i-tryon-after-sunset-looking-east"
+  ],
+  "shownIn": "hours",
+  "file": "images/denouement_tryon.jpg",
+  "caption": "Dwight William Tryon, <a href=\"https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1915.131a-b/\" target=\"_blank\"><em>After Sunset: Looking East</em></a> (1915)",
+  "alt": "A pastel of the sea at dusk: low waves rolling onto a dark shore, and above them a sky banded in yellow, violet and grey, with drifting clouds lit pink and brown.",
+  "bibliography": "Tryon, Dwight William. <em>After Sunset: Looking East</em>. 1915, National Museum of Asian Art, Smithsonian Institution.",
+  "creator": {
+    "id": "a-dwight-william-tryon",
+    "name": "Dwight William Tryon",
+    "wikidata": "Q1268511"
+  },
+  "title": "After Sunset: Looking East",
+  "date": "1915",
+  "institution": "National Museum of Asian Art, Smithsonian Institution",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Smithsonian",
+      "url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1915.131a-b/"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "denouement"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,60 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0057/",
+  "id": "r-0057",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Hildegard of Bingen, “334. Letter to Secular People” (circa 1153), <em><a href=\"http://ebookcentral.proquest.com/lib/utxa/detail.action?docID=3052322.\">Letters of Hildegard of Bingen: Volume 3</a></em><a href=\"http://ebookcentral.proquest.com/lib/utxa/detail.action?docID=3052322.\"> </a>(New York: Oxford University Press, 2004), p. 136.",
+    "bibliography": "Hildegard of Bingen. \"334. Letter to Secular People.\" <em>The Letters of Hildegard of Bingen</em>, vol. 3, translated by Joseph L. Baird and Radd K. Ehrman, Oxford University Press, 2004. Written c. 1153.",
+    "title": "334. Letter to Secular People",
+    "written": "1153~",
+    "locator": {
+      "page": "136",
+      "url": "http://ebookcentral.proquest.com/lib/utxa/detail.action?docID=3052322.",
+      "label": "ProQuest Ebook Central"
+    },
+    "edition": {
+      "id": "e-0057",
+      "type": "book",
+      "title": "The Letters of Hildegard of Bingen, vol. 3",
+      "contributors": [
+        {
+          "id": "a-hildegard-of-bingen",
+          "name": "Hildegard of Bingen",
+          "role": "author",
+          "wikidata": "Q70991"
+        },
+        {
+          "id": "a-joseph-l-baird",
+          "name": "Joseph L. Baird",
+          "role": "translator"
+        },
+        {
+          "id": "a-radd-k-ehrman",
+          "name": "Radd K. Ehrman",
+          "role": "translator"
+        }
+      ],
+      "publisher": "Oxford University Press",
+      "issued": "2004",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "lectio": {
+    "post": "lt-0010",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0009"
+    ]
+  },
+  "firstLine": "How could any creation of Mine be void and useless? …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

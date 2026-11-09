@@ -1,0 +1,60 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0019/",
+  "id": "r-0019",
+  "aliases": [
+    "r-cavafy-when-they-come-alive"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "C.P. Cavafy, \"When they Come Alive\" (1916, trans. <a href=\"https://bookshop.org/a/86532/9780691264646\" target=\"_blank\">Keeley and Sherrard, 1975</a>)",
+    "bibliography": "Cavafy, C. P. \"When They Come Alive.\" <em>C. P. Cavafy: Collected Poems</em>, translated by Edmund Keeley and Philip Sherrard, Princeton University Press, 1975. Written 1916.",
+    "title": "When They Come Alive",
+    "written": "1916",
+    "edition": {
+      "id": "e-0019",
+      "type": "book",
+      "title": "C. P. Cavafy: Collected Poems",
+      "contributors": [
+        {
+          "id": "a-c-p-cavafy",
+          "name": "C. P. Cavafy",
+          "role": "author",
+          "wikidata": "Q216980"
+        },
+        {
+          "id": "a-edmund-keeley",
+          "name": "Edmund Keeley",
+          "role": "translator",
+          "wikidata": "Q5339604"
+        },
+        {
+          "id": "a-philip-sherrard",
+          "name": "Philip Sherrard",
+          "role": "translator",
+          "wikidata": "Q1732710"
+        }
+      ],
+      "publisher": "Princeton University Press",
+      "issued": "1975",
+      "original-date": null,
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation copyright — pending resolution"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780691264646"
+  },
+  "tags": {
+    "hours": [
+      "fulcrum"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "Try to keep them, poet, …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

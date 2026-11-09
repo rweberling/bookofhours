@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0002/",
+  "id": "i-0002",
+  "aliases": [
+    "i-allais-ronde-de-pochards-dans"
+  ],
+  "shownIn": "hours",
+  "file": "images/void_allais.jpg",
+  "caption": "Alphonse Allais, \"<a href=\"https://en.wikipedia.org/wiki/File:Ronde_de_pochards_dans_le_brouillard.jpg\" target=\"_blank\">Ronde de pochards dans le brouillard [Dance of drunks in the fog]</a>,\" from <a href=\"https://publicdomainreview.org/collection/alphonse-allais-april-fools-album/\" target=\"_blank\"><em>Album primo-avrilesque</em></a> (1897)",
+  "alt": "A blank grey rectangle inside a printed border with ornate corner flourishes, above the title “Ronde de pochards dans le brouillard”: a picture of nothing but fog.",
+  "bibliography": "Allais, Alphonse. \"Ronde de pochards dans le brouillard.\" <em>Album primo-avrilesque</em>, 1897.",
+  "creator": {
+    "id": "a-alphonse-allais",
+    "name": "Alphonse Allais",
+    "wikidata": "Q371905"
+  },
+  "title": "Ronde de pochards dans le brouillard [Dance of drunks in the fog]",
+  "edition": {
+    "id": "e-0161",
+    "title": "Album primo-avrilesque",
+    "issued": "1897"
+  },
+  "date": "1897",
+  "institution": null,
+  "links": [
+    {
+      "role": "copy",
+      "label": "Wikimedia Commons",
+      "url": "https://en.wikipedia.org/wiki/File:Ronde_de_pochards_dans_le_brouillard.jpg"
+    }
+  ],
+  "furtherReading": [
+    {
+      "kind": "about",
+      "source": "Public Domain Review",
+      "title": "April Fools' Album",
+      "url": "https://publicdomainreview.org/collection/alphonse-allais-april-fools-album/"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "void"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

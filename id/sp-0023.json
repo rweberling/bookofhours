@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0023/",
+  "id": "sp-0023",
+  "name": "Northern Red Oak",
+  "scientific": "Quercus rubra",
+  "rank": "species",
+  "wikidata": "Q147525",
+  "gbif": "2880539",
+  "inaturalist": "49005",
+  "records": [
+    "r-0098",
+    "r-0099",
+    "r-0100",
+    "i-0116",
+    "i-0117",
+    "i-0118",
+    "i-0119"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,48 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0004/",
+  "id": "r-0004",
+  "aliases": [
+    "r-blanchot-thomas-the-obscure"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Maurice Blanchot, <a href=\"https://bookshop.org/a/86532/9780882680767\" target=\"_blank\"><em>Thomas the Obscure</em></a> (1941)",
+    "bibliography": "Blanchot, Maurice. <em>Thomas the Obscure</em>. Translated by Robert Lamberton, Station Hill Press, 1988. Originally published 1941.",
+    "edition": {
+      "id": "e-0004",
+      "type": "book",
+      "title": "Thomas the Obscure",
+      "contributors": [
+        {
+          "id": "a-maurice-blanchot",
+          "name": "Maurice Blanchot",
+          "role": "author",
+          "wikidata": "Q315210"
+        },
+        {
+          "id": "a-robert-lamberton",
+          "name": "Robert Lamberton",
+          "role": "translator"
+        }
+      ],
+      "publisher": "Station Hill Press",
+      "issued": "1988",
+      "original-date": "1941",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780882680767"
+  },
+  "tags": {
+    "hours": [
+      "void"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "Soon the night seemed to him gloomier and more terrible than any night, as if it had in fact issued from a wound of thought which had ceased to think, of thought taken ironically as object by something other than thought. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0048/",
+  "id": "i-0048",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-1-ec76e2856ea7.jpeg",
+  "caption": "<a href=\"https://commons.wikimedia.org/wiki/Category:Saffron_gatherers_(Akrotiri)#/media/File:Cueilleuse_de_safran,_fresque,_Akrotiri,_Gr%C3%A8ce_(coupes).jpg\">The Saffron Gatherers</a> (circa 1650 BCE), from the Frescoes at Akrotiri, Santorini (Greece). Museum of Prehistoric Thira.",
+  "alt": "Part of an ancient fresco: a young woman in profile, her dark hair pulled back, with large earrings and an embroidered orange jacket, reaching toward crocus flowers. The plaster is cracked and patched.",
+  "bibliography": "<em>The Saffron Gatherers</em>. Fresco, c. 1650 BCE, Akrotiri, Santorini. Museum of Prehistoric Thera, Fira.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:Saffron_gatherers_(Akrotiri)#/media/File:Cueilleuse_de_safran,_fresque,_Akrotiri,_Gr%C3%A8ce_(coupes).jpg"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0006",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0005"
+    ]
+  },
+  "display": {
+    "size": [
+      422,
+      527
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

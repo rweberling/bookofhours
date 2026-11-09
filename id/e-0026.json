@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0026/",
+  "id": "e-0026",
+  "type": "book",
+  "title": "Sappho: Memoir, Text, Selected Renderings, and a Literal Translation",
+  "contributors": [
+    {
+      "id": "a-sappho",
+      "name": "Sappho",
+      "role": "author",
+      "wikidata": "Q17892"
+    },
+    {
+      "id": "a-henry-thornton-wharton",
+      "name": "Henry Thornton Wharton",
+      "role": "translator",
+      "wikidata": "Q18917198"
+    }
+  ],
+  "publisher": "John Lane",
+  "issued": "1908",
+  "original-date": "-0630~/-0580~",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0026"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

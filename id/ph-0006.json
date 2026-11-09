@@ -1,0 +1,18 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0006/",
+  "id": "ph-0006",
+  "name": "First Frost",
+  "latin": "Prima pruina",
+  "wikidata": null,
+  "records": [
+    "r-0114",
+    "r-0115",
+    "r-0116",
+    "r-0117",
+    "i-0148",
+    "i-0149",
+    "i-0150"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

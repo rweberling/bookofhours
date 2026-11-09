@@ -1,0 +1,15 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0128/",
+  "id": "e-0128",
+  "title": "The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano",
+  "issued": "1856",
+  "identifiers": {
+    "hathitrust": "101757298",
+    "oclc": "68896576"
+  },
+  "citedBy": [
+    "i-0051"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

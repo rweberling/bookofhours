@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0037/",
+  "id": "r-0037",
+  "shownIn": "seasons",
+  "text": "<p>October 20th - One by one the lingering wild flowers have succumbed to the frosts; a few of the hardy asters being the only reminders of the regal glory of the October copses. But though the blighting breath of the approaching winter is fast quenching even these remnants of bloom, there is one fresh blossom which shall abide to welcome “chill November,” even as the dandelion welcomed May, and as the rose and the golden-rod welcomed June and September. The waving pennants of the witch-hazel, coiled for weeks within their patient buds, are now swung out from thousands of gray twigs in the copses, and the underwoods are lit up with the yellow halo from their myriads of fringy petals.</p>",
+  "citation": {
+    "display": "“<a href=\"https://hdl.handle.net/2027/hvd.32044106450414?urlappend=%3Bseq=230%3Bownerid=27021597765883035-246\">The Witch Hazel Bombardment</a>,” from <a href=\"https://en.wikipedia.org/wiki/William_Hamilton_Gibson\">William Hamilton Gibson</a><em>, Sharp Eyes: A Rambler’s Calendar</em> (1892; New York: Harper &amp; Brothers, 1904), p. 230<em>.</em>",
+    "bibliography": "Gibson, William Hamilton. \"The Witch Hazel Bombardment.\" <em>Sharp Eyes: A Rambler’s Calendar</em>, Harper &amp; Brothers, 1904. Originally published 1892.",
+    "title": "The Witch Hazel Bombardment",
+    "written": "1892",
+    "locator": {
+      "page": "230",
+      "url": "https://hdl.handle.net/2027/hvd.32044106450414?urlappend=%3Bseq=230%3Bownerid=27021597765883035-246",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0037",
+      "type": "book",
+      "title": "Sharp Eyes: A Rambler’s Calendar",
+      "identifiers": {
+        "hathitrust": "007679974",
+        "oclc": "7688631"
+      },
+      "contributors": [
+        {
+          "id": "a-william-hamilton-gibson",
+          "name": "William Hamilton Gibson",
+          "role": "author",
+          "wikidata": "Q8010768"
+        }
+      ],
+      "publisher": "Harper & Brothers",
+      "issued": "1904",
+      "original-date": "1892",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0001",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0001",
+        "basis": "grounded",
+        "note": "Describes witch hazel's late-October bloom after the frosts."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

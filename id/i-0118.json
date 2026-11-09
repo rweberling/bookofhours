@@ -1,0 +1,45 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0118/",
+  "id": "i-0118",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/208576048.week-37-northern-red-oak-susan-fenimore-3-953376fe3763.jpeg",
+  "caption": "“<a href=\"https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22\" rel=\"noopener\" target=\"_blank\">Red Oak and The Pigeon of Passage</a>.” Mark Catesby. <em>The Natural History of Carolina, Florida and the Bahama Islands, Vol. 1</em>. London, England: n.p., 1729-1732. 22.",
+  "alt": "A hand-colored engraving of a passenger pigeon, grey-blue with a rosy breast, perched on a large, deeply lobed red oak leaf, with acorns below.",
+  "bibliography": "Catesby, Mark. \"Red Oak and the Pigeon of Passage.\" <em>The Natural History of Carolina, Florida and the Bahama Islands</em>, vol. 1, 1729–1732.",
+  "lectio": {
+    "post": "lt-0028",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0023"
+    ]
+  },
+  "display": {
+    "size": [
+      2282,
+      1679
+    ]
+  },
+  "edition": {
+    "id": "e-0149",
+    "title": "The Natural History of Carolina, Florida and the Bahama Islands",
+    "issued": "1729",
+    "identifiers": {
+      "internetArchive": "naturalhistoryCC1V1Cate",
+      "lccn": "agr02000176"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22",
+    "label": "Internet Archive"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

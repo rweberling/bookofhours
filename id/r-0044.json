@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0044/",
+  "id": "r-0044",
+  "shownIn": "seasons",
+  "text": "<p>Paper birch is an important tree in the Northeast, both for economic and for silvicultural reasons. Its total annual cut is not large in comparison with that of many other species, but it is an important factor in certain wood-working industries. It is used practically to the exclusion of other woods in the manufacture of spools, shoe pegs, shoe shanks, and very largely in the manufacture of toothpicks, dowels, bobbins, shuttles, and various toys and novelties. The fine-grained, even-textured wood is peculiarly adapted to these uses.</p><p></p><p>After fires and clearings, paper birch, with aspen, is often the first species to occupy the ground. It takes possession of such areas very readily, restores forest conditions, and furnishes a valuable timber crop. At the same time, it is merely a temporary type of forest, and does not prevent the return of the type natural to the locality.</p>",
+  "citation": {
+    "display": "Gifford Pinchot, “<a href=\"https://hdl.handle.net/2027/umn.31951d02459776j?urlappend=%3Bseq=1%3Bownerid=22365483-0\">Silvical Leaflets 38: Paper Birch</a>” United States Department of Agriculture, Forest Service (October 29, 1908).",
+    "bibliography": "Pinchot, Gifford. <em>Silvical Leaflet 38: Paper Birch</em>. United States Department of Agriculture, Forest Service, 29 Oct. 1908.",
+    "title": "Silvical Leaflet 38: Paper Birch",
+    "written": "1908-10-29",
+    "locator": {
+      "url": "https://hdl.handle.net/2027/umn.31951d02459776j?urlappend=%3Bseq=1%3Bownerid=22365483-0",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0044",
+      "type": "book",
+      "title": "Silvical Leaflet 38: Paper Birch",
+      "identifiers": {
+        "hathitrust": "007425308",
+        "oclc": "21507897",
+        "lccn": "agr09000825"
+      },
+      "contributors": [
+        {
+          "id": "a-gifford-pinchot",
+          "name": "Gifford Pinchot",
+          "role": "author",
+          "wikidata": "Q534301"
+        }
+      ],
+      "publisher": "United States Department of Agriculture, Forest Service",
+      "issued": "1908-10-29",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "rightsNote": "a U.S. government work"
+    }
+  },
+  "lectio": {
+    "post": "lt-0004",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0004"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

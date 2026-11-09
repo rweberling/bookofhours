@@ -1,0 +1,17 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0150/",
+  "id": "e-0150",
+  "title": "The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia",
+  "issued": "1819",
+  "identifiers": {
+    "internetArchive": "northamericansyl01michin",
+    "oclc": "4598632",
+    "openlibrary": "OL24158910M",
+    "lccn": "agr28000778"
+  },
+  "citedBy": [
+    "i-0119"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

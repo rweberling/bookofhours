@@ -1,0 +1,43 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0007/",
+  "id": "i-0007",
+  "aliases": [
+    "i-whistler-nocturne-blue-and-silver"
+  ],
+  "shownIn": "weather",
+  "file": "images/hush_whistler.jpg",
+  "caption": "James McNeill Whistler, <a href=\"https://www.gardnermuseum.org/experience/collection/10900\" target=\"_blank\"><em>Nocturne, Blue and Silver: Battersea Reach</em></a> (c. 1872-1878)",
+  "alt": "A nearly abstract painting in dim blue-green and grey: still water under a misty night sky, a few faint orange lights on the far bank, and a barely visible small boat near the bottom.",
+  "bibliography": "Whistler, James McNeill. <em>Nocturne, Blue and Silver: Battersea Reach</em>. c. 1872–1878, Isabella Stewart Gardner Museum, Boston.",
+  "creator": {
+    "id": "a-james-mcneill-whistler",
+    "name": "James McNeill Whistler",
+    "wikidata": "Q203643"
+  },
+  "title": "Nocturne, Blue and Silver: Battersea Reach",
+  "date": "1872~/1878~",
+  "institution": "Isabella Stewart Gardner Museum",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Gardner Museum",
+      "url": "https://www.gardnermuseum.org/experience/collection/10900"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "display": {
+    "cardPosition": "top-right"
+  },
+  "tags": {
+    "hours": [
+      "hush"
+    ],
+    "weather": [
+      "fog",
+      "overcast"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

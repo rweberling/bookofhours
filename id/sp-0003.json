@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0003/",
+  "id": "sp-0003",
+  "name": "Sugar Maple",
+  "scientific": "Acer saccharum",
+  "rank": "species",
+  "wikidata": "Q214733",
+  "gbif": "3189859",
+  "inaturalist": "52543",
+  "records": [
+    "r-0041",
+    "r-0042",
+    "r-0043",
+    "i-0040",
+    "i-0041"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

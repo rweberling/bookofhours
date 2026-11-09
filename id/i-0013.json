@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0013/",
+  "id": "i-0013",
+  "aliases": [
+    "i-darwin-the-power-of-movement"
+  ],
+  "shownIn": "hours",
+  "file": "images/transit_darwin.jpg",
+  "caption": "Charles Darwin, from <a href=\"https://babel.hathitrust.org/cgi/pt?id=nyp.33433007351665&seq=293&view=1up\" target=\"_blank\"><em>The Power of Movement in Plants</em></a> (1880)",
+  "alt": "Two traced lines on a white page, dotted and zigzagging, with arrows and times written beside them, recording how a single clover flower’s stalk moved over several days, with an explanatory caption below.",
+  "bibliography": "Darwin, Charles. <em>The Power of Movement in Plants</em>. John Murray, 1880.",
+  "creator": {
+    "id": "a-charles-darwin",
+    "name": "Charles Darwin",
+    "wikidata": "Q1035"
+  },
+  "title": null,
+  "date": "1880",
+  "institution": null,
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "edition": {
+    "id": "e-0119",
+    "title": "The Power of Movement in Plants",
+    "publisher": "John Murray",
+    "issued": "1880",
+    "identifiers": {
+      "hathitrust": "008595207",
+      "oclc": "1221788"
+    }
+  },
+  "locator": {
+    "url": "https://babel.hathitrust.org/cgi/pt?id=nyp.33433007351665&seq=293&view=1up",
+    "label": "HathiTrust"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

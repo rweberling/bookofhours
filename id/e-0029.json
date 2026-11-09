@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0029/",
+  "id": "e-0029",
+  "type": "book",
+  "title": "The Gastronomical Me",
+  "contributors": [
+    {
+      "id": "a-m-f-k-fisher",
+      "name": "M. F. K. Fisher",
+      "role": "author",
+      "wikidata": "Q272889"
+    }
+  ],
+  "publisher": "Duell, Sloan and Pearce",
+  "issued": "1943",
+  "original-date": "1943",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "in copyright — actively republished",
+  "citedBy": [
+    "r-0029"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

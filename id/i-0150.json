@@ -1,0 +1,69 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0150/",
+  "id": "i-0150",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/221679509.week-42-first-frost-william-cullen-3-b87dca1e0178.jpeg",
+  "caption": "“Photographs of two plates of drawings from Prillieux (1869) of transverse sections of frost-frozen petioles of <em>Chelidonium quercifolium</em> (upper drawing) and <em>Symphytum tauricum</em> (lower drawing).” <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4242212/figure/FIG1/\" rel=\"noopener\" target=\"_blank\">Fig. 1</a> from M. E. McCully, et al. “The management of extracellular ice by petioles of frost-resistant herbaceous plants.” <em>Annals of Botany</em> 94.5 (2004): 665-74.",
+  "lectio": {
+    "post": "lt-0033",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0006"
+    ]
+  },
+  "display": {
+    "size": [
+      576,
+      908
+    ]
+  },
+  "alt": "Two engraved cross-sections of frozen leaf stalks, numbered 16 and 4: each a ring of small cells around a large open cavity, with darker vein bundles set in the tissue and strands of cells and fine hairs around the edges.",
+  "title": "Fig. 1",
+  "edition": {
+    "id": "e-0170",
+    "type": "article",
+    "title": "The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants",
+    "container": "Annals of Botany",
+    "volume": "94",
+    "issue": "5",
+    "pages": "665–674",
+    "contributors": [
+      {
+        "id": "a-m-e-mccully",
+        "name": "M. E. McCully",
+        "role": "author"
+      },
+      {
+        "id": "a-m-j-canny",
+        "name": "M. J. Canny",
+        "role": "author"
+      },
+      {
+        "id": "a-c-x-huang",
+        "name": "C. X. Huang",
+        "role": "author"
+      }
+    ],
+    "issued": "2004",
+    "identifiers": {
+      "doi": "10.1093/aob/mch191"
+    }
+  },
+  "locator": {
+    "page": "Fig. 1",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4242212/figure/FIG1/",
+    "label": "PubMed Central"
+  },
+  "bibliography": "McCully, M. E., et al. \"The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants.\" <em>Annals of Botany</em>, vol. 94, no. 5, 2004, pp. 665–674, fig. 1.",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "photographs of plates published in 1869",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

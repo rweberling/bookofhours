@@ -1,0 +1,48 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0003/",
+  "id": "r-0003",
+  "aliases": [
+    "r-nagarjuna-mulamadhyamakakarika"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Nāgārjuna, <a href=\"https://polyglotta.uio.no/index.php?page=fulltext&view=fulltext&vid=1124\" target=\"_blank\"><em>Mūlamadhyamakakārikā</em></a> (c. 150 CE)",
+    "bibliography": "Nāgārjuna. <em>Mūlamadhyamakakārikā</em>. c. 150 CE.",
+    "locator": {
+      "url": "https://polyglotta.uio.no/index.php?page=fulltext&view=fulltext&vid=1124",
+      "label": "Bibliotheca Polyglotta, University of Oslo"
+    },
+    "edition": {
+      "id": "e-0003",
+      "type": "book",
+      "title": "Mūlamadhyamakakārikā",
+      "contributors": [
+        {
+          "id": "a-nagarjuna",
+          "name": "Nāgārjuna",
+          "role": "author",
+          "wikidata": "Q171195"
+        },
+        {
+          "id": "a-stephen-batchelor",
+          "name": "Stephen Batchelor",
+          "role": "translator"
+        }
+      ],
+      "issued": null,
+      "original-date": "0150~",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright (Batchelor, Verses from the Center, 2000)"
+    }
+  },
+  "tags": {
+    "hours": [
+      "void"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "firstLine": "Seeing does not see itself. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

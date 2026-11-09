@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0112/",
+  "id": "e-0112",
+  "type": "book",
+  "title": "Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future",
+  "contributors": [
+    {
+      "id": "a-merlin-sheldrake",
+      "name": "Merlin Sheldrake",
+      "role": "author",
+      "wikidata": "Q89428526"
+    }
+  ],
+  "publisher": "Random House",
+  "issued": "2020",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "citedBy": [
+    "r-0113"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

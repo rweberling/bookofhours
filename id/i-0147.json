@@ -1,0 +1,55 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0147/",
+  "id": "i-0147",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/216670435.week-41-ghost-pipe-emily-dickinson-3-dfedc67bb0b4.jpeg",
+  "caption": "“<a href=\"https://archive.org/details/mobot31753002739826/page/n645/mode/2up\" rel=\"noopener\" target=\"_blank\">Monotropa uniflora. Indian pipe</a>.” John Torrey. <em>A Flora of the State of New-York</em>. Volume 1. Albany, New York: Carroll and Cook, 1843.",
+  "lectio": {
+    "post": "lt-0031",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0027"
+    ]
+  },
+  "display": {
+    "size": [
+      541,
+      845
+    ]
+  },
+  "alt": "A hand-coloured botanical plate of Indian pipe: three pale, scaly white stems rising from a small brown root ball, two curling over into nodding flowers and one upright, with five numbered details of the flower parts and seed capsule below.",
+  "edition": {
+    "id": "e-0153",
+    "title": "A Flora of the State of New-York",
+    "issued": "1843",
+    "identifiers": {
+      "internetArchive": "mobot31753002739826"
+    },
+    "type": "book",
+    "volume": "1",
+    "contributors": [
+      {
+        "id": "a-john-torrey",
+        "name": "John Torrey",
+        "role": "author"
+      }
+    ],
+    "publisher": "Carroll and Cook"
+  },
+  "locator": {
+    "url": "https://archive.org/details/mobot31753002739826/page/n645/mode/2up",
+    "label": "Internet Archive"
+  },
+  "title": "Monotropa uniflora. Indian pipe",
+  "bibliography": "Torrey, John. \"<em>Monotropa uniflora</em>. Indian Pipe.\" <em>A Flora of the State of New-York</em>, vol. 1, Carroll and Cook, 1843.",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

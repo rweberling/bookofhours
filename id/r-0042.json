@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0042/",
+  "id": "r-0042",
+  "shownIn": "seasons",
+  "text": "<p>Of all the sweets that man has discovered in a natural state, or has manufactured by processes of refining or blending, the most delicately flavored, the most supremely satisfying to the utmost refinement of taste, is maple syrup. If the figure of speech may be permitted in these days of an ever widening democracy, maple sugar and maple syrup are the reigning monarchs of the blood royal in the kingdom of sweets. […]</p><p></p><p>Maple syrup has been called liquid sunshine. To the hard-headed, unsentimental individual, that expression might seem to be an example of the extravagant exuberance of the typical spring variety of poet; but in reality the expression will stand the prosaic test of the scientific laboratory. The sweetness of the sap stored in the maple tree depends in large measure upon the influence of the sunlight upon the leaves of the maple during the summer days preceding the spring sugar season. In some mysterious manner, known only to Nature, the green leaves, under the direct influence of the sun’s rays, store up starch and sugar, and in the laboratory of the maple tree, drawing moisture from roots extending deep down to the marble and granite foundations of the Green Mountains, certain wonderful chemical processes are performed, whereby the sunlight and the water from the mountain springs, and the wholesome ingredients of the soil which give such a superior flavor to the products of Vermont farms and dairies and orchards, unite to make the maple sap out of which the sugar and the syrup are manufactured, that have made the Green Mountain State famous.</p>",
+  "citation": {
+    "display": "“<a href=\"https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=5%3Bownerid=13510798902017243-11\">Vermont Maple Sugar</a>,” from Walter H. Crockett, <em>How Vermont Maple Sugar is Made </em>(St. Albans, Vermont: Department of Agriculture of the State of Vermont, 1915), p. 5.",
+    "bibliography": "Crockett, Walter H. \"Vermont Maple Sugar.\" <em>How Vermont Maple Sugar Is Made</em>, Vermont Department of Agriculture, 1915.",
+    "title": "Vermont Maple Sugar",
+    "written": "1915",
+    "locator": {
+      "page": "5",
+      "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=5%3Bownerid=13510798902017243-11",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0042",
+      "title": "How Vermont Maple Sugar is Made",
+      "issued": "1915",
+      "identifiers": {
+        "hathitrust": "011274049",
+        "oclc": "18660713"
+      },
+      "contributors": [
+        {
+          "id": "a-walter-h-crockett",
+          "name": "Walter H. Crockett",
+          "role": "author"
+        }
+      ],
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0003",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      "sp-0003"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

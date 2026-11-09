@@ -1,0 +1,49 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0031/",
+  "id": "r-0031",
+  "aliases": [
+    "r-wright-9"
+  ],
+  "shownIn": "hours",
+  "citation": {
+    "display": "Richard Wright, \"#9\" (c. 1959), from <a href=\"https://bookshop.org/a/86532/9781611453492\" target=\"_blank\"><em>Haiku: This Other World</em></a> (1998)",
+    "bibliography": "Wright, Richard. \"9.\" <em>Haiku: This Other World</em>, Arcade Publishing, 1998. Written c. 1959.",
+    "title": "#9",
+    "written": "1959~",
+    "edition": {
+      "id": "e-0031",
+      "type": "book",
+      "title": "Haiku: This Other World",
+      "contributors": [
+        {
+          "id": "a-richard-wright",
+          "name": "Richard Wright",
+          "role": "author",
+          "wikidata": "Q319820"
+        }
+      ],
+      "publisher": "Arcade Publishing",
+      "issued": "1998",
+      "original-date": "1998",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "in copyright — estate actively protective"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9781611453492",
+    "note": "Published as <em>Haiku: The Last Poems of an American Icon</em>"
+  },
+  "tags": {
+    "hours": [
+      "denouement"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "Steep with deep sweetness, …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

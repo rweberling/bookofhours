@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0151/",
+  "id": "i-0151",
+  "shownIn": "weather",
+  "file": "images/weather_hiroshige_sudden_shower.jpg",
+  "caption": "Utagawa Hiroshige, <a href=\"https://www.metmuseum.org/art/collection/search/37386\" target=\"_blank\"><em>Sudden Shower over Shin-Ōhashi Bridge and Atake</em></a> (1857)",
+  "alt": "A woodblock print: dark slanting lines of rain fall across a wide river under a black sky, while small figures under hats and straw mats hurry over a long wooden bridge, and a lone raft drifts on the grey water beyond.",
+  "bibliography": "Utagawa Hiroshige. <em>Sudden Shower over Shin-Ōhashi Bridge and Atake</em> (<em>Ōhashi Atake no yūdachi</em>), from <em>One Hundred Famous Views of Edo</em>. 1857, woodblock print, The Metropolitan Museum of Art, New York, JP3174.",
+  "creator": {
+    "id": "a-utagawa-hiroshige",
+    "name": "Utagawa Hiroshige",
+    "wikidata": "Q200798"
+  },
+  "title": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
+  "partOf": "One Hundred Famous Views of Edo",
+  "date": "1857",
+  "institution": "The Metropolitan Museum of Art",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/37386"
+    }
+  ],
+  "source": {
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP123602.jpg",
+    "retrieved": "2026-11-05"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "display": {
+    "cardPosition": "top-left"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "rain"
+    ],
+    "seasons": [
+      "summer"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

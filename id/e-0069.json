@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0069/",
+  "id": "e-0069",
+  "title": "A New British Flora: British Wild Flowers in Their Natural Haunts",
+  "issued": "1919",
+  "identifiers": {
+    "hathitrust": "001997177",
+    "oclc": "10314294"
+  },
+  "contributors": [
+    {
+      "id": "a-a-r-horwood",
+      "name": "A. R. Horwood",
+      "role": "author",
+      "wikidata": "Q21341246"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "citedBy": [
+    "r-0069",
+    "i-0073"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

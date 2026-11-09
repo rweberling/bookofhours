@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0168/",
+  "id": "e-0168",
+  "type": "book",
+  "title": "The Natural History of the Rarer Lepidopterous Insects of Georgia",
+  "contributors": [
+    {
+      "id": "a-james-edward-smith",
+      "name": "James Edward Smith",
+      "role": "author"
+    },
+    {
+      "id": "a-john-abbot",
+      "name": "John Abbot",
+      "role": "illustrator"
+    }
+  ],
+  "publisher": "J. Edwards",
+  "issued": "1797",
+  "citedBy": [
+    "i-0139"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

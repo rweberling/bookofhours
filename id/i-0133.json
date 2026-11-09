@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0133/",
+  "id": "i-0133",
+  "shownIn": "weather",
+  "file": "images/weather_valenciennes_farnese.jpg",
+  "caption": "Pierre-Henri de Valenciennes, <a href=\"https://collections.louvre.fr/ark:/53355/cl010064145\" target=\"_blank\"><em>Farm Buildings at the Villa Farnese: The Two Poplars</em></a> (c. 1782–84)",
+  "alt": "An oil sketch of two tall, slender poplars rising above a row of plain, red-roofed farm buildings under a wide pale-blue sky, with bushes and a dirt path in front.",
+  "bibliography": "Valenciennes, Pierre-Henri de. <em>Fabriques à la villa Farnèse : les deux peupliers</em> [Farm Buildings at the Villa Farnese: The Two Poplars]. c. 1782–84, oil on paper mounted on cardboard, Musée du Louvre, Paris (RF 3004).",
+  "creator": {
+    "id": "a-pierre-henri-de-valenciennes",
+    "name": "Pierre-Henri de Valenciennes",
+    "wikidata": "Q334946"
+  },
+  "title": "Fabriques à la villa Farnèse : les deux peupliers",
+  "date": "1782~/1784~",
+  "institution": "Musée du Louvre",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Musée du Louvre",
+      "url": "https://collections.louvre.fr/ark:/53355/cl010064145"
+    },
+    {
+      "role": "copy",
+      "label": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Fabriques_%C3%A0_la_villa_Farn%C3%A8se,_les_deux_peupliers_-_Pierre_de_Valenciennes_-_Mus%C3%A9e_du_Louvre_Peintures_RF_3004.jpg"
+    }
+  ],
+  "source": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Fabriques_%C3%A0_la_villa_Farn%C3%A8se%2C_les_deux_peupliers_-_Pierre_de_Valenciennes_-_Mus%C3%A9e_du_Louvre_Peintures_RF_3004.jpg",
+    "retrieved": "2026-10-19"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "display": {
+    "cardPosition": "top-right"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "clear"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

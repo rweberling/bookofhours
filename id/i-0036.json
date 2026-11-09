@@ -1,0 +1,44 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0036/",
+  "id": "i-0036",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/189159604.week-10-witch-hazel-friedrich-nietzsche-2-ddea7a1983e0.png",
+  "caption": "<em>Leaves of the Witch Hazel Family - 1/3 life size</em>, from Richard E. Weaver, “<a href=\"https://doi.org/10.5962/p.249681\">The Witch Hazel Family (Hamamelidaceae)</a>,” Arnoldia 36.3 (1976), pp. 69-109.",
+  "alt": "Line drawings of fourteen leaves from the witch hazel family, lettered A to N: broad ovals with wavy or toothed edges and strong parallel veins.",
+  "bibliography": "Weaver, Richard E. \"Leaves of the Witch Hazel Family – 1/3 Life Size.\" \"The Witch Hazel Family (Hamamelidaceae),\" <em>Arnoldia</em>, vol. 36, no. 3, 1976, pp. 69–109.",
+  "lectio": {
+    "post": "lt-0001",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0001"
+    ]
+  },
+  "display": {
+    "size": [
+      329,
+      547
+    ]
+  },
+  "edition": {
+    "id": "e-0122",
+    "title": "The Witch Hazel Family (Hamamelidaceae)",
+    "issued": "1976",
+    "identifiers": {
+      "doi": "10.5962/p.249681"
+    }
+  },
+  "locator": {
+    "url": "https://doi.org/10.5962/p.249681",
+    "label": "DOI"
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

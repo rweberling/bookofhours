@@ -1,0 +1,18 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0145/",
+  "id": "e-0145",
+  "type": "article",
+  "title": "Out of America: Tracing the Genetic Footprints of the Global Diffusion of Maize",
+  "container": "Theoretical and Applied Genetics",
+  "volume": "126",
+  "pages": "2671–2682",
+  "issued": "2013",
+  "identifiers": {
+    "doi": "10.1007/s00122-013-2164-z"
+  },
+  "citedBy": [
+    "i-0092"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

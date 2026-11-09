@@ -1,0 +1,66 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0050/",
+  "id": "r-0050",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Martin Heidegger, <em><a href=\"https://bookshop.org/a/86532/9780300186123\">Introduction to Metaphysics</a> </em>(1935), trans. Gregory Fried and Richard Polt (New Haven, Connecticut: Yale University Press, 2000 [1935]), pp. 14–16.",
+    "bibliography": "Heidegger, Martin. <em>Introduction to Metaphysics</em>. Translated by Gregory Fried and Richard Polt, Yale University Press, 2000. Lectures delivered 1935.",
+    "title": "Introduction to Metaphysics",
+    "written": "1935",
+    "locator": {
+      "page": "14–16"
+    },
+    "edition": {
+      "id": "e-0050",
+      "type": "book",
+      "title": "Introduction to Metaphysics",
+      "contributors": [
+        {
+          "id": "a-martin-heidegger",
+          "name": "Martin Heidegger",
+          "role": "author",
+          "wikidata": "Q48301"
+        },
+        {
+          "id": "a-gregory-fried",
+          "name": "Gregory Fried",
+          "role": "translator"
+        },
+        {
+          "id": "a-richard-polt",
+          "name": "Richard Polt",
+          "role": "translator",
+          "wikidata": "Q7328471"
+        }
+      ],
+      "publisher": "Yale University Press",
+      "issued": "2000",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "rightsNote": "translation in copyright"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9780300186123"
+  },
+  "lectio": {
+    "post": "lt-0007",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0006",
+        "basis": "thematic",
+        "note": "Phusis as emergence and unfolding. A rose is the only plant named; the fern is the pairing."
+      }
+    ]
+  },
+  "firstLine": "In the age of the first and definitive unfolding of Western philosophy among the Greeks, when questioning about beings as such and as a whole received its true inception, beings were called phusis. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,18 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0001/",
+  "id": "sp-0001",
+  "name": "Witch Hazel",
+  "scientific": "Hamamelis virginiana",
+  "rank": "species",
+  "wikidata": "Q913129",
+  "gbif": "3152827",
+  "inaturalist": "51970",
+  "records": [
+    "r-0037",
+    "r-0038",
+    "i-0035",
+    "i-0036"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

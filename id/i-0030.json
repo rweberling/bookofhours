@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0030/",
+  "id": "i-0030",
+  "aliases": [
+    "i-kuindzhi-moonlit-night-on-the"
+  ],
+  "shownIn": "hours",
+  "file": "images/denouement_kuindzhi.jpg",
+  "caption": "Arkhip Kuindzhi, <a href=\"https://en.wikipedia.org/wiki/Moonlit_Night_on_the_Dnieper\" target=\"_blank\"><em>Moonlit Night on the Dnieper</em></a> (1880)",
+  "alt": "A very dark painting of a river at night: a full moon breaks through clouds near the top, and its light lays a glowing green-white path across the water toward a small hut on the far shore.",
+  "bibliography": "Kuindzhi, Arkhip. <em>Moonlit Night on the Dnieper</em>. 1880, State Tretyakov Gallery, Moscow.",
+  "creator": {
+    "id": "a-arkhip-kuindzhi",
+    "name": "Arkhip Kuindzhi",
+    "wikidata": "Q353628"
+  },
+  "title": "Moonlit Night on the Dnieper",
+  "date": "1880",
+  "institution": "State Tretyakov Gallery",
+  "links": [],
+  "furtherReading": [
+    {
+      "kind": "about",
+      "source": "Wikipedia",
+      "title": "Moonlit Night on the Dnieper",
+      "url": "https://en.wikipedia.org/wiki/Moonlit_Night_on_the_Dnieper"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "denouement"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,55 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0051/",
+  "id": "r-0051",
+  "shownIn": "seasons",
+  "text": "<p>The young leaf grows much more rapidly than the stem, and soon projects beyond it. The multiplication of the cells being greater on the lower side, the leaf begins to curve upward. The cells of the leaf-stalk now elongate rapidly, and after the embryo has broken through the overlying tissue of the prothallium, the leaf pushes up between the lobes of the prothallium, appearing above its surface (Pl. 6, fig. 5).</p><p><br>The apical cell of the stem divides much more slowly, and follows nearly the same plan at first. The segments later divide somewhat differently, the first division wall of the segment being a radial one, and dividing the segment into two nearly equal cells. The stem is very short at the time the embryo breaks through the prothallium, but the apex is more decidedly conical than is the case in the mature plant.<br></p><p>The apical cell of the foot soon becomes obliterated by a process entirely similar to that already described, but the cells continue to multiply rapidly with no regular order. By means of the foot, which when complete is large and rounded in shape, the embryo is kept in close connection with the prothallium, and by means of it the embryo is nourished until the first leaf and root are developed.</p>",
+  "citation": {
+    "display": "Douglas Houghton Campbell, <em><a href=\"https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=20%3Bownerid=13510798900618097-26\">The Development of the Ostrich Fern</a> </em>(Boston: Society of Natural History, April 1887), p. 29.",
+    "bibliography": "Campbell, Douglas Houghton. <em>The Development of the Ostrich Fern</em>. Boston Society of Natural History, 1887.",
+    "title": "The Development of the Ostrich Fern",
+    "written": "1887-04",
+    "locator": {
+      "page": "29",
+      "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=20%3Bownerid=13510798900618097-26",
+      "label": "HathiTrust"
+    },
+    "edition": {
+      "id": "e-0051",
+      "title": "The Development of the Ostrich Fern",
+      "issued": "1887",
+      "identifiers": {
+        "hathitrust": "001993770",
+        "oclc": "14366384"
+      },
+      "contributors": [
+        {
+          "id": "a-douglas-houghton-campbell",
+          "name": "Douglas Houghton Campbell",
+          "role": "author",
+          "wikidata": "Q4251095"
+        }
+      ],
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0007",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "spring"
+    ],
+    "species": [
+      {
+        "id": "sp-0006",
+        "basis": "grounded",
+        "note": "Botanical description of the ostrich fern's embryo."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

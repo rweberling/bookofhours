@@ -1,0 +1,40 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0095/",
+  "id": "i-0095",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/207622717.week-30-blueberries-joseph-j-white-1-15630da30a32.jpeg",
+  "caption": "“<a href=\"https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12287438430007426\">Vaccinium corymbosum: Stanley</a>.” J. Marion Shull, USDA Pomological Watercolor Collection",
+  "alt": "A watercolor of a cluster of highbush blueberries, round and dusty blue-grey, set alone on a large sheet of cream paper.",
+  "bibliography": "Shull, J. Marion. \"Vaccinium corymbosum: Stanley.\" USDA Pomological Watercolor Collection, National Agricultural Library.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "National Agricultural Library",
+      "url": "https://search.nal.usda.gov/discovery/delivery/01NAL_INST:MAIN/12287438430007426"
+    }
+  ],
+  "lectio": {
+    "post": "lt-0021",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0018"
+    ]
+  },
+  "display": {
+    "size": [
+      415,
+      584
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "rightsNote": "a U.S. government work",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0006/",
+  "id": "e-0006",
+  "type": "book",
+  "title": "Book of Hours",
+  "contributors": [
+    {
+      "id": "a-kevin-young",
+      "name": "Kevin Young",
+      "role": "author",
+      "wikidata": "Q6397805"
+    }
+  ],
+  "publisher": "Knopf",
+  "issued": "2014",
+  "original-date": "2014",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "in copyright",
+  "citedBy": [
+    "r-0006"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

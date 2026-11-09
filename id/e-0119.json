@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0119/",
+  "id": "e-0119",
+  "title": "The Power of Movement in Plants",
+  "publisher": "John Murray",
+  "issued": "1880",
+  "identifiers": {
+    "hathitrust": "008595207",
+    "oclc": "1221788"
+  },
+  "citedBy": [
+    "i-0013"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

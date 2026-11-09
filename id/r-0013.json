@@ -1,0 +1,48 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0013/",
+  "id": "r-0013",
+  "aliases": [
+    "r-whitman-song-of-myself"
+  ],
+  "shownIn": "hours",
+  "text": "I have heard what the talkers were talking,<br>&nbsp;&nbsp;&nbsp;&nbsp;the talk of the beginning and the end,<br>But I do not talk of the beginning or the end.<br><br>There was never any more inception than there is now,<br>Nor any more youth or age than there is now,<br>And will never be any more perfection than there is now,<br>Nor any more heaven or hell than there is now.<br><br>Urge and urge and urge,<br>Always the procreant urge of the world.",
+  "citation": {
+    "display": "Walt Whitman, from <a href=\"https://bookshop.org/a/86532/9781609384654\" target=\"_blank\"><em>Song of Myself</em></a> (1892)",
+    "bibliography": "Whitman, Walt. \"Song of Myself.\" <em>Leaves of Grass</em>, 1892 ed., David McKay.",
+    "title": "Song of Myself",
+    "edition": {
+      "id": "e-0013",
+      "type": "book",
+      "title": "Leaves of Grass",
+      "contributors": [
+        {
+          "id": "a-walt-whitman",
+          "name": "Walt Whitman",
+          "role": "author",
+          "wikidata": "Q81438"
+        }
+      ],
+      "edition": "1892 ed.",
+      "publisher": "David McKay",
+      "issued": "1892",
+      "original-date": "1892",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "suggestedEdition": {
+    "isbn": "9781609384654",
+    "note": "With a commentary by Ed Folsom and Christopher Merrill"
+  },
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

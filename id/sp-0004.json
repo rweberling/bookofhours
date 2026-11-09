@@ -1,0 +1,19 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0004/",
+  "id": "sp-0004",
+  "name": "Paper Birch",
+  "scientific": "Betula papyrifera",
+  "rank": "species",
+  "wikidata": "Q76971",
+  "gbif": "5332120",
+  "inaturalist": "49883",
+  "records": [
+    "r-0044",
+    "r-0045",
+    "i-0042",
+    "i-0043",
+    "i-0044"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

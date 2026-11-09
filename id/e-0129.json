@@ -1,0 +1,16 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0129/",
+  "id": "e-0129",
+  "title": "The Fern Lover’s Companion: A Guide for the Northeastern States and Canada",
+  "issued": "1922",
+  "identifiers": {
+    "hathitrust": "100429762",
+    "oclc": "6141524",
+    "lccn": "23005467"
+  },
+  "citedBy": [
+    "i-0053"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

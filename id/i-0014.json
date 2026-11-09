@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0014/",
+  "id": "i-0014",
+  "aliases": [
+    "i-vermeer-woman-reading-a-letter"
+  ],
+  "shownIn": "hours",
+  "file": "images/transit_vermeer.jpg",
+  "caption": "Johannes Vermeer, <a href=\"https://www.rijksmuseum.nl/en/collection/object/Woman-Reading-a-Letter--8e9e02c8045362ffb2171b2fb52953ba\" target=\"_blank\"><em>Woman Reading a Letter</em></a> (c. 1663)",
+  "alt": "A painting of a young woman in a loose blue jacket, standing in profile by a window and reading a letter held close to her chest, with a large map on the wall behind her and chairs and a table around her.",
+  "bibliography": "Vermeer, Johannes. <em>Woman Reading a Letter</em>. c. 1663, Rijksmuseum, Amsterdam.",
+  "creator": {
+    "id": "a-johannes-vermeer",
+    "name": "Johannes Vermeer",
+    "wikidata": "Q41264"
+  },
+  "title": "Woman Reading a Letter",
+  "date": "1663~",
+  "institution": "Rijksmuseum",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Rijksmuseum",
+      "url": "https://www.rijksmuseum.nl/en/collection/object/Woman-Reading-a-Letter--8e9e02c8045362ffb2171b2fb52953ba"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "transit"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

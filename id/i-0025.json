@@ -1,0 +1,37 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0025/",
+  "id": "i-0025",
+  "aliases": [
+    "i-degas-a-woman-ironing"
+  ],
+  "shownIn": "hours",
+  "file": "images/doldrums_degas.jpg",
+  "caption": "Edgar Degas, <a href=\"https://www.metmuseum.org/art/collection/search/436174\" target=\"_blank\"><em>A Woman Ironing</em></a> (1873)",
+  "alt": "A painting of a woman in a dark red dress bending over an ironing board, seen in silhouette against a pale, steamy room hung with drying linen.",
+  "bibliography": "Degas, Edgar. <em>A Woman Ironing</em>. 1873, The Metropolitan Museum of Art, New York.",
+  "creator": {
+    "id": "a-edgar-degas",
+    "name": "Edgar Degas",
+    "wikidata": "Q46373"
+  },
+  "title": "A Woman Ironing",
+  "date": "1873",
+  "institution": "The Metropolitan Museum of Art",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/436174"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [
+      "doldrums"
+    ],
+    "weather": [],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

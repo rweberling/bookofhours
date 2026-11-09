@@ -1,0 +1,48 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0092/",
+  "id": "r-0092",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Padraig Regan. From “<a href=\"https://poems.poetrysociety.org.uk/poems/notes-on-various-squashes/\">Notes on Various Squashes</a>.” <em>The Poetry Review </em>(Autumn 2017).",
+    "bibliography": "Regan, Padraig. \"Notes on Various Squashes.\" <em>The Poetry Review</em>, Autumn 2017.",
+    "title": "Notes on Various Squashes",
+    "written": "2017",
+    "locator": {
+      "url": "https://poems.poetrysociety.org.uk/poems/notes-on-various-squashes/",
+      "label": "The Poetry Society"
+    },
+    "edition": {
+      "id": "e-0091",
+      "type": "article",
+      "title": "Notes on Various Squashes",
+      "container": "The Poetry Review",
+      "contributors": [
+        {
+          "id": "a-padraig-regan",
+          "name": "Padraig Regan",
+          "role": "author",
+          "wikidata": "Q117744904"
+        }
+      ],
+      "issued": "2017",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0025",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0020"
+    ]
+  },
+  "firstLine": "2 Courgettes are a type of squash: …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
