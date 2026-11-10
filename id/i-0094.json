@@ -6,13 +6,6 @@
   "caption": "“<a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215\">Plate XIV</a>,” from George Ashley Crosthwait, <em>Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting </em>(Urbana-Champaign, Illinois: University of Illinois College of Agriculture, 1903).",
   "alt": "A sepia photograph of a single tall corn plant posed against a pale backdrop, its leaves drooping and curled, with a few small ears along the stalk.",
   "bibliography": "Crosthwait, George Ashley. \"Plate XIV.\" <em>Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting</em>, University of Illinois College of Agriculture, 1903.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "HathiTrust",
-      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215"
-    }
-  ],
   "lectio": {
     "post": "lt-0020",
     "place": 4
@@ -34,6 +27,28 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0186",
+    "type": "book",
+    "title": "Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting",
+    "contributors": [
+      {
+        "id": "a-george-ashley-crosthwait",
+        "name": "George Ashley Crosthwait",
+        "role": "author"
+      }
+    ],
+    "publisher": "University of Illinois College of Agriculture",
+    "issued": "1903",
+    "identifiers": {
+      "hathitrust": "100179353",
+      "oclc": "421153485"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215",
+    "label": "HathiTrust"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

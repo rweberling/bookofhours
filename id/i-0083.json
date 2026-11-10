@@ -8,11 +8,6 @@
   "bibliography": "Trouvelot, Étienne Léopold. \"Plate IV. Solar Prominences.\" <em>Annals of the Astronomical Observatory of Harvard College</em>, vol. 8, John Wilson and Son, 1876. Wellcome Collection, London.",
   "links": [
     {
-      "role": "cited",
-      "label": "Wellcome Collection",
-      "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f"
-    },
-    {
       "role": "copy",
       "label": "HathiTrust",
       "url": "https://hdl.handle.net/2027/coo.31924056091709?urlappend=%3Bseq=151%3Bownerid=27021597769875425-161"
@@ -39,6 +34,17 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0183",
+    "type": "book",
+    "title": "Annals of the Astronomical Observatory of Harvard College, vol. 8",
+    "publisher": "John Wilson and Son",
+    "issued": "1876"
+  },
+  "locator": {
+    "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f",
+    "label": "Wellcome Collection"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

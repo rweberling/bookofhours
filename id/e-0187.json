@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0187/",
+  "id": "e-0187",
+  "type": "article",
+  "title": "The Observed Motion and Duration of the Radiant Point of the Perseids",
+  "contributors": [
+    {
+      "id": "a-w-f-denning",
+      "name": "W. F. Denning",
+      "role": "author"
+    }
+  ],
+  "container": "Monthly Notices of the Royal Astronomical Society",
+  "volume": "62",
+  "issue": "2",
+  "pages": "161–169",
+  "issued": "1901-12",
+  "identifiers": {
+    "doi": "10.1093/mnras/62.2.161"
+  },
+  "citedBy": [
+    "i-0103"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

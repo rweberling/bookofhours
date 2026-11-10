@@ -1,0 +1,41 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0192/",
+  "id": "e-0192",
+  "type": "article",
+  "title": "First Known Image of Cucurbita in Europe, 1503–1508",
+  "contributors": [
+    {
+      "id": "a-harry-s-paris",
+      "name": "Harry S. Paris",
+      "role": "author"
+    },
+    {
+      "id": "a-marie-christine-daunay",
+      "name": "Marie-Christine Daunay",
+      "role": "author"
+    },
+    {
+      "id": "a-michel-pitrat",
+      "name": "Michel Pitrat",
+      "role": "author"
+    },
+    {
+      "id": "a-jules-janick",
+      "name": "Jules Janick",
+      "role": "author"
+    }
+  ],
+  "container": "Annals of Botany",
+  "volume": "98",
+  "issue": "1",
+  "pages": "41–47",
+  "issued": "2006-07",
+  "identifiers": {
+    "doi": "10.1093/aob/mcl082"
+  },
+  "citedBy": [
+    "i-0109"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -14,7 +14,8 @@
   "issued": "1885",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "citedBy": [
-    "r-0074"
+    "r-0074",
+    "i-0080"
   ],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

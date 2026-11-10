@@ -29,7 +29,12 @@
       ],
       "issued": null,
       "original-date": "1883/1886",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "006674010",
+        "oclc": "2790063",
+        "lccn": "14001079"
+      }
     }
   },
   "tags": {

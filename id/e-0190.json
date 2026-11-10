@@ -1,0 +1,23 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0190/",
+  "id": "e-0190",
+  "type": "article",
+  "title": "A Proposed Subspecific Classification for Cucurbita pepo",
+  "contributors": [
+    {
+      "id": "a-harry-s-paris",
+      "name": "Harry S. Paris",
+      "role": "author"
+    }
+  ],
+  "container": "Phytologia",
+  "volume": "61",
+  "issue": "3",
+  "pages": "133–138",
+  "issued": "1986-11",
+  "citedBy": [
+    "i-0107"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

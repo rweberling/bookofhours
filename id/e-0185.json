@@ -1,0 +1,13 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0185/",
+  "id": "e-0185",
+  "type": "book",
+  "title": "Fruit Culture, vol. 2",
+  "publisher": "International Textbook Company",
+  "issued": "1913",
+  "citedBy": [
+    "i-0088"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

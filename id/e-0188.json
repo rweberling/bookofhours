@@ -1,0 +1,22 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0188/",
+  "id": "e-0188",
+  "type": "article",
+  "title": "The August Perseïds, 1877",
+  "contributors": [
+    {
+      "id": "a-w-f-denning",
+      "name": "W. F. Denning",
+      "role": "author"
+    }
+  ],
+  "container": "The Observatory",
+  "volume": "1",
+  "pages": "164–166",
+  "issued": "1877-09",
+  "citedBy": [
+    "i-0104"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

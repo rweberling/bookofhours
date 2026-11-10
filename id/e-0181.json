@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0181/",
+  "id": "e-0181",
+  "type": "book",
+  "title": "Fifty Common Plant Galls of the Chicago Area",
+  "contributors": [
+    {
+      "id": "a-carl-f-gronemann",
+      "name": "Carl F. Gronemann",
+      "role": "author"
+    }
+  ],
+  "publisher": "Field Museum of Natural History",
+  "issued": "1930",
+  "identifiers": {
+    "hathitrust": "006910411",
+    "oclc": "2334206"
+  },
+  "citedBy": [
+    "i-0078"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

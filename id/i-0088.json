@@ -6,13 +6,6 @@
   "caption": "“<a href=\"https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499\">Fay’s Prolific</a>,” from <em>Fruit Culture, Volume 2</em> (Scranton, Pennsylvania: International Textbook Company, 1913), Section 19.",
   "alt": "A color painting of red currants: three long, hanging clusters of glossy, translucent red berries on a woody stem among lobed green leaves.",
   "bibliography": "\"Fay’s Prolific.\" <em>Fruit Culture</em>, vol. 2, International Textbook Company, 1913.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "HathiTrust",
-      "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499"
-    }
-  ],
   "lectio": {
     "post": "lt-0019",
     "place": 1
@@ -34,6 +27,17 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0185",
+    "type": "book",
+    "title": "Fruit Culture, vol. 2",
+    "publisher": "International Textbook Company",
+    "issued": "1913"
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499",
+    "label": "HathiTrust"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

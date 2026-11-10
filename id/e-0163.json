@@ -4,6 +4,10 @@
   "title": "The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man",
   "publisher": "Sivartha Publishing",
   "issued": "1898",
+  "identifiers": {
+    "hathitrust": "006517826",
+    "oclc": "30136548"
+  },
   "citedBy": [
     "i-0010"
   ],

@@ -13,6 +13,11 @@
   "issued": null,
   "original-date": "1894",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "006511871",
+    "oclc": "10656322",
+    "lccn": "14015252"
+  },
   "citedBy": [
     "r-0034"
   ],

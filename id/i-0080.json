@@ -6,13 +6,6 @@
   "caption": "“<em><a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29\">Cypripedium acaule</a></em>,” from <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em> (Boston: Bradlee Whidden, 1885), n.p.",
   "alt": "A black-and-white photograph of a single lady’s slipper orchid: one drooping, pouch-shaped flower atop a tall bare stem, above two broad leaves.",
   "bibliography": "Young, C. S. \"<em>Cypripedium acaule</em>.\" <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em>, Bradlee Whidden, 1885.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "HathiTrust",
-      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29"
-    }
-  ],
   "lectio": {
     "post": "lt-0016",
     "place": 2
@@ -34,6 +27,25 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0074",
+    "type": "book",
+    "title": "All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States",
+    "contributors": [
+      {
+        "id": "a-c-s-young",
+        "name": "C. S. Young",
+        "role": "author"
+      }
+    ],
+    "publisher": "Bradlee Whidden",
+    "issued": "1885",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29",
+    "label": "HathiTrust"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -6,13 +6,6 @@
   "caption": "W.F. Denning. “<a href=\"https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D\">Horary number of Perseïds</a>.” From “The August Perseïds, 1877.” <em>The Observatory</em> 1 (September 1877): 164-166.",
   "alt": "A printed table of a night’s meteor watch in August 1877, giving the number of Perseids and other meteors seen in each half hour, with notes on the weather.",
   "bibliography": "Denning, W. F. \"Horary Number of Perseïds.\" \"The August Perseïds, 1877,\" <em>The Observatory</em>, vol. 1, Sept. 1877, pp. 164–166.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "NASA ADS",
-      "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D"
-    }
-  ],
   "lectio": {
     "post": "lt-0024",
     "place": 2
@@ -34,6 +27,26 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0188",
+    "type": "article",
+    "title": "The August Perseïds, 1877",
+    "contributors": [
+      {
+        "id": "a-w-f-denning",
+        "name": "W. F. Denning",
+        "role": "author"
+      }
+    ],
+    "container": "The Observatory",
+    "volume": "1",
+    "pages": "164–166",
+    "issued": "1877-09"
+  },
+  "locator": {
+    "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D",
+    "label": "NASA ADS"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

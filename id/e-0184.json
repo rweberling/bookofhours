@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0184/",
+  "id": "e-0184",
+  "type": "article",
+  "title": "Historical Sunspot Records",
+  "contributors": [
+    {
+      "id": "a-rainer-arlt",
+      "name": "Rainer Arlt",
+      "role": "author"
+    },
+    {
+      "id": "a-jose-m-vaquero",
+      "name": "José M. Vaquero",
+      "role": "author"
+    }
+  ],
+  "container": "Living Reviews in Solar Physics",
+  "volume": "17",
+  "issue": "1",
+  "issued": "2020",
+  "identifiers": {
+    "doi": "10.1007/s41116-020-0023-y"
+  },
+  "citedBy": [
+    "i-0084"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

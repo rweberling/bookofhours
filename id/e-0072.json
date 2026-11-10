@@ -16,10 +16,14 @@
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
     "internetArchive": "bogtrottingfo00nile",
-    "lccn": "04010080"
+    "lccn": "04010080",
+    "hathitrust": "001496940",
+    "oclc": "2532378"
   },
   "citedBy": [
-    "r-0072"
+    "r-0072",
+    "i-0079",
+    "i-0081"
   ],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0191/",
+  "id": "e-0191",
+  "type": "book",
+  "title": "The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds",
+  "contributors": [
+    {
+      "id": "a-antoine-nicolas-duchesne",
+      "name": "Antoine Nicolas Duchesne",
+      "role": "author"
+    },
+    {
+      "id": "a-harry-s-paris",
+      "name": "Harry S. Paris",
+      "role": "editor"
+    }
+  ],
+  "publisher": "Publications scientifiques du Muséum",
+  "issued": "2007",
+  "citedBy": [
+    "i-0108"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

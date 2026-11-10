@@ -1,0 +1,36 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0194/",
+  "id": "e-0194",
+  "type": "article",
+  "title": "Medieval Iconography of Watermelons in Mediterranean Europe",
+  "contributors": [
+    {
+      "id": "a-harry-s-paris",
+      "name": "Harry S. Paris",
+      "role": "author"
+    },
+    {
+      "id": "a-marie-christine-daunay",
+      "name": "Marie-Christine Daunay",
+      "role": "author"
+    },
+    {
+      "id": "a-jules-janick",
+      "name": "Jules Janick",
+      "role": "author"
+    }
+  ],
+  "container": "Annals of Botany",
+  "volume": "112",
+  "issue": "5",
+  "pages": "867–879",
+  "issued": "2013",
+  "identifiers": {
+    "doi": "10.1093/aob/mct151"
+  },
+  "citedBy": [
+    "i-0114"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

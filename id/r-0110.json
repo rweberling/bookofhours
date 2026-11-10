@@ -27,7 +27,12 @@
       ],
       "publisher": "E. P. Dutton & Co.",
       "issued": "1918",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "000282375",
+        "oclc": "1497824",
+        "lccn": "18010568"
+      }
     }
   },
   "lectio": {

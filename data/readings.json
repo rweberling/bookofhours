@@ -1310,7 +1310,8 @@
         "contributors": [{ "id": "a-john-lubbock", "name": "John Lubbock", "role": "author" }],
         "issued": null,
         "original-date": "1894",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "006511871", "oclc": "10656322", "lccn": "14015252" }
       }
     },
     "display": { "weatherUnset": true },
@@ -1354,7 +1355,8 @@
         "contributors": [{ "id": "a-jones-very", "name": "Jones Very", "role": "author", "wikidata": "Q2797629" }],
         "issued": null,
         "original-date": "1883/1886",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "006674010", "oclc": "2790063", "lccn": "14001079" }
       }
     },
     "tags": {
@@ -2837,7 +2839,12 @@
         "publisher": "Knickerbocker Press",
         "issued": "1904",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "identifiers": { "internetArchive": "bogtrottingfo00nile", "lccn": "04010080" }
+        "identifiers": {
+          "internetArchive": "bogtrottingfo00nile",
+          "lccn": "04010080",
+          "hathitrust": "001496940",
+          "oclc": "2532378"
+        }
       }
     },
     "lectio": { "post": "lt-0016", "place": 1 },
@@ -3240,7 +3247,8 @@
         "publisher": "Musson Book Company",
         "issued": "1917",
         "original-date": "1912",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "006678512", "oclc": "4164589" }
       }
     },
     "lectio": { "post": "lt-0020", "place": 2 },
@@ -4393,7 +4401,8 @@
         ],
         "publisher": "E. P. Dutton & Co.",
         "issued": "1918",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "000282375", "oclc": "1497824", "lccn": "18010568" }
       }
     },
     "lectio": { "post": "lt-0032", "place": 2 },

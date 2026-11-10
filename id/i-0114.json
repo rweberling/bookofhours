@@ -8,11 +8,6 @@
   "bibliography": "Paris, Harry S., et al. \"Images of Watermelon Drawn from approx. 1385 to 1395.\" \"Medieval Iconography of Watermelons in Mediterranean Europe,\" <em>Annals of Botany</em>, vol. 112, no. 5, 2013, pp. 867–879.",
   "links": [
     {
-      "role": "cited",
-      "label": "PubMed Central",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/figure/MCT151F2/"
-    },
-    {
       "role": "copy",
       "label": "PubMed Central",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/"
@@ -40,6 +35,40 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "reproductions of manuscripts made about 1385–1395",
+  "edition": {
+    "id": "e-0194",
+    "type": "article",
+    "title": "Medieval Iconography of Watermelons in Mediterranean Europe",
+    "contributors": [
+      {
+        "id": "a-harry-s-paris",
+        "name": "Harry S. Paris",
+        "role": "author"
+      },
+      {
+        "id": "a-marie-christine-daunay",
+        "name": "Marie-Christine Daunay",
+        "role": "author"
+      },
+      {
+        "id": "a-jules-janick",
+        "name": "Jules Janick",
+        "role": "author"
+      }
+    ],
+    "container": "Annals of Botany",
+    "volume": "112",
+    "issue": "5",
+    "pages": "867–879",
+    "issued": "2013",
+    "identifiers": {
+      "doi": "10.1093/aob/mct151"
+    }
+  },
+  "locator": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/figure/MCT151F2/",
+    "label": "PubMed Central"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

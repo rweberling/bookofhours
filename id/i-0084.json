@@ -8,11 +8,6 @@
   "bibliography": "Arlt, R., and J. M. Vaquero. \"Early Sunspot Drawings from Naked-Eye Observations.\" \"Historical Sunspot Records,\" <em>Living Reviews in Solar Physics</em>, vol. 17, no. 1, 2020.",
   "links": [
     {
-      "role": "cited",
-      "label": "Springer",
-      "url": "https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2"
-    },
-    {
       "role": "copy",
       "label": "DOI",
       "url": "https://doi.org/10.1007/s41116-020-0023-y"
@@ -40,6 +35,34 @@
   },
   "rights": "https://creativecommons.org/licenses/by/4.0/",
   "rightsNote": "open access (Living Reviews in Solar Physics)",
+  "edition": {
+    "id": "e-0184",
+    "type": "article",
+    "title": "Historical Sunspot Records",
+    "contributors": [
+      {
+        "id": "a-rainer-arlt",
+        "name": "Rainer Arlt",
+        "role": "author"
+      },
+      {
+        "id": "a-jose-m-vaquero",
+        "name": "José M. Vaquero",
+        "role": "author"
+      }
+    ],
+    "container": "Living Reviews in Solar Physics",
+    "volume": "17",
+    "issue": "1",
+    "issued": "2020",
+    "identifiers": {
+      "doi": "10.1007/s41116-020-0023-y"
+    }
+  },
+  "locator": {
+    "url": "https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2",
+    "label": "Springer"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

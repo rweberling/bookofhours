@@ -1,0 +1,36 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0193/",
+  "id": "e-0193",
+  "type": "article",
+  "title": "Medieval Emergence of Sweet Melons, Cucumis melo (Cucurbitaceae)",
+  "contributors": [
+    {
+      "id": "a-harry-s-paris",
+      "name": "Harry S. Paris",
+      "role": "author"
+    },
+    {
+      "id": "a-zohar-amar",
+      "name": "Zohar Amar",
+      "role": "author"
+    },
+    {
+      "id": "a-efraim-lev",
+      "name": "Efraim Lev",
+      "role": "author"
+    }
+  ],
+  "container": "Annals of Botany",
+  "volume": "110",
+  "issue": "1",
+  "pages": "23–33",
+  "issued": "2012-05",
+  "identifiers": {
+    "doi": "10.1093/aob/mcs098"
+  },
+  "citedBy": [
+    "i-0111"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

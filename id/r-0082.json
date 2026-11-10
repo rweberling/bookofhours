@@ -28,7 +28,11 @@
       "publisher": "Musson Book Company",
       "issued": "1917",
       "original-date": "1912",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "006678512",
+        "oclc": "4164589"
+      }
     }
   },
   "lectio": {

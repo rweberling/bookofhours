@@ -6,13 +6,6 @@
   "caption": "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">Depiction labelled Qawoun (melon, </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">Cucumis melo</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">)</a>. From <em>Kitab al-Hasha'ish fi Hayula al-‘Ilaj al-Tibbi</em> (Arabic translation of Dioscorides’ <em>De Materia Medica</em>, edited by Abu ‘Abdallah al-Natili, approx. 990) and copied in Samarqand, 1082. Rpt. Harry S. Paris, et al. “Medieval emergence of sweet melons, <em>Cucumis melo</em> (Cucurbitaceae).” <em>Annals of Botany</em> 110.1 (May 2012): 23-33.",
   "alt": "A painting from an Arabic herbal of a melon plant: twining blue-grey stems curving into a symmetrical pattern, with dark lobed leaves and round yellow melons, labelled in Arabic script.",
   "bibliography": "\"Qawoun (Melon, <em>Cucumis melo</em>).\" <em>Kitāb al-Ḥashā’ish fī hayūlā al-‘ilāj al-ṭibbī</em>, copied in Samarqand, 1082. Reproduced in Harry S. Paris et al., \"Medieval Emergence of Sweet Melons, <em>Cucumis melo</em> (Cucurbitaceae),\" <em>Annals of Botany</em>, vol. 110, no. 1, May 2012, pp. 23–33.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "PubMed Central",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/"
-    }
-  ],
   "lectio": {
     "post": "lt-0026",
     "place": 2
@@ -34,6 +27,40 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0193",
+    "type": "article",
+    "title": "Medieval Emergence of Sweet Melons, Cucumis melo (Cucurbitaceae)",
+    "contributors": [
+      {
+        "id": "a-harry-s-paris",
+        "name": "Harry S. Paris",
+        "role": "author"
+      },
+      {
+        "id": "a-zohar-amar",
+        "name": "Zohar Amar",
+        "role": "author"
+      },
+      {
+        "id": "a-efraim-lev",
+        "name": "Efraim Lev",
+        "role": "author"
+      }
+    ],
+    "container": "Annals of Botany",
+    "volume": "110",
+    "issue": "1",
+    "pages": "23–33",
+    "issued": "2012-05",
+    "identifiers": {
+      "doi": "10.1093/aob/mcs098"
+    }
+  },
+  "locator": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/",
+    "label": "PubMed Central"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

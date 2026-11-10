@@ -6,13 +6,6 @@
   "caption": "<em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Quegourdes de turquie</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (left), </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Quegourdes</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (centre) and </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Concombres</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (right)</a>. Paintings from the <em><a href=\"https://en.wikipedia.org/wiki/Grandes_Heures_of_Anne_of_Brittany\">Grandes Heures d'Anne de Bretagne</a></em> (1503–1508). Rpt. Harry S. Paris, et al. “First Known Image of Cucurbita in Europe, 1503-1508.” <em>Annals of Botany</em> 98.1 (July 2006): 41-47.",
   "alt": "Three painted borders from a French book of hours, each a climbing vine on a gold ground: bottle gourds with orange flowers, a pale gourd with a white flower, and cucumbers with yellow flowers, among snails, butterflies and insects.",
   "bibliography": "<em>Quegourdes de Turquie</em>, <em>Quegourdes</em> and <em>Concombres</em>. <em>Grandes Heures d’Anne de Bretagne</em>, 1503–1508. Reproduced in Harry S. Paris et al., \"First Known Image of Cucurbita in Europe, 1503–1508,\" <em>Annals of Botany</em>, vol. 98, no. 1, July 2006, pp. 41–47.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "PubMed Central",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/"
-    }
-  ],
   "lectio": {
     "post": "lt-0025",
     "place": 4
@@ -34,6 +27,45 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0192",
+    "type": "article",
+    "title": "First Known Image of Cucurbita in Europe, 1503–1508",
+    "contributors": [
+      {
+        "id": "a-harry-s-paris",
+        "name": "Harry S. Paris",
+        "role": "author"
+      },
+      {
+        "id": "a-marie-christine-daunay",
+        "name": "Marie-Christine Daunay",
+        "role": "author"
+      },
+      {
+        "id": "a-michel-pitrat",
+        "name": "Michel Pitrat",
+        "role": "author"
+      },
+      {
+        "id": "a-jules-janick",
+        "name": "Jules Janick",
+        "role": "author"
+      }
+    ],
+    "container": "Annals of Botany",
+    "volume": "98",
+    "issue": "1",
+    "pages": "41–47",
+    "issued": "2006-07",
+    "identifiers": {
+      "doi": "10.1093/aob/mcl082"
+    }
+  },
+  "locator": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/",
+    "label": "PubMed Central"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

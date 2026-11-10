@@ -46,7 +46,7 @@ from datafile import load, save
 from copy_lectio import next_edition
 
 AGENT = 'EarthlyHours/1.0 (bibliographic identifiers; https://earthlyhours.com)'
-HATHI = re.compile(r'(?:hdl\.handle\.net/2027/|babel\.hathitrust\.org/cgi/pt\?id=)([a-z0-9]+\.[^?&#;/\s"]+)')
+HATHI = re.compile(r'(?:hdl\.handle\.net/2027/|babel\.hathitrust\.org/cgi/pt\?id=)([a-z0-9]+\.(?:ark:/\d+/)?[^?&#;/\s"]+)')
 ARCHIVE = re.compile(r'archive\.org/details/([^/?#\s"]+)')
 DOI = re.compile(r'(?:doi\.org/|/doi/(?:abs/|full/|epdf/|pdf/)?)(10\.\d{4,9}/[^?#\s"]+)')
 LINK = re.compile(r'href="([^"]+)"')

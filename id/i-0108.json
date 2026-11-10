@@ -6,13 +6,6 @@
   "caption": "“<a href=\"https://books.openedition.org/mnhn/5164?dir=next\">67. 18 Juin 1771</a>.” Antoine Nicolas Duchesne. The<em> Essai sur l’Histoire Naturelle des Courges. </em>1786. Ed. Harry S. Paris. <em>The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds</em>. Paris, France: Publications scientifiques du Muséum, 2007.",
   "alt": "A pencil drawing of a single large striped squash lying on its side, its dark rind marked with pale lengthwise bands and speckles, numbered 67.",
   "bibliography": "Duchesne, Antoine Nicolas. \"67. 18 Juin 1771.\" <em>The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds</em>, edited by Harry S. Paris, Publications scientifiques du Muséum, 2007.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "OpenEdition Books",
-      "url": "https://books.openedition.org/mnhn/5164?dir=next"
-    }
-  ],
   "lectio": {
     "post": "lt-0025",
     "place": 3
@@ -35,6 +28,29 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "a reproduction of drawings made in 1771",
+  "edition": {
+    "id": "e-0191",
+    "type": "book",
+    "title": "The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds",
+    "contributors": [
+      {
+        "id": "a-antoine-nicolas-duchesne",
+        "name": "Antoine Nicolas Duchesne",
+        "role": "author"
+      },
+      {
+        "id": "a-harry-s-paris",
+        "name": "Harry S. Paris",
+        "role": "editor"
+      }
+    ],
+    "publisher": "Publications scientifiques du Muséum",
+    "issued": "2007"
+  },
+  "locator": {
+    "url": "https://books.openedition.org/mnhn/5164?dir=next",
+    "label": "OpenEdition Books"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

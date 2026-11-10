@@ -278,7 +278,8 @@
       "id": "e-0163",
       "title": "The Book of Life; or, The Spiritual, Social, and Physical Constitution of Man",
       "publisher": "Sivartha Publishing",
-      "issued": "1898"
+      "issued": "1898",
+      "identifiers": { "hathitrust": "006517826", "oclc": "30136548" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t77s7n156?urlappend=%3Bseq=65",
@@ -2269,13 +2270,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21\">Wool Sower Gall,</a>” from Carl F. Gronemann, <em>Fifty Common Plant Galls of the Chicago Area</em>, Botany Leaflet 16<em> </em>(Chicago: Chicago Field Museum, 1930), p. 13.",
     "alt": "A book page describing the wool sower gall, beside a pen drawing of an oak twig bearing a round, woolly gall, with a single small gall drawn next to it.",
     "bibliography": "Gronemann, Carl F. \"Wool Sower Gall.\" <em>Fifty Common Plant Galls of the Chicago Area</em>, Botany Leaflet 16, Field Museum of Natural History, 1930.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21"
-      }
-    ],
     "lectio": { "post": "lt-0015", "place": 3 },
     "tags": {
       "hours": [],
@@ -2286,7 +2280,20 @@
     "display": {
       "size": [1404, 820]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0181",
+      "type": "book",
+      "title": "Fifty Common Plant Galls of the Chicago Area",
+      "contributors": [{ "id": "a-carl-f-gronemann", "name": "Carl F. Gronemann", "role": "author" }],
+      "publisher": "Field Museum of Natural History",
+      "issued": "1930",
+      "identifiers": { "hathitrust": "006910411", "oclc": "2334206" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21",
+      "label": "HathiTrust"
+    }
   },
   {
     "id": "i-0079",
@@ -2295,13 +2302,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">The Pink Moccasin-Flower. (</a><em><a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">Cypripedium acaule.</a></em><a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8\">)</a>,” from Grace Greylock Niles, <em>Bog-Trotting for Orchids </em>(New York: The Knickerbocker Press, 1904), colored frontispiece.",
     "alt": "A color photograph of pink lady’s slippers growing in a shady wood: several tall stems, each with a single pink, pouch-shaped flower, above broad, ribbed leaves.",
     "bibliography": "Niles, Grace Greylock. \"The Pink Moccasin-Flower (<em>Cypripedium acaule</em>).\" Frontispiece, <em>Bog-Trotting for Orchids</em>, Knickerbocker Press, 1904.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8"
-      }
-    ],
     "lectio": { "post": "lt-0016", "place": 1 },
     "tags": {
       "hours": [],
@@ -2312,7 +2312,33 @@
     "display": {
       "size": [459, 689]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0072",
+      "type": "book",
+      "title": "Bog-Trotting for Orchids",
+      "contributors": [
+        {
+          "id": "a-grace-greylock-niles",
+          "name": "Grace Greylock Niles",
+          "role": "author",
+          "wikidata": "Q21393563"
+        }
+      ],
+      "publisher": "Knickerbocker Press",
+      "issued": "1904",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "bogtrottingfo00nile",
+        "lccn": "04010080",
+        "hathitrust": "001496940",
+        "oclc": "2532378"
+      }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8",
+      "label": "HathiTrust"
+    }
   },
   {
     "id": "i-0080",
@@ -2321,13 +2347,6 @@
     "caption": "“<em><a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29\">Cypripedium acaule</a></em>,” from <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em> (Boston: Bradlee Whidden, 1885), n.p.",
     "alt": "A black-and-white photograph of a single lady’s slipper orchid: one drooping, pouch-shaped flower atop a tall bare stem, above two broad leaves.",
     "bibliography": "Young, C. S. \"<em>Cypripedium acaule</em>.\" <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em>, Bradlee Whidden, 1885.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29"
-      }
-    ],
     "lectio": { "post": "lt-0016", "place": 2 },
     "tags": {
       "hours": [],
@@ -2338,7 +2357,20 @@
     "display": {
       "size": [439, 735]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0074",
+      "type": "book",
+      "title": "All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States",
+      "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }],
+      "publisher": "Bradlee Whidden",
+      "issued": "1885",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29",
+      "label": "HathiTrust"
+    }
   },
   {
     "id": "i-0081",
@@ -2347,13 +2379,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379\">The Pink Moccasin-Flower - The Stemless Lady’s Slipper</a>,” from Grace Greylock Niles, <em>Bog-Trotting for Orchids</em>, p. 247.",
     "alt": "A color plate of a pink lady’s slipper taken apart: the pink, veined pouch, the long brown-red petals and sepals, and smaller parts laid out in rows.",
     "bibliography": "Niles, Grace Greylock. \"The Pink Moccasin-Flower – The Stemless Lady’s Slipper.\" <em>Bog-Trotting for Orchids</em>, Knickerbocker Press, 1904.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379"
-      }
-    ],
     "lectio": { "post": "lt-0016", "place": 3 },
     "tags": {
       "hours": [],
@@ -2364,7 +2389,33 @@
     "display": {
       "size": [443, 695]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0072",
+      "type": "book",
+      "title": "Bog-Trotting for Orchids",
+      "contributors": [
+        {
+          "id": "a-grace-greylock-niles",
+          "name": "Grace Greylock Niles",
+          "role": "author",
+          "wikidata": "Q21393563"
+        }
+      ],
+      "publisher": "Knickerbocker Press",
+      "issued": "1904",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "bogtrottingfo00nile",
+        "lccn": "04010080",
+        "hathitrust": "001496940",
+        "oclc": "2532378"
+      }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379",
+      "label": "HathiTrust"
+    }
   },
   {
     "id": "i-0082",
@@ -2401,11 +2452,6 @@
     "bibliography": "Trouvelot, Étienne Léopold. \"Plate IV. Solar Prominences.\" <em>Annals of the Astronomical Observatory of Harvard College</em>, vol. 8, John Wilson and Son, 1876. Wellcome Collection, London.",
     "links": [
       {
-        "role": "cited",
-        "label": "Wellcome Collection",
-        "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f"
-      },
-      {
         "role": "copy",
         "label": "HathiTrust",
         "url": "https://hdl.handle.net/2027/coo.31924056091709?urlappend=%3Bseq=151%3Bownerid=27021597769875425-161"
@@ -2421,7 +2467,18 @@
     "display": {
       "size": [394, 639]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0183",
+      "type": "book",
+      "title": "Annals of the Astronomical Observatory of Harvard College, vol. 8",
+      "publisher": "John Wilson and Son",
+      "issued": "1876"
+    },
+    "locator": {
+      "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f",
+      "label": "Wellcome Collection"
+    }
   },
   {
     "id": "i-0084",
@@ -2430,14 +2487,7 @@
     "caption": "“<a href=\"https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2\">Early sunspot drawings from naked-eye observations</a>,” rpt. from R. Arlt and J.M. Vaquero, “<a href=\"https://doi.org/10.1007/s41116-020-0023-y\">Historical sunspot records</a>.” <em>Living Reviews in Solar Physics</em> 17.1 (2020).",
     "alt": "Two early drawings of sunspots: a medieval manuscript page with the sun drawn as a circle holding two dark spots, among lines of Latin; and an East Asian painting of a red sun marked with dark spots, above a misty landscape with pines and rocky peaks.",
     "bibliography": "Arlt, R., and J. M. Vaquero. \"Early Sunspot Drawings from Naked-Eye Observations.\" \"Historical Sunspot Records,\" <em>Living Reviews in Solar Physics</em>, vol. 17, no. 1, 2020.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Springer",
-        "url": "https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2"
-      },
-      { "role": "copy", "label": "DOI", "url": "https://doi.org/10.1007/s41116-020-0023-y" }
-    ],
+    "links": [{ "role": "copy", "label": "DOI", "url": "https://doi.org/10.1007/s41116-020-0023-y" }],
     "lectio": { "post": "lt-0017", "place": 3 },
     "tags": {
       "hours": [],
@@ -2449,7 +2499,25 @@
       "size": [1381, 428]
     },
     "rights": "https://creativecommons.org/licenses/by/4.0/",
-    "rightsNote": "open access (Living Reviews in Solar Physics)"
+    "rightsNote": "open access (Living Reviews in Solar Physics)",
+    "edition": {
+      "id": "e-0184",
+      "type": "article",
+      "title": "Historical Sunspot Records",
+      "contributors": [
+        { "id": "a-rainer-arlt", "name": "Rainer Arlt", "role": "author" },
+        { "id": "a-jose-m-vaquero", "name": "José M. Vaquero", "role": "author" }
+      ],
+      "container": "Living Reviews in Solar Physics",
+      "volume": "17",
+      "issue": "1",
+      "issued": "2020",
+      "identifiers": { "doi": "10.1007/s41116-020-0023-y" }
+    },
+    "locator": {
+      "url": "https://link.springer.com/article/10.1007/s41116-020-0023-y/figures/2",
+      "label": "Springer"
+    }
   },
   {
     "id": "i-0085",
@@ -2555,13 +2623,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499\">Fay’s Prolific</a>,” from <em>Fruit Culture, Volume 2</em> (Scranton, Pennsylvania: International Textbook Company, 1913), Section 19.",
     "alt": "A color painting of red currants: three long, hanging clusters of glossy, translucent red berries on a woody stem among lobed green leaves.",
     "bibliography": "\"Fay’s Prolific.\" <em>Fruit Culture</em>, vol. 2, International Textbook Company, 1913.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499"
-      }
-    ],
     "lectio": { "post": "lt-0019", "place": 1 },
     "tags": {
       "hours": [],
@@ -2572,7 +2633,18 @@
     "display": {
       "size": [460, 718]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0185",
+      "type": "book",
+      "title": "Fruit Culture, vol. 2",
+      "publisher": "International Textbook Company",
+      "issued": "1913"
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499",
+      "label": "HathiTrust"
+    }
   },
   {
     "id": "i-0089",
@@ -2727,13 +2799,6 @@
     "caption": "“<a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215\">Plate XIV</a>,” from George Ashley Crosthwait, <em>Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting </em>(Urbana-Champaign, Illinois: University of Illinois College of Agriculture, 1903).",
     "alt": "A sepia photograph of a single tall corn plant posed against a pale backdrop, its leaves drooping and curled, with a few small ears along the stalk.",
     "bibliography": "Crosthwait, George Ashley. \"Plate XIV.\" <em>Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting</em>, University of Illinois College of Agriculture, 1903.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "HathiTrust",
-        "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215"
-      }
-    ],
     "lectio": { "post": "lt-0020", "place": 4 },
     "tags": {
       "hours": [],
@@ -2744,7 +2809,26 @@
     "display": {
       "size": [612, 848]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0186",
+      "type": "book",
+      "title": "Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting",
+      "contributors": [
+        {
+          "id": "a-george-ashley-crosthwait",
+          "name": "George Ashley Crosthwait",
+          "role": "author"
+        }
+      ],
+      "publisher": "University of Illinois College of Agriculture",
+      "issued": "1903",
+      "identifiers": { "hathitrust": "100179353", "oclc": "421153485" }
+    },
+    "locator": {
+      "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215",
+      "label": "HathiTrust"
+    }
   },
   {
     "id": "i-0095",
@@ -2973,13 +3057,6 @@
     "caption": "W.F. Denning. “<a href=\"https://ui.adsabs.harvard.edu/scan/manifest/1901MNRAS..62..161D\">Positions of the Perseid Radiant Point, July 15, to August 20</a>.” From “The Observed Motion and Duration of the Radiant Point of the Perseids.” <em>Monthly Notices of the Royal Astronomical Society </em>(December 1901: 161-169). 168.",
     "alt": "A star chart, white on black, tracing the moving radiant of the Perseid meteors as a line of small circles, each dated, from mid-July through August, through the constellations Andromeda, Perseus and Cassiopeia.",
     "bibliography": "Denning, W. F. \"Positions of the Perseid Radiant Point, July 15 to August 20.\" \"The Observed Motion and Duration of the Radiant Point of the Perseids,\" <em>Monthly Notices of the Royal Astronomical Society</em>, Dec. 1901, pp. 161–169.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "NASA ADS",
-        "url": "https://ui.adsabs.harvard.edu/scan/manifest/1901MNRAS..62..161D"
-      }
-    ],
     "lectio": { "post": "lt-0024", "place": 1 },
     "tags": {
       "hours": [],
@@ -2990,7 +3067,23 @@
     "display": {
       "size": [727, 477]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0187",
+      "type": "article",
+      "title": "The Observed Motion and Duration of the Radiant Point of the Perseids",
+      "contributors": [{ "id": "a-w-f-denning", "name": "W. F. Denning", "role": "author" }],
+      "container": "Monthly Notices of the Royal Astronomical Society",
+      "volume": "62",
+      "issue": "2",
+      "pages": "161–169",
+      "issued": "1901-12",
+      "identifiers": { "doi": "10.1093/mnras/62.2.161" }
+    },
+    "locator": {
+      "url": "https://ui.adsabs.harvard.edu/scan/manifest/1901MNRAS..62..161D",
+      "label": "NASA ADS"
+    }
   },
   {
     "id": "i-0104",
@@ -2999,13 +3092,6 @@
     "caption": "W.F. Denning. “<a href=\"https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D\">Horary number of Perseïds</a>.” From “The August Perseïds, 1877.” <em>The Observatory</em> 1 (September 1877): 164-166.",
     "alt": "A printed table of a night’s meteor watch in August 1877, giving the number of Perseids and other meteors seen in each half hour, with notes on the weather.",
     "bibliography": "Denning, W. F. \"Horary Number of Perseïds.\" \"The August Perseïds, 1877,\" <em>The Observatory</em>, vol. 1, Sept. 1877, pp. 164–166.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "NASA ADS",
-        "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D"
-      }
-    ],
     "lectio": { "post": "lt-0024", "place": 2 },
     "tags": {
       "hours": [],
@@ -3016,7 +3102,21 @@
     "display": {
       "size": [1456, 874]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0188",
+      "type": "article",
+      "title": "The August Perseïds, 1877",
+      "contributors": [{ "id": "a-w-f-denning", "name": "W. F. Denning", "role": "author" }],
+      "container": "The Observatory",
+      "volume": "1",
+      "pages": "164–166",
+      "issued": "1877-09"
+    },
+    "locator": {
+      "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D",
+      "label": "NASA ADS"
+    }
   },
   {
     "id": "i-0105",
@@ -3052,13 +3152,6 @@
     "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/44254481\">Courd, Courge, Der Kürbiss</a>.” Eugène Grasset and M. P. Verneuil. <em>La plante et ses applications ornementales</em>. Paris, France: Librairie Centrale des Beaux-Arts, 1896. Plate 14.",
     "alt": "An Art Nouveau design plate of gourds: orange, bottle-shaped gourds and pale yellow flowers among large green leaves and twining blue tendrils, with matching decorative borders.",
     "bibliography": "Grasset, Eugène, and M. P. Verneuil. \"Courge.\" Plate 14, <em>La plante et ses applications ornementales</em>, Librairie Centrale des Beaux-Arts, 1896.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Biodiversity Heritage Library",
-        "url": "https://www.biodiversitylibrary.org/page/44254481"
-      }
-    ],
     "lectio": { "post": "lt-0025", "place": 1 },
     "tags": {
       "hours": [],
@@ -3069,7 +3162,19 @@
     "display": {
       "size": [577, 886]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0189",
+      "type": "book",
+      "title": "La plante et ses applications ornementales",
+      "contributors": [{ "id": "a-eugene-grasset", "name": "Eugène Grasset", "role": "editor" }],
+      "publisher": "Librairie Centrale des Beaux-Arts",
+      "issued": "1896"
+    },
+    "locator": {
+      "url": "https://www.biodiversitylibrary.org/page/44254481",
+      "label": "Biodiversity Heritage Library"
+    }
   },
   {
     "id": "i-0107",
@@ -3078,13 +3183,6 @@
     "caption": "“<a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Fruit Shape of Each of the Eight Cultivar Groups of </a><em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\">Cucurbita Pepo.</a></em><a href=\"https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up\"> Proximal (stem) end is at top, distal (blossom end at bottom</a>.” Harry S. Paris. “A Proposed Subspecific Classification for Cucurbita-Pepo.” <em>Phytologia</em> 61.3 (November 1986: 133-138), 136.",
     "alt": "Outline drawings of the fruit shapes of eight kinds of summer and winter squash, each labelled: round pumpkin, flat scallop, ribbed acorn, curved crookneck, straightneck, vegetable marrow, long cocozelle and zucchini.",
     "bibliography": "Paris, Harry S. \"Fruit Shape of Each of the Eight Cultivar Groups of <em>Cucurbita pepo</em>.\" \"A Proposed Subspecific Classification for <em>Cucurbita pepo</em>,\" <em>Phytologia</em>, vol. 61, no. 3, Nov. 1986, pp. 133–138.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Biodiversity Heritage Library",
-        "url": "https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up"
-      }
-    ],
     "lectio": { "post": "lt-0025", "place": 2 },
     "tags": {
       "hours": [],
@@ -3095,7 +3193,22 @@
     "display": {
       "size": [1288, 1706]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "edition": {
+      "id": "e-0190",
+      "type": "article",
+      "title": "A Proposed Subspecific Classification for Cucurbita pepo",
+      "contributors": [{ "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "author" }],
+      "container": "Phytologia",
+      "volume": "61",
+      "issue": "3",
+      "pages": "133–138",
+      "issued": "1986-11"
+    },
+    "locator": {
+      "url": "https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up",
+      "label": "Biodiversity Heritage Library"
+    }
   },
   {
     "id": "i-0108",
@@ -3104,13 +3217,6 @@
     "caption": "“<a href=\"https://books.openedition.org/mnhn/5164?dir=next\">67. 18 Juin 1771</a>.” Antoine Nicolas Duchesne. The<em> Essai sur l’Histoire Naturelle des Courges. </em>1786. Ed. Harry S. Paris. <em>The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds</em>. Paris, France: Publications scientifiques du Muséum, 2007.",
     "alt": "A pencil drawing of a single large striped squash lying on its side, its dark rind marked with pale lengthwise bands and speckles, numbered 67.",
     "bibliography": "Duchesne, Antoine Nicolas. \"67. 18 Juin 1771.\" <em>The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds</em>, edited by Harry S. Paris, Publications scientifiques du Muséum, 2007.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "OpenEdition Books",
-        "url": "https://books.openedition.org/mnhn/5164?dir=next"
-      }
-    ],
     "lectio": { "post": "lt-0025", "place": 3 },
     "tags": {
       "hours": [],
@@ -3122,7 +3228,26 @@
       "size": [902, 596]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a reproduction of drawings made in 1771"
+    "rightsNote": "a reproduction of drawings made in 1771",
+    "edition": {
+      "id": "e-0191",
+      "type": "book",
+      "title": "The Drawings of Antoine Nicolas Duchesne for His Natural History of the Gourds",
+      "contributors": [
+        {
+          "id": "a-antoine-nicolas-duchesne",
+          "name": "Antoine Nicolas Duchesne",
+          "role": "author"
+        },
+        { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "editor" }
+      ],
+      "publisher": "Publications scientifiques du Muséum",
+      "issued": "2007"
+    },
+    "locator": {
+      "url": "https://books.openedition.org/mnhn/5164?dir=next",
+      "label": "OpenEdition Books"
+    }
   },
   {
     "id": "i-0109",
@@ -3131,13 +3256,6 @@
     "caption": "<em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Quegourdes de turquie</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (left), </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Quegourdes</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (centre) and </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\">Concombres</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/\"> (right)</a>. Paintings from the <em><a href=\"https://en.wikipedia.org/wiki/Grandes_Heures_of_Anne_of_Brittany\">Grandes Heures d'Anne de Bretagne</a></em> (1503–1508). Rpt. Harry S. Paris, et al. “First Known Image of Cucurbita in Europe, 1503-1508.” <em>Annals of Botany</em> 98.1 (July 2006): 41-47.",
     "alt": "Three painted borders from a French book of hours, each a climbing vine on a gold ground: bottle gourds with orange flowers, a pale gourd with a white flower, and cucumbers with yellow flowers, among snails, butterflies and insects.",
     "bibliography": "<em>Quegourdes de Turquie</em>, <em>Quegourdes</em> and <em>Concombres</em>. <em>Grandes Heures d’Anne de Bretagne</em>, 1503–1508. Reproduced in Harry S. Paris et al., \"First Known Image of Cucurbita in Europe, 1503–1508,\" <em>Annals of Botany</em>, vol. 98, no. 1, July 2006, pp. 41–47.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "PubMed Central",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/"
-      }
-    ],
     "lectio": { "post": "lt-0025", "place": 4 },
     "tags": {
       "hours": [],
@@ -3148,7 +3266,25 @@
     "display": {
       "size": [759, 716]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0192",
+      "type": "article",
+      "title": "First Known Image of Cucurbita in Europe, 1503–1508",
+      "contributors": [
+        { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "author" },
+        { "id": "a-marie-christine-daunay", "name": "Marie-Christine Daunay", "role": "author" },
+        { "id": "a-michel-pitrat", "name": "Michel Pitrat", "role": "author" },
+        { "id": "a-jules-janick", "name": "Jules Janick", "role": "author" }
+      ],
+      "container": "Annals of Botany",
+      "volume": "98",
+      "issue": "1",
+      "pages": "41–47",
+      "issued": "2006-07",
+      "identifiers": { "doi": "10.1093/aob/mcl082" }
+    },
+    "locator": { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/", "label": "PubMed Central" }
   },
   {
     "id": "i-0110",
@@ -3183,13 +3319,6 @@
     "caption": "<a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">Depiction labelled Qawoun (melon, </a><em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">Cucumis melo</a></em><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/\">)</a>. From <em>Kitab al-Hasha'ish fi Hayula al-‘Ilaj al-Tibbi</em> (Arabic translation of Dioscorides’ <em>De Materia Medica</em>, edited by Abu ‘Abdallah al-Natili, approx. 990) and copied in Samarqand, 1082. Rpt. Harry S. Paris, et al. “Medieval emergence of sweet melons, <em>Cucumis melo</em> (Cucurbitaceae).” <em>Annals of Botany</em> 110.1 (May 2012): 23-33.",
     "alt": "A painting from an Arabic herbal of a melon plant: twining blue-grey stems curving into a symmetrical pattern, with dark lobed leaves and round yellow melons, labelled in Arabic script.",
     "bibliography": "\"Qawoun (Melon, <em>Cucumis melo</em>).\" <em>Kitāb al-Ḥashā’ish fī hayūlā al-‘ilāj al-ṭibbī</em>, copied in Samarqand, 1082. Reproduced in Harry S. Paris et al., \"Medieval Emergence of Sweet Melons, <em>Cucumis melo</em> (Cucurbitaceae),\" <em>Annals of Botany</em>, vol. 110, no. 1, May 2012, pp. 23–33.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "PubMed Central",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/"
-      }
-    ],
     "lectio": { "post": "lt-0026", "place": 2 },
     "tags": {
       "hours": [],
@@ -3200,7 +3329,27 @@
     "display": {
       "size": [650, 667]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0193",
+      "type": "article",
+      "title": "Medieval Emergence of Sweet Melons, Cucumis melo (Cucurbitaceae)",
+      "contributors": [
+        { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "author" },
+        { "id": "a-zohar-amar", "name": "Zohar Amar", "role": "author" },
+        { "id": "a-efraim-lev", "name": "Efraim Lev", "role": "author" }
+      ],
+      "container": "Annals of Botany",
+      "volume": "110",
+      "issue": "1",
+      "pages": "23–33",
+      "issued": "2012-05",
+      "identifiers": { "doi": "10.1093/aob/mcs098" }
+    },
+    "locator": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3380595/figure/MCS098F2/",
+      "label": "PubMed Central"
+    }
   },
   {
     "id": "i-0112",
@@ -3256,11 +3405,6 @@
     "bibliography": "Paris, Harry S., et al. \"Images of Watermelon Drawn from approx. 1385 to 1395.\" \"Medieval Iconography of Watermelons in Mediterranean Europe,\" <em>Annals of Botany</em>, vol. 112, no. 5, 2013, pp. 867–879.",
     "links": [
       {
-        "role": "cited",
-        "label": "PubMed Central",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/figure/MCT151F2/"
-      },
-      {
         "role": "copy",
         "label": "PubMed Central",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/"
@@ -3277,7 +3421,27 @@
       "size": [705, 1179]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "reproductions of manuscripts made about 1385–1395"
+    "rightsNote": "reproductions of manuscripts made about 1385–1395",
+    "edition": {
+      "id": "e-0194",
+      "type": "article",
+      "title": "Medieval Iconography of Watermelons in Mediterranean Europe",
+      "contributors": [
+        { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "author" },
+        { "id": "a-marie-christine-daunay", "name": "Marie-Christine Daunay", "role": "author" },
+        { "id": "a-jules-janick", "name": "Jules Janick", "role": "author" }
+      ],
+      "container": "Annals of Botany",
+      "volume": "112",
+      "issue": "5",
+      "pages": "867–879",
+      "issued": "2013",
+      "identifiers": { "doi": "10.1093/aob/mct151" }
+    },
+    "locator": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3747804/figure/MCT151F2/",
+      "label": "PubMed Central"
+    }
   },
   {
     "id": "i-0115",

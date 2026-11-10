@@ -6,13 +6,6 @@
   "caption": "“<a href=\"https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379\">The Pink Moccasin-Flower - The Stemless Lady’s Slipper</a>,” from Grace Greylock Niles, <em>Bog-Trotting for Orchids</em>, p. 247.",
   "alt": "A color plate of a pink lady’s slipper taken apart: the pink, veined pouch, the long brown-red petals and sepals, and smaller parts laid out in rows.",
   "bibliography": "Niles, Grace Greylock. \"The Pink Moccasin-Flower – The Stemless Lady’s Slipper.\" <em>Bog-Trotting for Orchids</em>, Knickerbocker Press, 1904.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "HathiTrust",
-      "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379"
-    }
-  ],
   "lectio": {
     "post": "lt-0016",
     "place": 3
@@ -34,6 +27,32 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0072",
+    "type": "book",
+    "title": "Bog-Trotting for Orchids",
+    "contributors": [
+      {
+        "id": "a-grace-greylock-niles",
+        "name": "Grace Greylock Niles",
+        "role": "author",
+        "wikidata": "Q21393563"
+      }
+    ],
+    "publisher": "Knickerbocker Press",
+    "issued": "1904",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "bogtrottingfo00nile",
+      "lccn": "04010080",
+      "hathitrust": "001496940",
+      "oclc": "2532378"
+    }
+  },
+  "locator": {
+    "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379",
+    "label": "HathiTrust"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -1,0 +1,13 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0183/",
+  "id": "e-0183",
+  "type": "book",
+  "title": "Annals of the Astronomical Observatory of Harvard College, vol. 8",
+  "publisher": "John Wilson and Son",
+  "issued": "1876",
+  "citedBy": [
+    "i-0083"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

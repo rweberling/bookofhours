@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0186/",
+  "id": "e-0186",
+  "type": "book",
+  "title": "Indian Corn (Zea mays): Production, Selection, Preservation, and Germination of Its Seed, and General Principles of Planting",
+  "contributors": [
+    {
+      "id": "a-george-ashley-crosthwait",
+      "name": "George Ashley Crosthwait",
+      "role": "author"
+    }
+  ],
+  "publisher": "University of Illinois College of Agriculture",
+  "issued": "1903",
+  "identifiers": {
+    "hathitrust": "100179353",
+    "oclc": "421153485"
+  },
+  "citedBy": [
+    "i-0094"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
