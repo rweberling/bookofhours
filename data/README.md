@@ -44,6 +44,15 @@ Every record has an `id`, and most share a few fields:
   `both`. A tag with no basis is unclassified, not assumed grounded. The
   notes are working notes for now; the pages don't show them, and read
   either form of tag alike.
+- **Season tags** on Hours and Weather pieces lean the picks toward the
+  season it is now (×3; `shared.js`), and only ever add weight. So a piece
+  is tagged only when it shows or names something that belongs to one
+  season: snow, frost, autumn leaves, a harvest, a named month, a seasonal
+  custom or effect (Hiroshige's summer river platforms, Hokusai's red
+  Fuji). Green trees under a clear sky, especially in a Mediterranean
+  landscape, could be most of the year: leave those untagged, which keeps
+  them at their ordinary weight all year. When unsure, leave it untagged.
+  The seasons are the northern hemisphere's, by month (`vocab.json`).
 - **`lectio`**: for a piece copied from a Lectio Terra post, the post's ID
   and its place there (`{"post": "lt-0004", "place": 2}`: the post's second
   passage, or second figure).
