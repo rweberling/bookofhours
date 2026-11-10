@@ -162,6 +162,15 @@ def json_ld(entry, subject, url, image):
         data['datePublished'] = entry['published']
     if image:
         data['image'] = image
+    # Each study is kept from one place (data/site.json's "place").
+    place = load('site').get('place')
+    if place:
+        data['spatialCoverage'] = {
+            '@type': 'Place',
+            'name': place['name'].removeprefix('the '),
+            'description': f'Near {place["near"]}, between {place["between"]}; {place["region"]}.',
+            'geo': {'@type': 'GeoCoordinates', **place['geo']},
+        }
     if subject:
         about = {'@type': 'Thing', 'name': subject['name']}
         if subject.get('scientific'):

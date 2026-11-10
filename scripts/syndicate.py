@@ -320,14 +320,24 @@ def now():
 
 def ensure_publication(bs, c):
     p = c.config['publication']
-    if bs.get('site.standard.publication', p['rkey']):
-        return f'at://{bs.did}/site.standard.publication/{p["rkey"]}'
+    uri = f'at://{bs.did}/site.standard.publication/{p["rkey"]}'
     record = {'$type': 'site.standard.publication', 'url': p['url'], 'name': p['name'],
               'description': p['description'], 'preferences': {'showInDiscover': True}}
+    old = bs.get('site.standard.publication', p['rkey'])
+    if old:
+        if all(old['value'].get(k) == record[k] for k in ('url', 'name', 'description')):
+            return uri
+        # Changed in syndication.json: update it, keeping its icon.
+        if old['value'].get('icon'):
+            record['icon'] = old['value']['icon']
+        bs.put('site.standard.publication', p['rkey'], record)
+        print(f'Updated the publication record {p["rkey"]}.')
+        return uri
     if p.get('icon'):
         record['icon'] = bs.blob(ROOT / p['icon'])[0]
     print(f'Made the publication record {p["rkey"]}.')
-    return bs.put('site.standard.publication', p['rkey'], record)['uri']
+    bs.put('site.standard.publication', p['rkey'], record)
+    return uri
 
 
 def send_essay(bs, c, post, plan, publication):

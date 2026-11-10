@@ -19,7 +19,7 @@ is no database and nothing generated in between.
 | `vocab.json` | The terms everything is tagged with: the eight hours, the four seasons, the twenty weather conditions |
 | `postcards.csv` | The postcards, one row each (`pc-`) |
 | `syndication.json` | What `scripts/syndicate.py` posts to Bluesky: the account, the standard.site publication, the standing hashtags, the streams, and what was posted: each essay's records (`essays`) and the `log` of every post made (both written by the script) |
-| `site.json` | Site settings: `suggestedEditionUrl`, the pattern for suggested-edition links (`{isbn}` where the ISBN goes) |
+| `site.json` | Site settings: `suggestedEditionUrl`, the pattern for suggested-edition links (`{isbn}` where the ISBN goes); and `place`, where the Seasons' year is kept (the Boston Basin, near the Charles River: its rounded coordinates, Wikidata IDs and EPA ecoregion levels), named in each post page's structured data |
 | `retired-ids.json` | IDs that were published and then retired, so they're never issued again |
 | `image-files.json` | Written by `scripts/build_images.py`: the web copies made of each image. Don't edit it |
 

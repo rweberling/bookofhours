@@ -1,1 +1,18 @@
-{ "suggestedEditionUrl": "https://bookshop.org/a/86532/{isbn}" }
+{
+  "suggestedEditionUrl": "https://bookshop.org/a/86532/{isbn}",
+  "place": {
+    "name": "the Boston Basin",
+    "near": "the Charles River",
+    "between": "the northeastern woodlands and the Atlantic coast",
+    "region": "Massachusetts, United States",
+    "hemisphere": "northern",
+    "geo": { "latitude": 42.4, "longitude": -71.1 },
+    "wikidata": { "Charles River": "Q794927" },
+    "ecoregion": {
+      "system": "US EPA ecoregions",
+      "levelI": "8 Eastern Temperate Forests",
+      "levelII": "8.1 Mixed Wood Plains",
+      "levelIII": "59 Northeastern Coastal Zone"
+    }
+  }
+}
