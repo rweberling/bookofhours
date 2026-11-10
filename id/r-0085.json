@@ -24,7 +24,12 @@
       ],
       "publisher": "Faber & Faber",
       "issued": "1994",
-      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "identifiers": {
+        "oclc": "32856959",
+        "openlibrary": "OL18666936M",
+        "internetArchive": "annalsofchile00paul"
+      }
     }
   },
   "lectio": {

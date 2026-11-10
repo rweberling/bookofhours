@@ -33,7 +33,14 @@
       "publisher": "Open Court",
       "issued": "1909",
       "original-date": "1668",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "oclc": "384568",
+        "lccn": "09030641",
+        "openlibrary": "OL7013712M",
+        "internetArchive": "experimentsongen00redi",
+        "hathitrust": "005760042"
+      }
     }
   },
   "lectio": {

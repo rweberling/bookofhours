@@ -2799,7 +2799,14 @@
         "publisher": "Open Court",
         "issued": "1909",
         "original-date": "1668",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": {
+          "oclc": "384568",
+          "lccn": "09030641",
+          "openlibrary": "OL7013712M",
+          "internetArchive": "experimentsongen00redi",
+          "hathitrust": "005760042"
+        }
       }
     },
     "lectio": { "post": "lt-0015", "place": 2 },
@@ -2999,7 +3006,8 @@
         "contributors": [{ "id": "a-simon-barraclough", "name": "Simon Barraclough", "role": "author" }],
         "publisher": "Penned in the Margins",
         "issued": "2015",
-        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "identifiers": { "isbn": "9781908058416", "openlibrary": "OL39916251M" }
       }
     },
     "suggestedEdition": { "isbn": "9781908058416" },
@@ -3042,7 +3050,8 @@
         ],
         "publisher": "Scribner",
         "issued": "2024",
-        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "identifiers": { "isbn": "9781668072240" }
       }
     },
     "suggestedEdition": { "isbn": "9781668072240" },
@@ -3207,7 +3216,13 @@
         "publisher": "Champlain Society",
         "issued": "1970",
         "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-        "rightsNote": "written 1816, first published 1970"
+        "rightsNote": "written 1816, first published 1970",
+        "identifiers": {
+          "oclc": "281457",
+          "lccn": "72176041",
+          "openlibrary": "OL5323360M",
+          "internetArchive": "journalofmajorjo0046nort"
+        }
       }
     },
     "lectio": { "post": "lt-0020", "place": 1 },
@@ -3346,7 +3361,12 @@
         ],
         "publisher": "Faber & Faber",
         "issued": "1994",
-        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "identifiers": {
+          "oclc": "32856959",
+          "openlibrary": "OL18666936M",
+          "internetArchive": "annalsofchile00paul"
+        }
       }
     },
     "lectio": { "post": "lt-0022", "place": 1 },

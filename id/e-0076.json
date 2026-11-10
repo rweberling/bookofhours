@@ -13,6 +13,10 @@
   "publisher": "Penned in the Margins",
   "issued": "2015",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "identifiers": {
+    "isbn": "9781908058416",
+    "openlibrary": "OL39916251M"
+  },
   "citedBy": [
     "r-0076"
   ],

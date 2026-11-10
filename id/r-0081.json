@@ -38,7 +38,13 @@
       "publisher": "Champlain Society",
       "issued": "1970",
       "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-      "rightsNote": "written 1816, first published 1970"
+      "rightsNote": "written 1816, first published 1970",
+      "identifiers": {
+        "oclc": "281457",
+        "lccn": "72176041",
+        "openlibrary": "OL5323360M",
+        "internetArchive": "journalofmajorjo0046nort"
+      }
     }
   },
   "lectio": {
