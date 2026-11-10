@@ -6,13 +6,6 @@
   "caption": "“Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) rough,” from <a href=\"https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production\">Elisabeth Rodriguez-Guell, et al.</a> (2006).",
   "alt": "Two electron-microscope images, side by side, of bacteria magnified thousands of times: on the left, a few rod-shaped cells among frost-like crystals; on the right, a dense mat of rods stacked like logs.",
   "bibliography": "Rodríguez-Güell, Elisabeth, et al. \"Scanning Electron Microscopy Analysis of Colony Variants of M. vaccae.\" \"A New Extracellular Putative Long-Chain Saturated Polyester Produced by Smooth Variants of <em>Mycobacterium vaccae</em> Interferes with Th1-Cytokine Production,\" <em>Antonie van Leeuwenhoek</em>, vol. 90, no. 1, 2006, pp. 93–108.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "ResearchGate",
-      "url": "https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production"
-    }
-  ],
   "lectio": {
     "post": "lt-0013",
     "place": 3
@@ -34,6 +27,70 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "edition": {
+    "id": "e-0179",
+    "type": "article",
+    "title": "The Production of a New Extracellular Putative Long-Chain Saturated Polyester by Smooth Variants of Mycobacterium vaccae Interferes with Th1-Cytokine Production",
+    "contributors": [
+      {
+        "id": "a-elisabeth-rodriguez-guell",
+        "name": "Elisabeth Rodríguez-Güell",
+        "role": "author"
+      },
+      {
+        "id": "a-gemma-agusti",
+        "name": "Gemma Agustí",
+        "role": "author"
+      },
+      {
+        "id": "a-merce-corominas",
+        "name": "Mercè Corominas",
+        "role": "author"
+      },
+      {
+        "id": "a-pere-joan-cardona",
+        "name": "Pere-Joan Cardona",
+        "role": "author"
+      },
+      {
+        "id": "a-isidre-casals",
+        "name": "Isidre Casals",
+        "role": "author"
+      },
+      {
+        "id": "a-teodor-parella",
+        "name": "Teodor Parella",
+        "role": "author"
+      },
+      {
+        "id": "a-marco-antonio-sempere",
+        "name": "Marco-Antonio Sempere",
+        "role": "author"
+      },
+      {
+        "id": "a-marina-luquin",
+        "name": "Marina Luquin",
+        "role": "author"
+      },
+      {
+        "id": "a-esther-julian",
+        "name": "Esther Julián",
+        "role": "author"
+      }
+    ],
+    "container": "Antonie van Leeuwenhoek",
+    "volume": "90",
+    "issue": "1",
+    "pages": "93–108",
+    "issued": "2006",
+    "identifiers": {
+      "doi": "10.1007/s10482-006-9062-1"
+    }
+  },
+  "locator": {
+    "url": "https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production",
+    "label": "ResearchGate"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

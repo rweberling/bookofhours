@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0180/",
+  "id": "e-0180",
+  "type": "book",
+  "title": "An Illustrated Catalogue of American Insect Galls",
+  "contributors": [
+    {
+      "id": "a-e-p-felt",
+      "name": "E. P. Felt",
+      "role": "editor",
+      "wikidata": "Q5382324"
+    }
+  ],
+  "publisher": "Rensselaer",
+  "issued": "1915",
+  "citedBy": [
+    "i-0076"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,66 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0179/",
+  "id": "e-0179",
+  "type": "article",
+  "title": "The Production of a New Extracellular Putative Long-Chain Saturated Polyester by Smooth Variants of Mycobacterium vaccae Interferes with Th1-Cytokine Production",
+  "contributors": [
+    {
+      "id": "a-elisabeth-rodriguez-guell",
+      "name": "Elisabeth Rodríguez-Güell",
+      "role": "author"
+    },
+    {
+      "id": "a-gemma-agusti",
+      "name": "Gemma Agustí",
+      "role": "author"
+    },
+    {
+      "id": "a-merce-corominas",
+      "name": "Mercè Corominas",
+      "role": "author"
+    },
+    {
+      "id": "a-pere-joan-cardona",
+      "name": "Pere-Joan Cardona",
+      "role": "author"
+    },
+    {
+      "id": "a-isidre-casals",
+      "name": "Isidre Casals",
+      "role": "author"
+    },
+    {
+      "id": "a-teodor-parella",
+      "name": "Teodor Parella",
+      "role": "author"
+    },
+    {
+      "id": "a-marco-antonio-sempere",
+      "name": "Marco-Antonio Sempere",
+      "role": "author"
+    },
+    {
+      "id": "a-marina-luquin",
+      "name": "Marina Luquin",
+      "role": "author"
+    },
+    {
+      "id": "a-esther-julian",
+      "name": "Esther Julián",
+      "role": "author"
+    }
+  ],
+  "container": "Antonie van Leeuwenhoek",
+  "volume": "90",
+  "issue": "1",
+  "pages": "93–108",
+  "issued": "2006",
+  "identifiers": {
+    "doi": "10.1007/s10482-006-9062-1"
+  },
+  "citedBy": [
+    "i-0072"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

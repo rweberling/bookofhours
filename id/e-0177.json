@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0177/",
+  "id": "e-0177",
+  "type": "book",
+  "title": "Guidebook to Field Trips in Southeastern New England (MA-NH-RI)",
+  "contributors": [
+    {
+      "id": "a-margaret-d-thompson",
+      "name": "Margaret D. Thompson",
+      "role": "editor"
+    }
+  ],
+  "publisher": "New England Intercollegiate Geological Conference",
+  "issued": "2014",
+  "identifiers": {
+    "oclc": "913438596",
+    "openlibrary": "OL62418013M"
+  },
+  "citedBy": [
+    "i-0065"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

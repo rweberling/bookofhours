@@ -6,13 +6,6 @@
   "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/15330235\">Geographical Distribution of the Genus Crocus</a>,” from George Maw, <em>A Monograph of the Genus Crocus</em> (London, England: Dulau and Co., 1886), pp. 26-27.",
   "alt": "A colored map of the Mediterranean and western Asia, from Spain to the Caspian Sea, with the crocus’s range shaded and divided into lettered regions marked with how many species each holds.",
   "bibliography": "Maw, George. \"Geographical Distribution of the Genus Crocus.\" <em>A Monograph of the Genus Crocus</em>, Dulau, 1886.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "Biodiversity Heritage Library",
-      "url": "https://www.biodiversitylibrary.org/page/15330235"
-    }
-  ],
   "lectio": {
     "post": "lt-0006",
     "place": 3
@@ -34,6 +27,30 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0175",
+    "type": "book",
+    "title": "A Monograph of the Genus Crocus",
+    "contributors": [
+      {
+        "id": "a-george-maw",
+        "name": "George Maw",
+        "role": "author"
+      }
+    ],
+    "publisher": "Dulau",
+    "issued": "1886",
+    "identifiers": {
+      "oclc": "4326630",
+      "lccn": "agr17000751",
+      "openlibrary": "OL23639558M",
+      "internetArchive": "monographofgenus00mawg"
+    }
+  },
+  "locator": {
+    "url": "https://www.biodiversitylibrary.org/page/15330235",
+    "label": "Biodiversity Heritage Library"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

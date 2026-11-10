@@ -1238,11 +1238,6 @@
     "bibliography": "Nordstrom Nurseries. <em>Birch and Evergreens</em>. Nordstrom Nurseries, 1951. Henry G. Gilbert Nursery and Seed Trade Catalog Collection, National Agricultural Library.",
     "links": [
       {
-        "role": "cited",
-        "label": "Biodiversity Heritage Library",
-        "url": "https://www.biodiversitylibrary.org/item/313311"
-      },
-      {
         "role": "copy",
         "label": "National Agricultural Library",
         "url": "https://www.nal.usda.gov/programs/speccoll"
@@ -1259,7 +1254,18 @@
       "size": [1456, 1117]
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-    "rightsNote": "published 1951; whether its copyright was renewed is unchecked"
+    "rightsNote": "published 1951; whether its copyright was renewed is unchecked",
+    "edition": {
+      "id": "e-0171",
+      "type": "book",
+      "title": "Birch and Evergreens",
+      "publisher": "Nordstrom Nurseries",
+      "issued": "1951"
+    },
+    "locator": {
+      "url": "https://www.biodiversitylibrary.org/item/313311",
+      "label": "Biodiversity Heritage Library"
+    }
   },
   {
     "id": "i-0045",
@@ -1268,13 +1274,6 @@
     "caption": "“Alto-Stratus,” from <em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\">Atlas International Des Nuages</a></em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\"> </a>(Paris, France: Gauthier-Villars et Fils, 1896).",
     "alt": "A plate of two color pictures of altostratus cloud: a hazy, layered sky over a flat-topped hill and meadow; and a pale, veiled sun over a calm sea with a sailing ship.",
     "bibliography": "\"Alto-Stratus.\" <em>Atlas international des nuages</em>, Gauthier-Villars et Fils, 1896.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "University of Chicago Library",
-        "url": "https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf"
-      }
-    ],
     "lectio": { "post": "lt-0005", "place": 1 },
     "tags": {
       "hours": [],
@@ -1285,7 +1284,18 @@
     "display": {
       "size": [3767, 2636]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0172",
+      "type": "book",
+      "title": "Atlas international des nuages",
+      "publisher": "Gauthier-Villars et Fils",
+      "issued": "1896"
+    },
+    "locator": {
+      "url": "https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf",
+      "label": "University of Chicago Library"
+    }
   },
   {
     "id": "i-0046",
@@ -1294,13 +1304,6 @@
     "caption": "“Nimbostratus,” from <a href=\"https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf\">International Atlas of Clouds and of States of the Sky</a> (Paris, France: Office National Meteorologique. 1930), p. 14.",
     "alt": "A printed page defining nimbostratus: “A low, amorphous, and rainy layer, of a dark grey colour and nearly uniform; feebly illuminated seemingly from inside.”",
     "bibliography": "\"Nimbostratus.\" <em>International Atlas of Clouds and of States of the Sky</em>, Office National Météorologique, 1930.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "WMO Cloud Atlas",
-        "url": "https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf"
-      }
-    ],
     "lectio": { "post": "lt-0005", "place": 2 },
     "tags": {
       "hours": [],
@@ -1311,7 +1314,23 @@
     "display": {
       "size": [647, 326]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0173",
+      "type": "book",
+      "title": "International Atlas of Clouds and of States of the Sky",
+      "publisher": "Office National Météorologique",
+      "issued": "1930",
+      "identifiers": {
+        "lccn": "34008607",
+        "openlibrary": "OL25595394M",
+        "internetArchive": "internationalatl00inte"
+      }
+    },
+    "locator": {
+      "url": "https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf",
+      "label": "WMO Cloud Atlas"
+    }
   },
   {
     "id": "i-0047",
@@ -1320,13 +1339,6 @@
     "caption": "“Nimbostratus,” from <em><a href=\"https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf\">International Cloud Atlas, Volume II</a></em> (Geneva, Switzerland: World Meteorological Organization, 1987), p. 52.",
     "alt": "A photograph of a dark blue-grey sky of nimbostratus over flat Colorado farmland, with a single tree, a small white trailer and low mountains on the horizon; arrows at the edges point out the cloud layers.",
     "bibliography": "World Meteorological Organization. \"Nimbostratus.\" <em>International Cloud Atlas</em>, vol. 2, World Meteorological Organization, 1987.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "WMO Cloud Atlas",
-        "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf"
-      }
-    ],
     "lectio": { "post": "lt-0005", "place": 3 },
     "tags": {
       "hours": [],
@@ -1337,7 +1349,15 @@
     "display": {
       "size": [2172, 1486]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "edition": {
+      "id": "e-0174",
+      "type": "book",
+      "title": "International Cloud Atlas, vol. 2",
+      "publisher": "World Meteorological Organization",
+      "issued": "1987"
+    },
+    "locator": { "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf", "label": "WMO Cloud Atlas" }
   },
   {
     "id": "i-0048",
@@ -1401,13 +1421,6 @@
     "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/15330235\">Geographical Distribution of the Genus Crocus</a>,” from George Maw, <em>A Monograph of the Genus Crocus</em> (London, England: Dulau and Co., 1886), pp. 26-27.",
     "alt": "A colored map of the Mediterranean and western Asia, from Spain to the Caspian Sea, with the crocus’s range shaded and divided into lettered regions marked with how many species each holds.",
     "bibliography": "Maw, George. \"Geographical Distribution of the Genus Crocus.\" <em>A Monograph of the Genus Crocus</em>, Dulau, 1886.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Biodiversity Heritage Library",
-        "url": "https://www.biodiversitylibrary.org/page/15330235"
-      }
-    ],
     "lectio": { "post": "lt-0006", "place": 3 },
     "tags": {
       "hours": [],
@@ -1418,7 +1431,25 @@
     "display": {
       "size": [1259, 837]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0175",
+      "type": "book",
+      "title": "A Monograph of the Genus Crocus",
+      "contributors": [{ "id": "a-george-maw", "name": "George Maw", "role": "author" }],
+      "publisher": "Dulau",
+      "issued": "1886",
+      "identifiers": {
+        "oclc": "4326630",
+        "lccn": "agr17000751",
+        "openlibrary": "OL23639558M",
+        "internetArchive": "monographofgenus00mawg"
+      }
+    },
+    "locator": {
+      "url": "https://www.biodiversitylibrary.org/page/15330235",
+      "label": "Biodiversity Heritage Library"
+    }
   },
   {
     "id": "i-0051",
@@ -1711,7 +1742,18 @@
     "display": {
       "size": [370, 466]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0176",
+      "type": "book",
+      "title": "Peter Rabbit and His Pa",
+      "contributors": [
+        { "id": "a-louise-a-field", "name": "Louise A. Field", "role": "author" },
+        { "id": "a-virginia-albert", "name": "Virginia Albert", "role": "illustrator" }
+      ],
+      "publisher": "Saalfield Publishing",
+      "issued": "1917"
+    }
   },
   {
     "id": "i-0061",
@@ -1837,13 +1879,6 @@
     "caption": "View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al., “<a href=\"https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf\">Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows</a>” (2014).",
     "alt": "A photograph of a ridge of dark grey, finely layered rock on a pebbly island shore, with a notebook and compass resting on it and the sea and a distant coastline behind.",
     "bibliography": "Thompson, Peter J., et al. View of Cambridge Argillite in the Boston Harbor Islands. \"Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows,\" <em>Guidebook to Field Trips in Southeastern New England (MA-NH-RI)</em>, edited by Margaret D. Thompson, New England Intercollegiate Geological Conference, 2014, pp. C1-1–C1-32.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Wellesley College",
-        "url": "https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf"
-      }
-    ],
     "lectio": { "post": "lt-0011", "place": 3 },
     "tags": {
       "hours": [],
@@ -1854,7 +1889,20 @@
     "display": {
       "size": [696, 629]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "edition": {
+      "id": "e-0177",
+      "type": "book",
+      "title": "Guidebook to Field Trips in Southeastern New England (MA-NH-RI)",
+      "contributors": [{ "id": "a-margaret-d-thompson", "name": "Margaret D. Thompson", "role": "editor" }],
+      "publisher": "New England Intercollegiate Geological Conference",
+      "issued": "2014",
+      "identifiers": { "oclc": "913438596", "openlibrary": "OL62418013M" }
+    },
+    "locator": {
+      "url": "https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf",
+      "label": "Wellesley College"
+    }
   },
   {
     "id": "i-0066",
@@ -1917,13 +1965,6 @@
     "caption": "“<a href=\"https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item\">Lilas</a>,” from <em>Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits</em>, by  La Société Française des Chrysanthémistes and René Oberthür, et al. (La Société Nationale d’Horticulture de France, n.d.), p. 176.",
     "alt": "A page from a French color guide titled “Lilas,” with four numbered swatches of pale pinkish mauve, each a little darker than the last, beside notes on matching flowers.",
     "bibliography": "Société Française des Chrysanthémistes and René Oberthür. \"Lilas.\" <em>Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits</em>, Société Nationale d’Horticulture de France, n.d.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Gallica",
-        "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item"
-      }
-    ],
     "lectio": { "post": "lt-0012", "place": 2 },
     "tags": {
       "hours": [],
@@ -1934,7 +1975,14 @@
     "display": {
       "size": [575, 822]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0178",
+      "type": "book",
+      "title": "Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits",
+      "publisher": "Société Nationale d’Horticulture de France"
+    },
+    "locator": { "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item", "label": "Gallica" }
   },
   {
     "id": "i-0069",
@@ -2021,13 +2069,6 @@
     "caption": "“Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) rough,” from <a href=\"https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production\">Elisabeth Rodriguez-Guell, et al.</a> (2006).",
     "alt": "Two electron-microscope images, side by side, of bacteria magnified thousands of times: on the left, a few rod-shaped cells among frost-like crystals; on the right, a dense mat of rods stacked like logs.",
     "bibliography": "Rodríguez-Güell, Elisabeth, et al. \"Scanning Electron Microscopy Analysis of Colony Variants of M. vaccae.\" \"A New Extracellular Putative Long-Chain Saturated Polyester Produced by Smooth Variants of <em>Mycobacterium vaccae</em> Interferes with Th1-Cytokine Production,\" <em>Antonie van Leeuwenhoek</em>, vol. 90, no. 1, 2006, pp. 93–108.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "ResearchGate",
-        "url": "https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production"
-      }
-    ],
     "lectio": { "post": "lt-0013", "place": 3 },
     "tags": {
       "hours": [],
@@ -2038,7 +2079,37 @@
     "display": {
       "size": [688, 471]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "edition": {
+      "id": "e-0179",
+      "type": "article",
+      "title": "The Production of a New Extracellular Putative Long-Chain Saturated Polyester by Smooth Variants of Mycobacterium vaccae Interferes with Th1-Cytokine Production",
+      "contributors": [
+        {
+          "id": "a-elisabeth-rodriguez-guell",
+          "name": "Elisabeth Rodríguez-Güell",
+          "role": "author"
+        },
+        { "id": "a-gemma-agusti", "name": "Gemma Agustí", "role": "author" },
+        { "id": "a-merce-corominas", "name": "Mercè Corominas", "role": "author" },
+        { "id": "a-pere-joan-cardona", "name": "Pere-Joan Cardona", "role": "author" },
+        { "id": "a-isidre-casals", "name": "Isidre Casals", "role": "author" },
+        { "id": "a-teodor-parella", "name": "Teodor Parella", "role": "author" },
+        { "id": "a-marco-antonio-sempere", "name": "Marco-Antonio Sempere", "role": "author" },
+        { "id": "a-marina-luquin", "name": "Marina Luquin", "role": "author" },
+        { "id": "a-esther-julian", "name": "Esther Julián", "role": "author" }
+      ],
+      "container": "Antonie van Leeuwenhoek",
+      "volume": "90",
+      "issue": "1",
+      "pages": "93–108",
+      "issued": "2006",
+      "identifiers": { "doi": "10.1007/s10482-006-9062-1" }
+    },
+    "locator": {
+      "url": "https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production",
+      "label": "ResearchGate"
+    }
   },
   {
     "id": "i-0073",
@@ -2141,13 +2212,6 @@
     "caption": "“<a href=\"https://www.biodiversitylibrary.org/page/33339968\">Oak Galls,</a>” from Millett Taylor Thompson, <em>An Illustrated Catalogue of American Insect Galls</em>, ed. E.P. Felt (Nassau, New York: Rensselaer Co., 1915), p. 71<em>.</em>",
     "alt": "A plate of thirteen photographs of oak galls: round and knobbly growths on twigs, buds and leaves, each numbered.",
     "bibliography": "Thompson, Millett Taylor. \"Oak Galls.\" <em>An Illustrated Catalogue of American Insect Galls</em>, edited by E. P. Felt, Rensselaer, 1915.",
-    "links": [
-      {
-        "role": "cited",
-        "label": "Biodiversity Heritage Library",
-        "url": "https://www.biodiversitylibrary.org/page/33339968"
-      }
-    ],
     "lectio": { "post": "lt-0015", "place": 1 },
     "tags": {
       "hours": [],
@@ -2158,7 +2222,19 @@
     "display": {
       "size": [2171, 2954]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0180",
+      "type": "book",
+      "title": "An Illustrated Catalogue of American Insect Galls",
+      "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "editor", "wikidata": "Q5382324" }],
+      "publisher": "Rensselaer",
+      "issued": "1915"
+    },
+    "locator": {
+      "url": "https://www.biodiversitylibrary.org/page/33339968",
+      "label": "Biodiversity Heritage Library"
+    }
   },
   {
     "id": "i-0077",

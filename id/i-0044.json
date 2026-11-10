@@ -8,11 +8,6 @@
   "bibliography": "Nordstrom Nurseries. <em>Birch and Evergreens</em>. Nordstrom Nurseries, 1951. Henry G. Gilbert Nursery and Seed Trade Catalog Collection, National Agricultural Library.",
   "links": [
     {
-      "role": "cited",
-      "label": "Biodiversity Heritage Library",
-      "url": "https://www.biodiversitylibrary.org/item/313311"
-    },
-    {
       "role": "copy",
       "label": "National Agricultural Library",
       "url": "https://www.nal.usda.gov/programs/speccoll"
@@ -40,6 +35,17 @@
   },
   "rights": "http://rightsstatements.org/vocab/UND/1.0/",
   "rightsNote": "published 1951; whether its copyright was renewed is unchecked",
+  "edition": {
+    "id": "e-0171",
+    "type": "book",
+    "title": "Birch and Evergreens",
+    "publisher": "Nordstrom Nurseries",
+    "issued": "1951"
+  },
+  "locator": {
+    "url": "https://www.biodiversitylibrary.org/item/313311",
+    "label": "Biodiversity Heritage Library"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

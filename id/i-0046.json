@@ -6,13 +6,6 @@
   "caption": "“Nimbostratus,” from <a href=\"https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf\">International Atlas of Clouds and of States of the Sky</a> (Paris, France: Office National Meteorologique. 1930), p. 14.",
   "alt": "A printed page defining nimbostratus: “A low, amorphous, and rainy layer, of a dark grey colour and nearly uniform; feebly illuminated seemingly from inside.”",
   "bibliography": "\"Nimbostratus.\" <em>International Atlas of Clouds and of States of the Sky</em>, Office National Météorologique, 1930.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "WMO Cloud Atlas",
-      "url": "https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf"
-    }
-  ],
   "lectio": {
     "post": "lt-0005",
     "place": 2
@@ -34,6 +27,22 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0173",
+    "type": "book",
+    "title": "International Atlas of Clouds and of States of the Sky",
+    "publisher": "Office National Météorologique",
+    "issued": "1930",
+    "identifiers": {
+      "lccn": "34008607",
+      "openlibrary": "OL25595394M",
+      "internetArchive": "internationalatl00inte"
+    }
+  },
+  "locator": {
+    "url": "https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf",
+    "label": "WMO Cloud Atlas"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

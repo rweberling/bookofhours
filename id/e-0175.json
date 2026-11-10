@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0175/",
+  "id": "e-0175",
+  "type": "book",
+  "title": "A Monograph of the Genus Crocus",
+  "contributors": [
+    {
+      "id": "a-george-maw",
+      "name": "George Maw",
+      "role": "author"
+    }
+  ],
+  "publisher": "Dulau",
+  "issued": "1886",
+  "identifiers": {
+    "oclc": "4326630",
+    "lccn": "agr17000751",
+    "openlibrary": "OL23639558M",
+    "internetArchive": "monographofgenus00mawg"
+  },
+  "citedBy": [
+    "i-0050"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

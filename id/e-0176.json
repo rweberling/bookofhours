@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0176/",
+  "id": "e-0176",
+  "type": "book",
+  "title": "Peter Rabbit and His Pa",
+  "contributors": [
+    {
+      "id": "a-louise-a-field",
+      "name": "Louise A. Field",
+      "role": "author"
+    },
+    {
+      "id": "a-virginia-albert",
+      "name": "Virginia Albert",
+      "role": "illustrator"
+    }
+  ],
+  "publisher": "Saalfield Publishing",
+  "issued": "1917",
+  "citedBy": [
+    "i-0060"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

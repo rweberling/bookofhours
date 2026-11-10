@@ -6,13 +6,6 @@
   "caption": "View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al., “<a href=\"https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf\">Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows</a>” (2014).",
   "alt": "A photograph of a ridge of dark grey, finely layered rock on a pebbly island shore, with a notebook and compass resting on it and the sea and a distant coastline behind.",
   "bibliography": "Thompson, Peter J., et al. View of Cambridge Argillite in the Boston Harbor Islands. \"Bedrock Geology of Boston Harbor: Cambridge Argillite and Associated Diabase Sills and Debris Flows,\" <em>Guidebook to Field Trips in Southeastern New England (MA-NH-RI)</em>, edited by Margaret D. Thompson, New England Intercollegiate Geological Conference, 2014, pp. C1-1–C1-32.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "Wellesley College",
-      "url": "https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf"
-    }
-  ],
   "lectio": {
     "post": "lt-0011",
     "place": 3
@@ -34,6 +27,28 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "edition": {
+    "id": "e-0177",
+    "type": "book",
+    "title": "Guidebook to Field Trips in Southeastern New England (MA-NH-RI)",
+    "contributors": [
+      {
+        "id": "a-margaret-d-thompson",
+        "name": "Margaret D. Thompson",
+        "role": "editor"
+      }
+    ],
+    "publisher": "New England Intercollegiate Geological Conference",
+    "issued": "2014",
+    "identifiers": {
+      "oclc": "913438596",
+      "openlibrary": "OL62418013M"
+    }
+  },
+  "locator": {
+    "url": "https://www1.wellesley.edu/sites/default/files/assets/departments/geoscience/files/c1_29sept2014_total.pdf",
+    "label": "Wellesley College"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

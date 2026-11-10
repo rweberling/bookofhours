@@ -6,13 +6,6 @@
   "caption": "“Alto-Stratus,” from <em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\">Atlas International Des Nuages</a></em><a href=\"https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf\"> </a>(Paris, France: Gauthier-Villars et Fils, 1896).",
   "alt": "A plate of two color pictures of altostratus cloud: a hazy, layered sky over a flat-topped hill and meadow; and a pale, veiled sun over a calm sea with a sailing ship.",
   "bibliography": "\"Alto-Stratus.\" <em>Atlas international des nuages</em>, Gauthier-Villars et Fils, 1896.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "University of Chicago Library",
-      "url": "https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf"
-    }
-  ],
   "lectio": {
     "post": "lt-0005",
     "place": 1
@@ -34,6 +27,17 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0172",
+    "type": "book",
+    "title": "Atlas international des nuages",
+    "publisher": "Gauthier-Villars et Fils",
+    "issued": "1896"
+  },
+  "locator": {
+    "url": "https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf",
+    "label": "University of Chicago Library"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

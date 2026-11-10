@@ -1,0 +1,18 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0173/",
+  "id": "e-0173",
+  "type": "book",
+  "title": "International Atlas of Clouds and of States of the Sky",
+  "publisher": "Office National Météorologique",
+  "issued": "1930",
+  "identifiers": {
+    "lccn": "34008607",
+    "openlibrary": "OL25595394M",
+    "internetArchive": "internationalatl00inte"
+  },
+  "citedBy": [
+    "i-0046"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

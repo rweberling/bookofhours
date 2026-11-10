@@ -6,13 +6,6 @@
   "caption": "“<a href=\"https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item\">Lilas</a>,” from <em>Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits</em>, by  La Société Française des Chrysanthémistes and René Oberthür, et al. (La Société Nationale d’Horticulture de France, n.d.), p. 176.",
   "alt": "A page from a French color guide titled “Lilas,” with four numbered swatches of pale pinkish mauve, each a little darker than the last, beside notes on matching flowers.",
   "bibliography": "Société Française des Chrysanthémistes and René Oberthür. \"Lilas.\" <em>Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits</em>, Société Nationale d’Horticulture de France, n.d.",
-  "links": [
-    {
-      "role": "cited",
-      "label": "Gallica",
-      "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item"
-    }
-  ],
   "lectio": {
     "post": "lt-0012",
     "place": 2
@@ -34,6 +27,16 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0178",
+    "type": "book",
+    "title": "Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits",
+    "publisher": "Société Nationale d’Horticulture de France"
+  },
+  "locator": {
+    "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item",
+    "label": "Gallica"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }
