@@ -2905,7 +2905,16 @@
       "noCaption": true,
       "size": [655, 860]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0083",
+      "type": "book",
+      "title": "Whitesbog Blueberries",
+      "contributors": [{ "id": "a-joseph-j-white-inc", "name": "Joseph J. White, Inc.", "role": "author" }],
+      "publisher": "Joseph J. White, Inc.",
+      "issued": "1925",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
   },
   {
     "id": "i-0098",
