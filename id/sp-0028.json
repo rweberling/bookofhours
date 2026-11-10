@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0028/",
+  "id": "sp-0028",
+  "name": "Wintergreen",
+  "scientific": "Gaultheria procumbens",
+  "rank": "species",
+  "wikidata": "Q386770",
+  "gbif": "2882753",
+  "inaturalist": "62376",
+  "hashtags": [
+    "wintergreen",
+    "gaultheria",
+    "wildflowers"
+  ],
+  "records": [
+    "r-0124",
+    "r-0125",
+    "r-0126",
+    "i-0154",
+    "i-0155",
+    "i-0156"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

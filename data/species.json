@@ -268,5 +268,15 @@
     "gbif": "2888353",
     "inaturalist": "49477",
     "hashtags": ["ghostpipe", "monotropa", "wildflowers"]
+  },
+  {
+    "id": "sp-0028",
+    "name": "Wintergreen",
+    "scientific": "Gaultheria procumbens",
+    "rank": "species",
+    "wikidata": "Q386770",
+    "gbif": "2882753",
+    "inaturalist": "62376",
+    "hashtags": ["wintergreen", "gaultheria", "wildflowers"]
   }
 ]

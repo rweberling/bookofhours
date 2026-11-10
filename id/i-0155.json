@@ -1,0 +1,29 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0155/",
+  "id": "i-0155",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb.jpeg",
+  "caption": "“<em><a href=\"https://hdl.handle.net/2027/hvd.32044103114666?urlappend=%3Bseq=128%3Bownerid=27021597764418562-140\" rel=\"noopener\" target=\"_blank\">Gaultheria procumbens</a></em>.” Plate 164 from Robert Bentley and Henry Trimen. <em>Medicinal Plants. </em>London: J. &amp; A. Churchill, 1880.",
+  "lectio": {
+    "post": "lt-0034",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0028"
+    ]
+  },
+  "display": {
+    "size": [
+      550,
+      733
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

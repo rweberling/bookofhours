@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0125/",
+  "id": "r-0125",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Henry David Thoreau. From “<a href=\"https://hdl.handle.net/2027/pst.000006174989?urlappend=%3Bseq=132%3Bownerid=13510798900151326-136\" rel=\"noopener\" target=\"_blank\">November 19, 1850.</a>” <em>The Journal of Henry David Thoreau. </em>Walden Edition, The Writings of Henry David Thoreau. Ed. Bradford Torrey. Boston: Houghton, Mifflin and Co. 1906. 104-105.",
+    "edition": {
+      "id": "e-0196"
+    }
+  },
+  "lectio": {
+    "post": "lt-0034",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0028"
+    ]
+  },
+  "firstLine": "Each season is thus drawn out and lingers in certain localities, as the birds and insects know very well. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

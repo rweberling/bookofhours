@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/import_substack.py",
-  "generatedAt": "2026-11-03T19:35:41+00:00",
+  "generatedAt": "2026-11-10T18:44:28+00:00",
   "seasons": {
     "spring": [
       {
@@ -3395,6 +3395,90 @@
             }
           ]
         }
+      },
+      {
+        "id": "lt-0034",
+        "aliases": [
+          "week-43-wintergreen-jacob-bigelow"
+        ],
+        "postId": "224012070.week-43-wintergreen-jacob-bigelow",
+        "season": "autumn",
+        "title": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
+        "subtitle": "A plant of low, slow, and quiet persistence--and amplified triboluminescence",
+        "published": "2026-11-08",
+        "canonicalUrl": "https://laurentia.substack.com/p/week-43-wintergreen-jacob-bigelow",
+        "images": [
+          {
+            "src": "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8.gif",
+            "alt": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!-Ni9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F024714a5-b2f4-46bc-8665-3eac318a0f58_500x331.gif"
+          },
+          {
+            "src": "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb.jpeg",
+            "alt": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!FEEo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd63450e4-e443-4bd8-b3a2-29a5b70f1881_1961x2614.jpeg"
+          },
+          {
+            "src": "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4.jpeg",
+            "alt": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!TtlT!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bcbb597-aea3-423e-9c75-aa85a7ff1e4f_870x1068.jpeg"
+          }
+        ],
+        "body": [
+          {
+            "image": "i-0154"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0105",
+            "blocks": [
+              0,
+              5
+            ]
+          },
+          {
+            "image": "i-0155"
+          },
+          {
+            "writing": "w-0105",
+            "blocks": [
+              5,
+              6
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0124"
+          },
+          {
+            "reading": "r-0125"
+          },
+          {
+            "reading": "r-0126"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0106",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0156"
+          }
+        ],
+        "page": "lectio-terra/wintergreen/",
+        "subject": "sp-0028"
       }
     ],
     "winter": [

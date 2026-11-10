@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0124/",
+  "id": "r-0124",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Jacob Bigelow. “<a href=\"https://archive.org/details/mobot31753000788221/page/27/mode/2up\" rel=\"noopener\" target=\"_blank\">Gaultheria procumbens. Partridge Berry</a>.” <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>. Vol. 2. Boston: Cummings and Hilliard, 1818. 27-28.",
+    "edition": {
+      "id": "e-0195"
+    }
+  },
+  "lectio": {
+    "post": "lt-0034",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0028"
+    ]
+  },
+  "firstLine": "THERE is no soil so inhospitable, that it does not afford the means of sustenance and growth to some vegetable tenant. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

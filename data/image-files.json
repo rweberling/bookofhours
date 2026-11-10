@@ -3562,6 +3562,90 @@
         }
       ]
     },
+    "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8.gif": {
+      "bytes": 49981,
+      "width": 500,
+      "height": 331,
+      "sha256": "17181002275f2679e6bd4cbdd94e24e8eb53821b08f8119c10a5ab713d85de3d",
+      "settings": "89e48fac760f",
+      "credit": "43f99614d77d",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-800.webp",
+          "width": 500,
+          "height": 331,
+          "bytes": 13830
+        },
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-1600.webp",
+          "width": 500,
+          "height": 331,
+          "bytes": 13830
+        },
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-2400.webp",
+          "width": 500,
+          "height": 331,
+          "bytes": 13830
+        }
+      ]
+    },
+    "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb.jpeg": {
+      "bytes": 199257,
+      "width": 1456,
+      "height": 1941,
+      "sha256": "5545e97ef760a17dac227dc5ba06335d88f089468cb93d94842ce1ed4ddc61db",
+      "settings": "89e48fac760f",
+      "credit": "43f99614d77d",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb-800.webp",
+          "width": 800,
+          "height": 1066,
+          "bytes": 58938
+        },
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb-1600.webp",
+          "width": 1456,
+          "height": 1941,
+          "bytes": 132960
+        },
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb-2400.webp",
+          "width": 1456,
+          "height": 1941,
+          "bytes": 132960
+        }
+      ]
+    },
+    "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4.jpeg": {
+      "bytes": 80122,
+      "width": 870,
+      "height": 1068,
+      "sha256": "8d09c548cc1040aa9cdd8213dfda84c61354cc2657a28dc28b9e4b072724df8b",
+      "settings": "89e48fac760f",
+      "credit": "43f99614d77d",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4-800.webp",
+          "width": 800,
+          "height": 982,
+          "bytes": 36354
+        },
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4-1600.webp",
+          "width": 870,
+          "height": 1068,
+          "bytes": 44120
+        },
+        {
+          "file": "images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4-2400.webp",
+          "width": 870,
+          "height": 1068,
+          "bytes": 44120
+        }
+      ]
+    },
     "images/transit_abbott.jpg": {
       "bytes": 194717,
       "width": 1297,

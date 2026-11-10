@@ -37,6 +37,7 @@ import re
 import shutil
 import subprocess
 import sys
+import urllib.parse
 import urllib.request
 from datetime import datetime
 from html.parser import HTMLParser
@@ -407,9 +408,13 @@ def fetch_export(export_dir, known_slugs, since=''):
     (posts.csv and posts/<id>.<slug>.html) under export_dir. The archive
     comes newest first, so the reading stops at the first older post."""
     (export_dir / 'posts').mkdir(parents=True, exist_ok=True)
-    rows, offset = [], 0
+    rows, cursor = [], ''
     while True:
-        page = substack_json(f'/api/v1/archive?sort=new&offset={offset}&limit=12')
+        # The archive pages by cursor: {"posts": [...], "nextCursor": ...}
+        # (it once paged by offset and answered with a bare list).
+        query = f'&cursor={urllib.parse.quote(cursor)}' if cursor else ''
+        reply = substack_json(f'/api/v1/archive?sort=new&limit=12{query}')
+        page = reply.get('posts', []) if isinstance(reply, dict) else reply
         if not page:
             break
         done = False
@@ -426,9 +431,9 @@ def fetch_export(export_dir, known_slugs, since=''):
             rows.append({'post_id': post_id, 'post_date': post['post_date'], 'is_published': 'true',
                          'title': post.get('title') or '', 'subtitle': post.get('subtitle') or ''})
             print(f'Fetched {slug}')
-        if done:
+        cursor = reply.get('nextCursor') if isinstance(reply, dict) else None
+        if done or not cursor:
             break
-        offset += len(page)
     with (export_dir / 'posts.csv').open('w', newline='', encoding='utf-8') as out:
         writer = csv.DictWriter(out, fieldnames=['post_id', 'post_date', 'is_published', 'title', 'subtitle'])
         writer.writeheader()

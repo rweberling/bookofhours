@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons.html; edit those, not this. -->
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+<meta name="description" content="Instead of receiving its first frost this week, the Boston area experienced a final illusion of summer, with clear blue skies and gentle warm breezes.…">
+<meta property="og:title" content="Lectio Terra: Wintergreen">
+<meta property="og:description" content="Instead of receiving its first frost this week, the Boston area experienced a final illusion of summer, with clear blue skies and gentle warm breezes.…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-1600.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://earthlyhours.com/lectio-terra/wintergreen/">
+<link rel="canonical" href="https://earthlyhours.com/lectio-terra/wintergreen/">
+<meta name="application-name" content="The Earthly Book of Hours">
+<title>Lectio Terra: Wintergreen — The Earthly Book of Hours</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="citation_title" content="Lectio Terra: Wintergreen">
+<meta name="citation_author" content="Weberling, Ryan">
+<meta name="citation_publication_date" content="2026/11/08">
+<meta name="DC.type" content="blogPost">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lectio Terra: Wintergreen",
+  "name": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
+  "url": "https://earthlyhours.com/lectio-terra/wintergreen/",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Weberling"
+  },
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Lectio Terra",
+    "url": "https://earthlyhours.com/lectio-terra/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/"
+  },
+  "datePublished": "2026-11-08",
+  "image": "https://earthlyhours.com/images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-1600.webp",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Boston Basin",
+    "description": "Near the Charles River, between the northeastern woodlands and the Atlantic coast; Massachusetts, United States.",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.4,
+      "longitude": -71.1
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Wintergreen",
+    "alternateName": "Gaultheria procumbens",
+    "sameAs": "https://www.wikidata.org/wiki/Q386770"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Earthly Book of Hours",
+      "item": "https://earthlyhours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lectio Terra",
+      "item": "https://earthlyhours.com/lectio-terra/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Wintergreen",
+      "item": "https://earthlyhours.com/lectio-terra/wintergreen/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="season-reading-page" data-season="autumn" data-entry="lt-0034">
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+<!-- The figures' lightbox (openLightbox() in shared.js) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Expanded image view" aria-modal="true">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<main class="page keepsake-frame season-reading">
+  <p class="publication-name">The Earthly Book of Hours</p>
+  <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint">Autumn</button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
+  <h1 class="block-name"><button class="pane-link" id="season-reading-title" type="button" aria-describedby="season-reading-subtitle-hint">Wintergreen</button></h1>
+  <div class="season-reading-meta"><em id="season-reading-latin">Gaultheria procumbens</em></div>
+  <article class="season-post" aria-live="polite">
+    <p class="season-post-dek" id="season-reading-dek">Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting</p>
+    <div id="season-reading-body">
+<figure><a target="_blank" href="images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8.gif"><img loading="lazy" src="images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-1600.webp" srcset="images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-800.webp 800w, images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-1600.webp 1600w, images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8.gif" width="500" height="331" alt=""></a><figcaption>Fig. 1. “<a href="https://tigerweb.towson.edu/ladon/wg/candywww.htm" rel="noopener" target="_blank">Photograph of the emission of WintOGreen Lifesavers, taken by Towson State University undergraduate students</a>.” From Linda M. Sweeting. “Scientific Experiments at Home: Wintergreen Candy and Other Triboluminescent Materials.” Towson University (September 1998). [Kodak Ektachrome (EL) color film (ISO 400) was placed under a sheet of Plexiglas; the candy was placed on top of the Plexiglas, covered with another piece of Plexiglas and smashed with a hammer.]</figcaption></figure><h2>Headnote</h2><p>Instead of receiving its <a href="lectio-terra/first-frost/">first frost</a> this week, the Boston area experienced a final illusion of summer, with clear blue skies and gentle warm breezes. Then the rain set in for a few days. The long-lasting summer has, paradoxically, spurred some early reflections on winter. Though we haven’t actually experienced any true cold yet, I’m preparing my psyche for the insular dimensions of the impending change of season: cabin fever, layered attire, dark afternoons, and all the rest. My psychic preparations are being aided by the example of the humble wintergreen plant, which has developed a form of life that not only tolerates the winter but benefits from its conditions. </p><p>The category of “wintergreen” plants is a transplant from Europe, where it pointed, at least since the 1500s, simply to plants that retained their green foliage into winter. By the 1770s, the term was applied by Europeans in North America to one specific plant: an aromatic shrub with leathery green leaves, white flowers, and red berries.<a class="footnote-ref" id="footnote-anchor-1" href="lectio-terra/wintergreen/#footnote-1" aria-label="Note 1">1</a> This American wintergreen (<em>Gaultheria procumbens</em>, named after Canadian botanist Jean-François Gaultier) goes by several semi-specific names: Eastern spicy-wintergreen, teaberry or mountain tea, checkerberry, ground holly, and partridge berry (this last more typically applied to a different plant, <em><a href="https://en.wikipedia.org/wiki/Mitchella_repens" rel="noopener" target="_blank">Mitchella repens</a></em>). Adding to the confusion is the fact that “wintergreen” is still used as a catch-all descriptor for many small evergreen plants across the heath (<em>Ericaceae</em>) family: the <em>Gaultheria </em>genus itself contains nearly 300 species of shrubs worldwide, and several related genera—the shinleafs (<em>Pyrola</em>), prince’s pine or pipsissewa (<em>Chimaphila</em>), and one-flowered wintergreen (<em>Moneses</em>)—are also referred to commonly or regionally as wintergreens.</p><p>Yet this confusion is organized by our most important associations with these plants: their timing and their flavor. As evergreen shrubs, wintergreens offer an alternative to the deciduous model of retreat, shedding, and dormancy explored in Katherine May’s lovely book, <em><a href="https://bookshop.org/a/86532/9780593189481" rel="noopener" target="_blank">Wintering: The Power of Rest and Retreat in Difficult Times</a></em>. Yes, the cold and the dark can be occasions for fallow quiet, for extricating oneself from obligations, for dropping and waiting. But some forms of life stay longer by keeping low, finding warmth and shelter under leaf litter or even in the snow itself. The wintergreens produce modest but hardy fruit at various points throughout the year, and their leathery green leaves are able to photosynthesize on mild days of late fall, winter, or early spring, after or before the deciduous trees have their leaves. And they endure not only across the seasons, when pests and competitors are gone, but across the years. They spread slowly—only a few inches per year—but persist indefinitely; though each stem typically dies off after about a decade, the plant spreads rhizomatically underground, potentially outlasting even the tree canopy above it. Such patches of wintergreen are shallowly rooted and easily disturbed, but they offer humble hospitality to the animals that roam the winter woods: deer, turkey, chipmunks, mice, and foxes might eat their “conspicuous” (in Thoreau’s word) leaves or berries; or you might try some wintergreen tea.</p><p>Speaking of flavor, many species of wintergreen produce a volatile oil, methyl salicylate, that most of us now associate with the taste of root beer, or chewing gum, or mint candy. Long used for teas and tinctures, the plant’s oil was first widely distributed through the nineteenth-century apothecary, where it was used to mask the bitterness of medicinal syrups and lozenges, and then <a href="https://www.smithsonianmag.com/innovation/pharmacist-who-launched-americas-modern-candy-industry-180971354/" rel="noopener" target="_blank">onto the candy counter</a>. Eventually, the wild plants couldn’t keep up with demand, and distillers turned to the bark of sweet birch (<em>Betula lenta</em>), which yields nearly the same oil. By the century’s end, scientists figured out how to synthesize methyl salicylate in the laboratory, and this same compound, a chemical cousin of aspirin, still soothes sore muscles in liniments and muscle rubs.</p><p>Wintergreen keeps one final gift for the season: small lightning. Crack a wintergreen candy between your teeth in a dark room (or with a hammer beneath plexiglass), and it will emit a small blue spark. As the sugar crystals split, they build up tiny electric charges that spark across the gap in space, lighting up nitrogen in the surrounding air (just as lightning does). But this lightning is emitted mostly in ultraviolet rays that we cannot see. The wintergreen oil absorbs that energy and gives it back as a visible blue, a flash in the dark—something we could all use in the northern regions, when the sun seems to set not long after lunch.</p><figure><a target="_blank" href="images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb.jpeg"><img loading="lazy" src="images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb-1600.webp" srcset="images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb-800.webp 800w, images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb-1600.webp 1600w, images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb.jpeg" width="550" height="733" alt=""></a><figcaption>Fig. 2. “<em><a href="https://hdl.handle.net/2027/hvd.32044103114666?urlappend=%3Bseq=128%3Bownerid=27021597764418562-140" rel="noopener" target="_blank">Gaultheria procumbens</a></em>.” Plate 164 from Robert Bentley and Henry Trimen. <em>Medicinal Plants. </em>London: J. &amp; A. Churchill, 1880.</figcaption></figure><hr><h2>Readings</h2><ol><li><p>THERE is no soil so inhospitable, that it does not afford the means of sustenance and growth to some vegetable tenant. The most arid and penurious spots of earth not only give support to a variety of plants, but they are even selected by certain species, which make them their permanent residence, and thrive better in the midst of poverty and drought than they could in the most fertile and luxuriant situations. The Gaultheria procumbens is one of those hardy and abstemious plants, which are better satisfied with the clear air of the mountains, than with a deep or mellow soil. It is found growing in large beds under the shade of shrubs and trees upon elevated tracts of ground, or upon the sand and gravel of the driest forests. Its bright evergreen leaves seem adapted for ready absorption and slow perspiration, so that it derives from the dews and rain, what the earth fails to supply it.<br><br>The Gaultheria procumbens is remarkable for the different periods of producing its flowers and fruit. It is found in blossom not only in the early part of spring, but in the last weeks of summer, and the fruit is found ripe at corresponding periods. Whether this appearance is the product of different shoots, or whether the same stems blossom twice in a year, I am unable to say. I have, however, met with beds of the Gaultheria in full flower in August and September, quite as frequently as in May. I have also seen the fruit in the market at various periods of the summer, fall, and spring.</p></li></ol><div class="reading-citation">Jacob Bigelow. “<a href="https://archive.org/details/mobot31753000788221/page/27/mode/2up" rel="noopener" target="_blank">Gaultheria procumbens. Partridge Berry</a>.” <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>. Vol. 2. Boston: Cummings and Hilliard, 1818. 27-28.</div><ol><li><p>Each season is thus drawn out and lingers in certain localities, as the birds and insects know very well. If you penetrate to some warm recess under a cliff in the woods, you will be astonished at the amount of summer life that still flourishes there. No doubt more of the summer’s life than we are aware thus slips by and outmanoeuvres the winter, gliding from fence to fence. I have no doubt that a diligent search in proper places would discover many more of our summer flowers thus lingering till the snow came, than we suspect. It is as if the plant made no preparation for winter.</p><p></p><p>Now that the grass is withered and the leaves are withered or fallen, it begins to appear what is evergreen: the partridge[-berry] and checkerberry, and wintergreen leaves even, are more conspicuous.</p></li></ol><div class="reading-citation">Henry David Thoreau. From “<a href="https://hdl.handle.net/2027/pst.000006174989?urlappend=%3Bseq=132%3Bownerid=13510798900151326-136" rel="noopener" target="_blank">November 19, 1850.</a>” <em>The Journal of Henry David Thoreau. </em>Walden Edition, The Writings of Henry David Thoreau. Ed. Bradford Torrey. Boston: Houghton, Mifflin and Co. 1906. 104-105.</div><ol><li><p>The light emitted by an ordinary sugar candy (top spectrum) has the color of lightning because in both cases the light is given off by nitrogen molecules in the air that have been excited by electricity. This light is mostly invisible because it is in the ultraviolet (UV) part of the spectrum (the series of lines with wavelengths less than 400 nm).</p><p><br>The light emitted by Wint-O-Green Lifesaver (bottom spectrum) appears brighter than that of plain sugar candy because the wintergreen flavoring molecules emit light in the visible part of the spectrum (the wintergreen emission is the broad band between 400 nm and 500 nm). Moreover, wintergreen absorbs best the wavelengths less than 340 nm, and has partially absorbed the UV emission lines in this region. The wintergreen has reduced the ultraviolet emission that we cannot see and increased the visible emission that we can see, thus making the light appear brighter.</p></li></ol><div class="reading-citation">Linda M. Sweeting. “<a href="https://staff.concord.org/~ddamelin/chemsite/c_AtomicTheory/Handouts/Light_Your_Candy_90_OCT.pdf" rel="noopener" target="_blank">Light Your Candy</a>.” <em>ChemMatters</em> (October 1990: 10-12). 12.</div><h2>Supplementum</h2><ul><li><p>Native Plant Trust. “<em><a href="https://plantfinder.nativeplanttrust.org/plant/Gaultheria-procumbens" rel="noopener" target="_blank">Gaultheria procumbens</a></em><a href="https://plantfinder.nativeplanttrust.org/plant/Gaultheria-procumbens" rel="noopener" target="_blank">, wintergreen</a>.” <em>Plant Finder</em>.</p></li><li><p>USDA Forest Service. “<em><a href="https://www.fs.usda.gov/nsl/Wpsm/Gaultheria.pdf" rel="noopener" target="_blank">Gaultheria</a></em><a href="https://www.fs.usda.gov/nsl/Wpsm/Gaultheria.pdf" rel="noopener" target="_blank"> L.</a>” <em>The Woody Plant Seed Manual</em>. Agriculture Handbook 727. Washington, DC: USDA Forest Service, 2008.</p></li><li><p>Bernard Boivin. “<a href="https://www.biographi.ca/en/bio/1368" rel="noopener" target="_blank">Gaultier, Jean-François</a>.” <em>Dictionary of Canadian Biography</em>, Volume 3. University of Toronto / Université Laval, 1974.</p></li><li><p>E. Gildemeister and Fr. Hoffmann. “<a href="https://archive.org/details/in.ernet.dli.2015.42678/page/n203/mode/2up" rel="noopener" target="_blank">Oil of Wintergreen</a>.” <em>The Volatile Oils, Volume 1</em>. Trans. Edward Kremers. Second Edition. London: Longmans, Green, and Co., 1913. 180-182.</p></li><li><p>Katherine May. <em><a href="https://bookshop.org/a/86532/9780593189481" rel="noopener" target="_blank">Wintering: The Power of Rest and Retreat in Difficult Times</a></em>. New York: Riverhead Books, 2020.</p></li></ul><figure><a target="_blank" href="images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4.jpeg"><img loading="lazy" src="images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4-1600.webp" srcset="images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4-800.webp 800w, images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4-1600.webp 1600w, images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4.jpeg" width="524" height="643" alt=""></a><figcaption>Fig. 3. “<a href="https://cppdigitallibrary.org/items/show/103" rel="noopener" target="_blank">Gaultheria procumbens.</a>” Partridge Berry (Figure 1) with "The bractes or outer calyx" (Figure 2), "The true calyx" (Figure 3), "Stamen of the natural size" (Figure 4), "Anther magnified, the dark places showing the mode of opening” (Figure 5), "Calyx and pistil" (Figure 6), "Fruit" (Figure 7), "Longitudinal section of the fruit" (Figure 8), and the "Transverse section of the capsule" (Figure 9). Plate XXII from Jacob Bigelow. <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>. Vol. 2. Boston: Cummings and Hilliard, 1818.</figcaption></figure><aside class="footnotes" aria-label="Notes"><p class="footnote" id="footnote-1"><a class="footnote-number" href="lectio-terra/wintergreen/#footnote-anchor-1" aria-label="Back to the text, note 1">1</a>Technically, each berry is a five-celled dry capsule wrapped in a calyx that swells, reddens, and turns fleshy.</p></aside>
+</div>
+  </article>
+  <div class="phenomena season-post-observation"><p class="phenomena-list" id="season-reading-observation">Published November 8, 2026</p></div>
+  <div class="turn-the-page visible season-turn"><span class="ttp-bracket">[</span><span class="season-turn-part" id="season-turn-part"><button class="page-action" id="season-turn-page" aria-label="Load another species reading">turn the page</button><span class="ttp-sep" aria-hidden="true">|</span></span><button class="page-action" id="keep-page" type="button" aria-label="Keep this page: save it as an image or copy its link">keep this page</button><span class="ttp-bracket">]</span></div>
+  <footer class="page-footer" style="opacity:1;"><div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true"><div class="line"></div><div class="diamond"></div><div class="line"></div></div><p class="colophon"><span>A seasonal reading from <a href="seasons-incipit.html">Lectio Terra</a></span></p><button class="pane-link season-emblem-link" id="season-emblem-open" type="button" aria-label="Wander the Seasons"><svg class="season-emblem" id="season-emblem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg></button></footer>
+</main>
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a class="active" href="seasons.html">The Current Season</a>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
+    <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
+      <a href="editions.html">Otherwise Editions</a>
+      <a href="#letters">Letters from Otherwise</a>
+      <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
+      <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Visit Otherwise <span class="ext-arrow" aria-hidden="true">↗</span></a>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
+  <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
+  <p class="wander-heading">The Seasons</p>
+  <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
+  <div class="season-dial-wrap" aria-hidden="true"><svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <p class="season-dial-caption" id="season-dial-caption"></p>
+  <p class="dial-legend" aria-hidden="true"><span class="dial-key"><span class="dial-key-star">✦</span>You are here</span><span class="dial-key"><span class="dial-key-quarter"></span>Solstice or equinox</span><span class="dial-key"><span class="dial-key-cross"></span>Cross-quarter day</span></p>
+  <div class="species-grid species-season-groups" id="species-grid"></div>
+</div>
+<script type="application/json" id="post-entry">{"id": "lt-0034", "readingLabels": []}</script>
+<script type="module" src="dfos-siwd.js"></script>
+<script src="shared.js"></script>
+<script src="atmosphere.js"></script>
+<script src="seasons.js"></script>
+<script src="keep.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

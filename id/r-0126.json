@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0126/",
+  "id": "r-0126",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Linda M. Sweeting. “<a href=\"https://staff.concord.org/~ddamelin/chemsite/c_AtomicTheory/Handouts/Light_Your_Candy_90_OCT.pdf\" rel=\"noopener\" target=\"_blank\">Light Your Candy</a>.” <em>ChemMatters</em> (October 1990: 10-12). 12.",
+    "edition": {
+      "id": "e-0197"
+    }
+  },
+  "lectio": {
+    "post": "lt-0034",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0028"
+    ]
+  },
+  "firstLine": "The light emitted by an ordinary sugar candy (top spectrum) has the color of lightning because in both cases the light is given off by nitrogen molecules in the air that have been excited by electricity. …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

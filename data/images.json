@@ -4746,5 +4746,53 @@
       "weather": ["mist", "fog"],
       "seasons": []
     }
+  },
+  {
+    "id": "i-0154",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8.gif",
+    "caption": "“<a href=\"https://tigerweb.towson.edu/ladon/wg/candywww.htm\" rel=\"noopener\" target=\"_blank\">Photograph of the emission of WintOGreen Lifesavers, taken by Towson State University undergraduate students</a>.” From Linda M. Sweeting. “Scientific Experiments at Home: Wintergreen Candy and Other Triboluminescent Materials.” Towson University (September 1998). [Kodak Ektachrome (EL) color film (ISO 400) was placed under a sheet of Plexiglas; the candy was placed on top of the Plexiglas, covered with another piece of Plexiglas and smashed with a hammer.]",
+    "lectio": { "post": "lt-0034", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0028"]
+    },
+    "display": {
+      "size": [500, 331]
+    }
+  },
+  {
+    "id": "i-0155",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-2-bee7bdc51dbb.jpeg",
+    "caption": "“<em><a href=\"https://hdl.handle.net/2027/hvd.32044103114666?urlappend=%3Bseq=128%3Bownerid=27021597764418562-140\" rel=\"noopener\" target=\"_blank\">Gaultheria procumbens</a></em>.” Plate 164 from Robert Bentley and Henry Trimen. <em>Medicinal Plants. </em>London: J. &amp; A. Churchill, 1880.",
+    "lectio": { "post": "lt-0034", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0028"]
+    },
+    "display": {
+      "size": [550, 733]
+    }
+  },
+  {
+    "id": "i-0156",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-3-cd7d375afbf4.jpeg",
+    "caption": "“<a href=\"https://cppdigitallibrary.org/items/show/103\" rel=\"noopener\" target=\"_blank\">Gaultheria procumbens.</a>” Partridge Berry (Figure 1) with \"The bractes or outer calyx\" (Figure 2), \"The true calyx\" (Figure 3), \"Stamen of the natural size\" (Figure 4), \"Anther magnified, the dark places showing the mode of opening” (Figure 5), \"Calyx and pistil\" (Figure 6), \"Fruit\" (Figure 7), \"Longitudinal section of the fruit\" (Figure 8), and the \"Transverse section of the capsule\" (Figure 9). Plate XXII from Jacob Bigelow. <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>. Vol. 2. Boston: Cummings and Hilliard, 1818.",
+    "lectio": { "post": "lt-0034", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0028"]
+    },
+    "display": {
+      "size": [524, 643]
+    }
   }
 ]

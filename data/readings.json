@@ -4948,5 +4948,53 @@
       "seasons": ["summer"]
     },
     "display": { "verse": true }
+  },
+  {
+    "id": "r-0124",
+    "shownIn": "seasons",
+    "text": "<p>THERE is no soil so inhospitable, that it does not afford the means of sustenance and growth to some vegetable tenant. The most arid and penurious spots of earth not only give support to a variety of plants, but they are even selected by certain species, which make them their permanent residence, and thrive better in the midst of poverty and drought than they could in the most fertile and luxuriant situations. The Gaultheria procumbens is one of those hardy and abstemious plants, which are better satisfied with the clear air of the mountains, than with a deep or mellow soil. It is found growing in large beds under the shade of shrubs and trees upon elevated tracts of ground, or upon the sand and gravel of the driest forests. Its bright evergreen leaves seem adapted for ready absorption and slow perspiration, so that it derives from the dews and rain, what the earth fails to supply it.<br><br>The Gaultheria procumbens is remarkable for the different periods of producing its flowers and fruit. It is found in blossom not only in the early part of spring, but in the last weeks of summer, and the fruit is found ripe at corresponding periods. Whether this appearance is the product of different shoots, or whether the same stems blossom twice in a year, I am unable to say. I have, however, met with beds of the Gaultheria in full flower in August and September, quite as frequently as in May. I have also seen the fruit in the market at various periods of the summer, fall, and spring.</p>",
+    "citation": {
+      "display": "Jacob Bigelow. “<a href=\"https://archive.org/details/mobot31753000788221/page/27/mode/2up\" rel=\"noopener\" target=\"_blank\">Gaultheria procumbens. Partridge Berry</a>.” <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>. Vol. 2. Boston: Cummings and Hilliard, 1818. 27-28.",
+      "edition": { "id": "e-0195" }
+    },
+    "lectio": { "post": "lt-0034", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0028"]
+    }
+  },
+  {
+    "id": "r-0125",
+    "shownIn": "seasons",
+    "text": "<p>Each season is thus drawn out and lingers in certain localities, as the birds and insects know very well. If you penetrate to some warm recess under a cliff in the woods, you will be astonished at the amount of summer life that still flourishes there. No doubt more of the summer’s life than we are aware thus slips by and outmanoeuvres the winter, gliding from fence to fence. I have no doubt that a diligent search in proper places would discover many more of our summer flowers thus lingering till the snow came, than we suspect. It is as if the plant made no preparation for winter.</p><p></p><p>Now that the grass is withered and the leaves are withered or fallen, it begins to appear what is evergreen: the partridge[-berry] and checkerberry, and wintergreen leaves even, are more conspicuous.</p>",
+    "citation": {
+      "display": "Henry David Thoreau. From “<a href=\"https://hdl.handle.net/2027/pst.000006174989?urlappend=%3Bseq=132%3Bownerid=13510798900151326-136\" rel=\"noopener\" target=\"_blank\">November 19, 1850.</a>” <em>The Journal of Henry David Thoreau. </em>Walden Edition, The Writings of Henry David Thoreau. Ed. Bradford Torrey. Boston: Houghton, Mifflin and Co. 1906. 104-105.",
+      "edition": { "id": "e-0196" }
+    },
+    "lectio": { "post": "lt-0034", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0028"]
+    }
+  },
+  {
+    "id": "r-0126",
+    "shownIn": "seasons",
+    "text": "<p>The light emitted by an ordinary sugar candy (top spectrum) has the color of lightning because in both cases the light is given off by nitrogen molecules in the air that have been excited by electricity. This light is mostly invisible because it is in the ultraviolet (UV) part of the spectrum (the series of lines with wavelengths less than 400 nm).</p><p><br>The light emitted by Wint-O-Green Lifesaver (bottom spectrum) appears brighter than that of plain sugar candy because the wintergreen flavoring molecules emit light in the visible part of the spectrum (the wintergreen emission is the broad band between 400 nm and 500 nm). Moreover, wintergreen absorbs best the wavelengths less than 340 nm, and has partially absorbed the UV emission lines in this region. The wintergreen has reduced the ultraviolet emission that we cannot see and increased the visible emission that we can see, thus making the light appear brighter.</p>",
+    "citation": {
+      "display": "Linda M. Sweeting. “<a href=\"https://staff.concord.org/~ddamelin/chemsite/c_AtomicTheory/Handouts/Light_Your_Candy_90_OCT.pdf\" rel=\"noopener\" target=\"_blank\">Light Your Candy</a>.” <em>ChemMatters</em> (October 1990: 10-12). 12.",
+      "edition": { "id": "e-0197" }
+    },
+    "lectio": { "post": "lt-0034", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0028"]
+    }
   }
 ]
