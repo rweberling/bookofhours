@@ -3,7 +3,14 @@
   "id": "e-0178",
   "type": "book",
   "title": "Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits",
-  "publisher": "Société Nationale d’Horticulture de France",
+  "publisher": "Oberthür",
+  "issued": "1905",
+  "identifiers": {
+    "oclc": "1515539",
+    "lccn": "agr05000903",
+    "openlibrary": "OL234419M",
+    "internetArchive": "rpertoiredecoule00soci"
+  },
   "citedBy": [
     "i-0068"
   ],
