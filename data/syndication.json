@@ -278,6 +278,14 @@
         "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mzgctfgdc22l",
         "cid": "bafyreififhytl25o6bl5hrry2cqwgtxl37qialvnn4rhrjdgrkvnkn2xoi"
       }
+    },
+    "lt-0034": {
+      "document": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/site.standard.document/3mzy43zo5322y",
+      "digest": "e60c45c8889a43b9",
+      "ref": {
+        "uri": "at://did:plc:22xbcrtgxutvljovuq4p4ymf/app.bsky.feed.post/3mzvfodcecu2k",
+        "cid": "bafyreigt5svweco2lbcl43qy7gvpu5k4uzx75st5kkmvbycwmdko6jx5sm"
+      }
     }
   }
 }
