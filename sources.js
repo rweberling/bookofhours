@@ -12,8 +12,8 @@
                     the passages and figures copied from it
 
    Each entry is a works-cited line: its hand-written bibliography line
-   (or its display citation, until one is written), the ¶ to its record
-   page (/id/<id>/), and where it was cited from. Everything else about
+   (or its display citation, until one is written), its title linked to
+   where it was cited from, and the ¶ to its record page (/id/<id>/). Everything else about
    the piece (other copies, the suggested edition, further reading,
    rights, where it appears) is on the record page.
 
@@ -68,17 +68,37 @@ function citationLinks(record) {
   return [...locatorLinks(record), ...(record.links || [])];
 }
 
+// The citation with its source links set on the titles it names, in
+// order: an italic title (<em>) whole, a quoted one inside its quotation
+// marks (a comma or full stop closing it stays outside the link). Links
+// left over, where a citation names fewer titles, come back as a list.
+function linkTitles(citation, links) {
+  const rest = links.slice();
+  const html = String(citation || '').replace(
+    /(<em>[\s\S]*?<\/em>)|(<[^>]+>)|(“)([^”]+?)([,.]?)(”)|(")([^"<>]+?)([,.]?)(")/g,
+    (all, em, tag, o1, q1, p1, c1, o2, q2, p2, c2) => {
+      if (tag || !rest.length) return all;
+      const a = `<a href="${escapeHTML(rest.shift().url)}" target="_blank">`;
+      if (em) return a + em + '</a>';
+      const [open, inner, punct, close] = o1 ? [o1, q1, p1, c1] : [o2, q2, p2, c2];
+      return `${open}${a}${inner}</a>${punct}${close}`;
+    });
+  return { html, rest };
+}
+
 function entryHTML(record) {
   const citation = record.citation
     ? (record.citation.bibliography || record.citation.display)
     : (record.bibliography || record.caption);
-  // Only where it was cited from: copies, the suggested edition, further
-  // reading, rights and where it appears are on the record page, one ¶ away.
-  const source = linkGroupHTML(LINK_LABELS.cited, citationLinks(record).filter(l => l.role === 'cited'));
+  // Where it was cited from, on its title: copies, the suggested edition,
+  // further reading, rights and where it appears are on the record page,
+  // one ¶ away.
+  const { html, rest } = linkTitles(citation, citationLinks(record).filter(l => l.role === 'cited'));
+  const source = linkGroupHTML(LINK_LABELS.cited, rest);
   return `
     <div class="entry" id="${escapeHTML(record.id)}">${(record.aliases || []).map(a =>
       `<span class="anchor-alias" id="${escapeHTML(a)}"></span>`).join('')}
-      <p class="citation">${citation || ''}<a class="record-mark" href="/id/${escapeHTML(record.id)}/" title="The record: ${escapeHTML(record.id)}" aria-label="The record, ${escapeHTML(record.id)}">¶</a></p>
+      <p class="citation">${html}<a class="record-mark" href="/id/${escapeHTML(record.id)}/" title="The record: ${escapeHTML(record.id)}" aria-label="The record, ${escapeHTML(record.id)}">¶</a></p>
       ${source ? `<p class="entry-links">${source}</p>` : ''}
     </div>`;
 }

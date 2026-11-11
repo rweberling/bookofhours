@@ -315,6 +315,21 @@ def locator_rows(loc):
     return '<br>'.join(out)
 
 
+def drawn_from(r):
+    """Where the image shown was drawn from: its place in the source (the
+    locator), else its cited link; then the exact file, where recorded,
+    with the day it was downloaded."""
+    rows = locator_rows(r.get('locator'))
+    if not rows:
+        rows = '<br>'.join(ext(l['url'], escape(l.get('label') or l['url']))
+                           for l in r.get('links') or [] if l.get('role') == 'cited')
+    src = r.get('source') or {}
+    if src.get('url'):
+        day = f', downloaded {escape(src["retrieved"])}' if src.get('retrieved') else ''
+        rows += ('<br>' if rows else '') + ext(src['url'], 'The image file') + day
+    return rows
+
+
 def links_rows(links):
     return '<br>'.join(ext(l['url'], f'{escape(l.get("label") or l["url"])} ({escape(l.get("role", ""))})')
                        for l in links or [])
@@ -391,7 +406,7 @@ def reading_page(col, r):
         ('Citation', c.get('display') or ''),
         ('Bibliography', c.get('bibliography') or ''),
         ('Edition', link(ed['id'], col.name(ed['id'])) if ed.get('id') else ''),
-        ('Where to read it', locator_rows(c.get('locator'))),
+        ('Drawn from', locator_rows(c.get('locator'))),
         ('Suggested edition', ext(f'https://bookshop.org/a/86532/{r["suggestedEdition"]["isbn"]}',
                                   escape(r['suggestedEdition'].get('note') or r['suggestedEdition']['isbn']))
          if r.get('suggestedEdition') else ''),
@@ -445,8 +460,9 @@ def image_page(col, r):
         ('Part of', escape(r.get('partOf') or '') if isinstance(r.get('partOf'), str) else escape(json.dumps(r.get('partOf'))) if r.get('partOf') else ''),
         ('Bibliography', r.get('bibliography') or ''),
         ('From the edition', link(ed['id'], col.name(ed['id'])) if ed.get('id') else ''),
-        ('Where to see it', locator_rows(r.get('locator'))),
-        ('Links', links_rows(r.get('links'))),
+        ('Drawn from', drawn_from(r)),
+        ('Also at', '<br>'.join(ext(l['url'], escape(l.get('label') or l['url']))
+                                for l in r.get('links') or [] if l.get('role') != 'cited')),
         ('Description', escape(r.get('alt') or '')),
         ('Further reading', further(r.get('furtherReading'))),
     ])
