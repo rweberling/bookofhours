@@ -1029,7 +1029,12 @@
           "role": "author",
           "wikidata": "Q21612303"
         }
-      ]
+      ],
+      "type": "article",
+      "container": "Arnoldia",
+      "volume": "36",
+      "issue": "3",
+      "pages": "69–109"
     },
     "locator": { "url": "https://doi.org/10.5962/p.249681", "label": "DOI" },
     "rights": "http://rightsstatements.org/vocab/InC/1.0/"
@@ -1128,7 +1133,8 @@
           "role": "author",
           "wikidata": "Q506164"
         }
-      ]
+      ],
+      "publisher": "Gurney and Jackson"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95",
@@ -1159,7 +1165,8 @@
       "issued": "1915",
       "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
       "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }],
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "publisher": "Vermont Department of Agriculture"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12",
@@ -1195,7 +1202,8 @@
           "name": "United States Forest Service",
           "role": "author"
         }
-      ]
+      ],
+      "publisher": "U.S. Department of Agriculture, Forest Service"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1",
@@ -1461,7 +1469,8 @@
       "title": "A Handbook of Crocus and Colchicum for Gardeners",
       "issued": "1924",
       "identifiers": { "hathitrust": "002010826", "oclc": "4584067", "lccn": "agr24001012" },
-      "contributors": [{ "id": "a-e-a-bowles", "name": "E. A. Bowles", "role": "author" }]
+      "contributors": [{ "id": "a-e-a-bowles", "name": "E. A. Bowles", "role": "author" }],
+      "publisher": "M. Hopkinson"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41",
@@ -1596,7 +1605,8 @@
       "title": "The Fern Lover’s Companion: A Guide for the Northeastern States and Canada",
       "issued": "1922",
       "identifiers": { "hathitrust": "100429762", "oclc": "6141524", "lccn": "23005467" },
-      "contributors": [{ "id": "a-george-henry-tilton", "name": "George Henry Tilton", "role": "author" }]
+      "contributors": [{ "id": "a-george-henry-tilton", "name": "George Henry Tilton", "role": "author" }],
+      "publisher": "Little, Brown"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183",
@@ -1634,7 +1644,8 @@
           "wikidata": "Q4251095"
         }
       ],
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "publisher": "Boston Society of Natural History"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59",
@@ -1698,7 +1709,8 @@
       "title": "North American Fauna, No. 29: The Rabbits of North America",
       "issued": "1909",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" },
-      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }]
+      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }],
+      "publisher": "Government Printing Office"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57",
@@ -1729,7 +1741,8 @@
       "title": "North American Fauna, No. 29: The Rabbits of North America",
       "issued": "1909",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" },
-      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }]
+      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }],
+      "publisher": "Government Printing Office"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397",
@@ -1794,7 +1807,8 @@
       "id": "e-0133",
       "title": "The Book of Wild Flowers: An Introduction to the Ways of Plant Life",
       "issued": "1924",
-      "identifiers": { "hathitrust": "009164350", "oclc": "1241838", "lccn": "24031492" }
+      "identifiers": { "hathitrust": "009164350", "oclc": "1241838", "lccn": "24031492" },
+      "publisher": "National Geographic Society"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127",
@@ -1856,7 +1870,8 @@
       "identifiers": { "internetArchive": "britishmossesthe21874trip", "oclc": "4854519" },
       "contributors": [
         { "id": "a-f-e-tripp", "name": "F. E. Tripp", "role": "author", "wikidata": "Q36558217" }
-      ]
+      ],
+      "publisher": "George Bell and Sons"
     },
     "locator": {
       "url": "https://archive.org/details/britishmossesthe21874trip",
@@ -1917,7 +1932,8 @@
       "id": "e-0136",
       "title": "Field Evaluation of Advanced Methods of Geotechnical Instrumentation for Transit Tunneling: Final Report",
       "issued": "1983",
-      "identifiers": { "hathitrust": "101655331", "oclc": "10178867" }
+      "identifiers": { "hathitrust": "101655331", "oclc": "10178867" },
+      "publisher": "Urban Mass Transportation Administration"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60",
@@ -1961,7 +1977,8 @@
           "role": "translator",
           "wikidata": "Q124101378"
         }
-      ]
+      ],
+      "publisher": "E. P. Dutton"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147",
@@ -2269,7 +2286,8 @@
           "wikidata": "Q21341246"
         }
       ],
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "publisher": "Gresham Publishing"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109",
@@ -2733,7 +2751,8 @@
       "title": "Atlas of United States Trees, vol. 4",
       "issued": "1976",
       "identifiers": { "hathitrust": "009818689", "lccn": "79653298" },
-      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }]
+      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }],
+      "publisher": "U.S. Department of Agriculture, Forest Service"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63",
@@ -2771,7 +2790,8 @@
       "title": "Hough’s Encyclopaedia of American Woods",
       "issued": "1957",
       "identifiers": { "hathitrust": "003143342", "oclc": "1268560", "lccn": "57010592" },
-      "contributors": [{ "id": "a-e-s-harrar", "name": "E. S. Harrar", "role": "author" }]
+      "contributors": [{ "id": "a-e-s-harrar", "name": "E. S. Harrar", "role": "author" }],
+      "publisher": "Robert Speller & Sons"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30",
@@ -2832,7 +2852,8 @@
       "id": "e-0143",
       "title": "The Red and White Currants",
       "issued": "1923",
-      "identifiers": { "hathitrust": "011465852", "oclc": "18840173" }
+      "identifiers": { "hathitrust": "011465852", "oclc": "18840173" },
+      "publisher": "Ohio Agricultural Experiment Station"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18",
@@ -2861,7 +2882,8 @@
       "id": "e-0144",
       "title": "Currants and Gooseberries: Their Culture and Relation to White-Pine Blister Rust",
       "issued": "1929-09",
-      "identifiers": { "hathitrust": "000505320", "oclc": "1696411", "lccn": "agr16000325" }
+      "identifiers": { "hathitrust": "000505320", "oclc": "1696411", "lccn": "agr16000325" },
+      "publisher": "U.S. Department of Agriculture"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/coo.31924081974929?urlappend=%3Bseq=32%3Bownerid=120575415-36",
@@ -3059,7 +3081,8 @@
           "role": "author",
           "wikidata": "Q535104"
         }
-      ]
+      ],
+      "publisher": "Government Printing Office"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52",
@@ -3123,7 +3146,8 @@
         "openlibrary": "OL13520643M",
         "lccn": "11032777"
       },
-      "contributors": [{ "id": "a-richard-morris", "name": "Richard Morris", "role": "author" }]
+      "contributors": [{ "id": "a-richard-morris", "name": "Richard Morris", "role": "author" }],
+      "publisher": "Longman"
     },
     "locator": {
       "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up",
@@ -3755,7 +3779,8 @@
       "title": "Atlas of United States Trees, vol. 1",
       "issued": "1971",
       "identifiers": { "internetArchive": "CAT87209954", "lccn": "79653298" },
-      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }]
+      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }],
+      "publisher": "U.S. Department of Agriculture, Forest Service"
     },
     "locator": {
       "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up",

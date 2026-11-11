@@ -481,6 +481,11 @@
         "original-date": "1892",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "openlibrary": "OL16479300M", "lccn": "43036789" }
+      },
+      "locator": {
+        "page": "30",
+        "url": "https://archive.org/details/leavesofgrassinc00whitrich/page/30/mode/1up",
+        "label": "Internet Archive"
       }
     },
     "suggestedEdition": {
@@ -652,7 +657,8 @@
           "internetArchive": "fragmentsofworko00hera",
           "openlibrary": "OL21854788M",
           "lccn": "11010817"
-        }
+        },
+        "publisher": "N. Murray"
       }
     },
     "tags": {
@@ -1616,7 +1622,8 @@
         "issued": "1915",
         "identifiers": { "hathitrust": "011274049", "oclc": "18660713" },
         "contributors": [{ "id": "a-walter-h-crockett", "name": "Walter H. Crockett", "role": "author" }],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "publisher": "Vermont Department of Agriculture"
       }
     },
     "lectio": { "post": "lt-0003", "place": 2 },
@@ -2004,7 +2011,8 @@
             "wikidata": "Q4251095"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "publisher": "Boston Society of Natural History"
       }
     },
     "lectio": { "post": "lt-0007", "place": 2 },
@@ -2742,7 +2750,8 @@
             "wikidata": "Q21341246"
           }
         ],
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "publisher": "Gresham Publishing"
       }
     },
     "lectio": { "post": "lt-0014", "place": 2 },
@@ -3527,7 +3536,8 @@
             "role": "translator",
             "wikidata": "Q18910706"
           }
-        ]
+        ],
+        "publisher": "N. Murray"
       }
     },
     "lectio": { "post": "lt-0023", "place": 2 },

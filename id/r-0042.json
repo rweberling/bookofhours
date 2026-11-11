@@ -28,7 +28,8 @@
           "role": "author"
         }
       ],
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "publisher": "Vermont Department of Agriculture"
     }
   },
   "lectio": {

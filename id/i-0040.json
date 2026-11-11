@@ -41,7 +41,8 @@
         "role": "author"
       }
     ],
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "publisher": "Vermont Department of Agriculture"
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12",

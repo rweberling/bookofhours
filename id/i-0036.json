@@ -40,7 +40,12 @@
         "role": "author",
         "wikidata": "Q21612303"
       }
-    ]
+    ],
+    "type": "article",
+    "container": "Arnoldia",
+    "volume": "36",
+    "issue": "3",
+    "pages": "69–109"
   },
   "locator": {
     "url": "https://doi.org/10.5962/p.249681",

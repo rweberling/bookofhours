@@ -624,7 +624,8 @@ def main():
             gaps[rid].append('edition title')
         if not ed.get('issued'):
             gaps[rid].append('edition date (issued)')
-        if not ed.get('publisher'):
+        # An article is found by its journal (container), not a publisher.
+        if not ed.get('publisher') and ed.get('type') != 'article':
             gaps[rid].append('publisher')
         # The work quoted (a poem, essay, chapter or book), when it was
         # written, and where in the edition: asked of every reading alike,
