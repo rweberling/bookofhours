@@ -24,6 +24,35 @@
       643
     ]
   },
+  "alt": "A coloured engraving on toned paper, Plate XXII: two leafy stems of wintergreen with broad green leaves and small white bell flowers, rising from a creeping root, above a row of nine small numbered drawings of the flower's and fruit's parts, with “Gaultheria procumbens” in script below.",
+  "title": "Gaultheria procumbens",
+  "institution": "The College of Physicians of Philadelphia",
+  "edition": {
+    "id": "e-0195",
+    "type": "book",
+    "title": "American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States, vol. 2",
+    "contributors": [
+      {
+        "id": "a-jacob-bigelow",
+        "name": "Jacob Bigelow",
+        "role": "author",
+        "wikidata": "Q1236142"
+      }
+    ],
+    "publisher": "Cummings and Hilliard",
+    "issued": "1818",
+    "identifiers": {
+      "internetArchive": "mobot31753000788221"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  "locator": {
+    "page": "Plate XXII",
+    "url": "https://cppdigitallibrary.org/items/show/103",
+    "label": "College of Physicians of Philadelphia"
+  },
+  "bibliography": "Bigelow, Jacob. \"Gaultheria procumbens.\" <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>, vol. 2, Cummings and Hilliard, 1818, plate XXII.",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

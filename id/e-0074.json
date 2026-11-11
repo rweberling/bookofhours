@@ -13,6 +13,11 @@
   "publisher": "Bradlee Whidden",
   "issued": "1885",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "102200118",
+    "oclc": "14091003",
+    "lccn": "04030252"
+  },
   "citedBy": [
     "r-0074",
     "i-0080"

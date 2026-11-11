@@ -32,7 +32,11 @@
     "type": "book",
     "title": "Fruit Culture, vol. 2",
     "publisher": "International Textbook Company",
-    "issued": "1913"
+    "issued": "1913",
+    "identifiers": {
+      "hathitrust": "100124215",
+      "oclc": "16271106"
+    }
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499",

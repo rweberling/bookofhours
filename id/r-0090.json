@@ -33,7 +33,12 @@
       ],
       "publisher": "Houghton Mifflin",
       "issued": "1906",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "009430400",
+        "oclc": "42935939",
+        "lccn": "99597321"
+      }
     }
   },
   "lectio": {

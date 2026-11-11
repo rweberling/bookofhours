@@ -24,6 +24,43 @@
       733
     ]
   },
+  "alt": "A hand-coloured botanical plate numbered 164: two upright stems of wintergreen rising from a creeping root, one with dark green leaves and nodding pink-and-white bell flowers, the other with reddish leaves and hanging red berries, above a row of small numbered details of the flower, fruit and seed.",
+  "creator": {
+    "id": "a-david-blair",
+    "name": "David Blair"
+  },
+  "title": "Gaultheria procumbens",
+  "edition": {
+    "id": "e-0198",
+    "type": "book",
+    "title": "Medicinal Plants, vol. 3",
+    "contributors": [
+      {
+        "id": "a-robert-bentley",
+        "name": "Robert Bentley",
+        "role": "author"
+      },
+      {
+        "id": "a-henry-trimen",
+        "name": "Henry Trimen",
+        "role": "author"
+      }
+    ],
+    "publisher": "J. & A. Churchill",
+    "issued": "1880",
+    "identifiers": {
+      "hathitrust": "102985898",
+      "oclc": "761372129"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  "locator": {
+    "page": "Plate 164",
+    "url": "https://hdl.handle.net/2027/hvd.32044103114666?urlappend=%3Bseq=128%3Bownerid=27021597764418562-140",
+    "label": "HathiTrust"
+  },
+  "bibliography": "Bentley, Robert, and Henry Trimen. \"Gaultheria procumbens.\" <em>Medicinal Plants</em>, vol. 3, J. &amp; A. Churchill, 1880, plate 164.",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

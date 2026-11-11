@@ -1,8 +1,25 @@
 {
   "@id": "https://earthlyhours.com/id/e-0195/",
   "id": "e-0195",
+  "type": "book",
+  "title": "American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States, vol. 2",
+  "contributors": [
+    {
+      "id": "a-jacob-bigelow",
+      "name": "Jacob Bigelow",
+      "role": "author",
+      "wikidata": "Q1236142"
+    }
+  ],
+  "publisher": "Cummings and Hilliard",
+  "issued": "1818",
+  "identifiers": {
+    "internetArchive": "mobot31753000788221"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "citedBy": [
-    "r-0124"
+    "r-0124",
+    "i-0156"
   ],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

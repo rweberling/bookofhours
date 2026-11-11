@@ -308,7 +308,8 @@
       "id": "e-0164",
       "title": "Nature Through Microscope & Camera",
       "publisher": "Religious Tract Society",
-      "issued": "1909"
+      "issued": "1909",
+      "identifiers": { "hathitrust": "100114882", "oclc": "1563671" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270",
@@ -2365,7 +2366,8 @@
       "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }],
       "publisher": "Bradlee Whidden",
       "issued": "1885",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": { "hathitrust": "102200118", "oclc": "14091003", "lccn": "04030252" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29",
@@ -2639,7 +2641,8 @@
       "type": "book",
       "title": "Fruit Culture, vol. 2",
       "publisher": "International Textbook Company",
-      "issued": "1913"
+      "issued": "1913",
+      "identifiers": { "hathitrust": "100124215", "oclc": "16271106" }
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499",
@@ -4374,7 +4377,8 @@
         { "id": "a-henry-brooks", "name": "Henry Brooks", "role": "author" }
       ],
       "publisher": "Ginn & Company",
-      "issued": "1902"
+      "issued": "1902",
+      "identifiers": { "hathitrust": "009259240", "oclc": "1039077" }
     },
     "locator": {
       "page": "Plate LXVIII",
@@ -4761,7 +4765,19 @@
     },
     "display": {
       "size": [500, 331]
-    }
+    },
+    "alt": "A photograph of a deep blue glow, brightest at the centre and fading to black at the edges, flecked with small dark specks: the light given off by a wintergreen candy as it was crushed on film.",
+    "title": "Photograph of the emission of WintOGreen Lifesavers",
+    "bibliography": "Sweeting, Linda M. \"Scientific Experiments at Home: Wintergreen Candy and Other Triboluminescent Materials.\" Towson University, Sept. 1998.",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Towson University",
+        "url": "https://tigerweb.towson.edu/ladon/wg/candywww.htm"
+      }
+    ],
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "rightsNote": "a photograph by Towson State University students, published on Linda M. Sweeting's university page in 1998"
   },
   {
     "id": "i-0155",
@@ -4777,7 +4793,30 @@
     },
     "display": {
       "size": [550, 733]
-    }
+    },
+    "alt": "A hand-coloured botanical plate numbered 164: two upright stems of wintergreen rising from a creeping root, one with dark green leaves and nodding pink-and-white bell flowers, the other with reddish leaves and hanging red berries, above a row of small numbered details of the flower, fruit and seed.",
+    "creator": { "id": "a-david-blair", "name": "David Blair" },
+    "title": "Gaultheria procumbens",
+    "edition": {
+      "id": "e-0198",
+      "type": "book",
+      "title": "Medicinal Plants, vol. 3",
+      "contributors": [
+        { "id": "a-robert-bentley", "name": "Robert Bentley", "role": "author" },
+        { "id": "a-henry-trimen", "name": "Henry Trimen", "role": "author" }
+      ],
+      "publisher": "J. & A. Churchill",
+      "issued": "1880",
+      "identifiers": { "hathitrust": "102985898", "oclc": "761372129" },
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    },
+    "locator": {
+      "page": "Plate 164",
+      "url": "https://hdl.handle.net/2027/hvd.32044103114666?urlappend=%3Bseq=128%3Bownerid=27021597764418562-140",
+      "label": "HathiTrust"
+    },
+    "bibliography": "Bentley, Robert, and Henry Trimen. \"Gaultheria procumbens.\" <em>Medicinal Plants</em>, vol. 3, J. &amp; A. Churchill, 1880, plate 164.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   },
   {
     "id": "i-0156",
@@ -4793,6 +4832,33 @@
     },
     "display": {
       "size": [524, 643]
-    }
+    },
+    "alt": "A coloured engraving on toned paper, Plate XXII: two leafy stems of wintergreen with broad green leaves and small white bell flowers, rising from a creeping root, above a row of nine small numbered drawings of the flower's and fruit's parts, with “Gaultheria procumbens” in script below.",
+    "title": "Gaultheria procumbens",
+    "institution": "The College of Physicians of Philadelphia",
+    "edition": {
+      "id": "e-0195",
+      "type": "book",
+      "title": "American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States, vol. 2",
+      "contributors": [
+        {
+          "id": "a-jacob-bigelow",
+          "name": "Jacob Bigelow",
+          "role": "author",
+          "wikidata": "Q1236142"
+        }
+      ],
+      "publisher": "Cummings and Hilliard",
+      "issued": "1818",
+      "identifiers": { "internetArchive": "mobot31753000788221" },
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    },
+    "locator": {
+      "page": "Plate XXII",
+      "url": "https://cppdigitallibrary.org/items/show/103",
+      "label": "College of Physicians of Philadelphia"
+    },
+    "bibliography": "Bigelow, Jacob. \"Gaultheria procumbens.\" <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>, vol. 2, Cummings and Hilliard, 1818, plate XXII.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   }
 ]

@@ -123,7 +123,12 @@
             "role": "author",
             "wikidata": "Q315210"
           },
-          { "id": "a-robert-lamberton", "name": "Robert Lamberton", "role": "translator" }
+          {
+            "id": "a-robert-lamberton",
+            "name": "Robert Lamberton",
+            "role": "translator",
+            "wikidata": "Q6302630"
+          }
         ],
         "publisher": "Station Hill Press",
         "issued": "1988",
@@ -354,7 +359,12 @@
         "original-date": "1898",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "rightsNote": "date as captioned (1898); verify edition",
-        "identifiers": { "hathitrust": "009794369", "openlibrary": "OL38613918M", "oclc": "1648765" }
+        "identifiers": {
+          "hathitrust": "009794369",
+          "openlibrary": "OL38613918M",
+          "oclc": "1648765",
+          "lccn": "98001110"
+        }
       }
     },
     "tags": {
@@ -1263,7 +1273,8 @@
         "publisher": "Selwyn & Blount",
         "issued": "1918",
         "original-date": "1918",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "006154069", "oclc": "962954", "lccn": "21018244" }
       }
     },
     "tags": {
@@ -2758,7 +2769,8 @@
         "pages": "509–525",
         "contributors": [{ "id": "a-e-p-felt", "name": "E. P. Felt", "role": "author", "wikidata": "Q5382324" }],
         "issued": "1918-06",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "103010505", "oclc": "21723318" }
       }
     },
     "lectio": { "post": "lt-0015", "place": 1 },
@@ -2915,7 +2927,8 @@
         "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }],
         "publisher": "Bradlee Whidden",
         "issued": "1885",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "102200118", "oclc": "14091003", "lccn": "04030252" }
       }
     },
     "lectio": { "post": "lt-0016", "place": 3 },
@@ -3603,7 +3616,8 @@
         ],
         "publisher": "Houghton Mifflin",
         "issued": "1906",
-        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "009430400", "oclc": "42935939", "lccn": "99597321" }
       }
     },
     "lectio": { "post": "lt-0024", "place": 2 },
@@ -4955,7 +4969,31 @@
     "text": "<p>THERE is no soil so inhospitable, that it does not afford the means of sustenance and growth to some vegetable tenant. The most arid and penurious spots of earth not only give support to a variety of plants, but they are even selected by certain species, which make them their permanent residence, and thrive better in the midst of poverty and drought than they could in the most fertile and luxuriant situations. The Gaultheria procumbens is one of those hardy and abstemious plants, which are better satisfied with the clear air of the mountains, than with a deep or mellow soil. It is found growing in large beds under the shade of shrubs and trees upon elevated tracts of ground, or upon the sand and gravel of the driest forests. Its bright evergreen leaves seem adapted for ready absorption and slow perspiration, so that it derives from the dews and rain, what the earth fails to supply it.<br><br>The Gaultheria procumbens is remarkable for the different periods of producing its flowers and fruit. It is found in blossom not only in the early part of spring, but in the last weeks of summer, and the fruit is found ripe at corresponding periods. Whether this appearance is the product of different shoots, or whether the same stems blossom twice in a year, I am unable to say. I have, however, met with beds of the Gaultheria in full flower in August and September, quite as frequently as in May. I have also seen the fruit in the market at various periods of the summer, fall, and spring.</p>",
     "citation": {
       "display": "Jacob Bigelow. “<a href=\"https://archive.org/details/mobot31753000788221/page/27/mode/2up\" rel=\"noopener\" target=\"_blank\">Gaultheria procumbens. Partridge Berry</a>.” <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>. Vol. 2. Boston: Cummings and Hilliard, 1818. 27-28.",
-      "edition": { "id": "e-0195" }
+      "edition": {
+        "id": "e-0195",
+        "type": "book",
+        "title": "American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States, vol. 2",
+        "contributors": [
+          {
+            "id": "a-jacob-bigelow",
+            "name": "Jacob Bigelow",
+            "role": "author",
+            "wikidata": "Q1236142"
+          }
+        ],
+        "publisher": "Cummings and Hilliard",
+        "issued": "1818",
+        "identifiers": { "internetArchive": "mobot31753000788221" },
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      },
+      "bibliography": "Bigelow, Jacob. \"Gaultheria procumbens. Partridge Berry.\" <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>, vol. 2, Cummings and Hilliard, 1818.",
+      "title": "Gaultheria procumbens. Partridge Berry",
+      "written": "1818",
+      "locator": {
+        "page": "27–28",
+        "url": "https://archive.org/details/mobot31753000788221/page/27/mode/2up",
+        "label": "Internet Archive"
+      }
     },
     "lectio": { "post": "lt-0034", "place": 1 },
     "tags": {
@@ -4971,7 +5009,37 @@
     "text": "<p>Each season is thus drawn out and lingers in certain localities, as the birds and insects know very well. If you penetrate to some warm recess under a cliff in the woods, you will be astonished at the amount of summer life that still flourishes there. No doubt more of the summer’s life than we are aware thus slips by and outmanoeuvres the winter, gliding from fence to fence. I have no doubt that a diligent search in proper places would discover many more of our summer flowers thus lingering till the snow came, than we suspect. It is as if the plant made no preparation for winter.</p><p></p><p>Now that the grass is withered and the leaves are withered or fallen, it begins to appear what is evergreen: the partridge[-berry] and checkerberry, and wintergreen leaves even, are more conspicuous.</p>",
     "citation": {
       "display": "Henry David Thoreau. From “<a href=\"https://hdl.handle.net/2027/pst.000006174989?urlappend=%3Bseq=132%3Bownerid=13510798900151326-136\" rel=\"noopener\" target=\"_blank\">November 19, 1850.</a>” <em>The Journal of Henry David Thoreau. </em>Walden Edition, The Writings of Henry David Thoreau. Ed. Bradford Torrey. Boston: Houghton, Mifflin and Co. 1906. 104-105.",
-      "edition": { "id": "e-0196" }
+      "edition": {
+        "id": "e-0089",
+        "type": "book",
+        "title": "Journal, vol. 2",
+        "contributors": [
+          {
+            "id": "a-henry-david-thoreau",
+            "name": "Henry David Thoreau",
+            "role": "author",
+            "wikidata": "Q131149"
+          },
+          {
+            "id": "a-bradford-torrey",
+            "name": "Bradford Torrey",
+            "role": "editor",
+            "wikidata": "Q2923472"
+          }
+        ],
+        "publisher": "Houghton Mifflin",
+        "issued": "1906",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "hathitrust": "009430400", "oclc": "42935939", "lccn": "99597321" }
+      },
+      "bibliography": "Thoreau, Henry David. \"November 19, 1850.\" <em>Journal</em>, vol. 2, edited by Bradford Torrey, Houghton Mifflin, 1906.",
+      "title": "November 19, 1850",
+      "written": "1850-11-19",
+      "locator": {
+        "page": "104–105",
+        "url": "https://hdl.handle.net/2027/pst.000006174989?urlappend=%3Bseq=132%3Bownerid=13510798900151326-136",
+        "label": "HathiTrust"
+      }
     },
     "lectio": { "post": "lt-0034", "place": 2 },
     "tags": {
@@ -4987,7 +5055,24 @@
     "text": "<p>The light emitted by an ordinary sugar candy (top spectrum) has the color of lightning because in both cases the light is given off by nitrogen molecules in the air that have been excited by electricity. This light is mostly invisible because it is in the ultraviolet (UV) part of the spectrum (the series of lines with wavelengths less than 400 nm).</p><p><br>The light emitted by Wint-O-Green Lifesaver (bottom spectrum) appears brighter than that of plain sugar candy because the wintergreen flavoring molecules emit light in the visible part of the spectrum (the wintergreen emission is the broad band between 400 nm and 500 nm). Moreover, wintergreen absorbs best the wavelengths less than 340 nm, and has partially absorbed the UV emission lines in this region. The wintergreen has reduced the ultraviolet emission that we cannot see and increased the visible emission that we can see, thus making the light appear brighter.</p>",
     "citation": {
       "display": "Linda M. Sweeting. “<a href=\"https://staff.concord.org/~ddamelin/chemsite/c_AtomicTheory/Handouts/Light_Your_Candy_90_OCT.pdf\" rel=\"noopener\" target=\"_blank\">Light Your Candy</a>.” <em>ChemMatters</em> (October 1990: 10-12). 12.",
-      "edition": { "id": "e-0197" }
+      "edition": {
+        "id": "e-0197",
+        "type": "article",
+        "title": "Light Your Candy",
+        "container": "ChemMatters",
+        "pages": "10–12",
+        "contributors": [{ "id": "a-linda-m-sweeting", "name": "Linda M. Sweeting", "role": "author" }],
+        "issued": "1990-10",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "bibliography": "Sweeting, Linda M. \"Light Your Candy.\" <em>ChemMatters</em>, Oct. 1990, pp. 10–12.",
+      "title": "Light Your Candy",
+      "written": "1990",
+      "locator": {
+        "page": "12",
+        "url": "https://staff.concord.org/~ddamelin/chemsite/c_AtomicTheory/Handouts/Light_Your_Candy_90_OCT.pdf",
+        "label": "Concord Consortium"
+      }
     },
     "lectio": { "post": "lt-0034", "place": 3 },
     "tags": {

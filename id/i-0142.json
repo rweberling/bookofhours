@@ -44,7 +44,11 @@
       }
     ],
     "publisher": "Ginn & Company",
-    "issued": "1902"
+    "issued": "1902",
+    "identifiers": {
+      "hathitrust": "009259240",
+      "oclc": "1039077"
+    }
   },
   "locator": {
     "page": "Plate LXVIII",

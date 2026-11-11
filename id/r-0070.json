@@ -28,7 +28,11 @@
         }
       ],
       "issued": "1918-06",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "103010505",
+        "oclc": "21723318"
+      }
     }
   },
   "lectio": {

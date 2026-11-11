@@ -24,6 +24,18 @@
       331
     ]
   },
+  "alt": "A photograph of a deep blue glow, brightest at the centre and fading to black at the edges, flecked with small dark specks: the light given off by a wintergreen candy as it was crushed on film.",
+  "title": "Photograph of the emission of WintOGreen Lifesavers",
+  "bibliography": "Sweeting, Linda M. \"Scientific Experiments at Home: Wintergreen Candy and Other Triboluminescent Materials.\" Towson University, Sept. 1998.",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Towson University",
+      "url": "https://tigerweb.towson.edu/ladon/wg/candywww.htm"
+    }
+  ],
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "rightsNote": "a photograph by Towson State University students, published on Linda M. Sweeting's university page in 1998",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

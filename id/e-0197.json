@@ -1,6 +1,19 @@
 {
   "@id": "https://earthlyhours.com/id/e-0197/",
   "id": "e-0197",
+  "type": "article",
+  "title": "Light Your Candy",
+  "container": "ChemMatters",
+  "pages": "10–12",
+  "contributors": [
+    {
+      "id": "a-linda-m-sweeting",
+      "name": "Linda M. Sweeting",
+      "role": "author"
+    }
+  ],
+  "issued": "1990-10",
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "citedBy": [
     "r-0126"
   ],

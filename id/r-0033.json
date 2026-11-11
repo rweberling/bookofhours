@@ -30,7 +30,12 @@
       "publisher": "Selwyn & Blount",
       "issued": "1918",
       "original-date": "1918",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "006154069",
+        "oclc": "962954",
+        "lccn": "21018244"
+      }
     }
   },
   "tags": {

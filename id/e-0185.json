@@ -5,6 +5,10 @@
   "title": "Fruit Culture, vol. 2",
   "publisher": "International Textbook Company",
   "issued": "1913",
+  "identifiers": {
+    "hathitrust": "100124215",
+    "oclc": "16271106"
+  },
   "citedBy": [
     "i-0088"
   ],

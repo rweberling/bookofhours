@@ -5,7 +5,28 @@
   "citation": {
     "display": "Linda M. Sweeting. “<a href=\"https://staff.concord.org/~ddamelin/chemsite/c_AtomicTheory/Handouts/Light_Your_Candy_90_OCT.pdf\" rel=\"noopener\" target=\"_blank\">Light Your Candy</a>.” <em>ChemMatters</em> (October 1990: 10-12). 12.",
     "edition": {
-      "id": "e-0197"
+      "id": "e-0197",
+      "type": "article",
+      "title": "Light Your Candy",
+      "container": "ChemMatters",
+      "pages": "10–12",
+      "contributors": [
+        {
+          "id": "a-linda-m-sweeting",
+          "name": "Linda M. Sweeting",
+          "role": "author"
+        }
+      ],
+      "issued": "1990-10",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    },
+    "bibliography": "Sweeting, Linda M. \"Light Your Candy.\" <em>ChemMatters</em>, Oct. 1990, pp. 10–12.",
+    "title": "Light Your Candy",
+    "written": "1990",
+    "locator": {
+      "page": "12",
+      "url": "https://staff.concord.org/~ddamelin/chemsite/c_AtomicTheory/Handouts/Light_Your_Candy_90_OCT.pdf",
+      "label": "Concord Consortium"
     }
   },
   "lectio": {
