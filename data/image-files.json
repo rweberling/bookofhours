@@ -3916,6 +3916,34 @@
         }
       ]
     },
+    "images/weather_bradford_arctic_summer.jpg": {
+      "bytes": 1526220,
+      "width": 3811,
+      "height": 2538,
+      "sha256": "d25a1afed90013aa21ae82eefbd3bb9aa4478e3283725bb4800d9b700d35d088",
+      "settings": "89e48fac760f",
+      "credit": "fc1c6785f76c",
+      "copies": [
+        {
+          "file": "images/web/weather_bradford_arctic_summer-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 24894
+        },
+        {
+          "file": "images/web/weather_bradford_arctic_summer-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 76100
+        },
+        {
+          "file": "images/web/weather_bradford_arctic_summer-2400.webp",
+          "width": 2400,
+          "height": 1598,
+          "bytes": 148222
+        }
+      ]
+    },
     "images/weather_emslie.jpg": {
       "bytes": 1187768,
       "width": 1280,
@@ -4140,6 +4168,34 @@
         }
       ]
     },
+    "images/weather_osullivan_sand_dunes.jpg": {
+      "bytes": 4987740,
+      "width": 3400,
+      "height": 2516,
+      "sha256": "9bfa99f088230f3c17c80c4bd9dcf1c4a15343e175267bceffb9c53b2ae6eeca",
+      "settings": "89e48fac760f",
+      "credit": "8044d9c16021",
+      "copies": [
+        {
+          "file": "images/web/weather_osullivan_sand_dunes-800.webp",
+          "width": 800,
+          "height": 592,
+          "bytes": 19736
+        },
+        {
+          "file": "images/web/weather_osullivan_sand_dunes-1600.webp",
+          "width": 1600,
+          "height": 1184,
+          "bytes": 58768
+        },
+        {
+          "file": "images/web/weather_osullivan_sand_dunes-2400.webp",
+          "width": 2400,
+          "height": 1776,
+          "bytes": 116216
+        }
+      ]
+    },
     "images/weather_saussure_cyanometer.jpg": {
       "bytes": 456282,
       "width": 1280,
@@ -4168,6 +4224,34 @@
         }
       ]
     },
+    "images/weather_stieglitz_wet_day.jpg": {
+      "bytes": 1477381,
+      "width": 3000,
+      "height": 1756,
+      "sha256": "28af36edfcb2b9227fc5cda10a752cbe9e3deb21e97e586d4f263decbb6c7d7b",
+      "settings": "89e48fac760f",
+      "credit": "1a29ce03fd96",
+      "copies": [
+        {
+          "file": "images/web/weather_stieglitz_wet_day-800.webp",
+          "width": 800,
+          "height": 468,
+          "bytes": 45212
+        },
+        {
+          "file": "images/web/weather_stieglitz_wet_day-1600.webp",
+          "width": 1600,
+          "height": 937,
+          "bytes": 150392
+        },
+        {
+          "file": "images/web/weather_stieglitz_wet_day-2400.webp",
+          "width": 2400,
+          "height": 1405,
+          "bytes": 290904
+        }
+      ]
+    },
     "images/weather_tohaku_pine_trees.jpg": {
       "bytes": 1256098,
       "width": 3840,
@@ -4193,6 +4277,34 @@
           "width": 2400,
           "height": 1123,
           "bytes": 186516
+        }
+      ]
+    },
+    "images/weather_twachtman_icebound.jpg": {
+      "bytes": 2696522,
+      "width": 3000,
+      "height": 2510,
+      "sha256": "b48ce55ec5b9eccdb4eeb517befc982663df46b142c4735ebc7bfac91f6ea4a6",
+      "settings": "89e48fac760f",
+      "credit": "206bb306bffd",
+      "copies": [
+        {
+          "file": "images/web/weather_twachtman_icebound-800.webp",
+          "width": 800,
+          "height": 669,
+          "bytes": 92400
+        },
+        {
+          "file": "images/web/weather_twachtman_icebound-1600.webp",
+          "width": 1600,
+          "height": 1339,
+          "bytes": 343684
+        },
+        {
+          "file": "images/web/weather_twachtman_icebound-2400.webp",
+          "width": 2400,
+          "height": 2008,
+          "bytes": 674458
         }
       ]
     },

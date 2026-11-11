@@ -1,0 +1,42 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0157/",
+  "id": "i-0157",
+  "shownIn": "weather",
+  "file": "images/weather_bradford_arctic_summer.jpg",
+  "caption": "William Bradford, <a href=\"https://www.metmuseum.org/art/collection/search/10207\" target=\"_blank\"><em>An Arctic Summer: Boring Through the Pack in Melville Bay</em></a> (1871)",
+  "alt": "A painting of an Arctic shore: a three-masted ship lies beyond a field of broken pack ice, beside a pale iceberg and dark cliffs, under a heavy bank of cloud and a pink sky; a polar bear crosses the ice in the foreground near a broken spar.",
+  "bibliography": "Bradford, William. <em>An Arctic Summer: Boring Through the Pack in Melville Bay</em>. 1871, oil on canvas, The Metropolitan Museum of Art, New York, 1982.443.1.",
+  "creator": {
+    "id": "a-william-bradford",
+    "name": "William Bradford"
+  },
+  "title": "An Arctic Summer: Boring Through the Pack in Melville Bay",
+  "date": "1871",
+  "institution": "The Metropolitan Museum of Art",
+  "shelfmark": "1982.443.1",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/10207"
+    }
+  ],
+  "source": {
+    "url": "https://images.metmuseum.org/CRDImages/ad/original/DT2101.jpg",
+    "retrieved": "2026-11-11"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "display": {
+    "cardPosition": "top-left"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "ice",
+      "cold"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

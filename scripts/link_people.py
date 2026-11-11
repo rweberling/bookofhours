@@ -122,6 +122,13 @@ def candidates_for(names):
     return {n: list(c.values()) for n, c in found.items()}
 
 
+# Matches a person has looked at and turned down: a namesake, not our
+# author. The script never offers them again.
+REJECTED = {
+    'Mercè Corominas': {'Q28358075'},   # a Catalan aviator; ours co-wrote a 2019 paper
+}
+
+
 def people(readings, images):
     """Each person by key: their name, the records naming them, and the
     earliest year our citations give for their work."""
@@ -174,6 +181,7 @@ def main(args):
         # (a namesake from an earlier age); an ancient author in a modern
         # edition falls outside that and is left for a person.
         fit = [c for c in found if names_agree(person['name'], c['label'])
+               and c['qid'] not in REJECTED.get(person['name'], ())
                and (year is None or c['born'] is None or c['born'] < year)
                and (year is None or c['died'] is None or c['died'] >= year - 100)]
         if len(fit) == 1 and (fit[0]['born'] is not None or year is None):

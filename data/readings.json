@@ -5081,5 +5081,40 @@
       "seasons": ["autumn"],
       "species": ["sp-0028"]
     }
+  },
+  {
+    "id": "r-0127",
+    "shownIn": "weather",
+    "text": "Thus did I by the Water’s brink<br>Another World beneath me think;<br>And while the lofty spacious Skies<br>Reversed there abus’d mine Eys,<br>&nbsp;&nbsp;&nbsp;I fancy’d other Feet<br>&nbsp;&nbsp;&nbsp;Came mine to touch or meet;<br>As by som Puddle I did play<br>Another World within it lay.",
+    "citation": {
+      "display": "Thomas Traherne, from \"<a href=\"https://archive.org/details/cihm_991945/page/102/mode/1up\" target=\"_blank\">Shadows in the Water</a>\" (c. 1670, pub. 1910)",
+      "bibliography": "Traherne, Thomas. \"Shadows in the Water.\" <em>Traherne’s Poems of Felicity</em>, edited by H. I. Bell, Clarendon Press, 1910, pp. 101–104.",
+      "title": "Shadows in the Water",
+      "written": "1670~",
+      "locator": {
+        "page": "102",
+        "url": "https://archive.org/details/cihm_991945/page/102/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0199",
+        "type": "book",
+        "title": "Traherne’s Poems of Felicity",
+        "contributors": [
+          { "id": "a-thomas-traherne", "name": "Thomas Traherne", "role": "author" },
+          { "id": "a-h-i-bell", "name": "H. I. Bell", "role": "editor" }
+        ],
+        "publisher": "Clarendon Press",
+        "issued": "1910",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "cihm_991945", "openlibrary": "OL25514597M" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["puddles"],
+      "seasons": []
+    },
+    "display": { "verse": true }
   }
 ]

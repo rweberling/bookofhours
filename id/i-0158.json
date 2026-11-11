@@ -1,0 +1,43 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0158/",
+  "id": "i-0158",
+  "shownIn": "weather",
+  "file": "images/weather_stieglitz_wet_day.jpg",
+  "caption": "Alfred Stieglitz, <a href=\"https://www.artic.edu/artworks/124651\" target=\"_blank\"><em>A Wet Day on the Boulevard, Paris</em></a> (1894)",
+  "alt": "A sepia photograph of a Paris boulevard in the rain: people cross under umbrellas, cabs wait along a row of trees, and the wet pavement shines across the whole foreground.",
+  "bibliography": "Stieglitz, Alfred. <em>A Wet Day on the Boulevard, Paris</em>. 1894, carbon print, Art Institute of Chicago, 1993.255.",
+  "creator": {
+    "id": "a-alfred-stieglitz",
+    "name": "Alfred Stieglitz",
+    "wikidata": "Q313055"
+  },
+  "title": "A Wet Day on the Boulevard, Paris",
+  "date": "1894",
+  "institution": "Art Institute of Chicago",
+  "shelfmark": "1993.255",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/124651"
+    }
+  ],
+  "source": {
+    "url": "https://www.artic.edu/iiif/2/7d7bb7ce-242d-b48b-4e15-b995a2cc237c/full/3000,/0/default.jpg",
+    "retrieved": "2026-11-11"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "display": {
+    "cardPosition": "top-right"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "drizzle",
+      "rain"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

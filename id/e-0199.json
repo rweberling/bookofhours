@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0199/",
+  "id": "e-0199",
+  "type": "book",
+  "title": "Traherne’s Poems of Felicity",
+  "contributors": [
+    {
+      "id": "a-thomas-traherne",
+      "name": "Thomas Traherne",
+      "role": "author"
+    },
+    {
+      "id": "a-h-i-bell",
+      "name": "H. I. Bell",
+      "role": "editor"
+    }
+  ],
+  "publisher": "Clarendon Press",
+  "issued": "1910",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "cihm_991945",
+    "openlibrary": "OL25514597M"
+  },
+  "citedBy": [
+    "r-0127"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

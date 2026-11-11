@@ -1,0 +1,47 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0160/",
+  "id": "i-0160",
+  "shownIn": "weather",
+  "file": "images/weather_twachtman_icebound.jpg",
+  "caption": "John Henry Twachtman, <a href=\"https://www.artic.edu/artworks/72801\" target=\"_blank\"><em>Icebound</em></a> (c. 1889)",
+  "alt": "A painting of a brook in deep snow: blue-green water winds between heaped white banks, with thin saplings above it still holding a few orange leaves.",
+  "bibliography": "Twachtman, John Henry. <em>Icebound</em>. c. 1889, oil on canvas, Art Institute of Chicago, 1917.200.",
+  "creator": {
+    "id": "a-john-henry-twachtman",
+    "name": "John Henry Twachtman",
+    "wikidata": "Q1342683"
+  },
+  "title": "Icebound",
+  "date": "1889~",
+  "institution": "Art Institute of Chicago",
+  "shelfmark": "1917.200",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/72801"
+    }
+  ],
+  "source": {
+    "url": "https://www.artic.edu/iiif/2/3ae75415-0551-ae17-c478-3b8687a6f246/full/3000,/0/default.jpg",
+    "retrieved": "2026-11-11"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "display": {
+    "cardPosition": "top-right"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "snowpack",
+      "snow",
+      "ice",
+      "cold"
+    ],
+    "seasons": [
+      "winter"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

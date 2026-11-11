@@ -5124,5 +5124,129 @@
     },
     "bibliography": "Bigelow, Jacob. \"Gaultheria procumbens.\" <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>, vol. 2, Cummings and Hilliard, 1818, plate XXII.",
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  {
+    "id": "i-0157",
+    "shownIn": "weather",
+    "file": "images/weather_bradford_arctic_summer.jpg",
+    "caption": "William Bradford, <a href=\"https://www.metmuseum.org/art/collection/search/10207\" target=\"_blank\"><em>An Arctic Summer: Boring Through the Pack in Melville Bay</em></a> (1871)",
+    "alt": "A painting of an Arctic shore: a three-masted ship lies beyond a field of broken pack ice, beside a pale iceberg and dark cliffs, under a heavy bank of cloud and a pink sky; a polar bear crosses the ice in the foreground near a broken spar.",
+    "bibliography": "Bradford, William. <em>An Arctic Summer: Boring Through the Pack in Melville Bay</em>. 1871, oil on canvas, The Metropolitan Museum of Art, New York, 1982.443.1.",
+    "creator": { "id": "a-william-bradford", "name": "William Bradford" },
+    "title": "An Arctic Summer: Boring Through the Pack in Melville Bay",
+    "date": "1871",
+    "institution": "The Metropolitan Museum of Art",
+    "shelfmark": "1982.443.1",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/10207"
+      }
+    ],
+    "source": {
+      "url": "https://images.metmuseum.org/CRDImages/ad/original/DT2101.jpg",
+      "retrieved": "2026-11-11"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "top-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["ice", "cold"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0158",
+    "shownIn": "weather",
+    "file": "images/weather_stieglitz_wet_day.jpg",
+    "caption": "Alfred Stieglitz, <a href=\"https://www.artic.edu/artworks/124651\" target=\"_blank\"><em>A Wet Day on the Boulevard, Paris</em></a> (1894)",
+    "alt": "A sepia photograph of a Paris boulevard in the rain: people cross under umbrellas, cabs wait along a row of trees, and the wet pavement shines across the whole foreground.",
+    "bibliography": "Stieglitz, Alfred. <em>A Wet Day on the Boulevard, Paris</em>. 1894, carbon print, Art Institute of Chicago, 1993.255.",
+    "creator": { "id": "a-alfred-stieglitz", "name": "Alfred Stieglitz", "wikidata": "Q313055" },
+    "title": "A Wet Day on the Boulevard, Paris",
+    "date": "1894",
+    "institution": "Art Institute of Chicago",
+    "shelfmark": "1993.255",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Art Institute of Chicago",
+        "url": "https://www.artic.edu/artworks/124651"
+      }
+    ],
+    "source": {
+      "url": "https://www.artic.edu/iiif/2/7d7bb7ce-242d-b48b-4e15-b995a2cc237c/full/3000,/0/default.jpg",
+      "retrieved": "2026-11-11"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "top-right" },
+    "tags": {
+      "hours": [],
+      "weather": ["drizzle", "rain"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0159",
+    "shownIn": "weather",
+    "file": "images/weather_osullivan_sand_dunes.jpg",
+    "caption": "Timothy H. O’Sullivan, <a href=\"https://clevelandart.org/art/2002.45\" target=\"_blank\"><em>Sand Dunes, Carson Desert, Nevada</em></a> (1867)",
+    "alt": "A pale nineteenth-century photograph of bare sand dunes under an empty sky; a small covered wagon drawn by four mules stands at their foot, with a line of footprints leading away from it across the sand.",
+    "bibliography": "O’Sullivan, Timothy H. <em>Sand Dunes, Carson Desert, Nevada</em>. 1867, albumen print from wet collodion negative, Cleveland Museum of Art, 2002.45.",
+    "creator": { "id": "a-timothy-h-osullivan", "name": "Timothy H. O’Sullivan" },
+    "title": "Sand Dunes, Carson Desert, Nevada",
+    "date": "1867",
+    "institution": "Cleveland Museum of Art",
+    "shelfmark": "2002.45",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Cleveland Museum of Art",
+        "url": "https://clevelandart.org/art/2002.45"
+      }
+    ],
+    "source": {
+      "url": "https://openaccess-cdn.clevelandart.org/2002.45/2002.45_print.jpg",
+      "retrieved": "2026-11-11"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "top-left" },
+    "tags": {
+      "hours": [],
+      "weather": ["parched", "clear"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0160",
+    "shownIn": "weather",
+    "file": "images/weather_twachtman_icebound.jpg",
+    "caption": "John Henry Twachtman, <a href=\"https://www.artic.edu/artworks/72801\" target=\"_blank\"><em>Icebound</em></a> (c. 1889)",
+    "alt": "A painting of a brook in deep snow: blue-green water winds between heaped white banks, with thin saplings above it still holding a few orange leaves.",
+    "bibliography": "Twachtman, John Henry. <em>Icebound</em>. c. 1889, oil on canvas, Art Institute of Chicago, 1917.200.",
+    "creator": { "id": "a-john-henry-twachtman", "name": "John Henry Twachtman", "wikidata": "Q1342683" },
+    "title": "Icebound",
+    "date": "1889~",
+    "institution": "Art Institute of Chicago",
+    "shelfmark": "1917.200",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Art Institute of Chicago",
+        "url": "https://www.artic.edu/artworks/72801"
+      }
+    ],
+    "source": {
+      "url": "https://www.artic.edu/iiif/2/3ae75415-0551-ae17-c478-3b8687a6f246/full/3000,/0/default.jpg",
+      "retrieved": "2026-11-11"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "display": { "cardPosition": "top-right" },
+    "tags": {
+      "hours": [],
+      "weather": ["snowpack", "snow", "ice", "cold"],
+      "seasons": ["winter"]
+    }
   }
 ]

@@ -1,0 +1,42 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0159/",
+  "id": "i-0159",
+  "shownIn": "weather",
+  "file": "images/weather_osullivan_sand_dunes.jpg",
+  "caption": "Timothy H. O’Sullivan, <a href=\"https://clevelandart.org/art/2002.45\" target=\"_blank\"><em>Sand Dunes, Carson Desert, Nevada</em></a> (1867)",
+  "alt": "A pale nineteenth-century photograph of bare sand dunes under an empty sky; a small covered wagon drawn by four mules stands at their foot, with a line of footprints leading away from it across the sand.",
+  "bibliography": "O’Sullivan, Timothy H. <em>Sand Dunes, Carson Desert, Nevada</em>. 1867, albumen print from wet collodion negative, Cleveland Museum of Art, 2002.45.",
+  "creator": {
+    "id": "a-timothy-h-osullivan",
+    "name": "Timothy H. O’Sullivan"
+  },
+  "title": "Sand Dunes, Carson Desert, Nevada",
+  "date": "1867",
+  "institution": "Cleveland Museum of Art",
+  "shelfmark": "2002.45",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Cleveland Museum of Art",
+      "url": "https://clevelandart.org/art/2002.45"
+    }
+  ],
+  "source": {
+    "url": "https://openaccess-cdn.clevelandart.org/2002.45/2002.45_print.jpg",
+    "retrieved": "2026-11-11"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "display": {
+    "cardPosition": "top-left"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "parched",
+      "clear"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
