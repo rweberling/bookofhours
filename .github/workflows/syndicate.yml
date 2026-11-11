@@ -1,15 +1,20 @@
 # Post the site's own content to Bluesky as earthlyhours.com
 # (scripts/syndicate.py): each new Lectio Terra essay, with its
-# standard.site record, and Back in season on Tuesdays and Saturdays
-# (only in the run's summary while its stream has "dryRun"). Runs daily
-# and after each push that changes the posts. Without the BLUESKY_APP_PASSWORD secret (Settings → Secrets and
-# variables → Actions) it only says what it would post, in the run's
-# summary. "Run workflow" by hand can also ask for a dry run.
+# standard.site record; Back in season on Tuesdays and Saturdays; and
+# the hour, a keep card for one watch a day, posted in that watch
+# (a stream with "dryRun" only writes what it would post to the run's
+# summary; the hour's card is then kept with the run, under Artifacts).
+# Runs daily at noon, every three hours for the hour, and after each
+# push that changes the posts. Without the BLUESKY_APP_PASSWORD secret
+# (Settings → Secrets and variables → Actions) it only says what it
+# would post, in the run's summary. "Run workflow" by hand can also ask
+# for a dry run.
 name: Syndicate
 
 on:
   schedule:
-    - cron: '7 17 * * *'          # about noon Eastern
+    - cron: '7 17 * * *'          # about noon Eastern: every stream
+    - cron: '23 */3 * * *'        # once in each watch, Boston time: the hour only
   push:
     branches: [main]
     paths: ['data/lectio-data.json']
@@ -41,15 +46,40 @@ jobs:
       - name: Python packages (JPEG copies of the figures)
         run: pip install pillow==12.3.0
 
+      - name: Which streams, and is the hour's card due
+        id: plan
+        run: |
+          args=''
+          [ "${{ github.event.schedule }}" = '23 */3 * * *' ] && args='--only hour'
+          [ "${{ inputs.dry_run }}" = "true" ] && args="$args --dry-run"
+          echo "args=$args" >> "$GITHUB_OUTPUT"
+          echo "hour=$(python3 scripts/syndicate.py $args --hour-due)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v7
+        if: steps.plan.outputs.hour == 'yes'
+        with:
+          node-version: '22'
+
+      - name: Playwright and its Chromium (to draw the hour's card)
+        if: steps.plan.outputs.hour == 'yes'
+        run: |
+          npm install --no-save --prefix "$RUNNER_TEMP/pw" playwright@1.63.0
+          "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+          echo "NODE_PATH=$RUNNER_TEMP/pw/node_modules" >> "$GITHUB_ENV"
+
       - name: Post what is due
         env:
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
-        run: |
-          if [ "${{ inputs.dry_run }}" = "true" ]; then
-            python3 scripts/syndicate.py --dry-run
-          else
-            python3 scripts/syndicate.py
-          fi
+          HOUR_CARD_DIR: ${{ runner.temp }}/hour-card
+        run: python3 scripts/syndicate.py ${{ steps.plan.outputs.args }}
+
+      - name: Keep the hour's card with the run
+        if: steps.plan.outputs.hour == 'yes'
+        uses: actions/upload-artifact@v6
+        with:
+          name: hour-card
+          path: ${{ runner.temp }}/hour-card/*.png
+          if-no-files-found: ignore
 
       - name: Save what was posted, and the page's record link
         run: |

@@ -234,11 +234,14 @@ When a post has gone out on Bluesky, `scripts/syndicate.py` records it in
 (`uri`, `cid`), its `reply` with more figures, and the post's
 standard.site `document` record, whose address the post's page names in
 its head. The `streams` say what goes out and when: `essay` (`since`),
-`records`, and `season` (Back in season: `days`, `minWeeks`, and
-`dryRun` while its posts are only written to the run summary). The `log`
-lists every post made (`date`, `stream`, `post`, `uri`; Back in season's
-also its `excerpt`, an index into the post's list, and the `figure` ID
-used as the card's picture), which is how the streams avoid repeats. A post may also carry `syndication`: `hashtags`
+`records`, `season` (Back in season: `days`, `minWeeks`) and `hour`
+(the hour's keep card: `readings`, `"open"` for open rights only or
+`"all"`, and `minDays`); `dryRun` on a stream keeps its posts to the run
+summary. The `log` lists every post made (`date`, `stream`, `post`,
+`uri`; Back in season's also its `excerpt`, an index into the post's
+list, and the `figure` ID used as the card's picture; the hour's its
+`watch`, `reading` and `image` in place of `post`), which is how the
+streams avoid repeats. A post may also carry `syndication`: `hashtags`
 for that essay and `excerpts` (each `from`, a record ID, and `text`, word
 for word from it) for its Bluesky posts (`check_data.py` checks each is still word for word in its record). A species or phenomenon record's
 `hashtags` are used for every post about it.

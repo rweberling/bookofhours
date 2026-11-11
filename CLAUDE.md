@@ -66,8 +66,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   daily and after posts change): posts each new essay as earthlyhours.com
   and makes its standard.site record, and on Tuesdays and Saturdays
   "Back in season", an earlier essay of the current season with its next
-  excerpt and figure (at most two posts a day; `"dryRun": true` on a
-  stream in `data/syndication.json` keeps it to the run summary).
+  excerpt and figure, and "the hour", one watch's keep card a day,
+  posted in that watch (`scripts/hour_card.js` draws it with keep.js;
+  the workflow also runs every three hours for it). At most two posts a
+  day; `"dryRun": true` on a stream in `data/syndication.json` keeps it
+  to the run summary.
   `--dry-run` says what it would post; `--preview lt-NNNN` shows any
   essay's post. The plan is the
   "Syndication Plan" doc (https://claude.ai/artifact/89YN6Mjfc3v31muCrCDNQC).

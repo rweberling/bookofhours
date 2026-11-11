@@ -7,9 +7,13 @@ Usage:
   python3 scripts/syndicate.py --dry-run        say what would be posted; send nothing
   python3 scripts/syndicate.py --preview lt-0033
                                                 show the essay post for any post; send nothing
+  python3 scripts/syndicate.py --only hour      only the hour (the three-hourly runs)
+  python3 scripts/syndicate.py --hour-due       print yes or no: is the hour's card due now
 
-Run by .github/workflows/syndicate.yml once a day and after each push that
-changes data/lectio-data.json. Without the password it does a dry run.
+Run by .github/workflows/syndicate.yml at noon Eastern (every stream),
+every three hours (the hour only), and after each push that changes
+data/lectio-data.json. Without the password it does a dry run. Times
+and days are Boston's.
 
 What it posts (the streams in data/syndication.json; the plan is in the
 "Syndication Plan" doc):
@@ -32,13 +36,33 @@ What it posts (the streams in data/syndication.json; the plan is in the
           "dryRun": true on the stream, a live run only writes what it
           would post, and the next few after it, to the run summary.
 
+  hour    The hour: one watch a day, the next of the eight each day (so
+          three hours later each day), posted during that watch. An
+          image post of the watch's keep card (wide, 1200×630 at 2×),
+          drawn by the site's own keep.js through scripts/hour_card.js
+          (Node, Playwright and Chromium) from the Hours page at
+          /?block=<watch>&r=<reading>&i=<image>, in the watch's colours
+          and light. Its text names the watch, the reading's author and
+          the picture's maker, and links to /?r=…&i=…, which reopens
+          the pairing; its alt text holds the reading and describes the
+          picture. The reading and image are ones the Hours page shows
+          in that watch: images with open rights only, readings by the
+          stream's "readings" ("open", the same, or "all"). Neither
+          goes out again within "minDays" (60); of those free, the one
+          away longest, then one tagged for the season. A watch with
+          nothing free skips its day. Logged with its watch, reading
+          and image. It waits when the day already has two posts,
+          counting a Back in season post still to come. With
+          "dryRun", the card is still drawn (kept with the run, under
+          Artifacts, by the workflow), so a fault shows.
+
   records The essays published before the essay stream's "since" date:
           a site.standard.document record for each, with no new post.
           Its bskyPostRef is the earliest Bluesky post of the account
           that linked to the essay (on Substack or the site), if any.
 
 At most two posts a day across the streams (a card and its reply count
-as one): the essay stream first, then Back in season if there's room.
+as one): the essay stream first, then Back in season, then the hour.
 
 What the text is made of, all from the records:
 
@@ -57,7 +81,8 @@ What it writes back, all in data/syndication.json (so the posts' own
 records, and the pages built from them, don't change daily): each
 essay's at:// addresses under "essays" ("card": {uri, cid}, "reply",
 "document"), and every Bluesky post made in the "log" (date, stream,
-post, uri; Back in season adds excerpt and figure). build_lectio_pages.py then
+post, uri; Back in season adds excerpt and figure; the hour has watch,
+reading and image in place of post). build_lectio_pages.py then
 puts <link rel="site.standard.document"> in the page's head. The
 publication record (rkey fixed in syndication.json) is made on the first
 live run if it isn't there; /.well-known/site.standard.publication names it.
@@ -69,6 +94,9 @@ document record is made).
 
 import argparse
 import html
+import shutil
+import subprocess
+import tempfile
 import io
 import json
 import os
@@ -355,9 +383,14 @@ class Bluesky:
         return {'uri': r['uri'], 'cid': r['cid']}
 
 
+def now_home():
+    """The time in Boston: the watches and the days are its."""
+    return datetime.now(HOME)
+
+
 def today():
     """The date in Boston, so a run near midnight UTC counts the right day."""
-    return datetime.now(HOME).date()
+    return now_home().date()
 
 
 def now():
@@ -496,7 +529,7 @@ def season_of(day):
 def posted_on(c, day):
     """How many posts went out on a day, across the streams (a card and
     its reply count once)."""
-    return len({(e['stream'], e['post']) for e in c.config.get('log') or []
+    return len({(e['stream'], e.get('post') or e.get('reading')) for e in c.config.get('log') or []
                 if e.get('date') == day.isoformat()})
 
 
@@ -510,7 +543,7 @@ def season_choice(c, day, log=None):
     season = season_of(day)
     last = {}
     for e in log:
-        if e.get('date', '') <= day.isoformat():
+        if e.get('post') and e.get('date', '') <= day.isoformat():
             last[e['post']] = max(last.get(e['post'], ''), e['date'])
     gap = timedelta(weeks=stream.get('minWeeks', 8))
     ready = [p for p in posts(c.data)
@@ -521,7 +554,7 @@ def season_choice(c, day, log=None):
     if not ready:
         return None
     post = min(ready, key=lambda p: (last.get(p['id'], ''), p['published']))
-    mine = [e for e in log if e['post'] == post['id'] and e.get('stream') == 'season']
+    mine = [e for e in log if e.get('post') == post['id'] and e.get('stream') == 'season']
     essay_card = 'card' in ((c.config.get('essays') or {}).get(post['id']) or {})
     # The next excerpt: the essay stream used the first; each return the
     # next, round the list.
@@ -582,6 +615,206 @@ def season_ahead(c, start, first=None, count=4):
             log.append({'date': day.isoformat(), 'stream': 'season', 'post': post['id'],
                         'excerpt': excerpt, 'figure': figure['id'] if figure else None})
     return out
+
+
+# ---------- the hour ----------
+
+def watches():
+    return load('vocab')['hours']
+
+
+def watch_of_day(day):
+    """The watch whose card goes out on a day: each day the next of the
+    eight, so the posting time moves three hours later each day."""
+    ws = watches()
+    return ws[day.toordinal() % len(ws)]
+
+
+def watch_at(moment):
+    return next(w for w in watches() if w['startHour'] <= moment.hour < w['endHour'])
+
+
+def reading_rights(r):
+    return ((r.get('citation') or {}).get('edition') or {}).get('rights') or ''
+
+
+def hour_pool(c, watch):
+    """The readings and images the Hours page shows in a watch that the
+    stream may post: images only with open rights; readings by the
+    stream's "readings" ("open": open rights only; "all")."""
+    stream = c.config['streams'].get('hour') or {}
+
+    def shown(rec):
+        return (rec.get('shownIn') == 'hours' and not rec.get('draft')
+                and watch['id'] in ((rec.get('tags') or {}).get('hours') or []))
+    readings = [r for r in c.readings.values() if shown(r)
+                and (stream.get('readings') == 'all' or reading_rights(r).startswith(OPEN_RIGHTS))]
+    images = [i for i in c.images if shown(i)
+              and (i.get('rights') or '').startswith(OPEN_RIGHTS) and (ROOT / i['file']).exists()]
+    return readings, images
+
+
+def hour_choice(c, day, log=None):
+    """The day's watch and the reading and image for its card, or None.
+    Neither may have gone out in the stream within minDays; of those
+    free, the one away longest (never posted first), then one tagged
+    for the season, then the collection's order. None when the watch
+    has no reading or no image free: the day goes without."""
+    log = (c.config.get('log') or []) if log is None else log
+    watch = watch_of_day(day)
+    readings, images = hour_pool(c, watch)
+    if not readings or not images:
+        return None
+    season = season_of(day)
+
+    def pick(items, key):
+        last = {}
+        for e in log:
+            if e.get('stream') == 'hour' and e.get(key) and e['date'] <= day.isoformat():
+                last[e[key]] = max(last.get(e[key], ''), e['date'])
+        free = [it for it in items if it['id'] not in last
+                or date.fromisoformat(last[it['id']]) + gap <= day]
+        order = {it['id']: n for n, it in enumerate(items)}
+        return min(free, key=lambda it: (last.get(it['id'], ''),
+                                         season not in ((it.get('tags') or {}).get('seasons') or []),
+                                         order[it['id']])) if free else None
+    gap = timedelta(days=(c.config['streams'].get('hour') or {}).get('minDays', 60))
+    reading, image = pick(readings, 'reading'), pick(images, 'image')
+    return (watch, reading, image) if reading and image else None
+
+
+def compose_hour(c, day, watch, reading, image):
+    """The hour's post: the watch's name and the names of the reading and
+    picture, the link that reopens the pairing, and the card (drawn
+    later, by hour_card.js) with alt text that holds the reading."""
+    path = f'/?r={reading["id"]}&i={image["id"]}'
+    shown_link = 'earthlyhours.com' + path
+    author = c.author(reading['id']) or plain(reading['citation'].get('display', '')).split(',')[0]
+    creator = (image.get('creator') or {}).get('name')
+    head = f'{watch["label"]} · {watch["subtitle"]}\n\n'
+    who = author + (f', with a picture by {creator}' if creator else '')
+    text = head + who + '\n' + shown_link
+    start = utf8_len(head + who + '\n')
+    link = {'index': {'byteStart': start, 'byteEnd': start + utf8_len(shown_link)},
+            'features': [{'$type': 'app.bsky.richtext.facet#link', 'uri': SITE + path}]}
+    text, facets, hidden = with_tags(text, c.config.get('standingTags') or [])
+    words = plain(reading['text']).replace('\n\n', ' / ').replace('\n', ' / ')
+    alt = (f'The {watch["label"]} card from The Earthly Book of Hours. The reading: '
+           f'“{words}” — {plain(reading["citation"].get("display", ""))}. The picture: '
+           f'{plain(image.get("alt") or "")} ({plain(image.get("caption") or "")})')
+    if len(alt) > 2000:
+        alt = alt[:1999].rsplit(' ', 1)[0] + '…'
+    return {
+        'day': day.isoformat(), 'watch': watch['id'], 'label': watch['label'],
+        'reading': reading['id'], 'image': image['id'], 'url': SITE + path,
+        'text': text, 'facets': [link] + facets, 'tags': hidden, 'alt': alt,
+    }
+
+
+def due_hour(c, moment, essays_due=0, only_hour=False):
+    """The hour's post due now, or None: it is the day's watch, the card
+    hasn't gone out today, and there's room under PER_DAY after the
+    other streams (a Back in season day counts its post even before
+    the noon run makes it, since the hour is the one that waits)."""
+    stream = c.config['streams'].get('hour') or {}
+    if not stream.get('on'):
+        return None
+    day = moment.date()
+    if watch_at(moment)['id'] != watch_of_day(day)['id']:
+        return None
+    log = c.config.get('log') or []
+    if any(e.get('stream') == 'hour' and e.get('date') == day.isoformat() for e in log):
+        return None
+    taken = posted_on(c, day) + essays_due
+    season = c.config['streams'].get('season') or {}
+    if (season.get('on') and DAYS[day.weekday()] in [d[:3].lower() for d in season.get('days', [])]
+            and not any(e.get('stream') == 'season' and e.get('date') == day.isoformat() for e in log)
+            and season_choice(c, day)):
+        taken += 1
+    if taken >= PER_DAY:
+        return None
+    choice = hour_choice(c, day)
+    return compose_hour(c, day, *choice) if choice else None
+
+
+def hour_ahead(c, start, first=None, count=7):
+    """The hour's next posts after start, as if each before it had gone
+    out (cap days aside): for a dry run."""
+    log = list(c.config.get('log') or [])
+    if first:
+        log.append({'date': start.isoformat(), 'stream': 'hour',
+                    'reading': first['reading'], 'image': first['image']})
+    out, day = [], start
+    while len(out) < count:
+        day += timedelta(days=1)
+        choice = hour_choice(c, day, log)
+        if choice:
+            plan = compose_hour(c, day, *choice)
+            out.append(plan)
+            log.append({'date': day.isoformat(), 'stream': 'hour',
+                        'reading': plan['reading'], 'image': plan['image']})
+        elif day > start + timedelta(days=60):
+            break
+    return out
+
+
+def draw_hour_card(plan, out_dir):
+    """The card as a PNG, drawn by the site's own keep.js (hour_card.js)."""
+    out = Path(out_dir) / f'{plan["day"]}-{plan["watch"]}-{plan["reading"]}-{plan["image"]}.png'
+    node = shutil.which('node')
+    if not node:
+        raise RuntimeError('node is not installed')
+    r = subprocess.run([node, str(ROOT / 'scripts' / 'hour_card.js'), plan['reading'],
+                        plan['image'], plan['watch'], str(out)], capture_output=True, text=True,
+                       timeout=180)
+    if r.returncode:
+        raise RuntimeError((r.stderr or r.stdout).strip() or 'hour_card.js failed')
+    return out
+
+
+def card_dir():
+    d = os.environ.get('HOUR_CARD_DIR') or tempfile.mkdtemp(prefix='hour-card-')
+    Path(d).mkdir(parents=True, exist_ok=True)
+    return d
+
+
+def send_hour(bs, c, plan, card):
+    blob, (w, h) = bs.blob(card)
+    record = {'$type': 'app.bsky.feed.post', 'text': plan['text'], 'createdAt': now(),
+              'langs': ['en'], 'facets': plan['facets'],
+              'embed': {'$type': 'app.bsky.embed.images', 'images': [
+                  {'image': blob, 'alt': plan['alt'], 'aspectRatio': {'width': w, 'height': h}}]}}
+    if plan['tags']:
+        record['tags'] = plan['tags']
+    ref = bs.create('app.bsky.feed.post', record)
+    c.config.setdefault('log', []).append({
+        'date': plan['day'], 'stream': 'hour', 'watch': plan['watch'],
+        'reading': plan['reading'], 'image': plan['image'], 'uri': ref['uri']})
+    save_all(c)
+    print(f'The hour ({plan["label"]}): posted {ref["uri"]}')
+
+
+def describe_hour(c, moment, plan, out, sent=False, card=None):
+    stream = c.config['streams'].get('hour') or {}
+    if plan:
+        head = 'The hour' + ('' if sent else ' (dry run, not sent)')
+        out.write(f'## {head}: {plan["label"]}, {moment:%A %-d %B}\n\n')
+        out.write('Post text:\n\n```\n' + plan['text'] + '\n```\n\n')
+        out.write(f'- Reading {plan["reading"]}, image {plan["image"]}\n')
+        out.write(f'- Link: {plan["url"]}\n')
+        out.write(f'- Unseen tags: {" ".join(plan["tags"]) or "none"}\n')
+        out.write(f'- Card: {card.name if card else "not drawn"}'
+                  + (' (in this run\'s artifacts)' if card and os.environ.get('GITHUB_ACTIONS') else '')
+                  + '\n')
+        out.write(f'- Alt text: {plan["alt"]}\n\n')
+    if not sent and stream.get('on'):
+        ahead = hour_ahead(c, moment.date(), plan)
+        if ahead:
+            out.write('The hour, the days after' + (' that' if plan else '') + ' (where the day has room):\n\n')
+            for p in ahead:
+                out.write(f'- {date.fromisoformat(p["day"]):%a %-d %b}: {p["label"]}, '
+                          f'{p["reading"]} with {p["image"]}\n')
+            out.write('\n')
 
 
 def public(method, **query):
@@ -707,10 +940,25 @@ def describe_season(c, day, plan, out, sent=False):
         out.write('Back in season: no essay of this season is free in the next weeks.\n\n')
 
 
+def hour_card_or_note(plan, out, must=False):
+    """Draw the hour's card for a dry run; say why when it can't be (a
+    stream in dryRun on a live run must draw it, so a fault shows)."""
+    try:
+        return draw_hour_card(plan, card_dir())
+    except Exception as e:
+        if must:
+            raise
+        out.write(f'(The card could not be drawn here: {e})\n\n')
+        return None
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--preview', metavar='POST')
+    ap.add_argument('--only', choices=['hour'], help='run only this stream (the three-hourly runs)')
+    ap.add_argument('--hour-due', action='store_true',
+                    help='print yes or no: is the hour\'s card to be drawn on this run')
     args = ap.parse_args()
     c = Collection()
     summary = os.environ.get('GITHUB_STEP_SUMMARY')
@@ -720,11 +968,18 @@ def main():
         describe(compose_essay(c, c.post(args.preview)), sys.stdout)
         return
 
-    day = today()
-    due = due_essays(c)
-    season = due_season(c, day, len(due))
+    moment = now_home()
+    day = moment.date()
+    only_hour = args.only == 'hour'
+    due = [] if only_hour else due_essays(c)
+    season = None if only_hour else due_season(c, day, len(due))
     season_stream = c.config['streams'].get('season') or {}
-    records = due_records(c)
+    hour = due_hour(c, moment, len(due))
+    hour_stream = c.config['streams'].get('hour') or {}
+    if args.hour_due:
+        print('yes' if hour else 'no')
+        return
+    records = [] if only_hour else due_records(c)
     found = announcements(c) if records else {}
     password = os.environ.get('BLUESKY_APP_PASSWORD')
     dry = args.dry_run or not password
@@ -733,15 +988,19 @@ def main():
         if not password and not args.dry_run:
             out.write('(No BLUESKY_APP_PASSWORD secret yet.)\n\n')
         pub = f'at://{c.config.get("did", "…")}/site.standard.publication/{c.config["publication"]["rkey"]}'
-        updates = due_updates(c, pub)
-        if not due and not records and not updates and not season:
+        updates = [] if only_hour else due_updates(c, pub)
+        if not due and not records and not updates and not season and not hour:
             out.write('Nothing due.\n\n')
         for p, _ in updates:
             out.write(f'- {p["id"]}: its document record would be updated to match its data\n')
         for p in due:
             describe(compose_essay(c, p), out)
-        if season_stream.get('on'):
+        if season_stream.get('on') and not only_hour:
             describe_season(c, day, season, out)
+        if hour:
+            describe_hour(c, moment, hour, out, card=hour_card_or_note(hour, out))
+        elif hour_stream.get('on') and not only_hour:
+            describe_hour(c, moment, None, out)
         if records:
             out.write(f'## {len(records)} standard.site records for earlier essays (no posts)\n\n')
         for p in records:
@@ -752,11 +1011,14 @@ def main():
     # shows straight away if the password stops working.
     bs = Bluesky(c.config['account'], password)
     publication = ensure_publication(bs, c)
-    updates = due_updates(c, publication)
-    if not due and not records and not updates and not season:
+    updates = [] if only_hour else due_updates(c, publication)
+    if not due and not records and not updates and not season and not hour:
         out.write('Signed in; the publication record is there. Nothing due.\n\n')
-        if season_stream.get('on') and season_stream.get('dryRun'):
-            describe_season(c, day, None, out)
+        if not only_hour:
+            if season_stream.get('on') and season_stream.get('dryRun'):
+                describe_season(c, day, None, out)
+            if hour_stream.get('on') and hour_stream.get('dryRun'):
+                describe_hour(c, moment, None, out)
         return
     for p, record in updates:
         out.write(f'- {p["id"]}: document record updated to match its data\n')
@@ -770,6 +1032,12 @@ def main():
     elif season:
         describe(season, out)
         send_season(bs, c, season)
+    if hour and hour_stream.get('dryRun'):
+        describe_hour(c, moment, hour, out, card=hour_card_or_note(hour, out, must=True))
+    elif hour:
+        card = draw_hour_card(hour, card_dir())
+        describe_hour(c, moment, hour, out, sent=True, card=card)
+        send_hour(bs, c, hour, card)
     for p in records:
         describe_record(c, p, found.get(p['id']), out)
         send_record(bs, c, p, found.get(p['id']), publication)
