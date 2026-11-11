@@ -292,7 +292,7 @@ body::before {
 /* ── Header ───────────────────────────────────────────────────── */
 .publication-name {
   font-family: var(--font-label);
-  font-size: 10px; letter-spacing: 0.38em;
+  font-size: 11.5px; letter-spacing: 0.38em;
   color: var(--ink-faint); text-transform: uppercase;
   margin-bottom: 26px;
   transition: color 3s ease;
@@ -416,7 +416,7 @@ body main.hours-page .versicle {
 }
 .page-subtitle {
   font-family: var(--font-text);
-  font-size: 14px; font-weight: 300; font-style: italic;
+  font-size: 15px; font-weight: 300; font-style: italic;
   color: var(--ink-faint); letter-spacing: 0.1em;
   margin-bottom: 32px;
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.5s;
@@ -434,7 +434,7 @@ body main.hours-page .versicle {
 ────────────────────────────────────────────────────────────────── */
 .page-kicker {
   font-family: var(--font-label);
-  font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+  font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase;
   color: var(--ink-faint); margin-bottom: 8px;
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.2s;
   transition: color 3s ease;
@@ -455,8 +455,10 @@ body main.hours-page .versicle {
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.7s;
 }
 .content-block p {
+  /* A long link (the Zenodo DOI on About) breaks rather than widening the page. */
+  overflow-wrap: anywhere;
   font-family: var(--font-voice);
-  font-size: 15px; font-weight: 300; line-height: 1.85;
+  font-size: 17px; font-weight: 300; line-height: 1.8;
   color: var(--ink-light);
   margin-bottom: 20px;
 }
@@ -464,7 +466,7 @@ body main.hours-page .versicle {
    like the masthead and the Wander pane headings. */
 .content-block .content-subhead {
   font-family: var(--font-label);
-  font-size: 11px; font-weight: 400;
+  font-size: 12px; font-weight: 400;
   letter-spacing: 0.3em; text-transform: uppercase;
   color: var(--gold); text-align: center;
   margin: 44px 0 18px;
@@ -483,7 +485,7 @@ body main.hours-page .versicle {
 .contents-latin { color: var(--accent); margin-left: 0.4em; transition: color 3s ease; }
 .contents-details {
   display: block;
-  font-family: var(--font-text); font-size: 13px; font-style: italic;
+  font-family: var(--font-text); font-size: 14.5px; font-style: italic;
   color: var(--ink-faint); transition: color 3s ease;
 }
 
@@ -513,7 +515,7 @@ body main.hours-page .versicle {
 /* ── Block heading ────────────────────────────────────────────── */
 .block-subtitle {
   font-family: var(--font-text);
-  font-size: 13px; font-weight: 300; font-style: italic;
+  font-size: 14px; font-weight: 300; font-style: italic;
   color: var(--ink-faint); letter-spacing: 0.12em;
   margin-bottom: 6px;
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.3s;
@@ -554,7 +556,7 @@ body main.hours-page .versicle {
 }
 .date-line {
   font-family: var(--font-text);
-  font-size: 11.5px; font-weight: 400; letter-spacing: 0.22em;
+  font-size: 12.5px; font-weight: 400; letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink-faint); text-align: center; text-wrap: balance;
   margin-bottom: 34px;
@@ -654,7 +656,7 @@ body main.hours-page .versicle {
 }
 .season-post-dek {
   font-family: var(--font-text);
-  font-size: 13px; font-weight: 300; font-style: italic;
+  font-size: 15px; font-weight: 300; font-style: italic;
   color: var(--ink-faint); letter-spacing: 0.05em;
   text-align: center; margin-bottom: 30px;
   transition: color 3s ease;
@@ -672,7 +674,7 @@ body main.hours-page .versicle {
 }
 #season-reading-body p {
   font-family: var(--font-text);
-  font-size: 15px; font-weight: 300; line-height: 1.85;
+  font-size: 18px; font-weight: 300; line-height: 1.85;
   color: var(--ink-light);
   margin-bottom: 20px;
 }
@@ -692,7 +694,7 @@ body main.hours-page .versicle {
 }
 #season-reading-body .footnotes .footnote {
   width: min(640px, calc(100vw - 60px));
-  font-size: 13.5px; line-height: 1.75;
+  font-size: 15.5px; line-height: 1.75;
   color: var(--ink-faint);
   margin-bottom: 12px;
   scroll-margin-top: 90px;
@@ -707,7 +709,7 @@ body main.hours-page .versicle {
    leads and the citation reads as its source line. On trial. */
 #season-reading-body .reading-citation {
   font-family: var(--font-text);
-  font-size: 13.5px; font-weight: 400; line-height: 1.7;
+  font-size: 15.5px; font-weight: 400; line-height: 1.7;
   color: var(--ink-faint);
   margin-top: 14px;
 }
@@ -717,7 +719,7 @@ body main.hours-page .versicle {
    of its own, so it takes their face here. */
 #season-reading-body .reading-verse {
   font-family: var(--font-text);
-  font-size: 15px; font-weight: 300; line-height: 1.85;
+  font-size: 18px; font-weight: 300; line-height: 1.85;
   color: var(--ink-light);
 }
 #season-reading-body a {
@@ -764,7 +766,7 @@ body main.hours-page .versicle {
   border: 1px solid var(--accent); color: var(--accent); font-size: 20px; padding-left: 4px;
 }
 #season-reading-body .video-play-note {
-  font-family: var(--font-text); font-size: 13px; font-style: italic; color: var(--ink-faint);
+  font-family: var(--font-text); font-size: 14px; font-style: italic; color: var(--ink-faint);
 }
 #season-reading-body .video-frame { border: 0; }
 #season-reading-body video {
@@ -788,7 +790,7 @@ body main.hours-page .versicle {
   background: color-mix(in oklab, var(--bg), transparent 6%);
   border-bottom: 0.5px solid var(--rule);
   font-family: var(--font-label);
-  font-size: 12px; letter-spacing: 0.08em; text-align: center;
+  font-size: 13px; letter-spacing: 0.08em; text-align: center;
   color: var(--ink-faint);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   opacity: 0; transform: translateY(-100%);
@@ -818,12 +820,12 @@ body main.hours-page .versicle {
 }
 .reading-author {
   font-family: var(--font-label);
-  font-size: 13px; letter-spacing: 0.06em;
+  font-size: 14px; letter-spacing: 0.06em;
   color: var(--ink-light); transition: color 3s ease;
 }
 .reading-work {
   font-family: var(--font-reading);
-  font-size: 13px; font-style: italic;
+  font-size: 14px; font-style: italic;
   color: var(--ink-faint); transition: color 3s ease;
 }
 .reading-author + .reading-work::before { content: '·'; font-style: normal; margin-right: 10px; }
@@ -860,7 +862,7 @@ body main.hours-page .versicle {
 }
 #season-reading-body figcaption {
   font-family: var(--font-text);
-  font-size: 12px; font-style: italic;
+  font-size: 14px; font-style: italic;
   color: var(--ink-faint); text-align: center;
   margin-top: 8px;
 }
@@ -878,9 +880,9 @@ body main.hours-page .versicle {
   letter-spacing: 0.03em;
   margin: 32px 0 14px;
 }
-#season-reading-body h2 { font-size: 20px; }
-#season-reading-body h3 { font-size: 17px; }
-#season-reading-body h4 { font-size: 15px; }
+#season-reading-body h2 { font-size: 22px; }
+#season-reading-body h3 { font-size: 20px; }
+#season-reading-body h4 { font-size: 18px; }
 #season-reading-body hr {
   border: none; border-top: 0.5px solid var(--rule);
   margin: 32px 0;
@@ -924,7 +926,7 @@ body main.hours-page .versicle {
 .image-placeholder svg { opacity: 0.3; }
 .image-caption {
   margin-top: 10px; text-align: center;
-  font-size: 12.5px; font-style: none;
+  font-size: 14.5px; font-style: none;
   color: var(--ink-faint); letter-spacing: 0.02em; line-height: 1.65;
   white-space: pre-line;
   transition: color 3s ease;
@@ -951,7 +953,7 @@ body main.hours-page .versicle {
 .page-subtitle:has(+ .postcard-dateline) { margin-bottom: 6px; }
 .postcard-dateline {
   font-family: var(--font-text);
-  font-size: 12.5px; font-style: italic;
+  font-size: 14px; font-style: italic;
   color: var(--ink-faint); letter-spacing: 0.06em;
   margin-bottom: 32px;
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.6s;
@@ -962,7 +964,7 @@ body main.hours-page .versicle {
   width: fit-content; max-width: 460px; margin: 34px auto 0;
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.9s;
 }
-.page .postcard-links li { font-size: 15px; line-height: 1.6; margin-bottom: 10px; }
+.page .postcard-links li { font-size: 16px; line-height: 1.6; margin-bottom: 10px; }
 .page .postcard-links li::before { font-size: 9px; opacity: 0.85; }
 .postcard-links a {
   color: var(--accent); text-decoration: underline;
@@ -976,7 +978,7 @@ body main.hours-page .versicle {
 .page .postcard-links .postcard-lectio { font-weight: 600; }
 /* What a Lectio Terra entry is, for readers new to the site. */
 .postcard-links .postcard-gloss {
-  display: block; font-size: 13px; font-style: normal; font-weight: 300; color: var(--ink-faint);
+  display: block; font-size: 14px; font-style: normal; font-weight: 300; color: var(--ink-faint);
 }
 .postcard-links .postcard-gloss em { font-style: italic; }
 /* "turn the page" leads on to the next card; a link here, not a button. */
@@ -986,7 +988,7 @@ body main.hours-page .versicle {
    hear when the next set arrives. Quieter than the card's own note. */
 .postcard-follow {
   max-width: 440px; margin: 36px auto 0; text-align: center;
-  font-family: var(--font-text); font-size: 13px; font-style: italic;
+  font-family: var(--font-text); font-size: 14px; font-style: italic;
   line-height: 1.7; color: var(--ink-faint);
 }
 .postcard-follow a { color: inherit; }
@@ -1011,7 +1013,7 @@ body main.hours-page .versicle {
 }
 .quote-attribution {
   font-family: var(--font-text);
-  font-size: 12.5px; font-weight: 300; letter-spacing: 0.18em;
+  font-size: 14.5px; font-weight: 300; letter-spacing: 0.18em;
   color: var(--ink-faint); text-transform: none;
   transition: color 3s ease;
 }
@@ -1045,7 +1047,7 @@ body main.hours-page .versicle {
 }
 .phenomena-list {
   font-family: var(--font-voice);
-  font-size: 14px; font-weight: 300; font-style: italic; color: var(--ink-faint);
+  font-size: 15.5px; font-weight: 300; font-style: italic; color: var(--ink-faint);
   letter-spacing: 0.03em; line-height: 1.7;
   transition: color 3s ease;
 }
@@ -1061,7 +1063,7 @@ body main.hours-page .versicle {
    closes the post without competing with "turn the page" below it. */
 .season-post-observation .phenomena-list {
   font-family: var(--font-label);
-  font-size: 12.5px; font-weight: 400; color: var(--ink-faint);
+  font-size: 14px; font-weight: 400; color: var(--ink-faint);
   letter-spacing: 0.12em;
 }
 
@@ -1082,7 +1084,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 
 .versicle p {
   font-family: var(--font-voice);
-  font-size: 14.5px; font-style: italic; font-weight: 300;
+  font-size: 16px; font-style: italic; font-weight: 300;
   color: var(--ink-light); line-height: 1.95;
   transition: color 3s ease;
 }
@@ -1108,7 +1110,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 }
 .colophon {
   font-family: var(--font-text);
-  font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+  font-size: 12.5px; letter-spacing: 0.25em; text-transform: uppercase;
   color: var(--ink-faint); opacity: 0.65;
   transition: color 3s ease;
 }
@@ -1155,7 +1157,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 
 .site-nav a {
   font-family: var(--font-text);
-  font-size: 12px; font-weight: 400; letter-spacing: 0.28em;
+  font-size: 13px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; text-decoration: none;
   color: var(--ink-faint); opacity: 0.75;
   transition: opacity 0.2s ease, color 3s ease;
@@ -1266,7 +1268,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .lightbox-caption {
   margin-top: 16px;
   font-family: var(--font-text);
-  font-size: 13px; font-style: none;
+  font-size: 14.5px; font-style: none;
   color: rgba(255,255,255,0.7);
   text-align: center; max-width: 600px; line-height: 1.6;
 }
@@ -1294,7 +1296,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-trigger {
   all: unset;
   font-family: var(--font-text);
-  font-size: 12px; 
+  font-size: 13px; 
   font-weight: 400; 
   letter-spacing: 0.28em;
   text-transform: uppercase; 
@@ -1338,7 +1340,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
 .nav-hours-menu a,
 .nav-hours-menu .wander-btn {
   font-family: var(--font-text);
-  font-size: 12px; font-weight: 400; letter-spacing: 0.28em;
+  font-size: 13px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; text-decoration: none;
   color: var(--ink-faint); opacity: 0.75;
   padding: 8px 20px;
@@ -1377,7 +1379,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     gap: 0;
   }
   .site-nav > a {
-    font-size: 11px; letter-spacing: 0.18em;
+    font-size: 12px; letter-spacing: 0.18em;
     padding: 10px 0;
     width: 100%; text-align: center;
     border-top: 0.5px solid var(--rule);
@@ -1393,7 +1395,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
     text-align: center;
     justify-content: center;
     display: flex;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.18em;
     padding: 12px 0;
     border-top: 0.5px solid var(--rule);
@@ -1411,7 +1413,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   }
   .nav-hours-menu a,
   .nav-hours-menu .wander-btn {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.18em;
     padding: 10px 0;
     border-top: 0.5px solid var(--rule);
@@ -1436,7 +1438,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .image-frame { padding: 10px; }
   .quote-block { margin-bottom: 18px; }
   .block-name { font-size: clamp(24px, 7vw, 36px); }
-  .quote-text { font-size: clamp(14px, 4vw, 18px); }
+  .quote-text { font-size: clamp(17px, 4.6vw, 19px); }
   .block-subtitle { margin-bottom: 4px; }
   .date-line { margin-bottom: 24px; letter-spacing: 0.16em; }
   .hours-subtitle { margin-bottom: 8px; }
@@ -1445,7 +1447,7 @@ body.block-denouement .versicle { background: rgba(180,160,220,0.06); }
   .date-short { display: inline; }
   .hour-line { flex-direction: column; align-items: center; gap: 4px; margin-bottom: 24px; }
   .versicle { padding: 16px; margin-top: 24px; }
-  .versicle p { font-size: 13px; }
+  .versicle p { font-size: 15px; }
   .corner { display: none; }
 
   .wander-grid {
@@ -1576,7 +1578,7 @@ body:has(.keep-pane.open) { overflow: hidden; }
 .subscribe-row:focus-within { border-color: var(--accent); }
 .subscribe-button {
   background: none; border: 0; padding: 6px 2px; cursor: pointer;
-  font-family: var(--font-label); font-size: 12px; letter-spacing: 0.2em;
+  font-family: var(--font-label); font-size: 13px; letter-spacing: 0.2em;
   text-transform: uppercase; color: var(--accent); transition: color 3s ease;
 }
 .subscribe-button:hover, .subscribe-button:focus-visible { color: var(--ink); }
@@ -1584,7 +1586,7 @@ body:has(.keep-pane.open) { overflow: hidden; }
 .subscribe-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .subscribe-check:not(:empty) { margin-top: 10px; display: flex; justify-content: center; }
 .subscribe-note {
-  margin-top: 10px !important; font-size: 12.5px; font-style: italic;
+  margin-top: 10px !important; font-size: 13.5px; font-style: italic;
   line-height: 1.5; opacity: 0.85; text-wrap: balance;
 }
 .subscribe-note.is-error { color: var(--accent); opacity: 1; }
@@ -2241,7 +2243,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-card[data-position="bottom-center"] { align-self: end;   justify-self: center; transform: none; }
 
 .weather-card .publication-name {
-  font-size: 10.5px; letter-spacing: 0.3em;
+  font-size: 11.5px; letter-spacing: 0.3em;
   text-align: left; margin-bottom: 10px;
   padding-right: 28px; white-space: nowrap;
 }
@@ -2305,7 +2307,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .weather-further {
   margin-top: 6px;
   font-family: var(--font-text);
-  font-size: 13.5px; letter-spacing: 0.2em;
+  font-size: 14.5px; letter-spacing: 0.2em;
   color: var(--ink-faint);
   transition: color 3s ease;
 }
@@ -2374,20 +2376,20 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   /* Phone sizes — the desktop ones above are tuned for reading at
      arm's length over a large picture; these were already comfortable. */
   .weather-card { --card-pad-x: 30px; --card-pad-b: 22px; padding-top: 28px; }
-  .weather-card .publication-name { font-size: 9px; letter-spacing: 0.32em; white-space: normal; }
+  .weather-card .publication-name { font-size: 10.5px; letter-spacing: 0.32em; white-space: normal; }
   .weather-readout { font-size: 14px; }
   .weather-quote-text { font-size: 17px; }
-  .weather-quote-attr, .weather-caption { font-size: 13.5px; }
-  .weather-card.is-folded .weather-caption { font-size: 12.5px; }
-  .weather-card .weather-actions { font-size: 12px; gap: 7px; letter-spacing: 0.14em; }
-  .weather-further { font-size: 12px; letter-spacing: 0.14em; }
+  .weather-quote-attr, .weather-caption { font-size: 14.5px; }
+  .weather-card.is-folded .weather-caption { font-size: 13.5px; }
+  .weather-card .weather-actions { font-size: 13px; gap: 7px; letter-spacing: 0.14em; }
+  .weather-further { font-size: 13px; letter-spacing: 0.14em; }
 }
 
 /* ── Turn the page ────────────────────────────────────────────── */
 .turn-the-page {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--font-text);
-  font-size: 13px; font-weight: 400; letter-spacing: 0.28em;
+  font-size: 14px; font-weight: 400; letter-spacing: 0.28em;
   text-transform: uppercase; color: var(--ink-faint);
   opacity: 0; padding: 4px 0;
   margin-top: 32px;
@@ -2452,7 +2454,7 @@ a.page-action { text-decoration: none; }
 /* ── Page note (sources, about) ───────────────────────────────── */
 .page-note {
   font-family: var(--font-voice);
-  font-size: 13.5px; font-weight: 300; font-style: italic;
+  font-size: 15px; font-weight: 300; font-style: italic;
   color: var(--ink-faint); text-align: center;
   max-width: 480px; line-height: 1.7; margin-bottom: 52px;
   opacity: 0; animation: fadeIn 1.2s ease forwards 0.7s;
@@ -2585,13 +2587,13 @@ a.page-action { text-decoration: none; }
 
 .sources-page .block-header .block-hours {
   font-family: var(--font-text);
-  font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+  font-size: 13.5px; font-style: italic; color: var(--ink-faint);
   letter-spacing: 0.06em;
 }
 
 .sources-page .category-label {
   font-family: var(--font-text);
-  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+  font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
   color: var(--gold); opacity: 0.85;
   margin: 28px 0 12px;
 }
@@ -2605,7 +2607,7 @@ a.page-action { text-decoration: none; }
 
 .sources-page .citation {
   font-family: var(--font-text);
-  font-size: 15.5px; font-weight: 400;
+  font-size: 17px; font-weight: 400;
   color: var(--ink-light); line-height: 1.6;
   text-indent: -1.5em; padding-left: 1.5em;
 }
@@ -2632,7 +2634,7 @@ a.page-action { text-decoration: none; }
   margin-top: 5px;
   padding-left: 1.5em;
   font-family: var(--font-text);
-  font-size: 12.5px;
+  font-size: 14px;
   font-style: italic;
   color: var(--ink-faint);
   letter-spacing: 0.01em;
@@ -2641,7 +2643,7 @@ a.page-action { text-decoration: none; }
 
 .sources-page .entry-links .links-label {
   font-style: normal; text-transform: uppercase;
-  letter-spacing: 0.15em; font-size: 10px;
+  letter-spacing: 0.15em; font-size: 11.5px;
   color: var(--gold); margin-right: 6px;
 }
 
@@ -2658,7 +2660,7 @@ a.page-action { text-decoration: none; }
   display: inline-block;
   text-indent: 0;
   margin-left: 6px;
-  font-size: 10.5px;
+  font-size: 12px;
   color: var(--accent);
   font-style: italic;
   opacity: 0.8;
@@ -2672,7 +2674,7 @@ a.page-action { text-decoration: none; }
 
 .sources-page .contents-label {
   font-family: var(--font-text);
-  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+  font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -2684,7 +2686,7 @@ a.page-action { text-decoration: none; }
 
 .sources-page .contents li a {
   font-family: var(--font-text);
-  font-size: 15px; font-style: italic;
+  font-size: 16px; font-style: italic;
   color: var(--ink-light); text-decoration: none;
 }
 
@@ -2702,7 +2704,7 @@ a.page-action { text-decoration: none; }
 
 .sources-page .part-note {
   font-family: var(--font-voice);
-  font-size: 14px; font-style: italic; font-weight: 300;
+  font-size: 15px; font-style: italic; font-weight: 300;
   color: var(--ink-faint); line-height: 1.7;
   max-width: 520px; margin: 10px auto 0;
 }
@@ -2712,7 +2714,7 @@ a.page-action { text-decoration: none; }
 .sources-page .entry-note {
   margin-top: 3px; padding-left: 1.5em;
   font-family: var(--font-text);
-  font-size: 12.5px; font-style: italic;
+  font-size: 14px; font-style: italic;
   color: var(--ink-faint);
 }
 
@@ -2721,7 +2723,7 @@ a.page-action { text-decoration: none; }
 .sources-page .empty-note {
   padding: 14px 0;
   font-family: var(--font-text);
-  font-size: 14px; font-style: italic; color: var(--ink-faint);
+  font-size: 15px; font-style: italic; color: var(--ink-faint);
 }
 
 .sources-page .week { padding: 12px 0; border-bottom: 0.5px solid var(--rule); }
@@ -2734,7 +2736,7 @@ a.page-action { text-decoration: none; }
 
 .sources-page .week-title a {
   font-family: var(--font-text);
-  font-size: 15.5px; color: var(--ink-light);
+  font-size: 17px; color: var(--ink-light);
   text-decoration: none; line-height: 1.6;
 }
 
@@ -2742,7 +2744,7 @@ a.page-action { text-decoration: none; }
 
 .sources-page .week-date {
   font-family: var(--font-text);
-  font-size: 12.5px; font-style: italic; color: var(--ink-faint);
+  font-size: 14px; font-style: italic; color: var(--ink-faint);
 }
 
 .sources-page .colophon-note {
@@ -2750,13 +2752,13 @@ a.page-action { text-decoration: none; }
   padding-top: 24px;
   border-top: 1px solid var(--rule);
   font-family: var(--font-text);
-  font-size: 12px; font-style: italic;
+  font-size: 13px; font-style: italic;
   color: var(--ink-faint); text-align: center;
   line-height: 1.8;
 }
 
 @media (max-width: 600px) {
-  .sources-page .citation { font-size: 14.5px; }
+  .sources-page .citation { font-size: 16px; }
   .sources-page .contents { grid-template-columns: 1fr; gap: 20px; }
   .sources-page .contents ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 14px; }
   .sources-page .contents li { line-height: 1.7; }
@@ -2779,7 +2781,7 @@ a.page-action { text-decoration: none; }
 .quiet-note {
   position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 300;
   margin: 0; padding: 6px 14px; border-radius: 4px;
-  font-family: var(--font-text); font-size: 13px; font-style: italic;
+  font-family: var(--font-text); font-size: 14px; font-style: italic;
   color: var(--ink-light); background: var(--bg-dark);
   animation: fadeIn 0.4s ease;
 }
