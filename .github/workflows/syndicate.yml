@@ -1,7 +1,8 @@
 # Post the site's own content to Bluesky as earthlyhours.com
 # (scripts/syndicate.py): each new Lectio Terra essay, with its
-# standard.site record. Runs daily and after each push that changes the
-# posts. Without the BLUESKY_APP_PASSWORD secret (Settings → Secrets and
+# standard.site record, and Back in season on Tuesdays and Saturdays
+# (only in the run's summary while its stream has "dryRun"). Runs daily
+# and after each push that changes the posts. Without the BLUESKY_APP_PASSWORD secret (Settings → Secrets and
 # variables → Actions) it only says what it would post, in the run's
 # summary. "Run workflow" by hand can also ask for a dry run.
 name: Syndicate

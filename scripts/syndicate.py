@@ -20,16 +20,31 @@ What it posts (the streams in data/syndication.json; the plan is in the
           four more of its figures. With it, a site.standard.document
           record for the essay, its bskyPostRef pointing at the card.
 
+  season  Back in season: on the stream's "days" (Tuesday and Saturday),
+          one earlier essay whose season is the current one (data/
+          vocab.json's months, Boston's date), not out in any stream
+          within "minWeeks" (8), the one away longest first: a link
+          card to its page, led by its next unused excerpt, with the
+          next shareable figure after the one last used for it as the
+          picture (the essay stream's card counts as using the first of
+          each). Essays without excerpts are skipped. Each post goes in
+          the log with its "excerpt" (index) and "figure" (ID). With
+          "dryRun": true on the stream, a live run only writes what it
+          would post, and the next few after it, to the run summary.
+
   records The essays published before the essay stream's "since" date:
           a site.standard.document record for each, with no new post.
           Its bskyPostRef is the earliest Bluesky post of the account
           that linked to the essay (on Substack or the site), if any.
 
+At most two posts a day across the streams (a card and its reply count
+as one): the essay stream first, then Back in season if there's room.
+
 What the text is made of, all from the records:
 
-  - the post's first curated excerpt (syndication.excerpts on the post;
-    a reading's line in quotation marks and signed with its author),
-    or else the post's subtitle
+  - one of the post's curated excerpts (syndication.excerpts on the post;
+    a reading's line in quotation marks and signed with its author): the
+    first for the essay stream, or else the post's subtitle
   - hashtags: the subject's (hashtags on its sp- or ph- record), the
     post's own (syndication.hashtags), then the account's standingTags.
     As many as fit show in the text; the rest go in the post's unseen
@@ -41,7 +56,8 @@ in the US, or public domain), sent as JPEG copies under Bluesky's 1 MB.
 What it writes back, all in data/syndication.json (so the posts' own
 records, and the pages built from them, don't change daily): each
 essay's at:// addresses under "essays" ("card": {uri, cid}, "reply",
-"document"), and every Bluesky post made in the "log". build_lectio_pages.py then
+"document"), and every Bluesky post made in the "log" (date, stream,
+post, uri; Back in season adds excerpt and figure). build_lectio_pages.py then
 puts <link rel="site.standard.document"> in the page's head. The
 publication record (rkey fixed in syndication.json) is made on the first
 live run if it isn't there; /.well-known/site.standard.publication names it.
@@ -60,7 +76,8 @@ import re
 import sys
 import urllib.error
 import urllib.request
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -70,6 +87,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = 'https://earthlyhours.com'
 SERVICE = 'https://bsky.social'
 LIMIT = 300                    # Bluesky's limit on a post's text (graphemes)
+PER_DAY = 2                    # posts a day across the streams (a card and its reply are one)
+HOME = ZoneInfo('America/New_York')   # whose day it is
 HIDDEN_TAGS = 8                # the post record's unseen tags
 IMAGE_BYTES = 950_000          # under the 1 MB blob limit
 OPEN_RIGHTS = (
@@ -152,11 +171,15 @@ def utf8_len(s):
     return len(s.encode('utf-8'))
 
 
-def opening(c, post):
-    """The line the card post leads with."""
-    excerpts = (post.get('syndication') or {}).get('excerpts') or []
-    if excerpts:
-        ex = excerpts[0]
+def excerpts(post):
+    return (post.get('syndication') or {}).get('excerpts') or []
+
+
+def opening(c, post, index=0):
+    """The line a card post leads with: the post's excerpt at index (its
+    first, for the essay stream), signed if it is a reading's."""
+    if excerpts(post):
+        ex = excerpts(post)[index]
         if ex['from'].startswith('r-'):
             who = c.author(ex['from'])
             return f'“{ex["text"]}”' + (f' — {who}' if who else '')
@@ -208,6 +231,24 @@ def compose_essay(c, post):
         'description': card_description(post),
         'thumb': figures[0] if figures else None,
         'more': figures[1:5],
+    }
+
+
+def compose_season(c, post, excerpt, figure):
+    """A Back in season post: a link card to an earlier essay's page, led
+    by one of its excerpts, with one of its figures as the picture."""
+    text, facets, hidden = with_tags(opening(c, post, excerpt), c.hashtags(post))
+    if len(text) > LIMIT:
+        raise SystemExit(f'{post["id"]}: excerpt {excerpt} alone is over {LIMIT} characters')
+    return {
+        'post': post['id'],
+        'url': f'{SITE}/{post["page"]}',
+        'text': text, 'facets': facets, 'tags': hidden,
+        'title': card_title(c, post),
+        'description': card_description(post),
+        'thumb': figure,
+        'more': [],
+        'excerpt': excerpt,
     }
 
 
@@ -314,6 +355,11 @@ class Bluesky:
         return {'uri': r['uri'], 'cid': r['cid']}
 
 
+def today():
+    """The date in Boston, so a run near midnight UTC counts the right day."""
+    return datetime.now(HOME).date()
+
+
 def now():
     return datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
 
@@ -340,6 +386,33 @@ def ensure_publication(bs, c):
     return uri
 
 
+def send_card(bs, plan):
+    """Post a link card; its {uri, cid} and the picture's blob."""
+    thumb = None
+    if plan['thumb']:
+        thumb, _ = bs.blob(ROOT / plan['thumb']['file'])
+    external = {'uri': plan['url'], 'title': plan['title'], 'description': plan['description']}
+    if thumb:
+        external['thumb'] = thumb
+    record = {'$type': 'app.bsky.feed.post', 'text': plan['text'], 'createdAt': now(),
+              'langs': ['en'], 'embed': {'$type': 'app.bsky.embed.external', 'external': external}}
+    if plan['facets']:
+        record['facets'] = plan['facets']
+    if plan['tags']:
+        record['tags'] = plan['tags']
+    return bs.create('app.bsky.feed.post', record), thumb
+
+
+def send_season(bs, c, plan):
+    card, _ = send_card(bs, plan)
+    c.config.setdefault('log', []).append({
+        'date': today().isoformat(), 'stream': 'season', 'post': plan['post'],
+        'uri': card['uri'], 'excerpt': plan['excerpt'],
+        'figure': plan['thumb']['id'] if plan['thumb'] else None})
+    save_all(c)
+    print(f'{plan["post"]}: back in season, {card["uri"]}')
+
+
 def send_essay(bs, c, post, plan, publication):
     """Post an essay's card and reply and make its document record,
     skipping whatever an earlier run already did."""
@@ -347,21 +420,8 @@ def send_essay(bs, c, post, plan, publication):
     log = c.config.setdefault('log', [])
     cover = None
     if 'card' not in done:
-        thumb = None
-        if plan['thumb']:
-            thumb, _ = bs.blob(ROOT / plan['thumb']['file'])
-            cover = thumb
-        external = {'uri': plan['url'], 'title': plan['title'], 'description': plan['description']}
-        if thumb:
-            external['thumb'] = thumb
-        record = {'$type': 'app.bsky.feed.post', 'text': plan['text'], 'createdAt': now(),
-                  'langs': ['en'], 'embed': {'$type': 'app.bsky.embed.external', 'external': external}}
-        if plan['facets']:
-            record['facets'] = plan['facets']
-        if plan['tags']:
-            record['tags'] = plan['tags']
-        done['card'] = bs.create('app.bsky.feed.post', record)
-        log.append({'date': date.today().isoformat(), 'stream': 'essay', 'post': post['id'],
+        done['card'], cover = send_card(bs, plan)
+        log.append({'date': today().isoformat(), 'stream': 'essay', 'post': post['id'],
                     'uri': done['card']['uri']})
         save_all(c)
         print(f'{post["id"]}: posted {done["card"]["uri"]}')
@@ -376,7 +436,7 @@ def send_essay(bs, c, post, plan, publication):
                   'embed': {'$type': 'app.bsky.embed.images', 'images': images}}
         reply = bs.create('app.bsky.feed.post', record)
         done['reply'] = reply['uri']
-        log.append({'date': date.today().isoformat(), 'stream': 'essay', 'post': post['id'],
+        log.append({'date': today().isoformat(), 'stream': 'essay', 'post': post['id'],
                     'uri': reply['uri']})
         save_all(c)
         print(f'{post["id"]}: replied with {len(images)} figures')
@@ -421,6 +481,107 @@ def due_records(c):
                    and (ROOT / p['page'] / 'index.html').exists()
                    and 'document' not in (essays.get(p['id']) or {})),
                   key=lambda p: p['published'])
+
+
+DAYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+
+
+def season_of(day):
+    """The site's season on a date, from data/vocab.json (shared.js's months)."""
+    for s in load('vocab')['seasons']:
+        if day.month in s['months']:
+            return s['id']
+
+
+def posted_on(c, day):
+    """How many posts went out on a day, across the streams (a card and
+    its reply count once)."""
+    return len({(e['stream'], e['post']) for e in c.config.get('log') or []
+                if e.get('date') == day.isoformat()})
+
+
+def season_choice(c, day, log=None):
+    """The essay, excerpt index and figure Back in season would post on a
+    day, or None: its season is now, it has excerpts and a page, and it
+    hasn't gone out (in any stream) within minWeeks. The one away
+    longest goes first, the earliest published among equals."""
+    stream = c.config['streams'].get('season') or {}
+    log = (c.config.get('log') or []) if log is None else log
+    season = season_of(day)
+    last = {}
+    for e in log:
+        if e.get('date', '') <= day.isoformat():
+            last[e['post']] = max(last.get(e['post'], ''), e['date'])
+    gap = timedelta(weeks=stream.get('minWeeks', 8))
+    ready = [p for p in posts(c.data)
+             if p.get('season') == season and excerpts(p) and p.get('page')
+             and p.get('published', '9999') < day.isoformat()
+             and (ROOT / p['page'] / 'index.html').exists()
+             and (p['id'] not in last or date.fromisoformat(last[p['id']]) + gap <= day)]
+    if not ready:
+        return None
+    post = min(ready, key=lambda p: (last.get(p['id'], ''), p['published']))
+    mine = [e for e in log if e['post'] == post['id'] and e.get('stream') == 'season']
+    essay_card = 'card' in ((c.config.get('essays') or {}).get(post['id']) or {})
+    # The next excerpt: the essay stream used the first; each return the
+    # next, round the list.
+    if mine and mine[-1].get('excerpt') is not None:
+        excerpt = (mine[-1]['excerpt'] + 1) % len(excerpts(post))
+    else:
+        excerpt = 1 % len(excerpts(post)) if essay_card else 0
+    # The next figure after the one last used for it (the essay stream's
+    # card used the first), round the list.
+    figures = c.figures(post)
+    figure = None
+    if figures:
+        ids = [f['id'] for f in figures]
+        used = next((e.get('figure') for e in reversed(mine) if e.get('figure')), None)
+        if used is None and essay_card:
+            used = ids[0]
+        figure = figures[(ids.index(used) + 1) % len(ids)] if used in ids else figures[0]
+    return post, excerpt, figure
+
+
+def due_season(c, day, essays_due=0):
+    """The Back in season post due today, or None: a stream day, none
+    posted yet today, and room under PER_DAY after the essay stream."""
+    stream = c.config['streams'].get('season') or {}
+    if not stream.get('on'):
+        return None
+    if DAYS[day.weekday()] not in [d[:3].lower() for d in stream.get('days', [])]:
+        return None
+    log = c.config.get('log') or []
+    if any(e.get('stream') == 'season' and e.get('date') == day.isoformat() for e in log):
+        return None
+    if posted_on(c, day) + essays_due >= PER_DAY:
+        return None
+    choice = season_choice(c, day)
+    return compose_season(c, *choice) if choice else None
+
+
+def season_ahead(c, start, first=None, count=4):
+    """The next Back in season posts after start, as if each before it
+    (first, start's own, among them) had gone out: for a dry run, which
+    can't write the log."""
+    stream = c.config['streams'].get('season') or {}
+    days = [d[:3].lower() for d in stream.get('days', [])]
+    log = list(c.config.get('log') or [])
+    if first:
+        log.append({'date': start.isoformat(), 'stream': 'season', 'post': first['post'],
+                    'excerpt': first['excerpt'],
+                    'figure': first['thumb']['id'] if first['thumb'] else None})
+    out, day = [], start
+    while len(out) < count and day < start + timedelta(days=120):
+        day += timedelta(days=1)
+        if DAYS[day.weekday()] not in days:
+            continue
+        choice = season_choice(c, day, log)
+        if choice:
+            post, excerpt, figure = choice
+            out.append((day, compose_season(c, post, excerpt, figure)))
+            log.append({'date': day.isoformat(), 'stream': 'season', 'post': post['id'],
+                        'excerpt': excerpt, 'figure': figure['id'] if figure else None})
+    return out
 
 
 def public(method, **query):
@@ -520,11 +681,30 @@ def describe(plan, out):
     out.write(f'- Card description: {plan["description"]}\n')
     out.write(f'- Card picture: {plan["thumb"]["id"] + " " + plan["thumb"]["file"] if plan["thumb"] else "none"}\n')
     out.write(f'- Unseen tags: {" ".join(plan["tags"]) or "none"}\n')
-    if plan['more']:
+    if 'excerpt' in plan:
+        out.write(f'- Excerpt {plan["excerpt"] + 1} of its list\n')
+    elif plan['more']:
         out.write(f'- Reply with {len(plan["more"])} figures: {", ".join(f["id"] for f in plan["more"])}\n')
     else:
         out.write('- No reply (no more shareable figures)\n')
     out.write('\n')
+
+
+def describe_season(c, day, plan, out, sent=False):
+    stream = c.config['streams'].get('season') or {}
+    if plan:
+        head = 'Back in season' + ('' if sent else ' (dry run, not sent)')
+        out.write(f'## {head}: {day:%A %-d %B}\n\n')
+        describe(plan, out)
+    ahead = season_ahead(c, day, plan)
+    if ahead and not sent:
+        out.write('Back in season after that, if each went out:\n\n')
+        for d, p in ahead:
+            out.write(f'- {d:%a %-d %b}: {p["post"]} ({p["title"]}), excerpt {p["excerpt"] + 1}, '
+                      f'picture {p["thumb"]["id"] if p["thumb"] else "none"}\n')
+        out.write('\n')
+    elif not ahead and not plan and stream.get('on'):
+        out.write('Back in season: no essay of this season is free in the next weeks.\n\n')
 
 
 def main():
@@ -540,7 +720,10 @@ def main():
         describe(compose_essay(c, c.post(args.preview)), sys.stdout)
         return
 
+    day = today()
     due = due_essays(c)
+    season = due_season(c, day, len(due))
+    season_stream = c.config['streams'].get('season') or {}
     records = due_records(c)
     found = announcements(c) if records else {}
     password = os.environ.get('BLUESKY_APP_PASSWORD')
@@ -551,12 +734,14 @@ def main():
             out.write('(No BLUESKY_APP_PASSWORD secret yet.)\n\n')
         pub = f'at://{c.config.get("did", "…")}/site.standard.publication/{c.config["publication"]["rkey"]}'
         updates = due_updates(c, pub)
-        if not due and not records and not updates:
-            out.write('Nothing due.\n')
+        if not due and not records and not updates and not season:
+            out.write('Nothing due.\n\n')
         for p, _ in updates:
             out.write(f'- {p["id"]}: its document record would be updated to match its data\n')
         for p in due:
             describe(compose_essay(c, p), out)
+        if season_stream.get('on'):
+            describe_season(c, day, season, out)
         if records:
             out.write(f'## {len(records)} standard.site records for earlier essays (no posts)\n\n')
         for p in records:
@@ -568,8 +753,10 @@ def main():
     bs = Bluesky(c.config['account'], password)
     publication = ensure_publication(bs, c)
     updates = due_updates(c, publication)
-    if not due and not records and not updates:
-        out.write('Signed in; the publication record is there. Nothing due.\n')
+    if not due and not records and not updates and not season:
+        out.write('Signed in; the publication record is there. Nothing due.\n\n')
+        if season_stream.get('on') and season_stream.get('dryRun'):
+            describe_season(c, day, None, out)
         return
     for p, record in updates:
         out.write(f'- {p["id"]}: document record updated to match its data\n')
@@ -578,6 +765,11 @@ def main():
         plan = compose_essay(c, p)
         describe(plan, out)
         send_essay(bs, c, p, plan, publication)
+    if season and season_stream.get('dryRun'):
+        describe_season(c, day, season, out)
+    elif season:
+        describe(season, out)
+        send_season(bs, c, season)
     for p in records:
         describe_record(c, p, found.get(p['id']), out)
         send_record(bs, c, p, found.get(p['id']), publication)
