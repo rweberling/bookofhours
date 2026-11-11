@@ -399,7 +399,7 @@ def reading_page(col, r):
     ])
     body = [section('The text', shown), section('The work', work),
             section('In the collection', dl([('Appears in', appears(col, r, 'r'))] + tag_rows(col, r))),
-            section('Rights', dl([('Status', rights_words(rights)), ('Note', escape(ed.get('rightsNote') or ''))])),
+            section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(ed))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
     ld = {'@context': 'https://schema.org', '@type': 'Quotation', '@id': f'{SITE}/id/{r["id"]}/',
@@ -452,7 +452,7 @@ def image_page(col, r):
     ])
     body = [section('The image', shown), section('The work', work),
             section('In the collection', dl([('Appears in', appears(col, r, 'i'))] + tag_rows(col, r))),
-            section('Rights', dl([('Status', rights_words(rights)), ('Note', escape(r.get('rightsNote') or ''))])),
+            section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(r))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
     ld = {'@context': 'https://schema.org', '@type': 'VisualArtwork', '@id': f'{SITE}/id/{r["id"]}/',
@@ -490,7 +490,7 @@ def edition_page(col, eid):
     body = [section('The edition', fields),
             section('In the collection', dl([('Cited by', used)])),
             section('Rights', dl([('Status', rights_words(ed.get('rights')) if ed.get('rights') else ''),
-                                  ('Note', escape(ed.get('rightsNote') or ''))])),
+                                  ('Note', public_note(ed))])),
             section('Cite this record', cite(col, eid, f'{SITE}/id/{eid}/') + '\n' + data_note(eid))]
     t = {'book': 'Book', 'article': 'ScholarlyArticle', 'manuscript': 'Manuscript'}.get(ed.get('type'), 'CreativeWork')
     same = [IDENTIFIER_LINKS[k][1].format(v) for k, v in (ed.get('identifiers') or {}).items()
@@ -568,8 +568,28 @@ def page(rid, kind, title, title_text, body, ld):
         url=url, json_url=f'{SITE}/id/{rid}.json', json_ld=block, kind=KIND[kind], rid=rid, body=body)
 
 
+def public_note(holder):
+    """A rights note as the site shows it: none where it's marked
+    rightsNotePrivate (Ryan's working note, kept in the data only)."""
+    if holder.get('rightsNotePrivate'):
+        return ''
+    return escape(holder.get('rightsNote') or '')
+
+
+def without_private_notes(data):
+    """`data` with every private rights note (and its flag) taken out."""
+    if isinstance(data, dict):
+        private = data.get('rightsNotePrivate')
+        return {k: without_private_notes(v) for k, v in data.items()
+                if not (private and k in ('rightsNote', 'rightsNotePrivate'))}
+    if isinstance(data, list):
+        return [without_private_notes(v) for v in data]
+    return data
+
+
 def record_json(col, rid):
-    """The record as stored, but without the text of a reading in copyright."""
+    """The record as stored, but without the text of a reading in copyright
+    or any private rights note."""
     if rid in col.by_id:
         r = json.loads(json.dumps(col.by_id[rid]))
         if prefix(rid) == 'r':
@@ -581,6 +601,7 @@ def record_json(col, rid):
         r = dict(col.editions[rid], citedBy=col.cited_by.get(rid, []))
     else:
         r = dict(col.subjects[rid], records=col.about.get(rid, []))
+    r = without_private_notes(r)
     r = {'@id': f'{SITE}/id/{rid}/', **r, 'license': 'https://creativecommons.org/licenses/by-nc/4.0/',
          'dataset': DOI}
     return json.dumps(r, ensure_ascii=False, indent=2) + '\n'
@@ -598,7 +619,8 @@ def index_page(col, groups):
     </ul>
   </section>''')
     intro = ('  <article class="content-block">\n    <p>Every record in the collection, each at its '
-             'permanent address. The whole collection is archived, with each version, at '
+             'permanent address. To browse them as the site shows them, by hour, weather '
+             'and season, see <a href="/sources.html">Sources</a>. The whole collection is archived, with each version, at '
              f'<a href="{DOI}" target="_blank">Zenodo</a>; its metadata is licensed CC BY-NC 4.0.</p>\n  </article>')
     return PAGE.format(
         head=render_shared('head', rel), frame=render_shared('frame', rel), nav=render_shared('nav', rel),

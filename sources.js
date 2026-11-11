@@ -11,11 +11,11 @@
      The Seasons  — each season's Lectio Terra posts, by week, each with
                     the passages and figures copied from it
 
-   Each entry shows its hand-written bibliography line (or its display
-   citation, until one is written), any rights note, and its links:
-   where it was cited from, other copies, the suggested edition (a
-   Bookshop.org affiliate link built from its ISBN and the pattern in
-   data/site.json), and further reading.
+   Each entry is a works-cited line: its hand-written bibliography line
+   (or its display citation, until one is written), the ¶ to its record
+   page (/id/<id>/), and where it was cited from. Everything else about
+   the piece (other copies, the suggested edition, further reading,
+   rights, where it appears) is on the record page.
 
    The published page is static: scripts/build_sources.py opens
    sources.html?rebuild in headless Chrome, lets this script build the
@@ -26,32 +26,20 @@
    has never been saved, or when the address ends in ?rebuild (a preview
    of the next save).
 
-   Expects shared.js (loadCollection, loadLectioData, suggestedEditionUrl,
+   Expects shared.js (loadCollection, loadLectioData,
    escapeHTML, SEASON_KEYS, SEASON_LABELS, SEASON_MONTH_RANGES,
    MONTH_NAMES) loaded before this file.
 ══════════════════════════════════════════════════════════════ */
 
 
-// How each kind of link is labelled on the page.
-const LINK_LABELS = { cited: 'Source', original: 'Original', copy: 'Also at' };
-const FURTHER_LABEL = 'Further reading';
-const SUGGESTED_LABEL = 'Suggested edition';
+// How the one link on each entry is labelled.
+const LINK_LABELS = { cited: 'Source' };
 
 function slugify(text) {
   return String(text).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-function listWords(words) {
-  return words.join(', ');
-}
-
 /* ── One entry ────────────────────────────────────────────────── */
-
-// A further-reading entry as one link, named in full (furtherReadingText,
-// in shared.js): this page is where readers see where each link goes.
-function furtherLink(item) {
-  return { label: furtherReadingText(item), url: item.url };
-}
 
 function linkGroupHTML(label, links) {
   if (!links.length) return '';
@@ -80,37 +68,24 @@ function citationLinks(record) {
   return [...locatorLinks(record), ...(record.links || [])];
 }
 
-function entryHTML(record, notes = [], site = null) {
+function entryHTML(record) {
   const citation = record.citation
     ? (record.citation.bibliography || record.citation.display)
     : (record.bibliography || record.caption);
-  const edition = record.citation && record.citation.edition;
-  const rightsNote = (edition && edition.rightsNote) || record.rightsNote;
-
-  const links = citationLinks(record);
-  const groups = Object.keys(LINK_LABELS)
-    .map(role => linkGroupHTML(LINK_LABELS[role], links.filter(l => l.role === role)));
-
-  const suggested = record.suggestedEdition;
-  if (suggested && suggested.isbn) {
-    const note = suggested.note ? ` <span class="entry-inline-note">(${suggested.note})</span>` : '';
-    groups.push(linkGroupHTML(SUGGESTED_LABEL, [{ label: 'Bookshop.org', url: suggestedEditionUrl(suggested, site) }]) + note);
-  }
-  groups.push(linkGroupHTML(FURTHER_LABEL, (record.furtherReading || []).map(furtherLink)));
-
-  const linkLine = groups.filter(Boolean).join('<span class="sep">·</span>');
+  // Only where it was cited from: copies, the suggested edition, further
+  // reading, rights and where it appears are on the record page, one ¶ away.
+  const source = linkGroupHTML(LINK_LABELS.cited, citationLinks(record).filter(l => l.role === 'cited'));
   return `
     <div class="entry" id="${escapeHTML(record.id)}">${(record.aliases || []).map(a =>
       `<span class="anchor-alias" id="${escapeHTML(a)}"></span>`).join('')}
-      <p class="citation">${citation || ''}${rightsNote ? `<span class="flag-note">${escapeHTML(rightsNote)}</span>` : ''}<a class="record-mark" href="/id/${escapeHTML(record.id)}/" title="The record: ${escapeHTML(record.id)}" aria-label="The record, ${escapeHTML(record.id)}">¶</a></p>
-      ${linkLine ? `<p class="entry-links">${linkLine}</p>` : ''}
-      ${notes.length ? `<p class="entry-note">${notes.map(escapeHTML).join(' · ')}</p>` : ''}
+      <p class="citation">${citation || ''}<a class="record-mark" href="/id/${escapeHTML(record.id)}/" title="The record: ${escapeHTML(record.id)}" aria-label="The record, ${escapeHTML(record.id)}">¶</a></p>
+      ${source ? `<p class="entry-links">${source}</p>` : ''}
     </div>`;
 }
 
-function sectionHTML(id, name, sub, readings, images, notesFor, site) {
+function sectionHTML(id, name, sub, readings, images) {
   const group = (label, records) => records.length
-    ? `<p class="category-label">${label}</p>${records.map(r => entryHTML(r, notesFor(r), site)).join('')}`
+    ? `<p class="category-label">${label}</p>${records.map(r => entryHTML(r)).join('')}`
     : '';
   const body = readings.length || images.length
     ? group('Readings', readings) + group('Images', images)
@@ -174,28 +149,10 @@ function contentsHTML(hours, rows, seasons) {
 }
 
 function buildSources(collection, lectio) {
-  const { readings, images, vocab, site } = collection;
-  const hoursById = Object.fromEntries(vocab.hours.map(h => [h.id, h]));
+  const { readings, images, vocab } = collection;
   const rows = weatherRows(vocab);
 
-  // Each piece is listed once, where it's shown (its shownIn); its other
-  // tags are noted beneath it.
-  const seasonNote = record => {
-    const seasons = tagsOf(record, 'seasons').map(id => SEASON_LABELS[id]).filter(Boolean);
-    return seasons.length ? [`Seasons: ${listWords(seasons)}`] : [];
-  };
-  const notesInHours = record => {
-    const tags = tagsOf(record, 'weather');
-    return [...(tags.length ? [`Conditions: ${listWords(tags)}`] : []), ...seasonNote(record)];
-  };
-  const notesInWeather = record => {
-    const notes = [];
-    const tags = tagsOf(record, 'weather');
-    if (tags.length) notes.push(`Conditions: ${listWords(tags)}`);
-    const hours = tagsOf(record, 'hours').map(id => hoursById[id] && hoursById[id].label).filter(Boolean);
-    if (hours.length) notes.push(`Hours: ${listWords(hours)}`);
-    return [...notes, ...seasonNote(record)];
-  };
+  // Each piece is listed once, where it's shown (its shownIn).
   const inHours = readings.filter(r => r.shownIn === 'hours');
   const inHoursImages = images.filter(i => i.shownIn === 'hours');
   const inWeather = readings.filter(r => r.shownIn === 'weather');
@@ -208,18 +165,18 @@ function buildSources(collection, lectio) {
   vocab.hours.forEach(hour => {
     const tagged = r => tagsOf(r, 'hours').includes(hour.id);
     html += sectionHTML(`hours-${hour.id}`, hour.label, `${hour.subtitle} · ${watchHoursWords(hour)}`,
-      inHours.filter(tagged), inHoursImages.filter(tagged), notesInHours, site);
+      inHours.filter(tagged), inHoursImages.filter(tagged));
   });
 
   // The Weather
   html += partHeaderHTML('weather', 'The Weather',
     'The readings and images for the weather, arranged by the rows of the weather picker. A piece tagged with several conditions is listed once, under the first row they belong to.');
   html += sectionHTML('weather-all', 'All Weather', 'Shown before any condition is chosen',
-    inWeather.filter(isWeatherUnset), inWeatherImages.filter(isWeatherUnset), notesInWeather, site);
+    inWeather.filter(isWeatherUnset), inWeatherImages.filter(isWeatherUnset));
   rows.forEach(row => {
     const inRow = r => !isWeatherUnset(r) && weatherRowOf(r, rows) === row;
     html += sectionHTML(row.id, row.name, row.conditions.map(c => c.label).join(' · '),
-      inWeather.filter(inRow), inWeatherImages.filter(inRow), notesInWeather, site);
+      inWeather.filter(inRow), inWeatherImages.filter(inRow));
   });
 
   // The Seasons
@@ -230,7 +187,7 @@ function buildSources(collection, lectio) {
     .filter(r => r.lectio && r.lectio.post === week.id)
     .sort((a, b) => a.lectio.place - b.lectio.place);
   const weekGroup = (label, records) => records.length
-    ? `<p class="category-label">${label}</p>${records.map(r => entryHTML(r, [], site)).join('')}`
+    ? `<p class="category-label">${label}</p>${records.map(r => entryHTML(r)).join('')}`
     : '';
   SEASON_KEYS.forEach(key => {
     const weeks = ((lectio && lectio.seasons && lectio.seasons[key]) || [])

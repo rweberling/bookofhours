@@ -535,6 +535,7 @@
     ],
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
     "rightsNote": "recent, living creator — verify CC license terms",
+    "rightsNotePrivate": true,
     "tags": {
       "hours": ["fulcrum"],
       "weather": [],
@@ -670,6 +671,7 @@
     ],
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "hosted scan may carry separate rights — consider sourcing museum copy",
+    "rightsNotePrivate": true,
     "tags": {
       "hours": ["doldrums"],
       "weather": [],
@@ -723,6 +725,7 @@
     ],
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
     "rightsNote": "living photographer — active commercial licensing",
+    "rightsNotePrivate": true,
     "tags": {
       "hours": ["convivium"],
       "weather": [],
@@ -1306,6 +1309,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
     "rightsNote": "published 1951; whether its copyright was renewed is unchecked",
+    "rightsNotePrivate": true,
     "edition": {
       "id": "e-0171",
       "type": "book",
@@ -2798,7 +2802,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-    "rightsNote": "published 1957; whether its copyright was renewed is unchecked"
+    "rightsNote": "published 1957; whether its copyright was renewed is unchecked",
+    "rightsNotePrivate": true
   },
   {
     "id": "i-0088",
@@ -4288,6 +4293,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
     "rightsNote": "public domain in France and the EU (Centre Pompidou); US status uncertain",
+    "rightsNotePrivate": true,
     "tags": {
       "hours": [],
       "weather": ["clear"],
@@ -4858,7 +4864,8 @@
     ],
     "shelfmark": "2015.201",
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "the photographer died in 1931; the Met doesn't mark it open access"
+    "rightsNote": "the photographer died in 1931; the Met doesn't mark it open access",
+    "rightsNotePrivate": true
   },
   {
     "id": "i-0149",

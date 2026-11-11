@@ -180,7 +180,9 @@ Then each kind has its own:
   `source` (the exact file downloaded and when: `url`, `retrieved`),
   `rights` (a
   [RightsStatements.org](https://rightsstatements.org) or Creative Commons
-  URI) and `rightsNote` (a word on it, where the status needs one). A
+  URI) and `rightsNote` (a word on it, where the status needs one; with
+  `"rightsNotePrivate": true` it's a working note, kept here but not
+  shown on the site or in the record's JSON copy). A
   video figure has `"media": "video"`, its `file` an MP4, with a WebM
   `fallback` and a still `poster` shown before it plays; its `alt`
   describes the video. A YouTube figure (its `file` the YouTube address)

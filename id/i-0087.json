@@ -56,7 +56,6 @@
     "label": "HathiTrust"
   },
   "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-  "rightsNote": "published 1957; whether its copyright was renewed is unchecked",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }
