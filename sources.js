@@ -168,7 +168,7 @@ function contentsHTML(hours, rows, seasons) {
   </nav>`;
 }
 
-function buildSources(collection, lectio) {
+function buildSources(collection, lectio, days = [], subjects = new Map()) {
   const { readings, images, vocab } = collection;
   const rows = weatherRows(vocab);
 
@@ -209,26 +209,77 @@ function buildSources(collection, lectio) {
   const weekGroup = (label, records) => records.length
     ? `<p class="category-label">${label}</p>${records.map(r => entryHTML(r)).join('')}`
     : '';
+  // The days (data/days.json) sit in their calendar week's fold (weekOf()
+  // in shared.js): with the week's essay, or, in a week without one, in a
+  // fold of their own. Folds run in the weeks' order through the season.
+  const pieceById = new Map([...readings, ...images].map(r => [r.id, r]));
+  const weekOfKey = key => { const [m, d] = key.split('-').map(Number); return weekOf(m, d); };
+  const daysByWeek = new Map();
+  days.forEach(day => {
+    const w = weekOfKey(day.date);
+    const n = w.threshold ? 'eve' : w.week;
+    if (!daysByWeek.has(n)) daysByWeek.set(n, []);
+    daysByWeek.get(n).push(day);
+  });
+  daysByWeek.forEach(list => list.sort((a, b) => a.date.localeCompare(b.date)));
+  // Within a season, winter's weeks 50–52 come before 1–10.
+  const place = n => (n === 'eve' ? -1 : n >= 50 ? n - 60 : n);
+  const subjectName = id => (subjects.get(id) || {}).name || '';
+  const dayGroup = list => list.length
+    ? `<p class="category-label">The days</p>${list.map(day => {
+        const [m, d] = day.date.split('-').map(Number);
+        const pieces = [day.reading, day.image].map(id => pieceById.get(id)).filter(Boolean);
+        return `<p class="day-label">${d} ${MONTH_NAMES[m - 1]} · <a href="seasons.html?day=${day.date}">${escapeHTML(subjectName(day.subject))}</a></p>${pieces.map(r => entryHTML(r)).join('')}`;
+      }).join('')}`
+    : '';
+  const daysLine = list => list.length
+    ? `<span class="week-days">with ${escapeHTML(list.map(day => subjectName(day.subject)).filter(Boolean).join(', '))}</span>`
+    : '';
+
   SEASON_KEYS.forEach(key => {
-    const weeks = ((lectio && lectio.seasons && lectio.seasons[key]) || [])
-      .slice().sort((a, b) => (a.published || '').localeCompare(b.published || ''));
-    const body = weeks.length ? weeks.map(week => {
+    const posts = ((lectio && lectio.seasons && lectio.seasons[key]) || []);
+    const folds = posts.map(week => {
+      const n = week.published ? (w => (w.threshold ? 'eve' : w.week))(weekOfKey(week.published.slice(5))) : null;
+      return { post: week, n, order: n === null ? 99 : place(n), published: week.published || '' };
+    });
+    // A week with days but no essay of its own (in this season) gets a fold.
+    const withEssay = new Set(folds.map(f => f.n));
+    daysByWeek.forEach((list, n) => {
+      const season = n === 'eve' ? 'winter' : weekNumbered(n).season;
+      if (season === key && !withEssay.has(n)) folds.push({ post: null, n, order: place(n), published: '' });
+    });
+    folds.sort((a, b) => a.order - b.order || a.published.localeCompare(b.published));
+    // The days go to the first fold of their week (one essay a week, as a rule).
+    const placed = new Set();
+    const body = folds.length ? folds.map(fold => {
+      const list = placed.has(fold.n) ? [] : (daysByWeek.get(fold.n) || []);
+      placed.add(fold.n);
+      const week = fold.post;
+      if (!week) {
+        const w = fold.n === 'eve' ? null : weekNumbered(fold.n);
+        const when = w ? `Week ${fold.n} · ${weekRangeWords(w)}` : 'The year\u2019s eve · 20 December';
+        return `
+    <details class="week" id="week-${fold.n}">
+      <summary><span class="week-date">${when}</span><span class="week-title">${escapeHTML(list.map(day => subjectName(day.subject)).filter(Boolean)[0] || '')}</span>${daysLine(list.slice(1))}</summary>
+      ${dayGroup(list)}
+    </details>`;
+      }
       const [y, m, d] = (week.published || '').split('-');
       const date = y ? `${Number(d)} ${MONTH_NAMES[Number(m) - 1]} ${y}` : '';
       // Each week folds shut. Its label: the week's number (the series'
       // own count, from the post's title) and the essay's date, then the
-      // week's subject. Open, it gives the essay's full title as its link,
-      // then the week's readings and figures. When the daily layer comes,
-      // the week's other days' subjects join the label as a third line.
+      // week's subject, then the subjects of its days. Open, it gives the
+      // essay's full title as its link, the essay's readings and figures,
+      // then the days.
       const essay = week.page ? escapeHTML(week.page) : `seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}`;
       const number = (String(week.title || '').match(/^Week\s+(\d+)/i) || [])[1];
       const when = [number ? `Week ${number}` : '', date].filter(Boolean).join(' · ');
       const subject = resolveSpeciesFields(week).species || week.title;
       return `
     <details class="week" id="${escapeHTML(week.id)}">
-      <summary>${when ? `<span class="week-date">${when}</span>` : ''}<span class="week-title">${escapeHTML(subject)}</span></summary>
+      <summary>${when ? `<span class="week-date">${when}</span>` : ''}<span class="week-title">${escapeHTML(subject)}</span>${daysLine(list)}</summary>
       <p class="week-essay"><a href="${essay}">${escapeHTML(week.title)}</a></p>
-      ${weekGroup('Readings', piecesOf(readings, week))}${weekGroup('Figures', piecesOf(images, week))}
+      ${weekGroup('Readings', piecesOf(readings, week))}${weekGroup('Figures', piecesOf(images, week))}${dayGroup(list)}
     </details>`;
     }).join('') : '<p class="empty-note">No sources yet.</p>';
     html += `
@@ -251,12 +302,14 @@ async function initSources() {
   // The saved, static bibliography is already on the page.
   if (!isRebuild() && container.querySelector('.entry')) return;
   try {
-    const [collection, lectio] = await Promise.all([
+    const [collection, lectio, days, subjects] = await Promise.all([
       loadCollection(),
-      loadLectioData().catch(error => { console.error(error); return null; })
+      loadLectioData().catch(error => { console.error(error); return null; }),
+      loadDays(),
+      loadSubjects()
     ]);
     // The markers let scripts/build_sources.py find exactly what was built.
-    container.innerHTML = `<!--sources:start-->${buildSources(collection, lectio)}\n  <!--sources:end-->`;
+    container.innerHTML = `<!--sources:start-->${buildSources(collection, lectio, days, subjects)}\n  <!--sources:end-->`;
   } catch (error) {
     console.error(error);
     container.innerHTML = '<p class="empty-note">The sources could not be loaded. Please return soon.</p>';

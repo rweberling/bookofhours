@@ -2779,6 +2779,20 @@ a.page-action { text-decoration: none; }
   margin-bottom: 1px;
 }
 
+.sources-page .week-days {
+  display: block;
+  font-family: var(--font-text);
+  font-size: 14px; font-style: italic; color: var(--ink-faint);
+  margin-top: 1px;
+}
+
+.sources-page .day-label {
+  margin: 14px 0 2px;
+  font-family: var(--font-text); font-size: 14px; font-style: italic;
+  color: var(--ink-faint);
+}
+.sources-page .day-label a { color: inherit; text-underline-offset: 2px; }
+
 .sources-page .week-essay {
   margin: 0 0 6px;
   font-family: var(--font-text); font-size: 15px; font-style: italic;

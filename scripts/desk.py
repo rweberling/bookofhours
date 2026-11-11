@@ -21,6 +21,20 @@ or a bare list of rows, with or without the header. The script writes to
                        first .jpg/.png URL in its leads (or source)
   writes.json          the ArtifactData "batch" writes for the records
 
+Day candidates (kind "day": a subject, one image and one reading for a
+coming week of the Seasons' days) are prepared the same way from a JSON
+list, one object per candidate:
+
+  python3 scripts/desk.py --days <candidates.json> <out-dir>
+
+Each object: proposed (date), week (number), subject (its name), latin,
+subjectId (sp-/ph-, if it has a record yet), essay (the week's essay
+subject, if any), nomination (why now, that week), imageWork,
+imageCreator, imageDate, imageUrl (the file, for the preview),
+imageSource, readingWork, readingCreator, passage (exactly as in the
+source), readingSource, leads, rights, notes. Their doc ids are
+<proposed>-dNN; the week's dates are filled in from scripts/weeks.py.
+
 Then, in order: upload the previews to the desk (Artifact publish with
 url, asset: true, file_paths), put each returned id in its record with
 python3 scripts/desk.py --preview <out-dir> <doc id> <asset id>, and send
@@ -35,6 +49,8 @@ import re
 import sys
 import time
 import urllib.request
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 KEYS = ['proposed', 'kind', 'for', 'tags', 'work', 'creator', 'date', 'nomination',
         'source', 'leads', 'rights', 'quality', 'sheetDecision', 'notes', 'addedAs']
@@ -112,6 +128,41 @@ def prepare(rows_file, out):
     print(f'{len(writes)} records; writes in {out}/writes.json')
 
 
+DAY_KEEP = ['proposed', 'week', 'subject', 'latin', 'subjectId', 'essay', 'nomination',
+            'imageWork', 'imageCreator', 'imageDate', 'imageUrl', 'imageSource',
+            'readingWork', 'readingCreator', 'passage', 'readingSource', 'leads', 'rights', 'notes']
+
+
+def prepare_days(candidates_file, out):
+    from weeks import range_words
+    candidates = json.load(open(candidates_file))
+    os.makedirs(f'{out}/docs', exist_ok=True)
+    os.makedirs(f'{out}/previews', exist_ok=True)
+    writes, counter = [], {}
+    for cand in candidates:
+        week = str(cand['proposed']).strip()
+        counter[week] = counter.get(week, 0) + 1
+        doc_id = f'{week}-d{counter[week]:02d}'
+        doc = {k: cand.get(k, '') for k in DAY_KEEP}
+        doc['week'] = int(cand['week'])
+        # The desk shows a record's work and creator as its title and byline.
+        doc.update(kind='day', weekRange=range_words(doc['week']), work=cand.get('subject', ''),
+                   creator=cand.get('latin', ''), date='', source=cand.get('imageSource', ''),
+                   order=counter[week], decision=None, note='', decidedAt=None)
+        url = cand.get('imageUrl') or image_url({'leads': cand.get('leads', ''), 'source': cand.get('imageSource', '')})
+        name = f'{out}/previews/{doc_id}.jpg'
+        if url and fetch_preview(url, name):
+            print(f'{doc_id}: preview {name}')
+        else:
+            print(f'{doc_id}: no preview ({url or "no image link"}); the desk shows it without one')
+        time.sleep(3)
+        path = os.path.abspath(f'{out}/docs/{doc_id}.json')
+        json.dump(doc, open(path, 'w'), ensure_ascii=False, indent=1)
+        writes.append({'op': 'set', 'collection': 'candidates', 'doc_id': doc_id, 'file_path': path})
+    json.dump(writes, open(f'{out}/writes.json', 'w'), indent=1)
+    print(f'{len(writes)} day records; writes in {out}/writes.json')
+
+
 def set_preview(out, doc_id, asset_id):
     path = f'{out}/docs/{doc_id}.json'
     doc = json.load(open(path))
@@ -125,6 +176,8 @@ if __name__ == '__main__':
     args = sys.argv[1:]
     if len(args) == 4 and args[0] == '--preview':
         set_preview(*args[1:])
+    elif len(args) == 3 and args[0] == '--days':
+        prepare_days(*args[1:])
     elif len(args) == 2:
         prepare(*args)
     else:

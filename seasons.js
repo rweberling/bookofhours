@@ -215,23 +215,7 @@ async function showDay(day, days) {
   document.getElementById('season-reading-dek').textContent = '';
   document.getElementById('season-reading-observation').textContent = '';
 
-  // The week: its essay, then its days.
-  const nav = document.getElementById('season-week');
-  const byDate = new Map(days.map(d => [d.date, d]));
-  const essay = week.threshold ? null : essayOfWeek(week);
-  const essayLine = essay
-    ? `<p class="season-week-essay">This week\u2019s study: <a href="${escapeHTML(postAddress(essay.season || season.key, essay))}">${escapeHTML(resolveSpeciesFields(essay).species)}</a></p>`
-    : '';
-  const items = week.days.map(d => {
-    const card = byDate.get(d.key);
-    const label = `<span class="season-week-date">${d.day}</span>${card ? ` <span class="season-week-subject">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</span>` : ''}`;
-    if (d.key === day.date) return `<li aria-current="date">${label}</li>`;
-    return card
-      ? `<li><a href="seasons.html?day=${d.key}">${label}</a></li>`
-      : `<li class="season-week-empty">${label}</li>`;
-  }).join('');
-  nav.innerHTML = `<p class="season-week-head">${week.threshold ? 'The year\u2019s eve' : `Week ${week.week} · ${weekRangeWords(week)}`}</p>${essayLine}<ol class="season-week-days">${items}</ol>`;
-  nav.hidden = false;
+  renderWeek(week, day.date, days, subjects);
 
   // The card: the image, then the reading, set as a post sets them.
   const body = document.getElementById('season-reading-body');
@@ -253,6 +237,42 @@ async function showDay(day, days) {
   wireFigures(body);
   ruleReadings(body);
   updateRunningHead();
+}
+
+// The week around a day, above it: its number and dates, its essay, and
+// its days, each with its subject, the one showing marked. The essay's
+// own day (its publication date) leads to the essay.
+function renderWeek(week, currentKey, days, subjects) {
+  const nav = document.getElementById('season-week');
+  const byDate = new Map(days.map(d => [d.date, d]));
+  const essay = week.threshold ? null : essayOfWeek(week);
+  const essayKey = essay ? essay.published.slice(5) : null;
+  const essayLine = essay
+    ? `<p class="season-week-essay">This week\u2019s study: <a href="${escapeHTML(postAddress(essay.season || season.key, essay))}">${escapeHTML(resolveSpeciesFields(essay).species)}</a></p>`
+    : '';
+  const items = week.days.map(d => {
+    const card = byDate.get(d.key);
+    const name = card ? (subjects.get(card.subject) || {}).name || ''
+      : d.key === essayKey ? resolveSpeciesFields(essay).species : '';
+    const label = `<span class="season-week-date">${d.day}</span>${name ? ` <span class="season-week-subject">${escapeHTML(name)}</span>` : ''}`;
+    if (d.key === currentKey) return `<li aria-current="date">${label}</li>`;
+    if (card) return `<li><a href="seasons.html?day=${d.key}">${label}</a></li>`;
+    if (d.key === essayKey) return `<li><a href="seasons.html?day=${d.key}">${label}</a></li>`;
+    return `<li class="season-week-empty">${label}</li>`;
+  }).join('');
+  nav.innerHTML = `<p class="season-week-head">${week.threshold ? 'The year\u2019s eve' : `Week ${week.week} · ${weekRangeWords(week)}`}</p>${essayLine}<ol class="season-week-days">${items}</ol>`;
+  nav.hidden = false;
+}
+
+// The essay's own day: the essay, with its week above it.
+async function showEssayDay(essay, key, days) {
+  const subjects = await loadSubjects();
+  const [month, dayOfMonth] = key.split('-').map(Number);
+  const week = weekOf(month, dayOfMonth, isLeapYear(new Date().getFullYear()));
+  const seasonKey = Object.keys(lectioSeasons).find(k => lectioSeasons[k].some(e => e.id === essay.id));
+  showSeasonEntry(seasonKey, essay.id);
+  document.getElementById('season-reading-subtitle').textContent = `${season.label} ✦ ${dayWords(month, dayOfMonth)}`;
+  renderWeek(week, key, days, subjects);
 }
 
 function setDayCanonical(day) {
@@ -284,7 +304,15 @@ async function dayToShow() {
   const key = params.get('day') || monthDayKey(now.getMonth() + 1, now.getDate());
   const days = await loadDays();
   const day = days.find(d => d.date === key);
-  return day ? { day, days } : null;
+  if (day) return { day, days };
+  // The essay's own day, once the days have begun: its week's essay.
+  if (days.length) {
+    const [month, dayOfMonth] = key.split('-').map(Number);
+    const week = weekOf(month, dayOfMonth);
+    const essay = !week.threshold && essayOfWeek(week);
+    if (essay && essay.published.slice(5) === key) return { essay, key, days };
+  }
+  return null;
 }
 
 // The list of posts, loaded on first use (at once on seasons.html; on a
@@ -982,8 +1010,10 @@ async function initialiseSeason() {
   try {
     lectioSeasons = (await loadLectioData()).seasons;
     const today = await dayToShow();
-    if (today) {
+    if (today && today.day) {
       await showDay(today.day, today.days);
+    } else if (today && today.essay) {
+      await showEssayDay(today.essay, today.key, today.days);
     } else {
       const { key, entryId } = seasonFromURL();
       showSeasonEntry(key, entryId);
@@ -1005,7 +1035,8 @@ async function initialiseSeason() {
     // Back to the page as first opened, on a day: the day again.
     if (!e.state) {
       dayToShow().then(today => {
-        if (today) { showDay(today.day, today.days); return; }
+        if (today && today.day) { showDay(today.day, today.days); return; }
+        if (today && today.essay) { showEssayDay(today.essay, today.key, today.days); return; }
         if (!currentDay && key === season.key && (!entryId || entryId === currentEntryId)) return;
         showSeasonEntry(key, entryId);
       });

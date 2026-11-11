@@ -110,6 +110,28 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   Lispector, Lockyer.png" (Weather: "— The Weather — …"; Seasons: the
   species), from the records' own names (reading author, image creator).
 
+## The days (begun Thanksgiving 2026)
+
+- The Seasons' year runs in 52 fixed weeks counted from the winter
+  solstice: Week 1 begins 21 December; 20 December stands outside the
+  weeks; 29 February joins Week 10; a week's season is its middle day's
+  (13 weeks each). `scripts/weeks.py [MM-DD]` says which week a date is
+  in; `weekOf()` in `shared.js` keeps the same rule.
+- `data/days.json` holds the daily cards (`dy-`): a date (`MM-DD`, no
+  year), a subject (`sp-`/`ph-`), one reading and one image, ordinary
+  records shown in `"days"` and tagged with the subject. No headnote for
+  now. `data/README.md` ("The days") has the fields.
+- `seasons.html` opens on today's card when there is one (`?day=MM-DD`
+  for another day), with the week above: its number and dates, its essay
+  (the post published within the week) and its seven days. On the
+  essay's own day it opens the essay with the same header. With no card
+  it shows the season's essays as before. In 2026–27 the weeks run Sunday
+  to Saturday and the essays come out on Sundays, so the cards fill
+  Monday to Saturday.
+- The first cards go live on Thanksgiving, 26 November 2026 (Week 49:
+  Thursday to Saturday), then Week 50 in full; it's a trial of how well
+  each week can be chosen, built and shown.
+
 ## The postcards (`c/`)
 
 - Five winter-solstice cards (series `w26`), sold as a set through
@@ -199,6 +221,20 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   (Bradford's Arctic sea ice for ice, O'Sullivan's Nevada dunes for
   parched; a tropical picture for humid would be one). Keep the two in
   balance for each condition: where it has one, nominate the other.
+- Day candidates (`kind: "day"`, ids `<date>-dNN`) fill a coming week's
+  days: each a subject in season that week in New England, with a line on
+  why now, a proposed image and a proposed reading (the passage exactly as
+  in its source), and the week's essay subject. Never copy them to the
+  candidates Sheet or count them as nominations. Make them with
+  `python3 scripts/desk.py --days <candidates.json> <scratch dir>` (its
+  docstring has the fields), then previews and the batch as for
+  nominations. Ryan chooses "Add to the week", "not now" or "no"; a week
+  is done at six (Week 49, the trial, at three). Each approved day
+  becomes a reading and an image (`shownIn: "days"`), a new `sp-`/`ph-`
+  record if the subject has none, and a `days.json` record, on the day
+  Ryan's note names, or else the first free day Monday to Saturday in the
+  week's order; set `addedAs` to the `dy-` ID. Where a day comes from
+  follows the Seasons' rule: local and regional.
 - Records with `kind: "season"` (ids `<date>-sNN`) are season-tag
   proposals for pieces already on the site, not nominations: never copy
   them to the Sheet or count them as candidates. Each run applies the
