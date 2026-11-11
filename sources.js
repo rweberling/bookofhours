@@ -215,13 +215,19 @@ function buildSources(collection, lectio) {
     const body = weeks.length ? weeks.map(week => {
       const [y, m, d] = (week.published || '').split('-');
       const date = y ? `${Number(d)} ${MONTH_NAMES[Number(m) - 1]} ${y}` : '';
-      // Each week folds shut, its title and date the fold's label; open,
-      // it gives the essay's link and the week's readings and figures.
+      // Each week folds shut. Its label: the week's number (the series'
+      // own count, from the post's title) and the essay's date, then the
+      // week's subject. Open, it gives the essay's full title as its link,
+      // then the week's readings and figures. When the daily layer comes,
+      // the week's other days' subjects join the label as a third line.
       const essay = week.page ? escapeHTML(week.page) : `seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}`;
+      const number = (String(week.title || '').match(/^Week\s+(\d+)/i) || [])[1];
+      const when = [number ? `Week ${number}` : '', date].filter(Boolean).join(' · ');
+      const subject = resolveSpeciesFields(week).species || week.title;
       return `
     <details class="week" id="${escapeHTML(week.id)}">
-      <summary><span class="week-title">${escapeHTML(week.title)}</span>${date ? `<span class="week-date">${date}</span>` : ''}</summary>
-      <p class="week-essay"><a href="${essay}">Read the essay</a></p>
+      <summary>${when ? `<span class="week-date">${when}</span>` : ''}<span class="week-title">${escapeHTML(subject)}</span></summary>
+      <p class="week-essay"><a href="${essay}">${escapeHTML(week.title)}</a></p>
       ${weekGroup('Readings', piecesOf(readings, week))}${weekGroup('Figures', piecesOf(images, week))}
     </details>`;
     }).join('') : '<p class="empty-note">No sources yet.</p>';

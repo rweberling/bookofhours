@@ -2728,7 +2728,7 @@ a.page-action { text-decoration: none; }
 .sources-page .week-title {
   display: block;
   font-family: var(--font-text);
-  font-size: 17px; color: var(--ink-light); line-height: 1.6;
+  font-size: 19px; color: var(--ink-light); line-height: 1.5;
 }
 
 .sources-page .week > summary:hover .week-title,
@@ -2738,6 +2738,7 @@ a.page-action { text-decoration: none; }
   display: block;
   font-family: var(--font-text);
   font-size: 14px; font-style: italic; color: var(--ink-faint);
+  margin-bottom: 1px;
 }
 
 .sources-page .week-essay {
