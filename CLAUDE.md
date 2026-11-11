@@ -204,8 +204,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   `executablePath: '/opt/pw-browsers/chromium'`. Run node with
   `LANG=C.UTF-8`, or downloads with non-ASCII names come out as
   "download". The headless browser can't
-  play H.264 video. The DFOS sign-in script fails to load from the CDN in
-  tests; that error is harmless.
+  play H.264 video. The DFOS client is fetched from the CDN only when a
+  sign-in returns (`?jws=…&did=…`), not on an ordinary visit.
   Analytics (Google and Cloudflare) load only on earthlyhours.com, so local
   tests count nothing; keep it that way.
 - Wikimedia needs a `User-Agent` header and rate-limits this container

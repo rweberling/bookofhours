@@ -109,6 +109,11 @@ window.dfosBeginSignIn = async function (intent) {
 // dfos-app.json); the page and pane the visitor started from ride along
 // in the flight record, and the root forwards them back there.
 async function handleCallback() {
+  // A callback is known by its query (jws and did, or error); only then
+  // is the DFOS client fetched, so an ordinary visit loads nothing from
+  // the CDN.
+  const query = new URLSearchParams(location.search);
+  if (!['jws', 'did', 'error'].some(name => query.has(name))) return false;
   const { readSiwdCallback } = await import(SIWD_MODULE_URL);
   // The whole URL: the credential comes back in the fragment.
   const result = readSiwdCallback(location.href);
