@@ -28,9 +28,9 @@ image fills the screen, has no frame markers, so it gets no frame.
 Write links in partials/ as plain file names (about.html, not
 /about.html). The script adjusts each copy for its page:
 
-  - Pages that can be reached at other addresses (404.html, and the
-    postcard pages under c/) get links starting with /, so they work
-    from anywhere on the site.
+  - Pages that can be reached at other addresses (404.html), or that sit
+    in folders (the postcard pages under c/, the record pages under id/),
+    get links starting with /, so they work from anywhere on the site.
   - In the menu, the dropdown item for the page you're on is highlighted
     (class="active"), e.g. The Current Season on seasons.html.
   - In the menu, on each section's own page (index.html, seasons.html,
@@ -73,8 +73,9 @@ WANDER = {
 
 
 def absolute_links(page):
-    """Pages that may be served from another address need /-rooted links."""
-    return page == '404.html' or page.startswith('c/')
+    """Pages that may be served from another address, or that sit in a
+    folder, need /-rooted links."""
+    return page == '404.html' or page.startswith(('c/', 'id/'))
 
 
 def adjust_nav(nav, page):

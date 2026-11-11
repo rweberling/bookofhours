@@ -2,14 +2,14 @@
 <html lang="en" class="record-page">
 <head>
 <!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
-<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
-<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
-<link rel="manifest" href="images/emblemicon/site.webmanifest">
-<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<link rel="icon" type="image/png" href="/images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="/images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="/images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="/feed.xml">
 <meta name="apple-mobile-web-app-title" content="Earthly Hours">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -113,6 +113,7 @@
 <!-- /shared:frame -->
 
 <main class="page">
+  <p class="record-back"><a href="/" id="record-back">← The Hours</a></p>
   <p class="publication-name"><a href="/id/">The Earthly Book of Hours · Records</a></p>
 
   <div class="rule-ornament" aria-hidden="true">
@@ -165,38 +166,38 @@
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
     <div class="nav-hours-menu" id="nav-hours-menu">
-      <a href="hours-incipit.html">Incipit</a>
-      <a href="index.html">The Current Hour</a>
-      <a href="index.html#wander">Wander the Hours</a>
+      <a href="/hours-incipit.html">Incipit</a>
+      <a href="/index.html">The Current Hour</a>
+      <a href="/index.html#wander">Wander the Hours</a>
     </div>
   </div>
   <span class="nav-divider">✦</span>
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
     <div class="nav-hours-menu" id="nav-seasons-menu">
-      <a href="seasons-incipit.html">Incipit</a>
-      <a href="seasons.html">The Current Season</a>
-      <a href="seasons.html#wander">Wander the Seasons</a>
+      <a href="/seasons-incipit.html">Incipit</a>
+      <a href="/seasons.html">The Current Season</a>
+      <a href="/seasons.html#wander">Wander the Seasons</a>
     </div>
   </div>
   <span class="nav-divider">✦</span>
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
     <div class="nav-hours-menu" id="nav-weather-menu">
-      <a href="weather-incipit.html">Incipit</a>
-      <a href="weather.html">The Current Weather</a>
-      <a href="weather.html#wander">Wander the Weather</a>
+      <a href="/weather-incipit.html">Incipit</a>
+      <a href="/weather.html">The Current Weather</a>
+      <a href="/weather.html#wander">Wander the Weather</a>
     </div>
   </div>
   <span class="nav-divider">✦</span>
-  <a href="about.html">About</a>
+  <a href="/about.html">About</a>
   <span class="nav-divider">✦</span>
-  <a href="sources.html">Sources</a>
+  <a href="/sources.html">Sources</a>
   <span class="nav-divider">✦</span>
   <div class="nav-hours-group">
     <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
     <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
-      <a href="editions.html">Otherwise Editions</a>
+      <a href="/editions.html">Otherwise Editions</a>
       <a href="#letters">Letters from Otherwise</a>
       <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
       <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Visit Otherwise <span class="ext-arrow" aria-hidden="true">↗</span></a>
@@ -210,5 +211,28 @@
 <script src="/shared.js"></script>
 <script src="/atmosphere.js"></script>
 <script src="/nav.js"></script>
+<script>
+// The line at the top: back to the page the visitor came from on this
+// site (the Hours, the Weather, Sources, another record), as the
+// browser's own Back would; from anywhere else, the Hours.
+(() => {
+  const back = document.getElementById('record-back');
+  let from = null;
+  try { from = document.referrer && new URL(document.referrer); } catch (e) {}
+  if (!back || !from || from.origin !== location.origin || from.pathname === location.pathname) return;
+  const p = from.pathname;
+  const name = p === '/' || p === '/index.html' ? 'The Hours'
+    : p === '/weather.html' ? 'The Weather'
+    : p === '/seasons.html' || p.startsWith('/lectio-terra/') ? 'The Seasons'
+    : p === '/sources.html' ? 'Sources'
+    : p === '/id/' ? 'The Records'
+    : p.startsWith('/id/') ? 'the previous record' : '';
+  back.textContent = name ? '← Back to ' + name : '← Back';
+  back.href = from.pathname + from.search;
+  back.addEventListener('click', e => {
+    if (history.length > 1) { e.preventDefault(); history.back(); }
+  });
+})();
+</script>
 </body>
 </html>

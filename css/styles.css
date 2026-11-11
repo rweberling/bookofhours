@@ -2789,6 +2789,14 @@ a.page-action { text-decoration: none; }
 /* ── Record pages (id/, scripts/build_records.py): the collection's catalogue ── */
 .record-page .page { max-width: 680px; }
 .record-page .publication-name a { color: inherit; text-decoration: none; }
+/* The way back, above the masthead: as quiet as the ¶ that led here. */
+.record-back {
+  align-self: flex-start; margin: 0 0 18px;
+  font-family: var(--font-text); font-size: 15px; letter-spacing: 0.02em;
+}
+.record-back a { color: var(--ink-faint); text-decoration: none; }
+.record-back a:hover, .record-back a:focus-visible { color: var(--accent); }
+@media print { .record-back { display: none; } }
 .record-section { width: 100%; }
 .record-fields { display: grid; grid-template-columns: 9.5em 1fr; gap: 6px 16px; margin: 0; }
 .record-fields dt {

@@ -92,6 +92,7 @@ PAGE = '''<!DOCTYPE html>
 {frame}
 
 <main class="page">
+  <p class="record-back"><a href="/" id="record-back">← The Hours</a></p>
   <p class="publication-name"><a href="/id/">The Earthly Book of Hours · Records</a></p>
 
   <div class="rule-ornament" aria-hidden="true">
@@ -122,6 +123,29 @@ PAGE = '''<!DOCTYPE html>
 <script src="/shared.js"></script>
 <script src="/atmosphere.js"></script>
 <script src="/nav.js"></script>
+<script>
+// The line at the top: back to the page the visitor came from on this
+// site (the Hours, the Weather, Sources, another record), as the
+// browser's own Back would; from anywhere else, the Hours.
+(() => {{
+  const back = document.getElementById('record-back');
+  let from = null;
+  try {{ from = document.referrer && new URL(document.referrer); }} catch (e) {{}}
+  if (!back || !from || from.origin !== location.origin || from.pathname === location.pathname) return;
+  const p = from.pathname;
+  const name = p === '/' || p === '/index.html' ? 'The Hours'
+    : p === '/weather.html' ? 'The Weather'
+    : p === '/seasons.html' || p.startsWith('/lectio-terra/') ? 'The Seasons'
+    : p === '/sources.html' ? 'Sources'
+    : p === '/id/' ? 'The Records'
+    : p.startsWith('/id/') ? 'the previous record' : '';
+  back.textContent = name ? '← Back to ' + name : '← Back';
+  back.href = from.pathname + from.search;
+  back.addEventListener('click', e => {{
+    if (history.length > 1) {{ e.preventDefault(); history.back(); }}
+  }});
+}})();
+</script>
 </body>
 </html>
 '''

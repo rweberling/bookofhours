@@ -685,6 +685,21 @@ function recordMark(id) {
     : '';
 }
 
+// Following a ¶ from the Hours or the Weather: first write the reading
+// and image on show into the page's own address (the link "keep this
+// page" gives), so coming Back reopens that same pair, even when the
+// browser reloads the page rather than restoring it.
+document.addEventListener('click', e => {
+  const mark = e.target.closest && e.target.closest('a.record-mark');
+  if (!mark || typeof keepPageData !== 'function') return;
+  try {
+    const kept = keepPageData();
+    if (kept && (kept.kind === 'hours' || kept.kind === 'weather') && kept.path) {
+      history.replaceState(history.state, '', kept.path);
+    }
+  } catch (error) {}
+});
+
 function quoteView(reading) {
   return {
     id: reading.id,
