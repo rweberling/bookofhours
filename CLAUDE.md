@@ -188,6 +188,17 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      the batch. Its docstring has the steps.
   3. If any desk read or write is refused or fails, carries on with the
      Sheet alone and says so in the email.
+- Where a nominated piece comes from (Ryan's rule of thumb, 11 November
+  2026): the Hours are global, the Seasons local and regional (New
+  England, North America), the Weather a bit of both. A Weather
+  nomination opens by saying which register it is. "Faithful:" is the
+  weather as it falls in the Northeast, whoever made the piece
+  (Twachtman's Connecticut brook for snowpack; Hiroshige's shower
+  counts, since that rain falls here too). "Wry:" is the condition taken
+  to its extreme as a knowing joke, like Muybridge for Transit
+  (Bradford's Arctic sea ice for ice, O'Sullivan's Nevada dunes for
+  parched; a tropical picture for humid would be one). Keep the two in
+  balance for each condition: where it has one, nominate the other.
 - Records with `kind: "season"` (ids `<date>-sNN`) are season-tag
   proposals for pieces already on the site, not nominations: never copy
   them to the Sheet or count them as candidates. Each run applies the
