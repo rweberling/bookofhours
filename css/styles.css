@@ -2845,16 +2845,21 @@ a.page-action { text-decoration: none; }
 
 /* ── The record mark ──────────────────────────────────────────────
    A small ¶ after a credit, leading to the piece's record (/id/<id>/):
-   on the Sources page, and after the reading's and the image's credit
-   on the Hours and the Weather. As faint as a rule until hovered. Not
+   on the Sources page, after the reading's and the image's credit
+   on the Hours and the Weather, and after each reading's citation and
+   figure caption in a Lectio Terra post. As faint as a rule until hovered. Not
    on the keep card (keep.js), in the lightbox or in print. */
 .quote-attribution a.record-mark, .image-caption a.record-mark,
-.weather-quote-attr a.record-mark, .weather-caption a.record-mark {
+.weather-quote-attr a.record-mark, .weather-caption a.record-mark,
+#season-reading-body .reading-citation a.record-mark,
+#season-reading-body figcaption a.record-mark {
   margin-left: 0.45em; text-decoration: none; letter-spacing: 0;
   font-size: 0.85em; font-style: normal; color: var(--rule); opacity: 1;
 }
 .quote-attribution a.record-mark:hover, .image-caption a.record-mark:hover,
 .weather-quote-attr a.record-mark:hover, .weather-caption a.record-mark:hover,
+#season-reading-body .reading-citation a.record-mark:hover,
+#season-reading-body figcaption a.record-mark:hover,
 a.record-mark:focus-visible { color: var(--accent); }
 .lightbox-caption .record-mark { display: none; }
 @media print { .record-mark { display: none !important; } }

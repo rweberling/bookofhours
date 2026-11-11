@@ -50,10 +50,22 @@ def reading_html(reading):
     return ''.join(lines)
 
 
+def record_mark(rid):
+    """The small ¶ after a credit, leading to the piece's record page
+    (/id/<id>/), as on the Hours, the Weather and Sources (recordMark()
+    in shared.js). Readings and images only: they have record pages."""
+    if not rid or rid.split('-')[0] not in ('r', 'i'):
+        return ''
+    rid = escape(rid)
+    return (f'<a class="record-mark" href="/id/{rid}/" title="The record: {rid}" '
+            f'aria-label="The record, {rid}">¶</a>')
+
+
 def figure_html(image, number):
     display = image.get('display') or {}
     label = '' if display.get('unlabelled') else f'Fig. {number}. '
-    caption = '' if display.get('noCaption') else f'<figcaption>{label}{image.get("caption") or ""}</figcaption>'
+    caption = ('' if display.get('noCaption')
+               else f'<figcaption>{label}{image.get("caption") or ""}{record_mark(image.get("id"))}</figcaption>')
     size = f' width="{display["size"][0]}" height="{display["size"][1]}"' if display.get('size') else ''
     youtube = re.search(r'youtube\.com/watch\?v=([\w-]+)', image.get('file') or '')
     if youtube:
@@ -109,7 +121,8 @@ def render_post_body(post, by_id):
             verse = ' class="reading-verse"' if (reading.get('display') or {}).get('verse') else ''
             citation = (reading.get('citation') or {}).get('display') or ''
             parts.append(f'<ol><li{verse}>{reading_html(reading)}{inside}</li></ol>'
-                         + (f'<div class="reading-citation">{citation}</div>' if citation else ''))
+                         + (f'<div class="reading-citation">{citation}{record_mark(reading["id"])}</div>'
+                            if citation else ''))
         elif item.get('writing'):
             piece = by_id.get(item['writing'])
             if not piece:

@@ -221,7 +221,8 @@
 <script src="/nav.js"></script>
 <script>
 // The line at the top: back to the page the visitor came from on this
-// site (the Hours, the Weather, Sources, another record), as the
+// site (the Hours, the Weather, the Seasons, an essay, Sources, another
+// record), as the
 // browser's own Back would; from anywhere else, the Hours.
 (() => {
   const back = document.getElementById('record-back');
@@ -231,7 +232,9 @@
   const p = from.pathname;
   const name = p === '/' || p === '/index.html' ? 'The Hours'
     : p === '/weather.html' ? 'The Weather'
-    : p === '/seasons.html' || p.startsWith('/lectio-terra/') ? 'The Seasons'
+    : p === '/seasons.html' ? 'The Seasons'
+    : p === '/lectio-terra/' ? 'Lectio Terra'
+    : p.startsWith('/lectio-terra/') ? 'the essay'
     : p === '/sources.html' ? 'Sources'
     : p === '/id/' ? 'The Records'
     : p.startsWith('/id/') ? 'the previous record' : '';
