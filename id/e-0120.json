@@ -2,12 +2,13 @@
   "@id": "https://earthlyhours.com/id/e-0120/",
   "id": "e-0120",
   "title": "The Story of the Sun, Moon, and Stars",
-  "publisher": "Seeley",
+  "publisher": "Thompson & Thomas",
   "issued": "1908",
   "identifiers": {
     "hathitrust": "008630234",
     "oclc": "25600297"
   },
+  "original-date": "1898",
   "citedBy": [
     "i-0031"
   ],

@@ -1,8 +1,8 @@
 {
   "@id": "https://earthlyhours.com/id/e-0139/",
   "id": "e-0139",
-  "title": "Circular",
-  "issued": "1941",
+  "title": "Improving Duck Marshes by Weed Control",
+  "issued": "1957",
   "identifiers": {
     "hathitrust": "003923103",
     "oclc": "1695369",
@@ -25,6 +25,7 @@
       "role": "author"
     }
   ],
+  "publisher": "U.S. Department of the Interior, Fish and Wildlife Service",
   "citedBy": [
     "i-0074"
   ],

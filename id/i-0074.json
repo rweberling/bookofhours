@@ -28,8 +28,8 @@
   },
   "edition": {
     "id": "e-0139",
-    "title": "Circular",
-    "issued": "1941",
+    "title": "Improving Duck Marshes by Weed Control",
+    "issued": "1957",
     "identifiers": {
       "hathitrust": "003923103",
       "oclc": "1695369",
@@ -51,7 +51,8 @@
         "name": "John H. Steenis",
         "role": "author"
       }
-    ]
+    ],
+    "publisher": "U.S. Department of the Interior, Fish and Wildlife Service"
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49",

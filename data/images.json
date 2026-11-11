@@ -846,7 +846,7 @@
     "file": "images/denouement_giberne.jpg",
     "caption": "Agnes Giberne, from <a href=\"https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232\" target=\"_blank\"><em>The Story of the Sun, Moon, and Stars</em></a> (1898)",
     "alt": "A black engraving of a starry sky crossed by the broad pale bands of Saturn’s rings, rising from the planet’s curved edge at the bottom, with several moons, full and crescent, among the stars.",
-    "bibliography": "Giberne, Agnes. <em>The Story of the Sun, Moon, and Stars</em>. Seeley, 1898.",
+    "bibliography": "Giberne, Agnes. <em>The Story of the Sun, Moon, and Stars</em>. Thompson &amp; Thomas, 1908. Originally published 1898.",
     "creator": { "id": "a-agnes-giberne", "name": "Agnes Giberne", "wikidata": "Q4693039" },
     "title": null,
     "date": "1898",
@@ -860,9 +860,10 @@
     "edition": {
       "id": "e-0120",
       "title": "The Story of the Sun, Moon, and Stars",
-      "publisher": "Seeley",
+      "publisher": "Thompson & Thomas",
       "issued": "1908",
-      "identifiers": { "hathitrust": "008630234", "oclc": "25600297" }
+      "identifiers": { "hathitrust": "008630234", "oclc": "25600297" },
+      "original-date": "1898"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232",
@@ -1508,9 +1509,9 @@
     "id": "i-0051",
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-4-fd23e548a002.jpeg",
-    "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2\">The Crocus</a>,” from Adolph Baumbach, <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano </em>(Cleveland, Ohio: S. Brainard’s Sons, 1851).",
+    "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2\">The Crocus</a>,” from Adolph Baumbach, <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano </em>(Cleveland, Ohio: S. Brainard’s Sons, 1856).",
     "alt": "A page of printed sheet music, “The Crocus,” a short piano piece marked Allegretto, in five systems of treble and bass staves.",
-    "bibliography": "Baumbach, Adolph. \"The Crocus.\" <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano</em>, S. Brainard’s Sons, 1851.",
+    "bibliography": "Baumbach, Adolph. \"The Crocus.\" <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano</em>, S. Brainard’s Sons, 1856.",
     "lectio": { "post": "lt-0006", "place": 4 },
     "tags": {
       "hours": [],
@@ -1533,7 +1534,8 @@
           "role": "author",
           "wikidata": "Q21153774"
         }
-      ]
+      ],
+      "publisher": "S. Brainard’s Sons"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2",
@@ -2293,14 +2295,15 @@
     },
     "edition": {
       "id": "e-0139",
-      "title": "Circular",
-      "issued": "1941",
+      "title": "Improving Duck Marshes by Weed Control",
+      "issued": "1957",
       "identifiers": { "hathitrust": "003923103", "oclc": "1695369", "lccn": "41051406" },
       "contributors": [
         { "id": "a-alex-c-martin", "name": "Alex C. Martin", "role": "author" },
         { "id": "a-ray-c-erickson", "name": "Ray C. Erickson", "role": "author" },
         { "id": "a-john-h-steenis", "name": "John H. Steenis", "role": "author" }
-      ]
+      ],
+      "publisher": "U.S. Department of the Interior, Fish and Wildlife Service"
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49",

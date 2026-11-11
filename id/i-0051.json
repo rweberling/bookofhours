@@ -3,9 +3,9 @@
   "id": "i-0051",
   "shownIn": "seasons",
   "file": "images/lectio-terra/192759496.week-15-dutch-crocus-guillaume-barth-4-fd23e548a002.jpeg",
-  "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2\">The Crocus</a>,” from Adolph Baumbach, <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano </em>(Cleveland, Ohio: S. Brainard’s Sons, 1851).",
+  "caption": "“<a href=\"https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2\">The Crocus</a>,” from Adolph Baumbach, <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano </em>(Cleveland, Ohio: S. Brainard’s Sons, 1856).",
   "alt": "A page of printed sheet music, “The Crocus,” a short piano piece marked Allegretto, in five systems of treble and bass staves.",
-  "bibliography": "Baumbach, Adolph. \"The Crocus.\" <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano</em>, S. Brainard’s Sons, 1851.",
+  "bibliography": "Baumbach, Adolph. \"The Crocus.\" <em>The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano</em>, S. Brainard’s Sons, 1856.",
   "lectio": {
     "post": "lt-0006",
     "place": 4
@@ -41,7 +41,8 @@
         "role": "author",
         "wikidata": "Q21153774"
       }
-    ]
+    ],
+    "publisher": "S. Brainard’s Sons"
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2",
