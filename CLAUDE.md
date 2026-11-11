@@ -208,6 +208,17 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      <rows.json> <scratch dir>` (records, previews, and the batch), upload
      the previews, set each one's id with `desk.py --preview`, and send
      the batch. Its docstring has the steps.
+  2a. The days (from the 18 November 2026 run on): first builds each
+     approved day record not yet added, as "Day candidates" below says,
+     and reports the days built in the email. Then puts day candidates on
+     the desk: on 18 November, about five for Week 49's last three days
+     (26–28 November, the Thanksgiving trial) and about ten for Week 50
+     (29 November – 5 December); from then on, about ten for the next
+     calendar week (`scripts/weeks.py`) that begins at least 10 days after
+     the run and isn't yet full or on the desk. Day candidates never go
+     in the Sheet. The email says which weeks, how many candidates, how
+     many days each week still needs, and how long the days took (they
+     are a trial of that).
   3. If any desk read or write is refused or fails, carries on with the
      Sheet alone and says so in the email.
 - Where a nominated piece comes from (Ryan's rule of thumb, 11 November
