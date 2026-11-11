@@ -215,12 +215,15 @@ function buildSources(collection, lectio) {
     const body = weeks.length ? weeks.map(week => {
       const [y, m, d] = (week.published || '').split('-');
       const date = y ? `${Number(d)} ${MONTH_NAMES[Number(m) - 1]} ${y}` : '';
+      // Each week folds shut, its title and date the fold's label; open,
+      // it gives the essay's link and the week's readings and figures.
+      const essay = week.page ? escapeHTML(week.page) : `seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}`;
       return `
-    <div class="week">
-      <p class="week-title"><a href="${week.page ? escapeHTML(week.page) : `seasons.html?season=${key}&amp;entry=${encodeURIComponent(week.id)}`}">${escapeHTML(week.title)}</a></p>
-      ${date ? `<p class="week-date">${date}</p>` : ''}
+    <details class="week" id="${escapeHTML(week.id)}">
+      <summary><span class="week-title">${escapeHTML(week.title)}</span>${date ? `<span class="week-date">${date}</span>` : ''}</summary>
+      <p class="week-essay"><a href="${essay}">Read the essay</a></p>
       ${weekGroup('Readings', piecesOf(readings, week))}${weekGroup('Figures', piecesOf(images, week))}
-    </div>`;
+    </details>`;
     }).join('') : '<p class="empty-note">No sources yet.</p>';
     html += `
   <section class="block-section" id="seasons-${key}">
@@ -255,10 +258,34 @@ async function initSources() {
   }
   // The page was empty when the browser first looked for #hours-void and
   // the like, so follow the link now that the sections exist.
-  if (window.location.hash) {
-    const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
-    if (target) target.scrollIntoView();
-  }
+  openFoldFor(window.location.hash);
+}
+
+/* ── The folds ─────────────────────────────────────────────────────
+   A link to an entry inside a closed week (sources.html#i-0077, or a
+   week itself, #lt-0015) opens that week and goes to it, on arrival and
+   whenever the address's # changes. */
+function openFoldFor(hash) {
+  if (!hash || hash.length < 2) return;
+  const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+  if (!target) return;
+  const fold = target.closest('details');
+  if (fold && !fold.open) fold.open = true;
+  target.scrollIntoView();
 }
 
 window.addEventListener('DOMContentLoaded', initSources);
+window.addEventListener('DOMContentLoaded', () => openFoldFor(window.location.hash));
+window.addEventListener('hashchange', () => openFoldFor(window.location.hash));
+
+// A closed fold prints shut, so print every week open, then put the
+// folds back as they were.
+let foldsShut = [];
+window.addEventListener('beforeprint', () => {
+  foldsShut = [...document.querySelectorAll('#sources-body details:not([open])')];
+  foldsShut.forEach(fold => { fold.open = true; });
+});
+window.addEventListener('afterprint', () => {
+  foldsShut.forEach(fold => { fold.open = false; });
+  foldsShut = [];
+});
