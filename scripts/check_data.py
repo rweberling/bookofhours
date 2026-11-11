@@ -58,7 +58,8 @@ def isbn13_valid(isbn):
     return (10 - total % 10) % 10 == int(isbn[12])
 
 
-CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition', 'subject (species or phenomenon)'}
+CORE_GAPS = {'bibliography line', 'rights', 'cited link or suggested edition', 'subject (species or phenomenon)',
+             'where it was drawn from'}
 
 
 # One ID format per kind of record.
@@ -664,8 +665,15 @@ def main():
             if not str(source.get('url', '')).startswith(('http://', 'https://')):
                 errors.append(f'{iid}: source without a web address: {source}')
             check_date(iid, 'source retrieved', source.get('retrieved'))
-        if not (source and source.get('url') and source.get('retrieved')):
+        # The editor's own pictures were drawn from nothing outside; the
+        # rest need some address their record can give as "Drawn from".
+        own = (img.get('creator') or {}).get('id') == 'a-ryan-weberling'
+        if not own and not (source and source.get('url') and source.get('retrieved')):
             gaps[iid].append('source file and retrieval date')
+        if not own and not (any(l.get('url') for l in locators(img))
+                            or any(l.get('role') == 'cited' for l in img.get('links') or [])
+                            or (source and source.get('url'))):
+            gaps[iid].append('where it was drawn from')
         check_further(iid, img.get('furtherReading'))
         check_display_links(iid, img.get('caption'))
         if not img.get('caption'):

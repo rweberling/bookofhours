@@ -315,10 +315,17 @@ def locator_rows(loc):
     return '<br>'.join(out)
 
 
+# The editor's own person record: a picture he made was drawn from no
+# outside source, and its record says so.
+EDITOR = 'a-ryan-weberling'
+
+
 def drawn_from(r):
     """Where the image shown was drawn from: its place in the source (the
     locator), else its cited link; then the exact file, where recorded,
-    with the day it was downloaded."""
+    with the day it was downloaded. The editor's own pictures say so."""
+    if (r.get('creator') or {}).get('id') == EDITOR and not (r.get('locator') or r.get('links')):
+        return "The editor's own photograph" if 'photograph' in (r.get('bibliography') or '').lower() else "The editor's own work"
     rows = locator_rows(r.get('locator'))
     if not rows:
         rows = '<br>'.join(ext(l['url'], escape(l.get('label') or l['url']))
