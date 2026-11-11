@@ -78,6 +78,7 @@ function setSeasonCanonical(entry) {
 }
 
 function renderSeasonReading(entry) {
+  leaveDay();
   currentEntryId = entry.id;
 
   // resolveSpeciesFields() is in shared.js, shared with the species cards below.
@@ -161,6 +162,129 @@ function showPostPage() {
   setSeason(POST_PAGE.key);
   document.getElementById('season-reading-subtitle').textContent = season.subtitle;
   finishPost(document.getElementById('season-reading-body'), entry);
+}
+
+/* ── The day ──────────────────────────────────────────────────────
+   On a day with a card (data/days.json), the page opens on it: the
+   day's subject, its image and its reading, with the week around it
+   above: the week's Lectio Terra essay (the one published within the
+   week) and its seven days, each a link to its own card. ?day=MM-DD
+   opens a given day; a day without a card shows the season's essays as
+   before. The weeks are counted from the winter solstice (weekOf() in
+   shared.js).
+────────────────────────────────────────────────────────────────── */
+let currentDay = null;
+
+function dayWords(month, day) {
+  return `${day} ${MONTH_NAMES[month - 1]}`;
+}
+
+// The week's essay: the post published within the week, any year (the
+// latest, if more than one).
+function essayOfWeek(week) {
+  const keys = new Set(week.days.map(d => d.key));
+  const posts = Object.values(lectioSeasons || {}).flat()
+    .filter(e => e.published && keys.has(e.published.slice(5)))
+    .sort((a, b) => b.published.localeCompare(a.published));
+  return posts[0] || null;
+}
+
+async function showDay(day, days) {
+  const [collection, subjects] = await Promise.all([loadCollection(), loadSubjects()]);
+  const reading = collection.readings.find(r => r.id === day.reading);
+  const image = collection.images.find(i => i.id === day.image);
+  const subject = subjects.get(day.subject) || {};
+  const [month, dayOfMonth] = day.date.split('-').map(Number);
+  const week = weekOf(month, dayOfMonth, isLeapYear(new Date().getFullYear()));
+
+  currentDay = Object.assign({}, day, {
+    names: [reading ? readingAuthor(reading) : '', image && image.creator && !Array.isArray(image.creator) ? image.creator.name : '']
+  });
+  currentEntryId = null;
+  setSeason(week.season);
+  const when = dayWords(month, dayOfMonth);
+  const name = subject.name || '';
+  document.title = `${name} — ${when} — The Earthly Book of Hours`;
+  setDayCanonical(day);
+  document.getElementById('season-reading-subtitle').textContent =
+    `${season.label} ✦ ${when}`;
+  document.getElementById('season-reading-title').textContent = name;
+  const latinEl = document.getElementById('season-reading-latin');
+  latinEl.textContent = subject.scientific || subject.latin || '';
+  latinEl.hidden = !latinEl.textContent;
+  document.getElementById('season-reading-dek').textContent = '';
+  document.getElementById('season-reading-observation').textContent = '';
+
+  // The week: its essay, then its days.
+  const nav = document.getElementById('season-week');
+  const byDate = new Map(days.map(d => [d.date, d]));
+  const essay = week.threshold ? null : essayOfWeek(week);
+  const essayLine = essay
+    ? `<p class="season-week-essay">This week\u2019s study: <a href="${escapeHTML(postAddress(essay.season || season.key, essay))}">${escapeHTML(resolveSpeciesFields(essay).species)}</a></p>`
+    : '';
+  const items = week.days.map(d => {
+    const card = byDate.get(d.key);
+    const label = `<span class="season-week-date">${d.day}</span>${card ? ` <span class="season-week-subject">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</span>` : ''}`;
+    if (d.key === day.date) return `<li aria-current="date">${label}</li>`;
+    return card
+      ? `<li><a href="seasons.html?day=${d.key}">${label}</a></li>`
+      : `<li class="season-week-empty">${label}</li>`;
+  }).join('');
+  nav.innerHTML = `<p class="season-week-head">${week.threshold ? 'The year\u2019s eve' : `Week ${week.week} · ${weekRangeWords(week)}`}</p>${essayLine}<ol class="season-week-days">${items}</ol>`;
+  nav.hidden = false;
+
+  // The card: the image, then the reading, set as a post sets them.
+  const body = document.getElementById('season-reading-body');
+  body.innerHTML = '';
+  if (image) {
+    const figure = document.createElement('figure');
+    figure.className = 'day-figure';
+    figure.innerHTML = `<a target="_blank" href="${escapeHTML(image.file)}"><img alt="${escapeHTML(image.alt || '')}"></a><figcaption id="day-caption">${image.caption || ''}${recordMark(image.id)}</figcaption>`;
+    setWebImage(figure.querySelector('img'), image.file, '(max-width: 680px) 92vw, 640px');
+    body.appendChild(figure);
+  }
+  if (reading) {
+    const verse = reading.display && reading.display.verse ? ' class="reading-verse"' : '';
+    const citation = reading.citation ? reading.citation.display : '';
+    body.insertAdjacentHTML('beforeend',
+      `<ol class="day-reading"><li${verse} id="day-quote">${readingHTML(reading)}</li></ol>`
+      + (citation ? `<div class="reading-citation" id="day-attr">${citation}${recordMark(reading.id)}</div>` : ''));
+  }
+  wireFigures(body);
+  ruleReadings(body);
+  updateRunningHead();
+}
+
+function setDayCanonical(day) {
+  const asked = new URLSearchParams(window.location.search).get('day');
+  let link = document.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'canonical';
+    document.head.appendChild(link);
+  }
+  link.href = asked === day.date
+    ? `https://earthlyhours.com/seasons.html?day=${day.date}`
+    : 'https://earthlyhours.com/seasons.html';
+}
+
+// Leaving the day for an essay (turn the page, a species card): the
+// week's header goes.
+function leaveDay() {
+  currentDay = null;
+  const nav = document.getElementById('season-week');
+  if (nav) { nav.hidden = true; nav.innerHTML = ''; }
+}
+
+// The day the page should open on: ?day=MM-DD, or today, if it has a card.
+async function dayToShow() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('season') || params.get('entry')) return null;
+  const now = new Date();
+  const key = params.get('day') || monthDayKey(now.getMonth() + 1, now.getDate());
+  const days = await loadDays();
+  const day = days.find(d => d.date === key);
+  return day ? { day, days } : null;
 }
 
 // The list of posts, loaded on first use (at once on seasons.html; on a
@@ -857,8 +981,13 @@ async function initialiseSeason() {
 
   try {
     lectioSeasons = (await loadLectioData()).seasons;
-    const { key, entryId } = seasonFromURL();
-    showSeasonEntry(key, entryId);
+    const today = await dayToShow();
+    if (today) {
+      await showDay(today.day, today.days);
+    } else {
+      const { key, entryId } = seasonFromURL();
+      showSeasonEntry(key, entryId);
+    }
   } catch (error) {
     document.getElementById('season-reading-body').innerHTML = '<p>The seasonal reading could not be opened. Please return soon.</p>';
     console.error(error);
@@ -873,7 +1002,16 @@ async function initialiseSeason() {
     const { key, entryId } = e.state
       ? { key: e.state.season, entryId: e.state.entry }
       : seasonFromURL();
-    if (key === season.key && (!entryId || entryId === currentEntryId)) return;
+    // Back to the page as first opened, on a day: the day again.
+    if (!e.state) {
+      dayToShow().then(today => {
+        if (today) { showDay(today.day, today.days); return; }
+        if (!currentDay && key === season.key && (!entryId || entryId === currentEntryId)) return;
+        showSeasonEntry(key, entryId);
+      });
+      return;
+    }
+    if (!currentDay && key === season.key && (!entryId || entryId === currentEntryId)) return;
     showSeasonEntry(key, entryId);
   });
 }
@@ -886,6 +1024,22 @@ window.addEventListener('DOMContentLoaded', initialiseSeason);
 // post, as the page prints it; the iPhone home-screen app, which can't
 // print, isn't offered it (a whole post is too long to draw as a PDF).
 function keepPageData() {
+  // A day keeps as the Hours do: its image above, its reading below.
+  if (currentDay) {
+    const imageRec = document.querySelector('#season-reading-body .day-figure img');
+    return {
+      kind: 'hours',
+      title: document.getElementById('season-reading-title').textContent.trim(),
+      names: currentDay.names,
+      path: `/seasons.html?day=${currentDay.date}`,
+      print: () => window.print(),
+      printPdf: false,
+      imageMaster: imageRec ? imageRec.dataset.master : null,
+      quoteEl: document.getElementById('day-quote'),
+      attrEl: document.getElementById('day-attr'),
+      captionEl: document.getElementById('day-caption')
+    };
+  }
   const body = document.getElementById('season-reading-body');
   const headnote = body.querySelector('.post-part:not(.post-part-readings)') || body;
   const opening = [...headnote.querySelectorAll('p')].find(p => p.textContent.trim().length > 40) || null;

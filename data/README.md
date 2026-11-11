@@ -14,6 +14,7 @@ is no database and nothing generated in between.
 | `writing.json` | Writing: the site's own words, such as versicles, phenomenon lines, and the posts' headnotes, supplementa and notes (`w-`) |
 | `lectio-data.json` | The Lectio Terra posts' records (`lt-`): title, season, subject, page, and `body`, the list of their pieces |
 | `substack/` | Each post's text as it came from Substack, `<post id>.html`: the original, kept for reference and checks |
+| `days.json` | The days (`dy-`): one card a date, each a subject with one reading and one image, shown on the Seasons page on its day |
 | `species.json` | The species and other organisms the posts are about (`sp-`) |
 | `phenomena.json` | The posts' subjects that aren't organisms, such as clouds or the Perseids (`ph-`) |
 | `vocab.json` | The terms everything is tagged with: the eight hours, the four seasons, the twenty weather conditions |
@@ -32,8 +33,9 @@ Every record has an `id`, and most share a few fields:
   even if the record is corrected or retired. Older IDs it replaced are kept
   in `aliases`, so old links still work. The same ID is meant to resolve at
   `https://earthlyhours.com/id/<id>`.
-- **`shownIn`**: where the site shows it, one place only: `hours`, `weather`
-  or `seasons` (inside its Lectio Terra post).
+- **`shownIn`**: where the site shows it, one place only: `hours`, `weather`,
+  `seasons` (inside its Lectio Terra post) or `days` (on a day's card,
+  named by a record in `days.json`).
 - **`tags`**: what it's about. They only describe a piece; they never move it.
   `hours`, `seasons` and `weather` take terms from `vocab.json` (`void`,
   `autumn`, `fog`); `species` and `phenomena` take IDs from `species.json`
@@ -294,3 +296,26 @@ the public domain; each image's `rights` field says which. Texts and images
 credited to another person or institution keep their own terms; the
 licence above doesn't extend to the quoted passages or the image files, so
 a published dataset carries the metadata and only public-domain texts.
+
+## The days
+
+`days.json` holds the daily cards of the Seasons, a list of records like:
+
+```json
+{"id": "dy-0001", "date": "11-26", "subject": "sp-0029", "reading": "r-0128", "image": "i-0161"}
+```
+
+- **`date`**: the month and day, `"MM-DD"`, with no year: a card returns on
+  the same date every year. One card a date.
+- **`subject`**: the species or phenomenon of the day (`sp-` or `ph-`).
+- **`reading`** and **`image`**: one each, ordinary records in
+  `readings.json` and `images.json` with `"shownIn": "days"`, tagged with
+  the subject like any other piece.
+- **`draft`**: `true` keeps the card off the site.
+
+The weeks are fixed by date and counted from the winter solstice: Week 1
+begins on 21 December, 20 December stands outside the weeks, 29 February
+joins Week 10, and a week belongs to the season of its middle day
+(`scripts/weeks.py`, and the same rule in `shared.js`). On a day with a
+card, the Seasons page opens on it, with the week around it: the week's
+Lectio Terra essay (the one published within the week) and its other days.

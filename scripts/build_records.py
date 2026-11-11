@@ -72,6 +72,9 @@ IDENTIFIER_LINKS = {
     'wikidata': ('Wikidata', 'https://www.wikidata.org/wiki/{}'),
 }
 
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
+          'September', 'October', 'November', 'December']
+
 KIND = {'r': 'Reading', 'i': 'Image', 'e': 'Edition', 'sp': 'Species', 'ph': 'Phenomenon'}
 
 PAGE = '''<!DOCTYPE html>
@@ -222,6 +225,12 @@ class Collection:
         self.readings = [r for r in recs('readings') if not r.get('draft')]
         self.images = [r for r in recs('images') if not r.get('draft')]
         self.species = recs('species')
+        # The days, by the pieces they show: {piece id: day record}.
+        self.day_of = {}
+        for d in load('days'):
+            if not d.get('draft'):
+                for field in ('reading', 'image'):
+                    self.day_of[d.get(field)] = d
         self.phenomena = recs('phenomena')
         vocab = load('vocab')
         self.labels = {kind: {v['id']: v['label'] for v in vocab[kind]} for kind in ('hours', 'weather', 'seasons')}
@@ -374,6 +383,10 @@ def appears(col, r, kind):
         out.append(f'<a href="/?{kind}={r["id"]}">The Hours</a>')
     elif shown == 'weather':
         out.append(f'<a href="/weather.html?{kind}={r["id"]}">The Weather</a>')
+    elif shown == 'days' and r['id'] in col.day_of:
+        day = col.day_of[r['id']]
+        month, d = (int(x) for x in day['date'].split('-'))
+        out.append(f'<a href="/seasons.html?day={day["date"]}">The Seasons, {d} {MONTHS[month - 1]}</a>')
     post = col.posts.get((r.get('lectio') or {}).get('post'))
     if post:
         where = f'/{post["page"]}' if post.get('page') else '/seasons.html'

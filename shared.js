@@ -57,6 +57,85 @@ function currentSeason(date = new Date()) {
   return SEASONS.find(season => season.months.includes(month)).key;
 }
 
+// --- The weeks and the days --------------------------------------------------
+// The Seasons' year runs in 52 fixed weeks counted from the winter
+// solstice (decided 11 November 2026; Site Project Notes, "The weeks").
+// Week 1 begins on 21 December, every year, so every date sits in the
+// same week each year and the daily cards recur unchanged. 52 weeks make
+// 364 days: 20 December stands outside them, the year's eve, and in leap
+// years 29 February joins Week 10. A week belongs to the season its
+// middle (fourth) day falls in, which gives each season 13 weeks:
+// Winter 50–52 and 1–10, Spring 11–23, Summer 24–36, Autumn 37–49.
+// scripts/weeks.py keeps the same rule for the build scripts.
+const WEEK_ONE = { month: 12, day: 21 };
+const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];   // a common year
+
+// Days from 1 January in a common year (0–364).
+function dayOfYear(month, day) {
+  return DAYS_IN_MONTH.slice(0, month - 1).reduce((a, b) => a + b, 0) + day - 1;
+}
+
+// The month and day `n` days into a common year (wrapping round).
+function monthDayOf(n) {
+  n = ((n % 365) + 365) % 365;
+  let month = 0;
+  while (n >= DAYS_IN_MONTH[month]) { n -= DAYS_IN_MONTH[month]; month++; }
+  return { month: month + 1, day: n + 1 };
+}
+
+// "MM-DD", the form a day record's date takes.
+function monthDayKey(month, day) {
+  return `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+}
+
+// The week a month and day fall in: { week, season, days: [{month, day,
+// key}, ...seven] }, or { threshold: true } for 20 December. 29 February
+// is in Week 10, and its days include it in a leap year (pass `leap`).
+function weekOf(month, day, leap = false) {
+  if (month === 2 && day === 29) return weekNumbered(10, true);
+  const offset = (dayOfYear(month, day) - dayOfYear(WEEK_ONE.month, WEEK_ONE.day) + 365) % 365;
+  if (offset === 364) return { threshold: true, season: 'winter', days: [{ month, day, key: monthDayKey(month, day) }] };
+  return weekNumbered(Math.floor(offset / 7) + 1, leap);
+}
+
+function weekNumbered(week, leap = false) {
+  const start = dayOfYear(WEEK_ONE.month, WEEK_ONE.day) + (week - 1) * 7;
+  const days = [];
+  for (let i = 0; i < 7; i++) {
+    const { month, day } = monthDayOf(start + i);
+    days.push({ month, day, key: monthDayKey(month, day) });
+    if (leap && month === 2 && day === 28) days.push({ month: 2, day: 29, key: '02-29' });
+  }
+  const middle = monthDayOf(start + 3);
+  return { week, season: SEASONS.find(s => s.months.includes(middle.month)).key, days };
+}
+
+function isLeapYear(year) {
+  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+}
+
+// "29 November – 5 December", or "22–28 February".
+function weekRangeWords(w) {
+  const first = w.days[0], last = w.days[w.days.length - 1];
+  return first.month === last.month
+    ? `${first.day}–${last.day} ${MONTH_NAMES[last.month - 1]}`
+    : `${first.day} ${MONTH_NAMES[first.month - 1]} – ${last.day} ${MONTH_NAMES[last.month - 1]}`;
+}
+
+// The days (data/days.json): each a date ("MM-DD"), its subject (a
+// species or phenomenon) and one reading and one image, by ID. Cached per
+// page load; an empty list if the file can't be read.
+let daysPromise = null;
+function loadDays() {
+  if (!daysPromise) {
+    daysPromise = fetch('data/days.json')
+      .then(response => (response.ok ? response.json() : []))
+      .then(days => (Array.isArray(days) ? days : []).filter(d => !d.draft))
+      .catch(error => { console.error(error); return []; });
+  }
+  return daysPromise;
+}
+
 // --- Dates and text -----------------------------------------------------------
 // "3:45 pm"
 function formatTime(d) {
@@ -574,18 +653,31 @@ function resolveSpeciesFields(entry) {
 // subjectRecord. Shared by seasons.js and sources.js, and cached per page
 // load. If the species files can't be loaded, the posts still are, and
 // fall back to their titles.
-let lectioDataPromise = null;
-function loadLectioData() {
-  if (!lectioDataPromise) {
-    const getJSON = (url, what) => fetch(url).then(response => {
-      if (!response.ok) throw new Error(`Unable to load ${what} (${response.status}).`);
-      return response.json();
-    });
-    const subjects = Promise.all([
+function getJSON(url, what) {
+  return fetch(url).then(response => {
+    if (!response.ok) throw new Error(`Unable to load ${what} (${response.status}).`);
+    return response.json();
+  });
+}
+
+// The species and phenomena, by ID (an empty Map if they can't be read).
+// Cached per page load; the posts and the days both name them.
+let subjectsPromise = null;
+function loadSubjects() {
+  if (!subjectsPromise) {
+    subjectsPromise = Promise.all([
       getJSON('data/species.json', 'data/species.json'),
       getJSON('data/phenomena.json', 'data/phenomena.json')
     ]).then(([species, phenomena]) => new Map([...species, ...phenomena].map(r => [r.id, r])))
-      .catch(error => { console.error(error); return new Map(); });
+      .catch(error => { console.error(error); subjectsPromise = null; return new Map(); });
+  }
+  return subjectsPromise;
+}
+
+let lectioDataPromise = null;
+function loadLectioData() {
+  if (!lectioDataPromise) {
+    const subjects = loadSubjects();
     lectioDataPromise = Promise.all([getJSON('data/lectio-data.json', 'Lectio Terra posts'), subjects])
       .then(([data, byId]) => {
         Object.values(data.seasons || {}).forEach(entries => entries.forEach(entry => {

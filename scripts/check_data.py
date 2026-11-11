@@ -67,10 +67,10 @@ ID_FORMS = {
     'r': re.compile(r'^r-\d{4}$'), 'i': re.compile(r'^i-\d{4}$'), 'lt': re.compile(r'^lt-\d{4}$'),
     'w': re.compile(r'^w-\d{4}$'), 'pc': re.compile(r'^pc-[a-z]\d{2}-\d+$'),
     'sp': re.compile(r'^sp-\d{4}$'), 'ph': re.compile(r'^ph-\d{4}$'),
-    'e': re.compile(r'^e-\d{4}$'),
+    'e': re.compile(r'^e-\d{4}$'), 'dy': re.compile(r'^dy-\d{4}$'),
 }
 # Where a reading, image or piece of writing can be shown on the site.
-SHOWN_IN = ('hours', 'weather', 'seasons')
+SHOWN_IN = ('hours', 'weather', 'seasons', 'days')
 # The kinds of the site's own writing (data/writing.json). A new genre is
 # a new kind here, not a new kind of ID.
 WRITING_KINDS = ('versicle', 'phenomenon', 'note', 'headnote', 'supplementum')
@@ -208,6 +208,7 @@ def main():
 
     readings, images, writing, vocab = (load(n) for n in ('readings', 'images', 'writing', 'vocab'))
     species, phenomena = load('species'), load('phenomena')
+    days = load('days')
     errors = []
     gaps = defaultdict(list)
 
@@ -226,7 +227,7 @@ def main():
     for kind, records, form in (('reading', readings, ID_FORMS['r']), ('image', images, ID_FORMS['i']),
                                 ('writing', writing, ID_FORMS['w']), ('Lectio Terra post', posts, ID_FORMS['lt']),
                                 ('postcard', cards, ID_FORMS['pc']), ('species', species, ID_FORMS['sp']),
-                                ('phenomenon', phenomena, ID_FORMS['ph'])):
+                                ('phenomenon', phenomena, ID_FORMS['ph']), ('day', days, ID_FORMS['dy'])):
         for rec in records:
             rid = rec.get('id')
             if not rid:
@@ -322,6 +323,40 @@ def main():
             errors.append(f'{rid}: shown in the Weather, but tagged with no condition (or display.weatherUnset)')
         elif place == 'seasons' and not rec.get('lectio'):
             errors.append(f'{rid}: shown in the Seasons, but not from a Lectio Terra post ("lectio")')
+
+    # The days (data/days.json): one card a date, each naming a subject,
+    # one reading and one image that exist and are shown in the days; and
+    # every piece shown in the days is on one.
+    from weeks import parse as parse_month_day
+    subjects = {s['id'] for s in species + phenomena}
+    pieces = {r['id']: r for r in readings + images}
+    on_a_day, dates = defaultdict(list), {}
+    for d in days:
+        did = d.get('id')
+        try:
+            parse_month_day(str(d.get('date')))
+            if not re.match(r'^\d{2}-\d{2}$', str(d.get('date'))):
+                raise ValueError
+        except ValueError:
+            errors.append(f'{did}: date {d.get("date")!r} is not a month and day, "MM-DD"')
+        if d.get('date') in dates and not d.get('draft'):
+            errors.append(f'{did}: {d["date"]} already has a day ({dates[d["date"]]})')
+        if not d.get('draft'):
+            dates[d.get('date')] = did
+        if d.get('subject') not in subjects:
+            errors.append(f'{did}: subject {d.get("subject")!r} is not in species.json or phenomena.json')
+        for field, prefix in (('reading', 'r-'), ('image', 'i-')):
+            pid = d.get(field)
+            piece = pieces.get(pid)
+            if not piece or not pid.startswith(prefix):
+                errors.append(f'{did}: {field} {pid!r} is not a {field} in the collection')
+            elif piece.get('shownIn') != 'days':
+                errors.append(f'{did}: {field} {pid} is shown in {piece.get("shownIn")!r}, not "days"')
+            else:
+                on_a_day[pid].append(did)
+    for rec in readings + images:
+        if rec.get('shownIn') == 'days' and not rec.get('draft') and not on_a_day.get(rec['id']):
+            errors.append(f'{rec["id"]}: shown in the days, but no day in days.json names it')
 
     # Verse is held in one form (lines joined by <br>, one blank line
     # between stanzas, indents as leading &nbsp;s), which the pages set out

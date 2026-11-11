@@ -2548,6 +2548,44 @@ a.page-action { text-decoration: none; }
 #season-reading-body ol:not(.reading ol) > li > p:first-child { display: inline; }
 #season-reading-body ol:not(.reading ol) > li > p:first-child + p { margin-top: 20px; }
 
+/* ── The day (seasons.js, showDay) ────────────────────────────────
+   On a day with a card, the Seasons page opens on it: the week around
+   it first (its number and dates, its essay, its seven days, today's
+   marked), as quiet as the dek; then the day's image and its reading,
+   set as a post sets its figures and readings, but unnumbered. */
+.season-week {
+  width: 100%; max-width: 640px; margin: 0 auto 30px;
+  text-align: center;
+  font-family: var(--font-text); color: var(--ink-faint);
+}
+.season-week-head {
+  font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 6px;
+}
+.season-week-essay { font-size: 16px; font-style: italic; margin-bottom: 12px; }
+.season-week-essay a { color: var(--ink-light); text-underline-offset: 2px; }
+.season-week-essay a:hover { color: var(--accent); }
+.season-week-days {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 0;
+  font-size: 14px;
+}
+.season-week-days li { padding: 0 9px; border-left: 0.5px solid var(--rule); margin: 0; }
+.page .season-week-days li::before, .season-week-days li::before { content: none; display: none; }
+.season-week-days li:first-child { border-left: none; }
+.season-week-days a { color: var(--ink-faint); text-decoration: none; }
+.season-week-days a:hover, .season-week-days a:focus-visible { color: var(--accent); }
+.season-week-days .season-week-date { font-variant-numeric: oldstyle-nums; }
+.season-week-days .season-week-subject { font-style: italic; }
+.season-week-days li[aria-current] { color: var(--accent); }
+.season-week-days .season-week-empty { opacity: 0.55; }
+@media print { .season-week { display: none; } }
+
+#season-reading-body .day-figure { margin-top: 0; }
+#season-reading-body ol.day-reading { list-style: none; padding: 0; margin: 0; }
+#season-reading-body ol.day-reading > li { padding-left: 0; text-indent: 0; margin-bottom: 0; }
+#season-reading-body ol.day-reading > li::before { content: none; }
+
 /* ══════════════════════════════════════════════════════════════
    THE SOURCES PAGE (sources.html)
    Scoped to <html class="sources-page">. The page shares the site's frame,
