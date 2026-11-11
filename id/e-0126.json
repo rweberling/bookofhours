@@ -2,7 +2,7 @@
   "@id": "https://earthlyhours.com/id/e-0126/",
   "id": "e-0126",
   "title": "Birch",
-  "issued": "1937",
+  "issued": "1940",
   "identifiers": {
     "hathitrust": "002137949",
     "oclc": "2752530",
@@ -15,6 +15,7 @@
       "role": "author"
     }
   ],
+  "publisher": "U.S. Department of Agriculture, Forest Service",
   "citedBy": [
     "i-0043"
   ],
