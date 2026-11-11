@@ -8,6 +8,13 @@
     "oclc": "4584067",
     "lccn": "agr24001012"
   },
+  "contributors": [
+    {
+      "id": "a-e-a-bowles",
+      "name": "E. A. Bowles",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0049"
   ],

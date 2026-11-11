@@ -34,7 +34,14 @@
       "hathitrust": "002137949",
       "oclc": "2752530",
       "lccn": "agr54000002"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-united-states-forest-service",
+        "name": "United States Forest Service",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21",

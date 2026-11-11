@@ -33,7 +33,14 @@
     "identifiers": {
       "hathitrust": "009818689",
       "lccn": "79653298"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-elbert-l-little-jr",
+        "name": "Elbert L. Little Jr.",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63",

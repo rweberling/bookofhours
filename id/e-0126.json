@@ -8,6 +8,13 @@
     "oclc": "2752530",
     "lccn": "agr54000002"
   },
+  "contributors": [
+    {
+      "id": "a-united-states-forest-service",
+      "name": "United States Forest Service",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0043"
   ],

@@ -34,7 +34,14 @@
       "hathitrust": "007858342",
       "oclc": "71848387",
       "lccn": "78001249"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-e-w-nelson",
+        "name": "E. W. Nelson",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397",

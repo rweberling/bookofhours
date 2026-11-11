@@ -7,6 +7,14 @@
     "internetArchive": "britishmossesthe21874trip",
     "oclc": "4854519"
   },
+  "contributors": [
+    {
+      "id": "a-f-e-tripp",
+      "name": "F. E. Tripp",
+      "role": "author",
+      "wikidata": "Q36558217"
+    }
+  ],
   "citedBy": [
     "i-0061"
   ],

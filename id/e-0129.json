@@ -8,6 +8,13 @@
     "oclc": "6141524",
     "lccn": "23005467"
   },
+  "contributors": [
+    {
+      "id": "a-george-henry-tilton",
+      "name": "George Henry Tilton",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0053"
   ],

@@ -33,7 +33,15 @@
     "identifiers": {
       "internetArchive": "britishmossesthe21874trip",
       "oclc": "4854519"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-f-e-tripp",
+        "name": "F. E. Tripp",
+        "role": "author",
+        "wikidata": "Q36558217"
+      }
+    ]
   },
   "locator": {
     "url": "https://archive.org/details/britishmossesthe21874trip",

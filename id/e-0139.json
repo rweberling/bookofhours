@@ -8,6 +8,23 @@
     "oclc": "1695369",
     "lccn": "41051406"
   },
+  "contributors": [
+    {
+      "id": "a-alex-c-martin",
+      "name": "Alex C. Martin",
+      "role": "author"
+    },
+    {
+      "id": "a-ray-c-erickson",
+      "name": "Ray C. Erickson",
+      "role": "author"
+    },
+    {
+      "id": "a-john-h-steenis",
+      "name": "John H. Steenis",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0074"
   ],

@@ -8,6 +8,13 @@
     "oclc": "1268560",
     "lccn": "57010592"
   },
+  "contributors": [
+    {
+      "id": "a-e-s-harrar",
+      "name": "E. S. Harrar",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0087"
   ],

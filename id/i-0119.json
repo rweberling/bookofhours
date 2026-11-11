@@ -35,7 +35,15 @@
       "oclc": "4598632",
       "openlibrary": "OL24158910M",
       "lccn": "agr28000778"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-francois-andre-michaux",
+        "name": "François André Michaux",
+        "role": "author",
+        "wikidata": "Q2986883"
+      }
+    ]
   },
   "locator": {
     "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up",

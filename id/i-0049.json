@@ -34,7 +34,14 @@
       "hathitrust": "002010826",
       "oclc": "4584067",
       "lccn": "agr24001012"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-e-a-bowles",
+        "name": "E. A. Bowles",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41",

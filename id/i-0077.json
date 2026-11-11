@@ -27,6 +27,12 @@
       678
     ]
   },
+  "creator": {
+    "id": "a-ryan-weberling",
+    "name": "Ryan Weberling"
+  },
+  "title": "Wool Sower Wasp Galls, Tisbury, Massachusetts",
+  "date": "2026-05-25",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

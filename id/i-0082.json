@@ -34,6 +34,12 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-richard-william-seale",
+    "name": "Richard William Seale",
+    "wikidata": "Q55989328"
+  },
+  "title": "The Course of the Solar Maculae over the Sun’s Disk",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

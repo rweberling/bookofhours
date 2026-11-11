@@ -7,6 +7,20 @@
     "hathitrust": "001272669",
     "oclc": "3010882"
   },
+  "contributors": [
+    {
+      "id": "a-alfred-wegener",
+      "name": "Alfred Wegener",
+      "role": "author",
+      "wikidata": "Q76323"
+    },
+    {
+      "id": "a-j-g-a-skerl",
+      "name": "J. G. A. Skerl",
+      "role": "translator",
+      "wikidata": "Q124101378"
+    }
+  ],
   "citedBy": [
     "i-0064"
   ],

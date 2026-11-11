@@ -8,6 +8,13 @@
     "oclc": "71848387",
     "lccn": "78001249"
   },
+  "contributors": [
+    {
+      "id": "a-e-w-nelson",
+      "name": "E. W. Nelson",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0056",
     "i-0057"

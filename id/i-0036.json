@@ -32,7 +32,15 @@
     "issued": "1976",
     "identifiers": {
       "doi": "10.5962/p.249681"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-richard-e-weaver",
+        "name": "Richard E. Weaver",
+        "role": "author",
+        "wikidata": "Q21612303"
+      }
+    ]
   },
   "locator": {
     "url": "https://doi.org/10.5962/p.249681",

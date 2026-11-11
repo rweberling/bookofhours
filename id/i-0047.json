@@ -32,7 +32,14 @@
     "type": "book",
     "title": "International Cloud Atlas, vol. 2",
     "publisher": "World Meteorological Organization",
-    "issued": "1987"
+    "issued": "1987",
+    "contributors": [
+      {
+        "id": "a-world-meteorological-organization",
+        "name": "World Meteorological Organization",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf",

@@ -35,6 +35,14 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-emily-dickinson",
+    "name": "Emily Dickinson",
+    "wikidata": "Q4441"
+  },
+  "title": "The Robin is the One",
+  "date": "1863",
+  "institution": "Amherst College",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -39,6 +39,9 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "title": "Zea mays L.",
+  "date": "1892/1893",
+  "institution": "Real Jardín Botánico, Madrid",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

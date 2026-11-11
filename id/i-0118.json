@@ -33,7 +33,14 @@
     "identifiers": {
       "internetArchive": "naturalhistoryCC1V1Cate",
       "lccn": "agr02000176"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-mark-catesby",
+        "name": "Mark Catesby",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22",

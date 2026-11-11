@@ -27,6 +27,13 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-juan-sanchez-cotan",
+    "name": "Juan Sánchez Cotán"
+  },
+  "title": "Still Life with Quince, Cabbage, Melon, and Cucumber",
+  "date": "1602~",
+  "institution": "San Diego Museum of Art",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

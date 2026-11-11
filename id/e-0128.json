@@ -7,6 +7,14 @@
     "hathitrust": "101757298",
     "oclc": "68896576"
   },
+  "contributors": [
+    {
+      "id": "a-adolph-baumbach",
+      "name": "Adolph Baumbach",
+      "role": "author",
+      "wikidata": "Q21153774"
+    }
+  ],
   "citedBy": [
     "i-0051"
   ],

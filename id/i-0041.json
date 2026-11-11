@@ -33,7 +33,14 @@
     "identifiers": {
       "hathitrust": "103030992",
       "oclc": "6401561"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-united-states-forest-service",
+        "name": "United States Forest Service",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1",

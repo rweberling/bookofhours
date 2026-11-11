@@ -34,7 +34,15 @@
       "hathitrust": "010668807",
       "oclc": "1027478",
       "lccn": "01029714"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-a-j-grout",
+        "name": "A. J. Grout",
+        "role": "author",
+        "wikidata": "Q21338717"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69",

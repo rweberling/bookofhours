@@ -40,7 +40,14 @@
     "type": "book",
     "title": "Birch and Evergreens",
     "publisher": "Nordstrom Nurseries",
-    "issued": "1951"
+    "issued": "1951",
+    "contributors": [
+      {
+        "id": "a-nordstrom-nurseries",
+        "name": "Nordstrom Nurseries",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://www.biodiversitylibrary.org/item/313311",

@@ -5,6 +5,13 @@
   "title": "Birch and Evergreens",
   "publisher": "Nordstrom Nurseries",
   "issued": "1951",
+  "contributors": [
+    {
+      "id": "a-nordstrom-nurseries",
+      "name": "Nordstrom Nurseries",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0044"
   ],

@@ -34,13 +34,25 @@
       "internetArchive": "floraconspicuase00morr",
       "openlibrary": "OL13520643M",
       "lccn": "11032777"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-richard-morris",
+        "name": "Richard Morris",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up",
     "label": "Internet Archive"
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-william-clark",
+    "name": "William Clark"
+  },
+  "title": "Asclepias tuberosa. Tuberous Swallow-wort",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

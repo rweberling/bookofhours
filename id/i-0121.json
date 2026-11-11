@@ -34,6 +34,13 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-sophia-thoreau",
+    "name": "Sophia Thoreau"
+  },
+  "title": "Inscribed hickory leaves in memory of her brother, Henry",
+  "date": "1868",
+  "institution": "Concord Museum",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

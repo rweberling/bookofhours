@@ -34,7 +34,14 @@
       "hathitrust": "100429762",
       "oclc": "6141524",
       "lccn": "23005467"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-george-henry-tilton",
+        "name": "George Henry Tilton",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183",

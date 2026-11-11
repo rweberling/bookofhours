@@ -33,7 +33,21 @@
     "identifiers": {
       "hathitrust": "001272669",
       "oclc": "3010882"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-alfred-wegener",
+        "name": "Alfred Wegener",
+        "role": "author",
+        "wikidata": "Q76323"
+      },
+      {
+        "id": "a-j-g-a-skerl",
+        "name": "J. G. A. Skerl",
+        "role": "translator",
+        "wikidata": "Q124101378"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147",

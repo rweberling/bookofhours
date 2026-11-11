@@ -35,6 +35,12 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "a U.S. government work",
+  "creator": {
+    "id": "a-nasa-msfc-meteoroid-environment-office",
+    "name": "NASA/MSFC Meteoroid Environment Office"
+  },
+  "title": "Perseid meteors photo collage",
+  "date": "2011-08-10/2011-08-15",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

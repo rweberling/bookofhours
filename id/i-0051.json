@@ -33,7 +33,15 @@
     "identifiers": {
       "hathitrust": "101757298",
       "oclc": "68896576"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-adolph-baumbach",
+        "name": "Adolph Baumbach",
+        "role": "author",
+        "wikidata": "Q21153774"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2",

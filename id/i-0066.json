@@ -35,6 +35,10 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "a U.S. government work",
+  "creator": {
+    "id": "a-u-s-geological-survey",
+    "name": "U.S. Geological Survey"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

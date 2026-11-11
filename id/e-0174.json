@@ -5,6 +5,13 @@
   "title": "International Cloud Atlas, vol. 2",
   "publisher": "World Meteorological Organization",
   "issued": "1987",
+  "contributors": [
+    {
+      "id": "a-world-meteorological-organization",
+      "name": "World Meteorological Organization",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0047"
   ],

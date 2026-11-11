@@ -11,6 +11,19 @@
     "openlibrary": "OL234419M",
     "internetArchive": "rpertoiredecoule00soci"
   },
+  "contributors": [
+    {
+      "id": "a-societe-francaise-des-chrysanthemistes",
+      "name": "Société Française des Chrysanthémistes",
+      "role": "author"
+    },
+    {
+      "id": "a-rene-oberthur",
+      "name": "René Oberthür",
+      "role": "author",
+      "wikidata": "Q3426696"
+    }
+  ],
   "citedBy": [
     "i-0068"
   ],

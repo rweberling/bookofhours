@@ -35,6 +35,12 @@
   },
   "rights": "http://rightsstatements.org/vocab/UND/1.0/",
   "rightsNote": "undated cigarette card",
+  "creator": {
+    "id": "a-w-d-h-o-wills",
+    "name": "W. D. & H. O. Wills"
+  },
+  "title": "Lilac",
+  "institution": "New York Public Library",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -33,7 +33,14 @@
     "identifiers": {
       "internetArchive": "CAT87209954",
       "lccn": "79653298"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-elbert-l-little-jr",
+        "name": "Elbert L. Little Jr.",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up",

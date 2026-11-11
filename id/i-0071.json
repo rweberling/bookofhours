@@ -34,6 +34,13 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "creator": {
+    "id": "a-jenifer-wightman",
+    "name": "Jenifer Wightman",
+    "wikidata": "Q95646046"
+  },
+  "title": "Winogradsky Rothko",
+  "date": "2004",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

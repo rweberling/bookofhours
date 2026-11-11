@@ -9,6 +9,14 @@
     "oclc": "1439327",
     "lccn": "99000211"
   },
+  "contributors": [
+    {
+      "id": "a-charles-sprague-sargent",
+      "name": "Charles Sprague Sargent",
+      "wikidata": "Q1066128",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0122"
   ],

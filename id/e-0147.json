@@ -8,6 +8,13 @@
     "openlibrary": "OL13520643M",
     "lccn": "11032777"
   },
+  "contributors": [
+    {
+      "id": "a-richard-morris",
+      "name": "Richard Morris",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0098"
   ],

@@ -35,6 +35,13 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "a U.S. government work",
+  "creator": {
+    "id": "a-j-marion-shull",
+    "name": "J. Marion Shull",
+    "wikidata": "Q17421821"
+  },
+  "title": "Vaccinium corymbosum: Stanley",
+  "institution": "National Agricultural Library",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

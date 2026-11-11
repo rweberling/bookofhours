@@ -39,6 +39,13 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-harvard-college-observatory",
+    "name": "Harvard College Observatory"
+  },
+  "title": "Plate a03507",
+  "date": "1899-05-02",
+  "institution": "Harvard College Observatory",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

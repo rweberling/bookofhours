@@ -33,6 +33,12 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "creator": {
+    "id": "a-nancy-ghertner",
+    "name": "Nancy Ghertner"
+  },
+  "title": "Voices from the Barrens: Native Peoples, Blueberries, and Sovereignty",
+  "date": "2020",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

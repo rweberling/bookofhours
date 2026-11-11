@@ -39,6 +39,10 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "title": "Sirius",
+  "date": "0820~/0840~",
+  "institution": "British Library",
+  "shelfmark": "Harley MS 647",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

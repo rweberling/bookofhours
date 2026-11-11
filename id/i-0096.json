@@ -33,7 +33,15 @@
     "identifiers": {
       "hathitrust": "100199018",
       "oclc": "9452320"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-frederick-v-coville",
+        "name": "Frederick V. Coville",
+        "role": "author",
+        "wikidata": "Q535104"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52",

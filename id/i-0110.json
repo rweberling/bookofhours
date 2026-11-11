@@ -34,6 +34,13 @@
     ]
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-fede-galizia",
+    "name": "Fede Galizia",
+    "wikidata": "Q2428749"
+  },
+  "title": "Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon",
+  "date": "1625~/1630~",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

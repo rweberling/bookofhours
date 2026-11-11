@@ -8,6 +8,14 @@
     "oclc": "1027478",
     "lccn": "01029714"
   },
+  "contributors": [
+    {
+      "id": "a-a-j-grout",
+      "name": "A. J. Grout",
+      "role": "author",
+      "wikidata": "Q21338717"
+    }
+  ],
   "citedBy": [
     "i-0062"
   ],

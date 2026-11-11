@@ -7,6 +7,13 @@
     "internetArchive": "naturalhistoryCC1V1Cate",
     "lccn": "agr02000176"
   },
+  "contributors": [
+    {
+      "id": "a-mark-catesby",
+      "name": "Mark Catesby",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0118"
   ],

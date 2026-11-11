@@ -45,6 +45,13 @@
     "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f",
     "label": "Wellcome Collection"
   },
+  "creator": {
+    "id": "a-etienne-leopold-trouvelot",
+    "name": "Étienne Léopold Trouvelot",
+    "wikidata": "Q32426"
+  },
+  "title": "Plate IV. Solar Prominences",
+  "institution": "Wellcome Collection",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

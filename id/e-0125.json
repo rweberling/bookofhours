@@ -7,6 +7,13 @@
     "hathitrust": "103030992",
     "oclc": "6401561"
   },
+  "contributors": [
+    {
+      "id": "a-united-states-forest-service",
+      "name": "United States Forest Service",
+      "role": "author"
+    }
+  ],
   "citedBy": [
     "i-0041"
   ],

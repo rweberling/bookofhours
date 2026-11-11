@@ -35,7 +35,15 @@
       "hathitrust": "001494765",
       "oclc": "1439327",
       "lccn": "99000211"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-charles-sprague-sargent",
+        "name": "Charles Sprague Sargent",
+        "wikidata": "Q1066128",
+        "role": "author"
+      }
+    ]
   },
   "locator": {
     "url": "https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349",

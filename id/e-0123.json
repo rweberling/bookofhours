@@ -7,6 +7,14 @@
     "hathitrust": "100448239",
     "oclc": "78616471"
   },
+  "contributors": [
+    {
+      "id": "a-howard-saunders",
+      "name": "Howard Saunders",
+      "role": "author",
+      "wikidata": "Q506164"
+    }
+  ],
   "citedBy": [
     "i-0039"
   ],

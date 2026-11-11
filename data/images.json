@@ -1020,7 +1020,15 @@
       "id": "e-0122",
       "title": "The Witch Hazel Family (Hamamelidaceae)",
       "issued": "1976",
-      "identifiers": { "doi": "10.5962/p.249681" }
+      "identifiers": { "doi": "10.5962/p.249681" },
+      "contributors": [
+        {
+          "id": "a-richard-e-weaver",
+          "name": "Richard E. Weaver",
+          "role": "author",
+          "wikidata": "Q21612303"
+        }
+      ]
     },
     "locator": { "url": "https://doi.org/10.5962/p.249681", "label": "DOI" },
     "rights": "http://rightsstatements.org/vocab/InC/1.0/"
@@ -1055,7 +1063,9 @@
     "display": {
       "size": [1906, 921]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "creator": { "id": "a-national-audubon-society", "name": "National Audubon Society" },
+    "title": "American Robin, March 5–12"
   },
   {
     "id": "i-0038",
@@ -1082,7 +1092,11 @@
     "display": {
       "size": [270, 427]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-emily-dickinson", "name": "Emily Dickinson", "wikidata": "Q4441" },
+    "title": "The Robin is the One",
+    "date": "1863",
+    "institution": "Amherst College"
   },
   {
     "id": "i-0039",
@@ -1105,7 +1119,15 @@
       "id": "e-0123",
       "title": "An Illustrated Manual of British Birds",
       "issued": "1889",
-      "identifiers": { "hathitrust": "100448239", "oclc": "78616471" }
+      "identifiers": { "hathitrust": "100448239", "oclc": "78616471" },
+      "contributors": [
+        {
+          "id": "a-howard-saunders",
+          "name": "Howard Saunders",
+          "role": "author",
+          "wikidata": "Q506164"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95",
@@ -1165,7 +1187,14 @@
       "id": "e-0125",
       "title": "Sugar Maple: An American Wood",
       "issued": "1980",
-      "identifiers": { "hathitrust": "103030992", "oclc": "6401561" }
+      "identifiers": { "hathitrust": "103030992", "oclc": "6401561" },
+      "contributors": [
+        {
+          "id": "a-united-states-forest-service",
+          "name": "United States Forest Service",
+          "role": "author"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.35555000269227?urlappend=%3Bseq=2%3Bownerid=119163039-1",
@@ -1199,7 +1228,10 @@
       "size": [721, 600]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "the painter died in 1939"
+    "rightsNote": "the painter died in 1939",
+    "creator": { "id": "a-ernest-lawson", "name": "Ernest Lawson" },
+    "title": "New England Birches",
+    "institution": "The Phillips Collection"
   },
   {
     "id": "i-0043",
@@ -1222,7 +1254,14 @@
       "id": "e-0126",
       "title": "Birch",
       "issued": "1937",
-      "identifiers": { "hathitrust": "002137949", "oclc": "2752530", "lccn": "agr54000002" }
+      "identifiers": { "hathitrust": "002137949", "oclc": "2752530", "lccn": "agr54000002" },
+      "contributors": [
+        {
+          "id": "a-united-states-forest-service",
+          "name": "United States Forest Service",
+          "role": "author"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015018209182?urlappend=%3Bseq=17%3Bownerid=13510798897818735-21",
@@ -1262,7 +1301,8 @@
       "type": "book",
       "title": "Birch and Evergreens",
       "publisher": "Nordstrom Nurseries",
-      "issued": "1951"
+      "issued": "1951",
+      "contributors": [{ "id": "a-nordstrom-nurseries", "name": "Nordstrom Nurseries", "role": "author" }]
     },
     "locator": {
       "url": "https://www.biodiversitylibrary.org/item/313311",
@@ -1357,7 +1397,14 @@
       "type": "book",
       "title": "International Cloud Atlas, vol. 2",
       "publisher": "World Meteorological Organization",
-      "issued": "1987"
+      "issued": "1987",
+      "contributors": [
+        {
+          "id": "a-world-meteorological-organization",
+          "name": "World Meteorological Organization",
+          "role": "author"
+        }
+      ]
     },
     "locator": { "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf", "label": "WMO Cloud Atlas" }
   },
@@ -1385,7 +1432,10 @@
     "display": {
       "size": [422, 527]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "The Saffron Gatherers",
+    "date": "-1649~",
+    "institution": "Museum of Prehistoric Thera"
   },
   {
     "id": "i-0049",
@@ -1408,7 +1458,8 @@
       "id": "e-0127",
       "title": "A Handbook of Crocus and Colchicum for Gardeners",
       "issued": "1924",
-      "identifiers": { "hathitrust": "002010826", "oclc": "4584067", "lccn": "agr24001012" }
+      "identifiers": { "hathitrust": "002010826", "oclc": "4584067", "lccn": "agr24001012" },
+      "contributors": [{ "id": "a-e-a-bowles", "name": "E. A. Bowles", "role": "author" }]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41",
@@ -1474,7 +1525,15 @@
       "id": "e-0128",
       "title": "The Floral Cyclus: 12 Simple Instructive Melodies Composed for the Piano",
       "issued": "1856",
-      "identifiers": { "hathitrust": "101757298", "oclc": "68896576" }
+      "identifiers": { "hathitrust": "101757298", "oclc": "68896576" },
+      "contributors": [
+        {
+          "id": "a-adolph-baumbach",
+          "name": "Adolph Baumbach",
+          "role": "author",
+          "wikidata": "Q21153774"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2",
@@ -1507,7 +1566,10 @@
       "unlabelled": true,
       "size": [448, 672]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "creator": { "id": "a-heidi-brickell", "name": "Heidi Brickell" },
+    "title": "Safe Euphoric Ara with Hine Kōrako",
+    "date": "2025"
   },
   {
     "id": "i-0053",
@@ -1530,7 +1592,8 @@
       "id": "e-0129",
       "title": "The Fern Lover’s Companion: A Guide for the Northeastern States and Canada",
       "issued": "1922",
-      "identifiers": { "hathitrust": "100429762", "oclc": "6141524", "lccn": "23005467" }
+      "identifiers": { "hathitrust": "100429762", "oclc": "6141524", "lccn": "23005467" },
+      "contributors": [{ "id": "a-george-henry-tilton", "name": "George Henry Tilton", "role": "author" }]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183",
@@ -1605,7 +1668,10 @@
     "display": {
       "size": [1574, 1229]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-john-james-audubon", "name": "John James Audubon", "wikidata": "Q182882" },
+    "title": "Lepus sylvaticus, Grey Rabbit",
+    "date": "1845"
   },
   {
     "id": "i-0056",
@@ -1628,7 +1694,8 @@
       "id": "e-0131",
       "title": "North American Fauna, No. 29: The Rabbits of North America",
       "issued": "1909",
-      "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
+      "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" },
+      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=47%3Bownerid=9007199259754095-57",
@@ -1658,7 +1725,8 @@
       "id": "e-0131",
       "title": "North American Fauna, No. 29: The Rabbits of North America",
       "issued": "1909",
-      "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" }
+      "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" },
+      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.$b235914?urlappend=%3Bseq=361%3Bownerid=9007199259754095-397",
@@ -1696,7 +1764,11 @@
     "display": {
       "size": [354, 646]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-j-curtis", "name": "J. Curtis" },
+    "title": "Common Mullein (Verbascum thapsus) with an Associated Moth and Its Anatomical Segments",
+    "date": "1831",
+    "institution": "Wellcome Collection"
   },
   {
     "id": "i-0059",
@@ -1778,7 +1850,10 @@
       "id": "e-0134",
       "title": "British Mosses: Their Homes, Aspects, Structure, and Uses",
       "issued": "1874",
-      "identifiers": { "internetArchive": "britishmossesthe21874trip", "oclc": "4854519" }
+      "identifiers": { "internetArchive": "britishmossesthe21874trip", "oclc": "4854519" },
+      "contributors": [
+        { "id": "a-f-e-tripp", "name": "F. E. Tripp", "role": "author", "wikidata": "Q36558217" }
+      ]
     },
     "locator": {
       "url": "https://archive.org/details/britishmossesthe21874trip",
@@ -1807,7 +1882,10 @@
       "id": "e-0135",
       "title": "Mosses With Hand-lens And Microscope: a Non-technical Hand-book of the More Common Mosses of the Northeastern United States",
       "issued": "1900",
-      "identifiers": { "hathitrust": "010668807", "oclc": "1027478", "lccn": "01029714" }
+      "identifiers": { "hathitrust": "010668807", "oclc": "1027478", "lccn": "01029714" },
+      "contributors": [
+        { "id": "a-a-j-grout", "name": "A. J. Grout", "role": "author", "wikidata": "Q21338717" }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69",
@@ -1866,7 +1944,21 @@
       "id": "e-0137",
       "title": "The Origin of Continents and Oceans",
       "issued": "1924",
-      "identifiers": { "hathitrust": "001272669", "oclc": "3010882" }
+      "identifiers": { "hathitrust": "001272669", "oclc": "3010882" },
+      "contributors": [
+        {
+          "id": "a-alfred-wegener",
+          "name": "Alfred Wegener",
+          "role": "author",
+          "wikidata": "Q76323"
+        },
+        {
+          "id": "a-j-g-a-skerl",
+          "name": "J. G. A. Skerl",
+          "role": "translator",
+          "wikidata": "Q124101378"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147",
@@ -1931,7 +2023,8 @@
       "size": [1456, 737]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-u-s-geological-survey", "name": "U.S. Geological Survey" }
   },
   {
     "id": "i-0067",
@@ -1958,7 +2051,10 @@
       "size": [590, 761]
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-    "rightsNote": "undated cigarette card"
+    "rightsNote": "undated cigarette card",
+    "creator": { "id": "a-w-d-h-o-wills", "name": "W. D. & H. O. Wills" },
+    "title": "Lilac",
+    "institution": "New York Public Library"
   },
   {
     "id": "i-0068",
@@ -1989,7 +2085,20 @@
         "lccn": "agr05000903",
         "openlibrary": "OL234419M",
         "internetArchive": "rpertoiredecoule00soci"
-      }
+      },
+      "contributors": [
+        {
+          "id": "a-societe-francaise-des-chrysanthemistes",
+          "name": "Société Française des Chrysanthémistes",
+          "role": "author"
+        },
+        {
+          "id": "a-rene-oberthur",
+          "name": "René Oberthür",
+          "role": "author",
+          "wikidata": "Q3426696"
+        }
+      ]
     },
     "locator": { "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item", "label": "Gallica" }
   },
@@ -2017,7 +2126,10 @@
     "display": {
       "size": [723, 440]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "Flower Fancies: Calendar with Text; Depicting Lilacs",
+    "date": "1865",
+    "institution": "New York Public Library"
   },
   {
     "id": "i-0070",
@@ -2043,7 +2155,8 @@
     "display": {
       "size": [740, 588]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "title": "Mycobacterium vaccae"
   },
   {
     "id": "i-0071",
@@ -2069,7 +2182,10 @@
     "display": {
       "size": [471, 800]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "creator": { "id": "a-jenifer-wightman", "name": "Jenifer Wightman", "wikidata": "Q95646046" },
+    "title": "Winogradsky Rothko",
+    "date": "2004"
   },
   {
     "id": "i-0072",
@@ -2179,7 +2295,12 @@
       "id": "e-0139",
       "title": "Circular",
       "issued": "1941",
-      "identifiers": { "hathitrust": "003923103", "oclc": "1695369", "lccn": "41051406" }
+      "identifiers": { "hathitrust": "003923103", "oclc": "1695369", "lccn": "41051406" },
+      "contributors": [
+        { "id": "a-alex-c-martin", "name": "Alex C. Martin", "role": "author" },
+        { "id": "a-ray-c-erickson", "name": "Ray C. Erickson", "role": "author" },
+        { "id": "a-john-h-steenis", "name": "John H. Steenis", "role": "author" }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/coo.31924070855253?urlappend=%3Bseq=45%3Bownerid=120591754-49",
@@ -2212,7 +2333,11 @@
     "display": {
       "size": [557, 831]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "Mas̲navī-i Ma‘navī, book 1",
+    "date": "1487",
+    "institution": "John Rylands Library, University of Manchester",
+    "shelfmark": "Persian MS 72"
   },
   {
     "id": "i-0076",
@@ -2262,7 +2387,10 @@
     },
     "display": {
       "size": [679, 678]
-    }
+    },
+    "creator": { "id": "a-ryan-weberling", "name": "Ryan Weberling" },
+    "title": "Wool Sower Wasp Galls, Tisbury, Massachusetts",
+    "date": "2026-05-25"
   },
   {
     "id": "i-0078",
@@ -2286,7 +2414,14 @@
       "id": "e-0181",
       "type": "book",
       "title": "Fifty Common Plant Galls of the Chicago Area",
-      "contributors": [{ "id": "a-carl-f-gronemann", "name": "Carl F. Gronemann", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-carl-f-gronemann",
+          "name": "Carl F. Gronemann",
+          "role": "author",
+          "wikidata": "Q124060582"
+        }
+      ],
       "publisher": "Field Museum of Natural History",
       "issued": "1930",
       "identifiers": { "hathitrust": "006910411", "oclc": "2334206" }
@@ -2443,7 +2578,13 @@
     "display": {
       "size": [578, 655]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": {
+      "id": "a-richard-william-seale",
+      "name": "Richard William Seale",
+      "wikidata": "Q55989328"
+    },
+    "title": "The Course of the Solar Maculae over the Sun’s Disk"
   },
   {
     "id": "i-0083",
@@ -2480,7 +2621,14 @@
     "locator": {
       "url": "https://wellcomecollection.org/works/tmyaexh3/images?id=j58vcc5f",
       "label": "Wellcome Collection"
-    }
+    },
+    "creator": {
+      "id": "a-etienne-leopold-trouvelot",
+      "name": "Étienne Léopold Trouvelot",
+      "wikidata": "Q32426"
+    },
+    "title": "Plate IV. Solar Prominences",
+    "institution": "Wellcome Collection"
   },
   {
     "id": "i-0084",
@@ -2543,7 +2691,15 @@
       "title": "The Silva of North America, vol. 4",
       "publisher": "Houghton Mifflin",
       "issued": "1892",
-      "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
+      "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" },
+      "contributors": [
+        {
+          "id": "a-charles-sprague-sargent",
+          "name": "Charles Sprague Sargent",
+          "wikidata": "Q1066128",
+          "role": "author"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349",
@@ -2572,7 +2728,8 @@
       "id": "e-0141",
       "title": "Atlas of United States Trees, vol. 4",
       "issued": "1976",
-      "identifiers": { "hathitrust": "009818689", "lccn": "79653298" }
+      "identifiers": { "hathitrust": "009818689", "lccn": "79653298" },
+      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/pst.000029182015?urlappend=%3Bseq=51%3Bownerid=27021597770014462-63",
@@ -2609,7 +2766,8 @@
       "id": "e-0142",
       "title": "Hough’s Encyclopaedia of American Woods",
       "issued": "1957",
-      "identifiers": { "hathitrust": "003143342", "oclc": "1268560", "lccn": "57010592" }
+      "identifiers": { "hathitrust": "003143342", "oclc": "1268560", "lccn": "57010592" },
+      "contributors": [{ "id": "a-e-s-harrar", "name": "E. S. Harrar", "role": "author" }]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30",
@@ -2732,7 +2890,9 @@
     "display": {
       "size": [452, 603]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "Corn Stalk-Shaped Vessel",
+    "date": "0001~/0600~"
   },
   {
     "id": "i-0092",
@@ -2793,7 +2953,10 @@
     "display": {
       "size": [440, 666]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "Zea mays L.",
+    "date": "1892/1893",
+    "institution": "Real Jardín Botánico, Madrid"
   },
   {
     "id": "i-0094",
@@ -2858,7 +3021,10 @@
       "size": [415, 584]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-j-marion-shull", "name": "J. Marion Shull", "wikidata": "Q17421821" },
+    "title": "Vaccinium corymbosum: Stanley",
+    "institution": "National Agricultural Library"
   },
   {
     "id": "i-0096",
@@ -2881,7 +3047,15 @@
       "id": "e-0146",
       "title": "Directions for Blueberry Culture",
       "issued": "1921",
-      "identifiers": { "hathitrust": "100199018", "oclc": "9452320" }
+      "identifiers": { "hathitrust": "100199018", "oclc": "9452320" },
+      "contributors": [
+        {
+          "id": "a-frederick-v-coville",
+          "name": "Frederick V. Coville",
+          "role": "author",
+          "wikidata": "Q535104"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/hvd.32044107245169?urlappend=%3Bseq=40%3Bownerid=27021597765973963-52",
@@ -2944,13 +3118,16 @@
         "internetArchive": "floraconspicuase00morr",
         "openlibrary": "OL13520643M",
         "lccn": "11032777"
-      }
+      },
+      "contributors": [{ "id": "a-richard-morris", "name": "Richard Morris", "role": "author" }]
     },
     "locator": {
       "url": "https://archive.org/details/floraconspicuase00morr/page/226/mode/2up",
       "label": "Internet Archive"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-william-clark", "name": "William Clark" },
+    "title": "Asclepias tuberosa. Tuberous Swallow-wort"
   },
   {
     "id": "i-0099",
@@ -2976,7 +3153,10 @@
     "display": {
       "size": [655, 445]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "creator": { "id": "a-craig-holdrege", "name": "Craig Holdrege" },
+    "title": "Shoot Development in Common Milkweed (Asclepias syriaca)",
+    "date": "2007"
   },
   {
     "id": "i-0100",
@@ -3007,7 +3187,11 @@
     "display": {
       "size": [591, 682]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "Sirius",
+    "date": "0820~/0840~",
+    "institution": "British Library",
+    "shelfmark": "Harley MS 647"
   },
   {
     "id": "i-0101",
@@ -3034,7 +3218,11 @@
     "display": {
       "size": [1437, 1182]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-harvard-college-observatory", "name": "Harvard College Observatory" },
+    "title": "Plate a03507",
+    "date": "1899-05-02",
+    "institution": "Harvard College Observatory"
   },
   {
     "id": "i-0102",
@@ -3060,7 +3248,9 @@
     "display": {
       "size": [587, 563]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "It’s Dog Days, But ‘Dog Days’ Is Biggest Hoax Yet",
+    "date": "1909-08-02"
   },
   {
     "id": "i-0103",
@@ -3155,7 +3345,13 @@
       "size": [970, 809]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": {
+      "id": "a-nasa-msfc-meteoroid-environment-office",
+      "name": "NASA/MSFC Meteoroid Environment Office"
+    },
+    "title": "Perseid meteors photo collage",
+    "date": "2011-08-10/2011-08-15"
   },
   {
     "id": "i-0106",
@@ -3179,7 +3375,14 @@
       "id": "e-0189",
       "type": "book",
       "title": "La plante et ses applications ornementales",
-      "contributors": [{ "id": "a-eugene-grasset", "name": "Eugène Grasset", "role": "editor" }],
+      "contributors": [
+        {
+          "id": "a-eugene-grasset",
+          "name": "Eugène Grasset",
+          "role": "editor",
+          "wikidata": "Q524154"
+        }
+      ],
       "publisher": "Librairie Centrale des Beaux-Arts",
       "issued": "1896"
     },
@@ -3249,7 +3452,8 @@
         {
           "id": "a-antoine-nicolas-duchesne",
           "name": "Antoine Nicolas Duchesne",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q586815"
         },
         { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "editor" }
       ],
@@ -3322,7 +3526,10 @@
     "display": {
       "size": [1456, 844]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-fede-galizia", "name": "Fede Galizia", "wikidata": "Q2428749" },
+    "title": "Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon",
+    "date": "1625~/1630~"
   },
   {
     "id": "i-0111",
@@ -3380,7 +3587,11 @@
     "display": {
       "size": [1456, 1177]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-juan-sanchez-cotan", "name": "Juan Sánchez Cotán" },
+    "title": "Still Life with Quince, Cabbage, Melon, and Cucumber",
+    "date": "1602~",
+    "institution": "San Diego Museum of Art"
   },
   {
     "id": "i-0113",
@@ -3406,7 +3617,11 @@
     "display": {
       "size": [3194, 2088]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-johnson-photography-studio", "name": "Johnson Photography Studio" },
+    "title": "[Man Cutting Watermelon]",
+    "date": "1898~/1903~",
+    "institution": "The Metropolitan Museum of Art"
   },
   {
     "id": "i-0114",
@@ -3479,7 +3694,10 @@
     "display": {
       "size": [533, 1006]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "title": "Rose Coghlan as “The Watermelon,” from the Series Fancy Dress Ball Costumes (N73) for Duke Brand Cigarettes",
+    "date": "1889",
+    "institution": "The Metropolitan Museum of Art"
   },
   {
     "id": "i-0116",
@@ -3506,7 +3724,10 @@
       "size": [1456, 924]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "the painter died in 1944"
+    "rightsNote": "the painter died in 1944",
+    "creator": { "id": "a-piet-mondrian", "name": "Piet Mondrian", "wikidata": "Q151803" },
+    "title": "Field with Oak Trees at Dusk",
+    "date": "1907/1908"
   },
   {
     "id": "i-0117",
@@ -3529,7 +3750,8 @@
       "id": "e-0148",
       "title": "Atlas of United States Trees, vol. 1",
       "issued": "1971",
-      "identifiers": { "internetArchive": "CAT87209954", "lccn": "79653298" }
+      "identifiers": { "internetArchive": "CAT87209954", "lccn": "79653298" },
+      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }]
     },
     "locator": {
       "url": "https://archive.org/details/CAT87209954/page/n291/mode/2up",
@@ -3559,7 +3781,8 @@
       "id": "e-0149",
       "title": "The Natural History of Carolina, Florida and the Bahama Islands",
       "issued": "1729",
-      "identifiers": { "internetArchive": "naturalhistoryCC1V1Cate", "lccn": "agr02000176" }
+      "identifiers": { "internetArchive": "naturalhistoryCC1V1Cate", "lccn": "agr02000176" },
+      "contributors": [{ "id": "a-mark-catesby", "name": "Mark Catesby", "role": "author" }]
     },
     "locator": {
       "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22",
@@ -3593,7 +3816,15 @@
         "oclc": "4598632",
         "openlibrary": "OL24158910M",
         "lccn": "agr28000778"
-      }
+      },
+      "contributors": [
+        {
+          "id": "a-francois-andre-michaux",
+          "name": "François André Michaux",
+          "role": "author",
+          "wikidata": "Q2986883"
+        }
+      ]
     },
     "locator": {
       "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up",
@@ -3625,7 +3856,11 @@
     "display": {
       "size": [530, 778]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-bertha-e-jaques", "name": "Bertha E. Jaques" },
+    "title": "Young Leaves and Blossoms of Hickory Tree",
+    "date": "1910~",
+    "institution": "Smithsonian American Art Museum"
   },
   {
     "id": "i-0121",
@@ -3651,7 +3886,11 @@
     "display": {
       "size": [800, 634]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-sophia-thoreau", "name": "Sophia Thoreau" },
+    "title": "Inscribed hickory leaves in memory of her brother, Henry",
+    "date": "1868",
+    "institution": "Concord Museum"
   },
   {
     "id": "i-0122",
@@ -3675,7 +3914,15 @@
       "title": "The Silva of North America, vol. 7",
       "publisher": "Houghton Mifflin",
       "issued": "1895",
-      "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" }
+      "identifiers": { "hathitrust": "001494765", "oclc": "1439327", "lccn": "99000211" },
+      "contributors": [
+        {
+          "id": "a-charles-sprague-sargent",
+          "name": "Charles Sprague Sargent",
+          "wikidata": "Q1066128",
+          "role": "author"
+        }
+      ]
     },
     "locator": {
       "url": "https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263",
@@ -3712,7 +3959,9 @@
     "display": {
       "size": [1280, 582]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "creator": { "id": "a-national-audubon-society", "name": "National Audubon Society" },
+    "title": "American Robin: Annual Migration"
   },
   {
     "id": "i-0124",
@@ -3735,7 +3984,9 @@
       "seasons": ["spring"],
       "species": ["sp-0009"]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "title": "O Nobilissima Viriditas",
+    "date": "2025"
   },
   {
     "id": "i-0125",
@@ -3758,7 +4009,8 @@
       "seasons": ["summer"],
       "species": ["sp-0019"]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "title": "Monarch and Milkweed"
   },
   {
     "id": "i-0126",
@@ -3786,7 +4038,10 @@
       "seasons": ["summer"],
       "species": ["sp-0018"]
     },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "creator": { "id": "a-nancy-ghertner", "name": "Nancy Ghertner" },
+    "title": "Voices from the Barrens: Native Peoples, Blueberries, and Sovereignty",
+    "date": "2020"
   },
   {
     "id": "i-0127",
@@ -4803,7 +5058,12 @@
       "title": "Medicinal Plants, vol. 3",
       "contributors": [
         { "id": "a-robert-bentley", "name": "Robert Bentley", "role": "author" },
-        { "id": "a-henry-trimen", "name": "Henry Trimen", "role": "author" }
+        {
+          "id": "a-henry-trimen",
+          "name": "Henry Trimen",
+          "role": "author",
+          "wikidata": "Q2462643"
+        }
       ],
       "publisher": "J. & A. Churchill",
       "issued": "1880",

@@ -38,7 +38,20 @@
       "lccn": "agr05000903",
       "openlibrary": "OL234419M",
       "internetArchive": "rpertoiredecoule00soci"
-    }
+    },
+    "contributors": [
+      {
+        "id": "a-societe-francaise-des-chrysanthemistes",
+        "name": "Société Française des Chrysanthémistes",
+        "role": "author"
+      },
+      {
+        "id": "a-rene-oberthur",
+        "name": "René Oberthür",
+        "role": "author",
+        "wikidata": "Q3426696"
+      }
+    ]
   },
   "locator": {
     "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item",

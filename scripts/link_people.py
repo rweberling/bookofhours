@@ -5,8 +5,11 @@ Usage:
   python3 scripts/link_people.py           # report what it would add
   python3 scripts/link_people.py --write   # add the confident matches
 
-The people are the contributors on each reading's edition (authors,
-translators, editors) and each image's creator. One Wikidata link is the
+The people are the contributors on each reading's edition and on each
+figure's (authors, translators, editors) and each image's creator. Look
+over what it links: a namesake can pass when only one candidate has a
+birth date (a 2019 paper's co-author once matched an aviator). One
+Wikidata link is the
 hub of linked open data for a person: it leads on to VIAF, the Library of
 Congress, ISNI and the rest, so the collection keeps only the QID
 ("wikidata": "Q940473"), on each copy of the person, and no IDs of its own
@@ -138,8 +141,14 @@ def people(readings, images):
         for p in ((cit.get('edition') or {}).get('contributors') or []):
             note(p, cit.get('bibliography') or cit.get('display'), p)
     for img in images:
-        if not img.get('draft') and img.get('creator'):
-            note(img['creator'], img.get('bibliography') or img.get('caption'), img['creator'])
+        if img.get('draft'):
+            continue
+        text = img.get('bibliography') or img.get('caption')
+        if img.get('creator'):
+            note(img['creator'], text, img['creator'])
+        # The authors of the book a figure comes from, as for a reading.
+        for p in ((img.get('edition') or {}).get('contributors') or []):
+            note(p, text, p)
     return found
 
 
