@@ -124,6 +124,10 @@ Then each kind has its own:
     the reading recommends an edition, its Bookshop link (Auden's
     "Winds"); the locator is then still the reading's Source on the
     Sources page. A reading
+    left without a link on purpose says why in `citation.unlinked` (Firbank's
+    *Sorrow in Sunlight*: the only scans online are of the American
+    edition, under a title that carries a slur), and no link is to be
+    added. A reading
     cut from two places has a list, one locator for each (Frazer's
     *Golden Bough*, pp. 110–111 and 159), and a text it quotes
     (`citation.quotes`) has its own.

@@ -608,7 +608,9 @@ def main():
         check_display_links(rid, cit.get('display'), r.get('suggestedEdition'))
         # A print-only citation needs no link when a suggested edition
         # leads the reader to the book.
-        if not any(loc.get('url') for loc in locators(cit)) and not r.get('suggestedEdition'):
+        # Nor when it is left unlinked on purpose (citation.unlinked says why).
+        if (not any(loc.get('url') for loc in locators(cit)) and not r.get('suggestedEdition')
+                and not cit.get('unlinked')):
             gaps[rid].append('cited link or suggested edition')
         if not cit.get('bibliography'):
             gaps[rid].append('bibliography line')

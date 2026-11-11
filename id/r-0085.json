@@ -4,7 +4,7 @@
   "shownIn": "seasons",
   "citation": {
     "display": "Paul Muldoon. “Milkweed and Monarch.” <em>The Annals of Chile. </em>London: Faber &amp; Faber, 1994. 10-11.",
-    "bibliography": "Muldoon, Paul. \"Milkweed and Monarch.\" <em>The Annals of Chile</em>, Faber &amp; Faber, 1994.",
+    "bibliography": "Muldoon, Paul. \"Milkweed and Monarch.\" <em>The Annals of Chile</em>, Faber &amp; Faber, 1994. First published in <em>The Irish Review</em>, no. 11, 1991.",
     "title": "Milkweed and Monarch",
     "written": "1994",
     "locator": {
@@ -29,7 +29,14 @@
         "oclc": "32856959",
         "openlibrary": "OL18666936M",
         "internetArchive": "annalsofchile00paul"
-      }
+      },
+      "links": [
+        {
+          "role": "original",
+          "label": "JSTOR",
+          "url": "https://doi.org/10.2307/29735618"
+        }
+      ]
     }
   },
   "lectio": {
@@ -48,6 +55,10 @@
   },
   "display": {
     "verse": true
+  },
+  "suggestedEdition": {
+    "isbn": "9780374528447",
+    "note": "In <em>Poems 1968–1998</em>"
   },
   "firstLine": "As he knelt by the grave of his mother and father …",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

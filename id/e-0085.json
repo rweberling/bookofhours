@@ -19,6 +19,13 @@
     "openlibrary": "OL18666936M",
     "internetArchive": "annalsofchile00paul"
   },
+  "links": [
+    {
+      "role": "original",
+      "label": "JSTOR",
+      "url": "https://doi.org/10.2307/29735618"
+    }
+  ],
   "citedBy": [
     "r-0085"
   ],

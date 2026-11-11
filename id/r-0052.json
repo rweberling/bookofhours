@@ -48,6 +48,10 @@
       "sp-0007"
     ]
   },
+  "suggestedEdition": {
+    "isbn": "9780061350177",
+    "note": "A later Harper Perennial edition (2008); its page numbers differ from the one quoted"
+  },
   "firstLine": "… Well, de ‘gator was a pretty white varmint wid coal black eyes. …",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

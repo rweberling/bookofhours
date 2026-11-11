@@ -2061,6 +2061,10 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0007"]
+    },
+    "suggestedEdition": {
+      "isbn": "9780061350177",
+      "note": "A later Harper Perennial edition (2008); its page numbers differ from the one quoted"
     }
   },
   {
@@ -2295,7 +2299,8 @@
       "weather": [],
       "seasons": ["spring"],
       "species": ["sp-0009"]
-    }
+    },
+    "suggestedEdition": { "isbn": "9780231213455" }
   },
   {
     "id": "r-0059",
@@ -2514,7 +2519,8 @@
         "publisher": "Brentano’s",
         "issued": "1924",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
-      }
+      },
+      "unlinked": "Left without a link on purpose. No scan of the London edition (Sorrow in Sunlight) is online; the open scans are of the New York edition, whose title carries a racial slur."
     },
     "lectio": { "post": "lt-0012", "place": 3 },
     "tags": {
@@ -3356,7 +3362,7 @@
     "text": "As he knelt by the grave of his mother and father<br>the taste of dill, or tarragon—<br>he could barely tell one from the other—<br><br>filled his mouth. It seemed as if he might smother.<br>Why should he be stricken<br>with grief, not for his mother and father,<br><br>but a woman slinking from the fur of a sea-otter<br>in Portland, Maine, or, yes, Portland, Oregon—<br>he could barely tell one from the other—<br><br>and why should he now savour<br>the tang of her, her little pickled gherkin,<br>as he knelt by the grave of his mother and father?<br><br>*<br><br>He looked about. He remembered her palaver<br>on how both earth and sky would darken—<br>‘You could barely tell one from the other’—<br><br>while the Monarch butterflies passed over<br>in their milkweed-hunger: ‘A wing-beat, some reckon,<br>may trigger off the mother and father<br><br>of all storms, striking your Irish Cliffs of Moher<br>with the force of a hurricane.’<br>Then: ‘Milkweed and Monarch “invented” each other.’<br><br>*<br><br>He looked about. Cow’s-parsley in a samovar.<br>He’d mistaken his mother’s name, ‘Regan’, for ‘Anger’:<br>as he knelt by the grave of his mother and father<br>he could barely tell one from the other.",
     "citation": {
       "display": "Paul Muldoon. “Milkweed and Monarch.” <em>The Annals of Chile. </em>London: Faber &amp; Faber, 1994. 10-11.",
-      "bibliography": "Muldoon, Paul. \"Milkweed and Monarch.\" <em>The Annals of Chile</em>, Faber &amp; Faber, 1994.",
+      "bibliography": "Muldoon, Paul. \"Milkweed and Monarch.\" <em>The Annals of Chile</em>, Faber &amp; Faber, 1994. First published in <em>The Irish Review</em>, no. 11, 1991.",
       "title": "Milkweed and Monarch",
       "written": "1994",
       "locator": { "page": "10–11" },
@@ -3379,7 +3385,8 @@
           "oclc": "32856959",
           "openlibrary": "OL18666936M",
           "internetArchive": "annalsofchile00paul"
-        }
+        },
+        "links": [{ "role": "original", "label": "JSTOR", "url": "https://doi.org/10.2307/29735618" }]
       }
     },
     "lectio": { "post": "lt-0022", "place": 1 },
@@ -3389,7 +3396,8 @@
       "seasons": ["summer"],
       "species": ["sp-0019"]
     },
-    "display": { "verse": true }
+    "display": { "verse": true },
+    "suggestedEdition": { "isbn": "9780374528447", "note": "In <em>Poems 1968–1998</em>" }
   },
   {
     "id": "r-0086",
