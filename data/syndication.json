@@ -18,7 +18,7 @@
       "days": ["Tue", "Sat"],
       "minWeeks": 8
     },
-    "hour": { "on": true, "dryRun": true, "readings": "open", "minDays": 60 }
+    "hour": { "on": true, "dryRun": true, "readings": "open", "minDays": 28 }
   },
   "log": [],
   "essays": {

@@ -48,7 +48,7 @@ What it posts (the streams in data/syndication.json; the plan is in the
           picture. The reading and image are ones the Hours page shows
           in that watch: images with open rights only, readings by the
           stream's "readings" ("open", the same, or "all"). Neither
-          goes out again within "minDays" (60); of those free, the one
+          goes out again within "minDays" (28); of those free, the one
           away longest, then one tagged for the season. A watch with
           nothing free skips its day. Logged with its watch, reading
           and image. It waits when the day already has two posts,
