@@ -34,10 +34,20 @@ jobs:
         with:
           node-version: '22'
 
+      # Chromium comes from Playwright's servers; --with-deps also fetches
+      # system packages from Ubuntu's, which are sometimes unreachable from
+      # GitHub's machines (11 November 2026). Those packages are mostly
+      # there already, so after three tries the browser is installed alone
+      # and the check goes on.
       - name: Playwright and its Chromium (the browser check)
         run: |
           npm install --no-save --prefix "$RUNNER_TEMP/pw" playwright@1.63.0
-          "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+          PW="$RUNNER_TEMP/pw/node_modules/.bin/playwright"
+          for try in 1 2 3; do
+            "$PW" install --with-deps chromium && break
+            echo "Ubuntu's package servers didn't answer (try $try of 3)"
+            if [ "$try" = 3 ]; then "$PW" install chromium; else sleep 45; fi
+          done
           echo "NODE_PATH=$RUNNER_TEMP/pw/node_modules" >> "$GITHUB_ENV"
 
       - name: Every check
