@@ -60,6 +60,7 @@ function keepTextLines(el) {
     if (node.nodeType !== Node.ELEMENT_NODE) return;
     const tag = node.tagName.toLowerCase();
     const cls = node.classList;
+    if (cls.contains('record-mark')) return;   // the ¶ link to a record: not part of the credit
     if (cls.contains('verse-gap')) { gap(); return; }
     if (tag === 'br') {
       // Two breaks in a row (an empty line) part paragraphs.

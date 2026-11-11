@@ -254,6 +254,8 @@ function applyBlockToDOM(blocksData, block, h) {
   lastQuoteText = q.text;
   lastImageSrc  = img.src;
 
+  // Only a decoration: an older cached shared.js has no recordMark.
+  const markOf = id => (typeof recordMark === 'function' ? recordMark(id) : '');
   document.getElementById('block-subtitle').innerHTML =
     `${escapeHTML(block.subtitle || '')}<span class="hour-sep" aria-hidden="true">✦</span>${watchHoursWords(block)}<span id="sky-words"></span>`;
   syncSky(block);
@@ -262,10 +264,10 @@ function applyBlockToDOM(blocksData, block, h) {
   renderNow();
   drawHoursBand(block);
   document.getElementById('quote-text').innerHTML       = q.text;
-  document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}` : '';
+  document.getElementById('quote-attr').innerHTML       = q.attr ? `— ${q.attr}${markOf(q.id)}` : '';
   document.getElementById('phenomena-list').innerHTML   = phenomenaHTML(block.phenomena);
   document.getElementById('versicle').innerHTML         = block.versicle || '';
-  document.getElementById('image-caption').innerHTML    = img.caption || '';
+  document.getElementById('image-caption').innerHTML    = img.caption ? `${img.caption}${markOf(img.id)}` : '';
 
   const inner = document.getElementById('image-inner');
   if (img.src) {

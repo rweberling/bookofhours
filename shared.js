@@ -676,6 +676,15 @@ function readingAuthor(reading) {
   return (a && a.name) || '';
 }
 
+// The record behind a piece: a small ¶ after its credit, as on the
+// Sources page, leading to its page at /id/<id>/. Kept out of the keep
+// card, the lightbox and print (keep.js, styles.css).
+function recordMark(id) {
+  return id
+    ? `<a class="record-mark" href="/id/${escapeHTML(id)}/" title="The record: ${escapeHTML(id)}" aria-label="The record, ${escapeHTML(id)}">¶</a>`
+    : '';
+}
+
 function quoteView(reading) {
   return {
     id: reading.id,

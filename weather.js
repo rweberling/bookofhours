@@ -118,7 +118,9 @@ function renderWeatherView(options) {
     img.parentElement.style.setProperty('--haze', `url("${haze}")`);
   }
   img.alt = image.alt || plainText(image.caption) || 'The view from the window';
-  document.getElementById('weather-caption').innerHTML = image.caption || '';
+  // Only a decoration: an older cached shared.js has no recordMark.
+  const markOf = id => (typeof recordMark === 'function' ? recordMark(id) : '');
+  document.getElementById('weather-caption').innerHTML = image.caption ? `${image.caption}${markOf(image.id)}` : '';
   // Further reading on the picture: a quiet link under the credit that
   // says only what it is; where it goes is said on hover and to screen
   // readers (the Sources page names it in full). Only a decoration: from
@@ -141,7 +143,7 @@ function renderWeatherView(options) {
   const hasReading = !!(reading && reading.text);
   document.getElementById('weather-reading').hidden = !hasReading;
   document.getElementById('weather-quote-text').innerHTML = hasReading ? reading.text : '';
-  document.getElementById('weather-quote-attr').innerHTML = hasReading && reading.attr ? reading.attr : '';
+  document.getElementById('weather-quote-attr').innerHTML = hasReading && reading.attr ? `${reading.attr}${markOf(reading.id)}` : '';
 
   // Where the card sits belongs to the image: it's about keeping clear of
   // the part of the picture that matters.

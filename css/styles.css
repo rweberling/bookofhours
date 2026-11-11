@@ -2834,3 +2834,34 @@ a.page-action { text-decoration: none; }
   .frame-clasp svg { width: 9px; height: 14px; }
 }
 @media print { .frame-clasp { display: none; } }
+
+/* ── The record mark ──────────────────────────────────────────────
+   A small ¶ after a credit, leading to the piece's record (/id/<id>/):
+   on the Sources page, and after the reading's and the image's credit
+   on the Hours and the Weather. As faint as a rule until hovered. Not
+   on the keep card (keep.js), in the lightbox or in print. */
+.quote-attribution a.record-mark, .image-caption a.record-mark,
+.weather-quote-attr a.record-mark, .weather-caption a.record-mark {
+  margin-left: 0.45em; text-decoration: none; letter-spacing: 0;
+  font-size: 0.85em; font-style: normal; color: var(--rule); opacity: 1;
+}
+.quote-attribution a.record-mark:hover, .image-caption a.record-mark:hover,
+.weather-quote-attr a.record-mark:hover, .weather-caption a.record-mark:hover,
+a.record-mark:focus-visible { color: var(--accent); }
+.lightbox-caption .record-mark { display: none; }
+@media print { .record-mark { display: none !important; } }
+
+/* ── Less motion ──────────────────────────────────────────────────
+   For readers whose device asks for reduced motion: the fades and
+   slow colour changes happen at once. (A hair above zero, so scripts
+   waiting for a transition or animation to end still hear it.) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
