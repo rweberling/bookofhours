@@ -368,6 +368,26 @@ def rfc822(iso):
     return format_datetime(datetime.fromisoformat(iso).replace(hour=12, tzinfo=timezone.utc))
 
 
+def essay_item(entry, by_subject, alts=None):
+    """A post's title and body (HTML) as a feed item: its first figure,
+    its readers, the opening of its headnote and a link to its page.
+    Shared by feed.xml and the year's feed (build_year_feed.py)."""
+    subject = by_subject.get(entry.get('subject'))
+    url = f'{SITE}/{entry["page"]}'
+    title = f'Lectio Terra: {subject_name(entry, subject)}'
+    first = (entry.get('images') or [{}])[0].get('src', '')
+    image = web_version(first, 1600) if first.startswith('images/') else ''
+    credits = ', '.join(readers(entry))
+    body = ''
+    if image and (ROOT / image).exists():
+        alt = (alts or {}).get(first) or (entry.get('images') or [{}])[0].get('alt') or ''
+        body += f'<p><img src="{SITE}/{image}" alt="{escape(alt)}"></p>'
+    if credits:
+        body += f'<p><em>{escape(credits)}</em></p>'
+    body += f'<p>{escape(summary(entry, 400))}</p><p><a href="{url}">Read the post</a></p>'
+    return title, body
+
+
 def feed(data, by_subject, alts=None):
     """feed.xml: every post with a page, newest first, dated as first
     published (so a batch added together keeps each post's own date). Each
@@ -377,19 +397,8 @@ def feed(data, by_subject, alts=None):
                      key=lambda e: e['published'], reverse=True)
     items = []
     for entry in entries:
-        subject = by_subject.get(entry.get('subject'))
         url = f'{SITE}/{entry["page"]}'
-        title = f'Lectio Terra: {subject_name(entry, subject)}'
-        first = (entry.get('images') or [{}])[0].get('src', '')
-        image = web_version(first, 1600) if first.startswith('images/') else ''
-        credits = ', '.join(readers(entry))
-        body = ''
-        if image and (ROOT / image).exists():
-            alt = (alts or {}).get(first) or (entry.get('images') or [{}])[0].get('alt') or ''
-            body += f'<p><img src="{SITE}/{image}" alt="{escape(alt)}"></p>'
-        if credits:
-            body += f'<p><em>{escape(credits)}</em></p>'
-        body += f'<p>{escape(summary(entry, 400))}</p><p><a href="{url}">Read the post</a></p>'
+        title, body = essay_item(entry, by_subject, alts)
         items.append(
             '  <item>\n'
             f'    <title>{escape(title)}</title>\n'

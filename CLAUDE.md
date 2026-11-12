@@ -54,9 +54,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   copies), `build_shared.py` (menu, head and frame, from `partials/`),
   `build_postcards.py`, `build_records.py` (a page and JSON copy for every
   record at `id/<id>/`, noindex for now), `build_lectio_pages.py [lt-NNNN | --all]` (post
-  pages, one per post, and the RSS feed `feed.xml`, dated by each post's
-  first publication), `build_sitemap.py`, `build_sources.py` (needs
-  Chrome; see below).
+  pages, one per post, and the RSS feed `feed.xml`, the essays alone,
+  dated by each post's first publication), `build_year_feed.py`
+  (`year.xml`, "The Year": the last 14 days, each day's card and each
+  essay on its own day, returning every year as a new item; open-rights
+  images and reading texts only, otherwise the citation; the Syndicate
+  workflow moves it on to each new day), `build_sitemap.py`,
+  `build_sources.py` (needs Chrome; see below).
 - Species registry IDs: `python3 scripts/link_species.py [--write]`.
   Edition identifiers (DOI, HathiTrust, OCLC and the like, read off the
   cited scans): `python3 scripts/link_editions.py [--write]`. People to
@@ -137,7 +141,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   for another day), with the week above: its number and dates, its essay
   (the post published within the week) and its seven days. On the
   essay's own day it opens the essay with the same header. With no card
-  it shows the season's essays as before. In 2026–27 the weeks run Sunday
+  it shows the season's essays as before. The cards and essays also go
+  out a day at a time in the year's feed, `year.xml`. In 2026–27 the weeks run Sunday
   to Saturday and the essays come out on Sundays, so the cards fill
   Monday to Saturday.
 - The first cards go live on Thanksgiving, 26 November 2026 (Week 49:

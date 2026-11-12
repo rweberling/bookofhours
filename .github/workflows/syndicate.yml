@@ -15,6 +15,10 @@
 # Earthly Book of Hours, and updates blocks whose records changed. Without
 # the ARENA_TOKEN secret (an Are.na personal access token with write
 # scope) it only says what it would do.
+#
+# Every run also moves the year's feed (year.xml, scripts/
+# build_year_feed.py) on to today, Boston's date: the first run after
+# midnight brings in the day's card or essay.
 name: Syndicate
 
 on:
@@ -85,6 +89,10 @@ jobs:
           ARENA_TOKEN: ${{ secrets.ARENA_TOKEN }}
         run: python3 scripts/arena.py ${{ inputs.dry_run && '--dry-run' || '' }}
 
+      - name: The year's feed, for today (year.xml)
+        if: ${{ !cancelled() }}
+        run: python3 scripts/build_year_feed.py
+
       - name: Keep the hour's card with the run
         if: steps.plan.outputs.hour == 'yes'
         uses: actions/upload-artifact@v6
@@ -96,12 +104,12 @@ jobs:
       - name: Save what was posted, and the page's record link
         if: ${{ !cancelled() }}
         run: |
-          git diff --quiet data/syndication.json && exit 0
+          git diff --quiet data/syndication.json year.xml && exit 0
           python3 scripts/build_lectio_pages.py
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/syndication.json lectio-terra/
-          git commit -m 'Syndication: Bluesky posts, standard.site records and Are.na blocks made'
+          git add data/syndication.json year.xml lectio-terra/
+          git commit -m "Syndication: Bluesky posts, Are.na blocks and the year's feed"
           for i in 1 2 3; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
             sleep 5

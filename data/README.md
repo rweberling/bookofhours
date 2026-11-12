@@ -334,3 +334,6 @@ joins Week 10, and a week belongs to the season of its middle day
 (`scripts/weeks.py`, and the same rule in `shared.js`). On a day with a
 card, the Seasons page opens on it, with the week around it: the week's
 Lectio Terra essay (the one published within the week) and its other days.
+The same days make the year's feed, `year.xml` (`scripts/build_year_feed.py`):
+each day's card, and each essay on the day of the year it was first
+published, every year, the last 14 days at a time.

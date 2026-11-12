@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Built by scripts/build_year_feed.py for 2026-11-12 from data/; edit that, not this. -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>The Year — The Earthly Book of Hours</title>
+  <link>https://earthlyhours.com/seasons.html</link>
+  <atom:link href="https://earthlyhours.com/year.xml" rel="self" type="application/rss+xml"/>
+  <description>The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with an image and a reading, and each week its Lectio Terra essay. It comes round again every year.</description>
+  <language>en</language>
+  <lastBuildDate>Thu, 12 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <item>
+    <title>Lectio Terra: Wintergreen</title>
+    <link>https://earthlyhours.com/lectio-terra/wintergreen/</link>
+    <guid isPermaLink="false">https://earthlyhours.com/lectio-terra/wintergreen/#2026</guid>
+    <pubDate>Sun, 08 Nov 2026 00:00:00 -0500</pubDate>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/lectio-terra/224012070.week-43-wintergreen-jacob-bigelow-1-8c05f16638f8-1600.webp&quot; alt=&quot;A photograph of a deep blue glow, brightest at the centre and fading to black at the edges, flecked with small dark specks: the light given off by a wintergreen candy as it was crushed on film.&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Instead of receiving its first frost this week, the Boston area experienced a final illusion of summer, with clear blue skies and gentle warm breezes. Then the rain set in for a few days. The long-lasting summer has, paradoxically, spurred some early reflections on winter. Though we haven’t actually experienced any true cold yet, I’m preparing my psyche for the insular dimensions of the impending…&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/lectio-terra/wintergreen/&quot;&gt;Read the post&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
+  <item>
+    <title>Lectio Terra: First Frost</title>
+    <link>https://earthlyhours.com/lectio-terra/first-frost/</link>
+    <guid isPermaLink="false">https://earthlyhours.com/lectio-terra/first-frost/#2026</guid>
+    <pubDate>Sun, 01 Nov 2026 00:00:00 -0400</pubDate>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/lectio-terra/221679509.week-42-first-frost-william-cullen-1-3d6fc1c30cf9-1600.webp&quot; alt=&quot;A sepia photograph of frost on a windowpane: dense, fern-like feathers of ice crystals branching across a dark ground.&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy&lt;/em&gt;&lt;/p&gt;&lt;p&gt;We interrupt this fall’s journey through the northeast woodlands with a reflection on the threshold that is the first frost (prima pruina, if it were a Latin binomial).&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/lectio-terra/first-frost/&quot;&gt;Read the post&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
+</channel>
+</rss>

@@ -13,9 +13,12 @@ from, in this order (later steps use earlier ones' output):
   3. postcard pages                  build_postcards.py  (data/postcards.csv or the template)
   4. post pages and the RSS feed     build_lectio_pages.py --all  (a post, its records,
                                                                     seasons.html or partials/)
-  5. record pages (id/)              build_records.py    (any record, or partials/)
-  6. sitemap and llms.txt            build_sitemap.py    (a page or reading added or gone)
-  7. Sources page                    build_sources.py    (the data it lists; needs Chrome)
+  5. the year's feed (year.xml)      build_year_feed.py  (a card or post, for the day it
+                                                         was built for; the Syndicate
+                                                         workflow moves it on each day)
+  6. record pages (id/)              build_records.py    (any record, or partials/)
+  7. sitemap and llms.txt            build_sitemap.py    (a page or reading added or gone)
+  8. Sources page                    build_sources.py    (the data it lists; needs Chrome)
 
 It doesn't import from Substack (import_substack.py --fetch --write does
 that, and runs this too) or change any data. After it, run
@@ -51,6 +54,11 @@ def due_posts():
     return stale_pages()
 
 
+def due_year():
+    from build_year_feed import stale
+    return stale()
+
+
 def due_records():
     from build_records import stale_pages
     return stale_pages()
@@ -74,6 +82,7 @@ STEPS = [
     ('shared head, frame and menu', due_shared, ['build_shared.py']),
     ('postcard pages', due_postcards, ['build_postcards.py']),
     ('post pages and the RSS feed', due_posts, ['build_lectio_pages.py', '--all']),
+    ("the year's feed", due_year, ['build_year_feed.py']),
     ('record pages', due_records, ['build_records.py']),
     ('sitemap and llms.txt', due_sitemap, ['build_sitemap.py']),
     ('Sources page', due_sources, ['build_sources.py']),
