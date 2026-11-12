@@ -1,0 +1,54 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0128/",
+  "id": "r-0128",
+  "shownIn": "weather",
+  "text": "Glory be to God for dappled things—<br>&nbsp;&nbsp;&nbsp;For skies of couple-colour as a brinded cow;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For rose-moles all in stipple upon trout that swim;<br>Fresh-firecoal chestnut-falls; finches’ wings;<br>&nbsp;&nbsp;&nbsp;Landscape plotted and pieced—fold, fallow, and plough;",
+  "citation": {
+    "display": "Gerard Manley Hopkins, from \"<a href=\"https://archive.org/details/poemsofgerardman030114mbp/page/n43/mode/1up\" target=\"_blank\">Pied Beauty</a>\" (1877, pub. 1918)",
+    "bibliography": "Hopkins, Gerard Manley. \"Pied Beauty.\" <em>Poems of Gerard Manley Hopkins, Now First Published</em>, edited by Robert Bridges, Humphrey Milford, 1918, p. 30.",
+    "title": "Pied Beauty",
+    "written": "1877",
+    "locator": {
+      "page": "30",
+      "url": "https://archive.org/details/poemsofgerardman030114mbp/page/n43/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0200",
+      "type": "book",
+      "title": "Poems of Gerard Manley Hopkins, Now First Published",
+      "contributors": [
+        {
+          "id": "a-gerard-manley-hopkins",
+          "name": "Gerard Manley Hopkins",
+          "role": "author"
+        },
+        {
+          "id": "a-robert-bridges",
+          "name": "Robert Bridges",
+          "role": "editor"
+        }
+      ],
+      "publisher": "Humphrey Milford",
+      "issued": "1918",
+      "original-date": "1918",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "poemsofgerardman030114mbp"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "dappled",
+      "changing"
+    ],
+    "seasons": []
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

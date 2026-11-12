@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0202/",
+  "id": "e-0202",
+  "type": "book",
+  "title": "Mark Twain’s Speeches",
+  "contributors": [
+    {
+      "id": "a-mark-twain",
+      "name": "Mark Twain",
+      "role": "author"
+    },
+    {
+      "id": "a-william-dean-howells",
+      "name": "William Dean Howells",
+      "role": "introduction"
+    }
+  ],
+  "publisher": "Harper & Brothers",
+  "issued": "1910",
+  "original-date": "1876",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "marktwainsspeech00twaiuoft"
+  },
+  "citedBy": [
+    "r-0130"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

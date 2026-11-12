@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0200/",
+  "id": "e-0200",
+  "type": "book",
+  "title": "Poems of Gerard Manley Hopkins, Now First Published",
+  "contributors": [
+    {
+      "id": "a-gerard-manley-hopkins",
+      "name": "Gerard Manley Hopkins",
+      "role": "author"
+    },
+    {
+      "id": "a-robert-bridges",
+      "name": "Robert Bridges",
+      "role": "editor"
+    }
+  ],
+  "publisher": "Humphrey Milford",
+  "issued": "1918",
+  "original-date": "1918",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "poemsofgerardman030114mbp"
+  },
+  "citedBy": [
+    "r-0128"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

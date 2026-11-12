@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0201/",
+  "id": "e-0201",
+  "type": "book",
+  "title": "Poems",
+  "contributors": [
+    {
+      "id": "a-ralph-waldo-emerson",
+      "name": "Ralph Waldo Emerson",
+      "role": "author"
+    }
+  ],
+  "publisher": "Chapman, Brothers",
+  "issued": "1847",
+  "original-date": "1841",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "poemsemer00emeruoft"
+  },
+  "citedBy": [
+    "r-0129"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

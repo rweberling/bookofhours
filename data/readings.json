@@ -5143,5 +5143,110 @@
       "seasons": []
     },
     "display": { "verse": true }
+  },
+  {
+    "id": "r-0128",
+    "shownIn": "weather",
+    "text": "Glory be to God for dappled things—<br>&nbsp;&nbsp;&nbsp;For skies of couple-colour as a brinded cow;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For rose-moles all in stipple upon trout that swim;<br>Fresh-firecoal chestnut-falls; finches’ wings;<br>&nbsp;&nbsp;&nbsp;Landscape plotted and pieced—fold, fallow, and plough;",
+    "citation": {
+      "display": "Gerard Manley Hopkins, from \"<a href=\"https://archive.org/details/poemsofgerardman030114mbp/page/n43/mode/1up\" target=\"_blank\">Pied Beauty</a>\" (1877, pub. 1918)",
+      "bibliography": "Hopkins, Gerard Manley. \"Pied Beauty.\" <em>Poems of Gerard Manley Hopkins, Now First Published</em>, edited by Robert Bridges, Humphrey Milford, 1918, p. 30.",
+      "title": "Pied Beauty",
+      "written": "1877",
+      "locator": {
+        "page": "30",
+        "url": "https://archive.org/details/poemsofgerardman030114mbp/page/n43/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0200",
+        "type": "book",
+        "title": "Poems of Gerard Manley Hopkins, Now First Published",
+        "contributors": [
+          { "id": "a-gerard-manley-hopkins", "name": "Gerard Manley Hopkins", "role": "author" },
+          { "id": "a-robert-bridges", "name": "Robert Bridges", "role": "editor" }
+        ],
+        "publisher": "Humphrey Milford",
+        "issued": "1918",
+        "original-date": "1918",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "poemsofgerardman030114mbp" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["dappled", "changing"],
+      "seasons": []
+    },
+    "display": { "verse": true }
+  },
+  {
+    "id": "r-0129",
+    "shownIn": "weather",
+    "text": "Announced by all the trumpets of the sky<br>Arrives the snow, and, driving o’er the fields,<br>Seems nowhere to alight: the whited air<br>Hides hills and woods, the river and the heaven,<br>And veils the farm-house at the garden’s end.<br>The steed and traveller stopped, the courier’s feet<br>Delayed, all friends shut out, the housemates sit<br>Around the radiant fire-place, enclosed<br>In a tumultuous privacy of storm.",
+    "citation": {
+      "display": "Ralph Waldo Emerson, from \"<a href=\"https://archive.org/details/poemsemer00emeruoft/page/n60/mode/1up\" target=\"_blank\">The Snow Storm</a>\" (1841)",
+      "bibliography": "Emerson, Ralph Waldo. \"The Snow Storm.\" <em>Poems</em>, Chapman, Brothers, 1847, pp. 49–50. First published in <em>The Dial</em>, January 1841.",
+      "title": "The Snow Storm",
+      "written": "1841",
+      "locator": {
+        "page": "49",
+        "url": "https://archive.org/details/poemsemer00emeruoft/page/n60/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0201",
+        "type": "book",
+        "title": "Poems",
+        "contributors": [{ "id": "a-ralph-waldo-emerson", "name": "Ralph Waldo Emerson", "role": "author" }],
+        "publisher": "Chapman, Brothers",
+        "issued": "1847",
+        "original-date": "1841",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "poemsemer00emeruoft" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["snow", "wind"],
+      "seasons": ["winter"]
+    },
+    "display": { "verse": true }
+  },
+  {
+    "id": "r-0130",
+    "shownIn": "weather",
+    "text": "I reverently believe that the Maker who made us all makes everything in New England but the weather. I don’t know who makes that, but I think it must be raw apprentices in the weather-clerk’s factory who experiment and learn how, in New England, for board and clothes, and then are promoted to make weather for countries that require a good article, and will take their custom elsewhere if they don’t get it. There is a sumptuous variety about the New England weather that compels the stranger’s admiration—and regret. The weather is always doing something there; always attending strictly to business; always getting up new designs and trying them on the people to see how they will go. But it gets through more business in spring than in any other season. In the spring I have counted one hundred and thirty-six different kinds of weather inside of four-and-twenty hours.",
+    "citation": {
+      "display": "Mark Twain, from \"<a href=\"https://archive.org/details/marktwainsspeech00twaiuoft/page/n76/mode/1up\" target=\"_blank\">The Weather</a>\" (1876, pub. 1910)",
+      "bibliography": "Twain, Mark. \"The Weather.\" Address at the New England Society’s seventy-first annual dinner, New York City. <em>Mark Twain’s Speeches</em>, Harper &amp; Brothers, 1910, pp. 59–60.",
+      "title": "The Weather",
+      "written": "1876",
+      "locator": {
+        "page": "59",
+        "url": "https://archive.org/details/marktwainsspeech00twaiuoft/page/n76/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0202",
+        "type": "book",
+        "title": "Mark Twain’s Speeches",
+        "contributors": [
+          { "id": "a-mark-twain", "name": "Mark Twain", "role": "author" },
+          { "id": "a-william-dean-howells", "name": "William Dean Howells", "role": "introduction" }
+        ],
+        "publisher": "Harper & Brothers",
+        "issued": "1910",
+        "original-date": "1876",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "marktwainsspeech00twaiuoft" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["changing"],
+      "seasons": []
+    },
+    "display": { "weatherUnset": true }
   }
 ]

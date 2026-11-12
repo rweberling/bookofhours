@@ -3944,6 +3944,34 @@
         }
       ]
     },
+    "images/weather_daumier_salon_heat.jpg": {
+      "bytes": 2253059,
+      "width": 2299,
+      "height": 2885,
+      "sha256": "b453ccbe63d83a3d934cff542df46aa72dedae37c7c2b691f668c805837c6108",
+      "settings": "89e48fac760f",
+      "credit": "e86272319b79",
+      "copies": [
+        {
+          "file": "images/web/weather_daumier_salon_heat-800.webp",
+          "width": 800,
+          "height": 1004,
+          "bytes": 203950
+        },
+        {
+          "file": "images/web/weather_daumier_salon_heat-1600.webp",
+          "width": 1600,
+          "height": 2008,
+          "bytes": 660724
+        },
+        {
+          "file": "images/web/weather_daumier_salon_heat-2400.webp",
+          "width": 2299,
+          "height": 2885,
+          "bytes": 1090484
+        }
+      ]
+    },
     "images/weather_emslie.jpg": {
       "bytes": 1187768,
       "width": 1280,

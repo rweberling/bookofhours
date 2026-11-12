@@ -1,0 +1,53 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0130/",
+  "id": "r-0130",
+  "shownIn": "weather",
+  "text": "I reverently believe that the Maker who made us all makes everything in New England but the weather. I don’t know who makes that, but I think it must be raw apprentices in the weather-clerk’s factory who experiment and learn how, in New England, for board and clothes, and then are promoted to make weather for countries that require a good article, and will take their custom elsewhere if they don’t get it. There is a sumptuous variety about the New England weather that compels the stranger’s admiration—and regret. The weather is always doing something there; always attending strictly to business; always getting up new designs and trying them on the people to see how they will go. But it gets through more business in spring than in any other season. In the spring I have counted one hundred and thirty-six different kinds of weather inside of four-and-twenty hours.",
+  "citation": {
+    "display": "Mark Twain, from \"<a href=\"https://archive.org/details/marktwainsspeech00twaiuoft/page/n76/mode/1up\" target=\"_blank\">The Weather</a>\" (1876, pub. 1910)",
+    "bibliography": "Twain, Mark. \"The Weather.\" Address at the New England Society’s seventy-first annual dinner, New York City. <em>Mark Twain’s Speeches</em>, Harper &amp; Brothers, 1910, pp. 59–60.",
+    "title": "The Weather",
+    "written": "1876",
+    "locator": {
+      "page": "59",
+      "url": "https://archive.org/details/marktwainsspeech00twaiuoft/page/n76/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0202",
+      "type": "book",
+      "title": "Mark Twain’s Speeches",
+      "contributors": [
+        {
+          "id": "a-mark-twain",
+          "name": "Mark Twain",
+          "role": "author"
+        },
+        {
+          "id": "a-william-dean-howells",
+          "name": "William Dean Howells",
+          "role": "introduction"
+        }
+      ],
+      "publisher": "Harper & Brothers",
+      "issued": "1910",
+      "original-date": "1876",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "marktwainsspeech00twaiuoft"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "changing"
+    ],
+    "seasons": []
+  },
+  "display": {
+    "weatherUnset": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

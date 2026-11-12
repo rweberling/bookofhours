@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0129/",
+  "id": "r-0129",
+  "shownIn": "weather",
+  "text": "Announced by all the trumpets of the sky<br>Arrives the snow, and, driving o’er the fields,<br>Seems nowhere to alight: the whited air<br>Hides hills and woods, the river and the heaven,<br>And veils the farm-house at the garden’s end.<br>The steed and traveller stopped, the courier’s feet<br>Delayed, all friends shut out, the housemates sit<br>Around the radiant fire-place, enclosed<br>In a tumultuous privacy of storm.",
+  "citation": {
+    "display": "Ralph Waldo Emerson, from \"<a href=\"https://archive.org/details/poemsemer00emeruoft/page/n60/mode/1up\" target=\"_blank\">The Snow Storm</a>\" (1841)",
+    "bibliography": "Emerson, Ralph Waldo. \"The Snow Storm.\" <em>Poems</em>, Chapman, Brothers, 1847, pp. 49–50. First published in <em>The Dial</em>, January 1841.",
+    "title": "The Snow Storm",
+    "written": "1841",
+    "locator": {
+      "page": "49",
+      "url": "https://archive.org/details/poemsemer00emeruoft/page/n60/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0201",
+      "type": "book",
+      "title": "Poems",
+      "contributors": [
+        {
+          "id": "a-ralph-waldo-emerson",
+          "name": "Ralph Waldo Emerson",
+          "role": "author"
+        }
+      ],
+      "publisher": "Chapman, Brothers",
+      "issued": "1847",
+      "original-date": "1841",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "poemsemer00emeruoft"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "snow",
+      "wind"
+    ],
+    "seasons": [
+      "winter"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
