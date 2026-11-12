@@ -562,5 +562,13 @@
       "i-0160": { "id": 52731090, "channel": "weather", "digest": "8a4868c2809df31c" },
       "i-0161": { "id": 52731091, "channel": "weather", "digest": "dc61afacb68f5b72" }
     }
+  },
+  "calendar": {
+    "start": "2026-11-26",
+    "description": "The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with its reading, and each week its Lectio Terra essay. From The Earthly Book of Hours, earthlyhours.com.",
+    "host": "calendar.earthlyhours.com",
+    "account": "7d85d5ff629ee7d6e8032c35400e5524",
+    "namespace": "9d58f38241434f1abb64219c03eacc78",
+    "key": "calendar.ics"
   }
 }

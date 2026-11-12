@@ -1,0 +1,49 @@
+# The calendar sold on DFOS (scripts/build_calendar.py): rebuilt whenever
+# the days, the posts or the records they name change, and uploaded to
+# Workers KV in the earthlyhours.com Cloudflare account, where the Worker
+# earthlyhours-calendar (workers/calendar.js) serves it at
+# calendar.earthlyhours.com under a private path. Needs the
+# CLOUDFLARE_CALENDAR_TOKEN secret (a Cloudflare API token with Workers
+# KV Storage: Edit); without it, it only builds. An unchanged calendar
+# is not uploaded again. Also weekly, and by hand ("Run workflow").
+name: Calendar
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/days.json'
+      - 'data/lectio-data.json'
+      - 'data/readings.json'
+      - 'data/images.json'
+      - 'data/species.json'
+      - 'data/phenomena.json'
+      - 'data/syndication.json'
+      - 'scripts/build_calendar.py'
+  schedule:
+    - cron: '41 9 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: calendar
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  calendar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Build and upload the calendar
+        env:
+          CLOUDFLARE_CALENDAR_TOKEN: ${{ secrets.CLOUDFLARE_CALENDAR_TOKEN }}
+        run: |
+          python3 scripts/build_calendar.py --out "$RUNNER_TEMP/earthly-hours.ics" --upload

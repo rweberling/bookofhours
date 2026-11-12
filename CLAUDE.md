@@ -90,6 +90,19 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   shareable is only reported. `--dry-run`, `--show i-NNNN`, `--limit N`;
   `data/syndication.json` ("arena") keeps the channel and block IDs. No
   shop or support links there (Are.na's terms are non-commercial).
+- The calendar (`scripts/build_calendar.py`, sold on DFOS as a
+  subscription to the year, $3 or pay what you want from $2; the plan's
+  "The days, everywhere"): every card and essay as an all-day event
+  repeating yearly, each day shown as soon as it is added; open-rights
+  reading texts only, otherwise the citation; no images. Not kept in the
+  repo (it is public): `.github/workflows/calendar.yml` builds it when the
+  data changes and uploads it to Workers KV (secret
+  `CLOUDFLARE_CALENDAR_TOKEN`), and the Worker `earthlyhours-calendar`
+  (`workers/calendar.js`) serves it at calendar.earthlyhours.com under a
+  private path, a secret of the Worker that is never written in the repo.
+  `--out FILE`, `--show`, `--upload`; settings in `data/syndication.json`
+  ("calendar"). When the year is complete, the finished file replaces the
+  subscription on DFOS.
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends

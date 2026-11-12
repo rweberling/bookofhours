@@ -269,6 +269,12 @@ public-domain mark) goes in one channel only, where the site shows it: an
 essay's figure in its post's season, an Hours image in its watch, a
 Weather image in The Weather.
 
+The calendar (`scripts/build_calendar.py`) is set under `calendar`:
+`start` (the first day a card can fall on), `description` (the
+calendar's own line), `host`, and the Cloudflare `account`, KV
+`namespace` and `key` it is uploaded to. Its private address is not kept
+here.
+
 Each post also has a `body`: its pieces in order (headings, figures,
 passages, runs of its writing), which the Seasons page rebuilds the post
 from. `scripts/build_post_manifests.py` makes these lists after an import,
