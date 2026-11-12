@@ -303,32 +303,129 @@
       "umbrella": {
         "id": 6001417,
         "title": "The Earthly Book of Hours",
-        "slug": "the-earthly-book-of-hours"
+        "slug": "the-earthly-book-of-hours",
+        "description": "A daily primer of art, literature, and ecology; a contemplative archive of images, readings, and natural phenomena for observing the day and finding yourself in it. Here are the book's public-domain images, each in the part of the book where it appears, and each linking back to its page at [earthlyhours.com](https://earthlyhours.com).",
+        "descriptionSent": "ad7615bfd158bce6"
       },
       "seasons": {
         "id": 6001422,
         "title": "The Seasons",
         "slug": "the-seasons-srm_mrmkf70",
-        "in": "umbrella"
+        "in": "umbrella",
+        "description": "The figures from Lectio Terra, a weekly series of curated readings drawn from botany, philosophy, and related disciplines. Its seasons are those of the Boston Basin, near the Charles River, between the northeastern woodlands and the Atlantic coast. Each figure links to its essay in [The Seasons](https://earthlyhours.com/seasons.html).",
+        "descriptionSent": "e1282870a6088190"
       },
-      "winter": { "id": 6001436, "title": "Winter", "slug": "winter-hvqibor_t18", "in": "seasons" },
-      "spring": { "id": 6001439, "title": "Spring", "slug": "spring-fx9yngm-2vm", "in": "seasons" },
-      "summer": { "id": 6001440, "title": "Summer", "slug": "summer-5gjv7lq-71q", "in": "seasons" },
-      "autumn": { "id": 6001437, "title": "Autumn", "slug": "autumn-yxy_b6sasuw", "in": "seasons" },
-      "hours": { "id": 6001433, "title": "The Hours", "slug": "the-hours-tss472odnba", "in": "umbrella" },
-      "void": { "id": 6001441, "title": "Void", "slug": "void-coklez9ubds", "in": "hours" },
-      "hush": { "id": 6001443, "title": "Hush", "slug": "hush-9sf0ppjkscm", "in": "hours" },
-      "chorus": { "id": 6001444, "title": "Chorus", "slug": "chorus", "in": "hours" },
-      "transit": { "id": 6001445, "title": "Transit", "slug": "transit-b0t-cgf3uag", "in": "hours" },
-      "fulcrum": { "id": 6001446, "title": "Fulcrum", "slug": "fulcrum-ojtdzjklde8", "in": "hours" },
-      "doldrums": { "id": 6001447, "title": "Doldrums", "slug": "doldrums", "in": "hours" },
-      "convivium": { "id": 6001449, "title": "Convivium", "slug": "convivium-ihqczuthfgw", "in": "hours" },
-      "denouement": { "id": 6001450, "title": "Denouement", "slug": "denouement", "in": "hours" },
+      "winter": {
+        "id": 6001436,
+        "title": "Winter",
+        "slug": "winter-hvqibor_t18",
+        "in": "seasons",
+        "description": "The figures from Lectio Terra's winter essays, a season in the Boston Basin. Each links to its essay in [The Seasons](https://earthlyhours.com/seasons.html) of The Earthly Book of Hours.",
+        "descriptionSent": "cd3ceaef5283b158"
+      },
+      "spring": {
+        "id": 6001439,
+        "title": "Spring",
+        "slug": "spring-fx9yngm-2vm",
+        "in": "seasons",
+        "description": "The figures from Lectio Terra's spring essays, a season in the Boston Basin. Each links to its essay in [The Seasons](https://earthlyhours.com/seasons.html) of The Earthly Book of Hours.",
+        "descriptionSent": "a885c675375ee6b9"
+      },
+      "summer": {
+        "id": 6001440,
+        "title": "Summer",
+        "slug": "summer-5gjv7lq-71q",
+        "in": "seasons",
+        "description": "The figures from Lectio Terra's summer essays, a season in the Boston Basin. Each links to its essay in [The Seasons](https://earthlyhours.com/seasons.html) of The Earthly Book of Hours.",
+        "descriptionSent": "107b4582f80e3bc6"
+      },
+      "autumn": {
+        "id": 6001437,
+        "title": "Autumn",
+        "slug": "autumn-yxy_b6sasuw",
+        "in": "seasons",
+        "description": "The figures from Lectio Terra's autumn essays, a season in the Boston Basin. Each links to its essay in [The Seasons](https://earthlyhours.com/seasons.html) of The Earthly Book of Hours.",
+        "descriptionSent": "fbfdbf64442bb540"
+      },
+      "hours": {
+        "id": 6001433,
+        "title": "The Hours",
+        "slug": "the-hours-tss472odnba",
+        "in": "umbrella",
+        "description": "The day kept in eight watches of three hours each, from Void at midnight to Denouement at night, each with its own images and readings. These are the watches' images; each links to its page in [The Hours](https://earthlyhours.com).",
+        "descriptionSent": "9ceb0b9de4203ca0"
+      },
+      "void": {
+        "id": 6001441,
+        "title": "Void",
+        "slug": "void-coklez9ubds",
+        "in": "hours",
+        "description": "Overnight, midnight to 3 a.m.: one of the eight watches of [The Hours](https://earthlyhours.com/?block=void) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "b91ae97e47a7ec4d"
+      },
+      "hush": {
+        "id": 6001443,
+        "title": "Hush",
+        "slug": "hush-9sf0ppjkscm",
+        "in": "hours",
+        "description": "Pre-dawn, 3 a.m. to 6 a.m.: one of the eight watches of [The Hours](https://earthlyhours.com/?block=hush) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "375acb819930c1c9"
+      },
+      "chorus": {
+        "id": 6001444,
+        "title": "Chorus",
+        "slug": "chorus",
+        "in": "hours",
+        "description": "Dawn, 6 a.m. to 9 a.m.: one of the eight watches of [The Hours](https://earthlyhours.com/?block=chorus) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "69965384aa52bff6"
+      },
+      "transit": {
+        "id": 6001445,
+        "title": "Transit",
+        "slug": "transit-b0t-cgf3uag",
+        "in": "hours",
+        "description": "Morning, 9 a.m. to noon: one of the eight watches of [The Hours](https://earthlyhours.com/?block=transit) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "43db061272ad3455"
+      },
+      "fulcrum": {
+        "id": 6001446,
+        "title": "Fulcrum",
+        "slug": "fulcrum-ojtdzjklde8",
+        "in": "hours",
+        "description": "Midday, noon to 3 p.m.: one of the eight watches of [The Hours](https://earthlyhours.com/?block=fulcrum) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "ff375d188aabb3ee"
+      },
+      "doldrums": {
+        "id": 6001447,
+        "title": "Doldrums",
+        "slug": "doldrums",
+        "in": "hours",
+        "description": "Afternoon, 3 p.m. to 6 p.m.: one of the eight watches of [The Hours](https://earthlyhours.com/?block=doldrums) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "64bbe5966a749912"
+      },
+      "convivium": {
+        "id": 6001449,
+        "title": "Convivium",
+        "slug": "convivium-ihqczuthfgw",
+        "in": "hours",
+        "description": "Evening, 6 p.m. to 9 p.m.: one of the eight watches of [The Hours](https://earthlyhours.com/?block=convivium) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "c67169899b01aa85"
+      },
+      "denouement": {
+        "id": 6001450,
+        "title": "Denouement",
+        "slug": "denouement",
+        "in": "hours",
+        "description": "Night, 9 p.m. to midnight: one of the eight watches of [The Hours](https://earthlyhours.com/?block=denouement) in The Earthly Book of Hours. Each image links to its page there.",
+        "descriptionSent": "714162dddd4731d6"
+      },
       "weather": {
         "id": 6001434,
         "title": "The Weather",
         "slug": "the-weather-bfmxuw97qig",
-        "in": "umbrella"
+        "in": "umbrella",
+        "description": "A view from the reading room's window, with a short reading for the conditions outside. These are the window's images; each links to its view on [The Weather](https://earthlyhours.com/weather.html) in The Earthly Book of Hours.",
+        "descriptionSent": "6a81c3852265ec4f"
       }
     },
     "blocks": {

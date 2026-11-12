@@ -36,7 +36,9 @@ non-commercial.
 
 What it keeps (data/syndication.json, "arena"):
 
-  channels  each channel's Are.na id and title, and "in", the channel it
+  channels  each channel's Are.na id and title, its "description"
+            (markdown; set on Are.na whenever it changes, "descriptionSent"
+            keeping a digest of the last one sent), and "in", the channel it
             sits in. A channel with no id is made (closed: anyone can see
             it, only the owner adds to it); a missing link to its parent
             is made. The keys are the site's own: the umbrella, "seasons"
@@ -371,6 +373,15 @@ def ensure_channels(c, api, out, dry):
             made = api.call('POST', '/channels', {'title': ch['title'], 'visibility': 'closed'})
             ch['id'] = made['id']
             ch['slug'] = made.get('slug')
+            save('syndication', c.config)
+    for key, ch in channels.items():
+        sent = hashlib.sha256((ch.get('description') or '').encode()).hexdigest()[:16]
+        if not ch.get('description') or ch.get('descriptionSent') == sent:
+            continue
+        out.write(f'- channel {key}: set its description\n')
+        if not dry:
+            api.call('PUT', f'/channels/{ch["id"]}', {'description': ch['description']})
+            ch['descriptionSent'] = sent
             save('syndication', c.config)
     parents = {ch['in'] for ch in channels.values() if ch.get('in')}
     for parent in parents:

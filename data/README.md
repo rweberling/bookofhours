@@ -259,7 +259,9 @@ The figures on Are.na (`scripts/arena.py`) are kept under `arena`: `on`,
 the free plan allows 200 in all), `channels` and `blocks`. Each channel
 has a key of the site's own (`umbrella`, `seasons` and the four seasons,
 `hours` and the eight watches, `weather`), its Are.na `id`, `title` and
-`slug`, and `in`, the key of the channel it sits in. `blocks` holds, per
+`slug`, its `description` (markdown, set on Are.na when it changes;
+`descriptionSent` is the script's digest of the last one sent), and `in`,
+the key of the channel it sits in. `blocks` holds, per
 image ID, the block's `id`, its `channel` key and a `digest` of the title,
 description and alt text sent, so a block is updated when its record
 changes. Every image the site shows with open rights (NoC-US or a
