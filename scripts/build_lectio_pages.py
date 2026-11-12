@@ -368,7 +368,7 @@ def rfc822(iso):
     return format_datetime(datetime.fromisoformat(iso).replace(hour=12, tzinfo=timezone.utc))
 
 
-def feed(data, by_subject):
+def feed(data, by_subject, alts=None):
     """feed.xml: every post with a page, newest first, dated as first
     published (so a batch added together keeps each post's own date). Each
     item is known by its page's address, which is fixed, so correcting a
@@ -385,7 +385,8 @@ def feed(data, by_subject):
         credits = ', '.join(readers(entry))
         body = ''
         if image and (ROOT / image).exists():
-            body += f'<p><img src="{SITE}/{image}" alt=""></p>'
+            alt = (alts or {}).get(first) or (entry.get('images') or [{}])[0].get('alt') or ''
+            body += f'<p><img src="{SITE}/{image}" alt="{escape(alt)}"></p>'
         if credits:
             body += f'<p><em>{escape(credits)}</em></p>'
         body += f'<p>{escape(summary(entry, 400))}</p><p><a href="{url}">Read the post</a></p>'
@@ -429,7 +430,7 @@ def pages():
              for season, entry in posts(data) if entry.get('page')}
     if built:
         built[ROOT / 'lectio-terra' / 'index.html'] = contents(data, by_subject)
-        built[ROOT / 'feed.xml'] = feed(data, by_subject)
+        built[ROOT / 'feed.xml'] = feed(data, by_subject, alts)
     return built
 
 
