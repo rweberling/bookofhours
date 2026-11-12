@@ -9,6 +9,12 @@
 # (Settings → Secrets and variables → Actions) it only says what it
 # would post, in the run's summary. "Run workflow" by hand can also ask
 # for a dry run.
+#
+# With the daily run (not the three-hourly hour runs), scripts/arena.py
+# puts any new open-rights figures on Are.na, in the channels under The
+# Earthly Book of Hours, and updates blocks whose records changed. Without
+# the ARENA_TOKEN secret (an Are.na personal access token with write
+# scope) it only says what it would do.
 name: Syndicate
 
 on:
@@ -73,6 +79,12 @@ jobs:
           HOUR_CARD_DIR: ${{ runner.temp }}/hour-card
         run: python3 scripts/syndicate.py ${{ steps.plan.outputs.args }}
 
+      - name: Are.na (new figures, and blocks whose records changed)
+        if: ${{ !cancelled() && github.event.schedule != '23 */3 * * *' }}
+        env:
+          ARENA_TOKEN: ${{ secrets.ARENA_TOKEN }}
+        run: python3 scripts/arena.py ${{ inputs.dry_run && '--dry-run' || '' }}
+
       - name: Keep the hour's card with the run
         if: steps.plan.outputs.hour == 'yes'
         uses: actions/upload-artifact@v6
@@ -82,13 +94,14 @@ jobs:
           if-no-files-found: ignore
 
       - name: Save what was posted, and the page's record link
+        if: ${{ !cancelled() }}
         run: |
           git diff --quiet data/syndication.json && exit 0
           python3 scripts/build_lectio_pages.py
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/syndication.json lectio-terra/
-          git commit -m 'Syndication: Bluesky posts and standard.site records made'
+          git commit -m 'Syndication: Bluesky posts, standard.site records and Are.na blocks made'
           for i in 1 2 3; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
             sleep 5

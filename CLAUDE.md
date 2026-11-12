@@ -74,6 +74,18 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   `--dry-run` says what it would post; `--preview lt-NNNN` shows any
   essay's post. The plan is the
   "Syndication Plan" doc (https://claude.ai/artifact/89YN6Mjfc3v31muCrCDNQC).
+- Are.na (`scripts/arena.py`, run with the daily Syndicate workflow,
+  token in the `ARENA_TOKEN` secret): every open-rights image the site
+  shows goes up once as an image block (its 1600 px web copy), in the one
+  channel where the site shows it, under "The Earthly Book of Hours"
+  (are.na/ryan-weberling): the essays' figures in The Seasons' Winter,
+  Spring, Summer or Autumn, the Hours images in their watch's channel
+  inside The Hours, the Weather images in The Weather. Free plan: 200
+  blocks in all, so never put a block in two channels (`maxBlocks` caps
+  it). Blocks follow their records' changes; a figure that stops being
+  shareable is only reported. `--dry-run`, `--show i-NNNN`, `--limit N`;
+  `data/syndication.json` ("arena") keeps the channel and block IDs. No
+  shop or support links there (Are.na's terms are non-commercial).
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends

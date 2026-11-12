@@ -19,7 +19,7 @@ is no database and nothing generated in between.
 | `phenomena.json` | The posts' subjects that aren't organisms, such as clouds or the Perseids (`ph-`) |
 | `vocab.json` | The terms everything is tagged with: the eight hours, the four seasons, the twenty weather conditions |
 | `postcards.csv` | The postcards, one row each (`pc-`) |
-| `syndication.json` | What `scripts/syndicate.py` posts to Bluesky: the account, the standard.site publication, the standing hashtags, the streams, and what was posted: each essay's records (`essays`) and the `log` of every post made (both written by the script) |
+| `syndication.json` | What `scripts/syndicate.py` posts to Bluesky: the account, the standard.site publication, the standing hashtags, the streams, and what was posted: each essay's records (`essays`) and the `log` of every post made (both written by the script); and `arena`, the Are.na channels and the block made for each figure (`scripts/arena.py`) |
 | `site.json` | Site settings: `suggestedEditionUrl`, the pattern for suggested-edition links (`{isbn}` where the ISBN goes); and `place`, where the Seasons' year is kept (the Boston Basin, near the Charles River: its rounded coordinates, Wikidata IDs and EPA ecoregion levels), named in each post page's structured data |
 | `retired-ids.json` | IDs that were published and then retired, so they're never issued again |
 | `image-files.json` | Written by `scripts/build_images.py`: the web copies made of each image. Don't edit it |
@@ -253,6 +253,19 @@ streams avoid repeats. A post may also carry `syndication`: `hashtags`
 for that essay and `excerpts` (each `from`, a record ID, and `text`, word
 for word from it) for its Bluesky posts (`check_data.py` checks each is still word for word in its record). A species or phenomenon record's
 `hashtags` are used for every post about it.
+
+The figures on Are.na (`scripts/arena.py`) are kept under `arena`: `on`,
+`user` (the account), `maxBlocks` (the most blocks the script will make;
+the free plan allows 200 in all), `channels` and `blocks`. Each channel
+has a key of the site's own (`umbrella`, `seasons` and the four seasons,
+`hours` and the eight watches, `weather`), its Are.na `id`, `title` and
+`slug`, and `in`, the key of the channel it sits in. `blocks` holds, per
+image ID, the block's `id`, its `channel` key and a `digest` of the title,
+description and alt text sent, so a block is updated when its record
+changes. Every image the site shows with open rights (NoC-US or a
+public-domain mark) goes in one channel only, where the site shows it: an
+essay's figure in its post's season, an Hours image in its watch, a
+Weather image in The Weather.
 
 Each post also has a `body`: its pieces in order (headings, figures,
 passages, runs of its writing), which the Seasons page rebuilds the post
