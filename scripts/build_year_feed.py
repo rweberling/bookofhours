@@ -15,8 +15,9 @@ What a day holds, as the Seasons page shows it:
              seasons.html?day=MM-DD. The image, and the reading's text, go
              in only when their rights are open (NoC-US or a public-domain
              mark, as on Bluesky); otherwise the reading's citation alone.
-  an essay   a Lectio Terra essay on its own day, the month and day it was
-             first published (the day the Seasons page opens it), as in
+  an essay   a Lectio Terra essay on its own day (the day the Seasons
+             page opens it): its publication day the year it came out,
+             then the last day of its week every year (weeks.essay_day), as in
              feed.xml: its first figure, its readers, the opening of its
              headnote, and a link to its page.
 
@@ -44,6 +45,7 @@ sys.path.insert(0, str(HERE))
 from datafile import load  # noqa: E402
 from syndicate import OPEN_RIGHTS, plain  # noqa: E402
 from build_lectio_pages import essay_item, posts, subjects  # noqa: E402
+from weeks import essay_day  # noqa: E402
 
 SITE = 'https://earthlyhours.com'
 HOME = ZoneInfo('America/New_York')
@@ -110,7 +112,7 @@ def build(as_of):
         when = format_datetime(datetime.combine(day, time(0), HOME))
         found = []
         for e in essays:
-            if same_day(day, e['published'][5:]) and day >= date.fromisoformat(e['published']):
+            if same_day(day, essay_day(e['published'], day.year)) and day >= date.fromisoformat(e['published']):
                 title, body = essay_item(e, by_subject, alts)
                 found.append((title, f'{SITE}/{e["page"]}', body))
         for card in days:

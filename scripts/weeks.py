@@ -46,6 +46,21 @@ def week_of(month, day):
     return None if offset == 364 else offset // 7 + 1
 
 
+def essay_day(published, year):
+    """The day ("MM-DD") an essay first published on `published`
+    (YYYY-MM-DD) is kept on in `year`: its publication day in the year
+    it came out; in every later year, the last day of its week (decided
+    13 November 2026: the book's year is fixed by date, the civil week
+    only says when a piece first comes out). shared.js's essayDayKey()
+    keeps the same rule."""
+    y, m, d = (int(x) for x in published.split('-'))
+    week = week_of(m, d)
+    if year <= y or week is None:
+        return published[5:]
+    m, d = week_days(week)[-1]
+    return f'{m:02d}-{d:02d}'
+
+
 def season_of_week(week):
     return SEASONS[week_days(week)[3][0]]
 

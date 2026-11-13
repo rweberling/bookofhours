@@ -16,9 +16,10 @@ Every day of the book's year is an all-day event that repeats each year:
              reading (its full text only when its rights are open, as in
              year.xml; otherwise its citation), the image's caption, and
              the day's page, seasons.html?day=MM-DD.
-  an essay   a Lectio Terra post on the month and day it was first
-             published, every year from then: its readers, the opening of
-             its headnote, and its page.
+  an essay   a Lectio Terra post on the day it was first published, then
+             every year from the next on the last day of its week
+             (weeks.essay_day; the Seasons page keeps the same rule): its
+             readers, the opening of its headnote, and its page.
   the year's eve, 20 December, outside the weeks.
 
 A card starts on its first date on or after the calendar's "start"
@@ -52,6 +53,7 @@ sys.path.insert(0, str(HERE))
 from datafile import load  # noqa: E402
 from syndicate import OPEN_RIGHTS, plain  # noqa: E402
 from build_lectio_pages import posts, readers, subject_name, subjects, summary  # noqa: E402
+from weeks import essay_day  # noqa: E402
 
 SITE = 'https://earthlyhours.com'
 NAME = 'The Earthly Book of Hours'
@@ -80,13 +82,13 @@ def fold(line):
     return '\r\n '.join(part.decode('utf-8') for part in out)
 
 
-def event(uid, start, summary_text, description, url):
+def event(uid, start, summary_text, description, url, repeat=True):
     lines = [
         'BEGIN:VEVENT',
         f'UID:{uid}@earthlyhours.com',
         f'DTSTAMP:{STAMP}',
         f'DTSTART;VALUE=DATE:{start:%Y%m%d}',
-        'RRULE:FREQ=YEARLY',
+        *(['RRULE:FREQ=YEARLY'] if repeat else []),
         f'SUMMARY:{ics_text(summary_text)}',
         f'DESCRIPTION:{ics_text(description)}',
         f'URL:{url}',
@@ -148,9 +150,15 @@ def events(config):
         if not (entry.get('page') and entry.get('published')):
             continue
         name = subject_name(entry, by_subject.get(entry.get('subject')))
-        out.append((entry['published'][5:], event(
-            entry['id'], date.fromisoformat(entry['published']),
-            f'Lectio Terra: {name}', essay_notes(entry), f'{SITE}/{entry["page"]}')))
+        first = date.fromisoformat(entry['published'])
+        title, notes, url = f'Lectio Terra: {name}', essay_notes(entry), f'{SITE}/{entry["page"]}'
+        # Its first showing, on its publication day, then every year
+        # from the next on the last day of its week (weeks.essay_day).
+        out.append((entry['published'][5:], event(f'{entry["id"]}-first', first, title, notes, url,
+                                                  repeat=False)))
+        again = essay_day(entry['published'], first.year + 1)
+        out.append((again, event(entry['id'], date(first.year + 1, *map(int, again.split('-'))),
+                                 title, notes, url)))
     out.append(('12-20', event('years-eve', first_on_or_after('12-20', start),
                                "The Year's Eve", YEARS_EVE, f'{SITE}/seasons.html?day=12-20')))
     out.sort(key=lambda e: (e[0], e[1][1]))

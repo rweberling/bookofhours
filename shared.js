@@ -110,6 +110,17 @@ function weekNumbered(week, leap = false) {
   return { week, season: SEASONS.find(s => s.months.includes(middle.month)).key, days };
 }
 
+// The day ("MM-DD") an essay is kept on in a given year: its publication
+// day in the year it came out; in every later year, the last day of its
+// week. scripts/weeks.py's essay_day() keeps the same rule.
+function essayDayKey(published, year) {
+  const [y, m, d] = published.split('-').map(Number);
+  if (year <= y) return published.slice(5);
+  const week = weekOf(m, d);
+  if (week.threshold) return published.slice(5);
+  return week.days[6].key;
+}
+
 function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }

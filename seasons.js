@@ -246,7 +246,7 @@ function renderWeek(week, currentKey, days, subjects) {
   const nav = document.getElementById('season-week');
   const byDate = new Map(days.map(d => [d.date, d]));
   const essay = week.threshold ? null : essayOfWeek(week);
-  const essayKey = essay ? essay.published.slice(5) : null;
+  const essayKey = essay ? essayDayKey(essay.published, new Date().getFullYear()) : null;
   const essayLine = essay
     ? `<p class="season-week-essay">This week\u2019s study: <a href="${escapeHTML(postAddress(essay.season || season.key, essay))}">${escapeHTML(resolveSpeciesFields(essay).species)}</a></p>`
     : '';
@@ -310,7 +310,7 @@ async function dayToShow() {
     const [month, dayOfMonth] = key.split('-').map(Number);
     const week = weekOf(month, dayOfMonth);
     const essay = !week.threshold && essayOfWeek(week);
-    if (essay && essay.published.slice(5) === key) return { essay, key, days };
+    if (essay && essayDayKey(essay.published, now.getFullYear()) === key) return { essay, key, days };
   }
   return null;
 }

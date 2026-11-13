@@ -341,5 +341,9 @@ joins Week 10, and a week belongs to the season of its middle day
 card, the Seasons page opens on it, with the week around it: the week's
 Lectio Terra essay (the one published within the week) and its other days.
 The same days make the year's feed, `year.xml` (`scripts/build_year_feed.py`):
-each day's card, and each essay on the day of the year it was first
-published, every year, the last 14 days at a time.
+each day's card, and each essay on its own day, the last 14 days at a
+time. An essay's day is its publication day the year it comes out, then
+every year the last day of its week (`essay_day()` in
+`scripts/weeks.py`; the Seasons page and the calendar keep the same
+rule): the book's year is fixed by date, and the weekday a week ends on
+drifts a day a year.

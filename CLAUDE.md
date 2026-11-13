@@ -155,9 +155,29 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   (the post published within the week) and its seven days. On the
   essay's own day it opens the essay with the same header. With no card
   it shows the season's essays as before. The cards and essays also go
-  out a day at a time in the year's feed, `year.xml`. In 2026–27 the weeks run Sunday
-  to Saturday and the essays come out on Sundays, so the cards fill
-  Monday to Saturday.
+  out a day at a time in the year's feed, `year.xml`.
+- Three clocks (the working plan, 13 November 2026; to revisit as the
+  daily layer grows; the Syndication Plan's "The days, everywhere"): the
+  book's year is fixed by date (the weeks, and where each card and essay
+  sits); the civil week only says when a piece first comes out; the sun
+  moves the sun-tied days. So an essay shows on its publication day the
+  year it comes out, then every year on the last day of its week
+  (`essay_day()` in `scripts/weeks.py`, `essayDayKey()` in `shared.js`,
+  used by the Seasons page, `year.xml` and the calendar). The weekday
+  drifts a day a year: until 20 December 2026 the weeks run Sunday to
+  Saturday (essays out on Sundays, the week's first day); from Week 1, 21
+  December 2026, Monday to Sunday, so the seventh day is a Sunday through
+  2027, and the cards fill Monday to Saturday either way. In 2027–28 the
+  seventh day is a Monday: decide then whether essays come out on it.
+- Sun-tied cards (planned, to build when the first is approved, before
+  the March 2027 equinox): a card marked `"sun": "summer-solstice"` (or
+  `vernal-equinox`, `autumnal-equinox`) keeps its `date` as its home and
+  each year moves to that year's actual date in Boston (summer solstice
+  20 or 21 June, equinoxes 19/20 March and 22/23 September), swapping
+  with the card there; the calendar lists it by each year's date. The
+  winter solstice falls on 21 December in Boston every year through at
+  least 2035 (the postcards' table), Week 1's first day, so a winter
+  solstice card (Snowy Owl) needs no mark.
 - The first cards go live on Thanksgiving, 26 November 2026 (Week 49:
   Thursday to Saturday), then Week 50 in full; it's a trial of how well
   each week can be chosen, built and shown.
