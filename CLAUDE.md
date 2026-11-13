@@ -272,8 +272,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      solstice, into mid-January), then one a week, keeping that lead; if
      two weeks' candidates are too many, alternate one and two. Day
      candidates never go in the Sheet. The email says which weeks, how
-     many candidates, how many days each week still needs, and how long
-     the days took (they are a trial of that).
+     many candidates, and how many days each week still needs. (The
+     trial's question of time is Ryan's: how long each week takes him
+     to review and to see through the site, the calendar and the rest,
+     not how fast a run finds candidates, so a run reports no timing of
+     its own; Ryan, 13 November 2026.)
   3. If any desk read or write is refused or fails, carries on with the
      Sheet alone and says so in the email.
 - Where a nominated piece comes from (Ryan's rule of thumb, 11 November
@@ -300,7 +303,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   record if the subject has none, and a `days.json` record, on the day
   Ryan's note names, or else the first free day Monday to Saturday in the
   week's order; set `addedAs` to the `dy-` ID. Where a day comes from
-  follows the Seasons' rule: local and regional.
+  follows the Seasons' rule: local and regional. Take the time to reach
+  wide (Ryan, 13 November 2026): mix birds with plants, fungi, insects,
+  mammals, weather, sky and the farm and kitchen; many voices, not one
+  journal for the week; and some days eccentric, an odd object, a
+  surprising text, a sideways way into the season.
 - Records with `kind: "season"` (ids `<date>-sNN`) are season-tag
   proposals for pieces already on the site, not nominations: never copy
   them to the Sheet or count them as candidates. Each run applies the
