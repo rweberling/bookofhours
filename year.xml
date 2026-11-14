@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Built by scripts/build_year_feed.py for 2026-11-13 from data/; edit that, not this. -->
+<!-- Built by scripts/build_year_feed.py for 2026-11-14 from data/; edit that, not this. -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Year — The Earthly Book of Hours</title>
@@ -7,7 +7,7 @@
   <atom:link href="https://earthlyhours.com/year.xml" rel="self" type="application/rss+xml"/>
   <description>The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with an image and a reading, and each week its Lectio Terra essay. It comes round again every year.</description>
   <language>en</language>
-  <lastBuildDate>Fri, 13 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 00:00:00 -0500</lastBuildDate>
   <item>
     <title>Lectio Terra: Wintergreen</title>
     <link>https://earthlyhours.com/lectio-terra/wintergreen/</link>
