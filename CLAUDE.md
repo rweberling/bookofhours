@@ -383,6 +383,17 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   essay on its day candidates, and says in the email which coming essays
   have no subject. Never copy them to the Sheet or count them as
   candidates.
+- The days ahead (Ryan, 15 November 2026): from the Sunday after
+  Thanksgiving (29 November) Ryan's essay email lists the six days that
+  follow it. Each Wednesday run's email opens with that list for the
+  coming Sunday, ready to paste: one line a day (weekday and date, month
+  first; the subject; "words" and the reading's author; "image" and the
+  image's maker; "(not yet released)" on a draft, "—" for a day with no
+  card), headed with those days' own week as the site gives it. Until 20
+  December a Sunday opens its week, so the days are the essay's own
+  week; from Week 1 (21 December) a Sunday closes its week, so the days
+  after it are the next week's, and the heading says so ("Week 2 ·
+  December 28 – January 3").
 - Records with `kind: "season"` (ids `<date>-sNN`) are season-tag
   proposals for pieces already on the site, not nominations: never copy
   them to the Sheet or count them as candidates. Each run applies the
