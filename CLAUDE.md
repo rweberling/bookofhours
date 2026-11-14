@@ -165,7 +165,10 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   (decided 15 November 2026; `essay_day()` in `scripts/weeks.py`,
   `essayDayKey()` in `shared.js`, used by the Seasons page, `year.xml`
   and the calendar). A week can then hold its essay on any of its days,
-  and in later years more than one. The weekday
+  and in later years more than one. For the first cycle every essay
+  keeps the day it came out, with none pinned (Ryan, 15 November 2026:
+  rationalize and move days near the end of the first cycle, not now).
+  The weekday
   drifts a day a year: until 20 December 2026 the weeks run Sunday to
   Saturday (essays out on Sundays, the week's first day); from Week 1, 21
   December 2026, Monday to Sunday, so the seventh day is a Sunday through
@@ -273,9 +276,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      ten for Week 50 (29 November – 5 December). From the 18 November run
      on, about ten for the next calendar week (`scripts/weeks.py`) that
      begins at least 10 days after the run and isn't yet full or on the
-     desk. The pace (decided 13 November): once Ryan says the Thanksgiving
-     trial went well (recorded here, with the date), two such weeks a run
-     through December, until the desk is about four weeks ahead (by the
+     desk. The pace (decided 13 November; brought forward 15 November, so
+     the first weeks of the calendar are ready to share and sell in
+     December): two such weeks a run from the 18 November run
+     (Weeks 51 and 52 then, with 20 December, the solstice eve) through
+     December, until the desk is about four weeks ahead (by the
      solstice, into mid-January), then one a week, keeping that lead; if
      two weeks' candidates are too many, alternate one and two. Day
      candidates never go in the Sheet. The email says which weeks, how
