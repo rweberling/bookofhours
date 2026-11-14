@@ -307,7 +307,16 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   wide (Ryan, 13 November 2026): mix birds with plants, fungi, insects,
   mammals, weather, sky and the farm and kitchen; many voices, not one
   journal for the week; and some days eccentric, an odd object, a
-  surprising text, a sideways way into the season.
+  surprising text, a sideways way into the season. For now, no Thoreau
+  (Ryan, 15 November 2026: constantly relevant and perfect, so give him
+  a rest; the days already approved keep theirs). Images are cultural
+  (Ryan, same day): historic, artistic, somehow strange or mediated
+  (prints, plates, paintings, early photographs, specimens, objects),
+  not straight contemporary field photographs, unless the photograph
+  is itself strange or on an unusual medium. The week's shortlist of
+  what is in season can start from `python3 scripts/inat_week.py <week>`
+  (iNaturalist sightings in New England, each species' share of the
+  week against its share of the year).
 - Records with `kind: "season"` (ids `<date>-sNN`) are season-tag
   proposals for pieces already on the site, not nominations: never copy
   them to the Sheet or count them as candidates. Each run applies the
