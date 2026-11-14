@@ -53,6 +53,11 @@
   "title": "1 to 10 Maple. 11 to 18 Spindle Tree",
   "bibliography": "Heath, Francis George. \"1 to 10 Maple. 11 to 18 Spindle Tree.\" <em>Autumnal Leaves</em>, 3rd ed., Kegan Paul, Trench, &amp; Co., 1885.",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-francis-george-heath",
+    "name": "Francis George Heath",
+    "wikidata": "Q105764193"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

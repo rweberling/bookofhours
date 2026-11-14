@@ -34,7 +34,7 @@ import urllib.parse
 import urllib.request
 from collections import defaultdict
 
-from datafile import load, save
+from datafile import creators, load, save
 
 AGENT = 'EarthlyHours/1.0 (https://earthlyhours.com; linking people to Wikidata)'
 QUERY = '''SELECT ?q ?item ?itemLabel ?itemDescription ?born ?died WHERE {
@@ -151,8 +151,8 @@ def people(readings, images):
         if img.get('draft'):
             continue
         text = img.get('bibliography') or img.get('caption')
-        if img.get('creator'):
-            note(img['creator'], text, img['creator'])
+        for p in creators(img):
+            note(p, text, p)
         # The authors of the book a figure comes from, as for a reading.
         for p in ((img.get('edition') or {}).get('contributors') or []):
             note(p, text, p)

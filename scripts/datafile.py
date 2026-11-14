@@ -39,6 +39,19 @@ def dumps(obj):
     return re.sub(r'\[\n\s*\]', '[]', text) + '\n'
 
 
+def creators(rec):
+    """An image's makers as a list: its `creator` is one person
+    ({"id", "name"}) or, where there are several, a list of them."""
+    c = rec.get('creator')
+    return [p for p in c if p] if isinstance(c, list) else [c] if c else []
+
+
+def creator_names(rec):
+    """The makers' names as a phrase: "A", "A and B", "A, B and C"."""
+    names = [p['name'] for p in creators(rec) if p.get('name')]
+    return ' and '.join(names) if len(names) < 3 else ', '.join(names[:-1]) + ' and ' + names[-1]
+
+
 def load(name):
     if name == 'lectio-data':
         return load_posts()

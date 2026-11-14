@@ -51,6 +51,12 @@ LINK_ROLES = {'cited', 'original', 'copy'}
 FURTHER_KINDS = {'about', 'related'}
 
 
+def creators(rec):
+    """An image's makers as a list (its `creator` is one person or a list)."""
+    c = rec.get('creator')
+    return [p for p in c if p] if isinstance(c, list) else [c] if c else []
+
+
 def isbn13_valid(isbn):
     if not re.fullmatch(r'97[89]\d{10}', isbn or ''):
         return False
@@ -494,8 +500,8 @@ def main():
         for q in cit.get('quotes') or []:
             collect(r['id'], q.get('edition'))
     for img in images:
-        if img.get('creator'):
-            copies[img['creator']['id']].append((img['id'], img['creator']))
+        for p in creators(img):
+            copies[p['id']].append((img['id'], p))
         # An image from a printed volume has an edition of its own, which a
         # reading quoting the same book shares.
         collect(img['id'], img.get('edition'))
@@ -702,7 +708,7 @@ def main():
             check_date(iid, 'source retrieved', source.get('retrieved'))
         # The editor's own pictures were drawn from nothing outside; the
         # rest need some address their record can give as "Drawn from".
-        own = (img.get('creator') or {}).get('id') == 'a-ryan-weberling'
+        own = any(p.get('id') == 'a-ryan-weberling' for p in creators(img))
         if not own and not (source and source.get('url') and source.get('retrieved')):
             gaps[iid].append('source file and retrieval date')
         if not own and not (any(l.get('url') for l in locators(img))
@@ -721,7 +727,7 @@ def main():
         # the institution that holds them.
         if not img.get('edition') and not img.get('institution'):
             gaps[iid].append('holding institution')
-        if img.get('creator') and not img['creator'].get('wikidata'):
+        if any(not p.get('wikidata') for p in creators(img)):
             gaps[iid].append('creator Wikidata ID')
 
     drafts = [r['id'] for r in readings + images + writing if r.get('draft')]

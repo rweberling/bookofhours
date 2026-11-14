@@ -53,6 +53,11 @@
     "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379",
     "label": "HathiTrust"
   },
+  "creator": {
+    "id": "a-grace-greylock-niles",
+    "name": "Grace Greylock Niles",
+    "wikidata": "Q21393563"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

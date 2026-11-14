@@ -49,6 +49,10 @@
     "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215",
     "label": "HathiTrust"
   },
+  "creator": {
+    "id": "a-george-ashley-crosthwait",
+    "name": "George Ashley Crosthwait"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

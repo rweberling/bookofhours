@@ -1001,7 +1001,8 @@
     "display": {
       "size": [400, 656]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-j-francis-macbride", "name": "J. Francis Macbride" }
   },
   {
     "id": "i-0036",
@@ -1040,7 +1041,8 @@
       "pages": "69–109"
     },
     "locator": { "url": "https://doi.org/10.5962/p.249681", "label": "DOI" },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "creator": { "id": "a-richard-e-weaver", "name": "Richard E. Weaver", "wikidata": "Q21612303" }
   },
   {
     "id": "i-0037",
@@ -1143,7 +1145,8 @@
       "url": "https://hdl.handle.net/2027/hvd.32044107218703?urlappend=%3Bseq=95%3Bownerid=27021597765967891-95",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-howard-saunders", "name": "Howard Saunders", "wikidata": "Q506164" }
   },
   {
     "id": "i-0040",
@@ -1175,7 +1178,8 @@
       "url": "https://hdl.handle.net/2027/chi.73144108?urlappend=%3Bseq=6%3Bownerid=13510798902017243-12",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-walter-h-crockett", "name": "Walter H. Crockett" }
   },
   {
     "id": "i-0041",
@@ -1213,7 +1217,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-united-states-forest-service", "name": "United States Forest Service" }
   },
   {
     "id": "i-0042",
@@ -1281,7 +1286,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-united-states-forest-service", "name": "United States Forest Service" }
   },
   {
     "id": "i-0044",
@@ -1420,7 +1426,11 @@
         }
       ]
     },
-    "locator": { "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf", "label": "WMO Cloud Atlas" }
+    "locator": { "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf", "label": "WMO Cloud Atlas" },
+    "creator": {
+      "id": "a-world-meteorological-organization",
+      "name": "World Meteorological Organization"
+    }
   },
   {
     "id": "i-0048",
@@ -1480,7 +1490,8 @@
       "url": "https://hdl.handle.net/2027/mdp.39015020923556?urlappend=%3Bseq=37%3Bownerid=13510798885559159-41",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-e-a-bowles", "name": "E. A. Bowles" }
   },
   {
     "id": "i-0050",
@@ -1517,7 +1528,8 @@
     "locator": {
       "url": "https://www.biodiversitylibrary.org/page/15330235",
       "label": "Biodiversity Heritage Library"
-    }
+    },
+    "creator": { "id": "a-george-maw", "name": "George Maw" }
   },
   {
     "id": "i-0051",
@@ -1555,7 +1567,8 @@
       "url": "https://hdl.handle.net/2027/mdp.39015096461358?urlappend=%3Bseq=3%3Bownerid=113494690-2",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-adolph-baumbach", "name": "Adolph Baumbach", "wikidata": "Q21153774" }
   },
   {
     "id": "i-0052",
@@ -1616,7 +1629,8 @@
       "url": "https://hdl.handle.net/2027/hvd.32044106359417?urlappend=%3Bseq=177%3Bownerid=27021597765908160-183",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-george-henry-tilton", "name": "George Henry Tilton" }
   },
   {
     "id": "i-0054",
@@ -1655,7 +1669,12 @@
       "url": "https://hdl.handle.net/2027/mdp.39015082997191?urlappend=%3Bseq=49%3Bownerid=13510798900618097-59",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": {
+      "id": "a-douglas-houghton-campbell",
+      "name": "Douglas Houghton Campbell",
+      "wikidata": "Q4251095"
+    }
   },
   {
     "id": "i-0055",
@@ -1721,7 +1740,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-e-w-nelson", "name": "E. W. Nelson" }
   },
   {
     "id": "i-0057",
@@ -1753,7 +1773,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-e-w-nelson", "name": "E. W. Nelson" }
   },
   {
     "id": "i-0058",
@@ -1848,7 +1869,8 @@
       ],
       "publisher": "Saalfield Publishing",
       "issued": "1917"
-    }
+    },
+    "creator": { "id": "a-virginia-albert", "name": "Virginia Albert" }
   },
   {
     "id": "i-0061",
@@ -1881,7 +1903,8 @@
       "url": "https://archive.org/details/britishmossesthe21874trip",
       "label": "Internet Archive"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-f-e-tripp", "name": "F. E. Tripp", "wikidata": "Q36558217" }
   },
   {
     "id": "i-0062",
@@ -1913,7 +1936,8 @@
       "url": "https://hdl.handle.net/2027/nnc1.cu04577639?urlappend=%3Bseq=65%3Bownerid=113380982-69",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-mary-v-thayer", "name": "Mary V. Thayer" }
   },
   {
     "id": "i-0063",
@@ -1988,7 +2012,8 @@
       "url": "https://hdl.handle.net/2027/uc1.31822033837014?urlappend=%3Bseq=143%3Bownerid=9007199272020166-147",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-alfred-wegener", "name": "Alfred Wegener", "wikidata": "Q76323" }
   },
   {
     "id": "i-0065",
@@ -2124,7 +2149,14 @@
         }
       ]
     },
-    "locator": { "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item", "label": "Gallica" }
+    "locator": { "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item", "label": "Gallica" },
+    "creator": [
+      {
+        "id": "a-societe-francaise-des-chrysanthemistes",
+        "name": "Société Française des Chrysanthémistes"
+      },
+      { "id": "a-rene-oberthur", "name": "René Oberthür", "wikidata": "Q3426696" }
+    ]
   },
   {
     "id": "i-0069",
@@ -2258,7 +2290,18 @@
     "locator": {
       "url": "https://www.researchgate.net/publication/7129713_The_production_of_a_new_extracellular_putative_long-chain_saturated_polyester_by_smooth_variants_of_Mycobacterium_vaccae_interferes_with_Th1-cytokine_production",
       "label": "ResearchGate"
-    }
+    },
+    "creator": [
+      { "id": "a-elisabeth-rodriguez-guell", "name": "Elisabeth Rodríguez-Güell" },
+      { "id": "a-gemma-agusti", "name": "Gemma Agustí" },
+      { "id": "a-merce-corominas", "name": "Mercè Corominas" },
+      { "id": "a-pere-joan-cardona", "name": "Pere-Joan Cardona" },
+      { "id": "a-isidre-casals", "name": "Isidre Casals" },
+      { "id": "a-teodor-parella", "name": "Teodor Parella" },
+      { "id": "a-marco-antonio-sempere", "name": "Marco-Antonio Sempere" },
+      { "id": "a-marina-luquin", "name": "Marina Luquin" },
+      { "id": "a-esther-julian", "name": "Esther Julián" }
+    ]
   },
   {
     "id": "i-0073",
@@ -2297,7 +2340,8 @@
       "url": "https://hdl.handle.net/2027/mdp.39015061884782?urlappend=%3Bseq=105%3Bownerid=13510798901296899-109",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-l-r-j-horn", "name": "L. R. J. Horn" }
   },
   {
     "id": "i-0074",
@@ -2333,7 +2377,12 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": [
+      { "id": "a-alex-c-martin", "name": "Alex C. Martin" },
+      { "id": "a-ray-c-erickson", "name": "Ray C. Erickson" },
+      { "id": "a-john-h-steenis", "name": "John H. Steenis" }
+    ]
   },
   {
     "id": "i-0075",
@@ -2394,7 +2443,8 @@
     "locator": {
       "url": "https://www.biodiversitylibrary.org/page/33339968",
       "label": "Biodiversity Heritage Library"
-    }
+    },
+    "creator": { "id": "a-millett-taylor-thompson", "name": "Millett Taylor Thompson" }
   },
   {
     "id": "i-0077",
@@ -2455,7 +2505,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21",
       "label": "HathiTrust"
-    }
+    },
+    "creator": { "id": "a-carl-f-gronemann", "name": "Carl F. Gronemann", "wikidata": "Q124060582" }
   },
   {
     "id": "i-0079",
@@ -2500,6 +2551,11 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=8",
       "label": "HathiTrust"
+    },
+    "creator": {
+      "id": "a-grace-greylock-niles",
+      "name": "Grace Greylock Niles",
+      "wikidata": "Q21393563"
     }
   },
   {
@@ -2533,7 +2589,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29",
       "label": "HathiTrust"
-    }
+    },
+    "creator": { "id": "a-c-s-young", "name": "C. S. Young" }
   },
   {
     "id": "i-0081",
@@ -2578,6 +2635,11 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/ncs1.ark:/13960/t7kp86t3m?urlappend=%3Bseq=379",
       "label": "HathiTrust"
+    },
+    "creator": {
+      "id": "a-grace-greylock-niles",
+      "name": "Grace Greylock Niles",
+      "wikidata": "Q21393563"
     }
   },
   {
@@ -2731,7 +2793,8 @@
       "url": "https://hdl.handle.net/2027/njp.32101048071813?urlappend=%3Bseq=327%3Bownerid=27021597769239131-349",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-c-e-faxon", "name": "C. E. Faxon" }
   },
   {
     "id": "i-0086",
@@ -2763,7 +2826,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr." }
   },
   {
     "id": "i-0087",
@@ -2803,7 +2867,8 @@
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
     "rightsNote": "published 1957; whether its copyright was renewed is unchecked",
-    "rightsNotePrivate": true
+    "rightsNotePrivate": true,
+    "creator": { "id": "a-e-s-harrar", "name": "E. S. Harrar" }
   },
   {
     "id": "i-0088",
@@ -3025,7 +3090,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t9767nk52?urlappend=%3Bseq=215",
       "label": "HathiTrust"
-    }
+    },
+    "creator": { "id": "a-george-ashley-crosthwait", "name": "George Ashley Crosthwait" }
   },
   {
     "id": "i-0095",
@@ -3094,7 +3160,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-frederick-v-coville", "name": "Frederick V. Coville", "wikidata": "Q535104" }
   },
   {
     "id": "i-0097",
@@ -3318,7 +3385,8 @@
     "locator": {
       "url": "https://ui.adsabs.harvard.edu/scan/manifest/1901MNRAS..62..161D",
       "label": "NASA ADS"
-    }
+    },
+    "creator": { "id": "a-w-f-denning", "name": "W. F. Denning" }
   },
   {
     "id": "i-0104",
@@ -3351,7 +3419,8 @@
     "locator": {
       "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D",
       "label": "NASA ADS"
-    }
+    },
+    "creator": { "id": "a-w-f-denning", "name": "W. F. Denning" }
   },
   {
     "id": "i-0105",
@@ -3422,7 +3491,8 @@
     "locator": {
       "url": "https://www.biodiversitylibrary.org/page/44254481",
       "label": "Biodiversity Heritage Library"
-    }
+    },
+    "creator": { "id": "a-m-p-verneuil", "name": "M. P. Verneuil" }
   },
   {
     "id": "i-0107",
@@ -3456,7 +3526,8 @@
     "locator": {
       "url": "https://www.biodiversitylibrary.org/item/47050#page/148/mode/1up",
       "label": "Biodiversity Heritage Library"
-    }
+    },
+    "creator": { "id": "a-harry-s-paris", "name": "Harry S. Paris" }
   },
   {
     "id": "i-0108",
@@ -3496,6 +3567,11 @@
     "locator": {
       "url": "https://books.openedition.org/mnhn/5164?dir=next",
       "label": "OpenEdition Books"
+    },
+    "creator": {
+      "id": "a-antoine-nicolas-duchesne",
+      "name": "Antoine Nicolas Duchesne",
+      "wikidata": "Q586815"
     }
   },
   {
@@ -3533,7 +3609,8 @@
       "issued": "2006-07",
       "identifiers": { "doi": "10.1093/aob/mcl082" }
     },
-    "locator": { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/", "label": "PubMed Central" }
+    "locator": { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/", "label": "PubMed Central" },
+    "creator": { "id": "a-jean-bourdichon", "name": "Jean Bourdichon" }
   },
   {
     "id": "i-0110",
@@ -3730,7 +3807,11 @@
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "title": "Rose Coghlan as “The Watermelon,” from the Series Fancy Dress Ball Costumes (N73) for Duke Brand Cigarettes",
     "date": "1889",
-    "institution": "The Metropolitan Museum of Art"
+    "institution": "The Metropolitan Museum of Art",
+    "creator": [
+      { "id": "a-w-duke-sons-and-co", "name": "W. Duke, Sons & Co." },
+      { "id": "a-knapp-and-company", "name": "Knapp & Company" }
+    ]
   },
   {
     "id": "i-0116",
@@ -3792,7 +3873,8 @@
       "label": "Internet Archive"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "creator": { "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr." }
   },
   {
     "id": "i-0118",
@@ -3822,7 +3904,8 @@
       "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22",
       "label": "Internet Archive"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-mark-catesby", "name": "Mark Catesby" }
   },
   {
     "id": "i-0119",
@@ -3864,7 +3947,8 @@
       "url": "https://archive.org/details/northamericansyl01michin/page/n173/mode/2up",
       "label": "Internet Archive"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-p-j-redoute", "name": "P. J. Redouté" }
   },
   {
     "id": "i-0120",
@@ -3962,7 +4046,8 @@
       "url": "https://hdl.handle.net/2027/nyp.33433007883758?urlappend=%3Bseq=263%3Bownerid=121136035-263",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-c-e-faxon", "name": "C. E. Faxon" }
   },
   {
     "id": "i-0123",
@@ -4044,7 +4129,11 @@
       "species": ["sp-0019"]
     },
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-    "title": "Monarch and Milkweed"
+    "title": "Monarch and Milkweed",
+    "creator": [
+      { "id": "a-helen-frost", "name": "Helen Frost" },
+      { "id": "a-leonid-gore", "name": "Leonid Gore" }
+    ]
   },
   {
     "id": "i-0126",
@@ -4676,7 +4765,11 @@
       "label": "HathiTrust"
     },
     "bibliography": "Dame, Lorin L., and Henry Brooks. \"<em>Rhus typhina</em>.\" <em>Handbook of the Trees of New England</em>, Ginn &amp; Company, 1902, plate LXVIII.",
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": [
+      { "id": "a-lorin-l-dame", "name": "Lorin L. Dame", "wikidata": "Q18911198" },
+      { "id": "a-henry-brooks", "name": "Henry Brooks" }
+    ]
   },
   {
     "id": "i-0143",
@@ -4832,7 +4925,8 @@
     },
     "title": "Monotropa uniflora. Indian pipe",
     "bibliography": "Torrey, John. \"<em>Monotropa uniflora</em>. Indian Pipe.\" <em>A Flora of the State of New-York</em>, vol. 1, Carroll and Cook, 1843.",
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-john-torrey", "name": "John Torrey", "wikidata": "Q1346660" }
   },
   {
     "id": "i-0148",
@@ -4907,7 +5001,12 @@
     },
     "title": "1 to 10 Maple. 11 to 18 Spindle Tree",
     "bibliography": "Heath, Francis George. \"1 to 10 Maple. 11 to 18 Spindle Tree.\" <em>Autumnal Leaves</em>, 3rd ed., Kegan Paul, Trench, &amp; Co., 1885.",
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": {
+      "id": "a-francis-george-heath",
+      "name": "Francis George Heath",
+      "wikidata": "Q105764193"
+    }
   },
   {
     "id": "i-0150",
@@ -4949,7 +5048,12 @@
     },
     "bibliography": "McCully, M. E., et al. \"The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants.\" <em>Annals of Botany</em>, vol. 94, no. 5, 2004, pp. 665–674, fig. 1.",
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "photographs of plates published in 1869"
+    "rightsNote": "photographs of plates published in 1869",
+    "creator": [
+      { "id": "a-m-e-mccully", "name": "M. E. McCully" },
+      { "id": "a-m-j-canny", "name": "M. J. Canny" },
+      { "id": "a-c-x-huang", "name": "C. X. Huang" }
+    ]
   },
   {
     "id": "i-0151",
@@ -5155,7 +5259,8 @@
       "label": "College of Physicians of Philadelphia"
     },
     "bibliography": "Bigelow, Jacob. \"Gaultheria procumbens.\" <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>, vol. 2, Cummings and Hilliard, 1818, plate XXII.",
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "creator": { "id": "a-jacob-bigelow", "name": "Jacob Bigelow", "wikidata": "Q1236142" }
   },
   {
     "id": "i-0157",

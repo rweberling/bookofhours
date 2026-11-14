@@ -39,7 +39,7 @@ from html import escape, unescape
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from datafile import load  # noqa: E402
+from datafile import creator_names, creators, load  # noqa: E402
 from build_shared import render as render_shared  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -275,7 +275,7 @@ class Collection:
             if not title:
                 cap = plain(r.get('caption'))
                 title = cap if len(cap) <= 90 else cap[:90].rsplit(' ', 1)[0].rstrip(',;:') + ' …'
-            who = (r.get('creator') or {}).get('name')
+            who = creator_names(r)
             return f'{escape(who)}, {escape(title)}' if who else escape(title)
         if rid in self.editions:
             return f'<em>{escape(self.editions[rid].get("title") or rid)}</em>'
@@ -333,7 +333,7 @@ def drawn_from(r):
     """Where the image shown was drawn from: its place in the source (the
     locator), else its cited link; then the exact file, where recorded,
     with the day it was downloaded. The editor's own pictures say so."""
-    if (r.get('creator') or {}).get('id') == EDITOR and not (r.get('locator') or r.get('links')):
+    if any(p.get('id') == EDITOR for p in creators(r)) and not (r.get('locator') or r.get('links')):
         return "The editor's own photograph" if 'photograph' in (r.get('bibliography') or '').lower() else "The editor's own work"
     rows = locator_rows(r.get('locator'))
     if not rows:
@@ -474,7 +474,7 @@ def image_page(col, r):
     ed = r.get('edition') or {}
     work = dl([
         ('Title', escape(r.get('title') or '')),
-        ('By', people_line([r['creator']]) if r.get('creator') else ''),
+        ('By', people_line(creators(r))),
         ('Made', escape(r.get('date') or '')),
         ('Held by', escape(r.get('institution') or '') + (f', {escape(r["shelfmark"])}' if r.get('shelfmark') else '')),
         ('Part of', escape(r.get('partOf') or '') if isinstance(r.get('partOf'), str) else escape(json.dumps(r.get('partOf'))) if r.get('partOf') else ''),
@@ -493,7 +493,7 @@ def image_page(col, r):
     title = col.name(r['id'])
     ld = {'@context': 'https://schema.org', '@type': 'VisualArtwork', '@id': f'{SITE}/id/{r["id"]}/',
           'name': r.get('title') or plain(r.get('caption'))[:120], 'url': f'{SITE}/id/{r["id"]}/',
-          'creator': [person_ld(r['creator'])] if r.get('creator') else [],
+          'creator': [person_ld(p) for p in creators(r)],
           'dateCreated': r.get('date'), 'description': r.get('alt'),
           'isBasedOn': f'{SITE}/id/{ed["id"]}/' if ed.get('id') else None,
           'about': subjects_ld(col, r), 'license': rights,

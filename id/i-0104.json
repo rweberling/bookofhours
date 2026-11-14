@@ -47,6 +47,10 @@
     "url": "https://ui.adsabs.harvard.edu/scan/manifest/1877Obs.....1..164D",
     "label": "NASA ADS"
   },
+  "creator": {
+    "id": "a-w-f-denning",
+    "name": "W. F. Denning"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

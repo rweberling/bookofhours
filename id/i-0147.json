@@ -51,6 +51,11 @@
   "title": "Monotropa uniflora. Indian pipe",
   "bibliography": "Torrey, John. \"<em>Monotropa uniflora</em>. Indian Pipe.\" <em>A Flora of the State of New-York</em>, vol. 1, Carroll and Cook, 1843.",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-john-torrey",
+    "name": "John Torrey",
+    "wikidata": "Q1346660"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

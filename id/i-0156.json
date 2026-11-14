@@ -53,6 +53,11 @@
   },
   "bibliography": "Bigelow, Jacob. \"Gaultheria procumbens.\" <em>American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States</em>, vol. 2, Cummings and Hilliard, 1818, plate XXII.",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "creator": {
+    "id": "a-jacob-bigelow",
+    "name": "Jacob Bigelow",
+    "wikidata": "Q1236142"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

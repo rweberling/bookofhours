@@ -45,6 +45,10 @@
     "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf",
     "label": "WMO Cloud Atlas"
   },
+  "creator": {
+    "id": "a-world-meteorological-organization",
+    "name": "World Meteorological Organization"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

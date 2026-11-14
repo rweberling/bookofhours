@@ -68,7 +68,7 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from datafile import load, save  # noqa: E402
+from datafile import creator_names, load, save  # noqa: E402
 from syndicate import OPEN_RIGHTS, plain, posts  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -193,7 +193,7 @@ def work_and_creator(image):
     edition = image.get('edition') or {}
     work = (image.get('title') or edition.get('title')
             or (image.get('partOf') or {}).get('title'))
-    creator = (image.get('creator') or {}).get('name')
+    creator = creator_names(image)
     if not creator:
         authors = [c['name'] for c in edition.get('contributors', []) if c.get('role') == 'author']
         creator = authors[0] if authors else None

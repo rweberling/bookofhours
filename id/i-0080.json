@@ -51,6 +51,10 @@
     "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29",
     "label": "HathiTrust"
   },
+  "creator": {
+    "id": "a-c-s-young",
+    "name": "C. S. Young"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

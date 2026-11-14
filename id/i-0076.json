@@ -46,6 +46,10 @@
     "url": "https://www.biodiversitylibrary.org/page/33339968",
     "label": "Biodiversity Heritage Library"
   },
+  "creator": {
+    "id": "a-millett-taylor-thompson",
+    "name": "Millett Taylor Thompson"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

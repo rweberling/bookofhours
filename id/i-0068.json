@@ -57,6 +57,17 @@
     "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6424211f/f355.item",
     "label": "Gallica"
   },
+  "creator": [
+    {
+      "id": "a-societe-francaise-des-chrysanthemistes",
+      "name": "Société Française des Chrysanthémistes"
+    },
+    {
+      "id": "a-rene-oberthur",
+      "name": "René Oberthür",
+      "wikidata": "Q3426696"
+    }
+  ],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

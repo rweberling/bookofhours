@@ -66,6 +66,10 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/",
     "label": "PubMed Central"
   },
+  "creator": {
+    "id": "a-jean-bourdichon",
+    "name": "Jean Bourdichon"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

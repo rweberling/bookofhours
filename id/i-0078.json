@@ -50,6 +50,11 @@
     "url": "https://hdl.handle.net/2027/uiuo.ark:/13960/t6qz2685v?urlappend=%3Bseq=21",
     "label": "HathiTrust"
   },
+  "creator": {
+    "id": "a-carl-f-gronemann",
+    "name": "Carl F. Gronemann",
+    "wikidata": "Q124060582"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

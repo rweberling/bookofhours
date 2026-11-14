@@ -46,6 +46,10 @@
     "url": "https://www.biodiversitylibrary.org/page/44254481",
     "label": "Biodiversity Heritage Library"
   },
+  "creator": {
+    "id": "a-m-p-verneuil",
+    "name": "M. P. Verneuil"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

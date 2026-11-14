@@ -113,7 +113,7 @@ def credits():
                   or next((l['url'] for l in links if l['role'] in ('original', 'copy')), None))
         out[rec['file']] = {
             'title': plain(rec.get('title') or (rec.get('edition') or {}).get('title')),
-            'creator': (rec.get('creator') or {}).get('name'),
+            'creator': datafile.creator_names(rec) or None,
             'date': rec.get('date'),
             'description': plain(rec.get('caption')),
             'rights': rec.get('rights'),

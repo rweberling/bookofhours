@@ -51,6 +51,10 @@
     "url": "https://www.biodiversitylibrary.org/page/15330235",
     "label": "Biodiversity Heritage Library"
   },
+  "creator": {
+    "id": "a-george-maw",
+    "name": "George Maw"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

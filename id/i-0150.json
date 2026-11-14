@@ -64,6 +64,20 @@
   "bibliography": "McCully, M. E., et al. \"The Management of Extracellular Ice by Petioles of Frost-resistant Herbaceous Plants.\" <em>Annals of Botany</em>, vol. 94, no. 5, 2004, pp. 665–674, fig. 1.",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "photographs of plates published in 1869",
+  "creator": [
+    {
+      "id": "a-m-e-mccully",
+      "name": "M. E. McCully"
+    },
+    {
+      "id": "a-m-j-canny",
+      "name": "M. J. Canny"
+    },
+    {
+      "id": "a-c-x-huang",
+      "name": "C. X. Huang"
+    }
+  ],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

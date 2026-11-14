@@ -60,6 +60,20 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "a U.S. government work",
+  "creator": [
+    {
+      "id": "a-alex-c-martin",
+      "name": "Alex C. Martin"
+    },
+    {
+      "id": "a-ray-c-erickson",
+      "name": "Ray C. Erickson"
+    },
+    {
+      "id": "a-john-h-steenis",
+      "name": "John H. Steenis"
+    }
+  ],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

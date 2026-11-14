@@ -52,6 +52,11 @@
     "url": "https://books.openedition.org/mnhn/5164?dir=next",
     "label": "OpenEdition Books"
   },
+  "creator": {
+    "id": "a-antoine-nicolas-duchesne",
+    "name": "Antoine Nicolas Duchesne",
+    "wikidata": "Q586815"
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

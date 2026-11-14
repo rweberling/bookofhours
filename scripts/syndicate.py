@@ -109,7 +109,7 @@ from zoneinfo import ZoneInfo
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from datafile import load, save  # noqa: E402
+from datafile import creator_names, load, save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = 'https://earthlyhours.com'
@@ -690,7 +690,7 @@ def compose_hour(c, day, watch, reading, image):
     path = f'/?r={reading["id"]}&i={image["id"]}'
     shown_link = 'earthlyhours.com' + path
     author = c.author(reading['id']) or plain(reading['citation'].get('display', '')).split(',')[0]
-    creator = (image.get('creator') or {}).get('name')
+    creator = creator_names(image)
     head = f'{watch["label"]} · {watch["subtitle"]}\n\n'
     who = author + (f', with a picture by {creator}' if creator else '')
     text = head + who + '\n' + shown_link
