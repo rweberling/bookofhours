@@ -162,8 +162,10 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   subject. No weekday letters: the weekday drifts, and the page leans to
   the seasons, not the civil calendar. The Seasons page carries the
   calendar's line ("the year, a day at a time… Subscribe"), not the
-  postcards' (`CALENDAR_RUBRIC` in `shared.js`; a draft shown only with
-  `?preview` until its `href`, the subscription's page, is set). The
+  postcards' (`CALENDAR_RUBRIC` in `shared.js`, linking to the
+  subscription's page, https://otherwise.dfos.com/p/daily-calendar-feed;
+  shown only with `?preview` until its `live` is set true, when the
+  subscription can be bought). The
   cards and essays also go out a day at a time in the year's feed,
   `year.xml`.
 - Three clocks (the working plan, 13 November 2026; to revisit as the

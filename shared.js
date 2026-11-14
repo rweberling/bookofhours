@@ -919,19 +919,21 @@ function solsticeRubricLine(withDismiss, r = SOLSTICE_RUBRIC) {
   return p;
 }
 // On the Seasons page the line is the calendar's instead (Ryan, 15
-// November 2026): the year a day at a time, subscribed to. A draft: until
-// CALENDAR_RUBRIC.href is set it shows only with ?preview. Its × hides it
-// for that reader (browser storage only).
+// November 2026): the year a day at a time, subscribed to. Shown only with
+// ?preview until CALENDAR_RUBRIC.live is true (the subscription's page
+// still says "coming soon"). Its × hides it for that reader (browser
+// storage only).
 const CALENDAR_RUBRIC = {
   key: 'eh-rubric-calendar',
-  href: '',
+  href: 'https://otherwise.dfos.com/p/daily-calendar-feed',
+  live: false,
   label: 'the year, a day at a time:',
   text: 'each day\u2019s card and each week\u2019s essay, in your own calendar.',
   link: 'Subscribe\u00a0\u2192'
 };
 function showCalendarRubric() {
   const r = CALENDAR_RUBRIC;
-  if (!r.href && !PREVIEW_DRAFTS) return;
+  if (!r.live && !PREVIEW_DRAFTS) return;
   try { if (localStorage.getItem(r.key)) return; } catch (e) { /* storage blocked: show it */ }
   const line = (withDismiss) => {
     const p = solsticeRubricLine(withDismiss, r);
