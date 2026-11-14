@@ -334,7 +334,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   is done at six (Week 49, the trial, at three). Each approved day
   becomes a reading and an image (`shownIn: "days"`), a new `sp-`/`ph-`
   record if the subject has none, and a `days.json` record, on the day
-  Ryan's note names, or else the first free day Monday to Saturday in the
+  Ryan's note names (or the record's `proposedDay`, set at his word in a
+  session), or else the first free day Monday to Saturday in the
   week's order; set `addedAs` to the `dy-` ID and `day` to its date
   (`MM-DD`). Where a day comes from
   follows the Seasons' rule: local and regional. Take the time to reach
