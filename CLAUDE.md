@@ -154,8 +154,18 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   for another day), with the week above: its number and dates, its essay
   (the post published within the week) and its seven days. On the
   essay's own day it opens the essay with the same header. With no card
-  it shows the season's essays as before. The cards and essays also go
-  out a day at a time in the year's feed, `year.xml`.
+  it shows the season's essays as before. On a day (or an essay's day),
+  "turn the page" goes round the week's pages, its cards and its essay,
+  back to the first (Ryan, 15 November 2026: no "day before" button, to
+  match the other pages); dates read month first ("November 26"); on
+  phones the week keeps to one line, only the day showing naming its
+  subject. No weekday letters: the weekday drifts, and the page leans to
+  the seasons, not the civil calendar. The Seasons page carries the
+  calendar's line ("the year, a day at a time… Subscribe"), not the
+  postcards' (`CALENDAR_RUBRIC` in `shared.js`; a draft shown only with
+  `?preview` until its `href`, the subscription's page, is set). The
+  cards and essays also go out a day at a time in the year's feed,
+  `year.xml`.
 - Three clocks (the working plan, 13 November 2026; to revisit as the
   daily layer grows; the Syndication Plan's "The days, everywhere"): the
   book's year is fixed by date (the weeks, and where each card and essay

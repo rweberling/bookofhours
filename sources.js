@@ -257,7 +257,7 @@ function buildSources(collection, lectio, days = [], subjects = new Map()) {
       const week = fold.post;
       if (!week) {
         const w = fold.n === 'eve' ? null : weekNumbered(fold.n);
-        const when = w ? `Week ${fold.n} · ${weekRangeWords(w)}` : 'The year\u2019s eve · 20 December';
+        const when = w ? `Week ${fold.n} · ${weekRangeWords(w)}` : 'The year\u2019s eve · December 20';
         return `
     <details class="week" id="week-${fold.n}">
       <summary><span class="week-date">${when}</span><span class="week-title">${escapeHTML(list.map(day => subjectName(day.subject)).filter(Boolean)[0] || '')}</span>${daysLine(list.slice(1))}</summary>

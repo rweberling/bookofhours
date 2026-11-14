@@ -121,12 +121,12 @@ function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
 
-// "29 November – 5 December", or "22–28 February".
+// "November 29 – December 5", or "February 22–28".
 function weekRangeWords(w) {
   const first = w.days[0], last = w.days[w.days.length - 1];
   return first.month === last.month
-    ? `${first.day}–${last.day} ${MONTH_NAMES[last.month - 1]}`
-    : `${first.day} ${MONTH_NAMES[first.month - 1]} – ${last.day} ${MONTH_NAMES[last.month - 1]}`;
+    ? `${MONTH_NAMES[first.month - 1]} ${first.day}–${last.day}`
+    : `${MONTH_NAMES[first.month - 1]} ${first.day} – ${MONTH_NAMES[last.month - 1]} ${last.day}`;
 }
 
 // The days (data/days.json): each a date ("MM-DD"), its subject (a
@@ -880,7 +880,7 @@ function weatherView(collection) {
 }
 
 // ── The solstice rubric ─────────────────────────────────────────────
-// One red line under the page's date (Hours), readers (Seasons) or
+// One red line under the page’s date (Hours) or
 // readout (Weather) pointing to the winter-solstice postcards, and again,
 // a size smaller and without its ×, under the dial's key in Wander the
 // Seasons. Shown until the solstice ends (SOLSTICE_RUBRIC.until, local
@@ -894,8 +894,7 @@ const SOLSTICE_RUBRIC = {
   text: 'five winter\u2011solstice postcards.',
   link: 'Order the set\u00a0\u2192'
 };
-function solsticeRubricLine(withDismiss) {
-  const r = SOLSTICE_RUBRIC;
+function solsticeRubricLine(withDismiss, r = SOLSTICE_RUBRIC) {
   const p = document.createElement('p');
   p.className = 'solstice-rubric' + (withDismiss ? '' : ' in-pane');
   const label = document.createElement('span');
@@ -903,7 +902,7 @@ function solsticeRubricLine(withDismiss) {
   label.innerHTML = '<span class="rubric-pilcrow" aria-hidden="true">¶</span> ';
   label.append(r.label);
   const a = document.createElement('a');
-  a.href = r.href; a.target = '_blank'; a.rel = 'noopener';
+  a.href = r.href || '#'; a.target = '_blank'; a.rel = 'noopener';
   a.textContent = r.link;
   p.append(label, ' ' + r.text + ' ', a);
   if (withDismiss) {
@@ -912,14 +911,40 @@ function solsticeRubricLine(withDismiss) {
     x.setAttribute('aria-label', 'Hide this notice');
     x.textContent = '×';
     x.addEventListener('click', () => {
-      document.querySelectorAll('.solstice-rubric').forEach(el => el.remove());
+      document.querySelectorAll(r === SOLSTICE_RUBRIC ? '.solstice-rubric:not(.calendar-rubric)' : '.calendar-rubric').forEach(el => el.remove());
       try { localStorage.setItem(r.key, '1'); } catch (e) { /* hidden for this visit only */ }
     });
     p.append(x);
   }
   return p;
 }
+// On the Seasons page the line is the calendar's instead (Ryan, 15
+// November 2026): the year a day at a time, subscribed to. A draft: until
+// CALENDAR_RUBRIC.href is set it shows only with ?preview. Its × hides it
+// for that reader (browser storage only).
+const CALENDAR_RUBRIC = {
+  key: 'eh-rubric-calendar',
+  href: '',
+  label: 'the year, a day at a time:',
+  text: 'each day\u2019s card and each week\u2019s essay, in your own calendar.',
+  link: 'Subscribe\u00a0\u2192'
+};
+function showCalendarRubric() {
+  const r = CALENDAR_RUBRIC;
+  if (!r.href && !PREVIEW_DRAFTS) return;
+  try { if (localStorage.getItem(r.key)) return; } catch (e) { /* storage blocked: show it */ }
+  const line = (withDismiss) => {
+    const p = solsticeRubricLine(withDismiss, r);
+    p.classList.add('calendar-rubric');
+    return p;
+  };
+  const turn = document.querySelector('.season-reading .season-turn');
+  if (turn) turn.before(line(true));
+  const pane = document.querySelector('#season-pane .dial-legend');
+  if (pane) pane.after(line(false));
+}
 function showSolsticeRubric() {
+  if (document.querySelector('.season-reading')) { showCalendarRubric(); return; }
   const r = SOLSTICE_RUBRIC;
   if (new Date() >= r.until) return;
   try { if (localStorage.getItem(r.key)) return; } catch (e) { /* storage blocked: show it */ }

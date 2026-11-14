@@ -174,9 +174,13 @@ function showPostPage() {
    shared.js).
 ────────────────────────────────────────────────────────────────── */
 let currentDay = null;
+// The week's pages while a day or an essay's day is showing: its days with
+// a card, and its essay's day, in date order. Turning the page goes round
+// them; null elsewhere.
+let weekPages = null, weekPageKey = null;
 
 function dayWords(month, day) {
-  return `${day} ${MONTH_NAMES[month - 1]}`;
+  return `${MONTH_NAMES[month - 1]} ${day}`;
 }
 
 // The week's essay: the post published within the week, any year (the
@@ -262,6 +266,9 @@ function renderWeek(week, currentKey, days, subjects) {
     if (d.key === essayKey) return `<li><a href="seasons.html?day=${d.key}${keep}">${label}</a></li>`;
     return `<li class="season-week-empty">${label}</li>`;
   }).join('');
+  weekPages = week.days.map(d => d.key).filter(k => byDate.has(k) || k === essayKey);
+  weekPageKey = currentKey;
+  if (weekPages.length > 1) document.getElementById('season-turn-part').hidden = false;
   nav.innerHTML = `<p class="season-week-head">${week.threshold ? 'The year\u2019s eve' : `Week ${week.week} · ${weekRangeWords(week)}`}</p>${essayLine}<ol class="season-week-days">${items}</ol>`;
   nav.hidden = false;
 }
@@ -294,6 +301,7 @@ function setDayCanonical(day) {
 // week's header goes.
 function leaveDay() {
   currentDay = null;
+  weekPages = weekPageKey = null;
   const nav = document.getElementById('season-week');
   if (nav) { nav.hidden = true; nav.innerHTML = ''; }
 }
@@ -583,6 +591,12 @@ function showSeasonEntry(key, entryId) {
 // The button sits at the foot of the post, so the next post opens at its
 // top, as a turned page does.
 async function turnSeasonPage() {
+  // On a day, or an essay's day: the week's next page, round to its first.
+  if (weekPages && weekPages.length > 1) {
+    const next = weekPages[(weekPages.indexOf(weekPageKey) + 1) % weekPages.length];
+    window.location.href = `seasons.html?day=${next}${PREVIEW_DRAFTS ? '&preview' : ''}`;
+    return;
+  }
   await loadSeasons();
   const next = pickExcluding(season.entries, entry => entry.id === currentEntryId);
   // A post page holds one post: the next one is read at its own address.

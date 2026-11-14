@@ -2579,6 +2579,13 @@ a.page-action { text-decoration: none; }
 .season-week-days .season-week-subject { font-style: italic; }
 .season-week-days li[aria-current] { color: var(--accent); }
 .season-week-days .season-week-empty { opacity: 0.55; }
+/* On narrow screens the week keeps to one line: only the day showing
+   names its subject. */
+@media (max-width: 600px) {
+  .season-week-days { flex-wrap: nowrap; }
+  .season-week-days li { padding: 0 7px; white-space: nowrap; }
+  .season-week-days li:not([aria-current]) .season-week-subject { display: none; }
+}
 @media print { .season-week { display: none; } }
 
 #season-reading-body .day-figure { margin-top: 0; }
