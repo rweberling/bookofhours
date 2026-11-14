@@ -824,13 +824,46 @@ function furtherReadingText(item) {
   return `${item.source}${title}${note}`;
 }
 
+// An image's credit as the cards and panes show it. `creator` in the data
+// stays strict (a maker the sources name); where there is none this falls
+// back, in turn, to the record's own `credit` line (a short display credit
+// set by hand: "The Tacoma Times", "Nasca artist(s)"), the authors (else
+// editors) of the book or article it comes from, that journal or paper,
+// and the institution holding it. One name, "A and B", or "A et al."
+// `keep` is the same for a keep card's file name: personal names (keep.js
+// shortens them to surnames) or { name, whole: true } for one kept whole.
+function imageCredit(image) {
+  const none = { text: '', keep: [] };
+  if (!image) return none;
+  const people = list => {
+    const names = (list || []).map(p => p && p.name).filter(Boolean);
+    if (!names.length) return null;
+    return {
+      text: names.length > 2 ? `${names[0]} et al.` : names.join(' and '),
+      keep: names.slice(0, names.length > 2 ? 1 : 2)
+    };
+  };
+  const whole = text => ({ text, keep: [{ name: text, whole: true }] });
+  const made = people(Array.isArray(image.creator) ? image.creator : [image.creator]);
+  if (made) return made;
+  if (image.credit) return whole(image.credit);
+  const ed = image.edition || {};
+  const role = r => (ed.contributors || []).filter(c => c.role === r);
+  const fromBook = people(role('author')) || people(role('editor'));
+  if (fromBook) return fromBook;
+  if (ed.container) return whole(ed.container);
+  if (image.institution) return whole(image.institution);
+  return none;
+}
+
 function imageView(image) {
   const display = image.display || {};
   return {
     id: image.id,
     src: image.file,
     caption: image.caption || '',
-    creator: (image.creator && !Array.isArray(image.creator) && image.creator.name) || '',
+    creator: imageCredit(image).text,
+    credit: imageCredit(image),
     alt: image.alt || '',
     weather: ((image.tags && image.tags.weather) || []).map(tagId),
     seasons: ((image.tags && image.tags.seasons) || []).map(tagId),

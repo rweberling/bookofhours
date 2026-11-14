@@ -202,7 +202,7 @@ async function showDay(day, days) {
   const week = weekOf(month, dayOfMonth, isLeapYear(new Date().getFullYear()));
 
   currentDay = Object.assign({}, day, {
-    names: [reading ? readingAuthor(reading) : '', image && image.creator && !Array.isArray(image.creator) ? image.creator.name : '']
+    names: [reading ? readingAuthor(reading) : '', ...imageCredit(image).keep]
   });
   currentEntryId = null;
   setSeason(week.season);
@@ -894,12 +894,12 @@ async function buildSpeciesGrid() {
 
   // With ?preview, each card names its writers ("words") and the makers
   // of its figures ("images"), read from the image records its body
-  // lists; no images line where none is named.
+  // lists (imageCredit: the maker, or else the book, paper or holder it
+  // comes from); no images line where there is none.
   let imageMakers = null;
   if (PREVIEW_DRAFTS) {
     const collection = await loadCollection();
-    imageMakers = new Map(collection.images.map(i => [i.id,
-      (Array.isArray(i.creator) ? i.creator : i.creator ? [i.creator] : []).map(c => c.name).filter(Boolean)]));
+    imageMakers = new Map(collection.images.map(i => [i.id, [imageCredit(i).text].filter(Boolean)]));
   }
   const figureMakers = entry => {
     const names = [];
@@ -1040,7 +1040,7 @@ async function buildPaneDays() {
     if (card) {
       const reading = readings.get(card.reading), image = images.get(card.image);
       const writer = reading ? readingAuthor(reading) : '';
-      const maker = image && image.creator && !Array.isArray(image.creator) ? image.creator.name : '';
+      const maker = imageCredit(image).text;
       what = `<a href="seasons.html?day=${d.key}${keep}">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</a>`
         + (writer ? `<span class="pane-day-names"><span class="credit-label">words</span> ${escapeHTML(writer)}</span>` : '')
         + (maker ? `<span class="pane-day-names"><span class="credit-label">image</span> ${escapeHTML(maker)}</span>` : '');

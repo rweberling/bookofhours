@@ -171,7 +171,12 @@ Then each kind has its own:
   corner the reading's card sits in, clear of what matters in the
   picture: `top-left`, `top-right`, `bottom-left`, `bottom-right` or
   `bottom-center`; `weatherUnset`, as for readings), `link` (where a figure links, if not to
-  itself), `bibliography`, `creator`, `title`, `date` (when the image
+  itself), `bibliography`, `creator` (the maker, only where a source
+  names one: on the work itself, in its caption or bibliography, or on
+  the cited page; a list where there are several; never a guess),
+  `credit` (where there's no `creator`: a short display credit set by
+  hand, "The Tacoma Times", "Nasca artist(s)", "C. Mir et al."; not a
+  claim of who made it), `title`, `date` (when the image
   was made, which for a plate may be before the edition it's cited from),
   `institution` (who holds it), `shelfmark` (its call number there, for
   a manuscript), `edition` and `locator` (for a plate or
@@ -190,6 +195,12 @@ Then each kind has its own:
   describes the video. A YouTube figure (its `file` the YouTube address)
   shows no picture, only a play button named from its caption, so it
   takes no `alt`.
+- **An image's credit as shown** (`imageCredit()` in `shared.js`, for the
+  keep cards and the Seasons panes): its `creator`; else its `credit`;
+  else the authors (else editors) of the book or article it comes from;
+  else that journal or paper (`container`); else the holding
+  `institution`. Three or more names show as "First et al." The data
+  stays strict; only the display falls back.
 - **Further reading** (`furtherReading`, a list): pages for a reader who
   wants more, each with its `kind` (`about`: on this work itself;
   `related`: on its subject, its maker or its context), `source` (who

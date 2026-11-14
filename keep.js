@@ -12,8 +12,10 @@
      kind      'hours', 'weather' or 'season': which card to draw
      title     for the file name and the printed stamp: the hour
                ("Hush"), "The Weather", the species ("Common Pawpaw")
-     names     the reading's author and the image's creator, from
-               their records, for the file name ([] for none)
+     names     the reading's author and the image's credit, from
+               their records, for the file name ([] for none): a
+               person's name (shortened to the surname) or
+               { name, whole: true } for a name kept whole
      path      the page's own address from the site root ("/?r=…&i=…")
      print     prints the page (a function), or null
      printPdf  true where the printout can be drawn as a PDF, for an
@@ -802,7 +804,7 @@ function keepPane() {
   // "The Earthly Book of Hours — Hush — Lispector, Lockyer.png"
   function fileName(ext = 'png') {
     const d = keepPageData();
-    const names = (d.names || []).map(keepSurname).filter(Boolean);
+    const names = (d.names || []).map(n => n && typeof n === 'object' ? n.name : keepSurname(n)).filter(Boolean);
     const unique = names.filter((n, i) => names.indexOf(n) === i);
     return ['The Earthly Book of Hours', d.title, unique.join(', ')]
       .filter(Boolean).join(' — ')

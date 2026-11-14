@@ -936,7 +936,7 @@ function keepPageData() {
   return {
     kind: 'weather',
     title: 'The Weather',
-    names: [hasReading && currentWeatherReading.author, currentWeatherImage && currentWeatherImage.creator],
+    names: [hasReading && currentWeatherReading.author, ...(currentWeatherImage ? currentWeatherImage.credit.keep : [])],
     path: '/weather.html?' + params,
     print: () => window.print(),
     printPdf: true,

@@ -854,7 +854,7 @@ function keepPageData() {
   return {
     kind: 'hours',
     title: currentBlockName || '',
-    names: [currentQuote && currentQuote.author, currentImage && currentImage.creator],
+    names: [currentQuote && currentQuote.author, ...(currentImage ? currentImage.credit.keep : [])],
     path: '/?' + params,
     print: printKeepsake,
     printPdf: true,

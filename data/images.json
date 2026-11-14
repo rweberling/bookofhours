@@ -1357,7 +1357,8 @@
     "locator": {
       "url": "https://storage.lib.uchicago.edu/pres/2023/pres2023-0432.pdf",
       "label": "University of Chicago Library"
-    }
+    },
+    "credit": "Atlas international des nuages"
   },
   {
     "id": "i-0046",
@@ -1392,7 +1393,8 @@
     "locator": {
       "url": "https://cloudatlas.wmo.int/docs/ICA1930-optimized-for-web.pdf",
       "label": "WMO Cloud Atlas"
-    }
+    },
+    "credit": "International Atlas of Clouds"
   },
   {
     "id": "i-0047",
@@ -1839,7 +1841,8 @@
       "url": "https://hdl.handle.net/2027/coo.31924076527369?urlappend=%3Bseq=123%3Bownerid=27021597768625853-127",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "credit": "National Geographic Society"
   },
   {
     "id": "i-0060",
@@ -1968,7 +1971,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-    "rightsNote": "a report for the Urban Mass Transportation Administration, written by contractors"
+    "rightsNote": "a report for the Urban Mass Transportation Administration, written by contractors",
+    "credit": "D. E. Thompson et al."
   },
   {
     "id": "i-0064",
@@ -2212,7 +2216,8 @@
       "size": [740, 588]
     },
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-    "title": "Mycobacterium vaccae"
+    "title": "Mycobacterium vaccae",
+    "credit": "Microbiology in Pictures"
   },
   {
     "id": "i-0071",
@@ -2412,7 +2417,8 @@
     "title": "Mas̲navī-i Ma‘navī, book 1",
     "date": "1487",
     "institution": "John Rylands Library, University of Manchester",
-    "shelfmark": "Persian MS 72"
+    "shelfmark": "Persian MS 72",
+    "credit": "John Rylands Library"
   },
   {
     "id": "i-0076",
@@ -2899,7 +2905,8 @@
     "locator": {
       "url": "https://hdl.handle.net/2027/uma.ark:/13960/t1sf3hf96?urlappend=%3Bseq=499",
       "label": "HathiTrust"
-    }
+    },
+    "credit": "Fruit Culture"
   },
   {
     "id": "i-0089",
@@ -2929,7 +2936,8 @@
       "url": "https://hdl.handle.net/2027/uiug.30112019789384?urlappend=%3Bseq=14%3Bownerid=13510798901363639-18",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "credit": "Ohio Agricultural Experiment Station"
   },
   {
     "id": "i-0090",
@@ -2960,7 +2968,8 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "rightsNote": "a U.S. government work"
+    "rightsNote": "a U.S. government work",
+    "credit": "U.S. Department of Agriculture"
   },
   {
     "id": "i-0091",
@@ -2988,7 +2997,8 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "title": "Corn Stalk-Shaped Vessel",
-    "date": "0001~/0600~"
+    "date": "0001~/0600~",
+    "credit": "Nasca artist(s)"
   },
   {
     "id": "i-0092",
@@ -3018,7 +3028,8 @@
       "identifiers": { "doi": "10.1007/s00122-013-2164-z" }
     },
     "locator": { "url": "https://doi.org/10.1007/s00122-013-2164-z", "label": "DOI" },
-    "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "credit": "C. Mir et al."
   },
   {
     "id": "i-0093",
@@ -3052,7 +3063,8 @@
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "title": "Zea mays L.",
     "date": "1892/1893",
-    "institution": "Real Jardín Botánico, Madrid"
+    "institution": "Real Jardín Botánico, Madrid",
+    "credit": "Atlas des plantes de France"
   },
   {
     "id": "i-0094",
@@ -3350,7 +3362,8 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "title": "It’s Dog Days, But ‘Dog Days’ Is Biggest Hoax Yet",
-    "date": "1909-08-02"
+    "date": "1909-08-02",
+    "credit": "The Tacoma Times"
   },
   {
     "id": "i-0103",
@@ -4105,7 +4118,8 @@
     },
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
     "title": "O Nobilissima Viriditas",
-    "date": "2025"
+    "date": "2025",
+    "credit": "Hildegard von Bingen"
   },
   {
     "id": "i-0125",
@@ -4828,7 +4842,8 @@
         "url": "https://portal.torcherbaria.org/portal/collections/individual/index.php?occid=28559008"
       }
     ],
-    "rights": "https://creativecommons.org/publicdomain/zero/1.0/"
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "credit": "Botanical Research Institute of Texas"
   },
   {
     "id": "i-0145",
@@ -5172,7 +5187,8 @@
       }
     ],
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-    "rightsNote": "a photograph by Towson State University students, published on Linda M. Sweeting's university page in 1998"
+    "rightsNote": "a photograph by Towson State University students, published on Linda M. Sweeting's university page in 1998",
+    "credit": "Towson State University students"
   },
   {
     "id": "i-0155",
