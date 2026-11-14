@@ -177,7 +177,10 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   with the card there; the calendar lists it by each year's date. The
   winter solstice falls on 21 December in Boston every year through at
   least 2035 (the postcards' table), Week 1's first day, so a winter
-  solstice card (Snowy Owl) needs no mark.
+  solstice card (Snowy Owl) needs no mark. In 2026 Snowy Owl is instead
+  the essay on the solstice itself, Monday 21 December (Week 1's first
+  day), and 20 December, outside the weeks, gets an ordinary card as the
+  solstice eve, with no essay that Sunday (Ryan, 15 November 2026).
 - The first cards go live on Thanksgiving, 26 November 2026 (Week 49:
   Thursday to Saturday), then Week 50 in full; it's a trial of how well
   each week can be chosen, built and shown.
@@ -340,12 +343,14 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - The essays ahead (`kind: "essay"`, ids `essay-<publication date>`,
   fields `week`, `published`, `subject`, `planned`, `note`, `chosenAt`,
   `from`, `leadsSent`): the subject of each coming Sunday's Lectio Terra
-  post, shown at the foot of the desk, where Ryan sets or changes it (or
+  post (one a week, on its Sunday unless Ryan sets another day), shown
+  at the foot of the desk, where Ryan sets or changes it (or
   takes a day candidate as the essay with "make this the week's essay
   instead"). The Monday leads task (trig_01SjVsateoeRdEPG91uRzxej)
   reads the next one for its subject and sets `leadsSent`. Each weekly
-  run keeps records for the next five Sundays (adding missing ones with
-  an empty subject; never changing one Ryan chose), shows the week's
+  run keeps a record for each of the next five weeks (adding a missing
+  week's, on its Sunday, with an empty subject; never moving or changing
+  one Ryan set), shows the week's
   essay on its day candidates, and says in the email which coming essays
   have no subject. Never copy them to the Sheet or count them as
   candidates.
