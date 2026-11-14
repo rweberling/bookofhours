@@ -893,8 +893,8 @@ async function buildSpeciesGrid() {
   }
 
   // With ?preview, each card names its writers ("words") and the makers
-  // of its figures ("pictures"), read from the image records its body
-  // lists; no pictures line where none is named.
+  // of its figures ("images"), read from the image records its body
+  // lists; no images line where none is named.
   let imageMakers = null;
   if (PREVIEW_DRAFTS) {
     const collection = await loadCollection();
@@ -971,7 +971,7 @@ async function buildSpeciesGrid() {
       }
 
       if (imageMakers) {
-        const lines = [['words', readings], ['pictures', figureMakers(entry)]];
+        const lines = [['words', readings], ['images', figureMakers(entry)]];
         for (const [label, names] of lines) {
           if (!names.length) continue;
           const credit = document.createElement('span');
@@ -1043,7 +1043,7 @@ async function buildPaneDays() {
       const maker = image && image.creator && !Array.isArray(image.creator) ? image.creator.name : '';
       what = `<a href="seasons.html?day=${d.key}${keep}">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</a>`
         + (writer ? `<span class="pane-day-names"><span class="credit-label">words</span> ${escapeHTML(writer)}</span>` : '')
-        + (maker ? `<span class="pane-day-names"><span class="credit-label">pictures</span> ${escapeHTML(maker)}</span>` : '');
+        + (maker ? `<span class="pane-day-names"><span class="credit-label">image</span> ${escapeHTML(maker)}</span>` : '');
     } else if (d.key === essayKey) {
       const { species, readings: writers } = resolveSpeciesFields(essay);
       what = `<a href="seasons.html?day=${d.key}${keep}"><em>The week\u2019s essay:</em> ${escapeHTML(species)}</a>`
