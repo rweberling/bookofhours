@@ -389,7 +389,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   coming Sunday, ready to paste: one line a day (weekday and date, month
   first; the subject; "words" and the reading's author; "image" and the
   image's maker; "(not yet released)" on a draft, "—" for a day with no
-  card), headed with those days' own week as the site gives it. Until 20
+  card), headed "The days ahead" with those days' own week as the site
+  gives it ("The days ahead — Week 50 · November 29 – December 5"; Ryan
+  uses "the days ahead" all year, not "this week's days"). Until 20
   December a Sunday opens its week, so the days are the essay's own
   week; from Week 1 (21 December) a Sunday closes its week, so the days
   after it are the next week's, and the heading says so ("Week 2 ·
