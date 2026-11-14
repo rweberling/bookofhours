@@ -892,6 +892,23 @@ async function buildSpeciesGrid() {
     return;
   }
 
+  // With ?preview, each card names its writers ("words") and the makers
+  // of its figures ("pictures"), read from the image records its body
+  // lists; no pictures line where none is named.
+  let imageMakers = null;
+  if (PREVIEW_DRAFTS) {
+    const collection = await loadCollection();
+    imageMakers = new Map(collection.images.map(i => [i.id,
+      (Array.isArray(i.creator) ? i.creator : i.creator ? [i.creator] : []).map(c => c.name).filter(Boolean)]));
+  }
+  const figureMakers = entry => {
+    const names = [];
+    for (const part of entry.body || []) {
+      for (const n of (part.image && imageMakers.get(part.image)) || []) if (!names.includes(n)) names.push(n);
+    }
+    return names;
+  };
+
   const first = SEASON_KEYS.indexOf(currentSeason());
   const yearFromNow = [...SEASON_KEYS.slice(first), ...SEASON_KEYS.slice(0, first)];
   yearFromNow.forEach(key => {
@@ -953,7 +970,16 @@ async function buildSpeciesGrid() {
         card.appendChild(latinEl);
       }
 
-      if (readings.length) {
+      if (imageMakers) {
+        const lines = [['words', readings], ['pictures', figureMakers(entry)]];
+        for (const [label, names] of lines) {
+          if (!names.length) continue;
+          const credit = document.createElement('span');
+          credit.className = 'species-credit';
+          credit.innerHTML = `<span class="credit-label">${label}</span> ${escapeHTML(names.join(' \u00b7 '))}`;
+          card.appendChild(credit);
+        }
+      } else if (readings.length) {
         const credit = document.createElement('span');
         credit.className = 'species-credit';
         credit.textContent = creditLine(readings);
@@ -1013,13 +1039,15 @@ async function buildPaneDays() {
     let what = '<span class="pane-day-none" aria-hidden="true">\u00b7</span>';
     if (card) {
       const reading = readings.get(card.reading), image = images.get(card.image);
-      const names = [reading ? readingAuthor(reading) : '', image && image.creator && !Array.isArray(image.creator) ? image.creator.name : ''].filter(Boolean);
+      const writer = reading ? readingAuthor(reading) : '';
+      const maker = image && image.creator && !Array.isArray(image.creator) ? image.creator.name : '';
       what = `<a href="seasons.html?day=${d.key}${keep}">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</a>`
-        + (names.length ? `<span class="pane-day-names">${escapeHTML(names.join(' \u00b7 '))}</span>` : '');
+        + (writer ? `<span class="pane-day-names"><span class="credit-label">words</span> ${escapeHTML(writer)}</span>` : '')
+        + (maker ? `<span class="pane-day-names"><span class="credit-label">pictures</span> ${escapeHTML(maker)}</span>` : '');
     } else if (d.key === essayKey) {
       const { species, readings: writers } = resolveSpeciesFields(essay);
       what = `<a href="seasons.html?day=${d.key}${keep}"><em>The week\u2019s essay:</em> ${escapeHTML(species)}</a>`
-        + (writers.length ? `<span class="pane-day-names">${escapeHTML(writers.join(' \u00b7 '))}</span>` : '');
+        + (writers.length ? `<span class="pane-day-names"><span class="credit-label">words</span> ${escapeHTML(writers.join(' \u00b7 '))}</span>` : '');
     }
     return `<li${here ? ' aria-current="date"' : ''}><span class="pane-day-date">${MONTH_NAMES[d.month - 1]} ${d.day}</span><span class="pane-day-what">${here ? '<span class="pane-day-here" aria-hidden="true">\u2726</span> ' : ''}${what}</span></li>`;
   }).join('');

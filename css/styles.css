@@ -1999,6 +1999,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
 .pane-day-what a:hover, .pane-day-what a:focus-visible { color: var(--accent); }
 .pane-day-names { display: block; font-size: 13px; font-style: italic; color: var(--ink-faint); }
 .pane-day-none { opacity: 0.45; }
+.credit-label { font-variant: small-caps; font-style: normal; letter-spacing: 0.06em; }
 .pane-week-days li[aria-current] .pane-day-what a, .pane-day-here { color: var(--accent); }
 .pane-essays-heading { text-align: center; margin: 36px 0 12px; }
 .species-season-heading {

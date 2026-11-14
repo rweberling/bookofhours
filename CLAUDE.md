@@ -170,8 +170,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   species or phenomenon for each day of the year, and an essay for each
   week.", a dot on the dial for each day with a card (kept for now; Ryan
   unsure), then the calendar's line, This Week (its seven days, each
-  card's subject with its writer and artist, and the essay), and The
-  Essays, with "Sign in to wander" under that heading. The
+  card's subject with its writer and artist, labelled "words" and
+  "pictures", and the essay), and The
+  Essays (each card's writers and figure makers, "words" and "pictures";
+  no pictures line where no maker is named), with "Sign in to wander"
+  under that heading. The
   cards and essays also go out a day at a time in the year's feed,
   `year.xml`.
 - Three clocks (the working plan, 13 November 2026; to revisit as the
