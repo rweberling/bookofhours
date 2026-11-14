@@ -967,6 +967,74 @@ async function buildSpeciesGrid() {
   });
 }
 
+/* ── Wander the Seasons: the days (a preview, with ?preview) ──── */
+
+// Under the dial's key: the calendar's line (shared.js), then This Week
+// (its seven days, each card's subject with its writer and artist, and
+// the week's essay), then The Essays, with the sign-in lock under that
+// heading when the gate is on. On the dial, a small dot for each day
+// with a card. Built once per page load.
+let paneDaysBuilt = false;
+async function buildPaneDays() {
+  if (paneDaysBuilt) return;
+  paneDaysBuilt = true;
+  const [days, subjects, collection] = await Promise.all([loadDays(), loadSubjects(), loadCollection()]);
+  await loadSeasons();
+  const readings = new Map(collection.readings.map(r => [r.id, r]));
+  const images = new Map(collection.images.map(i => [i.id, i]));
+
+  // The dial: a dot just outside the ring for each day with a card.
+  const svg = document.getElementById('season-dial');
+  const now = new Date();
+  for (const d of days) {
+    const [m, dd] = d.date.split('-').map(Number);
+    const date = new Date(now.getFullYear(), m - 1, dd);
+    const dialYear = m < 3 ? now.getFullYear() - 1 : now.getFullYear();
+    const pt = polarToXY(dialDeg(date, dialYear), R_ARC + 13);
+    const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    dot.setAttribute('cx', pt.x); dot.setAttribute('cy', pt.y); dot.setAttribute('r', '1.4');
+    dot.setAttribute('class', 'dial-day');
+    svg.appendChild(dot);
+  }
+  const legend = document.querySelector('#season-pane .dial-legend');
+  if (legend) legend.insertAdjacentHTML('beforeend', '<span class="dial-key"><span class="dial-key-day"></span>A day\u2019s card</span>');
+
+  // This week: the week of the day showing, else today's.
+  const key = weekPageKey || monthDayKey(now.getMonth() + 1, now.getDate());
+  const [km, kd] = key.split('-').map(Number);
+  const week = weekOf(km, kd, isLeapYear(now.getFullYear()));
+  const byDate = new Map(days.map(d => [d.date, d]));
+  const essay = week.threshold ? null : essayOfWeek(week);
+  const essayKey = essay ? essayDayKey(essay) : null;
+  const keep = PREVIEW_DRAFTS ? '&preview' : '';
+  const rows = week.days.map(d => {
+    const card = byDate.get(d.key);
+    const here = d.key === key;
+    let what = '<span class="pane-day-none" aria-hidden="true">\u00b7</span>';
+    if (card) {
+      const reading = readings.get(card.reading), image = images.get(card.image);
+      const names = [reading ? readingAuthor(reading) : '', image && image.creator && !Array.isArray(image.creator) ? image.creator.name : ''].filter(Boolean);
+      what = `<a href="seasons.html?day=${d.key}${keep}">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</a>`
+        + (names.length ? `<span class="pane-day-names">${escapeHTML(names.join(' \u00b7 '))}</span>` : '');
+    } else if (d.key === essayKey) {
+      const { species, readings: writers } = resolveSpeciesFields(essay);
+      what = `<a href="seasons.html?day=${d.key}${keep}"><em>The week\u2019s essay:</em> ${escapeHTML(species)}</a>`
+        + (writers.length ? `<span class="pane-day-names">${escapeHTML(writers.join(' \u00b7 '))}</span>` : '');
+    }
+    return `<li${here ? ' aria-current="date"' : ''}><span class="pane-day-date">${MONTH_NAMES[d.month - 1]} ${d.day}</span><span class="pane-day-what">${here ? '<span class="pane-day-here" aria-hidden="true">\u2726</span> ' : ''}${what}</span></li>`;
+  }).join('');
+  const section = document.createElement('section');
+  section.className = 'pane-week';
+  section.innerHTML = `<h3 class="species-season-heading">This Week</h3>
+    <p class="pane-week-head">${week.threshold ? 'The year\u2019s eve' : `Week ${week.week} \u00b7 ${weekRangeWords(week)}`}</p>
+    <ol class="pane-week-days">${rows}</ol>`;
+  const essaysHeading = document.createElement('h3');
+  essaysHeading.className = 'species-season-heading pane-essays-heading';
+  essaysHeading.textContent = 'The Essays';
+  const grid = document.getElementById('species-grid');
+  (grid.wanderLock || grid).before(section, essaysHeading);
+}
+
 /* ── Wander the Seasons: the pane ─────────────────────────────── */
 
 // Opens on the season currently being read, so the dial and subheading
@@ -976,11 +1044,14 @@ function openSeasonPane() {
   if (!document.querySelector('.season-arc')) buildSeasonDial();
   const key = season ? season.key : currentSeason();
   const isReal = key === currentSeason();
-  document.getElementById('season-subheading').textContent = isReal
-    ? `Species drawn from Lectio Terra, this season (${SEASON_LABELS[key]})`
-    : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[key]}`;
+  document.getElementById('season-subheading').textContent = PREVIEW_DRAFTS
+    ? 'One species or phenomenon for each day of the year, and an essay for each week.'
+    : isReal
+      ? `Species drawn from Lectio Terra, this season (${SEASON_LABELS[key]})`
+      : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[key]}`;
   setSeasonDialActive(key);
   buildSpeciesGrid();
+  if (PREVIEW_DRAFTS) buildPaneDays();
   // Open to everyone; with the DFOS gate on, the species cards wait
   // for sign-in (nav.js).
   syncWanderLock(document.getElementById('species-grid'), 'season');

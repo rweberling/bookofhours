@@ -165,7 +165,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   postcards' (`CALENDAR_RUBRIC` in `shared.js`, linking to the
   subscription's page, https://otherwise.dfos.com/p/daily-calendar-feed;
   shown only with `?preview` until its `live` is set true, when the
-  subscription can be bought). The
+  subscription can be bought). Wander the Seasons, with `?preview` only
+  for now (`buildPaneDays()` in `seasons.js`): the subheading "One
+  species or phenomenon for each day of the year, and an essay for each
+  week.", a dot on the dial for each day with a card (kept for now; Ryan
+  unsure), then the calendar's line, This Week (its seven days, each
+  card's subject with its writer and artist, and the essay), and The
+  Essays, with "Sign in to wander" under that heading. The
   cards and essays also go out a day at a time in the year's feed,
   `year.xml`.
 - Three clocks (the working plan, 13 November 2026; to revisit as the

@@ -1985,6 +1985,22 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   flex-direction: column;
   gap: 14px;
 }
+/* The days in Wander the Seasons (a preview, ?preview). */
+.dial-day { fill: var(--accent); }
+.dial-key-day { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: middle; }
+.pane-week { max-width: 440px; margin: 34px auto 10px; font-family: var(--font-text); text-align: left; }
+.pane-week .species-season-heading { text-align: center; }
+.pane-week-head { text-align: center; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin: 4px 0 10px; }
+.pane-week-days { list-style: none; margin: 0; padding: 0; font-size: 16px; }
+.pane-week-days li { display: flex; gap: 14px; align-items: baseline; padding: 6px 0; border-top: 0.5px solid var(--rule); margin: 0; }
+.pane-week-days li::before { content: none; display: none; }
+.pane-day-date { width: 6.6em; flex: none; text-align: right; color: var(--ink-faint); font-variant-numeric: oldstyle-nums; }
+.pane-day-what a { color: var(--ink-light); text-decoration: none; }
+.pane-day-what a:hover, .pane-day-what a:focus-visible { color: var(--accent); }
+.pane-day-names { display: block; font-size: 13px; font-style: italic; color: var(--ink-faint); }
+.pane-day-none { opacity: 0.45; }
+.pane-week-days li[aria-current] .pane-day-what a, .pane-day-here { color: var(--accent); }
+.pane-essays-heading { text-align: center; margin: 36px 0 12px; }
 .species-season-heading {
   font-family: var(--font-label);
   font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
@@ -2944,3 +2960,4 @@ a.record-mark:focus-visible { color: var(--accent); }
     scroll-behavior: auto !important;
   }
 }
+#season-subheading { text-align: center; text-wrap: balance; }
