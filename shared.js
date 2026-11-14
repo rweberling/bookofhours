@@ -136,12 +136,16 @@ function weekRangeWords(w) {
 // The days (data/days.json): each a date ("MM-DD"), its subject (a
 // species or phenomenon) and one reading and one image, by ID. Cached per
 // page load; an empty list if the file can't be read.
+// ?preview also shows the cards still marked "draft", so a built card can
+// be looked over on the live site before it is released; without it (as
+// readers have it) drafts never show, here or in the feed and calendar.
+const PREVIEW_DRAFTS = new URLSearchParams(window.location.search).has('preview');
 let daysPromise = null;
 function loadDays() {
   if (!daysPromise) {
     daysPromise = fetch('data/days.json')
       .then(response => (response.ok ? response.json() : []))
-      .then(days => (Array.isArray(days) ? days : []).filter(d => !d.draft))
+      .then(days => (Array.isArray(days) ? days : []).filter(d => PREVIEW_DRAFTS || !d.draft))
       .catch(error => { console.error(error); return []; });
   }
   return daysPromise;

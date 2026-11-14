@@ -258,9 +258,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      <rows.json> <scratch dir>` (records, previews, and the batch), upload
      the previews, set each one's id with `desk.py --preview`, and send
      the batch. Its docstring has the steps.
-  2a. The days: first builds each approved day record not yet added, as
-     "Day candidates" below says, and reports the days built in the
-     email. Then puts day candidates on the desk. The first went on early,
+  2a. The days: first releases the built days Ryan has passed and fixes
+     those he hasn't, then builds each approved day record not yet added,
+     as "Day candidates" below says ("Building, review and release"), and
+     reports the days built, fixed and released in the email, each built
+     one with its preview link. Then puts day candidates on the desk. The first went on early,
      in a run of 13 November 2026 (days only): about five for Week 49's
      last three days (26–28 November, the Thanksgiving trial) and about
      ten for Week 50 (29 November – 5 December). From the 18 November run
@@ -302,7 +304,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   becomes a reading and an image (`shownIn: "days"`), a new `sp-`/`ph-`
   record if the subject has none, and a `days.json` record, on the day
   Ryan's note names, or else the first free day Monday to Saturday in the
-  week's order; set `addedAs` to the `dy-` ID. Where a day comes from
+  week's order; set `addedAs` to the `dy-` ID and `day` to its date
+  (`MM-DD`). Where a day comes from
   follows the Seasons' rule: local and regional. Take the time to reach
   wide (Ryan, 13 November 2026): mix birds with plants, fungi, insects,
   mammals, weather, sky and the farm and kitchen; many voices, not one
@@ -317,6 +320,35 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   what is in season can start from `python3 scripts/inat_week.py <week>`
   (iNaturalist sightings in New England, each species' share of the
   week against its share of the year).
+- Building, review and release of the days (decided 14 November 2026):
+  a day is built as a draft (`"draft": true` on its `days.json` record
+  only; its reading and image are ordinary records, `shownIn: "days"`),
+  so it stays off the Seasons page, `year.xml` and the calendar, which
+  all skip drafts. Ryan looks at it on the live site,
+  `seasons.html?day=MM-DD&preview` (`?preview` shows drafts on the
+  Seasons page alone, marked "A draft for review"; the week's links keep
+  it), from the desk: a built day comes back to his queue with that link
+  and "Release it" / "Needs a fix" (`review`: `ok` or `fix`, with
+  `reviewNote`). A run, or any session he asks, then releases the `ok`
+  ones (removes `draft`, sets `released: <date>` on the desk record) and
+  fixes the `fix` ones on the records, per the note, then sets `fixed:
+  <date>` and clears `review` so the day comes back to him. Releasing is
+  the push: the Calendar workflow uploads the new calendar on it and the
+  Syndicate run adds the day to `year.xml` on its date. Subscribers see a
+  released card at once, even ahead of its date, so release only what he
+  has passed, a few days ahead at least.
+- The essays ahead (`kind: "essay"`, ids `essay-<publication date>`,
+  fields `week`, `published`, `subject`, `planned`, `note`, `chosenAt`,
+  `from`, `leadsSent`): the subject of each coming Sunday's Lectio Terra
+  post, shown at the foot of the desk, where Ryan sets or changes it (or
+  takes a day candidate as the essay with "make this the week's essay
+  instead"). The Monday leads task (trig_01SjVsateoeRdEPG91uRzxej)
+  reads the next one for its subject and sets `leadsSent`. Each weekly
+  run keeps records for the next five Sundays (adding missing ones with
+  an empty subject; never changing one Ryan chose), shows the week's
+  essay on its day candidates, and says in the email which coming essays
+  have no subject. Never copy them to the Sheet or count them as
+  candidates.
 - Records with `kind: "season"` (ids `<date>-sNN`) are season-tag
   proposals for pieces already on the site, not nominations: never copy
   them to the Sheet or count them as candidates. Each run applies the

@@ -332,7 +332,8 @@ a published dataset carries the metadata and only public-domain texts.
 - **`reading`** and **`image`**: one each, ordinary records in
   `readings.json` and `images.json` with `"shownIn": "days"`, tagged with
   the subject like any other piece.
-- **`draft`**: `true` keeps the card off the site.
+- **`draft`**: `true` keeps the card off the site, the year's feed and
+  the calendar; `seasons.html?day=MM-DD&preview` shows it for review.
 
 The weeks are fixed by date and counted from the winter solstice: Week 1
 begins on 21 December, 20 December stands outside the weeks, 29 February

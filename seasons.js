@@ -212,7 +212,8 @@ async function showDay(day, days) {
   const latinEl = document.getElementById('season-reading-latin');
   latinEl.textContent = subject.scientific || subject.latin || '';
   latinEl.hidden = !latinEl.textContent;
-  document.getElementById('season-reading-dek').textContent = '';
+  document.getElementById('season-reading-dek').textContent =
+    day.draft ? 'A draft for review: not yet released' : '';
   document.getElementById('season-reading-observation').textContent = '';
 
   renderWeek(week, day.date, days, subjects);
@@ -256,8 +257,9 @@ function renderWeek(week, currentKey, days, subjects) {
       : d.key === essayKey ? resolveSpeciesFields(essay).species : '';
     const label = `<span class="season-week-date">${d.day}</span>${name ? ` <span class="season-week-subject">${escapeHTML(name)}</span>` : ''}`;
     if (d.key === currentKey) return `<li aria-current="date">${label}</li>`;
-    if (card) return `<li><a href="seasons.html?day=${d.key}">${label}</a></li>`;
-    if (d.key === essayKey) return `<li><a href="seasons.html?day=${d.key}">${label}</a></li>`;
+    const keep = PREVIEW_DRAFTS ? '&preview' : '';
+    if (card) return `<li><a href="seasons.html?day=${d.key}${keep}">${label}</a></li>`;
+    if (d.key === essayKey) return `<li><a href="seasons.html?day=${d.key}${keep}">${label}</a></li>`;
     return `<li class="season-week-empty">${label}</li>`;
   }).join('');
   nav.innerHTML = `<p class="season-week-head">${week.threshold ? 'The year\u2019s eve' : `Week ${week.week} · ${weekRangeWords(week)}`}</p>${essayLine}<ol class="season-week-days">${items}</ol>`;
