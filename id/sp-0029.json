@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0029/",
+  "id": "sp-0029",
+  "name": "Wild Turkey",
+  "scientific": "Meleagris gallopavo",
+  "rank": "species",
+  "hashtags": [
+    "wildturkey",
+    "turkey",
+    "birds"
+  ],
+  "wikidata": "Q26844",
+  "gbif": "9606290",
+  "inaturalist": "906",
+  "records": [
+    "r-0131",
+    "i-0162"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

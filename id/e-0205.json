@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0205/",
+  "id": "e-0205",
+  "type": "book",
+  "title": "Journal, vol. 11",
+  "contributors": [
+    {
+      "id": "a-henry-david-thoreau",
+      "name": "Henry David Thoreau",
+      "role": "author",
+      "wikidata": "Q131149"
+    },
+    {
+      "id": "a-bradford-torrey",
+      "name": "Bradford Torrey",
+      "role": "editor",
+      "wikidata": "Q2923472"
+    }
+  ],
+  "publisher": "Houghton Mifflin",
+  "issued": "1906",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "writingsofhenryd17thorrich"
+  },
+  "citedBy": [
+    "r-0133"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

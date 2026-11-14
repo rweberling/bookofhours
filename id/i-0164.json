@@ -1,0 +1,46 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0164/",
+  "id": "i-0164",
+  "shownIn": "days",
+  "file": "images/days_moody_winterberry.jpg",
+  "caption": "D. W. Moody, <a href=\"https://archive.org/details/americanfloraorh41855stro/page/n70/mode/1up\" target=\"_blank\"><em>Prinos verticillatus</em></a> (Winter Berry), plate 10 of Asa B. Strong, <em>The American Flora</em>, vol. 4 (1855)",
+  "alt": "A hand-coloured botanical plate: an upright grey stem with serrated green leaves and clusters of round red berries along its branches, signed “D. W. Moody” and titled “Prinos verticillatus.”",
+  "bibliography": "Moody, D. W. <em>Prinos verticillatus</em> (Winter Berry). Plate 10 in Asa B. Strong, <em>The American Flora, or, History of Plants and Wild Flowers</em>, vol. 4, Hull &amp; Spencer, 1855, hand-coloured lithograph.",
+  "creator": {
+    "id": "a-david-william-moody",
+    "name": "D. W. Moody"
+  },
+  "title": "Prinos verticillatus (Winter Berry)",
+  "date": "1855",
+  "institution": "Smithsonian Libraries",
+  "source": {
+    "url": "https://archive.org/download/americanfloraorh41855stro/page/n70.jpg",
+    "retrieved": "2026-11-15"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0206",
+    "title": "The American Flora, or, History of Plants and Wild Flowers, vol. 4",
+    "publisher": "Hull & Spencer",
+    "issued": "1855",
+    "identifiers": {
+      "internetArchive": "americanfloraorh41855stro"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/americanfloraorh41855stro/page/n70/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0031"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

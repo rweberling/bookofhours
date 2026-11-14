@@ -5248,5 +5248,136 @@
       "seasons": []
     },
     "display": { "weatherUnset": true }
+  },
+  {
+    "id": "r-0131",
+    "shownIn": "days",
+    "text": "<p>I am, on this account, not displeas’d that the Figure is not known as a Bald Eagle, but looks more like a Turk’y. For in Truth, the Turk’y is in comparison a much more respectable Bird, and withal a true original Native of America. Eagles have been found in all Countries, but the Turk’y was peculiar to ours; the first of the Species seen in Europe being brought to France by the Jesuits from Canada, and serv’d up at the Wedding Table of Charles the Ninth. He is, [though a little vain and silly, it is true, but not the worse emblem for that,] a Bird of Courage, and would not hesitate to attack a Grenadier of the British Guards, who should presume to invade his Farm Yard with a <em>red</em> Coat on.</p>",
+    "citation": {
+      "display": "Benjamin Franklin, from a <a href=\"https://archive.org/details/writingsofbenjam09franuoft/page/n190/mode/1up\" target=\"_blank\">letter to Sarah Bache</a> (Passy, 26 January 1784)",
+      "bibliography": "Franklin, Benjamin. Letter to Sarah Bache, Passy, 26 January 1784. <em>The Writings of Benjamin Franklin</em>, edited by Albert Henry Smyth, vol. 9, Macmillan, 1906, p. 167.",
+      "title": "Letter to Sarah Bache",
+      "written": "1784-01-26",
+      "locator": {
+        "page": "167",
+        "url": "https://archive.org/details/writingsofbenjam09franuoft/page/n190/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0203",
+        "type": "book",
+        "title": "The Writings of Benjamin Franklin, vol. 9",
+        "contributors": [
+          { "id": "a-benjamin-franklin", "name": "Benjamin Franklin", "role": "author" },
+          { "id": "a-albert-henry-smyth", "name": "Albert Henry Smyth", "role": "editor" }
+        ],
+        "publisher": "Macmillan",
+        "issued": "1906",
+        "original-date": "1784",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "writingsofbenjam09franuoft" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": [
+        {
+          "id": "sp-0029",
+          "basis": "grounded",
+          "note": "Franklin's case for the turkey, the American bird, against the bald eagle."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0132",
+    "shownIn": "days",
+    "text": "<p><em>Sasémineash</em> another sharp cooling Fruit growing in fresh Waters all the Winter, Excellent in conserve against Feavers.</p>",
+    "citation": {
+      "display": "Roger Williams, from <a href=\"https://archive.org/details/keyintolanguageo02will/page/n114/mode/1up\" target=\"_blank\"><em>A Key into the Language of America</em></a> (1643), p. 99",
+      "bibliography": "Williams, Roger. \"Of the Earth, and the Fruits thereof.\" <em>A Key into the Language of America</em>, Gregory Dexter, 1643, p. 99.",
+      "title": "Of the Earth, and the Fruits thereof",
+      "written": "1643",
+      "locator": {
+        "page": "99",
+        "url": "https://archive.org/details/keyintolanguageo02will/page/n114/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0204",
+        "type": "book",
+        "title": "A Key into the Language of America",
+        "contributors": [{ "id": "a-roger-williams", "name": "Roger Williams", "role": "author" }],
+        "publisher": "Gregory Dexter",
+        "issued": "1643",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "keyintolanguageo02will" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": [
+        {
+          "id": "sp-0030",
+          "basis": "grounded",
+          "note": "The Narragansett name for the cranberry, a winter fruit of fresh water, in Williams's word list."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0133",
+    "shownIn": "days",
+    "text": "<p>The prinos berries on their light-brown twigs are quite abundant and handsome.</p><p>While most keep close to their parlor fires this cold and blustering Thanksgiving afternoon, and think with compassion of those who are abroad, I find the sunny south side of this swamp as warm as their parlors, and warmer to my spirit. Aye, there is a serenity and warmth here which the parlor does not suggest, enhanced by the sound of the wind roaring on the northwest side of the swamp a dozen or so rods off. What a wholesome and inspiring warmth is this!</p>",
+    "citation": {
+      "display": "Henry David Thoreau, from his <a href=\"https://archive.org/details/writingsofhenryd17thorrich/page/n374/mode/1up\" target=\"_blank\">journal</a> (25 November 1858)",
+      "bibliography": "Thoreau, Henry David. \"November 25, 1858.\" <em>Journal</em>, vol. 11, edited by Bradford Torrey, Houghton Mifflin, 1906, p. 342.",
+      "title": "November 25, 1858",
+      "written": "1858-11-25",
+      "locator": {
+        "page": "342",
+        "url": "https://archive.org/details/writingsofhenryd17thorrich/page/n374/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0205",
+        "type": "book",
+        "title": "Journal, vol. 11",
+        "contributors": [
+          {
+            "id": "a-henry-david-thoreau",
+            "name": "Henry David Thoreau",
+            "role": "author",
+            "wikidata": "Q131149"
+          },
+          {
+            "id": "a-bradford-torrey",
+            "name": "Bradford Torrey",
+            "role": "editor",
+            "wikidata": "Q2923472"
+          }
+        ],
+        "publisher": "Houghton Mifflin",
+        "issued": "1906",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "writingsofhenryd17thorrich" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": [
+        {
+          "id": "sp-0031",
+          "basis": "grounded",
+          "note": "Thoreau's prinos is the winterberry, in fruit on Thanksgiving in a Concord swamp."
+        }
+      ]
+    }
   }
 ]

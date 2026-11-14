@@ -1,0 +1,42 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0162/",
+  "id": "i-0162",
+  "shownIn": "days",
+  "file": "images/days_whistler_turkeys.jpg",
+  "caption": "James McNeill Whistler, <a href=\"https://www.artic.edu/artworks/15179\" target=\"_blank\"><em>Turkeys</em></a> (1880)",
+  "alt": "An etching on a sheet of laid paper: a courtyard with balconies and hanging vines, a boy standing beside a round well-head, and a flock of turkeys pecking in the foreground. Long straight lines are scored across the whole plate, cancelling it; below, “Turkeys” is written in pencil.",
+  "bibliography": "Whistler, James McNeill. <em>Turkeys</em>. 1880, etching and drypoint with drypoint cancellation, The Art Institute of Chicago, 1933.705a.",
+  "creator": {
+    "id": "a-james-mcneill-whistler",
+    "name": "James McNeill Whistler",
+    "wikidata": "Q203643"
+  },
+  "title": "Turkeys",
+  "date": "1880",
+  "institution": "The Art Institute of Chicago",
+  "shelfmark": "1933.705a",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/15179"
+    }
+  ],
+  "source": {
+    "url": "https://www.artic.edu/iiif/2/c56565b2-fa9e-ca70-f8c9-06ee599bc806/full/3000,/0/default.jpg",
+    "retrieved": "2026-11-15"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0029"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

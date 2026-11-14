@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0031/",
+  "id": "sp-0031",
+  "name": "Winterberry",
+  "scientific": "Ilex verticillata",
+  "rank": "species",
+  "hashtags": [
+    "winterberry",
+    "holly",
+    "winterfruit"
+  ],
+  "wikidata": "Q3487324",
+  "gbif": "5414267",
+  "inaturalist": "61119",
+  "records": [
+    "r-0133",
+    "i-0164"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

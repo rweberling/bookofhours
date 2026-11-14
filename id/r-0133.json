@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0133/",
+  "id": "r-0133",
+  "shownIn": "days",
+  "text": "<p>The prinos berries on their light-brown twigs are quite abundant and handsome.</p><p>While most keep close to their parlor fires this cold and blustering Thanksgiving afternoon, and think with compassion of those who are abroad, I find the sunny south side of this swamp as warm as their parlors, and warmer to my spirit. Aye, there is a serenity and warmth here which the parlor does not suggest, enhanced by the sound of the wind roaring on the northwest side of the swamp a dozen or so rods off. What a wholesome and inspiring warmth is this!</p>",
+  "citation": {
+    "display": "Henry David Thoreau, from his <a href=\"https://archive.org/details/writingsofhenryd17thorrich/page/n374/mode/1up\" target=\"_blank\">journal</a> (25 November 1858)",
+    "bibliography": "Thoreau, Henry David. \"November 25, 1858.\" <em>Journal</em>, vol. 11, edited by Bradford Torrey, Houghton Mifflin, 1906, p. 342.",
+    "title": "November 25, 1858",
+    "written": "1858-11-25",
+    "locator": {
+      "page": "342",
+      "url": "https://archive.org/details/writingsofhenryd17thorrich/page/n374/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0205",
+      "type": "book",
+      "title": "Journal, vol. 11",
+      "contributors": [
+        {
+          "id": "a-henry-david-thoreau",
+          "name": "Henry David Thoreau",
+          "role": "author",
+          "wikidata": "Q131149"
+        },
+        {
+          "id": "a-bradford-torrey",
+          "name": "Bradford Torrey",
+          "role": "editor",
+          "wikidata": "Q2923472"
+        }
+      ],
+      "publisher": "Houghton Mifflin",
+      "issued": "1906",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "writingsofhenryd17thorrich"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      {
+        "id": "sp-0031",
+        "basis": "grounded",
+        "note": "Thoreau's prinos is the winterberry, in fruit on Thanksgiving in a Concord swamp."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

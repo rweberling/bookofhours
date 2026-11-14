@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0203/",
+  "id": "e-0203",
+  "type": "book",
+  "title": "The Writings of Benjamin Franklin, vol. 9",
+  "contributors": [
+    {
+      "id": "a-benjamin-franklin",
+      "name": "Benjamin Franklin",
+      "role": "author"
+    },
+    {
+      "id": "a-albert-henry-smyth",
+      "name": "Albert Henry Smyth",
+      "role": "editor"
+    }
+  ],
+  "publisher": "Macmillan",
+  "issued": "1906",
+  "original-date": "1784",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "writingsofbenjam09franuoft"
+  },
+  "citedBy": [
+    "r-0131"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -230,6 +230,90 @@
         }
       ]
     },
+    "images/days_allen_ginter_cranberry.jpg": {
+      "bytes": 1421390,
+      "width": 1554,
+      "height": 2802,
+      "sha256": "51b39edd2b00a948b43507c7b3ff1d9d2204ceab3418693aa460329960dbebe7",
+      "settings": "89e48fac760f",
+      "credit": "cbd377512f48",
+      "copies": [
+        {
+          "file": "images/web/days_allen_ginter_cranberry-800.webp",
+          "width": 800,
+          "height": 1442,
+          "bytes": 201026
+        },
+        {
+          "file": "images/web/days_allen_ginter_cranberry-1600.webp",
+          "width": 1554,
+          "height": 2802,
+          "bytes": 621938
+        },
+        {
+          "file": "images/web/days_allen_ginter_cranberry-2400.webp",
+          "width": 1554,
+          "height": 2802,
+          "bytes": 621938
+        }
+      ]
+    },
+    "images/days_moody_winterberry.jpg": {
+      "bytes": 1114364,
+      "width": 2320,
+      "height": 3175,
+      "sha256": "3d63278c01d90eeaae527cadb472bd0ef27c275e4e4ac5f576005dffc40d66c2",
+      "settings": "89e48fac760f",
+      "credit": "abfb59787576",
+      "copies": [
+        {
+          "file": "images/web/days_moody_winterberry-800.webp",
+          "width": 800,
+          "height": 1095,
+          "bytes": 87856
+        },
+        {
+          "file": "images/web/days_moody_winterberry-1600.webp",
+          "width": 1600,
+          "height": 2190,
+          "bytes": 301434
+        },
+        {
+          "file": "images/web/days_moody_winterberry-2400.webp",
+          "width": 2320,
+          "height": 3175,
+          "bytes": 523274
+        }
+      ]
+    },
+    "images/days_whistler_turkeys.jpg": {
+      "bytes": 1262510,
+      "width": 2000,
+      "height": 3000,
+      "sha256": "0c809e0d3a64e45c96aa7fb80679973e1be73cebcdda506f023e54a9838345df",
+      "settings": "89e48fac760f",
+      "credit": "e44d68eb47f9",
+      "copies": [
+        {
+          "file": "images/web/days_whistler_turkeys-800.webp",
+          "width": 800,
+          "height": 1200,
+          "bytes": 102064
+        },
+        {
+          "file": "images/web/days_whistler_turkeys-1600.webp",
+          "width": 1600,
+          "height": 2400,
+          "bytes": 275596
+        },
+        {
+          "file": "images/web/days_whistler_turkeys-2400.webp",
+          "width": 2000,
+          "height": 3000,
+          "bytes": 373208
+        }
+      ]
+    },
     "images/denouement_giberne.jpg": {
       "bytes": 353647,
       "width": 600,

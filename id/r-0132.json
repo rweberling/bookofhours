@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0132/",
+  "id": "r-0132",
+  "shownIn": "days",
+  "text": "<p><em>Sasémineash</em> another sharp cooling Fruit growing in fresh Waters all the Winter, Excellent in conserve against Feavers.</p>",
+  "citation": {
+    "display": "Roger Williams, from <a href=\"https://archive.org/details/keyintolanguageo02will/page/n114/mode/1up\" target=\"_blank\"><em>A Key into the Language of America</em></a> (1643), p. 99",
+    "bibliography": "Williams, Roger. \"Of the Earth, and the Fruits thereof.\" <em>A Key into the Language of America</em>, Gregory Dexter, 1643, p. 99.",
+    "title": "Of the Earth, and the Fruits thereof",
+    "written": "1643",
+    "locator": {
+      "page": "99",
+      "url": "https://archive.org/details/keyintolanguageo02will/page/n114/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0204",
+      "type": "book",
+      "title": "A Key into the Language of America",
+      "contributors": [
+        {
+          "id": "a-roger-williams",
+          "name": "Roger Williams",
+          "role": "author"
+        }
+      ],
+      "publisher": "Gregory Dexter",
+      "issued": "1643",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "keyintolanguageo02will"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      {
+        "id": "sp-0030",
+        "basis": "grounded",
+        "note": "The Narragansett name for the cranberry, a winter fruit of fresh water, in Williams's word list."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

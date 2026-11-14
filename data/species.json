@@ -278,5 +278,35 @@
     "gbif": "2882753",
     "inaturalist": "62376",
     "hashtags": ["wintergreen", "gaultheria", "wildflowers"]
+  },
+  {
+    "id": "sp-0029",
+    "name": "Wild Turkey",
+    "scientific": "Meleagris gallopavo",
+    "rank": "species",
+    "hashtags": ["wildturkey", "turkey", "birds"],
+    "wikidata": "Q26844",
+    "gbif": "9606290",
+    "inaturalist": "906"
+  },
+  {
+    "id": "sp-0030",
+    "name": "American Cranberry",
+    "scientific": "Vaccinium macrocarpon",
+    "rank": "species",
+    "hashtags": ["cranberry", "bogs", "wildfruit"],
+    "wikidata": "Q149397",
+    "gbif": "2882841",
+    "inaturalist": "63749"
+  },
+  {
+    "id": "sp-0031",
+    "name": "Winterberry",
+    "scientific": "Ilex verticillata",
+    "rank": "species",
+    "hashtags": ["winterberry", "holly", "winterfruit"],
+    "wikidata": "Q3487324",
+    "gbif": "5414267",
+    "inaturalist": "61119"
   }
 ]

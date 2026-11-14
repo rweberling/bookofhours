@@ -5311,5 +5311,105 @@
       "weather": ["heat"],
       "seasons": ["summer"]
     }
+  },
+  {
+    "id": "i-0162",
+    "shownIn": "days",
+    "file": "images/days_whistler_turkeys.jpg",
+    "caption": "James McNeill Whistler, <a href=\"https://www.artic.edu/artworks/15179\" target=\"_blank\"><em>Turkeys</em></a> (1880)",
+    "alt": "An etching on a sheet of laid paper: a courtyard with balconies and hanging vines, a boy standing beside a round well-head, and a flock of turkeys pecking in the foreground. Long straight lines are scored across the whole plate, cancelling it; below, “Turkeys” is written in pencil.",
+    "bibliography": "Whistler, James McNeill. <em>Turkeys</em>. 1880, etching and drypoint with drypoint cancellation, The Art Institute of Chicago, 1933.705a.",
+    "creator": {
+      "id": "a-james-mcneill-whistler",
+      "name": "James McNeill Whistler",
+      "wikidata": "Q203643"
+    },
+    "title": "Turkeys",
+    "date": "1880",
+    "institution": "The Art Institute of Chicago",
+    "shelfmark": "1933.705a",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Art Institute of Chicago",
+        "url": "https://www.artic.edu/artworks/15179"
+      }
+    ],
+    "source": {
+      "url": "https://www.artic.edu/iiif/2/c56565b2-fa9e-ca70-f8c9-06ee599bc806/full/3000,/0/default.jpg",
+      "retrieved": "2026-11-15"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0029"]
+    }
+  },
+  {
+    "id": "i-0163",
+    "shownIn": "days",
+    "file": "images/days_allen_ginter_cranberry.jpg",
+    "caption": "Allen &amp; Ginter, <a href=\"https://www.metmuseum.org/art/collection/search/407803\" target=\"_blank\"><em>Cranberry</em></a>, from the Fruits series (N12), a cigarette card (1891)",
+    "alt": "A small colour-printed card: a child's face in a white ruffled bonnet with pink ribbons, beside a sprig of cranberry with small leaves and red berries tied with an orange ribbon; below, “Cranberry.”",
+    "bibliography": "Allen &amp; Ginter. <em>Cranberry</em>, from the Fruits series (N12) for Allen &amp; Ginter Cigarettes Brands. 1891, commercial colour lithograph, The Metropolitan Museum of Art, New York, The Jefferson R. Burdick Collection, 63.350.201.12.13.",
+    "creator": { "id": "a-allen-and-ginter", "name": "Allen & Ginter" },
+    "title": "Cranberry, from the Fruits series (N12) for Allen & Ginter Cigarettes Brands",
+    "date": "1891",
+    "institution": "The Metropolitan Museum of Art",
+    "shelfmark": "63.350.201.12.13",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/407803"
+      }
+    ],
+    "source": {
+      "url": "https://images.metmuseum.org/CRDImages/dp/original/DP834615.jpg",
+      "retrieved": "2026-11-15"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0030"]
+    }
+  },
+  {
+    "id": "i-0164",
+    "shownIn": "days",
+    "file": "images/days_moody_winterberry.jpg",
+    "caption": "D. W. Moody, <a href=\"https://archive.org/details/americanfloraorh41855stro/page/n70/mode/1up\" target=\"_blank\"><em>Prinos verticillatus</em></a> (Winter Berry), plate 10 of Asa B. Strong, <em>The American Flora</em>, vol. 4 (1855)",
+    "alt": "A hand-coloured botanical plate: an upright grey stem with serrated green leaves and clusters of round red berries along its branches, signed “D. W. Moody” and titled “Prinos verticillatus.”",
+    "bibliography": "Moody, D. W. <em>Prinos verticillatus</em> (Winter Berry). Plate 10 in Asa B. Strong, <em>The American Flora, or, History of Plants and Wild Flowers</em>, vol. 4, Hull &amp; Spencer, 1855, hand-coloured lithograph.",
+    "creator": { "id": "a-david-william-moody", "name": "D. W. Moody" },
+    "title": "Prinos verticillatus (Winter Berry)",
+    "date": "1855",
+    "institution": "Smithsonian Libraries",
+    "source": {
+      "url": "https://archive.org/download/americanfloraorh41855stro/page/n70.jpg",
+      "retrieved": "2026-11-15"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0206",
+      "title": "The American Flora, or, History of Plants and Wild Flowers, vol. 4",
+      "publisher": "Hull & Spencer",
+      "issued": "1855",
+      "identifiers": { "internetArchive": "americanfloraorh41855stro" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/americanfloraorh41855stro/page/n70/mode/1up",
+      "label": "Internet Archive"
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0031"]
+    }
   }
 ]

@@ -1,0 +1,57 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0131/",
+  "id": "r-0131",
+  "shownIn": "days",
+  "text": "<p>I am, on this account, not displeas’d that the Figure is not known as a Bald Eagle, but looks more like a Turk’y. For in Truth, the Turk’y is in comparison a much more respectable Bird, and withal a true original Native of America. Eagles have been found in all Countries, but the Turk’y was peculiar to ours; the first of the Species seen in Europe being brought to France by the Jesuits from Canada, and serv’d up at the Wedding Table of Charles the Ninth. He is, [though a little vain and silly, it is true, but not the worse emblem for that,] a Bird of Courage, and would not hesitate to attack a Grenadier of the British Guards, who should presume to invade his Farm Yard with a <em>red</em> Coat on.</p>",
+  "citation": {
+    "display": "Benjamin Franklin, from a <a href=\"https://archive.org/details/writingsofbenjam09franuoft/page/n190/mode/1up\" target=\"_blank\">letter to Sarah Bache</a> (Passy, 26 January 1784)",
+    "bibliography": "Franklin, Benjamin. Letter to Sarah Bache, Passy, 26 January 1784. <em>The Writings of Benjamin Franklin</em>, edited by Albert Henry Smyth, vol. 9, Macmillan, 1906, p. 167.",
+    "title": "Letter to Sarah Bache",
+    "written": "1784-01-26",
+    "locator": {
+      "page": "167",
+      "url": "https://archive.org/details/writingsofbenjam09franuoft/page/n190/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0203",
+      "type": "book",
+      "title": "The Writings of Benjamin Franklin, vol. 9",
+      "contributors": [
+        {
+          "id": "a-benjamin-franklin",
+          "name": "Benjamin Franklin",
+          "role": "author"
+        },
+        {
+          "id": "a-albert-henry-smyth",
+          "name": "Albert Henry Smyth",
+          "role": "editor"
+        }
+      ],
+      "publisher": "Macmillan",
+      "issued": "1906",
+      "original-date": "1784",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "writingsofbenjam09franuoft"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      {
+        "id": "sp-0029",
+        "basis": "grounded",
+        "note": "Franklin's case for the turkey, the American bird, against the bald eagle."
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

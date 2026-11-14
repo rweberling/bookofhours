@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0030/",
+  "id": "sp-0030",
+  "name": "American Cranberry",
+  "scientific": "Vaccinium macrocarpon",
+  "rank": "species",
+  "hashtags": [
+    "cranberry",
+    "bogs",
+    "wildfruit"
+  ],
+  "wikidata": "Q149397",
+  "gbif": "2882841",
+  "inaturalist": "63749",
+  "records": [
+    "r-0132",
+    "i-0163"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
