@@ -13,6 +13,7 @@
         "title": "Week 12: Sugar Maple, Annika Hansteen-Izora, Walter H. Crockett",
         "subtitle": "7 Days to Vernal Equinox",
         "published": "2026-03-12",
+        "day": "03-12",
         "canonicalUrl": "https://laurentia.substack.com/p/week-12-sugar-maple-annika-hansteen",
         "images": [
           {
@@ -107,6 +108,7 @@
         "title": "Week 11: American Robin, Emily Dickinson, Robert Ridgway",
         "subtitle": "14 Days to Vernal Equinox",
         "published": "2026-03-06",
+        "day": "03-06",
         "canonicalUrl": "https://laurentia.substack.com/p/week-11-american-robin-emily-dickinson",
         "images": [
           {
@@ -208,6 +210,7 @@
         "title": "Week 13: Paper Birch, Robert Frost, Gifford Pinchot",
         "subtitle": "Vernal Equinox",
         "published": "2026-03-20",
+        "day": "03-20",
         "canonicalUrl": "https://laurentia.substack.com/p/week-13-paper-birch-robert-frost",
         "images": [
           {
@@ -306,6 +309,7 @@
         "title": "Week 18: Great Mullein, Ashia Ajani, Hildegard von Bingen",
         "subtitle": "First Quarter Moon; 7 Days to Spring Cross-Quarter Day (May 1)",
         "published": "2026-04-25",
+        "day": "04-25",
         "canonicalUrl": "https://laurentia.substack.com/p/week-17-great-mullein-ashia-ajani",
         "images": [
           {
@@ -414,6 +418,7 @@
         "title": "Week 14: Nimbostratus praecipitatio, Johann Wolfgang von Goethe, Jenny Odell",
         "subtitle": "86 Days to Summer Solstice",
         "published": "2026-03-27",
+        "day": "03-27",
         "canonicalUrl": "https://laurentia.substack.com/p/week-14-nimbostratus-praecipitatio",
         "images": [
           {
@@ -513,6 +518,7 @@
         "title": "Week 16: Ostrich Fern, Martin Heidegger, Douglas Houghton Campbell",
         "subtitle": "Last Quarter Moon; 21 Days to Second Cross-Quarter Day (May 1)",
         "published": "2026-04-10",
+        "day": "04-10",
         "canonicalUrl": "https://laurentia.substack.com/p/week-16-ostrich-fern-martin-heidegger",
         "images": [
           {
@@ -611,6 +617,7 @@
         "title": "Week 15: Dutch Crocus, Guillaume Barth, William Herbert",
         "subtitle": "Waning Gibbous Moon; 28 Days to Second Cross-Quarter Day (May 1)",
         "published": "2026-04-03",
+        "day": "04-03",
         "canonicalUrl": "https://laurentia.substack.com/p/week-15-dutch-crocus-guillaume-barth",
         "images": [
           {
@@ -717,6 +724,7 @@
         "title": "Week 17: Eastern Cottontail , Zora Neale Hurston, Ernest Thompson Seton",
         "subtitle": "New Moon; 14 Days to Spring Cross-Quarter Day (May 1)",
         "published": "2026-04-17",
+        "day": "04-17",
         "canonicalUrl": "https://laurentia.substack.com/p/week-17-eastern-cottontail-zora-neale",
         "images": [
           {
@@ -815,6 +823,7 @@
         "title": "Week 19: Sheet Moss, Hildegard von Bingen, Michael Marder",
         "subtitle": "Full Moon; Second Cross-Quarter Day",
         "published": "2026-05-01",
+        "day": "05-01",
         "canonicalUrl": "https://laurentia.substack.com/p/week-19-sheet-moss-hildegard-von",
         "images": [
           {
@@ -911,6 +920,7 @@
         "title": "Week 20: Cambridge Argillite, Ludwig Wittgenstein, The Dana Brothers",
         "subtitle": "Waning Gibbous Moon; 44 Days to Summer Solstice",
         "published": "2026-05-08",
+        "day": "05-08",
         "canonicalUrl": "https://laurentia.substack.com/p/week-20-cambridge-argillite-ludwig",
         "images": [
           {
@@ -1018,6 +1028,7 @@
         "title": "Week 21: Common Lilac, Amy Lowell, Ronald Firbank",
         "subtitle": "Waning Crescent Moon; 37 Days to Summer Solstice",
         "published": "2026-05-15",
+        "day": "05-15",
         "canonicalUrl": "https://laurentia.substack.com/p/week-21-common-lilac-amy-lowell-ronald",
         "images": [
           {
@@ -1119,6 +1130,7 @@
         "title": "Week 22: Mycobacterium vaccae, Jenifer Wightman, Graham A.W. Rook",
         "subtitle": "Waxing Crescent Moon; 30 Days to Summer Solstice",
         "published": "2026-05-22",
+        "day": "05-22",
         "canonicalUrl": "https://laurentia.substack.com/p/week-22-mycobacterium-vaccae-jenifer",
         "images": [
           {
@@ -1229,6 +1241,7 @@
         "title": "Week 25: Pink Lady's Slipper, Grace Greylock Niles, C.S. Young",
         "subtitle": "Waning Crescent Moon; 9 Days to Summer Solstice",
         "published": "2026-06-12",
+        "day": "06-12",
         "canonicalUrl": "https://laurentia.substack.com/p/week-25-pink-ladys-slipper-grace",
         "images": [
           {
@@ -1330,6 +1343,7 @@
         "title": "Week 26: Maculae Solares, Galileo Galilei feat. The Roman Inquisition, Simon Barraclough",
         "subtitle": "Waxing Crescent Moon; 2 Days to Summer Solstice",
         "published": "2026-06-19",
+        "day": "06-19",
         "canonicalUrl": "https://laurentia.substack.com/p/week-26-maculae-solares-galileo-galilei",
         "images": [
           {
@@ -1429,6 +1443,7 @@
         "title": "Week 34: Cucurbits, Marge Piercy, Padraig Regan",
         "subtitle": "The messy family that plays with poisons",
         "published": "2026-08-22",
+        "day": "08-22",
         "canonicalUrl": "https://laurentia.substack.com/p/week-33-cucurbits-marge-piercy-padgraig",
         "images": [
           {
@@ -1542,6 +1557,7 @@
         "title": "Week 23: Common Reed, Rumi, A.R. Horwood",
         "subtitle": "Waxing Gibbous Moon; 23 Days to Summer Solstice",
         "published": "2026-05-29",
+        "day": "05-29",
         "canonicalUrl": "https://laurentia.substack.com/p/week-23-common-reed-rumi-ar-harwood",
         "images": [
           {
@@ -1640,6 +1656,7 @@
         "title": "Week 24: Wool Sower Wasp, E.P. Felt, Francesco Redi of Arezzo",
         "subtitle": "Waning Gibbous Moon; 16 Days to Summer Solstice",
         "published": "2026-06-06",
+        "day": "06-06",
         "canonicalUrl": "https://laurentia.substack.com/p/week-24-wool-sower-wasp-ep-felt-francesco",
         "images": [
           {
@@ -1738,6 +1755,7 @@
         "title": "Week 27: Serviceberry, Robin Wall Kimmerer, K.M. Wiegand",
         "subtitle": "Waxing Gibbous Moon; 35 Days to August Cross-Quarter Day",
         "published": "2026-06-28",
+        "day": "06-28",
         "canonicalUrl": "https://laurentia.substack.com/p/week-27-serviceberry-robin-wall-kimmerer",
         "images": [
           {
@@ -1836,6 +1854,7 @@
         "title": "Week 28: Redcurrants, Maud Grieve, The Ohio Agricultural Experiment Station",
         "subtitle": "Waning Crescent Moon; 22 Days to August Cross-Quarter Day",
         "published": "2026-07-10",
+        "day": "07-10",
         "canonicalUrl": "https://laurentia.substack.com/p/week-28-redcurrants-maud-grieve-the",
         "images": [
           {
@@ -1941,6 +1960,7 @@
         "title": "Week 29: Corn, Haudenosaunee Storytellers, Emily Pauline Johnson",
         "subtitle": "Waxing Crescent Moon; 13 Days to August Cross-Quarter",
         "published": "2026-07-19",
+        "day": "07-19",
         "canonicalUrl": "https://laurentia.substack.com/p/week-28-corn-haudenosaunee-storytellers",
         "images": [
           {
@@ -2054,6 +2074,7 @@
         "title": "Week 30: Blueberries, Joseph J. White, Inc., Alix Beeston on Ellena Savage",
         "subtitle": "Waxing Gibbous Moon; 7 Days to August Cross-Quarter Day",
         "published": "2026-07-25",
+        "day": "07-25",
         "canonicalUrl": "https://laurentia.substack.com/p/week-30-blueberries-joseph-j-white",
         "images": [
           {
@@ -2162,6 +2183,7 @@
         "title": "Week 31: Butterfly Weed, Paul Muldoon, Nathaniel Lord Britton",
         "subtitle": "The flower that poisons butterflies and protects them",
         "published": "2026-08-01",
+        "day": "08-01",
         "canonicalUrl": "https://laurentia.substack.com/p/week-31-butterfly-weed-paul-muldoon",
         "images": [
           {
@@ -2263,6 +2285,7 @@
         "title": "Week 32: Dog Days, Horace, Heraclitus",
         "subtitle": "The idiomatic micro-season from the stars",
         "published": "2026-08-07",
+        "day": "08-07",
         "canonicalUrl": "https://laurentia.substack.com/p/week-32-dog-days-horace-heraclitus",
         "images": [
           {
@@ -2376,6 +2399,7 @@
         "title": "Week 33: Perseids, Han Dynasty Scribes, Henry David Thoreau",
         "subtitle": "The annual summer shower that has been running for eons",
         "published": "2026-08-14",
+        "day": "08-14",
         "canonicalUrl": "https://laurentia.substack.com/p/week-33-perseids-meteor-shower-han",
         "images": [
           {
@@ -2481,6 +2505,7 @@
         "title": "Week 35: Cucumis, Robert Hass, Marcus Aurelius (and William Cowper, too)",
         "subtitle": "A fast-climbing sprawler birthed on multiple continents that is mostly water",
         "published": "2026-08-29",
+        "day": "08-29",
         "canonicalUrl": "https://laurentia.substack.com/p/week-35-cucumis-robert-hass-marcus",
         "images": [
           {
@@ -2589,6 +2614,7 @@
         "title": "Week 36: Watermelon, Sylvia Plath, Pliny the Elder",
         "subtitle": "Nature’s water jug, transformed into a picturesque dessert",
         "published": "2026-09-11",
+        "day": "09-11",
         "canonicalUrl": "https://laurentia.substack.com/p/week-36-watermelon-sylvia-plath-pliny",
         "images": [
           {
@@ -2703,6 +2729,7 @@
         "title": "Week 37: Northern Red Oak (Susan Fenimore Cooper, George Francis Heath, James George Frazer)",
         "subtitle": "Scenery or sustenance, god or gallows--the tree persists",
         "published": "2026-09-20",
+        "day": "09-20",
         "canonicalUrl": "https://laurentia.substack.com/p/week-37-northern-red-oak-susan-fenimore",
         "images": [
           {
@@ -2834,6 +2861,7 @@
         "title": "Week 38: Shagbark Hickory (Carl Sandburg, Vladimir Nabokov, Charles S. Sargent)",
         "subtitle": "The sweet nut-maker with serious bedhead (but pretty leaves)",
         "published": "2026-09-27",
+        "day": "09-27",
         "canonicalUrl": "https://laurentia.substack.com/p/week-38-shagbark-hickory-carl-sandburg",
         "images": [
           {
@@ -2957,6 +2985,7 @@
         "title": "Week 39: Common Pawpaw (Jean Anthelme Brillat-Savarin, Daniel H. Janzen and Paul S. Martin, A.C. Whitford)",
         "subtitle": "The delicious tropical stowaway of the eastern woodlands",
         "published": "2026-10-04",
+        "day": "10-04",
         "canonicalUrl": "https://laurentia.substack.com/p/week-39-common-pawpaw-jean-anthelme",
         "images": [
           {
@@ -3073,6 +3102,7 @@
         "title": "Week 41: Ghost Pipe (Emily Dickinson, Merlin Sheldrake)",
         "subtitle": "A parasitic flower with no chlorophyll but lots of magic",
         "published": "2026-10-25",
+        "day": "10-25",
         "canonicalUrl": "https://laurentia.substack.com/p/week-41-ghost-pipe-emily-dickinson",
         "images": [
           {
@@ -3182,6 +3212,7 @@
         "title": "Week 40: Staghorn Sumac (Cole Swanson, Katharine Lee Bates, J. Francis Macbride)",
         "subtitle": "A red for your palette and mordant for your clothes that is neither antler nor cattail.",
         "published": "2026-10-18",
+        "day": "10-18",
         "canonicalUrl": "https://laurentia.substack.com/p/week-40-staghorn-sumac-cole-swanson",
         "images": [
           {
@@ -3299,6 +3330,7 @@
         "title": "Week 42: First Frost (William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy)",
         "subtitle": "The threshold of winter: a mask, a sweetener, a bacteria, a rebirth, etc.",
         "published": "2026-11-01",
+        "day": "11-01",
         "canonicalUrl": "https://laurentia.substack.com/p/week-42-first-frost-william-cullen",
         "images": [
           {
@@ -3406,6 +3438,7 @@
         "title": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
         "subtitle": "A plant of low, slow, and quiet persistence--and amplified triboluminescence",
         "published": "2026-11-08",
+        "day": "11-08",
         "canonicalUrl": "https://laurentia.substack.com/p/week-43-wintergreen-jacob-bigelow",
         "images": [
           {
@@ -3492,6 +3525,7 @@
         "title": "Week 10: Witch Hazel, Friedrich Nietzsche, William Hamilton Gibson",
         "subtitle": "21 Days to Vernal Equinox",
         "published": "2026-02-27",
+        "day": "02-27",
         "canonicalUrl": "https://laurentia.substack.com/p/week-10-witch-hazel-friedrich-nietzsche",
         "images": [
           {
@@ -3585,7 +3619,8 @@
     {
       "id": "works-in-progress",
       "title": "Works in Progress",
-      "published": "2026-10-11"
+      "published": "2026-10-11",
+      "day": "10-11"
     }
   ]
 }

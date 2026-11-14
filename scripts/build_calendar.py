@@ -17,8 +17,9 @@ Every day of the book's year is an all-day event that repeats each year:
              year.xml; otherwise its citation), the image's caption, and
              the day's page, seasons.html?day=MM-DD.
   an essay   a Lectio Terra post on the day it was first published, then
-             every year from the next on the last day of its week
-             (weeks.essay_day; the Seasons page keeps the same rule): its
+             every year from the next on its fixed day, the same day
+             unless another was pinned (weeks.essay_day; the Seasons page
+             keeps the same rule): its
              readers, the opening of its headnote, and its page.
   the year's eve, 20 December, outside the weeks.
 
@@ -153,10 +154,10 @@ def events(config):
         first = date.fromisoformat(entry['published'])
         title, notes, url = f'Lectio Terra: {name}', essay_notes(entry), f'{SITE}/{entry["page"]}'
         # Its first showing, on its publication day, then every year
-        # from the next on the last day of its week (weeks.essay_day).
+        # from the next on its fixed day (weeks.essay_day).
         out.append((entry['published'][5:], event(f'{entry["id"]}-first', first, title, notes, url,
                                                   repeat=False)))
-        again = essay_day(entry['published'], first.year + 1)
+        again = essay_day(entry)
         out.append((again, event(entry['id'], date(first.year + 1, *map(int, again.split('-'))),
                                  title, notes, url)))
     out.append(('12-20', event('years-eve', first_on_or_after('12-20', start),

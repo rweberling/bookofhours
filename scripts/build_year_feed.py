@@ -16,8 +16,8 @@ What a day holds, as the Seasons page shows it:
              in only when their rights are open (NoC-US or a public-domain
              mark, as on Bluesky); otherwise the reading's citation alone.
   an essay   a Lectio Terra essay on its own day (the day the Seasons
-             page opens it): its publication day the year it came out,
-             then the last day of its week every year (weeks.essay_day), as in
+             page opens it): its fixed day, its first publication day
+             unless another was pinned (weeks.essay_day), as in
              feed.xml: its first figure, its readers, the opening of its
              headnote, and a link to its page.
 
@@ -112,7 +112,7 @@ def build(as_of):
         when = format_datetime(datetime.combine(day, time(0), HOME))
         found = []
         for e in essays:
-            if same_day(day, essay_day(e['published'], day.year)) and day >= date.fromisoformat(e['published']):
+            if same_day(day, essay_day(e)) and day >= date.fromisoformat(e['published']):
                 title, body = essay_item(e, by_subject, alts)
                 found.append((title, f'{SITE}/{e["page"]}', body))
         for card in days:

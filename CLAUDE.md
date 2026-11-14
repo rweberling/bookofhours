@@ -160,10 +160,12 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   daily layer grows; the Syndication Plan's "The days, everywhere"): the
   book's year is fixed by date (the weeks, and where each card and essay
   sits); the civil week only says when a piece first comes out; the sun
-  moves the sun-tied days. So an essay shows on its publication day the
-  year it comes out, then every year on the last day of its week
-  (`essay_day()` in `scripts/weeks.py`, `essayDayKey()` in `shared.js`,
-  used by the Seasons page, `year.xml` and the calendar). The weekday
+  moves the sun-tied days. So an essay stays on its fixed day every year,
+  its post's `day`: its publication day, unless Ryan pins another
+  (decided 15 November 2026; `essay_day()` in `scripts/weeks.py`,
+  `essayDayKey()` in `shared.js`, used by the Seasons page, `year.xml`
+  and the calendar). A week can then hold its essay on any of its days,
+  and in later years more than one. The weekday
   drifts a day a year: until 20 December 2026 the weeks run Sunday to
   Saturday (essays out on Sundays, the week's first day); from Week 1, 21
   December 2026, Monday to Sunday, so the seventh day is a Sunday through

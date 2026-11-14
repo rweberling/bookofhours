@@ -228,7 +228,10 @@ posts through `scripts/datafile.py` (`load('lectio-data')`), which puts
 each original back on its post as `bodyHtml`.
 
 A post's record holds its `id` (`lt-`), Substack's `postId`, `season`,
-`title`, `subtitle`, `published` (first publication), `canonicalUrl` (on
+`title`, `subtitle`, `published` (first publication), `day` (`MM-DD`, the
+day it is kept on every year in the book, the Seasons page, `year.xml` and
+the calendar: its publication day, unless Ryan pins another),
+`canonicalUrl` (on
 Substack), `subject` (its `sp-` or `ph-` record), `readings` (the names
 of the writers it pairs, in order) and, where the post itself labels them
 differently, `readingLabels` (each `author` and `work` as shown), and
@@ -343,8 +346,8 @@ card, the Seasons page opens on it, with the week around it: the week's
 Lectio Terra essay (the one published within the week) and its other days.
 The same days make the year's feed, `year.xml` (`scripts/build_year_feed.py`):
 each day's card, and each essay on its own day, the last 14 days at a
-time. An essay's day is its publication day the year it comes out, then
-every year the last day of its week (`essay_day()` in
+time. An essay's day is its post's `day`, its publication day unless
+another was pinned, the same every year (`essay_day()` in
 `scripts/weeks.py`; the Seasons page and the calendar keep the same
-rule): the book's year is fixed by date, and the weekday a week ends on
+rule): the book's year is fixed by date, though the weekday under it
 drifts a day a year.

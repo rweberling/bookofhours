@@ -184,7 +184,7 @@ function dayWords(month, day) {
 function essayOfWeek(week) {
   const keys = new Set(week.days.map(d => d.key));
   const posts = Object.values(lectioSeasons || {}).flat()
-    .filter(e => e.published && keys.has(e.published.slice(5)))
+    .filter(e => e.published && keys.has(essayDayKey(e)))
     .sort((a, b) => b.published.localeCompare(a.published));
   return posts[0] || null;
 }
@@ -247,7 +247,7 @@ function renderWeek(week, currentKey, days, subjects) {
   const nav = document.getElementById('season-week');
   const byDate = new Map(days.map(d => [d.date, d]));
   const essay = week.threshold ? null : essayOfWeek(week);
-  const essayKey = essay ? essayDayKey(essay.published, new Date().getFullYear()) : null;
+  const essayKey = essay ? essayDayKey(essay) : null;
   const essayLine = essay
     ? `<p class="season-week-essay">This week\u2019s study: <a href="${escapeHTML(postAddress(essay.season || season.key, essay))}">${escapeHTML(resolveSpeciesFields(essay).species)}</a></p>`
     : '';
@@ -312,7 +312,7 @@ async function dayToShow() {
     const [month, dayOfMonth] = key.split('-').map(Number);
     const week = weekOf(month, dayOfMonth);
     const essay = !week.threshold && essayOfWeek(week);
-    if (essay && essayDayKey(essay.published, now.getFullYear()) === key) return { essay, key, days };
+    if (essay && essayDayKey(essay) === key) return { essay, key, days };
   }
   return null;
 }
