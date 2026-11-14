@@ -292,25 +292,25 @@
       "height": 3000,
       "sha256": "0c809e0d3a64e45c96aa7fb80679973e1be73cebcdda506f023e54a9838345df",
       "settings": "89e48fac760f",
-      "credit": "e44d68eb47f9",
+      "credit": "2af2f4c94243",
       "copies": [
         {
           "file": "images/web/days_whistler_turkeys-800.webp",
           "width": 800,
           "height": 1200,
-          "bytes": 102064
+          "bytes": 102302
         },
         {
           "file": "images/web/days_whistler_turkeys-1600.webp",
           "width": 1600,
           "height": 2400,
-          "bytes": 275596
+          "bytes": 275834
         },
         {
           "file": "images/web/days_whistler_turkeys-2400.webp",
           "width": 2000,
           "height": 3000,
-          "bytes": 373208
+          "bytes": 373446
         }
       ]
     },
