@@ -106,7 +106,13 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends
-  with what needs a person (a subject record, possible poems).
+  with what needs a person (a subject record, possible poems). Before
+  pushing an import, give every new figure its `alt` (look at the image)
+  and its `rights` (clear cases applied and logged in the Rights review
+  sheet, the rest "needs Ryan"; Ryan, 15 November 2026): the push posts
+  the essay to Bluesky at once with its shareable figures, and a posted
+  image's alt text can't be changed. `syndicate.py --preview lt-NNNN`
+  shows the post as it will go out.
 
 ## The pages
 
