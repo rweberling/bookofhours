@@ -47,6 +47,55 @@
       "sp-0014"
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0014/",
+        "id": "sp-0014",
+        "name": "Pink Lady’s Slipper",
+        "scientific": "Cypripedium acaule",
+        "wikidata": "Q744706"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0074/",
+      "id": "e-0074",
+      "name": "All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States"
+    },
+    "post": {
+      "id": "lt-0016",
+      "title": "Week 25: Pink Lady's Slipper, Grace Greylock Niles, C.S. Young",
+      "published": "2026-06-12",
+      "url": "https://earthlyhours.com/lectio-terra/pink-ladys-slipper/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0079/",
+        "id": "i-0079",
+        "name": "Grace Greylock Niles, “ The Pink Moccasin-Flower. ( Cypripedium acaule. ) ,” from Grace Greylock Niles …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0072/",
+        "id": "r-0072",
+        "name": "Grace Greylock Niles, “Bog-Trotting for Orchids”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0080/",
+        "id": "i-0080",
+        "name": "C. S. Young, “ Cypripedium acaule ,” from All of Nature’s Fashions in Lady’s Slippers for the Northern …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0073/",
+        "id": "r-0073",
+        "name": "F. Desbois, “Cypripedium de pleine terre”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0081/",
+        "id": "i-0081",
+        "name": "Grace Greylock Niles, “ The Pink Moccasin-Flower - The Stemless Lady’s Slipper ,” from Grace Greylock Niles …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

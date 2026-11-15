@@ -129,6 +129,55 @@
       "name": "Esther Julián"
     }
   ],
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0011/",
+        "id": "sp-0011",
+        "name": "Living Soil",
+        "scientific": "Mycobacterium vaccae",
+        "wikidata": "Q655983"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0179/",
+      "id": "e-0179",
+      "name": "The Production of a New Extracellular Putative Long-Chain Saturated Polyester by Smooth Variants of Mycobacterium vaccae Interferes with Th1-Cytokine Production"
+    },
+    "post": {
+      "id": "lt-0013",
+      "title": "Week 22: Mycobacterium vaccae, Jenifer Wightman, Graham A.W. Rook",
+      "published": "2026-05-22",
+      "url": "https://earthlyhours.com/lectio-terra/living-soil/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0070/",
+        "id": "i-0070",
+        "name": "Mycobacterium vaccae"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0065/",
+        "id": "r-0065",
+        "name": "Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0071/",
+        "id": "i-0071",
+        "name": "Jenifer Wightman, Winogradsky Rothko"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0066/",
+        "id": "r-0066",
+        "name": "Graham A. W. Rook, “The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0067/",
+        "id": "r-0067",
+        "name": "Charles L. Raison, Christopher A. Lowry, Graham A. W. Rook, “Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

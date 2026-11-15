@@ -16,6 +16,27 @@
     "r-0131",
     "i-0162"
   ],
+  "related": {
+    "days": [
+      {
+        "id": "dy-0001",
+        "date": "11-26",
+        "url": "https://earthlyhours.com/seasons.html?day=11-26"
+      }
+    ],
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0131/",
+        "id": "r-0131",
+        "name": "Benjamin Franklin, “Letter to Sarah Bache”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0162/",
+        "id": "i-0162",
+        "name": "James McNeill Whistler, Turkeys"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

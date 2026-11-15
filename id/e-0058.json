@@ -23,6 +23,15 @@
   "citedBy": [
     "r-0058"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0058/",
+        "id": "r-0058",
+        "name": "Michael Marder, Edward S. Casey, “Plants in Place: A Phenomenology of the Vegetal”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -18,6 +18,15 @@
   "citedBy": [
     "i-0041"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0041/",
+        "id": "i-0041",
+        "name": "United States Forest Service, “ Natural range of sugar maple ,” from Sugar Maple: An American Wood (Washington: Dept. …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

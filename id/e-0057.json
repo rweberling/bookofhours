@@ -28,6 +28,15 @@
   "citedBy": [
     "r-0057"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0057/",
+        "id": "r-0057",
+        "name": "Hildegard of Bingen, “334. Letter to Secular People”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

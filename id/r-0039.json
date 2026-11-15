@@ -46,6 +46,55 @@
   "display": {
     "verse": true
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0002/",
+        "id": "sp-0002",
+        "name": "American Robin",
+        "scientific": "Turdus migratorius",
+        "wikidata": "Q460967"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0039/",
+      "id": "e-0039",
+      "name": "e-0039"
+    },
+    "post": {
+      "id": "lt-0002",
+      "title": "Week 11: American Robin, Emily Dickinson, Robert Ridgway",
+      "published": "2026-03-06",
+      "url": "https://earthlyhours.com/lectio-terra/american-robin/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0037/",
+        "id": "i-0037",
+        "name": "National Audubon Society, American Robin, March 5–12"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0038/",
+        "id": "i-0038",
+        "name": "Emily Dickinson, The Robin is the One"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0040/",
+        "id": "r-0040",
+        "name": "Robert Ridgway, “Family Turdidae. The Thrushes”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0039/",
+        "id": "i-0039",
+        "name": "Howard Saunders, “ The Redbreast ,” or European Robin, from Howard Saunders (1835-1907), An Illustrated …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0123/",
+        "id": "i-0123",
+        "name": "National Audubon Society, American Robin: Annual Migration"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

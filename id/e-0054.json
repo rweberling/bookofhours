@@ -21,6 +21,15 @@
   "citedBy": [
     "r-0054"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0054/",
+        "id": "r-0054",
+        "name": "Ashia Ajani, Amirio Freeman, “Ashia Ajani Mulls Over Mullein”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

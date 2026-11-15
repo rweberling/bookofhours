@@ -6,6 +6,15 @@
   "citedBy": [
     "i-0002"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0002/",
+        "id": "i-0002",
+        "name": "Alphonse Allais, Ronde de pochards dans le brouillard [Dance of drunks in the fog]"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -19,6 +19,15 @@
   "citedBy": [
     "r-0132"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0132/",
+        "id": "r-0132",
+        "name": "Roger Williams, “Of the Earth, and the Fruits thereof”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -67,6 +67,50 @@
     ]
   },
   "firstLine": "Whereas you, Galileo, son of the late Vincenzio Galilei, Florentine, aged seventy years, were denounced to this Holy Office in 1615 for holding as true the false doctrine taught by some that the sun …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0003/",
+        "id": "ph-0003",
+        "name": "Sunspots",
+        "scientific": "Maculae solares",
+        "wikidata": "Q6582994"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0075/",
+      "id": "e-0075",
+      "name": "The Essential Galileo"
+    },
+    "post": {
+      "id": "lt-0017",
+      "title": "Week 26: Maculae Solares, Galileo Galilei feat. The Roman Inquisition, Simon Barraclough",
+      "published": "2026-06-19",
+      "url": "https://earthlyhours.com/lectio-terra/sunspots/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0082/",
+        "id": "i-0082",
+        "name": "Richard William Seale, The Course of the Solar Maculae over the Sun’s Disk"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0083/",
+        "id": "i-0083",
+        "name": "Étienne Léopold Trouvelot, Plate IV. Solar Prominences"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0076/",
+        "id": "r-0076",
+        "name": "Simon Barraclough, “Sunspots”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0084/",
+        "id": "i-0084",
+        "name": "“ Early sunspot drawings from naked-eye observations ,” rpt. from R. Arlt and J.M. …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

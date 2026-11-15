@@ -19,6 +19,43 @@
     "i-0114",
     "i-0115"
   ],
+  "related": {
+    "posts": [
+      {
+        "id": "lt-0027",
+        "title": "Week 36: Watermelon, Sylvia Plath, Pliny the Elder",
+        "published": "2026-09-11",
+        "url": "https://earthlyhours.com/lectio-terra/watermelon/"
+      }
+    ],
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0096/",
+        "id": "r-0096",
+        "name": "Sylvia Plath, “Fiesta Melons”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0097/",
+        "id": "r-0097",
+        "name": "Pliny the Elder, “Naturalis Historia, Book XX: Remedies Derived from the Garden Plants”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0113/",
+        "id": "i-0113",
+        "name": "Johnson Photography Studio, [Man Cutting Watermelon]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0114/",
+        "id": "i-0114",
+        "name": "“ Images of watermelon drawn from approx. 1385 to 1395 .” Harry S. Paris, et al. “ …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0115/",
+        "id": "i-0115",
+        "name": "W. Duke, Sons & Co. and Knapp & Company, Rose Coghlan as “The Watermelon,” from the Series Fancy Dress Ball Costumes (N73) for Duke Brand Cigarettes"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

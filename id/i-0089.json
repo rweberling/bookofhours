@@ -42,6 +42,50 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "credit": "Ohio Agricultural Experiment Station",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0016/",
+        "id": "sp-0016",
+        "name": "Red Currant",
+        "scientific": "Ribes rubrum",
+        "wikidata": "Q146661"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0143/",
+      "id": "e-0143",
+      "name": "The Red and White Currants"
+    },
+    "post": {
+      "id": "lt-0019",
+      "title": "Week 28: Redcurrants, Maud Grieve, The Ohio Agricultural Experiment Station",
+      "published": "2026-07-10",
+      "url": "https://earthlyhours.com/lectio-terra/red-currant/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0088/",
+        "id": "i-0088",
+        "name": "“ Fay’s Prolific ,” from Fruit Culture, Volume 2 (Scranton, Pennsylvania: International …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0079/",
+        "id": "r-0079",
+        "name": "Maud Grieve, “Currant, Red”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0080/",
+        "id": "r-0080",
+        "name": "Fred W. Card, “Bush-Fruits”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0090/",
+        "id": "i-0090",
+        "name": "“ A currant bush before pruning ,” Currants and Gooseberries: Their Culture and Relation …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

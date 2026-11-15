@@ -40,6 +40,13 @@
     "url": "https://hdl.handle.net/2027/nyp.33433069087991?urlappend=%3Bseq=226%3Bownerid=13510798882148136-232",
     "label": "HathiTrust"
   },
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0120/",
+      "id": "e-0120",
+      "name": "The Story of the Sun, Moon, and Stars"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -41,6 +41,50 @@
   "title": "Young Leaves and Blossoms of Hickory Tree",
   "date": "1910~",
   "institution": "Smithsonian American Art Museum",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0024/",
+        "id": "sp-0024",
+        "name": "Shagbark Hickory",
+        "scientific": "Carya ovata",
+        "wikidata": "Q2601238"
+      }
+    ],
+    "post": {
+      "id": "lt-0029",
+      "title": "Week 38: Shagbark Hickory (Carl Sandburg, Vladimir Nabokov, Charles S. Sargent)",
+      "published": "2026-09-27",
+      "url": "https://earthlyhours.com/lectio-terra/shagbark-hickory/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0101/",
+        "id": "r-0101",
+        "name": "Carl Sandburg, “Shag-Bark Hickory”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0121/",
+        "id": "i-0121",
+        "name": "Sophia Thoreau, Inscribed hickory leaves in memory of her brother, Henry"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0102/",
+        "id": "r-0102",
+        "name": "Vladimir Nabokov, “Canto One”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0122/",
+        "id": "i-0122",
+        "name": "C. E. Faxon, “ Hicoria ovata .” From Charles Sprague Sargent. The Silva of North America, Vol. VII …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0103/",
+        "id": "r-0103",
+        "name": "Charles Sprague Sargent, “Shell-Bark Hickory. Shag-Bark Hickory.”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

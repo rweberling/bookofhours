@@ -30,6 +30,15 @@
   "citedBy": [
     "r-0024"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0024/",
+        "id": "r-0024",
+        "name": "Walter Benjamin, “The Arcades Project”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -23,6 +23,15 @@
   "citedBy": [
     "r-0044"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0044/",
+        "id": "r-0044",
+        "name": "Gifford Pinchot, “Silvical Leaflet 38: Paper Birch”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

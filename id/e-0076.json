@@ -20,6 +20,15 @@
   "citedBy": [
     "r-0076"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0076/",
+        "id": "r-0076",
+        "name": "Simon Barraclough, “Sunspots”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

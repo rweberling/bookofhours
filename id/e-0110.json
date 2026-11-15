@@ -24,6 +24,20 @@
     "r-0111",
     "i-0035"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0111/",
+        "id": "r-0111",
+        "name": "J. Francis Macbride, “Sumach (Rhus species)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0035/",
+        "id": "i-0035",
+        "name": "J. Francis Macbride, From J. Francis Macbride, Autumn Flowers and Fruits (Chicago: Field Museum of Natural …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

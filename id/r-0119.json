@@ -41,6 +41,13 @@
     ],
     "seasons": []
   },
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0156/",
+      "id": "e-0156",
+      "name": "The Upanishads, Part II (Sacred Books of the East 15)"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

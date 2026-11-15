@@ -227,10 +227,10 @@ class Collection:
         self.species = recs('species')
         # The days, by the pieces they show: {piece id: day record}.
         self.day_of = {}
-        for d in load('days'):
-            if not d.get('draft'):
-                for field in ('reading', 'image'):
-                    self.day_of[d.get(field)] = d
+        self.days = [d for d in load('days') if not d.get('draft')]
+        for d in self.days:
+            for field in ('reading', 'image'):
+                self.day_of[d.get(field)] = d
         self.phenomena = recs('phenomena')
         vocab = load('vocab')
         self.labels = {kind: {v['id']: v['label'] for v in vocab[kind]} for kind in ('hours', 'weather', 'seasons')}
@@ -260,6 +260,12 @@ class Collection:
             for t in (tags.get('species') or []) + (tags.get('phenomena') or []):
                 self.about.setdefault(tag_id(t), []).append(r['id'])
         self.by_id = {r['id']: r for r in self.readings + self.images}
+        # Each post's pieces, in the post's order: {post id: [record ids]}.
+        self.in_post = {}
+        for r in sorted(self.readings + self.images, key=lambda r: ((r.get('lectio') or {}).get('place') or 0, r['id'])):
+            post = (r.get('lectio') or {}).get('post')
+            if post:
+                self.in_post.setdefault(post, []).append(r['id'])
 
     # How a record is named in lists.
     def name(self, rid):
@@ -623,6 +629,54 @@ def without_private_notes(data):
     return data
 
 
+def ref_json(col, rid):
+    """Another record, as a link: its address, ID and name."""
+    out = {'@id': f'{SITE}/id/{rid}/', 'id': rid, 'name': plain(col.name(rid))}
+    if rid in col.subjects:
+        s = col.subjects[rid]
+        out['scientific'] = s.get('scientific') or s.get('latin')
+        out['wikidata'] = s.get('wikidata')
+    return out
+
+
+def post_json(post):
+    return {'id': post['id'], 'title': post['title'], 'published': post.get('published'),
+            'url': f'{SITE}/{post["page"]}' if post.get('page') else f'{SITE}/seasons.html'}
+
+
+def day_json(day):
+    return {'id': day['id'], 'date': day['date'], 'url': f'{SITE}/seasons.html?day={day["date"]}'}
+
+
+def related_json(col, rid):
+    """What a record links to, spelled out for whoever reads the JSON alone:
+    derived from the stored fields, never stored itself."""
+    if rid in col.by_id:
+        r = col.by_id[rid]
+        tags = r.get('tags') or {}
+        about = [ref_json(col, tag_id(t)) for t in (tags.get('species') or []) + (tags.get('phenomena') or [])
+                 if tag_id(t) in col.subjects]
+        ed = ((r.get('citation') or {}).get('edition') if prefix(rid) == 'r' else r.get('edition')) or {}
+        out = {'about': about, 'edition': ref_json(col, ed['id']) if ed.get('id') in col.editions else None}
+        post = col.posts.get((r.get('lectio') or {}).get('post'))
+        if post:
+            out['post'] = post_json(post)
+            out['alongside'] = [ref_json(col, x) for x in col.in_post.get(post['id'], []) if x != rid]
+        day = col.day_of.get(rid)
+        if day:
+            out['day'] = day_json(day)
+            out['alongside'] = [ref_json(col, day[f]) for f in ('reading', 'image')
+                                if day.get(f) and day[f] != rid and day[f] in col.by_id]
+        return out
+    if rid in col.editions:
+        return {'citedBy': [ref_json(col, x) for x in col.cited_by.get(rid, [])]}
+    if rid in col.subjects:
+        return {'posts': [post_json(e) for e in col.posts.values() if e.get('subject') == rid],
+                'days': [day_json(d) for d in col.days if d.get('subject') == rid],
+                'records': [ref_json(col, x) for x in col.about.get(rid, [])]}
+    return {}
+
+
 def record_json(col, rid):
     """The record as stored, but without the text of a reading in copyright
     or any private rights note."""
@@ -638,8 +692,9 @@ def record_json(col, rid):
     else:
         r = dict(col.subjects[rid], records=col.about.get(rid, []))
     r = without_private_notes(r)
-    r = {'@id': f'{SITE}/id/{rid}/', **r, 'license': 'https://creativecommons.org/licenses/by-nc/4.0/',
-         'dataset': DOI}
+    related = clean_ld(related_json(col, rid))
+    r = {'@id': f'{SITE}/id/{rid}/', **r, **({'related': related} if related else {}),
+         'license': 'https://creativecommons.org/licenses/by-nc/4.0/', 'dataset': DOI}
     return json.dumps(r, ensure_ascii=False, indent=2) + '\n'
 
 

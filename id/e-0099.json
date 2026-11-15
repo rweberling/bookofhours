@@ -23,6 +23,15 @@
   "citedBy": [
     "r-0100"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0100/",
+        "id": "r-0100",
+        "name": "James George Frazer, “Tree-Worship; The Worship of the Oak”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

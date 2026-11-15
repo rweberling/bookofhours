@@ -28,6 +28,15 @@
   "citedBy": [
     "r-0086"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0086/",
+        "id": "r-0086",
+        "name": "Nathaniel Lord Britton, Addison Brown, “Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

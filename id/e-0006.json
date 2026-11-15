@@ -19,6 +19,15 @@
   "citedBy": [
     "r-0006"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0006/",
+        "id": "r-0006",
+        "name": "Kevin Young, “Book of Hours”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

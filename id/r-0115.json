@@ -45,6 +45,59 @@
     ]
   },
   "firstLine": "The miracle that saves the world, the realm of human affairs, from its normal, “natural” ruin is ultimately the fact of natality, in which the faculty of action is ontologically rooted. …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0006/",
+        "id": "ph-0006",
+        "name": "First Frost",
+        "scientific": "Prima pruina"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0114/",
+      "id": "e-0114",
+      "name": "The Human Condition"
+    },
+    "post": {
+      "id": "lt-0033",
+      "title": "Week 42: First Frost (William Cullen Bryant, Hannah Arendt, Homer C. Sampson, Thomas Hardy)",
+      "published": "2026-11-01",
+      "url": "https://earthlyhours.com/lectio-terra/first-frost/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0148/",
+        "id": "i-0148",
+        "name": "Wilson Alwyn Bentley, [Frost]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0114/",
+        "id": "r-0114",
+        "name": "William Cullen Bryant, “The Death of the Flowers”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0149/",
+        "id": "i-0149",
+        "name": "Francis George Heath, 1 to 10 Maple. 11 to 18 Spindle Tree"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0150/",
+        "id": "i-0150",
+        "name": "M. E. McCully, M. J. Canny and C. X. Huang, Fig. 1"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0116/",
+        "id": "r-0116",
+        "name": "Homer C. Sampson, “Chemical Changes Accompanying Abscission in Coleus Blumei”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0117/",
+        "id": "r-0117",
+        "name": "Thomas Hardy, “The Darkling Thrush”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

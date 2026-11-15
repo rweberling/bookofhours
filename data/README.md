@@ -32,7 +32,13 @@ Every record has an `id`, and most share a few fields:
   has been published or referred to. It never changes and is never reused,
   even if the record is corrected or retired. Older IDs it replaced are kept
   in `aliases`, so old links still work. The same ID is meant to resolve at
-  `https://earthlyhours.com/id/<id>`.
+  `https://earthlyhours.com/id/<id>`, and as data at `id/<id>.json`: the
+  record as stored, plus a `related` block that `build_records.py` derives
+  (never stored) to spell out its links, each with its `@id` and name: a
+  reading's or image's subjects (`about`, with the scientific name and
+  Wikidata), its `edition`, its `post` or `day` (with the page's URL) and
+  the pieces shown `alongside` it there; an edition's `citedBy`; a
+  subject's `posts`, `days` and `records`.
 - **`shownIn`**: where the site shows it, one place only: `hours`, `weather`,
   `seasons` (inside its Lectio Terra post) or `days` (on a day's card,
   named by a record in `days.json`).

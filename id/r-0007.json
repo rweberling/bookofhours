@@ -43,6 +43,13 @@
     "seasons": []
   },
   "firstLine": "There is no such thing as an empty space or an empty time. …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0007/",
+      "id": "e-0007",
+      "name": "Silence: Lectures and Writings"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

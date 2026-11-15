@@ -36,6 +36,15 @@
   "citedBy": [
     "i-0109"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0109/",
+        "id": "i-0109",
+        "name": "Jean Bourdichon, Quegourdes de turquie (left), Quegourdes (centre) and Concombres (right) . Paintings from …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

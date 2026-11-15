@@ -54,6 +54,50 @@
     "id": "a-c-e-faxon",
     "name": "C. E. Faxon"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0015/",
+        "id": "sp-0015",
+        "name": "Serviceberry",
+        "scientific": "Amelanchier canadensis",
+        "wikidata": "Q159030"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0140/",
+      "id": "e-0140",
+      "name": "The Silva of North America, vol. 4"
+    },
+    "post": {
+      "id": "lt-0018",
+      "title": "Week 27: Serviceberry, Robin Wall Kimmerer, K.M. Wiegand",
+      "published": "2026-06-28",
+      "url": "https://earthlyhours.com/lectio-terra/serviceberry/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0077/",
+        "id": "r-0077",
+        "name": "Robin Wall Kimmerer, “The Serviceberry: Abundance and Reciprocity in the Natural World”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0086/",
+        "id": "i-0086",
+        "name": "Elbert L. Little Jr., “ Amelanchier arborea (Michx. f.) Fern., downy serviceberry, ” from Elbert L. Little Jr. …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0078/",
+        "id": "r-0078",
+        "name": "K. M. Wiegand, “The Genus Amelanchier in Eastern North America”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0087/",
+        "id": "i-0087",
+        "name": "E. S. Harrar, “ Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section ,” from …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -24,6 +24,15 @@
   "citedBy": [
     "r-0098"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0098/",
+        "id": "r-0098",
+        "name": "Susan Fenimore Cooper, “Saturday, 28th [June]—Passed the afternoon in the woods.”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

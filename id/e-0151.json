@@ -20,6 +20,15 @@
   "citedBy": [
     "i-0122"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0122/",
+        "id": "i-0122",
+        "name": "C. E. Faxon, “ Hicoria ovata .” From Charles Sprague Sargent. The Silva of North America, Vol. VII …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

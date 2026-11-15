@@ -68,6 +68,60 @@
       "name": "Henry Brooks"
     }
   ],
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0026/",
+        "id": "sp-0026",
+        "name": "Staghorn Sumac",
+        "scientific": "Rhus typhina",
+        "wikidata": "Q148986"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0169/",
+      "id": "e-0169",
+      "name": "Handbook of the Trees of New England"
+    },
+    "post": {
+      "id": "lt-0032",
+      "title": "Week 40: Staghorn Sumac (Cole Swanson, Katharine Lee Bates, J. Francis Macbride)",
+      "published": "2026-10-18",
+      "url": "https://earthlyhours.com/lectio-terra/staghorn-sumac/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0141/",
+        "id": "i-0141",
+        "name": "Emil Carlsen, Staghorn Sumac"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0109/",
+        "id": "r-0109",
+        "name": "Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0110/",
+        "id": "r-0110",
+        "name": "Katharine Lee Bates, “Playmates”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0143/",
+        "id": "i-0143",
+        "name": "F. H. Varley, Flower of the Staghorn Sumach"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0111/",
+        "id": "r-0111",
+        "name": "J. Francis Macbride, “Sumach (Rhus species)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0144/",
+        "id": "i-0144",
+        "name": "Rhus typhina L."
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

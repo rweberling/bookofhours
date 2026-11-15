@@ -37,6 +37,29 @@
       "sp-0029"
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0029/",
+        "id": "sp-0029",
+        "name": "Wild Turkey",
+        "scientific": "Meleagris gallopavo",
+        "wikidata": "Q26844"
+      }
+    ],
+    "day": {
+      "id": "dy-0001",
+      "date": "11-26",
+      "url": "https://earthlyhours.com/seasons.html?day=11-26"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0131/",
+        "id": "r-0131",
+        "name": "Benjamin Franklin, “Letter to Sarah Bache”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -53,6 +53,50 @@
       "sp-0027"
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0027/",
+        "id": "sp-0027",
+        "name": "Ghost Pipe",
+        "scientific": "Monotropa uniflora",
+        "wikidata": "Q1156848"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0111/",
+      "id": "e-0111",
+      "name": "Poems: Third Series"
+    },
+    "post": {
+      "id": "lt-0031",
+      "title": "Week 41: Ghost Pipe (Emily Dickinson, Merlin Sheldrake)",
+      "published": "2026-10-25",
+      "url": "https://earthlyhours.com/lectio-terra/ghost-pipe/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0145/",
+        "id": "i-0145",
+        "name": "Mary Vaux Walcott, Indian Pipe (Monotropa uniflora)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0146/",
+        "id": "i-0146",
+        "name": "Mabel Loomis Todd, [Indian pipes]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0113/",
+        "id": "r-0113",
+        "name": "Merlin Sheldrake, “Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0147/",
+        "id": "i-0147",
+        "name": "John Torrey, Monotropa uniflora. Indian pipe"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

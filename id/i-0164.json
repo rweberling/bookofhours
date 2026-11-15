@@ -41,6 +41,34 @@
       "sp-0031"
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0031/",
+        "id": "sp-0031",
+        "name": "Winterberry",
+        "scientific": "Ilex verticillata",
+        "wikidata": "Q3487324"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0206/",
+      "id": "e-0206",
+      "name": "The American Flora, or, History of Plants and Wild Flowers, vol. 4"
+    },
+    "day": {
+      "id": "dy-0003",
+      "date": "11-28",
+      "url": "https://earthlyhours.com/seasons.html?day=11-28"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0133/",
+        "id": "r-0133",
+        "name": "Henry David Thoreau, “November 25, 1858”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

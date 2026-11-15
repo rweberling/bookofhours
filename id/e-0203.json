@@ -25,6 +25,15 @@
   "citedBy": [
     "r-0131"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0131/",
+        "id": "r-0131",
+        "name": "Benjamin Franklin, “Letter to Sarah Bache”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -21,6 +21,15 @@
   "citedBy": [
     "r-0102"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0102/",
+        "id": "r-0102",
+        "name": "Vladimir Nabokov, “Canto One”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

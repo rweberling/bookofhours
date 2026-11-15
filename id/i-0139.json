@@ -60,6 +60,55 @@
   },
   "bibliography": "Abbot, John. \"Papilio Ajax. Annona Palustris.\" <em>The Natural History of the Rarer Lepidopterous Insects of Georgia</em>, by James Edward Smith, T. Bensley for J. Edwards, 1797, tab. 4.",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0025/",
+        "id": "sp-0025",
+        "name": "Common Pawpaw",
+        "scientific": "Asimina triloba",
+        "wikidata": "Q948827"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0168/",
+      "id": "e-0168",
+      "name": "The Natural History of the Rarer Lepidopterous Insects of Georgia"
+    },
+    "post": {
+      "id": "lt-0030",
+      "title": "Week 39: Common Pawpaw (Jean Anthelme Brillat-Savarin, Daniel H. Janzen and Paul S. Martin, A.C. Whitford)",
+      "published": "2026-10-04",
+      "url": "https://earthlyhours.com/lectio-terra/common-pawpaw/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0138/",
+        "id": "i-0138",
+        "name": "Royal Charles Steadman, Asimina triloba"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0106/",
+        "id": "r-0106",
+        "name": "Jean Anthelme Brillat-Savarin, “Gastronomy as a Fine Art; or, The Science of Good Living”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0107/",
+        "id": "r-0107",
+        "name": "Daniel H. Janzen, Paul S. Martin, “Neotropical Anachronisms: The Fruits the Gomphotheres Ate”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0140/",
+        "id": "i-0140",
+        "name": "Edward Edmondson, Jr., Still Life with Pawpaws"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0108/",
+        "id": "r-0108",
+        "name": "A. C. Whitford, “ANONACEAE, D. C. (Custard-Apple Family)”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -53,6 +53,34 @@
       }
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0031/",
+        "id": "sp-0031",
+        "name": "Winterberry",
+        "scientific": "Ilex verticillata",
+        "wikidata": "Q3487324"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0205/",
+      "id": "e-0205",
+      "name": "Journal, vol. 11"
+    },
+    "day": {
+      "id": "dy-0003",
+      "date": "11-28",
+      "url": "https://earthlyhours.com/seasons.html?day=11-28"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0164/",
+        "id": "i-0164",
+        "name": "D. W. Moody, Prinos verticillatus (Winter Berry)"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

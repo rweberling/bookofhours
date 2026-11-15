@@ -50,6 +50,13 @@
     "seasons": []
   },
   "firstLine": "Boredom is a warm gray fabric lined on the inside with the most lustrous and colorful of silks. …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0024/",
+      "id": "e-0024",
+      "name": "The Arcades Project"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

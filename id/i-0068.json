@@ -68,6 +68,55 @@
       "wikidata": "Q3426696"
     }
   ],
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0010/",
+        "id": "sp-0010",
+        "name": "Common Lilac",
+        "scientific": "Syringa vulgaris",
+        "wikidata": "Q6565319"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0178/",
+      "id": "e-0178",
+      "name": "Répertoire de couleurs pour aider à la détermination des couleurs des fleurs, des feuillages et des fruits"
+    },
+    "post": {
+      "id": "lt-0012",
+      "title": "Week 21: Common Lilac, Amy Lowell, Ronald Firbank",
+      "published": "2026-05-15",
+      "url": "https://earthlyhours.com/lectio-terra/common-lilac/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0067/",
+        "id": "i-0067",
+        "name": "W. D. & H. O. Wills, Lilac"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0062/",
+        "id": "r-0062",
+        "name": "Amy Lowell, “Lilacs”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0063/",
+        "id": "r-0063",
+        "name": "William C. Barry, “The Lilac”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0069/",
+        "id": "i-0069",
+        "name": "Flower Fancies: Calendar with Text; Depicting Lilacs"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0064/",
+        "id": "r-0064",
+        "name": "Ronald Firbank, “Sorrow in Sunlight”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

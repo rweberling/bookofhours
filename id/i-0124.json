@@ -31,6 +31,50 @@
   "title": "O Nobilissima Viriditas",
   "date": "2025",
   "credit": "Hildegard von Bingen",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0009/",
+        "id": "sp-0009",
+        "name": "Sheet Moss",
+        "scientific": "Hypnum imponens",
+        "wikidata": "Q4329447"
+      }
+    ],
+    "post": {
+      "id": "lt-0010",
+      "title": "Week 19: Sheet Moss, Hildegard von Bingen, Michael Marder",
+      "published": "2026-05-01",
+      "url": "https://earthlyhours.com/lectio-terra/sheet-moss/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0061/",
+        "id": "i-0061",
+        "name": "F. E. Tripp, “ Plate XXXIII. HYPNEAE (continued) ,” from F.E. Tripp, British Mosses: Their Homes …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0057/",
+        "id": "r-0057",
+        "name": "Hildegard of Bingen, “334. Letter to Secular People”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0062/",
+        "id": "i-0062",
+        "name": "Mary V. Thayer, “ Mosses ,” from A. J. Grout, Mosses With Hand-lens And Microscope: a Non-technical …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0058/",
+        "id": "r-0058",
+        "name": "Michael Marder, Edward S. Casey, “Plants in Place: A Phenomenology of the Vegetal”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0059/",
+        "id": "r-0059",
+        "name": "“Mosses of Maine: A Brief Guide”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

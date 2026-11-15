@@ -51,6 +51,13 @@
   "display": {
     "verse": true
   },
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0026/",
+      "id": "e-0026",
+      "name": "Sappho: Memoir, Text, Selected Renderings, and a Literal Translation"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

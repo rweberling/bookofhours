@@ -58,6 +58,54 @@
       }
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0002/",
+        "id": "ph-0002",
+        "name": "Cambridge Argillite",
+        "scientific": "Argillita cantabrigiensis"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0061/",
+      "id": "e-0061",
+      "name": "Outlines of the Mineralogy and Geology of Boston and Its Vicinity, with a Geological Map"
+    },
+    "post": {
+      "id": "lt-0011",
+      "title": "Week 20: Cambridge Argillite, Ludwig Wittgenstein, The Dana Brothers",
+      "published": "2026-05-08",
+      "url": "https://earthlyhours.com/lectio-terra/cambridge-argillite/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0063/",
+        "id": "i-0063",
+        "name": "“ Structure discontinuities, Porter Square pilot tunnel ,” from D.E. Thompson et al. …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0060/",
+        "id": "r-0060",
+        "name": "Ludwig Wittgenstein, “Philosophical Investigations”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0064/",
+        "id": "i-0064",
+        "name": "Alfred Wegener, “ Reconstruction of the continental blocks for the Great Ice Age ,” from Alfred Wegener …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0065/",
+        "id": "i-0065",
+        "name": "View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al. …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0066/",
+        "id": "i-0066",
+        "name": "U.S. Geological Survey, Screenshot from The National Geologic Map Database (U.S. Department of the Interior and …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

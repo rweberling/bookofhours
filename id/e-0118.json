@@ -13,6 +13,15 @@
   "citedBy": [
     "i-0003"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0003/",
+        "id": "i-0003",
+        "name": "Smithsonian Institution, The Smithsonian Institution, The 1900 Solar Eclipse Expedition of the Astrophysical …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

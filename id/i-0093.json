@@ -43,6 +43,50 @@
   "date": "1892/1893",
   "institution": "Real Jardín Botánico, Madrid",
   "credit": "Atlas des plantes de France",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0017/",
+        "id": "sp-0017",
+        "name": "Corn",
+        "scientific": "Zea mays",
+        "wikidata": "Q11575"
+      }
+    ],
+    "post": {
+      "id": "lt-0020",
+      "title": "Week 29: Corn, Haudenosaunee Storytellers, Emily Pauline Johnson",
+      "published": "2026-07-19",
+      "url": "https://earthlyhours.com/lectio-terra/corn/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0091/",
+        "id": "i-0091",
+        "name": "Corn Stalk-Shaped Vessel"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0081/",
+        "id": "r-0081",
+        "name": "John Norton, “Haudenosaunee (Iroquois) Creation Myth”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0092/",
+        "id": "i-0092",
+        "name": "C. Mir, et al. “ Out of America: Tracing the Genetic Footprints of the Global Diffusion …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0082/",
+        "id": "r-0082",
+        "name": "E. Pauline Johnson (Tekahionwake), “The Indian Corn Planter”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0094/",
+        "id": "i-0094",
+        "name": "George Ashley Crosthwait, “ Plate XIV ,” from George Ashley Crosthwait, Indian Corn (Zea mays): Production …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -42,6 +42,55 @@
       "sp-0018"
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0018/",
+        "id": "sp-0018",
+        "name": "Highbush Blueberry",
+        "scientific": "Vaccinium corymbosum",
+        "wikidata": "Q468695"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0083/",
+      "id": "e-0083",
+      "name": "Whitesbog Blueberries"
+    },
+    "post": {
+      "id": "lt-0021",
+      "title": "Week 30: Blueberries, Joseph J. White, Inc., Alix Beeston on Ellena Savage",
+      "published": "2026-07-25",
+      "url": "https://earthlyhours.com/lectio-terra/highbush-blueberry/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0095/",
+        "id": "i-0095",
+        "name": "J. Marion Shull, Vaccinium corymbosum: Stanley"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0096/",
+        "id": "i-0096",
+        "name": "Frederick V. Coville, “ Plate XII. Blueberry Propagation Frames. ” Frederick V. Coville, Directions for …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0084/",
+        "id": "r-0084",
+        "name": "Alix Beeston, “Fingers Stained with Fruit and Ink”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0097/",
+        "id": "i-0097",
+        "name": "An image in the Lectio Terra post “Week 30: Blueberries, Joseph J. White, Inc., Alix …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0126/",
+        "id": "i-0126",
+        "name": "Nancy Ghertner, Voices from the Barrens: Native Peoples, Blueberries, and Sovereignty"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -19,6 +19,15 @@
   "citedBy": [
     "i-0094"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0094/",
+        "id": "i-0094",
+        "name": "George Ashley Crosthwait, “ Plate XIV ,” from George Ashley Crosthwait, Indian Corn (Zea mays): Production …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

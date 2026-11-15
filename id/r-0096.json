@@ -54,6 +54,50 @@
     "verse": true
   },
   "firstLine": "In Benidorm there are melons, …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0022/",
+        "id": "sp-0022",
+        "name": "Watermelon",
+        "scientific": "Citrullus lanatus",
+        "wikidata": "Q17507129"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0095/",
+      "id": "e-0095",
+      "name": "The Collected Poems"
+    },
+    "post": {
+      "id": "lt-0027",
+      "title": "Week 36: Watermelon, Sylvia Plath, Pliny the Elder",
+      "published": "2026-09-11",
+      "url": "https://earthlyhours.com/lectio-terra/watermelon/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0113/",
+        "id": "i-0113",
+        "name": "Johnson Photography Studio, [Man Cutting Watermelon]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0114/",
+        "id": "i-0114",
+        "name": "“ Images of watermelon drawn from approx. 1385 to 1395 .” Harry S. Paris, et al. “ …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0097/",
+        "id": "r-0097",
+        "name": "Pliny the Elder, “Naturalis Historia, Book XX: Remedies Derived from the Garden Plants”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0115/",
+        "id": "i-0115",
+        "name": "W. Duke, Sons & Co. and Knapp & Company, Rose Coghlan as “The Watermelon,” from the Series Fancy Dress Ball Costumes (N73) for Duke Brand Cigarettes"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

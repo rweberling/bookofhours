@@ -37,6 +37,50 @@
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "rightsNote": "a photograph by Towson State University students, published on Linda M. Sweeting's university page in 1998",
   "credit": "Towson State University students",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0028/",
+        "id": "sp-0028",
+        "name": "Wintergreen",
+        "scientific": "Gaultheria procumbens",
+        "wikidata": "Q386770"
+      }
+    ],
+    "post": {
+      "id": "lt-0034",
+      "title": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
+      "published": "2026-11-08",
+      "url": "https://earthlyhours.com/lectio-terra/wintergreen/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0124/",
+        "id": "r-0124",
+        "name": "Jacob Bigelow, “Gaultheria procumbens. Partridge Berry”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0155/",
+        "id": "i-0155",
+        "name": "David Blair, Gaultheria procumbens"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0125/",
+        "id": "r-0125",
+        "name": "Henry David Thoreau, “November 19, 1850”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0156/",
+        "id": "i-0156",
+        "name": "Jacob Bigelow, Gaultheria procumbens"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0126/",
+        "id": "r-0126",
+        "name": "Linda M. Sweeting, “Light Your Candy”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

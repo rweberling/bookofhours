@@ -36,6 +36,50 @@
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "title": "Mycobacterium vaccae",
   "credit": "Microbiology in Pictures",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0011/",
+        "id": "sp-0011",
+        "name": "Living Soil",
+        "scientific": "Mycobacterium vaccae",
+        "wikidata": "Q655983"
+      }
+    ],
+    "post": {
+      "id": "lt-0013",
+      "title": "Week 22: Mycobacterium vaccae, Jenifer Wightman, Graham A.W. Rook",
+      "published": "2026-05-22",
+      "url": "https://earthlyhours.com/lectio-terra/living-soil/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0065/",
+        "id": "r-0065",
+        "name": "Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0071/",
+        "id": "i-0071",
+        "name": "Jenifer Wightman, Winogradsky Rothko"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0066/",
+        "id": "r-0066",
+        "name": "Graham A. W. Rook, “The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0072/",
+        "id": "i-0072",
+        "name": "Elisabeth Rodríguez-Güell, Gemma Agustí, Mercè Corominas, Pere-Joan Cardona, Isidre Casals, Teodor Parella, Marco-Antonio Sempere, Marina Luquin and Esther Julián, “Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0067/",
+        "id": "r-0067",
+        "name": "Charles L. Raison, Christopher A. Lowry, Graham A. W. Rook, “Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

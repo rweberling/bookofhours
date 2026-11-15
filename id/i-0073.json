@@ -54,6 +54,50 @@
     "id": "a-l-r-j-horn",
     "name": "L. R. J. Horn"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0012/",
+        "id": "sp-0012",
+        "name": "Common Reed",
+        "scientific": "Phragmites australis",
+        "wikidata": "Q28557"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0069/",
+      "id": "e-0069",
+      "name": "A New British Flora: British Wild Flowers in Their Natural Haunts"
+    },
+    "post": {
+      "id": "lt-0014",
+      "title": "Week 23: Common Reed, Rumi, A.R. Horwood",
+      "published": "2026-05-29",
+      "url": "https://earthlyhours.com/lectio-terra/common-reed/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0068/",
+        "id": "r-0068",
+        "name": "Jalāl al-Dīn Muḥammad Rūmī, “Proem to Book 1”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0074/",
+        "id": "i-0074",
+        "name": "Alex C. Martin, Ray C. Erickson and John H. Steenis, Habitat illustration and range map for Phragmites communis [sic] , from Alex C. Martin …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0069/",
+        "id": "r-0069",
+        "name": "A. R. Horwood, “Reed (Phragmites communis, Trin.)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0075/",
+        "id": "i-0075",
+        "name": "Mas̲navī-i Ma‘navī, book 1"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

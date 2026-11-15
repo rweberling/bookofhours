@@ -29,6 +29,15 @@
   "citedBy": [
     "r-0085"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0085/",
+        "id": "r-0085",
+        "name": "Paul Muldoon, “Milkweed and Monarch”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

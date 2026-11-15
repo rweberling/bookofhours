@@ -53,6 +53,50 @@
       }
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0005/",
+        "id": "ph-0005",
+        "name": "Perseids",
+        "scientific": "Lacrimae Sancti Laurentii",
+        "wikidata": "Q173708"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0088/",
+      "id": "e-0088",
+      "name": "Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles"
+    },
+    "post": {
+      "id": "lt-0024",
+      "title": "Week 33: Perseids, Han Dynasty Scribes, Henry David Thoreau",
+      "published": "2026-08-14",
+      "url": "https://earthlyhours.com/lectio-terra/perseids/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0103/",
+        "id": "i-0103",
+        "name": "W. F. Denning, W.F. Denning. “ Positions of the Perseid Radiant Point, July 15, to August 20 .” From …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0104/",
+        "id": "i-0104",
+        "name": "W. F. Denning, W.F. Denning. “ Horary number of Perseïds .” From “The August Perseïds, 1877.” The …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0090/",
+        "id": "r-0090",
+        "name": "Henry David Thoreau, “August 19, 1851”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0105/",
+        "id": "i-0105",
+        "name": "NASA/MSFC Meteoroid Environment Office, Perseid meteors photo collage"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -20,6 +20,46 @@
     ]
   },
   "firstLine": "Set out about sunrise, passed Sunfish creek 1 Mile &c &c entered the long reach, so called from the ohio runing in strait direction for 18 miles in this reach there are 5 Islands from three to 2 …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0207/",
+      "id": "e-0207",
+      "name": "e-0207"
+    },
+    "post": {
+      "id": "lt-0035",
+      "title": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",
+      "published": "2026-11-15",
+      "url": "https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0165/",
+        "id": "i-0165",
+        "name": "“ Of the Squirrel. ” From Edward Topsell. The History of Four-Footed Beasts and Serpents …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0166/",
+        "id": "i-0166",
+        "name": "“ Hi, Mister! Scramble a Nut? ” Laurence Freeman Peck. Harvard Lampoon 46.6 (December 17 …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0135/",
+        "id": "r-0135",
+        "name": "“r-0135”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0167/",
+        "id": "i-0167",
+        "name": "Anonymous. Collection of geometric and perspective drawings executed in colors [ Sammlung …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0136/",
+        "id": "r-0136",
+        "name": "“r-0136”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

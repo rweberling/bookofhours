@@ -54,6 +54,50 @@
     "name": "William Clark"
   },
   "title": "Asclepias tuberosa. Tuberous Swallow-wort",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0019/",
+        "id": "sp-0019",
+        "name": "Butterfly Weed",
+        "scientific": "Asclepias tuberosa",
+        "wikidata": "Q311131"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0147/",
+      "id": "e-0147",
+      "name": "Flora Conspicua: A Selection of the Most Ornamental Flowering, Hardy, Exotic and Indigenous Trees, Shrubs, and Herbaceous plants, for Embellishing Flower-Gardens and Pleasure-Grounds"
+    },
+    "post": {
+      "id": "lt-0022",
+      "title": "Week 31: Butterfly Weed, Paul Muldoon, Nathaniel Lord Britton",
+      "published": "2026-08-01",
+      "url": "https://earthlyhours.com/lectio-terra/butterfly-weed/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0085/",
+        "id": "r-0085",
+        "name": "Paul Muldoon, “Milkweed and Monarch”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0125/",
+        "id": "i-0125",
+        "name": "Helen Frost and Leonid Gore, Monarch and Milkweed"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0086/",
+        "id": "r-0086",
+        "name": "Nathaniel Lord Britton, Addison Brown, “Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0099/",
+        "id": "i-0099",
+        "name": "Craig Holdrege, Shoot Development in Common Milkweed (Asclepias syriaca)"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

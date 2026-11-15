@@ -55,6 +55,13 @@
     "seasons": []
   },
   "firstLine": "The secret of the human condition is that there is no equilibrium between man and the surrounding forces of nature, which infinitely exceed him when in inaction; …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0020/",
+      "id": "e-0020",
+      "name": "Gravity and Grace"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

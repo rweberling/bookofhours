@@ -41,6 +41,55 @@
     ]
   },
   "firstLine": "In his installation Crocus sativus, fleur du bonheur , Guillaume Barth pays homage to the saffron flower by capturing the moment of its birth. …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0005/",
+        "id": "sp-0005",
+        "name": "Dutch Crocus",
+        "scientific": "Crocus vernus",
+        "wikidata": "Q165077"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0049/",
+      "id": "e-0049",
+      "name": "Crocus sativus, fleur du bonheur"
+    },
+    "post": {
+      "id": "lt-0006",
+      "title": "Week 15: Dutch Crocus, Guillaume Barth, William Herbert",
+      "published": "2026-04-03",
+      "url": "https://earthlyhours.com/lectio-terra/dutch-crocus/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0048/",
+        "id": "i-0048",
+        "name": "The Saffron Gatherers"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0048/",
+        "id": "r-0048",
+        "name": "William Herbert, “A History of the Species of Crocus”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0049/",
+        "id": "i-0049",
+        "name": "E. A. Bowles, “ The Parts of Crocus and Colchicum Flowers ,” from E. A. Bowles, A Handbook of Crocus …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0050/",
+        "id": "i-0050",
+        "name": "George Maw, “ Geographical Distribution of the Genus Crocus ,” from George Maw, A Monograph of the …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0051/",
+        "id": "i-0051",
+        "name": "Adolph Baumbach, “ The Crocus ,” from Adolph Baumbach, The Floral Cyclus: 12 Simple Instructive Melodies …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

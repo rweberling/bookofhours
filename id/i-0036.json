@@ -57,6 +57,45 @@
     "name": "Richard E. Weaver",
     "wikidata": "Q21612303"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0001/",
+        "id": "sp-0001",
+        "name": "Witch Hazel",
+        "scientific": "Hamamelis virginiana",
+        "wikidata": "Q913129"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0122/",
+      "id": "e-0122",
+      "name": "The Witch Hazel Family (Hamamelidaceae)"
+    },
+    "post": {
+      "id": "lt-0001",
+      "title": "Week 10: Witch Hazel, Friedrich Nietzsche, William Hamilton Gibson",
+      "published": "2026-02-27",
+      "url": "https://earthlyhours.com/lectio-terra/witch-hazel/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0035/",
+        "id": "i-0035",
+        "name": "J. Francis Macbride, From J. Francis Macbride, Autumn Flowers and Fruits (Chicago: Field Museum of Natural …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0037/",
+        "id": "r-0037",
+        "name": "William Hamilton Gibson, “The Witch Hazel Bombardment”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0038/",
+        "id": "r-0038",
+        "name": "Friedrich Nietzsche, “Schopenhauer as Educator”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

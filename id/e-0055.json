@@ -14,6 +14,15 @@
   "citedBy": [
     "r-0055"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0055/",
+        "id": "r-0055",
+        "name": "“The Old Herb Doctor: His Secrets and Treatments”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

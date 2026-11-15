@@ -27,6 +27,15 @@
   "citedBy": [
     "r-0061"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0061/",
+        "id": "r-0061",
+        "name": "James Freeman Dana, Samuel L. Dana, “Argillaceous Slate”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

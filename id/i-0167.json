@@ -23,6 +23,41 @@
   },
   "alt": "A manuscript painting inside a red ruled border: a large pale-blue octahedron, shaded in watercolour, balanced on one point above a beige ledge with its shadow, and at its foot a tiny russet squirrel sitting up beside a sprig of leaves.",
   "rights": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "related": {
+    "post": {
+      "id": "lt-0035",
+      "title": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",
+      "published": "2026-11-15",
+      "url": "https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0165/",
+        "id": "i-0165",
+        "name": "“ Of the Squirrel. ” From Edward Topsell. The History of Four-Footed Beasts and Serpents …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0134/",
+        "id": "r-0134",
+        "name": "“r-0134”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0166/",
+        "id": "i-0166",
+        "name": "“ Hi, Mister! Scramble a Nut? ” Laurence Freeman Peck. Harvard Lampoon 46.6 (December 17 …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0135/",
+        "id": "r-0135",
+        "name": "“r-0135”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0136/",
+        "id": "r-0136",
+        "name": "“r-0136”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

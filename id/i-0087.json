@@ -60,6 +60,50 @@
     "id": "a-e-s-harrar",
     "name": "E. S. Harrar"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0015/",
+        "id": "sp-0015",
+        "name": "Serviceberry",
+        "scientific": "Amelanchier canadensis",
+        "wikidata": "Q159030"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0142/",
+      "id": "e-0142",
+      "name": "Hough’s Encyclopaedia of American Woods"
+    },
+    "post": {
+      "id": "lt-0018",
+      "title": "Week 27: Serviceberry, Robin Wall Kimmerer, K.M. Wiegand",
+      "published": "2026-06-28",
+      "url": "https://earthlyhours.com/lectio-terra/serviceberry/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0085/",
+        "id": "i-0085",
+        "name": "C. E. Faxon, “ Amelanchier Canadensis ,” Plate CXCIV from Charles Sprague Sargent, The Silva of North …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0077/",
+        "id": "r-0077",
+        "name": "Robin Wall Kimmerer, “The Serviceberry: Abundance and Reciprocity in the Natural World”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0086/",
+        "id": "i-0086",
+        "name": "Elbert L. Little Jr., “ Amelanchier arborea (Michx. f.) Fern., downy serviceberry, ” from Elbert L. Little Jr. …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0078/",
+        "id": "r-0078",
+        "name": "K. M. Wiegand, “The Genus Amelanchier in Eastern North America”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

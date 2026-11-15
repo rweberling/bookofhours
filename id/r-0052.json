@@ -53,6 +53,50 @@
     "note": "A later Harper Perennial edition (2008); its page numbers differ from the one quoted"
   },
   "firstLine": "… Well, de ‘gator was a pretty white varmint wid coal black eyes. …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0007/",
+        "id": "sp-0007",
+        "name": "Eastern Cottontail",
+        "scientific": "Sylvilagus floridanus",
+        "wikidata": "Q774716"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0052/",
+      "id": "e-0052",
+      "name": "Mules and Men"
+    },
+    "post": {
+      "id": "lt-0008",
+      "title": "Week 17: Eastern Cottontail , Zora Neale Hurston, Ernest Thompson Seton",
+      "published": "2026-04-17",
+      "url": "https://earthlyhours.com/lectio-terra/eastern-cottontail/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0055/",
+        "id": "i-0055",
+        "name": "John James Audubon, Lepus sylvaticus, Grey Rabbit"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0056/",
+        "id": "i-0056",
+        "name": "E. W. Nelson, “ Distribution in North America of rabbits of the genus Sylvilagus ,” from E. W. Nelson …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0053/",
+        "id": "r-0053",
+        "name": "Ernest Thompson Seton, “Lives of Game Animals”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0057/",
+        "id": "i-0057",
+        "name": "E. W. Nelson, “ Skulls of Sylvilagus ,” from E. W. Nelson, North American Fauna, No. 29: The Rabbits of …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -22,6 +22,15 @@
   "citedBy": [
     "i-0036"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0036/",
+        "id": "i-0036",
+        "name": "Richard E. Weaver, Leaves of the Witch Hazel Family - 1/3 life size , from Richard E. Weaver, “ The Witch …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

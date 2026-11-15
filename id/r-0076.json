@@ -52,6 +52,50 @@
     "verse": true
   },
   "firstLine": "For having risen and settled into her groove she begins to consider herself. …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0003/",
+        "id": "ph-0003",
+        "name": "Sunspots",
+        "scientific": "Maculae solares",
+        "wikidata": "Q6582994"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0076/",
+      "id": "e-0076",
+      "name": "Sunspots"
+    },
+    "post": {
+      "id": "lt-0017",
+      "title": "Week 26: Maculae Solares, Galileo Galilei feat. The Roman Inquisition, Simon Barraclough",
+      "published": "2026-06-19",
+      "url": "https://earthlyhours.com/lectio-terra/sunspots/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0082/",
+        "id": "i-0082",
+        "name": "Richard William Seale, The Course of the Solar Maculae over the Sun’s Disk"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0075/",
+        "id": "r-0075",
+        "name": "Felice Cardinal d’Ascoli, “Inquisition’s Sentence (22 June 1633)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0083/",
+        "id": "i-0083",
+        "name": "Étienne Léopold Trouvelot, Plate IV. Solar Prominences"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0084/",
+        "id": "i-0084",
+        "name": "“ Early sunspot drawings from naked-eye observations ,” rpt. from R. Arlt and J.M. …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

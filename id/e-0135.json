@@ -19,6 +19,15 @@
   "citedBy": [
     "i-0062"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0062/",
+        "id": "i-0062",
+        "name": "Mary V. Thayer, “ Mosses ,” from A. J. Grout, Mosses With Hand-lens And Microscope: a Non-technical …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

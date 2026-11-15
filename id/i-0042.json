@@ -41,6 +41,45 @@
   },
   "title": "New England Birches",
   "institution": "The Phillips Collection",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0004/",
+        "id": "sp-0004",
+        "name": "Paper Birch",
+        "scientific": "Betula papyrifera",
+        "wikidata": "Q76971"
+      }
+    ],
+    "post": {
+      "id": "lt-0004",
+      "title": "Week 13: Paper Birch, Robert Frost, Gifford Pinchot",
+      "published": "2026-03-20",
+      "url": "https://earthlyhours.com/lectio-terra/paper-birch/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0044/",
+        "id": "r-0044",
+        "name": "Gifford Pinchot, “Silvical Leaflet 38: Paper Birch”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0043/",
+        "id": "i-0043",
+        "name": "United States Forest Service, “ Paper Birch (Betula papyrifera) Botanical and Commercial Range ,” from Birch , American …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0045/",
+        "id": "r-0045",
+        "name": "Robert Frost, “Birches”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0044/",
+        "id": "i-0044",
+        "name": "Birch and Evergreens (Gallitzin, PA: Nordstrom Nurseries, 1951). From the Henry G. …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

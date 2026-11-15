@@ -58,6 +58,55 @@
     "name": "Jacob Bigelow",
     "wikidata": "Q1236142"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0028/",
+        "id": "sp-0028",
+        "name": "Wintergreen",
+        "scientific": "Gaultheria procumbens",
+        "wikidata": "Q386770"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0195/",
+      "id": "e-0195",
+      "name": "American Medical Botany, Being a Collection of the Native Medicinal Plants of the United States, vol. 2"
+    },
+    "post": {
+      "id": "lt-0034",
+      "title": "Week 43: Wintergreen (Jacob Bigelow, Henry David Thoreau, Linda M. Sweeting)",
+      "published": "2026-11-08",
+      "url": "https://earthlyhours.com/lectio-terra/wintergreen/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0154/",
+        "id": "i-0154",
+        "name": "Photograph of the emission of WintOGreen Lifesavers"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0124/",
+        "id": "r-0124",
+        "name": "Jacob Bigelow, “Gaultheria procumbens. Partridge Berry”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0155/",
+        "id": "i-0155",
+        "name": "David Blair, Gaultheria procumbens"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0125/",
+        "id": "r-0125",
+        "name": "Henry David Thoreau, “November 19, 1850”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0126/",
+        "id": "r-0126",
+        "name": "Linda M. Sweeting, “Light Your Candy”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

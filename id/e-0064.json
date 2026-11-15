@@ -17,6 +17,15 @@
   "citedBy": [
     "r-0064"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0064/",
+        "id": "r-0064",
+        "name": "Ronald Firbank, “Sorrow in Sunlight”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -30,6 +30,15 @@
   "citedBy": [
     "r-0068"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0068/",
+        "id": "r-0068",
+        "name": "Jalāl al-Dīn Muḥammad Rūmī, “Proem to Book 1”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -22,6 +22,15 @@
   "citedBy": [
     "r-0040"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0040/",
+        "id": "r-0040",
+        "name": "Robert Ridgway, “Family Turdidae. The Thrushes”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

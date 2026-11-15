@@ -52,6 +52,34 @@
       }
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0029/",
+        "id": "sp-0029",
+        "name": "Wild Turkey",
+        "scientific": "Meleagris gallopavo",
+        "wikidata": "Q26844"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0203/",
+      "id": "e-0203",
+      "name": "The Writings of Benjamin Franklin, vol. 9"
+    },
+    "day": {
+      "id": "dy-0001",
+      "date": "11-26",
+      "url": "https://earthlyhours.com/seasons.html?day=11-26"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0162/",
+        "id": "i-0162",
+        "name": "James McNeill Whistler, Turkeys"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

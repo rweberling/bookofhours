@@ -26,6 +26,15 @@
   "citedBy": [
     "r-0038"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0038/",
+        "id": "r-0038",
+        "name": "Friedrich Nietzsche, “Schopenhauer as Educator”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

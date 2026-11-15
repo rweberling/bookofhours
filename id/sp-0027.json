@@ -19,6 +19,43 @@
     "i-0146",
     "i-0147"
   ],
+  "related": {
+    "posts": [
+      {
+        "id": "lt-0031",
+        "title": "Week 41: Ghost Pipe (Emily Dickinson, Merlin Sheldrake)",
+        "published": "2026-10-25",
+        "url": "https://earthlyhours.com/lectio-terra/ghost-pipe/"
+      }
+    ],
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0112/",
+        "id": "r-0112",
+        "name": "Emily Dickinson, “The Spirit”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0113/",
+        "id": "r-0113",
+        "name": "Merlin Sheldrake, “Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0145/",
+        "id": "i-0145",
+        "name": "Mary Vaux Walcott, Indian Pipe (Monotropa uniflora)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0146/",
+        "id": "i-0146",
+        "name": "Mabel Loomis Todd, [Indian pipes]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0147/",
+        "id": "i-0147",
+        "name": "John Torrey, Monotropa uniflora. Indian pipe"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

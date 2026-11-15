@@ -27,6 +27,15 @@
   "citedBy": [
     "r-0106"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0106/",
+        "id": "r-0106",
+        "name": "Jean Anthelme Brillat-Savarin, “Gastronomy as a Fine Art; or, The Science of Good Living”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -21,6 +21,15 @@
   "citedBy": [
     "i-0050"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0050/",
+        "id": "i-0050",
+        "name": "George Maw, “ Geographical Distribution of the Genus Crocus ,” from George Maw, A Monograph of the …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

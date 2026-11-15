@@ -42,6 +42,55 @@
   ],
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "rightsNote": "the painter died in 1932",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0026/",
+        "id": "sp-0026",
+        "name": "Staghorn Sumac",
+        "scientific": "Rhus typhina",
+        "wikidata": "Q148986"
+      }
+    ],
+    "post": {
+      "id": "lt-0032",
+      "title": "Week 40: Staghorn Sumac (Cole Swanson, Katharine Lee Bates, J. Francis Macbride)",
+      "published": "2026-10-18",
+      "url": "https://earthlyhours.com/lectio-terra/staghorn-sumac/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0109/",
+        "id": "r-0109",
+        "name": "Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0142/",
+        "id": "i-0142",
+        "name": "Lorin L. Dame and Henry Brooks, Rhus Typhina"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0110/",
+        "id": "r-0110",
+        "name": "Katharine Lee Bates, “Playmates”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0143/",
+        "id": "i-0143",
+        "name": "F. H. Varley, Flower of the Staghorn Sumach"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0111/",
+        "id": "r-0111",
+        "name": "J. Francis Macbride, “Sumach (Rhus species)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0144/",
+        "id": "i-0144",
+        "name": "Rhus typhina L."
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

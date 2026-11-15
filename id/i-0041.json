@@ -53,6 +53,50 @@
     "id": "a-united-states-forest-service",
     "name": "United States Forest Service"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0003/",
+        "id": "sp-0003",
+        "name": "Sugar Maple",
+        "scientific": "Acer saccharum",
+        "wikidata": "Q214733"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0125/",
+      "id": "e-0125",
+      "name": "Sugar Maple: An American Wood"
+    },
+    "post": {
+      "id": "lt-0003",
+      "title": "Week 12: Sugar Maple, Annika Hansteen-Izora, Walter H. Crockett",
+      "published": "2026-03-12",
+      "url": "https://earthlyhours.com/lectio-terra/sugar-maple/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0040/",
+        "id": "i-0040",
+        "name": "Walter H. Crockett, “ Tapping the Grove, Boiling the Sap ,” from Crockett, How Vermont Maple Sugar is Made …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0041/",
+        "id": "r-0041",
+        "name": "E. Jones, “Address”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0042/",
+        "id": "r-0042",
+        "name": "Walter H. Crockett, “Vermont Maple Sugar”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0043/",
+        "id": "r-0043",
+        "name": "Annika Hansteen-Izora, “Time is Water”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

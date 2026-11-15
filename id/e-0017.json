@@ -30,6 +30,20 @@
     "r-0017",
     "r-0088"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0017/",
+        "id": "r-0017",
+        "name": "Heraclitus, “Fragments 41–42”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0088/",
+        "id": "r-0088",
+        "name": "Heraclitus, “Fragments 39–42”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -36,6 +36,15 @@
   "citedBy": [
     "r-0075"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0075/",
+        "id": "r-0075",
+        "name": "Felice Cardinal d’Ascoli, “Inquisition’s Sentence (22 June 1633)”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

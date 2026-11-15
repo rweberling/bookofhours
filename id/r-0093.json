@@ -49,6 +49,55 @@
     "verse": true
   },
   "firstLine": "In the old torment of the earth …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0021/",
+        "id": "sp-0021",
+        "name": "Melons and Cucumbers",
+        "scientific": "Cucumis",
+        "wikidata": "Q148758"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0092/",
+      "id": "e-0092",
+      "name": "Poem with a Cucumber in It"
+    },
+    "post": {
+      "id": "lt-0026",
+      "title": "Week 35: Cucumis, Robert Hass, Marcus Aurelius (and William Cowper, too)",
+      "published": "2026-08-29",
+      "url": "https://earthlyhours.com/lectio-terra/melons-and-cucumbers/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0110/",
+        "id": "i-0110",
+        "name": "Fede Galizia, Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0111/",
+        "id": "i-0111",
+        "name": "Depiction labelled Qawoun (melon, Cucumis melo ) . From Kitab al-Hasha'ish fi Hayula …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0094/",
+        "id": "r-0094",
+        "name": "Marcus Aurelius, “Meditations, Book VIII, Section 50”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0112/",
+        "id": "i-0112",
+        "name": "Juan Sánchez Cotán, Still Life with Quince, Cabbage, Melon, and Cucumber"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0095/",
+        "id": "r-0095",
+        "name": "William Cowper, “The Task, Book III: The Garden”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

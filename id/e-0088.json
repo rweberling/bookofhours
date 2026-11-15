@@ -22,6 +22,15 @@
   "citedBy": [
     "r-0089"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0089/",
+        "id": "r-0089",
+        "name": "Édouard Biot, “Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

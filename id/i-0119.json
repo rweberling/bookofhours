@@ -54,6 +54,60 @@
     "id": "a-p-j-redoute",
     "name": "P. J. Redouté"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0023/",
+        "id": "sp-0023",
+        "name": "Northern Red Oak",
+        "scientific": "Quercus rubra",
+        "wikidata": "Q147525"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0150/",
+      "id": "e-0150",
+      "name": "The North American sylva, or A description of the forest trees of the United States, Canada and Nova Scotia"
+    },
+    "post": {
+      "id": "lt-0028",
+      "title": "Week 37: Northern Red Oak (Susan Fenimore Cooper, George Francis Heath, James George Frazer)",
+      "published": "2026-09-20",
+      "url": "https://earthlyhours.com/lectio-terra/northern-red-oak/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0116/",
+        "id": "i-0116",
+        "name": "Piet Mondrian, Field with Oak Trees at Dusk"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0098/",
+        "id": "r-0098",
+        "name": "Susan Fenimore Cooper, “Saturday, 28th [June]—Passed the afternoon in the woods.”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0117/",
+        "id": "i-0117",
+        "name": "Elbert L. Little Jr., “ Map 180-E. northern red oak, Quercus rubra L .” Elbert L. Little, Jr. Atlas of United …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0099/",
+        "id": "r-0099",
+        "name": "Francis George Heath, “Oak Antiquity”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0118/",
+        "id": "i-0118",
+        "name": "Mark Catesby, “ Red Oak and The Pigeon of Passage .” Mark Catesby. The Natural History of Carolina …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0100/",
+        "id": "r-0100",
+        "name": "James George Frazer, “Tree-Worship; The Worship of the Oak”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

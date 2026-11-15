@@ -43,6 +43,13 @@
     "weather": [],
     "seasons": []
   },
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0027/",
+      "id": "e-0027",
+      "name": "Tender Buttons"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

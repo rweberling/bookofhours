@@ -50,6 +50,13 @@
     "verse": true
   },
   "firstLine": "We shall not cease from exploration …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0015/",
+      "id": "e-0015",
+      "name": "Four Quartets"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

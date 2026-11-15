@@ -50,6 +50,13 @@
     "seasons": []
   },
   "firstLine": "A light room would no doubt have been more convenient for us, too, than a dark room. …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0028/",
+      "id": "e-0028",
+      "name": "In Praise of Shadows"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

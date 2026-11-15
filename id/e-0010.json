@@ -23,6 +23,15 @@
   "citedBy": [
     "r-0010"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0010/",
+        "id": "r-0010",
+        "name": "Michael Field, “The Depths of the Grass”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

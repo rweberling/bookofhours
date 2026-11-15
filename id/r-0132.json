@@ -46,6 +46,34 @@
       }
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0030/",
+        "id": "sp-0030",
+        "name": "American Cranberry",
+        "scientific": "Vaccinium macrocarpon",
+        "wikidata": "Q149397"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0204/",
+      "id": "e-0204",
+      "name": "A Key into the Language of America"
+    },
+    "day": {
+      "id": "dy-0002",
+      "date": "11-27",
+      "url": "https://earthlyhours.com/seasons.html?day=11-27"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0163/",
+        "id": "i-0163",
+        "name": "Allen & Ginter, Cranberry, from the Fruits series (N12) for Allen & Ginter Cigarettes Brands"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -55,6 +55,50 @@
       "sp-0019"
     ]
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0019/",
+        "id": "sp-0019",
+        "name": "Butterfly Weed",
+        "scientific": "Asclepias tuberosa",
+        "wikidata": "Q311131"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0086/",
+      "id": "e-0086",
+      "name": "An Illustrated Flora of the Northern United States, Canada and the British Possessions, 2nd ed., vol. 3"
+    },
+    "post": {
+      "id": "lt-0022",
+      "title": "Week 31: Butterfly Weed, Paul Muldoon, Nathaniel Lord Britton",
+      "published": "2026-08-01",
+      "url": "https://earthlyhours.com/lectio-terra/butterfly-weed/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0098/",
+        "id": "i-0098",
+        "name": "William Clark, Asclepias tuberosa. Tuberous Swallow-wort"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0085/",
+        "id": "r-0085",
+        "name": "Paul Muldoon, “Milkweed and Monarch”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0125/",
+        "id": "i-0125",
+        "name": "Helen Frost and Leonid Gore, Monarch and Milkweed"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0099/",
+        "id": "i-0099",
+        "name": "Craig Holdrege, Shoot Development in Common Milkweed (Asclepias syriaca)"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

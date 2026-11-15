@@ -53,6 +53,50 @@
     "id": "a-george-henry-tilton",
     "name": "George Henry Tilton"
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0006/",
+        "id": "sp-0006",
+        "name": "Ostrich Fern",
+        "scientific": "Matteuccia struthiopteris",
+        "wikidata": "Q1130386"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0129/",
+      "id": "e-0129",
+      "name": "The Fern Lover’s Companion: A Guide for the Northeastern States and Canada"
+    },
+    "post": {
+      "id": "lt-0007",
+      "title": "Week 16: Ostrich Fern, Martin Heidegger, Douglas Houghton Campbell",
+      "published": "2026-04-10",
+      "url": "https://earthlyhours.com/lectio-terra/ostrich-fern/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0052/",
+        "id": "i-0052",
+        "name": "Heidi Brickell, Safe Euphoric Ara with Hine Kōrako"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0050/",
+        "id": "r-0050",
+        "name": "Martin Heidegger, “Introduction to Metaphysics”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0051/",
+        "id": "r-0051",
+        "name": "Douglas Houghton Campbell, “The Development of the Ostrich Fern”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0054/",
+        "id": "i-0054",
+        "name": "Douglas Houghton Campbell, “ Development of the Ostrich Fern ,” Plate 6 from The Development of the Ostrich Fern …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

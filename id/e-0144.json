@@ -12,6 +12,15 @@
   "citedBy": [
     "i-0090"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0090/",
+        "id": "i-0090",
+        "name": "“ A currant bush before pruning ,” Currants and Gooseberries: Their Culture and Relation …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

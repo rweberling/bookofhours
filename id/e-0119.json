@@ -11,6 +11,15 @@
   "citedBy": [
     "i-0013"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0013/",
+        "id": "i-0013",
+        "name": "Charles Darwin, Charles Darwin, from The Power of Movement in Plants (1880)"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

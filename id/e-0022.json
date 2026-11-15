@@ -23,6 +23,15 @@
   "citedBy": [
     "r-0022"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0022/",
+        "id": "r-0022",
+        "name": "William James, “Psychology: The Briefer Course”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

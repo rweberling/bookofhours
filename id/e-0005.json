@@ -31,6 +31,15 @@
   "citedBy": [
     "r-0005"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0005/",
+        "id": "r-0005",
+        "name": "Clarice Lispector, “The Passion According to G.H.”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

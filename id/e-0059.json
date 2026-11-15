@@ -9,6 +9,15 @@
   "citedBy": [
     "r-0059"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0059/",
+        "id": "r-0059",
+        "name": "“Mosses of Maine: A Brief Guide”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

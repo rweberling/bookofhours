@@ -17,6 +17,15 @@
   "citedBy": [
     "r-0047"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0047/",
+        "id": "r-0047",
+        "name": "Jenny Odell, “What Does It Mean to Watch Clouds? What Can It Mean?”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

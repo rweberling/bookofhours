@@ -47,6 +47,13 @@
     "seasons": []
   },
   "firstLine": "My soul is a hidden orchestra; …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0011/",
+      "id": "e-0011",
+      "name": "The Book of Disquiet"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

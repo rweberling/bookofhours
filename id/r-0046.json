@@ -65,6 +65,50 @@
   "display": {
     "verse": true
   },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0001/",
+        "id": "ph-0001",
+        "name": "Rain Clouds",
+        "scientific": "Nimbostratus praecipitatio",
+        "wikidata": "Q202278"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0046/",
+      "id": "e-0046",
+      "name": "In Honour of Mr. Howard"
+    },
+    "post": {
+      "id": "lt-0005",
+      "title": "Week 14: Nimbostratus praecipitatio, Johann Wolfgang von Goethe, Jenny Odell",
+      "published": "2026-03-27",
+      "url": "https://earthlyhours.com/lectio-terra/rain-clouds/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0045/",
+        "id": "i-0045",
+        "name": "“Alto-Stratus,” from Atlas International Des Nuages (Paris, France: Gauthier-Villars et …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0046/",
+        "id": "i-0046",
+        "name": "“Nimbostratus,” from International Atlas of Clouds and of States of the Sky (Paris …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0047/",
+        "id": "r-0047",
+        "name": "Jenny Odell, “What Does It Mean to Watch Clouds? What Can It Mean?”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0047/",
+        "id": "i-0047",
+        "name": "World Meteorological Organization, “Nimbostratus,” from International Cloud Atlas, Volume II (Geneva, Switzerland: World …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

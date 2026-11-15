@@ -29,6 +29,20 @@
     "r-0090",
     "r-0125"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0090/",
+        "id": "r-0090",
+        "name": "Henry David Thoreau, “August 19, 1851”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0125/",
+        "id": "r-0125",
+        "name": "Henry David Thoreau, “November 19, 1850”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -17,6 +17,20 @@
     "r-0083",
     "i-0097"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0083/",
+        "id": "r-0083",
+        "name": "Joseph J. White, Inc., “Whitesbog Blueberries”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0097/",
+        "id": "i-0097",
+        "name": "An image in the Lectio Terra post “Week 30: Blueberries, Joseph J. White, Inc., Alix …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

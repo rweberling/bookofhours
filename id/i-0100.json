@@ -43,6 +43,45 @@
   "date": "0820~/0840~",
   "institution": "British Library",
   "shelfmark": "Harley MS 647",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0004/",
+        "id": "ph-0004",
+        "name": "Dog Days",
+        "scientific": "Dies caniculares",
+        "wikidata": "Q1065821"
+      }
+    ],
+    "post": {
+      "id": "lt-0023",
+      "title": "Week 32: Dog Days, Horace, Heraclitus",
+      "published": "2026-08-07",
+      "url": "https://earthlyhours.com/lectio-terra/dog-days/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0087/",
+        "id": "r-0087",
+        "name": "Horace, “Odes, Book III: XIII”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0101/",
+        "id": "i-0101",
+        "name": "Harvard College Observatory, Plate a03507"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0088/",
+        "id": "r-0088",
+        "name": "Heraclitus, “Fragments 39–42”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0102/",
+        "id": "i-0102",
+        "name": "It’s Dog Days, But ‘Dog Days’ Is Biggest Hoax Yet"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

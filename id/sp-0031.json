@@ -16,6 +16,27 @@
     "r-0133",
     "i-0164"
   ],
+  "related": {
+    "days": [
+      {
+        "id": "dy-0003",
+        "date": "11-28",
+        "url": "https://earthlyhours.com/seasons.html?day=11-28"
+      }
+    ],
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0133/",
+        "id": "r-0133",
+        "name": "Henry David Thoreau, “November 25, 1858”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0164/",
+        "id": "i-0164",
+        "name": "D. W. Moody, Prinos verticillatus (Winter Berry)"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -51,6 +51,55 @@
     ]
   },
   "firstLine": "One of my favorite facts about mullein is that it can produce hundreds of seeds—and these seeds can lay dormant for decades. …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0008/",
+        "id": "sp-0008",
+        "name": "Great Mullein",
+        "scientific": "Verbascum thapsus",
+        "wikidata": "Q160095"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0054/",
+      "id": "e-0054",
+      "name": "Ashia Ajani Mulls Over Mullein"
+    },
+    "post": {
+      "id": "lt-0009",
+      "title": "Week 18: Great Mullein, Ashia Ajani, Hildegard von Bingen",
+      "published": "2026-04-25",
+      "url": "https://earthlyhours.com/lectio-terra/great-mullein/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0058/",
+        "id": "i-0058",
+        "name": "J. Curtis, Common Mullein (Verbascum thapsus) with an Associated Moth and Its Anatomical Segments"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0059/",
+        "id": "i-0059",
+        "name": "“ Common Mullein. ” from The Book of Wild Flowers: An Introduction to the Ways of Plant …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0055/",
+        "id": "r-0055",
+        "name": "“The Old Herb Doctor: His Secrets and Treatments”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0060/",
+        "id": "i-0060",
+        "name": "Virginia Albert, Louise A. Field, Peter Rabbit and His Pa , illustr. Virginia Albert (Chicago, Illinois …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0056/",
+        "id": "r-0056",
+        "name": "Hildegard of Bingen, “Physica”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

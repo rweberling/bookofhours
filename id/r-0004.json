@@ -50,6 +50,13 @@
     "seasons": []
   },
   "firstLine": "Soon the night seemed to him gloomier and more terrible than any night, as if it had in fact issued from a wound of thought which had ceased to think, of thought taken ironically as object by something other than thought. …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0004/",
+      "id": "e-0004",
+      "name": "Thomas the Obscure"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -34,6 +34,15 @@
   "citedBy": [
     "r-0067"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0067/",
+        "id": "r-0067",
+        "name": "Charles L. Raison, Christopher A. Lowry, Graham A. W. Rook, “Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression”"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

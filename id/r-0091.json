@@ -46,6 +46,55 @@
     "verse": true
   },
   "firstLine": "With a suave reptilian glitter …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0020/",
+        "id": "sp-0020",
+        "name": "Cucurbits",
+        "scientific": "Cucurbitaceae",
+        "wikidata": "Q8314"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0090/",
+      "id": "e-0090",
+      "name": "Circles on the Water: Selected Poems of Marge Piercy"
+    },
+    "post": {
+      "id": "lt-0025",
+      "title": "Week 34: Cucurbits, Marge Piercy, Padraig Regan",
+      "published": "2026-08-22",
+      "url": "https://earthlyhours.com/lectio-terra/cucurbits/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0106/",
+        "id": "i-0106",
+        "name": "M. P. Verneuil, “ Courd, Courge, Der Kürbiss .” Eugène Grasset and M. P. Verneuil. La plante et ses …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0107/",
+        "id": "i-0107",
+        "name": "Harry S. Paris, “ Fruit Shape of Each of the Eight Cultivar Groups of Cucurbita Pepo. Proximal (stem) end …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0092/",
+        "id": "r-0092",
+        "name": "Padraig Regan, “Notes on Various Squashes”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0108/",
+        "id": "i-0108",
+        "name": "Antoine Nicolas Duchesne, “ 67. 18 Juin 1771 .” Antoine Nicolas Duchesne. The Essai sur l’Histoire Naturelle des …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0109/",
+        "id": "i-0109",
+        "name": "Jean Bourdichon, Quegourdes de turquie (left), Quegourdes (centre) and Concombres (right) . Paintings from …"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

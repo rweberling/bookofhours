@@ -39,6 +39,13 @@
     "url": "https://archive.org/details/monographiederme11879haec/page/n70/mode/1up",
     "label": "Internet Archive"
   },
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0121/",
+      "id": "e-0121",
+      "name": "Das System der Medusen, vol. 1"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

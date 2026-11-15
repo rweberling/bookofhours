@@ -13,6 +13,15 @@
   "citedBy": [
     "i-0128"
   ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0128/",
+        "id": "i-0128",
+        "name": "Wilson Alwyn Bentley, Plate XIX"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

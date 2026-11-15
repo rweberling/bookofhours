@@ -44,6 +44,13 @@
     "seasons": []
   },
   "firstLine": "In spring it is the dawn that is most beautiful. …",
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0012/",
+      "id": "e-0012",
+      "name": "The Pillow Book of Sei Shōnagon"
+    }
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }
