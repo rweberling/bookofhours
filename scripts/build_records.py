@@ -403,13 +403,6 @@ def appears(col, r, kind):
     return '<br>'.join(out)
 
 
-def alongside(col, r):
-    """The other pieces shown with a record: the rest of its post, or its
-    day's other half (the same list as the JSON's related.alongside)."""
-    others = [x['id'] for x in related_json(col, r['id']).get('alongside', [])]
-    return '<br>'.join(link(x, col.name(x)) for x in others)
-
-
 def day_links(col, sid):
     out = []
     for d in col.days:
@@ -458,7 +451,7 @@ def reading_page(col, r):
         ('Further reading', further(r.get('furtherReading'))),
     ])
     body = [section('The text', shown), section('The work', work),
-            section('In the collection', dl([('Appears in', appears(col, r, 'r')), ('Shown with', alongside(col, r))] + tag_rows(col, r))),
+            section('In the collection', dl([('Appears in', appears(col, r, 'r'))] + tag_rows(col, r))),
             section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(ed))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
@@ -512,7 +505,7 @@ def image_page(col, r):
         ('Further reading', further(r.get('furtherReading'))),
     ])
     body = [section('The image', shown), section('The work', work),
-            section('In the collection', dl([('Appears in', appears(col, r, 'i')), ('Shown with', alongside(col, r))] + tag_rows(col, r))),
+            section('In the collection', dl([('Appears in', appears(col, r, 'i'))] + tag_rows(col, r))),
             section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(r))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
