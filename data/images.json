@@ -5547,7 +5547,8 @@
     "display": {
       "size": [1200, 647]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "alt": "A woodcut of a squirrel crouched low and stretched long, ears pricked and teeth bared, its huge feathery tail streaming back over its body and two nuts under its forepaws, beneath the heading \"Of the SQVIRREL.\""
   },
   {
     "id": "i-0166",
@@ -5563,7 +5564,8 @@
     "display": {
       "size": [1456, 1066]
     },
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "alt": "A pen-and-ink cartoon of a crowd of squirrels in a park mobbing a man of whom only his trouser legs and buttoned shoes show: they climb his legs, stand begging, perch on his boots and leap at him, under the caption \"Hi, Mister! Scramble a Nut?\""
   },
   {
     "id": "i-0167",
@@ -5578,6 +5580,8 @@
     },
     "display": {
       "size": [562, 766]
-    }
+    },
+    "alt": "A manuscript painting inside a red ruled border: a large pale-blue octahedron, shaded in watercolour, balanced on one point above a beige ledge with its shadow, and at its foot a tiny russet squirrel sitting up beside a sprig of leaves.",
+    "rights": "https://creativecommons.org/publicdomain/mark/1.0/"
   }
 ]

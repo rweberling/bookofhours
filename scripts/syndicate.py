@@ -464,7 +464,7 @@ def send_essay(bs, c, post, plan, publication):
         images = []
         for fig in plan['more']:
             blob, (w, h) = bs.blob(ROOT / fig['file'])
-            images.append({'image': blob, 'alt': plain(fig.get('alt') or ''),
+            images.append({'image': blob, 'alt': plain(fig.get('alt') or fig.get('caption') or ''),
                            'aspectRatio': {'width': w, 'height': h}})
         record = {'$type': 'app.bsky.feed.post', 'text': '', 'createdAt': now(), 'langs': ['en'],
                   'reply': {'root': done['card'], 'parent': done['card']},

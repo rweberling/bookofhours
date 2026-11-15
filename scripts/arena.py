@@ -57,6 +57,7 @@ on the free plan) when it runs low.
 
 import argparse
 import hashlib
+import html
 import json
 import os
 import re
@@ -226,7 +227,7 @@ def source(image):
             return link['url'], link.get('label') or image.get('institution')
     m = re.search(r'href="([^"]+)"', image.get('caption') or '')
     if m:
-        return m.group(1), image.get('institution')
+        return html.unescape(m.group(1)), image.get('institution')
     return None, None
 
 
