@@ -10,7 +10,7 @@
   },
   "standingTags": ["phenology", "naturewriting"],
   "streams": {
-    "essay": { "on": true, "since": "2026-11-09", "dryRun": true },
+    "essay": { "on": true, "since": "2026-11-09" },
     "records": { "on": true },
     "season": {
       "on": true,

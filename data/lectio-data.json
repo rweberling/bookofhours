@@ -3596,7 +3596,19 @@
           }
         ],
         "page": "lectio-terra/eastern-grey-squirrel/",
-        "subject": "sp-0032"
+        "subject": "sp-0032",
+        "syndication": {
+          "hashtags": [
+            "emerson",
+            "johnburroughs"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0107",
+              "text": "However plain and obvious they seem now, grey squirrels were actually imported intentionally into cities as a form of harmless entertainment beginning in 1847"
+            }
+          ]
+        }
       }
     ],
     "winter": [
