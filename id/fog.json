@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/fog/",
+  "id": "fog",
+  "label": "Fog",
+  "group": "The Sky",
+  "vocabulary": "weather",
+  "records": [
+    "r-0036",
+    "r-0120",
+    "i-0007",
+    "i-0153"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0036/",
+        "id": "r-0036",
+        "name": "Jones Very, “The Clouded Morning”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0120/",
+        "id": "r-0120",
+        "name": "John Aitken, “On Dust, Fogs, and Clouds”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0007/",
+        "id": "i-0007",
+        "name": "James McNeill Whistler, Nocturne, Blue and Silver: Battersea Reach"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0153/",
+        "id": "i-0153",
+        "name": "Hasegawa Tōhaku, Pine Trees"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -548,5 +548,43 @@
     "ph-0004",
     "ph-0005",
     "ph-0006"
+  ],
+  "The Hours": [
+    "void",
+    "hush",
+    "chorus",
+    "transit",
+    "fulcrum",
+    "doldrums",
+    "convivium",
+    "denouement"
+  ],
+  "The Weather": [
+    "clear",
+    "dappled",
+    "overcast",
+    "mist",
+    "fog",
+    "drizzle",
+    "rain",
+    "thunder",
+    "ice",
+    "snow",
+    "wind",
+    "heat",
+    "cold",
+    "humid",
+    "changing",
+    "dew",
+    "frost",
+    "puddles",
+    "parched",
+    "snowpack"
+  ],
+  "The Seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
   ]
 }

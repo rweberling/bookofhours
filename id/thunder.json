@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/thunder/",
+  "id": "thunder",
+  "label": "Thunder",
+  "group": "What Falls",
+  "vocabulary": "weather",
+  "records": [
+    "r-0119",
+    "i-0152"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0119/",
+        "id": "r-0119",
+        "name": "“Bṛhadāraṇyaka Upaniṣad”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0152/",
+        "id": "i-0152",
+        "name": "Charles Moussette, [Spiral of Lightning in a Thunderstorm]"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

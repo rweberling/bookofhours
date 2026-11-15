@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/drizzle/",
+  "id": "drizzle",
+  "label": "Drizzle",
+  "group": "What Falls",
+  "vocabulary": "weather",
+  "records": [
+    "i-0158"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0158/",
+        "id": "i-0158",
+        "name": "Alfred Stieglitz, A Wet Day on the Boulevard, Paris"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

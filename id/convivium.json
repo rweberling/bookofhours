@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/convivium/",
+  "id": "convivium",
+  "label": "Convivium",
+  "startHour": 18,
+  "endHour": 21,
+  "subtitle": "Evening",
+  "vocabulary": "hours",
+  "records": [
+    "r-0026",
+    "r-0027",
+    "r-0028",
+    "r-0029",
+    "i-0026",
+    "i-0027",
+    "i-0028",
+    "i-0029"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0026/",
+        "id": "r-0026",
+        "name": "Sappho, “Fragment 104a”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0027/",
+        "id": "r-0027",
+        "name": "Gertrude Stein, “Celery; Veal; Vegetable; Way Lay Vegetable”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0028/",
+        "id": "r-0028",
+        "name": "Jun'ichirō Tanizaki, “In Praise of Shadows”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0029/",
+        "id": "r-0029",
+        "name": "M. F. K. Fisher, “The Gastronomical Me”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0026/",
+        "id": "i-0026",
+        "name": "Harold Davis, Salad Mandala"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0027/",
+        "id": "i-0027",
+        "name": "Clement Lindley Wragge, Sunset, G2"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0028/",
+        "id": "i-0028",
+        "name": "Paul Cézanne, The Basket of Apples"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0029/",
+        "id": "i-0029",
+        "name": "Utagawa Hiroshige, Cooling off in the Evening at Shijogawara"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

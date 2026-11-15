@@ -1,0 +1,33 @@
+{
+  "@id": "https://earthlyhours.com/id/rain/",
+  "id": "rain",
+  "label": "Rain",
+  "group": "What Falls",
+  "vocabulary": "weather",
+  "records": [
+    "r-0118",
+    "i-0151",
+    "i-0158"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0118/",
+        "id": "r-0118",
+        "name": "Li Shangyin, “A Note on a Rainy Night to a Friend in the North”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0151/",
+        "id": "i-0151",
+        "name": "Utagawa Hiroshige, Sudden Shower over Shin-Ōhashi Bridge and Atake"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0158/",
+        "id": "i-0158",
+        "name": "Alfred Stieglitz, A Wet Day on the Boulevard, Paris"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,529 @@
+{
+  "@id": "https://earthlyhours.com/id/summer/",
+  "id": "summer",
+  "label": "Summer",
+  "months": [
+    6,
+    7,
+    8
+  ],
+  "vocabulary": "seasons",
+  "records": [
+    "r-0010",
+    "r-0021",
+    "r-0031",
+    "r-0032",
+    "r-0068",
+    "r-0069",
+    "r-0070",
+    "r-0071",
+    "r-0072",
+    "r-0073",
+    "r-0074",
+    "r-0075",
+    "r-0076",
+    "r-0077",
+    "r-0078",
+    "r-0079",
+    "r-0080",
+    "r-0081",
+    "r-0082",
+    "r-0083",
+    "r-0084",
+    "r-0085",
+    "r-0086",
+    "r-0087",
+    "r-0088",
+    "r-0089",
+    "r-0090",
+    "r-0091",
+    "r-0092",
+    "r-0093",
+    "r-0094",
+    "r-0095",
+    "r-0096",
+    "r-0097",
+    "r-0123",
+    "i-0022",
+    "i-0029",
+    "i-0073",
+    "i-0074",
+    "i-0075",
+    "i-0076",
+    "i-0077",
+    "i-0078",
+    "i-0079",
+    "i-0080",
+    "i-0081",
+    "i-0082",
+    "i-0083",
+    "i-0084",
+    "i-0085",
+    "i-0086",
+    "i-0087",
+    "i-0088",
+    "i-0089",
+    "i-0090",
+    "i-0091",
+    "i-0092",
+    "i-0093",
+    "i-0094",
+    "i-0095",
+    "i-0096",
+    "i-0097",
+    "i-0098",
+    "i-0099",
+    "i-0100",
+    "i-0101",
+    "i-0102",
+    "i-0103",
+    "i-0104",
+    "i-0105",
+    "i-0106",
+    "i-0107",
+    "i-0108",
+    "i-0109",
+    "i-0110",
+    "i-0111",
+    "i-0112",
+    "i-0113",
+    "i-0114",
+    "i-0115",
+    "i-0125",
+    "i-0126",
+    "i-0129",
+    "i-0151",
+    "i-0161"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0010/",
+        "id": "r-0010",
+        "name": "Michael Field, “The Depths of the Grass”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0021/",
+        "id": "r-0021",
+        "name": "H.D., “Mid-Day”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0031/",
+        "id": "r-0031",
+        "name": "Richard Wright, “#9”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0032/",
+        "id": "r-0032",
+        "name": "Samuel Beckett, “Watt”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0068/",
+        "id": "r-0068",
+        "name": "Jalāl al-Dīn Muḥammad Rūmī, “Proem to Book 1”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0069/",
+        "id": "r-0069",
+        "name": "A. R. Horwood, “Reed (Phragmites communis, Trin.)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0070/",
+        "id": "r-0070",
+        "name": "E. P. Felt, “Gall Insects and Their Relations to Plants”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0071/",
+        "id": "r-0071",
+        "name": "Francesco Redi, “Experiments on the Generation of Insects”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0072/",
+        "id": "r-0072",
+        "name": "Grace Greylock Niles, “Bog-Trotting for Orchids”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0073/",
+        "id": "r-0073",
+        "name": "F. Desbois, “Cypripedium de pleine terre”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0074/",
+        "id": "r-0074",
+        "name": "C. S. Young, “Fashion Five. Cypripedium acaule, Stemless Lady’s Slipper”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0075/",
+        "id": "r-0075",
+        "name": "Felice Cardinal d’Ascoli, “Inquisition’s Sentence (22 June 1633)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0076/",
+        "id": "r-0076",
+        "name": "Simon Barraclough, “Sunspots”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0077/",
+        "id": "r-0077",
+        "name": "Robin Wall Kimmerer, “The Serviceberry: Abundance and Reciprocity in the Natural World”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0078/",
+        "id": "r-0078",
+        "name": "K. M. Wiegand, “The Genus Amelanchier in Eastern North America”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0079/",
+        "id": "r-0079",
+        "name": "Maud Grieve, “Currant, Red”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0080/",
+        "id": "r-0080",
+        "name": "Fred W. Card, “Bush-Fruits”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0081/",
+        "id": "r-0081",
+        "name": "John Norton, “Haudenosaunee (Iroquois) Creation Myth”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0082/",
+        "id": "r-0082",
+        "name": "E. Pauline Johnson (Tekahionwake), “The Indian Corn Planter”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0083/",
+        "id": "r-0083",
+        "name": "Joseph J. White, Inc., “Whitesbog Blueberries”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0084/",
+        "id": "r-0084",
+        "name": "Alix Beeston, “Fingers Stained with Fruit and Ink”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0085/",
+        "id": "r-0085",
+        "name": "Paul Muldoon, “Milkweed and Monarch”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0086/",
+        "id": "r-0086",
+        "name": "Nathaniel Lord Britton, Addison Brown, “Asclepias tuberosa L. Butterfly-weed or -flower. Pleurisy-root.”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0087/",
+        "id": "r-0087",
+        "name": "Horace, “Odes, Book III: XIII”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0088/",
+        "id": "r-0088",
+        "name": "Heraclitus, “Fragments 39–42”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0089/",
+        "id": "r-0089",
+        "name": "Édouard Biot, “Catalogue général des étoiles filantes et des autres météores observés en Chine pendant vingt-quatre siècles”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0090/",
+        "id": "r-0090",
+        "name": "Henry David Thoreau, “August 19, 1851”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0091/",
+        "id": "r-0091",
+        "name": "Marge Piercy, “Attack of the Squash People”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0092/",
+        "id": "r-0092",
+        "name": "Padraig Regan, “Notes on Various Squashes”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0093/",
+        "id": "r-0093",
+        "name": "Robert Hass, “Poem with a Cucumber in It”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0094/",
+        "id": "r-0094",
+        "name": "Marcus Aurelius, “Meditations, Book VIII, Section 50”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0095/",
+        "id": "r-0095",
+        "name": "William Cowper, “The Task, Book III: The Garden”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0096/",
+        "id": "r-0096",
+        "name": "Sylvia Plath, “Fiesta Melons”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0097/",
+        "id": "r-0097",
+        "name": "Pliny the Elder, “Naturalis Historia, Book XX: Remedies Derived from the Garden Plants”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0123/",
+        "id": "r-0123",
+        "name": "Archibald Lampman, “Heat”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0022/",
+        "id": "i-0022",
+        "name": "Claude Monet, Stacks of Wheat (End of Summer)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0029/",
+        "id": "i-0029",
+        "name": "Utagawa Hiroshige, Cooling off in the Evening at Shijogawara"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0073/",
+        "id": "i-0073",
+        "name": "L. R. J. Horn, “ Reed Swamp at the Margin of a Norfolk Broad, ” from A.R. Horwood, A New British Flora …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0074/",
+        "id": "i-0074",
+        "name": "Alex C. Martin, Ray C. Erickson and John H. Steenis, Habitat illustration and range map for Phragmites communis [sic] , from Alex C. Martin …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0075/",
+        "id": "i-0075",
+        "name": "Mas̲navī-i Ma‘navī, book 1"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0076/",
+        "id": "i-0076",
+        "name": "Millett Taylor Thompson, “ Oak Galls, ” from Millett Taylor Thompson, An Illustrated Catalogue of American Insect …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0077/",
+        "id": "i-0077",
+        "name": "Ryan Weberling, Wool Sower Wasp Galls, Tisbury, Massachusetts"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0078/",
+        "id": "i-0078",
+        "name": "Carl F. Gronemann, “ Wool Sower Gall, ” from Carl F. Gronemann, Fifty Common Plant Galls of the Chicago Area …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0079/",
+        "id": "i-0079",
+        "name": "Grace Greylock Niles, “ The Pink Moccasin-Flower. ( Cypripedium acaule. ) ,” from Grace Greylock Niles …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0080/",
+        "id": "i-0080",
+        "name": "C. S. Young, “ Cypripedium acaule ,” from All of Nature’s Fashions in Lady’s Slippers for the Northern …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0081/",
+        "id": "i-0081",
+        "name": "Grace Greylock Niles, “ The Pink Moccasin-Flower - The Stemless Lady’s Slipper ,” from Grace Greylock Niles …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0082/",
+        "id": "i-0082",
+        "name": "Richard William Seale, The Course of the Solar Maculae over the Sun’s Disk"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0083/",
+        "id": "i-0083",
+        "name": "Étienne Léopold Trouvelot, Plate IV. Solar Prominences"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0084/",
+        "id": "i-0084",
+        "name": "“ Early sunspot drawings from naked-eye observations ,” rpt. from R. Arlt and J.M. …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0085/",
+        "id": "i-0085",
+        "name": "C. E. Faxon, “ Amelanchier Canadensis ,” Plate CXCIV from Charles Sprague Sargent, The Silva of North …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0086/",
+        "id": "i-0086",
+        "name": "Elbert L. Little Jr., “ Amelanchier arborea (Michx. f.) Fern., downy serviceberry, ” from Elbert L. Little Jr. …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0087/",
+        "id": "i-0087",
+        "name": "E. S. Harrar, “ Saskatoon Serviceberry: Transverse Section, Radial Section, Tangential Section ,” from …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0088/",
+        "id": "i-0088",
+        "name": "“ Fay’s Prolific ,” from Fruit Culture, Volume 2 (Scranton, Pennsylvania: International …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0089/",
+        "id": "i-0089",
+        "name": "“ Red Dutch. Raceme and detail of flower .” The Red and White Currants. Wooster, Ohio …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0090/",
+        "id": "i-0090",
+        "name": "“ A currant bush before pruning ,” Currants and Gooseberries: Their Culture and Relation …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0091/",
+        "id": "i-0091",
+        "name": "Corn Stalk-Shaped Vessel"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0092/",
+        "id": "i-0092",
+        "name": "C. Mir, et al. “ Out of America: Tracing the Genetic Footprints of the Global Diffusion …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0093/",
+        "id": "i-0093",
+        "name": "Zea mays L."
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0094/",
+        "id": "i-0094",
+        "name": "George Ashley Crosthwait, “ Plate XIV ,” from George Ashley Crosthwait, Indian Corn (Zea mays): Production …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0095/",
+        "id": "i-0095",
+        "name": "J. Marion Shull, Vaccinium corymbosum: Stanley"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0096/",
+        "id": "i-0096",
+        "name": "Frederick V. Coville, “ Plate XII. Blueberry Propagation Frames. ” Frederick V. Coville, Directions for …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0097/",
+        "id": "i-0097",
+        "name": "An image in the Lectio Terra post “Week 30: Blueberries, Joseph J. White, Inc., Alix …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0098/",
+        "id": "i-0098",
+        "name": "William Clark, Asclepias tuberosa. Tuberous Swallow-wort"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0099/",
+        "id": "i-0099",
+        "name": "Craig Holdrege, Shoot Development in Common Milkweed (Asclepias syriaca)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0100/",
+        "id": "i-0100",
+        "name": "Sirius"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0101/",
+        "id": "i-0101",
+        "name": "Harvard College Observatory, Plate a03507"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0102/",
+        "id": "i-0102",
+        "name": "It’s Dog Days, But ‘Dog Days’ Is Biggest Hoax Yet"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0103/",
+        "id": "i-0103",
+        "name": "W. F. Denning, W.F. Denning. “ Positions of the Perseid Radiant Point, July 15, to August 20 .” From …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0104/",
+        "id": "i-0104",
+        "name": "W. F. Denning, W.F. Denning. “ Horary number of Perseïds .” From “The August Perseïds, 1877.” The …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0105/",
+        "id": "i-0105",
+        "name": "NASA/MSFC Meteoroid Environment Office, Perseid meteors photo collage"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0106/",
+        "id": "i-0106",
+        "name": "M. P. Verneuil, “ Courd, Courge, Der Kürbiss .” Eugène Grasset and M. P. Verneuil. La plante et ses …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0107/",
+        "id": "i-0107",
+        "name": "Harry S. Paris, “ Fruit Shape of Each of the Eight Cultivar Groups of Cucurbita Pepo. Proximal (stem) end …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0108/",
+        "id": "i-0108",
+        "name": "Antoine Nicolas Duchesne, “ 67. 18 Juin 1771 .” Antoine Nicolas Duchesne. The Essai sur l’Histoire Naturelle des …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0109/",
+        "id": "i-0109",
+        "name": "Jean Bourdichon, Quegourdes de turquie (left), Quegourdes (centre) and Concombres (right) . Paintings from …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0110/",
+        "id": "i-0110",
+        "name": "Fede Galizia, Still Life with Apples, Pears, Cucumbers, Figs, Plums, and a Melon"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0111/",
+        "id": "i-0111",
+        "name": "Depiction labelled Qawoun (melon, Cucumis melo ) . From Kitab al-Hasha'ish fi Hayula …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0112/",
+        "id": "i-0112",
+        "name": "Juan Sánchez Cotán, Still Life with Quince, Cabbage, Melon, and Cucumber"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0113/",
+        "id": "i-0113",
+        "name": "Johnson Photography Studio, [Man Cutting Watermelon]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0114/",
+        "id": "i-0114",
+        "name": "“ Images of watermelon drawn from approx. 1385 to 1395 .” Harry S. Paris, et al. “ …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0115/",
+        "id": "i-0115",
+        "name": "W. Duke, Sons & Co. and Knapp & Company, Rose Coghlan as “The Watermelon,” from the Series Fancy Dress Ball Costumes (N73) for Duke Brand Cigarettes"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0125/",
+        "id": "i-0125",
+        "name": "Helen Frost and Leonid Gore, Monarch and Milkweed"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0126/",
+        "id": "i-0126",
+        "name": "Nancy Ghertner, Voices from the Barrens: Native Peoples, Blueberries, and Sovereignty"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0129/",
+        "id": "i-0129",
+        "name": "Katsushika Hokusai, South Wind, Clear Sky (Gaifū kaisei)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0151/",
+        "id": "i-0151",
+        "name": "Utagawa Hiroshige, Sudden Shower over Shin-Ōhashi Bridge and Atake"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0161/",
+        "id": "i-0161",
+        "name": "Honoré Daumier, A Day When You Do Not Pay—Twenty-Five-Degree Heat (Un jour où l’on ne paye pas. Vingt-cinq degrés de chaleur)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,71 @@
+{
+  "@id": "https://earthlyhours.com/id/hush/",
+  "id": "hush",
+  "label": "Hush",
+  "startHour": 3,
+  "endHour": 6,
+  "subtitle": "Pre-dawn",
+  "vocabulary": "hours",
+  "records": [
+    "r-0005",
+    "r-0006",
+    "r-0007",
+    "r-0008",
+    "i-0006",
+    "i-0007",
+    "i-0008",
+    "i-0128",
+    "i-0137"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0005/",
+        "id": "r-0005",
+        "name": "Clarice Lispector, “The Passion According to G.H.”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0006/",
+        "id": "r-0006",
+        "name": "Kevin Young, “Book of Hours”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0007/",
+        "id": "r-0007",
+        "name": "John Cage, “Experimental Music”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0008/",
+        "id": "r-0008",
+        "name": "Novalis, “Hymns to the Night”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0006/",
+        "id": "i-0006",
+        "name": "J. Norman Lockyer, Superposition of Two Wave-Systems"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0007/",
+        "id": "i-0007",
+        "name": "James McNeill Whistler, Nocturne, Blue and Silver: Battersea Reach"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0008/",
+        "id": "i-0008",
+        "name": "Edward Steichen, Moonlight: The Pond"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0128/",
+        "id": "i-0128",
+        "name": "Wilson Alwyn Bentley, Plate XIX"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0137/",
+        "id": "i-0137",
+        "name": "James McNeill Whistler, Nocturne in Blue and Silver: The Lagoon, Venice"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

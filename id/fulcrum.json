@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/fulcrum/",
+  "id": "fulcrum",
+  "label": "Fulcrum",
+  "startHour": 12,
+  "endHour": 15,
+  "subtitle": "Midday",
+  "vocabulary": "hours",
+  "records": [
+    "r-0018",
+    "r-0019",
+    "r-0020",
+    "r-0021",
+    "i-0018",
+    "i-0019",
+    "i-0020",
+    "i-0021"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0018/",
+        "id": "r-0018",
+        "name": "Gustav Freytag, “Technique of the Drama”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0019/",
+        "id": "r-0019",
+        "name": "C. P. Cavafy, “When They Come Alive”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0020/",
+        "id": "r-0020",
+        "name": "Simone Weil, “The Mysticism of Work”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0021/",
+        "id": "r-0021",
+        "name": "H.D., “Mid-Day”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0018/",
+        "id": "i-0018",
+        "name": "Hilma af Klint, Group IX/UW, No. 25, The Dove, No. 1"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0019/",
+        "id": "i-0019",
+        "name": "A. J. A. Campbell, Brightfield Light Microscopy Leaf Print of Fraxinus gooddingii, 200x Magnification"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0020/",
+        "id": "i-0020",
+        "name": "Orra White Hitchcock, Epochs of Elevation"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0021/",
+        "id": "i-0021",
+        "name": "Gustave Caillebotte, Raboteurs de parquet"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

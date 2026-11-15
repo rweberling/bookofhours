@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/doldrums/",
+  "id": "doldrums",
+  "label": "Doldrums",
+  "startHour": 15,
+  "endHour": 18,
+  "subtitle": "Afternoon",
+  "vocabulary": "hours",
+  "records": [
+    "r-0022",
+    "r-0023",
+    "r-0024",
+    "r-0025",
+    "i-0022",
+    "i-0023",
+    "i-0024",
+    "i-0025"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0022/",
+        "id": "r-0022",
+        "name": "William James, “Psychology: The Briefer Course”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0023/",
+        "id": "r-0023",
+        "name": "Robert Burton, “The Author's Abstract of Melancholy”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0024/",
+        "id": "r-0024",
+        "name": "Walter Benjamin, “The Arcades Project”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0025/",
+        "id": "r-0025",
+        "name": "Emily Dickinson, “There’s a certain Slant of light”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0022/",
+        "id": "i-0022",
+        "name": "Claude Monet, Stacks of Wheat (End of Summer)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0023/",
+        "id": "i-0023",
+        "name": "Santiago Ramón y Cajal, A purkinje neuron from the human cerebellum"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0024/",
+        "id": "i-0024",
+        "name": "Anne Brigman, Infinitude"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0025/",
+        "id": "i-0025",
+        "name": "Edgar Degas, A Woman Ironing"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,77 @@
+{
+  "@id": "https://earthlyhours.com/id/transit/",
+  "id": "transit",
+  "label": "Transit",
+  "startHour": 9,
+  "endHour": 12,
+  "subtitle": "Morning",
+  "vocabulary": "hours",
+  "records": [
+    "r-0013",
+    "r-0014",
+    "r-0015",
+    "r-0016",
+    "r-0017",
+    "i-0013",
+    "i-0014",
+    "i-0015",
+    "i-0016",
+    "i-0017"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0013/",
+        "id": "r-0013",
+        "name": "Walt Whitman, “Song of Myself”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0014/",
+        "id": "r-0014",
+        "name": "Sarojini Naidu, “Palanquin-Bearers”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0015/",
+        "id": "r-0015",
+        "name": "T. S. Eliot, “Little Gidding”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0016/",
+        "id": "r-0016",
+        "name": "Helene Johnson, “The Road”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0017/",
+        "id": "r-0017",
+        "name": "Heraclitus, “Fragments 41–42”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0013/",
+        "id": "i-0013",
+        "name": "Charles Darwin, Charles Darwin, from The Power of Movement in Plants (1880)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0014/",
+        "id": "i-0014",
+        "name": "Johannes Vermeer, Woman Reading a Letter"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0015/",
+        "id": "i-0015",
+        "name": "Diagram of the Winds (I)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0016/",
+        "id": "i-0016",
+        "name": "Eadweard Muybridge, Plate 169"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0017/",
+        "id": "i-0017",
+        "name": "Berenice Abbott, Seventh Avenue looking south from 35th Street"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

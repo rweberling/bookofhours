@@ -7,6 +7,10 @@ Usage:
 Each reading, image, edition, species and phenomenon gets a page at
 earthlyhours.com/id/<id>/ (id/r-0104/, id/e-0103/, id/sp-0001/), and the
 same record as data beside it, id/<id>.json. id/ itself lists them all.
+So does each term of the vocabularies (id/hush/, id/autumn/, id/frost/),
+listing the records tagged with it: a way through the catalogue by watch,
+weather and season that leaves the Hours, Weather and Seasons pages to be
+reached as readers reach them (by the clock, or by wandering).
 These are the collection's catalogue: what each record says, where it
 appears on the site, what it links to (the original, Wikidata, GBIF),
 its rights and how to cite it. They are written for researchers, search
@@ -75,7 +79,8 @@ IDENTIFIER_LINKS = {
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
           'September', 'October', 'November', 'December']
 
-KIND = {'r': 'Reading', 'i': 'Image', 'e': 'Edition', 'sp': 'Species', 'ph': 'Phenomenon'}
+KIND = {'r': 'Reading', 'i': 'Image', 'e': 'Edition', 'sp': 'Species', 'ph': 'Phenomenon', 'hours': 'Watch', 'weather': 'Weather condition',
+        'seasons': 'Season'}
 
 PAGE = '''<!DOCTYPE html>
 <html lang="en" class="record-page">
@@ -234,6 +239,8 @@ class Collection:
         self.phenomena = recs('phenomena')
         vocab = load('vocab')
         self.labels = {kind: {v['id']: v['label'] for v in vocab[kind]} for kind in ('hours', 'weather', 'seasons')}
+        # The vocabularies' terms, each with its own page: {term id: (kind, term)}.
+        self.terms = {v['id']: (kind, v) for kind in ('hours', 'weather', 'seasons') for v in vocab[kind]}
         self.posts = {}
         lectio = load('lectio-data')
         for items in lectio['seasons'].values():
@@ -260,6 +267,11 @@ class Collection:
             for t in (tags.get('species') or []) + (tags.get('phenomena') or []):
                 self.about.setdefault(tag_id(t), []).append(r['id'])
         self.by_id = {r['id']: r for r in self.readings + self.images}
+        self.tagged = {}
+        for r in self.readings + self.images:
+            for kind in ('hours', 'weather', 'seasons'):
+                for t in (r.get('tags') or {}).get(kind) or []:
+                    self.tagged.setdefault(tag_id(t), []).append(r['id'])
         # Each post's readings and images, in the order its body shows them:
         # {post id: [record ids]}.
         self.in_post = {}
@@ -290,6 +302,8 @@ class Collection:
             return f'<em>{escape(self.editions[rid].get("title") or rid)}</em>'
         if rid in self.subjects:
             return escape(self.subjects[rid]['name'])
+        if rid in self.terms:
+            return escape(self.terms[rid][1]['label'])
         return rid
 
 
@@ -376,8 +390,9 @@ def tag_rows(col, r):
     tags = r.get('tags') or {}
     rows = []
     for kind, label in (('hours', 'Hours'), ('weather', 'Weather'), ('seasons', 'Seasons')):
-        names = [col.labels[kind].get(tag_id(t), tag_id(t)) for t in tags.get(kind) or []]
-        rows.append((label, escape(', '.join(names))))
+        names = [link(tag_id(t), col.name(tag_id(t))) if tag_id(t) in col.terms else escape(tag_id(t))
+                 for t in tags.get(kind) or []]
+        rows.append((label, ', '.join(names)))
     subj = [link(tag_id(t), col.name(tag_id(t))) for t in (tags.get('species') or []) + (tags.get('phenomena') or [])
             if tag_id(t) in col.subjects]
     rows.append(('About', ', '.join(subj)))
@@ -584,6 +599,41 @@ def subject_page(col, sid):
     return escape(s['name']), s['name'], '\n\n'.join(b for b in body if b), ld
 
 
+VOCABULARY = {'hours': 'The Hours', 'weather': 'The Weather', 'seasons': 'The Seasons'}
+MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
+               'October', 'November', 'December']
+
+
+def clock(hour):
+    hour %= 24
+    return 'midnight' if hour == 0 else 'noon' if hour == 12 else f'{hour % 12} {"am" if hour < 12 else "pm"}'
+
+
+def term_fields(kind, t):
+    """What a term is, in words: its watch, its months or its group."""
+    if kind == 'hours':
+        return [('Watch', f'{escape(t["subtitle"])}, {clock(t["startHour"])} to {clock(t["endHour"])}')]
+    if kind == 'seasons':
+        return [('Months', ', '.join(MONTH_NAMES[m - 1] for m in t['months'])
+                 + ' (in the northern hemisphere)')]
+    return [('Group', escape(t.get('group') or ''))]
+
+
+def term_page(col, tid):
+    kind, t = col.terms[tid]
+    ids = col.tagged.get(tid, [])
+    readings = '<br>'.join(link(x, col.name(x)) for x in ids if prefix(x) == 'r')
+    images = '<br>'.join(link(x, col.name(x)) for x in ids if prefix(x) == 'i')
+    fields = dl([('Term', escape(t['label'])), ('Vocabulary', VOCABULARY[kind])] + term_fields(kind, t))
+    body = [section('The term', fields),
+            section('In the collection', dl([('Readings', readings), ('Images', images)])),
+            section('Cite this record', cite(col, tid, f'{SITE}/id/{tid}/') + '\n' + data_note(tid))]
+    ld = {'@context': 'https://schema.org', '@type': 'DefinedTerm', '@id': f'{SITE}/id/{tid}/',
+          'name': t['label'], 'termCode': tid, 'url': f'{SITE}/id/{tid}/',
+          'inDefinedTermSet': {'@type': 'DefinedTermSet', 'name': VOCABULARY[kind]}}
+    return escape(t['label']), t['label'], '\n\n'.join(b for b in body if b), ld
+
+
 def person_ld(p):
     out = {'@type': 'Person', 'name': p['name']}
     if p.get('wikidata'):
@@ -682,6 +732,8 @@ def related_json(col, rid):
         return out
     if rid in col.editions:
         return {'citedBy': [ref_json(col, x) for x in col.cited_by.get(rid, [])]}
+    if rid in col.terms:
+        return {'records': [ref_json(col, x) for x in col.tagged.get(rid, [])]}
     if rid in col.subjects:
         return {'posts': [post_json(e) for e in col.posts.values() if e.get('subject') == rid],
                 'days': [day_json(d) for d in col.days if d.get('subject') == rid],
@@ -701,6 +753,9 @@ def record_json(col, rid):
                 del r['text']
     elif rid in col.editions:
         r = dict(col.editions[rid], citedBy=col.cited_by.get(rid, []))
+    elif rid in col.terms:
+        kind, t = col.terms[rid]
+        r = dict(t, vocabulary=kind, records=col.tagged.get(rid, []))
     else:
         r = dict(col.subjects[rid], records=col.about.get(rid, []))
     r = without_private_notes(r)
@@ -744,11 +799,15 @@ def wanted():
             ('Images', [r['id'] for r in col.images], lambda x: image_page(col, col.by_id[x])),
             ('Editions', sorted(col.editions), lambda x: edition_page(col, x)),
             ('Species', [s['id'] for s in col.species], lambda x: subject_page(col, x)),
-            ('Phenomena', [s['id'] for s in col.phenomena], lambda x: subject_page(col, x))):
+            ('Phenomena', [s['id'] for s in col.phenomena], lambda x: subject_page(col, x)),
+            ('The Hours', [t for t, (k, _) in col.terms.items() if k == 'hours'], lambda x: term_page(col, x)),
+            ('The Weather', [t for t, (k, _) in col.terms.items() if k == 'weather'], lambda x: term_page(col, x)),
+            ('The Seasons', [t for t, (k, _) in col.terms.items() if k == 'seasons'], lambda x: term_page(col, x))):
         groups.append((heading, ids))
         for rid in ids:
             title, title_text, body, ld = make(rid)
-            files[f'id/{rid}/index.html'] = page(rid, prefix(rid), title, title_text, body, ld)
+            kind = col.terms[rid][0] if rid in col.terms else prefix(rid)
+            files[f'id/{rid}/index.html'] = page(rid, kind, title, title_text, body, ld)
             files[f'id/{rid}.json'] = record_json(col, rid)
     for r in col.readings + col.images:
         for alias in r.get('aliases') or []:

@@ -53,7 +53,7 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - The build's parts, if one is wanted alone: `build_images.py` (web
   copies), `build_shared.py` (menu, head and frame, from `partials/`),
   `build_postcards.py`, `build_records.py` (a page and JSON copy for every
-  record at `id/<id>/`, noindex for now), `build_lectio_pages.py [lt-NNNN | --all]` (post
+  record at `id/<id>/`, and for each vocabulary term, `id/hush/`, noindex for now), `build_lectio_pages.py [lt-NNNN | --all]` (post
   pages, one per post, and the RSS feed `feed.xml`, the essays alone,
   dated by each post's first publication), `build_year_feed.py`
   (`year.xml`, "The Year": the last 14 days, each day's card and each

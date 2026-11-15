@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/overcast/",
+  "id": "overcast",
+  "label": "Overcast",
+  "group": "The Sky",
+  "vocabulary": "weather",
+  "records": [
+    "r-0036",
+    "i-0007"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0036/",
+        "id": "r-0036",
+        "name": "Jones Very, “The Clouded Morning”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0007/",
+        "id": "i-0007",
+        "name": "James McNeill Whistler, Nocturne, Blue and Silver: Battersea Reach"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/parched/",
+  "id": "parched",
+  "label": "Parched",
+  "group": "The Ground",
+  "vocabulary": "weather",
+  "records": [
+    "i-0159"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0159/",
+        "id": "i-0159",
+        "name": "Timothy H. O’Sullivan, Sand Dunes, Carson Desert, Nevada"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

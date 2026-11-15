@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/void/",
+  "id": "void",
+  "label": "Void",
+  "startHour": 0,
+  "endHour": 3,
+  "subtitle": "Overnight",
+  "vocabulary": "hours",
+  "records": [
+    "r-0001",
+    "r-0002",
+    "r-0003",
+    "r-0004",
+    "i-0001",
+    "i-0002",
+    "i-0003",
+    "i-0004"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0001/",
+        "id": "r-0001",
+        "name": "Virginia Woolf, “To the Lighthouse”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0002/",
+        "id": "r-0002",
+        "name": "Pseudo-Dionysius the Areopagite, “The Mystical Theology”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0003/",
+        "id": "r-0003",
+        "name": "Nāgārjuna, “Mūlamadhyamakakārikā”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0004/",
+        "id": "r-0004",
+        "name": "Maurice Blanchot, “Thomas the Obscure”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0001/",
+        "id": "i-0001",
+        "name": "Louisa S. Cook, Louisa S. Cook, Geometrical Psychology, or, The Science of Representation: An Abstract of …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0002/",
+        "id": "i-0002",
+        "name": "Alphonse Allais, Ronde de pochards dans le brouillard [Dance of drunks in the fog]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0003/",
+        "id": "i-0003",
+        "name": "Smithsonian Institution, The Smithsonian Institution, The 1900 Solar Eclipse Expedition of the Astrophysical …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0004/",
+        "id": "i-0004",
+        "name": "Odilon Redon, The Eye, Like a Strange Balloon, Mounts toward Infinity"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

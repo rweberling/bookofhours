@@ -1,0 +1,63 @@
+{
+  "@id": "https://earthlyhours.com/id/clear/",
+  "id": "clear",
+  "label": "Clear",
+  "group": "The Sky",
+  "vocabulary": "weather",
+  "records": [
+    "r-0105",
+    "r-0122",
+    "i-0129",
+    "i-0130",
+    "i-0131",
+    "i-0132",
+    "i-0133",
+    "i-0159"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0105/",
+        "id": "r-0105",
+        "name": "John William Strutt, “On the Transmission of Light through an Atmosphere Containing Small Particles in Suspension, and on the Origin of the Blue of the Sky”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0122/",
+        "id": "r-0122",
+        "name": "William Charles Wells, “An Essay on Dew”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0129/",
+        "id": "i-0129",
+        "name": "Katsushika Hokusai, South Wind, Clear Sky (Gaifū kaisei)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0130/",
+        "id": "i-0130",
+        "name": "Horace-Bénédict de Saussure, Deuxième schéma du cyanomètre"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0131/",
+        "id": "i-0131",
+        "name": "John Tyndall, Fig. 3"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0132/",
+        "id": "i-0132",
+        "name": "Wassily Kandinsky, Bleu de ciel"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0133/",
+        "id": "i-0133",
+        "name": "Pierre-Henri de Valenciennes, Fabriques à la villa Farnèse : les deux peupliers"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0159/",
+        "id": "i-0159",
+        "name": "Timothy H. O’Sullivan, Sand Dunes, Carson Desert, Nevada"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/wind/",
+  "id": "wind",
+  "label": "Wind",
+  "group": "The Air",
+  "vocabulary": "weather",
+  "records": [
+    "r-0104",
+    "r-0129",
+    "i-0015",
+    "i-0129"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0104/",
+        "id": "r-0104",
+        "name": "W.H. Auden, “Winds”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0129/",
+        "id": "r-0129",
+        "name": "Ralph Waldo Emerson, “The Snow Storm”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0015/",
+        "id": "i-0015",
+        "name": "Diagram of the Winds (I)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0129/",
+        "id": "i-0129",
+        "name": "Katsushika Hokusai, South Wind, Clear Sky (Gaifū kaisei)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

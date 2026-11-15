@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/denouement/",
+  "id": "denouement",
+  "label": "Denouement",
+  "startHour": 21,
+  "endHour": 24,
+  "subtitle": "Night",
+  "vocabulary": "hours",
+  "records": [
+    "r-0030",
+    "r-0031",
+    "r-0032",
+    "r-0033",
+    "i-0030",
+    "i-0031",
+    "i-0032",
+    "i-0033"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0030/",
+        "id": "r-0030",
+        "name": "Rainer Maria Rilke, “Evening”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0031/",
+        "id": "r-0031",
+        "name": "Richard Wright, “#9”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0032/",
+        "id": "r-0032",
+        "name": "Samuel Beckett, “Watt”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0033/",
+        "id": "r-0033",
+        "name": "Edward Thomas, “Lights Out”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0030/",
+        "id": "i-0030",
+        "name": "Arkhip Kuindzhi, Moonlit Night on the Dnieper"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0031/",
+        "id": "i-0031",
+        "name": "Agnes Giberne, Agnes Giberne, from The Story of the Sun, Moon, and Stars (1898)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0032/",
+        "id": "i-0032",
+        "name": "Ernst Haeckel, Leptomedusae"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0033/",
+        "id": "i-0033",
+        "name": "Dwight William Tryon, After Sunset: Looking East"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

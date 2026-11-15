@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/snow/",
+  "id": "snow",
+  "label": "Snow",
+  "group": "What Falls",
+  "vocabulary": "weather",
+  "records": [
+    "r-0129",
+    "i-0127",
+    "i-0128",
+    "i-0160"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0129/",
+        "id": "r-0129",
+        "name": "Ralph Waldo Emerson, “The Snow Storm”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0127/",
+        "id": "i-0127",
+        "name": "Wilson Alwyn Bentley, Untitled (Snowflake)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0128/",
+        "id": "i-0128",
+        "name": "Wilson Alwyn Bentley, Plate XIX"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0160/",
+        "id": "i-0160",
+        "name": "John Henry Twachtman, Icebound"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/frost/",
+  "id": "frost",
+  "label": "Frost",
+  "group": "The Ground",
+  "vocabulary": "weather",
+  "records": [
+    "r-0121"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0121/",
+        "id": "r-0121",
+        "name": "Samuel Taylor Coleridge, “Frost at Midnight”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

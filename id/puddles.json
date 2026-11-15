@@ -1,0 +1,21 @@
+{
+  "@id": "https://earthlyhours.com/id/puddles/",
+  "id": "puddles",
+  "label": "Puddles",
+  "group": "The Ground",
+  "vocabulary": "weather",
+  "records": [
+    "r-0127"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0127/",
+        "id": "r-0127",
+        "name": "Thomas Traherne, “Shadows in the Water”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

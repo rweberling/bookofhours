@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/mist/",
+  "id": "mist",
+  "label": "Mist",
+  "group": "The Sky",
+  "vocabulary": "weather",
+  "records": [
+    "r-0120",
+    "i-0153"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0120/",
+        "id": "r-0120",
+        "name": "John Aitken, “On Dust, Fogs, and Clouds”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0153/",
+        "id": "i-0153",
+        "name": "Hasegawa Tōhaku, Pine Trees"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

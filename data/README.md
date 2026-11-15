@@ -38,7 +38,9 @@ Every record has an `id`, and most share a few fields:
   reading's or image's subjects (`about`, with the scientific name and
   Wikidata), its `edition`, its `post` or `day` (with the page's URL) and
   the pieces shown `alongside` it there; an edition's `citedBy`; a
-  subject's `posts`, `days` and `records`.
+  subject's `posts`, `days` and `records`. Each term in `vocab.json` has
+  its page there too (`id/hush/`, `id/autumn/`), listing the records
+  tagged with it.
 - **`shownIn`**: where the site shows it, one place only: `hours`, `weather`,
   `seasons` (inside its Lectio Terra post) or `days` (on a day's card,
   named by a record in `days.json`).

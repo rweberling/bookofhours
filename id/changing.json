@@ -1,0 +1,33 @@
+{
+  "@id": "https://earthlyhours.com/id/changing/",
+  "id": "changing",
+  "label": "Changing",
+  "group": "The Air",
+  "vocabulary": "weather",
+  "records": [
+    "r-0128",
+    "r-0130",
+    "i-0135"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0128/",
+        "id": "r-0128",
+        "name": "Gerard Manley Hopkins, “Pied Beauty”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0130/",
+        "id": "r-0130",
+        "name": "Mark Twain, “The Weather”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0135/",
+        "id": "i-0135",
+        "name": "Charles Marville, [Cloud Study, Paris]"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

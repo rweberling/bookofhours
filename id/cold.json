@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/cold/",
+  "id": "cold",
+  "label": "Cold",
+  "group": "The Air",
+  "vocabulary": "weather",
+  "records": [
+    "r-0121",
+    "i-0127",
+    "i-0157",
+    "i-0160"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0121/",
+        "id": "r-0121",
+        "name": "Samuel Taylor Coleridge, “Frost at Midnight”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0127/",
+        "id": "i-0127",
+        "name": "Wilson Alwyn Bentley, Untitled (Snowflake)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0157/",
+        "id": "i-0157",
+        "name": "William Bradford, An Arctic Summer: Boring Through the Pack in Melville Bay"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0160/",
+        "id": "i-0160",
+        "name": "John Henry Twachtman, Icebound"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
