@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0165/",
+  "id": "i-0165",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73.jpeg",
+  "caption": "“<a href=\"https://digitalcollections.lib.uh.edu/concern/images/pc289j955?locale=en#?c=0&amp;m=0&amp;s=0&amp;cv=0&amp;xywh=-39%2C-1%2C2293%2C1195\" rel=\"noopener\" target=\"_blank\">Of the Squirrel.</a>” From Edward Topsell. <em><a href=\"http://www.biodiversitylibrary.org/page/44212424\" rel=\"noopener\" target=\"_blank\">The History of Four-Footed Beasts and Serpents</a></em>. London: G. Sawbridge, T. Williams and T. Johnson, 1658. p. 508. University of Houston Digital Collections.",
+  "lectio": {
+    "post": "lt-0035",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ]
+  },
+  "display": {
+    "size": [
+      1200,
+      647
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

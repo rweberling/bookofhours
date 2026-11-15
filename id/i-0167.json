@@ -1,0 +1,26 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0167/",
+  "id": "i-0167",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3.jpeg",
+  "caption": "Anonymous. <a href=\"https://diglib.hab.de/wdb.php?dir=mss/74-1-aug-2f&amp;distype=thumbs\" rel=\"noopener\" target=\"_blank\">Collection of geometric and perspective drawings executed in colors</a> [<em>Sammlung geometrischer und perspectivischer, in Farben ausgeführter Zeichnungen</em>]. 16th century. Cod. Guelf. 74.1 Aug. 2°. Herzog August Bibliothek, Wolfenbüttel. Manuscript. p. 3.",
+  "lectio": {
+    "post": "lt-0035",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ]
+  },
+  "display": {
+    "size": [
+      562,
+      766
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

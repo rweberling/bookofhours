@@ -1,0 +1,25 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0134/",
+  "id": "r-0134",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Meriwether Lewis. From “<a href=\"https://archive.org/details/journalsofcaptai00lewirich/page/42/mode/2up?q=11th+September\" rel=\"noopener\" target=\"_blank\">September 11, 1803</a>.” <em>The Journals of Captain Meriwether Lewis and Sergeant John Ordway</em>. Ed. Milo M. Quaife. Madison: State Historical Society of Wisconsin, 1916. 42.",
+    "edition": {
+      "id": "e-0207"
+    }
+  },
+  "lectio": {
+    "post": "lt-0035",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ]
+  },
+  "firstLine": "Set out about sunrise, passed Sunfish creek 1 Mile &c &c entered the long reach, so called from the ohio runing in strait direction for 18 miles in this reach there are 5 Islands from three to 2 …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

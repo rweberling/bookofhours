@@ -1,0 +1,28 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0136/",
+  "id": "r-0136",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "Ralph Waldo Emerson. “<a href=\"https://hdl.handle.net/2027/hvd.hn227q?urlappend=%3Bseq=123%3Bownerid=27021597765718572-129\" rel=\"noopener\" target=\"_blank\">Fable</a>.” Boston: James Munroe and Company, 1847. 115.",
+    "edition": {
+      "id": "e-0209"
+    }
+  },
+  "lectio": {
+    "post": "lt-0035",
+    "place": 3
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "The mountain and the squirrel …",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

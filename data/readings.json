@@ -5379,5 +5379,51 @@
         }
       ]
     }
+  },
+  {
+    "id": "r-0134",
+    "shownIn": "seasons",
+    "text": "<p>Set out about sunrise, passed Sunfish creek 1 Mile &amp;c &amp;c entered the long reach, so called from the ohio runing in strait direction for 18 miles in this reach there are 5 Islands from three to 2 miles in length each—observed a number of squirrels swiming the Ohio and universally passing from the W. to the East shore they appear to be making to the south; perhaps it may be mast or food which they are in serch of but I should rather suppose that it is climate which is their object as I find no difference in the quantity of mast on both sides of this river it being abundant on both except the beach nut which appears extreemly scarce this season, the walnuts and Hickory nuts the usual food of the squirrell appears in great abundance on either side of the river—I made my dog take as many each day as I had occation for, they wer fat and I thought them when fryed a pleasent food— many of these squirrils wer black, they swim very light on the water and make pretty good speed—</p>",
+    "citation": {
+      "display": "Meriwether Lewis. From “<a href=\"https://archive.org/details/journalsofcaptai00lewirich/page/42/mode/2up?q=11th+September\" rel=\"noopener\" target=\"_blank\">September 11, 1803</a>.” <em>The Journals of Captain Meriwether Lewis and Sergeant John Ordway</em>. Ed. Milo M. Quaife. Madison: State Historical Society of Wisconsin, 1916. 42.",
+      "edition": { "id": "e-0207" }
+    },
+    "lectio": { "post": "lt-0035", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"]
+    }
+  },
+  {
+    "id": "r-0135",
+    "shownIn": "seasons",
+    "text": "<p>The elegant creature, so cleanly in its habits, so graceful in its carriage, so nimble and daring in its movements, excites feelings of admiration akin to those awakened by the birds and the fairer forms of nature. His passage through the trees is almost a flight. Indeed, the flying squirrel has little or no advantage over him, and in speed and nimbleness cannot compare with him at all. If he miss his footing and fall, he is sure to catch on the next branch; if the connection be broken, he leaps recklessly for the nearest spray or limb, and secures his hold, even if it be by the aid of his teeth.</p><p></p><p>His career of frolic and festivity begins in the fall, after the birds have left us and the holiday spirit of nature has commenced to subside. How much his presence adds to the pleasure of a saunter in the still October woods. You step lightly across the threshold of the forest, and sit down upon the first log or rock to await the signals. It is so still that the ear suddenly seems to have acquired new powers, and there is no movement to confuse the eye. Presently you hear the rustling of a branch, and see it sway or spring as the squirrel leaps from or to it; or else you hear a disturbance in the dry leaves, and mark one running upon the ground. He has probably seen the intruder, and, not liking his stealthy movements, desires to avoid a nearer acquaintance. Now he mounts a stump to see if the way is clear, then pauses a moment at the foot of a tree to take his bearings, his tail as he skims along undulating behind him, and adding to the easy grace and dignity of his movements. Or else you are first advised of his proximity by the dropping of a false nut, or the fragments of the shucks rattling upon the leaves. Or, again, after contemplating you a while unobserved, and making up his mind that you are not dangerous, he strikes an attitude on a branch, and commences to quack and bark, with an accompanying movement of his tail. Late in the afternoon, when the same stillness reigns, the same scenes are repeated. There is a black variety, quite rare, but mating freely with the gray, from which it seems to be distinguished only in color.</p>",
+    "citation": {
+      "display": "John Burroughs. From “<a href=\"https://hdl.handle.net/2027/coo.31924024557864?urlappend=%3Bseq=23\" rel=\"noopener\" target=\"_blank\">Squirrels</a>.” <em>Squirrels and Other Fur-Bearers</em>. 1875. Boston and New York: Houghton, Mifflin and Company, 1900. 7-8.",
+      "edition": { "id": "e-0208" }
+    },
+    "lectio": { "post": "lt-0035", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"]
+    }
+  },
+  {
+    "id": "r-0136",
+    "shownIn": "seasons",
+    "text": "The mountain and the squirrel<br>Had a quarrel;<br>And the former called the latter ‘Little Prig.’<br>Bun replied,<br>‘You are doubtless very big;<br>But all sorts of things and weather<br>Must be taken in together,<br>To make up a year<br>And a sphere.<br>And I think it no disgrace<br>To occupy my place.<br>If I'm not so large as you,<br>You are not so small as I,<br>And not half so spry.<br>I'll not deny you make<br>A very pretty squirrel track;<br>Talents differ; all is well and wisely put;<br>If I cannot carry forests on my back,<br>Neither can you crack a nut.’",
+    "citation": {
+      "display": "Ralph Waldo Emerson. “<a href=\"https://hdl.handle.net/2027/hvd.hn227q?urlappend=%3Bseq=123%3Bownerid=27021597765718572-129\" rel=\"noopener\" target=\"_blank\">Fable</a>.” Boston: James Munroe and Company, 1847. 115.",
+      "edition": { "id": "e-0209" }
+    },
+    "lectio": { "post": "lt-0035", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"]
+    },
+    "display": { "verse": true }
   }
 ]

@@ -3730,6 +3730,90 @@
         }
       ]
     },
+    "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73.jpeg": {
+      "bytes": 138463,
+      "width": 1200,
+      "height": 647,
+      "sha256": "1ee33b9a3a77a934d7f259e3ff47a65b6d47552107ea2d8dba331f239a465109",
+      "settings": "89e48fac760f",
+      "credit": "d26da7c1bff7",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-800.webp",
+          "width": 800,
+          "height": 431,
+          "bytes": 65332
+        },
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-1600.webp",
+          "width": 1200,
+          "height": 647,
+          "bytes": 121110
+        },
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-2400.webp",
+          "width": 1200,
+          "height": 647,
+          "bytes": 121110
+        }
+      ]
+    },
+    "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477.jpeg": {
+      "bytes": 369853,
+      "width": 1456,
+      "height": 1066,
+      "sha256": "b230b87b9481f7b0d18d63a6baba5e8fb1a17691ed41a8c22161d6191f8b5a0e",
+      "settings": "89e48fac760f",
+      "credit": "d26da7c1bff7",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477-800.webp",
+          "width": 800,
+          "height": 586,
+          "bytes": 104072
+        },
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477-1600.webp",
+          "width": 1456,
+          "height": 1066,
+          "bytes": 365526
+        },
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477-2400.webp",
+          "width": 1456,
+          "height": 1066,
+          "bytes": 365526
+        }
+      ]
+    },
+    "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3.jpeg": {
+      "bytes": 77824,
+      "width": 918,
+      "height": 1251,
+      "sha256": "9071df3a05e9d624981315561c9940bf161c5bf2045014aba3ede1cedc3cacce",
+      "settings": "89e48fac760f",
+      "credit": "d26da7c1bff7",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3-800.webp",
+          "width": 800,
+          "height": 1090,
+          "bytes": 31822
+        },
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3-1600.webp",
+          "width": 918,
+          "height": 1251,
+          "bytes": 40880
+        },
+        {
+          "file": "images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3-2400.webp",
+          "width": 918,
+          "height": 1251,
+          "bytes": 40880
+        }
+      ]
+    },
     "images/transit_abbott.jpg": {
       "bytes": 194717,
       "width": 1297,

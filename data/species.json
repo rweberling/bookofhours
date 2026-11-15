@@ -308,5 +308,14 @@
     "wikidata": "Q3487324",
     "gbif": "5414267",
     "inaturalist": "61119"
+  },
+  {
+    "id": "sp-0032",
+    "name": "Eastern Grey Squirrel",
+    "scientific": "Sciurus carolinensis",
+    "rank": "species",
+    "wikidata": "Q468500",
+    "gbif": "5219681",
+    "inaturalist": "46017"
   }
 ]

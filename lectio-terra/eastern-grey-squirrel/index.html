@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons.html; edit those, not this. -->
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<link rel="alternate" type="application/rss+xml" title="The Year" href="year.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+<meta name="description" content="My brother called them “joeys” and “jojos” as a child, for reasons that escape me. Maybe he was thinking of young marsupials or mispronouncing the word…">
+<meta property="og:title" content="Lectio Terra: Eastern Grey Squirrel">
+<meta property="og:description" content="My brother called them “joeys” and “jojos” as a child, for reasons that escape me. Maybe he was thinking of young marsupials or mispronouncing the word…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-1600.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/">
+<link rel="canonical" href="https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/">
+<meta name="application-name" content="The Earthly Book of Hours">
+<title>Lectio Terra: Eastern Grey Squirrel — The Earthly Book of Hours</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="citation_title" content="Lectio Terra: Eastern Grey Squirrel">
+<meta name="citation_author" content="Weberling, Ryan">
+<meta name="citation_publication_date" content="2026/11/15">
+<meta name="DC.type" content="blogPost">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lectio Terra: Eastern Grey Squirrel",
+  "name": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",
+  "url": "https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Weberling"
+  },
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Lectio Terra",
+    "url": "https://earthlyhours.com/lectio-terra/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/"
+  },
+  "datePublished": "2026-11-15",
+  "image": "https://earthlyhours.com/images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-1600.webp",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Boston Basin",
+    "description": "Near the Charles River, between the northeastern woodlands and the Atlantic coast; Massachusetts, United States.",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.4,
+      "longitude": -71.1
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Eastern Grey Squirrel",
+    "alternateName": "Sciurus carolinensis",
+    "sameAs": "https://www.wikidata.org/wiki/Q468500"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Earthly Book of Hours",
+      "item": "https://earthlyhours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lectio Terra",
+      "item": "https://earthlyhours.com/lectio-terra/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Eastern Grey Squirrel",
+      "item": "https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="season-reading-page" data-season="autumn" data-entry="lt-0035">
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+<!-- The figures' lightbox (openLightbox() in shared.js) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Expanded image view" aria-modal="true">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<main class="page keepsake-frame season-reading">
+  <p class="publication-name">The Earthly Book of Hours</p>
+  <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint">Autumn</button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
+  <h1 class="block-name"><button class="pane-link" id="season-reading-title" type="button" aria-describedby="season-reading-subtitle-hint">Eastern Grey Squirrel</button></h1>
+  <div class="season-reading-meta"><em id="season-reading-latin">Sciurus carolinensis</em></div>
+  <!-- The week around a day (seasons.js, showDay): filled and shown only on a day with a card. -->
+  <nav class="season-week" id="season-week" aria-label="This week" hidden></nav>
+  <article class="season-post" aria-live="polite">
+    <p class="season-post-dek" id="season-reading-dek">Meriwether Lewis, John Burroughs, Ralph Waldo Emerson</p>
+    <div id="season-reading-body">
+<figure><a target="_blank" href="images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73.jpeg"><img loading="lazy" src="images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-1600.webp" srcset="images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-800.webp 800w, images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-1600.webp 1600w, images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73.jpeg" width="1200" height="647" alt=""></a><figcaption>Fig. 1. “<a href="https://digitalcollections.lib.uh.edu/concern/images/pc289j955?locale=en#?c=0&amp;m=0&amp;s=0&amp;cv=0&amp;xywh=-39%2C-1%2C2293%2C1195" rel="noopener" target="_blank">Of the Squirrel.</a>” From Edward Topsell. <em><a href="http://www.biodiversitylibrary.org/page/44212424" rel="noopener" target="_blank">The History of Four-Footed Beasts and Serpents</a></em>. London: G. Sawbridge, T. Williams and T. Johnson, 1658. p. 508. University of Houston Digital Collections.<a class="record-mark" href="/id/i-0165/" title="The record: i-0165" aria-label="The record, i-0165">¶</a></figcaption></figure><h2>Headnote</h2><p>My brother called them “joeys” and “jojos” as a child, for reasons that escape me. Maybe he was thinking of <a href="https://www.britannica.com/animal/joey-marsupial" rel="noopener" target="_blank">young marsupials</a> or mispronouncing the word “chipmunk.” At any rate, squirrels were one of the first forms of wildlife detectable through our family’s windows, in our backyard, or at the playgrounds we frequented. Like many suburban households, our closest neighbors were likely not people but squirrels, who raise their young in tree hollows or in leafy nests called dreys, breeding twice annually: in late winter and again in summer. Indeed, these quintessential critters have a persistent presence: trees squirrels are active year-round, contributing to the bustling energy of spring and summer but also enlivening the sparse quiet of fall and winter. The creatures can be so ubiquitous that we overlook them, unless the young ones in our midst remind us how strangely hilarious they are. Or unless we consult the <a href="https://nutpress.co.uk/2021/01/where-to-find-squirrels-in-books-for-squirrelappreciationday/" rel="noopener" target="_blank">many literary works</a> that feature them as companions, conspirators, omens, psychological antagonists, or other spectral friends. </p><p>However plain and obvious they seem now, grey squirrels were actually imported intentionally into cities as a form of harmless entertainment beginning in 1847, when they were introduced into Philadelphia’s Franklin Square (then Boston and other eastern cities, followed by Victorian Britain—which <a href="https://www.atlasobscura.com/articles/the-epic-centurylong-english-battle-to-rid-itself-of-american-squirrels" rel="noopener" target="_blank">eventually regretted it</a>). Before this shift, squirrels were considered serious agricultural pests for the damage they cause to wheat, corn, and other crops. No joke! They were hunted by the tens and hundreds of thousands, with local governments across the Midwest paying a few cents per squirrel scalp (or allowing residents to pay their taxes with squirrels). One <a href="https://southeastohiohistory.org/tom-talks-history-blog/squirrel-invasion/" rel="noopener" target="_blank">1807 law in Ohio</a> even required all military-age males to kill 100 squirrels per year and deliver their hides to the local tax collector—or face a penalty. Squirrels were a common source of meat, and their furs were also used widely, both functionally and decoratively, in various clothing and accessories. Yet keen observers of nature also noticed the important ecological role that squirrels play as planters and cultivators of the great North American forests. </p><p>The eastern grey squirrel (<em>Sciurus carolinensis</em>) belongs to the primary tree-squirrel genus, <em>Sciurus</em>, which gives the rodent its common name (via the Old French <em>escurel</em>) and is taken from the ancient Greek <em>skiouros</em> (read by some to mean “<a href="https://vagrantbramblings.wordpress.com/2015/09/17/tracing-shadow-tails-squirrels-in-pnin/" rel="noopener" target="_blank">shadow-tail,</a>” as a description of how the animal seems to sit in the shade of its own tail). The squirrel genus is part of the broader squirrel family (<em>Sciuridae</em>), which includes tree, ground, and flying species, as well as several related animals: chipmunks, prairie dogs, groundhogs, and marmots—oh, my! North America is home to 60-odd species of squirrels, spread across many genera and branches of this family. </p><p>Despite their name, grey squirrels are subtly multi-colored, with banded gradations of color, white-tipped hairs, brownish face and leg  tones, pale bellies, and silver-fringed tails. They can also be black or white, due to genetic variations within the species or introgression from fox squirrels (<em>Sciurus niger</em>). In fact, an unusually high proportion of otherwise-rare black squirrels has been a fun point of consistency between where I currently live in Massachusetts and my previous haunts in Western Michigan. One other thing worth knowing: because they can turn their hind feet backwards, grey squirrels are one of the few mammals that can descend a tree trunk headfirst. Talk about spunk. Their faces plunge toward the ground thousands of times each fall, as they plant thousands of acorns and other nuts in their caches, sorting red acorns from white acorns, deactivating some nut embryos to ensure they are still edible in the months to come, and choosing just the right depth in the ground for overwintering. In the process of their labors, squirrels reseed the forest, spread nutrients and spores, and aerate and mix the topsoil, unintentionally perpetuating the woods around us.</p><figure><a target="_blank" href="images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477.jpeg"><img loading="lazy" src="images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477-1600.webp" srcset="images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477-800.webp 800w, images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477-1600.webp 1600w, images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477.jpeg" width="1456" height="1066" alt=""></a><figcaption>Fig. 2. “<a href="https://www.oah.org/publications/jah/teaching-the-jah/the-urbanization-of-the-eastern-gray-squirrel-in-the-united-states/exercise-5-scramble-a-nut/" rel="noopener" target="_blank">Hi, Mister! Scramble a Nut?</a>” Laurence Freeman Peck. <em>Harvard Lampoon</em> 46.6 (December 17, 1903). p. 121.<a class="record-mark" href="/id/i-0166/" title="The record: i-0166" aria-label="The record, i-0166">¶</a></figcaption></figure><hr><h2>Readings</h2><ol><li><p>Set out about sunrise, passed Sunfish creek 1 Mile &amp;c &amp;c entered the long reach, so called from the ohio runing in strait direction for 18 miles in this reach there are 5 Islands from three to 2 miles in length each—observed a number of squirrels swiming the Ohio and universally passing from the W. to the East shore they appear to be making to the south; perhaps it may be mast or food which they are in serch of but I should rather suppose that it is climate which is their object as I find no difference in the quantity of mast on both sides of this river it being abundant on both except the beach nut which appears extreemly scarce this season, the walnuts and Hickory nuts the usual food of the squirrell appears in great abundance on either side of the river—I made my dog take as many each day as I had occation for, they wer fat and I thought them when fryed a pleasent food— many of these squirrils wer black, they swim very light on the water and make pretty good speed—</p></li></ol><div class="reading-citation">Meriwether Lewis. From “<a href="https://archive.org/details/journalsofcaptai00lewirich/page/42/mode/2up?q=11th+September" rel="noopener" target="_blank">September 11, 1803</a>.” <em>The Journals of Captain Meriwether Lewis and Sergeant John Ordway</em>. Ed. Milo M. Quaife. Madison: State Historical Society of Wisconsin, 1916. 42.<a class="record-mark" href="/id/r-0134/" title="The record: r-0134" aria-label="The record, r-0134">¶</a></div><ol><li><p>The elegant creature, so cleanly in its habits, so graceful in its carriage, so nimble and daring in its movements, excites feelings of admiration akin to those awakened by the birds and the fairer forms of nature. His passage through the trees is almost a flight. Indeed, the flying squirrel has little or no advantage over him, and in speed and nimbleness cannot compare with him at all. If he miss his footing and fall, he is sure to catch on the next branch; if the connection be broken, he leaps recklessly for the nearest spray or limb, and secures his hold, even if it be by the aid of his teeth.</p><p></p><p>His career of frolic and festivity begins in the fall, after the birds have left us and the holiday spirit of nature has commenced to subside. How much his presence adds to the pleasure of a saunter in the still October woods. You step lightly across the threshold of the forest, and sit down upon the first log or rock to await the signals. It is so still that the ear suddenly seems to have acquired new powers, and there is no movement to confuse the eye. Presently you hear the rustling of a branch, and see it sway or spring as the squirrel leaps from or to it; or else you hear a disturbance in the dry leaves, and mark one running upon the ground. He has probably seen the intruder, and, not liking his stealthy movements, desires to avoid a nearer acquaintance. Now he mounts a stump to see if the way is clear, then pauses a moment at the foot of a tree to take his bearings, his tail as he skims along undulating behind him, and adding to the easy grace and dignity of his movements. Or else you are first advised of his proximity by the dropping of a false nut, or the fragments of the shucks rattling upon the leaves. Or, again, after contemplating you a while unobserved, and making up his mind that you are not dangerous, he strikes an attitude on a branch, and commences to quack and bark, with an accompanying movement of his tail. Late in the afternoon, when the same stillness reigns, the same scenes are repeated. There is a black variety, quite rare, but mating freely with the gray, from which it seems to be distinguished only in color.</p></li></ol><div class="reading-citation">John Burroughs. From “<a href="https://hdl.handle.net/2027/coo.31924024557864?urlappend=%3Bseq=23" rel="noopener" target="_blank">Squirrels</a>.” <em>Squirrels and Other Fur-Bearers</em>. 1875. Boston and New York: Houghton, Mifflin and Company, 1900. 7-8.<a class="record-mark" href="/id/r-0135/" title="The record: r-0135" aria-label="The record, r-0135">¶</a></div><ol><li class="reading-verse"><span class="verse-line" style="--indent: 0">The mountain and the squirrel</span><span class="verse-line" style="--indent: 0">Had a quarrel;</span><span class="verse-line" style="--indent: 0">And the former called the latter ‘Little Prig.’</span><span class="verse-line" style="--indent: 0">Bun replied,</span><span class="verse-line" style="--indent: 0">‘You are doubtless very big;</span><span class="verse-line" style="--indent: 0">But all sorts of things and weather</span><span class="verse-line" style="--indent: 0">Must be taken in together,</span><span class="verse-line" style="--indent: 0">To make up a year</span><span class="verse-line" style="--indent: 0">And a sphere.</span><span class="verse-line" style="--indent: 0">And I think it no disgrace</span><span class="verse-line" style="--indent: 0">To occupy my place.</span><span class="verse-line" style="--indent: 0">If I'm not so large as you,</span><span class="verse-line" style="--indent: 0">You are not so small as I,</span><span class="verse-line" style="--indent: 0">And not half so spry.</span><span class="verse-line" style="--indent: 0">I'll not deny you make</span><span class="verse-line" style="--indent: 0">A very pretty squirrel track;</span><span class="verse-line" style="--indent: 0">Talents differ; all is well and wisely put;</span><span class="verse-line" style="--indent: 0">If I cannot carry forests on my back,</span><span class="verse-line" style="--indent: 0">Neither can you crack a nut.’</span></li></ol><div class="reading-citation">Ralph Waldo Emerson. “<a href="https://hdl.handle.net/2027/hvd.hn227q?urlappend=%3Bseq=123%3Bownerid=27021597765718572-129" rel="noopener" target="_blank">Fable</a>.” Boston: James Munroe and Company, 1847. 115.<a class="record-mark" href="/id/r-0136/" title="The record: r-0136" aria-label="The record, r-0136">¶</a></div><h2>Supplementum</h2><ul><li><p>Etienne Benson. “<a href="https://archive.oah.org/special-issues/teaching/2013_12/article.pdf" rel="noopener" target="_blank">The Urbanization of the Eastern Gray Squirrel in the United States</a>.” <em>Journal of American History</em> 100.3 (December 2013): 691–710.</p></li><li><p>Colleen Kimmett. “<a href="http://www.mentalfloss.com/animals/great-squirrel-migration-1968" rel="noopener" target="_blank">The Great Squirrel Migration of 1968</a>.” <em>Mental Floss</em> (April 8, 2017).</p></li><li><p>Helen R. McRobie, et al. “<a href="https://doi.org/10.1186/s12862-019-1471-7" rel="noopener" target="_blank">Multiple Origins of Melanism in Two Species of North American Tree Squirrel (</a><em><a href="https://doi.org/10.1186/s12862-019-1471-7" rel="noopener" target="_blank">Sciurus</a></em><a href="https://doi.org/10.1186/s12862-019-1471-7" rel="noopener" target="_blank">)</a>.” <em>BMC Evolutionary Biology</em> 19 (2019): article 140.</p></li><li><p>Linda Rodriguez McRobbie. “<a href="http://www.atlasobscura.com/articles/the-epic-centurylong-english-battle-to-rid-itself-of-american-squirrels" rel="noopener" target="_blank">The Epic Century-Long English Battle to Rid Itself of American Squirrels</a>.” <em>Atlas Obscura</em> (April 27, 2016). </p></li><li><p>Michael A. Steele and John L. Koprowski. “<a href="http://www.smithsonianmag.com/blogs/smithsonian-books/2025/05/22/inside-the-secret-lives-of-squirrels-and-their-half-eaten-acorns/" rel="noopener" target="_blank">Inside the Secret Lives of Squirrels and Their Half-Eaten Acorns</a>.” <em>Smithsonian Magazine</em> (May 22, 2025).</p></li></ul><figure><a target="_blank" href="images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3.jpeg"><img loading="lazy" src="images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3-1600.webp" srcset="images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3-800.webp 800w, images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3-1600.webp 1600w, images/web/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3.jpeg" width="562" height="766" alt=""></a><figcaption>Fig. 3. Anonymous. <a href="https://diglib.hab.de/wdb.php?dir=mss/74-1-aug-2f&amp;distype=thumbs" rel="noopener" target="_blank">Collection of geometric and perspective drawings executed in colors</a> [<em>Sammlung geometrischer und perspectivischer, in Farben ausgeführter Zeichnungen</em>]. 16th century. Cod. Guelf. 74.1 Aug. 2°. Herzog August Bibliothek, Wolfenbüttel. Manuscript. p. 3.<a class="record-mark" href="/id/i-0167/" title="The record: i-0167" aria-label="The record, i-0167">¶</a></figcaption></figure>
+</div>
+  </article>
+  <div class="phenomena season-post-observation"><p class="phenomena-list" id="season-reading-observation">Published November 15, 2026</p></div>
+  <div class="turn-the-page visible season-turn"><span class="ttp-bracket">[</span><span class="season-turn-part" id="season-turn-part"><button class="page-action" id="season-turn-page" aria-label="Load another species reading">turn the page</button><span class="ttp-sep" aria-hidden="true">|</span></span><button class="page-action" id="keep-page" type="button" aria-label="Keep this page: save it as an image or copy its link">keep this page</button><span class="ttp-bracket">]</span></div>
+  <footer class="page-footer" style="opacity:1;"><div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true"><div class="line"></div><div class="diamond"></div><div class="line"></div></div><p class="colophon"><span>A seasonal reading from <a href="seasons-incipit.html">Lectio Terra</a></span></p><button class="pane-link season-emblem-link" id="season-emblem-open" type="button" aria-label="Wander the Seasons"><svg class="season-emblem" id="season-emblem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg></button></footer>
+</main>
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a class="active" href="seasons.html">The Current Season</a>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
+    <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
+      <a href="#letters">Letters from Otherwise</a>
+      <a href="editions.html">Otherwise Editions</a>
+      <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
+      <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Otherwise on DFOS <span class="ext-arrow" aria-hidden="true">↗</span></a>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
+  <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
+  <p class="wander-heading">The Seasons</p>
+  <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
+  <div class="season-dial-wrap" aria-hidden="true"><svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <p class="season-dial-caption" id="season-dial-caption"></p>
+  <p class="dial-legend" aria-hidden="true"><span class="dial-key"><span class="dial-key-star">✦</span>You are here</span><span class="dial-key"><span class="dial-key-quarter"></span>Solstice or equinox</span><span class="dial-key"><span class="dial-key-cross"></span>Cross-quarter day</span></p>
+  <div class="species-grid species-season-groups" id="species-grid"></div>
+</div>
+<script type="application/json" id="post-entry">{"id": "lt-0035", "readingLabels": []}</script>
+<script type="module" src="dfos-siwd.js"></script>
+<script src="shared.js"></script>
+<script src="atmosphere.js"></script>
+<script src="seasons.js"></script>
+<script src="keep.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

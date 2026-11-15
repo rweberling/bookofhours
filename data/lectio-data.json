@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/import_substack.py",
-  "generatedAt": "2026-11-10T18:44:28+00:00",
+  "generatedAt": "2026-11-15T19:33:08+00:00",
   "seasons": {
     "spring": [
       {
@@ -3512,6 +3512,91 @@
         ],
         "page": "lectio-terra/wintergreen/",
         "subject": "sp-0028"
+      },
+      {
+        "id": "lt-0035",
+        "aliases": [
+          "week-44-eastern-grey-squirrel-meriwether"
+        ],
+        "postId": "224393775.week-44-eastern-grey-squirrel-meriwether",
+        "season": "autumn",
+        "title": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",
+        "subtitle": "The most adorable imported vermin that you ever saw",
+        "published": "2026-11-15",
+        "day": "11-15",
+        "canonicalUrl": "https://laurentia.substack.com/p/week-44-eastern-grey-squirrel-meriwether",
+        "images": [
+          {
+            "src": "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73.jpeg",
+            "alt": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!LcrZ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F35acdcec-1f0e-4718-9ed1-d4f5da9ecf11_1200x647.jpeg"
+          },
+          {
+            "src": "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477.jpeg",
+            "alt": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!3LT9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9facfae7-0534-4419-9081-91ffc7fc9029_1877x1374.jpeg"
+          },
+          {
+            "src": "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-3-8e86a13654f3.jpeg",
+            "alt": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!PsH0!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6adb31ab-217c-4b46-958f-354191225e76_918x1251.jpeg"
+          }
+        ],
+        "body": [
+          {
+            "image": "i-0165"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0107",
+            "blocks": [
+              0,
+              4
+            ]
+          },
+          {
+            "image": "i-0166"
+          },
+          {
+            "writing": "w-0107",
+            "blocks": [
+              4,
+              5
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0134"
+          },
+          {
+            "reading": "r-0135"
+          },
+          {
+            "reading": "r-0136"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0108",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0167"
+          }
+        ],
+        "page": "lectio-terra/eastern-grey-squirrel/",
+        "subject": "sp-0032"
       }
     ],
     "winter": [

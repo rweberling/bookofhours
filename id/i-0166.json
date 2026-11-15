@@ -1,0 +1,27 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0166/",
+  "id": "i-0166",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-2-bb769c30d477.jpeg",
+  "caption": "“<a href=\"https://www.oah.org/publications/jah/teaching-the-jah/the-urbanization-of-the-eastern-gray-squirrel-in-the-united-states/exercise-5-scramble-a-nut/\" rel=\"noopener\" target=\"_blank\">Hi, Mister! Scramble a Nut?</a>” Laurence Freeman Peck. <em>Harvard Lampoon</em> 46.6 (December 17, 1903). p. 121.",
+  "lectio": {
+    "post": "lt-0035",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ]
+  },
+  "display": {
+    "size": [
+      1456,
+      1066
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
