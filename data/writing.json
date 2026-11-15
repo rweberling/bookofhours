@@ -1354,7 +1354,8 @@
     "tags": {
       "hours": [],
       "weather": [],
-      "seasons": ["autumn"]
+      "seasons": ["autumn"],
+      "species": ["sp-0032"]
     }
   },
   {
@@ -1366,7 +1367,8 @@
     "tags": {
       "hours": [],
       "weather": [],
-      "seasons": ["autumn"]
+      "seasons": ["autumn"],
+      "species": ["sp-0032"]
     }
   }
 ]

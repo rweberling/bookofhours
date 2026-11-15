@@ -293,6 +293,18 @@ def main():
                 errors.append(f'{r["id"]}: the same {piece} as {copied[key]} ({key[0]})')
             copied[key] = r['id']
 
+    # Every piece of a post is tagged with the post's subject (the import
+    # leaves it to a person, who adds the subject record and then the tags;
+    # the record pages and the subject's own page follow the tags).
+    subject_of = {e['id']: e['subject'] for e in posts if e.get('subject') in subjects}
+    for r in readings + images + writing:
+        sid = subject_of.get((r.get('lectio') or {}).get('post'))
+        if sid:
+            key = 'species' if sid.startswith('sp-') else 'phenomena'
+            if sid not in [tag_id(t) for t in (r.get('tags') or {}).get(key) or []]:
+                errors.append(f'{r["id"]}: its post {r["lectio"]["post"]} is about {sid}, '
+                              f"but it isn't tagged with it (tags.{key})")
+
     # Tags point at the vocabularies. A tag is a plain ID, or an object
     # carrying one (with a basis and a note).
     schemes = {name: {c['id'] for c in concepts} for name, concepts in vocab.items()}

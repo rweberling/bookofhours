@@ -13,6 +13,9 @@
     "weather": [],
     "seasons": [
       "autumn"
+    ],
+    "species": [
+      "sp-0032"
     ]
   },
   "display": {
@@ -24,6 +27,15 @@
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "alt": "A pen-and-ink cartoon of a crowd of squirrels in a park mobbing a man of whom only his trouser legs and buttoned shoes show: they climb his legs, stand begging, perch on his boots and leap at him, under the caption \"Hi, Mister! Scramble a Nut?\"",
   "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0032/",
+        "id": "sp-0032",
+        "name": "Eastern Grey Squirrel",
+        "scientific": "Sciurus carolinensis",
+        "wikidata": "Q468500"
+      }
+    ],
     "post": {
       "id": "lt-0035",
       "title": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",

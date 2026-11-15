@@ -5542,7 +5542,8 @@
     "tags": {
       "hours": [],
       "weather": [],
-      "seasons": ["autumn"]
+      "seasons": ["autumn"],
+      "species": ["sp-0032"]
     },
     "display": {
       "size": [1200, 647]
@@ -5559,7 +5560,8 @@
     "tags": {
       "hours": [],
       "weather": [],
-      "seasons": ["autumn"]
+      "seasons": ["autumn"],
+      "species": ["sp-0032"]
     },
     "display": {
       "size": [1456, 1066]
@@ -5576,7 +5578,8 @@
     "tags": {
       "hours": [],
       "weather": [],
-      "seasons": ["autumn"]
+      "seasons": ["autumn"],
+      "species": ["sp-0032"]
     },
     "display": {
       "size": [562, 766]

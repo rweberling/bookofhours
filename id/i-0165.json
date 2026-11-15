@@ -13,6 +13,9 @@
     "weather": [],
     "seasons": [
       "autumn"
+    ],
+    "species": [
+      "sp-0032"
     ]
   },
   "display": {
@@ -24,6 +27,15 @@
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "alt": "A woodcut of a squirrel crouched low and stretched long, ears pricked and teeth bared, its huge feathery tail streaming back over its body and two nuts under its forepaws, beneath the heading \"Of the SQVIRREL.\"",
   "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0032/",
+        "id": "sp-0032",
+        "name": "Eastern Grey Squirrel",
+        "scientific": "Sciurus carolinensis",
+        "wikidata": "Q468500"
+      }
+    ],
     "post": {
       "id": "lt-0035",
       "title": "Week 44: Eastern Grey Squirrel (Meriwether Lewis, John Burroughs, Ralph Waldo Emerson)",

@@ -17,10 +17,22 @@
     "weather": [],
     "seasons": [
       "autumn"
+    ],
+    "species": [
+      "sp-0032"
     ]
   },
   "firstLine": "The elegant creature, so cleanly in its habits, so graceful in its carriage, so nimble and daring in its movements, excites feelings of admiration akin to those awakened by the birds and the fairer forms of nature. …",
   "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0032/",
+        "id": "sp-0032",
+        "name": "Eastern Grey Squirrel",
+        "scientific": "Sciurus carolinensis",
+        "wikidata": "Q468500"
+      }
+    ],
     "edition": {
       "@id": "https://earthlyhours.com/id/e-0208/",
       "id": "e-0208",

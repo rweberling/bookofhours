@@ -17,6 +17,9 @@
     "weather": [],
     "seasons": [
       "autumn"
+    ],
+    "species": [
+      "sp-0032"
     ]
   },
   "display": {
@@ -24,6 +27,15 @@
   },
   "firstLine": "The mountain and the squirrel …",
   "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0032/",
+        "id": "sp-0032",
+        "name": "Eastern Grey Squirrel",
+        "scientific": "Sciurus carolinensis",
+        "wikidata": "Q468500"
+      }
+    ],
     "edition": {
       "@id": "https://earthlyhours.com/id/e-0209/",
       "id": "e-0209",

@@ -17,10 +17,22 @@
     "weather": [],
     "seasons": [
       "autumn"
+    ],
+    "species": [
+      "sp-0032"
     ]
   },
   "firstLine": "Set out about sunrise, passed Sunfish creek 1 Mile &c &c entered the long reach, so called from the ohio runing in strait direction for 18 miles in this reach there are 5 Islands from three to 2 …",
   "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0032/",
+        "id": "sp-0032",
+        "name": "Eastern Grey Squirrel",
+        "scientific": "Sciurus carolinensis",
+        "wikidata": "Q468500"
+      }
+    ],
     "edition": {
       "@id": "https://earthlyhours.com/id/e-0207/",
       "id": "e-0207",
