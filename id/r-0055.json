@@ -2,6 +2,7 @@
   "@id": "https://earthlyhours.com/id/r-0055/",
   "id": "r-0055",
   "shownIn": "seasons",
+  "text": "<p>I had an Inflammation of the Bronchial Tube very bad and the phlegm nearly choked me to death. A young man who knows these herbs came to my house and said to me: “If I only knew where there was some Mullein, I could help.” I didn’t know where to get it , and he left , but he came back and this is what he did: Heated the Mullein Leaves in warm vinegar, then put on my neck and chest and later made me drink a cup or two of Peppermint Tea and it helped me very much.<br><br>Writes Mrs. F. N., Mascoutah, Ill.<br><br><em>Editor’s Note - A knowledge of the medicinal value of herbs will save you many dollars, and much suffering. Our 400-page Herbalist Book describes all American medicinal roots and herbs. It contains color plates and photographic reproductions of hundreds of plants. Price only 25c.</em></p>",
   "citation": {
     "display": "<em><a href=\"https://hdl.handle.net/2027/uiug.30112067700937?urlappend=%3Bseq=39%3Bownerid=115203246-43\">The Old Herb Doctor: His Secrets and Treatments</a> </em>(Hammond, Indiana: Hammond Book Company, 1941), p. 35.",
     "bibliography": "<em>The Old Herb Doctor: His Secrets and Treatments</em>. Hammond Book Company, 1941.",
@@ -23,7 +24,7 @@
       },
       "publisher": "Hammond Book Company",
       "issued": "1941",
-      "rights": "http://rightsstatements.org/vocab/UND/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
     }
   },
   "lectio": {
@@ -40,7 +41,6 @@
       "sp-0008"
     ]
   },
-  "firstLine": "I had an Inflammation of the Bronchial Tube very bad and the phlegm nearly choked me to death. …",
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

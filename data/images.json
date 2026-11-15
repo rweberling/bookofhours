@@ -534,7 +534,7 @@
       }
     ],
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-    "rightsNote": "recent, living creator — verify CC license terms",
+    "rightsNote": "CC BY 4.0 on Wikimedia Commons; held until the credit is settled",
     "rightsNotePrivate": true,
     "tags": {
       "hours": ["fulcrum"],
@@ -1970,7 +1970,7 @@
       "url": "https://hdl.handle.net/2027/uc1.c101065078?urlappend=%3Bseq=56%3Bownerid=13510798904109590-60",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/UND/1.0/",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a report for the Urban Mass Transportation Administration, written by contractors",
     "credit": "D. E. Thompson et al."
   },
@@ -2871,8 +2871,8 @@
       "url": "https://hdl.handle.net/2027/uiug.30112010211909?urlappend=%3Bseq=26%3Bownerid=120323613-30",
       "label": "HathiTrust"
     },
-    "rights": "http://rightsstatements.org/vocab/UND/1.0/",
-    "rightsNote": "published 1957; whether its copyright was renewed is unchecked",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "rightsNote": "published 1957; copyright not renewed (HathiTrust's copyright review, pdus)",
     "rightsNotePrivate": true,
     "creator": { "id": "a-e-s-harrar", "name": "E. S. Harrar" }
   },
