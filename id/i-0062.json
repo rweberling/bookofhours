@@ -91,14 +91,14 @@
         "name": "Michael Marder, Edward S. Casey, “Plants in Place: A Phenomenology of the Vegetal”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0124/",
-        "id": "i-0124",
-        "name": "O Nobilissima Viriditas"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0059/",
         "id": "r-0059",
         "name": "“Mosses of Maine: A Brief Guide”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0124/",
+        "id": "i-0124",
+        "name": "O Nobilissima Viriditas"
       }
     ]
   },

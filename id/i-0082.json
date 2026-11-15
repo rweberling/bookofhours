@@ -58,14 +58,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0075/",
-        "id": "r-0075",
-        "name": "Felice Cardinal d’Ascoli, “Inquisition’s Sentence (22 June 1633)”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0083/",
         "id": "i-0083",
         "name": "Étienne Léopold Trouvelot, Plate IV. Solar Prominences"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0075/",
+        "id": "r-0075",
+        "name": "Felice Cardinal d’Ascoli, “Inquisition’s Sentence (22 June 1633)”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0076/",

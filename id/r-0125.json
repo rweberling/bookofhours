@@ -83,24 +83,24 @@
         "name": "Photograph of the emission of WintOGreen Lifesavers"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0124/",
-        "id": "r-0124",
-        "name": "Jacob Bigelow, “Gaultheria procumbens. Partridge Berry”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0155/",
         "id": "i-0155",
         "name": "David Blair, Gaultheria procumbens"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0156/",
-        "id": "i-0156",
-        "name": "Jacob Bigelow, Gaultheria procumbens"
+        "@id": "https://earthlyhours.com/id/r-0124/",
+        "id": "r-0124",
+        "name": "Jacob Bigelow, “Gaultheria procumbens. Partridge Berry”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0126/",
         "id": "r-0126",
         "name": "Linda M. Sweeting, “Light Your Candy”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0156/",
+        "id": "i-0156",
+        "name": "Jacob Bigelow, Gaultheria procumbens"
       }
     ]
   },

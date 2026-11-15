@@ -79,24 +79,24 @@
         "name": "F. E. Tripp, “ Plate XXXIII. HYPNEAE (continued) ,” from F.E. Tripp, British Mosses: Their Homes …"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0057/",
-        "id": "r-0057",
-        "name": "Hildegard of Bingen, “334. Letter to Secular People”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0062/",
         "id": "i-0062",
         "name": "Mary V. Thayer, “ Mosses ,” from A. J. Grout, Mosses With Hand-lens And Microscope: a Non-technical …"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0124/",
-        "id": "i-0124",
-        "name": "O Nobilissima Viriditas"
+        "@id": "https://earthlyhours.com/id/r-0057/",
+        "id": "r-0057",
+        "name": "Hildegard of Bingen, “334. Letter to Secular People”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0059/",
         "id": "r-0059",
         "name": "“Mosses of Maine: A Brief Guide”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0124/",
+        "id": "i-0124",
+        "name": "O Nobilissima Viriditas"
       }
     ]
   },

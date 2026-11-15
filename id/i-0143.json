@@ -64,14 +64,14 @@
         "name": "Emil Carlsen, Staghorn Sumac"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0109/",
-        "id": "r-0109",
-        "name": "Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0142/",
         "id": "i-0142",
         "name": "Lorin L. Dame and Henry Brooks, Rhus Typhina"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0109/",
+        "id": "r-0109",
+        "name": "Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0110/",

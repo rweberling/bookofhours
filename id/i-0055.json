@@ -64,14 +64,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0052/",
-        "id": "r-0052",
-        "name": "Zora Neale Hurston, “Mules and Men”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0056/",
         "id": "i-0056",
         "name": "E. W. Nelson, “ Distribution in North America of rabbits of the genus Sylvilagus ,” from E. W. Nelson …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0052/",
+        "id": "r-0052",
+        "name": "Zora Neale Hurston, “Mules and Men”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0053/",

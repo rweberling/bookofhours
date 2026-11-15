@@ -77,14 +77,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0085/",
-        "id": "r-0085",
-        "name": "Paul Muldoon, “Milkweed and Monarch”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0125/",
         "id": "i-0125",
         "name": "Helen Frost and Leonid Gore, Monarch and Milkweed"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0085/",
+        "id": "r-0085",
+        "name": "Paul Muldoon, “Milkweed and Monarch”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0086/",

@@ -60,14 +60,14 @@
         "name": "W. D. & H. O. Wills, Lilac"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0062/",
-        "id": "r-0062",
-        "name": "Amy Lowell, “Lilacs”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0068/",
         "id": "i-0068",
         "name": "Société Française des Chrysanthémistes and René Oberthür, “ Lilas ,” from Répertoire de couleurs pour aider à la détermination des couleurs des …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0062/",
+        "id": "r-0062",
+        "name": "Amy Lowell, “Lilacs”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0063/",

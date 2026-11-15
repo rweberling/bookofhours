@@ -60,14 +60,14 @@
         "name": "Sirius"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0087/",
-        "id": "r-0087",
-        "name": "Horace, “Odes, Book III: XIII”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0101/",
         "id": "i-0101",
         "name": "Harvard College Observatory, Plate a03507"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0087/",
+        "id": "r-0087",
+        "name": "Horace, “Odes, Book III: XIII”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0088/",

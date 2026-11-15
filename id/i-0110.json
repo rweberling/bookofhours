@@ -59,14 +59,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0093/",
-        "id": "r-0093",
-        "name": "Robert Hass, “Poem with a Cucumber in It”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0111/",
         "id": "i-0111",
         "name": "Depiction labelled Qawoun (melon, Cucumis melo ) . From Kitab al-Hasha'ish fi Hayula …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0093/",
+        "id": "r-0093",
+        "name": "Robert Hass, “Poem with a Cucumber in It”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0094/",
@@ -74,14 +74,14 @@
         "name": "Marcus Aurelius, “Meditations, Book VIII, Section 50”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0112/",
-        "id": "i-0112",
-        "name": "Juan Sánchez Cotán, Still Life with Quince, Cabbage, Melon, and Cucumber"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0095/",
         "id": "r-0095",
         "name": "William Cowper, “The Task, Book III: The Garden”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0112/",
+        "id": "i-0112",
+        "name": "Juan Sánchez Cotán, Still Life with Quince, Cabbage, Melon, and Cucumber"
       }
     ]
   },

@@ -80,14 +80,14 @@
         "name": "Ernest Lawson, New England Birches"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0044/",
-        "id": "r-0044",
-        "name": "Gifford Pinchot, “Silvical Leaflet 38: Paper Birch”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0043/",
         "id": "i-0043",
         "name": "United States Forest Service, “ Paper Birch (Betula papyrifera) Botanical and Commercial Range ,” from Birch , American …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0044/",
+        "id": "r-0044",
+        "name": "Gifford Pinchot, “Silvical Leaflet 38: Paper Birch”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0045/",

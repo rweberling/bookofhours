@@ -91,14 +91,14 @@
         "name": "Daniel H. Janzen, Paul S. Martin, “Neotropical Anachronisms: The Fruits the Gomphotheres Ate”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0140/",
-        "id": "i-0140",
-        "name": "Edward Edmondson, Jr., Still Life with Pawpaws"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0108/",
         "id": "r-0108",
         "name": "A. C. Whitford, “ANONACEAE, D. C. (Custard-Apple Family)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0140/",
+        "id": "i-0140",
+        "name": "Edward Edmondson, Jr., Still Life with Pawpaws"
       }
     ]
   },

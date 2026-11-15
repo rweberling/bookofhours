@@ -79,14 +79,14 @@
         "name": "E. Jones, “Address”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0041/",
-        "id": "i-0041",
-        "name": "United States Forest Service, “ Natural range of sugar maple ,” from Sugar Maple: An American Wood (Washington: Dept. …"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0043/",
         "id": "r-0043",
         "name": "Annika Hansteen-Izora, “Time is Water”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0041/",
+        "id": "i-0041",
+        "name": "United States Forest Service, “ Natural range of sugar maple ,” from Sugar Maple: An American Wood (Washington: Dept. …"
       }
     ]
   },

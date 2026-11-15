@@ -93,14 +93,14 @@
         "name": "Mycobacterium vaccae"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0065/",
-        "id": "r-0065",
-        "name": "Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0071/",
         "id": "i-0071",
         "name": "Jenifer Wightman, Winogradsky Rothko"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0065/",
+        "id": "r-0065",
+        "name": "Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0066/",

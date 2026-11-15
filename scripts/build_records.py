@@ -260,12 +260,15 @@ class Collection:
             for t in (tags.get('species') or []) + (tags.get('phenomena') or []):
                 self.about.setdefault(tag_id(t), []).append(r['id'])
         self.by_id = {r['id']: r for r in self.readings + self.images}
-        # Each post's pieces, in the post's order: {post id: [record ids]}.
+        # Each post's readings and images, in the order its body shows them:
+        # {post id: [record ids]}.
         self.in_post = {}
-        for r in sorted(self.readings + self.images, key=lambda r: ((r.get('lectio') or {}).get('place') or 0, r['id'])):
-            post = (r.get('lectio') or {}).get('post')
-            if post:
-                self.in_post.setdefault(post, []).append(r['id'])
+        for pid, post in self.posts.items():
+            seen = self.in_post.setdefault(pid, [])
+            for item in post.get('body') or []:
+                rid = item.get('reading') or item.get('image') if isinstance(item, dict) else None
+                if rid in self.by_id and rid not in seen:
+                    seen.append(rid)
 
     # How a record is named in lists.
     def name(self, rid):
@@ -400,6 +403,22 @@ def appears(col, r, kind):
     return '<br>'.join(out)
 
 
+def alongside(col, r):
+    """The other pieces shown with a record: the rest of its post, or its
+    day's other half (the same list as the JSON's related.alongside)."""
+    others = [x['id'] for x in related_json(col, r['id']).get('alongside', [])]
+    return '<br>'.join(link(x, col.name(x)) for x in others)
+
+
+def day_links(col, sid):
+    out = []
+    for d in col.days:
+        if d.get('subject') == sid:
+            month, day = (int(x) for x in d['date'].split('-'))
+            out.append(f'<a href="/seasons.html?day={d["date"]}">The Seasons, {day} {MONTHS[month - 1]}</a>')
+    return '<br>'.join(out)
+
+
 def cite(col, rid, url):
     name = col.name(rid)
     name = name[:-1] + '.”' if name.endswith('”') else name + '.'
@@ -439,7 +458,7 @@ def reading_page(col, r):
         ('Further reading', further(r.get('furtherReading'))),
     ])
     body = [section('The text', shown), section('The work', work),
-            section('In the collection', dl([('Appears in', appears(col, r, 'r'))] + tag_rows(col, r))),
+            section('In the collection', dl([('Appears in', appears(col, r, 'r')), ('Shown with', alongside(col, r))] + tag_rows(col, r))),
             section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(ed))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
@@ -493,7 +512,7 @@ def image_page(col, r):
         ('Further reading', further(r.get('furtherReading'))),
     ])
     body = [section('The image', shown), section('The work', work),
-            section('In the collection', dl([('Appears in', appears(col, r, 'i'))] + tag_rows(col, r))),
+            section('In the collection', dl([('Appears in', appears(col, r, 'i')), ('Shown with', alongside(col, r))] + tag_rows(col, r))),
             section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(r))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
@@ -563,7 +582,7 @@ def subject_page(col, sid):
                              for e in posts)
     used = '<br>'.join(link(x, col.name(x)) for x in col.about.get(sid, []))
     body = [section('The subject', fields),
-            section('In the collection', dl([('Lectio Terra', post_links), ('Records about it', used)])),
+            section('In the collection', dl([('Lectio Terra', post_links), ('Days', day_links(col, sid)), ('Records about it', used)])),
             section('Cite this record', cite(col, sid, f'{SITE}/id/{sid}/') + '\n' + data_note(sid))]
     ld = {'@context': 'https://schema.org', '@type': 'Taxon' if prefix(sid) == 'sp' else 'Thing',
           '@id': f'{SITE}/id/{sid}/', 'name': s['name'], 'alternateName': latin, 'url': f'{SITE}/id/{sid}/',

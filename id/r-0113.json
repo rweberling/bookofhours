@@ -72,14 +72,14 @@
         "name": "Mary Vaux Walcott, Indian Pipe (Monotropa uniflora)"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0112/",
-        "id": "r-0112",
-        "name": "Emily Dickinson, “The Spirit”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0146/",
         "id": "i-0146",
         "name": "Mabel Loomis Todd, [Indian pipes]"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0112/",
+        "id": "r-0112",
+        "name": "Emily Dickinson, “The Spirit”"
       },
       {
         "@id": "https://earthlyhours.com/id/i-0147/",

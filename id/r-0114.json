@@ -88,11 +88,6 @@
         "name": "Hannah Arendt, “The Human Condition”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0150/",
-        "id": "i-0150",
-        "name": "M. E. McCully, M. J. Canny and C. X. Huang, Fig. 1"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0116/",
         "id": "r-0116",
         "name": "Homer C. Sampson, “Chemical Changes Accompanying Abscission in Coleus Blumei”"
@@ -101,6 +96,11 @@
         "@id": "https://earthlyhours.com/id/r-0117/",
         "id": "r-0117",
         "name": "Thomas Hardy, “The Darkling Thrush”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0150/",
+        "id": "i-0150",
+        "name": "M. E. McCully, M. J. Canny and C. X. Huang, Fig. 1"
       }
     ]
   },

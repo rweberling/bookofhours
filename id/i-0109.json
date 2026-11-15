@@ -98,14 +98,14 @@
         "name": "M. P. Verneuil, “ Courd, Courge, Der Kürbiss .” Eugène Grasset and M. P. Verneuil. La plante et ses …"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0091/",
-        "id": "r-0091",
-        "name": "Marge Piercy, “Attack of the Squash People”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0107/",
         "id": "i-0107",
         "name": "Harry S. Paris, “ Fruit Shape of Each of the Eight Cultivar Groups of Cucurbita Pepo. Proximal (stem) end …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0091/",
+        "id": "r-0091",
+        "name": "Marge Piercy, “Attack of the Squash People”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0092/",

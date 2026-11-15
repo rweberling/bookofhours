@@ -79,14 +79,14 @@
         "name": "E. Jones, “Address”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0041/",
-        "id": "i-0041",
-        "name": "United States Forest Service, “ Natural range of sugar maple ,” from Sugar Maple: An American Wood (Washington: Dept. …"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0042/",
         "id": "r-0042",
         "name": "Walter H. Crockett, “Vermont Maple Sugar”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0041/",
+        "id": "i-0041",
+        "name": "United States Forest Service, “ Natural range of sugar maple ,” from Sugar Maple: An American Wood (Washington: Dept. …"
       }
     ]
   },

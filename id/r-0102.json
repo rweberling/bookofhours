@@ -82,24 +82,24 @@
         "name": "Bertha E. Jaques, Young Leaves and Blossoms of Hickory Tree"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0101/",
-        "id": "r-0101",
-        "name": "Carl Sandburg, “Shag-Bark Hickory”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0121/",
         "id": "i-0121",
         "name": "Sophia Thoreau, Inscribed hickory leaves in memory of her brother, Henry"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0122/",
-        "id": "i-0122",
-        "name": "C. E. Faxon, “ Hicoria ovata .” From Charles Sprague Sargent. The Silva of North America, Vol. VII …"
+        "@id": "https://earthlyhours.com/id/r-0101/",
+        "id": "r-0101",
+        "name": "Carl Sandburg, “Shag-Bark Hickory”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0103/",
         "id": "r-0103",
         "name": "Charles Sprague Sargent, “Shell-Bark Hickory. Shag-Bark Hickory.”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0122/",
+        "id": "i-0122",
+        "name": "C. E. Faxon, “ Hicoria ovata .” From Charles Sprague Sargent. The Silva of North America, Vol. VII …"
       }
     ]
   },

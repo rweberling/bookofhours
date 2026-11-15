@@ -66,14 +66,14 @@
         "name": "Corn Stalk-Shaped Vessel"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0081/",
-        "id": "r-0081",
-        "name": "John Norton, “Haudenosaunee (Iroquois) Creation Myth”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0092/",
         "id": "i-0092",
         "name": "C. Mir, et al. “ Out of America: Tracing the Genetic Footprints of the Global Diffusion …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0081/",
+        "id": "r-0081",
+        "name": "John Norton, “Haudenosaunee (Iroquois) Creation Myth”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0082/",

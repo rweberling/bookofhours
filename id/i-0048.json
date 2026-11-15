@@ -55,14 +55,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0048/",
-        "id": "r-0048",
-        "name": "William Herbert, “A History of the Species of Crocus”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0049/",
         "id": "i-0049",
         "name": "E. A. Bowles, “ The Parts of Crocus and Colchicum Flowers ,” from E. A. Bowles, A Handbook of Crocus …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0048/",
+        "id": "r-0048",
+        "name": "William Herbert, “A History of the Species of Crocus”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0049/",

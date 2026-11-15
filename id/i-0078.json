@@ -83,14 +83,14 @@
         "name": "Millett Taylor Thompson, “ Oak Galls, ” from Millett Taylor Thompson, An Illustrated Catalogue of American Insect …"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0070/",
-        "id": "r-0070",
-        "name": "E. P. Felt, “Gall Insects and Their Relations to Plants”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0077/",
         "id": "i-0077",
         "name": "Ryan Weberling, Wool Sower Wasp Galls, Tisbury, Massachusetts"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0070/",
+        "id": "r-0070",
+        "name": "E. P. Felt, “Gall Insects and Their Relations to Plants”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0071/",

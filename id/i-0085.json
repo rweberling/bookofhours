@@ -77,14 +77,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0077/",
-        "id": "r-0077",
-        "name": "Robin Wall Kimmerer, “The Serviceberry: Abundance and Reciprocity in the Natural World”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0086/",
         "id": "i-0086",
         "name": "Elbert L. Little Jr., “ Amelanchier arborea (Michx. f.) Fern., downy serviceberry, ” from Elbert L. Little Jr. …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0077/",
+        "id": "r-0077",
+        "name": "Robin Wall Kimmerer, “The Serviceberry: Abundance and Reciprocity in the Natural World”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0078/",

@@ -77,24 +77,24 @@
         "name": "Emil Carlsen, Staghorn Sumac"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0109/",
-        "id": "r-0109",
-        "name": "Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0142/",
         "id": "i-0142",
         "name": "Lorin L. Dame and Henry Brooks, Rhus Typhina"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0143/",
-        "id": "i-0143",
-        "name": "F. H. Varley, Flower of the Staghorn Sumach"
+        "@id": "https://earthlyhours.com/id/r-0109/",
+        "id": "r-0109",
+        "name": "Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0111/",
         "id": "r-0111",
         "name": "J. Francis Macbride, “Sumach (Rhus species)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0143/",
+        "id": "i-0143",
+        "name": "F. H. Varley, Flower of the Staghorn Sumach"
       },
       {
         "@id": "https://earthlyhours.com/id/i-0144/",

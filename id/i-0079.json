@@ -81,14 +81,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0072/",
-        "id": "r-0072",
-        "name": "Grace Greylock Niles, “Bog-Trotting for Orchids”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0080/",
         "id": "i-0080",
         "name": "C. S. Young, “ Cypripedium acaule ,” from All of Nature’s Fashions in Lady’s Slippers for the Northern …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0072/",
+        "id": "r-0072",
+        "name": "Grace Greylock Niles, “Bog-Trotting for Orchids”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0073/",
@@ -96,14 +96,14 @@
         "name": "F. Desbois, “Cypripedium de pleine terre”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0081/",
-        "id": "i-0081",
-        "name": "Grace Greylock Niles, “ The Pink Moccasin-Flower - The Stemless Lady’s Slipper ,” from Grace Greylock Niles …"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0074/",
         "id": "r-0074",
         "name": "C. S. Young, “Fashion Five. Cypripedium acaule, Stemless Lady’s Slipper”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0081/",
+        "id": "i-0081",
+        "name": "Grace Greylock Niles, “ The Pink Moccasin-Flower - The Stemless Lady’s Slipper ,” from Grace Greylock Niles …"
       }
     ]
   },

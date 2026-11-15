@@ -62,14 +62,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0046/",
-        "id": "r-0046",
-        "name": "Johann Wolfgang von Goethe, “In Honour of Mr. Howard”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0046/",
         "id": "i-0046",
         "name": "“Nimbostratus,” from International Atlas of Clouds and of States of the Sky (Paris …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0046/",
+        "id": "r-0046",
+        "name": "Johann Wolfgang von Goethe, “In Honour of Mr. Howard”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0047/",

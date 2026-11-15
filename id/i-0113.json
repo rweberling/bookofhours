@@ -59,14 +59,14 @@
     },
     "alongside": [
       {
-        "@id": "https://earthlyhours.com/id/r-0096/",
-        "id": "r-0096",
-        "name": "Sylvia Plath, “Fiesta Melons”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0114/",
         "id": "i-0114",
         "name": "“ Images of watermelon drawn from approx. 1385 to 1395 .” Harry S. Paris, et al. “ …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0096/",
+        "id": "r-0096",
+        "name": "Sylvia Plath, “Fiesta Melons”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0097/",

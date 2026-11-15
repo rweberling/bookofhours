@@ -77,24 +77,24 @@
         "name": "Mycobacterium vaccae"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0065/",
-        "id": "r-0065",
-        "name": "Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0071/",
         "id": "i-0071",
         "name": "Jenifer Wightman, Winogradsky Rothko"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0072/",
-        "id": "i-0072",
-        "name": "Elisabeth Rodríguez-Güell, Gemma Agustí, Mercè Corominas, Pere-Joan Cardona, Isidre Casals, Teodor Parella, Marco-Antonio Sempere, Marina Luquin and Esther Julián, “Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) …"
+        "@id": "https://earthlyhours.com/id/r-0065/",
+        "id": "r-0065",
+        "name": "Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0067/",
         "id": "r-0067",
         "name": "Charles L. Raison, Christopher A. Lowry, Graham A. W. Rook, “Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0072/",
+        "id": "i-0072",
+        "name": "Elisabeth Rodríguez-Güell, Gemma Agustí, Mercè Corominas, Pere-Joan Cardona, Isidre Casals, Teodor Parella, Marco-Antonio Sempere, Marina Luquin and Esther Julián, “Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) …"
       }
     ]
   },

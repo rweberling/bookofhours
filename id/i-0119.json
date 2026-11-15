@@ -82,14 +82,14 @@
         "name": "Piet Mondrian, Field with Oak Trees at Dusk"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0098/",
-        "id": "r-0098",
-        "name": "Susan Fenimore Cooper, “Saturday, 28th [June]—Passed the afternoon in the woods.”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0117/",
         "id": "i-0117",
         "name": "Elbert L. Little Jr., “ Map 180-E. northern red oak, Quercus rubra L .” Elbert L. Little, Jr. Atlas of United …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0098/",
+        "id": "r-0098",
+        "name": "Susan Fenimore Cooper, “Saturday, 28th [June]—Passed the afternoon in the woods.”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0099/",
@@ -97,14 +97,14 @@
         "name": "Francis George Heath, “Oak Antiquity”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0118/",
-        "id": "i-0118",
-        "name": "Mark Catesby, “ Red Oak and The Pigeon of Passage .” Mark Catesby. The Natural History of Carolina …"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0100/",
         "id": "r-0100",
         "name": "James George Frazer, “Tree-Worship; The Worship of the Oak”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0118/",
+        "id": "i-0118",
+        "name": "Mark Catesby, “ Red Oak and The Pigeon of Passage .” Mark Catesby. The Natural History of Carolina …"
       }
     ]
   },

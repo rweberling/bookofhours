@@ -90,14 +90,14 @@
         "name": "William C. Barry, “The Lilac”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0069/",
-        "id": "i-0069",
-        "name": "Flower Fancies: Calendar with Text; Depicting Lilacs"
-      },
-      {
         "@id": "https://earthlyhours.com/id/r-0064/",
         "id": "r-0064",
         "name": "Ronald Firbank, “Sorrow in Sunlight”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0069/",
+        "id": "i-0069",
+        "name": "Flower Fancies: Calendar with Text; Depicting Lilacs"
       }
     ]
   },

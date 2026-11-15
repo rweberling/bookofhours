@@ -79,24 +79,24 @@
         "name": "Royal Charles Steadman, Asimina triloba"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0106/",
-        "id": "r-0106",
-        "name": "Jean Anthelme Brillat-Savarin, “Gastronomy as a Fine Art; or, The Science of Good Living”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0139/",
         "id": "i-0139",
         "name": "John Abbot, Papilio Ajax. Annona Palustris"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0140/",
-        "id": "i-0140",
-        "name": "Edward Edmondson, Jr., Still Life with Pawpaws"
+        "@id": "https://earthlyhours.com/id/r-0106/",
+        "id": "r-0106",
+        "name": "Jean Anthelme Brillat-Savarin, “Gastronomy as a Fine Art; or, The Science of Good Living”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0108/",
         "id": "r-0108",
         "name": "A. C. Whitford, “ANONACEAE, D. C. (Custard-Apple Family)”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0140/",
+        "id": "i-0140",
+        "name": "Edward Edmondson, Jr., Still Life with Pawpaws"
       }
     ]
   },

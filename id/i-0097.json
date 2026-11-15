@@ -71,14 +71,14 @@
         "name": "J. Marion Shull, Vaccinium corymbosum: Stanley"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0083/",
-        "id": "r-0083",
-        "name": "Joseph J. White, Inc., “Whitesbog Blueberries”"
-      },
-      {
         "@id": "https://earthlyhours.com/id/i-0096/",
         "id": "i-0096",
         "name": "Frederick V. Coville, “ Plate XII. Blueberry Propagation Frames. ” Frederick V. Coville, Directions for …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0083/",
+        "id": "r-0083",
+        "name": "Joseph J. White, Inc., “Whitesbog Blueberries”"
       },
       {
         "@id": "https://earthlyhours.com/id/r-0084/",
