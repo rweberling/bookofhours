@@ -19,6 +19,13 @@
     "i-0036"
   ],
   "related": {
+    "seasons": [
+      {
+        "@id": "https://earthlyhours.com/id/winter/",
+        "id": "winter",
+        "name": "Winter"
+      }
+    ],
     "posts": [
       {
         "id": "lt-0001",

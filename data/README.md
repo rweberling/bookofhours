@@ -38,7 +38,7 @@ Every record has an `id`, and most share a few fields:
   reading's or image's subjects (`about`, with the scientific name and
   Wikidata), its `edition`, its `post` or `day` (with the page's URL) and
   the pieces shown `alongside` it there; an edition's `citedBy`; a
-  subject's `posts`, `days` and `records`. Each term in `vocab.json` has
+  subject's `seasons`, `posts`, `days` and `records`. Each term in `vocab.json` has
   its page there too (`id/hush/`, `id/autumn/`): a watch or weather
   condition lists the records tagged with it; a season lists its species
   and phenomena (its essays' and day cards' subjects, in the order of its

@@ -20,6 +20,13 @@
     "i-0147"
   ],
   "related": {
+    "seasons": [
+      {
+        "@id": "https://earthlyhours.com/id/autumn/",
+        "id": "autumn",
+        "name": "Autumn"
+      }
+    ],
     "posts": [
       {
         "id": "lt-0031",

@@ -302,6 +302,11 @@ class Collection:
                 if rid in self.by_id and rid not in seen:
                     seen.append(rid)
 
+    def seasons_of(self, sid):
+        """The seasons a subject belongs to (its essays' and day cards'), in
+        the order of the book's year."""
+        return [t for t in ('winter', 'spring', 'summer', 'autumn') if sid in self.season_subjects.get(t, [])]
+
     # How a record is named in lists.
     def name(self, rid):
         if rid in self.by_id:
@@ -602,9 +607,11 @@ def subject_page(col, sid):
     if s.get('inaturalist'):
         ids.append(ext(f'https://www.inaturalist.org/taxa/{s["inaturalist"]}', f'iNaturalist: {s["inaturalist"]}'))
     latin = s.get('scientific') or s.get('latin')
+    seasons = ', '.join(link(x, col.name(x)) for x in col.seasons_of(sid))
     fields = dl([('Name', escape(s['name'])), ('Scientific name' if s.get('scientific') else 'Latin name',
                                                 f'<em>{escape(latin)}</em>' if latin else ''),
-                 ('Rank', escape(s.get('rank') or '')), ('Identifiers', '<br>'.join(ids))])
+                 ('Rank', escape(s.get('rank') or '')), ('Season', seasons),
+                 ('Identifiers', '<br>'.join(ids))])
     posts = [e for e in col.posts.values() if e.get('subject') == sid]
     post_links = '<br>'.join(f'<a href="/{e["page"]}">{escape(e["title"])}</a>' if e.get('page') else escape(e['title'])
                              for e in posts)
@@ -769,7 +776,8 @@ def related_json(col, rid):
             return {'subjects': [ref_json(col, x) for x in col.season_subjects.get(rid, [])]}
         return {'records': [ref_json(col, x) for x in col.tagged.get(rid, [])]}
     if rid in col.subjects:
-        return {'posts': [post_json(e) for e in col.posts.values() if e.get('subject') == rid],
+        return {'seasons': [ref_json(col, x) for x in col.seasons_of(rid)],
+                'posts': [post_json(e) for e in col.posts.values() if e.get('subject') == rid],
                 'days': [day_json(d) for d in col.days if d.get('subject') == rid],
                 'records': [ref_json(col, x) for x in col.about.get(rid, [])]}
     return {}

@@ -21,6 +21,13 @@
     "i-0094"
   ],
   "related": {
+    "seasons": [
+      {
+        "@id": "https://earthlyhours.com/id/summer/",
+        "id": "summer",
+        "name": "Summer"
+      }
+    ],
     "posts": [
       {
         "id": "lt-0020",

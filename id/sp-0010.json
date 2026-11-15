@@ -21,6 +21,13 @@
     "i-0069"
   ],
   "related": {
+    "seasons": [
+      {
+        "@id": "https://earthlyhours.com/id/spring/",
+        "id": "spring",
+        "name": "Spring"
+      }
+    ],
     "posts": [
       {
         "id": "lt-0012",
