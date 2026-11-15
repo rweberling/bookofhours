@@ -8,69 +8,17 @@
     2
   ],
   "vocabulary": "seasons",
-  "records": [
-    "r-0025",
-    "r-0037",
-    "r-0038",
-    "r-0121",
-    "r-0129",
-    "i-0035",
-    "i-0036",
-    "i-0127",
-    "i-0128",
-    "i-0160"
+  "subjects": [
+    "sp-0001"
   ],
   "related": {
-    "records": [
+    "subjects": [
       {
-        "@id": "https://earthlyhours.com/id/r-0025/",
-        "id": "r-0025",
-        "name": "Emily Dickinson, “There’s a certain Slant of light”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0037/",
-        "id": "r-0037",
-        "name": "William Hamilton Gibson, “The Witch Hazel Bombardment”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0038/",
-        "id": "r-0038",
-        "name": "Friedrich Nietzsche, “Schopenhauer as Educator”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0121/",
-        "id": "r-0121",
-        "name": "Samuel Taylor Coleridge, “Frost at Midnight”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0129/",
-        "id": "r-0129",
-        "name": "Ralph Waldo Emerson, “The Snow Storm”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0035/",
-        "id": "i-0035",
-        "name": "J. Francis Macbride, From J. Francis Macbride, Autumn Flowers and Fruits (Chicago: Field Museum of Natural …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0036/",
-        "id": "i-0036",
-        "name": "Richard E. Weaver, Leaves of the Witch Hazel Family - 1/3 life size , from Richard E. Weaver, “ The Witch …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0127/",
-        "id": "i-0127",
-        "name": "Wilson Alwyn Bentley, Untitled (Snowflake)"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0128/",
-        "id": "i-0128",
-        "name": "Wilson Alwyn Bentley, Plate XIX"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0160/",
-        "id": "i-0160",
-        "name": "John Henry Twachtman, Icebound"
+        "@id": "https://earthlyhours.com/id/sp-0001/",
+        "id": "sp-0001",
+        "name": "Witch Hazel",
+        "scientific": "Hamamelis virginiana",
+        "wikidata": "Q913129"
       }
     ]
   },

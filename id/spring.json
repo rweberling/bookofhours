@@ -8,417 +8,104 @@
     5
   ],
   "vocabulary": "seasons",
-  "records": [
-    "r-0009",
-    "r-0039",
-    "r-0040",
-    "r-0041",
-    "r-0042",
-    "r-0043",
-    "r-0044",
-    "r-0045",
-    "r-0046",
-    "r-0047",
-    "r-0048",
-    "r-0049",
-    "r-0050",
-    "r-0051",
-    "r-0052",
-    "r-0053",
-    "r-0054",
-    "r-0055",
-    "r-0056",
-    "r-0057",
-    "r-0058",
-    "r-0059",
-    "r-0060",
-    "r-0061",
-    "r-0062",
-    "r-0063",
-    "r-0064",
-    "r-0065",
-    "r-0066",
-    "r-0067",
-    "i-0037",
-    "i-0038",
-    "i-0039",
-    "i-0040",
-    "i-0041",
-    "i-0042",
-    "i-0043",
-    "i-0044",
-    "i-0045",
-    "i-0046",
-    "i-0047",
-    "i-0048",
-    "i-0049",
-    "i-0050",
-    "i-0051",
-    "i-0052",
-    "i-0053",
-    "i-0054",
-    "i-0055",
-    "i-0056",
-    "i-0057",
-    "i-0058",
-    "i-0059",
-    "i-0060",
-    "i-0061",
-    "i-0062",
-    "i-0063",
-    "i-0064",
-    "i-0065",
-    "i-0066",
-    "i-0067",
-    "i-0068",
-    "i-0069",
-    "i-0070",
-    "i-0071",
-    "i-0072",
-    "i-0123",
-    "i-0124"
+  "subjects": [
+    "sp-0002",
+    "sp-0003",
+    "sp-0004",
+    "ph-0001",
+    "sp-0005",
+    "sp-0006",
+    "sp-0007",
+    "sp-0008",
+    "sp-0009",
+    "ph-0002",
+    "sp-0010",
+    "sp-0011"
   ],
   "related": {
-    "records": [
+    "subjects": [
       {
-        "@id": "https://earthlyhours.com/id/r-0009/",
-        "id": "r-0009",
-        "name": "John Burroughs, “Wake-Robin”"
+        "@id": "https://earthlyhours.com/id/sp-0002/",
+        "id": "sp-0002",
+        "name": "American Robin",
+        "scientific": "Turdus migratorius",
+        "wikidata": "Q460967"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0039/",
-        "id": "r-0039",
-        "name": "Emily Dickinson, “The Robin is the One”"
+        "@id": "https://earthlyhours.com/id/sp-0003/",
+        "id": "sp-0003",
+        "name": "Sugar Maple",
+        "scientific": "Acer saccharum",
+        "wikidata": "Q214733"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0040/",
-        "id": "r-0040",
-        "name": "Robert Ridgway, “Family Turdidae. The Thrushes”"
+        "@id": "https://earthlyhours.com/id/sp-0004/",
+        "id": "sp-0004",
+        "name": "Paper Birch",
+        "scientific": "Betula papyrifera",
+        "wikidata": "Q76971"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0041/",
-        "id": "r-0041",
-        "name": "E. Jones, “Address”"
+        "@id": "https://earthlyhours.com/id/ph-0001/",
+        "id": "ph-0001",
+        "name": "Rain Clouds",
+        "scientific": "Nimbostratus praecipitatio",
+        "wikidata": "Q202278"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0042/",
-        "id": "r-0042",
-        "name": "Walter H. Crockett, “Vermont Maple Sugar”"
+        "@id": "https://earthlyhours.com/id/sp-0005/",
+        "id": "sp-0005",
+        "name": "Dutch Crocus",
+        "scientific": "Crocus vernus",
+        "wikidata": "Q165077"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0043/",
-        "id": "r-0043",
-        "name": "Annika Hansteen-Izora, “Time is Water”"
+        "@id": "https://earthlyhours.com/id/sp-0006/",
+        "id": "sp-0006",
+        "name": "Ostrich Fern",
+        "scientific": "Matteuccia struthiopteris",
+        "wikidata": "Q1130386"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0044/",
-        "id": "r-0044",
-        "name": "Gifford Pinchot, “Silvical Leaflet 38: Paper Birch”"
+        "@id": "https://earthlyhours.com/id/sp-0007/",
+        "id": "sp-0007",
+        "name": "Eastern Cottontail",
+        "scientific": "Sylvilagus floridanus",
+        "wikidata": "Q774716"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0045/",
-        "id": "r-0045",
-        "name": "Robert Frost, “Birches”"
+        "@id": "https://earthlyhours.com/id/sp-0008/",
+        "id": "sp-0008",
+        "name": "Great Mullein",
+        "scientific": "Verbascum thapsus",
+        "wikidata": "Q160095"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0046/",
-        "id": "r-0046",
-        "name": "Johann Wolfgang von Goethe, “In Honour of Mr. Howard”"
+        "@id": "https://earthlyhours.com/id/sp-0009/",
+        "id": "sp-0009",
+        "name": "Sheet Moss",
+        "scientific": "Hypnum imponens",
+        "wikidata": "Q4329447"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0047/",
-        "id": "r-0047",
-        "name": "Jenny Odell, “What Does It Mean to Watch Clouds? What Can It Mean?”"
+        "@id": "https://earthlyhours.com/id/ph-0002/",
+        "id": "ph-0002",
+        "name": "Cambridge Argillite",
+        "scientific": "Argillita cantabrigiensis"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0048/",
-        "id": "r-0048",
-        "name": "William Herbert, “A History of the Species of Crocus”"
+        "@id": "https://earthlyhours.com/id/sp-0010/",
+        "id": "sp-0010",
+        "name": "Common Lilac",
+        "scientific": "Syringa vulgaris",
+        "wikidata": "Q6565319"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0049/",
-        "id": "r-0049",
-        "name": "Guillaume Barth, “Crocus sativus, fleur du bonheur”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0050/",
-        "id": "r-0050",
-        "name": "Martin Heidegger, “Introduction to Metaphysics”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0051/",
-        "id": "r-0051",
-        "name": "Douglas Houghton Campbell, “The Development of the Ostrich Fern”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0052/",
-        "id": "r-0052",
-        "name": "Zora Neale Hurston, “Mules and Men”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0053/",
-        "id": "r-0053",
-        "name": "Ernest Thompson Seton, “Lives of Game Animals”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0054/",
-        "id": "r-0054",
-        "name": "Ashia Ajani, Amirio Freeman, “Ashia Ajani Mulls Over Mullein”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0055/",
-        "id": "r-0055",
-        "name": "“The Old Herb Doctor: His Secrets and Treatments”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0056/",
-        "id": "r-0056",
-        "name": "Hildegard of Bingen, “Physica”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0057/",
-        "id": "r-0057",
-        "name": "Hildegard of Bingen, “334. Letter to Secular People”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0058/",
-        "id": "r-0058",
-        "name": "Michael Marder, Edward S. Casey, “Plants in Place: A Phenomenology of the Vegetal”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0059/",
-        "id": "r-0059",
-        "name": "“Mosses of Maine: A Brief Guide”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0060/",
-        "id": "r-0060",
-        "name": "Ludwig Wittgenstein, “Philosophical Investigations”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0061/",
-        "id": "r-0061",
-        "name": "James Freeman Dana, Samuel L. Dana, “Argillaceous Slate”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0062/",
-        "id": "r-0062",
-        "name": "Amy Lowell, “Lilacs”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0063/",
-        "id": "r-0063",
-        "name": "William C. Barry, “The Lilac”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0064/",
-        "id": "r-0064",
-        "name": "Ronald Firbank, “Sorrow in Sunlight”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0065/",
-        "id": "r-0065",
-        "name": "Jenifer Wightman, “Winogradsky Rothko: Bacterial Ecosystem as Pastoral Landscape”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0066/",
-        "id": "r-0066",
-        "name": "Graham A. W. Rook, “The Old Friends Hypothesis: Evolution, Immunoregulation and Essential Microbial Inputs”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0067/",
-        "id": "r-0067",
-        "name": "Charles L. Raison, Christopher A. Lowry, Graham A. W. Rook, “Inflammation, Sanitation, and Consternation: Loss of Contact with Coevolved, Tolerogenic Microorganisms and the Pathophysiology and Treatment of Major Depression”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0037/",
-        "id": "i-0037",
-        "name": "National Audubon Society, American Robin, March 5–12"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0038/",
-        "id": "i-0038",
-        "name": "Emily Dickinson, The Robin is the One"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0039/",
-        "id": "i-0039",
-        "name": "Howard Saunders, “ The Redbreast ,” or European Robin, from Howard Saunders (1835-1907), An Illustrated …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0040/",
-        "id": "i-0040",
-        "name": "Walter H. Crockett, “ Tapping the Grove, Boiling the Sap ,” from Crockett, How Vermont Maple Sugar is Made …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0041/",
-        "id": "i-0041",
-        "name": "United States Forest Service, “ Natural range of sugar maple ,” from Sugar Maple: An American Wood (Washington: Dept. …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0042/",
-        "id": "i-0042",
-        "name": "Ernest Lawson, New England Birches"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0043/",
-        "id": "i-0043",
-        "name": "United States Forest Service, “ Paper Birch (Betula papyrifera) Botanical and Commercial Range ,” from Birch , American …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0044/",
-        "id": "i-0044",
-        "name": "Birch and Evergreens (Gallitzin, PA: Nordstrom Nurseries, 1951). From the Henry G. …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0045/",
-        "id": "i-0045",
-        "name": "“Alto-Stratus,” from Atlas International Des Nuages (Paris, France: Gauthier-Villars et …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0046/",
-        "id": "i-0046",
-        "name": "“Nimbostratus,” from International Atlas of Clouds and of States of the Sky (Paris …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0047/",
-        "id": "i-0047",
-        "name": "World Meteorological Organization, “Nimbostratus,” from International Cloud Atlas, Volume II (Geneva, Switzerland: World …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0048/",
-        "id": "i-0048",
-        "name": "The Saffron Gatherers"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0049/",
-        "id": "i-0049",
-        "name": "E. A. Bowles, “ The Parts of Crocus and Colchicum Flowers ,” from E. A. Bowles, A Handbook of Crocus …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0050/",
-        "id": "i-0050",
-        "name": "George Maw, “ Geographical Distribution of the Genus Crocus ,” from George Maw, A Monograph of the …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0051/",
-        "id": "i-0051",
-        "name": "Adolph Baumbach, “ The Crocus ,” from Adolph Baumbach, The Floral Cyclus: 12 Simple Instructive Melodies …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0052/",
-        "id": "i-0052",
-        "name": "Heidi Brickell, Safe Euphoric Ara with Hine Kōrako"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0053/",
-        "id": "i-0053",
-        "name": "George Henry Tilton, “ Ostrich Fern. Sterile Fronds (New Hampshire) ,” from George Henry Tilton, The Fern …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0054/",
-        "id": "i-0054",
-        "name": "Douglas Houghton Campbell, “ Development of the Ostrich Fern ,” Plate 6 from The Development of the Ostrich Fern …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0055/",
-        "id": "i-0055",
-        "name": "John James Audubon, Lepus sylvaticus, Grey Rabbit"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0056/",
-        "id": "i-0056",
-        "name": "E. W. Nelson, “ Distribution in North America of rabbits of the genus Sylvilagus ,” from E. W. Nelson …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0057/",
-        "id": "i-0057",
-        "name": "E. W. Nelson, “ Skulls of Sylvilagus ,” from E. W. Nelson, North American Fauna, No. 29: The Rabbits of …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0058/",
-        "id": "i-0058",
-        "name": "J. Curtis, Common Mullein (Verbascum thapsus) with an Associated Moth and Its Anatomical Segments"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0059/",
-        "id": "i-0059",
-        "name": "“ Common Mullein. ” from The Book of Wild Flowers: An Introduction to the Ways of Plant …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0060/",
-        "id": "i-0060",
-        "name": "Virginia Albert, Louise A. Field, Peter Rabbit and His Pa , illustr. Virginia Albert (Chicago, Illinois …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0061/",
-        "id": "i-0061",
-        "name": "F. E. Tripp, “ Plate XXXIII. HYPNEAE (continued) ,” from F.E. Tripp, British Mosses: Their Homes …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0062/",
-        "id": "i-0062",
-        "name": "Mary V. Thayer, “ Mosses ,” from A. J. Grout, Mosses With Hand-lens And Microscope: a Non-technical …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0063/",
-        "id": "i-0063",
-        "name": "“ Structure discontinuities, Porter Square pilot tunnel ,” from D.E. Thompson et al. …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0064/",
-        "id": "i-0064",
-        "name": "Alfred Wegener, “ Reconstruction of the continental blocks for the Great Ice Age ,” from Alfred Wegener …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0065/",
-        "id": "i-0065",
-        "name": "View of Cambridge Argillite in the Boston Harbor Islands, from Peter J. Thompson et al. …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0066/",
-        "id": "i-0066",
-        "name": "U.S. Geological Survey, Screenshot from The National Geologic Map Database (U.S. Department of the Interior and …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0067/",
-        "id": "i-0067",
-        "name": "W. D. & H. O. Wills, Lilac"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0068/",
-        "id": "i-0068",
-        "name": "Société Française des Chrysanthémistes and René Oberthür, “ Lilas ,” from Répertoire de couleurs pour aider à la détermination des couleurs des …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0069/",
-        "id": "i-0069",
-        "name": "Flower Fancies: Calendar with Text; Depicting Lilacs"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0070/",
-        "id": "i-0070",
-        "name": "Mycobacterium vaccae"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0071/",
-        "id": "i-0071",
-        "name": "Jenifer Wightman, Winogradsky Rothko"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0072/",
-        "id": "i-0072",
-        "name": "Elisabeth Rodríguez-Güell, Gemma Agustí, Mercè Corominas, Pere-Joan Cardona, Isidre Casals, Teodor Parella, Marco-Antonio Sempere, Marina Luquin and Esther Julián, “Scanning electron microscopy analysis of colony variants of M. vaccae. (A) smooth; (B) …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0123/",
-        "id": "i-0123",
-        "name": "National Audubon Society, American Robin: Annual Migration"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0124/",
-        "id": "i-0124",
-        "name": "O Nobilissima Viriditas"
+        "@id": "https://earthlyhours.com/id/sp-0011/",
+        "id": "sp-0011",
+        "name": "Living Soil",
+        "scientific": "Mycobacterium vaccae",
+        "wikidata": "Q655983"
       }
     ]
   },

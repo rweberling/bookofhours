@@ -8,375 +8,96 @@
     11
   ],
   "vocabulary": "seasons",
-  "records": [
-    "r-0098",
-    "r-0099",
-    "r-0100",
-    "r-0101",
-    "r-0102",
-    "r-0103",
-    "r-0106",
-    "r-0107",
-    "r-0108",
-    "r-0109",
-    "r-0110",
-    "r-0111",
-    "r-0112",
-    "r-0113",
-    "r-0114",
-    "r-0115",
-    "r-0116",
-    "r-0117",
-    "r-0118",
-    "r-0122",
-    "r-0124",
-    "r-0125",
-    "r-0126",
-    "r-0131",
-    "r-0132",
-    "r-0133",
-    "r-0134",
-    "r-0135",
-    "r-0136",
-    "i-0022",
-    "i-0028",
-    "i-0116",
-    "i-0117",
-    "i-0118",
-    "i-0119",
-    "i-0120",
-    "i-0121",
-    "i-0122",
-    "i-0129",
-    "i-0138",
-    "i-0139",
-    "i-0140",
-    "i-0141",
-    "i-0142",
-    "i-0143",
-    "i-0144",
-    "i-0145",
-    "i-0146",
-    "i-0147",
-    "i-0148",
-    "i-0149",
-    "i-0150",
-    "i-0154",
-    "i-0155",
-    "i-0156",
-    "i-0162",
-    "i-0163",
-    "i-0164",
-    "i-0165",
-    "i-0166",
-    "i-0167"
+  "subjects": [
+    "sp-0023",
+    "sp-0024",
+    "sp-0025",
+    "sp-0026",
+    "sp-0027",
+    "ph-0006",
+    "sp-0028",
+    "sp-0032",
+    "sp-0029",
+    "sp-0030",
+    "sp-0031"
   ],
   "related": {
-    "records": [
+    "subjects": [
       {
-        "@id": "https://earthlyhours.com/id/r-0098/",
-        "id": "r-0098",
-        "name": "Susan Fenimore Cooper, “Saturday, 28th [June]—Passed the afternoon in the woods.”"
+        "@id": "https://earthlyhours.com/id/sp-0023/",
+        "id": "sp-0023",
+        "name": "Northern Red Oak",
+        "scientific": "Quercus rubra",
+        "wikidata": "Q147525"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0099/",
-        "id": "r-0099",
-        "name": "Francis George Heath, “Oak Antiquity”"
+        "@id": "https://earthlyhours.com/id/sp-0024/",
+        "id": "sp-0024",
+        "name": "Shagbark Hickory",
+        "scientific": "Carya ovata",
+        "wikidata": "Q2601238"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0100/",
-        "id": "r-0100",
-        "name": "James George Frazer, “Tree-Worship; The Worship of the Oak”"
+        "@id": "https://earthlyhours.com/id/sp-0025/",
+        "id": "sp-0025",
+        "name": "Common Pawpaw",
+        "scientific": "Asimina triloba",
+        "wikidata": "Q948827"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0101/",
-        "id": "r-0101",
-        "name": "Carl Sandburg, “Shag-Bark Hickory”"
+        "@id": "https://earthlyhours.com/id/sp-0026/",
+        "id": "sp-0026",
+        "name": "Staghorn Sumac",
+        "scientific": "Rhus typhina",
+        "wikidata": "Q148986"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0102/",
-        "id": "r-0102",
-        "name": "Vladimir Nabokov, “Canto One”"
+        "@id": "https://earthlyhours.com/id/sp-0027/",
+        "id": "sp-0027",
+        "name": "Ghost Pipe",
+        "scientific": "Monotropa uniflora",
+        "wikidata": "Q1156848"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0103/",
-        "id": "r-0103",
-        "name": "Charles Sprague Sargent, “Shell-Bark Hickory. Shag-Bark Hickory.”"
+        "@id": "https://earthlyhours.com/id/ph-0006/",
+        "id": "ph-0006",
+        "name": "First Frost",
+        "scientific": "Prima pruina"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0106/",
-        "id": "r-0106",
-        "name": "Jean Anthelme Brillat-Savarin, “Gastronomy as a Fine Art; or, The Science of Good Living”"
+        "@id": "https://earthlyhours.com/id/sp-0028/",
+        "id": "sp-0028",
+        "name": "Wintergreen",
+        "scientific": "Gaultheria procumbens",
+        "wikidata": "Q386770"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0107/",
-        "id": "r-0107",
-        "name": "Daniel H. Janzen, Paul S. Martin, “Neotropical Anachronisms: The Fruits the Gomphotheres Ate”"
+        "@id": "https://earthlyhours.com/id/sp-0032/",
+        "id": "sp-0032",
+        "name": "Eastern Grey Squirrel",
+        "scientific": "Sciurus carolinensis",
+        "wikidata": "Q468500"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0108/",
-        "id": "r-0108",
-        "name": "A. C. Whitford, “ANONACEAE, D. C. (Custard-Apple Family)”"
+        "@id": "https://earthlyhours.com/id/sp-0029/",
+        "id": "sp-0029",
+        "name": "Wild Turkey",
+        "scientific": "Meleagris gallopavo",
+        "wikidata": "Q26844"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0109/",
-        "id": "r-0109",
-        "name": "Cole Swanson, “Among the Drupes (Elegy for a Wasteland)”"
+        "@id": "https://earthlyhours.com/id/sp-0030/",
+        "id": "sp-0030",
+        "name": "American Cranberry",
+        "scientific": "Vaccinium macrocarpon",
+        "wikidata": "Q149397"
       },
       {
-        "@id": "https://earthlyhours.com/id/r-0110/",
-        "id": "r-0110",
-        "name": "Katharine Lee Bates, “Playmates”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0111/",
-        "id": "r-0111",
-        "name": "J. Francis Macbride, “Sumach (Rhus species)”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0112/",
-        "id": "r-0112",
-        "name": "Emily Dickinson, “The Spirit”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0113/",
-        "id": "r-0113",
-        "name": "Merlin Sheldrake, “Entangled Life: How Fungi Make Our World, Change Our Minds, and Shape Our Future”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0114/",
-        "id": "r-0114",
-        "name": "William Cullen Bryant, “The Death of the Flowers”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0115/",
-        "id": "r-0115",
-        "name": "Hannah Arendt, “The Human Condition”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0116/",
-        "id": "r-0116",
-        "name": "Homer C. Sampson, “Chemical Changes Accompanying Abscission in Coleus Blumei”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0117/",
-        "id": "r-0117",
-        "name": "Thomas Hardy, “The Darkling Thrush”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0118/",
-        "id": "r-0118",
-        "name": "Li Shangyin, “A Note on a Rainy Night to a Friend in the North”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0122/",
-        "id": "r-0122",
-        "name": "William Charles Wells, “An Essay on Dew”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0124/",
-        "id": "r-0124",
-        "name": "Jacob Bigelow, “Gaultheria procumbens. Partridge Berry”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0125/",
-        "id": "r-0125",
-        "name": "Henry David Thoreau, “November 19, 1850”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0126/",
-        "id": "r-0126",
-        "name": "Linda M. Sweeting, “Light Your Candy”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0131/",
-        "id": "r-0131",
-        "name": "Benjamin Franklin, “Letter to Sarah Bache”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0132/",
-        "id": "r-0132",
-        "name": "Roger Williams, “Of the Earth, and the Fruits thereof”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0133/",
-        "id": "r-0133",
-        "name": "Henry David Thoreau, “November 25, 1858”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0134/",
-        "id": "r-0134",
-        "name": "“r-0134”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0135/",
-        "id": "r-0135",
-        "name": "“r-0135”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/r-0136/",
-        "id": "r-0136",
-        "name": "“r-0136”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0022/",
-        "id": "i-0022",
-        "name": "Claude Monet, Stacks of Wheat (End of Summer)"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0028/",
-        "id": "i-0028",
-        "name": "Paul Cézanne, The Basket of Apples"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0116/",
-        "id": "i-0116",
-        "name": "Piet Mondrian, Field with Oak Trees at Dusk"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0117/",
-        "id": "i-0117",
-        "name": "Elbert L. Little Jr., “ Map 180-E. northern red oak, Quercus rubra L .” Elbert L. Little, Jr. Atlas of United …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0118/",
-        "id": "i-0118",
-        "name": "Mark Catesby, “ Red Oak and The Pigeon of Passage .” Mark Catesby. The Natural History of Carolina …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0119/",
-        "id": "i-0119",
-        "name": "P. J. Redouté, “ Red Oak. Quercus rubra . ” From François André Michaux. The North American sylva, or A …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0120/",
-        "id": "i-0120",
-        "name": "Bertha E. Jaques, Young Leaves and Blossoms of Hickory Tree"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0121/",
-        "id": "i-0121",
-        "name": "Sophia Thoreau, Inscribed hickory leaves in memory of her brother, Henry"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0122/",
-        "id": "i-0122",
-        "name": "C. E. Faxon, “ Hicoria ovata .” From Charles Sprague Sargent. The Silva of North America, Vol. VII …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0129/",
-        "id": "i-0129",
-        "name": "Katsushika Hokusai, South Wind, Clear Sky (Gaifū kaisei)"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0138/",
-        "id": "i-0138",
-        "name": "Royal Charles Steadman, Asimina triloba"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0139/",
-        "id": "i-0139",
-        "name": "John Abbot, Papilio Ajax. Annona Palustris"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0140/",
-        "id": "i-0140",
-        "name": "Edward Edmondson, Jr., Still Life with Pawpaws"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0141/",
-        "id": "i-0141",
-        "name": "Emil Carlsen, Staghorn Sumac"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0142/",
-        "id": "i-0142",
-        "name": "Lorin L. Dame and Henry Brooks, Rhus Typhina"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0143/",
-        "id": "i-0143",
-        "name": "F. H. Varley, Flower of the Staghorn Sumach"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0144/",
-        "id": "i-0144",
-        "name": "Rhus typhina L."
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0145/",
-        "id": "i-0145",
-        "name": "Mary Vaux Walcott, Indian Pipe (Monotropa uniflora)"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0146/",
-        "id": "i-0146",
-        "name": "Mabel Loomis Todd, [Indian pipes]"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0147/",
-        "id": "i-0147",
-        "name": "John Torrey, Monotropa uniflora. Indian pipe"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0148/",
-        "id": "i-0148",
-        "name": "Wilson Alwyn Bentley, [Frost]"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0149/",
-        "id": "i-0149",
-        "name": "Francis George Heath, 1 to 10 Maple. 11 to 18 Spindle Tree"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0150/",
-        "id": "i-0150",
-        "name": "M. E. McCully, M. J. Canny and C. X. Huang, Fig. 1"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0154/",
-        "id": "i-0154",
-        "name": "Photograph of the emission of WintOGreen Lifesavers"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0155/",
-        "id": "i-0155",
-        "name": "David Blair, Gaultheria procumbens"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0156/",
-        "id": "i-0156",
-        "name": "Jacob Bigelow, Gaultheria procumbens"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0162/",
-        "id": "i-0162",
-        "name": "James McNeill Whistler, Turkeys"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0163/",
-        "id": "i-0163",
-        "name": "Allen & Ginter, Cranberry, from the Fruits series (N12) for Allen & Ginter Cigarettes Brands"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0164/",
-        "id": "i-0164",
-        "name": "D. W. Moody, Prinos verticillatus (Winter Berry)"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0165/",
-        "id": "i-0165",
-        "name": "“ Of the Squirrel. ” From Edward Topsell. The History of Four-Footed Beasts and Serpents …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0166/",
-        "id": "i-0166",
-        "name": "“ Hi, Mister! Scramble a Nut? ” Laurence Freeman Peck. Harvard Lampoon 46.6 (December 17 …"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0167/",
-        "id": "i-0167",
-        "name": "Anonymous. Collection of geometric and perspective drawings executed in colors [ Sammlung …"
+        "@id": "https://earthlyhours.com/id/sp-0031/",
+        "id": "sp-0031",
+        "name": "Winterberry",
+        "scientific": "Ilex verticillata",
+        "wikidata": "Q3487324"
       }
     ]
   },

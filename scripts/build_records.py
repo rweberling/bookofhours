@@ -8,7 +8,8 @@ Each reading, image, edition, species and phenomenon gets a page at
 earthlyhours.com/id/<id>/ (id/r-0104/, id/e-0103/, id/sp-0001/), and the
 same record as data beside it, id/<id>.json. id/ itself lists them all.
 So does each term of the vocabularies (id/hush/, id/autumn/, id/frost/),
-listing the records tagged with it: a way through the catalogue by watch,
+listing the records tagged with it (a season, its species and
+phenomena instead): a way through the catalogue by watch,
 weather and season that leaves the Hours, Weather and Seasons pages to be
 reached as readers reach them (by the clock, or by wandering).
 These are the collection's catalogue: what each record says, where it
@@ -45,6 +46,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from datafile import creator_names, creators, load  # noqa: E402
 from build_shared import render as render_shared  # noqa: E402
+from weeks import _offset as weeks_offset, essay_day, season_of_week, week_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'id'
@@ -267,6 +269,24 @@ class Collection:
             for t in (tags.get('species') or []) + (tags.get('phenomena') or []):
                 self.about.setdefault(tag_id(t), []).append(r['id'])
         self.by_id = {r['id']: r for r in self.readings + self.images}
+        # Each season's subjects, in the order of the book's year: those of
+        # its essays and of the day cards in its weeks.
+        placed = {}
+        for season, items in lectio['seasons'].items():
+            for e in items:
+                if e.get('subject') and e.get('published'):
+                    m, d = (int(x) for x in essay_day(e).split('-'))
+                    placed.setdefault((season, e['subject']), weeks_offset(m, d))
+        for day in self.days:
+            m, d = (int(x) for x in day['date'].split('-'))
+            week = week_of(m, d)
+            season = season_of_week(week) if week else 'winter'
+            if day.get('subject'):
+                placed.setdefault((season, day['subject']), weeks_offset(m, d))
+        self.season_subjects = {}
+        for (season, sid), _ in sorted(placed.items(), key=lambda kv: kv[1]):
+            if sid in self.subjects:
+                self.season_subjects.setdefault(season, []).append(sid)
         self.tagged = {}
         for r in self.readings + self.images:
             for kind in ('hours', 'weather', 'seasons'):
@@ -619,14 +639,26 @@ def term_fields(kind, t):
     return [('Group', escape(t.get('group') or ''))]
 
 
+def subject_line(col, sid):
+    s = col.subjects[sid]
+    latin = s.get('scientific') or s.get('latin')
+    return link(sid, col.name(sid)) + (f' <em>{escape(latin)}</em>' if latin else '')
+
+
 def term_page(col, tid):
     kind, t = col.terms[tid]
-    ids = col.tagged.get(tid, [])
-    readings = '<br>'.join(link(x, col.name(x)) for x in ids if prefix(x) == 'r')
-    images = '<br>'.join(link(x, col.name(x)) for x in ids if prefix(x) == 'i')
     fields = dl([('Term', escape(t['label'])), ('Vocabulary', VOCABULARY[kind])] + term_fields(kind, t))
+    if kind == 'seasons':
+        # A season lists its species and phenomena, in the order of its weeks.
+        subjects = col.season_subjects.get(tid, [])
+        rows = [(label, '<br>'.join(subject_line(col, x) for x in subjects if prefix(x) == pre))
+                for label, pre in (('Species', 'sp'), ('Phenomena', 'ph'))]
+    else:
+        ids = col.tagged.get(tid, [])
+        rows = [(label, '<br>'.join(link(x, col.name(x)) for x in ids if prefix(x) == pre))
+                for label, pre in (('Readings', 'r'), ('Images', 'i'))]
     body = [section('The term', fields),
-            section('In the collection', dl([('Readings', readings), ('Images', images)])),
+            section('In the collection', dl(rows)),
             section('Cite this record', cite(col, tid, f'{SITE}/id/{tid}/') + '\n' + data_note(tid))]
     ld = {'@context': 'https://schema.org', '@type': 'DefinedTerm', '@id': f'{SITE}/id/{tid}/',
           'name': t['label'], 'termCode': tid, 'url': f'{SITE}/id/{tid}/',
@@ -733,6 +765,8 @@ def related_json(col, rid):
     if rid in col.editions:
         return {'citedBy': [ref_json(col, x) for x in col.cited_by.get(rid, [])]}
     if rid in col.terms:
+        if col.terms[rid][0] == 'seasons':
+            return {'subjects': [ref_json(col, x) for x in col.season_subjects.get(rid, [])]}
         return {'records': [ref_json(col, x) for x in col.tagged.get(rid, [])]}
     if rid in col.subjects:
         return {'posts': [post_json(e) for e in col.posts.values() if e.get('subject') == rid],
@@ -755,7 +789,11 @@ def record_json(col, rid):
         r = dict(col.editions[rid], citedBy=col.cited_by.get(rid, []))
     elif rid in col.terms:
         kind, t = col.terms[rid]
-        r = dict(t, vocabulary=kind, records=col.tagged.get(rid, []))
+        r = dict(t, vocabulary=kind)
+        if kind == 'seasons':
+            r['subjects'] = col.season_subjects.get(rid, [])
+        else:
+            r['records'] = col.tagged.get(rid, [])
     else:
         r = dict(col.subjects[rid], records=col.about.get(rid, []))
     r = without_private_notes(r)
