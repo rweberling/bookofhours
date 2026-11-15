@@ -23,6 +23,8 @@ What it posts (the streams in data/syndication.json; the plan is in the
           first shareable figure as the picture), then a reply with up to
           four more of its figures. With it, a site.standard.document
           record for the essay, its bskyPostRef pointing at the card.
+          With "dryRun": true on the stream, a live run only writes the
+          post to the run summary; it goes out once dryRun is removed.
 
   season  Back in season: on the stream's "days" (Tuesday and Saturday),
           one earlier essay whose season is the current one (data/
@@ -1023,9 +1025,15 @@ def main():
     for p, record in updates:
         out.write(f'- {p["id"]}: document record updated to match its data\n')
         send_update(bs, c, p, record)
+    essay_stream = c.config['streams'].get('essay') or {}
     for p in due:
         plan = compose_essay(c, p)
         describe(plan, out)
+        if essay_stream.get('dryRun'):
+            # Held: written to the summary only; it goes out on the first
+            # live run after dryRun is removed.
+            out.write(f'(The essay stream is on dry run: {p["id"]} was not posted.)\n\n')
+            continue
         send_essay(bs, c, p, plan, publication)
     if season and season_stream.get('dryRun'):
         describe_season(c, day, season, out)
