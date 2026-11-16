@@ -173,6 +173,8 @@ def json_ld(entry, subject, url, image):
         }
     if subject:
         about = {'@type': 'Thing', 'name': subject['name']}
+        if subject.get('id'):
+            about['@id'] = about['url'] = f'{SITE}/id/{subject["id"]}/'
         if subject.get('scientific'):
             about['alternateName'] = subject['scientific']
         if subject.get('wikidata'):

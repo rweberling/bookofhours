@@ -2880,6 +2880,14 @@ a.page-action { text-decoration: none; }
 .record-back a { color: var(--ink-faint); text-decoration: none; }
 .record-back a:hover, .record-back a:focus-visible { color: var(--accent); }
 @media print { .record-back { display: none; } }
+/* The way in, under the title: where the site shows the piece. */
+.record-way {
+  margin: 14px 0 0; text-align: center;
+  font-family: var(--font-text); font-style: italic; font-size: 18px;
+}
+.record-way a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 1px; }
+.record-way a:hover, .record-way a:focus-visible { color: var(--ink); }
+@media print { .record-way { display: none; } }
 .record-section { width: 100%; }
 .record-fields { display: grid; grid-template-columns: 9.5em 1fr; gap: 6px 16px; margin: 0; }
 .record-fields dt {

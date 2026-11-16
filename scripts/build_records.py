@@ -96,7 +96,12 @@ PAGE = '''<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title_text} — The Earthly Book of Hours</title>
   <meta name="description" content="{description}">
-{robots}  <link rel="canonical" href="{url}">
+  <meta property="og:title" content="{title_text}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Earthly Book of Hours">
+  <meta property="og:url" content="{url}">
+{og_image}{robots}  <link rel="canonical" href="{url}">
   <link rel="alternate" type="application/json" href="{json_url}">
   <link rel="stylesheet" href="/css/styles.css">
 {json_ld}</head>
@@ -118,7 +123,7 @@ PAGE = '''<!DOCTYPE html>
 
   <h1 class="page-title">{title}</h1>
   <p class="page-subtitle">{kind} · {rid}</p>
-
+{way}
 {body}
 
   <footer class="page-footer">
@@ -446,6 +451,55 @@ def appears(col, r, kind):
     return '<br>'.join(out)
 
 
+BOOK = 'The Earthly Book of Hours'
+
+
+def words_list(names):
+    names = list(names)
+    return ', '.join(names[:-1]) + ' and ' + names[-1] if len(names) > 1 else ''.join(names)
+
+
+def post_name(col, post):
+    """An essay by its subject ("First Frost"), else by its title."""
+    s = col.subjects.get(post.get('subject'))
+    return s['name'] if s else post['title']
+
+
+def way_in(col, r, kind):
+    """Where the site shows a reading or image, for the line at the head of
+    its page and for its description: (address, the link's words, the
+    piece in a phrase). None for a piece the site doesn't show yet."""
+    verb, noun = ('Read', 'reading') if kind == 'r' else ('See', 'image')
+    a = 'an' if noun == 'image' else 'a'
+    tags = r.get('tags') or {}
+    shown = r.get('shownIn')
+    if shown == 'hours':
+        hours = words_list(col.labels['hours'].get(tag_id(t), tag_id(t)) for t in tags.get('hours') or [])
+        return (f'/?{kind}={r["id"]}', f'{verb} it in the Hours' + (f', in {hours}' if hours else ''),
+                f'{a} {noun} for {hours}, in the Hours of {BOOK}' if hours else f'{a} {noun} in the Hours of {BOOK}')
+    if shown == 'weather':
+        weather = words_list(col.labels['weather'].get(tag_id(t), tag_id(t)).lower() for t in tags.get('weather') or [])
+        return (f'/weather.html?{kind}={r["id"]}', f'{verb} it in the Weather',
+                f'{a} {noun} for {weather}, in the Weather of {BOOK}' if weather else f'{a} {noun} in the Weather of {BOOK}')
+    if shown == 'days' and r['id'] in col.day_of:
+        day = col.day_of[r['id']]
+        month, d = (int(x) for x in day['date'].split('-'))
+        date = f'{MONTHS[month - 1]} {d}'
+        subject = col.subjects.get(day.get('subject'))
+        return (f'/seasons.html?day={day["date"]}', f'{verb} it on its day, {date}',
+                f'the {noun} for {date}' + (f', {subject["name"]},' if subject else '') + f' in the Seasons of {BOOK}')
+    post = col.posts.get((r.get('lectio') or {}).get('post'))
+    if post and post.get('page'):
+        name = post_name(col, post)
+        return (f'/{post["page"]}', f'{verb} it in the essay: {name}',
+                f'{a} {noun} in “{name}”, a Lectio Terra essay in {BOOK}')
+    return None
+
+
+def way_line(href, words):
+    return f'  <p class="record-way"><a href="{escape(href)}">{escape(words)} →</a></p>'
+
+
 def day_links(col, sid):
     out = []
     for d in col.days:
@@ -498,13 +552,18 @@ def reading_page(col, r):
             section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(ed))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
+    way = way_in(col, r, 'r')
+    about = (f'{plain(title)}: {way[2]}' if way else f'{plain(title)}: a reading in {BOOK}') \
+        + ', with its citation, source and rights.'
     ld = {'@context': 'https://schema.org', '@type': 'Quotation', '@id': f'{SITE}/id/{r["id"]}/',
-          'name': c.get('title'), 'url': f'{SITE}/id/{r["id"]}/',
+          'name': c.get('title'), 'url': f'{SITE}/id/{r["id"]}/', 'description': about,
+          'text': plain(text) if is_open(rights) else None,
           'creator': [person_ld(p) for p in ed.get('contributors', []) if p.get('role') == 'author'],
           'isBasedOn': f'{SITE}/id/{ed["id"]}/' if ed.get('id') else None,
           'about': subjects_ld(col, r), 'license': rights,
+          'subjectOf': {'@type': 'WebPage', 'url': SITE + way[0]} if way else None,
           'isPartOf': {'@type': 'Collection', 'name': 'The Earthly Book of Hours', 'url': f'{SITE}/id/'}}
-    return title, plain(title), '\n\n'.join(b for b in body if b), ld
+    return title, plain(title), '\n\n'.join(b for b in body if b), ld, {'description': about, 'way': way}
 
 
 def thumb(col, r, small):
@@ -521,6 +580,19 @@ def thumb(col, r, small):
     cls = 'record-thumb' if small else 'record-image'
     img = f'<img class="{cls}" src="/{escape(src)}" alt="{alt}" loading="lazy">'
     return img if small else f'<a href="/{escape(f)}">{img}</a>'
+
+
+def picture_url(col, r):
+    """The address of the picture a record's page shows (its web copy)."""
+    f = r.get('file') or ''
+    if f.startswith('http'):
+        return None
+    if r.get('media') == 'video':
+        f = r.get('poster') or ''
+    if not f:
+        return None
+    copies = col.copies.get(f) or []
+    return f'{SITE}/{copies[0]["file"] if copies else f}'
 
 
 def image_page(col, r):
@@ -552,14 +624,21 @@ def image_page(col, r):
             section('Rights', dl([('Status', rights_words(rights)), ('Note', public_note(r))])),
             section('Cite this record', cite(col, r['id'], f'{SITE}/id/{r["id"]}/') + '\n' + data_note(r['id']))]
     title = col.name(r['id'])
+    way = way_in(col, r, 'i')
+    about = (f'{plain(title)}: {way[2]}' if way else f'{plain(title)}: an image in {BOOK}') \
+        + ', with its source, rights and a description.'
+    picture = picture_url(col, r)
     ld = {'@context': 'https://schema.org', '@type': 'VisualArtwork', '@id': f'{SITE}/id/{r["id"]}/',
           'name': r.get('title') or plain(r.get('caption'))[:120], 'url': f'{SITE}/id/{r["id"]}/',
           'creator': [person_ld(p) for p in creators(r)],
           'dateCreated': r.get('date'), 'description': r.get('alt'),
+          'image': picture if not small else None, 'thumbnailUrl': picture,
           'isBasedOn': f'{SITE}/id/{ed["id"]}/' if ed.get('id') else None,
           'about': subjects_ld(col, r), 'license': rights,
+          'subjectOf': {'@type': 'WebPage', 'url': SITE + way[0]} if way else None,
           'isPartOf': {'@type': 'Collection', 'name': 'The Earthly Book of Hours', 'url': f'{SITE}/id/'}}
-    return title, plain(title), '\n\n'.join(b for b in body if b), ld
+    return title, plain(title), '\n\n'.join(b for b in body if b), ld, {
+        'description': about, 'way': way, 'image': picture if not small else None}
 
 
 def edition_page(col, eid):
@@ -597,7 +676,12 @@ def edition_page(col, eid):
           'publisher': ed.get('publisher'), 'datePublished': ed.get('issued'), 'sameAs': same,
           'isbn': (ed.get('identifiers') or {}).get('isbn')}
     title = col.name(eid)
-    return title, plain(title), '\n\n'.join(b for b in body if b), ld
+    n = len(col.cited_by.get(eid, []))
+    about = (f'{plain(title)}' + (f' ({ed["issued"]})' if ed.get('issued') else '')
+             + f': an edition cited in {BOOK}, with its identifiers and the '
+             + ('piece' if n == 1 else f'{n} pieces') + ' drawn from it.')
+    ld['description'] = about
+    return title, plain(title), '\n\n'.join(b for b in body if b), ld, {'description': about}
 
 
 def subject_page(col, sid):
@@ -626,7 +710,22 @@ def subject_page(col, sid):
           '@id': f'{SITE}/id/{sid}/', 'name': s['name'], 'alternateName': latin, 'url': f'{SITE}/id/{sid}/',
           'sameAs': [u for u in ([f'https://www.wikidata.org/wiki/{s["wikidata"]}'] if s.get('wikidata') else [])
                      + ([f'https://www.gbif.org/species/{s["gbif"]}'] if s.get('gbif') else [])]}
-    return escape(s['name']), s['name'], '\n\n'.join(b for b in body if b), ld
+    # The way in: its essay, else its day.
+    way = None
+    essay = next((e for e in posts if e.get('page')), None)
+    day = next((d for d in col.days if d.get('subject') == sid), None)
+    if essay:
+        way = (f'/{essay["page"]}', f'Read the essay: {s["name"]}')
+    elif day:
+        month, dd = (int(x) for x in day['date'].split('-'))
+        way = (f'/seasons.html?day={day["date"]}', f'See its day, {MONTHS[month - 1]} {dd}')
+    has = words_list(x for x in ('its Lectio Terra essay' if essay else '', 'its day in the year' if day else '',
+                                 'the readings and images about it') if x)
+    about = (f'{s["name"]}' + (f' ({latin})' if latin else '') + f' in {BOOK}, a daily primer of art, '
+             f'literature and ecology: {has}.')
+    ld['description'] = about
+    ld['subjectOf'] = [{'@type': 'Article', 'name': e['title'], 'url': f'{SITE}/{e["page"]}'} for e in posts if e.get('page')]
+    return escape(s['name']), s['name'], '\n\n'.join(b for b in body if b), ld, {'description': about, 'way': way}
 
 
 VOCABULARY = {'hours': 'The Hours', 'weather': 'The Weather', 'seasons': 'The Seasons'}
@@ -673,7 +772,18 @@ def term_page(col, tid):
     ld = {'@context': 'https://schema.org', '@type': 'DefinedTerm', '@id': f'{SITE}/id/{tid}/',
           'name': t['label'], 'termCode': tid, 'url': f'{SITE}/id/{tid}/',
           'inDefinedTermSet': {'@type': 'DefinedTermSet', 'name': VOCABULARY[kind]}}
-    return escape(t['label']), t['label'], '\n\n'.join(b for b in body if b), ld
+    if kind == 'hours':
+        about = (f'{t["label"]}, the {t["subtitle"].lower()} watch of the Hours in {BOOK} '
+                 f'({clock(t["startHour"])} to {clock(t["endHour"])}): its readings and images.')
+        way = (f'/?block={tid}', f'Open the Hours at {t["label"]}')
+    elif kind == 'weather':
+        about = f'{t["label"]}, a condition of the Weather in {BOOK}: the readings and images that answer it.'
+        way = ('/weather.html', 'Open the Weather')
+    else:
+        about = f'{t["label"]} in the Seasons of {BOOK}: its species and phenomena, in the order of the year, each with its essay or day.'
+        way = (f'/seasons.html?season={tid}', f'Open the Seasons at {t["label"]}')
+    ld['description'] = about
+    return escape(t['label']), t['label'], '\n\n'.join(b for b in body if b), ld, {'description': about, 'way': way}
 
 
 def person_ld(p):
@@ -701,7 +811,9 @@ def clean_ld(data):
     return data
 
 
-def page(rid, kind, title, title_text, body, ld, hidden=False):
+def page(rid, kind, title, title_text, body, ld, extra=None, hidden=False):
+    extra = extra or {}
+    way = extra.get('way')
     url = f'{SITE}/id/{rid}/'
     rel = f'id/{rid}/index.html'
     block = ('  <script type="application/ld+json">\n'
@@ -709,7 +821,10 @@ def page(rid, kind, title, title_text, body, ld, hidden=False):
              + '\n  </script>\n')
     return PAGE.format(
         head=render_shared('head', rel), frame=render_shared('frame', rel), nav=render_shared('nav', rel),
-        title=title, title_text=escape(title_text), description=escape(f'{KIND[kind]} {rid}: {title_text}'),
+        title=title, title_text=escape(title_text),
+        description=escape(extra.get('description') or f'{KIND[kind]} {rid}: {title_text}'),
+        way=way_line(way[0], way[1]) + '\n' if way else '',
+        og_image=f'  <meta property="og:image" content="{escape(extra["image"])}">\n' if extra.get('image') else '',
         robots='' if INDEXED and not hidden else '  <meta name="robots" content="noindex">\n',
         url=url, json_url=f'{SITE}/id/{rid}.json', json_ld=block, kind=KIND[kind], rid=rid, body=body)
 
@@ -831,7 +946,10 @@ def index_page(col, groups):
              f'<a href="{DOI}" target="_blank">Zenodo</a>; its metadata is licensed CC BY-NC 4.0.</p>\n  </article>')
     return PAGE.format(
         head=render_shared('head', rel), frame=render_shared('frame', rel), nav=render_shared('nav', rel),
-        title='The Records', title_text='The Records', description='Every record in The Earthly Book of Hours.',
+        title='The Records', title_text='The Records',
+        description=('The catalogue of The Earthly Book of Hours, a daily primer of art, literature and ecology: '
+                     'every reading, image, edition, species and phenomenon, each with its citation, source and rights.'),
+        way='', og_image='',
         robots='' if INDEXED else '  <meta name="robots" content="noindex">\n',
         url=f'{SITE}/id/', json_url=f'{SITE}/id/index.json', json_ld='', kind='The collection',
         rid=f'{sum(len(i) for _, i in groups)} records',
@@ -854,12 +972,12 @@ def wanted():
             ('The Seasons', [t for t, (k, _) in col.terms.items() if k == 'seasons'], lambda x: term_page(col, x))):
         groups.append((heading, ids))
         for rid in ids:
-            title, title_text, body, ld = make(rid)
+            title, title_text, body, ld, extra = make(rid)
             kind = col.terms[rid][0] if rid in col.terms else prefix(rid)
             # A day's pieces wait for the day's release.
             rec = col.by_id.get(rid) or {}
             hidden = rec.get('shownIn') == 'days' and rid not in col.day_of
-            files[f'id/{rid}/index.html'] = page(rid, kind, title, title_text, body, ld, hidden)
+            files[f'id/{rid}/index.html'] = page(rid, kind, title, title_text, body, ld, extra, hidden)
             files[f'id/{rid}.json'] = record_json(col, rid)
     for r in col.readings + col.images:
         for alias in r.get('aliases') or []:
