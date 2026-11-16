@@ -30,7 +30,12 @@
       ],
       "publisher": "Faber & Faber",
       "issued": "1981",
-      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "identifiers": {
+        "oclc": "12582431",
+        "lccn": "85114687",
+        "openlibrary": "OL2571105M"
+      }
     }
   },
   "suggestedEdition": {

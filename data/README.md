@@ -89,6 +89,14 @@ Then each kind has its own:
 - **Editions**: the edition a reading quotes is kept with the reading, in
   `citation.edition`, so each reading reads whole in one place (editions
   are rarely shared: the collection avoids repeating authors and works).
+  The record always follows the edition actually quoted (Ryan, 16
+  November 2026): its publisher, year and identifiers are that
+  edition's, the one the passage was read in. A later or alternate
+  edition is the reading's `suggestedEdition` (the edition to buy) or a
+  `copy` link to explore, never the edition record; and where the scan a
+  reading cites is a different book or printing from the one its record
+  names, the record changes to the scan's (it is what was quoted), with
+  a new `e-` ID if it is a different book.
   Each has a neutral, permanent ID, `e-0001`, like every other record. A
   new reading takes the next free number (`copy_lectio.py` gives one to
   each passage it copies). Two readings quoting the same edition (as the

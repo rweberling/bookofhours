@@ -37,7 +37,10 @@
       "publisher": "Princeton University Press",
       "issued": "1975",
       "original-date": null,
-      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "identifiers": {
+        "openlibrary": "OL13738314M"
+      }
     }
   },
   "suggestedEdition": {

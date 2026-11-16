@@ -215,7 +215,14 @@
         "issued": "2014",
         "original-date": "2014",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "in copyright"
+        "rightsNote": "in copyright",
+        "identifiers": {
+          "isbn": "9780307272249",
+          "oclc": "844789963",
+          "lccn": "2013019328",
+          "openlibrary": "OL27156500M",
+          "internetArchive": "bookofhours0000youn"
+        }
       }
     },
     "suggestedEdition": { "isbn": "9780375711886" },
@@ -343,28 +350,26 @@
     "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look, in the early light,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down to the infinite<br>&nbsp;&nbsp;&nbsp;&nbsp;Depths at the deep grass-roots;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where the sun shoots<br>In golden veins, as looking through<br>&nbsp;&nbsp;&nbsp;&nbsp;A dear pool one sees it do;<br>&nbsp;&nbsp;&nbsp;&nbsp;Where campion drifts<br>Its bladders, iris-brinded, through the rifts<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of rising, falling seed<br>&nbsp;&nbsp;&nbsp;&nbsp;That the winds lightly scour&mdash;<br>Down to the matted earth where over<br>&nbsp;&nbsp;&nbsp;&nbsp;And over again crow’s-foot and clover<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And pink bindweed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dimly, steadily flower.",
     "citation": {
       "display": "Michael Field, \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102\" target=\"_blank\">The Depths of the Grass</a>\" (1898)",
-      "bibliography": "Field, Michael. \"The Depths of the Grass.\" <em>Wild Honey from Various Thyme</em>, T. Fisher Unwin, 1908.",
+      "bibliography": "Field, Michael. \"The Depths of the Grass.\" <em>Underneath the Bough</em>, Thomas B. Mosher, 1898.",
       "title": "The Depths of the Grass",
       "locator": {
         "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102",
         "label": "HathiTrust"
       },
       "edition": {
-        "id": "e-0010",
+        "id": "e-0210",
         "type": "book",
-        "title": "Wild Honey from Various Thyme",
+        "title": "Underneath the Bough",
         "contributors": [{ "id": "a-michael-field", "name": "Michael Field", "role": "author" }],
-        "publisher": "T. Fisher Unwin",
-        "issued": "1908",
-        "original-date": "1898",
+        "publisher": "Thomas B. Mosher",
+        "issued": "1898",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-        "rightsNote": "date as captioned (1898); verify edition",
-        "rightsNotePrivate": true,
         "identifiers": {
-          "hathitrust": "009794369",
-          "openlibrary": "OL38613918M",
-          "oclc": "1648765",
-          "lccn": "98001110"
+          "hathitrust": "100323963",
+          "oclc": "4376036",
+          "lccn": "98001110",
+          "openlibrary": "OL23352920M",
+          "internetArchive": "underneathboughb00fielrich"
         }
       }
     },
@@ -747,7 +752,8 @@
         "original-date": null,
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "translation copyright — pending resolution",
-        "rightsNotePrivate": true
+        "rightsNotePrivate": true,
+        "identifiers": { "openlibrary": "OL13738314M" }
       }
     },
     "suggestedEdition": { "isbn": "9780691264646" },
@@ -1097,7 +1103,13 @@
         "issued": "1977",
         "original-date": "1933",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "translation in copyright"
+        "rightsNote": "translation in copyright",
+        "identifiers": {
+          "isbn": "9780918172020",
+          "oclc": "3379869",
+          "lccn": "77075035",
+          "openlibrary": "OL8340612M"
+        }
       }
     },
     "suggestedEdition": { "isbn": "9780918172020" },
@@ -1212,7 +1224,15 @@
         "original-date": "1998",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
         "rightsNote": "in copyright — estate actively protective",
-        "rightsNotePrivate": true
+        "rightsNotePrivate": true,
+        "identifiers": {
+          "isbn": "9781559704458",
+          "oclc": "39116670",
+          "lccn": "98023049",
+          "hathitrust": "004035358",
+          "openlibrary": "OL362833M",
+          "internetArchive": "haikuthisotherwo00wrig"
+        }
       }
     },
     "suggestedEdition": {
@@ -1269,7 +1289,7 @@
     "text": "I have come to the borders of sleep,<br>The unfathomable deep<br>Forest where all must lose<br>Their way, however straight,<br>Or winding, soon or late;<br>They cannot choose.<br><br>Many a road and track<br>That, since the dawn’s first crack,<br>Up to the forest brink,<br>Deceived the travellers,<br>Suddenly now blurs,<br>And in they sink.",
     "citation": {
       "display": "Edward Thomas, from \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109\" target=\"_blank\">Lights Out</a>\" (1917)",
-      "bibliography": "Thomas, Edward. \"Lights Out.\" <em>Last Poems</em>, Selwyn &amp; Blount, 1918. Written 1917.",
+      "bibliography": "Thomas, Edward. \"Lights Out.\" <em>Collected Poems</em>, Thomas Seltzer, 1921. Written 1917; first published in <em>Last Poems</em>, Selwyn &amp; Blount, 1918.",
       "title": "Lights Out",
       "written": "1917",
       "locator": {
@@ -1277,19 +1297,20 @@
         "label": "HathiTrust"
       },
       "edition": {
-        "id": "e-0033",
+        "id": "e-0211",
         "type": "book",
-        "title": "Last Poems",
+        "title": "Collected Poems",
         "contributors": [
           {
             "id": "a-edward-thomas",
             "name": "Edward Thomas",
             "role": "author",
             "wikidata": "Q1293865"
-          }
+          },
+          { "id": "a-walter-de-la-mare", "name": "Walter de la Mare", "role": "foreword" }
         ],
-        "publisher": "Selwyn & Blount",
-        "issued": "1918",
+        "publisher": "Thomas Seltzer",
+        "issued": "1921",
         "original-date": "1918",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
         "identifiers": { "hathitrust": "006154069", "oclc": "962954", "lccn": "21018244" }
@@ -1978,7 +1999,8 @@
         "publisher": "Yale University Press",
         "issued": "2000",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "translation in copyright"
+        "rightsNote": "translation in copyright",
+        "identifiers": { "lccn": "99088479", "openlibrary": "OL59678M" }
       }
     },
     "suggestedEdition": { "isbn": "9780300186123" },
@@ -2227,7 +2249,14 @@
         "publisher": "Beacon Press",
         "issued": "2001",
         "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-        "rightsNote": "translation in copyright"
+        "rightsNote": "translation in copyright",
+        "identifiers": {
+          "isbn": "9780807021088",
+          "oclc": "50321536",
+          "lccn": "00012268",
+          "openlibrary": "OL7944619M",
+          "internetArchive": "hildegardshealin0000hild"
+        }
       }
     },
     "suggestedEdition": { "isbn": "9780807021095" },
@@ -3896,7 +3925,8 @@
         ],
         "publisher": "Faber & Faber",
         "issued": "1981",
-        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "identifiers": { "oclc": "12582431", "lccn": "85114687", "openlibrary": "OL2571105M" }
       }
     },
     "suggestedEdition": { "isbn": "9780061558894" },
@@ -4589,7 +4619,13 @@
         ],
         "publisher": "Random House",
         "issued": "2020",
-        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "identifiers": {
+          "isbn": "9780525510314",
+          "oclc": "1127137515",
+          "lccn": "2019049709",
+          "openlibrary": "OL28089723M"
+        }
       }
     },
     "lectio": { "post": "lt-0031", "place": 2 },
@@ -4665,7 +4701,13 @@
         "publisher": "University of Chicago Press",
         "issued": "1998",
         "original-date": "1958",
-        "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "identifiers": {
+          "oclc": "38885897",
+          "lccn": "98017015",
+          "openlibrary": "OL357130M",
+          "internetArchive": "humancondition0000aren_d6m2"
+        }
       }
     },
     "lectio": { "post": "lt-0033", "place": 2 },

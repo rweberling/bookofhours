@@ -24,7 +24,14 @@
       "issued": "2014",
       "original-date": "2014",
       "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-      "rightsNote": "in copyright"
+      "rightsNote": "in copyright",
+      "identifiers": {
+        "isbn": "9780307272249",
+        "oclc": "844789963",
+        "lccn": "2013019328",
+        "openlibrary": "OL27156500M",
+        "internetArchive": "bookofhours0000youn"
+      }
     }
   },
   "suggestedEdition": {

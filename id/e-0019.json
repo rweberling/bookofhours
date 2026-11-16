@@ -27,6 +27,9 @@
   "issued": "1975",
   "original-date": null,
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "identifiers": {
+    "openlibrary": "OL13738314M"
+  },
   "citedBy": [
     "r-0019"
   ],

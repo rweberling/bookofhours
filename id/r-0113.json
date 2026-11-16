@@ -23,7 +23,13 @@
       ],
       "publisher": "Random House",
       "issued": "2020",
-      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "identifiers": {
+        "isbn": "9780525510314",
+        "oclc": "1127137515",
+        "lccn": "2019049709",
+        "openlibrary": "OL28089723M"
+      }
     }
   },
   "lectio": {

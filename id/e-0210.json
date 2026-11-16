@@ -1,8 +1,8 @@
 {
-  "@id": "https://earthlyhours.com/id/e-0010/",
-  "id": "e-0010",
+  "@id": "https://earthlyhours.com/id/e-0210/",
+  "id": "e-0210",
   "type": "book",
-  "title": "Wild Honey from Various Thyme",
+  "title": "Underneath the Bough",
   "contributors": [
     {
       "id": "a-michael-field",
@@ -10,15 +10,15 @@
       "role": "author"
     }
   ],
-  "publisher": "T. Fisher Unwin",
-  "issued": "1908",
-  "original-date": "1898",
+  "publisher": "Thomas B. Mosher",
+  "issued": "1898",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "hathitrust": "009794369",
-    "openlibrary": "OL38613918M",
-    "oclc": "1648765",
-    "lccn": "98001110"
+    "hathitrust": "100323963",
+    "oclc": "4376036",
+    "lccn": "98001110",
+    "openlibrary": "OL23352920M",
+    "internetArchive": "underneathboughb00fielrich"
   },
   "citedBy": [
     "r-0010"

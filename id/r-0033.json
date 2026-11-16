@@ -8,7 +8,7 @@
   "text": "I have come to the borders of sleep,<br>The unfathomable deep<br>Forest where all must lose<br>Their way, however straight,<br>Or winding, soon or late;<br>They cannot choose.<br><br>Many a road and track<br>That, since the dawn’s first crack,<br>Up to the forest brink,<br>Deceived the travellers,<br>Suddenly now blurs,<br>And in they sink.",
   "citation": {
     "display": "Edward Thomas, from \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t52f7wn7k?urlappend=%3Bseq=109\" target=\"_blank\">Lights Out</a>\" (1917)",
-    "bibliography": "Thomas, Edward. \"Lights Out.\" <em>Last Poems</em>, Selwyn &amp; Blount, 1918. Written 1917.",
+    "bibliography": "Thomas, Edward. \"Lights Out.\" <em>Collected Poems</em>, Thomas Seltzer, 1921. Written 1917; first published in <em>Last Poems</em>, Selwyn &amp; Blount, 1918.",
     "title": "Lights Out",
     "written": "1917",
     "locator": {
@@ -16,19 +16,24 @@
       "label": "HathiTrust"
     },
     "edition": {
-      "id": "e-0033",
+      "id": "e-0211",
       "type": "book",
-      "title": "Last Poems",
+      "title": "Collected Poems",
       "contributors": [
         {
           "id": "a-edward-thomas",
           "name": "Edward Thomas",
           "role": "author",
           "wikidata": "Q1293865"
+        },
+        {
+          "id": "a-walter-de-la-mare",
+          "name": "Walter de la Mare",
+          "role": "foreword"
         }
       ],
-      "publisher": "Selwyn & Blount",
-      "issued": "1918",
+      "publisher": "Thomas Seltzer",
+      "issued": "1921",
       "original-date": "1918",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
       "identifiers": {
@@ -50,9 +55,9 @@
   },
   "related": {
     "edition": {
-      "@id": "https://earthlyhours.com/id/e-0033/",
-      "id": "e-0033",
-      "name": "Last Poems"
+      "@id": "https://earthlyhours.com/id/e-0211/",
+      "id": "e-0211",
+      "name": "Collected Poems"
     }
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

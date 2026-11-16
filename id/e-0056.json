@@ -20,6 +20,13 @@
   "issued": "2001",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "rightsNote": "translation in copyright",
+  "identifiers": {
+    "isbn": "9780807021088",
+    "oclc": "50321536",
+    "lccn": "00012268",
+    "openlibrary": "OL7944619M",
+    "internetArchive": "hildegardshealin0000hild"
+  },
   "citedBy": [
     "r-0056"
   ],

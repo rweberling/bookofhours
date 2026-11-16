@@ -15,6 +15,14 @@
   "issued": "1998",
   "original-date": "1998",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "identifiers": {
+    "isbn": "9781559704458",
+    "oclc": "39116670",
+    "lccn": "98023049",
+    "hathitrust": "004035358",
+    "openlibrary": "OL362833M",
+    "internetArchive": "haikuthisotherwo00wrig"
+  },
   "citedBy": [
     "r-0031"
   ],

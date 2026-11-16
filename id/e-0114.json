@@ -15,6 +15,12 @@
   "issued": "1998",
   "original-date": "1958",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "identifiers": {
+    "oclc": "38885897",
+    "lccn": "98017015",
+    "openlibrary": "OL357130M",
+    "internetArchive": "humancondition0000aren_d6m2"
+  },
   "citedBy": [
     "r-0115"
   ],

@@ -8,16 +8,16 @@
   "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Look, in the early light,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down to the infinite<br>&nbsp;&nbsp;&nbsp;&nbsp;Depths at the deep grass-roots;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where the sun shoots<br>In golden veins, as looking through<br>&nbsp;&nbsp;&nbsp;&nbsp;A dear pool one sees it do;<br>&nbsp;&nbsp;&nbsp;&nbsp;Where campion drifts<br>Its bladders, iris-brinded, through the rifts<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of rising, falling seed<br>&nbsp;&nbsp;&nbsp;&nbsp;That the winds lightly scour&mdash;<br>Down to the matted earth where over<br>&nbsp;&nbsp;&nbsp;&nbsp;And over again crow’s-foot and clover<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And pink bindweed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dimly, steadily flower.",
   "citation": {
     "display": "Michael Field, \"<a href=\"https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102\" target=\"_blank\">The Depths of the Grass</a>\" (1898)",
-    "bibliography": "Field, Michael. \"The Depths of the Grass.\" <em>Wild Honey from Various Thyme</em>, T. Fisher Unwin, 1908.",
+    "bibliography": "Field, Michael. \"The Depths of the Grass.\" <em>Underneath the Bough</em>, Thomas B. Mosher, 1898.",
     "title": "The Depths of the Grass",
     "locator": {
       "url": "https://hdl.handle.net/2027/uc2.ark:/13960/t9862j311?urlappend=%3Bseq=102",
       "label": "HathiTrust"
     },
     "edition": {
-      "id": "e-0010",
+      "id": "e-0210",
       "type": "book",
-      "title": "Wild Honey from Various Thyme",
+      "title": "Underneath the Bough",
       "contributors": [
         {
           "id": "a-michael-field",
@@ -25,15 +25,15 @@
           "role": "author"
         }
       ],
-      "publisher": "T. Fisher Unwin",
-      "issued": "1908",
-      "original-date": "1898",
+      "publisher": "Thomas B. Mosher",
+      "issued": "1898",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
       "identifiers": {
-        "hathitrust": "009794369",
-        "openlibrary": "OL38613918M",
-        "oclc": "1648765",
-        "lccn": "98001110"
+        "hathitrust": "100323963",
+        "oclc": "4376036",
+        "lccn": "98001110",
+        "openlibrary": "OL23352920M",
+        "internetArchive": "underneathboughb00fielrich"
       }
     }
   },
@@ -51,9 +51,9 @@
   },
   "related": {
     "edition": {
-      "@id": "https://earthlyhours.com/id/e-0010/",
-      "id": "e-0010",
-      "name": "Wild Honey from Various Thyme"
+      "@id": "https://earthlyhours.com/id/e-0210/",
+      "id": "e-0210",
+      "name": "Underneath the Bough"
     }
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

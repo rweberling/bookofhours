@@ -26,6 +26,10 @@
   "issued": "2000",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "rightsNote": "translation in copyright",
+  "identifiers": {
+    "lccn": "99088479",
+    "openlibrary": "OL59678M"
+  },
   "citedBy": [
     "r-0050"
   ],
