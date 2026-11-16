@@ -68,6 +68,7 @@
       "name": "The Writings of Benjamin Franklin, vol. 9"
     },
     "day": {
+      "@id": "https://earthlyhours.com/id/dy-0001/",
       "id": "dy-0001",
       "date": "11-26",
       "url": "https://earthlyhours.com/seasons.html?day=11-26"

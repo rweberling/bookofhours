@@ -26,6 +26,7 @@
     ],
     "days": [
       {
+        "@id": "https://earthlyhours.com/id/dy-0002/",
         "id": "dy-0002",
         "date": "11-27",
         "url": "https://earthlyhours.com/seasons.html?day=11-27"

@@ -71,6 +71,7 @@
       "name": "Journal, vol. 11"
     },
     "day": {
+      "@id": "https://earthlyhours.com/id/dy-0003/",
       "id": "dy-0003",
       "date": "11-28",
       "url": "https://earthlyhours.com/seasons.html?day=11-28"

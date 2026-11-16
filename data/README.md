@@ -364,6 +364,10 @@ a published dataset carries the metadata and only public-domain texts.
 - **`reading`** and **`image`**: one each, ordinary records in
   `readings.json` and `images.json` with `"shownIn": "days"`, tagged with
   the subject like any other piece.
+- Each released card has a record page, `id/dy-0001/` (and
+  `id/dy-0001.json`), written by `build_records.py`: its date and week,
+  its subject, and its reading and image as their own record pages show
+  them. A draft has none.
 - **`draft`**: `true` keeps the card off the site, the year's feed and
   the calendar; `seasons.html?day=MM-DD&preview` shows it for review.
 

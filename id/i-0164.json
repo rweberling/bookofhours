@@ -58,6 +58,7 @@
       "name": "The American Flora, or, History of Plants and Wild Flowers, vol. 4"
     },
     "day": {
+      "@id": "https://earthlyhours.com/id/dy-0003/",
       "id": "dy-0003",
       "date": "11-28",
       "url": "https://earthlyhours.com/seasons.html?day=11-28"

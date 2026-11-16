@@ -55,7 +55,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   `build_postcards.py`, `build_records.py` (a page and JSON copy for every
   record at `id/<id>/`, and for each vocabulary term, `id/hush/`; open to
   search and in the sitemap since 16 November 2026, a day's pieces only
-  once the day is released), `build_lectio_pages.py [lt-NNNN | --all]` (post
+  once the day is released; each released day has its own page too,
+  `id/dy-NNNN/`: its date and week, subject, reading and image, the one
+  plain page search engines and chatbots can read a card from), `build_lectio_pages.py [lt-NNNN | --all]` (post
   pages, one per post, and the RSS feed `feed.xml`, the essays alone,
   dated by each post's first publication), `build_year_feed.py`
   (`year.xml`, "The Year": the last 14 days, each day's card and each

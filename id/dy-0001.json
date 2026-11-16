@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0001/",
+  "id": "dy-0001",
+  "date": "11-26",
+  "subject": "sp-0029",
+  "reading": "r-0131",
+  "image": "i-0162",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=11-26",
+    "week": 49,
+    "season": "autumn",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0029/",
+      "id": "sp-0029",
+      "name": "Wild Turkey",
+      "scientific": "Meleagris gallopavo",
+      "wikidata": "Q26844"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0131/",
+      "id": "r-0131",
+      "name": "Benjamin Franklin, “Letter to Sarah Bache”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0162/",
+      "id": "i-0162",
+      "name": "James McNeill Whistler, Turkeys"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

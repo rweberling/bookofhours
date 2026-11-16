@@ -4,7 +4,7 @@
 Usage:
   python3 scripts/build_records.py
 
-Each reading, image, edition, species and phenomenon gets a page at
+Each reading, image, edition, species, phenomenon and day gets a page at
 earthlyhours.com/id/<id>/ (id/r-0104/, id/e-0103/, id/sp-0001/), and the
 same record as data beside it, id/<id>.json. id/ itself lists them all.
 So does each term of the vocabularies (id/hush/, id/autumn/, id/frost/),
@@ -31,7 +31,8 @@ forwards to the record, so old links keep working.
 The pages are open to search engines and listed in the sitemap (since 16
 November 2026; INDEXED = False puts them all back to noindex). A day's
 reading and image stay noindex until the day is released (a draft day,
-or one not yet built), so a card isn't found before Ryan has passed it.
+or one not yet built), so a card isn't found before Ryan has passed it;
+the day's own page (id/dy-0001/) is written only once it is released.
 Writing (w-) and the posts (lt-, which have
 their own pages under lectio-terra/) have no record pages; people have
 no IDs of their own here and are linked to Wikidata.
@@ -49,7 +50,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from datafile import creator_names, creators, load  # noqa: E402
 from build_shared import render as render_shared  # noqa: E402
-from weeks import _offset as weeks_offset, essay_day, season_of_week, week_of  # noqa: E402
+from weeks import _offset as weeks_offset, essay_day, season_of_week, week_days, week_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'id'
@@ -84,7 +85,7 @@ IDENTIFIER_LINKS = {
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
           'September', 'October', 'November', 'December']
 
-KIND = {'r': 'Reading', 'i': 'Image', 'e': 'Edition', 'sp': 'Species', 'ph': 'Phenomenon', 'hours': 'Watch', 'weather': 'Weather condition',
+KIND = {'dy': 'Day', 'r': 'Reading', 'i': 'Image', 'e': 'Edition', 'sp': 'Species', 'ph': 'Phenomenon', 'hours': 'Watch', 'weather': 'Weather condition',
         'seasons': 'Season'}
 
 PAGE = '''<!DOCTYPE html>
@@ -188,6 +189,12 @@ FORWARD = '''<!DOCTYPE html>
 '''
 
 
+def date_words(key):
+    """A day as the site says it, month first: "11-26" → "November 26"."""
+    month, day = (int(x) for x in key.split('-'))
+    return f'{MONTHS[month - 1]} {day}'
+
+
 def recs(name):
     data = load(name)
     return data if isinstance(data, list) else next(v for v in data.values() if isinstance(v, list))
@@ -243,6 +250,8 @@ class Collection:
         # The days, by the pieces they show: {piece id: day record}.
         self.day_of = {}
         self.days = [d for d in load('days') if not d.get('draft')]
+        self.days.sort(key=lambda d: d['date'])
+        self.day_by_id = {d['id']: d for d in self.days}
         for d in self.days:
             for field in ('reading', 'image'):
                 self.day_of[d.get(field)] = d
@@ -331,6 +340,10 @@ class Collection:
                 title = cap if len(cap) <= 90 else cap[:90].rsplit(' ', 1)[0].rstrip(',;:') + ' …'
             who = creator_names(r)
             return f'{escape(who)}, {escape(title)}' if who else escape(title)
+        if rid in self.day_by_id:
+            d = self.day_by_id[rid]
+            s = self.subjects.get(d.get('subject'))
+            return escape(date_words(d['date']) + (f': {s["name"]}' if s else ''))
         if rid in self.editions:
             return f'<em>{escape(self.editions[rid].get("title") or rid)}</em>'
         if rid in self.subjects:
@@ -443,7 +456,8 @@ def appears(col, r, kind):
     elif shown == 'days' and r['id'] in col.day_of:
         day = col.day_of[r['id']]
         month, d = (int(x) for x in day['date'].split('-'))
-        out.append(f'<a href="/seasons.html?day={day["date"]}">The Seasons, {d} {MONTHS[month - 1]}</a>')
+        out.append(f'<a href="/seasons.html?day={day["date"]}">The Seasons, {MONTHS[month - 1]} {d}</a>'
+                   f' ({link(day["id"], "the day’s record")})')
     post = col.posts.get((r.get('lectio') or {}).get('post'))
     if post:
         where = f'/{post["page"]}' if post.get('page') else '/seasons.html'
@@ -505,7 +519,8 @@ def day_links(col, sid):
     for d in col.days:
         if d.get('subject') == sid:
             month, day = (int(x) for x in d['date'].split('-'))
-            out.append(f'<a href="/seasons.html?day={d["date"]}">The Seasons, {day} {MONTHS[month - 1]}</a>')
+            out.append(f'<a href="/seasons.html?day={d["date"]}">The Seasons, {MONTHS[month - 1]} {day}</a>'
+                       f' ({link(d["id"], "the day’s record")})')
     return '<br>'.join(out)
 
 
@@ -728,6 +743,91 @@ def subject_page(col, sid):
     return escape(s['name']), s['name'], '\n\n'.join(b for b in body if b), ld, {'description': about, 'way': way}
 
 
+def week_words(key):
+    """A day's week as the Seasons page gives it ("Week 49 · November 22 –
+    28"), its season, and the week's number; none for 20 December."""
+    month, day = (int(x) for x in key.split('-'))
+    week = week_of(month, day)
+    if not week:
+        return 'The solstice eve, outside the weeks', 'winter', None
+    days = week_days(week)
+    (m1, d1), (m2, d2) = days[0], days[-1]
+    last = f'{d2}' if m1 == m2 else f'{MONTHS[m2 - 1]} {d2}'
+    return f'Week {week} · {MONTHS[m1 - 1]} {d1} – {last}', season_of_week(week), week
+
+
+def day_page(col, did):
+    """A day's card: its date and week, its subject, and its reading and
+    image, each shown as its own record page shows it (whole where the
+    rights are open, else the opening or a thumbnail)."""
+    day = col.day_by_id[did]
+    date = date_words(day['date'])
+    s = col.subjects.get(day.get('subject')) or {}
+    latin = s.get('scientific') or s.get('latin')
+    week, season, number = week_words(day['date'])
+    essays = []
+    for e in col.posts.values():
+        if not (e.get('published') and e.get('page')):
+            continue
+        m, d = (int(x) for x in essay_day(e).split('-'))
+        if number and week_of(m, d) == number:
+            essays.append(f'<a href="/{e["page"]}">{escape(post_name(col, e))}</a>')
+    the_day = dl([
+        ('Date', f'{date}, every year'),
+        ('Week', escape(week)),
+        ('Season', link(season, col.name(season)) if season in col.terms else ''),
+        ('Subject', (link(s['id'], escape(s['name'])) + (f' <em>{escape(latin)}</em>' if latin else '')) if s else ''),
+        ('Essay of the week', '<br>'.join(essays)),
+    ])
+    r = col.by_id.get(day.get('reading'))
+    i = col.by_id.get(day.get('image'))
+    words = picture = ''
+    writer = maker = ''
+    open_picture = None
+    if r:
+        c = r.get('citation') or {}
+        ed = c.get('edition') or {}
+        verse = (r.get('display') or {}).get('verse')
+        text = r.get('text') or ''
+        whole = is_open(ed.get('rights'))
+        note = '' if whole or not text else ('\n    <p class="record-note">The opening only: this text is still in '
+                                             'copyright. Read it in full on its day, above.</p>')
+        quote = (f'    <blockquote class="record-text{" verse" if verse else ""}">'
+                 f'{text if whole else first_line(text, verse)}</blockquote>{note}\n') if text else ''
+        words = quote + dl([('Citation', c.get('display') or ''), ('Record', link(r['id'], col.name(r['id'])))])
+        writer = ', '.join(p['name'] for p in ed.get('contributors', []) if p.get('role') == 'author')
+    if i:
+        small = not is_open(i.get('rights'))
+        pic = thumb(col, i, small)
+        note = ('\n    <p class="record-note">A thumbnail only: this image is still in copyright, or its status '
+                'is not yet settled. See it on its day, above.</p>') if pic and small else ''
+        shown = f'    <div class="record-figure">{pic}</div>\n    <p class="image-caption">{i.get("caption") or ""}</p>{note}\n' if pic else ''
+        picture = shown + dl([('Description', escape(i.get('alt') or '')), ('Record', link(i['id'], col.name(i['id'])))])
+        maker = creator_names(i)
+        open_picture = None if small else picture_url(col, i)
+    url = f'{SITE}/id/{did}/'
+    body = [section('The day', the_day), section('The reading', words), section('The image', picture),
+            section('Cite this record', cite(col, did, url) + '\n' + data_note(did))]
+    name = s.get('name') or ''
+    credits = words_list(x for x in (f'words by {writer}' if writer else '', f'an image by {maker}' if maker else '') if x)
+    about = (f'{date} in {BOOK}, a day-by-day year of art, literature and ecology: {name}'
+             + (f' ({latin})' if latin else '') + ', in season in New England'
+             + (f', with {credits}.' if credits else '.'))
+    month, d = day['date'].split('-')
+    ld = {'@context': 'https://schema.org', '@type': 'CreativeWork', '@id': url, 'url': url,
+          'name': f'{date}: {name}' if name else date, 'description': about,
+          'temporalCoverage': f'--{month}-{d}',
+          'about': ({'@id': f'{SITE}/id/{s["id"]}/', 'name': s['name'], 'alternateName': latin,
+                     'sameAs': f'https://www.wikidata.org/wiki/{s["wikidata"]}' if s.get('wikidata') else None} if s else None),
+          'hasPart': [{'@id': f'{SITE}/id/{x["id"]}/', 'name': plain(col.name(x['id']))} for x in (r, i) if x],
+          'image': open_picture,
+          'subjectOf': {'@type': 'WebPage', 'url': f'{SITE}/seasons.html?day={day["date"]}'},
+          'isPartOf': {'@type': 'Collection', 'name': 'The Earthly Book of Hours', 'url': f'{SITE}/id/'}}
+    title = col.name(did)
+    return title, plain(title), '\n\n'.join(b for b in body if b), ld, {
+        'description': about, 'way': (f'/seasons.html?day={day["date"]}', f'See the day, {date}'), 'image': open_picture}
+
+
 VOCABULARY = {'hours': 'The Hours', 'weather': 'The Weather', 'seasons': 'The Seasons'}
 MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
                'October', 'November', 'December']
@@ -864,7 +964,8 @@ def post_json(post):
 
 
 def day_json(day):
-    return {'id': day['id'], 'date': day['date'], 'url': f'{SITE}/seasons.html?day={day["date"]}'}
+    return {'@id': f'{SITE}/id/{day["id"]}/', 'id': day['id'], 'date': day['date'],
+            'url': f'{SITE}/seasons.html?day={day["date"]}'}
 
 
 def related_json(col, rid):
@@ -887,6 +988,13 @@ def related_json(col, rid):
             out['alongside'] = [ref_json(col, day[f]) for f in ('reading', 'image')
                                 if day.get(f) and day[f] != rid and day[f] in col.by_id]
         return out
+    if rid in col.day_by_id:
+        day = col.day_by_id[rid]
+        week, season, number = week_words(day['date'])
+        return {'url': f'{SITE}/seasons.html?day={day["date"]}', 'week': number, 'season': season,
+                'subject': ref_json(col, day['subject']) if day.get('subject') in col.subjects else None,
+                'reading': ref_json(col, day['reading']) if day.get('reading') in col.by_id else None,
+                'image': ref_json(col, day['image']) if day.get('image') in col.by_id else None}
     if rid in col.editions:
         return {'citedBy': [ref_json(col, x) for x in col.cited_by.get(rid, [])]}
     if rid in col.terms:
@@ -911,6 +1019,8 @@ def record_json(col, rid):
             if r.get('text') and not is_open(rights):
                 r['firstLine'] = plain(first_line(r['text'], (r.get('display') or {}).get('verse')))
                 del r['text']
+    elif rid in col.day_by_id:
+        r = dict(col.day_by_id[rid])
     elif rid in col.editions:
         r = dict(col.editions[rid], citedBy=col.cited_by.get(rid, []))
     elif rid in col.terms:
@@ -967,6 +1077,7 @@ def wanted():
             ('Editions', sorted(col.editions), lambda x: edition_page(col, x)),
             ('Species', [s['id'] for s in col.species], lambda x: subject_page(col, x)),
             ('Phenomena', [s['id'] for s in col.phenomena], lambda x: subject_page(col, x)),
+            ('Days', [d['id'] for d in col.days], lambda x: day_page(col, x)),
             ('The Hours', [t for t, (k, _) in col.terms.items() if k == 'hours'], lambda x: term_page(col, x)),
             ('The Weather', [t for t, (k, _) in col.terms.items() if k == 'weather'], lambda x: term_page(col, x)),
             ('The Seasons', [t for t, (k, _) in col.terms.items() if k == 'seasons'], lambda x: term_page(col, x))):
