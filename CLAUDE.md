@@ -323,7 +323,16 @@ Read `data/README.md` first: it explains every file and field. The essentials:
      December, until the desk is about four weeks ahead (by the
      solstice, into mid-January), then one a week, keeping that lead; if
      two weeks' candidates are too many, alternate one and two. Day
-     candidates never go in the Sheet. The email says which weeks, how
+     candidates never go in the Sheet. Essay candidates ride with them
+     (Ryan, 16 November 2026): where a week's essay has no subject yet
+     (its `essay-<date>` record on the desk), four or five of that week's
+     day candidates are ones that could carry a whole essay, their
+     nomination opening "Essay or day:", in the same form (one image and
+     one reading to start him off), including sky and season subjects
+     the iNaturalist list can't see (the Geminids peak about 13–14
+     December, Week 52). Ryan takes one as the essay with "make this the
+     week's essay instead"; the rest stay in the pool for the days. First
+     for Weeks 51 and 52 in the 18 November run. The email says which weeks, how
      many candidates, and how many days each week still needs. (The
      trial's question of time is Ryan's: how long each week takes him
      to review and to see through the site, the calendar and the rest,
