@@ -90,6 +90,35 @@ def summary(entry, limit=155):
     return text[:limit].rsplit(' ', 1)[0].rstrip(',;:—') + '…'
 
 
+# A Substack subheading that only marks the calendar ("Waxing Crescent
+# Moon; 30 Days to Summer Solstice"), not the subject.
+CALENDAR_NOTE = re.compile(r'\bMoon\b|Days to|Equinox|Solstice|Cross-Quarter')
+
+
+def tagline(entry):
+    """The post's Substack subheading where it describes the subject."""
+    sub = (entry.get('subtitle') or '').strip()
+    return '' if not sub or CALENDAR_NOTE.search(sub) else sub
+
+
+def describe(entry, subject):
+    """The page's description, for search results and link previews: the
+    subheading, then plainly what the page holds (Ryan, 16 November
+    2026)."""
+    name = subject_name(entry, subject)
+    latin = (subject or {}).get('scientific') or (subject or {}).get('latin')
+    month = long_date(entry['published']).split(' ')[0] if entry.get('published') else ''
+    dry = (f'Curated readings and images for {name}' + (f' ({latin})' if latin else '')
+           + (f', in season in {month} in New England' if month else ''))
+    who = readers(entry)
+    who = (', '.join(who[:-1]) + ' and ' + who[-1] if len(who) > 1 else ''.join(who))
+    text = dry + (f', with {who}.' if who else '.')
+    lead = tagline(entry)
+    if lead:
+        text = lead + ('' if lead[-1] in '.!?' else '.') + ' ' + text
+    return text
+
+
 def long_date(iso):
     y, m, d = map(int, iso.split('-'))
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -146,12 +175,14 @@ def body_html(entry, page, post_pages, alts):
     return html.replace('href="#', f'href="{page}#')
 
 
-def json_ld(entry, subject, url, image):
+def json_ld(entry, subject, url, image, description=''):
     data = {
         '@context': 'https://schema.org',
         '@type': 'Article',
         'headline': f'Lectio Terra: {subject_name(entry, subject)}',
         'name': entry['title'],
+        'alternativeHeadline': tagline(entry) or None,
+        'description': description or None,
         'url': url,
         'author': {'@type': 'Person', 'name': AUTHOR},
         'isPartOf': {'@type': 'CreativeWorkSeries', 'name': 'Lectio Terra',
@@ -164,6 +195,7 @@ def json_ld(entry, subject, url, image):
         data['image'] = image
     # Each study is kept from one place (data/site.json's "place").
     place = load('site').get('place')
+    data = {k: v for k, v in data.items() if v is not None}
     if place:
         data['spatialCoverage'] = {
             '@type': 'Place',
@@ -256,7 +288,7 @@ def render(template, season, entry, subject, alone, post_pages, alts):
     url = f'{SITE}/{page}'
     name = subject_name(entry, subject)
     title = f'Lectio Terra: {name}'
-    description = escape(summary(entry))
+    description = escape(describe(entry, subject))
     credits = ', '.join(readers(entry))
     first = (entry.get('images') or [{}])[0].get('src', '')
     image = f'{SITE}/{web_version(first, 1600)}' if first.startswith('images/') else ''
@@ -273,7 +305,7 @@ def render(template, season, entry, subject, alone, post_pages, alts):
     t = replace_once(t, r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">')
     t = replace_once(t, r'<!-- No fixed canonical link here:[^\n]*\n', f'<link rel="canonical" href="{url}">\n' + standard_site_link(entry))
     t = replace_once(t, r'<title>[^<]*</title>', f'<title>{escape(title)} — The Earthly Book of Hours</title>')
-    t = replace_once(t, r'</head>', citation_tags(entry, title) + json_ld(entry, subject, url, image) + '</head>')
+    t = replace_once(t, r'</head>', citation_tags(entry, title) + json_ld(entry, subject, url, image, describe(entry, subject)) + '</head>')
 
     t = replace_once(t, r'<body class="season-reading-page">',
                      f'<body class="season-reading-page" data-season="{season}" data-entry="{entry["id"]}">')
