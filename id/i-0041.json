@@ -38,7 +38,8 @@
       {
         "id": "a-united-states-forest-service",
         "name": "United States Forest Service",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q1891156"
       }
     ],
     "publisher": "U.S. Department of Agriculture, Forest Service"
@@ -51,7 +52,8 @@
   "rightsNote": "a U.S. government work",
   "creator": {
     "id": "a-united-states-forest-service",
-    "name": "United States Forest Service"
+    "name": "United States Forest Service",
+    "wikidata": "Q1891156"
   },
   "related": {
     "about": [

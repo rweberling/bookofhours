@@ -11,7 +11,8 @@
     {
       "id": "a-united-states-forest-service",
       "name": "United States Forest Service",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q1891156"
     }
   ],
   "publisher": "U.S. Department of Agriculture, Forest Service",

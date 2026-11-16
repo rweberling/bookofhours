@@ -39,7 +39,8 @@
       {
         "id": "a-e-w-nelson",
         "name": "E. W. Nelson",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q536268"
       }
     ],
     "publisher": "Government Printing Office"
@@ -52,7 +53,8 @@
   "rightsNote": "a U.S. government work",
   "creator": {
     "id": "a-e-w-nelson",
-    "name": "E. W. Nelson"
+    "name": "E. W. Nelson",
+    "wikidata": "Q536268"
   },
   "related": {
     "about": [

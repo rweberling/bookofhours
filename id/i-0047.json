@@ -37,7 +37,8 @@
       {
         "id": "a-world-meteorological-organization",
         "name": "World Meteorological Organization",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q170424"
       }
     ]
   },
@@ -47,7 +48,8 @@
   },
   "creator": {
     "id": "a-world-meteorological-organization",
-    "name": "World Meteorological Organization"
+    "name": "World Meteorological Organization",
+    "wikidata": "Q170424"
   },
   "related": {
     "about": [

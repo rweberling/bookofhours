@@ -21,12 +21,14 @@
         {
           "id": "a-mark-twain",
           "name": "Mark Twain",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q7245"
         },
         {
           "id": "a-william-dean-howells",
           "name": "William Dean Howells",
-          "role": "introduction"
+          "role": "introduction",
+          "wikidata": "Q526709"
         }
       ],
       "publisher": "Harper & Brothers",

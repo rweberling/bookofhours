@@ -41,7 +41,8 @@
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
   "creator": {
     "id": "a-national-audubon-society",
-    "name": "National Audubon Society"
+    "name": "National Audubon Society",
+    "wikidata": "Q1646000"
   },
   "title": "American Robin: Annual Migration",
   "related": {

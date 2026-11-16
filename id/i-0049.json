@@ -39,7 +39,8 @@
       {
         "id": "a-e-a-bowles",
         "name": "E. A. Bowles",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q4095221"
       }
     ],
     "publisher": "M. Hopkinson"
@@ -51,7 +52,8 @@
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "creator": {
     "id": "a-e-a-bowles",
-    "name": "E. A. Bowles"
+    "name": "E. A. Bowles",
+    "wikidata": "Q4095221"
   },
   "related": {
     "about": [

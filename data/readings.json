@@ -5171,7 +5171,12 @@
         "type": "book",
         "title": "Poems of Gerard Manley Hopkins, Now First Published",
         "contributors": [
-          { "id": "a-gerard-manley-hopkins", "name": "Gerard Manley Hopkins", "role": "author" },
+          {
+            "id": "a-gerard-manley-hopkins",
+            "name": "Gerard Manley Hopkins",
+            "role": "author",
+            "wikidata": "Q313693"
+          },
           { "id": "a-robert-bridges", "name": "Robert Bridges", "role": "editor" }
         ],
         "publisher": "Humphrey Milford",
@@ -5206,7 +5211,14 @@
         "id": "e-0201",
         "type": "book",
         "title": "Poems",
-        "contributors": [{ "id": "a-ralph-waldo-emerson", "name": "Ralph Waldo Emerson", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-ralph-waldo-emerson",
+            "name": "Ralph Waldo Emerson",
+            "role": "author",
+            "wikidata": "Q48226"
+          }
+        ],
         "publisher": "Chapman, Brothers",
         "issued": "1847",
         "original-date": "1841",
@@ -5240,8 +5252,13 @@
         "type": "book",
         "title": "Mark Twain’s Speeches",
         "contributors": [
-          { "id": "a-mark-twain", "name": "Mark Twain", "role": "author" },
-          { "id": "a-william-dean-howells", "name": "William Dean Howells", "role": "introduction" }
+          { "id": "a-mark-twain", "name": "Mark Twain", "role": "author", "wikidata": "Q7245" },
+          {
+            "id": "a-william-dean-howells",
+            "name": "William Dean Howells",
+            "role": "introduction",
+            "wikidata": "Q526709"
+          }
         ],
         "publisher": "Harper & Brothers",
         "issued": "1910",

@@ -37,7 +37,8 @@
   "rightsNote": "the painter died in 1939",
   "creator": {
     "id": "a-ernest-lawson",
-    "name": "Ernest Lawson"
+    "name": "Ernest Lawson",
+    "wikidata": "Q1185478"
   },
   "title": "New England Birches",
   "institution": "The Phillips Collection",

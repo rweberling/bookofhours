@@ -21,7 +21,8 @@
         {
           "id": "a-gerard-manley-hopkins",
           "name": "Gerard Manley Hopkins",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q313693"
         },
         {
           "id": "a-robert-bridges",

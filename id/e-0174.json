@@ -9,7 +9,8 @@
     {
       "id": "a-world-meteorological-organization",
       "name": "World Meteorological Organization",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q170424"
     }
   ],
   "citedBy": [

@@ -35,7 +35,8 @@
       {
         "id": "a-george-maw",
         "name": "George Maw",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q5877899"
       }
     ],
     "publisher": "Dulau",
@@ -53,7 +54,8 @@
   },
   "creator": {
     "id": "a-george-maw",
-    "name": "George Maw"
+    "name": "George Maw",
+    "wikidata": "Q5877899"
   },
   "related": {
     "about": [

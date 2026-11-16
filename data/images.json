@@ -1075,7 +1075,11 @@
       "size": [1906, 921]
     },
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-    "creator": { "id": "a-national-audubon-society", "name": "National Audubon Society" },
+    "creator": {
+      "id": "a-national-audubon-society",
+      "name": "National Audubon Society",
+      "wikidata": "Q1646000"
+    },
     "title": "American Robin, March 5–12"
   },
   {
@@ -1207,7 +1211,8 @@
         {
           "id": "a-united-states-forest-service",
           "name": "United States Forest Service",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q1891156"
         }
       ],
       "publisher": "U.S. Department of Agriculture, Forest Service"
@@ -1218,7 +1223,11 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a U.S. government work",
-    "creator": { "id": "a-united-states-forest-service", "name": "United States Forest Service" }
+    "creator": {
+      "id": "a-united-states-forest-service",
+      "name": "United States Forest Service",
+      "wikidata": "Q1891156"
+    }
   },
   {
     "id": "i-0042",
@@ -1246,7 +1255,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "the painter died in 1939",
-    "creator": { "id": "a-ernest-lawson", "name": "Ernest Lawson" },
+    "creator": { "id": "a-ernest-lawson", "name": "Ernest Lawson", "wikidata": "Q1185478" },
     "title": "New England Birches",
     "institution": "The Phillips Collection"
   },
@@ -1276,7 +1285,8 @@
         {
           "id": "a-united-states-forest-service",
           "name": "United States Forest Service",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q1891156"
         }
       ],
       "publisher": "U.S. Department of Agriculture, Forest Service"
@@ -1287,7 +1297,11 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a U.S. government work",
-    "creator": { "id": "a-united-states-forest-service", "name": "United States Forest Service" }
+    "creator": {
+      "id": "a-united-states-forest-service",
+      "name": "United States Forest Service",
+      "wikidata": "Q1891156"
+    }
   },
   {
     "id": "i-0044",
@@ -1424,14 +1438,16 @@
         {
           "id": "a-world-meteorological-organization",
           "name": "World Meteorological Organization",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q170424"
         }
       ]
     },
     "locator": { "url": "https://cloudatlas.wmo.int/docs/wmo_407_en-v2.pdf", "label": "WMO Cloud Atlas" },
     "creator": {
       "id": "a-world-meteorological-organization",
-      "name": "World Meteorological Organization"
+      "name": "World Meteorological Organization",
+      "wikidata": "Q170424"
     }
   },
   {
@@ -1485,7 +1501,9 @@
       "title": "A Handbook of Crocus and Colchicum for Gardeners",
       "issued": "1924",
       "identifiers": { "hathitrust": "002010826", "oclc": "4584067", "lccn": "agr24001012" },
-      "contributors": [{ "id": "a-e-a-bowles", "name": "E. A. Bowles", "role": "author" }],
+      "contributors": [
+        { "id": "a-e-a-bowles", "name": "E. A. Bowles", "role": "author", "wikidata": "Q4095221" }
+      ],
       "publisher": "M. Hopkinson"
     },
     "locator": {
@@ -1493,7 +1511,7 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-e-a-bowles", "name": "E. A. Bowles" }
+    "creator": { "id": "a-e-a-bowles", "name": "E. A. Bowles", "wikidata": "Q4095221" }
   },
   {
     "id": "i-0050",
@@ -1517,7 +1535,7 @@
       "id": "e-0175",
       "type": "book",
       "title": "A Monograph of the Genus Crocus",
-      "contributors": [{ "id": "a-george-maw", "name": "George Maw", "role": "author" }],
+      "contributors": [{ "id": "a-george-maw", "name": "George Maw", "role": "author", "wikidata": "Q5877899" }],
       "publisher": "Dulau",
       "issued": "1886",
       "identifiers": {
@@ -1531,7 +1549,7 @@
       "url": "https://www.biodiversitylibrary.org/page/15330235",
       "label": "Biodiversity Heritage Library"
     },
-    "creator": { "id": "a-george-maw", "name": "George Maw" }
+    "creator": { "id": "a-george-maw", "name": "George Maw", "wikidata": "Q5877899" }
   },
   {
     "id": "i-0051",
@@ -1734,7 +1752,9 @@
       "title": "North American Fauna, No. 29: The Rabbits of North America",
       "issued": "1909",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" },
-      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }],
+      "contributors": [
+        { "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author", "wikidata": "Q536268" }
+      ],
       "publisher": "Government Printing Office"
     },
     "locator": {
@@ -1743,7 +1763,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a U.S. government work",
-    "creator": { "id": "a-e-w-nelson", "name": "E. W. Nelson" }
+    "creator": { "id": "a-e-w-nelson", "name": "E. W. Nelson", "wikidata": "Q536268" }
   },
   {
     "id": "i-0057",
@@ -1767,7 +1787,9 @@
       "title": "North American Fauna, No. 29: The Rabbits of North America",
       "issued": "1909",
       "identifiers": { "hathitrust": "007858342", "oclc": "71848387", "lccn": "78001249" },
-      "contributors": [{ "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author" }],
+      "contributors": [
+        { "id": "a-e-w-nelson", "name": "E. W. Nelson", "role": "author", "wikidata": "Q536268" }
+      ],
       "publisher": "Government Printing Office"
     },
     "locator": {
@@ -1776,7 +1798,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a U.S. government work",
-    "creator": { "id": "a-e-w-nelson", "name": "E. W. Nelson" }
+    "creator": { "id": "a-e-w-nelson", "name": "E. W. Nelson", "wikidata": "Q536268" }
   },
   {
     "id": "i-0058",
@@ -1808,7 +1830,7 @@
       "size": [354, 646]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-j-curtis", "name": "J. Curtis" },
+    "creator": { "id": "a-j-curtis", "name": "J. Curtis", "wikidata": "Q327944" },
     "title": "Common Mullein (Verbascum thapsus) with an Associated Moth and Its Anatomical Segments",
     "date": "1831",
     "institution": "Wellcome Collection"
@@ -3510,7 +3532,7 @@
       "url": "https://www.biodiversitylibrary.org/page/44254481",
       "label": "Biodiversity Heritage Library"
     },
-    "creator": { "id": "a-m-p-verneuil", "name": "M. P. Verneuil" }
+    "creator": { "id": "a-m-p-verneuil", "name": "M. P. Verneuil", "wikidata": "Q971442" }
   },
   {
     "id": "i-0107",
@@ -3628,7 +3650,7 @@
       "identifiers": { "doi": "10.1093/aob/mcl082" }
     },
     "locator": { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2803533/", "label": "PubMed Central" },
-    "creator": { "id": "a-jean-bourdichon", "name": "Jean Bourdichon" }
+    "creator": { "id": "a-jean-bourdichon", "name": "Jean Bourdichon", "wikidata": "Q348333" }
   },
   {
     "id": "i-0110",
@@ -4097,7 +4119,11 @@
       "size": [1280, 582]
     },
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
-    "creator": { "id": "a-national-audubon-society", "name": "National Audubon Society" },
+    "creator": {
+      "id": "a-national-audubon-society",
+      "name": "National Audubon Society",
+      "wikidata": "Q1646000"
+    },
     "title": "American Robin: Annual Migration"
   },
   {

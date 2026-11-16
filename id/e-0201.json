@@ -7,7 +7,8 @@
     {
       "id": "a-ralph-waldo-emerson",
       "name": "Ralph Waldo Emerson",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q48226"
     }
   ],
   "publisher": "Chapman, Brothers",
