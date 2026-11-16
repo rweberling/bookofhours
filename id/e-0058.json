@@ -20,6 +20,9 @@
   "publisher": "Columbia University Press",
   "issued": "2024",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "identifiers": {
+    "isbn": "9780231213455"
+  },
   "citedBy": [
     "r-0058"
   ],

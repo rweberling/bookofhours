@@ -1,6 +1,11 @@
 {
   "@id": "https://earthlyhours.com/id/e-0208/",
   "id": "e-0208",
+  "identifiers": {
+    "hathitrust": "001503354",
+    "oclc": "610486",
+    "lccn": "00005916"
+  },
   "citedBy": [
     "r-0135"
   ],

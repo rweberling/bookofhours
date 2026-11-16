@@ -3499,7 +3499,12 @@
         }
       ],
       "publisher": "Librairie Centrale des Beaux-Arts",
-      "issued": "1896"
+      "issued": "1896",
+      "identifiers": {
+        "oclc": "25882386",
+        "openlibrary": "OL25591928M",
+        "internetArchive": "planteetsesappl00Gras"
+      }
     },
     "locator": {
       "url": "https://www.biodiversitylibrary.org/page/44254481",
@@ -4669,7 +4674,8 @@
         }
       ],
       "publisher": "J. Edwards",
-      "issued": "1797"
+      "issued": "1797",
+      "identifiers": { "lccn": "agr04003607", "openlibrary": "OL234364M" }
     },
     "locator": {
       "page": "Tab. 4",
@@ -5520,7 +5526,7 @@
       "title": "The American Flora, or, History of Plants and Wild Flowers, vol. 4",
       "publisher": "Hull & Spencer",
       "issued": "1855",
-      "identifiers": { "internetArchive": "americanfloraorh41855stro" }
+      "identifiers": { "internetArchive": "americanfloraorh41855stro", "oclc": "4908737" }
     },
     "locator": {
       "url": "https://archive.org/details/americanfloraorh41855stro/page/n70/mode/1up",

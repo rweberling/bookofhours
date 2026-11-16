@@ -51,7 +51,11 @@
       }
     ],
     "publisher": "J. Edwards",
-    "issued": "1797"
+    "issued": "1797",
+    "identifiers": {
+      "lccn": "agr04003607",
+      "openlibrary": "OL234364M"
+    }
   },
   "locator": {
     "page": "Tab. 4",

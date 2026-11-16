@@ -5,7 +5,12 @@
   "citation": {
     "display": "Ralph Waldo Emerson. “<a href=\"https://hdl.handle.net/2027/hvd.hn227q?urlappend=%3Bseq=123%3Bownerid=27021597765718572-129\" rel=\"noopener\" target=\"_blank\">Fable</a>.” Boston: James Munroe and Company, 1847. 115.",
     "edition": {
-      "id": "e-0209"
+      "id": "e-0209",
+      "identifiers": {
+        "hathitrust": "009596582",
+        "oclc": "10318677",
+        "lccn": "01000584"
+      }
     }
   },
   "lectio": {

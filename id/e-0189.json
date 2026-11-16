@@ -13,6 +13,11 @@
   ],
   "publisher": "Librairie Centrale des Beaux-Arts",
   "issued": "1896",
+  "identifiers": {
+    "oclc": "25882386",
+    "openlibrary": "OL25591928M",
+    "internetArchive": "planteetsesappl00Gras"
+  },
   "citedBy": [
     "i-0106"
   ],

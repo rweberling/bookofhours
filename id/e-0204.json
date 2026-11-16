@@ -14,7 +14,9 @@
   "issued": "1643",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "internetArchive": "keyintolanguageo02will"
+    "internetArchive": "keyintolanguageo02will",
+    "oclc": "725882625",
+    "openlibrary": "OL25273820M"
   },
   "citedBy": [
     "r-0132"

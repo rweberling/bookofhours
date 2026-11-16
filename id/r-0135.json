@@ -5,7 +5,12 @@
   "citation": {
     "display": "John Burroughs. From “<a href=\"https://hdl.handle.net/2027/coo.31924024557864?urlappend=%3Bseq=23\" rel=\"noopener\" target=\"_blank\">Squirrels</a>.” <em>Squirrels and Other Fur-Bearers</em>. 1875. Boston and New York: Houghton, Mifflin and Company, 1900. 7-8.",
     "edition": {
-      "id": "e-0208"
+      "id": "e-0208",
+      "identifiers": {
+        "hathitrust": "001503354",
+        "oclc": "610486",
+        "lccn": "00005916"
+      }
     }
   },
   "lectio": {

@@ -21,7 +21,9 @@
   "issued": "1906",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "internetArchive": "writingsofhenryd17thorrich"
+    "internetArchive": "writingsofhenryd17thorrich",
+    "oclc": "507346",
+    "lccn": "06004618"
   },
   "citedBy": [
     "r-0133"

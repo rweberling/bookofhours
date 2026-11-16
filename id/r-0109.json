@@ -23,7 +23,10 @@
         }
       ],
       "issued": "2025-02",
-      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+      "identifiers": {
+        "doi": "10.3197/whppp.63845494909751"
+      }
     }
   },
   "lectio": {

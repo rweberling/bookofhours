@@ -1,6 +1,12 @@
 {
   "@id": "https://earthlyhours.com/id/e-0207/",
   "id": "e-0207",
+  "identifiers": {
+    "internetArchive": "journalsofcaptai00lewirich",
+    "oclc": "56934244",
+    "openlibrary": "OL6590313M",
+    "lccn": "16019656"
+  },
   "citedBy": [
     "r-0134"
   ],

@@ -5,7 +5,13 @@
   "citation": {
     "display": "Meriwether Lewis. From “<a href=\"https://archive.org/details/journalsofcaptai00lewirich/page/42/mode/2up?q=11th+September\" rel=\"noopener\" target=\"_blank\">September 11, 1803</a>.” <em>The Journals of Captain Meriwether Lewis and Sergeant John Ordway</em>. Ed. Milo M. Quaife. Madison: State Historical Society of Wisconsin, 1916. 42.",
     "edition": {
-      "id": "e-0207"
+      "id": "e-0207",
+      "identifiers": {
+        "internetArchive": "journalsofcaptai00lewirich",
+        "oclc": "56934244",
+        "openlibrary": "OL6590313M",
+        "lccn": "16019656"
+      }
     }
   },
   "lectio": {

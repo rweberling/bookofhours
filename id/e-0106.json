@@ -22,6 +22,9 @@
   ],
   "issued": "1982-01",
   "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "identifiers": {
+    "doi": "10.1126/science.215.4528.19"
+  },
   "citedBy": [
     "r-0107"
   ],
