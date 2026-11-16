@@ -28,8 +28,11 @@ out the text of a reading in copyright, as the published dataset does
 An ID that was replaced (a record's `aliases`) gets a small page that
 forwards to the record, so old links keep working.
 
-While INDEXED is False the pages are kept out of search engines (noindex)
-and so out of the sitemap. Writing (w-) and the posts (lt-, which have
+The pages are open to search engines and listed in the sitemap (since 16
+November 2026; INDEXED = False puts them all back to noindex). A day's
+reading and image stay noindex until the day is released (a draft day,
+or one not yet built), so a card isn't found before Ryan has passed it.
+Writing (w-) and the posts (lt-, which have
 their own pages under lectio-terra/) have no record pages; people have
 no IDs of their own here and are linked to Wikidata.
 
@@ -52,7 +55,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'id'
 SITE = 'https://earthlyhours.com'
 DOI = 'https://doi.org/10.5281/zenodo.23603918'
-INDEXED = False
+INDEXED = True
 
 PD = ('http://rightsstatements.org/vocab/NoC-US/1.0/', 'https://creativecommons.org/publicdomain/')
 OPEN = PD + ('https://creativecommons.org/licenses/by/', 'https://creativecommons.org/licenses/by-sa/')
@@ -698,7 +701,7 @@ def clean_ld(data):
     return data
 
 
-def page(rid, kind, title, title_text, body, ld):
+def page(rid, kind, title, title_text, body, ld, hidden=False):
     url = f'{SITE}/id/{rid}/'
     rel = f'id/{rid}/index.html'
     block = ('  <script type="application/ld+json">\n'
@@ -707,7 +710,7 @@ def page(rid, kind, title, title_text, body, ld):
     return PAGE.format(
         head=render_shared('head', rel), frame=render_shared('frame', rel), nav=render_shared('nav', rel),
         title=title, title_text=escape(title_text), description=escape(f'{KIND[kind]} {rid}: {title_text}'),
-        robots='' if INDEXED else '  <meta name="robots" content="noindex">\n',
+        robots='' if INDEXED and not hidden else '  <meta name="robots" content="noindex">\n',
         url=url, json_url=f'{SITE}/id/{rid}.json', json_ld=block, kind=KIND[kind], rid=rid, body=body)
 
 
@@ -853,7 +856,10 @@ def wanted():
         for rid in ids:
             title, title_text, body, ld = make(rid)
             kind = col.terms[rid][0] if rid in col.terms else prefix(rid)
-            files[f'id/{rid}/index.html'] = page(rid, kind, title, title_text, body, ld)
+            # A day's pieces wait for the day's release.
+            rec = col.by_id.get(rid) or {}
+            hidden = rec.get('shownIn') == 'days' and rid not in col.day_of
+            files[f'id/{rid}/index.html'] = page(rid, kind, title, title_text, body, ld, hidden)
             files[f'id/{rid}.json'] = record_json(col, rid)
     for r in col.readings + col.images:
         for alias in r.get('aliases') or []:

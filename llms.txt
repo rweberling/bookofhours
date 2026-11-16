@@ -20,6 +20,7 @@ Search and AI answers may quote and link to the site; training or fine-tuning AI
 
 - [About](https://earthlyhours.com/about.html): what the book is, and how it is arranged
 - [Sources](https://earthlyhours.com/sources.html): the books, artworks, archives and records behind the images and readings
+- [The records](https://earthlyhours.com/id/): the catalogue, a page for every reading, image, edition, species and phenomenon (its citation, source, rights and where the site shows it), and for each hour, weather and season, the pieces that belong to it; each also as JSON (https://earthlyhours.com/id/index.json)
 - [Otherwise Editions](https://earthlyhours.com/editions.html): the print and digital editions
 
 ## Lectio Terra readings
