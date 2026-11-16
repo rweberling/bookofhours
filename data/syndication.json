@@ -585,9 +585,9 @@
       "i-0161": { "id": 52731091, "channel": "weather", "digest": "dc61afacb68f5b72" },
       "i-0063": { "id": 52810238, "channel": "spring", "digest": "d5a54cb04580f50c" },
       "i-0087": { "id": 52810239, "channel": "summer", "digest": "aaaa24536bcb1731" },
-      "i-0165": { "id": 52810240, "channel": "autumn", "digest": "65f45a4a890da3ee" },
-      "i-0166": { "id": 52810254, "channel": "autumn", "digest": "c2dc0cb4aa18d8b1" },
-      "i-0167": { "id": 52810640, "channel": "autumn", "digest": "92ab73a464b2e02e" }
+      "i-0165": { "id": 52810240, "channel": "autumn", "digest": "b1155e9ac66816e2" },
+      "i-0166": { "id": 52810254, "channel": "autumn", "digest": "913f04bd7f390e91" },
+      "i-0167": { "id": 52810640, "channel": "autumn", "digest": "df4a094d48d36454" }
     }
   },
   "calendar": {
