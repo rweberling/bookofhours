@@ -111,8 +111,21 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   and its `rights` (clear cases applied and logged in the Rights review
   sheet, the rest "needs Ryan"; Ryan, 15 November 2026): the push posts
   the essay to Bluesky at once with its shareable figures, and a posted
-  image's alt text can't be changed. `syndicate.py --preview lt-NNNN`
-  shows the post as it will go out.
+  image's alt text can't be changed. Also before pushing, draft the
+  post's Bluesky lines yourself (Ryan, 16 November 2026: drafted
+  automatically, not held for him): on the post, `syndication.excerpts`,
+  three lines of 220 characters or fewer, each word for word from one
+  record (`from`: his headnote, supplementum or note, `w-`, or a passage
+  of a paired reading, `r-`, which goes out signed with its author), the
+  first the one that best opens the essay, the most striking sentence of
+  his own; and `syndication.hashtags`, one or two for the essay's own
+  angle (a writer, an idea). A subject new to the collection also gets
+  `hashtags` on its `sp-`/`ph-` record, three for the thing itself (its
+  common name, a group it belongs to), used for every later post about
+  it. Tags are lower case, one word, no `#`; `check_data.py` checks both
+  tags and excerpts. `syndicate.py --preview lt-NNNN` shows the post as
+  it will go out; the import's email gives it, so Ryan can correct the
+  records for the later Back in season posts.
 
 ## The pages
 
