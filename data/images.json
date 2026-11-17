@@ -299,16 +299,16 @@
     "aliases": ["i-smith-human-blood-x1000"],
     "shownIn": "hours",
     "file": "images/chorus_smithblood.jpg",
-    "caption": "Arthur E. Smith, \"<a href=\"https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270\" target=\"_blank\">Human Blood x1000</a>,\" from Richard Kerr, <em>Nature Through Microscope & Camera</em> (1909)",
+    "caption": "Arthur E. Smith, \"<a href=\"https://hdl.handle.net/2027/gri.ark:/13960/t70w4sm4q?urlappend=%3Bseq=270\" target=\"_blank\">Human Blood x1000</a>,\" from Richard Kerr, <em>Nature Through Microscope & Camera</em> (1905)",
     "alt": "A black-and-white photomicrograph crowded with small round blood cells, each with a pale ring and a darker centre, and a few larger blurred cells among them, captioned “Fig. 51. Human blood. ×1000.”",
-    "bibliography": "Smith, Arthur E. \"Human Blood x1000.\" <em>Nature Through Microscope &amp; Camera</em>, by Richard Kerr, Religious Tract Society, 1909.",
+    "bibliography": "Smith, Arthur E. \"Human Blood x1000.\" <em>Nature Through Microscope &amp; Camera</em>, by Richard Kerr, Religious Tract Society, 1905.",
     "creator": { "id": "a-arthur-e-smith", "name": "Arthur E. Smith" },
     "title": "Human Blood x1000",
     "edition": {
       "id": "e-0164",
       "title": "Nature Through Microscope & Camera",
       "publisher": "Religious Tract Society",
-      "issued": "1909",
+      "issued": "1905",
       "identifiers": { "hathitrust": "100114882", "oclc": "1563671" }
     },
     "locator": {
@@ -2590,9 +2590,9 @@
     "id": "i-0080",
     "shownIn": "seasons",
     "file": "images/lectio-terra/192759341.week-25-pink-ladys-slipper-grace-2-00d8e45baf8d.jpeg",
-    "caption": "“<em><a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29\">Cypripedium acaule</a></em>,” from <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em> (Boston: Bradlee Whidden, 1885), n.p.",
+    "caption": "“<em><a href=\"https://hdl.handle.net/2027/uiuo.ark:/13960/t5fc19d9t?urlappend=%3Bseq=29\">Cypripedium acaule</a></em>,” from <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em> (Boston: Bradlee Whidden, 1895), n.p.",
     "alt": "A black-and-white photograph of a single lady’s slipper orchid: one drooping, pouch-shaped flower atop a tall bare stem, above two broad leaves.",
-    "bibliography": "Young, C. S. \"<em>Cypripedium acaule</em>.\" <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em>, Bradlee Whidden, 1885.",
+    "bibliography": "Young, C. S. \"<em>Cypripedium acaule</em>.\" <em>All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States</em>, Bradlee Whidden, 1895.",
     "lectio": { "post": "lt-0016", "place": 2 },
     "tags": {
       "hours": [],
@@ -2610,7 +2610,7 @@
       "title": "All of Nature’s Fashions in Lady’s Slippers for the Northern and Eastern Parts of the United States",
       "contributors": [{ "id": "a-c-s-young", "name": "C. S. Young", "role": "author" }],
       "publisher": "Bradlee Whidden",
-      "issued": "1885",
+      "issued": "1895",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
       "identifiers": { "hathitrust": "102200118", "oclc": "14091003", "lccn": "04030252" }
     },
