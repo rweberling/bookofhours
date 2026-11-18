@@ -40,5 +40,12 @@
     "latin": "Prima pruina",
     "wikidata": null,
     "hashtags": ["frost", "firstfrost", "weather"]
+  },
+  {
+    "id": "ph-0007",
+    "name": "First Ice",
+    "latin": null,
+    "wikidata": null,
+    "hashtags": ["firstice", "ice", "winter"]
   }
 ]

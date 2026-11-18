@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0212/",
+  "id": "e-0212",
+  "type": "book",
+  "title": "Toadstools, Mushrooms, Fungi, Edible and Poisonous: One Thousand American Fungi",
+  "contributors": [
+    {
+      "id": "a-charles-mcilvaine",
+      "name": "Charles McIlvaine",
+      "role": "author"
+    },
+    {
+      "id": "a-robert-k-macadam",
+      "name": "Robert K. Macadam",
+      "role": "author"
+    }
+  ],
+  "publisher": "Bowen-Merrill",
+  "issued": "1902",
+  "original-date": "1900",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "toadstoolsmushro00mcil"
+  },
+  "citedBy": [
+    "r-0137"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0137/",
+        "id": "r-0137",
+        "name": "Charles McIlvaine, Robert K. Macadam, “Pleurotus serotinus”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

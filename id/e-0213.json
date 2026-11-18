@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0213/",
+  "id": "e-0213",
+  "type": "book",
+  "title": "The Forms of Water in Clouds and Rivers, Ice and Glaciers, 3rd ed.",
+  "contributors": [
+    {
+      "id": "a-john-tyndall",
+      "name": "John Tyndall",
+      "role": "author",
+      "wikidata": "Q360808"
+    }
+  ],
+  "publisher": "Henry S. King",
+  "issued": "1873",
+  "original-date": "1872",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "in.ernet.dli.2015.43950"
+  },
+  "citedBy": [
+    "r-0138"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0138/",
+        "id": "r-0138",
+        "name": "John Tyndall, “Architecture of Lake Ice”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

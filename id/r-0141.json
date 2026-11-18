@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0141/",
+  "id": "r-0141",
+  "shownIn": "days",
+  "text": "<p>Clean one quart scallops, add one and one-half cups boiling water, and let stand two minutes; drain, and dry between towels. Season with salt and pepper, roll in fine cracker crumbs, dip in egg, again in crumbs, and fry two minutes in deep fat; then drain on brown paper.</p>",
+  "citation": {
+    "display": "Fannie Merritt Farmer, “Fried Scallops,” from <a href=\"https://archive.org/details/bostoncookingsc00collgoog/page/n200/mode/1up\" target=\"_blank\"><em>The Boston Cooking-School Cook Book</em></a> (1896), p. 165",
+    "bibliography": "Farmer, Fannie Merritt. \"Fried Scallops.\" <em>The Boston Cooking-School Cook Book</em>, Little, Brown, 1896, p. 165.",
+    "title": "Fried Scallops",
+    "written": "1896",
+    "locator": {
+      "page": "165",
+      "url": "https://archive.org/details/bostoncookingsc00collgoog/page/n200/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0216",
+      "type": "book",
+      "title": "The Boston Cooking-School Cook Book",
+      "contributors": [
+        {
+          "id": "a-fannie-merritt-farmer",
+          "name": "Fannie Merritt Farmer",
+          "role": "author"
+        }
+      ],
+      "publisher": "Little, Brown",
+      "issued": "1896",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "bostoncookingsc00collgoog"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0036",
+        "basis": "grounded",
+        "note": "A Boston recipe for bay scallops, in season from autumn into winter."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0036/",
+        "id": "sp-0036",
+        "name": "Bay Scallop",
+        "scientific": "Argopecten irradians",
+        "wikidata": "Q3018372"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0216/",
+      "id": "e-0216",
+      "name": "The Boston Cooking-School Cook Book"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

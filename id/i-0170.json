@@ -1,0 +1,68 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0170/",
+  "id": "i-0170",
+  "shownIn": "days",
+  "file": "images/days_usda_fall_cankerworm.jpg",
+  "caption": "B. A. Porter and C. H. Alden, <a href=\"https://archive.org/details/cankerworms1238port/page/n13/mode/1up\" target=\"_blank\"><em>Fall Cankerworm</em></a>, plate II of <em>The Cankerworms</em> (U.S. Department of Agriculture, 1924)",
+  "alt": "A plate of seven photographs in a grid: a looping green caterpillar on a twig, a neat mass of eggs on bark, pupae, a grey male moth with wings spread, a wingless female laying eggs on a branch, pupae in cocoons, and wingless females; captioned “Fall Cankerworm.”",
+  "bibliography": "Porter, B. A., and C. H. Alden. <em>Fall Cankerworm</em>, plate II. In <em>The Cankerworms</em>, U.S. Department of Agriculture Department Bulletin 1238, Washington, 1924.",
+  "creator": [
+    {
+      "id": "a-b-a-porter",
+      "name": "B. A. Porter"
+    },
+    {
+      "id": "a-c-h-alden",
+      "name": "C. H. Alden"
+    }
+  ],
+  "title": "Fall Cankerworm (plate II)",
+  "date": "1924",
+  "institution": "U.S. Department of Agriculture, National Agricultural Library",
+  "source": {
+    "url": "https://archive.org/download/cankerworms1238port/page/n13.jpg",
+    "retrieved": "2026-11-18"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0219",
+    "title": "The Cankerworms (USDA Department Bulletin 1238)",
+    "publisher": "U.S. Department of Agriculture",
+    "issued": "1924",
+    "identifiers": {
+      "internetArchive": "cankerworms1238port"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/cankerworms1238port/page/n13/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0034"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0034/",
+        "id": "sp-0034",
+        "name": "Fall Cankerworm",
+        "scientific": "Alsophila pometaria",
+        "wikidata": "Q1370141"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0219/",
+      "id": "e-0219",
+      "name": "The Cankerworms (USDA Department Bulletin 1238)"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

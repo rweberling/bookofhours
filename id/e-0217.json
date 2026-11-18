@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0217/",
+  "id": "e-0217",
+  "type": "book",
+  "title": "Our Native Ferns and Their Allies, 4th ed., revised",
+  "contributors": [
+    {
+      "id": "a-lucien-marcus-underwood",
+      "name": "Lucien Marcus Underwood",
+      "role": "author"
+    }
+  ],
+  "publisher": "Henry Holt",
+  "issued": "1893",
+  "original-date": "1881",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "ournativefernsa02undegoog"
+  },
+  "citedBy": [
+    "r-0142"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0142/",
+        "id": "r-0142",
+        "name": "Lucien Marcus Underwood, “Introduction”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

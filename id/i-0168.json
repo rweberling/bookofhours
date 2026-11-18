@@ -1,0 +1,58 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0168/",
+  "id": "i-0168",
+  "shownIn": "days",
+  "file": "images/days_cooke_late_oyster.jpg",
+  "caption": "M. C. Cooke, <a href=\"https://www.biodiversitylibrary.org/page/2894556\" target=\"_blank\"><em>Agaricus (Pleurotus) serotinus</em></a>, with <em>A. (P.) petaloides</em>, plate 258 of <em>Illustrations of British Fungi</em> (1881–1891)",
+  "alt": "A colour plate of two fungi on a pale green ground. Above, tan funnel- and fan-shaped caps with a small cluster of white ones, labelled Agaricus (Pleurotus) petaloides. Below, brown-olive shell-shaped caps growing from a mossy log, with a cut cap showing pale orange gills, labelled Agaricus (Pleurotus) serotinus, “on trunks, Nov.”",
+  "bibliography": "Cooke, M. C. <em>Agaricus (Pleurotus) serotinus</em>, with <em>A. (P.) petaloides</em>. Plate 258 in <em>Illustrations of British Fungi (Hymenomycetes)</em>, vol. 2, London, 1881–1891, colour lithograph.",
+  "creator": {
+    "id": "a-mordecai-cubitt-cooke",
+    "name": "M. C. Cooke"
+  },
+  "title": "Agaricus (Pleurotus) serotinus, with A. (P.) petaloides",
+  "date": "1881/1891",
+  "institution": "Biodiversity Heritage Library",
+  "source": {
+    "url": "https://www.biodiversitylibrary.org/pageimage/2894556",
+    "retrieved": "2026-11-18"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0218",
+    "title": "Illustrations of British Fungi (Hymenomycetes), vol. 2",
+    "issued": "1881/1891"
+  },
+  "locator": {
+    "url": "https://www.biodiversitylibrary.org/page/2894556",
+    "label": "Biodiversity Heritage Library"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0033"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0033/",
+        "id": "sp-0033",
+        "name": "Late Oyster",
+        "scientific": "Sarcomyxa serotina",
+        "wikidata": "Q81202193"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0218/",
+      "id": "e-0218",
+      "name": "Illustrations of British Fungi (Hymenomycetes), vol. 2"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0037/",
+  "id": "sp-0037",
+  "name": "Princess Pine",
+  "scientific": "Dendrolycopodium obscurum",
+  "rank": "species",
+  "hashtags": [
+    "princesspine",
+    "clubmoss",
+    "evergreens"
+  ],
+  "wikidata": "Q15338742",
+  "gbif": "3991468",
+  "inaturalist": "204198",
+  "records": [
+    "r-0142",
+    "i-0173"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0142/",
+        "id": "r-0142",
+        "name": "Lucien Marcus Underwood, “Introduction”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0173/",
+        "id": "i-0173",
+        "name": "Julian Alden Weir, Christmas Greens"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

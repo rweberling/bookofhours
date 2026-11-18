@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0034/",
+  "id": "sp-0034",
+  "name": "Fall Cankerworm",
+  "scientific": "Alsophila pometaria",
+  "rank": "species",
+  "hashtags": [
+    "cankerworm",
+    "moths",
+    "insects"
+  ],
+  "wikidata": "Q1370141",
+  "gbif": "5143952",
+  "inaturalist": "215208",
+  "records": [
+    "r-0139",
+    "i-0170"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0139/",
+        "id": "r-0139",
+        "name": "Thaddeus William Harris, “The Canker-Worm”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0170/",
+        "id": "i-0170",
+        "name": "B. A. Porter and C. H. Alden, Fall Cankerworm (plate II)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

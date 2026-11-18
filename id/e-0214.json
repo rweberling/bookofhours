@@ -1,0 +1,38 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0214/",
+  "id": "e-0214",
+  "type": "book",
+  "title": "A Treatise on Some of the Insects Injurious to Vegetation, new edition",
+  "contributors": [
+    {
+      "id": "a-thaddeus-william-harris",
+      "name": "Thaddeus William Harris",
+      "role": "author"
+    },
+    {
+      "id": "a-charles-l-flint",
+      "name": "Charles L. Flint",
+      "role": "editor"
+    }
+  ],
+  "publisher": "Crosby and Nichols",
+  "issued": "1862",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "treatiseonso00harr"
+  },
+  "citedBy": [
+    "r-0139"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0139/",
+        "id": "r-0139",
+        "name": "Thaddeus William Harris, “The Canker-Worm”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

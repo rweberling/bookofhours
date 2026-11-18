@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0173/",
+  "id": "i-0173",
+  "shownIn": "days",
+  "file": "images/days_weir_christmas_greens.jpg",
+  "caption": "Julian Alden Weir, <a href=\"https://www.artic.edu/artworks/129635\" target=\"_blank\"><em>Christmas Greens</em></a> (1889), etching",
+  "alt": "An etching of a woman seated by a window, working evergreen garlands in her lap, while a small girl in a white dress stands beside her holding a sprig; a wreath hangs in the window above them.",
+  "bibliography": "Weir, Julian Alden. <em>Christmas Greens</em>. 1889, etching, The Art Institute of Chicago, 2013.855.",
+  "creator": {
+    "id": "a-julian-alden-weir",
+    "name": "Julian Alden Weir"
+  },
+  "title": "Christmas Greens",
+  "date": "1889",
+  "institution": "The Art Institute of Chicago",
+  "shelfmark": "2013.855",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/129635"
+    }
+  ],
+  "source": {
+    "url": "https://www.artic.edu/iiif/2/9924794a-b26c-75f4-be74-a3dde095e874/full/3000,/0/default.jpg",
+    "retrieved": "2026-11-18"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0037"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0037/",
+        "id": "sp-0037",
+        "name": "Princess Pine",
+        "scientific": "Dendrolycopodium obscurum",
+        "wikidata": "Q15338742"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

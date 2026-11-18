@@ -1,0 +1,72 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0139/",
+  "id": "r-0139",
+  "shownIn": "days",
+  "text": "<p>It was formerly supposed that the canker-worm moths came out of the ground only in the spring. It is now known that many of them rise in the autumn and in the early part of the winter. In mild and open winters I have seen them in every month from October to March. They begin to make their appearance after the first hard frosts in the autumn, usually towards the end of October, and they continue to come forth, in greater or smaller numbers, according to the mildness or severity of the weather after the frosts have begun.</p>",
+  "citation": {
+    "display": "Thaddeus William Harris, from <a href=\"https://archive.org/details/treatiseonso00harr/page/n493/mode/1up\" target=\"_blank\"><em>A Treatise on Some of the Insects Injurious to Vegetation</em></a> (1862), p. 462",
+    "bibliography": "Harris, Thaddeus William. \"The Canker-Worm.\" <em>A Treatise on Some of the Insects Injurious to Vegetation</em>, new edition, edited by Charles L. Flint, Crosby and Nichols, 1862, p. 462.",
+    "title": "The Canker-Worm",
+    "written": "1862",
+    "locator": {
+      "page": "462",
+      "url": "https://archive.org/details/treatiseonso00harr/page/n493/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0214",
+      "type": "book",
+      "title": "A Treatise on Some of the Insects Injurious to Vegetation, new edition",
+      "contributors": [
+        {
+          "id": "a-thaddeus-william-harris",
+          "name": "Thaddeus William Harris",
+          "role": "author"
+        },
+        {
+          "id": "a-charles-l-flint",
+          "name": "Charles L. Flint",
+          "role": "editor"
+        }
+      ],
+      "publisher": "Crosby and Nichols",
+      "issued": "1862",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "treatiseonso00harr"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0034",
+        "basis": "grounded",
+        "note": "Harris on cankerworm moths rising after the first hard frosts, from October on."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0034/",
+        "id": "sp-0034",
+        "name": "Fall Cankerworm",
+        "scientific": "Alsophila pometaria",
+        "wikidata": "Q1370141"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0214/",
+      "id": "e-0214",
+      "name": "A Treatise on Some of the Insects Injurious to Vegetation, new edition"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

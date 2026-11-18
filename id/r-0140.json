@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0140/",
+  "id": "r-0140",
+  "shownIn": "days",
+  "text": "<p>When wintry winds lash the dark water into foam and send it roaring upon our rocky coast, when the shore birds have gone and the Geese have flown, the Old-squaws still ride the waves just outside the breakers. They seem filled with abundant vigor and playfulness. Rising against the wind, they speed away and back again, splashing down into the sea. Their calls and cries are heard particularly at morning and late in the afternoon, when they are often very vociferous.</p>",
+  "citation": {
+    "display": "Edward Howe Forbush, from <a href=\"https://archive.org/details/historyofgame00forb/page/n171/mode/1up\" target=\"_blank\"><em>A History of the Game Birds, Wild-Fowl and Shore Birds of Massachusetts and Adjacent States</em></a> (1912), p. 142",
+    "bibliography": "Forbush, Edward Howe. \"Old-squaw.\" <em>A History of the Game Birds, Wild-Fowl and Shore Birds of Massachusetts and Adjacent States</em>, Massachusetts State Board of Agriculture, 1912, p. 142.",
+    "title": "Old-squaw",
+    "written": "1912",
+    "locator": {
+      "page": "142",
+      "url": "https://archive.org/details/historyofgame00forb/page/n171/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0215",
+      "type": "book",
+      "title": "A History of the Game Birds, Wild-Fowl and Shore Birds of Massachusetts and Adjacent States",
+      "contributors": [
+        {
+          "id": "a-edward-howe-forbush",
+          "name": "Edward Howe Forbush",
+          "role": "author"
+        }
+      ],
+      "publisher": "Massachusetts State Board of Agriculture",
+      "issued": "1912",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "historyofgame00forb"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0035",
+        "basis": "grounded",
+        "note": "Forbush on the long-tailed duck (then the old-squaw) riding the winter breakers off Massachusetts."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0035/",
+        "id": "sp-0035",
+        "name": "Long-tailed Duck",
+        "scientific": "Clangula hyemalis",
+        "wikidata": "Q26597"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0215/",
+      "id": "e-0215",
+      "name": "A History of the Game Birds, Wild-Fowl and Shore Birds of Massachusetts and Adjacent States"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

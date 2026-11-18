@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0169/",
+  "id": "i-0169",
+  "shownIn": "days",
+  "file": "images/days_homer_jamaica_pond.jpg",
+  "caption": "Winslow Homer, <a href=\"https://clevelandart.org/art/1942.1364\" target=\"_blank\"><em>Skating on Jamaica Pond, near Boston</em></a> (1859), wood engraving",
+  "alt": "A wood engraving of a frozen pond crowded with skaters: men in top hats and women in wide skirts glide arm in arm in the foreground, a woman sits on a sled to fasten her skates, and far behind them more skaters dot the ice below a line of hills and houses.",
+  "bibliography": "Homer, Winslow. <em>Skating on Jamaica Pond, near Boston</em>. 1859, wood engraving, Cleveland Museum of Art, 1942.1364.",
+  "creator": {
+    "id": "a-winslow-homer",
+    "name": "Winslow Homer"
+  },
+  "title": "Skating on Jamaica Pond, near Boston",
+  "date": "1859",
+  "institution": "Cleveland Museum of Art",
+  "shelfmark": "1942.1364",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Cleveland Museum of Art",
+      "url": "https://clevelandart.org/art/1942.1364"
+    }
+  ],
+  "source": {
+    "url": "https://openaccess-cdn.clevelandart.org/1942.1364/1942.1364_print.jpg",
+    "retrieved": "2026-11-18"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      "ph-0007"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0007/",
+        "id": "ph-0007",
+        "name": "First Ice"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

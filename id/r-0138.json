@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0138/",
+  "id": "r-0138",
+  "shownIn": "days",
+  "text": "<p>We have thus made ourselves acquainted with the beautiful snow-flowers self-constructed by the molecules of water in calm cold air. Do the molecules show this architectural power when ordinary water is frozen? What, for example, is the structure of the ice over which we skate in winter? Quite as wonderful as the flowers of the snow. The observation is rare, if not new, but I have seen in water slowly freezing six-rayed ice-stars formed, and floating free on the surface. A six-rayed star, moreover, is typical of the construction of all our lake ice. It is built up of such forms wonderfully interlaced.</p>",
+  "citation": {
+    "display": "John Tyndall, from <a href=\"https://archive.org/details/in.ernet.dli.2015.43950/page/n51/mode/1up\" target=\"_blank\"><em>The Forms of Water in Clouds and Rivers, Ice and Glaciers</em></a> (1872), § 96, p. 35",
+    "bibliography": "Tyndall, John. \"Architecture of Lake Ice.\" <em>The Forms of Water in Clouds and Rivers, Ice and Glaciers</em>, 3rd ed., Henry S. King, 1873, p. 35. Originally published 1872.",
+    "title": "Architecture of Lake Ice",
+    "written": "1872",
+    "locator": {
+      "page": "35",
+      "url": "https://archive.org/details/in.ernet.dli.2015.43950/page/n51/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0213",
+      "type": "book",
+      "title": "The Forms of Water in Clouds and Rivers, Ice and Glaciers, 3rd ed.",
+      "contributors": [
+        {
+          "id": "a-john-tyndall",
+          "name": "John Tyndall",
+          "role": "author",
+          "wikidata": "Q360808"
+        }
+      ],
+      "publisher": "Henry S. King",
+      "issued": "1873",
+      "original-date": "1872",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "in.ernet.dli.2015.43950"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0007",
+        "basis": "grounded",
+        "note": "Tyndall on the first ice of a pond: six-rayed stars forming and floating free."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0007/",
+        "id": "ph-0007",
+        "name": "First Ice"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0213/",
+      "id": "e-0213",
+      "name": "The Forms of Water in Clouds and Rivers, Ice and Glaciers, 3rd ed."
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

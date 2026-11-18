@@ -1,0 +1,62 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0172/",
+  "id": "i-0172",
+  "shownIn": "days",
+  "file": "images/days_belding_bay_scallop.jpg",
+  "caption": "Figures 65–72, from David L. Belding, <a href=\"https://archive.org/details/reportuponscallo00mass/page/n170/mode/1up\" target=\"_blank\"><em>A Report upon the Scallop Fishery of Massachusetts</em></a> (1910)",
+  "alt": "A plate of eight figures: the two valves of a bay scallop, a tagged scallop shell, a drawing of the scallop's gland tissue, an oyster drill, diatoms, a starfish prising open a scallop, a wire cage and a cone-shaped plankton net.",
+  "bibliography": "Belding, David L. Figures 65–72. In <em>A Report upon the Scallop Fishery of Massachusetts</em>, Commissioners on Fisheries and Game, Commonwealth of Massachusetts, 1910.",
+  "creator": {
+    "id": "a-david-l-belding",
+    "name": "David L. Belding"
+  },
+  "title": "Figures 65–72",
+  "date": "1910",
+  "institution": "MBLWHOI Library",
+  "source": {
+    "url": "https://archive.org/download/reportuponscallo00mass/page/n170.jpg",
+    "retrieved": "2026-11-18"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0220",
+    "title": "A Report upon the Scallop Fishery of Massachusetts",
+    "publisher": "Wright & Potter",
+    "issued": "1910",
+    "identifiers": {
+      "internetArchive": "reportuponscallo00mass"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/reportuponscallo00mass/page/n170/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0036"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0036/",
+        "id": "sp-0036",
+        "name": "Bay Scallop",
+        "scientific": "Argopecten irradians",
+        "wikidata": "Q3018372"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0220/",
+      "id": "e-0220",
+      "name": "A Report upon the Scallop Fishery of Massachusetts"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

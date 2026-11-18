@@ -1,0 +1,68 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0142/",
+  "id": "r-0142",
+  "shownIn": "days",
+  "text": "<p>The Fern allies have also played their appointed part in the domestic and decorative economy of this and other generations. The scouring-rushes served our ancestors for keeping white their floors and wooden-ware in the days when carpets were a luxury. The trailing stems of various species of <em>Lycopodium</em> have long been valued for holiday decorations; while their burning spores have flashed in triumphal processions, and have added their glow to the fervor of political campaigns.</p>",
+  "citation": {
+    "display": "Lucien Marcus Underwood, from <a href=\"https://archive.org/details/ournativefernsa02undegoog/page/n16/mode/1up\" target=\"_blank\"><em>Our Native Ferns and Their Allies</em></a> (1881; 4th ed. 1893), p. ix",
+    "bibliography": "Underwood, Lucien Marcus. Introduction. <em>Our Native Ferns and Their Allies</em>, 4th ed., revised, Henry Holt, 1893, p. ix. Originally published 1881.",
+    "title": "Introduction",
+    "written": "1881",
+    "locator": {
+      "page": "ix",
+      "url": "https://archive.org/details/ournativefernsa02undegoog/page/n16/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0217",
+      "type": "book",
+      "title": "Our Native Ferns and Their Allies, 4th ed., revised",
+      "contributors": [
+        {
+          "id": "a-lucien-marcus-underwood",
+          "name": "Lucien Marcus Underwood",
+          "role": "author"
+        }
+      ],
+      "publisher": "Henry Holt",
+      "issued": "1893",
+      "original-date": "1881",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "ournativefernsa02undegoog"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0037",
+        "basis": "grounded",
+        "note": "Underwood on clubmosses as holiday greens, and their spores as flash powder."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0037/",
+        "id": "sp-0037",
+        "name": "Princess Pine",
+        "scientific": "Dendrolycopodium obscurum",
+        "wikidata": "Q15338742"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0217/",
+      "id": "e-0217",
+      "name": "Our Native Ferns and Their Allies, 4th ed., revised"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

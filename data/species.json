@@ -318,5 +318,55 @@
     "gbif": "5219681",
     "inaturalist": "46017",
     "hashtags": ["squirrels", "easterngraysquirrel", "urbanwildlife"]
+  },
+  {
+    "id": "sp-0033",
+    "name": "Late Oyster",
+    "scientific": "Sarcomyxa serotina",
+    "rank": "species",
+    "hashtags": ["lateoyster", "fungi", "mushrooms"],
+    "wikidata": "Q81202193",
+    "gbif": "3318849",
+    "inaturalist": "63585"
+  },
+  {
+    "id": "sp-0034",
+    "name": "Fall Cankerworm",
+    "scientific": "Alsophila pometaria",
+    "rank": "species",
+    "hashtags": ["cankerworm", "moths", "insects"],
+    "wikidata": "Q1370141",
+    "gbif": "5143952",
+    "inaturalist": "215208"
+  },
+  {
+    "id": "sp-0035",
+    "name": "Long-tailed Duck",
+    "scientific": "Clangula hyemalis",
+    "rank": "species",
+    "hashtags": ["longtailedduck", "seaducks", "birds"],
+    "wikidata": "Q26597",
+    "gbif": "2498273",
+    "inaturalist": "7170"
+  },
+  {
+    "id": "sp-0036",
+    "name": "Bay Scallop",
+    "scientific": "Argopecten irradians",
+    "rank": "species",
+    "hashtags": ["bayscallop", "scallops", "shellfish"],
+    "wikidata": "Q3018372",
+    "gbif": "2285856",
+    "inaturalist": "122039"
+  },
+  {
+    "id": "sp-0037",
+    "name": "Princess Pine",
+    "scientific": "Dendrolycopodium obscurum",
+    "rank": "species",
+    "hashtags": ["princesspine", "clubmoss", "evergreens"],
+    "wikidata": "Q15338742",
+    "gbif": "3991468",
+    "inaturalist": "204198"
   }
 ]

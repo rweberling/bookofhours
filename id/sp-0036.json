@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0036/",
+  "id": "sp-0036",
+  "name": "Bay Scallop",
+  "scientific": "Argopecten irradians",
+  "rank": "species",
+  "hashtags": [
+    "bayscallop",
+    "scallops",
+    "shellfish"
+  ],
+  "wikidata": "Q3018372",
+  "gbif": "2285856",
+  "inaturalist": "122039",
+  "records": [
+    "r-0141",
+    "i-0172"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0141/",
+        "id": "r-0141",
+        "name": "Fannie Merritt Farmer, “Fried Scallops”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0172/",
+        "id": "i-0172",
+        "name": "David L. Belding, Figures 65–72"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

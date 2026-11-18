@@ -1,0 +1,73 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0137/",
+  "id": "r-0137",
+  "shownIn": "days",
+  "text": "<p>The species is not noticeably viscid after its youth. The viscidity can be detected in old specimens by moistening the pileus. Its flavor is not marked, nor is its texture as pleasing as most others of its genus, but being a late species it satisfies the longing of the mycophagist for his accustomed food.</p>",
+  "citation": {
+    "display": "Charles McIlvaine, from <a href=\"https://archive.org/details/toadstoolsmushro00mcil/page/n235/mode/1up\" target=\"_blank\"><em>Toadstools, Mushrooms, Fungi, Edible and Poisonous</em></a> (1900), p. 146",
+    "bibliography": "McIlvaine, Charles, and Robert K. Macadam. \"Pleurotus serotinus.\" <em>Toadstools, Mushrooms, Fungi, Edible and Poisonous: One Thousand American Fungi</em>, Bowen-Merrill, c1902, p. 146. Originally published 1900.",
+    "title": "Pleurotus serotinus",
+    "written": "1900",
+    "locator": {
+      "page": "146",
+      "url": "https://archive.org/details/toadstoolsmushro00mcil/page/n235/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0212",
+      "type": "book",
+      "title": "Toadstools, Mushrooms, Fungi, Edible and Poisonous: One Thousand American Fungi",
+      "contributors": [
+        {
+          "id": "a-charles-mcilvaine",
+          "name": "Charles McIlvaine",
+          "role": "author"
+        },
+        {
+          "id": "a-robert-k-macadam",
+          "name": "Robert K. Macadam",
+          "role": "author"
+        }
+      ],
+      "publisher": "Bowen-Merrill",
+      "issued": "1902",
+      "original-date": "1900",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "toadstoolsmushro00mcil"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0033",
+        "basis": "grounded",
+        "note": "McIlvaine on the late oyster, valued because it fruits so late in the year."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0033/",
+        "id": "sp-0033",
+        "name": "Late Oyster",
+        "scientific": "Sarcomyxa serotina",
+        "wikidata": "Q81202193"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0212/",
+      "id": "e-0212",
+      "name": "Toadstools, Mushrooms, Fungi, Edible and Poisonous: One Thousand American Fungi"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0219/",
+  "id": "e-0219",
+  "title": "The Cankerworms (USDA Department Bulletin 1238)",
+  "publisher": "U.S. Department of Agriculture",
+  "issued": "1924",
+  "identifiers": {
+    "internetArchive": "cankerworms1238port"
+  },
+  "citedBy": [
+    "i-0170"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0170/",
+        "id": "i-0170",
+        "name": "B. A. Porter and C. H. Alden, Fall Cankerworm (plate II)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

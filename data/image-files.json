@@ -258,6 +258,118 @@
         }
       ]
     },
+    "images/days_belding_bay_scallop.jpg": {
+      "bytes": 531182,
+      "width": 1971,
+      "height": 3493,
+      "sha256": "6a4a196f816b432cbf04059c37ce79e1dc8efef5f7fab01b1846d81e98dbe06e",
+      "settings": "89e48fac760f",
+      "credit": "c73850d9bc1c",
+      "copies": [
+        {
+          "file": "images/web/days_belding_bay_scallop-800.webp",
+          "width": 800,
+          "height": 1418,
+          "bytes": 59600
+        },
+        {
+          "file": "images/web/days_belding_bay_scallop-1600.webp",
+          "width": 1600,
+          "height": 2836,
+          "bytes": 148160
+        },
+        {
+          "file": "images/web/days_belding_bay_scallop-2400.webp",
+          "width": 1971,
+          "height": 3493,
+          "bytes": 196654
+        }
+      ]
+    },
+    "images/days_cooke_late_oyster.jpg": {
+      "bytes": 866648,
+      "width": 2012,
+      "height": 3359,
+      "sha256": "882a376544e138874ae0e75207672792ddb5b7175782b852cb88b01a34eb9c3d",
+      "settings": "89e48fac760f",
+      "credit": "094a4c7c0506",
+      "copies": [
+        {
+          "file": "images/web/days_cooke_late_oyster-800.webp",
+          "width": 800,
+          "height": 1336,
+          "bytes": 84864
+        },
+        {
+          "file": "images/web/days_cooke_late_oyster-1600.webp",
+          "width": 1600,
+          "height": 2671,
+          "bytes": 202056
+        },
+        {
+          "file": "images/web/days_cooke_late_oyster-2400.webp",
+          "width": 2012,
+          "height": 3359,
+          "bytes": 250158
+        }
+      ]
+    },
+    "images/days_havell_long_tailed_duck.jpg": {
+      "bytes": 2323462,
+      "width": 3840,
+      "height": 2767,
+      "sha256": "fad323e84ba4c53a4a0395853296fa36d3b864690d93c854d4534f9126d41c26",
+      "settings": "89e48fac760f",
+      "credit": "dd90c44dcec2",
+      "copies": [
+        {
+          "file": "images/web/days_havell_long_tailed_duck-800.webp",
+          "width": 800,
+          "height": 576,
+          "bytes": 30664
+        },
+        {
+          "file": "images/web/days_havell_long_tailed_duck-1600.webp",
+          "width": 1600,
+          "height": 1153,
+          "bytes": 113942
+        },
+        {
+          "file": "images/web/days_havell_long_tailed_duck-2400.webp",
+          "width": 2400,
+          "height": 1729,
+          "bytes": 322576
+        }
+      ]
+    },
+    "images/days_homer_jamaica_pond.jpg": {
+      "bytes": 2908612,
+      "width": 3400,
+      "height": 2037,
+      "sha256": "7840f91c5ea3988cbc7d4b81752a17c467e4d08d21dabf168dbf457f8fe369e7",
+      "settings": "89e48fac760f",
+      "credit": "54907a71f362",
+      "copies": [
+        {
+          "file": "images/web/days_homer_jamaica_pond-800.webp",
+          "width": 800,
+          "height": 479,
+          "bytes": 95914
+        },
+        {
+          "file": "images/web/days_homer_jamaica_pond-1600.webp",
+          "width": 1600,
+          "height": 959,
+          "bytes": 427430
+        },
+        {
+          "file": "images/web/days_homer_jamaica_pond-2400.webp",
+          "width": 2400,
+          "height": 1438,
+          "bytes": 895138
+        }
+      ]
+    },
     "images/days_moody_winterberry.jpg": {
       "bytes": 1114364,
       "width": 2320,
@@ -283,6 +395,62 @@
           "width": 2320,
           "height": 3175,
           "bytes": 523274
+        }
+      ]
+    },
+    "images/days_usda_fall_cankerworm.jpg": {
+      "bytes": 1134892,
+      "width": 2506,
+      "height": 4306,
+      "sha256": "f988fc217befa32d94d8741f410cf2459c607a51da4d838c96259f49dc127ce0",
+      "settings": "89e48fac760f",
+      "credit": "bc3e66934817",
+      "copies": [
+        {
+          "file": "images/web/days_usda_fall_cankerworm-800.webp",
+          "width": 800,
+          "height": 1375,
+          "bytes": 84038
+        },
+        {
+          "file": "images/web/days_usda_fall_cankerworm-1600.webp",
+          "width": 1600,
+          "height": 2749,
+          "bytes": 217102
+        },
+        {
+          "file": "images/web/days_usda_fall_cankerworm-2400.webp",
+          "width": 2400,
+          "height": 4124,
+          "bytes": 371070
+        }
+      ]
+    },
+    "images/days_weir_christmas_greens.jpg": {
+      "bytes": 1060715,
+      "width": 2007,
+      "height": 3000,
+      "sha256": "3fde9a181179b85e34b17627c4d7f39e75de3219dd6e939e67160d297b031d48",
+      "settings": "89e48fac760f",
+      "credit": "69b88efa255e",
+      "copies": [
+        {
+          "file": "images/web/days_weir_christmas_greens-800.webp",
+          "width": 800,
+          "height": 1196,
+          "bytes": 47286
+        },
+        {
+          "file": "images/web/days_weir_christmas_greens-1600.webp",
+          "width": 1600,
+          "height": 2392,
+          "bytes": 162510
+        },
+        {
+          "file": "images/web/days_weir_christmas_greens-2400.webp",
+          "width": 2007,
+          "height": 3000,
+          "bytes": 246602
         }
       ]
     },
