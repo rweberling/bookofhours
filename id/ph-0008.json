@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0008/",
+  "id": "ph-0008",
+  "name": "Earliest Sunset",
+  "latin": null,
+  "wikidata": null,
+  "hashtags": [
+    "earliestsunset",
+    "sunset",
+    "winter"
+  ],
+  "records": [
+    "r-0143",
+    "i-0174"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0143/",
+        "id": "r-0143",
+        "name": "Helen Hunt Jackson, “December”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0174/",
+        "id": "i-0174",
+        "name": "George Inness, A Winter Sky"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

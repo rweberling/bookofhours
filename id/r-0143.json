@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0143/",
+  "id": "r-0143",
+  "shownIn": "days",
+  "text": "The lakes of ice gleam bluer than the lakes<br>Of water ’neath the summer sunshine gleamed:<br>Far fairer than when placidly it streamed,<br>The brook its frozen architecture makes,<br>And under bridges white its swift way takes.<br>Snow comes and goes as messenger who dreamed<br>Might linger on the road; or one who deemed<br>His message hostile gently for their sakes<br>Who listened might reveal it by degrees.<br>We gird against the cold of winter wind<br>Our loins now with mighty bands of sleep,<br>In longest, darkest nights take rest and ease,<br>And every shortening day, as shadows creep<br>O’er the brief noontide, fresh surprises find.",
+  "citation": {
+    "display": "Helen Hunt Jackson, “December,” from <a href=\"https://archive.org/details/acalendarsonnet01jackgoog/page/n62/mode/1up\" target=\"_blank\"><em>A Calendar of Sonnets</em></a> (1886)",
+    "bibliography": "Jackson, Helen. \"December.\" <em>A Calendar of Sonnets</em>, Roberts Brothers, 1886.",
+    "title": "December",
+    "written": "1886",
+    "locator": {
+      "url": "https://archive.org/details/acalendarsonnet01jackgoog/page/n62/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0221",
+      "type": "book",
+      "title": "A Calendar of Sonnets",
+      "contributors": [
+        {
+          "id": "a-helen-hunt-jackson",
+          "name": "Helen Hunt Jackson",
+          "role": "author"
+        }
+      ],
+      "publisher": "Roberts Brothers",
+      "issued": "1886",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "acalendarsonnet01jackgoog"
+      }
+    }
+  },
+  "display": {
+    "verse": true
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0008",
+        "basis": "grounded",
+        "note": "Jackson's December sonnet ends on the shortest days, the brief noontide and early dark."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0008/",
+        "id": "ph-0008",
+        "name": "Earliest Sunset"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0221/",
+      "id": "e-0221",
+      "name": "A Calendar of Sonnets"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

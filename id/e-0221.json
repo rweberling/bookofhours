@@ -1,0 +1,33 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0221/",
+  "id": "e-0221",
+  "type": "book",
+  "title": "A Calendar of Sonnets",
+  "contributors": [
+    {
+      "id": "a-helen-hunt-jackson",
+      "name": "Helen Hunt Jackson",
+      "role": "author"
+    }
+  ],
+  "publisher": "Roberts Brothers",
+  "issued": "1886",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "acalendarsonnet01jackgoog"
+  },
+  "citedBy": [
+    "r-0143"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0143/",
+        "id": "r-0143",
+        "name": "Helen Hunt Jackson, “December”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

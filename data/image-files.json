@@ -370,6 +370,34 @@
         }
       ]
     },
+    "images/days_inness_winter_sky.jpg": {
+      "bytes": 1716837,
+      "width": 3400,
+      "height": 2476,
+      "sha256": "e486cf9ebb7cd8994e9dedb693da7d22e12b42ac401d989f6b54a70bdd45724c",
+      "settings": "89e48fac760f",
+      "credit": "66eca600ebc8",
+      "copies": [
+        {
+          "file": "images/web/days_inness_winter_sky-800.webp",
+          "width": 800,
+          "height": 583,
+          "bytes": 28140
+        },
+        {
+          "file": "images/web/days_inness_winter_sky-1600.webp",
+          "width": 1600,
+          "height": 1165,
+          "bytes": 96818
+        },
+        {
+          "file": "images/web/days_inness_winter_sky-2400.webp",
+          "width": 2400,
+          "height": 1748,
+          "bytes": 221214
+        }
+      ]
+    },
     "images/days_moody_winterberry.jpg": {
       "bytes": 1114364,
       "width": 2320,

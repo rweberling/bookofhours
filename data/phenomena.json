@@ -47,5 +47,12 @@
     "latin": null,
     "wikidata": null,
     "hashtags": ["firstice", "ice", "winter"]
+  },
+  {
+    "id": "ph-0008",
+    "name": "Earliest Sunset",
+    "latin": null,
+    "wikidata": null,
+    "hashtags": ["earliestsunset", "sunset", "winter"]
   }
 ]
