@@ -380,7 +380,16 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   (Ryan, same day): historic, artistic, somehow strange or mediated
   (prints, plates, paintings, early photographs, specimens, objects),
   not straight contemporary field photographs, unless the photograph
-  is itself strange or on an unusual medium. The week's shortlist of
+  is itself strange or on an unusual medium. Lean away from birds,
+  mammals and the beautiful naturalist page (Ryan, 21 November 2026):
+  at most two birds and mammals together in a week's candidates, and
+  at least three of each week's ten from other registers:
+  contemporary art and art–science experiments, found text (labels,
+  logs, almanacs, patents, instructions, records, the sea-ice bulletin),
+  experimental poetry and nonfiction, philosophy. Contemporary pieces
+  are in copyright: nominate them anyway, a short passage or one image,
+  with the rights marked "needs Ryan" (excerpt use, or the artist's
+  permission), so he can choose which are worth asking for. The week's shortlist of
   what is in season can start from `python3 scripts/inat_week.py <week>`
   (iNaturalist sightings in New England, each species' share of the
   week against its share of the year).
