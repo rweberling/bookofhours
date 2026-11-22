@@ -44,7 +44,7 @@
       {
         "id": "ph-0007",
         "basis": "grounded",
-        "note": "Tyndall on the first ice of a pond: six-rayed stars forming and floating free."
+        "note": "Tyndall on the new skim of ice on a pond: six-rayed stars forming and floating free on the surface."
       }
     ]
   },
@@ -53,7 +53,7 @@
       {
         "@id": "https://earthlyhours.com/id/ph-0007/",
         "id": "ph-0007",
-        "name": "First Ice"
+        "name": "Skim Ice"
       }
     ],
     "edition": {

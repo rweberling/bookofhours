@@ -1,17 +1,17 @@
 {
   "@id": "https://earthlyhours.com/id/ph-0007/",
   "id": "ph-0007",
-  "name": "First Ice",
+  "name": "Skim Ice",
   "latin": null,
   "wikidata": null,
   "hashtags": [
-    "firstice",
+    "skimice",
     "ice",
     "winter"
   ],
   "records": [
     "r-0138",
-    "i-0169"
+    "i-0175"
   ],
   "related": {
     "records": [
@@ -21,9 +21,9 @@
         "name": "John Tyndall, “Architecture of Lake Ice”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0169/",
-        "id": "i-0169",
-        "name": "Winslow Homer, Skating on Jamaica Pond, near Boston"
+        "@id": "https://earthlyhours.com/id/i-0175/",
+        "id": "i-0175",
+        "name": "Central News Photo Service, A Life Saving Appliance to Protect Those Who Like to Skate on Thin Ice"
       }
     ]
   },

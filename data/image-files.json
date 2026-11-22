@@ -426,6 +426,34 @@
         }
       ]
     },
+    "images/days_thin_ice_rescue_1917.jpg": {
+      "bytes": 1337340,
+      "width": 3400,
+      "height": 2723,
+      "sha256": "aa83fdea882b3ab9f835e46043bb5d152013633fcdb0c8c8c4b03a89c480f1c5",
+      "settings": "89e48fac760f",
+      "credit": "f1b7390f16cf",
+      "copies": [
+        {
+          "file": "images/web/days_thin_ice_rescue_1917-800.webp",
+          "width": 800,
+          "height": 641,
+          "bytes": 49698
+        },
+        {
+          "file": "images/web/days_thin_ice_rescue_1917-1600.webp",
+          "width": 1600,
+          "height": 1281,
+          "bytes": 132072
+        },
+        {
+          "file": "images/web/days_thin_ice_rescue_1917-2400.webp",
+          "width": 2400,
+          "height": 1922,
+          "bytes": 244630
+        }
+      ]
+    },
     "images/days_usda_fall_cankerworm.jpg": {
       "bytes": 1134892,
       "width": 2506,

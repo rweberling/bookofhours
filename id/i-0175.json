@@ -1,0 +1,50 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0175/",
+  "id": "i-0175",
+  "shownIn": "days",
+  "file": "images/days_thin_ice_rescue_1917.jpg",
+  "caption": "Central News Photo Service, <a href=\"https://www.loc.gov/item/94506020/\" target=\"_blank\"><em>A Life Saving Appliance to Protect Those Who Like to Skate on Thin Ice</em></a> (1917), photograph: George Hanlon, foreman of parks for the borough of Queens, with his apparatus for reaching skaters who have fallen through",
+  "alt": "A black-and-white photograph of three men in caps and long coats standing on a frozen, snow-dusted pond. One holds a long pole angled up over his shoulder; at their feet lie a short ladder and a long wooden beam on a sled-like frame, with a coil of rope. Houses and telegraph poles line the far shore, and a pale sun shows through the haze.",
+  "bibliography": "Central News Photo Service. <em>A Life Saving Appliance to Protect Those Who Like to Skate on Thin Ice</em>. 1917, photographic print, National Photo Company Collection, Library of Congress Prints and Photographs Division, LOT 12352-3.",
+  "creator": {
+    "id": "a-central-news-photo-service",
+    "name": "Central News Photo Service"
+  },
+  "title": "A Life Saving Appliance to Protect Those Who Like to Skate on Thin Ice",
+  "date": "1917",
+  "institution": "Library of Congress",
+  "shelfmark": "LOT 12352-3",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Library of Congress",
+      "url": "https://www.loc.gov/item/94506020/"
+    }
+  ],
+  "source": {
+    "url": "https://tile.loc.gov/storage-services/master/pnp/cph/3c10000/3c11000/3c11100/3c11103u.tif",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      "ph-0007"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0007/",
+        "id": "ph-0007",
+        "name": "Skim Ice"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
