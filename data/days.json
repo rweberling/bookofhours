@@ -64,6 +64,14 @@
     "image": "i-0170"
   },
   {
+    "id": "dy-0019",
+    "date": "12-03",
+    "subject": "sp-0043",
+    "reading": "r-0152",
+    "image": "i-0184",
+    "draft": true
+  },
+  {
     "id": "dy-0008",
     "date": "12-04",
     "subject": "sp-0036",
@@ -90,6 +98,14 @@
     "subject": "sp-0040",
     "reading": "r-0147",
     "image": "i-0179",
+    "draft": true
+  },
+  {
+    "id": "dy-0020",
+    "date": "12-09",
+    "subject": "sp-0044",
+    "reading": "r-0153",
+    "image": "i-0185",
     "draft": true
   },
   {
@@ -122,6 +138,22 @@
     "subject": "sp-0041",
     "reading": "r-0149",
     "image": "i-0181",
+    "draft": true
+  },
+  {
+    "id": "dy-0021",
+    "date": "12-18",
+    "subject": "ph-0012",
+    "reading": "r-0154",
+    "image": "i-0186",
+    "draft": true
+  },
+  {
+    "id": "dy-0022",
+    "date": "12-20",
+    "subject": "ph-0013",
+    "reading": "r-0155",
+    "image": "i-0187",
     "draft": true
   }
 ]

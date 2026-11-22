@@ -1,0 +1,71 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0184/",
+  "id": "i-0184",
+  "shownIn": "days",
+  "file": "images/days_emerton_tetragnatha_web.jpg",
+  "caption": "J. H. Emerton, “Web of Tetragnatha in tansy plants, showing the spider in its usual position,” fig. 459 from <a href=\"https://archive.org/details/commonspidersofuemer/page/n224/mode/1up\" target=\"_blank\"><em>The Common Spiders of the United States</em></a> (1902), p. 201, photograph",
+  "alt": "A soft grey photograph of a round orb web strung among feathery tansy leaves, its spokes and spiral threads catching the light; a long, thin spider lies stretched along the threads at the hub, legs held straight out before and behind.",
+  "bibliography": "Emerton, J. H. “Web of Tetragnatha in tansy plants.” Fig. 459 in <em>The Common Spiders of the United States</em>, Ginn & Company, 1902, p. 201.",
+  "creator": {
+    "id": "a-j-h-emerton",
+    "name": "J. H. Emerton"
+  },
+  "title": "Web of Tetragnatha in tansy plants",
+  "date": "1902",
+  "institution": "Smithsonian Libraries",
+  "source": {
+    "url": "https://archive.org/download/commonspidersofuemer/page/n224_w2400.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0232",
+    "type": "book",
+    "title": "The Common Spiders of the United States",
+    "contributors": [
+      {
+        "id": "a-j-h-emerton",
+        "name": "J. H. Emerton",
+        "role": "author"
+      }
+    ],
+    "publisher": "Ginn & Company",
+    "issued": "1902",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "commonspidersofuemer"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/commonspidersofuemer/page/n224/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0043"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0043/",
+        "id": "sp-0043",
+        "name": "Winter Spiders",
+        "scientific": "Araneae",
+        "wikidata": "Q1357"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0232/",
+      "id": "e-0232",
+      "name": "The Common Spiders of the United States"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

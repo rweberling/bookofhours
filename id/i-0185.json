@@ -1,0 +1,71 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0185/",
+  "id": "i-0185",
+  "shownIn": "days",
+  "file": "images/days_theobald_winter_moth.jpg",
+  "caption": "F. Edenden, “Females and males of the winter moth,” fig. 37 from Fred. V. Theobald, <a href=\"https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up\" target=\"_blank\"><em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em></a> (1909), p. 51, photograph",
+  "alt": "A photograph of four pinned moths on a pale ground: on the right, two males with broad, finely barred grey-brown wings spread wide; on the left, two much smaller females, dark and spidery, with only stubs where wings should be.",
+  "bibliography": "Edenden, F. “Females and males of the winter moth.” Fig. 37 in Fred. V. Theobald, <em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em>, 1909, p. 51.",
+  "creator": {
+    "id": "a-f-edenden",
+    "name": "F. Edenden"
+  },
+  "title": "Females and males of the winter moth",
+  "date": "1909",
+  "institution": "University of California Libraries",
+  "source": {
+    "url": "https://archive.org/download/insectotherallie00theoiala/page/n72_w2400.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0233",
+    "type": "book",
+    "title": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits",
+    "contributors": [
+      {
+        "id": "a-fred-v-theobald",
+        "name": "Fred. V. Theobald",
+        "role": "author"
+      }
+    ],
+    "publisher": "published by the author",
+    "issued": "1909",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "insectotherallie00theoiala"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0044"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0044/",
+        "id": "sp-0044",
+        "name": "Winter Moth",
+        "scientific": "Operophtera brumata",
+        "wikidata": "Q164002"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0233/",
+      "id": "e-0233",
+      "name": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

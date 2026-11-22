@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0153/",
+  "id": "r-0153",
+  "shownIn": "days",
+  "text": "<p>The female is greyish to greyish-brown in colour, and differs totally from the male, having the merest traces of wings, which are totally useless as organs of flight . . .</p><p>The males have been observed for many years to appear some days before the females. They may be seen at dusk, flying lazily along hedgerows and in the orchards and gardens. They are attracted by light. One often sees them collected on street lamps, and they occur outside windows.</p>",
+  "citation": {
+    "display": "Fred. V. Theobald, “The Winter Moth,” from <a href=\"https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up\" target=\"_blank\"><em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em></a> (1909), pp. 51–52",
+    "bibliography": "Theobald, Fred. V. \"The Winter Moth.\" <em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em>, published by the author, 1909, pp. 51–52.",
+    "title": "The Winter Moth",
+    "written": "1909",
+    "locator": {
+      "page": "51–52",
+      "url": "https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0233",
+      "type": "book",
+      "title": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits",
+      "contributors": [
+        {
+          "id": "a-fred-v-theobald",
+          "name": "Fred. V. Theobald",
+          "role": "author"
+        }
+      ],
+      "publisher": "published by the author",
+      "issued": "1909",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "insectotherallie00theoiala"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0044",
+        "basis": "grounded",
+        "note": "The winter moth's males at lighted windows on December nights; its wingless females."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0044/",
+        "id": "sp-0044",
+        "name": "Winter Moth",
+        "scientific": "Operophtera brumata",
+        "wikidata": "Q164002"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0233/",
+      "id": "e-0233",
+      "name": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -3,7 +3,7 @@
   <url><loc>https://earthlyhours.com/about.html</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://earthlyhours.com/editions.html</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://earthlyhours.com/hours-incipit.html</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://earthlyhours.com/id/autumn/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://earthlyhours.com/id/autumn/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/changing/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/chorus/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/clear/</loc><lastmod>2026-11-16</lastmod></url>
@@ -22,9 +22,9 @@
   <url><loc>https://earthlyhours.com/id/dy-0008/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/dy-0009/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/dy-0010/</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://earthlyhours.com/id/dy-0011/</loc></url>
-  <url><loc>https://earthlyhours.com/id/dy-0012/</loc></url>
-  <url><loc>https://earthlyhours.com/id/dy-0013/</loc></url>
+  <url><loc>https://earthlyhours.com/id/dy-0011/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://earthlyhours.com/id/dy-0012/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://earthlyhours.com/id/dy-0013/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/e-0001/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/e-0002/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/e-0003/</loc><lastmod>2026-11-16</lastmod></url>
@@ -246,6 +246,10 @@
   <url><loc>https://earthlyhours.com/id/e-0229/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/e-0230/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/e-0231/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://earthlyhours.com/id/e-0232/</loc></url>
+  <url><loc>https://earthlyhours.com/id/e-0233/</loc></url>
+  <url><loc>https://earthlyhours.com/id/e-0234/</loc></url>
+  <url><loc>https://earthlyhours.com/id/e-0235/</loc></url>
   <url><loc>https://earthlyhours.com/id/fog/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/frost/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/fulcrum/</loc><lastmod>2026-11-16</lastmod></url>
@@ -441,6 +445,8 @@
   <url><loc>https://earthlyhours.com/id/ph-0009/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/ph-0010/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/ph-0011/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://earthlyhours.com/id/ph-0012/</loc></url>
+  <url><loc>https://earthlyhours.com/id/ph-0013/</loc></url>
   <url><loc>https://earthlyhours.com/id/puddles/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/r-0001/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/r-0002/</loc><lastmod>2026-11-16</lastmod></url>
@@ -630,6 +636,8 @@
   <url><loc>https://earthlyhours.com/id/sp-0040/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/sp-0041/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://earthlyhours.com/id/sp-0042/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://earthlyhours.com/id/sp-0043/</loc></url>
+  <url><loc>https://earthlyhours.com/id/sp-0044/</loc></url>
   <url><loc>https://earthlyhours.com/id/spring/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/summer/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://earthlyhours.com/id/thunder/</loc><lastmod>2026-11-16</lastmod></url>

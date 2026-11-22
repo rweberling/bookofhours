@@ -286,6 +286,34 @@
         }
       ]
     },
+    "images/days_beston_sunrise_cape_cod.jpg": {
+      "bytes": 1498652,
+      "width": 3400,
+      "height": 2255,
+      "sha256": "8630041b43905df6f902e9c453e8859ed507ffd82569870409939340bd39f733",
+      "settings": "89e48fac760f",
+      "credit": "804f0ec1dc69",
+      "copies": [
+        {
+          "file": "images/web/days_beston_sunrise_cape_cod-800.webp",
+          "width": 800,
+          "height": 531,
+          "bytes": 47460
+        },
+        {
+          "file": "images/web/days_beston_sunrise_cape_cod-1600.webp",
+          "width": 1600,
+          "height": 1061,
+          "bytes": 204836
+        },
+        {
+          "file": "images/web/days_beston_sunrise_cape_cod-2400.webp",
+          "width": 2400,
+          "height": 1592,
+          "bytes": 481140
+        }
+      ]
+    },
     "images/days_birdlore_christmas_census.jpg": {
       "bytes": 775004,
       "width": 2344,
@@ -339,6 +367,62 @@
           "width": 2012,
           "height": 3359,
           "bytes": 250158
+        }
+      ]
+    },
+    "images/days_emerton_tetragnatha_web.jpg": {
+      "bytes": 1196702,
+      "width": 1918,
+      "height": 1927,
+      "sha256": "23cc17f91ec72afa0eb322807ae17a80ec3962fde2920b070a468267e66e687b",
+      "settings": "89e48fac760f",
+      "credit": "5e51383237e0",
+      "copies": [
+        {
+          "file": "images/web/days_emerton_tetragnatha_web-800.webp",
+          "width": 800,
+          "height": 804,
+          "bytes": 122524
+        },
+        {
+          "file": "images/web/days_emerton_tetragnatha_web-1600.webp",
+          "width": 1600,
+          "height": 1608,
+          "bytes": 562368
+        },
+        {
+          "file": "images/web/days_emerton_tetragnatha_web-2400.webp",
+          "width": 1918,
+          "height": 1927,
+          "bytes": 755704
+        }
+      ]
+    },
+    "images/days_farmers_almanack_december_1842.jpg": {
+      "bytes": 2002456,
+      "width": 1806,
+      "height": 3400,
+      "sha256": "813c9e258bf54e39262b7d899d739984f758a3ffdf7982ed282c501f055fb369",
+      "settings": "89e48fac760f",
+      "credit": "49ab4242cd8f",
+      "copies": [
+        {
+          "file": "images/web/days_farmers_almanack_december_1842-800.webp",
+          "width": 800,
+          "height": 1506,
+          "bytes": 336646
+        },
+        {
+          "file": "images/web/days_farmers_almanack_december_1842-1600.webp",
+          "width": 1600,
+          "height": 3012,
+          "bytes": 898554
+        },
+        {
+          "file": "images/web/days_farmers_almanack_december_1842-2400.webp",
+          "width": 1806,
+          "height": 3400,
+          "bytes": 1053182
         }
       ]
     },
@@ -647,6 +731,34 @@
           "width": 1885,
           "height": 3400,
           "bytes": 132786
+        }
+      ]
+    },
+    "images/days_theobald_winter_moth.jpg": {
+      "bytes": 203943,
+      "width": 1107,
+      "height": 943,
+      "sha256": "6639368a5855f2ef7b636edfca2c75364348ba3b31dd65bd300d10b3c9087bfe",
+      "settings": "89e48fac760f",
+      "credit": "893ecc78bcdc",
+      "copies": [
+        {
+          "file": "images/web/days_theobald_winter_moth-800.webp",
+          "width": 800,
+          "height": 681,
+          "bytes": 53372
+        },
+        {
+          "file": "images/web/days_theobald_winter_moth-1600.webp",
+          "width": 1107,
+          "height": 943,
+          "bytes": 85334
+        },
+        {
+          "file": "images/web/days_theobald_winter_moth-2400.webp",
+          "width": 1107,
+          "height": 943,
+          "bytes": 85334
         }
       ]
     },

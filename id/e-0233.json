@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0233/",
+  "id": "e-0233",
+  "type": "book",
+  "title": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits",
+  "contributors": [
+    {
+      "id": "a-fred-v-theobald",
+      "name": "Fred. V. Theobald",
+      "role": "author"
+    }
+  ],
+  "publisher": "published by the author",
+  "issued": "1909",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "insectotherallie00theoiala"
+  },
+  "citedBy": [
+    "r-0153",
+    "i-0185"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0153/",
+        "id": "r-0153",
+        "name": "Fred. V. Theobald, “The Winter Moth”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0185/",
+        "id": "i-0185",
+        "name": "F. Edenden, Females and males of the winter moth"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

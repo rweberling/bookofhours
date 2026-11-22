@@ -6171,5 +6171,153 @@
       "seasons": ["winter"],
       "phenomena": ["ph-0011"]
     }
+  },
+  {
+    "id": "i-0184",
+    "shownIn": "days",
+    "file": "images/days_emerton_tetragnatha_web.jpg",
+    "caption": "J. H. Emerton, “Web of Tetragnatha in tansy plants, showing the spider in its usual position,” fig. 459 from <a href=\"https://archive.org/details/commonspidersofuemer/page/n224/mode/1up\" target=\"_blank\"><em>The Common Spiders of the United States</em></a> (1902), p. 201, photograph",
+    "alt": "A soft grey photograph of a round orb web strung among feathery tansy leaves, its spokes and spiral threads catching the light; a long, thin spider lies stretched along the threads at the hub, legs held straight out before and behind.",
+    "bibliography": "Emerton, J. H. “Web of Tetragnatha in tansy plants.” Fig. 459 in <em>The Common Spiders of the United States</em>, Ginn & Company, 1902, p. 201.",
+    "creator": { "id": "a-j-h-emerton", "name": "J. H. Emerton" },
+    "title": "Web of Tetragnatha in tansy plants",
+    "date": "1902",
+    "institution": "Smithsonian Libraries",
+    "source": {
+      "url": "https://archive.org/download/commonspidersofuemer/page/n224_w2400.jpg",
+      "retrieved": "2026-11-22"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0232",
+      "type": "book",
+      "title": "The Common Spiders of the United States",
+      "contributors": [{ "id": "a-j-h-emerton", "name": "J. H. Emerton", "role": "author" }],
+      "publisher": "Ginn & Company",
+      "issued": "1902",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": { "internetArchive": "commonspidersofuemer" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/commonspidersofuemer/page/n224/mode/1up",
+      "label": "Internet Archive"
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": ["sp-0043"]
+    }
+  },
+  {
+    "id": "i-0185",
+    "shownIn": "days",
+    "file": "images/days_theobald_winter_moth.jpg",
+    "caption": "F. Edenden, “Females and males of the winter moth,” fig. 37 from Fred. V. Theobald, <a href=\"https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up\" target=\"_blank\"><em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em></a> (1909), p. 51, photograph",
+    "alt": "A photograph of four pinned moths on a pale ground: on the right, two males with broad, finely barred grey-brown wings spread wide; on the left, two much smaller females, dark and spidery, with only stubs where wings should be.",
+    "bibliography": "Edenden, F. “Females and males of the winter moth.” Fig. 37 in Fred. V. Theobald, <em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em>, 1909, p. 51.",
+    "creator": { "id": "a-f-edenden", "name": "F. Edenden" },
+    "title": "Females and males of the winter moth",
+    "date": "1909",
+    "institution": "University of California Libraries",
+    "source": {
+      "url": "https://archive.org/download/insectotherallie00theoiala/page/n72_w2400.jpg",
+      "retrieved": "2026-11-22"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0233",
+      "type": "book",
+      "title": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits",
+      "contributors": [{ "id": "a-fred-v-theobald", "name": "Fred. V. Theobald", "role": "author" }],
+      "publisher": "published by the author",
+      "issued": "1909",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": { "internetArchive": "insectotherallie00theoiala" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up",
+      "label": "Internet Archive"
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": ["sp-0044"]
+    }
+  },
+  {
+    "id": "i-0186",
+    "shownIn": "days",
+    "file": "images/days_farmers_almanack_december_1842.jpg",
+    "caption": "December, from <a href=\"https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up\" target=\"_blank\"><em>The Farmer’s Almanack</em></a> for 1842, calculated for Boston (1841), p. 29: a woodcut of Capricorn, a verse, the day-by-day weather and the Farmer’s Calendar",
+    "alt": "A worn almanac page headed December hath 31 days, 1842, with a woodcut of a horned goat in an oval frame of leaves, a six-line verse beginning Stern winter reigns o'er all the land, and below it a column of days with holidays and weather notes (Look out for a snow; Clear and quite cold; Snow is near) beside a column of prose headed Farmer's Calendar.",
+    "bibliography": "<em>The Farmer’s Almanack for the Year of Our Lord 1842</em>. Jenks & Palmer, 1841, p. 29.",
+    "creator": { "id": "a-robert-b-thomas", "name": "Robert B. Thomas" },
+    "title": "December",
+    "date": "1841",
+    "institution": "Lincoln Financial Foundation Collection",
+    "source": {
+      "url": "https://archive.org/download/farmersalmanack00thom/page/n28_w2400.jpg",
+      "retrieved": "2026-11-22"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0234",
+      "type": "book",
+      "title": "The Farmer’s Almanack for the Year of Our Lord 1842",
+      "contributors": [{ "id": "a-robert-b-thomas", "name": "Robert B. Thomas", "role": "author" }],
+      "publisher": "Jenks & Palmer",
+      "issued": "1841",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": { "internetArchive": "farmersalmanack00thom" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up",
+      "label": "Internet Archive"
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "phenomena": ["ph-0012"]
+    }
+  },
+  {
+    "id": "i-0187",
+    "shownIn": "days",
+    "file": "images/days_beston_sunrise_cape_cod.jpg",
+    "caption": "Bradford, <em>Sunrise from Cape Cod</em>, plate from Henry Beston, <a href=\"https://archive.org/details/bestonoutermost2/page/n302/mode/1up\" target=\"_blank\"><em>The Outermost House</em></a> (1928), photograph",
+    "alt": "A misty black-and-white photograph looking out to sea from a dark bank of sand: low cloud across the sky, a bright band of light on the far water, and long pale lines of surf curling toward the shore. Captioned Sunrise from Cape Cod.",
+    "bibliography": "Bradford. <em>Sunrise from Cape Cod</em>. Plate in Henry Beston, <em>The Outermost House</em>, Doubleday, Doran, 1928.",
+    "creator": { "id": "a-bradford", "name": "Bradford" },
+    "title": "Sunrise from Cape Cod",
+    "date": "1928",
+    "institution": "Internet Archive",
+    "source": {
+      "url": "https://archive.org/download/bestonoutermost2/page/n302_w2400.jpg",
+      "retrieved": "2026-11-22"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "edition": {
+      "id": "e-0235",
+      "type": "book",
+      "title": "The Outermost House: A Year of Life on the Great Beach of Cape Cod",
+      "contributors": [{ "id": "a-henry-beston", "name": "Henry Beston", "role": "author" }],
+      "publisher": "Doubleday, Doran",
+      "issued": "1928",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": { "internetArchive": "bestonoutermost2" }
+    },
+    "locator": {
+      "url": "https://archive.org/details/bestonoutermost2/page/n302/mode/1up",
+      "label": "Internet Archive"
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "phenomena": ["ph-0013"]
+    }
   }
 ]

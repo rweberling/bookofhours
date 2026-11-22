@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0152/",
+  "id": "r-0152",
+  "shownIn": "days",
+  "text": "<p>Bushes may be swept in the same way, or may be shaken over an open umbrella, or a piece of cloth or paper. In winter, when spiders are torpid, great numbers can be found by sifting the dead leaves that have been lying for some years in the woods. A common coal sieve is fine enough to hold the leaves while the spiders and sticks and dirt pass through, and may be picked over on a cloth or carried home in a bag and examined in the house. The sifting should be repeated several times, as many of the spiders hold to threads among the leaves and become loosened only after much shaking.</p>",
+  "citation": {
+    "display": "J. H. Emerton, from <a href=\"https://archive.org/details/commonspidersofuemer/page/n23/mode/1up\" target=\"_blank\"><em>The Common Spiders of the United States</em></a> (1902), p. xviii",
+    "bibliography": "Emerton, J. H. <em>The Common Spiders of the United States</em>. Ginn & Company, 1902, p. xviii.",
+    "title": "The Common Spiders of the United States",
+    "written": "1902",
+    "locator": {
+      "page": "xviii",
+      "url": "https://archive.org/details/commonspidersofuemer/page/n23/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0232",
+      "type": "book",
+      "title": "The Common Spiders of the United States",
+      "contributors": [
+        {
+          "id": "a-j-h-emerton",
+          "name": "J. H. Emerton",
+          "role": "author"
+        }
+      ],
+      "publisher": "Ginn & Company",
+      "issued": "1902",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "commonspidersofuemer"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0043",
+        "basis": "grounded",
+        "note": "Emerton's way of finding spiders in winter, sifting old leaves through a coal sieve."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0043/",
+        "id": "sp-0043",
+        "name": "Winter Spiders",
+        "scientific": "Araneae",
+        "wikidata": "Q1357"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0232/",
+      "id": "e-0232",
+      "name": "The Common Spiders of the United States"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

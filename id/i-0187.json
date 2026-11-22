@@ -1,0 +1,69 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0187/",
+  "id": "i-0187",
+  "shownIn": "days",
+  "file": "images/days_beston_sunrise_cape_cod.jpg",
+  "caption": "Bradford, <em>Sunrise from Cape Cod</em>, plate from Henry Beston, <a href=\"https://archive.org/details/bestonoutermost2/page/n302/mode/1up\" target=\"_blank\"><em>The Outermost House</em></a> (1928), photograph",
+  "alt": "A misty black-and-white photograph looking out to sea from a dark bank of sand: low cloud across the sky, a bright band of light on the far water, and long pale lines of surf curling toward the shore. Captioned Sunrise from Cape Cod.",
+  "bibliography": "Bradford. <em>Sunrise from Cape Cod</em>. Plate in Henry Beston, <em>The Outermost House</em>, Doubleday, Doran, 1928.",
+  "creator": {
+    "id": "a-bradford",
+    "name": "Bradford"
+  },
+  "title": "Sunrise from Cape Cod",
+  "date": "1928",
+  "institution": "Internet Archive",
+  "source": {
+    "url": "https://archive.org/download/bestonoutermost2/page/n302_w2400.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0235",
+    "type": "book",
+    "title": "The Outermost House: A Year of Life on the Great Beach of Cape Cod",
+    "contributors": [
+      {
+        "id": "a-henry-beston",
+        "name": "Henry Beston",
+        "role": "author"
+      }
+    ],
+    "publisher": "Doubleday, Doran",
+    "issued": "1928",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "bestonoutermost2"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/bestonoutermost2/page/n302/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      "ph-0013"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0013/",
+        "id": "ph-0013",
+        "name": "Solstice Eve"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0235/",
+      "id": "e-0235",
+      "name": "The Outermost House: A Year of Life on the Great Beach of Cape Cod"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

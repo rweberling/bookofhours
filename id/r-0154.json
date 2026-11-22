@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0154/",
+  "id": "r-0154",
+  "shownIn": "days",
+  "text": "<p>Farmers, friends, companions of the sod, we will not be sombrous and down-hearted, because, forsooth, it may hap that we now close the gates upon our pathway, and no more, after this, walk together in our pleasant companionship. . . . We have ploughed, we have sowed, we have reapt, we have mowed; we have enjoyed the fruits of our industry, and relished the good things of life in health and thankfulness. . . . Let there be nothing morose and chilly in parting.</p>",
+  "citation": {
+    "display": "Robert B. Thomas, “Farmer’s Calendar,” December, from <a href=\"https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up\" target=\"_blank\"><em>The Farmer’s Almanack</em></a> for 1842 (1841), p. 29",
+    "bibliography": "Thomas, Robert B. \"Farmer’s Calendar,\" December. <em>The Farmer’s Almanack for the Year of Our Lord 1842</em>, Jenks & Palmer, 1841, p. 29.",
+    "title": "Farmer’s Calendar, December",
+    "written": "1841",
+    "locator": {
+      "page": "29",
+      "url": "https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0234",
+      "type": "book",
+      "title": "The Farmer’s Almanack for the Year of Our Lord 1842",
+      "contributors": [
+        {
+          "id": "a-robert-b-thomas",
+          "name": "Robert B. Thomas",
+          "role": "author"
+        }
+      ],
+      "publisher": "Jenks & Palmer",
+      "issued": "1841",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "farmersalmanack00thom"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0012",
+        "basis": "grounded",
+        "note": "The almanac's farewell for the year, from the month whose days stop shortening (8 h 54 m, 15–20 December)."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0012/",
+        "id": "ph-0012",
+        "name": "The Sun Standing Still"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0234/",
+      "id": "e-0234",
+      "name": "The Farmer’s Almanack for the Year of Our Lord 1842"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

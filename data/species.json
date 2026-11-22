@@ -418,5 +418,25 @@
     "wikidata": "Q103169",
     "gbif": "106",
     "inaturalist": "57774"
+  },
+  {
+    "id": "sp-0043",
+    "name": "Winter Spiders",
+    "scientific": "Araneae",
+    "rank": "order",
+    "hashtags": ["spiders", "arachnids", "winter"],
+    "wikidata": "Q1357",
+    "gbif": "1496",
+    "inaturalist": "47118"
+  },
+  {
+    "id": "sp-0044",
+    "name": "Winter Moth",
+    "scientific": "Operophtera brumata",
+    "rank": "species",
+    "hashtags": ["wintermoth", "moths", "insects"],
+    "wikidata": "Q164002",
+    "gbif": "1972449",
+    "inaturalist": "60780"
   }
 ]

@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0232/",
+  "id": "e-0232",
+  "type": "book",
+  "title": "The Common Spiders of the United States",
+  "contributors": [
+    {
+      "id": "a-j-h-emerton",
+      "name": "J. H. Emerton",
+      "role": "author"
+    }
+  ],
+  "publisher": "Ginn & Company",
+  "issued": "1902",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "commonspidersofuemer"
+  },
+  "citedBy": [
+    "r-0152",
+    "i-0184"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0152/",
+        "id": "r-0152",
+        "name": "J. H. Emerton, “The Common Spiders of the United States”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0184/",
+        "id": "i-0184",
+        "name": "J. H. Emerton, Web of Tetragnatha in tansy plants"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

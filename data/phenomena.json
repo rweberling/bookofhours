@@ -75,5 +75,19 @@
     "latin": null,
     "wikidata": null,
     "hashtags": ["christmasbirdcount", "birdcount", "citizenscience"]
+  },
+  {
+    "id": "ph-0012",
+    "name": "The Sun Standing Still",
+    "latin": null,
+    "wikidata": null,
+    "hashtags": ["solstice", "daylength", "almanac"]
+  },
+  {
+    "id": "ph-0013",
+    "name": "Solstice Eve",
+    "latin": null,
+    "wikidata": null,
+    "hashtags": ["solstice", "wintersolstice", "sunrise"]
   }
 ]

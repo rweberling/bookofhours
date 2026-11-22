@@ -1,0 +1,69 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0186/",
+  "id": "i-0186",
+  "shownIn": "days",
+  "file": "images/days_farmers_almanack_december_1842.jpg",
+  "caption": "December, from <a href=\"https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up\" target=\"_blank\"><em>The Farmer’s Almanack</em></a> for 1842, calculated for Boston (1841), p. 29: a woodcut of Capricorn, a verse, the day-by-day weather and the Farmer’s Calendar",
+  "alt": "A worn almanac page headed December hath 31 days, 1842, with a woodcut of a horned goat in an oval frame of leaves, a six-line verse beginning Stern winter reigns o'er all the land, and below it a column of days with holidays and weather notes (Look out for a snow; Clear and quite cold; Snow is near) beside a column of prose headed Farmer's Calendar.",
+  "bibliography": "<em>The Farmer’s Almanack for the Year of Our Lord 1842</em>. Jenks & Palmer, 1841, p. 29.",
+  "creator": {
+    "id": "a-robert-b-thomas",
+    "name": "Robert B. Thomas"
+  },
+  "title": "December",
+  "date": "1841",
+  "institution": "Lincoln Financial Foundation Collection",
+  "source": {
+    "url": "https://archive.org/download/farmersalmanack00thom/page/n28_w2400.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0234",
+    "type": "book",
+    "title": "The Farmer’s Almanack for the Year of Our Lord 1842",
+    "contributors": [
+      {
+        "id": "a-robert-b-thomas",
+        "name": "Robert B. Thomas",
+        "role": "author"
+      }
+    ],
+    "publisher": "Jenks & Palmer",
+    "issued": "1841",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "farmersalmanack00thom"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      "ph-0012"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0012/",
+        "id": "ph-0012",
+        "name": "The Sun Standing Still"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0234/",
+      "id": "e-0234",
+      "name": "The Farmer’s Almanack for the Year of Our Lord 1842"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

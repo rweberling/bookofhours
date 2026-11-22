@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0043/",
+  "id": "sp-0043",
+  "name": "Winter Spiders",
+  "scientific": "Araneae",
+  "rank": "order",
+  "hashtags": [
+    "spiders",
+    "arachnids",
+    "winter"
+  ],
+  "wikidata": "Q1357",
+  "gbif": "1496",
+  "inaturalist": "47118",
+  "records": [
+    "r-0152",
+    "i-0184"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0152/",
+        "id": "r-0152",
+        "name": "J. H. Emerton, “The Common Spiders of the United States”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0184/",
+        "id": "i-0184",
+        "name": "J. H. Emerton, Web of Tetragnatha in tansy plants"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

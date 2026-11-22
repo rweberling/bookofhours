@@ -6102,5 +6102,157 @@
         }
       ]
     }
+  },
+  {
+    "id": "r-0152",
+    "shownIn": "days",
+    "text": "<p>Bushes may be swept in the same way, or may be shaken over an open umbrella, or a piece of cloth or paper. In winter, when spiders are torpid, great numbers can be found by sifting the dead leaves that have been lying for some years in the woods. A common coal sieve is fine enough to hold the leaves while the spiders and sticks and dirt pass through, and may be picked over on a cloth or carried home in a bag and examined in the house. The sifting should be repeated several times, as many of the spiders hold to threads among the leaves and become loosened only after much shaking.</p>",
+    "citation": {
+      "display": "J. H. Emerton, from <a href=\"https://archive.org/details/commonspidersofuemer/page/n23/mode/1up\" target=\"_blank\"><em>The Common Spiders of the United States</em></a> (1902), p. xviii",
+      "bibliography": "Emerton, J. H. <em>The Common Spiders of the United States</em>. Ginn & Company, 1902, p. xviii.",
+      "title": "The Common Spiders of the United States",
+      "written": "1902",
+      "locator": {
+        "page": "xviii",
+        "url": "https://archive.org/details/commonspidersofuemer/page/n23/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0232",
+        "type": "book",
+        "title": "The Common Spiders of the United States",
+        "contributors": [{ "id": "a-j-h-emerton", "name": "J. H. Emerton", "role": "author" }],
+        "publisher": "Ginn & Company",
+        "issued": "1902",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "commonspidersofuemer" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": [
+        {
+          "id": "sp-0043",
+          "basis": "grounded",
+          "note": "Emerton's way of finding spiders in winter, sifting old leaves through a coal sieve."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0153",
+    "shownIn": "days",
+    "text": "<p>The female is greyish to greyish-brown in colour, and differs totally from the male, having the merest traces of wings, which are totally useless as organs of flight . . .</p><p>The males have been observed for many years to appear some days before the females. They may be seen at dusk, flying lazily along hedgerows and in the orchards and gardens. They are attracted by light. One often sees them collected on street lamps, and they occur outside windows.</p>",
+    "citation": {
+      "display": "Fred. V. Theobald, “The Winter Moth,” from <a href=\"https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up\" target=\"_blank\"><em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em></a> (1909), pp. 51–52",
+      "bibliography": "Theobald, Fred. V. \"The Winter Moth.\" <em>The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits</em>, published by the author, 1909, pp. 51–52.",
+      "title": "The Winter Moth",
+      "written": "1909",
+      "locator": {
+        "page": "51–52",
+        "url": "https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0233",
+        "type": "book",
+        "title": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits",
+        "contributors": [{ "id": "a-fred-v-theobald", "name": "Fred. V. Theobald", "role": "author" }],
+        "publisher": "published by the author",
+        "issued": "1909",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "insectotherallie00theoiala" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": [
+        {
+          "id": "sp-0044",
+          "basis": "grounded",
+          "note": "The winter moth's males at lighted windows on December nights; its wingless females."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0154",
+    "shownIn": "days",
+    "text": "<p>Farmers, friends, companions of the sod, we will not be sombrous and down-hearted, because, forsooth, it may hap that we now close the gates upon our pathway, and no more, after this, walk together in our pleasant companionship. . . . We have ploughed, we have sowed, we have reapt, we have mowed; we have enjoyed the fruits of our industry, and relished the good things of life in health and thankfulness. . . . Let there be nothing morose and chilly in parting.</p>",
+    "citation": {
+      "display": "Robert B. Thomas, “Farmer’s Calendar,” December, from <a href=\"https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up\" target=\"_blank\"><em>The Farmer’s Almanack</em></a> for 1842 (1841), p. 29",
+      "bibliography": "Thomas, Robert B. \"Farmer’s Calendar,\" December. <em>The Farmer’s Almanack for the Year of Our Lord 1842</em>, Jenks & Palmer, 1841, p. 29.",
+      "title": "Farmer’s Calendar, December",
+      "written": "1841",
+      "locator": {
+        "page": "29",
+        "url": "https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0234",
+        "type": "book",
+        "title": "The Farmer’s Almanack for the Year of Our Lord 1842",
+        "contributors": [{ "id": "a-robert-b-thomas", "name": "Robert B. Thomas", "role": "author" }],
+        "publisher": "Jenks & Palmer",
+        "issued": "1841",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "farmersalmanack00thom" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "phenomena": [
+        {
+          "id": "ph-0012",
+          "basis": "grounded",
+          "note": "The almanac's farewell for the year, from the month whose days stop shortening (8 h 54 m, 15–20 December)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0155",
+    "shownIn": "days",
+    "text": "<p>The sun, this December morning, has come to the end of his southern journey, he climbs the whitish sky to the south over the white fury of the Orleans shoals, and takes on a silvery quality from the pallor of the sky. On such a morning went ancient peoples to their hills, and cried to the pale god to return to their woods and fields . . .</p>",
+    "citation": {
+      "display": "Henry Beston, “Midwinter,” from <a href=\"https://archive.org/details/bestonoutermost2/page/n103/mode/1up\" target=\"_blank\"><em>The Outermost House</em></a> (1928), pp. 62–63",
+      "bibliography": "Beston, Henry. \"Midwinter.\" <em>The Outermost House: A Year of Life on the Great Beach of Cape Cod</em>, Doubleday, Doran, 1928, pp. 62–63.",
+      "title": "Midwinter",
+      "written": "1928",
+      "locator": {
+        "page": "62–63",
+        "url": "https://archive.org/details/bestonoutermost2/page/n103/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0235",
+        "type": "book",
+        "title": "The Outermost House: A Year of Life on the Great Beach of Cape Cod",
+        "contributors": [{ "id": "a-henry-beston", "name": "Henry Beston", "role": "author" }],
+        "publisher": "Doubleday, Doran",
+        "issued": "1928",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "bestonoutermost2" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "phenomena": [
+        {
+          "id": "ph-0013",
+          "basis": "grounded",
+          "note": "Beston on Cape Cod as the sun comes to the end of his southern journey."
+        }
+      ]
+    }
   }
 ]

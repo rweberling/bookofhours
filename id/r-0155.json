@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0155/",
+  "id": "r-0155",
+  "shownIn": "days",
+  "text": "<p>The sun, this December morning, has come to the end of his southern journey, he climbs the whitish sky to the south over the white fury of the Orleans shoals, and takes on a silvery quality from the pallor of the sky. On such a morning went ancient peoples to their hills, and cried to the pale god to return to their woods and fields . . .</p>",
+  "citation": {
+    "display": "Henry Beston, “Midwinter,” from <a href=\"https://archive.org/details/bestonoutermost2/page/n103/mode/1up\" target=\"_blank\"><em>The Outermost House</em></a> (1928), pp. 62–63",
+    "bibliography": "Beston, Henry. \"Midwinter.\" <em>The Outermost House: A Year of Life on the Great Beach of Cape Cod</em>, Doubleday, Doran, 1928, pp. 62–63.",
+    "title": "Midwinter",
+    "written": "1928",
+    "locator": {
+      "page": "62–63",
+      "url": "https://archive.org/details/bestonoutermost2/page/n103/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0235",
+      "type": "book",
+      "title": "The Outermost House: A Year of Life on the Great Beach of Cape Cod",
+      "contributors": [
+        {
+          "id": "a-henry-beston",
+          "name": "Henry Beston",
+          "role": "author"
+        }
+      ],
+      "publisher": "Doubleday, Doran",
+      "issued": "1928",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "bestonoutermost2"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0013",
+        "basis": "grounded",
+        "note": "Beston on Cape Cod as the sun comes to the end of his southern journey."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0013/",
+        "id": "ph-0013",
+        "name": "Solstice Eve"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0235/",
+      "id": "e-0235",
+      "name": "The Outermost House: A Year of Life on the Great Beach of Cape Cod"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
