@@ -5752,7 +5752,8 @@
       "weather": [],
       "seasons": ["winter"],
       "species": ["sp-0035"]
-    }
+    },
+    "draft": true
   },
   {
     "id": "i-0172",
