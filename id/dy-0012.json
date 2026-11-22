@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0012/",
+  "id": "dy-0012",
+  "date": "11-24",
+  "subject": "sp-0039",
+  "reading": "r-0145",
+  "image": "i-0177",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=11-24",
+    "week": 49,
+    "season": "autumn",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0039/",
+      "id": "sp-0039",
+      "name": "Hubbard Squash",
+      "scientific": "Cucurbita maxima",
+      "wikidata": "Q161180"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0145/",
+      "id": "r-0145",
+      "name": "James J. H. Gregory, “The Storing of the Crop”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0177/",
+      "id": "i-0177",
+      "name": "James J. H. Gregory, Section of Squash-House"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -64,7 +64,20 @@
       "@id": "https://earthlyhours.com/id/e-0224/",
       "id": "e-0224",
       "name": "Squashes: How to Grow Them"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0012/",
+      "id": "dy-0012",
+      "date": "11-24",
+      "url": "https://earthlyhours.com/seasons.html?day=11-24"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0145/",
+        "id": "r-0145",
+        "name": "James J. H. Gregory, “The Storing of the Crop”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

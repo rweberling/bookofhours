@@ -17,6 +17,21 @@
     "i-0177"
   ],
   "related": {
+    "seasons": [
+      {
+        "@id": "https://earthlyhours.com/id/autumn/",
+        "id": "autumn",
+        "name": "Autumn"
+      }
+    ],
+    "days": [
+      {
+        "@id": "https://earthlyhours.com/id/dy-0012/",
+        "id": "dy-0012",
+        "date": "11-24",
+        "url": "https://earthlyhours.com/seasons.html?day=11-24"
+      }
+    ],
     "records": [
       {
         "@id": "https://earthlyhours.com/id/r-0145/",

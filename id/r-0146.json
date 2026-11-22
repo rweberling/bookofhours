@@ -58,7 +58,20 @@
       "@id": "https://earthlyhours.com/id/e-0225/",
       "id": "e-0225",
       "name": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0013/",
+      "id": "dy-0013",
+      "date": "11-25",
+      "url": "https://earthlyhours.com/seasons.html?day=11-25"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0178/",
+        "id": "i-0178",
+        "name": "A Seneca youth, The march of the Toñwiʹsas"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

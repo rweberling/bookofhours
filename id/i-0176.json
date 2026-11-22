@@ -55,7 +55,20 @@
       "@id": "https://earthlyhours.com/id/e-0223/",
       "id": "e-0223",
       "name": "Coloured Figures of English Fungi or Mushrooms, vol. 2"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0011/",
+      "id": "dy-0011",
+      "date": "11-23",
+      "url": "https://earthlyhours.com/seasons.html?day=11-23"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0144/",
+        "id": "r-0144",
+        "name": "“Coleoptera Associated with Polyporus versicolor L. in New Jersey”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

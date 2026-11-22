@@ -17,6 +17,9 @@
     "ph-0006",
     "sp-0028",
     "sp-0032",
+    "sp-0038",
+    "sp-0039",
+    "ph-0009",
     "sp-0029",
     "sp-0030",
     "sp-0031"
@@ -77,6 +80,25 @@
         "name": "Eastern Grey Squirrel",
         "scientific": "Sciurus carolinensis",
         "wikidata": "Q468500"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0038/",
+        "id": "sp-0038",
+        "name": "Turkey Tail",
+        "scientific": "Trametes versicolor",
+        "wikidata": "Q753833"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0039/",
+        "id": "sp-0039",
+        "name": "Hubbard Squash",
+        "scientific": "Cucurbita maxima",
+        "wikidata": "Q161180"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/ph-0009/",
+        "id": "ph-0009",
+        "name": "The Three Sisters"
       },
       {
         "@id": "https://earthlyhours.com/id/sp-0029/",

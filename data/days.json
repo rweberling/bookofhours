@@ -4,24 +4,21 @@
     "date": "11-23",
     "subject": "sp-0038",
     "reading": "r-0144",
-    "image": "i-0176",
-    "draft": true
+    "image": "i-0176"
   },
   {
     "id": "dy-0012",
     "date": "11-24",
     "subject": "sp-0039",
     "reading": "r-0145",
-    "image": "i-0177",
-    "draft": true
+    "image": "i-0177"
   },
   {
     "id": "dy-0013",
     "date": "11-25",
     "subject": "ph-0009",
     "reading": "r-0146",
-    "image": "i-0178",
-    "draft": true
+    "image": "i-0178"
   },
   {
     "id": "dy-0001",
@@ -104,11 +101,11 @@
     "draft": true
   },
   {
-    "id": "dy-0016",
+    "id": "dy-0018",
     "date": "12-15",
-    "subject": "sp-0041",
-    "reading": "r-0149",
-    "image": "i-0181",
+    "subject": "ph-0011",
+    "reading": "r-0151",
+    "image": "i-0183",
     "draft": true
   },
   {
@@ -120,11 +117,11 @@
     "draft": true
   },
   {
-    "id": "dy-0018",
+    "id": "dy-0016",
     "date": "12-17",
-    "subject": "ph-0011",
-    "reading": "r-0151",
-    "image": "i-0183",
+    "subject": "sp-0041",
+    "reading": "r-0149",
+    "image": "i-0181",
     "draft": true
   }
 ]

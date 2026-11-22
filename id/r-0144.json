@@ -54,7 +54,20 @@
       "@id": "https://earthlyhours.com/id/e-0222/",
       "id": "e-0222",
       "name": "Psyche"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0011/",
+      "id": "dy-0011",
+      "date": "11-23",
+      "url": "https://earthlyhours.com/seasons.html?day=11-23"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0176/",
+        "id": "i-0176",
+        "name": "James Sowerby, Boletus versicolor"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
