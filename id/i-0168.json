@@ -51,7 +51,20 @@
       "@id": "https://earthlyhours.com/id/e-0218/",
       "id": "e-0218",
       "name": "Illustrations of British Fungi (Hymenomycetes), vol. 2"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0004/",
+      "id": "dy-0004",
+      "date": "11-30",
+      "url": "https://earthlyhours.com/seasons.html?day=11-30"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0137/",
+        "id": "r-0137",
+        "name": "Charles McIlvaine, Robert K. Macadam, “Pleurotus serotinus”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

@@ -60,7 +60,20 @@
       "@id": "https://earthlyhours.com/id/e-0221/",
       "id": "e-0221",
       "name": "A Calendar of Sonnets"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0010/",
+      "id": "dy-0010",
+      "date": "12-07",
+      "url": "https://earthlyhours.com/seasons.html?day=12-07"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0174/",
+        "id": "i-0174",
+        "name": "George Inness, A Winter Sky"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

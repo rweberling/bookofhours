@@ -65,7 +65,20 @@
       "@id": "https://earthlyhours.com/id/e-0214/",
       "id": "e-0214",
       "name": "A Treatise on Some of the Insects Injurious to Vegetation, new edition"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0006/",
+      "id": "dy-0006",
+      "date": "12-02",
+      "url": "https://earthlyhours.com/seasons.html?day=12-02"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0170/",
+        "id": "i-0170",
+        "name": "B. A. Porter and C. H. Alden, Fall Cankerworm (plate II)"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

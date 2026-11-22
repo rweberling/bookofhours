@@ -61,7 +61,20 @@
       "@id": "https://earthlyhours.com/id/e-0219/",
       "id": "e-0219",
       "name": "The Cankerworms (USDA Department Bulletin 1238)"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0006/",
+      "id": "dy-0006",
+      "date": "12-02",
+      "url": "https://earthlyhours.com/seasons.html?day=12-02"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0139/",
+        "id": "r-0139",
+        "name": "Thaddeus William Harris, “The Canker-Worm”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

@@ -43,6 +43,19 @@
         "id": "ph-0008",
         "name": "Earliest Sunset"
       }
+    ],
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0010/",
+      "id": "dy-0010",
+      "date": "12-07",
+      "url": "https://earthlyhours.com/seasons.html?day=12-07"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0143/",
+        "id": "r-0143",
+        "name": "Helen Hunt Jackson, “December”"
+      }
     ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

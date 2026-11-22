@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0010/",
+  "id": "dy-0010",
+  "date": "12-07",
+  "subject": "ph-0008",
+  "reading": "r-0143",
+  "image": "i-0174",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-07",
+    "week": 51,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/ph-0008/",
+      "id": "ph-0008",
+      "name": "Earliest Sunset"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0143/",
+      "id": "r-0143",
+      "name": "Helen Hunt Jackson, “December”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0174/",
+      "id": "i-0174",
+      "name": "George Inness, A Winter Sky"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

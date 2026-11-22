@@ -25,8 +25,7 @@
     "date": "11-30",
     "subject": "sp-0033",
     "reading": "r-0137",
-    "image": "i-0168",
-    "draft": true
+    "image": "i-0168"
   },
   {
     "id": "dy-0005",
@@ -41,8 +40,7 @@
     "date": "12-02",
     "subject": "sp-0034",
     "reading": "r-0139",
-    "image": "i-0170",
-    "draft": true
+    "image": "i-0170"
   },
   {
     "id": "dy-0007",
@@ -57,23 +55,20 @@
     "date": "12-04",
     "subject": "sp-0036",
     "reading": "r-0141",
-    "image": "i-0172",
-    "draft": true
+    "image": "i-0172"
   },
   {
     "id": "dy-0009",
     "date": "12-05",
     "subject": "sp-0037",
     "reading": "r-0142",
-    "image": "i-0173",
-    "draft": true
+    "image": "i-0173"
   },
   {
     "id": "dy-0010",
     "date": "12-07",
     "subject": "ph-0008",
     "reading": "r-0143",
-    "image": "i-0174",
-    "draft": true
+    "image": "i-0174"
   }
 ]

@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0009/",
+  "id": "dy-0009",
+  "date": "12-05",
+  "subject": "sp-0037",
+  "reading": "r-0142",
+  "image": "i-0173",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-05",
+    "week": 50,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0037/",
+      "id": "sp-0037",
+      "name": "Princess Pine",
+      "scientific": "Dendrolycopodium obscurum",
+      "wikidata": "Q15338742"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0142/",
+      "id": "r-0142",
+      "name": "Lucien Marcus Underwood, “Introduction”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0173/",
+      "id": "i-0173",
+      "name": "Julian Alden Weir, Christmas Greens"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -9,7 +9,12 @@
   ],
   "vocabulary": "seasons",
   "subjects": [
-    "sp-0001"
+    "sp-0001",
+    "sp-0033",
+    "sp-0034",
+    "sp-0036",
+    "sp-0037",
+    "ph-0008"
   ],
   "related": {
     "subjects": [
@@ -19,6 +24,39 @@
         "name": "Witch Hazel",
         "scientific": "Hamamelis virginiana",
         "wikidata": "Q913129"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0033/",
+        "id": "sp-0033",
+        "name": "Late Oyster",
+        "scientific": "Sarcomyxa serotina",
+        "wikidata": "Q81202193"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0034/",
+        "id": "sp-0034",
+        "name": "Fall Cankerworm",
+        "scientific": "Alsophila pometaria",
+        "wikidata": "Q1370141"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0036/",
+        "id": "sp-0036",
+        "name": "Bay Scallop",
+        "scientific": "Argopecten irradians",
+        "wikidata": "Q3018372"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0037/",
+        "id": "sp-0037",
+        "name": "Princess Pine",
+        "scientific": "Dendrolycopodium obscurum",
+        "wikidata": "Q15338742"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/ph-0008/",
+        "id": "ph-0008",
+        "name": "Earliest Sunset"
       }
     ]
   },

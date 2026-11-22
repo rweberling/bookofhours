@@ -55,7 +55,20 @@
       "@id": "https://earthlyhours.com/id/e-0220/",
       "id": "e-0220",
       "name": "A Report upon the Scallop Fishery of Massachusetts"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0008/",
+      "id": "dy-0008",
+      "date": "12-04",
+      "url": "https://earthlyhours.com/seasons.html?day=12-04"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0141/",
+        "id": "r-0141",
+        "name": "Fannie Merritt Farmer, “Fried Scallops”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

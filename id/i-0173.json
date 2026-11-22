@@ -45,6 +45,19 @@
         "scientific": "Dendrolycopodium obscurum",
         "wikidata": "Q15338742"
       }
+    ],
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0009/",
+      "id": "dy-0009",
+      "date": "12-05",
+      "url": "https://earthlyhours.com/seasons.html?day=12-05"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0142/",
+        "id": "r-0142",
+        "name": "Lucien Marcus Underwood, “Introduction”"
+      }
     ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

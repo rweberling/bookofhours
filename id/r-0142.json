@@ -61,7 +61,20 @@
       "@id": "https://earthlyhours.com/id/e-0217/",
       "id": "e-0217",
       "name": "Our Native Ferns and Their Allies, 4th ed., revised"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0009/",
+      "id": "dy-0009",
+      "date": "12-05",
+      "url": "https://earthlyhours.com/seasons.html?day=12-05"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0173/",
+        "id": "i-0173",
+        "name": "Julian Alden Weir, Christmas Greens"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
