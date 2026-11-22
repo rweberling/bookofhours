@@ -368,5 +368,55 @@
     "wikidata": "Q15338742",
     "gbif": "3991468",
     "inaturalist": "204198"
+  },
+  {
+    "id": "sp-0038",
+    "name": "Turkey Tail",
+    "scientific": "Trametes versicolor",
+    "rank": "species",
+    "hashtags": ["turkeytail", "fungi", "mushrooms"],
+    "wikidata": "Q753833",
+    "gbif": "2548311",
+    "inaturalist": "54134"
+  },
+  {
+    "id": "sp-0039",
+    "name": "Hubbard Squash",
+    "scientific": "Cucurbita maxima",
+    "rank": "species",
+    "hashtags": ["hubbardsquash", "wintersquash", "squash"],
+    "wikidata": "Q161180",
+    "gbif": "2874515",
+    "inaturalist": "122866"
+  },
+  {
+    "id": "sp-0040",
+    "name": "White Oak",
+    "scientific": "Quercus alba",
+    "rank": "species",
+    "hashtags": ["whiteoak", "oak", "trees"],
+    "wikidata": "Q469555",
+    "gbif": "2879737",
+    "inaturalist": "54779"
+  },
+  {
+    "id": "sp-0041",
+    "name": "American Holly",
+    "scientific": "Ilex opaca",
+    "rank": "species",
+    "hashtags": ["americanholly", "holly", "evergreens"],
+    "wikidata": "Q2712730",
+    "gbif": "5414248",
+    "inaturalist": "60749"
+  },
+  {
+    "id": "sp-0042",
+    "name": "Sea Mosses",
+    "scientific": "Rhodophyta",
+    "rank": "phylum",
+    "hashtags": ["seaweed", "redalgae", "seamoss"],
+    "wikidata": "Q103169",
+    "gbif": "106",
+    "inaturalist": "57774"
   }
 ]

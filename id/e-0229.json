@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0229/",
+  "id": "e-0229",
+  "type": "book",
+  "title": "Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae",
+  "contributors": [
+    {
+      "id": "a-a-b-hervey",
+      "name": "A. B. Hervey",
+      "role": "author"
+    }
+  ],
+  "publisher": "S. E. Cassino",
+  "issued": "1881",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "seamossescollect001herv"
+  },
+  "citedBy": [
+    "r-0150",
+    "i-0182"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0150/",
+        "id": "r-0150",
+        "name": "A. B. Hervey, “Times and Places for Collecting”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0182/",
+        "id": "i-0182",
+        "name": "A. B. Hervey, Plate XI"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

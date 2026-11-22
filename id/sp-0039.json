@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0039/",
+  "id": "sp-0039",
+  "name": "Hubbard Squash",
+  "scientific": "Cucurbita maxima",
+  "rank": "species",
+  "hashtags": [
+    "hubbardsquash",
+    "wintersquash",
+    "squash"
+  ],
+  "wikidata": "Q161180",
+  "gbif": "2874515",
+  "inaturalist": "122866",
+  "records": [
+    "r-0145",
+    "i-0177"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0145/",
+        "id": "r-0145",
+        "name": "James J. H. Gregory, “The Storing of the Crop”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0177/",
+        "id": "i-0177",
+        "name": "James J. H. Gregory, Section of Squash-House"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

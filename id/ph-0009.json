@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0009/",
+  "id": "ph-0009",
+  "name": "The Three Sisters",
+  "latin": null,
+  "wikidata": null,
+  "hashtags": [
+    "threesisters",
+    "corn",
+    "beans"
+  ],
+  "records": [
+    "r-0146",
+    "i-0178"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0146/",
+        "id": "r-0146",
+        "name": "Arthur C. Parker, “Iroquois Uses of Maize and Other Food Plants”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0178/",
+        "id": "i-0178",
+        "name": "A Seneca youth, The march of the Toñwiʹsas"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

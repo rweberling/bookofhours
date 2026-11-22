@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0148/",
+  "id": "r-0148",
+  "shownIn": "days",
+  "text": "<p>One can spend a profitable and pleasurable half-hour in exploring the wonders of Gemini. The whole constellation, from head to foot, is gemmed with stars which escape the naked eye, but it sparkles like a bead-spangled garment when viewed with the glass.</p>",
+  "citation": {
+    "display": "Garrett P. Serviss, “The Stars of Spring,” from <a href=\"https://archive.org/details/astronomywithop00serv/page/n28/mode/1up\" target=\"_blank\"><em>Astronomy with an Opera-Glass</em></a> (1888), p. 17",
+    "bibliography": "Serviss, Garrett P. \"The Stars of Spring.\" <em>Astronomy with an Opera-Glass</em>, D. Appleton, 1888, p. 17.",
+    "title": "The Stars of Spring",
+    "written": "1888",
+    "locator": {
+      "page": "17",
+      "url": "https://archive.org/details/astronomywithop00serv/page/n28/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0227",
+      "type": "book",
+      "title": "Astronomy with an Opera-Glass",
+      "contributors": [
+        {
+          "id": "a-garrett-p-serviss",
+          "name": "Garrett P. Serviss",
+          "role": "author"
+        }
+      ],
+      "publisher": "D. Appleton",
+      "issued": "1888",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "astronomywithop00serv"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0010",
+        "basis": "grounded",
+        "note": "Gemini through a pair of field glasses; the Geminid meteors radiate from it in mid-December."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0010/",
+        "id": "ph-0010",
+        "name": "Geminids"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0227/",
+      "id": "e-0227",
+      "name": "Astronomy with an Opera-Glass"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

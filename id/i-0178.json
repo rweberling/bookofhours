@@ -1,0 +1,69 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0178/",
+  "id": "i-0178",
+  "shownIn": "days",
+  "file": "images/days_parker_three_sisters.jpg",
+  "caption": "A Seneca youth, the march of the Toñwiʹsas, the women’s society of the three sisters, pen drawing printed as figure 2 in Arthur C. Parker, <a href=\"https://archive.org/details/iroquoisusesofma00parkrich/page/n31/mode/1up\" target=\"_blank\"><em>Iroquois Uses of Maize and Other Food Plants</em></a> (1910), p. 28 (printed sideways on the page)",
+  "alt": "A pen drawing of a line of Seneca women in long dresses and shawls standing in a hall lit by a hanging candle-holder; the woman in front holds an armful of corn and a round cake of bread beside a woven basket on the floor, and a group of men in feathered caps watches from the right.",
+  "bibliography": "A Seneca youth. Figure 2, the march of the Toñwiʹsas. In Arthur C. Parker, <em>Iroquois Uses of Maize and Other Food Plants</em>, New York State Museum Bulletin 144, 1910, p. 28.",
+  "creator": {
+    "id": "a-a-seneca-youth",
+    "name": "A Seneca youth"
+  },
+  "title": "The march of the Toñwiʹsas",
+  "date": "1910",
+  "institution": "University of California Libraries",
+  "source": {
+    "url": "https://archive.org/download/iroquoisusesofma00parkrich/page/n31_w3000.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0225",
+    "type": "book",
+    "title": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)",
+    "contributors": [
+      {
+        "id": "a-arthur-c-parker",
+        "name": "Arthur C. Parker",
+        "role": "author"
+      }
+    ],
+    "publisher": "University of the State of New York",
+    "issued": "1910",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "iroquoisusesofma00parkrich"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/iroquoisusesofma00parkrich/page/n31/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0009"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0009/",
+        "id": "ph-0009",
+        "name": "The Three Sisters"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0225/",
+      "id": "e-0225",
+      "name": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

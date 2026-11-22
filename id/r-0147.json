@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0147/",
+  "id": "r-0147",
+  "shownIn": "days",
+  "text": "<p>In the fall they change to a bright violet colour, and form an agreeable contrast with the surrounding foliage which has not yet suffered by the frost.</p><p>This is the only Oak on which a few of the dried leaves persist till the circulation is renewed in the spring. By this peculiarity and by the whiteness of the bark, from which it derives its name, it is easily distinguished in the winter.</p>",
+  "citation": {
+    "display": "François André Michaux, “White Oak,” from <a href=\"https://archive.org/details/northamericansyl01michin/page/n36/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 1 (1819), p. 19",
+    "bibliography": "Michaux, François André. \"White Oak.\" <em>The North American Sylva</em>, vol. 1, C. d’Hautel, 1819, p. 19.",
+    "title": "White Oak",
+    "written": "1819",
+    "locator": {
+      "page": "19",
+      "url": "https://archive.org/details/northamericansyl01michin/page/n36/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0226",
+      "type": "book",
+      "title": "The North American Sylva, vol. 1",
+      "contributors": [
+        {
+          "id": "a-fran-ois-andr-michaux",
+          "name": "François André Michaux",
+          "role": "author"
+        }
+      ],
+      "publisher": "C. d’Hautel",
+      "issued": "1819",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "northamericansyl01michin"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0040",
+        "basis": "grounded",
+        "note": "Michaux on the white oak's dead leaves hanging on through the winter."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0040/",
+        "id": "sp-0040",
+        "name": "White Oak",
+        "scientific": "Quercus alba",
+        "wikidata": "Q469555"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0226/",
+      "id": "e-0226",
+      "name": "The North American Sylva, vol. 1"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0011/",
+  "id": "ph-0011",
+  "name": "The Christmas Bird Count",
+  "latin": null,
+  "wikidata": null,
+  "hashtags": [
+    "christmasbirdcount",
+    "birdcount",
+    "citizenscience"
+  ],
+  "records": [
+    "r-0151",
+    "i-0183"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0151/",
+        "id": "r-0151",
+        "name": "“A Christmas Bird-Census”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0183/",
+        "id": "i-0183",
+        "name": "Bird-Lore, The Christmas Bird Census"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

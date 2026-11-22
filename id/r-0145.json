@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0145/",
+  "id": "r-0145",
+  "shownIn": "days",
+  "text": "<p>In handling the squashes, I need hardly reiterate the caution of care. My practice is to form a string of boys, from the wagon to the shelves, and the squashes are tossed from one to another, with the caution to handle them like eggs. Boys well trained will not drop more than one squash to the ton, and I have known my boys to pass several tons without dropping a single squash.</p><p>If the squash-house has been built with reference to warmth, when once filled with squashes, it is surprising with what little fire frost can be kept out. The mass of squashes are, in themselves, a great store-house of heat, and with inside shutters for the coldest weather, the building is frost proof, with a small outlay of fuel.</p>",
+  "citation": {
+    "display": "James J. H. Gregory, “The Storing of the Crop,” from <a href=\"https://archive.org/details/squasheshowtogro00gregrich/page/n41/mode/1up\" target=\"_blank\"><em>Squashes: How to Grow Them</em></a> (1867), pp. 35–36",
+    "bibliography": "Gregory, James J. H. <em>Squashes: How to Grow Them</em>. Orange Judd, 1867, pp. 35–36.",
+    "title": "The Storing of the Crop",
+    "written": "1867",
+    "locator": {
+      "page": "35–36",
+      "url": "https://archive.org/details/squasheshowtogro00gregrich/page/n41/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0224",
+      "type": "book",
+      "title": "Squashes: How to Grow Them",
+      "contributors": [
+        {
+          "id": "a-james-j-h-gregory",
+          "name": "James J. H. Gregory",
+          "role": "author"
+        }
+      ],
+      "publisher": "Orange Judd",
+      "issued": "1867",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "squasheshowtogro00gregrich"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      {
+        "id": "sp-0039",
+        "basis": "grounded",
+        "note": "The Marblehead seedsman who introduced the Hubbard squash, storing sixty tons of it for the winter."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0039/",
+        "id": "sp-0039",
+        "name": "Hubbard Squash",
+        "scientific": "Cucurbita maxima",
+        "wikidata": "Q161180"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0224/",
+      "id": "e-0224",
+      "name": "Squashes: How to Grow Them"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,71 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0182/",
+  "id": "i-0182",
+  "shownIn": "days",
+  "file": "images/days_hervey_sea_mosses.jpg",
+  "caption": "<em>Lomentaria baileyana</em> and <em>Nitophyllum andersonii</em>, plate XI from A. B. Hervey, <a href=\"https://archive.org/details/seamossescollect001herv/page/n222/mode/1up\" target=\"_blank\"><em>Sea Mosses: A Collector’s Guide</em></a> (1881), colour plate",
+  "alt": "A colour plate of two pressed red seaweeds in soft coral pink on a white page: above, a fine, loosely tangled, much-branched tuft labelled Lomentaria Baileyana; below, a broader, flat, branching frond labelled Nitophyllum Andersonii. Plate XI.",
+  "bibliography": "Hervey, A. B. Plate XI. In <em>Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae</em>, S. E. Cassino, 1881.",
+  "creator": {
+    "id": "a-a-b-hervey",
+    "name": "A. B. Hervey"
+  },
+  "title": "Plate XI",
+  "date": "1881",
+  "institution": "California Academy of Sciences Library",
+  "source": {
+    "url": "https://archive.org/download/seamossescollect001herv/page/n222_w3000.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0229",
+    "type": "book",
+    "title": "Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae",
+    "contributors": [
+      {
+        "id": "a-a-b-hervey",
+        "name": "A. B. Hervey",
+        "role": "author"
+      }
+    ],
+    "publisher": "S. E. Cassino",
+    "issued": "1881",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "seamossescollect001herv"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/seamossescollect001herv/page/n222/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0042"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0042/",
+        "id": "sp-0042",
+        "name": "Sea Mosses",
+        "scientific": "Rhodophyta",
+        "wikidata": "Q103169"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0229/",
+      "id": "e-0229",
+      "name": "Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

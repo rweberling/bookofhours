@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0150/",
+  "id": "r-0150",
+  "shownIn": "days",
+  "text": "<p>You will be surprised, also, to see what quantities of things you can find as late as November and December. Indeed, if you are to know these plants thoroughly, you must collect them at all seasons of the year. Then you will know when they come, and when they go, and when they are in their greatest perfection.</p>",
+  "citation": {
+    "display": "A. B. Hervey, “Times and Places for Collecting,” from <a href=\"https://archive.org/details/seamossescollect001herv/page/n45/mode/1up\" target=\"_blank\"><em>Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae</em></a> (1881), p. 14",
+    "bibliography": "Hervey, A. B. \"Times and Places for Collecting.\" <em>Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae</em>, S. E. Cassino, 1881, p. 14.",
+    "title": "Times and Places for Collecting",
+    "written": "1881",
+    "locator": {
+      "page": "14",
+      "url": "https://archive.org/details/seamossescollect001herv/page/n45/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0229",
+      "type": "book",
+      "title": "Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae",
+      "contributors": [
+        {
+          "id": "a-a-b-hervey",
+          "name": "A. B. Hervey",
+          "role": "author"
+        }
+      ],
+      "publisher": "S. E. Cassino",
+      "issued": "1881",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "seamossescollect001herv"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0042",
+        "basis": "grounded",
+        "note": "Hervey on collecting seaweeds on the shore as late as November and December."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0042/",
+        "id": "sp-0042",
+        "name": "Sea Mosses",
+        "scientific": "Rhodophyta",
+        "wikidata": "Q103169"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0229/",
+      "id": "e-0229",
+      "name": "Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

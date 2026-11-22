@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0041/",
+  "id": "sp-0041",
+  "name": "American Holly",
+  "scientific": "Ilex opaca",
+  "rank": "species",
+  "hashtags": [
+    "americanholly",
+    "holly",
+    "evergreens"
+  ],
+  "wikidata": "Q2712730",
+  "gbif": "5414248",
+  "inaturalist": "60749",
+  "records": [
+    "r-0149",
+    "i-0181"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0149/",
+        "id": "r-0149",
+        "name": "François André Michaux, “American Holly”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0181/",
+        "id": "i-0181",
+        "name": "Henri-Joseph Redouté, American Holly, Ilex opaca"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

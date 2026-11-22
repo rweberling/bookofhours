@@ -1,0 +1,71 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0177/",
+  "id": "i-0177",
+  "shownIn": "days",
+  "file": "images/days_gregory_squash_house.jpg",
+  "caption": "James J. H. Gregory, “Section of Squash-House,” from <a href=\"https://archive.org/details/squasheshowtogro00gregrich/page/n39/mode/1up\" target=\"_blank\"><em>Squashes: How to Grow Them</em></a> (1867), p. 34, wood engraving",
+  "alt": "A plain diagram of a building in cross-section under a pitched roof with a brick chimney: three tall stacks of slatted shelves (bins B) separated by aisles (A), each shelf hatched, with labels for a height of 10 feet and a width of 25 feet, and the caption Section of Squash-House.",
+  "bibliography": "Gregory, James J. H. “Section of Squash-House.” In <em>Squashes: How to Grow Them</em>, Orange Judd, 1867, p. 34.",
+  "creator": {
+    "id": "a-james-j-h-gregory",
+    "name": "James J. H. Gregory"
+  },
+  "title": "Section of Squash-House",
+  "date": "1867",
+  "institution": "University of California Libraries",
+  "source": {
+    "url": "https://archive.org/download/squasheshowtogro00gregrich/page/n39_w3000.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0224",
+    "type": "book",
+    "title": "Squashes: How to Grow Them",
+    "contributors": [
+      {
+        "id": "a-james-j-h-gregory",
+        "name": "James J. H. Gregory",
+        "role": "author"
+      }
+    ],
+    "publisher": "Orange Judd",
+    "issued": "1867",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "squasheshowtogro00gregrich"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/squasheshowtogro00gregrich/page/n39/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0039"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0039/",
+        "id": "sp-0039",
+        "name": "Hubbard Squash",
+        "scientific": "Cucurbita maxima",
+        "wikidata": "Q161180"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0224/",
+      "id": "e-0224",
+      "name": "Squashes: How to Grow Them"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

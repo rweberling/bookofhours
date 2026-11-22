@@ -1,0 +1,60 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0183/",
+  "id": "i-0183",
+  "shownIn": "days",
+  "file": "images/days_birdlore_christmas_census.jpg",
+  "caption": "“The Christmas Bird Census,” the first returns, from <a href=\"https://archive.org/details/sim_bird-lore_january-february-1901_3_1/page/n38/mode/1up\" target=\"_blank\"><em>Bird-Lore</em></a> 3 (January–February 1901), p. 29: New Brunswick, Toronto, Keene, Belmont and Cambridge, and the Arnold Arboretum",
+  "alt": "A printed magazine page headed The Christmas Bird Census, listing counts by place in small type: Scotch Lake, New Brunswick; Toronto; Keene, N.H.; Belmont and Cambridge, Mass.; Boston, Mass. (Arnold Arboretum). Each entry gives the hours, the weather, the wind and the temperature, then each bird and its number, a total, and the observer's name.",
+  "bibliography": "“The Christmas Bird Census.” <em>Bird-Lore</em>, vol. 3, no. 1, 1901, p. 29.",
+  "creator": {
+    "id": "a-bird-lore",
+    "name": "Bird-Lore"
+  },
+  "title": "The Christmas Bird Census",
+  "date": "1901",
+  "institution": "Internet Archive",
+  "source": {
+    "url": "https://archive.org/download/sim_bird-lore_january-february-1901_3_1/page/n38_w3000.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0231",
+    "title": "Bird-Lore, vol. 3, no. 1",
+    "publisher": "Macmillan",
+    "issued": "1901",
+    "identifiers": {
+      "internetArchive": "sim_bird-lore_january-february-1901_3_1"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/sim_bird-lore_january-february-1901_3_1/page/n38/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      "ph-0011"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0011/",
+        "id": "ph-0011",
+        "name": "The Christmas Bird Count"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0231/",
+      "id": "e-0231",
+      "name": "Bird-Lore, vol. 3, no. 1"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

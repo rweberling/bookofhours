@@ -1,0 +1,24 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0231/",
+  "id": "e-0231",
+  "title": "Bird-Lore, vol. 3, no. 1",
+  "publisher": "Macmillan",
+  "issued": "1901",
+  "identifiers": {
+    "internetArchive": "sim_bird-lore_january-february-1901_3_1"
+  },
+  "citedBy": [
+    "i-0183"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0183/",
+        "id": "i-0183",
+        "name": "Bird-Lore, The Christmas Bird Census"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

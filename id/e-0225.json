@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0225/",
+  "id": "e-0225",
+  "type": "book",
+  "title": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)",
+  "contributors": [
+    {
+      "id": "a-arthur-c-parker",
+      "name": "Arthur C. Parker",
+      "role": "author"
+    }
+  ],
+  "publisher": "University of the State of New York",
+  "issued": "1910",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "iroquoisusesofma00parkrich"
+  },
+  "citedBy": [
+    "r-0146",
+    "i-0178"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0146/",
+        "id": "r-0146",
+        "name": "Arthur C. Parker, “Iroquois Uses of Maize and Other Food Plants”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0178/",
+        "id": "i-0178",
+        "name": "A Seneca youth, The march of the Toñwiʹsas"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

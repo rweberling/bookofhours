@@ -286,6 +286,34 @@
         }
       ]
     },
+    "images/days_birdlore_christmas_census.jpg": {
+      "bytes": 775004,
+      "width": 2344,
+      "height": 3340,
+      "sha256": "d74fdf8a53efc0b076359407ec1f8af28a6b3ad66375b37e822f1f8361ed1358",
+      "settings": "89e48fac760f",
+      "credit": "5c264c62a786",
+      "copies": [
+        {
+          "file": "images/web/days_birdlore_christmas_census-800.webp",
+          "width": 800,
+          "height": 1140,
+          "bytes": 89742
+        },
+        {
+          "file": "images/web/days_birdlore_christmas_census-1600.webp",
+          "width": 1600,
+          "height": 2280,
+          "bytes": 211152
+        },
+        {
+          "file": "images/web/days_birdlore_christmas_census-2400.webp",
+          "width": 2344,
+          "height": 3340,
+          "bytes": 345296
+        }
+      ]
+    },
     "images/days_cooke_late_oyster.jpg": {
       "bytes": 866648,
       "width": 2012,
@@ -314,6 +342,34 @@
         }
       ]
     },
+    "images/days_gregory_squash_house.jpg": {
+      "bytes": 408201,
+      "width": 1715,
+      "height": 1107,
+      "sha256": "a3f971ee9b9e0300db544d1f30f241a82a770e4d4b4da074e0671c94a6fd26ef",
+      "settings": "89e48fac760f",
+      "credit": "74f639fd4370",
+      "copies": [
+        {
+          "file": "images/web/days_gregory_squash_house-800.webp",
+          "width": 800,
+          "height": 516,
+          "bytes": 51912
+        },
+        {
+          "file": "images/web/days_gregory_squash_house-1600.webp",
+          "width": 1600,
+          "height": 1033,
+          "bytes": 145658
+        },
+        {
+          "file": "images/web/days_gregory_squash_house-2400.webp",
+          "width": 1715,
+          "height": 1107,
+          "bytes": 166044
+        }
+      ]
+    },
     "images/days_havell_long_tailed_duck.jpg": {
       "bytes": 2323462,
       "width": 3840,
@@ -339,6 +395,34 @@
           "width": 2400,
           "height": 1729,
           "bytes": 322576
+        }
+      ]
+    },
+    "images/days_hervey_sea_mosses.jpg": {
+      "bytes": 535811,
+      "width": 1970,
+      "height": 3400,
+      "sha256": "21e1368d1ecc8a232b660b271b2eead16a3d5eb7c5bb53c03da00696c39579bc",
+      "settings": "89e48fac760f",
+      "credit": "d5e4329cbd0d",
+      "copies": [
+        {
+          "file": "images/web/days_hervey_sea_mosses-800.webp",
+          "width": 800,
+          "height": 1381,
+          "bytes": 58714
+        },
+        {
+          "file": "images/web/days_hervey_sea_mosses-1600.webp",
+          "width": 1600,
+          "height": 2761,
+          "bytes": 135640
+        },
+        {
+          "file": "images/web/days_hervey_sea_mosses-2400.webp",
+          "width": 1970,
+          "height": 3400,
+          "bytes": 175378
         }
       ]
     },
@@ -398,6 +482,62 @@
         }
       ]
     },
+    "images/days_michaux_american_holly.jpg": {
+      "bytes": 1125836,
+      "width": 2079,
+      "height": 3400,
+      "sha256": "38d81604b4d8aa9c5adc73dcbe3a2ee9fc6743fc48a43ecc52b109b5d0c56d86",
+      "settings": "89e48fac760f",
+      "credit": "db20ba4d27c6",
+      "copies": [
+        {
+          "file": "images/web/days_michaux_american_holly-800.webp",
+          "width": 800,
+          "height": 1308,
+          "bytes": 105876
+        },
+        {
+          "file": "images/web/days_michaux_american_holly-1600.webp",
+          "width": 1600,
+          "height": 2617,
+          "bytes": 312704
+        },
+        {
+          "file": "images/web/days_michaux_american_holly-2400.webp",
+          "width": 2079,
+          "height": 3400,
+          "bytes": 442020
+        }
+      ]
+    },
+    "images/days_michaux_white_oak.jpg": {
+      "bytes": 1179007,
+      "width": 2107,
+      "height": 3400,
+      "sha256": "fbd67795c82ebfe4991a44af90ee9b30c1db4a46ade0a59a25e2b81c088b76d5",
+      "settings": "89e48fac760f",
+      "credit": "f13d1a65ae89",
+      "copies": [
+        {
+          "file": "images/web/days_michaux_white_oak-800.webp",
+          "width": 800,
+          "height": 1291,
+          "bytes": 109178
+        },
+        {
+          "file": "images/web/days_michaux_white_oak-1600.webp",
+          "width": 1600,
+          "height": 2582,
+          "bytes": 332754
+        },
+        {
+          "file": "images/web/days_michaux_white_oak-2400.webp",
+          "width": 2107,
+          "height": 3400,
+          "bytes": 473098
+        }
+      ]
+    },
     "images/days_moody_winterberry.jpg": {
       "bytes": 1114364,
       "width": 2320,
@@ -423,6 +563,90 @@
           "width": 2320,
           "height": 3175,
           "bytes": 523274
+        }
+      ]
+    },
+    "images/days_parker_three_sisters.jpg": {
+      "bytes": 1850300,
+      "width": 3400,
+      "height": 1979,
+      "sha256": "c5b751aefe2966fa6f1255c703b05849d3923fa49f3162f9da4a2d1f98cb88b4",
+      "settings": "89e48fac760f",
+      "credit": "70d9f025a157",
+      "copies": [
+        {
+          "file": "images/web/days_parker_three_sisters-800.webp",
+          "width": 800,
+          "height": 466,
+          "bytes": 97090
+        },
+        {
+          "file": "images/web/days_parker_three_sisters-1600.webp",
+          "width": 1600,
+          "height": 931,
+          "bytes": 317922
+        },
+        {
+          "file": "images/web/days_parker_three_sisters-2400.webp",
+          "width": 2400,
+          "height": 1397,
+          "bytes": 555522
+        }
+      ]
+    },
+    "images/days_serviss_gemini.jpg": {
+      "bytes": 529918,
+      "width": 2124,
+      "height": 1449,
+      "sha256": "c8c96bfbd811de31fba682d81be374c15983aa0793f03b7bbe8f7aec3e4d9194",
+      "settings": "89e48fac760f",
+      "credit": "637ccfd3c308",
+      "copies": [
+        {
+          "file": "images/web/days_serviss_gemini-800.webp",
+          "width": 800,
+          "height": 546,
+          "bytes": 51048
+        },
+        {
+          "file": "images/web/days_serviss_gemini-1600.webp",
+          "width": 1600,
+          "height": 1092,
+          "bytes": 132602
+        },
+        {
+          "file": "images/web/days_serviss_gemini-2400.webp",
+          "width": 2124,
+          "height": 1449,
+          "bytes": 190846
+        }
+      ]
+    },
+    "images/days_sowerby_turkey_tail.jpg": {
+      "bytes": 458983,
+      "width": 1885,
+      "height": 3400,
+      "sha256": "c374d425a4ee95e896cf54406b477cdef02287aebadc115b3c576e2df0b8cef1",
+      "settings": "89e48fac760f",
+      "credit": "82acffd0743f",
+      "copies": [
+        {
+          "file": "images/web/days_sowerby_turkey_tail-800.webp",
+          "width": 800,
+          "height": 1443,
+          "bytes": 42578
+        },
+        {
+          "file": "images/web/days_sowerby_turkey_tail-1600.webp",
+          "width": 1600,
+          "height": 2886,
+          "bytes": 105534
+        },
+        {
+          "file": "images/web/days_sowerby_turkey_tail-2400.webp",
+          "width": 1885,
+          "height": 3400,
+          "bytes": 132786
         }
       ]
     },

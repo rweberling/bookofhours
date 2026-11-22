@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0227/",
+  "id": "e-0227",
+  "type": "book",
+  "title": "Astronomy with an Opera-Glass",
+  "contributors": [
+    {
+      "id": "a-garrett-p-serviss",
+      "name": "Garrett P. Serviss",
+      "role": "author"
+    }
+  ],
+  "publisher": "D. Appleton",
+  "issued": "1888",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "astronomywithop00serv"
+  },
+  "citedBy": [
+    "r-0148",
+    "i-0180"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0148/",
+        "id": "r-0148",
+        "name": "Garrett P. Serviss, “The Stars of Spring”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0180/",
+        "id": "i-0180",
+        "name": "Garrett P. Serviss, Map 3"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

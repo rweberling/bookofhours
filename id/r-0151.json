@@ -1,0 +1,59 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0151/",
+  "id": "r-0151",
+  "shownIn": "days",
+  "text": "<p>It is not many years ago that sportsmen were accustomed to meet on Christmas Day, ‘choose sides,’ and then, as representatives of the two bands resulting, hie them to the fields and woods on the cheerful mission of killing practically everything in fur or feathers that crossed their path—if they could.</p><p>. . . Now Bird-Lore proposes a new kind of Christmas side hunt, in the form of a Christmas bird-census, and we hope that all our readers who have the opportunity will aid us in making it a success by spending a portion of Christmas Day with the birds and sending a report of their ‘hunt’ to Bird-Lore before they retire that night.</p>",
+  "citation": {
+    "display": "Frank M. Chapman, <a href=\"https://archive.org/details/sim_bird-lore_1900-12_2_6/page/n37/mode/1up\" target=\"_blank\">“A Christmas Bird-Census”</a>, <em>Bird-Lore</em> 2 (December 1900), p. 192",
+    "bibliography": "[Chapman, Frank M.] \"A Christmas Bird-Census.\" <em>Bird-Lore</em>, vol. 2, no. 6, 1900, p. 192.",
+    "title": "A Christmas Bird-Census",
+    "written": "1900",
+    "locator": {
+      "page": "192",
+      "url": "https://archive.org/details/sim_bird-lore_1900-12_2_6/page/n37/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0230",
+      "type": "article",
+      "title": "Bird-Lore",
+      "publisher": "Macmillan",
+      "issued": "1900",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "sim_bird-lore_1900-12_2_6"
+      },
+      "volume": "2"
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0011",
+        "basis": "grounded",
+        "note": "The editor of Bird-Lore proposes the first Christmas bird census, in place of the Christmas side hunt."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0011/",
+        "id": "ph-0011",
+        "name": "The Christmas Bird Count"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0230/",
+      "id": "e-0230",
+      "name": "Bird-Lore"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

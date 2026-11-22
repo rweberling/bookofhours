@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0149/",
+  "id": "r-0149",
+  "shownIn": "days",
+  "text": "<p>I am unable to mark the northern limit of this tree with as much precision as that of many others; but I believe it does not extend far beyond Long Island, though it is already common in Lower Jersey.</p>",
+  "citation": {
+    "display": "François André Michaux, “American Holly,” from <a href=\"https://archive.org/details/northamericansyl02inmich/page/n227/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 2 (1819), p. 156",
+    "bibliography": "Michaux, François André. \"American Holly.\" <em>The North American Sylva</em>, vol. 2, C. d’Hautel, 1819, p. 156.",
+    "title": "American Holly",
+    "written": "1819",
+    "locator": {
+      "page": "156",
+      "url": "https://archive.org/details/northamericansyl02inmich/page/n227/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0228",
+      "type": "book",
+      "title": "The North American Sylva, vol. 2",
+      "contributors": [
+        {
+          "id": "a-fran-ois-andr-michaux",
+          "name": "François André Michaux",
+          "role": "author"
+        }
+      ],
+      "publisher": "C. d’Hautel",
+      "issued": "1819",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "northamericansyl02inmich"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      {
+        "id": "sp-0041",
+        "basis": "grounded",
+        "note": "Michaux on the northern edge of the American holly's range, about New York."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0041/",
+        "id": "sp-0041",
+        "name": "American Holly",
+        "scientific": "Ilex opaca",
+        "wikidata": "Q2712730"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0228/",
+      "id": "e-0228",
+      "name": "The North American Sylva, vol. 2"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

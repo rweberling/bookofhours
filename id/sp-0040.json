@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0040/",
+  "id": "sp-0040",
+  "name": "White Oak",
+  "scientific": "Quercus alba",
+  "rank": "species",
+  "hashtags": [
+    "whiteoak",
+    "oak",
+    "trees"
+  ],
+  "wikidata": "Q469555",
+  "gbif": "2879737",
+  "inaturalist": "54779",
+  "records": [
+    "r-0147",
+    "i-0179"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0147/",
+        "id": "r-0147",
+        "name": "François André Michaux, “White Oak”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0179/",
+        "id": "i-0179",
+        "name": "Pierre-Joseph Redouté, White Oak, Quercus alba"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

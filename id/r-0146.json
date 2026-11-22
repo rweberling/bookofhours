@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0146/",
+  "id": "r-0146",
+  "shownIn": "days",
+  "text": "<p>The corn was carefully dropped in the hills so as not to break the germs which had nearly burst through. Among the Senecas, in planting corn the seeds of the squash and bean were sown in every seventh hill because it was thought that the spirits of these three plants were inseparable. They were called Dioʹhe″ko, <em>these sustain us</em>. In the Green Corn Thanksgiving the leader rises and says, “Diettinoⁿʹñioʻ diohe″koⁿ, <em>we give thanks to our sustainers</em>.”</p><p>Certain women banded themselves together in a society called the Toñwisas or Toⁿwiʹsas Oäʹno. They propitiated the spirits of the three sisters by certain ceremonies. In their ceremonial march, Wenŭntoñwiʹsăs, the leader holding an armful of corn and a cake of corn bread leads her band in a measured march about a kettle of corn soup.</p>",
+  "citation": {
+    "display": "Arthur C. Parker, from <a href=\"https://archive.org/details/iroquoisusesofma00parkrich/page/n30/mode/1up\" target=\"_blank\"><em>Iroquois Uses of Maize and Other Food Plants</em></a> (1910), p. 27",
+    "bibliography": "Parker, Arthur C. <em>Iroquois Uses of Maize and Other Food Plants</em>. New York State Museum Bulletin 144, University of the State of New York, 1910, p. 27.",
+    "title": "Iroquois Uses of Maize and Other Food Plants",
+    "written": "1910",
+    "locator": {
+      "page": "27",
+      "url": "https://archive.org/details/iroquoisusesofma00parkrich/page/n30/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0225",
+      "type": "book",
+      "title": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)",
+      "contributors": [
+        {
+          "id": "a-arthur-c-parker",
+          "name": "Arthur C. Parker",
+          "role": "author"
+        }
+      ],
+      "publisher": "University of the State of New York",
+      "issued": "1910",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "iroquoisusesofma00parkrich"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      {
+        "id": "ph-0009",
+        "basis": "grounded",
+        "note": "The Seneca archaeologist Arthur C. Parker on corn, beans and squash, 'these sustain us', and the Green Corn Thanksgiving."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0009/",
+        "id": "ph-0009",
+        "name": "The Three Sisters"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0225/",
+      "id": "e-0225",
+      "name": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

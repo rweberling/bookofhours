@@ -1,0 +1,69 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0180/",
+  "id": "i-0180",
+  "shownIn": "days",
+  "file": "images/days_serviss_gemini.jpg",
+  "caption": "Garrett P. Serviss, Map 3 (Gemini, Cancer and Canis Minor), from <a href=\"https://archive.org/details/astronomywithop00serv/page/n29/mode/1up\" target=\"_blank\"><em>Astronomy with an Opera-Glass</em></a> (1888), p. 18",
+  "alt": "A star map printed white on black: the constellations Gemini, Cancer, Canis Minor and parts of Auriga, Hydra and Orion, divided by dotted boundaries, with stars drawn as small white stars labelled by Greek letters and a fuzzy cluster marked 35 M. Below: Map 3.",
+  "bibliography": "Serviss, Garrett P. Map 3. In <em>Astronomy with an Opera-Glass</em>, D. Appleton, 1888, p. 18.",
+  "creator": {
+    "id": "a-garrett-p-serviss",
+    "name": "Garrett P. Serviss"
+  },
+  "title": "Map 3",
+  "date": "1888",
+  "institution": "Library of Congress",
+  "source": {
+    "url": "https://archive.org/download/astronomywithop00serv/page/n29_w3000.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0227",
+    "type": "book",
+    "title": "Astronomy with an Opera-Glass",
+    "contributors": [
+      {
+        "id": "a-garrett-p-serviss",
+        "name": "Garrett P. Serviss",
+        "role": "author"
+      }
+    ],
+    "publisher": "D. Appleton",
+    "issued": "1888",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "astronomywithop00serv"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/astronomywithop00serv/page/n29/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "phenomena": [
+      "ph-0010"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0010/",
+        "id": "ph-0010",
+        "name": "Geminids"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0227/",
+      "id": "e-0227",
+      "name": "Astronomy with an Opera-Glass"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0042/",
+  "id": "sp-0042",
+  "name": "Sea Mosses",
+  "scientific": "Rhodophyta",
+  "rank": "phylum",
+  "hashtags": [
+    "seaweed",
+    "redalgae",
+    "seamoss"
+  ],
+  "wikidata": "Q103169",
+  "gbif": "106",
+  "inaturalist": "57774",
+  "records": [
+    "r-0150",
+    "i-0182"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0150/",
+        "id": "r-0150",
+        "name": "A. B. Hervey, “Times and Places for Collecting”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0182/",
+        "id": "i-0182",
+        "name": "A. B. Hervey, Plate XI"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

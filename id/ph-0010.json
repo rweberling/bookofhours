@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0010/",
+  "id": "ph-0010",
+  "name": "Geminids",
+  "latin": null,
+  "wikidata": null,
+  "hashtags": [
+    "geminids",
+    "meteors",
+    "astronomy"
+  ],
+  "records": [
+    "r-0148",
+    "i-0180"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0148/",
+        "id": "r-0148",
+        "name": "Garrett P. Serviss, “The Stars of Spring”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0180/",
+        "id": "i-0180",
+        "name": "Garrett P. Serviss, Map 3"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,71 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0179/",
+  "id": "i-0179",
+  "shownIn": "days",
+  "file": "images/days_michaux_white_oak.jpg",
+  "caption": "Pierre-Joseph Redouté (drawing) and Bessin (engraving), <em>White Oak</em>, plate 1 from François André Michaux, <a href=\"https://archive.org/details/northamericansyl01michin/page/n33/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 1 (1819), colour-printed stipple engraving",
+  "alt": "A botanical plate of a white oak twig: large, deeply lobed green leaves with rounded fingers, and at the base two brown acorns sitting in warty grey cups. Engraved below: White Oak, Quercus alba.",
+  "bibliography": "Redouté, Pierre-Joseph, and Bessin. <em>White Oak, Quercus alba</em>. Plate 1 in François André Michaux, <em>The North American Sylva</em>, vol. 1, C. d’Hautel, 1819.",
+  "creator": {
+    "id": "a-pierre-joseph-redout",
+    "name": "Pierre-Joseph Redouté"
+  },
+  "title": "White Oak, Quercus alba",
+  "date": "1819",
+  "institution": "University of Pittsburgh Library System",
+  "source": {
+    "url": "https://archive.org/download/northamericansyl01michin/page/n33_w3000.jpg",
+    "retrieved": "2026-11-22"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "edition": {
+    "id": "e-0226",
+    "type": "book",
+    "title": "The North American Sylva, vol. 1",
+    "contributors": [
+      {
+        "id": "a-fran-ois-andr-michaux",
+        "name": "François André Michaux",
+        "role": "author"
+      }
+    ],
+    "publisher": "C. d’Hautel",
+    "issued": "1819",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "identifiers": {
+      "internetArchive": "northamericansyl01michin"
+    }
+  },
+  "locator": {
+    "url": "https://archive.org/details/northamericansyl01michin/page/n33/mode/1up",
+    "label": "Internet Archive"
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "winter"
+    ],
+    "species": [
+      "sp-0040"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0040/",
+        "id": "sp-0040",
+        "name": "White Oak",
+        "scientific": "Quercus alba",
+        "wikidata": "Q469555"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0226/",
+      "id": "e-0226",
+      "name": "The North American Sylva, vol. 1"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

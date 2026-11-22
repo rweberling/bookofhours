@@ -5798,5 +5798,309 @@
         }
       ]
     }
+  },
+  {
+    "id": "r-0144",
+    "shownIn": "days",
+    "text": "<p>The following notes relate to observations made during a year’s collecting on the sporophores or fruiting bodies of <em>Polyporus versicolor</em> L., in various parts of New Jersey. Eighty percent of some fifty species of polypores found in New Jersey were observed to be infested by insects and <em>Polyporus versicolor</em> appeared to attract the largest number of species all of which belonged to the Coleoptera.</p><p>. . . It is difficult to explain why <em>versicolor</em> harbors so many insects unless it is the qualities of the context which attract them. Other polypores having a much thicker and fleshier context attract considerably fewer species. Altogether twenty-four species of Coleoptera, representing thirteen families, were found associated with <em>versicolor</em> . . .</p>",
+    "citation": {
+      "display": "Harry B. Weiss, <a href=\"https://archive.org/details/biostor-172716\" target=\"_blank\">“Coleoptera Associated with Polyporus versicolor L. in New Jersey”</a>, <em>Psyche</em> 27 (December 1920), pp. 137–138",
+      "bibliography": "Weiss, Harry B. \"Coleoptera Associated with <em>Polyporus versicolor</em> L. in New Jersey.\" <em>Psyche</em>, vol. 27, no. 6, 1920, pp. 137–138.",
+      "title": "Coleoptera Associated with Polyporus versicolor L. in New Jersey",
+      "written": "1920",
+      "locator": {
+        "page": "137–138",
+        "url": "https://archive.org/details/biostor-172716",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0222",
+        "type": "article",
+        "title": "Psyche",
+        "publisher": "Cambridge Entomological Club",
+        "issued": "1920",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "biostor-172716" },
+        "volume": "27"
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": [
+        {
+          "id": "sp-0038",
+          "basis": "grounded",
+          "note": "A New Jersey entomologist's year among the polypores: turkey tail held the most beetles."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0145",
+    "shownIn": "days",
+    "text": "<p>In handling the squashes, I need hardly reiterate the caution of care. My practice is to form a string of boys, from the wagon to the shelves, and the squashes are tossed from one to another, with the caution to handle them like eggs. Boys well trained will not drop more than one squash to the ton, and I have known my boys to pass several tons without dropping a single squash.</p><p>If the squash-house has been built with reference to warmth, when once filled with squashes, it is surprising with what little fire frost can be kept out. The mass of squashes are, in themselves, a great store-house of heat, and with inside shutters for the coldest weather, the building is frost proof, with a small outlay of fuel.</p>",
+    "citation": {
+      "display": "James J. H. Gregory, “The Storing of the Crop,” from <a href=\"https://archive.org/details/squasheshowtogro00gregrich/page/n41/mode/1up\" target=\"_blank\"><em>Squashes: How to Grow Them</em></a> (1867), pp. 35–36",
+      "bibliography": "Gregory, James J. H. <em>Squashes: How to Grow Them</em>. Orange Judd, 1867, pp. 35–36.",
+      "title": "The Storing of the Crop",
+      "written": "1867",
+      "locator": {
+        "page": "35–36",
+        "url": "https://archive.org/details/squasheshowtogro00gregrich/page/n41/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0224",
+        "type": "book",
+        "title": "Squashes: How to Grow Them",
+        "contributors": [{ "id": "a-james-j-h-gregory", "name": "James J. H. Gregory", "role": "author" }],
+        "publisher": "Orange Judd",
+        "issued": "1867",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "squasheshowtogro00gregrich" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": [
+        {
+          "id": "sp-0039",
+          "basis": "grounded",
+          "note": "The Marblehead seedsman who introduced the Hubbard squash, storing sixty tons of it for the winter."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0146",
+    "shownIn": "days",
+    "text": "<p>The corn was carefully dropped in the hills so as not to break the germs which had nearly burst through. Among the Senecas, in planting corn the seeds of the squash and bean were sown in every seventh hill because it was thought that the spirits of these three plants were inseparable. They were called Dioʹhe″ko, <em>these sustain us</em>. In the Green Corn Thanksgiving the leader rises and says, “Diettinoⁿʹñioʻ diohe″koⁿ, <em>we give thanks to our sustainers</em>.”</p><p>Certain women banded themselves together in a society called the Toñwisas or Toⁿwiʹsas Oäʹno. They propitiated the spirits of the three sisters by certain ceremonies. In their ceremonial march, Wenŭntoñwiʹsăs, the leader holding an armful of corn and a cake of corn bread leads her band in a measured march about a kettle of corn soup.</p>",
+    "citation": {
+      "display": "Arthur C. Parker, from <a href=\"https://archive.org/details/iroquoisusesofma00parkrich/page/n30/mode/1up\" target=\"_blank\"><em>Iroquois Uses of Maize and Other Food Plants</em></a> (1910), p. 27",
+      "bibliography": "Parker, Arthur C. <em>Iroquois Uses of Maize and Other Food Plants</em>. New York State Museum Bulletin 144, University of the State of New York, 1910, p. 27.",
+      "title": "Iroquois Uses of Maize and Other Food Plants",
+      "written": "1910",
+      "locator": {
+        "page": "27",
+        "url": "https://archive.org/details/iroquoisusesofma00parkrich/page/n30/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0225",
+        "type": "book",
+        "title": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)",
+        "contributors": [{ "id": "a-arthur-c-parker", "name": "Arthur C. Parker", "role": "author" }],
+        "publisher": "University of the State of New York",
+        "issued": "1910",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "iroquoisusesofma00parkrich" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": [
+        {
+          "id": "ph-0009",
+          "basis": "grounded",
+          "note": "The Seneca archaeologist Arthur C. Parker on corn, beans and squash, 'these sustain us', and the Green Corn Thanksgiving."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0147",
+    "shownIn": "days",
+    "text": "<p>In the fall they change to a bright violet colour, and form an agreeable contrast with the surrounding foliage which has not yet suffered by the frost.</p><p>This is the only Oak on which a few of the dried leaves persist till the circulation is renewed in the spring. By this peculiarity and by the whiteness of the bark, from which it derives its name, it is easily distinguished in the winter.</p>",
+    "citation": {
+      "display": "François André Michaux, “White Oak,” from <a href=\"https://archive.org/details/northamericansyl01michin/page/n36/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 1 (1819), p. 19",
+      "bibliography": "Michaux, François André. \"White Oak.\" <em>The North American Sylva</em>, vol. 1, C. d’Hautel, 1819, p. 19.",
+      "title": "White Oak",
+      "written": "1819",
+      "locator": {
+        "page": "19",
+        "url": "https://archive.org/details/northamericansyl01michin/page/n36/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0226",
+        "type": "book",
+        "title": "The North American Sylva, vol. 1",
+        "contributors": [{ "id": "a-fran-ois-andr-michaux", "name": "François André Michaux", "role": "author" }],
+        "publisher": "C. d’Hautel",
+        "issued": "1819",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "northamericansyl01michin" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": [
+        {
+          "id": "sp-0040",
+          "basis": "grounded",
+          "note": "Michaux on the white oak's dead leaves hanging on through the winter."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0148",
+    "shownIn": "days",
+    "text": "<p>One can spend a profitable and pleasurable half-hour in exploring the wonders of Gemini. The whole constellation, from head to foot, is gemmed with stars which escape the naked eye, but it sparkles like a bead-spangled garment when viewed with the glass.</p>",
+    "citation": {
+      "display": "Garrett P. Serviss, “The Stars of Spring,” from <a href=\"https://archive.org/details/astronomywithop00serv/page/n28/mode/1up\" target=\"_blank\"><em>Astronomy with an Opera-Glass</em></a> (1888), p. 17",
+      "bibliography": "Serviss, Garrett P. \"The Stars of Spring.\" <em>Astronomy with an Opera-Glass</em>, D. Appleton, 1888, p. 17.",
+      "title": "The Stars of Spring",
+      "written": "1888",
+      "locator": {
+        "page": "17",
+        "url": "https://archive.org/details/astronomywithop00serv/page/n28/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0227",
+        "type": "book",
+        "title": "Astronomy with an Opera-Glass",
+        "contributors": [{ "id": "a-garrett-p-serviss", "name": "Garrett P. Serviss", "role": "author" }],
+        "publisher": "D. Appleton",
+        "issued": "1888",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "astronomywithop00serv" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "phenomena": [
+        {
+          "id": "ph-0010",
+          "basis": "grounded",
+          "note": "Gemini through a pair of field glasses; the Geminid meteors radiate from it in mid-December."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0149",
+    "shownIn": "days",
+    "text": "<p>I am unable to mark the northern limit of this tree with as much precision as that of many others; but I believe it does not extend far beyond Long Island, though it is already common in Lower Jersey.</p>",
+    "citation": {
+      "display": "François André Michaux, “American Holly,” from <a href=\"https://archive.org/details/northamericansyl02inmich/page/n227/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 2 (1819), p. 156",
+      "bibliography": "Michaux, François André. \"American Holly.\" <em>The North American Sylva</em>, vol. 2, C. d’Hautel, 1819, p. 156.",
+      "title": "American Holly",
+      "written": "1819",
+      "locator": {
+        "page": "156",
+        "url": "https://archive.org/details/northamericansyl02inmich/page/n227/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0228",
+        "type": "book",
+        "title": "The North American Sylva, vol. 2",
+        "contributors": [{ "id": "a-fran-ois-andr-michaux", "name": "François André Michaux", "role": "author" }],
+        "publisher": "C. d’Hautel",
+        "issued": "1819",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "northamericansyl02inmich" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": [
+        {
+          "id": "sp-0041",
+          "basis": "grounded",
+          "note": "Michaux on the northern edge of the American holly's range, about New York."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0150",
+    "shownIn": "days",
+    "text": "<p>You will be surprised, also, to see what quantities of things you can find as late as November and December. Indeed, if you are to know these plants thoroughly, you must collect them at all seasons of the year. Then you will know when they come, and when they go, and when they are in their greatest perfection.</p>",
+    "citation": {
+      "display": "A. B. Hervey, “Times and Places for Collecting,” from <a href=\"https://archive.org/details/seamossescollect001herv/page/n45/mode/1up\" target=\"_blank\"><em>Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae</em></a> (1881), p. 14",
+      "bibliography": "Hervey, A. B. \"Times and Places for Collecting.\" <em>Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae</em>, S. E. Cassino, 1881, p. 14.",
+      "title": "Times and Places for Collecting",
+      "written": "1881",
+      "locator": {
+        "page": "14",
+        "url": "https://archive.org/details/seamossescollect001herv/page/n45/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0229",
+        "type": "book",
+        "title": "Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae",
+        "contributors": [{ "id": "a-a-b-hervey", "name": "A. B. Hervey", "role": "author" }],
+        "publisher": "S. E. Cassino",
+        "issued": "1881",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "seamossescollect001herv" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "species": [
+        {
+          "id": "sp-0042",
+          "basis": "grounded",
+          "note": "Hervey on collecting seaweeds on the shore as late as November and December."
+        }
+      ]
+    }
+  },
+  {
+    "id": "r-0151",
+    "shownIn": "days",
+    "text": "<p>It is not many years ago that sportsmen were accustomed to meet on Christmas Day, ‘choose sides,’ and then, as representatives of the two bands resulting, hie them to the fields and woods on the cheerful mission of killing practically everything in fur or feathers that crossed their path—if they could.</p><p>. . . Now Bird-Lore proposes a new kind of Christmas side hunt, in the form of a Christmas bird-census, and we hope that all our readers who have the opportunity will aid us in making it a success by spending a portion of Christmas Day with the birds and sending a report of their ‘hunt’ to Bird-Lore before they retire that night.</p>",
+    "citation": {
+      "display": "Frank M. Chapman, <a href=\"https://archive.org/details/sim_bird-lore_1900-12_2_6/page/n37/mode/1up\" target=\"_blank\">“A Christmas Bird-Census”</a>, <em>Bird-Lore</em> 2 (December 1900), p. 192",
+      "bibliography": "[Chapman, Frank M.] \"A Christmas Bird-Census.\" <em>Bird-Lore</em>, vol. 2, no. 6, 1900, p. 192.",
+      "title": "A Christmas Bird-Census",
+      "written": "1900",
+      "locator": {
+        "page": "192",
+        "url": "https://archive.org/details/sim_bird-lore_1900-12_2_6/page/n37/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0230",
+        "type": "article",
+        "title": "Bird-Lore",
+        "publisher": "Macmillan",
+        "issued": "1900",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "sim_bird-lore_1900-12_2_6" },
+        "volume": "2"
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["winter"],
+      "phenomena": [
+        {
+          "id": "ph-0011",
+          "basis": "grounded",
+          "note": "The editor of Bird-Lore proposes the first Christmas bird census, in place of the Christmas side hunt."
+        }
+      ]
+    }
   }
 ]

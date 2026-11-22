@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0226/",
+  "id": "e-0226",
+  "type": "book",
+  "title": "The North American Sylva, vol. 1",
+  "contributors": [
+    {
+      "id": "a-fran-ois-andr-michaux",
+      "name": "François André Michaux",
+      "role": "author"
+    }
+  ],
+  "publisher": "C. d’Hautel",
+  "issued": "1819",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "northamericansyl01michin"
+  },
+  "citedBy": [
+    "r-0147",
+    "i-0179"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0147/",
+        "id": "r-0147",
+        "name": "François André Michaux, “White Oak”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0179/",
+        "id": "i-0179",
+        "name": "Pierre-Joseph Redouté, White Oak, Quercus alba"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

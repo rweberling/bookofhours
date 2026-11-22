@@ -54,5 +54,26 @@
     "latin": null,
     "wikidata": null,
     "hashtags": ["earliestsunset", "sunset", "winter"]
+  },
+  {
+    "id": "ph-0009",
+    "name": "The Three Sisters",
+    "latin": null,
+    "wikidata": null,
+    "hashtags": ["threesisters", "corn", "beans"]
+  },
+  {
+    "id": "ph-0010",
+    "name": "Geminids",
+    "latin": null,
+    "wikidata": null,
+    "hashtags": ["geminids", "meteors", "astronomy"]
+  },
+  {
+    "id": "ph-0011",
+    "name": "The Christmas Bird Count",
+    "latin": null,
+    "wikidata": null,
+    "hashtags": ["christmasbirdcount", "birdcount", "citizenscience"]
   }
 ]
