@@ -7,7 +7,7 @@
   "alt": "A botanical plate of an American holly sprig: glossy, spiny-edged leaves in dark and lighter greens along a pale stem, with a cluster of round red berries where the leaves meet. Engraved below: American Holly, Ilex opaca.",
   "bibliography": "Redouté, Henri-Joseph, and Renard. <em>American Holly, Ilex opaca</em>. Plate 84 in François André Michaux, <em>The North American Sylva</em>, vol. 2, C. d’Hautel, 1819.",
   "creator": {
-    "id": "a-henri-joseph-redout",
+    "id": "a-henri-joseph-redoute",
     "name": "Henri-Joseph Redouté"
   },
   "title": "American Holly, Ilex opaca",
@@ -24,9 +24,10 @@
     "title": "The North American Sylva, vol. 2",
     "contributors": [
       {
-        "id": "a-fran-ois-andr-michaux",
+        "id": "a-francois-andre-michaux",
         "name": "François André Michaux",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q2986883"
       }
     ],
     "publisher": "C. d’Hautel",

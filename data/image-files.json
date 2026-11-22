@@ -600,25 +600,25 @@
       "height": 3400,
       "sha256": "fbd67795c82ebfe4991a44af90ee9b30c1db4a46ade0a59a25e2b81c088b76d5",
       "settings": "89e48fac760f",
-      "credit": "f13d1a65ae89",
+      "credit": "2eca1d2adf56",
       "copies": [
         {
           "file": "images/web/days_michaux_white_oak-800.webp",
           "width": 800,
           "height": 1291,
-          "bytes": 109178
+          "bytes": 109170
         },
         {
           "file": "images/web/days_michaux_white_oak-1600.webp",
           "width": 1600,
           "height": 2582,
-          "bytes": 332754
+          "bytes": 332746
         },
         {
           "file": "images/web/days_michaux_white_oak-2400.webp",
           "width": 2107,
           "height": 3400,
-          "bytes": 473098
+          "bytes": 473090
         }
       ]
     },

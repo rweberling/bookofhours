@@ -5,9 +5,10 @@
   "title": "The North American Sylva, vol. 1",
   "contributors": [
     {
-      "id": "a-fran-ois-andr-michaux",
+      "id": "a-francois-andre-michaux",
       "name": "François André Michaux",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q2986883"
     }
   ],
   "publisher": "C. d’Hautel",
@@ -30,7 +31,7 @@
       {
         "@id": "https://earthlyhours.com/id/i-0179/",
         "id": "i-0179",
-        "name": "Pierre-Joseph Redouté, White Oak, Quercus alba"
+        "name": "P. J. Redouté, White Oak, Quercus alba"
       }
     ]
   },

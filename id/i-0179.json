@@ -7,8 +7,8 @@
   "alt": "A botanical plate of a white oak twig: large, deeply lobed green leaves with rounded fingers, and at the base two brown acorns sitting in warty grey cups. Engraved below: White Oak, Quercus alba.",
   "bibliography": "Redouté, Pierre-Joseph, and Bessin. <em>White Oak, Quercus alba</em>. Plate 1 in François André Michaux, <em>The North American Sylva</em>, vol. 1, C. d’Hautel, 1819.",
   "creator": {
-    "id": "a-pierre-joseph-redout",
-    "name": "Pierre-Joseph Redouté"
+    "id": "a-p-j-redoute",
+    "name": "P. J. Redouté"
   },
   "title": "White Oak, Quercus alba",
   "date": "1819",
@@ -24,9 +24,10 @@
     "title": "The North American Sylva, vol. 1",
     "contributors": [
       {
-        "id": "a-fran-ois-andr-michaux",
+        "id": "a-francois-andre-michaux",
         "name": "François André Michaux",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q2986883"
       }
     ],
     "publisher": "C. d’Hautel",

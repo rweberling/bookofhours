@@ -5,9 +5,10 @@
   "title": "The North American Sylva, vol. 2",
   "contributors": [
     {
-      "id": "a-fran-ois-andr-michaux",
+      "id": "a-francois-andre-michaux",
       "name": "François André Michaux",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q2986883"
     }
   ],
   "publisher": "C. d’Hautel",

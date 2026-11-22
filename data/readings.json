@@ -5931,7 +5931,14 @@
         "id": "e-0226",
         "type": "book",
         "title": "The North American Sylva, vol. 1",
-        "contributors": [{ "id": "a-fran-ois-andr-michaux", "name": "François André Michaux", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-francois-andre-michaux",
+            "name": "François André Michaux",
+            "role": "author",
+            "wikidata": "Q2986883"
+          }
+        ],
         "publisher": "C. d’Hautel",
         "issued": "1819",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6007,7 +6014,14 @@
         "id": "e-0228",
         "type": "book",
         "title": "The North American Sylva, vol. 2",
-        "contributors": [{ "id": "a-fran-ois-andr-michaux", "name": "François André Michaux", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-francois-andre-michaux",
+            "name": "François André Michaux",
+            "role": "author",
+            "wikidata": "Q2986883"
+          }
+        ],
         "publisher": "C. d’Hautel",
         "issued": "1819",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",

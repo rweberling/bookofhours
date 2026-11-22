@@ -5997,7 +5997,7 @@
     "caption": "Pierre-Joseph Redouté (drawing) and Bessin (engraving), <em>White Oak</em>, plate 1 from François André Michaux, <a href=\"https://archive.org/details/northamericansyl01michin/page/n33/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 1 (1819), colour-printed stipple engraving",
     "alt": "A botanical plate of a white oak twig: large, deeply lobed green leaves with rounded fingers, and at the base two brown acorns sitting in warty grey cups. Engraved below: White Oak, Quercus alba.",
     "bibliography": "Redouté, Pierre-Joseph, and Bessin. <em>White Oak, Quercus alba</em>. Plate 1 in François André Michaux, <em>The North American Sylva</em>, vol. 1, C. d’Hautel, 1819.",
-    "creator": { "id": "a-pierre-joseph-redout", "name": "Pierre-Joseph Redouté" },
+    "creator": { "id": "a-p-j-redoute", "name": "P. J. Redouté" },
     "title": "White Oak, Quercus alba",
     "date": "1819",
     "institution": "University of Pittsburgh Library System",
@@ -6010,7 +6010,14 @@
       "id": "e-0226",
       "type": "book",
       "title": "The North American Sylva, vol. 1",
-      "contributors": [{ "id": "a-fran-ois-andr-michaux", "name": "François André Michaux", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-francois-andre-michaux",
+          "name": "François André Michaux",
+          "role": "author",
+          "wikidata": "Q2986883"
+        }
+      ],
       "publisher": "C. d’Hautel",
       "issued": "1819",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6071,7 +6078,7 @@
     "caption": "Henri-Joseph Redouté (drawing) and Renard (engraving), <em>American Holly</em>, plate 84 from François André Michaux, <a href=\"https://archive.org/details/northamericansyl02inmich/page/n228/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 2 (1819), colour-printed stipple engraving",
     "alt": "A botanical plate of an American holly sprig: glossy, spiny-edged leaves in dark and lighter greens along a pale stem, with a cluster of round red berries where the leaves meet. Engraved below: American Holly, Ilex opaca.",
     "bibliography": "Redouté, Henri-Joseph, and Renard. <em>American Holly, Ilex opaca</em>. Plate 84 in François André Michaux, <em>The North American Sylva</em>, vol. 2, C. d’Hautel, 1819.",
-    "creator": { "id": "a-henri-joseph-redout", "name": "Henri-Joseph Redouté" },
+    "creator": { "id": "a-henri-joseph-redoute", "name": "Henri-Joseph Redouté" },
     "title": "American Holly, Ilex opaca",
     "date": "1819",
     "institution": "University of Pittsburgh Library System",
@@ -6084,7 +6091,14 @@
       "id": "e-0228",
       "type": "book",
       "title": "The North American Sylva, vol. 2",
-      "contributors": [{ "id": "a-fran-ois-andr-michaux", "name": "François André Michaux", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-francois-andre-michaux",
+          "name": "François André Michaux",
+          "role": "author",
+          "wikidata": "Q2986883"
+        }
+      ],
       "publisher": "C. d’Hautel",
       "issued": "1819",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
