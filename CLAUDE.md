@@ -357,7 +357,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   balance for each condition: where it has one, nominate the other.
 - Day candidates (`kind: "day"`, ids `<date>-dNN`) fill a coming week's
   days: each a subject in season that week in New England, with a line on
-  why now, a proposed image and a proposed reading (the passage exactly as
+  why that week, not the season in general (Ryan, 22 November 2026): what
+  peaks, arrives, ends or happens in those seven days (a sighting peak in
+  `inat_week.py`, a meteor shower, a harvest or a count, the sun's
+  turning), and a subject good all winter goes in only with a reason for
+  its week, a proposed image and a proposed reading (the passage exactly as
   in its source), and the week's essay subject. Never copy them to the
   candidates Sheet or count them as nominations. Make them with
   `python3 scripts/desk.py --days <candidates.json> <scratch dir>` (its
