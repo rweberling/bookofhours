@@ -12,6 +12,9 @@
   "wikidata": "Q753833",
   "gbif": "2548311",
   "inaturalist": "54134",
+  "gloss": {
+    "text": "<em>Versicolor</em> is Latin, “of changing colours”, for the bands across the caps."
+  },
   "records": [
     "r-0144",
     "i-0176"

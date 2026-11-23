@@ -710,8 +710,15 @@ def subject_page(col, sid):
         ids.append(ext(f'https://www.inaturalist.org/taxa/{s["inaturalist"]}', f'iNaturalist: {s["inaturalist"]}'))
     latin = s.get('scientific') or s.get('latin')
     seasons = ', '.join(link(x, col.name(x)) for x in col.seasons_of(sid))
-    fields = dl([('Name', escape(s['name'])), ('Scientific name' if s.get('scientific') else 'Latin name',
+    # The gloss says what the second name means and where it comes from;
+    # its text is the collection's own (it may hold <em>), its source a link.
+    gloss = s.get('gloss') or {}
+    about_name = gloss.get('text', '')
+    if about_name and gloss.get('source'):
+        about_name += ' ' + ext(gloss['source']['url'], gloss['source']['label'])
+    fields = dl([('Name', escape(s['name'])), ('Scientific name' if s.get('scientific') else 'Second name',
                                                 f'<em>{escape(latin)}</em>' if latin else ''),
+                 ('About the name', about_name),
                  ('Rank', escape(s.get('rank') or '')), ('Season', seasons),
                  ('Identifiers', '<br>'.join(ids))])
     posts = [e for e in col.posts.values() if e.get('subject') == sid]

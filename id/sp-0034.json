@@ -12,6 +12,9 @@
   "wikidata": "Q1370141",
   "gbif": "5143952",
   "inaturalist": "215208",
+  "gloss": {
+    "text": "<em>Alsophila</em> is Greek for “grove-loving”; <em>pometaria</em> is Latin, “of the orchard”."
+  },
   "records": [
     "r-0139",
     "i-0170"

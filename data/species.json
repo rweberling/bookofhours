@@ -287,7 +287,10 @@
     "hashtags": ["wildturkey", "turkey", "birds"],
     "wikidata": "Q26844",
     "gbif": "9606290",
-    "inaturalist": "906"
+    "inaturalist": "906",
+    "gloss": {
+      "text": "<em>Meleagris</em> is Greek for the guineafowl; <em>gallopavo</em> is Latin for “chicken-peacock”."
+    }
   },
   {
     "id": "sp-0030",
@@ -297,7 +300,10 @@
     "hashtags": ["cranberry", "bogs", "wildfruit"],
     "wikidata": "Q149397",
     "gbif": "2882841",
-    "inaturalist": "63749"
+    "inaturalist": "63749",
+    "gloss": {
+      "text": "<em>Vaccinium</em> is an old Latin plant name; <em>macrocarpon</em> is Greek for “large-fruited”."
+    }
   },
   {
     "id": "sp-0031",
@@ -307,7 +313,10 @@
     "hashtags": ["winterberry", "holly", "winterfruit"],
     "wikidata": "Q3487324",
     "gbif": "5414267",
-    "inaturalist": "61119"
+    "inaturalist": "61119",
+    "gloss": {
+      "text": "<em>Ilex</em>, the Latin name of the holm oak, became the holly’s; <em>verticillata</em> means “whorled”, for the berries clustered close around the stem."
+    }
   },
   {
     "id": "sp-0032",
@@ -327,7 +336,10 @@
     "hashtags": ["lateoyster", "fungi", "mushrooms"],
     "wikidata": "Q81202193",
     "gbif": "3318849",
-    "inaturalist": "63585"
+    "inaturalist": "63585",
+    "gloss": {
+      "text": "<em>Sarcomyxa</em> is Greek for “slimy flesh”; <em>serotina</em> is Latin for “late”."
+    }
   },
   {
     "id": "sp-0034",
@@ -337,7 +349,10 @@
     "hashtags": ["cankerworm", "moths", "insects"],
     "wikidata": "Q1370141",
     "gbif": "5143952",
-    "inaturalist": "215208"
+    "inaturalist": "215208",
+    "gloss": {
+      "text": "<em>Alsophila</em> is Greek for “grove-loving”; <em>pometaria</em> is Latin, “of the orchard”."
+    }
   },
   {
     "id": "sp-0035",
@@ -357,7 +372,10 @@
     "hashtags": ["bayscallop", "scallops", "shellfish"],
     "wikidata": "Q3018372",
     "gbif": "2285856",
-    "inaturalist": "122039"
+    "inaturalist": "122039",
+    "gloss": {
+      "text": "<em>Irradians</em> is Latin, “shining out”, for the ribs that radiate across the shell."
+    }
   },
   {
     "id": "sp-0037",
@@ -367,7 +385,10 @@
     "hashtags": ["princesspine", "clubmoss", "evergreens"],
     "wikidata": "Q15338742",
     "gbif": "3991468",
-    "inaturalist": "204198"
+    "inaturalist": "204198",
+    "gloss": {
+      "text": "<em>Dendrolycopodium</em> is Greek for “tree wolf’s-foot”, a tree-shaped club moss; <em>obscurum</em> is Latin, “dark” or “hidden”."
+    }
   },
   {
     "id": "sp-0038",
@@ -377,7 +398,10 @@
     "hashtags": ["turkeytail", "fungi", "mushrooms"],
     "wikidata": "Q753833",
     "gbif": "2548311",
-    "inaturalist": "54134"
+    "inaturalist": "54134",
+    "gloss": {
+      "text": "<em>Versicolor</em> is Latin, “of changing colours”, for the bands across the caps."
+    }
   },
   {
     "id": "sp-0039",
@@ -387,7 +411,14 @@
     "hashtags": ["hubbardsquash", "wintersquash", "squash"],
     "wikidata": "Q161180",
     "gbif": "2874515",
-    "inaturalist": "122866"
+    "inaturalist": "122866",
+    "gloss": {
+      "text": "<em>Cucurbita maxima</em> is Latin, “the largest gourd”; ‘Hubbard’ is the variety. James J. H. Gregory of Marblehead named it for the woman who brought it to his notice: “our old washerwoman named Hubbard”. He called it at first “Ma’am Hubbard’s Squash”.",
+      "source": {
+        "label": "Gregory, <em>Squashes: How to Grow Them</em> (1867), p. 45",
+        "url": "https://archive.org/details/squasheshowtogro00gregrich/page/n50/mode/1up"
+      }
+    }
   },
   {
     "id": "sp-0040",
@@ -397,7 +428,10 @@
     "hashtags": ["whiteoak", "oak", "trees"],
     "wikidata": "Q469555",
     "gbif": "2879737",
-    "inaturalist": "54779"
+    "inaturalist": "54779",
+    "gloss": {
+      "text": "<em>Quercus</em> is Latin for oak; <em>alba</em>, “white”, for its pale bark."
+    }
   },
   {
     "id": "sp-0041",
@@ -407,7 +441,10 @@
     "hashtags": ["americanholly", "holly", "evergreens"],
     "wikidata": "Q2712730",
     "gbif": "5414248",
-    "inaturalist": "60749"
+    "inaturalist": "60749",
+    "gloss": {
+      "text": "<em>Opaca</em> is Latin, “shaded” or “dull”: its leaves are less glossy than the English holly’s."
+    }
   },
   {
     "id": "sp-0042",
@@ -417,7 +454,10 @@
     "hashtags": ["seaweed", "redalgae", "seamoss"],
     "wikidata": "Q103169",
     "gbif": "106",
-    "inaturalist": "57774"
+    "inaturalist": "57774",
+    "gloss": {
+      "text": "Greek, “red plants”: the red seaweeds, which Victorian collectors called sea mosses."
+    }
   },
   {
     "id": "sp-0043",
@@ -427,7 +467,8 @@
     "hashtags": ["spiders", "arachnids", "winter"],
     "wikidata": "Q1357",
     "gbif": "1496",
-    "inaturalist": "47118"
+    "inaturalist": "47118",
+    "gloss": { "text": "Latin, “spiders”: the order that holds them all." }
   },
   {
     "id": "sp-0044",
@@ -437,6 +478,9 @@
     "hashtags": ["wintermoth", "moths", "insects"],
     "wikidata": "Q164002",
     "gbif": "1972449",
-    "inaturalist": "60780"
+    "inaturalist": "60780",
+    "gloss": {
+      "text": "<em>Brumata</em> is from Latin <em>bruma</em>, the shortest day, midwinter: the moth of the solstice season."
+    }
   }
 ]

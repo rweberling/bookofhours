@@ -9,6 +9,13 @@
     "birdcount",
     "citizenscience"
   ],
+  "gloss": {
+    "text": "From the first notice of the count, in <em>Bird-Lore</em> for December 1900, which proposed “a Christmas bird-census”. It has been held every winter since.",
+    "source": {
+      "label": "<em>Bird-Lore</em>, December 1900, p. 192",
+      "url": "https://archive.org/details/sim_bird-lore_1900-12_2_6/page/n37/mode/1up"
+    }
+  },
   "records": [
     "r-0151",
     "i-0183"

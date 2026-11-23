@@ -9,6 +9,13 @@
     "meteors",
     "astronomy"
   ],
+  "gloss": {
+    "text": "The asteroid whose dust makes the Geminids, found in 1983 and named for Phaethon, who in Greek myth drove the sun’s chariot too near the earth. It may be the burnt-out core of a comet.",
+    "source": {
+      "label": "NASA Science: Geminids",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/"
+    }
+  },
   "records": [
     "r-0148",
     "i-0180"

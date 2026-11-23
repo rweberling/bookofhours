@@ -4,90 +4,142 @@
     "name": "Rain Clouds",
     "latin": "Nimbostratus praecipitatio",
     "wikidata": "Q202278",
-    "hashtags": ["clouds", "rain", "weather"]
+    "hashtags": ["clouds", "rain", "weather"],
+    "gloss": {
+      "text": "<em>Nimbostratus</em> is the meteorologists’ name for the thick grey layer of cloud that brings steady rain or snow (Latin <em>nimbus</em>, rain cloud, and <em>stratus</em>, spread out); <em>praecipitatio</em>, “falling”, is the name for rain or snow that reaches the ground.",
+      "source": {
+        "label": "WMO International Cloud Atlas",
+        "url": "https://cloudatlas.wmo.int/en/nimbostratus-ns.html"
+      }
+    }
   },
   {
     "id": "ph-0002",
     "name": "Cambridge Argillite",
     "latin": "Argillita cantabrigiensis",
     "wikidata": null,
-    "hashtags": ["geology", "bedrock", "rocks"]
+    "hashtags": ["geology", "bedrock", "rocks"],
+    "gloss": {
+      "text": "A coinage for the book, in the form of a scientific name: argillite (from Greek <em>árgillos</em>, clay), the slaty bedrock of Cambridge (Latin <em>Cantabrigia</em>)."
+    }
   },
   {
     "id": "ph-0003",
     "name": "Sunspots",
     "latin": "Maculae solares",
     "wikidata": "Q6582994",
-    "hashtags": ["sunspots", "sun", "astronomy"]
+    "hashtags": ["sunspots", "sun", "astronomy"],
+    "gloss": { "text": "Latin, “spots of the sun”." }
   },
   {
     "id": "ph-0004",
     "name": "Dog Days",
     "latin": "Dies caniculares",
     "wikidata": "Q1065821",
-    "hashtags": ["dogdays", "sirius", "summer"]
+    "hashtags": ["dogdays", "sirius", "summer"],
+    "gloss": {
+      "text": "Latin, “the days of the little dog”: the hot weeks when Sirius, the Dog Star (<em>Canicula</em>), rises with the sun."
+    }
   },
   {
     "id": "ph-0005",
     "name": "Perseids",
     "latin": "Lacrimae Sancti Laurentii",
     "wikidata": "Q173708",
-    "hashtags": ["perseids", "meteors", "astronomy"]
+    "hashtags": ["perseids", "meteors", "astronomy"],
+    "gloss": {
+      "text": "Latin, “the tears of Saint Lawrence”: the Perseids peak about 12 August, close to his feast day on the 10th, and the meteors have long been called his tears."
+    }
   },
   {
     "id": "ph-0006",
     "name": "First Frost",
     "latin": "Prima pruina",
     "wikidata": null,
-    "hashtags": ["frost", "firstfrost", "weather"]
+    "hashtags": ["frost", "firstfrost", "weather"],
+    "gloss": { "text": "A coinage for the book: Latin, “the first hoarfrost”." }
   },
   {
     "id": "ph-0007",
     "name": "Skim Ice",
     "latin": "Nilas",
     "wikidata": null,
-    "hashtags": ["skimice", "ice", "winter"]
+    "hashtags": ["skimice", "ice", "winter"],
+    "gloss": {
+      "text": "The World Meteorological Organization’s term, from Russian, for a thin, elastic crust of new ice, up to 10 centimetres thick, that bends without breaking. It is a sea-ice word, borrowed here for the ponds.",
+      "source": { "label": "WMO Sea-Ice Nomenclature", "url": "https://library.wmo.int/idurl/4/41953" }
+    }
   },
   {
     "id": "ph-0008",
     "name": "Earliest Sunset",
     "latin": "Aequatio temporis",
     "wikidata": null,
-    "hashtags": ["earliestsunset", "sunset", "winter"]
+    "hashtags": ["earliestsunset", "sunset", "winter"],
+    "gloss": {
+      "text": "Latin, “the equation of time”: the difference, through the year, between the clock and the sun. Because of it the earliest sunset comes about two weeks before the solstice, and the latest sunrise about two weeks after."
+    }
   },
   {
     "id": "ph-0009",
     "name": "The Three Sisters",
     "latin": "Dioʹhe″ko",
     "wikidata": null,
-    "hashtags": ["threesisters", "corn", "beans"]
+    "hashtags": ["threesisters", "corn", "beans"],
+    "gloss": {
+      "text": "Seneca, “these sustain us”: corn, beans and squash, the three sisters, as Arthur C. Parker gave the word in 1910.",
+      "source": {
+        "label": "Parker, <em>Iroquois Uses of Maize</em>, p. 27",
+        "url": "https://archive.org/details/iroquoisusesofma00parkrich/page/n30/mode/1up"
+      }
+    }
   },
   {
     "id": "ph-0010",
     "name": "Geminids",
     "latin": "3200 Phaethon",
     "wikidata": null,
-    "hashtags": ["geminids", "meteors", "astronomy"]
+    "hashtags": ["geminids", "meteors", "astronomy"],
+    "gloss": {
+      "text": "The asteroid whose dust makes the Geminids, found in 1983 and named for Phaethon, who in Greek myth drove the sun’s chariot too near the earth. It may be the burnt-out core of a comet.",
+      "source": {
+        "label": "NASA Science: Geminids",
+        "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/"
+      }
+    }
   },
   {
     "id": "ph-0011",
     "name": "The Christmas Bird Count",
     "latin": "An annual bird-census",
     "wikidata": null,
-    "hashtags": ["christmasbirdcount", "birdcount", "citizenscience"]
+    "hashtags": ["christmasbirdcount", "birdcount", "citizenscience"],
+    "gloss": {
+      "text": "From the first notice of the count, in <em>Bird-Lore</em> for December 1900, which proposed “a Christmas bird-census”. It has been held every winter since.",
+      "source": {
+        "label": "<em>Bird-Lore</em>, December 1900, p. 192",
+        "url": "https://archive.org/details/sim_bird-lore_1900-12_2_6/page/n37/mode/1up"
+      }
+    }
   },
   {
     "id": "ph-0012",
     "name": "The Sun Standing Still",
     "latin": "Solstitium",
     "wikidata": null,
-    "hashtags": ["solstice", "daylength", "almanac"]
+    "hashtags": ["solstice", "daylength", "almanac"],
+    "gloss": {
+      "text": "Latin, from <em>sol</em>, the sun, and <em>sistere</em>, to stand still: the word “solstice” comes from it."
+    }
   },
   {
     "id": "ph-0013",
     "name": "Solstice Eve",
     "latin": "Shab-e Yaldā",
     "wikidata": null,
-    "hashtags": ["solstice", "wintersolstice", "sunrise"]
+    "hashtags": ["solstice", "wintersolstice", "sunrise"],
+    "gloss": {
+      "text": "Persian, “the night of Yalda”: the longest night of the year, kept in Iran and far beyond on the eve of the winter solstice, with pomegranates, watermelon and readings from Hafez."
+    }
   }
 ]

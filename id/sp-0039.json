@@ -12,6 +12,13 @@
   "wikidata": "Q161180",
   "gbif": "2874515",
   "inaturalist": "122866",
+  "gloss": {
+    "text": "<em>Cucurbita maxima</em> is Latin, “the largest gourd”; ‘Hubbard’ is the variety. James J. H. Gregory of Marblehead named it for the woman who brought it to his notice: “our old washerwoman named Hubbard”. He called it at first “Ma’am Hubbard’s Squash”.",
+    "source": {
+      "label": "Gregory, <em>Squashes: How to Grow Them</em> (1867), p. 45",
+      "url": "https://archive.org/details/squasheshowtogro00gregrich/page/n50/mode/1up"
+    }
+  },
   "records": [
     "r-0145",
     "i-0177"

@@ -77,6 +77,26 @@ function setSeasonCanonical(entry) {
     : 'https://earthlyhours.com/seasons.html';
 }
 
+// The line under the title: the subject's Latin (or other) name, a quiet
+// link to its record page, where the name's gloss explains it. The gloss
+// is also the link's tooltip. Without a record, the name stands alone.
+function setLatinLine(subject, subjectId, fallback) {
+  const el = document.getElementById('season-reading-latin');
+  const text = (subject && (subject.scientific || subject.latin)) || fallback || '';
+  el.textContent = '';
+  el.hidden = !text;
+  if (!text) return;
+  if (!subjectId) { el.textContent = text; return; }
+  const a = document.createElement('a');
+  a.className = 'latin-link';
+  a.href = `/id/${subjectId}/`;
+  a.textContent = text;
+  const gloss = subject && subject.gloss && subject.gloss.text;
+  const plain = gloss ? gloss.replace(/<[^>]+>/g, '') : '';
+  a.title = plain || `About ${subject && subject.name ? subject.name : 'the name'}`;
+  el.appendChild(a);
+}
+
 function renderSeasonReading(entry) {
   leaveDay();
   currentEntryId = entry.id;
@@ -90,9 +110,7 @@ function renderSeasonReading(entry) {
   document.getElementById('season-reading-subtitle').textContent = season.subtitle;
   document.getElementById('season-reading-title').textContent = species;
 
-  const latinEl = document.getElementById('season-reading-latin');
-  latinEl.textContent = latin || '';
-  latinEl.hidden = !latin;
+  setLatinLine(entry.subjectRecord, entry.subject, latin);
 
   // Credits live in exactly one place (the dek, right under the title) —
   // the observation line below the body is for the publish date only, so
@@ -213,9 +231,7 @@ async function showDay(day, days) {
   document.getElementById('season-reading-subtitle').textContent =
     `${season.label} ✦ ${when}`;
   document.getElementById('season-reading-title').textContent = name;
-  const latinEl = document.getElementById('season-reading-latin');
-  latinEl.textContent = subject.scientific || subject.latin || '';
-  latinEl.hidden = !latinEl.textContent;
+  setLatinLine(subject, day.subject);
   document.getElementById('season-reading-dek').textContent =
     day.draft ? 'A draft for review: not yet released' : '';
   document.getElementById('season-reading-observation').textContent = '';

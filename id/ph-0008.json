@@ -9,6 +9,9 @@
     "sunset",
     "winter"
   ],
+  "gloss": {
+    "text": "Latin, “the equation of time”: the difference, through the year, between the clock and the sun. Because of it the earliest sunset comes about two weeks before the solstice, and the latest sunrise about two weeks after."
+  },
   "records": [
     "r-0143",
     "i-0174"

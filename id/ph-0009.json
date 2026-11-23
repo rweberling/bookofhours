@@ -9,6 +9,13 @@
     "corn",
     "beans"
   ],
+  "gloss": {
+    "text": "Seneca, “these sustain us”: corn, beans and squash, the three sisters, as Arthur C. Parker gave the word in 1910.",
+    "source": {
+      "label": "Parker, <em>Iroquois Uses of Maize</em>, p. 27",
+      "url": "https://archive.org/details/iroquoisusesofma00parkrich/page/n30/mode/1up"
+    }
+  },
   "records": [
     "r-0146",
     "i-0178"

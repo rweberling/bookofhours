@@ -12,6 +12,9 @@
   "wikidata": "Q26844",
   "gbif": "9606290",
   "inaturalist": "906",
+  "gloss": {
+    "text": "<em>Meleagris</em> is Greek for the guineafowl; <em>gallopavo</em> is Latin for “chicken-peacock”."
+  },
   "records": [
     "r-0131",
     "i-0162"

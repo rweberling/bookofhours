@@ -9,6 +9,13 @@
     "rain",
     "weather"
   ],
+  "gloss": {
+    "text": "<em>Nimbostratus</em> is the meteorologists’ name for the thick grey layer of cloud that brings steady rain or snow (Latin <em>nimbus</em>, rain cloud, and <em>stratus</em>, spread out); <em>praecipitatio</em>, “falling”, is the name for rain or snow that reaches the ground.",
+    "source": {
+      "label": "WMO International Cloud Atlas",
+      "url": "https://cloudatlas.wmo.int/en/nimbostratus-ns.html"
+    }
+  },
   "records": [
     "r-0046",
     "r-0047",

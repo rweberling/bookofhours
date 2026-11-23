@@ -9,6 +9,13 @@
     "ice",
     "winter"
   ],
+  "gloss": {
+    "text": "The World Meteorological Organization’s term, from Russian, for a thin, elastic crust of new ice, up to 10 centimetres thick, that bends without breaking. It is a sea-ice word, borrowed here for the ponds.",
+    "source": {
+      "label": "WMO Sea-Ice Nomenclature",
+      "url": "https://library.wmo.int/idurl/4/41953"
+    }
+  },
   "records": [
     "r-0138",
     "i-0175"

@@ -654,6 +654,15 @@ body main.hours-page .versicle {
   font-style: italic; font-size: 18px;
   color: var(--accent); transition: color 3s ease;
 }
+/* The name links to its record, where its gloss is: quiet until hovered. */
+#season-reading-latin .latin-link {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px dotted color-mix(in oklab, currentColor, transparent 55%);
+}
+#season-reading-latin .latin-link:hover,
+#season-reading-latin .latin-link:focus-visible {
+  border-bottom-style: solid; border-bottom-color: currentColor;
+}
 .season-post-dek {
   font-family: var(--font-text);
   font-size: 15px; font-weight: 300; font-style: italic;

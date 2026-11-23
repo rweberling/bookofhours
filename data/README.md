@@ -286,6 +286,17 @@ for that essay and `excerpts` (each `from`, a record ID, and `text`, word
 for word from it) for its Bluesky posts (`check_data.py` checks each is still word for word in its record). A species or phenomenon record's
 `hashtags` are used for every post about it.
 
+A species or phenomenon record may also carry a `gloss`: what its second
+name (its `scientific` or `latin`, the line under the title on the
+Seasons page) means and where it comes from, as `text` (a sentence or
+two, which may use `<em>`) and an optional `source` (`label`, `url`).
+The line under the title links to the subject's record page, which shows
+the gloss under "About the name"; the gloss is also the link's tooltip.
+A phenomenon's second name need not be Latin: it is the name from the
+subject's own tradition where there is one (*Dioʹhe″ko*, *Shab-e Yaldā*),
+else a real scientific or Latin term (*Nilas*, *Aequatio temporis*), else
+a plain Latin coinage, which its gloss calls one (Ryan, 22–23 November 2026).
+
 The figures on Are.na (`scripts/arena.py`) are kept under `arena`: `on`,
 `user` (the account), `maxBlocks` (the most blocks the script will make;
 the free plan allows 200 in all), `channels` and `blocks`. Each channel
