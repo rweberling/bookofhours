@@ -2615,9 +2615,17 @@ a.page-action { text-decoration: none; }
 @media print { .season-week { display: none; } }
 
 #season-reading-body .day-figure { margin-top: 0; }
-#season-reading-body ol.day-reading { list-style: none; padding: 0; margin: 0; }
-#season-reading-body ol.day-reading > li { padding-left: 0; text-indent: 0; margin-bottom: 0; }
-#season-reading-body ol.day-reading > li::before { content: none; }
+/* The day's reading is set as an essay's passages are: the same small
+   inset that marks them as quoted words, and whole paragraphs. The
+   #day-quote id outranks the numbered-list rule above (ol:not(.reading
+   ol) > li), which would otherwise hang its first line out to the left. */
+#season-reading-body ol.day-reading { list-style: none; padding: 0 0 0 16px; margin: 0; }
+#season-reading-body ol.day-reading > li#day-quote {
+  padding-left: 0.4em; text-indent: 0; margin-bottom: 0;
+}
+#season-reading-body ol.day-reading > li#day-quote::before { content: none; }
+#season-reading-body ol.day-reading > li#day-quote > p { display: block; }
+#season-reading-body ol.day-reading > li#day-quote > p:first-child + p { margin-top: 0; }
 
 /* ══════════════════════════════════════════════════════════════
    THE SOURCES PAGE (sources.html)
