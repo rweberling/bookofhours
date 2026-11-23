@@ -51,7 +51,8 @@
       {
         "@id": "https://earthlyhours.com/id/ph-0013/",
         "id": "ph-0013",
-        "name": "Solstice Eve"
+        "name": "Solstice Eve",
+        "scientific": "Shab-e Yaldā"
       }
     ],
     "edition": {

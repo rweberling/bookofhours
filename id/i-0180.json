@@ -55,7 +55,8 @@
       {
         "@id": "https://earthlyhours.com/id/ph-0010/",
         "id": "ph-0010",
-        "name": "Geminids"
+        "name": "Geminids",
+        "scientific": "3200 Phaethon"
       }
     ],
     "edition": {

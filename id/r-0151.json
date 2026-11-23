@@ -45,7 +45,8 @@
       {
         "@id": "https://earthlyhours.com/id/ph-0011/",
         "id": "ph-0011",
-        "name": "The Christmas Bird Count"
+        "name": "The Christmas Bird Count",
+        "scientific": "An annual bird-census"
       }
     ],
     "edition": {

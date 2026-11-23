@@ -12,7 +12,8 @@
     "subject": {
       "@id": "https://earthlyhours.com/id/ph-0009/",
       "id": "ph-0009",
-      "name": "The Three Sisters"
+      "name": "The Three Sisters",
+      "scientific": "Dioʹhe″ko"
     },
     "reading": {
       "@id": "https://earthlyhours.com/id/r-0146/",

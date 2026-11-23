@@ -44,49 +44,49 @@
   {
     "id": "ph-0007",
     "name": "Skim Ice",
-    "latin": null,
+    "latin": "Nilas",
     "wikidata": null,
     "hashtags": ["skimice", "ice", "winter"]
   },
   {
     "id": "ph-0008",
     "name": "Earliest Sunset",
-    "latin": null,
+    "latin": "Aequatio temporis",
     "wikidata": null,
     "hashtags": ["earliestsunset", "sunset", "winter"]
   },
   {
     "id": "ph-0009",
     "name": "The Three Sisters",
-    "latin": null,
+    "latin": "Dioʹhe″ko",
     "wikidata": null,
     "hashtags": ["threesisters", "corn", "beans"]
   },
   {
     "id": "ph-0010",
     "name": "Geminids",
-    "latin": null,
+    "latin": "3200 Phaethon",
     "wikidata": null,
     "hashtags": ["geminids", "meteors", "astronomy"]
   },
   {
     "id": "ph-0011",
     "name": "The Christmas Bird Count",
-    "latin": null,
+    "latin": "An annual bird-census",
     "wikidata": null,
     "hashtags": ["christmasbirdcount", "birdcount", "citizenscience"]
   },
   {
     "id": "ph-0012",
     "name": "The Sun Standing Still",
-    "latin": null,
+    "latin": "Solstitium",
     "wikidata": null,
     "hashtags": ["solstice", "daylength", "almanac"]
   },
   {
     "id": "ph-0013",
     "name": "Solstice Eve",
-    "latin": null,
+    "latin": "Shab-e Yaldā",
     "wikidata": null,
     "hashtags": ["solstice", "wintersolstice", "sunrise"]
   }

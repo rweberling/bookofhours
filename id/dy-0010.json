@@ -12,7 +12,8 @@
     "subject": {
       "@id": "https://earthlyhours.com/id/ph-0008/",
       "id": "ph-0008",
-      "name": "Earliest Sunset"
+      "name": "Earliest Sunset",
+      "scientific": "Aequatio temporis"
     },
     "reading": {
       "@id": "https://earthlyhours.com/id/r-0143/",

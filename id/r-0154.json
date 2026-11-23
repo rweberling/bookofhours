@@ -51,7 +51,8 @@
       {
         "@id": "https://earthlyhours.com/id/ph-0012/",
         "id": "ph-0012",
-        "name": "The Sun Standing Still"
+        "name": "The Sun Standing Still",
+        "scientific": "Solstitium"
       }
     ],
     "edition": {
