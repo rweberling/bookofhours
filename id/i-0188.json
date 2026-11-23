@@ -26,6 +26,13 @@
   },
   "alt": "A wide, soft-toned photograph taken at water level: white water lilies and their dark pads float on still water in front of a dense wall of tall reeds, with a few trees beyond under a pale sky.",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/290484"
+    }
+  ],
   "related": {
     "about": [
       {

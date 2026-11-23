@@ -5625,8 +5625,18 @@
         "type": "book",
         "title": "A Treatise on Some of the Insects Injurious to Vegetation, new edition",
         "contributors": [
-          { "id": "a-thaddeus-william-harris", "name": "Thaddeus William Harris", "role": "author" },
-          { "id": "a-charles-l-flint", "name": "Charles L. Flint", "role": "editor" }
+          {
+            "id": "a-thaddeus-william-harris",
+            "name": "Thaddeus William Harris",
+            "role": "author",
+            "wikidata": "Q839975"
+          },
+          {
+            "id": "a-charles-l-flint",
+            "name": "Charles L. Flint",
+            "role": "editor",
+            "wikidata": "Q5079939"
+          }
         ],
         "publisher": "Crosby and Nichols",
         "issued": "1862",
@@ -5748,7 +5758,12 @@
         "type": "book",
         "title": "Our Native Ferns and Their Allies, 4th ed., revised",
         "contributors": [
-          { "id": "a-lucien-marcus-underwood", "name": "Lucien Marcus Underwood", "role": "author" }
+          {
+            "id": "a-lucien-marcus-underwood",
+            "name": "Lucien Marcus Underwood",
+            "role": "author",
+            "wikidata": "Q3038765"
+          }
         ],
         "publisher": "Henry Holt",
         "issued": "1893",
@@ -5791,7 +5806,14 @@
         "id": "e-0221",
         "type": "book",
         "title": "A Calendar of Sonnets",
-        "contributors": [{ "id": "a-helen-hunt-jackson", "name": "Helen Hunt Jackson", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-helen-hunt-jackson",
+            "name": "Helen Hunt Jackson",
+            "role": "author",
+            "wikidata": "Q462363"
+          }
+        ],
         "publisher": "Roberts Brothers",
         "issued": "1886",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -5868,7 +5890,14 @@
         "id": "e-0224",
         "type": "book",
         "title": "Squashes: How to Grow Them",
-        "contributors": [{ "id": "a-james-j-h-gregory", "name": "James J. H. Gregory", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-james-j-h-gregory",
+            "name": "James J. H. Gregory",
+            "role": "author",
+            "wikidata": "Q107044136"
+          }
+        ],
         "publisher": "Orange Judd",
         "issued": "1867",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -5910,7 +5939,14 @@
         "id": "e-0225",
         "type": "book",
         "title": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)",
-        "contributors": [{ "id": "a-arthur-c-parker", "name": "Arthur C. Parker", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-arthur-c-parker",
+            "name": "Arthur C. Parker",
+            "role": "author",
+            "wikidata": "Q1101944"
+          }
+        ],
         "publisher": "University of the State of New York",
         "issued": "1910",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6003,7 +6039,14 @@
         "id": "e-0227",
         "type": "book",
         "title": "Astronomy with an Opera-Glass",
-        "contributors": [{ "id": "a-garrett-p-serviss", "name": "Garrett P. Serviss", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-garrett-p-serviss",
+            "name": "Garrett P. Serviss",
+            "role": "author",
+            "wikidata": "Q953962"
+          }
+        ],
         "publisher": "D. Appleton",
         "issued": "1888",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6171,7 +6214,14 @@
         "id": "e-0232",
         "type": "book",
         "title": "The Common Spiders of the United States",
-        "contributors": [{ "id": "a-j-h-emerton", "name": "J. H. Emerton", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-j-h-emerton",
+            "name": "J. H. Emerton",
+            "role": "author",
+            "wikidata": "Q3161146"
+          }
+        ],
         "publisher": "Ginn & Company",
         "issued": "1902",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6289,7 +6339,14 @@
         "id": "e-0235",
         "type": "book",
         "title": "The Outermost House: A Year of Life on the Great Beach of Cape Cod",
-        "contributors": [{ "id": "a-henry-beston", "name": "Henry Beston", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-henry-beston",
+            "name": "Henry Beston",
+            "role": "author",
+            "wikidata": "Q14322882"
+          }
+        ],
         "publisher": "Doubleday, Doran",
         "issued": "1928",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",

@@ -2099,7 +2099,11 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a U.S. government work",
-    "creator": { "id": "a-u-s-geological-survey", "name": "U.S. Geological Survey" }
+    "creator": {
+      "id": "a-u-s-geological-survey",
+      "name": "U.S. Geological Survey",
+      "wikidata": "Q193755"
+    }
   },
   {
     "id": "i-0067",
@@ -2127,7 +2131,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/UND/1.0/",
     "rightsNote": "undated cigarette card",
-    "creator": { "id": "a-w-d-h-o-wills", "name": "W. D. & H. O. Wills" },
+    "creator": { "id": "a-w-d-h-o-wills", "name": "W. D. & H. O. Wills", "wikidata": "Q2536590" },
     "title": "Lilac",
     "institution": "New York Public Library"
   },
@@ -2822,7 +2826,7 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-c-e-faxon", "name": "C. E. Faxon" }
+    "creator": { "id": "a-c-e-faxon", "name": "C. E. Faxon", "wikidata": "Q5077268" }
   },
   {
     "id": "i-0086",
@@ -2846,7 +2850,14 @@
       "title": "Atlas of United States Trees, vol. 4",
       "issued": "1976",
       "identifiers": { "hathitrust": "009818689", "lccn": "79653298" },
-      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-elbert-l-little-jr",
+          "name": "Elbert L. Little Jr.",
+          "role": "author",
+          "wikidata": "Q2917869"
+        }
+      ],
       "publisher": "U.S. Department of Agriculture, Forest Service"
     },
     "locator": {
@@ -2855,7 +2866,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a U.S. government work",
-    "creator": { "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr." }
+    "creator": { "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "wikidata": "Q2917869" }
   },
   {
     "id": "i-0087",
@@ -3905,7 +3916,14 @@
       "title": "Atlas of United States Trees, vol. 1",
       "issued": "1971",
       "identifiers": { "internetArchive": "CAT87209954", "lccn": "79653298" },
-      "contributors": [{ "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-elbert-l-little-jr",
+          "name": "Elbert L. Little Jr.",
+          "role": "author",
+          "wikidata": "Q2917869"
+        }
+      ],
       "publisher": "U.S. Department of Agriculture, Forest Service"
     },
     "locator": {
@@ -3914,7 +3932,7 @@
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "rightsNote": "a U.S. government work",
-    "creator": { "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr." }
+    "creator": { "id": "a-elbert-l-little-jr", "name": "Elbert L. Little Jr.", "wikidata": "Q2917869" }
   },
   {
     "id": "i-0118",
@@ -4087,7 +4105,7 @@
       "label": "HathiTrust"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-c-e-faxon", "name": "C. E. Faxon" }
+    "creator": { "id": "a-c-e-faxon", "name": "C. E. Faxon", "wikidata": "Q5077268" }
   },
   {
     "id": "i-0123",
@@ -5581,7 +5599,14 @@
       "size": [1200, 647]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "alt": "A woodcut of a squirrel crouched low and stretched long, ears pricked and teeth bared, its huge feathery tail streaming back over its body and two nuts under its forepaws, beneath the heading \"Of the SQVIRREL.\""
+    "alt": "A woodcut of a squirrel crouched low and stretched long, ears pricked and teeth bared, its huge feathery tail streaming back over its body and two nuts under its forepaws, beneath the heading \"Of the SQVIRREL.\"",
+    "links": [
+      {
+        "role": "cited",
+        "label": "University of Houston Libraries",
+        "url": "https://digitalcollections.lib.uh.edu/concern/images/pc289j955?locale=en#?c=0&m=0&s=0&cv=0&xywh=-39%2C-1%2C2293%2C1195"
+      }
+    ]
   },
   {
     "id": "i-0166",
@@ -5617,7 +5642,14 @@
       "size": [562, 766]
     },
     "alt": "A manuscript painting inside a red ruled border: a large pale-blue octahedron, shaded in watercolour, balanced on one point above a beige ledge with its shadow, and at its foot a tiny russet squirrel sitting up beside a sprig of leaves.",
-    "rights": "https://creativecommons.org/publicdomain/mark/1.0/"
+    "rights": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Herzog August Bibliothek",
+        "url": "https://diglib.hab.de/wdb.php?dir=mss/74-1-aug-2f&distype=thumbs"
+      }
+    ]
   },
   {
     "id": "i-0168",
@@ -5626,7 +5658,7 @@
     "caption": "M. C. Cooke, <a href=\"https://www.biodiversitylibrary.org/page/2894556\" target=\"_blank\"><em>Agaricus (Pleurotus) serotinus</em></a>, with <em>A. (P.) petaloides</em>, plate 258 of <em>Illustrations of British Fungi</em> (1881–1891)",
     "alt": "A colour plate of two fungi on a pale green ground. Above, tan funnel- and fan-shaped caps with a small cluster of white ones, labelled Agaricus (Pleurotus) petaloides. Below, brown-olive shell-shaped caps growing from a mossy log, with a cut cap showing pale orange gills, labelled Agaricus (Pleurotus) serotinus, “on trunks, Nov.”",
     "bibliography": "Cooke, M. C. <em>Agaricus (Pleurotus) serotinus</em>, with <em>A. (P.) petaloides</em>. Plate 258 in <em>Illustrations of British Fungi (Hymenomycetes)</em>, vol. 2, London, 1881–1891, colour lithograph.",
-    "creator": { "id": "a-mordecai-cubitt-cooke", "name": "M. C. Cooke" },
+    "creator": { "id": "a-mordecai-cubitt-cooke", "name": "M. C. Cooke", "wikidata": "Q2351239" },
     "title": "Agaricus (Pleurotus) serotinus, with A. (P.) petaloides",
     "date": "1881/1891",
     "institution": "Biodiversity Heritage Library",
@@ -5766,7 +5798,7 @@
     "caption": "Figures 65–72, from David L. Belding, <a href=\"https://archive.org/details/reportuponscallo00mass/page/n170/mode/1up\" target=\"_blank\"><em>A Report upon the Scallop Fishery of Massachusetts</em></a> (1910)",
     "alt": "A plate of eight figures: the two valves of a bay scallop, a tagged scallop shell, a drawing of the scallop's gland tissue, an oyster drill, diatoms, a starfish prising open a scallop, a wire cage and a cone-shaped plankton net.",
     "bibliography": "Belding, David L. Figures 65–72. In <em>A Report upon the Scallop Fishery of Massachusetts</em>, Commissioners on Fisheries and Game, Commonwealth of Massachusetts, 1910.",
-    "creator": { "id": "a-david-l-belding", "name": "David L. Belding" },
+    "creator": { "id": "a-david-l-belding", "name": "David L. Belding", "wikidata": "Q131936543" },
     "title": "Figures 65–72",
     "date": "1910",
     "institution": "MBLWHOI Library",
@@ -5831,7 +5863,7 @@
     "caption": "George Inness, <a href=\"https://clevelandart.org/art/1927.388\" target=\"_blank\"><em>A Winter Sky</em></a> (1866)",
     "alt": "An oil painting of a snowy marsh at sunset: a red sun sits low behind a dark clump of trees, a pale gold band of sky opens under heavy grey and red clouds, a small flock of birds crosses it, and still water runs through the snow in the foreground.",
     "bibliography": "Inness, George. <em>A Winter Sky</em>. 1866, oil on canvas, Cleveland Museum of Art, 1927.388.",
-    "creator": { "id": "a-george-inness", "name": "George Inness" },
+    "creator": { "id": "a-george-inness", "name": "George Inness", "wikidata": "Q704868" },
     "title": "A Winter Sky",
     "date": "1866",
     "institution": "Cleveland Museum of Art",
@@ -5893,7 +5925,7 @@
     "caption": "James Sowerby, <em>Boletus versicolor</em> (turkey tail), plate 229 from <a href=\"https://archive.org/details/colouredfigureso00sowe/page/n566/mode/1up\" target=\"_blank\"><em>Coloured Figures of English Fungi or Mushrooms</em></a> (1799), hand-coloured engraving; the pencilled name below, <em>Polystictus versicolor</em>, is a later reader’s",
     "alt": "A hand-coloured engraving of a broken branch, mossy green, crowded with thin, fan-shaped brackets banded in rings of orange, brown, grey and cream, with a cluster of pale grey brackets at its foot. Below, the engraved name Boletus versicolor and, in a later hand in pencil, Polystictus versicolor.",
     "bibliography": "Sowerby, James. <em>Boletus versicolor</em>. Plate 229 in <em>Coloured Figures of English Fungi or Mushrooms</em>, vol. 2, J. Davis, 1799.",
-    "creator": { "id": "a-james-sowerby", "name": "James Sowerby" },
+    "creator": { "id": "a-james-sowerby", "name": "James Sowerby", "wikidata": "Q1235813" },
     "title": "Boletus versicolor",
     "date": "1799",
     "institution": "New York Botanical Garden, LuEsther T. Mertz Library",
@@ -5927,7 +5959,7 @@
     "caption": "James J. H. Gregory, “Section of Squash-House,” from <a href=\"https://archive.org/details/squasheshowtogro00gregrich/page/n39/mode/1up\" target=\"_blank\"><em>Squashes: How to Grow Them</em></a> (1867), p. 34, wood engraving",
     "alt": "A plain diagram of a building in cross-section under a pitched roof with a brick chimney: three tall stacks of slatted shelves (bins B) separated by aisles (A), each shelf hatched, with labels for a height of 10 feet and a width of 25 feet, and the caption Section of Squash-House.",
     "bibliography": "Gregory, James J. H. “Section of Squash-House.” In <em>Squashes: How to Grow Them</em>, Orange Judd, 1867, p. 34.",
-    "creator": { "id": "a-james-j-h-gregory", "name": "James J. H. Gregory" },
+    "creator": { "id": "a-james-j-h-gregory", "name": "James J. H. Gregory", "wikidata": "Q107044136" },
     "title": "Section of Squash-House",
     "date": "1867",
     "institution": "University of California Libraries",
@@ -5940,7 +5972,14 @@
       "id": "e-0224",
       "type": "book",
       "title": "Squashes: How to Grow Them",
-      "contributors": [{ "id": "a-james-j-h-gregory", "name": "James J. H. Gregory", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-james-j-h-gregory",
+          "name": "James J. H. Gregory",
+          "role": "author",
+          "wikidata": "Q107044136"
+        }
+      ],
       "publisher": "Orange Judd",
       "issued": "1867",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -5981,7 +6020,14 @@
       "id": "e-0225",
       "type": "book",
       "title": "Iroquois Uses of Maize and Other Food Plants (New York State Museum Bulletin 144)",
-      "contributors": [{ "id": "a-arthur-c-parker", "name": "Arthur C. Parker", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-arthur-c-parker",
+          "name": "Arthur C. Parker",
+          "role": "author",
+          "wikidata": "Q1101944"
+        }
+      ],
       "publisher": "University of the State of New York",
       "issued": "1910",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6059,7 +6105,7 @@
     "caption": "Garrett P. Serviss, Map 3 (Gemini, Cancer and Canis Minor), from <a href=\"https://archive.org/details/astronomywithop00serv/page/n29/mode/1up\" target=\"_blank\"><em>Astronomy with an Opera-Glass</em></a> (1888), p. 18",
     "alt": "A star map printed white on black: the constellations Gemini, Cancer, Canis Minor and parts of Auriga, Hydra and Orion, divided by dotted boundaries, with stars drawn as small white stars labelled by Greek letters and a fuzzy cluster marked 35 M. Below: Map 3.",
     "bibliography": "Serviss, Garrett P. Map 3. In <em>Astronomy with an Opera-Glass</em>, D. Appleton, 1888, p. 18.",
-    "creator": { "id": "a-garrett-p-serviss", "name": "Garrett P. Serviss" },
+    "creator": { "id": "a-garrett-p-serviss", "name": "Garrett P. Serviss", "wikidata": "Q953962" },
     "title": "Map 3",
     "date": "1888",
     "institution": "Library of Congress",
@@ -6072,7 +6118,14 @@
       "id": "e-0227",
       "type": "book",
       "title": "Astronomy with an Opera-Glass",
-      "contributors": [{ "id": "a-garrett-p-serviss", "name": "Garrett P. Serviss", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-garrett-p-serviss",
+          "name": "Garrett P. Serviss",
+          "role": "author",
+          "wikidata": "Q953962"
+        }
+      ],
       "publisher": "D. Appleton",
       "issued": "1888",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6096,7 +6149,7 @@
     "caption": "Henri-Joseph Redouté (drawing) and Renard (engraving), <em>American Holly</em>, plate 84 from François André Michaux, <a href=\"https://archive.org/details/northamericansyl02inmich/page/n228/mode/1up\" target=\"_blank\"><em>The North American Sylva</em></a>, vol. 2 (1819), colour-printed stipple engraving",
     "alt": "A botanical plate of an American holly sprig: glossy, spiny-edged leaves in dark and lighter greens along a pale stem, with a cluster of round red berries where the leaves meet. Engraved below: American Holly, Ilex opaca.",
     "bibliography": "Redouté, Henri-Joseph, and Renard. <em>American Holly, Ilex opaca</em>. Plate 84 in François André Michaux, <em>The North American Sylva</em>, vol. 2, C. d’Hautel, 1819.",
-    "creator": { "id": "a-henri-joseph-redoute", "name": "Henri-Joseph Redouté" },
+    "creator": { "id": "a-henri-joseph-redoute", "name": "Henri-Joseph Redouté", "wikidata": "Q3130410" },
     "title": "American Holly, Ilex opaca",
     "date": "1819",
     "institution": "University of Pittsburgh Library System",
@@ -6220,7 +6273,7 @@
     "caption": "J. H. Emerton, “Web of Tetragnatha in tansy plants, showing the spider in its usual position,” fig. 459 from <a href=\"https://archive.org/details/commonspidersofuemer/page/n224/mode/1up\" target=\"_blank\"><em>The Common Spiders of the United States</em></a> (1902), p. 201, photograph",
     "alt": "A soft grey photograph of a round orb web strung among feathery tansy leaves, its spokes and spiral threads catching the light; a long, thin spider lies stretched along the threads at the hub, legs held straight out before and behind.",
     "bibliography": "Emerton, J. H. “Web of Tetragnatha in tansy plants.” Fig. 459 in <em>The Common Spiders of the United States</em>, Ginn & Company, 1902, p. 201.",
-    "creator": { "id": "a-j-h-emerton", "name": "J. H. Emerton" },
+    "creator": { "id": "a-j-h-emerton", "name": "J. H. Emerton", "wikidata": "Q3161146" },
     "title": "Web of Tetragnatha in tansy plants",
     "date": "1902",
     "institution": "Smithsonian Libraries",
@@ -6233,7 +6286,14 @@
       "id": "e-0232",
       "type": "book",
       "title": "The Common Spiders of the United States",
-      "contributors": [{ "id": "a-j-h-emerton", "name": "J. H. Emerton", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-j-h-emerton",
+          "name": "J. H. Emerton",
+          "role": "author",
+          "wikidata": "Q3161146"
+        }
+      ],
       "publisher": "Ginn & Company",
       "issued": "1902",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6348,7 +6408,14 @@
       "id": "e-0235",
       "type": "book",
       "title": "The Outermost House: A Year of Life on the Great Beach of Cape Cod",
-      "contributors": [{ "id": "a-henry-beston", "name": "Henry Beston", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-henry-beston",
+          "name": "Henry Beston",
+          "role": "author",
+          "wikidata": "Q14322882"
+        }
+      ],
       "publisher": "Doubleday, Doran",
       "issued": "1928",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6386,7 +6453,14 @@
       "size": [1456, 698]
     },
     "alt": "A wide, soft-toned photograph taken at water level: white water lilies and their dark pads float on still water in front of a dense wall of tall reeds, with a few trees beyond under a pale sky.",
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/290484"
+      }
+    ]
   },
   {
     "id": "i-0189",
@@ -6424,6 +6498,13 @@
       "size": [1456, 675]
     },
     "alt": "A painting of a broad, flat green salt meadow dotted with round haystacks and puddles, a hay cart and small figures at work in the middle distance, under dark storm clouds that break to let shafts of sunlight fall on the marsh.",
-    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/11053"
+      }
+    ]
   }
 ]

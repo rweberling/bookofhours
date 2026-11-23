@@ -38,7 +38,8 @@
       {
         "id": "a-elbert-l-little-jr",
         "name": "Elbert L. Little Jr.",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q2917869"
       }
     ],
     "publisher": "U.S. Department of Agriculture, Forest Service"
@@ -51,7 +52,8 @@
   "rightsNote": "a U.S. government work",
   "creator": {
     "id": "a-elbert-l-little-jr",
-    "name": "Elbert L. Little Jr."
+    "name": "Elbert L. Little Jr.",
+    "wikidata": "Q2917869"
   },
   "related": {
     "about": [

@@ -37,7 +37,8 @@
   "rightsNote": "a U.S. government work",
   "creator": {
     "id": "a-u-s-geological-survey",
-    "name": "U.S. Geological Survey"
+    "name": "U.S. Geological Survey",
+    "wikidata": "Q193755"
   },
   "related": {
     "about": [

@@ -21,12 +21,14 @@
         {
           "id": "a-thaddeus-william-harris",
           "name": "Thaddeus William Harris",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q839975"
         },
         {
           "id": "a-charles-l-flint",
           "name": "Charles L. Flint",
-          "role": "editor"
+          "role": "editor",
+          "wikidata": "Q5079939"
         }
       ],
       "publisher": "Crosby and Nichols",

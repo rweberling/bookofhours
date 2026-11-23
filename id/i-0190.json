@@ -26,6 +26,13 @@
   },
   "alt": "A painting of a broad, flat green salt meadow dotted with round haystacks and puddles, a hay cart and small figures at work in the middle distance, under dark storm clouds that break to let shafts of sunlight fall on the marsh.",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/11053"
+    }
+  ],
   "related": {
     "about": [
       {

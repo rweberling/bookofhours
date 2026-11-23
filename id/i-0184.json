@@ -8,7 +8,8 @@
   "bibliography": "Emerton, J. H. “Web of Tetragnatha in tansy plants.” Fig. 459 in <em>The Common Spiders of the United States</em>, Ginn & Company, 1902, p. 201.",
   "creator": {
     "id": "a-j-h-emerton",
-    "name": "J. H. Emerton"
+    "name": "J. H. Emerton",
+    "wikidata": "Q3161146"
   },
   "title": "Web of Tetragnatha in tansy plants",
   "date": "1902",
@@ -26,7 +27,8 @@
       {
         "id": "a-j-h-emerton",
         "name": "J. H. Emerton",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q3161146"
       }
     ],
     "publisher": "Ginn & Company",

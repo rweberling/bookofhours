@@ -8,7 +8,8 @@
   "bibliography": "Serviss, Garrett P. Map 3. In <em>Astronomy with an Opera-Glass</em>, D. Appleton, 1888, p. 18.",
   "creator": {
     "id": "a-garrett-p-serviss",
-    "name": "Garrett P. Serviss"
+    "name": "Garrett P. Serviss",
+    "wikidata": "Q953962"
   },
   "title": "Map 3",
   "date": "1888",
@@ -26,7 +27,8 @@
       {
         "id": "a-garrett-p-serviss",
         "name": "Garrett P. Serviss",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q953962"
       }
     ],
     "publisher": "D. Appleton",

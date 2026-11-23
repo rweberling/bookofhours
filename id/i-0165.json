@@ -26,6 +26,13 @@
   },
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "alt": "A woodcut of a squirrel crouched low and stretched long, ears pricked and teeth bared, its huge feathery tail streaming back over its body and two nuts under its forepaws, beneath the heading \"Of the SQVIRREL.\"",
+  "links": [
+    {
+      "role": "cited",
+      "label": "University of Houston Libraries",
+      "url": "https://digitalcollections.lib.uh.edu/concern/images/pc289j955?locale=en#?c=0&m=0&s=0&cv=0&xywh=-39%2C-1%2C2293%2C1195"
+    }
+  ],
   "related": {
     "about": [
       {

@@ -26,6 +26,13 @@
   },
   "alt": "A manuscript painting inside a red ruled border: a large pale-blue octahedron, shaded in watercolour, balanced on one point above a beige ledge with its shadow, and at its foot a tiny russet squirrel sitting up beside a sprig of leaves.",
   "rights": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Herzog August Bibliothek",
+      "url": "https://diglib.hab.de/wdb.php?dir=mss/74-1-aug-2f&distype=thumbs"
+    }
+  ],
   "related": {
     "about": [
       {

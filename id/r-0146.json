@@ -21,7 +21,8 @@
         {
           "id": "a-arthur-c-parker",
           "name": "Arthur C. Parker",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q1101944"
         }
       ],
       "publisher": "University of the State of New York",

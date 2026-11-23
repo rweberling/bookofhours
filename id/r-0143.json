@@ -20,7 +20,8 @@
         {
           "id": "a-helen-hunt-jackson",
           "name": "Helen Hunt Jackson",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q462363"
         }
       ],
       "publisher": "Roberts Brothers",
