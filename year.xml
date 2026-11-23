@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Built by scripts/build_year_feed.py for 2026-11-22 from data/; edit that, not this. -->
+<!-- Built by scripts/build_year_feed.py for 2026-11-23 from data/; edit that, not this. -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Year — The Earthly Book of Hours</title>
@@ -7,7 +7,14 @@
   <atom:link href="https://earthlyhours.com/year.xml" rel="self" type="application/rss+xml"/>
   <description>The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with an image and a reading, and each week its Lectio Terra essay. It comes round again every year.</description>
   <language>en</language>
-  <lastBuildDate>Sun, 22 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <item>
+    <title>23 November: Turkey Tail</title>
+    <link>https://earthlyhours.com/seasons.html?day=11-23</link>
+    <guid isPermaLink="false">https://earthlyhours.com/seasons.html?day=11-23#2026</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 -0500</pubDate>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/days_sowerby_turkey_tail-1600.webp&quot; alt=&quot;A hand-coloured engraving of a broken branch, mossy green, crowded with thin, fan-shaped brackets banded in rings of orange, brown, grey and cream, with a cluster of pale grey brackets at its foot. Below, the engraved name Boletus versicolor and, in a later hand in pencil, Polystictus versicolor.&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;small&gt;James Sowerby, Boletus versicolor (turkey tail), plate 229 from Coloured Figures of English Fungi or Mushrooms (1799), hand-coloured engraving; the pencilled name below, Polystictus versicolor, is a later reader’s&lt;/small&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;p&gt;The following notes relate to observations made during a year’s collecting on the sporophores or fruiting bodies of &lt;em&gt;Polyporus versicolor&lt;/em&gt; L., in various parts of New Jersey. Eighty percent of some fifty species of polypores found in New Jersey were observed to be infested by insects and &lt;em&gt;Polyporus versicolor&lt;/em&gt; appeared to attract the largest number of species all of which belonged to the Coleoptera.&lt;/p&gt;&lt;p&gt;. . . It is difficult to explain why &lt;em&gt;versicolor&lt;/em&gt; harbors so many insects unless it is the qualities of the context which attract them. Other polypores having a much thicker and fleshier context attract considerably fewer species. Altogether twenty-four species of Coleoptera, representing thirteen families, were found associated with &lt;em&gt;versicolor&lt;/em&gt; . . .&lt;/p&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;em&gt;Harry B. Weiss, “Coleoptera Associated with Polyporus versicolor L. in New Jersey”, Psyche 27 (December 1920), pp. 137–138&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/seasons.html?day=11-23&quot;&gt;The day in The Earthly Book of Hours&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
   <item>
     <title>Lectio Terra: Fen and Wetland</title>
     <link>https://earthlyhours.com/lectio-terra/fen-and-wetland/</link>
