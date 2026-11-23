@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/import_substack.py",
-  "generatedAt": "2026-11-15T19:33:08+00:00",
+  "generatedAt": "2026-11-23T03:44:18+00:00",
   "seasons": {
     "spring": [
       {
@@ -3614,6 +3614,114 @@
             {
               "from": "r-0136",
               "text": "If I cannot carry forests on my back, Neither can you crack a nut."
+            }
+          ]
+        }
+      },
+      {
+        "id": "lt-0036",
+        "aliases": [
+          "week-45-fen-and-wetland-charles-kinglsey"
+        ],
+        "postId": "224028638.week-45-fen-and-wetland-charles-kinglsey",
+        "season": "autumn",
+        "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+        "subtitle": "The transitional wetland that might contain ghosts, insurgents, or poets",
+        "published": "2026-11-22",
+        "day": "11-22",
+        "canonicalUrl": "https://laurentia.substack.com/p/week-45-fen-and-wetland-charles-kinglsey",
+        "images": [
+          {
+            "src": "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e.jpeg",
+            "alt": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!aTTZ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ffe794-b574-4d78-aab1-509a6dcd80b7_3980x1908.jpeg"
+          },
+          {
+            "src": "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9.jpeg",
+            "alt": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!an7p!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd282a7aa-9db3-47a2-ac8a-4da29632a18c_900x506.jpeg"
+          },
+          {
+            "src": "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b.jpeg",
+            "alt": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+            "remoteSrc": "https://substackcdn.com/image/fetch/$s_!Sr6j!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5cf1252c-c7a4-4738-b622-12e7673d1c1d_3811x1766.jpeg"
+          }
+        ],
+        "body": [
+          {
+            "image": "i-0188"
+          },
+          {
+            "heading": "Headnote",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0109",
+            "blocks": [
+              0,
+              6
+            ]
+          },
+          {
+            "image": "i-0189"
+          },
+          {
+            "writing": "w-0109",
+            "blocks": [
+              6,
+              7
+            ]
+          },
+          {
+            "heading": "Readings",
+            "tag": "h2"
+          },
+          {
+            "reading": "r-0156"
+          },
+          {
+            "reading": "r-0157"
+          },
+          {
+            "reading": "r-0158"
+          },
+          {
+            "reading": "r-0159"
+          },
+          {
+            "heading": "Supplementum",
+            "tag": "h2"
+          },
+          {
+            "writing": "w-0110",
+            "blocks": [
+              0,
+              1
+            ]
+          },
+          {
+            "image": "i-0190"
+          }
+        ],
+        "page": "lectio-terra/fen-and-wetland/",
+        "subject": "ph-0014",
+        "syndication": {
+          "hashtags": [
+            "backbayfens",
+            "olmsted"
+          ],
+          "excerpts": [
+            {
+              "from": "w-0109",
+              "text": "Fen dwellers, who were losing their common grazing, fishing, and reed-cutting rights to this “improvement,” fought back as the Fen Tigers, tearing down sluices and setting reed beds on fire."
+            },
+            {
+              "from": "w-0109",
+              "text": "In Massachusetts, the tidal salt marshes and freshwater swamps surrounding the former Newtowne, now known as Cambridge, were buried rather than drained."
+            },
+            {
+              "from": "r-0156",
+              "text": "A certain sadness is pardonable to one who watches the destruction of a grand natural phenomenon, even though its destruction bring blessings to the human race."
             }
           ]
         }

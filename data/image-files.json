@@ -4290,6 +4290,90 @@
         }
       ]
     },
+    "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e.jpeg": {
+      "bytes": 110257,
+      "width": 1456,
+      "height": 698,
+      "sha256": "e576293962fbac87946eac53eaa544abc3a9b605e7d19032868c62c3a4995295",
+      "settings": "89e48fac760f",
+      "credit": "a4a25dfebf7e",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-800.webp",
+          "width": 800,
+          "height": 384,
+          "bytes": 28942
+        },
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-1600.webp",
+          "width": 1456,
+          "height": 698,
+          "bytes": 76746
+        },
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-2400.webp",
+          "width": 1456,
+          "height": 698,
+          "bytes": 76746
+        }
+      ]
+    },
+    "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9.jpeg": {
+      "bytes": 83955,
+      "width": 900,
+      "height": 506,
+      "sha256": "f22a314e5cd27c18cec4463ebabd7181b0a61d2f28a67ca2bebaeb6b5d5c84bb",
+      "settings": "89e48fac760f",
+      "credit": "a4a25dfebf7e",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 53020
+        },
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9-1600.webp",
+          "width": 900,
+          "height": 506,
+          "bytes": 65822
+        },
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9-2400.webp",
+          "width": 900,
+          "height": 506,
+          "bytes": 65822
+        }
+      ]
+    },
+    "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b.jpeg": {
+      "bytes": 120038,
+      "width": 1456,
+      "height": 675,
+      "sha256": "3da135aadd43096bfc027160ed4657c32bed352c7723555c8e03a1f4e77dbab7",
+      "settings": "89e48fac760f",
+      "credit": "a4a25dfebf7e",
+      "copies": [
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b-800.webp",
+          "width": 800,
+          "height": 371,
+          "bytes": 26336
+        },
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b-1600.webp",
+          "width": 1456,
+          "height": 675,
+          "bytes": 87298
+        },
+        {
+          "file": "images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b-2400.webp",
+          "width": 1456,
+          "height": 675,
+          "bytes": 87298
+        }
+      ]
+    },
     "images/lectio-terra/224393775.week-44-eastern-grey-squirrel-meriwether-1-f3411bb05b73.jpeg": {
       "bytes": 138463,
       "width": 1200,

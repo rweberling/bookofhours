@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Built by scripts/build_lectio_pages.py from data/lectio-data.json and seasons.html; edit those, not this. -->
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- shared:head, from partials/head.html (run scripts/build_shared.py); edit it there -->
+<link rel="icon" type="image/png" href="images/emblemicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/emblemicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/emblemicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/emblemicon/favicon-16x16.png">
+<link rel="shortcut icon" href="images/emblemicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/emblemicon/apple-touch-icon.png">
+<link rel="manifest" href="images/emblemicon/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Lectio Terra" href="feed.xml">
+<link rel="alternate" type="application/rss+xml" title="The Year" href="year.xml">
+<meta name="apple-mobile-web-app-title" content="Earthly Hours">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Analytics, on earthlyhours.com only: a copy served anywhere else (a
+     local test server, say) counts nothing.
+     Cloudflare Web Analytics: cookieless page counts. Runs alongside the
+     Google tag for now, to compare the two. (If the site is ever proxied
+     through Cloudflare, turn off its automatic setup, or visits count twice.)
+     Google tag (gtag.js); display_mode tells home-screen visits from browser ones. -->
+<script>
+  if (/(^|\.)earthlyhours\.com$/.test(location.hostname)) {
+    [['https://static.cloudflareinsights.com/beacon.min.js', { cfBeacon: '{"token": "512cda5e961b4191b6f08cbcb80fc315"}' }],
+     ['https://www.googletagmanager.com/gtag/js?id=G-P4407N365M', {}]].forEach(function (item) {
+      var script = document.createElement('script');
+      script.async = true; script.src = item[0];
+      Object.keys(item[1]).forEach(function (key) { script.dataset[key] = item[1][key]; });
+      document.head.appendChild(script);
+    });
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // The site maker's own visits: opening any page with ?me marks this
+  // browser (?notme unmarks it), and its visits go to Google Analytics as
+  // internal traffic, which the Internal traffic data filter leaves out.
+  // The mark is in localStorage, which Safari clears after about a week
+  // away, as it does the analytics cookie.
+  var gaSettings = {
+    display_mode: (window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true) ? 'standalone' : 'browser'
+  };
+  try {
+    var query = new URLSearchParams(location.search);
+    if (query.has('me')) localStorage.setItem('earthlyhours-me', '1');
+    if (query.has('notme')) localStorage.removeItem('earthlyhours-me');
+    if (query.has('me') || query.has('notme')) {
+      query.delete('me'); query.delete('notme');
+      history.replaceState(history.state, '', location.pathname + (query.toString() ? '?' + query : '') + location.hash);
+    }
+    if (localStorage.getItem('earthlyhours-me') === '1') gaSettings.traffic_type = 'internal';
+  } catch (e) {}
+  gtag('config', 'G-P4407N365M', gaSettings);
+</script>
+<!-- /shared:head -->
+<meta name="description" content="The transitional wetland that might contain ghosts, insurgents, or poets. Curated readings and images for Fen and Wetland (Fenn), in season in November in New England, with Charles Kinglsey, Amy Lowell, Arielle Kaplan and John Clare.">
+<meta property="og:title" content="Lectio Terra: Fen and Wetland">
+<meta property="og:description" content="The transitional wetland that might contain ghosts, insurgents, or poets. Curated readings and images for Fen and Wetland (Fenn), in season in November in New England, with Charles Kinglsey, Amy Lowell, Arielle Kaplan and John Clare.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Earthly Book of Hours">
+<meta property="og:image" content="https://earthlyhours.com/images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-1600.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://earthlyhours.com/lectio-terra/fen-and-wetland/">
+<link rel="canonical" href="https://earthlyhours.com/lectio-terra/fen-and-wetland/">
+<meta name="application-name" content="The Earthly Book of Hours">
+<title>Lectio Terra: Fen and Wetland — The Earthly Book of Hours</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="citation_title" content="Lectio Terra: Fen and Wetland">
+<meta name="citation_author" content="Weberling, Ryan">
+<meta name="citation_publication_date" content="2026/11/22">
+<meta name="DC.type" content="blogPost">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lectio Terra: Fen and Wetland",
+  "name": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+  "alternativeHeadline": "The transitional wetland that might contain ghosts, insurgents, or poets",
+  "description": "The transitional wetland that might contain ghosts, insurgents, or poets. Curated readings and images for Fen and Wetland (Fenn), in season in November in New England, with Charles Kinglsey, Amy Lowell, Arielle Kaplan and John Clare.",
+  "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Weberling"
+  },
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Lectio Terra",
+    "url": "https://earthlyhours.com/lectio-terra/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Earthly Book of Hours",
+    "url": "https://earthlyhours.com/"
+  },
+  "datePublished": "2026-11-22",
+  "image": "https://earthlyhours.com/images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-1600.webp",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Boston Basin",
+    "description": "Near the Charles River, between the northeastern woodlands and the Atlantic coast; Massachusetts, United States.",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.4,
+      "longitude": -71.1
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Fen and Wetland",
+    "@id": "https://earthlyhours.com/id/ph-0014/",
+    "url": "https://earthlyhours.com/id/ph-0014/",
+    "sameAs": "https://www.wikidata.org/wiki/Q514050"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "The Earthly Book of Hours",
+      "item": "https://earthlyhours.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lectio Terra",
+      "item": "https://earthlyhours.com/lectio-terra/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fen and Wetland",
+      "item": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="season-reading-page" data-season="autumn" data-entry="lt-0036">
+<!-- shared:frame, from partials/frame.html (run scripts/build_shared.py); edit it there -->
+<div class="outer-frame"></div>
+<div class="corner corner-tl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-tr">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-bl">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<div class="corner corner-br">
+  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 4 L4 20 M4 4 L20 4" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+    <path d="M4 4 Q15 4 15 15 Q15 26 4 26" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+    <circle cx="4" cy="4" r="2" fill="currentColor" opacity="0.45"/>
+  </svg>
+</div>
+<!-- /shared:frame -->
+<!-- The figures' lightbox (openLightbox() in shared.js) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Expanded image view" aria-modal="true">
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<main class="page keepsake-frame season-reading">
+  <p class="publication-name">The Earthly Book of Hours</p>
+  <div class="rule-ornament" aria-hidden="true"><div class="line"></div><div class="lozenge">✦</div><div class="diamond"></div><div class="lozenge">✦</div><div class="line"></div></div>
+  <p class="block-subtitle"><button class="pane-link" id="season-reading-subtitle" type="button" aria-describedby="season-reading-subtitle-hint">Autumn</button></p>
+  <span class="visually-hidden" id="season-reading-subtitle-hint">Open Wander the Seasons</span>
+  <h1 class="block-name"><button class="pane-link" id="season-reading-title" type="button" aria-describedby="season-reading-subtitle-hint">Fen and Wetland</button></h1>
+  <div class="season-reading-meta"><em id="season-reading-latin">Fenn</em></div>
+  <!-- The week around a day (seasons.js, showDay): filled and shown only on a day with a card. -->
+  <nav class="season-week" id="season-week" aria-label="This week" hidden></nav>
+  <article class="season-post" aria-live="polite">
+    <p class="season-post-dek" id="season-reading-dek">Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare</p>
+    <div id="season-reading-body">
+<figure><a target="_blank" href="images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e.jpeg"><img loading="lazy" src="images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-1600.webp" srcset="images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-800.webp 800w, images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-1600.webp 1600w, images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e.jpeg" width="1456" height="698" alt="A wide, soft-toned photograph taken at water level: white water lilies and their dark pads float on still water in front of a dense wall of tall reeds, with a few trees beyond under a pale sky."></a><figcaption>Fig. 1. Untitled photograph. From P.H. Emerson and T.F. Goodall. <a href="https://www.metmuseum.org/art/collection/search/290484" rel="noopener" target="_blank">Life and Landscape on the Norfolk Broads</a>. London: Sampson Low, Marston, Searle, and Rivington, 1885-1886.<a class="record-mark" href="/id/i-0188/" title="The record: i-0188" aria-label="The record, i-0188">¶</a></figcaption></figure><h2>Headnote</h2><p>While fall may be the season of the <a href="lectio-terra/northern-red-oak/">woodlands</a>, the transition into winter can shift plant and animal activity toward the lower, tighter structure of all those water-adjacent landforms: fens, marshlands, bogs, mires and quagmires, swamps, sloughs, and swales—not to mention bayous, <a href="https://en.wikipedia.org/wiki/Pocosin" rel="noopener" target="_blank">pocosins</a>, and the many other regional variations of wetlands. If you’ve never stopped to wonder how these terms relate and differ, you’re not alone. Here’s what I’ve learned through a couple late nights spent down the (water-logged) rabbit hole.</p><p>The short version is that wetlands are sorted by water source and plant growth. A <em>marsh</em> is ruled by soft-stemmed plants (grasses, sedges, rushes) and can contain freshwater (palustrine), saltwater (estuarine), or a mix (brackish). A <em>swamp</em> is a wetland with trees or shrubs. <em>Bogs</em> and <em>fens</em>, both also called “mires,” gradually build up layers of peat; they differ primarily in where their water comes from. A bog, fed only by rain,  turns acidic and nutrient-poor, while a fen is fed by mineral-rich groundwater, which makes it less acidic and allows it to support a wider variety of species. Fens are also transitional wetlands: as their peat thickens, their surface can lift above the reach of groundwater, eventually transforming them into rain-fed bogs. The other wetlands are mostly regional dialect. The <em>pocosin</em> of the Carolinas takes its name from an Algonquian word usually glossed as “swamp on a hill,” for evergreen shrub bogs raised on their own peat. <em>Swales</em>, <em>sloughs,</em> and <em>bayous</em> refer to the low shape of the ground more than what specifically grows there. <em>Fen</em> is one of the oldest wetlands words: Old English <em>fenn</em> (“marsh, mud, dirt”) reaches back through Proto-Germanic <em>fanja</em>- (“swamp, marsh”) to the Proto-Indo-European root <em>pen</em>- (“swamp”).</p><p>I’ve written <a href="lectio-terra/cambridge-argillite/">previously</a> about how the easternmost edge of Massachusetts shares <a href="https://en.wikipedia.org/wiki/Avalonia" rel="noopener" target="_blank">ancient bedrock</a> with England and Wales. While this shared subterranean layer has little to do with either region’s contemporary topography, the two coincidentally share several features that make them ripe for wetlands. Their extensive patches of fens and salt marshes often lie in glacially sculpted, low-lying coastal basins. These basins are lined with impermeable clay and dotted with islands of harder bedrock or glacial deposits, which together trap freshwater runoff and the sea as it rose after the glaciers melted.</p><p>In 1630, the same year that my current hometown was founded as “<a href="https://www.cambridgema.gov/historic/cambridgehistory" rel="noopener" target="_blank">Newtowne</a>,” the English began in earnest to drain the vast fenlands region sprawling for approximately 1,500 square miles north of the University of Cambridge. This region is where Hereward the Wake and other English militants had staged their heroic resistance against William the Conquerer—a strategy replayed across the Atlantic when escaped slaves, indigenous Americans, and other groups gathered for shelter or insurgency. The great drainage projects north of Cambridge had begun more than a millennium prior, with Roman ditch-digging projects, but it achieved infrastructural scale when a group of aristocrats hired a Dutch engineer, Cornelius Vermuyden, to cut two straight channels, the Old and New Bedford Rivers, to help drain the Ouse River to the sea. Fen dwellers, who were losing their common grazing, fishing, and reed-cutting rights to this “improvement,” fought back as the Fen Tigers, tearing down sluices and setting reed beds on fire. To no avail.</p><p>In Massachusetts, the tidal salt marshes and freshwater swamps surrounding the former Newtowne, now known as Cambridge, were buried rather than drained. The “Great Marsh” that once cut East Cambridge off from the rest of town was gone by the late nineteenth century, filled in with whatever debris the small city was accumulating, including ash and cinders. Something like a third of the city now stands on filled wetland. Across the Charles River, meanwhile, Frederick Law Olmsted began building a new “fen” from scratch. His Back Bay Fens, begun in 1879, was in fact designed as a restored salt marsh that would be flushed by the tides twice a day (it doubled as a sewage and flood basin). However, when the Charles River Dam arrived in 1910, it shut out the tides, making Olmsted’s salt marsh into a freshwater one: closer to its name, though by the definitions above still not quite a fen.</p><p>In both Cambridges, the majority of these ancient ecosystems were altered or erased. Less than one percent of the original English fens survives undrained, and the Boston area has lost about four-fifths of its salt marshes. “And, muse and marvel where we may, / Gain mars the landscape every day,” as John Clare writes in his poem “The Fens.”</p><figure><a target="_blank" href="images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9.jpeg"><img loading="lazy" src="images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9-1600.webp" srcset="images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9-800.webp 800w, images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9-1600.webp 1600w, images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9.jpeg" width="900" height="506" alt="A video still of reeds and sky reflected in rippling water, the green stems bending into wavy lines across blue sky and drifting cloud."></a><figcaption>Fig. 2. Amy Kaczur. <em><a href="http://www.amykaczur.com/2d/messages-from-the-marsh-part-5-video-still-10" rel="noopener" target="_blank">Messages from the Marsh, Part 5, video still 10 </a></em>(2026). From <a href="http://www.amykaczur.com/uncategorized/messages-from-the-marsh-part-4-6" rel="noopener" target="_blank">Messages from the Marsh, Part 4-6</a> (2024).<a class="record-mark" href="/id/i-0189/" title="The record: i-0189" aria-label="The record, i-0189">¶</a></figcaption></figure><hr><h2>Readings</h2><ol><li><p>A certain sadness is pardonable to one who watches the destruction of a grand natural phenomenon, even though its destruction bring blessings to the human race. Reason and conscience tell us, that it is right and good that the Great Fen should have become, instead of a waste and howling wilderness, a garden of the Lord, where</p><p></p><p>‘All the land in flowery squares,<br>Beneath a broad and equal-blowing wind,<br>Smells of the coming summer.’</p><p></p><p>And yet the fancy may linger, without blame, over the shining meres, the golden reed-beds, the countless water-fowl, the strange and gaudy insects, the wild nature, the mystery, the majesty--for mystery and majesty there were--which haunted the deep fens for many a hundred years. Little thinks the Scotsman, whirled down by the Great Northern Railway from Peterborough to Huntingdon, what a grand place, even twenty years ago, was that Holme and Whittlesea, which is now but a black, unsightly, steaming flat, from which the meres and reed-beds of the old world are gone, while the corn and roots of the new world have not as yet taken their place.<br><br>But grand enough it was, that black ugly place, when backed by Caistor Hanglands and Holme Wood, and the patches of the primaeval forest; while dark-green alders, and pale-green reeds, stretched for miles round the broad lagoon, where the coot clanked, and the bittern boomed, and the sedge-bird, not content with its own sweet song, mocked the notes of all the birds around; while high overhead hung, motionless, hawk beyond hawk, buzzard beyond buzzard, kite beyond kite, as far as eye could see. </p></li></ol><div class="reading-citation">Charles Kingsley. “<a href="https://hdl.handle.net/2027/uva.x002313109?urlappend=%3Bseq=100%3Bownerid=27021597769935812-104" rel="noopener" target="_blank">The Fens.</a>” <em>Prose Idylls: New and Old</em>. London Macmillan and Co., Limited, 1900. 89-90.<a class="record-mark" href="/id/r-0156/" title="The record: r-0156" aria-label="The record, r-0156">¶</a></div><ol><li class="reading-verse"><span class="verse-line" style="--indent: 0">THROUGH the Spring-thickened branches</span><span class="verse-line" style="--indent: 0">I see it floating,</span><span class="verse-line" style="--indent: 0">An ivory dome</span><span class="verse-line" style="--indent: 0">Headed to gold by the dim sun.</span><span class="verse-gap"></span><span class="verse-line" style="--indent: 0">It hangs against a white-misted sky,</span><span class="verse-line" style="--indent: 0">And the swollen branches</span><span class="verse-line" style="--indent: 0">Open or cover it,</span><span class="verse-line" style="--indent: 0">As they blow in the wet wind.</span></li></ol><div class="reading-citation">Amy Lowell. “<a href="https://archive.org/details/bub_gb_K5cCAAAAYAAJ/page/n119/mode/2up?q=fens" rel="noopener" target="_blank">The Back Bay Fens (Study in Orange and Silver).</a>” <em>Pictures of the Floating World. </em>New York: The Macmillan Company, 1919. 104.<a class="record-mark" href="/id/r-0157/" title="The record: r-0157" aria-label="The record, r-0157">¶</a></div><ol><li class="reading-verse"><span class="verse-line" style="--indent: 0">…You tried to explain it</span><span class="verse-line" style="--indent: 0">once, to your mother, how death speaks to you,</span><span class="verse-line" style="--indent: 0">seeks you out like a worm shivering on the sidewalk,</span><span class="verse-line" style="--indent: 0">and she cried into her appetizer: “Is this a <em>poet thing</em>?”</span><span class="verse-line" style="--indent: 0">The truth is you inherited it from her, from the way</span><span class="verse-line" style="--indent: 0">she said good morning to the decaying deer</span><span class="verse-line" style="--indent: 0">threaded through the guardrail on the highway.</span><span class="verse-line" style="--indent: 0">The nights she played records and pulled you to her</span><span class="verse-line" style="--indent: 0">to dance, you couldn’t help imagining her gone—</span><span class="verse-line" style="--indent: 0">the way, when you see a boot floating in the gunk</span><span class="verse-line" style="--indent: 0">along the edge of a river, you can’t help imagining</span><span class="verse-line" style="--indent: 0">a body, nose plugged with silt, eyes blank</span><span class="verse-line" style="--indent: 0">and bloodless as garlic cloves.</span></li></ol><div class="reading-citation">Arielle Kaplan. “<a href="https://www.pangyrus.com/poetry/dead-animals/" rel="noopener" target="_blank">Dead Animals</a>.” <em>Pangyrus</em> (June 14, 2022).<a class="record-mark" href="/id/r-0158/" title="The record: r-0158" aria-label="The record, r-0158">¶</a></div><ol><li class="reading-verse"><span class="verse-line" style="--indent: 0">Such is our lowland scene that winter gives,</span><span class="verse-line" style="--indent: 0">And strangers wonder where our comfort lives;</span><span class="verse-line" style="--indent: 0">Yet in a little close, however keen</span><span class="verse-line" style="--indent: 0">The winter comes, I find a patch of green,</span><span class="verse-line" style="--indent: 0">Where robins, by the miser winter made</span><span class="verse-line" style="--indent: 0">Domestic, flirt and perch upon the spade[…]</span></li></ol><div class="reading-citation">John Clare. “<a href="https://archive.org/details/selectedpoemsofj0000clar/page/86/mode/2up?q=winter" rel="noopener" target="_blank">[Winter in the Fens]</a>.” c. 1832-1837. <em>Selected Poems of John Clare</em>. Ed. James Reeves. 1954. London: Heinemann, 1964. 87-88.<a class="record-mark" href="/id/r-0159/" title="The record: r-0159" aria-label="The record, r-0159">¶</a></div><h2>Supplementum</h2><ul><li><p>Natural Heritage and Endangered Species Program. “<a href="http://www.mass.gov/doc/sea-level-fen-0/download" rel="noopener" target="_blank">Sea-Level Fen</a>.” <em>Classification of the Natural Communities of Massachusetts</em>. Massachusetts Division of Fisheries and Wildlife, 2016.</p></li><li><p>“<a href="http://www.mass.gov/info-details/bog-turtle" rel="noopener" target="_blank">Bog Turtle</a>.” <em>Massachusetts Division of Fisheries and Wildlife</em> (March 14, 2025). </p></li><li><p>Bodleian Map Room Blog. “<a href="http://blogs.bodleian.ox.ac.uk/maps/2022/02/01/dryness-pleaseth/" rel="noopener" target="_blank">Dryness Pleaseth…</a>” <em>Bodleian Libraries</em> (February 1, 2022).</p></li><li><p>Erin Lafford. “<a href="https://romanticcatastrophe.leeds.ac.uk/2017/05/30/vile-atmospheres-and-stagnant-wonders-clare-in-the-fens/" rel="noopener" target="_blank">Vile Atmospheres and Stagnant Wonders: Clare in the Fens.</a>” <em>Romantic Climates </em>(May 30, 2017).</p></li><li><p>Myles Badger. “<a href="https://donotresearch.substack.com/p/geoengineering-with-shovels" rel="noopener" target="_blank">Geoengineering with Shovels: Mosquitoes, Megaprojects, and the New Deal’s Least-Remembered Public Health Initiative</a>.” <em>Do Not Research </em>(May 25, 2026).</p></li><li><p>P.H. Emerson and T.F. Goodall. <a href="https://www.metmuseum.org/art/collection/search/290484" rel="noopener" target="_blank">Life and Landscape on the Norfolk Broads</a>. London: Sampson Low, Marston, Searle, and Rivington, 1885-1886.</p></li></ul><figure><a target="_blank" href="images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b.jpeg"><img loading="lazy" src="images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b-1600.webp" srcset="images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b-800.webp 800w, images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b-1600.webp 1600w, images/web/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b-2400.webp 2400w" sizes="(max-width: 680px) 92vw, 640px" data-master="images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b.jpeg" width="1456" height="675" alt="A painting of a broad, flat green salt meadow dotted with round haystacks and puddles, a hay cart and small figures at work in the middle distance, under dark storm clouds that break to let shafts of sunlight fall on the marsh."></a><figcaption>Fig. 3. Martin Johnson Heade. <em><a href="https://www.metmuseum.org/art/collection/search/11053" rel="noopener" target="_blank">Newburyport Meadows</a></em> (c. 1876-1881)<a class="record-mark" href="/id/i-0190/" title="The record: i-0190" aria-label="The record, i-0190">¶</a></figcaption></figure>
+</div>
+  </article>
+  <div class="phenomena season-post-observation"><p class="phenomena-list" id="season-reading-observation">Published November 22, 2026</p></div>
+  <div class="turn-the-page visible season-turn"><span class="ttp-bracket">[</span><span class="season-turn-part" id="season-turn-part"><button class="page-action" id="season-turn-page" aria-label="Load another species reading">turn the page</button><span class="ttp-sep" aria-hidden="true">|</span></span><button class="page-action" id="keep-page" type="button" aria-label="Keep this page: save it as an image or copy its link">keep this page</button><span class="ttp-bracket">]</span></div>
+  <footer class="page-footer" style="opacity:1;"><div class="rule-ornament" style="max-width:260px; margin-bottom:0;" aria-hidden="true"><div class="line"></div><div class="diamond"></div><div class="line"></div></div><p class="colophon"><span>A seasonal reading from <a href="seasons-incipit.html">Lectio Terra</a></span></p><button class="pane-link season-emblem-link" id="season-emblem-open" type="button" aria-label="Wander the Seasons"><svg class="season-emblem" id="season-emblem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg></button></footer>
+</main>
+<!-- shared:nav, from partials/nav.html (run scripts/build_shared.py); edit it there -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-hours-trigger">The Hours</button>
+    <div class="nav-hours-menu" id="nav-hours-menu">
+      <a href="hours-incipit.html">Incipit</a>
+      <a href="index.html">The Current Hour</a>
+      <a href="index.html#wander">Wander the Hours</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-seasons-trigger">The Seasons</button>
+    <div class="nav-hours-menu" id="nav-seasons-menu">
+      <a href="seasons-incipit.html">Incipit</a>
+      <a class="active" href="seasons.html">The Current Season</a>
+      <button class="wander-btn" id="season-wander-open">Wander the Seasons</button>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-weather-trigger">The Weather</button>
+    <div class="nav-hours-menu" id="nav-weather-menu">
+      <a href="weather-incipit.html">Incipit</a>
+      <a href="weather.html">The Current Weather</a>
+      <a href="weather.html#wander">Wander the Weather</a>
+    </div>
+  </div>
+  <span class="nav-divider">✦</span>
+  <a href="about.html">About</a>
+  <span class="nav-divider">✦</span>
+  <a href="sources.html">Sources</a>
+  <span class="nav-divider">✦</span>
+  <div class="nav-hours-group">
+    <button class="nav-hours-trigger" id="nav-projects-trigger">The Scriptorium</button>
+    <div class="nav-hours-menu nav-end-menu" id="nav-projects-menu">
+      <a href="#letters">Letters from Otherwise</a>
+      <a href="editions.html">Otherwise Editions</a>
+      <a href="https://otherwise.dfos.com/p/earthlyhours" target="_blank" rel="noopener">Support the Project</a>
+      <a href="https://otherwise.dfos.com" target="_blank" rel="noopener">Otherwise on DFOS <span class="ext-arrow" aria-hidden="true">↗</span></a>
+      <button class="install-btn" id="install-btn" type="button">Add to Home Screen</button>
+      <p class="install-tip" id="install-tip"></p>
+    </div>
+  </div>
+</nav>
+<!-- /shared:nav -->
+<div class="wander-pane" id="season-pane" role="dialog" aria-label="The Seasons" aria-modal="true">
+  <button class="wander-close" id="season-close" aria-label="Close">✦ &nbsp;Close</button>
+  <p class="wander-heading">The Seasons</p>
+  <p class="wander-subheading" id="season-subheading">Species drawn from Lectio Terra, by season</p>
+  <div class="season-dial-wrap" aria-hidden="true"><svg id="season-dial" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <p class="season-dial-caption" id="season-dial-caption"></p>
+  <p class="dial-legend" aria-hidden="true"><span class="dial-key"><span class="dial-key-star">✦</span>You are here</span><span class="dial-key"><span class="dial-key-quarter"></span>Solstice or equinox</span><span class="dial-key"><span class="dial-key-cross"></span>Cross-quarter day</span></p>
+  <div class="species-grid species-season-groups" id="species-grid"></div>
+</div>
+<script type="application/json" id="post-entry">{"id": "lt-0036", "readingLabels": []}</script>
+<script type="module" src="dfos-siwd.js"></script>
+<script src="shared.js"></script>
+<script src="atmosphere.js"></script>
+<script src="seasons.js"></script>
+<script src="keep.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

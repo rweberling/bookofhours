@@ -1,0 +1,80 @@
+{
+  "@id": "https://earthlyhours.com/id/ph-0014/",
+  "id": "ph-0014",
+  "name": "Fen and Wetland",
+  "latin": "Fenn",
+  "wikidata": "Q514050",
+  "hashtags": [
+    "fens",
+    "wetlands",
+    "marshes"
+  ],
+  "gloss": {
+    "text": "Old English, “marsh, mud, dirt”: one of the oldest wetland words, reaching back through Proto-Germanic <em>fanja-</em>, “swamp, marsh”, to the Proto-Indo-European root <em>pen-</em>, “swamp”."
+  },
+  "records": [
+    "r-0156",
+    "r-0157",
+    "r-0158",
+    "r-0159",
+    "i-0188",
+    "i-0189",
+    "i-0190"
+  ],
+  "related": {
+    "seasons": [
+      {
+        "@id": "https://earthlyhours.com/id/autumn/",
+        "id": "autumn",
+        "name": "Autumn"
+      }
+    ],
+    "posts": [
+      {
+        "id": "lt-0036",
+        "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+        "published": "2026-11-22",
+        "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
+      }
+    ],
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0156/",
+        "id": "r-0156",
+        "name": "“r-0156”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0157/",
+        "id": "r-0157",
+        "name": "“r-0157”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0158/",
+        "id": "r-0158",
+        "name": "“r-0158”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0159/",
+        "id": "r-0159",
+        "name": "“r-0159”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0188/",
+        "id": "i-0188",
+        "name": "Untitled photograph. From P.H. Emerson and T.F. Goodall. Life and Landscape on the …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0189/",
+        "id": "i-0189",
+        "name": "Amy Kaczur. Messages from the Marsh, Part 5, video still 10 (2026). From Messages from …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0190/",
+        "id": "i-0190",
+        "name": "Martin Johnson Heade. Newburyport Meadows (c. 1876-1881)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

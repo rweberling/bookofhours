@@ -6333,5 +6333,58 @@
       "seasons": ["winter"],
       "phenomena": ["ph-0013"]
     }
+  },
+  {
+    "id": "i-0188",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-1-c2755d3b943e.jpeg",
+    "caption": "Untitled photograph. From P.H. Emerson and T.F. Goodall. <a href=\"https://www.metmuseum.org/art/collection/search/290484\" rel=\"noopener\" target=\"_blank\">Life and Landscape on the Norfolk Broads</a>. London: Sampson Low, Marston, Searle, and Rivington, 1885-1886.",
+    "lectio": { "post": "lt-0036", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0014"]
+    },
+    "display": {
+      "size": [1456, 698]
+    },
+    "alt": "A wide, soft-toned photograph taken at water level: white water lilies and their dark pads float on still water in front of a dense wall of tall reeds, with a few trees beyond under a pale sky.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+  },
+  {
+    "id": "i-0189",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9.jpeg",
+    "caption": "Amy Kaczur. <em><a href=\"http://www.amykaczur.com/2d/messages-from-the-marsh-part-5-video-still-10\" rel=\"noopener\" target=\"_blank\">Messages from the Marsh, Part 5, video still 10 </a></em>(2026). From <a href=\"http://www.amykaczur.com/uncategorized/messages-from-the-marsh-part-4-6\" rel=\"noopener\" target=\"_blank\">Messages from the Marsh, Part 4-6</a> (2024).",
+    "lectio": { "post": "lt-0036", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0014"]
+    },
+    "display": {
+      "size": [900, 506]
+    },
+    "alt": "A video still of reeds and sky reflected in rippling water, the green stems bending into wavy lines across blue sky and drifting cloud."
+  },
+  {
+    "id": "i-0190",
+    "shownIn": "seasons",
+    "file": "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-3-76b67dcc058b.jpeg",
+    "caption": "Martin Johnson Heade. <em><a href=\"https://www.metmuseum.org/art/collection/search/11053\" rel=\"noopener\" target=\"_blank\">Newburyport Meadows</a></em> (c. 1876-1881)",
+    "lectio": { "post": "lt-0036", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0014"]
+    },
+    "display": {
+      "size": [1456, 675]
+    },
+    "alt": "A painting of a broad, flat green salt meadow dotted with round haystacks and puddles, a hay cart and small figures at work in the middle distance, under dark storm clouds that break to let shafts of sunlight fall on the marsh.",
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
   }
 ]

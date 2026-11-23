@@ -1,0 +1,83 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0156/",
+  "id": "r-0156",
+  "shownIn": "seasons",
+  "text": "<p>A certain sadness is pardonable to one who watches the destruction of a grand natural phenomenon, even though its destruction bring blessings to the human race. Reason and conscience tell us, that it is right and good that the Great Fen should have become, instead of a waste and howling wilderness, a garden of the Lord, where</p><p></p><p>‘All the land in flowery squares,<br>Beneath a broad and equal-blowing wind,<br>Smells of the coming summer.’</p><p></p><p>And yet the fancy may linger, without blame, over the shining meres, the golden reed-beds, the countless water-fowl, the strange and gaudy insects, the wild nature, the mystery, the majesty--for mystery and majesty there were--which haunted the deep fens for many a hundred years. Little thinks the Scotsman, whirled down by the Great Northern Railway from Peterborough to Huntingdon, what a grand place, even twenty years ago, was that Holme and Whittlesea, which is now but a black, unsightly, steaming flat, from which the meres and reed-beds of the old world are gone, while the corn and roots of the new world have not as yet taken their place.<br><br>But grand enough it was, that black ugly place, when backed by Caistor Hanglands and Holme Wood, and the patches of the primaeval forest; while dark-green alders, and pale-green reeds, stretched for miles round the broad lagoon, where the coot clanked, and the bittern boomed, and the sedge-bird, not content with its own sweet song, mocked the notes of all the birds around; while high overhead hung, motionless, hawk beyond hawk, buzzard beyond buzzard, kite beyond kite, as far as eye could see. </p>",
+  "citation": {
+    "display": "Charles Kingsley. “<a href=\"https://hdl.handle.net/2027/uva.x002313109?urlappend=%3Bseq=100%3Bownerid=27021597769935812-104\" rel=\"noopener\" target=\"_blank\">The Fens.</a>” <em>Prose Idylls: New and Old</em>. London Macmillan and Co., Limited, 1900. 89-90.",
+    "edition": {
+      "id": "e-0236",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0036",
+    "place": 1
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0014"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0014/",
+        "id": "ph-0014",
+        "name": "Fen and Wetland",
+        "scientific": "Fenn",
+        "wikidata": "Q514050"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0236/",
+      "id": "e-0236",
+      "name": "e-0236"
+    },
+    "post": {
+      "id": "lt-0036",
+      "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+      "published": "2026-11-22",
+      "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0188/",
+        "id": "i-0188",
+        "name": "Untitled photograph. From P.H. Emerson and T.F. Goodall. Life and Landscape on the …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0189/",
+        "id": "i-0189",
+        "name": "Amy Kaczur. Messages from the Marsh, Part 5, video still 10 (2026). From Messages from …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0157/",
+        "id": "r-0157",
+        "name": "“r-0157”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0158/",
+        "id": "r-0158",
+        "name": "“r-0158”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0159/",
+        "id": "r-0159",
+        "name": "“r-0159”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0190/",
+        "id": "i-0190",
+        "name": "Martin Johnson Heade. Newburyport Meadows (c. 1876-1881)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

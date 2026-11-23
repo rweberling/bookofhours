@@ -1,0 +1,86 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0157/",
+  "id": "r-0157",
+  "shownIn": "seasons",
+  "text": "THROUGH the Spring-thickened branches<br>I see it floating,<br>An ivory dome<br>Headed to gold by the dim sun.<br><br>It hangs against a white-misted sky,<br>And the swollen branches<br>Open or cover it,<br>As they blow in the wet wind.",
+  "citation": {
+    "display": "Amy Lowell. “<a href=\"https://archive.org/details/bub_gb_K5cCAAAAYAAJ/page/n119/mode/2up?q=fens\" rel=\"noopener\" target=\"_blank\">The Back Bay Fens (Study in Orange and Silver).</a>” <em>Pictures of the Floating World. </em>New York: The Macmillan Company, 1919. 104.",
+    "edition": {
+      "id": "e-0237",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+    }
+  },
+  "lectio": {
+    "post": "lt-0036",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0014"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0014/",
+        "id": "ph-0014",
+        "name": "Fen and Wetland",
+        "scientific": "Fenn",
+        "wikidata": "Q514050"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0237/",
+      "id": "e-0237",
+      "name": "e-0237"
+    },
+    "post": {
+      "id": "lt-0036",
+      "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+      "published": "2026-11-22",
+      "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0188/",
+        "id": "i-0188",
+        "name": "Untitled photograph. From P.H. Emerson and T.F. Goodall. Life and Landscape on the …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0189/",
+        "id": "i-0189",
+        "name": "Amy Kaczur. Messages from the Marsh, Part 5, video still 10 (2026). From Messages from …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0156/",
+        "id": "r-0156",
+        "name": "“r-0156”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0158/",
+        "id": "r-0158",
+        "name": "“r-0158”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0159/",
+        "id": "r-0159",
+        "name": "“r-0159”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0190/",
+        "id": "i-0190",
+        "name": "Martin Johnson Heade. Newburyport Meadows (c. 1876-1881)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,85 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0159/",
+  "id": "r-0159",
+  "shownIn": "seasons",
+  "citation": {
+    "display": "John Clare. “<a href=\"https://archive.org/details/selectedpoemsofj0000clar/page/86/mode/2up?q=winter\" rel=\"noopener\" target=\"_blank\">[Winter in the Fens]</a>.” c. 1832-1837. <em>Selected Poems of John Clare</em>. Ed. James Reeves. 1954. London: Heinemann, 1964. 87-88.",
+    "edition": {
+      "id": "e-0239"
+    }
+  },
+  "lectio": {
+    "post": "lt-0036",
+    "place": 4
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0014"
+    ]
+  },
+  "display": {
+    "verse": true
+  },
+  "firstLine": "Such is our lowland scene that winter gives, …",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0014/",
+        "id": "ph-0014",
+        "name": "Fen and Wetland",
+        "scientific": "Fenn",
+        "wikidata": "Q514050"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0239/",
+      "id": "e-0239",
+      "name": "e-0239"
+    },
+    "post": {
+      "id": "lt-0036",
+      "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+      "published": "2026-11-22",
+      "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0188/",
+        "id": "i-0188",
+        "name": "Untitled photograph. From P.H. Emerson and T.F. Goodall. Life and Landscape on the …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0189/",
+        "id": "i-0189",
+        "name": "Amy Kaczur. Messages from the Marsh, Part 5, video still 10 (2026). From Messages from …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0156/",
+        "id": "r-0156",
+        "name": "“r-0156”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0157/",
+        "id": "r-0157",
+        "name": "“r-0157”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0158/",
+        "id": "r-0158",
+        "name": "“r-0158”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0190/",
+        "id": "i-0190",
+        "name": "Martin Johnson Heade. Newburyport Meadows (c. 1876-1881)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

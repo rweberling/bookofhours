@@ -6268,5 +6268,72 @@
         }
       ]
     }
+  },
+  {
+    "id": "r-0156",
+    "shownIn": "seasons",
+    "text": "<p>A certain sadness is pardonable to one who watches the destruction of a grand natural phenomenon, even though its destruction bring blessings to the human race. Reason and conscience tell us, that it is right and good that the Great Fen should have become, instead of a waste and howling wilderness, a garden of the Lord, where</p><p></p><p>‘All the land in flowery squares,<br>Beneath a broad and equal-blowing wind,<br>Smells of the coming summer.’</p><p></p><p>And yet the fancy may linger, without blame, over the shining meres, the golden reed-beds, the countless water-fowl, the strange and gaudy insects, the wild nature, the mystery, the majesty--for mystery and majesty there were--which haunted the deep fens for many a hundred years. Little thinks the Scotsman, whirled down by the Great Northern Railway from Peterborough to Huntingdon, what a grand place, even twenty years ago, was that Holme and Whittlesea, which is now but a black, unsightly, steaming flat, from which the meres and reed-beds of the old world are gone, while the corn and roots of the new world have not as yet taken their place.<br><br>But grand enough it was, that black ugly place, when backed by Caistor Hanglands and Holme Wood, and the patches of the primaeval forest; while dark-green alders, and pale-green reeds, stretched for miles round the broad lagoon, where the coot clanked, and the bittern boomed, and the sedge-bird, not content with its own sweet song, mocked the notes of all the birds around; while high overhead hung, motionless, hawk beyond hawk, buzzard beyond buzzard, kite beyond kite, as far as eye could see. </p>",
+    "citation": {
+      "display": "Charles Kingsley. “<a href=\"https://hdl.handle.net/2027/uva.x002313109?urlappend=%3Bseq=100%3Bownerid=27021597769935812-104\" rel=\"noopener\" target=\"_blank\">The Fens.</a>” <em>Prose Idylls: New and Old</em>. London Macmillan and Co., Limited, 1900. 89-90.",
+      "edition": { "id": "e-0236", "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/" }
+    },
+    "lectio": { "post": "lt-0036", "place": 1 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0014"]
+    }
+  },
+  {
+    "id": "r-0157",
+    "shownIn": "seasons",
+    "text": "THROUGH the Spring-thickened branches<br>I see it floating,<br>An ivory dome<br>Headed to gold by the dim sun.<br><br>It hangs against a white-misted sky,<br>And the swollen branches<br>Open or cover it,<br>As they blow in the wet wind.",
+    "citation": {
+      "display": "Amy Lowell. “<a href=\"https://archive.org/details/bub_gb_K5cCAAAAYAAJ/page/n119/mode/2up?q=fens\" rel=\"noopener\" target=\"_blank\">The Back Bay Fens (Study in Orange and Silver).</a>” <em>Pictures of the Floating World. </em>New York: The Macmillan Company, 1919. 104.",
+      "edition": { "id": "e-0237", "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/" }
+    },
+    "lectio": { "post": "lt-0036", "place": 2 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0014"]
+    },
+    "display": { "verse": true }
+  },
+  {
+    "id": "r-0158",
+    "shownIn": "seasons",
+    "text": "…You tried to explain it<br>once, to your mother, how death speaks to you,<br>seeks you out like a worm shivering on the sidewalk,<br>and she cried into her appetizer: “Is this a <em>poet thing</em>?”<br>The truth is you inherited it from her, from the way<br>she said good morning to the decaying deer<br>threaded through the guardrail on the highway.<br>The nights she played records and pulled you to her<br>to dance, you couldn’t help imagining her gone—<br>the way, when you see a boot floating in the gunk<br>along the edge of a river, you can’t help imagining<br>a body, nose plugged with silt, eyes blank<br>and bloodless as garlic cloves.",
+    "citation": {
+      "display": "Arielle Kaplan. “<a href=\"https://www.pangyrus.com/poetry/dead-animals/\" rel=\"noopener\" target=\"_blank\">Dead Animals</a>.” <em>Pangyrus</em> (June 14, 2022).",
+      "edition": { "id": "e-0238" }
+    },
+    "lectio": { "post": "lt-0036", "place": 3 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0014"]
+    },
+    "display": { "verse": true }
+  },
+  {
+    "id": "r-0159",
+    "shownIn": "seasons",
+    "text": "Such is our lowland scene that winter gives,<br>And strangers wonder where our comfort lives;<br>Yet in a little close, however keen<br>The winter comes, I find a patch of green,<br>Where robins, by the miser winter made<br>Domestic, flirt and perch upon the spade[…]",
+    "citation": {
+      "display": "John Clare. “<a href=\"https://archive.org/details/selectedpoemsofj0000clar/page/86/mode/2up?q=winter\" rel=\"noopener\" target=\"_blank\">[Winter in the Fens]</a>.” c. 1832-1837. <em>Selected Poems of John Clare</em>. Ed. James Reeves. 1954. London: Heinemann, 1964. 87-88.",
+      "edition": { "id": "e-0239" }
+    },
+    "lectio": { "post": "lt-0036", "place": 4 },
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "phenomena": ["ph-0014"]
+    },
+    "display": { "verse": true }
   }
 ]

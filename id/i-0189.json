@@ -1,0 +1,79 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0189/",
+  "id": "i-0189",
+  "shownIn": "seasons",
+  "file": "images/lectio-terra/224028638.week-45-fen-and-wetland-charles-kinglsey-2-1b7dce7d17a9.jpeg",
+  "caption": "Amy Kaczur. <em><a href=\"http://www.amykaczur.com/2d/messages-from-the-marsh-part-5-video-still-10\" rel=\"noopener\" target=\"_blank\">Messages from the Marsh, Part 5, video still 10 </a></em>(2026). From <a href=\"http://www.amykaczur.com/uncategorized/messages-from-the-marsh-part-4-6\" rel=\"noopener\" target=\"_blank\">Messages from the Marsh, Part 4-6</a> (2024).",
+  "lectio": {
+    "post": "lt-0036",
+    "place": 2
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "phenomena": [
+      "ph-0014"
+    ]
+  },
+  "display": {
+    "size": [
+      900,
+      506
+    ]
+  },
+  "alt": "A video still of reeds and sky reflected in rippling water, the green stems bending into wavy lines across blue sky and drifting cloud.",
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/ph-0014/",
+        "id": "ph-0014",
+        "name": "Fen and Wetland",
+        "scientific": "Fenn",
+        "wikidata": "Q514050"
+      }
+    ],
+    "post": {
+      "id": "lt-0036",
+      "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+      "published": "2026-11-22",
+      "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0188/",
+        "id": "i-0188",
+        "name": "Untitled photograph. From P.H. Emerson and T.F. Goodall. Life and Landscape on the …"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0156/",
+        "id": "r-0156",
+        "name": "“r-0156”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0157/",
+        "id": "r-0157",
+        "name": "“r-0157”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0158/",
+        "id": "r-0158",
+        "name": "“r-0158”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0159/",
+        "id": "r-0159",
+        "name": "“r-0159”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0190/",
+        "id": "i-0190",
+        "name": "Martin Johnson Heade. Newburyport Meadows (c. 1876-1881)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -141,5 +141,15 @@
     "gloss": {
       "text": "Persian, “the night of Yalda”: the longest night of the year, kept in Iran and far beyond on the eve of the winter solstice, with pomegranates, watermelon and readings from Hafez."
     }
+  },
+  {
+    "id": "ph-0014",
+    "name": "Fen and Wetland",
+    "latin": "Fenn",
+    "wikidata": "Q514050",
+    "hashtags": ["fens", "wetlands", "marshes"],
+    "gloss": {
+      "text": "Old English, “marsh, mud, dirt”: one of the oldest wetland words, reaching back through Proto-Germanic <em>fanja-</em>, “swamp, marsh”, to the Proto-Indo-European root <em>pen-</em>, “swamp”."
+    }
   }
 ]

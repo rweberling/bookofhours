@@ -1,0 +1,18 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0238/",
+  "id": "e-0238",
+  "citedBy": [
+    "r-0158"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0158/",
+        "id": "r-0158",
+        "name": "“r-0158”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
