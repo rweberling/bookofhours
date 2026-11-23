@@ -28,7 +28,10 @@
       "issued": "1910",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
       "identifiers": {
-        "internetArchive": "iroquoisusesofma00parkrich"
+        "internetArchive": "iroquoisusesofma00parkrich",
+        "oclc": "3767476",
+        "openlibrary": "OL7082220M",
+        "lccn": "10033437"
       }
     }
   },

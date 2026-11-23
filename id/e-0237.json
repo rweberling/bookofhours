@@ -2,6 +2,10 @@
   "@id": "https://earthlyhours.com/id/e-0237/",
   "id": "e-0237",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "bub_gb_K5cCAAAAYAAJ",
+    "oclc": "215059169"
+  },
   "citedBy": [
     "r-0157"
   ],

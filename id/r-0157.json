@@ -7,7 +7,11 @@
     "display": "Amy Lowell. “<a href=\"https://archive.org/details/bub_gb_K5cCAAAAYAAJ/page/n119/mode/2up?q=fens\" rel=\"noopener\" target=\"_blank\">The Back Bay Fens (Study in Orange and Silver).</a>” <em>Pictures of the Floating World. </em>New York: The Macmillan Company, 1919. 104.",
     "edition": {
       "id": "e-0237",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "bub_gb_K5cCAAAAYAAJ",
+        "oclc": "215059169"
+      }
     }
   },
   "lectio": {

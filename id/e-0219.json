@@ -5,7 +5,9 @@
   "publisher": "U.S. Department of Agriculture",
   "issued": "1924",
   "identifiers": {
-    "internetArchive": "cankerworms1238port"
+    "internetArchive": "cankerworms1238port",
+    "oclc": "16724242",
+    "openlibrary": "OL33119774M"
   },
   "citedBy": [
     "i-0170"

@@ -34,7 +34,9 @@
     "issued": "1819",
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "identifiers": {
-      "internetArchive": "northamericansyl02inmich"
+      "internetArchive": "northamericansyl02inmich",
+      "oclc": "4598632",
+      "lccn": "agr28000778"
     }
   },
   "locator": {

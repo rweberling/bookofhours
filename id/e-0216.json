@@ -14,7 +14,10 @@
   "issued": "1896",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "internetArchive": "bostoncookingsc00collgoog"
+    "internetArchive": "bostoncookingsc00collgoog",
+    "oclc": "3531608",
+    "openlibrary": "OL20591016M",
+    "lccn": "01006794"
   },
   "citedBy": [
     "r-0141"

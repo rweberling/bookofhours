@@ -7,7 +7,11 @@
     "display": "Charles Kingsley. “<a href=\"https://hdl.handle.net/2027/uva.x002313109?urlappend=%3Bseq=100%3Bownerid=27021597769935812-104\" rel=\"noopener\" target=\"_blank\">The Fens.</a>” <em>Prose Idylls: New and Old</em>. London Macmillan and Co., Limited, 1900. 89-90.",
     "edition": {
       "id": "e-0236",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "009780269",
+        "oclc": "20338489"
+      }
     }
   },
   "lectio": {

@@ -14,7 +14,10 @@
   "issued": "1928",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "internetArchive": "bestonoutermost2"
+    "internetArchive": "bestonoutermost2",
+    "oclc": "2228380",
+    "openlibrary": "OL6720059M",
+    "lccn": "28023978"
   },
   "citedBy": [
     "r-0155",

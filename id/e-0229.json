@@ -14,7 +14,10 @@
   "issued": "1881",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "internetArchive": "seamossescollect001herv"
+    "internetArchive": "seamossescollect001herv",
+    "oclc": "2562381",
+    "openlibrary": "OL14138324M",
+    "lccn": "05037718"
   },
   "citedBy": [
     "r-0150",

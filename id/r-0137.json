@@ -34,7 +34,9 @@
       "original-date": "1900",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
       "identifiers": {
-        "internetArchive": "toadstoolsmushro00mcil"
+        "internetArchive": "toadstoolsmushro00mcil",
+        "openlibrary": "OL24870552M",
+        "lccn": "07040811"
       }
     }
   },

@@ -15,7 +15,9 @@
   "original-date": "1881",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "internetArchive": "ournativefernsa02undegoog"
+    "internetArchive": "ournativefernsa02undegoog",
+    "oclc": "123149547",
+    "openlibrary": "OL20487104M"
   },
   "citedBy": [
     "r-0142"

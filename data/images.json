@@ -5707,7 +5707,11 @@
       "title": "The Cankerworms (USDA Department Bulletin 1238)",
       "publisher": "U.S. Department of Agriculture",
       "issued": "1924",
-      "identifiers": { "internetArchive": "cankerworms1238port" }
+      "identifiers": {
+        "internetArchive": "cankerworms1238port",
+        "oclc": "16724242",
+        "openlibrary": "OL33119774M"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/cankerworms1238port/page/n13/mode/1up",
@@ -5776,7 +5780,7 @@
       "title": "A Report upon the Scallop Fishery of Massachusetts",
       "publisher": "Wright & Potter",
       "issued": "1910",
-      "identifiers": { "internetArchive": "reportuponscallo00mass" }
+      "identifiers": { "internetArchive": "reportuponscallo00mass", "openlibrary": "OL7097272M" }
     },
     "locator": {
       "url": "https://archive.org/details/reportuponscallo00mass/page/n170/mode/1up",
@@ -5903,7 +5907,7 @@
       "title": "Coloured Figures of English Fungi or Mushrooms, vol. 2",
       "publisher": "J. Davis",
       "issued": "1799",
-      "identifiers": { "internetArchive": "colouredfigureso00sowe" }
+      "identifiers": { "internetArchive": "colouredfigureso00sowe", "openlibrary": "OL23289432M" }
     },
     "locator": {
       "url": "https://archive.org/details/colouredfigureso00sowe/page/n566/mode/1up",
@@ -5940,7 +5944,11 @@
       "publisher": "Orange Judd",
       "issued": "1867",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "squasheshowtogro00gregrich" }
+      "identifiers": {
+        "internetArchive": "squasheshowtogro00gregrich",
+        "oclc": "15483957",
+        "openlibrary": "OL7057224M"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/squasheshowtogro00gregrich/page/n39/mode/1up",
@@ -5977,7 +5985,12 @@
       "publisher": "University of the State of New York",
       "issued": "1910",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "iroquoisusesofma00parkrich" }
+      "identifiers": {
+        "internetArchive": "iroquoisusesofma00parkrich",
+        "oclc": "3767476",
+        "openlibrary": "OL7082220M",
+        "lccn": "10033437"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/iroquoisusesofma00parkrich/page/n31/mode/1up",
@@ -6021,7 +6034,12 @@
       "publisher": "C. d’Hautel",
       "issued": "1819",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "northamericansyl01michin" }
+      "identifiers": {
+        "internetArchive": "northamericansyl01michin",
+        "oclc": "4598632",
+        "openlibrary": "OL24158910M",
+        "lccn": "agr28000778"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/northamericansyl01michin/page/n33/mode/1up",
@@ -6058,7 +6076,7 @@
       "publisher": "D. Appleton",
       "issued": "1888",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "astronomywithop00serv" }
+      "identifiers": { "internetArchive": "astronomywithop00serv", "lccn": "04004436" }
     },
     "locator": {
       "url": "https://archive.org/details/astronomywithop00serv/page/n29/mode/1up",
@@ -6102,7 +6120,11 @@
       "publisher": "C. d’Hautel",
       "issued": "1819",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "northamericansyl02inmich" }
+      "identifiers": {
+        "internetArchive": "northamericansyl02inmich",
+        "oclc": "4598632",
+        "lccn": "agr28000778"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/northamericansyl02inmich/page/n228/mode/1up",
@@ -6139,7 +6161,12 @@
       "publisher": "S. E. Cassino",
       "issued": "1881",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "seamossescollect001herv" }
+      "identifiers": {
+        "internetArchive": "seamossescollect001herv",
+        "oclc": "2562381",
+        "openlibrary": "OL14138324M",
+        "lccn": "05037718"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/seamossescollect001herv/page/n222/mode/1up",
@@ -6210,7 +6237,7 @@
       "publisher": "Ginn & Company",
       "issued": "1902",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "commonspidersofuemer" }
+      "identifiers": { "internetArchive": "commonspidersofuemer", "oclc": "918133", "lccn": "02017851" }
     },
     "locator": {
       "url": "https://archive.org/details/commonspidersofuemer/page/n224/mode/1up",
@@ -6247,7 +6274,7 @@
       "publisher": "published by the author",
       "issued": "1909",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "insectotherallie00theoiala" }
+      "identifiers": { "internetArchive": "insectotherallie00theoiala", "openlibrary": "OL7169961M" }
     },
     "locator": {
       "url": "https://archive.org/details/insectotherallie00theoiala/page/n72/mode/1up",
@@ -6284,7 +6311,11 @@
       "publisher": "Jenks & Palmer",
       "issued": "1841",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "farmersalmanack00thom" }
+      "identifiers": {
+        "internetArchive": "farmersalmanack00thom",
+        "oclc": "80514384",
+        "openlibrary": "OL25278328M"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up",
@@ -6321,7 +6352,12 @@
       "publisher": "Doubleday, Doran",
       "issued": "1928",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-      "identifiers": { "internetArchive": "bestonoutermost2" }
+      "identifiers": {
+        "internetArchive": "bestonoutermost2",
+        "oclc": "2228380",
+        "openlibrary": "OL6720059M",
+        "lccn": "28023978"
+      }
     },
     "locator": {
       "url": "https://archive.org/details/bestonoutermost2/page/n302/mode/1up",

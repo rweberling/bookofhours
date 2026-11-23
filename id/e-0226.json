@@ -15,7 +15,10 @@
   "issued": "1819",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "identifiers": {
-    "internetArchive": "northamericansyl01michin"
+    "internetArchive": "northamericansyl01michin",
+    "oclc": "4598632",
+    "openlibrary": "OL24158910M",
+    "lccn": "agr28000778"
   },
   "citedBy": [
     "r-0147",

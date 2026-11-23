@@ -28,7 +28,9 @@
       "issued": "1841",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
       "identifiers": {
-        "internetArchive": "farmersalmanack00thom"
+        "internetArchive": "farmersalmanack00thom",
+        "oclc": "80514384",
+        "openlibrary": "OL25278328M"
       }
     }
   },

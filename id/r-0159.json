@@ -7,7 +7,11 @@
     "display": "John Clare. “<a href=\"https://archive.org/details/selectedpoemsofj0000clar/page/86/mode/2up?q=winter\" rel=\"noopener\" target=\"_blank\">[Winter in the Fens]</a>.” c. 1832-1837. <em>Selected Poems of John Clare</em>. Ed. James Reeves. 1954. London: Heinemann, 1964. 87-88.",
     "edition": {
       "id": "e-0239",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "selectedpoemsofj0000clar",
+        "openlibrary": "OL45641835M"
+      }
     }
   },
   "lectio": {

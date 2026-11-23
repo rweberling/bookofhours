@@ -2,6 +2,10 @@
   "@id": "https://earthlyhours.com/id/e-0239/",
   "id": "e-0239",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "selectedpoemsofj0000clar",
+    "openlibrary": "OL45641835M"
+  },
   "citedBy": [
     "r-0159"
   ],

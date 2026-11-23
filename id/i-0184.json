@@ -33,7 +33,9 @@
     "issued": "1902",
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
     "identifiers": {
-      "internetArchive": "commonspidersofuemer"
+      "internetArchive": "commonspidersofuemer",
+      "oclc": "918133",
+      "lccn": "02017851"
     }
   },
   "locator": {
