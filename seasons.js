@@ -1197,6 +1197,7 @@ function keepPageData() {
       print: () => window.print(),
       printPdf: false,
       imageMaster: imageRec ? imageRec.dataset.master : null,
+      titleEl: document.getElementById('season-reading-title'),
       quoteEl: document.getElementById('day-quote'),
       attrEl: document.getElementById('day-attr'),
       captionEl: document.getElementById('day-caption')

@@ -24,6 +24,9 @@
                print is left out
    and what each card is drawn from:
      hours, weather: quoteEl, attrEl, captionEl, imageMaster
+                     (hours also titleEl, the element whose colour the
+                     card's title takes: the watch's name, #block-name,
+                     where none is given; a Seasons day gives its own)
                      (weather also readoutEl, the conditions line, and
                      position, the card's data-position: the image's
                      cardPosition, so the drawn card keeps clear of it too)
@@ -688,7 +691,7 @@ async function keepCardData() {
     ...common,
     palette: {
       bg: cs(body).backgroundColor,
-      title: cs(document.getElementById('block-name')).color,
+      title: cs(src.titleEl || document.getElementById('block-name') || src.quoteEl).color,
       text: cs(src.quoteEl).color,
       faint: cs(src.attrEl).color,
       accent, gold,
