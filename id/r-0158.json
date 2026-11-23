@@ -5,7 +5,8 @@
   "citation": {
     "display": "Arielle Kaplan. “<a href=\"https://www.pangyrus.com/poetry/dead-animals/\" rel=\"noopener\" target=\"_blank\">Dead Animals</a>.” <em>Pangyrus</em> (June 14, 2022).",
     "edition": {
-      "id": "e-0238"
+      "id": "e-0238",
+      "rights": "http://rightsstatements.org/vocab/InC/1.0/"
     }
   },
   "lectio": {
@@ -43,7 +44,7 @@
     },
     "post": {
       "id": "lt-0036",
-      "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+      "title": "Week 45: Fen and Wetland (Charles Kingsley, Amy Lowell, Arielle Kaplan, John Clare)",
       "published": "2026-11-22",
       "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
     },

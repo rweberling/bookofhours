@@ -6308,7 +6308,12 @@
     "text": "…You tried to explain it<br>once, to your mother, how death speaks to you,<br>seeks you out like a worm shivering on the sidewalk,<br>and she cried into her appetizer: “Is this a <em>poet thing</em>?”<br>The truth is you inherited it from her, from the way<br>she said good morning to the decaying deer<br>threaded through the guardrail on the highway.<br>The nights she played records and pulled you to her<br>to dance, you couldn’t help imagining her gone—<br>the way, when you see a boot floating in the gunk<br>along the edge of a river, you can’t help imagining<br>a body, nose plugged with silt, eyes blank<br>and bloodless as garlic cloves.",
     "citation": {
       "display": "Arielle Kaplan. “<a href=\"https://www.pangyrus.com/poetry/dead-animals/\" rel=\"noopener\" target=\"_blank\">Dead Animals</a>.” <em>Pangyrus</em> (June 14, 2022).",
-      "edition": { "id": "e-0238" }
+      "edition": {
+        "id": "e-0238",
+        "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+        "rightsNote": "in copyright — quoted as fair use (Ryan, 23 November 2026); to be removed if the rights holder asks",
+        "rightsNotePrivate": true
+      }
     },
     "lectio": { "post": "lt-0036", "place": 3 },
     "tags": {
@@ -6325,7 +6330,12 @@
     "text": "Such is our lowland scene that winter gives,<br>And strangers wonder where our comfort lives;<br>Yet in a little close, however keen<br>The winter comes, I find a patch of green,<br>Where robins, by the miser winter made<br>Domestic, flirt and perch upon the spade[…]",
     "citation": {
       "display": "John Clare. “<a href=\"https://archive.org/details/selectedpoemsofj0000clar/page/86/mode/2up?q=winter\" rel=\"noopener\" target=\"_blank\">[Winter in the Fens]</a>.” c. 1832-1837. <em>Selected Poems of John Clare</em>. Ed. James Reeves. 1954. London: Heinemann, 1964. 87-88.",
-      "edition": { "id": "e-0239" }
+      "edition": {
+        "id": "e-0239",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "rightsNote": "the date of first publication is disputed; treated as public domain (Ryan, 23 November 2026)",
+        "rightsNotePrivate": true
+      }
     },
     "lectio": { "post": "lt-0036", "place": 4 },
     "tags": {

@@ -2,10 +2,12 @@
   "@id": "https://earthlyhours.com/id/r-0159/",
   "id": "r-0159",
   "shownIn": "seasons",
+  "text": "Such is our lowland scene that winter gives,<br>And strangers wonder where our comfort lives;<br>Yet in a little close, however keen<br>The winter comes, I find a patch of green,<br>Where robins, by the miser winter made<br>Domestic, flirt and perch upon the spade[…]",
   "citation": {
     "display": "John Clare. “<a href=\"https://archive.org/details/selectedpoemsofj0000clar/page/86/mode/2up?q=winter\" rel=\"noopener\" target=\"_blank\">[Winter in the Fens]</a>.” c. 1832-1837. <em>Selected Poems of John Clare</em>. Ed. James Reeves. 1954. London: Heinemann, 1964. 87-88.",
     "edition": {
-      "id": "e-0239"
+      "id": "e-0239",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
     }
   },
   "lectio": {
@@ -25,7 +27,6 @@
   "display": {
     "verse": true
   },
-  "firstLine": "Such is our lowland scene that winter gives, …",
   "related": {
     "about": [
       {
@@ -43,7 +44,7 @@
     },
     "post": {
       "id": "lt-0036",
-      "title": "Week 45: Fen and Wetland (Charles Kinglsey, Amy Lowell, Arielle Kaplan, John Clare)",
+      "title": "Week 45: Fen and Wetland (Charles Kingsley, Amy Lowell, Arielle Kaplan, John Clare)",
       "published": "2026-11-22",
       "url": "https://earthlyhours.com/lectio-terra/fen-and-wetland/"
     },
