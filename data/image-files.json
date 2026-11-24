@@ -315,30 +315,30 @@
       ]
     },
     "images/days_birdlore_christmas_census.jpg": {
-      "bytes": 775004,
-      "width": 2344,
-      "height": 3340,
-      "sha256": "d74fdf8a53efc0b076359407ec1f8af28a6b3ad66375b37e822f1f8361ed1358",
+      "bytes": 1130644,
+      "width": 2025,
+      "height": 3185,
+      "sha256": "be09b37132eba250cf28799481841da5bc5ccd5c67fd90bc854196c337622792",
       "settings": "89e48fac760f",
       "credit": "5c264c62a786",
       "copies": [
         {
           "file": "images/web/days_birdlore_christmas_census-800.webp",
           "width": 800,
-          "height": 1140,
-          "bytes": 89742
+          "height": 1258,
+          "bytes": 103312
         },
         {
           "file": "images/web/days_birdlore_christmas_census-1600.webp",
           "width": 1600,
-          "height": 2280,
-          "bytes": 211152
+          "height": 2517,
+          "bytes": 235036
         },
         {
           "file": "images/web/days_birdlore_christmas_census-2400.webp",
-          "width": 2344,
-          "height": 3340,
-          "bytes": 345296
+          "width": 2025,
+          "height": 3185,
+          "bytes": 318792
         }
       ]
     },
@@ -427,30 +427,30 @@
       ]
     },
     "images/days_gregory_squash_house.jpg": {
-      "bytes": 408201,
-      "width": 1715,
-      "height": 1107,
-      "sha256": "a3f971ee9b9e0300db544d1f30f241a82a770e4d4b4da074e0671c94a6fd26ef",
+      "bytes": 563857,
+      "width": 1395,
+      "height": 1058,
+      "sha256": "cb76eadadb531b40504a22bc343e39e6a0d4668890c51a6560057b5cf4f1381a",
       "settings": "89e48fac760f",
       "credit": "74f639fd4370",
       "copies": [
         {
           "file": "images/web/days_gregory_squash_house-800.webp",
           "width": 800,
-          "height": 516,
-          "bytes": 51912
+          "height": 607,
+          "bytes": 63278
         },
         {
           "file": "images/web/days_gregory_squash_house-1600.webp",
-          "width": 1600,
-          "height": 1033,
-          "bytes": 145658
+          "width": 1395,
+          "height": 1058,
+          "bytes": 137024
         },
         {
           "file": "images/web/days_gregory_squash_house-2400.webp",
-          "width": 1715,
-          "height": 1107,
-          "bytes": 166044
+          "width": 1395,
+          "height": 1058,
+          "bytes": 137024
         }
       ]
     },
@@ -651,30 +651,30 @@
       ]
     },
     "images/days_parker_three_sisters.jpg": {
-      "bytes": 1850300,
-      "width": 3400,
+      "bytes": 2715894,
+      "width": 3110,
       "height": 1979,
-      "sha256": "c5b751aefe2966fa6f1255c703b05849d3923fa49f3162f9da4a2d1f98cb88b4",
+      "sha256": "ab3cb933eb5f55ab015ef73bfc100401252fd27a5b81035010bdfb465d44a68c",
       "settings": "89e48fac760f",
       "credit": "70d9f025a157",
       "copies": [
         {
           "file": "images/web/days_parker_three_sisters-800.webp",
           "width": 800,
-          "height": 466,
-          "bytes": 97090
+          "height": 509,
+          "bytes": 109878
         },
         {
           "file": "images/web/days_parker_three_sisters-1600.webp",
           "width": 1600,
-          "height": 931,
-          "bytes": 317922
+          "height": 1018,
+          "bytes": 347890
         },
         {
           "file": "images/web/days_parker_three_sisters-2400.webp",
           "width": 2400,
-          "height": 1397,
-          "bytes": 555522
+          "height": 1527,
+          "bytes": 587280
         }
       ]
     },
@@ -819,30 +819,30 @@
       ]
     },
     "images/days_weir_christmas_greens.jpg": {
-      "bytes": 1060715,
-      "width": 2007,
-      "height": 3000,
-      "sha256": "3fde9a181179b85e34b17627c4d7f39e75de3219dd6e939e67160d297b031d48",
+      "bytes": 855188,
+      "width": 1295,
+      "height": 1690,
+      "sha256": "83676d6d98f3d53395ccc21511ac8c6a1cc1d430e42b6c8fb9bba1216d8b201e",
       "settings": "89e48fac760f",
       "credit": "69b88efa255e",
       "copies": [
         {
           "file": "images/web/days_weir_christmas_greens-800.webp",
           "width": 800,
-          "height": 1196,
-          "bytes": 47286
+          "height": 1044,
+          "bytes": 98454
         },
         {
           "file": "images/web/days_weir_christmas_greens-1600.webp",
-          "width": 1600,
-          "height": 2392,
-          "bytes": 162510
+          "width": 1295,
+          "height": 1690,
+          "bytes": 210918
         },
         {
           "file": "images/web/days_weir_christmas_greens-2400.webp",
-          "width": 2007,
-          "height": 3000,
-          "bytes": 246602
+          "width": 1295,
+          "height": 1690,
+          "bytes": 210918
         }
       ]
     },
