@@ -67,7 +67,20 @@
       "@id": "https://earthlyhours.com/id/e-0229/",
       "id": "e-0229",
       "name": "Sea Mosses: A Collector’s Guide and an Introduction to the Study of Marine Algae"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0017/",
+      "id": "dy-0017",
+      "date": "12-16",
+      "url": "https://earthlyhours.com/seasons.html?day=12-16"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0150/",
+        "id": "r-0150",
+        "name": "A. B. Hervey, “Times and Places for Collecting”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

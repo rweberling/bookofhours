@@ -68,7 +68,20 @@
       "@id": "https://earthlyhours.com/id/e-0228/",
       "id": "e-0228",
       "name": "The North American Sylva, vol. 2"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0016/",
+      "id": "dy-0016",
+      "date": "12-17",
+      "url": "https://earthlyhours.com/seasons.html?day=12-17"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0149/",
+        "id": "r-0149",
+        "name": "François André Michaux, “American Holly”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

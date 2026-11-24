@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0014/",
+  "id": "dy-0014",
+  "date": "12-08",
+  "subject": "sp-0040",
+  "reading": "r-0147",
+  "image": "i-0179",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-08",
+    "week": 51,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0040/",
+      "id": "sp-0040",
+      "name": "White Oak",
+      "scientific": "Quercus alba",
+      "wikidata": "Q469555"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0147/",
+      "id": "r-0147",
+      "name": "François André Michaux, “White Oak”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0179/",
+      "id": "i-0179",
+      "name": "P. J. Redouté, White Oak, Quercus alba"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

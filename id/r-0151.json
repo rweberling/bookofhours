@@ -53,7 +53,20 @@
       "@id": "https://earthlyhours.com/id/e-0230/",
       "id": "e-0230",
       "name": "Bird-Lore"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0018/",
+      "id": "dy-0018",
+      "date": "12-15",
+      "url": "https://earthlyhours.com/seasons.html?day=12-15"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0183/",
+        "id": "i-0183",
+        "name": "Bird-Lore, The Christmas Bird Census"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

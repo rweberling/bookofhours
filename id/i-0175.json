@@ -44,6 +44,19 @@
         "name": "Skim Ice",
         "scientific": "Nilas"
       }
+    ],
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0005/",
+      "id": "dy-0005",
+      "date": "12-01",
+      "url": "https://earthlyhours.com/seasons.html?day=12-01"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0138/",
+        "id": "r-0138",
+        "name": "John Tyndall, “Architecture of Lake Ice”"
+      }
     ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

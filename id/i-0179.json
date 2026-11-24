@@ -68,7 +68,20 @@
       "@id": "https://earthlyhours.com/id/e-0226/",
       "id": "e-0226",
       "name": "The North American Sylva, vol. 1"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0014/",
+      "id": "dy-0014",
+      "date": "12-08",
+      "url": "https://earthlyhours.com/seasons.html?day=12-08"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0147/",
+        "id": "r-0147",
+        "name": "François André Michaux, “White Oak”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

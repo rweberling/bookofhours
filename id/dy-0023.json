@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0023/",
+  "id": "dy-0023",
+  "date": "11-23",
+  "subject": "sp-0045",
+  "reading": "r-0160",
+  "image": "i-0191",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=11-23",
+    "week": 49,
+    "season": "autumn",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0045/",
+      "id": "sp-0045",
+      "name": "American Chestnut",
+      "scientific": "Castanea dentata"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0160/",
+      "id": "r-0160",
+      "name": "Arthur H. Graves, “The Future of the Chestnut Tree in North America”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0191/",
+      "id": "i-0191",
+      "name": "Mary Vaux Walcott, American Chestnut (Castanea dentata)"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

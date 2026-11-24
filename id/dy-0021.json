@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0021/",
+  "id": "dy-0021",
+  "date": "12-18",
+  "subject": "ph-0012",
+  "reading": "r-0154",
+  "image": "i-0186",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-18",
+    "week": 52,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/ph-0012/",
+      "id": "ph-0012",
+      "name": "The Sun Standing Still",
+      "scientific": "Solstitium"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0154/",
+      "id": "r-0154",
+      "name": "Robert B. Thomas, “Farmer’s Calendar, December”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0186/",
+      "id": "i-0186",
+      "name": "Robert B. Thomas, December"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

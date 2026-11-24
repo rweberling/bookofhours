@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0016/",
+  "id": "dy-0016",
+  "date": "12-17",
+  "subject": "sp-0041",
+  "reading": "r-0149",
+  "image": "i-0181",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-17",
+    "week": 52,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0041/",
+      "id": "sp-0041",
+      "name": "American Holly",
+      "scientific": "Ilex opaca",
+      "wikidata": "Q2712730"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0149/",
+      "id": "r-0149",
+      "name": "François André Michaux, “American Holly”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0181/",
+      "id": "i-0181",
+      "name": "Henri-Joseph Redouté, American Holly, Ilex opaca"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

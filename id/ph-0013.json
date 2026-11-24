@@ -17,6 +17,21 @@
     "i-0187"
   ],
   "related": {
+    "seasons": [
+      {
+        "@id": "https://earthlyhours.com/id/winter/",
+        "id": "winter",
+        "name": "Winter"
+      }
+    ],
+    "days": [
+      {
+        "@id": "https://earthlyhours.com/id/dy-0022/",
+        "id": "dy-0022",
+        "date": "12-20",
+        "url": "https://earthlyhours.com/seasons.html?day=12-20"
+      }
+    ],
     "records": [
       {
         "@id": "https://earthlyhours.com/id/r-0155/",

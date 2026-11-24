@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0024/",
+  "id": "dy-0024",
+  "date": "11-30",
+  "subject": "sp-0046",
+  "reading": "r-0161",
+  "image": "i-0194",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=11-30",
+    "week": 50,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0046/",
+      "id": "sp-0046",
+      "name": "American Beaver",
+      "scientific": "Castor canadensis"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0161/",
+      "id": "r-0161",
+      "name": "Lewis H. Morgan, “The American Beaver and His Works”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0194/",
+      "id": "i-0194",
+      "name": "Allen & Ginter, Beaver, from Quadrupeds series (N41) for Allen & Ginter Cigarettes"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

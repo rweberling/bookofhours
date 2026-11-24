@@ -68,7 +68,20 @@
       "@id": "https://earthlyhours.com/id/e-0232/",
       "id": "e-0232",
       "name": "The Common Spiders of the United States"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0019/",
+      "id": "dy-0019",
+      "date": "12-04",
+      "url": "https://earthlyhours.com/seasons.html?day=12-04"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0152/",
+        "id": "r-0152",
+        "name": "J. H. Emerton, “The Common Spiders of the United States”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

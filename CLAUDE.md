@@ -192,9 +192,8 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   November 2026 (`buildPaneDays()` in `seasons.js`): the subheading "One
   species or phenomenon for each day of the year, and an essay for each
   week." (no dots on the dial for the days: Ryan, 23 November 2026), then
-  the calendar's line (shown only once it is live), This Week (its seven days, each
-  card's subject with its writer and artist, labelled "words" and
-  "image", and the essay), and The
+  the calendar's line (shown only once it is live), This Week (its seven days, one
+  line each: the card's subject, or the essay; Ryan, 23 November 2026), and The
   Essays (each card's writers and figure makers, "words" and "images";
   no images line where no maker is named), with "Sign in to wander"
   under that heading. The

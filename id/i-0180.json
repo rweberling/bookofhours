@@ -66,7 +66,20 @@
       "@id": "https://earthlyhours.com/id/e-0227/",
       "id": "e-0227",
       "name": "Astronomy with an Opera-Glass"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0015/",
+      "id": "dy-0015",
+      "date": "12-14",
+      "url": "https://earthlyhours.com/seasons.html?day=12-14"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0148/",
+        "id": "r-0148",
+        "name": "Garrett P. Serviss, “The Stars of Spring”"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

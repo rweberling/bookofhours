@@ -44,6 +44,19 @@
         "name": "American Beaver",
         "scientific": "Castor canadensis"
       }
+    ],
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0024/",
+      "id": "dy-0024",
+      "date": "11-30",
+      "url": "https://earthlyhours.com/seasons.html?day=11-30"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0161/",
+        "id": "r-0161",
+        "name": "Lewis H. Morgan, “The American Beaver and His Works”"
+      }
     ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

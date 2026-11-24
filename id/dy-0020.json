@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0020/",
+  "id": "dy-0020",
+  "date": "12-03",
+  "subject": "sp-0044",
+  "reading": "r-0153",
+  "image": "i-0185",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-03",
+    "week": 50,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0044/",
+      "id": "sp-0044",
+      "name": "Winter Moth",
+      "scientific": "Operophtera brumata",
+      "wikidata": "Q164002"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0153/",
+      "id": "r-0153",
+      "name": "Fred. V. Theobald, “The Winter Moth”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0185/",
+      "id": "i-0185",
+      "name": "F. Edenden, Females and males of the winter moth"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

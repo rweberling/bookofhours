@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0015/",
+  "id": "dy-0015",
+  "date": "12-14",
+  "subject": "ph-0010",
+  "reading": "r-0148",
+  "image": "i-0180",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-14",
+    "week": 52,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/ph-0010/",
+      "id": "ph-0010",
+      "name": "Geminids",
+      "scientific": "3200 Phaethon"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0148/",
+      "id": "r-0148",
+      "name": "Garrett P. Serviss, “The Stars of Spring”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0180/",
+      "id": "i-0180",
+      "name": "Garrett P. Serviss, Map 3"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

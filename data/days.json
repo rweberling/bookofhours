@@ -4,8 +4,7 @@
     "date": "11-23",
     "subject": "sp-0045",
     "reading": "r-0160",
-    "image": "i-0191",
-    "draft": true
+    "image": "i-0191"
   },
   {
     "id": "dy-0012",
@@ -47,16 +46,14 @@
     "date": "11-30",
     "subject": "sp-0046",
     "reading": "r-0161",
-    "image": "i-0194",
-    "draft": true
+    "image": "i-0194"
   },
   {
     "id": "dy-0005",
     "date": "12-01",
     "subject": "ph-0007",
     "reading": "r-0138",
-    "image": "i-0175",
-    "draft": true
+    "image": "i-0175"
   },
   {
     "id": "dy-0006",
@@ -70,16 +67,14 @@
     "date": "12-03",
     "subject": "sp-0044",
     "reading": "r-0153",
-    "image": "i-0185",
-    "draft": true
+    "image": "i-0185"
   },
   {
     "id": "dy-0019",
     "date": "12-04",
     "subject": "sp-0043",
     "reading": "r-0152",
-    "image": "i-0184",
-    "draft": true
+    "image": "i-0184"
   },
   {
     "id": "dy-0009",
@@ -100,8 +95,7 @@
     "date": "12-08",
     "subject": "sp-0040",
     "reading": "r-0147",
-    "image": "i-0179",
-    "draft": true
+    "image": "i-0179"
   },
   {
     "id": "dy-0004",
@@ -115,47 +109,41 @@
     "date": "12-14",
     "subject": "ph-0010",
     "reading": "r-0148",
-    "image": "i-0180",
-    "draft": true
+    "image": "i-0180"
   },
   {
     "id": "dy-0018",
     "date": "12-15",
     "subject": "ph-0011",
     "reading": "r-0151",
-    "image": "i-0183",
-    "draft": true
+    "image": "i-0183"
   },
   {
     "id": "dy-0017",
     "date": "12-16",
     "subject": "sp-0042",
     "reading": "r-0150",
-    "image": "i-0182",
-    "draft": true
+    "image": "i-0182"
   },
   {
     "id": "dy-0016",
     "date": "12-17",
     "subject": "sp-0041",
     "reading": "r-0149",
-    "image": "i-0181",
-    "draft": true
+    "image": "i-0181"
   },
   {
     "id": "dy-0021",
     "date": "12-18",
     "subject": "ph-0012",
     "reading": "r-0154",
-    "image": "i-0186",
-    "draft": true
+    "image": "i-0186"
   },
   {
     "id": "dy-0022",
     "date": "12-20",
     "subject": "ph-0013",
     "reading": "r-0155",
-    "image": "i-0187",
-    "draft": true
+    "image": "i-0187"
   }
 ]

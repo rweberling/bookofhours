@@ -1031,18 +1031,16 @@ async function buildSpeciesGrid() {
 /* ── Wander the Seasons: the days ─────────────────────────────── */
 
 // Under the dial's key: the calendar's line (shared.js), then This Week
-// (its seven days, each card's subject with its writer and artist, and
-// the week's essay), then The Essays, with the sign-in lock under that
+// (its seven days, one line each: the card's subject, or the week's
+// essay; Ryan, 23 November 2026), then The Essays, with the sign-in lock under that
 // heading when the gate is on. (No dots on the dial for the days: Ryan,
 // 23 November 2026.) Built once per page load.
 let paneDaysBuilt = false;
 async function buildPaneDays() {
   if (paneDaysBuilt) return;
   paneDaysBuilt = true;
-  const [days, subjects, collection] = await Promise.all([loadDays(), loadSubjects(), loadCollection()]);
+  const [days, subjects] = await Promise.all([loadDays(), loadSubjects()]);
   await loadSeasons();
-  const readings = new Map(collection.readings.map(r => [r.id, r]));
-  const images = new Map(collection.images.map(i => [i.id, i]));
   const now = new Date();
 
   // This week: the week of the day showing, else today's.
@@ -1058,16 +1056,9 @@ async function buildPaneDays() {
     const here = d.key === key;
     let what = '<span class="pane-day-none" aria-hidden="true">\u00b7</span>';
     if (card) {
-      const reading = readings.get(card.reading), image = images.get(card.image);
-      const writer = reading ? readingAuthor(reading) : '';
-      const maker = imageCredit(image).text;
-      what = `<a href="seasons.html?day=${d.key}${keep}">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</a>`
-        + (writer ? `<span class="pane-day-names"><span class="credit-label">words</span> ${escapeHTML(writer)}</span>` : '')
-        + (maker ? `<span class="pane-day-names"><span class="credit-label">image</span> ${escapeHTML(maker)}</span>` : '');
+      what = `<a href="seasons.html?day=${d.key}${keep}">${escapeHTML((subjects.get(card.subject) || {}).name || '')}</a>`;
     } else if (d.key === essayKey) {
-      const { species, readings: writers } = resolveSpeciesFields(essay);
-      what = `<a href="seasons.html?day=${d.key}${keep}"><em>The week\u2019s essay:</em> ${escapeHTML(species)}</a>`
-        + (writers.length ? `<span class="pane-day-names"><span class="credit-label">words</span> ${escapeHTML(writers.join(' \u00b7 '))}</span>` : '');
+      what = `<a href="seasons.html?day=${d.key}${keep}"><em>The week\u2019s essay:</em> ${escapeHTML(resolveSpeciesFields(essay).species)}</a>`;
     }
     return `<li${here ? ' aria-current="date"' : ''}><span class="pane-day-date">${MONTH_NAMES[d.month - 1]} ${d.day}</span><span class="pane-day-what">${here ? '<span class="pane-day-here" aria-hidden="true">\u2726</span> ' : ''}${what}</span></li>`;
   }).join('');

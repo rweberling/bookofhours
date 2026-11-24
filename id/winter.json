@@ -10,10 +10,21 @@
   "vocabulary": "seasons",
   "subjects": [
     "sp-0001",
+    "sp-0046",
+    "ph-0007",
     "sp-0034",
+    "sp-0044",
+    "sp-0043",
     "sp-0037",
     "ph-0008",
-    "sp-0033"
+    "sp-0040",
+    "sp-0033",
+    "ph-0010",
+    "ph-0011",
+    "sp-0042",
+    "sp-0041",
+    "ph-0012",
+    "ph-0013"
   ],
   "related": {
     "subjects": [
@@ -25,11 +36,37 @@
         "wikidata": "Q913129"
       },
       {
+        "@id": "https://earthlyhours.com/id/sp-0046/",
+        "id": "sp-0046",
+        "name": "American Beaver",
+        "scientific": "Castor canadensis"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/ph-0007/",
+        "id": "ph-0007",
+        "name": "Skim Ice",
+        "scientific": "Nilas"
+      },
+      {
         "@id": "https://earthlyhours.com/id/sp-0034/",
         "id": "sp-0034",
         "name": "Fall Cankerworm",
         "scientific": "Alsophila pometaria",
         "wikidata": "Q1370141"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0044/",
+        "id": "sp-0044",
+        "name": "Winter Moth",
+        "scientific": "Operophtera brumata",
+        "wikidata": "Q164002"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0043/",
+        "id": "sp-0043",
+        "name": "Winter Spiders",
+        "scientific": "Araneae",
+        "wikidata": "Q1357"
       },
       {
         "@id": "https://earthlyhours.com/id/sp-0037/",
@@ -45,11 +82,56 @@
         "scientific": "Aequatio temporis"
       },
       {
+        "@id": "https://earthlyhours.com/id/sp-0040/",
+        "id": "sp-0040",
+        "name": "White Oak",
+        "scientific": "Quercus alba",
+        "wikidata": "Q469555"
+      },
+      {
         "@id": "https://earthlyhours.com/id/sp-0033/",
         "id": "sp-0033",
         "name": "Late Oyster",
         "scientific": "Sarcomyxa serotina",
         "wikidata": "Q81202193"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/ph-0010/",
+        "id": "ph-0010",
+        "name": "Geminids",
+        "scientific": "3200 Phaethon"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/ph-0011/",
+        "id": "ph-0011",
+        "name": "The Christmas Bird Count",
+        "scientific": "An annual bird-census"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0042/",
+        "id": "sp-0042",
+        "name": "Sea Mosses",
+        "scientific": "Rhodophyta",
+        "wikidata": "Q103169"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0041/",
+        "id": "sp-0041",
+        "name": "American Holly",
+        "scientific": "Ilex opaca",
+        "wikidata": "Q2712730"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/ph-0012/",
+        "id": "ph-0012",
+        "name": "The Sun Standing Still",
+        "scientific": "Solstitium"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/ph-0013/",
+        "id": "ph-0013",
+        "name": "Solstice Eve",
+        "scientific": "Shab-e Yaldā"
       }
     ]
   },

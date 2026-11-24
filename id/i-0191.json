@@ -45,6 +45,19 @@
         "name": "American Chestnut",
         "scientific": "Castanea dentata"
       }
+    ],
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0023/",
+      "id": "dy-0023",
+      "date": "11-23",
+      "url": "https://earthlyhours.com/seasons.html?day=11-23"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0160/",
+        "id": "r-0160",
+        "name": "Arthur H. Graves, “The Future of the Chestnut Tree in North America”"
+      }
     ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

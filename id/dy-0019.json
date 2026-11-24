@@ -1,0 +1,32 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0019/",
+  "id": "dy-0019",
+  "date": "12-04",
+  "subject": "sp-0043",
+  "reading": "r-0152",
+  "image": "i-0184",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-04",
+    "week": 50,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/sp-0043/",
+      "id": "sp-0043",
+      "name": "Winter Spiders",
+      "scientific": "Araneae",
+      "wikidata": "Q1357"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0152/",
+      "id": "r-0152",
+      "name": "J. H. Emerton, “The Common Spiders of the United States”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0184/",
+      "id": "i-0184",
+      "name": "J. H. Emerton, Web of Tetragnatha in tansy plants"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

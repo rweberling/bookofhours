@@ -61,7 +61,20 @@
       "@id": "https://earthlyhours.com/id/e-0233/",
       "id": "e-0233",
       "name": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0020/",
+      "id": "dy-0020",
+      "date": "12-03",
+      "url": "https://earthlyhours.com/seasons.html?day=12-03"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0185/",
+        "id": "i-0185",
+        "name": "F. Edenden, Females and males of the winter moth"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

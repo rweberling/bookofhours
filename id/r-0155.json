@@ -63,7 +63,20 @@
       "@id": "https://earthlyhours.com/id/e-0235/",
       "id": "e-0235",
       "name": "The Outermost House: A Year of Life on the Great Beach of Cape Cod"
-    }
+    },
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0022/",
+      "id": "dy-0022",
+      "date": "12-20",
+      "url": "https://earthlyhours.com/seasons.html?day=12-20"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/i-0187/",
+        "id": "i-0187",
+        "name": "Bradford, Sunrise from Cape Cod"
+      }
+    ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"

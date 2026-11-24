@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0005/",
+  "id": "dy-0005",
+  "date": "12-01",
+  "subject": "ph-0007",
+  "reading": "r-0138",
+  "image": "i-0175",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-01",
+    "week": 50,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/ph-0007/",
+      "id": "ph-0007",
+      "name": "Skim Ice",
+      "scientific": "Nilas"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0138/",
+      "id": "r-0138",
+      "name": "John Tyndall, “Architecture of Lake Ice”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0175/",
+      "id": "i-0175",
+      "name": "Central News Photo Service, A Life Saving Appliance to Protect Those Who Like to Skate on Thin Ice"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

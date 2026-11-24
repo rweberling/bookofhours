@@ -1,0 +1,30 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0022/",
+  "id": "dy-0022",
+  "date": "12-20",
+  "subject": "ph-0013",
+  "reading": "r-0155",
+  "image": "i-0187",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-20",
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/ph-0013/",
+      "id": "ph-0013",
+      "name": "Solstice Eve",
+      "scientific": "Shab-e Yaldā"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0155/",
+      "id": "r-0155",
+      "name": "Henry Beston, “Midwinter”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0187/",
+      "id": "i-0187",
+      "name": "Bradford, Sunrise from Cape Cod"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

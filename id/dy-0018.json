@@ -1,0 +1,31 @@
+{
+  "@id": "https://earthlyhours.com/id/dy-0018/",
+  "id": "dy-0018",
+  "date": "12-15",
+  "subject": "ph-0011",
+  "reading": "r-0151",
+  "image": "i-0183",
+  "related": {
+    "url": "https://earthlyhours.com/seasons.html?day=12-15",
+    "week": 52,
+    "season": "winter",
+    "subject": {
+      "@id": "https://earthlyhours.com/id/ph-0011/",
+      "id": "ph-0011",
+      "name": "The Christmas Bird Count",
+      "scientific": "An annual bird-census"
+    },
+    "reading": {
+      "@id": "https://earthlyhours.com/id/r-0151/",
+      "id": "r-0151",
+      "name": "“A Christmas Bird-Census”"
+    },
+    "image": {
+      "@id": "https://earthlyhours.com/id/i-0183/",
+      "id": "i-0183",
+      "name": "Bird-Lore, The Christmas Bird Census"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
