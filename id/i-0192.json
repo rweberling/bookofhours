@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0192/",
+  "id": "i-0192",
+  "shownIn": "days",
+  "file": "images/days_audubon_american_beaver.jpg",
+  "caption": "John James Audubon, <a href=\"https://clements.umich.edu/item/american-beaver-from-john-james-audubon-the-viviparous-quadrupeds-of-north-america-1845-1848/\" target=\"_blank\"><em>American Beaver</em></a>, plate 46 from <em>The Viviparous Quadrupeds of North America</em> (1845–1848), hand-coloured lithograph",
+  "alt": "A hand-coloured print of two beavers on a mossy bank by still water: one, upright against a leaning trunk, gnaws a deep notch into it, wood chips piled at its feet and its broad scaly tail trailing down; the other crouches at the water's edge with orange teeth bared, and a lodge shows in the pond behind.",
+  "bibliography": "Audubon, John James. <em>Castor Fiber Americanus, Linn. American Beaver</em>, plate 46 from <em>The Viviparous Quadrupeds of North America</em>. 1845–1848, hand-coloured lithograph, William L. Clements Library, University of Michigan.",
+  "creator": {
+    "id": "a-john-james-audubon",
+    "name": "John James Audubon",
+    "wikidata": "Q182882"
+  },
+  "title": "American Beaver",
+  "date": "1845/1848",
+  "institution": "William L. Clements Library, University of Michigan",
+  "links": [
+    {
+      "role": "cited",
+      "label": "William L. Clements Library",
+      "url": "https://clements.umich.edu/item/american-beaver-from-john-james-audubon-the-viviparous-quadrupeds-of-north-america-1845-1848/"
+    }
+  ],
+  "source": {
+    "url": "https://clements.umich.edu/wp-content/uploads/2020/06/sclaudubon_sclib_29377_0049_full_2134_1655__0_native.jpg",
+    "retrieved": "2026-11-23"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0046"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0046/",
+        "id": "sp-0046",
+        "name": "American Beaver",
+        "scientific": "Castor canadensis"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

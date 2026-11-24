@@ -486,5 +486,29 @@
         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/winter-moth-in-massachusetts-history-biological-control"
       }
     }
+  },
+  {
+    "id": "sp-0045",
+    "name": "American Chestnut",
+    "scientific": "Castanea dentata",
+    "rank": "species",
+    "hashtags": ["americanchestnut", "chestnut", "trees"],
+    "gloss": {
+      "text": "<em>Castanea</em> is Latin for the chestnut, from Greek <em>kastanea</em>; <em>dentata</em> is “toothed”, for the sharp, hooked teeth along the edges of its long leaves."
+    }
+  },
+  {
+    "id": "sp-0046",
+    "name": "American Beaver",
+    "scientific": "Castor canadensis",
+    "rank": "species",
+    "hashtags": ["beaver", "rodents", "wetlands"],
+    "gloss": {
+      "text": "<em>Castor</em> is the Greek and Latin name for the beaver, and <em>canadensis</em> “of Canada”. Isidore of Seville derived <em>castor</em> from <em>castrare</em>, a false etymology that fed the bestiaries’ fable of the hunted beaver.",
+      "source": {
+        "label": "Isidore of Seville, <em>Etymologies</em> 12.2.21",
+        "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Isidore/12*.html"
+      }
+    }
   }
 ]

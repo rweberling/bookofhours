@@ -1,0 +1,34 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0241/",
+  "id": "e-0241",
+  "type": "book",
+  "title": "The American Beaver and His Works",
+  "contributors": [
+    {
+      "id": "a-lewis-h-morgan",
+      "name": "Lewis H. Morgan",
+      "role": "author"
+    }
+  ],
+  "publisher": "J. B. Lippincott",
+  "issued": "1868",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "americanbeaverhi68morg",
+    "doi": "10.5962/bhl.title.10093"
+  },
+  "citedBy": [
+    "r-0161"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0161/",
+        "id": "r-0161",
+        "name": "Lewis H. Morgan, “The American Beaver and His Works”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

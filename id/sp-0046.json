@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0046/",
+  "id": "sp-0046",
+  "name": "American Beaver",
+  "scientific": "Castor canadensis",
+  "rank": "species",
+  "hashtags": [
+    "beaver",
+    "rodents",
+    "wetlands"
+  ],
+  "gloss": {
+    "text": "<em>Castor</em> is the Greek and Latin name for the beaver, and <em>canadensis</em> “of Canada”. Isidore of Seville derived <em>castor</em> from <em>castrare</em>, a false etymology that fed the bestiaries’ fable of the hunted beaver.",
+    "source": {
+      "label": "Isidore of Seville, <em>Etymologies</em> 12.2.21",
+      "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Isidore/12*.html"
+    }
+  },
+  "records": [
+    "r-0161",
+    "i-0192"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0161/",
+        "id": "r-0161",
+        "name": "Lewis H. Morgan, “The American Beaver and His Works”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0192/",
+        "id": "i-0192",
+        "name": "John James Audubon, American Beaver"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

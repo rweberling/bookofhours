@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0191/",
+  "id": "i-0191",
+  "shownIn": "days",
+  "file": "images/days_walcott_american_chestnut.jpg",
+  "caption": "Mary Vaux Walcott, <a href=\"https://americanart.si.edu/collections/search/artwork/?id=25832\" target=\"_blank\"><em>American Chestnut (Castanea dentata)</em></a> (1932), watercolour",
+  "alt": "A watercolour of an American chestnut branch in flower: long, pale yellow-green catkins spray upward and outward like fireworks above a skirt of long, glossy leaves with saw-toothed edges, on a plain cream ground, signed in the corner “M.V.W. Gatlinburg 6.25.1932”.",
+  "bibliography": "Walcott, Mary Vaux. <em>American Chestnut (Castanea dentata)</em>. 1932, watercolour on paper, Smithsonian American Art Museum, Washington, D.C., 1970.355.59.",
+  "creator": {
+    "id": "a-mary-vaux-walcott",
+    "name": "Mary Vaux Walcott",
+    "wikidata": "Q6780882"
+  },
+  "title": "American Chestnut (Castanea dentata)",
+  "date": "1932",
+  "institution": "Smithsonian American Art Museum",
+  "shelfmark": "1970.355.59",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Smithsonian American Art Museum",
+      "url": "https://americanart.si.edu/collections/search/artwork/?id=25832"
+    }
+  ],
+  "source": {
+    "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1970.355.59_2",
+    "retrieved": "2026-11-23"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "summer"
+    ],
+    "species": [
+      "sp-0045"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0045/",
+        "id": "sp-0045",
+        "name": "American Chestnut",
+        "scientific": "Castanea dentata"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -1,0 +1,64 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0160/",
+  "id": "r-0160",
+  "shownIn": "days",
+  "text": "<p>NOW-A-DAYS one often hears the question, “What is going to become of our chestnut trees?” In fact, whenever the subject of trees is broached in the course of a conversation, this inquiry is bound to come out—not, as I believe, that the interrogator hopes to receive a satisfactory answer, but more in the way of a general query.</p>",
+  "citation": {
+    "display": "Arthur H. Graves, <a href=\"https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_84/June_1914/The_Future_of_the_Chestnut_Tree_in_North_America\" target=\"_blank\">“The Future of the Chestnut Tree in North America”</a>, <em>Popular Science Monthly</em> 84 (June 1914), p. 551",
+    "bibliography": "Graves, Arthur H. \"The Future of the Chestnut Tree in North America.\" <em>Popular Science Monthly</em>, vol. 84, June 1914, p. 551.",
+    "title": "The Future of the Chestnut Tree in North America",
+    "written": "1914",
+    "locator": {
+      "page": "551",
+      "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_84/June_1914/The_Future_of_the_Chestnut_Tree_in_North_America",
+      "label": "Wikisource"
+    },
+    "edition": {
+      "id": "e-0240",
+      "type": "article",
+      "title": "Popular Science Monthly",
+      "contributors": [
+        {
+          "id": "a-arthur-h-graves",
+          "name": "Arthur H. Graves",
+          "role": "author"
+        }
+      ],
+      "publisher": "The Science Press",
+      "issued": "1914-06",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "volume": "84"
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      {
+        "id": "sp-0045",
+        "basis": "grounded",
+        "note": "The chestnut blight, and the question everyone was asking about the trees in 1914."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0045/",
+        "id": "sp-0045",
+        "name": "American Chestnut",
+        "scientific": "Castanea dentata"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0240/",
+      "id": "e-0240",
+      "name": "Popular Science Monthly"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

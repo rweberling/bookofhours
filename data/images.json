@@ -6508,5 +6508,66 @@
         "url": "https://www.metmuseum.org/art/collection/search/11053"
       }
     ]
+  },
+  {
+    "id": "i-0191",
+    "shownIn": "days",
+    "file": "images/days_walcott_american_chestnut.jpg",
+    "caption": "Mary Vaux Walcott, <a href=\"https://americanart.si.edu/collections/search/artwork/?id=25832\" target=\"_blank\"><em>American Chestnut (Castanea dentata)</em></a> (1932), watercolour",
+    "alt": "A watercolour of an American chestnut branch in flower: long, pale yellow-green catkins spray upward and outward like fireworks above a skirt of long, glossy leaves with saw-toothed edges, on a plain cream ground, signed in the corner “M.V.W. Gatlinburg 6.25.1932”.",
+    "bibliography": "Walcott, Mary Vaux. <em>American Chestnut (Castanea dentata)</em>. 1932, watercolour on paper, Smithsonian American Art Museum, Washington, D.C., 1970.355.59.",
+    "creator": { "id": "a-mary-vaux-walcott", "name": "Mary Vaux Walcott", "wikidata": "Q6780882" },
+    "title": "American Chestnut (Castanea dentata)",
+    "date": "1932",
+    "institution": "Smithsonian American Art Museum",
+    "shelfmark": "1970.355.59",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Smithsonian American Art Museum",
+        "url": "https://americanart.si.edu/collections/search/artwork/?id=25832"
+      }
+    ],
+    "source": {
+      "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1970.355.59_2",
+      "retrieved": "2026-11-23"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["summer"],
+      "species": ["sp-0045"]
+    }
+  },
+  {
+    "id": "i-0192",
+    "shownIn": "days",
+    "file": "images/days_audubon_american_beaver.jpg",
+    "caption": "John James Audubon, <a href=\"https://clements.umich.edu/item/american-beaver-from-john-james-audubon-the-viviparous-quadrupeds-of-north-america-1845-1848/\" target=\"_blank\"><em>American Beaver</em></a>, plate 46 from <em>The Viviparous Quadrupeds of North America</em> (1845–1848), hand-coloured lithograph",
+    "alt": "A hand-coloured print of two beavers on a mossy bank by still water: one, upright against a leaning trunk, gnaws a deep notch into it, wood chips piled at its feet and its broad scaly tail trailing down; the other crouches at the water's edge with orange teeth bared, and a lodge shows in the pond behind.",
+    "bibliography": "Audubon, John James. <em>Castor Fiber Americanus, Linn. American Beaver</em>, plate 46 from <em>The Viviparous Quadrupeds of North America</em>. 1845–1848, hand-coloured lithograph, William L. Clements Library, University of Michigan.",
+    "creator": { "id": "a-john-james-audubon", "name": "John James Audubon", "wikidata": "Q182882" },
+    "title": "American Beaver",
+    "date": "1845/1848",
+    "institution": "William L. Clements Library, University of Michigan",
+    "links": [
+      {
+        "role": "cited",
+        "label": "William L. Clements Library",
+        "url": "https://clements.umich.edu/item/american-beaver-from-john-james-audubon-the-viviparous-quadrupeds-of-north-america-1845-1848/"
+      }
+    ],
+    "source": {
+      "url": "https://clements.umich.edu/wp-content/uploads/2020/06/sclaudubon_sclib_29377_0049_full_2134_1655__0_native.jpg",
+      "retrieved": "2026-11-23"
+    },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0046"]
+    }
   }
 ]

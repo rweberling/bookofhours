@@ -1,0 +1,35 @@
+{
+  "@id": "https://earthlyhours.com/id/sp-0045/",
+  "id": "sp-0045",
+  "name": "American Chestnut",
+  "scientific": "Castanea dentata",
+  "rank": "species",
+  "hashtags": [
+    "americanchestnut",
+    "chestnut",
+    "trees"
+  ],
+  "gloss": {
+    "text": "<em>Castanea</em> is Latin for the chestnut, from Greek <em>kastanea</em>; <em>dentata</em> is “toothed”, for the sharp, hooked teeth along the edges of its long leaves."
+  },
+  "records": [
+    "r-0160",
+    "i-0191"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0160/",
+        "id": "r-0160",
+        "name": "Arthur H. Graves, “The Future of the Chestnut Tree in North America”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0191/",
+        "id": "i-0191",
+        "name": "Mary Vaux Walcott, American Chestnut (Castanea dentata)"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

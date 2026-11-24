@@ -1,0 +1,67 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0161/",
+  "id": "r-0161",
+  "shownIn": "days",
+  "text": "<p>In preparing for the winter, their greatest efforts in tree cutting are made. They commence in the latter part of September, and continue through October and into November the several employments of cutting and storing their winter wood, and of repairing their lodges and dams. These months are the season of their active labors, which are only arrested by the early snows and the formation of ice in their ponds.</p>",
+  "citation": {
+    "display": "Lewis H. Morgan, <a href=\"https://archive.org/details/americanbeaverhi68morg/page/168/mode/1up\" target=\"_blank\"><em>The American Beaver and His Works</em></a> (1868), p. 168",
+    "bibliography": "Morgan, Lewis H. <em>The American Beaver and His Works</em>. J. B. Lippincott, 1868, p. 168.",
+    "title": "The American Beaver and His Works",
+    "written": "1868",
+    "locator": {
+      "page": "168",
+      "url": "https://archive.org/details/americanbeaverhi68morg/page/168/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0241",
+      "type": "book",
+      "title": "The American Beaver and His Works",
+      "contributors": [
+        {
+          "id": "a-lewis-h-morgan",
+          "name": "Lewis H. Morgan",
+          "role": "author"
+        }
+      ],
+      "publisher": "J. B. Lippincott",
+      "issued": "1868",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "americanbeaverhi68morg",
+        "doi": "10.5962/bhl.title.10093"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      {
+        "id": "sp-0046",
+        "basis": "grounded",
+        "note": "The beavers' autumn work of cutting and storing wood, ended by the ice on their ponds."
+      }
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0046/",
+        "id": "sp-0046",
+        "name": "American Beaver",
+        "scientific": "Castor canadensis"
+      }
+    ],
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0241/",
+      "id": "e-0241",
+      "name": "The American Beaver and His Works"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

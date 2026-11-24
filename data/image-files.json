@@ -258,6 +258,34 @@
         }
       ]
     },
+    "images/days_audubon_american_beaver.jpg": {
+      "bytes": 479020,
+      "width": 2134,
+      "height": 1655,
+      "sha256": "ce44118193ccdade78d8c5b49d043db43edb30e4c7020f020801b7344803643f",
+      "settings": "89e48fac760f",
+      "credit": "dba1acc4c50c",
+      "copies": [
+        {
+          "file": "images/web/days_audubon_american_beaver-800.webp",
+          "width": 800,
+          "height": 620,
+          "bytes": 41714
+        },
+        {
+          "file": "images/web/days_audubon_american_beaver-1600.webp",
+          "width": 1600,
+          "height": 1241,
+          "bytes": 198998
+        },
+        {
+          "file": "images/web/days_audubon_american_beaver-2400.webp",
+          "width": 2134,
+          "height": 1655,
+          "bytes": 446000
+        }
+      ]
+    },
     "images/days_belding_bay_scallop.jpg": {
       "bytes": 531182,
       "width": 1971,
@@ -815,6 +843,34 @@
           "width": 2131,
           "height": 3292,
           "bytes": 373056
+        }
+      ]
+    },
+    "images/days_walcott_american_chestnut.jpg": {
+      "bytes": 819206,
+      "width": 2080,
+      "height": 3000,
+      "sha256": "1c92a5813721a991d961f376891f7ccc0868787891abc7d5b575e7a50382ff7a",
+      "settings": "89e48fac760f",
+      "credit": "00c090fd25b3",
+      "copies": [
+        {
+          "file": "images/web/days_walcott_american_chestnut-800.webp",
+          "width": 800,
+          "height": 1154,
+          "bytes": 102878
+        },
+        {
+          "file": "images/web/days_walcott_american_chestnut-1600.webp",
+          "width": 1600,
+          "height": 2308,
+          "bytes": 371548
+        },
+        {
+          "file": "images/web/days_walcott_american_chestnut-2400.webp",
+          "width": 2080,
+          "height": 3000,
+          "bytes": 607580
         }
       ]
     },
