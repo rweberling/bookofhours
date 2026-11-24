@@ -180,6 +180,28 @@ function showPostPage() {
   setSeason(POST_PAGE.key);
   document.getElementById('season-reading-subtitle').textContent = season.subtitle;
   finishPost(document.getElementById('season-reading-body'), entry);
+  showPostWeek(entry).catch(error => console.error(error));
+}
+
+// A post page whose week has released cards shows that week above it, as
+// the Seasons page does on the essay's own day; turning the page then goes
+// round the week. Weeks without cards (all before Thanksgiving 2026) are
+// left as they were.
+async function showPostWeek(entry) {
+  const days = await loadDays();
+  if (!days.length) return;
+  await loadSeasons();
+  const essay = Object.values(lectioSeasons).flat().find(e => e.id === entry.id);
+  if (!essay || !essay.published) return;
+  const key = essayDayKey(essay);
+  const [month, dayOfMonth] = key.split('-').map(Number);
+  const week = weekOf(month, dayOfMonth, isLeapYear(new Date().getFullYear()));
+  if (week.threshold) return;
+  const dates = new Set(days.map(d => d.date));
+  if (!week.days.some(d => dates.has(d.key))) return;
+  const own = essayOfWeek(week);
+  if (!own || own.id !== essay.id) return;
+  renderWeek(week, key, days, await loadSubjects());
 }
 
 /* ── The day ──────────────────────────────────────────────────────
