@@ -348,25 +348,25 @@
       "height": 1535,
       "sha256": "9a39ae62dcbb26f2d34017a4e111df87db1d1bf87f9d21e4576859c579687570",
       "settings": "89e48fac760f",
-      "credit": "094a4c7c0506",
+      "credit": "4388f0b6f193",
       "copies": [
         {
           "file": "images/web/days_cooke_late_oyster-800.webp",
           "width": 800,
           "height": 680,
-          "bytes": 50176
+          "bytes": 50170
         },
         {
           "file": "images/web/days_cooke_late_oyster-1600.webp",
           "width": 1600,
           "height": 1361,
-          "bytes": 115934
+          "bytes": 115928
         },
         {
           "file": "images/web/days_cooke_late_oyster-2400.webp",
           "width": 1805,
           "height": 1535,
-          "bytes": 133144
+          "bytes": 133138
         }
       ]
     },
