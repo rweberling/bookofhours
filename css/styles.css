@@ -1994,9 +1994,7 @@ button.wander-btn:hover { opacity: 1; color: var(--accent); }
   flex-direction: column;
   gap: 14px;
 }
-/* The days in Wander the Seasons (a preview, ?preview). */
-.dial-day { fill: var(--accent); }
-.dial-key-day { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: middle; }
+/* The days in Wander the Seasons. */
 .pane-week { max-width: 440px; margin: 34px auto 10px; font-family: var(--font-text); text-align: left; }
 .pane-week .species-season-heading { text-align: center; }
 .pane-week-head { text-align: center; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin: 4px 0 10px; }

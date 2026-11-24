@@ -188,11 +188,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   postcards' (`CALENDAR_RUBRIC` in `shared.js`, linking to the
   subscription's page, https://otherwise.dfos.com/p/daily-calendar-feed;
   shown only with `?preview` until its `live` is set true, when the
-  subscription can be bought). Wander the Seasons, with `?preview` only
-  for now (`buildPaneDays()` in `seasons.js`): the subheading "One
+  subscription can be bought). Wander the Seasons, public since 23
+  November 2026 (`buildPaneDays()` in `seasons.js`): the subheading "One
   species or phenomenon for each day of the year, and an essay for each
-  week.", a dot on the dial for each day with a card (kept for now; Ryan
-  unsure), then the calendar's line, This Week (its seven days, each
+  week." (no dots on the dial for the days: Ryan, 23 November 2026), then
+  the calendar's line (shown only once it is live), This Week (its seven days, each
   card's subject with its writer and artist, labelled "words" and
   "image", and the essay), and The
   Essays (each card's writers and figure makers, "words" and "images";

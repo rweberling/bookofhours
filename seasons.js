@@ -930,15 +930,12 @@ async function buildSpeciesGrid() {
     return;
   }
 
-  // With ?preview, each card names its writers ("words") and the makers
-  // of its figures ("images"), read from the image records its body
-  // lists (imageCredit: the maker, or else the book, paper or holder it
-  // comes from); no images line where there is none.
-  let imageMakers = null;
-  if (PREVIEW_DRAFTS) {
-    const collection = await loadCollection();
-    imageMakers = new Map(collection.images.map(i => [i.id, [imageCredit(i).text].filter(Boolean)]));
-  }
+  // Each card names its writers ("words") and the makers of its figures
+  // ("images"), read from the image records its body lists (imageCredit:
+  // the maker, or else the book, paper or holder it comes from); no
+  // images line where there is none.
+  const collection = await loadCollection();
+  const imageMakers = new Map(collection.images.map(i => [i.id, [imageCredit(i).text].filter(Boolean)]));
   const figureMakers = entry => {
     const names = [];
     for (const part of entry.body || []) {
@@ -1031,13 +1028,13 @@ async function buildSpeciesGrid() {
   });
 }
 
-/* ── Wander the Seasons: the days (a preview, with ?preview) ──── */
+/* ── Wander the Seasons: the days ─────────────────────────────── */
 
 // Under the dial's key: the calendar's line (shared.js), then This Week
 // (its seven days, each card's subject with its writer and artist, and
 // the week's essay), then The Essays, with the sign-in lock under that
-// heading when the gate is on. On the dial, a small dot for each day
-// with a card. Built once per page load.
+// heading when the gate is on. (No dots on the dial for the days: Ryan,
+// 23 November 2026.) Built once per page load.
 let paneDaysBuilt = false;
 async function buildPaneDays() {
   if (paneDaysBuilt) return;
@@ -1046,22 +1043,7 @@ async function buildPaneDays() {
   await loadSeasons();
   const readings = new Map(collection.readings.map(r => [r.id, r]));
   const images = new Map(collection.images.map(i => [i.id, i]));
-
-  // The dial: a dot just outside the ring for each day with a card.
-  const svg = document.getElementById('season-dial');
   const now = new Date();
-  for (const d of days) {
-    const [m, dd] = d.date.split('-').map(Number);
-    const date = new Date(now.getFullYear(), m - 1, dd);
-    const dialYear = m < 3 ? now.getFullYear() - 1 : now.getFullYear();
-    const pt = polarToXY(dialDeg(date, dialYear), R_ARC + 13);
-    const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-    dot.setAttribute('cx', pt.x); dot.setAttribute('cy', pt.y); dot.setAttribute('r', '1.4');
-    dot.setAttribute('class', 'dial-day');
-    svg.appendChild(dot);
-  }
-  const legend = document.querySelector('#season-pane .dial-legend');
-  if (legend) legend.insertAdjacentHTML('beforeend', '<span class="dial-key"><span class="dial-key-day"></span>A day\u2019s card</span>');
 
   // This week: the week of the day showing, else today's.
   const key = weekPageKey || monthDayKey(now.getMonth() + 1, now.getDate());
@@ -1109,15 +1091,11 @@ function openSeasonPane() {
   const pane = document.getElementById('season-pane');
   if (!document.querySelector('.season-arc')) buildSeasonDial();
   const key = season ? season.key : currentSeason();
-  const isReal = key === currentSeason();
-  document.getElementById('season-subheading').textContent = PREVIEW_DRAFTS
-    ? 'One species or phenomenon for each day of the year, and an essay for each week.'
-    : isReal
-      ? `Species drawn from Lectio Terra, this season (${SEASON_LABELS[key]})`
-      : `Species drawn from Lectio Terra, browsing ${SEASON_LABELS[key]}`;
+  document.getElementById('season-subheading').textContent =
+    'One species or phenomenon for each day of the year, and an essay for each week.';
   setSeasonDialActive(key);
   buildSpeciesGrid();
-  if (PREVIEW_DRAFTS) buildPaneDays();
+  buildPaneDays();
   // Open to everyone; with the DFOS gate on, the species cards wait
   // for sign-in (nav.js).
   syncWanderLock(document.getElementById('species-grid'), 'season');
