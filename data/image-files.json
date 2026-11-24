@@ -343,30 +343,30 @@
       ]
     },
     "images/days_cooke_late_oyster.jpg": {
-      "bytes": 866648,
-      "width": 2012,
-      "height": 3359,
-      "sha256": "882a376544e138874ae0e75207672792ddb5b7175782b852cb88b01a34eb9c3d",
+      "bytes": 695897,
+      "width": 1805,
+      "height": 1535,
+      "sha256": "9a39ae62dcbb26f2d34017a4e111df87db1d1bf87f9d21e4576859c579687570",
       "settings": "89e48fac760f",
       "credit": "094a4c7c0506",
       "copies": [
         {
           "file": "images/web/days_cooke_late_oyster-800.webp",
           "width": 800,
-          "height": 1336,
-          "bytes": 84864
+          "height": 680,
+          "bytes": 50176
         },
         {
           "file": "images/web/days_cooke_late_oyster-1600.webp",
           "width": 1600,
-          "height": 2671,
-          "bytes": 202056
+          "height": 1361,
+          "bytes": 115934
         },
         {
           "file": "images/web/days_cooke_late_oyster-2400.webp",
-          "width": 2012,
-          "height": 3359,
-          "bytes": 250158
+          "width": 1805,
+          "height": 1535,
+          "bytes": 133144
         }
       ]
     },
@@ -707,30 +707,30 @@
       ]
     },
     "images/days_sowerby_turkey_tail.jpg": {
-      "bytes": 458983,
-      "width": 1885,
-      "height": 3400,
-      "sha256": "c374d425a4ee95e896cf54406b477cdef02287aebadc115b3c576e2df0b8cef1",
+      "bytes": 505127,
+      "width": 1280,
+      "height": 2080,
+      "sha256": "6876eda33885531e4eabbfbd516ccbc5f09eecaa0b43d39d10d077aa7b256ecf",
       "settings": "89e48fac760f",
       "credit": "82acffd0743f",
       "copies": [
         {
           "file": "images/web/days_sowerby_turkey_tail-800.webp",
           "width": 800,
-          "height": 1443,
-          "bytes": 42578
+          "height": 1300,
+          "bytes": 60744
         },
         {
           "file": "images/web/days_sowerby_turkey_tail-1600.webp",
-          "width": 1600,
-          "height": 2886,
-          "bytes": 105534
+          "width": 1280,
+          "height": 2080,
+          "bytes": 107430
         },
         {
           "file": "images/web/days_sowerby_turkey_tail-2400.webp",
-          "width": 1885,
-          "height": 3400,
-          "bytes": 132786
+          "width": 1280,
+          "height": 2080,
+          "bytes": 107430
         }
       ]
     },
@@ -791,30 +791,30 @@
       ]
     },
     "images/days_usda_fall_cankerworm.jpg": {
-      "bytes": 1134892,
-      "width": 2506,
-      "height": 4306,
-      "sha256": "f988fc217befa32d94d8741f410cf2459c607a51da4d838c96259f49dc127ce0",
+      "bytes": 1781879,
+      "width": 2131,
+      "height": 3292,
+      "sha256": "780cec16b12af3b60f441491bffd5bd25622a563246a7121d66b96ff29a735d1",
       "settings": "89e48fac760f",
       "credit": "bc3e66934817",
       "copies": [
         {
           "file": "images/web/days_usda_fall_cankerworm-800.webp",
           "width": 800,
-          "height": 1375,
-          "bytes": 84038
+          "height": 1236,
+          "bytes": 101254
         },
         {
           "file": "images/web/days_usda_fall_cankerworm-1600.webp",
           "width": 1600,
-          "height": 2749,
-          "bytes": 217102
+          "height": 2472,
+          "bytes": 252522
         },
         {
           "file": "images/web/days_usda_fall_cankerworm-2400.webp",
-          "width": 2400,
-          "height": 4124,
-          "bytes": 371070
+          "width": 2131,
+          "height": 3292,
+          "bytes": 373056
         }
       ]
     },
@@ -847,30 +847,30 @@
       ]
     },
     "images/days_whistler_turkeys.jpg": {
-      "bytes": 1262510,
-      "width": 2000,
-      "height": 3000,
-      "sha256": "0c809e0d3a64e45c96aa7fb80679973e1be73cebcdda506f023e54a9838345df",
+      "bytes": 1616700,
+      "width": 1610,
+      "height": 2610,
+      "sha256": "5293ce99aacf87713f67c2b9d4cc3dfe182e7a81c98114befdb528e1797559ba",
       "settings": "89e48fac760f",
       "credit": "2af2f4c94243",
       "copies": [
         {
           "file": "images/web/days_whistler_turkeys-800.webp",
           "width": 800,
-          "height": 1200,
-          "bytes": 102302
+          "height": 1297,
+          "bytes": 144852
         },
         {
           "file": "images/web/days_whistler_turkeys-1600.webp",
           "width": 1600,
-          "height": 2400,
-          "bytes": 275834
+          "height": 2594,
+          "bytes": 376350
         },
         {
           "file": "images/web/days_whistler_turkeys-2400.webp",
-          "width": 2000,
-          "height": 3000,
-          "bytes": 373446
+          "width": 1610,
+          "height": 2610,
+          "bytes": 384834
         }
       ]
     },
