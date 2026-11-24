@@ -5547,7 +5547,8 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0030"]
-    }
+    },
+    "draft": true
   },
   {
     "id": "i-0164",
@@ -6563,6 +6564,66 @@
       "retrieved": "2026-11-23"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0046"]
+    },
+    "draft": true
+  },
+  {
+    "id": "i-0193",
+    "shownIn": "days",
+    "file": "images/days_hine_merilda_cranberries.jpg",
+    "caption": "Lewis Wickes Hine, <a href=\"https://www.loc.gov/item/2018676814/\" target=\"_blank\"><em>Merilda. Carrying cranberries</em></a>, Eldridge Bog, near Rochester, Massachusetts (September 1911), photograph for the National Child Labor Committee",
+    "alt": "A sepia photograph of a small girl in a straw hat, checked dress and long white pinafore, standing in a wide cranberry bog and holding a heavy tin measure of berries in each hand; behind her, women and children kneel picking across the bog, with a barn and a line of pines beyond.",
+    "bibliography": "Hine, Lewis Wickes. <em>Merilda. Carrying cranberries. Witness, Richard K. Conant. Location: Rochester [vicinity] - Eldridge Bog, Massachusetts</em>. 1911, photographic print, National Child Labor Committee Collection, Library of Congress Prints and Photographs Division, Washington, D.C.",
+    "creator": { "id": "a-lewis-wickes-hine", "name": "Lewis Wickes Hine" },
+    "title": "Merilda. Carrying cranberries",
+    "date": "1911-09",
+    "institution": "Library of Congress",
+    "shelfmark": "LC-DIG-nclc-00148",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Library of Congress",
+        "url": "https://www.loc.gov/item/2018676814/"
+      }
+    ],
+    "source": { "url": "https://www.loc.gov/resource/nclc.00148/", "retrieved": "2026-11-23" },
+    "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": [],
+      "seasons": ["autumn"],
+      "species": ["sp-0030"]
+    }
+  },
+  {
+    "id": "i-0194",
+    "shownIn": "days",
+    "file": "images/days_allen_ginter_beaver.jpg",
+    "caption": "Allen &amp; Ginter, <a href=\"https://www.metmuseum.org/art/collection/search/421835\" target=\"_blank\"><em>Beaver</em></a>, from the Quadrupeds series (N41), a cigarette card (1890)",
+    "alt": "A colour-printed card headed “Allen & Ginter, Richmond Straight Cut No 1 Cigarettes”: a tawny beaver with a dark, scaly tail drags a branch in its teeth across a heap of sticks by a pond, framed by pines and a waterfall; in a small roundel below, a beaver sits on its lodge at dusk; lettered “Beaver.”",
+    "bibliography": "Allen &amp; Ginter. <em>Beaver</em>, from the Quadrupeds series (N41) for Allen &amp; Ginter Cigarettes. 1890, commercial colour lithograph by Lindner, Eddy &amp; Claus, The Metropolitan Museum of Art, New York, The Jefferson R. Burdick Collection, 63.350.202.41.4.",
+    "creator": { "id": "a-allen-and-ginter", "name": "Allen & Ginter" },
+    "title": "Beaver, from Quadrupeds series (N41) for Allen & Ginter Cigarettes",
+    "date": "1890",
+    "institution": "The Metropolitan Museum of Art",
+    "shelfmark": "63.350.202.41.4",
+    "links": [
+      {
+        "role": "cited",
+        "label": "The Met",
+        "url": "https://www.metmuseum.org/art/collection/search/421835"
+      }
+    ],
+    "source": {
+      "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/421835/1398313/main-image",
+      "retrieved": "2026-11-23"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
     "tags": {
       "hours": [],
       "weather": [],

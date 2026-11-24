@@ -18,7 +18,7 @@
   },
   "records": [
     "r-0161",
-    "i-0192"
+    "i-0194"
   ],
   "related": {
     "records": [
@@ -28,9 +28,9 @@
         "name": "Lewis H. Morgan, “The American Beaver and His Works”"
       },
       {
-        "@id": "https://earthlyhours.com/id/i-0192/",
-        "id": "i-0192",
-        "name": "John James Audubon, American Beaver"
+        "@id": "https://earthlyhours.com/id/i-0194/",
+        "id": "i-0194",
+        "name": "Allen & Ginter, Beaver, from Quadrupeds series (N41) for Allen & Ginter Cigarettes"
       }
     ]
   },

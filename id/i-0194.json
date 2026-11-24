@@ -1,0 +1,51 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0194/",
+  "id": "i-0194",
+  "shownIn": "days",
+  "file": "images/days_allen_ginter_beaver.jpg",
+  "caption": "Allen &amp; Ginter, <a href=\"https://www.metmuseum.org/art/collection/search/421835\" target=\"_blank\"><em>Beaver</em></a>, from the Quadrupeds series (N41), a cigarette card (1890)",
+  "alt": "A colour-printed card headed “Allen & Ginter, Richmond Straight Cut No 1 Cigarettes”: a tawny beaver with a dark, scaly tail drags a branch in its teeth across a heap of sticks by a pond, framed by pines and a waterfall; in a small roundel below, a beaver sits on its lodge at dusk; lettered “Beaver.”",
+  "bibliography": "Allen &amp; Ginter. <em>Beaver</em>, from the Quadrupeds series (N41) for Allen &amp; Ginter Cigarettes. 1890, commercial colour lithograph by Lindner, Eddy &amp; Claus, The Metropolitan Museum of Art, New York, The Jefferson R. Burdick Collection, 63.350.202.41.4.",
+  "creator": {
+    "id": "a-allen-and-ginter",
+    "name": "Allen & Ginter"
+  },
+  "title": "Beaver, from Quadrupeds series (N41) for Allen & Ginter Cigarettes",
+  "date": "1890",
+  "institution": "The Metropolitan Museum of Art",
+  "shelfmark": "63.350.202.41.4",
+  "links": [
+    {
+      "role": "cited",
+      "label": "The Met",
+      "url": "https://www.metmuseum.org/art/collection/search/421835"
+    }
+  ],
+  "source": {
+    "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/421835/1398313/main-image",
+    "retrieved": "2026-11-23"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0046"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0046/",
+        "id": "sp-0046",
+        "name": "American Beaver",
+        "scientific": "Castor canadensis"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

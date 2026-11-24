@@ -1,0 +1,65 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0193/",
+  "id": "i-0193",
+  "shownIn": "days",
+  "file": "images/days_hine_merilda_cranberries.jpg",
+  "caption": "Lewis Wickes Hine, <a href=\"https://www.loc.gov/item/2018676814/\" target=\"_blank\"><em>Merilda. Carrying cranberries</em></a>, Eldridge Bog, near Rochester, Massachusetts (September 1911), photograph for the National Child Labor Committee",
+  "alt": "A sepia photograph of a small girl in a straw hat, checked dress and long white pinafore, standing in a wide cranberry bog and holding a heavy tin measure of berries in each hand; behind her, women and children kneel picking across the bog, with a barn and a line of pines beyond.",
+  "bibliography": "Hine, Lewis Wickes. <em>Merilda. Carrying cranberries. Witness, Richard K. Conant. Location: Rochester [vicinity] - Eldridge Bog, Massachusetts</em>. 1911, photographic print, National Child Labor Committee Collection, Library of Congress Prints and Photographs Division, Washington, D.C.",
+  "creator": {
+    "id": "a-lewis-wickes-hine",
+    "name": "Lewis Wickes Hine"
+  },
+  "title": "Merilda. Carrying cranberries",
+  "date": "1911-09",
+  "institution": "Library of Congress",
+  "shelfmark": "LC-DIG-nclc-00148",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Library of Congress",
+      "url": "https://www.loc.gov/item/2018676814/"
+    }
+  ],
+  "source": {
+    "url": "https://www.loc.gov/resource/nclc.00148/",
+    "retrieved": "2026-11-23"
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [],
+    "seasons": [
+      "autumn"
+    ],
+    "species": [
+      "sp-0030"
+    ]
+  },
+  "related": {
+    "about": [
+      {
+        "@id": "https://earthlyhours.com/id/sp-0030/",
+        "id": "sp-0030",
+        "name": "American Cranberry",
+        "scientific": "Vaccinium macrocarpon",
+        "wikidata": "Q149397"
+      }
+    ],
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0002/",
+      "id": "dy-0002",
+      "date": "11-27",
+      "url": "https://earthlyhours.com/seasons.html?day=11-27"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0132/",
+        "id": "r-0132",
+        "name": "Roger Williams, “Of the Earth, and the Fruits thereof”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
