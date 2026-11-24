@@ -18,7 +18,6 @@
     "sp-0028",
     "sp-0032",
     "ph-0014",
-    "sp-0038",
     "sp-0039",
     "ph-0009",
     "sp-0029",
@@ -88,13 +87,6 @@
         "name": "Fen and Wetland",
         "scientific": "Fenn",
         "wikidata": "Q514050"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/sp-0038/",
-        "id": "sp-0038",
-        "name": "Turkey Tail",
-        "scientific": "Trametes versicolor",
-        "wikidata": "Q753833"
       },
       {
         "@id": "https://earthlyhours.com/id/sp-0039/",

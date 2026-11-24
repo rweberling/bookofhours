@@ -5823,7 +5823,8 @@
       "weather": [],
       "seasons": ["winter"],
       "species": ["sp-0036"]
-    }
+    },
+    "draft": true
   },
   {
     "id": "i-0173",
@@ -5950,7 +5951,8 @@
       "weather": [],
       "seasons": ["autumn"],
       "species": ["sp-0038"]
-    }
+    },
+    "draft": true
   },
   {
     "id": "i-0177",

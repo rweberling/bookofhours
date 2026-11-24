@@ -15,39 +15,7 @@
   "gloss": {
     "text": "<em>Irradians</em> is Latin, “shining out”, for the ribs that radiate across the shell."
   },
-  "records": [
-    "r-0141",
-    "i-0172"
-  ],
-  "related": {
-    "seasons": [
-      {
-        "@id": "https://earthlyhours.com/id/winter/",
-        "id": "winter",
-        "name": "Winter"
-      }
-    ],
-    "days": [
-      {
-        "@id": "https://earthlyhours.com/id/dy-0008/",
-        "id": "dy-0008",
-        "date": "12-04",
-        "url": "https://earthlyhours.com/seasons.html?day=12-04"
-      }
-    ],
-    "records": [
-      {
-        "@id": "https://earthlyhours.com/id/r-0141/",
-        "id": "r-0141",
-        "name": "Fannie Merritt Farmer, “Fried Scallops”"
-      },
-      {
-        "@id": "https://earthlyhours.com/id/i-0172/",
-        "id": "i-0172",
-        "name": "David L. Belding, Figures 65–72"
-      }
-    ]
-  },
+  "records": [],
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

@@ -1,13 +1,13 @@
 {
   "@id": "https://earthlyhours.com/id/dy-0004/",
   "id": "dy-0004",
-  "date": "11-30",
+  "date": "12-10",
   "subject": "sp-0033",
   "reading": "r-0137",
   "image": "i-0168",
   "related": {
-    "url": "https://earthlyhours.com/seasons.html?day=11-30",
-    "week": 50,
+    "url": "https://earthlyhours.com/seasons.html?day=12-10",
+    "week": 51,
     "season": "winter",
     "subject": {
       "@id": "https://earthlyhours.com/id/sp-0033/",

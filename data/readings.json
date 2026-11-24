@@ -5737,7 +5737,8 @@
           "note": "A Boston recipe for bay scallops, in season from autumn into winter."
         }
       ]
-    }
+    },
+    "draft": true
   },
   {
     "id": "r-0142",
@@ -5870,7 +5871,8 @@
           "note": "A New Jersey entomologist's year among the polypores: turkey tail held the most beetles."
         }
       ]
-    }
+    },
+    "draft": true
   },
   {
     "id": "r-0145",

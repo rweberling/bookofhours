@@ -480,7 +480,11 @@
     "gbif": "1972449",
     "inaturalist": "60780",
     "gloss": {
-      "text": "<em>Brumata</em> is from Latin <em>bruma</em>, the shortest day, midwinter: the moth of the solstice season."
+      "text": "<em>Brumata</em> is from Latin <em>bruma</em>, the shortest day, midwinter: the moth of the solstice season. Its native look-alike, the Bruce spanworm (<em>Operophtera bruceata</em>), is a close relative that answers to the same scent; where the two overlap they are hard to tell apart.",
+      "source": {
+        "label": "UMass Extension, “Winter Moth in Massachusetts: History and Biological Control”",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/winter-moth-in-massachusetts-history-biological-control"
+      }
     }
   }
 ]
