@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Built by scripts/build_year_feed.py for 2026-11-23 from data/; edit that, not this. -->
+<!-- Built by scripts/build_year_feed.py for 2026-11-24 from data/; edit that, not this. -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Year — The Earthly Book of Hours</title>
@@ -7,7 +7,14 @@
   <atom:link href="https://earthlyhours.com/year.xml" rel="self" type="application/rss+xml"/>
   <description>The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with an image and a reading, and each week its Lectio Terra essay. It comes round again every year.</description>
   <language>en</language>
-  <lastBuildDate>Mon, 23 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <item>
+    <title>24 November: Hubbard Squash</title>
+    <link>https://earthlyhours.com/seasons.html?day=11-24</link>
+    <guid isPermaLink="false">https://earthlyhours.com/seasons.html?day=11-24#2026</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 -0500</pubDate>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/days_gregory_squash_house-1600.webp&quot; alt=&quot;A plain diagram of a building in cross-section under a pitched roof with a brick chimney: three tall stacks of slatted shelves (bins B) separated by aisles (A), each shelf hatched, with labels for a height of 10 feet and a width of 25 feet, and the caption Section of Squash-House.&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;small&gt;James J. H. Gregory, “Section of Squash-House,” from Squashes: How to Grow Them (1867), p. 34, wood engraving&lt;/small&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;p&gt;In handling the squashes, I need hardly reiterate the caution of care. My practice is to form a string of boys, from the wagon to the shelves, and the squashes are tossed from one to another, with the caution to handle them like eggs. Boys well trained will not drop more than one squash to the ton, and I have known my boys to pass several tons without dropping a single squash.&lt;/p&gt;&lt;p&gt;If the squash-house has been built with reference to warmth, when once filled with squashes, it is surprising with what little fire frost can be kept out. The mass of squashes are, in themselves, a great store-house of heat, and with inside shutters for the coldest weather, the building is frost proof, with a small outlay of fuel.&lt;/p&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;em&gt;James J. H. Gregory, “The Storing of the Crop,” from Squashes: How to Grow Them (1867), pp. 35–36&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/seasons.html?day=11-24&quot;&gt;The day in The Earthly Book of Hours&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
   <item>
     <title>23 November: American Chestnut</title>
     <link>https://earthlyhours.com/seasons.html?day=11-23</link>
