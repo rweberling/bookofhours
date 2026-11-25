@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Built by scripts/build_year_feed.py for 2026-11-24 from data/; edit that, not this. -->
+<!-- Built by scripts/build_year_feed.py for 2026-11-25 from data/; edit that, not this. -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Year — The Earthly Book of Hours</title>
@@ -7,7 +7,14 @@
   <atom:link href="https://earthlyhours.com/year.xml" rel="self" type="application/rss+xml"/>
   <description>The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with an image and a reading, and each week its Lectio Terra essay. It comes round again every year.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <item>
+    <title>25 November: The Three Sisters</title>
+    <link>https://earthlyhours.com/seasons.html?day=11-25</link>
+    <guid isPermaLink="false">https://earthlyhours.com/seasons.html?day=11-25#2026</guid>
+    <pubDate>Wed, 25 Nov 2026 00:00:00 -0500</pubDate>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/days_parker_three_sisters-1600.webp&quot; alt=&quot;A pen drawing of a line of Seneca women in long dresses and shawls standing in a hall lit by a hanging candle-holder; the woman in front holds an armful of corn and a round cake of bread beside a woven basket on the floor, and a group of men in feathered caps watches from the right.&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;small&gt;A Seneca youth, the march of the Toñwiʹsas, the women’s society of the three sisters, pen drawing printed as figure 2 in Arthur C. Parker, Iroquois Uses of Maize and Other Food Plants (1910), p. 28 (printed sideways on the page)&lt;/small&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;p&gt;The corn was carefully dropped in the hills so as not to break the germs which had nearly burst through. Among the Senecas, in planting corn the seeds of the squash and bean were sown in every seventh hill because it was thought that the spirits of these three plants were inseparable. They were called Dioʹhe″ko, &lt;em&gt;these sustain us&lt;/em&gt;. In the Green Corn Thanksgiving the leader rises and says, “Diettinoⁿʹñioʻ diohe″koⁿ, &lt;em&gt;we give thanks to our sustainers&lt;/em&gt;.”&lt;/p&gt;&lt;p&gt;Certain women banded themselves together in a society called the Toñwisas or Toⁿwiʹsas Oäʹno. They propitiated the spirits of the three sisters by certain ceremonies. In their ceremonial march, Wenŭntoñwiʹsăs, the leader holding an armful of corn and a cake of corn bread leads her band in a measured march about a kettle of corn soup.&lt;/p&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;em&gt;Arthur C. Parker, from Iroquois Uses of Maize and Other Food Plants (1910), p. 27&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/seasons.html?day=11-25&quot;&gt;The day in The Earthly Book of Hours&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
   <item>
     <title>24 November: Hubbard Squash</title>
     <link>https://earthlyhours.com/seasons.html?day=11-24</link>
