@@ -1,0 +1,56 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0163/",
+  "id": "r-0163",
+  "shownIn": "weather",
+  "text": "<p>You may notice in a ball-room that as long as the door and windows are kept closed, and the room remains hot, the air remains clear; but when the doors or windows are opened a dimness is visible, caused by the precipitation to fog of the aqueous vapour of the ball-room. If the weather be intensely cold the entrance of fresh air may even cause <em>snow</em> to fall. This has been observed in Russian ball-rooms; and also in the subterranean stables at Erzeroom, when the doors are opened and the cold morning air is permitted to enter.</p>",
+  "citation": {
+    "display": "John Tyndall, from <a href=\"https://archive.org/details/in.ernet.dli.2015.43950/page/n21/mode/1up\" target=\"_blank\"><em>The Forms of Water in Clouds and Rivers, Ice and Glaciers</em></a> (1872), § 13, p. 5",
+    "bibliography": "Tyndall, John. <em>The Forms of Water in Clouds and Rivers, Ice and Glaciers</em>, 3rd ed., Henry S. King, 1873, § 13, p. 5. Originally published 1872.",
+    "title": "The Forms of Water in Clouds and Rivers, Ice and Glaciers",
+    "written": "1872",
+    "locator": {
+      "page": "5",
+      "url": "https://archive.org/details/in.ernet.dli.2015.43950/page/n21/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0213",
+      "type": "book",
+      "title": "The Forms of Water in Clouds and Rivers, Ice and Glaciers, 3rd ed.",
+      "contributors": [
+        {
+          "id": "a-john-tyndall",
+          "name": "John Tyndall",
+          "role": "author",
+          "wikidata": "Q360808"
+        }
+      ],
+      "publisher": "Henry S. King",
+      "issued": "1873",
+      "original-date": "1872",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "in.ernet.dli.2015.43950"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "snow",
+      "cold"
+    ],
+    "seasons": [
+      "winter"
+    ]
+  },
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0213/",
+      "id": "e-0213",
+      "name": "The Forms of Water in Clouds and Rivers, Ice and Glaciers, 3rd ed."
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

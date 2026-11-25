@@ -6,7 +6,10 @@
   "vocabulary": "weather",
   "records": [
     "r-0123",
-    "i-0161"
+    "r-0162",
+    "i-0161",
+    "i-0195",
+    "i-0196"
   ],
   "related": {
     "records": [
@@ -16,9 +19,24 @@
         "name": "Archibald Lampman, “Heat”"
       },
       {
+        "@id": "https://earthlyhours.com/id/r-0162/",
+        "id": "r-0162",
+        "name": "Henry Walter Bates, “The Naturalist on the River Amazons”"
+      },
+      {
         "@id": "https://earthlyhours.com/id/i-0161/",
         "id": "i-0161",
         "name": "Honoré Daumier, A Day When You Do Not Pay—Twenty-Five-Degree Heat (Un jour où l’on ne paye pas. Vingt-cinq degrés de chaleur)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0195/",
+        "id": "i-0195",
+        "name": "Martin Johnson Heade, Hummingbird and Passionflowers"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0196/",
+        "id": "i-0196",
+        "name": "Martin Johnson Heade, York Harbor, Coast of Maine"
       }
     ]
   },

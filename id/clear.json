@@ -12,7 +12,8 @@
     "i-0131",
     "i-0132",
     "i-0133",
-    "i-0159"
+    "i-0159",
+    "i-0197"
   ],
   "related": {
     "records": [
@@ -55,6 +56,11 @@
         "@id": "https://earthlyhours.com/id/i-0159/",
         "id": "i-0159",
         "name": "Timothy H. O’Sullivan, Sand Dunes, Carson Desert, Nevada"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0197/",
+        "id": "i-0197",
+        "name": "William Birch, Sun Reflecting on the Dew, A Garden Scene"
       }
     ]
   },

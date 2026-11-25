@@ -6630,5 +6630,125 @@
       "seasons": ["autumn"],
       "species": ["sp-0046"]
     }
+  },
+  {
+    "id": "i-0195",
+    "shownIn": "weather",
+    "file": "images/weather_heade_hummingbird_passionflowers.jpg",
+    "caption": "Martin Johnson Heade, <a href=\"https://www.metmuseum.org/art/collection/search/11052\" target=\"_blank\"><em>Hummingbird and Passionflowers</em></a> (c. 1875–85)",
+    "alt": "A small oil painting: a green-backed hummingbird perched on a curling vine among large red passionflowers, a mossy branch below, and behind them a soft grey-green jungle dissolving into mist and low cloud.",
+    "bibliography": "Heade, Martin Johnson. <em>Hummingbird and Passionflowers</em>. c. 1875–85, oil on canvas, Metropolitan Museum of Art, 46.17.",
+    "creator": { "id": "a-martin-johnson-heade", "name": "Martin Johnson Heade" },
+    "title": "Hummingbird and Passionflowers",
+    "date": "1875~/1885~",
+    "institution": "Metropolitan Museum of Art",
+    "shelfmark": "46.17",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/art/collection/search/11052"
+      }
+    ],
+    "source": {
+      "url": "https://images.metmuseum.org/CRDImages/ad/original/DP-40687-001.jpg",
+      "retrieved": "2026-11-25"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": ["humid", "heat"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "i-0196",
+    "shownIn": "weather",
+    "file": "images/weather_heade_york_harbor.jpg",
+    "caption": "Martin Johnson Heade, <a href=\"https://www.artic.edu/artworks/152747\" target=\"_blank\"><em>York Harbor, Coast of Maine</em></a> (1877)",
+    "alt": "A wide painting of a still harbour on a hazy summer morning: the sun a pale white disc in a milky sky, three sailboats with slack sails reflected in flat water, and mossy rocks and marsh grass in the foreground.",
+    "bibliography": "Heade, Martin Johnson. <em>York Harbor, Coast of Maine</em>. 1877, oil on canvas, Art Institute of Chicago, 1999.291.",
+    "creator": { "id": "a-martin-johnson-heade", "name": "Martin Johnson Heade" },
+    "title": "York Harbor, Coast of Maine",
+    "date": "1877",
+    "institution": "Art Institute of Chicago",
+    "shelfmark": "1999.291",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Art Institute of Chicago",
+        "url": "https://www.artic.edu/artworks/152747"
+      }
+    ],
+    "source": {
+      "url": "https://www.artic.edu/iiif/2/3192ae4d-ffca-fe91-af12-2ca681f43e13/full/3000,/0/default.jpg",
+      "retrieved": "2026-11-25"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": ["humid", "heat"],
+      "seasons": ["summer"]
+    }
+  },
+  {
+    "id": "i-0197",
+    "shownIn": "weather",
+    "file": "images/weather_birch_sun_reflecting_dew.jpg",
+    "caption": "William Birch, <a href=\"https://www.artic.edu/artworks/149498\" target=\"_blank\"><em>The Sun Reflecting on the Dew, a Garden Scene</em></a> (c. 1812), etching: “Echo, Pennsylv.ª a place belonging to Mr. D. Bavarage”",
+    "alt": "A small etching of a wooded garden at sunrise: tall slender trees and pale boulders, a stream tumbling over rocks at the left, and light breaking through the leaves behind. Engraved below: The Sun reflecting on the Dew, a Garden scene.",
+    "bibliography": "Birch, William. <em>The Sun Reflecting on the Dew, a Garden Scene</em>. c. 1812, etching, Art Institute of Chicago, 2013.771.",
+    "creator": { "id": "a-william-birch", "name": "William Birch" },
+    "title": "Sun Reflecting on the Dew, A Garden Scene",
+    "date": "1812~",
+    "institution": "Art Institute of Chicago",
+    "shelfmark": "2013.771",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Art Institute of Chicago",
+        "url": "https://www.artic.edu/artworks/149498"
+      }
+    ],
+    "source": {
+      "url": "https://www.artic.edu/iiif/2/b6739ff2-7fb6-8b6c-0ab6-2fb80d54f58a/full/3000,/0/default.jpg",
+      "retrieved": "2026-11-25"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": ["dew", "clear"],
+      "seasons": ["summer"]
+    }
+  },
+  {
+    "id": "i-0198",
+    "shownIn": "weather",
+    "file": "images/weather_le_gray_brig.jpg",
+    "caption": "Gustave Le Gray, <a href=\"https://www.artic.edu/artworks/126479\" target=\"_blank\"><em>Brig on the Water</em></a> (1856), albumen print",
+    "alt": "A sepia photograph of a calm sea under a heavy, broken sky: banks of dark cloud with light breaking through at the top, a band of sunlight on the far water, and one small two-masted ship alone near the horizon.",
+    "bibliography": "Le Gray, Gustave. <em>Brig on the Water</em>. 1856, albumen print, Art Institute of Chicago, 1971.577.12.",
+    "creator": { "id": "a-gustave-le-gray", "name": "Gustave Le Gray" },
+    "title": "Brig on the Water",
+    "date": "1856",
+    "institution": "Art Institute of Chicago",
+    "shelfmark": "1971.577.12",
+    "links": [
+      {
+        "role": "cited",
+        "label": "Art Institute of Chicago",
+        "url": "https://www.artic.edu/artworks/126479"
+      }
+    ],
+    "source": {
+      "url": "https://www.artic.edu/iiif/2/20964c63-4ac9-c086-326f-3da495cc77a6/full/3000,/0/default.jpg",
+      "retrieved": "2026-11-25"
+    },
+    "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "tags": {
+      "hours": [],
+      "weather": ["overcast", "wind"],
+      "seasons": []
+    }
   }
 ]

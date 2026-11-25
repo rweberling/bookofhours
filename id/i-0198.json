@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0198/",
+  "id": "i-0198",
+  "shownIn": "weather",
+  "file": "images/weather_le_gray_brig.jpg",
+  "caption": "Gustave Le Gray, <a href=\"https://www.artic.edu/artworks/126479\" target=\"_blank\"><em>Brig on the Water</em></a> (1856), albumen print",
+  "alt": "A sepia photograph of a calm sea under a heavy, broken sky: banks of dark cloud with light breaking through at the top, a band of sunlight on the far water, and one small two-masted ship alone near the horizon.",
+  "bibliography": "Le Gray, Gustave. <em>Brig on the Water</em>. 1856, albumen print, Art Institute of Chicago, 1971.577.12.",
+  "creator": {
+    "id": "a-gustave-le-gray",
+    "name": "Gustave Le Gray"
+  },
+  "title": "Brig on the Water",
+  "date": "1856",
+  "institution": "Art Institute of Chicago",
+  "shelfmark": "1971.577.12",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/126479"
+    }
+  ],
+  "source": {
+    "url": "https://www.artic.edu/iiif/2/20964c63-4ac9-c086-326f-3da495cc77a6/full/3000,/0/default.jpg",
+    "retrieved": "2026-11-25"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [
+      "overcast",
+      "wind"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

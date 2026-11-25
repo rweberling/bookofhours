@@ -1,0 +1,41 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0197/",
+  "id": "i-0197",
+  "shownIn": "weather",
+  "file": "images/weather_birch_sun_reflecting_dew.jpg",
+  "caption": "William Birch, <a href=\"https://www.artic.edu/artworks/149498\" target=\"_blank\"><em>The Sun Reflecting on the Dew, a Garden Scene</em></a> (c. 1812), etching: “Echo, Pennsylv.ª a place belonging to Mr. D. Bavarage”",
+  "alt": "A small etching of a wooded garden at sunrise: tall slender trees and pale boulders, a stream tumbling over rocks at the left, and light breaking through the leaves behind. Engraved below: The Sun reflecting on the Dew, a Garden scene.",
+  "bibliography": "Birch, William. <em>The Sun Reflecting on the Dew, a Garden Scene</em>. c. 1812, etching, Art Institute of Chicago, 2013.771.",
+  "creator": {
+    "id": "a-william-birch",
+    "name": "William Birch"
+  },
+  "title": "Sun Reflecting on the Dew, A Garden Scene",
+  "date": "1812~",
+  "institution": "Art Institute of Chicago",
+  "shelfmark": "2013.771",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/149498"
+    }
+  ],
+  "source": {
+    "url": "https://www.artic.edu/iiif/2/b6739ff2-7fb6-8b6c-0ab6-2fb80d54f58a/full/3000,/0/default.jpg",
+    "retrieved": "2026-11-25"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [
+      "dew",
+      "clear"
+    ],
+    "seasons": [
+      "summer"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

@@ -4840,6 +4840,34 @@
         }
       ]
     },
+    "images/weather_birch_sun_reflecting_dew.jpg": {
+      "bytes": 560581,
+      "width": 1470,
+      "height": 1231,
+      "sha256": "a2069347c9f5065bbbdaf674bac41aeaa3abafe9f283eb174c3083358103f4f1",
+      "settings": "89e48fac760f",
+      "credit": "3815d479c932",
+      "copies": [
+        {
+          "file": "images/web/weather_birch_sun_reflecting_dew-800.webp",
+          "width": 800,
+          "height": 670,
+          "bytes": 107652
+        },
+        {
+          "file": "images/web/weather_birch_sun_reflecting_dew-1600.webp",
+          "width": 1470,
+          "height": 1231,
+          "bytes": 320768
+        },
+        {
+          "file": "images/web/weather_birch_sun_reflecting_dew-2400.webp",
+          "width": 1470,
+          "height": 1231,
+          "bytes": 320768
+        }
+      ]
+    },
     "images/weather_bradford_arctic_summer.jpg": {
       "bytes": 1526220,
       "width": 3811,
@@ -4980,6 +5008,62 @@
         }
       ]
     },
+    "images/weather_heade_hummingbird_passionflowers.jpg": {
+      "bytes": 2140004,
+      "width": 2053,
+      "height": 3400,
+      "sha256": "7091cfd4a42ff4186f207d70599313cf31edd30171ca3111012c06b51fd1874a",
+      "settings": "89e48fac760f",
+      "credit": "3ed344319f09",
+      "copies": [
+        {
+          "file": "images/web/weather_heade_hummingbird_passionflowers-800.webp",
+          "width": 800,
+          "height": 1325,
+          "bytes": 144308
+        },
+        {
+          "file": "images/web/weather_heade_hummingbird_passionflowers-1600.webp",
+          "width": 1600,
+          "height": 2650,
+          "bytes": 646586
+        },
+        {
+          "file": "images/web/weather_heade_hummingbird_passionflowers-2400.webp",
+          "width": 2053,
+          "height": 3400,
+          "bytes": 1135894
+        }
+      ]
+    },
+    "images/weather_heade_york_harbor.jpg": {
+      "bytes": 661499,
+      "width": 3000,
+      "height": 1498,
+      "sha256": "c3ffb8ff2f6fea38fb2782fe771dac3989a33f0b136fdb8661256139216bd47b",
+      "settings": "89e48fac760f",
+      "credit": "a236094367fd",
+      "copies": [
+        {
+          "file": "images/web/weather_heade_york_harbor-800.webp",
+          "width": 800,
+          "height": 399,
+          "bytes": 21060
+        },
+        {
+          "file": "images/web/weather_heade_york_harbor-1600.webp",
+          "width": 1600,
+          "height": 799,
+          "bytes": 85010
+        },
+        {
+          "file": "images/web/weather_heade_york_harbor-2400.webp",
+          "width": 2400,
+          "height": 1198,
+          "bytes": 204146
+        }
+      ]
+    },
     "images/weather_hiroshige_sudden_shower.jpg": {
       "bytes": 2914707,
       "width": 2515,
@@ -5061,6 +5145,34 @@
           "width": 2400,
           "height": 3265,
           "bytes": 1016900
+        }
+      ]
+    },
+    "images/weather_le_gray_brig.jpg": {
+      "bytes": 1238043,
+      "width": 3000,
+      "height": 2379,
+      "sha256": "adfc265d9f7fb9c11d090d70757555058790409c6817460d05a9962dcd033e4e",
+      "settings": "89e48fac760f",
+      "credit": "a268d8c26c5d",
+      "copies": [
+        {
+          "file": "images/web/weather_le_gray_brig-800.webp",
+          "width": 800,
+          "height": 634,
+          "bytes": 32382
+        },
+        {
+          "file": "images/web/weather_le_gray_brig-1600.webp",
+          "width": 1600,
+          "height": 1269,
+          "bytes": 107812
+        },
+        {
+          "file": "images/web/weather_le_gray_brig-2400.webp",
+          "width": 2400,
+          "height": 1903,
+          "bytes": 229894
         }
       ]
     },

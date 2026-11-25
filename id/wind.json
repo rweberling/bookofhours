@@ -8,7 +8,8 @@
     "r-0104",
     "r-0129",
     "i-0015",
-    "i-0129"
+    "i-0129",
+    "i-0198"
   ],
   "related": {
     "records": [
@@ -31,6 +32,11 @@
         "@id": "https://earthlyhours.com/id/i-0129/",
         "id": "i-0129",
         "name": "Katsushika Hokusai, South Wind, Clear Sky (Gaifū kaisei)"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0198/",
+        "id": "i-0198",
+        "name": "Gustave Le Gray, Brig on the Water"
       }
     ]
   },

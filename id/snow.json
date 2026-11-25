@@ -6,6 +6,7 @@
   "vocabulary": "weather",
   "records": [
     "r-0129",
+    "r-0163",
     "i-0127",
     "i-0128",
     "i-0160"
@@ -16,6 +17,11 @@
         "@id": "https://earthlyhours.com/id/r-0129/",
         "id": "r-0129",
         "name": "Ralph Waldo Emerson, “The Snow Storm”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0163/",
+        "id": "r-0163",
+        "name": "John Tyndall, “The Forms of Water in Clouds and Rivers, Ice and Glaciers”"
       },
       {
         "@id": "https://earthlyhours.com/id/i-0127/",

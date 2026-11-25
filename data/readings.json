@@ -6534,5 +6534,75 @@
         }
       ]
     }
+  },
+  {
+    "id": "r-0162",
+    "shownIn": "weather",
+    "text": "<p>The heat increased rapidly towards two o’clock (92° and 93° Fahr.), by which time every voice of bird or mammal was hushed; only in the trees was heard at intervals the harsh whirr of a cicada. The leaves, which were so moist and fresh in early morning, now became lax and drooping; the flowers shed their petals.</p>",
+    "citation": {
+      "display": "Henry Walter Bates, from <a href=\"https://archive.org/details/naturalistonrive01bate/page/n80/mode/1up\" target=\"_blank\"><em>The Naturalist on the River Amazons</em></a> (1863), vol. 1, p. 63",
+      "bibliography": "Bates, Henry Walter. <em>The Naturalist on the River Amazons</em>. Vol. 1, John Murray, 1863, p. 63.",
+      "title": "The Naturalist on the River Amazons",
+      "written": "1863",
+      "locator": {
+        "page": "63",
+        "url": "https://archive.org/details/naturalistonrive01bate/page/n80/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0242",
+        "type": "book",
+        "title": "The Naturalist on the River Amazons, vol. 1",
+        "contributors": [{ "id": "a-henry-walter-bates", "name": "Henry Walter Bates", "role": "author" }],
+        "publisher": "John Murray",
+        "issued": "1863",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "naturalistonrive01bate" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["humid", "heat"],
+      "seasons": []
+    }
+  },
+  {
+    "id": "r-0163",
+    "shownIn": "weather",
+    "text": "<p>You may notice in a ball-room that as long as the door and windows are kept closed, and the room remains hot, the air remains clear; but when the doors or windows are opened a dimness is visible, caused by the precipitation to fog of the aqueous vapour of the ball-room. If the weather be intensely cold the entrance of fresh air may even cause <em>snow</em> to fall. This has been observed in Russian ball-rooms; and also in the subterranean stables at Erzeroom, when the doors are opened and the cold morning air is permitted to enter.</p>",
+    "citation": {
+      "display": "John Tyndall, from <a href=\"https://archive.org/details/in.ernet.dli.2015.43950/page/n21/mode/1up\" target=\"_blank\"><em>The Forms of Water in Clouds and Rivers, Ice and Glaciers</em></a> (1872), § 13, p. 5",
+      "bibliography": "Tyndall, John. <em>The Forms of Water in Clouds and Rivers, Ice and Glaciers</em>, 3rd ed., Henry S. King, 1873, § 13, p. 5. Originally published 1872.",
+      "title": "The Forms of Water in Clouds and Rivers, Ice and Glaciers",
+      "written": "1872",
+      "locator": {
+        "page": "5",
+        "url": "https://archive.org/details/in.ernet.dli.2015.43950/page/n21/mode/1up",
+        "label": "Internet Archive"
+      },
+      "edition": {
+        "id": "e-0213",
+        "type": "book",
+        "title": "The Forms of Water in Clouds and Rivers, Ice and Glaciers, 3rd ed.",
+        "contributors": [
+          {
+            "id": "a-john-tyndall",
+            "name": "John Tyndall",
+            "role": "author",
+            "wikidata": "Q360808"
+          }
+        ],
+        "publisher": "Henry S. King",
+        "issued": "1873",
+        "original-date": "1872",
+        "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "identifiers": { "internetArchive": "in.ernet.dli.2015.43950" }
+      }
+    },
+    "tags": {
+      "hours": [],
+      "weather": ["snow", "cold"],
+      "seasons": ["winter"]
+    }
   }
 ]

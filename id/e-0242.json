@@ -1,0 +1,33 @@
+{
+  "@id": "https://earthlyhours.com/id/e-0242/",
+  "id": "e-0242",
+  "type": "book",
+  "title": "The Naturalist on the River Amazons, vol. 1",
+  "contributors": [
+    {
+      "id": "a-henry-walter-bates",
+      "name": "Henry Walter Bates",
+      "role": "author"
+    }
+  ],
+  "publisher": "John Murray",
+  "issued": "1863",
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "internetArchive": "naturalistonrive01bate"
+  },
+  "citedBy": [
+    "r-0162"
+  ],
+  "related": {
+    "citedBy": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0162/",
+        "id": "r-0162",
+        "name": "Henry Walter Bates, “The Naturalist on the River Amazons”"
+      }
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

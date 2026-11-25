@@ -19,7 +19,8 @@
     "internetArchive": "in.ernet.dli.2015.43950"
   },
   "citedBy": [
-    "r-0138"
+    "r-0138",
+    "r-0163"
   ],
   "related": {
     "citedBy": [
@@ -27,6 +28,11 @@
         "@id": "https://earthlyhours.com/id/r-0138/",
         "id": "r-0138",
         "name": "John Tyndall, “Architecture of Lake Ice”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0163/",
+        "id": "r-0163",
+        "name": "John Tyndall, “The Forms of Water in Clouds and Rivers, Ice and Glaciers”"
       }
     ]
   },

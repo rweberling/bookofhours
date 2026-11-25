@@ -6,7 +6,8 @@
   "vocabulary": "weather",
   "records": [
     "r-0036",
-    "i-0007"
+    "i-0007",
+    "i-0198"
   ],
   "related": {
     "records": [
@@ -19,6 +20,11 @@
         "@id": "https://earthlyhours.com/id/i-0007/",
         "id": "i-0007",
         "name": "James McNeill Whistler, Nocturne, Blue and Silver: Battersea Reach"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0198/",
+        "id": "i-0198",
+        "name": "Gustave Le Gray, Brig on the Water"
       }
     ]
   },

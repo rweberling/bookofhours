@@ -1,0 +1,39 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0195/",
+  "id": "i-0195",
+  "shownIn": "weather",
+  "file": "images/weather_heade_hummingbird_passionflowers.jpg",
+  "caption": "Martin Johnson Heade, <a href=\"https://www.metmuseum.org/art/collection/search/11052\" target=\"_blank\"><em>Hummingbird and Passionflowers</em></a> (c. 1875–85)",
+  "alt": "A small oil painting: a green-backed hummingbird perched on a curling vine among large red passionflowers, a mossy branch below, and behind them a soft grey-green jungle dissolving into mist and low cloud.",
+  "bibliography": "Heade, Martin Johnson. <em>Hummingbird and Passionflowers</em>. c. 1875–85, oil on canvas, Metropolitan Museum of Art, 46.17.",
+  "creator": {
+    "id": "a-martin-johnson-heade",
+    "name": "Martin Johnson Heade"
+  },
+  "title": "Hummingbird and Passionflowers",
+  "date": "1875~/1885~",
+  "institution": "Metropolitan Museum of Art",
+  "shelfmark": "46.17",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/11052"
+    }
+  ],
+  "source": {
+    "url": "https://images.metmuseum.org/CRDImages/ad/original/DP-40687-001.jpg",
+    "retrieved": "2026-11-25"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [
+      "humid",
+      "heat"
+    ],
+    "seasons": []
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

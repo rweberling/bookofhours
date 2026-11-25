@@ -6,6 +6,7 @@
   "vocabulary": "weather",
   "records": [
     "r-0121",
+    "r-0163",
     "i-0127",
     "i-0157",
     "i-0160"
@@ -16,6 +17,11 @@
         "@id": "https://earthlyhours.com/id/r-0121/",
         "id": "r-0121",
         "name": "Samuel Taylor Coleridge, “Frost at Midnight”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/r-0163/",
+        "id": "r-0163",
+        "name": "John Tyndall, “The Forms of Water in Clouds and Rivers, Ice and Glaciers”"
       },
       {
         "@id": "https://earthlyhours.com/id/i-0127/",

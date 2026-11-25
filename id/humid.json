@@ -4,7 +4,30 @@
   "label": "Humid",
   "group": "The Air",
   "vocabulary": "weather",
-  "records": [],
+  "records": [
+    "r-0162",
+    "i-0195",
+    "i-0196"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0162/",
+        "id": "r-0162",
+        "name": "Henry Walter Bates, “The Naturalist on the River Amazons”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0195/",
+        "id": "i-0195",
+        "name": "Martin Johnson Heade, Hummingbird and Passionflowers"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0196/",
+        "id": "i-0196",
+        "name": "Martin Johnson Heade, York Harbor, Coast of Maine"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

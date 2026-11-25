@@ -1,0 +1,52 @@
+{
+  "@id": "https://earthlyhours.com/id/r-0162/",
+  "id": "r-0162",
+  "shownIn": "weather",
+  "text": "<p>The heat increased rapidly towards two o’clock (92° and 93° Fahr.), by which time every voice of bird or mammal was hushed; only in the trees was heard at intervals the harsh whirr of a cicada. The leaves, which were so moist and fresh in early morning, now became lax and drooping; the flowers shed their petals.</p>",
+  "citation": {
+    "display": "Henry Walter Bates, from <a href=\"https://archive.org/details/naturalistonrive01bate/page/n80/mode/1up\" target=\"_blank\"><em>The Naturalist on the River Amazons</em></a> (1863), vol. 1, p. 63",
+    "bibliography": "Bates, Henry Walter. <em>The Naturalist on the River Amazons</em>. Vol. 1, John Murray, 1863, p. 63.",
+    "title": "The Naturalist on the River Amazons",
+    "written": "1863",
+    "locator": {
+      "page": "63",
+      "url": "https://archive.org/details/naturalistonrive01bate/page/n80/mode/1up",
+      "label": "Internet Archive"
+    },
+    "edition": {
+      "id": "e-0242",
+      "type": "book",
+      "title": "The Naturalist on the River Amazons, vol. 1",
+      "contributors": [
+        {
+          "id": "a-henry-walter-bates",
+          "name": "Henry Walter Bates",
+          "role": "author"
+        }
+      ],
+      "publisher": "John Murray",
+      "issued": "1863",
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "internetArchive": "naturalistonrive01bate"
+      }
+    }
+  },
+  "tags": {
+    "hours": [],
+    "weather": [
+      "humid",
+      "heat"
+    ],
+    "seasons": []
+  },
+  "related": {
+    "edition": {
+      "@id": "https://earthlyhours.com/id/e-0242/",
+      "id": "e-0242",
+      "name": "The Naturalist on the River Amazons, vol. 1"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}

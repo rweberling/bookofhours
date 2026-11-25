@@ -5,7 +5,8 @@
   "group": "The Ground",
   "vocabulary": "weather",
   "records": [
-    "r-0122"
+    "r-0122",
+    "i-0197"
   ],
   "related": {
     "records": [
@@ -13,6 +14,11 @@
         "@id": "https://earthlyhours.com/id/r-0122/",
         "id": "r-0122",
         "name": "William Charles Wells, “An Essay on Dew”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0197/",
+        "id": "i-0197",
+        "name": "William Birch, Sun Reflecting on the Dew, A Garden Scene"
       }
     ]
   },

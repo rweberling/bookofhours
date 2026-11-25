@@ -1,0 +1,41 @@
+{
+  "@id": "https://earthlyhours.com/id/i-0196/",
+  "id": "i-0196",
+  "shownIn": "weather",
+  "file": "images/weather_heade_york_harbor.jpg",
+  "caption": "Martin Johnson Heade, <a href=\"https://www.artic.edu/artworks/152747\" target=\"_blank\"><em>York Harbor, Coast of Maine</em></a> (1877)",
+  "alt": "A wide painting of a still harbour on a hazy summer morning: the sun a pale white disc in a milky sky, three sailboats with slack sails reflected in flat water, and mossy rocks and marsh grass in the foreground.",
+  "bibliography": "Heade, Martin Johnson. <em>York Harbor, Coast of Maine</em>. 1877, oil on canvas, Art Institute of Chicago, 1999.291.",
+  "creator": {
+    "id": "a-martin-johnson-heade",
+    "name": "Martin Johnson Heade"
+  },
+  "title": "York Harbor, Coast of Maine",
+  "date": "1877",
+  "institution": "Art Institute of Chicago",
+  "shelfmark": "1999.291",
+  "links": [
+    {
+      "role": "cited",
+      "label": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/152747"
+    }
+  ],
+  "source": {
+    "url": "https://www.artic.edu/iiif/2/3192ae4d-ffca-fe91-af12-2ca681f43e13/full/3000,/0/default.jpg",
+    "retrieved": "2026-11-25"
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "tags": {
+    "hours": [],
+    "weather": [
+      "humid",
+      "heat"
+    ],
+    "seasons": [
+      "summer"
+    ]
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "dataset": "https://doi.org/10.5281/zenodo.23603918"
+}
