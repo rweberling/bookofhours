@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Built by scripts/build_year_feed.py for 2026-11-25 from data/; edit that, not this. -->
+<!-- Built by scripts/build_year_feed.py for 2026-11-26 from data/; edit that, not this. -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Year — The Earthly Book of Hours</title>
@@ -7,7 +7,14 @@
   <atom:link href="https://earthlyhours.com/year.xml" rel="self" type="application/rss+xml"/>
   <description>The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with an image and a reading, and each week its Lectio Terra essay. It comes round again every year.</description>
   <language>en</language>
-  <lastBuildDate>Wed, 25 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <item>
+    <title>26 November: Wild Turkey</title>
+    <link>https://earthlyhours.com/seasons.html?day=11-26</link>
+    <guid isPermaLink="false">https://earthlyhours.com/seasons.html?day=11-26#2026</guid>
+    <pubDate>Thu, 26 Nov 2026 00:00:00 -0500</pubDate>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/days_whistler_turkeys-1600.webp&quot; alt=&quot;An etching: a Venetian courtyard with balconies and hanging vines, a figure standing beside a round well-head, and a flock of turkeys pecking in the foreground. Long straight lines are scored across the whole plate, cancelling it; below, “Turkeys” is written in pencil.&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;small&gt;James McNeill Whistler, Turkeys, a Venice courtyard etched in 1880 and published in the “Second Venice Set” (1886). When the edition was complete, the copper was scored with crossed lines so no more could be printed, and this proof was pulled to show that it was finished.&lt;/small&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;p&gt;I am, on this account, not displeas’d that the Figure is not known as a Bald Eagle, but looks more like a Turk’y. For in Truth, the Turk’y is in comparison a much more respectable Bird, and withal a true original Native of America. Eagles have been found in all Countries, but the Turk’y was peculiar to ours; the first of the Species seen in Europe being brought to France by the Jesuits from Canada, and serv’d up at the Wedding Table of Charles the Ninth. He is, [though a little vain and silly, it is true, but not the worse emblem for that,] a Bird of Courage, and would not hesitate to attack a Grenadier of the British Guards, who should presume to invade his Farm Yard with a &lt;em&gt;red&lt;/em&gt; Coat on.&lt;/p&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;em&gt;Benjamin Franklin, from a letter to Sarah Bache (Passy, 26 January 1784)&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/seasons.html?day=11-26&quot;&gt;The day in The Earthly Book of Hours&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
   <item>
     <title>25 November: The Three Sisters</title>
     <link>https://earthlyhours.com/seasons.html?day=11-25</link>
