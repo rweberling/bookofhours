@@ -712,25 +712,25 @@
       "height": 3175,
       "sha256": "3d63278c01d90eeaae527cadb472bd0ef27c275e4e4ac5f576005dffc40d66c2",
       "settings": "89e48fac760f",
-      "credit": "abfb59787576",
+      "credit": "4f0ad733276d",
       "copies": [
         {
           "file": "images/web/days_moody_winterberry-800.webp",
           "width": 800,
           "height": 1095,
-          "bytes": 87856
+          "bytes": 87878
         },
         {
           "file": "images/web/days_moody_winterberry-1600.webp",
           "width": 1600,
           "height": 2190,
-          "bytes": 301434
+          "bytes": 301456
         },
         {
           "file": "images/web/days_moody_winterberry-2400.webp",
           "width": 2320,
           "height": 3175,
-          "bytes": 523274
+          "bytes": 523296
         }
       ]
     },
