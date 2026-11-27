@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Built by scripts/build_year_feed.py for 2026-11-26 from data/; edit that, not this. -->
+<!-- Built by scripts/build_year_feed.py for 2026-11-27 from data/; edit that, not this. -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>The Year — The Earthly Book of Hours</title>
@@ -7,7 +7,14 @@
   <atom:link href="https://earthlyhours.com/year.xml" rel="self" type="application/rss+xml"/>
   <description>The year a day at a time, as kept in the Boston Basin: a subject of the season each day, with an image and a reading, and each week its Lectio Terra essay. It comes round again every year.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 26 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 00:00:00 -0500</lastBuildDate>
+  <item>
+    <title>27 November: American Cranberry</title>
+    <link>https://earthlyhours.com/seasons.html?day=11-27</link>
+    <guid isPermaLink="false">https://earthlyhours.com/seasons.html?day=11-27#2026</guid>
+    <pubDate>Fri, 27 Nov 2026 00:00:00 -0500</pubDate>
+    <description>&lt;p&gt;&lt;img src=&quot;https://earthlyhours.com/images/web/days_hine_merilda_cranberries-1600.webp&quot; alt=&quot;A sepia photograph of a small girl in a straw hat, checked dress and long white pinafore, standing in a wide cranberry bog and holding a heavy tin measure of berries in each hand; behind her, women and children kneel picking across the bog, with a barn and a line of pines beyond.&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;small&gt;Lewis Wickes Hine, Merilda. Carrying cranberries, Eldridge Bog, near Rochester, Massachusetts (September 1911), photograph for the National Child Labor Committee&lt;/small&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;p&gt;Wuchipoquámeneash [Narragansett: berries of a sour kind]. &lt;em&gt;A kind of sharp Fruit like a Barbary in tast.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Sasémineash&lt;/em&gt; [Narragansett: “very sour berries,” the cranberry] another sharp cooling Fruit growing in fresh Waters all the Winter, Excellent in conserve against Feavers.&lt;/p&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;em&gt;Roger Williams, from A Key into the Language of America (1643), p. 99; the glosses in brackets follow J. Hammond Trumbull’s notes to the 1866 edition&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://earthlyhours.com/seasons.html?day=11-27&quot;&gt;The day in The Earthly Book of Hours&lt;/a&gt;&lt;/p&gt;</description>
+  </item>
   <item>
     <title>26 November: Wild Turkey</title>
     <link>https://earthlyhours.com/seasons.html?day=11-26</link>
