@@ -114,7 +114,12 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends
-  with what needs a person (a subject record, possible poems). Before
+  with what needs a person (a subject record, possible poems). The site
+  links into itself, never back out to Ryan's Substack (Ryan, 28 November
+  2026: a one-way journey toward the site): no subscribe or comment
+  links to laurentia.substack.com on its pages, feeds or llms.txt; an
+  imported post's line asking for Substack comments becomes an email
+  link, in both the record and its Substack copy. Before
   pushing an import, give every new figure its `alt` (look at the image)
   and its `rights` (clear cases applied and logged in the Rights review
   sheet, the rest "needs Ryan"; Ryan, 15 November 2026): the push posts
