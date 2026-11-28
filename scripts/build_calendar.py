@@ -8,15 +8,17 @@ Usage:
 
 Every day of the book's year is an all-day event that repeats each year:
 
-  a card     (data/days.json) on its date: the subject; in the notes the
-             reading (its full text only when its rights are open, as in
-             year.xml; otherwise its citation), the image's caption, and
-             the day's page, seasons.html?day=MM-DD.
+  a card     (data/days.json) on its date: the subject; in the notes its
+             second name (scientific or Latin), the reading's opening
+             (open rights only, about 200 characters), who and when for
+             the words and the image, and the day's page,
+             seasons.html?day=MM-DD (Ryan, 28 November 2026: a pointer to
+             the page, not the whole card).
   an essay   a Lectio Terra post on the day it was first published, then
              every year from the next on its fixed day, the same day
              unless another was pinned (weeks.essay_day; the Seasons page
-             keeps the same rule): its
-             readers, the opening of its headnote, and its page.
+             keeps the same rule): its subject's second name, the opening
+             of its headnote, its readers, and its page.
   the year's eve, 20 December, outside the weeks.
 
 A card starts on its first date on or after the calendar's "start"
@@ -42,7 +44,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from datafile import load  # noqa: E402
+from datafile import creator_names, load  # noqa: E402
 from syndicate import OPEN_RIGHTS, plain  # noqa: E402
 from build_lectio_pages import posts, readers, subject_name, subjects, summary  # noqa: E402
 from weeks import essay_day  # noqa: E402
@@ -96,29 +98,57 @@ def first_on_or_after(mmdd, start):
     return candidate if candidate >= start else date(start.year + 1, m, d)
 
 
+def snippet(text, limit=200):
+    """A reading's opening, cut on a word: the event is a pointer to the
+    day's page, not the day itself (Ryan, 28 November 2026)."""
+    words = ' '.join(plain(text).split())
+    if len(words) <= limit:
+        return words
+    return words[:limit].rsplit(' ', 1)[0].rstrip(',;:—.') + '…'
+
+
+def year_of(value):
+    m = re.search(r'\d{4}', value or '')
+    return m.group(0) if m else ''
+
+
+def second_name(subject):
+    return subject.get('scientific') or subject.get('latin') or ''
+
+
 def card_notes(card, reading, image, subject):
+    """The subject's second name; the reading's opening (open rights
+    only); who and when, words and image; the link."""
     parts = []
-    edition = (reading.get('citation') or {}).get('edition') or {}
-    cite = plain((reading.get('citation') or {}).get('display'))
+    latin = second_name(subject)
+    if latin:
+        parts.append(latin)
+    citation = reading.get('citation') or {}
+    edition = citation.get('edition') or {}
     if (edition.get('rights') or '').startswith(OPEN_RIGHTS) and reading.get('text'):
-        notes = ''.join(f'\n\n{n["marker"]}. {plain(n["text"])}' for n in reading.get('footnotes') or [])
-        parts.append(plain(reading['text']) + (f'\n— {cite}' if cite else '') + notes)
-    elif cite:
-        parts.append(f'Today’s reading: {cite}')
-    caption = plain(image.get('caption'))
-    if caption:
-        parts.append(f'Today’s image: {caption}')
-    parts.append(f'The day in {NAME}: {SITE}/seasons.html?day={card["date"]}')
+        parts.append(f'“{snippet(reading["text"])}”')
+    author = ' and '.join(c['name'] for c in edition.get('contributors', []) if c.get('role') == 'author')
+    if not author:  # no contributors recorded yet: the citation opens on the author
+        author = plain(citation.get('display')).split(',')[0].strip()
+    words = ', '.join(x for x in (author, year_of(citation.get('written') or edition.get('issued'))) if x)
+    maker = ', '.join(x for x in (creator_names(image), year_of(image.get('date'))) if x)
+    credits = ' · '.join(x for x in (f'Words: {words}' if words else '', f'Image: {maker}' if maker else '') if x)
+    if credits:
+        parts.append(credits)
+    parts.append(f'Read the day: {SITE}/seasons.html?day={card["date"]}')
     return '\n\n'.join(parts)
 
 
-def essay_notes(entry):
+def essay_notes(entry, subject=None):
     url = f'{SITE}/{entry["page"]}'
     parts = []
+    latin = second_name(subject or {})
+    if latin:
+        parts.append(latin)
+    parts.append(summary(entry, 200))
     who = ', '.join(readers(entry))
     if who:
         parts.append(f'With {who}.')
-    parts.append(summary(entry, 600))
     parts.append(f'Read the essay: {url}')
     return '\n\n'.join(parts)
 
@@ -144,7 +174,7 @@ def events(config):
             continue
         name = subject_name(entry, by_subject.get(entry.get('subject')))
         first = date.fromisoformat(entry['published'])
-        title, notes, url = f'Lectio Terra: {name}', essay_notes(entry), f'{SITE}/{entry["page"]}'
+        title, notes, url = f'Lectio Terra: {name}', essay_notes(entry, names.get(entry.get('subject'))), f'{SITE}/{entry["page"]}'
         # Its first showing, on its publication day, then every year
         # from the next on its fixed day (weeks.essay_day).
         out.append((entry['published'][5:], event(f'{entry["id"]}-first', first, title, notes, url,

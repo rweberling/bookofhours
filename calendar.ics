@@ -15,10 +15,10 @@ UID:lt-0001-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260227
 SUMMARY:Lectio Terra: Witch Hazel
-DESCRIPTION:With Friedrich Nietzsche\, William Hamilton Gibson.\n\nTo any s
- tray readers of this intermittent project\, which I am now calling by a ne
- w name:\n\nRead the essay: https://earthlyhours.com/lectio-terra/witch-haz
- el/
+DESCRIPTION:Hamamelis virginiana\n\nTo any stray readers of this intermitte
+ nt project\, which I am now calling by a new name:\n\nWith Friedrich Nietz
+ sche\, William Hamilton Gibson.\n\nRead the essay: https://earthlyhours.co
+ m/lectio-terra/witch-hazel/
 URL:https://earthlyhours.com/lectio-terra/witch-hazel/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -28,10 +28,10 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270227
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Witch Hazel
-DESCRIPTION:With Friedrich Nietzsche\, William Hamilton Gibson.\n\nTo any s
- tray readers of this intermittent project\, which I am now calling by a ne
- w name:\n\nRead the essay: https://earthlyhours.com/lectio-terra/witch-haz
- el/
+DESCRIPTION:Hamamelis virginiana\n\nTo any stray readers of this intermitte
+ nt project\, which I am now calling by a new name:\n\nWith Friedrich Nietz
+ sche\, William Hamilton Gibson.\n\nRead the essay: https://earthlyhours.co
+ m/lectio-terra/witch-hazel/
 URL:https://earthlyhours.com/lectio-terra/witch-hazel/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -40,17 +40,11 @@ UID:lt-0002-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260306
 SUMMARY:Lectio Terra: American Robin
-DESCRIPTION:With Emily Dickinson\, Robert Ridgway.\n\nLast week were the fi
- rst morning bird songs that I have noticed\, riding quietly in the car wit
- h my partner after dropping our kids at school. I didn’t know it at the 
- time\, but that bright morning lay roughly equidistant between the final b
- lizzard of the winter (a nor’easter\, as they call it) and a season fina
- le of delicate snow turned into freezing rain. In this way\, the cold and 
- warmth\, dark and light\, liberations and rainy constraints of spring orga
- nize this month\, as we “interrupt” and “overflow” the patterns of
-  winter yet linger in the “Certainty / And Sanctity” of our hibernatio
- ns. This…\n\nRead the essay: https://earthlyhours.com/lectio-terra/ameri
- can-robin/
+DESCRIPTION:Turdus migratorius\n\nLast week were the first morning bird son
+ gs that I have noticed\, riding quietly in the car with my partner after d
+ ropping our kids at school. I didn’t know it at the time\, but that brig
+ ht morning lay…\n\nWith Emily Dickinson\, Robert Ridgway.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/american-robin/
 URL:https://earthlyhours.com/lectio-terra/american-robin/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -60,17 +54,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270306
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: American Robin
-DESCRIPTION:With Emily Dickinson\, Robert Ridgway.\n\nLast week were the fi
- rst morning bird songs that I have noticed\, riding quietly in the car wit
- h my partner after dropping our kids at school. I didn’t know it at the 
- time\, but that bright morning lay roughly equidistant between the final b
- lizzard of the winter (a nor’easter\, as they call it) and a season fina
- le of delicate snow turned into freezing rain. In this way\, the cold and 
- warmth\, dark and light\, liberations and rainy constraints of spring orga
- nize this month\, as we “interrupt” and “overflow” the patterns of
-  winter yet linger in the “Certainty / And Sanctity” of our hibernatio
- ns. This…\n\nRead the essay: https://earthlyhours.com/lectio-terra/ameri
- can-robin/
+DESCRIPTION:Turdus migratorius\n\nLast week were the first morning bird son
+ gs that I have noticed\, riding quietly in the car with my partner after d
+ ropping our kids at school. I didn’t know it at the time\, but that brig
+ ht morning lay…\n\nWith Emily Dickinson\, Robert Ridgway.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/american-robin/
 URL:https://earthlyhours.com/lectio-terra/american-robin/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -79,17 +67,11 @@ UID:lt-0003-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260312
 SUMMARY:Lectio Terra: Sugar Maple
-DESCRIPTION:With Annika Hansteen-Izora\, Walter H. Crockett\, E. Jones.\n\n
- Welcome to maple time\, if you live in my corner of North America. The sap
-  of the sugar maple (Acer Saccharum) has been flowing now in most places f
- or several weeks\, and the sugar shacks are busy boiling off water to conc
- entrate sugar. Sap runs vary each year in timing and length based primaril
- y on temperature (freezing nights and warming days)\, though the sap’s s
- ugar content is affected by factors such as the previous summer’s weathe
- r. Like with the sap they carry\, sugar maple saplings wait to grow until 
- the circumstances are right\, and can persist in dense woods for long peri
- ods of time…\n\nRead the essay: https://earthlyhours.com/lectio-terra/su
- gar-maple/
+DESCRIPTION:Acer saccharum\n\nWelcome to maple time\, if you live in my cor
+ ner of North America. The sap of the sugar maple (Acer Saccharum) has been
+  flowing now in most places for several weeks\, and the sugar shacks are b
+ usy…\n\nWith Annika Hansteen-Izora\, Walter H. Crockett\, E. Jones.\n\nR
+ ead the essay: https://earthlyhours.com/lectio-terra/sugar-maple/
 URL:https://earthlyhours.com/lectio-terra/sugar-maple/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -99,17 +81,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270312
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Sugar Maple
-DESCRIPTION:With Annika Hansteen-Izora\, Walter H. Crockett\, E. Jones.\n\n
- Welcome to maple time\, if you live in my corner of North America. The sap
-  of the sugar maple (Acer Saccharum) has been flowing now in most places f
- or several weeks\, and the sugar shacks are busy boiling off water to conc
- entrate sugar. Sap runs vary each year in timing and length based primaril
- y on temperature (freezing nights and warming days)\, though the sap’s s
- ugar content is affected by factors such as the previous summer’s weathe
- r. Like with the sap they carry\, sugar maple saplings wait to grow until 
- the circumstances are right\, and can persist in dense woods for long peri
- ods of time…\n\nRead the essay: https://earthlyhours.com/lectio-terra/su
- gar-maple/
+DESCRIPTION:Acer saccharum\n\nWelcome to maple time\, if you live in my cor
+ ner of North America. The sap of the sugar maple (Acer Saccharum) has been
+  flowing now in most places for several weeks\, and the sugar shacks are b
+ usy…\n\nWith Annika Hansteen-Izora\, Walter H. Crockett\, E. Jones.\n\nR
+ ead the essay: https://earthlyhours.com/lectio-terra/sugar-maple/
 URL:https://earthlyhours.com/lectio-terra/sugar-maple/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -118,16 +94,11 @@ UID:lt-0004-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260320
 SUMMARY:Lectio Terra: Paper Birch
-DESCRIPTION:With Robert Frost\, Gifford Pinchot.\n\nPaper birch (Betula pap
- yrifera)\, also known as canoe birch or American white birch\, is a mid-si
- zed deciduous tree native to northern North America. It can be found acros
- s the northern half of the continent. Paper birch sap begins flowing near 
- the end of sugar maple season\, when daytime temperatures reach above 50 d
- egrees Fahrenheit\, and continues to run for only two to three weeks\, app
- roximately half as long as maple sap. Although black and yellow birch are 
- more commonly used to produce birch beer\, which pairs their sap with wint
- ergreen oils distilled from their bark\, paper birch is best for…\n\nRea
- d the essay: https://earthlyhours.com/lectio-terra/paper-birch/
+DESCRIPTION:Betula papyrifera\n\nPaper birch (Betula papyrifera)\, also kno
+ wn as canoe birch or American white birch\, is a mid-sized deciduous tree 
+ native to northern North America. It can be found across the northern half
+  of the…\n\nWith Robert Frost\, Gifford Pinchot.\n\nRead the essay: http
+ s://earthlyhours.com/lectio-terra/paper-birch/
 URL:https://earthlyhours.com/lectio-terra/paper-birch/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -137,16 +108,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270320
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Paper Birch
-DESCRIPTION:With Robert Frost\, Gifford Pinchot.\n\nPaper birch (Betula pap
- yrifera)\, also known as canoe birch or American white birch\, is a mid-si
- zed deciduous tree native to northern North America. It can be found acros
- s the northern half of the continent. Paper birch sap begins flowing near 
- the end of sugar maple season\, when daytime temperatures reach above 50 d
- egrees Fahrenheit\, and continues to run for only two to three weeks\, app
- roximately half as long as maple sap. Although black and yellow birch are 
- more commonly used to produce birch beer\, which pairs their sap with wint
- ergreen oils distilled from their bark\, paper birch is best for…\n\nRea
- d the essay: https://earthlyhours.com/lectio-terra/paper-birch/
+DESCRIPTION:Betula papyrifera\n\nPaper birch (Betula papyrifera)\, also kno
+ wn as canoe birch or American white birch\, is a mid-sized deciduous tree 
+ native to northern North America. It can be found across the northern half
+  of the…\n\nWith Robert Frost\, Gifford Pinchot.\n\nRead the essay: http
+ s://earthlyhours.com/lectio-terra/paper-birch/
 URL:https://earthlyhours.com/lectio-terra/paper-birch/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -155,9 +121,10 @@ UID:lt-0005-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260327
 SUMMARY:Lectio Terra: Rain Clouds
-DESCRIPTION:With Johann Wolfgang von Goethe\, Jenny Odell.\n\nIf you didn
- ’t know that The International Cloud Atlas exists\, then you do now.\n\n
- Read the essay: https://earthlyhours.com/lectio-terra/rain-clouds/
+DESCRIPTION:Nimbostratus praecipitatio\n\nIf you didn’t know that The Int
+ ernational Cloud Atlas exists\, then you do now.\n\nWith Johann Wolfgang v
+ on Goethe\, Jenny Odell.\n\nRead the essay: https://earthlyhours.com/lecti
+ o-terra/rain-clouds/
 URL:https://earthlyhours.com/lectio-terra/rain-clouds/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -167,9 +134,10 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270327
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Rain Clouds
-DESCRIPTION:With Johann Wolfgang von Goethe\, Jenny Odell.\n\nIf you didn
- ’t know that The International Cloud Atlas exists\, then you do now.\n\n
- Read the essay: https://earthlyhours.com/lectio-terra/rain-clouds/
+DESCRIPTION:Nimbostratus praecipitatio\n\nIf you didn’t know that The Int
+ ernational Cloud Atlas exists\, then you do now.\n\nWith Johann Wolfgang v
+ on Goethe\, Jenny Odell.\n\nRead the essay: https://earthlyhours.com/lecti
+ o-terra/rain-clouds/
 URL:https://earthlyhours.com/lectio-terra/rain-clouds/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -178,16 +146,11 @@ UID:lt-0006-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260403
 SUMMARY:Lectio Terra: Dutch Crocus
-DESCRIPTION:With Guillaume Barth\, William Herbert.\n\nThe crocuses likely 
- have already come and gone. They can return each spring almost too early\,
-  before the snow melts\, before the robins return\, before the atmosphere 
- warms (let alone the soil). Here in my urban neighborhood\, the Dutch croc
- us (Crocus vernus) blooms in tandem with the snowdrops (Galanthus nivalis)
-  and just prior to the daffodils (Narcissus pseudonarcissus). These corm-b
- ased geophytes\, which require 10 to 15 weeks of cold to biochemically shi
- ft their apical meristem\, or growing point\, from leaf- to flower-product
- ion\, have become such a seasonal marker for me that I assumed they…\n\n
- Read the essay: https://earthlyhours.com/lectio-terra/dutch-crocus/
+DESCRIPTION:Crocus vernus\n\nThe crocuses likely have already come and gone
+ . They can return each spring almost too early\, before the snow melts\, b
+ efore the robins return\, before the atmosphere warms (let alone the soil)
+ . Here…\n\nWith Guillaume Barth\, William Herbert.\n\nRead the essay: ht
+ tps://earthlyhours.com/lectio-terra/dutch-crocus/
 URL:https://earthlyhours.com/lectio-terra/dutch-crocus/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -197,16 +160,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270403
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Dutch Crocus
-DESCRIPTION:With Guillaume Barth\, William Herbert.\n\nThe crocuses likely 
- have already come and gone. They can return each spring almost too early\,
-  before the snow melts\, before the robins return\, before the atmosphere 
- warms (let alone the soil). Here in my urban neighborhood\, the Dutch croc
- us (Crocus vernus) blooms in tandem with the snowdrops (Galanthus nivalis)
-  and just prior to the daffodils (Narcissus pseudonarcissus). These corm-b
- ased geophytes\, which require 10 to 15 weeks of cold to biochemically shi
- ft their apical meristem\, or growing point\, from leaf- to flower-product
- ion\, have become such a seasonal marker for me that I assumed they…\n\n
- Read the essay: https://earthlyhours.com/lectio-terra/dutch-crocus/
+DESCRIPTION:Crocus vernus\n\nThe crocuses likely have already come and gone
+ . They can return each spring almost too early\, before the snow melts\, b
+ efore the robins return\, before the atmosphere warms (let alone the soil)
+ . Here…\n\nWith Guillaume Barth\, William Herbert.\n\nRead the essay: ht
+ tps://earthlyhours.com/lectio-terra/dutch-crocus/
 URL:https://earthlyhours.com/lectio-terra/dutch-crocus/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -215,9 +173,9 @@ UID:lt-0007-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260410
 SUMMARY:Lectio Terra: Ostrich Fern
-DESCRIPTION:With Martin Heidegger\, Douglas Houghton Campbell.\n\nWhat IS e
- xisting?\n\nRead the essay: https://earthlyhours.com/lectio-terra/ostrich-
- fern/
+DESCRIPTION:Matteuccia struthiopteris\n\nWhat IS existing?\n\nWith Martin H
+ eidegger\, Douglas Houghton Campbell.\n\nRead the essay: https://earthlyho
+ urs.com/lectio-terra/ostrich-fern/
 URL:https://earthlyhours.com/lectio-terra/ostrich-fern/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -227,9 +185,9 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270410
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Ostrich Fern
-DESCRIPTION:With Martin Heidegger\, Douglas Houghton Campbell.\n\nWhat IS e
- xisting?\n\nRead the essay: https://earthlyhours.com/lectio-terra/ostrich-
- fern/
+DESCRIPTION:Matteuccia struthiopteris\n\nWhat IS existing?\n\nWith Martin H
+ eidegger\, Douglas Houghton Campbell.\n\nRead the essay: https://earthlyho
+ urs.com/lectio-terra/ostrich-fern/
 URL:https://earthlyhours.com/lectio-terra/ostrich-fern/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -238,17 +196,11 @@ UID:lt-0008-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260417
 SUMMARY:Lectio Terra: Eastern Cottontail
-DESCRIPTION:With Zora Neale Hurston\, Ernest Thompson Seton.\n\nFew creatur
- es are more storied than the rabbit and its cousin\, the hare. Their manif
- estations extend across the globe\, ranging from cosmology and folklore (N
- anabozho and Br’er Rabbit) into transatlantic children’s literature (L
- ewis Carroll’s “White Rabbit\,” Peter Rabbit\, and Peter Cottontail)
- \, and onward to twentieth-century cartoons (Bugs Bunny\, Roger Rabbit) an
- d cinematic riddles (the eponymous Harvey and Donnie Darko’s Frank)—le
- t’s not get into the other versions of bunnies in American pop culture. 
- Across their many forms\, these leporine figures embody a variety of trait
- s and entities…\n\nRead the essay: https://earthlyhours.com/lectio-terra
- /eastern-cottontail/
+DESCRIPTION:Sylvilagus floridanus\n\nFew creatures are more storied than th
+ e rabbit and its cousin\, the hare. Their manifestations extend across the
+  globe\, ranging from cosmology and folklore (Nanabozho and Br’er Rabbit
+ ) into…\n\nWith Zora Neale Hurston\, Ernest Thompson Seton.\n\nRead the 
+ essay: https://earthlyhours.com/lectio-terra/eastern-cottontail/
 URL:https://earthlyhours.com/lectio-terra/eastern-cottontail/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -258,17 +210,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270417
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Eastern Cottontail
-DESCRIPTION:With Zora Neale Hurston\, Ernest Thompson Seton.\n\nFew creatur
- es are more storied than the rabbit and its cousin\, the hare. Their manif
- estations extend across the globe\, ranging from cosmology and folklore (N
- anabozho and Br’er Rabbit) into transatlantic children’s literature (L
- ewis Carroll’s “White Rabbit\,” Peter Rabbit\, and Peter Cottontail)
- \, and onward to twentieth-century cartoons (Bugs Bunny\, Roger Rabbit) an
- d cinematic riddles (the eponymous Harvey and Donnie Darko’s Frank)—le
- t’s not get into the other versions of bunnies in American pop culture. 
- Across their many forms\, these leporine figures embody a variety of trait
- s and entities…\n\nRead the essay: https://earthlyhours.com/lectio-terra
- /eastern-cottontail/
+DESCRIPTION:Sylvilagus floridanus\n\nFew creatures are more storied than th
+ e rabbit and its cousin\, the hare. Their manifestations extend across the
+  globe\, ranging from cosmology and folklore (Nanabozho and Br’er Rabbit
+ ) into…\n\nWith Zora Neale Hurston\, Ernest Thompson Seton.\n\nRead the 
+ essay: https://earthlyhours.com/lectio-terra/eastern-cottontail/
 URL:https://earthlyhours.com/lectio-terra/eastern-cottontail/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -277,11 +223,11 @@ UID:lt-0009-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260425
 SUMMARY:Lectio Terra: Great Mullein
-DESCRIPTION:With Ashia Ajani\, Hildegard von Bingen.\n\nThis one’s a day 
- late\; I had to catch up on my day job and be an insomniac for a couple ni
- ghts. Do you have any suggested species or sources for me to include in fu
- ture dispatches? Leave a comment on Substack or send me an email.\n\nRead 
- the essay: https://earthlyhours.com/lectio-terra/great-mullein/
+DESCRIPTION:Verbascum thapsus\n\nThis one’s a day late\; I had to catch u
+ p on my day job and be an insomniac for a couple nights. Do you have any s
+ uggested species or sources for me to include in future dispatches? Leave 
+ a comment on…\n\nWith Ashia Ajani\, Hildegard von Bingen.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/great-mullein/
 URL:https://earthlyhours.com/lectio-terra/great-mullein/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -291,11 +237,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270425
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Great Mullein
-DESCRIPTION:With Ashia Ajani\, Hildegard von Bingen.\n\nThis one’s a day 
- late\; I had to catch up on my day job and be an insomniac for a couple ni
- ghts. Do you have any suggested species or sources for me to include in fu
- ture dispatches? Leave a comment on Substack or send me an email.\n\nRead 
- the essay: https://earthlyhours.com/lectio-terra/great-mullein/
+DESCRIPTION:Verbascum thapsus\n\nThis one’s a day late\; I had to catch u
+ p on my day job and be an insomniac for a couple nights. Do you have any s
+ uggested species or sources for me to include in future dispatches? Leave 
+ a comment on…\n\nWith Ashia Ajani\, Hildegard von Bingen.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/great-mullein/
 URL:https://earthlyhours.com/lectio-terra/great-mullein/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -304,17 +250,11 @@ UID:lt-0010-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260501
 SUMMARY:Lectio Terra: Sheet Moss
-DESCRIPTION:With Hildegard von Bingen\, Michael Marder.\n\nIf there’s a p
- lant that reminds me of God\, it’s probably moss. Indeed\, the plant’s
-  biology is as ornate and rarefied as any systematic theology. Ubiquitous 
- and abundant but amorphously changing\, obvious but mysterious\, perennial
- ly surprising and yet easy to take for granted\, expanding or contracting 
- as it slowly transforms its surroundings—modest moss can be as soft as t
- he tender\, mighty mullein\, but its diminutive\, hair-like roots\, called
-  rhizoids\, work over time to accomplish feats of erosion that would be im
- possible for other plants. Moss is slow green fire\, breathing air\, water
- \, and…\n\nRead the essay: https://earthlyhours.com/lectio-terra/sheet-m
- oss/
+DESCRIPTION:Hypnum imponens\n\nIf there’s a plant that reminds me of God\
+ , it’s probably moss. Indeed\, the plant’s biology is as ornate and ra
+ refied as any systematic theology. Ubiquitous and abundant but amorphously
+  changing…\n\nWith Hildegard von Bingen\, Michael Marder.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/sheet-moss/
 URL:https://earthlyhours.com/lectio-terra/sheet-moss/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -324,17 +264,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270501
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Sheet Moss
-DESCRIPTION:With Hildegard von Bingen\, Michael Marder.\n\nIf there’s a p
- lant that reminds me of God\, it’s probably moss. Indeed\, the plant’s
-  biology is as ornate and rarefied as any systematic theology. Ubiquitous 
- and abundant but amorphously changing\, obvious but mysterious\, perennial
- ly surprising and yet easy to take for granted\, expanding or contracting 
- as it slowly transforms its surroundings—modest moss can be as soft as t
- he tender\, mighty mullein\, but its diminutive\, hair-like roots\, called
-  rhizoids\, work over time to accomplish feats of erosion that would be im
- possible for other plants. Moss is slow green fire\, breathing air\, water
- \, and…\n\nRead the essay: https://earthlyhours.com/lectio-terra/sheet-m
- oss/
+DESCRIPTION:Hypnum imponens\n\nIf there’s a plant that reminds me of God\
+ , it’s probably moss. Indeed\, the plant’s biology is as ornate and ra
+ refied as any systematic theology. Ubiquitous and abundant but amorphously
+  changing…\n\nWith Hildegard von Bingen\, Michael Marder.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/sheet-moss/
 URL:https://earthlyhours.com/lectio-terra/sheet-moss/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -343,10 +277,10 @@ UID:lt-0011-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260508
 SUMMARY:Lectio Terra: Cambridge Argillite
-DESCRIPTION:With Ludwig Wittgenstein\, The Dana Brothers.\n\nIt’s worth a
- t least checking your bedrock. You may find a surprising history beneath y
- our feet.\n\nRead the essay: https://earthlyhours.com/lectio-terra/cambrid
- ge-argillite/
+DESCRIPTION:Argillita cantabrigiensis\n\nIt’s worth at least checking you
+ r bedrock. You may find a surprising history beneath your feet.\n\nWith Lu
+ dwig Wittgenstein\, The Dana Brothers.\n\nRead the essay: https://earthlyh
+ ours.com/lectio-terra/cambridge-argillite/
 URL:https://earthlyhours.com/lectio-terra/cambridge-argillite/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -356,10 +290,10 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270508
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Cambridge Argillite
-DESCRIPTION:With Ludwig Wittgenstein\, The Dana Brothers.\n\nIt’s worth a
- t least checking your bedrock. You may find a surprising history beneath y
- our feet.\n\nRead the essay: https://earthlyhours.com/lectio-terra/cambrid
- ge-argillite/
+DESCRIPTION:Argillita cantabrigiensis\n\nIt’s worth at least checking you
+ r bedrock. You may find a surprising history beneath your feet.\n\nWith Lu
+ dwig Wittgenstein\, The Dana Brothers.\n\nRead the essay: https://earthlyh
+ ours.com/lectio-terra/cambridge-argillite/
 URL:https://earthlyhours.com/lectio-terra/cambridge-argillite/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -368,16 +302,11 @@ UID:lt-0012-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260515
 SUMMARY:Lectio Terra: Common Lilac
-DESCRIPTION:With Amy Lowell\, Ronald Firbank.\n\nThe lilac—so pure\, so s
- weet\, so artificial. Although only 20 to 25 species of lilacs exist in th
- e wild\, more than 2\,000 named cultivars (according to the official Inter
- national Lilac Registrar) have been developed\, most over the past 150 yea
- rs. Beginning in the 1870s\, French botanists Victor and Marie Louise Lemo
- ine began using needles\, tweezers\, and paintbrushes to delicately cross 
- the common lilac—native to the Balkan Peninsula but common throughout Eu
- rope—with species from China and other regions\, creating spectacular do
- uble-flowered and early-blooming hybrids. Other breeders around the…\n\n
- Read the essay: https://earthlyhours.com/lectio-terra/common-lilac/
+DESCRIPTION:Syringa vulgaris\n\nThe lilac—so pure\, so sweet\, so artific
+ ial. Although only 20 to 25 species of lilacs exist in the wild\, more tha
+ n 2\,000 named cultivars (according to the official International Lilac Re
+ gistrar) have…\n\nWith Amy Lowell\, Ronald Firbank.\n\nRead the essay: h
+ ttps://earthlyhours.com/lectio-terra/common-lilac/
 URL:https://earthlyhours.com/lectio-terra/common-lilac/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -387,16 +316,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270515
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Common Lilac
-DESCRIPTION:With Amy Lowell\, Ronald Firbank.\n\nThe lilac—so pure\, so s
- weet\, so artificial. Although only 20 to 25 species of lilacs exist in th
- e wild\, more than 2\,000 named cultivars (according to the official Inter
- national Lilac Registrar) have been developed\, most over the past 150 yea
- rs. Beginning in the 1870s\, French botanists Victor and Marie Louise Lemo
- ine began using needles\, tweezers\, and paintbrushes to delicately cross 
- the common lilac—native to the Balkan Peninsula but common throughout Eu
- rope—with species from China and other regions\, creating spectacular do
- uble-flowered and early-blooming hybrids. Other breeders around the…\n\n
- Read the essay: https://earthlyhours.com/lectio-terra/common-lilac/
+DESCRIPTION:Syringa vulgaris\n\nThe lilac—so pure\, so sweet\, so artific
+ ial. Although only 20 to 25 species of lilacs exist in the wild\, more tha
+ n 2\,000 named cultivars (according to the official International Lilac Re
+ gistrar) have…\n\nWith Amy Lowell\, Ronald Firbank.\n\nRead the essay: h
+ ttps://earthlyhours.com/lectio-terra/common-lilac/
 URL:https://earthlyhours.com/lectio-terra/common-lilac/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -405,10 +329,11 @@ UID:lt-0013-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260522
 SUMMARY:Lectio Terra: Living Soil
-DESCRIPTION:With Jenifer Wightman\, Graham A.W. Rook.\n\nThis week goes lon
- g on history and biology—the latter not my forte. Bear with me as I vent
- ure into the science of the small. The surprising story is worth it.\n\nRe
- ad the essay: https://earthlyhours.com/lectio-terra/living-soil/
+DESCRIPTION:Mycobacterium vaccae\n\nThis week goes long on history and biol
+ ogy—the latter not my forte. Bear with me as I venture into the science 
+ of the small. The surprising story is worth it.\n\nWith Jenifer Wightman\,
+  Graham A.W. Rook.\n\nRead the essay: https://earthlyhours.com/lectio-terr
+ a/living-soil/
 URL:https://earthlyhours.com/lectio-terra/living-soil/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -418,10 +343,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270522
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Living Soil
-DESCRIPTION:With Jenifer Wightman\, Graham A.W. Rook.\n\nThis week goes lon
- g on history and biology—the latter not my forte. Bear with me as I vent
- ure into the science of the small. The surprising story is worth it.\n\nRe
- ad the essay: https://earthlyhours.com/lectio-terra/living-soil/
+DESCRIPTION:Mycobacterium vaccae\n\nThis week goes long on history and biol
+ ogy—the latter not my forte. Bear with me as I venture into the science 
+ of the small. The surprising story is worth it.\n\nWith Jenifer Wightman\,
+  Graham A.W. Rook.\n\nRead the essay: https://earthlyhours.com/lectio-terr
+ a/living-soil/
 URL:https://earthlyhours.com/lectio-terra/living-soil/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -430,16 +356,11 @@ UID:lt-0014-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260529
 SUMMARY:Lectio Terra: Common Reed
-DESCRIPTION:With Rumi\, A.R. Horwood.\n\nAre you looking for Rumi-related A
- I slop? Well\, YouTube has it! (No links provided here.) Perhaps this is n
- ot surprising. Since his introduction into English and Western European la
- nguages during the nineteenth century\, Rumi went on to become a bestselle
- r in the 1990s and early 2000s\, featured prominently across Oprah’s mul
- timedia empire and even recited on a Coldplay album. Of course\, making hi
- m the most popular poet in the U.S. required some translators/adapters and
-  publishers to excise many of his cultural\, historical\, and linguistic p
- articularities\, including most traces of Islam. As a…\n\nRead the essay
- : https://earthlyhours.com/lectio-terra/common-reed/
+DESCRIPTION:Phragmites australis\n\nAre you looking for Rumi-related AI slo
+ p? Well\, YouTube has it! (No links provided here.) Perhaps this is not su
+ rprising. Since his introduction into English and Western European languag
+ es during the…\n\nWith Rumi\, A.R. Horwood.\n\nRead the essay: https://e
+ arthlyhours.com/lectio-terra/common-reed/
 URL:https://earthlyhours.com/lectio-terra/common-reed/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -449,16 +370,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270529
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Common Reed
-DESCRIPTION:With Rumi\, A.R. Horwood.\n\nAre you looking for Rumi-related A
- I slop? Well\, YouTube has it! (No links provided here.) Perhaps this is n
- ot surprising. Since his introduction into English and Western European la
- nguages during the nineteenth century\, Rumi went on to become a bestselle
- r in the 1990s and early 2000s\, featured prominently across Oprah’s mul
- timedia empire and even recited on a Coldplay album. Of course\, making hi
- m the most popular poet in the U.S. required some translators/adapters and
-  publishers to excise many of his cultural\, historical\, and linguistic p
- articularities\, including most traces of Islam. As a…\n\nRead the essay
- : https://earthlyhours.com/lectio-terra/common-reed/
+DESCRIPTION:Phragmites australis\n\nAre you looking for Rumi-related AI slo
+ p? Well\, YouTube has it! (No links provided here.) Perhaps this is not su
+ rprising. Since his introduction into English and Western European languag
+ es during the…\n\nWith Rumi\, A.R. Horwood.\n\nRead the essay: https://e
+ arthlyhours.com/lectio-terra/common-reed/
 URL:https://earthlyhours.com/lectio-terra/common-reed/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -467,9 +383,9 @@ UID:lt-0015-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260606
 SUMMARY:Lectio Terra: Wool Sower Wasp
-DESCRIPTION:With E.P. Felt\, Francesco Redi of Arezzo.\n\nWe thought they w
- ere fungal. Or maybe even artificial.\n\nRead the essay: https://earthlyho
- urs.com/lectio-terra/wool-sower-wasp/
+DESCRIPTION:Callirhytis seminator\n\nWe thought they were fungal. Or maybe 
+ even artificial.\n\nWith E.P. Felt\, Francesco Redi of Arezzo.\n\nRead the
+  essay: https://earthlyhours.com/lectio-terra/wool-sower-wasp/
 URL:https://earthlyhours.com/lectio-terra/wool-sower-wasp/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -479,9 +395,9 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270606
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Wool Sower Wasp
-DESCRIPTION:With E.P. Felt\, Francesco Redi of Arezzo.\n\nWe thought they w
- ere fungal. Or maybe even artificial.\n\nRead the essay: https://earthlyho
- urs.com/lectio-terra/wool-sower-wasp/
+DESCRIPTION:Callirhytis seminator\n\nWe thought they were fungal. Or maybe 
+ even artificial.\n\nWith E.P. Felt\, Francesco Redi of Arezzo.\n\nRead the
+  essay: https://earthlyhours.com/lectio-terra/wool-sower-wasp/
 URL:https://earthlyhours.com/lectio-terra/wool-sower-wasp/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -490,17 +406,11 @@ UID:lt-0016-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260612
 SUMMARY:Lectio Terra: Pink Lady’s Slipper
-DESCRIPTION:With Grace Greylock Niles\, C.S. Young.\n\nAlong the same walk 
- that I first encountered the wool sower wasp\, I found an old friend. No\,
-  not that type of old friend—just a flower I’ve come to know over the 
- past nine or so years. It has a delicate yet visceral form\, immediately s
- triking and beautiful but a bit gory if you think about it for too long. I
- t’s the type of plant that seems to have nearly universal appeal\, spawn
- ing refined social and scientific clubs while also luring weirdos out into
-  the woods. For independent botanist and artist Grace Greylock Niles\, who
- se work and story are worth knowing\, this flower took the front page of
- …\n\nRead the essay: https://earthlyhours.com/lectio-terra/pink-ladys-sl
- ipper/
+DESCRIPTION:Cypripedium acaule\n\nAlong the same walk that I first encounte
+ red the wool sower wasp\, I found an old friend. No\, not that type of old
+  friend—just a flower I’ve come to know over the past nine or so years
+ . It has a…\n\nWith Grace Greylock Niles\, C.S. Young.\n\nRead the essay
+ : https://earthlyhours.com/lectio-terra/pink-ladys-slipper/
 URL:https://earthlyhours.com/lectio-terra/pink-ladys-slipper/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -510,17 +420,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270612
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Pink Lady’s Slipper
-DESCRIPTION:With Grace Greylock Niles\, C.S. Young.\n\nAlong the same walk 
- that I first encountered the wool sower wasp\, I found an old friend. No\,
-  not that type of old friend—just a flower I’ve come to know over the 
- past nine or so years. It has a delicate yet visceral form\, immediately s
- triking and beautiful but a bit gory if you think about it for too long. I
- t’s the type of plant that seems to have nearly universal appeal\, spawn
- ing refined social and scientific clubs while also luring weirdos out into
-  the woods. For independent botanist and artist Grace Greylock Niles\, who
- se work and story are worth knowing\, this flower took the front page of
- …\n\nRead the essay: https://earthlyhours.com/lectio-terra/pink-ladys-sl
- ipper/
+DESCRIPTION:Cypripedium acaule\n\nAlong the same walk that I first encounte
+ red the wool sower wasp\, I found an old friend. No\, not that type of old
+  friend—just a flower I’ve come to know over the past nine or so years
+ . It has a…\n\nWith Grace Greylock Niles\, C.S. Young.\n\nRead the essay
+ : https://earthlyhours.com/lectio-terra/pink-ladys-slipper/
 URL:https://earthlyhours.com/lectio-terra/pink-ladys-slipper/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -529,9 +433,9 @@ UID:lt-0017-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260619
 SUMMARY:Lectio Terra: Sunspots
-DESCRIPTION:With Galileo Galilei feat. The Roman Inquisition\, Simon Barrac
- lough.\n\nA weather update from outer space:\n\nRead the essay: https://ea
- rthlyhours.com/lectio-terra/sunspots/
+DESCRIPTION:Maculae solares\n\nA weather update from outer space:\n\nWith G
+ alileo Galilei feat. The Roman Inquisition\, Simon Barraclough.\n\nRead th
+ e essay: https://earthlyhours.com/lectio-terra/sunspots/
 URL:https://earthlyhours.com/lectio-terra/sunspots/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -541,9 +445,9 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270619
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Sunspots
-DESCRIPTION:With Galileo Galilei feat. The Roman Inquisition\, Simon Barrac
- lough.\n\nA weather update from outer space:\n\nRead the essay: https://ea
- rthlyhours.com/lectio-terra/sunspots/
+DESCRIPTION:Maculae solares\n\nA weather update from outer space:\n\nWith G
+ alileo Galilei feat. The Roman Inquisition\, Simon Barraclough.\n\nRead th
+ e essay: https://earthlyhours.com/lectio-terra/sunspots/
 URL:https://earthlyhours.com/lectio-terra/sunspots/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -552,11 +456,11 @@ UID:lt-0018-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260628
 SUMMARY:Lectio Terra: Serviceberry
-DESCRIPTION:With Robin Wall Kimmerer\, K.M. Wiegand.\n\nIt’s not every da
- y you get to experience a new taste\, a new texture—a new food—at the 
- same time as your child\, while both perched atop a long-tail cargo bicycl
- e behind their elementary school.\n\nRead the essay: https://earthlyhours.
- com/lectio-terra/serviceberry/
+DESCRIPTION:Amelanchier canadensis\n\nIt’s not every day you get to exper
+ ience a new taste\, a new texture—a new food—at the same time as your 
+ child\, while both perched atop a long-tail cargo bicycle behind their ele
+ mentary school.\n\nWith Robin Wall Kimmerer\, K.M. Wiegand.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/serviceberry/
 URL:https://earthlyhours.com/lectio-terra/serviceberry/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -566,11 +470,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270628
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Serviceberry
-DESCRIPTION:With Robin Wall Kimmerer\, K.M. Wiegand.\n\nIt’s not every da
- y you get to experience a new taste\, a new texture—a new food—at the 
- same time as your child\, while both perched atop a long-tail cargo bicycl
- e behind their elementary school.\n\nRead the essay: https://earthlyhours.
- com/lectio-terra/serviceberry/
+DESCRIPTION:Amelanchier canadensis\n\nIt’s not every day you get to exper
+ ience a new taste\, a new texture—a new food—at the same time as your 
+ child\, while both perched atop a long-tail cargo bicycle behind their ele
+ mentary school.\n\nWith Robin Wall Kimmerer\, K.M. Wiegand.\n\nRead the es
+ say: https://earthlyhours.com/lectio-terra/serviceberry/
 URL:https://earthlyhours.com/lectio-terra/serviceberry/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -579,11 +483,11 @@ UID:lt-0019-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260710
 SUMMARY:Lectio Terra: Red Currant
-DESCRIPTION:With Maud Grieve\, The Ohio Agricultural Experiment Station.\n\
- nAfter a week off to make some progress on my book of hours project\, we c
- ontinue our regularly scheduled berry programming with another red one ado
- red by my oldest son.\n\nRead the essay: https://earthlyhours.com/lectio-t
- erra/red-currant/
+DESCRIPTION:Ribes rubrum\n\nAfter a week off to make some progress on my bo
+ ok of hours project\, we continue our regularly scheduled berry programmin
+ g with another red one adored by my oldest son.\n\nWith Maud Grieve\, The 
+ Ohio Agricultural Experiment Station.\n\nRead the essay: https://earthlyho
+ urs.com/lectio-terra/red-currant/
 URL:https://earthlyhours.com/lectio-terra/red-currant/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -593,11 +497,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270710
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Red Currant
-DESCRIPTION:With Maud Grieve\, The Ohio Agricultural Experiment Station.\n\
- nAfter a week off to make some progress on my book of hours project\, we c
- ontinue our regularly scheduled berry programming with another red one ado
- red by my oldest son.\n\nRead the essay: https://earthlyhours.com/lectio-t
- erra/red-currant/
+DESCRIPTION:Ribes rubrum\n\nAfter a week off to make some progress on my bo
+ ok of hours project\, we continue our regularly scheduled berry programmin
+ g with another red one adored by my oldest son.\n\nWith Maud Grieve\, The 
+ Ohio Agricultural Experiment Station.\n\nRead the essay: https://earthlyho
+ urs.com/lectio-terra/red-currant/
 URL:https://earthlyhours.com/lectio-terra/red-currant/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -606,14 +510,11 @@ UID:lt-0020-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260719
 SUMMARY:Lectio Terra: Corn
-DESCRIPTION:With Haudenosaunee Storytellers\, Emily Pauline Johnson.\n\nIn 
- my personal opinion\, much resisted by the chatbots I consulted\, corn is 
- the berries of the vegetable world. Indeed\, corn—specifically\, sweet c
- orn—is unique among commonly eaten plants in that it spans the typically
-  distinct categories of fruit\, vegetable\, and grain. In other words\, it
- ’s a grass that produces sweet clusters that you eat like a carrot. The 
- chatbots don’t know everything yet.\n\nRead the essay: https://earthlyho
- urs.com/lectio-terra/corn/
+DESCRIPTION:Zea mays\n\nIn my personal opinion\, much resisted by the chatb
+ ots I consulted\, corn is the berries of the vegetable world. Indeed\, cor
+ n—specifically\, sweet corn—is unique among commonly eaten plants in t
+ hat it…\n\nWith Haudenosaunee Storytellers\, Emily Pauline Johnson.\n\nR
+ ead the essay: https://earthlyhours.com/lectio-terra/corn/
 URL:https://earthlyhours.com/lectio-terra/corn/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -623,14 +524,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270719
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Corn
-DESCRIPTION:With Haudenosaunee Storytellers\, Emily Pauline Johnson.\n\nIn 
- my personal opinion\, much resisted by the chatbots I consulted\, corn is 
- the berries of the vegetable world. Indeed\, corn—specifically\, sweet c
- orn—is unique among commonly eaten plants in that it spans the typically
-  distinct categories of fruit\, vegetable\, and grain. In other words\, it
- ’s a grass that produces sweet clusters that you eat like a carrot. The 
- chatbots don’t know everything yet.\n\nRead the essay: https://earthlyho
- urs.com/lectio-terra/corn/
+DESCRIPTION:Zea mays\n\nIn my personal opinion\, much resisted by the chatb
+ ots I consulted\, corn is the berries of the vegetable world. Indeed\, cor
+ n—specifically\, sweet corn—is unique among commonly eaten plants in t
+ hat it…\n\nWith Haudenosaunee Storytellers\, Emily Pauline Johnson.\n\nR
+ ead the essay: https://earthlyhours.com/lectio-terra/corn/
 URL:https://earthlyhours.com/lectio-terra/corn/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -639,12 +537,12 @@ UID:lt-0021-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260725
 SUMMARY:Lectio Terra: Highbush Blueberry
-DESCRIPTION:With Joseph J. White\, Inc.\, Alix Beeston on Ellena Savage.\n\
- nRounding out my quartet of summer berries (fraudulent\, actual\, or imagi
- natively so)\, we arrive now at the blueberry—my apologies to the sweet 
- strawberry\, that rosaceous receptacle\, which will have to wait for anoth
- er summer.\n\nRead the essay: https://earthlyhours.com/lectio-terra/highbu
- sh-blueberry/
+DESCRIPTION:Vaccinium corymbosum\n\nRounding out my quartet of summer berri
+ es (fraudulent\, actual\, or imaginatively so)\, we arrive now at the blue
+ berry—my apologies to the sweet strawberry\, that rosaceous receptacle\,
+  which will have to…\n\nWith Joseph J. White\, Inc.\, Alix Beeston on El
+ lena Savage.\n\nRead the essay: https://earthlyhours.com/lectio-terra/high
+ bush-blueberry/
 URL:https://earthlyhours.com/lectio-terra/highbush-blueberry/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -654,12 +552,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270725
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Highbush Blueberry
-DESCRIPTION:With Joseph J. White\, Inc.\, Alix Beeston on Ellena Savage.\n\
- nRounding out my quartet of summer berries (fraudulent\, actual\, or imagi
- natively so)\, we arrive now at the blueberry—my apologies to the sweet 
- strawberry\, that rosaceous receptacle\, which will have to wait for anoth
- er summer.\n\nRead the essay: https://earthlyhours.com/lectio-terra/highbu
- sh-blueberry/
+DESCRIPTION:Vaccinium corymbosum\n\nRounding out my quartet of summer berri
+ es (fraudulent\, actual\, or imaginatively so)\, we arrive now at the blue
+ berry—my apologies to the sweet strawberry\, that rosaceous receptacle\,
+  which will have to…\n\nWith Joseph J. White\, Inc.\, Alix Beeston on El
+ lena Savage.\n\nRead the essay: https://earthlyhours.com/lectio-terra/high
+ bush-blueberry/
 URL:https://earthlyhours.com/lectio-terra/highbush-blueberry/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -668,14 +566,11 @@ UID:lt-0022-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260801
 SUMMARY:Lectio Terra: Butterfly Weed
-DESCRIPTION:With Paul Muldoon\, Nathaniel Lord Britton.\n\nI came to apprec
- iate butterfly weed through my wife Meghan’s occasional summer pickings.
-  The plant’s clustered orange blooms can look like small flames or firew
- orks hovering above a meadow- or table-scape\; or\, if an especially long 
- and narrow cluster is laying at rest on a table\, it reminds me of a beade
- d brooch or hair clip.1 But I didn’t know the wonder or the strangeness 
- behind the plant’s namesake until more recently.\n\nRead the essay: http
- s://earthlyhours.com/lectio-terra/butterfly-weed/
+DESCRIPTION:Asclepias tuberosa\n\nI came to appreciate butterfly weed throu
+ gh my wife Meghan’s occasional summer pickings. The plant’s clustered 
+ orange blooms can look like small flames or fireworks hovering above a mea
+ dow- or…\n\nWith Paul Muldoon\, Nathaniel Lord Britton.\n\nRead the essa
+ y: https://earthlyhours.com/lectio-terra/butterfly-weed/
 URL:https://earthlyhours.com/lectio-terra/butterfly-weed/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -685,14 +580,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270801
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Butterfly Weed
-DESCRIPTION:With Paul Muldoon\, Nathaniel Lord Britton.\n\nI came to apprec
- iate butterfly weed through my wife Meghan’s occasional summer pickings.
-  The plant’s clustered orange blooms can look like small flames or firew
- orks hovering above a meadow- or table-scape\; or\, if an especially long 
- and narrow cluster is laying at rest on a table\, it reminds me of a beade
- d brooch or hair clip.1 But I didn’t know the wonder or the strangeness 
- behind the plant’s namesake until more recently.\n\nRead the essay: http
- s://earthlyhours.com/lectio-terra/butterfly-weed/
+DESCRIPTION:Asclepias tuberosa\n\nI came to appreciate butterfly weed throu
+ gh my wife Meghan’s occasional summer pickings. The plant’s clustered 
+ orange blooms can look like small flames or fireworks hovering above a mea
+ dow- or…\n\nWith Paul Muldoon\, Nathaniel Lord Britton.\n\nRead the essa
+ y: https://earthlyhours.com/lectio-terra/butterfly-weed/
 URL:https://earthlyhours.com/lectio-terra/butterfly-weed/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -701,11 +593,11 @@ UID:lt-0023-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260807
 SUMMARY:Lectio Terra: Dog Days
-DESCRIPTION:With Horace\, Heraclitus.\n\nThis week’s post is dedicated to
-  my highly anxious first-and-only childhood dog\, Cricket\; my father-in-l
- aw\, Walter\; and dog lovers everywhere except outside my bedroom window a
- t night.\n\nRead the essay: https://earthlyhours.com/lectio-terra/dog-days
- /
+DESCRIPTION:Dies caniculares\n\nThis week’s post is dedicated to my highl
+ y anxious first-and-only childhood dog\, Cricket\; my father-in-law\, Walt
+ er\; and dog lovers everywhere except outside my bedroom window at night.\
+ n\nWith Horace\, Heraclitus.\n\nRead the essay: https://earthlyhours.com/l
+ ectio-terra/dog-days/
 URL:https://earthlyhours.com/lectio-terra/dog-days/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -715,11 +607,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270807
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Dog Days
-DESCRIPTION:With Horace\, Heraclitus.\n\nThis week’s post is dedicated to
-  my highly anxious first-and-only childhood dog\, Cricket\; my father-in-l
- aw\, Walter\; and dog lovers everywhere except outside my bedroom window a
- t night.\n\nRead the essay: https://earthlyhours.com/lectio-terra/dog-days
- /
+DESCRIPTION:Dies caniculares\n\nThis week’s post is dedicated to my highl
+ y anxious first-and-only childhood dog\, Cricket\; my father-in-law\, Walt
+ er\; and dog lovers everywhere except outside my bedroom window at night.\
+ n\nWith Horace\, Heraclitus.\n\nRead the essay: https://earthlyhours.com/l
+ ectio-terra/dog-days/
 URL:https://earthlyhours.com/lectio-terra/dog-days/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -728,12 +620,11 @@ UID:lt-0024-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260814
 SUMMARY:Lectio Terra: Perseids
-DESCRIPTION:With Han Dynasty Scribes\, Henry David Thoreau.\n\nAt the risk 
- of this becoming an extraterrestrial blog\, I am continuing last week’s 
- astronomical theme as we exit the peak of the Perseids meteor shower. Alth
- ough it offers no liquid relief to the summer heat\, this shower is a long
-  debris trail with an equally long tale to tell.\n\nRead the essay: https:
- //earthlyhours.com/lectio-terra/perseids/
+DESCRIPTION:Lacrimae Sancti Laurentii\n\nAt the risk of this becoming an ex
+ traterrestrial blog\, I am continuing last week’s astronomical theme as 
+ we exit the peak of the Perseids meteor shower. Although it offers no liqu
+ id relief to the…\n\nWith Han Dynasty Scribes\, Henry David Thoreau.\n\n
+ Read the essay: https://earthlyhours.com/lectio-terra/perseids/
 URL:https://earthlyhours.com/lectio-terra/perseids/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -743,12 +634,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270814
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Perseids
-DESCRIPTION:With Han Dynasty Scribes\, Henry David Thoreau.\n\nAt the risk 
- of this becoming an extraterrestrial blog\, I am continuing last week’s 
- astronomical theme as we exit the peak of the Perseids meteor shower. Alth
- ough it offers no liquid relief to the summer heat\, this shower is a long
-  debris trail with an equally long tale to tell.\n\nRead the essay: https:
- //earthlyhours.com/lectio-terra/perseids/
+DESCRIPTION:Lacrimae Sancti Laurentii\n\nAt the risk of this becoming an ex
+ traterrestrial blog\, I am continuing last week’s astronomical theme as 
+ we exit the peak of the Perseids meteor shower. Although it offers no liqu
+ id relief to the…\n\nWith Han Dynasty Scribes\, Henry David Thoreau.\n\n
+ Read the essay: https://earthlyhours.com/lectio-terra/perseids/
 URL:https://earthlyhours.com/lectio-terra/perseids/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -757,13 +647,11 @@ UID:lt-0025-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260822
 SUMMARY:Lectio Terra: Cucurbits
-DESCRIPTION:With Marge Piercy\, Padraig Regan.\n\nTo untangle the messy wor
- ld of squashes and melons\, I will be spending the next three weeks zoomin
- g in on some of our favorite summer delectations\, moving from the broad g
- ourd family (Cucurbitaceae) to the distinctive melon-and-cucumber genus (C
- ucumis) and\, finally\, to the wholly separate watermelon species (Citrull
- us lanatus).\n\nRead the essay: https://earthlyhours.com/lectio-terra/cucu
- rbits/
+DESCRIPTION:Cucurbitaceae\n\nTo untangle the messy world of squashes and me
+ lons\, I will be spending the next three weeks zooming in on some of our f
+ avorite summer delectations\, moving from the broad gourd family (Cucurbit
+ aceae)…\n\nWith Marge Piercy\, Padraig Regan.\n\nRead the essay: https:/
+ /earthlyhours.com/lectio-terra/cucurbits/
 URL:https://earthlyhours.com/lectio-terra/cucurbits/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -773,13 +661,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270822
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Cucurbits
-DESCRIPTION:With Marge Piercy\, Padraig Regan.\n\nTo untangle the messy wor
- ld of squashes and melons\, I will be spending the next three weeks zoomin
- g in on some of our favorite summer delectations\, moving from the broad g
- ourd family (Cucurbitaceae) to the distinctive melon-and-cucumber genus (C
- ucumis) and\, finally\, to the wholly separate watermelon species (Citrull
- us lanatus).\n\nRead the essay: https://earthlyhours.com/lectio-terra/cucu
- rbits/
+DESCRIPTION:Cucurbitaceae\n\nTo untangle the messy world of squashes and me
+ lons\, I will be spending the next three weeks zooming in on some of our f
+ avorite summer delectations\, moving from the broad gourd family (Cucurbit
+ aceae)…\n\nWith Marge Piercy\, Padraig Regan.\n\nRead the essay: https:/
+ /earthlyhours.com/lectio-terra/cucurbits/
 URL:https://earthlyhours.com/lectio-terra/cucurbits/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -788,9 +674,9 @@ UID:lt-0026-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260829
 SUMMARY:Lectio Terra: Melons and Cucumbers
-DESCRIPTION:With Robert Hass\, Marcus Aurelius (and William Cowper\, too).\
- n\nWhich is messier\, the history of words or of plants?\n\nRead the essay
- : https://earthlyhours.com/lectio-terra/melons-and-cucumbers/
+DESCRIPTION:Cucumis\n\nWhich is messier\, the history of words or of plants
+ ?\n\nWith Robert Hass\, Marcus Aurelius (and William Cowper\, too).\n\nRea
+ d the essay: https://earthlyhours.com/lectio-terra/melons-and-cucumbers/
 URL:https://earthlyhours.com/lectio-terra/melons-and-cucumbers/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -800,9 +686,9 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270829
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Melons and Cucumbers
-DESCRIPTION:With Robert Hass\, Marcus Aurelius (and William Cowper\, too).\
- n\nWhich is messier\, the history of words or of plants?\n\nRead the essay
- : https://earthlyhours.com/lectio-terra/melons-and-cucumbers/
+DESCRIPTION:Cucumis\n\nWhich is messier\, the history of words or of plants
+ ?\n\nWith Robert Hass\, Marcus Aurelius (and William Cowper\, too).\n\nRea
+ d the essay: https://earthlyhours.com/lectio-terra/melons-and-cucumbers/
 URL:https://earthlyhours.com/lectio-terra/melons-and-cucumbers/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -811,10 +697,10 @@ UID:lt-0027-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260911
 SUMMARY:Lectio Terra: Watermelon
-DESCRIPTION:With Sylvia Plath\, Pliny the Elder.\n\nThis week's post is ded
- icated to my dad\, who always has a watermelon-in-progress in his fridge\,
-  covered with an elastic shower cap.\n\nRead the essay: https://earthlyhou
- rs.com/lectio-terra/watermelon/
+DESCRIPTION:Citrullus lanatus\n\nThis week's post is dedicated to my dad\, 
+ who always has a watermelon-in-progress in his fridge\, covered with an el
+ astic shower cap.\n\nWith Sylvia Plath\, Pliny the Elder.\n\nRead the essa
+ y: https://earthlyhours.com/lectio-terra/watermelon/
 URL:https://earthlyhours.com/lectio-terra/watermelon/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -824,10 +710,10 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270911
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Watermelon
-DESCRIPTION:With Sylvia Plath\, Pliny the Elder.\n\nThis week's post is ded
- icated to my dad\, who always has a watermelon-in-progress in his fridge\,
-  covered with an elastic shower cap.\n\nRead the essay: https://earthlyhou
- rs.com/lectio-terra/watermelon/
+DESCRIPTION:Citrullus lanatus\n\nThis week's post is dedicated to my dad\, 
+ who always has a watermelon-in-progress in his fridge\, covered with an el
+ astic shower cap.\n\nWith Sylvia Plath\, Pliny the Elder.\n\nRead the essa
+ y: https://earthlyhours.com/lectio-terra/watermelon/
 URL:https://earthlyhours.com/lectio-terra/watermelon/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -836,12 +722,12 @@ UID:lt-0028-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260920
 SUMMARY:Lectio Terra: Northern Red Oak
-DESCRIPTION:With Susan Fenimore Cooper\, George Francis Heath\, James Georg
- e Frazer.\n\nWelcome to the woodlands. There is\, of course\, more I would
-  like to say about the late summer hærfest\, but the call of the forest i
- s irresistible\, especially near the fall equinox\, as the light slants th
- rough the trees and all that.\n\nRead the essay: https://earthlyhours.com/
- lectio-terra/northern-red-oak/
+DESCRIPTION:Quercus rubra\n\nWelcome to the woodlands. There is\, of course
+ \, more I would like to say about the late summer hærfest\, but the call 
+ of the forest is irresistible\, especially near the fall equinox\, as the 
+ light…\n\nWith Susan Fenimore Cooper\, George Francis Heath\, James Geor
+ ge Frazer.\n\nRead the essay: https://earthlyhours.com/lectio-terra/northe
+ rn-red-oak/
 URL:https://earthlyhours.com/lectio-terra/northern-red-oak/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -851,12 +737,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270920
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Northern Red Oak
-DESCRIPTION:With Susan Fenimore Cooper\, George Francis Heath\, James Georg
- e Frazer.\n\nWelcome to the woodlands. There is\, of course\, more I would
-  like to say about the late summer hærfest\, but the call of the forest i
- s irresistible\, especially near the fall equinox\, as the light slants th
- rough the trees and all that.\n\nRead the essay: https://earthlyhours.com/
- lectio-terra/northern-red-oak/
+DESCRIPTION:Quercus rubra\n\nWelcome to the woodlands. There is\, of course
+ \, more I would like to say about the late summer hærfest\, but the call 
+ of the forest is irresistible\, especially near the fall equinox\, as the 
+ light…\n\nWith Susan Fenimore Cooper\, George Francis Heath\, James Geor
+ ge Frazer.\n\nRead the essay: https://earthlyhours.com/lectio-terra/northe
+ rn-red-oak/
 URL:https://earthlyhours.com/lectio-terra/northern-red-oak/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -865,13 +751,11 @@ UID:lt-0029-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20260927
 SUMMARY:Lectio Terra: Shagbark Hickory
-DESCRIPTION:With Carl Sandburg\, Vladimir Nabokov\, Charles S. Sargent.\n\n
- Few trees in New England\, except perhaps the marvelous paper birch (Betul
- a papyrifera)\, have quite the visual appeal of the shagbark hickory. The 
- distinction is in the name. A fully shagged-out trunk embodies something b
- etween an elegant cascade and a strewn-out mess—a poise we might all hop
- e to achieve\, if we are so lucky.\n\nRead the essay: https://earthlyhours
- .com/lectio-terra/shagbark-hickory/
+DESCRIPTION:Carya ovata\n\nFew trees in New England\, except perhaps the ma
+ rvelous paper birch (Betula papyrifera)\, have quite the visual appeal of 
+ the shagbark hickory. The distinction is in the name. A fully shagged-out 
+ trunk…\n\nWith Carl Sandburg\, Vladimir Nabokov\, Charles S. Sargent.\n\
+ nRead the essay: https://earthlyhours.com/lectio-terra/shagbark-hickory/
 URL:https://earthlyhours.com/lectio-terra/shagbark-hickory/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -881,13 +765,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20270927
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Shagbark Hickory
-DESCRIPTION:With Carl Sandburg\, Vladimir Nabokov\, Charles S. Sargent.\n\n
- Few trees in New England\, except perhaps the marvelous paper birch (Betul
- a papyrifera)\, have quite the visual appeal of the shagbark hickory. The 
- distinction is in the name. A fully shagged-out trunk embodies something b
- etween an elegant cascade and a strewn-out mess—a poise we might all hop
- e to achieve\, if we are so lucky.\n\nRead the essay: https://earthlyhours
- .com/lectio-terra/shagbark-hickory/
+DESCRIPTION:Carya ovata\n\nFew trees in New England\, except perhaps the ma
+ rvelous paper birch (Betula papyrifera)\, have quite the visual appeal of 
+ the shagbark hickory. The distinction is in the name. A fully shagged-out 
+ trunk…\n\nWith Carl Sandburg\, Vladimir Nabokov\, Charles S. Sargent.\n\
+ nRead the essay: https://earthlyhours.com/lectio-terra/shagbark-hickory/
 URL:https://earthlyhours.com/lectio-terra/shagbark-hickory/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -896,9 +778,10 @@ UID:lt-0030-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261004
 SUMMARY:Lectio Terra: Common Pawpaw
-DESCRIPTION:With Jean Anthelme Brillat-Savarin\, Daniel H. Janzen and Paul 
- S. Martin\, A.C. Whitford.\n\nThanks to for suggesting this week’s topic
- !\n\nRead the essay: https://earthlyhours.com/lectio-terra/common-pawpaw/
+DESCRIPTION:Asimina triloba\n\nThanks to for suggesting this week’s topic
+ !\n\nWith Jean Anthelme Brillat-Savarin\, Daniel H. Janzen and Paul S. Mar
+ tin\, A.C. Whitford.\n\nRead the essay: https://earthlyhours.com/lectio-te
+ rra/common-pawpaw/
 URL:https://earthlyhours.com/lectio-terra/common-pawpaw/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -908,9 +791,10 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20271004
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Common Pawpaw
-DESCRIPTION:With Jean Anthelme Brillat-Savarin\, Daniel H. Janzen and Paul 
- S. Martin\, A.C. Whitford.\n\nThanks to for suggesting this week’s topic
- !\n\nRead the essay: https://earthlyhours.com/lectio-terra/common-pawpaw/
+DESCRIPTION:Asimina triloba\n\nThanks to for suggesting this week’s topic
+ !\n\nWith Jean Anthelme Brillat-Savarin\, Daniel H. Janzen and Paul S. Mar
+ tin\, A.C. Whitford.\n\nRead the essay: https://earthlyhours.com/lectio-te
+ rra/common-pawpaw/
 URL:https://earthlyhours.com/lectio-terra/common-pawpaw/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -919,17 +803,11 @@ UID:lt-0032-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261018
 SUMMARY:Lectio Terra: Staghorn Sumac
-DESCRIPTION:With Cole Swanson\, Katharine Lee Bates\, J. Francis Macbride.\
- n\nIs it a bush? Is it a tree? Is it a poison? Is it lemonade? In the lowe
- r gaps of the forest\, or in its damaged peripheries\, the sumac thrives. 
- Like the pawpaw\, it often spreads through root suckers\, producing a grov
- e of clones in meadow edges\, riverbanks\, or cleared land. Its conical fl
- owers and then spike-like berry clusters develop over the summer\, and its
-  leaves erupt into vibrant colors in the early fall. The plant’s leaves 
- and bark contain tannins that were used for centuries\, around the world\,
-  to tan light and flexible leathers and as a mordant to dye fabrics. In No
- rth America\, the…\n\nRead the essay: https://earthlyhours.com/lectio-te
- rra/staghorn-sumac/
+DESCRIPTION:Rhus typhina\n\nIs it a bush? Is it a tree? Is it a poison? Is 
+ it lemonade? In the lower gaps of the forest\, or in its damaged peripheri
+ es\, the sumac thrives. Like the pawpaw\, it often spreads through root su
+ ckers…\n\nWith Cole Swanson\, Katharine Lee Bates\, J. Francis Macbride.
+ \n\nRead the essay: https://earthlyhours.com/lectio-terra/staghorn-sumac/
 URL:https://earthlyhours.com/lectio-terra/staghorn-sumac/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -939,17 +817,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20271018
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Staghorn Sumac
-DESCRIPTION:With Cole Swanson\, Katharine Lee Bates\, J. Francis Macbride.\
- n\nIs it a bush? Is it a tree? Is it a poison? Is it lemonade? In the lowe
- r gaps of the forest\, or in its damaged peripheries\, the sumac thrives. 
- Like the pawpaw\, it often spreads through root suckers\, producing a grov
- e of clones in meadow edges\, riverbanks\, or cleared land. Its conical fl
- owers and then spike-like berry clusters develop over the summer\, and its
-  leaves erupt into vibrant colors in the early fall. The plant’s leaves 
- and bark contain tannins that were used for centuries\, around the world\,
-  to tan light and flexible leathers and as a mordant to dye fabrics. In No
- rth America\, the…\n\nRead the essay: https://earthlyhours.com/lectio-te
- rra/staghorn-sumac/
+DESCRIPTION:Rhus typhina\n\nIs it a bush? Is it a tree? Is it a poison? Is 
+ it lemonade? In the lower gaps of the forest\, or in its damaged peripheri
+ es\, the sumac thrives. Like the pawpaw\, it often spreads through root su
+ ckers…\n\nWith Cole Swanson\, Katharine Lee Bates\, J. Francis Macbride.
+ \n\nRead the essay: https://earthlyhours.com/lectio-terra/staghorn-sumac/
 URL:https://earthlyhours.com/lectio-terra/staghorn-sumac/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -958,14 +830,11 @@ UID:lt-0031-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261025
 SUMMARY:Lectio Terra: Ghost Pipe
-DESCRIPTION:With Emily Dickinson\, Merlin Sheldrake.\n\nI felt nearly oblig
- ated\, given the time of year\, to dedicate this week’s entry to the ven
- erable pumpkin\, that special gourd so eternally loved and multifariously 
- depicted by Yayoi Kusama (may she rest in peace). But in the spirit of vee
- ring\, I present instead a more mysterious offering: a non-photosynthesizi
- ng parasite nonetheless described by Emily Dickinson as “the preferred f
- lower of life.”\n\nRead the essay: https://earthlyhours.com/lectio-terra
- /ghost-pipe/
+DESCRIPTION:Monotropa uniflora\n\nI felt nearly obligated\, given the time 
+ of year\, to dedicate this week’s entry to the venerable pumpkin\, that 
+ special gourd so eternally loved and multifariously depicted by Yayoi Kusa
+ ma (may she…\n\nWith Emily Dickinson\, Merlin Sheldrake.\n\nRead the ess
+ ay: https://earthlyhours.com/lectio-terra/ghost-pipe/
 URL:https://earthlyhours.com/lectio-terra/ghost-pipe/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -975,14 +844,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20271025
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Ghost Pipe
-DESCRIPTION:With Emily Dickinson\, Merlin Sheldrake.\n\nI felt nearly oblig
- ated\, given the time of year\, to dedicate this week’s entry to the ven
- erable pumpkin\, that special gourd so eternally loved and multifariously 
- depicted by Yayoi Kusama (may she rest in peace). But in the spirit of vee
- ring\, I present instead a more mysterious offering: a non-photosynthesizi
- ng parasite nonetheless described by Emily Dickinson as “the preferred f
- lower of life.”\n\nRead the essay: https://earthlyhours.com/lectio-terra
- /ghost-pipe/
+DESCRIPTION:Monotropa uniflora\n\nI felt nearly obligated\, given the time 
+ of year\, to dedicate this week’s entry to the venerable pumpkin\, that 
+ special gourd so eternally loved and multifariously depicted by Yayoi Kusa
+ ma (may she…\n\nWith Emily Dickinson\, Merlin Sheldrake.\n\nRead the ess
+ ay: https://earthlyhours.com/lectio-terra/ghost-pipe/
 URL:https://earthlyhours.com/lectio-terra/ghost-pipe/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -991,11 +857,11 @@ UID:lt-0033-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261101
 SUMMARY:Lectio Terra: First Frost
-DESCRIPTION:With William Cullen Bryant\, Hannah Arendt\, Homer C. Sampson\,
-  Thomas Hardy.\n\nWe interrupt this fall’s journey through the northeast
-  woodlands with a reflection on the threshold that is the first frost (pri
- ma pruina\, if it were a Latin binomial).\n\nRead the essay: https://earth
- lyhours.com/lectio-terra/first-frost/
+DESCRIPTION:Prima pruina\n\nWe interrupt this fall’s journey through the 
+ northeast woodlands with a reflection on the threshold that is the first f
+ rost (prima pruina\, if it were a Latin binomial).\n\nWith William Cullen 
+ Bryant\, Hannah Arendt\, Homer C. Sampson\, Thomas Hardy.\n\nRead the essa
+ y: https://earthlyhours.com/lectio-terra/first-frost/
 URL:https://earthlyhours.com/lectio-terra/first-frost/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1005,11 +871,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20271101
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: First Frost
-DESCRIPTION:With William Cullen Bryant\, Hannah Arendt\, Homer C. Sampson\,
-  Thomas Hardy.\n\nWe interrupt this fall’s journey through the northeast
-  woodlands with a reflection on the threshold that is the first frost (pri
- ma pruina\, if it were a Latin binomial).\n\nRead the essay: https://earth
- lyhours.com/lectio-terra/first-frost/
+DESCRIPTION:Prima pruina\n\nWe interrupt this fall’s journey through the 
+ northeast woodlands with a reflection on the threshold that is the first f
+ rost (prima pruina\, if it were a Latin binomial).\n\nWith William Cullen 
+ Bryant\, Hannah Arendt\, Homer C. Sampson\, Thomas Hardy.\n\nRead the essa
+ y: https://earthlyhours.com/lectio-terra/first-frost/
 URL:https://earthlyhours.com/lectio-terra/first-frost/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1018,17 +884,11 @@ UID:lt-0034-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261108
 SUMMARY:Lectio Terra: Wintergreen
-DESCRIPTION:With Jacob Bigelow\, Henry David Thoreau\, Linda M. Sweeting.\n
- \nInstead of receiving its first frost this week\, the Boston area experie
- nced a final illusion of summer\, with clear blue skies and gentle warm br
- eezes. Then the rain set in for a few days. The long-lasting summer has\, 
- paradoxically\, spurred some early reflections on winter. Though we haven
- ’t actually experienced any true cold yet\, I’m preparing my psyche fo
- r the insular dimensions of the impending change of season: cabin fever\, 
- layered attire\, dark afternoons\, and all the rest. My psychic preparatio
- ns are being aided by the example of the humble wintergreen plant\, which 
- has developed a form of…\n\nRead the essay: https://earthlyhours.com/lec
- tio-terra/wintergreen/
+DESCRIPTION:Gaultheria procumbens\n\nInstead of receiving its first frost t
+ his week\, the Boston area experienced a final illusion of summer\, with c
+ lear blue skies and gentle warm breezes. Then the rain set in for a few da
+ ys. The…\n\nWith Jacob Bigelow\, Henry David Thoreau\, Linda M. Sweeting
+ .\n\nRead the essay: https://earthlyhours.com/lectio-terra/wintergreen/
 URL:https://earthlyhours.com/lectio-terra/wintergreen/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1038,17 +898,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20271108
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Wintergreen
-DESCRIPTION:With Jacob Bigelow\, Henry David Thoreau\, Linda M. Sweeting.\n
- \nInstead of receiving its first frost this week\, the Boston area experie
- nced a final illusion of summer\, with clear blue skies and gentle warm br
- eezes. Then the rain set in for a few days. The long-lasting summer has\, 
- paradoxically\, spurred some early reflections on winter. Though we haven
- ’t actually experienced any true cold yet\, I’m preparing my psyche fo
- r the insular dimensions of the impending change of season: cabin fever\, 
- layered attire\, dark afternoons\, and all the rest. My psychic preparatio
- ns are being aided by the example of the humble wintergreen plant\, which 
- has developed a form of…\n\nRead the essay: https://earthlyhours.com/lec
- tio-terra/wintergreen/
+DESCRIPTION:Gaultheria procumbens\n\nInstead of receiving its first frost t
+ his week\, the Boston area experienced a final illusion of summer\, with c
+ lear blue skies and gentle warm breezes. Then the rain set in for a few da
+ ys. The…\n\nWith Jacob Bigelow\, Henry David Thoreau\, Linda M. Sweeting
+ .\n\nRead the essay: https://earthlyhours.com/lectio-terra/wintergreen/
 URL:https://earthlyhours.com/lectio-terra/wintergreen/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1057,17 +911,12 @@ UID:lt-0035-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261115
 SUMMARY:Lectio Terra: Eastern Grey Squirrel
-DESCRIPTION:With Meriwether Lewis\, John Burroughs\, Ralph Waldo Emerson.\n
- \nMy brother called them “joeys” and “jojos” as a child\, for reas
- ons that escape me. Maybe he was thinking of young marsupials or mispronou
- ncing the word “chipmunk.” At any rate\, squirrels were one of the fir
- st forms of wildlife detectable through our family’s windows\, in our ba
- ckyard\, or at the playgrounds we frequented. Like many suburban household
- s\, our closest neighbors were likely not people but squirrels\, who raise
-  their young in tree hollows or in leafy nests called dreys\, breeding twi
- ce annually: in late winter and again in summer. Indeed\, these quintessen
- tial critters have a persistent…\n\nRead the essay: https://earthlyhours
- .com/lectio-terra/eastern-grey-squirrel/
+DESCRIPTION:Sciurus carolinensis\n\nMy brother called them “joeys” and 
+ “jojos” as a child\, for reasons that escape me. Maybe he was thinking
+  of young marsupials or mispronouncing the word “chipmunk.” At any rat
+ e\, squirrels were one of…\n\nWith Meriwether Lewis\, John Burroughs\, R
+ alph Waldo Emerson.\n\nRead the essay: https://earthlyhours.com/lectio-ter
+ ra/eastern-grey-squirrel/
 URL:https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1077,17 +926,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20271115
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Eastern Grey Squirrel
-DESCRIPTION:With Meriwether Lewis\, John Burroughs\, Ralph Waldo Emerson.\n
- \nMy brother called them “joeys” and “jojos” as a child\, for reas
- ons that escape me. Maybe he was thinking of young marsupials or mispronou
- ncing the word “chipmunk.” At any rate\, squirrels were one of the fir
- st forms of wildlife detectable through our family’s windows\, in our ba
- ckyard\, or at the playgrounds we frequented. Like many suburban household
- s\, our closest neighbors were likely not people but squirrels\, who raise
-  their young in tree hollows or in leafy nests called dreys\, breeding twi
- ce annually: in late winter and again in summer. Indeed\, these quintessen
- tial critters have a persistent…\n\nRead the essay: https://earthlyhours
- .com/lectio-terra/eastern-grey-squirrel/
+DESCRIPTION:Sciurus carolinensis\n\nMy brother called them “joeys” and 
+ “jojos” as a child\, for reasons that escape me. Maybe he was thinking
+  of young marsupials or mispronouncing the word “chipmunk.” At any rat
+ e\, squirrels were one of…\n\nWith Meriwether Lewis\, John Burroughs\, R
+ alph Waldo Emerson.\n\nRead the essay: https://earthlyhours.com/lectio-ter
+ ra/eastern-grey-squirrel/
 URL:https://earthlyhours.com/lectio-terra/eastern-grey-squirrel/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1096,16 +940,11 @@ UID:lt-0036-first@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261122
 SUMMARY:Lectio Terra: Fen and Wetland
-DESCRIPTION:With Charles Kingsley\, Amy Lowell\, Arielle Kaplan\, John Clar
- e.\n\nWhile fall may be the season of the woodlands\, the transition into 
- winter can shift plant and animal activity toward the lower\, tighter stru
- cture of all those water-adjacent landforms: fens\, marshlands\, bogs\, mi
- res and quagmires\, swamps\, sloughs\, and swales—not to mention bayous\
- , pocosins\, and the many other regional variations of wetlands. If you’
- ve never stopped to wonder how these terms relate and differ\, you’re no
- t alone. Here’s what I’ve learned through a couple late nights spent d
- own the (water-logged) rabbit hole.\n\nRead the essay: https://earthlyhour
- s.com/lectio-terra/fen-and-wetland/
+DESCRIPTION:Fenn\n\nWhile fall may be the season of the woodlands\, the tra
+ nsition into winter can shift plant and animal activity toward the lower\,
+  tighter structure of all those water-adjacent landforms: fens…\n\nWith 
+ Charles Kingsley\, Amy Lowell\, Arielle Kaplan\, John Clare.\n\nRead the e
+ ssay: https://earthlyhours.com/lectio-terra/fen-and-wetland/
 URL:https://earthlyhours.com/lectio-terra/fen-and-wetland/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1115,16 +954,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20271122
 RRULE:FREQ=YEARLY
 SUMMARY:Lectio Terra: Fen and Wetland
-DESCRIPTION:With Charles Kingsley\, Amy Lowell\, Arielle Kaplan\, John Clar
- e.\n\nWhile fall may be the season of the woodlands\, the transition into 
- winter can shift plant and animal activity toward the lower\, tighter stru
- cture of all those water-adjacent landforms: fens\, marshlands\, bogs\, mi
- res and quagmires\, swamps\, sloughs\, and swales—not to mention bayous\
- , pocosins\, and the many other regional variations of wetlands. If you’
- ve never stopped to wonder how these terms relate and differ\, you’re no
- t alone. Here’s what I’ve learned through a couple late nights spent d
- own the (water-logged) rabbit hole.\n\nRead the essay: https://earthlyhour
- s.com/lectio-terra/fen-and-wetland/
+DESCRIPTION:Fenn\n\nWhile fall may be the season of the woodlands\, the tra
+ nsition into winter can shift plant and animal activity toward the lower\,
+  tighter structure of all those water-adjacent landforms: fens…\n\nWith 
+ Charles Kingsley\, Amy Lowell\, Arielle Kaplan\, John Clare.\n\nRead the e
+ ssay: https://earthlyhours.com/lectio-terra/fen-and-wetland/
 URL:https://earthlyhours.com/lectio-terra/fen-and-wetland/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1134,16 +968,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261123
 RRULE:FREQ=YEARLY
 SUMMARY:American Chestnut
-DESCRIPTION:NOW-A-DAYS one often hears the question\, “What is going to b
- ecome of our chestnut trees?” In fact\, whenever the subject of trees is
-  broached in the course of a conversation\, this inquiry is bound to come 
- out—not\, as I believe\, that the interrogator hopes to receive a satisf
- actory answer\, but more in the way of a general query.\n— Arthur H. Gra
- ves\, “The Future of the Chestnut Tree in North America”\, Popular Sci
- ence Monthly 84 (June 1914)\, p. 551\n\nToday’s image: Mary Vaux Walcott
- \, American Chestnut (Castanea dentata) (1932)\, watercolour\n\nThe day in
-  The Earthly Book of Hours: https://earthlyhours.com/seasons.html?day=11-2
- 3
+DESCRIPTION:Castanea dentata\n\n“NOW-A-DAYS one often hears the question\
+ , “What is going to become of our chestnut trees?” In fact\, whenever 
+ the subject of trees is broached in the course of a conversation\, this in
+ quiry is bound to…”\n\nWords: Arthur H. Graves\, 1914 · Image: Mary V
+ aux Walcott\, 1932\n\nRead the day: https://earthlyhours.com/seasons.html?
+ day=11-23
 URL:https://earthlyhours.com/seasons.html?day=11-23
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1153,21 +983,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261124
 RRULE:FREQ=YEARLY
 SUMMARY:Hubbard Squash
-DESCRIPTION:In handling the squashes\, I need hardly reiterate the caution 
- of care. My practice is to form a string of boys\, from the wagon to the s
- helves\, and the squashes are tossed from one to another\, with the cautio
- n to handle them like eggs. Boys well trained will not drop more than one 
- squash to the ton\, and I have known my boys to pass several tons without 
- dropping a single squash.\n\nIf the squash-house has been built with refer
- ence to warmth\, when once filled with squashes\, it is surprising with wh
- at little fire frost can be kept out. The mass of squashes are\, in themse
- lves\, a great store-house of heat\, and with inside shutters for the cold
- est weather\, the building is frost proof\, with a small outlay of fuel.\n
- — James J. H. Gregory\, “The Storing of the Crop\,” from Squashes: H
- ow to Grow Them (1867)\, pp. 35–36\n\nToday’s image: James J. H. Grego
- ry\, “Section of Squash-House\,” from Squashes: How to Grow Them (1867
- )\, p. 34\, wood engraving\n\nThe day in The Earthly Book of Hours: https:
- //earthlyhours.com/seasons.html?day=11-24
+DESCRIPTION:Cucurbita maxima 'Hubbard'\n\n“In handling the squashes\, I n
+ eed hardly reiterate the caution of care. My practice is to form a string 
+ of boys\, from the wagon to the shelves\, and the squashes are tossed from
+  one to another\, with…”\n\nWords: James J. H. Gregory\, 1867 · Image
+ : James J. H. Gregory\, 1867\n\nRead the day: https://earthlyhours.com/sea
+ sons.html?day=11-24
 URL:https://earthlyhours.com/seasons.html?day=11-24
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1177,24 +998,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261125
 RRULE:FREQ=YEARLY
 SUMMARY:The Three Sisters
-DESCRIPTION:The corn was carefully dropped in the hills so as not to break 
- the germs which had nearly burst through. Among the Senecas\, in planting 
- corn the seeds of the squash and bean were sown in every seventh hill beca
- use it was thought that the spirits of these three plants were inseparable
- . They were called Dioʹhe″ko\, these sustain us. In the Green Corn Than
- ksgiving the leader rises and says\, “Diettinoⁿʹñioʻ diohe″koⁿ\
- , we give thanks to our sustainers.”\n\nCertain women banded themselves 
- together in a society called the Toñwisas or Toⁿwiʹsas Oäʹno. They p
- ropitiated the spirits of the three sisters by certain ceremonies. In thei
- r ceremonial march\, Wenŭntoñwiʹsăs\, the leader holding an armful of 
- corn and a cake of corn bread leads her band in a measured march about a k
- ettle of corn soup.\n— Arthur C. Parker\, from Iroquois Uses of Maize an
- d Other Food Plants (1910)\, p. 27\n\nToday’s image: A Seneca youth\, th
- e march of the Toñwiʹsas\, the women’s society of the three sisters\, 
- pen drawing printed as figure 2 in Arthur C. Parker\, Iroquois Uses of Mai
- ze and Other Food Plants (1910)\, p. 28 (printed sideways on the page)\n\n
- The day in The Earthly Book of Hours: https://earthlyhours.com/seasons.htm
- l?day=11-25
+DESCRIPTION:Dioʹhe″ko\n\n“The corn was carefully dropped in the hills 
+ so as not to break the germs which had nearly burst through. Among the Sen
+ ecas\, in planting corn the seeds of the squash and bean were sown in ever
+ y…”\n\nWords: Arthur C. Parker\, 1910 · Image: A Seneca youth\, 1910\
+ n\nRead the day: https://earthlyhours.com/seasons.html?day=11-25
 URL:https://earthlyhours.com/seasons.html?day=11-25
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1204,23 +1012,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261126
 RRULE:FREQ=YEARLY
 SUMMARY:Wild Turkey
-DESCRIPTION:I am\, on this account\, not displeas’d that the Figure is no
- t known as a Bald Eagle\, but looks more like a Turk’y. For in Truth\, t
- he Turk’y is in comparison a much more respectable Bird\, and withal a t
- rue original Native of America. Eagles have been found in all Countries\, 
- but the Turk’y was peculiar to ours\; the first of the Species seen in E
- urope being brought to France by the Jesuits from Canada\, and serv’d up
-  at the Wedding Table of Charles the Ninth. He is\, [though a little vain 
- and silly\, it is true\, but not the worse emblem for that\,] a Bird of Co
- urage\, and would not hesitate to attack a Grenadier of the British Guards
- \, who should presume to invade his Farm Yard with a red Coat on.\n— Ben
- jamin Franklin\, from a letter to Sarah Bache (Passy\, 26 January 1784)\n\
- nToday’s image: James McNeill Whistler\, Turkeys\, a Venice courtyard et
- ched in 1880 and published in the “Second Venice Set” (1886). When the
-  edition was complete\, the copper was scored with crossed lines so no mor
- e could be printed\, and this proof was pulled to show that it was finishe
- d.\n\nThe day in The Earthly Book of Hours: https://earthlyhours.com/seaso
- ns.html?day=11-26
+DESCRIPTION:Meleagris gallopavo\n\n“I am\, on this account\, not displeas
+ ’d that the Figure is not known as a Bald Eagle\, but looks more like a 
+ Turk’y. For in Truth\, the Turk’y is in comparison a much more respect
+ able Bird\, and withal a…”\n\nWords: Benjamin Franklin\, 1784 · Image
+ : James McNeill Whistler\, 1880\n\nRead the day: https://earthlyhours.com/
+ seasons.html?day=11-26
 URL:https://earthlyhours.com/seasons.html?day=11-26
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1230,16 +1027,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261127
 RRULE:FREQ=YEARLY
 SUMMARY:American Cranberry
-DESCRIPTION:Wuchipoquámeneash [Narragansett: berries of a sour kind]. A ki
- nd of sharp Fruit like a Barbary in tast.\n\nSasémineash [Narragansett: 
- “very sour berries\,” the cranberry] another sharp cooling Fruit growi
- ng in fresh Waters all the Winter\, Excellent in conserve against Feavers.
- \n— Roger Williams\, from A Key into the Language of America (1643)\, p.
-  99\; the glosses in brackets follow J. Hammond Trumbull’s notes to the 
- 1866 edition\n\nToday’s image: Lewis Wickes Hine\, Merilda. Carrying cra
- nberries\, Eldridge Bog\, near Rochester\, Massachusetts (September 1911)\
- , photograph for the National Child Labor Committee\n\nThe day in The Eart
- hly Book of Hours: https://earthlyhours.com/seasons.html?day=11-27
+DESCRIPTION:Vaccinium macrocarpon\n\n“Wuchipoquámeneash [Narragansett: b
+ erries of a sour kind]. A kind of sharp Fruit like a Barbary in tast. Sas
+ émineash [Narragansett: “very sour berries\,” the cranberry] another 
+ sharp cooling Fruit…”\n\nWords: Roger Williams\, 1643 · Image: Lewis 
+ Wickes Hine\, 1911\n\nRead the day: https://earthlyhours.com/seasons.html?
+ day=11-27
 URL:https://earthlyhours.com/seasons.html?day=11-27
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1249,18 +1042,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261128
 RRULE:FREQ=YEARLY
 SUMMARY:Winterberry
-DESCRIPTION:The prinos berries on their light-brown twigs are quite abundan
- t and handsome.\n\nWhile most keep close to their parlor fires this cold a
- nd blustering Thanksgiving afternoon\, and think with compassion of those 
- who are abroad\, I find the sunny south side of this swamp as warm as thei
- r parlors\, and warmer to my spirit. Aye\, there is a serenity and warmth 
- here which the parlor does not suggest\, enhanced by the sound of the wind
-  roaring on the northwest side of the swamp a dozen or so rods off. What a
-  wholesome and inspiring warmth is this!\n— Henry David Thoreau\, from h
- is journal (25 November 1858)\n\nToday’s image: D. W. Moody\, Prinos ver
- ticillatus (Winter Berry\; now Ilex verticillata)\, plate 10 of Asa B. Str
- ong\, The American Flora\, vol. 4 (1855)\n\nThe day in The Earthly Book of
-  Hours: https://earthlyhours.com/seasons.html?day=11-28
+DESCRIPTION:Ilex verticillata\n\n“The prinos berries on their light-brown
+  twigs are quite abundant and handsome. While most keep close to their par
+ lor fires this cold and blustering Thanksgiving afternoon\, and think with
+  compassion…”\n\nWords: Henry David Thoreau\, 1858 · Image: D. W. Moo
+ dy\, 1855\n\nRead the day: https://earthlyhours.com/seasons.html?day=11-28
 URL:https://earthlyhours.com/seasons.html?day=11-28
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1270,23 +1056,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261129
 RRULE:FREQ=YEARLY
 SUMMARY:Turkey Tail
-DESCRIPTION:The following notes relate to observations made during a year
- ’s collecting on the sporophores or fruiting bodies of Polyporus versico
- lor L.\, in various parts of New Jersey. Eighty percent of some fifty spec
- ies of polypores found in New Jersey were observed to be infested by insec
- ts and Polyporus versicolor appeared to attract the largest number of spec
- ies all of which belonged to the Coleoptera.\n\n. . . It is difficult to e
- xplain why versicolor harbors so many insects unless it is the qualities o
- f the context which attract them. Other polypores having a much thicker an
- d fleshier context attract considerably fewer species. Altogether twenty-f
- our species of Coleoptera\, representing thirteen families\, were found as
- sociated with versicolor . . .\n— Harry B. Weiss\, “Coleoptera Associa
- ted with Polyporus versicolor L. in New Jersey”\, Psyche 27 (December 19
- 20)\, pp. 137–138\n\nToday’s image: James Sowerby\, Boletus versicolor
-  (turkey tail)\, plate 229 from Coloured Figures of English Fungi or Mushr
- ooms (1799)\, hand-coloured engraving\; the pencilled name below\, Polysti
- ctus versicolor\, is a later reader’s\n\nThe day in The Earthly Book of 
- Hours: https://earthlyhours.com/seasons.html?day=11-29
+DESCRIPTION:Trametes versicolor\n\n“The following notes relate to observa
+ tions made during a year’s collecting on the sporophores or fruiting bod
+ ies of Polyporus versicolor L.\, in various parts of New Jersey. Eighty pe
+ rcent of some…”\n\nWords: Harry B. Weiss\, 1920 · Image: James Sowerb
+ y\, 1799\n\nRead the day: https://earthlyhours.com/seasons.html?day=11-29
 URL:https://earthlyhours.com/seasons.html?day=11-29
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1296,16 +1070,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261130
 RRULE:FREQ=YEARLY
 SUMMARY:American Beaver
-DESCRIPTION:In preparing for the winter\, their greatest efforts in tree cu
- tting are made. They commence in the latter part of September\, and contin
- ue through October and into November the several employments of cutting an
- d storing their winter wood\, and of repairing their lodges and dams. Thes
- e months are the season of their active labors\, which are only arrested b
- y the early snows and the formation of ice in their ponds.\n— Lewis H. M
- organ\, The American Beaver and His Works (1868)\, p. 168\n\nToday’s ima
- ge: Allen & Ginter\, Beaver\, from the Quadrupeds series (N41)\, a cigaret
- te card (1890)\n\nThe day in The Earthly Book of Hours: https://earthlyhou
- rs.com/seasons.html?day=11-30
+DESCRIPTION:Castor canadensis\n\n“In preparing for the winter\, their gre
+ atest efforts in tree cutting are made. They commence in the latter part o
+ f September\, and continue through October and into November the several e
+ mployments of…”\n\nWords: Lewis H. Morgan\, 1868 · Image: Allen & Gin
+ ter\, 1890\n\nRead the day: https://earthlyhours.com/seasons.html?day=11-3
+ 0
 URL:https://earthlyhours.com/seasons.html?day=11-30
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1315,21 +1085,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261201
 RRULE:FREQ=YEARLY
 SUMMARY:Skim Ice
-DESCRIPTION:We have thus made ourselves acquainted with the beautiful snow-
- flowers self-constructed by the molecules of water in calm cold air. Do th
- e molecules show this architectural power when ordinary water is frozen? W
- hat\, for example\, is the structure of the ice over which we skate in win
- ter? Quite as wonderful as the flowers of the snow. The observation is rar
- e\, if not new\, but I have seen in water slowly freezing six-rayed ice-st
- ars formed\, and floating free on the surface. A six-rayed star\, moreover
- \, is typical of the construction of all our lake ice. It is built up of s
- uch forms wonderfully interlaced.\n— John Tyndall\, from The Forms of Wa
- ter in Clouds and Rivers\, Ice and Glaciers (1872)\, § 96\, p. 35\n\nToda
- y’s image: Central News Photo Service\, A Life Saving Appliance to Prote
- ct Those Who Like to Skate on Thin Ice (1917)\, photograph: George Hanlon\
- , foreman of parks for the borough of Queens\, with his apparatus for reac
- hing skaters who have fallen through\n\nThe day in The Earthly Book of Hou
- rs: https://earthlyhours.com/seasons.html?day=12-01
+DESCRIPTION:Nilas\n\n“We have thus made ourselves acquainted with the bea
+ utiful snow-flowers self-constructed by the molecules of water in calm col
+ d air. Do the molecules show this architectural power when ordinary water
+ …”\n\nWords: John Tyndall\, 1872 · Image: Central News Photo Service\
+ , 1917\n\nRead the day: https://earthlyhours.com/seasons.html?day=12-01
 URL:https://earthlyhours.com/seasons.html?day=12-01
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1339,18 +1099,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261202
 RRULE:FREQ=YEARLY
 SUMMARY:Fall Cankerworm
-DESCRIPTION:It was formerly supposed that the canker-worm moths came out of
-  the ground only in the spring. It is now known that many of them rise in 
- the autumn and in the early part of the winter. In mild and open winters I
-  have seen them in every month from October to March. They begin to make t
- heir appearance after the first hard frosts in the autumn\, usually toward
- s the end of October\, and they continue to come forth\, in greater or sma
- ller numbers\, according to the mildness or severity of the weather after 
- the frosts have begun.\n— Thaddeus William Harris\, from A Treatise on S
- ome of the Insects Injurious to Vegetation (1862)\, p. 462\n\nToday’s im
- age: B. A. Porter and C. H. Alden\, Fall Cankerworm\, plate II of The Cank
- erworms (U.S. Department of Agriculture\, 1924)\n\nThe day in The Earthly 
- Book of Hours: https://earthlyhours.com/seasons.html?day=12-02
+DESCRIPTION:Alsophila pometaria\n\n“It was formerly supposed that the can
+ ker-worm moths came out of the ground only in the spring. It is now known 
+ that many of them rise in the autumn and in the early part of the winter. 
+ In mild and…”\n\nWords: Thaddeus William Harris\, 1862 · Image: B. A.
+  Porter and C. H. Alden\, 1924\n\nRead the day: https://earthlyhours.com/s
+ easons.html?day=12-02
 URL:https://earthlyhours.com/seasons.html?day=12-02
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1360,19 +1114,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261203
 RRULE:FREQ=YEARLY
 SUMMARY:Winter Moth
-DESCRIPTION:The female is greyish to greyish-brown in colour\, and differs 
- totally from the male\, having the merest traces of wings\, which are tota
- lly useless as organs of flight . . .\n\nThe males have been observed for 
- many years to appear some days before the females. They may be seen at dus
- k\, flying lazily along hedgerows and in the orchards and gardens. They ar
- e attracted by light. One often sees them collected on street lamps\, and 
- they occur outside windows.\n— Fred. V. Theobald\, “The Winter Moth\,
- ” from The Insect and Other Allied Pests of Orchard\, Bush and Hothouse 
- Fruits (1909)\, pp. 51–52\n\nToday’s image: F. Edenden\, “Females an
- d males of the winter moth\,” fig. 37 from Fred. V. Theobald\, The Insec
- t and Other Allied Pests of Orchard\, Bush and Hothouse Fruits (1909)\, p.
-  51\, photograph\n\nThe day in The Earthly Book of Hours: https://earthlyh
- ours.com/seasons.html?day=12-03
+DESCRIPTION:Operophtera brumata\n\n“The female is greyish to greyish-brow
+ n in colour\, and differs totally from the male\, having the merest traces
+  of wings\, which are totally useless as organs of flight . . . The males 
+ have been…”\n\nWords: Fred. V. Theobald\, 1909 · Image: F. Edenden\, 
+ 1909\n\nRead the day: https://earthlyhours.com/seasons.html?day=12-03
 URL:https://earthlyhours.com/seasons.html?day=12-03
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1382,20 +1128,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261204
 RRULE:FREQ=YEARLY
 SUMMARY:Winter Spiders
-DESCRIPTION:Bushes may be swept in the same way\, or may be shaken over an 
- open umbrella\, or a piece of cloth or paper. In winter\, when spiders are
-  torpid\, great numbers can be found by sifting the dead leaves that have 
- been lying for some years in the woods. A common coal sieve is fine enough
-  to hold the leaves while the spiders and sticks and dirt pass through\, a
- nd may be picked over on a cloth or carried home in a bag and examined in 
- the house. The sifting should be repeated several times\, as many of the s
- piders hold to threads among the leaves and become loosened only after muc
- h shaking.\n— J. H. Emerton\, from The Common Spiders of the United Stat
- es (1902)\, p. xviii\n\nToday’s image: J. H. Emerton\, “Web of Tetragn
- atha in tansy plants\, showing the spider in its usual position\,” fig. 
- 459 from The Common Spiders of the United States (1902)\, p. 201\, photogr
- aph\n\nThe day in The Earthly Book of Hours: https://earthlyhours.com/seas
- ons.html?day=12-04
+DESCRIPTION:Araneae\n\n“Bushes may be swept in the same way\, or may be s
+ haken over an open umbrella\, or a piece of cloth or paper. In winter\, wh
+ en spiders are torpid\, great numbers can be found by sifting the dead lea
+ ves…”\n\nWords: J. H. Emerton\, 1902 · Image: J. H. Emerton\, 1902\n\
+ nRead the day: https://earthlyhours.com/seasons.html?day=12-04
 URL:https://earthlyhours.com/seasons.html?day=12-04
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1405,17 +1142,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261205
 RRULE:FREQ=YEARLY
 SUMMARY:Princess Pine
-DESCRIPTION:The Fern allies have also played their appointed part in the do
- mestic and decorative economy of this and other generations. The scouring-
- rushes served our ancestors for keeping white their floors and wooden-ware
-  in the days when carpets were a luxury. The trailing stems of various spe
- cies of Lycopodium have long been valued for holiday decorations\; while t
- heir burning spores have flashed in triumphal processions\, and have added
-  their glow to the fervor of political campaigns.\n— Lucien Marcus Under
- wood\, from Our Native Ferns and Their Allies (1881\; 4th ed. 1893)\, p. i
- x\n\nToday’s image: Julian Alden Weir\, Christmas Greens (1889)\, etchin
- g\n\nThe day in The Earthly Book of Hours: https://earthlyhours.com/season
- s.html?day=12-05
+DESCRIPTION:Dendrolycopodium obscurum\n\n“The Fern allies have also playe
+ d their appointed part in the domestic and decorative economy of this and 
+ other generations. The scouring-rushes served our ancestors for keeping wh
+ ite their floors and…”\n\nWords: Lucien Marcus Underwood\, 1881 · Ima
+ ge: Julian Alden Weir\, 1889\n\nRead the day: https://earthlyhours.com/sea
+ sons.html?day=12-05
 URL:https://earthlyhours.com/seasons.html?day=12-05
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1425,18 +1157,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261207
 RRULE:FREQ=YEARLY
 SUMMARY:Earliest Sunset
-DESCRIPTION:The lakes of ice gleam bluer than the lakes\nOf water ’neath 
- the summer sunshine gleamed:\nFar fairer than when placidly it streamed\,\
- nThe brook its frozen architecture makes\,\nAnd under bridges white its sw
- ift way takes.\nSnow comes and goes as messenger who dreamed\nMight linger
-  on the road\; or one who deemed\nHis message hostile gently for their sak
- es\nWho listened might reveal it by degrees.\nWe gird against the cold of 
- winter wind\nOur loins now with mighty bands of sleep\,\nIn longest\, dark
- est nights take rest and ease\,\nAnd every shortening day\, as shadows cre
- ep\nO’er the brief noontide\, fresh surprises find.\n— Helen Hunt Jack
- son\, “December\,” from A Calendar of Sonnets (1886)\n\nToday’s imag
- e: George Inness\, A Winter Sky (1866)\n\nThe day in The Earthly Book of H
- ours: https://earthlyhours.com/seasons.html?day=12-07
+DESCRIPTION:Aequatio temporis\n\n“The lakes of ice gleam bluer than the l
+ akes Of water ’neath the summer sunshine gleamed: Far fairer than when p
+ lacidly it streamed\, The brook its frozen architecture makes\, And under 
+ bridges white…”\n\nWords: Helen Hunt Jackson\, 1886 · Image: George I
+ nness\, 1866\n\nRead the day: https://earthlyhours.com/seasons.html?day=12
+ -07
 URL:https://earthlyhours.com/seasons.html?day=12-07
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1446,17 +1172,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261208
 RRULE:FREQ=YEARLY
 SUMMARY:White Oak
-DESCRIPTION:In the fall they change to a bright violet colour\, and form an
-  agreeable contrast with the surrounding foliage which has not yet suffere
- d by the frost.\n\nThis is the only Oak on which a few of the dried leaves
-  persist till the circulation is renewed in the spring. By this peculiarit
- y and by the whiteness of the bark\, from which it derives its name\, it i
- s easily distinguished in the winter.\n— François André Michaux\, “W
- hite Oak\,” from The North American Sylva\, vol. 1 (1819)\, p. 19\n\nTod
- ay’s image: Pierre-Joseph Redouté (drawing) and Bessin (engraving)\, Wh
- ite Oak\, plate 1 from François André Michaux\, The North American Sylva
- \, vol. 1 (1819)\, colour-printed stipple engraving\n\nThe day in The Eart
- hly Book of Hours: https://earthlyhours.com/seasons.html?day=12-08
+DESCRIPTION:Quercus alba\n\n“In the fall they change to a bright violet c
+ olour\, and form an agreeable contrast with the surrounding foliage which 
+ has not yet suffered by the frost. This is the only Oak on which a few of 
+ the…”\n\nWords: François André Michaux\, 1819 · Image: P. J. Redout
+ é\, 1819\n\nRead the day: https://earthlyhours.com/seasons.html?day=12-08
 URL:https://earthlyhours.com/seasons.html?day=12-08
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1466,15 +1186,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261210
 RRULE:FREQ=YEARLY
 SUMMARY:Late Oyster
-DESCRIPTION:The species is not noticeably viscid after its youth. The visci
- dity can be detected in old specimens by moistening the pileus. Its flavor
-  is not marked\, nor is its texture as pleasing as most others of its genu
- s\, but being a late species it satisfies the longing of the mycophagist f
- or his accustomed food.\n— Charles McIlvaine\, from Toadstools\, Mushroo
- ms\, Fungi\, Edible and Poisonous (1900)\, p. 146\n\nToday’s image: M. C
- . Cooke\, Agaricus (Pleurotus) serotinus\, figure B of plate 258 of Illust
- rations of British Fungi (1881–1891)\, detail\n\nThe day in The Earthly 
- Book of Hours: https://earthlyhours.com/seasons.html?day=12-10
+DESCRIPTION:Sarcomyxa serotina\n\n“The species is not noticeably viscid a
+ fter its youth. The viscidity can be detected in old specimens by moisteni
+ ng the pileus. Its flavor is not marked\, nor is its texture as pleasing a
+ s most others…”\n\nWords: Charles McIlvaine and Robert K. Macadam\, 19
+ 00 · Image: M. C. Cooke\, 1881\n\nRead the day: https://earthlyhours.com/
+ seasons.html?day=12-10
 URL:https://earthlyhours.com/seasons.html?day=12-10
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1484,22 +1201,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261211
 RRULE:FREQ=YEARLY
 SUMMARY:Long-tailed Duck
-DESCRIPTION:When wintry winds lash the dark water into foam and send it roa
- ring upon our rocky coast\, when the shore birds have gone and the Geese h
- ave flown\, the Old-squaws still ride the waves just outside the breakers.
-  They seem filled with abundant vigor and playfulness. Rising against the 
- wind\, they speed away and back again\, splashing down into the sea. Their
-  calls and cries are heard particularly at morning and late in the afterno
- on\, when they are often very vociferous.\n— Edward Howe Forbush\, from 
- A History of the Game Birds\, Wild-Fowl and Shore Birds of Massachusetts a
- nd Adjacent States (1912)\, p. 142\n\n1. Old-squaw: the bird’s American 
- name until 2000\, when the American Ornithologists’ Union changed it to 
- Long-tailed Duck\, the name used everywhere else. Fish and Wildlife Servic
- e biologists in Alaska had asked for the change\, because “squaw” is a
-  slur against Native women.\n\nToday’s image: Robert Havell after John J
- ames Audubon\, Long-tailed Duck\, from The Birds of America (1836)\n\nThe 
- day in The Earthly Book of Hours: https://earthlyhours.com/seasons.html?da
- y=12-11
+DESCRIPTION:Clangula hyemalis\n\n“When wintry winds lash the dark water i
+ nto foam and send it roaring upon our rocky coast\, when the shore birds h
+ ave gone and the Geese have flown\, the Old-squaws still ride the waves ju
+ st outside the…”\n\nWords: Edward Howe Forbush\, 1912 · Image: Robert
+  Havell and John James Audubon\, 1836\n\nRead the day: https://earthlyhour
+ s.com/seasons.html?day=12-11
 URL:https://earthlyhours.com/seasons.html?day=12-11
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1509,15 +1216,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261214
 RRULE:FREQ=YEARLY
 SUMMARY:Geminids
-DESCRIPTION:One can spend a profitable and pleasurable half-hour in explori
- ng the wonders of Gemini. The whole constellation\, from head to foot\, is
-  gemmed with stars which escape the naked eye\, but it sparkles like a bea
- d-spangled garment when viewed with the glass.\n— Garrett P. Serviss\, 
- “The Stars of Spring\,” from Astronomy with an Opera-Glass (1888)\, p.
-  17\n\nToday’s image: Garrett P. Serviss\, Map 3 (Gemini\, Cancer and Ca
- nis Minor)\, from Astronomy with an Opera-Glass (1888)\, p. 18\n\nThe day 
- in The Earthly Book of Hours: https://earthlyhours.com/seasons.html?day=12
- -14
+DESCRIPTION:3200 Phaethon\n\n“One can spend a profitable and pleasurable 
+ half-hour in exploring the wonders of Gemini. The whole constellation\, fr
+ om head to foot\, is gemmed with stars which escape the naked eye\, but it
+  sparkles…”\n\nWords: Garrett P. Serviss\, 1888 · Image: Garrett P. S
+ erviss\, 1888\n\nRead the day: https://earthlyhours.com/seasons.html?day=1
+ 2-14
 URL:https://earthlyhours.com/seasons.html?day=12-14
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1527,21 +1231,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261215
 RRULE:FREQ=YEARLY
 SUMMARY:The Christmas Bird Count
-DESCRIPTION:It is not many years ago that sportsmen were accustomed to meet
-  on Christmas Day\, ‘choose sides\,’ and then\, as representatives of 
- the two bands resulting\, hie them to the fields and woods on the cheerful
-  mission of killing practically everything in fur or feathers that crossed
-  their path—if they could.\n\n. . . Now Bird-Lore proposes a new kind of
-  Christmas side hunt\, in the form of a Christmas bird-census\, and we hop
- e that all our readers who have the opportunity will aid us in making it a
-  success by spending a portion of Christmas Day with the birds and sending
-  a report of their ‘hunt’ to Bird-Lore before they retire that night.\
- n— Frank M. Chapman\, “A Christmas Bird-Census”\, Bird-Lore 2 (Decem
- ber 1900)\, p. 192\n\nToday’s image: “The Christmas Bird Census\,” t
- he first returns\, from Bird-Lore 3 (January–February 1901)\, p. 29: New
-  Brunswick\, Toronto\, Keene\, Belmont and Cambridge\, and the Arnold Arbo
- retum\n\nThe day in The Earthly Book of Hours: https://earthlyhours.com/se
- asons.html?day=12-15
+DESCRIPTION:An annual bird-census\n\n“It is not many years ago that sport
+ smen were accustomed to meet on Christmas Day\, ‘choose sides\,’ and t
+ hen\, as representatives of the two bands resulting\, hie them to the fiel
+ ds and woods on the…”\n\nWords: Frank M. Chapman\, 1900 · Image: Bird
+ -Lore\, 1901\n\nRead the day: https://earthlyhours.com/seasons.html?day=12
+ -15
 URL:https://earthlyhours.com/seasons.html?day=12-15
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1551,16 +1246,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261216
 RRULE:FREQ=YEARLY
 SUMMARY:Sea Mosses
-DESCRIPTION:You will be surprised\, also\, to see what quantities of things
-  you can find as late as November and December. Indeed\, if you are to kno
- w these plants thoroughly\, you must collect them at all seasons of the ye
- ar. Then you will know when they come\, and when they go\, and when they a
- re in their greatest perfection.\n— A. B. Hervey\, “Times and Places f
- or Collecting\,” from Sea Mosses: A Collector’s Guide and an Introduct
- ion to the Study of Marine Algae (1881)\, p. 14\n\nToday’s image: Loment
- aria baileyana and Nitophyllum andersonii\, plate XI from A. B. Hervey\, S
- ea Mosses: A Collector’s Guide (1881)\, colour plate\n\nThe day in The E
- arthly Book of Hours: https://earthlyhours.com/seasons.html?day=12-16
+DESCRIPTION:Rhodophyta\n\n“You will be surprised\, also\, to see what qua
+ ntities of things you can find as late as November and December. Indeed\, 
+ if you are to know these plants thoroughly\, you must collect them at all 
+ seasons…”\n\nWords: A. B. Hervey\, 1881 · Image: A. B. Hervey\, 1881\
+ n\nRead the day: https://earthlyhours.com/seasons.html?day=12-16
 URL:https://earthlyhours.com/seasons.html?day=12-16
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1570,15 +1260,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261217
 RRULE:FREQ=YEARLY
 SUMMARY:American Holly
-DESCRIPTION:I am unable to mark the northern limit of this tree with as muc
- h precision as that of many others\; but I believe it does not extend far 
- beyond Long Island\, though it is already common in Lower Jersey.\n— Fra
- nçois André Michaux\, “American Holly\,” from The North American Syl
- va\, vol. 2 (1819)\, p. 156\n\nToday’s image: Henri-Joseph Redouté (dra
- wing) and Renard (engraving)\, American Holly\, plate 84 from François An
- dré Michaux\, The North American Sylva\, vol. 2 (1819)\, colour-printed s
- tipple engraving\n\nThe day in The Earthly Book of Hours: https://earthlyh
- ours.com/seasons.html?day=12-17
+DESCRIPTION:Ilex opaca\n\n“I am unable to mark the northern limit of this
+  tree with as much precision as that of many others\; but I believe it doe
+ s not extend far beyond Long Island\, though it is already common in Lower
+  Jersey.”\n\nWords: François André Michaux\, 1819 · Image: Henri-Jose
+ ph Redouté\, 1819\n\nRead the day: https://earthlyhours.com/seasons.html?
+ day=12-17
 URL:https://earthlyhours.com/seasons.html?day=12-17
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1588,18 +1275,12 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261218
 RRULE:FREQ=YEARLY
 SUMMARY:The Sun Standing Still
-DESCRIPTION:Farmers\, friends\, companions of the sod\, we will not be somb
- rous and down-hearted\, because\, forsooth\, it may hap that we now close 
- the gates upon our pathway\, and no more\, after this\, walk together in o
- ur pleasant companionship. . . . We have ploughed\, we have sowed\, we hav
- e reapt\, we have mowed\; we have enjoyed the fruits of our industry\, and
-  relished the good things of life in health and thankfulness. . . . Let th
- ere be nothing morose and chilly in parting.\n— Robert B. Thomas\, “Fa
- rmer’s Calendar\,” December\, from The Farmer’s Almanack for 1842 (1
- 841)\, p. 29\n\nToday’s image: December\, from The Farmer’s Almanack f
- or 1842\, calculated for Boston (1841)\, p. 29: a woodcut of Capricorn\, a
-  verse\, the day-by-day weather and the Farmer’s Calendar\n\nThe day in 
- The Earthly Book of Hours: https://earthlyhours.com/seasons.html?day=12-18
+DESCRIPTION:Solstitium\n\n“Farmers\, friends\, companions of the sod\, we
+  will not be sombrous and down-hearted\, because\, forsooth\, it may hap t
+ hat we now close the gates upon our pathway\, and no more\, after this\, w
+ alk together…”\n\nWords: Robert B. Thomas\, 1841 · Image: Robert B. T
+ homas\, 1841\n\nRead the day: https://earthlyhours.com/seasons.html?day=12
+ -18
 URL:https://earthlyhours.com/seasons.html?day=12-18
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1609,15 +1290,11 @@ DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261220
 RRULE:FREQ=YEARLY
 SUMMARY:Solstice Eve
-DESCRIPTION:The sun\, this December morning\, has come to the end of his so
- uthern journey\, he climbs the whitish sky to the south over the white fur
- y of the Orleans shoals\, and takes on a silvery quality from the pallor o
- f the sky. On such a morning went ancient peoples to their hills\, and cri
- ed to the pale god to return to their woods and fields . . .\n— Henry Be
- ston\, “Midwinter\,” from The Outermost House (1928)\, pp. 62–63\n\n
- Today’s image: Bradford\, Sunrise from Cape Cod\, plate from Henry Besto
- n\, The Outermost House (1928)\, photograph\n\nThe day in The Earthly Book
-  of Hours: https://earthlyhours.com/seasons.html?day=12-20
+DESCRIPTION:Shab-e Yaldā\n\n“The sun\, this December morning\, has come 
+ to the end of his southern journey\, he climbs the whitish sky to the sout
+ h over the white fury of the Orleans shoals\, and takes on a silvery quali
+ ty from the…”\n\nWords: Henry Beston\, 1928 · Image: Bradford\, 1928\
+ n\nRead the day: https://earthlyhours.com/seasons.html?day=12-20
 URL:https://earthlyhours.com/seasons.html?day=12-20
 TRANSP:TRANSPARENT
 END:VEVENT
