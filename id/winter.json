@@ -10,6 +10,7 @@
   "vocabulary": "seasons",
   "subjects": [
     "sp-0001",
+    "sp-0038",
     "sp-0046",
     "ph-0007",
     "sp-0034",
@@ -19,6 +20,7 @@
     "ph-0008",
     "sp-0040",
     "sp-0033",
+    "sp-0035",
     "ph-0010",
     "ph-0011",
     "sp-0042",
@@ -34,6 +36,13 @@
         "name": "Witch Hazel",
         "scientific": "Hamamelis virginiana",
         "wikidata": "Q913129"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0038/",
+        "id": "sp-0038",
+        "name": "Turkey Tail",
+        "scientific": "Trametes versicolor",
+        "wikidata": "Q753833"
       },
       {
         "@id": "https://earthlyhours.com/id/sp-0046/",
@@ -94,6 +103,13 @@
         "name": "Late Oyster",
         "scientific": "Sarcomyxa serotina",
         "wikidata": "Q81202193"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/sp-0035/",
+        "id": "sp-0035",
+        "name": "Long-tailed Duck",
+        "scientific": "Clangula hyemalis",
+        "wikidata": "Q26597"
       },
       {
         "@id": "https://earthlyhours.com/id/ph-0010/",

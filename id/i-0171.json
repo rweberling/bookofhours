@@ -52,6 +52,19 @@
         "scientific": "Clangula hyemalis",
         "wikidata": "Q26597"
       }
+    ],
+    "day": {
+      "@id": "https://earthlyhours.com/id/dy-0007/",
+      "id": "dy-0007",
+      "date": "12-11",
+      "url": "https://earthlyhours.com/seasons.html?day=12-11"
+    },
+    "alongside": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0140/",
+        "id": "r-0140",
+        "name": "Edward Howe Forbush, “Old-squaw”"
+      }
     ]
   },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",

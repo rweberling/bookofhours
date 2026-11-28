@@ -1265,6 +1265,32 @@ URL:https://earthlyhours.com/seasons.html?day=11-28
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:dy-0025@earthlyhours.com
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261129
+RRULE:FREQ=YEARLY
+SUMMARY:Turkey Tail
+DESCRIPTION:The following notes relate to observations made during a year
+ ’s collecting on the sporophores or fruiting bodies of Polyporus versico
+ lor L.\, in various parts of New Jersey. Eighty percent of some fifty spec
+ ies of polypores found in New Jersey were observed to be infested by insec
+ ts and Polyporus versicolor appeared to attract the largest number of spec
+ ies all of which belonged to the Coleoptera.\n\n. . . It is difficult to e
+ xplain why versicolor harbors so many insects unless it is the qualities o
+ f the context which attract them. Other polypores having a much thicker an
+ d fleshier context attract considerably fewer species. Altogether twenty-f
+ our species of Coleoptera\, representing thirteen families\, were found as
+ sociated with versicolor . . .\n— Harry B. Weiss\, “Coleoptera Associa
+ ted with Polyporus versicolor L. in New Jersey”\, Psyche 27 (December 19
+ 20)\, pp. 137–138\n\nToday’s image: James Sowerby\, Boletus versicolor
+  (turkey tail)\, plate 229 from Coloured Figures of English Fungi or Mushr
+ ooms (1799)\, hand-coloured engraving\; the pencilled name below\, Polysti
+ ctus versicolor\, is a later reader’s\n\nThe day in The Earthly Book of 
+ Hours: https://earthlyhours.com/seasons.html?day=11-29
+URL:https://earthlyhours.com/seasons.html?day=11-29
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:dy-0024@earthlyhours.com
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261130
@@ -1450,6 +1476,31 @@ DESCRIPTION:The species is not noticeably viscid after its youth. The visci
  rations of British Fungi (1881–1891)\, detail\n\nThe day in The Earthly 
  Book of Hours: https://earthlyhours.com/seasons.html?day=12-10
 URL:https://earthlyhours.com/seasons.html?day=12-10
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dy-0007@earthlyhours.com
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261211
+RRULE:FREQ=YEARLY
+SUMMARY:Long-tailed Duck
+DESCRIPTION:When wintry winds lash the dark water into foam and send it roa
+ ring upon our rocky coast\, when the shore birds have gone and the Geese h
+ ave flown\, the Old-squaws still ride the waves just outside the breakers.
+  They seem filled with abundant vigor and playfulness. Rising against the 
+ wind\, they speed away and back again\, splashing down into the sea. Their
+  calls and cries are heard particularly at morning and late in the afterno
+ on\, when they are often very vociferous.\n— Edward Howe Forbush\, from 
+ A History of the Game Birds\, Wild-Fowl and Shore Birds of Massachusetts a
+ nd Adjacent States (1912)\, p. 142\n\n1. Old-squaw: the bird’s American 
+ name until 2000\, when the American Ornithologists’ Union changed it to 
+ Long-tailed Duck\, the name used everywhere else. Fish and Wildlife Servic
+ e biologists in Alaska had asked for the change\, because “squaw” is a
+  slur against Native women.\n\nToday’s image: Robert Havell after John J
+ ames Audubon\, Long-tailed Duck\, from The Birds of America (1836)\n\nThe 
+ day in The Earthly Book of Hours: https://earthlyhours.com/seasons.html?da
+ y=12-11
+URL:https://earthlyhours.com/seasons.html?day=12-11
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
