@@ -109,8 +109,6 @@ def llms_text():
         for entry in sorted(items, key=lambda e: e.get('published') or ''):
             url = post_address(season, entry)
             note = f'{season}, {entry["published"]}' if entry.get('published') else season
-            if entry.get('canonicalUrl'):
-                note += f'; first published at {entry["canonicalUrl"]}'
             lines.append(f'- [{entry["title"]}]({url}): {note}')
     return top + LLMS_READINGS + '\n\n' + '\n'.join(lines) + '\n'
 
