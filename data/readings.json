@@ -995,12 +995,12 @@
     "shownIn": "hours",
     "text": "Evening, thou that bringest all that bright morning scattered;<br>thou bringest the sheep, the goat, the child back to her mother.",
     "citation": {
-      "display": "Sappho, <em>fragment 104a</em> (c. 630–580 BCE, trans. <a href=\"https://archive.org/download/sapphomemoirtext57390gut/57390-h/57390-h.htm\" target=\"_blank\">Wharton, 1908</a>)",
+      "display": "Sappho, <em>fragment 104a</em> (c. 630–580 BCE, trans. <a href=\"https://www.gutenberg.org/files/57390/57390-h/57390-h.htm\" target=\"_blank\">Wharton, 1908</a>)",
       "bibliography": "Sappho. \"Fragment 104a.\" <em>Sappho: Memoir, Text, Selected Renderings, and a Literal Translation</em>, translated by Henry Thornton Wharton, John Lane, 1908. Composed c. 630–580 BCE.",
       "title": "Fragment 104a",
       "locator": {
-        "url": "https://archive.org/download/sapphomemoirtext57390gut/57390-h/57390-h.htm",
-        "label": "Internet Archive"
+        "url": "https://www.gutenberg.org/files/57390/57390-h/57390-h.htm",
+        "label": "Project Gutenberg"
       },
       "edition": {
         "id": "e-0026",
@@ -5693,7 +5693,8 @@
           "note": "Forbush on the long-tailed duck (then the old-squaw) riding the winter breakers off Massachusetts."
         }
       ]
-    }
+    },
+    "draft": true
   },
   {
     "id": "r-0141",
@@ -6475,7 +6476,14 @@
         "id": "e-0240",
         "type": "article",
         "title": "Popular Science Monthly",
-        "contributors": [{ "id": "a-arthur-h-graves", "name": "Arthur H. Graves", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-arthur-h-graves",
+            "name": "Arthur H. Graves",
+            "role": "author",
+            "wikidata": "Q18089597"
+          }
+        ],
         "publisher": "The Science Press",
         "issued": "1914-06",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6513,7 +6521,14 @@
         "id": "e-0241",
         "type": "book",
         "title": "The American Beaver and His Works",
-        "contributors": [{ "id": "a-lewis-h-morgan", "name": "Lewis H. Morgan", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-lewis-h-morgan",
+            "name": "Lewis H. Morgan",
+            "role": "author",
+            "wikidata": "Q313458"
+          }
+        ],
         "publisher": "J. B. Lippincott",
         "issued": "1868",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6557,7 +6572,14 @@
         "id": "e-0242",
         "type": "book",
         "title": "The Naturalist on the River Amazons, vol. 1",
-        "contributors": [{ "id": "a-henry-walter-bates", "name": "Henry Walter Bates", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-henry-walter-bates",
+            "name": "Henry Walter Bates",
+            "role": "author",
+            "wikidata": "Q370308"
+          }
+        ],
         "publisher": "John Murray",
         "issued": "1863",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",

@@ -4372,7 +4372,7 @@
     "id": "i-0131",
     "shownIn": "weather",
     "file": "images/weather_tyndall_tube.gif",
-    "caption": "John Tyndall, Fig. 3, from <a href=\"https://archive.org/details/b21902227_0001/page/98/mode/1up\" target=\"_blank\"><em>Fragments of Science</em></a>, vol. 1 (1879)",
+    "caption": "John Tyndall, Fig. 3, from <a href=\"https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601\" target=\"_blank\"><em>Fragments of Science</em></a>, vol. 1 (1879)",
     "alt": "An engraving of laboratory apparatus on a table: a tall lamp at the left shining into a long horizontal glass tube on two stands, joined by thin pipes to a small test tube and two upright jars on the right, labelled “Fig. 3.”",
     "bibliography": "Tyndall, John. Fig. 3. In “New Chemical Reactions Produced by Light,” <em>Fragments of Science: A Series of Detached Essays, Addresses, and Reviews</em>, 6th ed., vol. 1. Longmans, Green, and Co., 1879.",
     "creator": { "id": "a-john-tyndall", "name": "John Tyndall", "wikidata": "Q360808" },
@@ -4384,8 +4384,8 @@
       "issued": "1879"
     },
     "locator": {
-      "url": "https://archive.org/details/b21902227_0001/page/98/mode/1up",
-      "label": "Internet Archive"
+      "url": "https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601",
+      "label": "Project Gutenberg"
     },
     "date": "1879",
     "institution": null,
@@ -5789,7 +5789,8 @@
       "weather": [],
       "seasons": ["winter"],
       "species": ["sp-0035"]
-    }
+    },
+    "draft": true
   },
   {
     "id": "i-0172",
@@ -6636,7 +6637,7 @@
     "caption": "Martin Johnson Heade, <a href=\"https://www.metmuseum.org/art/collection/search/11052\" target=\"_blank\"><em>Hummingbird and Passionflowers</em></a> (c. 1875–85)",
     "alt": "A small oil painting: a green-backed hummingbird perched on a curling vine among large red passionflowers, a mossy branch below, and behind them a soft grey-green jungle dissolving into mist and low cloud.",
     "bibliography": "Heade, Martin Johnson. <em>Hummingbird and Passionflowers</em>. c. 1875–85, oil on canvas, Metropolitan Museum of Art, 46.17.",
-    "creator": { "id": "a-martin-johnson-heade", "name": "Martin Johnson Heade" },
+    "creator": { "id": "a-martin-johnson-heade", "name": "Martin Johnson Heade", "wikidata": "Q3123472" },
     "title": "Hummingbird and Passionflowers",
     "date": "1875~/1885~",
     "institution": "Metropolitan Museum of Art",
@@ -6666,7 +6667,7 @@
     "caption": "Martin Johnson Heade, <a href=\"https://www.artic.edu/artworks/152747\" target=\"_blank\"><em>York Harbor, Coast of Maine</em></a> (1877)",
     "alt": "A wide painting of a still harbour on a hazy summer morning: the sun a pale white disc in a milky sky, three sailboats with slack sails reflected in flat water, and mossy rocks and marsh grass in the foreground.",
     "bibliography": "Heade, Martin Johnson. <em>York Harbor, Coast of Maine</em>. 1877, oil on canvas, Art Institute of Chicago, 1999.291.",
-    "creator": { "id": "a-martin-johnson-heade", "name": "Martin Johnson Heade" },
+    "creator": { "id": "a-martin-johnson-heade", "name": "Martin Johnson Heade", "wikidata": "Q3123472" },
     "title": "York Harbor, Coast of Maine",
     "date": "1877",
     "institution": "Art Institute of Chicago",
@@ -6726,7 +6727,7 @@
     "caption": "Gustave Le Gray, <a href=\"https://www.artic.edu/artworks/126479\" target=\"_blank\"><em>Brig on the Water</em></a> (1856), albumen print",
     "alt": "A sepia photograph of a calm sea under a heavy, broken sky: banks of dark cloud with light breaking through at the top, a band of sunlight on the far water, and one small two-masted ship alone near the horizon.",
     "bibliography": "Le Gray, Gustave. <em>Brig on the Water</em>. 1856, albumen print, Art Institute of Chicago, 1971.577.12.",
-    "creator": { "id": "a-gustave-le-gray", "name": "Gustave Le Gray" },
+    "creator": { "id": "a-gustave-le-gray", "name": "Gustave Le Gray", "wikidata": "Q982549" },
     "title": "Brig on the Water",
     "date": "1856",
     "institution": "Art Institute of Chicago",
