@@ -48,7 +48,7 @@ from html import escape, unescape
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from datafile import creator_names, creators, load  # noqa: E402
+from datafile import creator_names, creators, load, text_with_notes  # noqa: E402
 from build_shared import render as render_shared  # noqa: E402
 from weeks import _offset as weeks_offset, essay_day, season_of_week, week_days, week_of  # noqa: E402
 
@@ -542,7 +542,7 @@ def reading_page(col, r):
     verse = (r.get('display') or {}).get('verse')
     text = r.get('text') or ''
     if text and is_open(rights):
-        shown = f'    <blockquote class="record-text{" verse" if verse else ""}">{text}</blockquote>'
+        shown = f'    <blockquote class="record-text{" verse" if verse else ""}">{text_with_notes(r)}</blockquote>'
     elif text:
         where = 'the site' if not r.get('shownIn') else 'its page on the site'
         shown = (f'    <blockquote class="record-text{" verse" if verse else ""}">{first_line(text, verse)}</blockquote>\n'
@@ -800,7 +800,7 @@ def day_page(col, did):
         note = '' if whole or not text else ('\n    <p class="record-note">The opening only: this text is still in '
                                              'copyright. Read it in full on its day, above.</p>')
         quote = (f'    <blockquote class="record-text{" verse" if verse else ""}">'
-                 f'{text if whole else first_line(text, verse)}</blockquote>{note}\n') if text else ''
+                 f'{text_with_notes(r) if whole else first_line(text, verse)}</blockquote>{note}\n') if text else ''
         words = quote + dl([('Citation', c.get('display') or ''), ('Record', link(r['id'], col.name(r['id'])))])
         writer = ', '.join(p['name'] for p in ed.get('contributors', []) if p.get('role') == 'author')
     if i:

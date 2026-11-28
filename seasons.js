@@ -274,12 +274,30 @@ async function showDay(day, days) {
     const verse = reading.display && reading.display.verse ? ' class="reading-verse"' : '';
     const citation = reading.citation ? reading.citation.display : '';
     body.insertAdjacentHTML('beforeend',
-      `<ol class="day-reading"><li${verse} id="day-quote">${readingHTML(reading)}</li></ol>`
-      + (citation ? `<div class="reading-citation" id="day-attr">${citation}${recordMark(reading.id)}</div>` : ''));
+      `<ol class="day-reading"><li${verse} id="day-quote">${dayNoteRefs(readingHTML(reading))}</li></ol>`
+      + (citation ? `<div class="reading-citation" id="day-attr">${citation}${recordMark(reading.id)}</div>` : '')
+      + dayNotes(reading.footnotes));
   }
   wireFigures(body);
   ruleReadings(body);
   updateRunningHead();
+}
+
+// A card's footnotes, set as a post's are (footnotes_html() in
+// scripts/post_render.py): the reference a small raised number, the
+// notes under a short rule after the citation, each linking back.
+function dayNoteRefs(html) {
+  return html.replace(/<a href="#footnote-(\d+)"[^>]*>\1<\/a>/g, (_, n) =>
+    `<a class="footnote-ref" id="footnote-anchor-${n}" href="#footnote-${n}" aria-label="Note ${n}">${n}</a>`);
+}
+function dayNotes(notes) {
+  if (!notes || !notes.length) return '';
+  return '<aside class="footnotes" aria-label="Notes">' + notes.map(note => {
+    const n = note.marker;
+    const number = `<a class="footnote-number" href="#footnote-anchor-${n}" aria-label="Back to the text, note ${n}">${n}</a>`;
+    const html = /^\s*<p>/.test(note.text) ? note.text : `<p>${note.text}</p>`;
+    return html.replace(/^\s*<p>/, `<p class="footnote" id="footnote-${n}">${number}`);
+  }).join('') + '</aside>';
 }
 
 // The week around a day, above it: its number and dates, its essay, and

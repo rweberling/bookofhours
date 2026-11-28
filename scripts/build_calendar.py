@@ -101,7 +101,8 @@ def card_notes(card, reading, image, subject):
     edition = (reading.get('citation') or {}).get('edition') or {}
     cite = plain((reading.get('citation') or {}).get('display'))
     if (edition.get('rights') or '').startswith(OPEN_RIGHTS) and reading.get('text'):
-        parts.append(plain(reading['text']) + (f'\n— {cite}' if cite else ''))
+        notes = ''.join(f'\n\n{n["marker"]}. {plain(n["text"])}' for n in reading.get('footnotes') or [])
+        parts.append(plain(reading['text']) + (f'\n— {cite}' if cite else '') + notes)
     elif cite:
         parts.append(f'Today’s reading: {cite}')
     caption = plain(image.get('caption'))

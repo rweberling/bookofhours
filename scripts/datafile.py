@@ -104,3 +104,18 @@ def save_posts(data, path=POSTS):
         if not original.exists() or original.read_text(encoding='utf-8') != text:
             original.write_text(text, encoding='utf-8')
     path.write_text(json.dumps(stripped, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+
+FOOTNOTE_REF = re.compile(r'<a href="#footnote-(\d+)"[^>]*>\1</a>')
+
+
+def text_with_notes(reading):
+    """A reading's text for pages and feeds outside the Seasons page (the
+    record pages, year.xml): each footnote reference a raised number, the
+    notes after it in small type. The post pages have their own
+    (post_render.py)."""
+    text = FOOTNOTE_REF.sub(lambda m: f'<sup>{m.group(1)}</sup>', reading.get('text') or '')
+    for note in reading.get('footnotes') or []:
+        body = re.sub(r'^\s*<p>|</p>\s*$', '', note['text'])
+        text += f'<p class="record-footnote"><small>{note["marker"]}. {body}</small></p>'
+    return text

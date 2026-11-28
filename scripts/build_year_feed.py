@@ -42,7 +42,7 @@ from zoneinfo import ZoneInfo
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
-from datafile import load  # noqa: E402
+from datafile import load, text_with_notes  # noqa: E402
 from syndicate import OPEN_RIGHTS, plain  # noqa: E402
 from build_lectio_pages import essay_item, posts, subjects  # noqa: E402
 from weeks import essay_day  # noqa: E402
@@ -77,7 +77,7 @@ def card_item(card, day, readings, images, names, files):
             body += f'<p><small>{escape(plain(image["caption"]))}</small></p>'
     edition = (reading.get('citation') or {}).get('edition') or {}
     if (edition.get('rights') or '').startswith(OPEN_RIGHTS) and reading.get('text'):
-        body += f'<blockquote><p>{reading["text"]}</p></blockquote>'
+        body += f'<blockquote><p>{text_with_notes(reading)}</p></blockquote>'
     cite = plain((reading.get('citation') or {}).get('display'))
     if cite:
         body += f'<p><em>{escape(cite)}</em></p>'

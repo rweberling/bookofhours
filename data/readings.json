@@ -5763,7 +5763,7 @@
   {
     "id": "r-0140",
     "shownIn": "days",
-    "text": "<p>When wintry winds lash the dark water into foam and send it roaring upon our rocky coast, when the shore birds have gone and the Geese have flown, the Old-squaws still ride the waves just outside the breakers. They seem filled with abundant vigor and playfulness. Rising against the wind, they speed away and back again, splashing down into the sea. Their calls and cries are heard particularly at morning and late in the afternoon, when they are often very vociferous.</p>",
+    "text": "<p>When wintry winds lash the dark water into foam and send it roaring upon our rocky coast, when the shore birds have gone and the Geese have flown, the Old-squaws<a href=\"#footnote-1\" target=\"_self\">1</a> still ride the waves just outside the breakers. They seem filled with abundant vigor and playfulness. Rising against the wind, they speed away and back again, splashing down into the sea. Their calls and cries are heard particularly at morning and late in the afternoon, when they are often very vociferous.</p>",
     "citation": {
       "display": "Edward Howe Forbush, from <a href=\"https://archive.org/details/historyofgame00forb/page/n171/mode/1up\" target=\"_blank\"><em>A History of the Game Birds, Wild-Fowl and Shore Birds of Massachusetts and Adjacent States</em></a> (1912), p. 142",
       "bibliography": "Forbush, Edward Howe. \"Old-squaw.\" <em>A History of the Game Birds, Wild-Fowl and Shore Birds of Massachusetts and Adjacent States</em>, Massachusetts State Board of Agriculture, 1912, p. 142.",
@@ -5796,7 +5796,13 @@
           "note": "Forbush on the long-tailed duck (then the old-squaw) riding the winter breakers off Massachusetts."
         }
       ]
-    }
+    },
+    "footnotes": [
+      {
+        "marker": 1,
+        "text": "<p>Old-squaw: the bird’s American name until 2000, when the American Ornithologists’ Union changed it to Long-tailed Duck, the name used everywhere else. Fish and Wildlife Service biologists in Alaska had asked for the change, because “squaw” is a slur against Native women.</p>"
+      }
+    ]
   },
   {
     "id": "r-0141",

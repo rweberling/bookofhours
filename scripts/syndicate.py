@@ -130,7 +130,8 @@ OPEN_RIGHTS = (
 # ---------- reading the collection ----------
 
 def plain(text):
-    text = re.sub(r'<br\s*/?>', '\n', text or '')
+    text = re.sub(r'<a href="#footnote-(\d+)"[^>]*>\1</a>', '', text or '')
+    text = re.sub(r'<br\s*/?>', '\n', text)
     text = re.sub(r'</p>\s*', '\n\n', text)
     text = html.unescape(re.sub(r'<[^>]+>', '', text)).replace(' ', ' ')
     text = re.sub(r'[ \t]+', ' ', text)
