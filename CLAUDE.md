@@ -392,7 +392,9 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   at least three of each week's ten from other registers:
   contemporary art and art–science experiments, found text (labels,
   logs, almanacs, patents, instructions, records, the sea-ice bulletin),
-  experimental poetry and nonfiction, philosophy. Contemporary pieces
+  experimental poetry and nonfiction, philosophy. Tilt each week
+  slightly more toward plants than animals (trees, shrubs, mosses,
+  lichens, fungi, seeds and fruit; Ryan, 28 November 2026). Contemporary pieces
   are in copyright: nominate them anyway, a short passage or one image,
   with the rights marked "needs Ryan" (excerpt use, or the artist's
   permission), so he can choose which are worth asking for. The week's shortlist of
