@@ -25,7 +25,8 @@
         {
           "id": "a-fred-w-card",
           "name": "Fred W. Card",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q21506958"
         }
       ],
       "publisher": "Macmillan",

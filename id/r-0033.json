@@ -29,7 +29,8 @@
         {
           "id": "a-walter-de-la-mare",
           "name": "Walter de la Mare",
-          "role": "foreword"
+          "role": "foreword",
+          "wikidata": "Q981086"
         }
       ],
       "publisher": "Thomas Seltzer",

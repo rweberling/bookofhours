@@ -40,12 +40,14 @@
       {
         "id": "a-zohar-amar",
         "name": "Zohar Amar",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q8073446"
       },
       {
         "id": "a-efraim-lev",
         "name": "Efraim Lev",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q12404175"
       }
     ],
     "container": "Annals of Botany",

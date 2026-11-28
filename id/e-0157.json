@@ -7,7 +7,8 @@
     {
       "id": "a-john-aitken",
       "name": "John Aitken",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q1694481"
     }
   ],
   "container": "Nature",

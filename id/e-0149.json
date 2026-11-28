@@ -11,7 +11,8 @@
     {
       "id": "a-mark-catesby",
       "name": "Mark Catesby",
-      "role": "author"
+      "role": "author",
+      "wikidata": "Q334914"
     }
   ],
   "citedBy": [

@@ -26,7 +26,8 @@
         {
           "id": "a-homer-c-sampson",
           "name": "Homer C. Sampson",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q82929269"
         }
       ],
       "issued": "1918-07",

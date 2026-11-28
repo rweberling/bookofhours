@@ -21,12 +21,14 @@
         {
           "id": "a-benjamin-franklin",
           "name": "Benjamin Franklin",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q34969"
         },
         {
           "id": "a-albert-henry-smyth",
           "name": "Albert Henry Smyth",
-          "role": "editor"
+          "role": "editor",
+          "wikidata": "Q94511883"
         }
       ],
       "publisher": "Macmillan",

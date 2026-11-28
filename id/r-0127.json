@@ -21,12 +21,14 @@
         {
           "id": "a-thomas-traherne",
           "name": "Thomas Traherne",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q2044035"
         },
         {
           "id": "a-h-i-bell",
           "name": "H. I. Bell",
-          "role": "editor"
+          "role": "editor",
+          "wikidata": "Q5989584"
         }
       ],
       "publisher": "Clarendon Press",

@@ -8,7 +8,8 @@
   "bibliography": "<em>The Farmer’s Almanack for the Year of Our Lord 1842</em>. Jenks & Palmer, 1841, p. 29.",
   "creator": {
     "id": "a-robert-b-thomas",
-    "name": "Robert B. Thomas"
+    "name": "Robert B. Thomas",
+    "wikidata": "Q52158808"
   },
   "title": "December",
   "date": "1841",
@@ -26,7 +27,8 @@
       {
         "id": "a-robert-b-thomas",
         "name": "Robert B. Thomas",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q52158808"
       }
     ],
     "publisher": "Jenks & Palmer",

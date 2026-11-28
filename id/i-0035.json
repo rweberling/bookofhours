@@ -14,7 +14,8 @@
       {
         "id": "a-j-francis-macbride",
         "name": "J. Francis Macbride",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q3046674"
       }
     ],
     "publisher": "Field Museum of Natural History",
@@ -63,7 +64,8 @@
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "creator": {
     "id": "a-j-francis-macbride",
-    "name": "J. Francis Macbride"
+    "name": "J. Francis Macbride",
+    "wikidata": "Q3046674"
   },
   "related": {
     "about": [

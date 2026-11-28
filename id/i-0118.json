@@ -38,7 +38,8 @@
       {
         "id": "a-mark-catesby",
         "name": "Mark Catesby",
-        "role": "author"
+        "role": "author",
+        "wikidata": "Q334914"
       }
     ]
   },
@@ -49,7 +50,8 @@
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
   "creator": {
     "id": "a-mark-catesby",
-    "name": "Mark Catesby"
+    "name": "Mark Catesby",
+    "wikidata": "Q334914"
   },
   "related": {
     "about": [

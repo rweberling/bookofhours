@@ -21,7 +21,8 @@
         {
           "id": "a-roger-williams",
           "name": "Roger Williams",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q391591"
         }
       ],
       "publisher": "Gregory Dexter",

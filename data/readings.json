@@ -90,7 +90,12 @@
         "title": "Mūlamadhyamakakārikā",
         "contributors": [
           { "id": "a-nagarjuna", "name": "Nāgārjuna", "role": "author", "wikidata": "Q171195" },
-          { "id": "a-stephen-batchelor", "name": "Stephen Batchelor", "role": "translator" }
+          {
+            "id": "a-stephen-batchelor",
+            "name": "Stephen Batchelor",
+            "role": "translator",
+            "wikidata": "Q353544"
+          }
         ],
         "issued": null,
         "original-date": "0150~",
@@ -1322,7 +1327,12 @@
             "role": "author",
             "wikidata": "Q1293865"
           },
-          { "id": "a-walter-de-la-mare", "name": "Walter de la Mare", "role": "foreword" }
+          {
+            "id": "a-walter-de-la-mare",
+            "name": "Walter de la Mare",
+            "role": "foreword",
+            "wikidata": "Q981086"
+          }
         ],
         "publisher": "Thomas Seltzer",
         "issued": "1921",
@@ -1372,7 +1382,14 @@
         "id": "e-0034",
         "type": "book",
         "title": "The Use of Life",
-        "contributors": [{ "id": "a-john-lubbock", "name": "John Lubbock", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-john-lubbock",
+            "name": "John Lubbock",
+            "role": "author",
+            "wikidata": "Q312503"
+          }
+        ],
         "issued": null,
         "original-date": "1894",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -1931,7 +1948,12 @@
         "type": "book",
         "title": "A History of the Species of Crocus",
         "contributors": [
-          { "id": "a-william-herbert", "name": "William Herbert", "role": "author" },
+          {
+            "id": "a-william-herbert",
+            "name": "William Herbert",
+            "role": "author",
+            "wikidata": "Q954928"
+          },
           {
             "id": "a-john-lindley",
             "name": "John Lindley",
@@ -2473,7 +2495,12 @@
             "role": "author",
             "wikidata": "Q11203460"
           },
-          { "id": "a-samuel-l-dana", "name": "Samuel L. Dana", "role": "author" }
+          {
+            "id": "a-samuel-l-dana",
+            "name": "Samuel L. Dana",
+            "role": "author",
+            "wikidata": "Q7412060"
+          }
         ],
         "publisher": "Cummings and Hilliard",
         "issued": "1818",
@@ -3251,7 +3278,14 @@
         "type": "book",
         "title": "Bush-Fruits: A Horticultural Monograph of Raspberries, Blackberries, Dewberries, Currants, Gooseberries, and Other Shrublike Fruits",
         "identifiers": { "hathitrust": "009120458", "oclc": "12767094" },
-        "contributors": [{ "id": "a-fred-w-card", "name": "Fred W. Card", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-fred-w-card",
+            "name": "Fred W. Card",
+            "role": "author",
+            "wikidata": "Q21506958"
+          }
+        ],
         "publisher": "Macmillan",
         "issued": "1903",
         "original-date": "1898",
@@ -4551,7 +4585,14 @@
         "id": "e-0110",
         "type": "book",
         "title": "Autumn Flowers and Fruits",
-        "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-j-francis-macbride",
+            "name": "J. Francis Macbride",
+            "role": "author",
+            "wikidata": "Q3046674"
+          }
+        ],
         "publisher": "Field Museum of Natural History",
         "issued": "1924-10",
         "identifiers": {
@@ -4757,7 +4798,14 @@
         "volume": "66",
         "pages": "32–53",
         "identifiers": { "doi": "10.1086/332301" },
-        "contributors": [{ "id": "a-homer-c-sampson", "name": "Homer C. Sampson", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-homer-c-sampson",
+            "name": "Homer C. Sampson",
+            "role": "author",
+            "wikidata": "Q82929269"
+          }
+        ],
         "issued": "1918-07",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
       }
@@ -4920,7 +4968,9 @@
         "id": "e-0157",
         "type": "article",
         "title": "On Dust, Fogs, and Clouds",
-        "contributors": [{ "id": "a-john-aitken", "name": "John Aitken", "role": "author" }],
+        "contributors": [
+          { "id": "a-john-aitken", "name": "John Aitken", "role": "author", "wikidata": "Q1694481" }
+        ],
         "container": "Nature",
         "volume": "23",
         "pages": "195–197",
@@ -5199,8 +5249,13 @@
         "type": "book",
         "title": "Traherne’s Poems of Felicity",
         "contributors": [
-          { "id": "a-thomas-traherne", "name": "Thomas Traherne", "role": "author" },
-          { "id": "a-h-i-bell", "name": "H. I. Bell", "role": "editor" }
+          {
+            "id": "a-thomas-traherne",
+            "name": "Thomas Traherne",
+            "role": "author",
+            "wikidata": "Q2044035"
+          },
+          { "id": "a-h-i-bell", "name": "H. I. Bell", "role": "editor", "wikidata": "Q5989584" }
         ],
         "publisher": "Clarendon Press",
         "issued": "1910",
@@ -5240,7 +5295,12 @@
             "role": "author",
             "wikidata": "Q313693"
           },
-          { "id": "a-robert-bridges", "name": "Robert Bridges", "role": "editor" }
+          {
+            "id": "a-robert-bridges",
+            "name": "Robert Bridges",
+            "role": "editor",
+            "wikidata": "Q925991"
+          }
         ],
         "publisher": "Humphrey Milford",
         "issued": "1918",
@@ -5356,8 +5416,18 @@
         "type": "book",
         "title": "The Writings of Benjamin Franklin, vol. 9",
         "contributors": [
-          { "id": "a-benjamin-franklin", "name": "Benjamin Franklin", "role": "author" },
-          { "id": "a-albert-henry-smyth", "name": "Albert Henry Smyth", "role": "editor" }
+          {
+            "id": "a-benjamin-franklin",
+            "name": "Benjamin Franklin",
+            "role": "author",
+            "wikidata": "Q34969"
+          },
+          {
+            "id": "a-albert-henry-smyth",
+            "name": "Albert Henry Smyth",
+            "role": "editor",
+            "wikidata": "Q94511883"
+          }
         ],
         "publisher": "Macmillan",
         "issued": "1906",
@@ -5397,7 +5467,14 @@
         "id": "e-0204",
         "type": "book",
         "title": "A Key into the Language of America",
-        "contributors": [{ "id": "a-roger-williams", "name": "Roger Williams", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-roger-williams",
+            "name": "Roger Williams",
+            "role": "author",
+            "wikidata": "Q391591"
+          }
+        ],
         "publisher": "Gregory Dexter",
         "issued": "1643",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -5554,7 +5631,12 @@
         "type": "book",
         "title": "Toadstools, Mushrooms, Fungi, Edible and Poisonous: One Thousand American Fungi",
         "contributors": [
-          { "id": "a-charles-mcilvaine", "name": "Charles McIlvaine", "role": "author" },
+          {
+            "id": "a-charles-mcilvaine",
+            "name": "Charles McIlvaine",
+            "role": "author",
+            "wikidata": "Q5080838"
+          },
           { "id": "a-robert-k-macadam", "name": "Robert K. Macadam", "role": "author" }
         ],
         "publisher": "Bowen-Merrill",
@@ -6280,7 +6362,14 @@
         "id": "e-0233",
         "type": "book",
         "title": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits",
-        "contributors": [{ "id": "a-fred-v-theobald", "name": "Fred. V. Theobald", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-fred-v-theobald",
+            "name": "Fred. V. Theobald",
+            "role": "author",
+            "wikidata": "Q3087178"
+          }
+        ],
         "publisher": "published by the author",
         "issued": "1909",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6318,7 +6407,14 @@
         "id": "e-0234",
         "type": "book",
         "title": "The Farmer’s Almanack for the Year of Our Lord 1842",
-        "contributors": [{ "id": "a-robert-b-thomas", "name": "Robert B. Thomas", "role": "author" }],
+        "contributors": [
+          {
+            "id": "a-robert-b-thomas",
+            "name": "Robert B. Thomas",
+            "role": "author",
+            "wikidata": "Q52158808"
+          }
+        ],
         "publisher": "Jenks & Palmer",
         "issued": "1841",
         "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",

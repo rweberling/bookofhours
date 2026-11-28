@@ -45,7 +45,8 @@
         {
           "id": "a-john-lubbock",
           "name": "John Lubbock",
-          "role": "author"
+          "role": "author",
+          "wikidata": "Q312503"
         }
       ],
       "issued": null,

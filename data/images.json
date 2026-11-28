@@ -972,7 +972,14 @@
       "id": "e-0110",
       "type": "book",
       "title": "Autumn Flowers and Fruits",
-      "contributors": [{ "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-j-francis-macbride",
+          "name": "J. Francis Macbride",
+          "role": "author",
+          "wikidata": "Q3046674"
+        }
+      ],
       "publisher": "Field Museum of Natural History",
       "issued": "1924-10",
       "identifiers": {
@@ -1007,7 +1014,7 @@
       "size": [400, 656]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-j-francis-macbride", "name": "J. Francis Macbride" }
+    "creator": { "id": "a-j-francis-macbride", "name": "J. Francis Macbride", "wikidata": "Q3046674" }
   },
   {
     "id": "i-0036",
@@ -2068,7 +2075,14 @@
       "id": "e-0177",
       "type": "book",
       "title": "Guidebook to Field Trips in Southeastern New England (MA-NH-RI)",
-      "contributors": [{ "id": "a-margaret-d-thompson", "name": "Margaret D. Thompson", "role": "editor" }],
+      "contributors": [
+        {
+          "id": "a-margaret-d-thompson",
+          "name": "Margaret D. Thompson",
+          "role": "editor",
+          "wikidata": "Q102403470"
+        }
+      ],
       "publisher": "New England Intercollegiate Geological Conference",
       "issued": "2014",
       "identifiers": { "oclc": "913438596", "openlibrary": "OL62418013M" }
@@ -3274,7 +3288,14 @@
         "openlibrary": "OL13520643M",
         "lccn": "11032777"
       },
-      "contributors": [{ "id": "a-richard-morris", "name": "Richard Morris", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-richard-morris",
+          "name": "Richard Morris",
+          "role": "author",
+          "wikidata": "Q133933920"
+        }
+      ],
       "publisher": "Longman"
     },
     "locator": {
@@ -3662,7 +3683,12 @@
         { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "author" },
         { "id": "a-marie-christine-daunay", "name": "Marie-Christine Daunay", "role": "author" },
         { "id": "a-michel-pitrat", "name": "Michel Pitrat", "role": "author" },
-        { "id": "a-jules-janick", "name": "Jules Janick", "role": "author" }
+        {
+          "id": "a-jules-janick",
+          "name": "Jules Janick",
+          "role": "author",
+          "wikidata": "Q61151060"
+        }
       ],
       "container": "Annals of Botany",
       "volume": "98",
@@ -3727,8 +3753,8 @@
       "title": "Medieval Emergence of Sweet Melons, Cucumis melo (Cucurbitaceae)",
       "contributors": [
         { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "author" },
-        { "id": "a-zohar-amar", "name": "Zohar Amar", "role": "author" },
-        { "id": "a-efraim-lev", "name": "Efraim Lev", "role": "author" }
+        { "id": "a-zohar-amar", "name": "Zohar Amar", "role": "author", "wikidata": "Q8073446" },
+        { "id": "a-efraim-lev", "name": "Efraim Lev", "role": "author", "wikidata": "Q12404175" }
       ],
       "container": "Annals of Botany",
       "volume": "110",
@@ -3760,7 +3786,7 @@
       "size": [1456, 1177]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-juan-sanchez-cotan", "name": "Juan Sánchez Cotán" },
+    "creator": { "id": "a-juan-sanchez-cotan", "name": "Juan Sánchez Cotán", "wikidata": "Q919806" },
     "title": "Still Life with Quince, Cabbage, Melon, and Cucumber",
     "date": "1602~",
     "institution": "San Diego Museum of Art"
@@ -3828,7 +3854,12 @@
       "contributors": [
         { "id": "a-harry-s-paris", "name": "Harry S. Paris", "role": "author" },
         { "id": "a-marie-christine-daunay", "name": "Marie-Christine Daunay", "role": "author" },
-        { "id": "a-jules-janick", "name": "Jules Janick", "role": "author" }
+        {
+          "id": "a-jules-janick",
+          "name": "Jules Janick",
+          "role": "author",
+          "wikidata": "Q61151060"
+        }
       ],
       "container": "Annals of Botany",
       "volume": "112",
@@ -3967,14 +3998,21 @@
       "title": "The Natural History of Carolina, Florida and the Bahama Islands",
       "issued": "1729",
       "identifiers": { "internetArchive": "naturalhistoryCC1V1Cate", "lccn": "agr02000176" },
-      "contributors": [{ "id": "a-mark-catesby", "name": "Mark Catesby", "role": "author" }]
+      "contributors": [
+        {
+          "id": "a-mark-catesby",
+          "name": "Mark Catesby",
+          "role": "author",
+          "wikidata": "Q334914"
+        }
+      ]
     },
     "locator": {
       "url": "https://archive.org/details/naturalhistoryCC1V1Cate/page/n137/mode/2up?q=%22Red+oak%22",
       "label": "Internet Archive"
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-mark-catesby", "name": "Mark Catesby" }
+    "creator": { "id": "a-mark-catesby", "name": "Mark Catesby", "wikidata": "Q334914" }
   },
   {
     "id": "i-0119",
@@ -4044,7 +4082,7 @@
       "size": [530, 778]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-bertha-e-jaques", "name": "Bertha E. Jaques" },
+    "creator": { "id": "a-bertha-e-jaques", "name": "Bertha E. Jaques", "wikidata": "Q15996445" },
     "title": "Young Leaves and Blossoms of Hickory Tree",
     "date": "1910~",
     "institution": "Smithsonian American Art Museum"
@@ -4074,7 +4112,7 @@
       "size": [800, 634]
     },
     "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
-    "creator": { "id": "a-sophia-thoreau", "name": "Sophia Thoreau" },
+    "creator": { "id": "a-sophia-thoreau", "name": "Sophia Thoreau", "wikidata": "Q71351370" },
     "title": "Inscribed hickory leaves in memory of her brother, Henry",
     "date": "1868",
     "institution": "Concord Museum"
@@ -4205,7 +4243,7 @@
     "rights": "http://rightsstatements.org/vocab/InC/1.0/",
     "title": "Monarch and Milkweed",
     "creator": [
-      { "id": "a-helen-frost", "name": "Helen Frost" },
+      { "id": "a-helen-frost", "name": "Helen Frost", "wikidata": "Q5702305" },
       { "id": "a-leonid-gore", "name": "Leonid Gore" }
     ]
   },
@@ -5275,7 +5313,12 @@
       "type": "book",
       "title": "Medicinal Plants, vol. 3",
       "contributors": [
-        { "id": "a-robert-bentley", "name": "Robert Bentley", "role": "author" },
+        {
+          "id": "a-robert-bentley",
+          "name": "Robert Bentley",
+          "role": "author",
+          "wikidata": "Q2635211"
+        },
         {
           "id": "a-henry-trimen",
           "name": "Henry Trimen",
@@ -5347,7 +5390,7 @@
     "caption": "William Bradford, <a href=\"https://www.metmuseum.org/art/collection/search/10207\" target=\"_blank\"><em>An Arctic Summer: Boring Through the Pack in Melville Bay</em></a> (1871)",
     "alt": "A painting of an Arctic shore: a three-masted ship lies beyond a field of broken pack ice, beside a pale iceberg and dark cliffs, under a heavy bank of cloud and a pink sky; a polar bear crosses the ice in the foreground near a broken spar.",
     "bibliography": "Bradford, William. <em>An Arctic Summer: Boring Through the Pack in Melville Bay</em>. 1871, oil on canvas, The Metropolitan Museum of Art, New York, 1982.443.1.",
-    "creator": { "id": "a-william-bradford", "name": "William Bradford" },
+    "creator": { "id": "a-william-bradford", "name": "William Bradford", "wikidata": "Q8005829" },
     "title": "An Arctic Summer: Boring Through the Pack in Melville Bay",
     "date": "1871",
     "institution": "The Metropolitan Museum of Art",
@@ -5409,7 +5452,7 @@
     "caption": "Timothy H. O’Sullivan, <a href=\"https://clevelandart.org/art/2002.45\" target=\"_blank\"><em>Sand Dunes, Carson Desert, Nevada</em></a> (1867)",
     "alt": "A pale nineteenth-century photograph of bare sand dunes under an empty sky; a small covered wagon drawn by four mules stands at their foot, with a line of footprints leading away from it across the sand.",
     "bibliography": "O’Sullivan, Timothy H. <em>Sand Dunes, Carson Desert, Nevada</em>. 1867, albumen print from wet collodion negative, Cleveland Museum of Art, 2002.45.",
-    "creator": { "id": "a-timothy-h-osullivan", "name": "Timothy H. O’Sullivan" },
+    "creator": { "id": "a-timothy-h-osullivan", "name": "Timothy H. O’Sullivan", "wikidata": "Q1371063" },
     "title": "Sand Dunes, Carson Desert, Nevada",
     "date": "1867",
     "institution": "Cleveland Museum of Art",
@@ -5471,7 +5514,7 @@
     "caption": "Honoré Daumier, <a href=\"https://www.metmuseum.org/art/collection/search/355825\" target=\"_blank\"><em>A Day When You Do Not Pay—Twenty-Five-Degree Heat</em></a>, from <em>Le Public du Salon</em> (1852)",
     "alt": "A lithograph of a packed crowd at the Paris Salon: men in top hats and women in bonnets are pressed together beneath the paintings on the gallery wall, red-faced and wide-eyed, while a small boy is dragged through the crush by the hand. Below, the caption: \"Un jour où l’on ne paye pas.—Vingt-cinq degrés de chaleur.\"",
     "bibliography": "Daumier, Honoré. <em>Un jour où l’on ne paye pas. Vingt-cinq degrés de chaleur</em> (A Day When You Do Not Pay—Twenty-Five-Degree Heat), from <em>Le Public du Salon</em>. Published in <em>Le Charivari</em>, 17 May 1852, lithograph, The Metropolitan Museum of Art, New York, 1980.1114.2.",
-    "creator": { "id": "a-honore-daumier", "name": "Honoré Daumier" },
+    "creator": { "id": "a-honore-daumier", "name": "Honoré Daumier", "wikidata": "Q187506" },
     "title": "A Day When You Do Not Pay—Twenty-Five-Degree Heat (Un jour où l’on ne paye pas. Vingt-cinq degrés de chaleur)",
     "date": "1852-05-17",
     "institution": "The Metropolitan Museum of Art",
@@ -5845,7 +5888,7 @@
     "caption": "Julian Alden Weir, <a href=\"https://www.artic.edu/artworks/129635\" target=\"_blank\"><em>Christmas Greens</em></a> (1889), etching",
     "alt": "An etching of a woman seated by a window, working evergreen garlands in her lap, while a small girl in a white dress stands beside her holding a sprig; a wreath hangs in the window above them.",
     "bibliography": "Weir, Julian Alden. <em>Christmas Greens</em>. 1889, etching, The Art Institute of Chicago, 2013.855.",
-    "creator": { "id": "a-julian-alden-weir", "name": "Julian Alden Weir" },
+    "creator": { "id": "a-julian-alden-weir", "name": "Julian Alden Weir", "wikidata": "Q1284220" },
     "title": "Christmas Greens",
     "date": "1889",
     "institution": "The Art Institute of Chicago",
@@ -6343,7 +6386,14 @@
       "id": "e-0233",
       "type": "book",
       "title": "The Insect and Other Allied Pests of Orchard, Bush and Hothouse Fruits",
-      "contributors": [{ "id": "a-fred-v-theobald", "name": "Fred. V. Theobald", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-fred-v-theobald",
+          "name": "Fred. V. Theobald",
+          "role": "author",
+          "wikidata": "Q3087178"
+        }
+      ],
       "publisher": "published by the author",
       "issued": "1909",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6367,7 +6417,7 @@
     "caption": "December, from <a href=\"https://archive.org/details/farmersalmanack00thom/page/n28/mode/1up\" target=\"_blank\"><em>The Farmer’s Almanack</em></a> for 1842, calculated for Boston (1841), p. 29: a woodcut of Capricorn, a verse, the day-by-day weather and the Farmer’s Calendar",
     "alt": "A worn almanac page headed December hath 31 days, 1842, with a woodcut of a horned goat in an oval frame of leaves, a six-line verse beginning Stern winter reigns o'er all the land, and below it a column of days with holidays and weather notes (Look out for a snow; Clear and quite cold; Snow is near) beside a column of prose headed Farmer's Calendar.",
     "bibliography": "<em>The Farmer’s Almanack for the Year of Our Lord 1842</em>. Jenks & Palmer, 1841, p. 29.",
-    "creator": { "id": "a-robert-b-thomas", "name": "Robert B. Thomas" },
+    "creator": { "id": "a-robert-b-thomas", "name": "Robert B. Thomas", "wikidata": "Q52158808" },
     "title": "December",
     "date": "1841",
     "institution": "Lincoln Financial Foundation Collection",
@@ -6380,7 +6430,14 @@
       "id": "e-0234",
       "type": "book",
       "title": "The Farmer’s Almanack for the Year of Our Lord 1842",
-      "contributors": [{ "id": "a-robert-b-thomas", "name": "Robert B. Thomas", "role": "author" }],
+      "contributors": [
+        {
+          "id": "a-robert-b-thomas",
+          "name": "Robert B. Thomas",
+          "role": "author",
+          "wikidata": "Q52158808"
+        }
+      ],
       "publisher": "Jenks & Palmer",
       "issued": "1841",
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
@@ -6589,7 +6646,7 @@
     "caption": "Lewis Wickes Hine, <a href=\"https://www.loc.gov/item/2018676814/\" target=\"_blank\"><em>Merilda. Carrying cranberries</em></a>, Eldridge Bog, near Rochester, Massachusetts (September 1911), photograph for the National Child Labor Committee",
     "alt": "A sepia photograph of a small girl in a straw hat, checked dress and long white pinafore, standing in a wide cranberry bog and holding a heavy tin measure of berries in each hand; behind her, women and children kneel picking across the bog, with a barn and a line of pines beyond.",
     "bibliography": "Hine, Lewis Wickes. <em>Merilda. Carrying cranberries. Witness, Richard K. Conant. Location: Rochester [vicinity] - Eldridge Bog, Massachusetts</em>. 1911, photographic print, National Child Labor Committee Collection, Library of Congress Prints and Photographs Division, Washington, D.C.",
-    "creator": { "id": "a-lewis-wickes-hine", "name": "Lewis Wickes Hine" },
+    "creator": { "id": "a-lewis-wickes-hine", "name": "Lewis Wickes Hine", "wikidata": "Q347194" },
     "title": "Merilda. Carrying cranberries",
     "date": "1911-09",
     "institution": "Library of Congress",
@@ -6708,7 +6765,7 @@
     "caption": "William Birch, <a href=\"https://www.artic.edu/artworks/149498\" target=\"_blank\"><em>The Sun Reflecting on the Dew, a Garden Scene</em></a> (c. 1812), etching: “Echo, Pennsylv.ª a place belonging to Mr. D. Bavarage”",
     "alt": "A small etching of a wooded garden at sunrise: tall slender trees and pale boulders, a stream tumbling over rocks at the left, and light breaking through the leaves behind. Engraved below: The Sun reflecting on the Dew, a Garden scene.",
     "bibliography": "Birch, William. <em>The Sun Reflecting on the Dew, a Garden Scene</em>. c. 1812, etching, Art Institute of Chicago, 2013.771.",
-    "creator": { "id": "a-william-birch", "name": "William Birch" },
+    "creator": { "id": "a-william-birch", "name": "William Birch", "wikidata": "Q8017857" },
     "title": "Sun Reflecting on the Dew, A Garden Scene",
     "date": "1812~",
     "institution": "Art Institute of Chicago",
