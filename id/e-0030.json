@@ -9,11 +9,24 @@
       "name": "Rainer Maria Rilke",
       "role": "author",
       "wikidata": "Q76483"
+    },
+    {
+      "id": "a-jessie-lemont",
+      "name": "Jessie Lemont",
+      "role": "translator"
     }
   ],
   "issued": "1918",
   "original-date": "1918",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "001905192",
+    "oclc": "1851293",
+    "lccn": "19000109",
+    "openlibrary": "OL24180188M",
+    "internetArchive": "cu31924026255822"
+  },
+  "publisher": "T. A. Wright",
   "citedBy": [
     "r-0030"
   ],

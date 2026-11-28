@@ -13,6 +13,12 @@
   ],
   "publisher": "Rensselaer",
   "issued": "1915",
+  "identifiers": {
+    "hathitrust": "001506820",
+    "oclc": "3724581",
+    "lccn": "agr15001070",
+    "internetArchive": "illustratedcatal00thompso"
+  },
   "citedBy": [
     "i-0076"
   ],

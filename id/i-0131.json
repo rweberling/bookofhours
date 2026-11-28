@@ -3,7 +3,7 @@
   "id": "i-0131",
   "shownIn": "weather",
   "file": "images/weather_tyndall_tube.gif",
-  "caption": "John Tyndall, Fig. 3, from <a href=\"https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601\" target=\"_blank\"><em>Fragments of Science</em></a>, vol. 1 (1879)",
+  "caption": "John Tyndall, Fig. 3, from <a href=\"https://archive.org/details/b21902227_0001/page/98/mode/1up\" target=\"_blank\"><em>Fragments of Science</em></a>, vol. 1 (1879)",
   "alt": "An engraving of laboratory apparatus on a table: a tall lamp at the left shining into a long horizontal glass tube on two stands, joined by thin pipes to a small test tube and two upright jars on the right, labelled “Fig. 3.”",
   "bibliography": "Tyndall, John. Fig. 3. In “New Chemical Reactions Produced by Light,” <em>Fragments of Science: A Series of Detached Essays, Addresses, and Reviews</em>, 6th ed., vol. 1. Longmans, Green, and Co., 1879.",
   "creator": {
@@ -16,11 +16,15 @@
     "id": "e-0167",
     "title": "Fragments of Science: A Series of Detached Essays, Addresses, and Reviews, vol. 1",
     "publisher": "Longmans, Green, and Co.",
-    "issued": "1879"
+    "issued": "1879",
+    "identifiers": {
+      "hathitrust": "006520989",
+      "oclc": "3510675"
+    }
   },
   "locator": {
-    "url": "https://www.gutenberg.org/files/24527/24527-h/24527-h.htm#Toc158391601",
-    "label": "Project Gutenberg"
+    "url": "https://archive.org/details/b21902227_0001/page/98/mode/1up",
+    "label": "Internet Archive"
   },
   "date": "1879",
   "institution": null,

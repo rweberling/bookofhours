@@ -20,6 +20,12 @@
   "publisher": "Macmillan",
   "issued": "1870",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "100134106",
+    "lccn": "26011357",
+    "openlibrary": "OL23751429M",
+    "internetArchive": "poeticalworksof00cowp"
+  },
   "citedBy": [
     "r-0095"
   ],

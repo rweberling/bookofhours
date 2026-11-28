@@ -40,7 +40,13 @@
       }
     ],
     "publisher": "Rensselaer",
-    "issued": "1915"
+    "issued": "1915",
+    "identifiers": {
+      "hathitrust": "001506820",
+      "oclc": "3724581",
+      "lccn": "agr15001070",
+      "internetArchive": "illustratedcatal00thompso"
+    }
   },
   "locator": {
     "url": "https://www.biodiversitylibrary.org/page/33339968",

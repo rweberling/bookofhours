@@ -8,7 +8,7 @@
   "text": "The bleak fields are asleep,<br>My heart alone wakes;<br>The evening in the harbour<br>Down his red sails takes.<br><br>Night, guardian of dreams,<br>Now wanders through the land;<br>The moon, a lily white,<br>Blossoms within her hand.",
   "citation": {
     "display": "Rainer Maria Rilke, \"<a href=\"https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening\" target=\"_blank\">Evening</a>\" (1918)",
-    "bibliography": "Rilke, Rainer Maria. \"Evening.\" <em>Poems</em>, 1918.",
+    "bibliography": "Rilke, Rainer Maria. \"Evening.\" <em>Poems</em>, translated by Jessie Lemont, T. A. Wright, 1918.",
     "title": "Evening",
     "locator": {
       "url": "https://en.wikisource.org/wiki/Poems_of_Rainer_Maria_Rilke_(1918)/Evening",
@@ -24,11 +24,24 @@
           "name": "Rainer Maria Rilke",
           "role": "author",
           "wikidata": "Q76483"
+        },
+        {
+          "id": "a-jessie-lemont",
+          "name": "Jessie Lemont",
+          "role": "translator"
         }
       ],
       "issued": "1918",
       "original-date": "1918",
-      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+      "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+      "identifiers": {
+        "hathitrust": "001905192",
+        "oclc": "1851293",
+        "lccn": "19000109",
+        "openlibrary": "OL24180188M",
+        "internetArchive": "cu31924026255822"
+      },
+      "publisher": "T. A. Wright"
     }
   },
   "tags": {

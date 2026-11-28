@@ -18,7 +18,12 @@
   "edition": {
     "id": "e-0166",
     "title": "Animal Locomotion, vol. 7",
-    "issued": "1887"
+    "issued": "1887",
+    "identifiers": {
+      "hathitrust": "100765852",
+      "oclc": "3158631",
+      "lccn": "10034162"
+    }
   },
   "locator": {
     "url": "https://ark.digitalcommonwealth.org/ark:/50959/70796730d",

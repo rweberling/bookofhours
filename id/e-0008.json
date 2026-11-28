@@ -21,6 +21,12 @@
   "issued": "1897",
   "original-date": "1800",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "100375999",
+    "oclc": "6436162",
+    "openlibrary": "OL25410510M",
+    "internetArchive": "rampolli00macd"
+  },
   "citedBy": [
     "r-0008"
   ],
