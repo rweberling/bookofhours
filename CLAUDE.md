@@ -147,6 +147,11 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   first decides which pieces can appear; the lean then applies on every
   turn, and the reading also leans toward the image's tags.
 - The Hours frame crops every image to 4:3; the lightbox shows it whole.
+- `editions.html` ("Editions & Subscriptions", in the Scriptorium menu) is
+  the one page for every way to take the book away or support it: the
+  calendar (`#calendar`), letters and feeds, postcards, the editions,
+  support (Ryan, 28 November 2026). New offerings go there, not in new
+  menu items. The Seasons menu's middle item is "Today".
 - "keep this page" (`keep.js`) is on the Hours, Weather and Seasons
   pages (and the post pages). It opens a pane, made by `keep.js`, with
   the page drawn as a card on a canvas (wide 1200×630 or tall
