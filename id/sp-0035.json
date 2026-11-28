@@ -12,7 +12,24 @@
   "wikidata": "Q26597",
   "gbif": "2498273",
   "inaturalist": "7170",
-  "records": [],
+  "records": [
+    "r-0140",
+    "i-0171"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0140/",
+        "id": "r-0140",
+        "name": "Edward Howe Forbush, “Old-squaw”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0171/",
+        "id": "i-0171",
+        "name": "Robert Havell and John James Audubon, Long-tailed Duck"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }
