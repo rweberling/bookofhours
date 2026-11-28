@@ -29,7 +29,10 @@
       "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
       "identifiers": {
         "internetArchive": "americanbeaverhi68morg",
-        "doi": "10.5962/bhl.title.10093"
+        "doi": "10.5962/bhl.title.10093",
+        "oclc": "1579785",
+        "openlibrary": "OL23272232M",
+        "lccn": "06026710"
       }
     }
   },
