@@ -23,9 +23,14 @@
       "wikidata": "Q5729156"
     }
   ],
-  "publisher": "Taylor and Francis",
+  "publisher": "Henry G. Bohn",
   "issued": "1855",
   "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "identifiers": {
+    "hathitrust": "009407831",
+    "oclc": "615995",
+    "lccn": "10000947"
+  },
   "citedBy": [
     "r-0097"
   ],
