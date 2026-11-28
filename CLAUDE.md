@@ -191,8 +191,7 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   calendar's line ("the year, a day at a time… Subscribe"), not the
   postcards' (`CALENDAR_RUBRIC` in `shared.js`, linking to the
   subscription's page, https://otherwise.dfos.com/p/daily-calendar-feed;
-  shown only with `?preview` until its `live` is set true, when the
-  subscription can be bought). Wander the Seasons, public since 23
+  live since 28 November 2026, when the subscription went on sale). Wander the Seasons, public since 23
   November 2026 (`buildPaneDays()` in `seasons.js`): the subheading "One
   species or phenomenon for each day of the year, and an essay for each
   week." (no dots on the dial for the days: Ryan, 23 November 2026), then

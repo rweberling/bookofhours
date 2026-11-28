@@ -959,7 +959,7 @@ function solsticeRubricLine(withDismiss, r = SOLSTICE_RUBRIC) {
 const CALENDAR_RUBRIC = {
   key: 'eh-rubric-calendar',
   href: 'https://otherwise.dfos.com/p/daily-calendar-feed',
-  live: false,
+  live: true,
   label: 'the year, a day at a time:',
   text: 'each day\u2019s card and each week\u2019s essay, in your own calendar.',
   link: 'Subscribe\u00a0\u2192'
