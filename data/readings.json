@@ -995,12 +995,12 @@
     "shownIn": "hours",
     "text": "Evening, thou that bringest all that bright morning scattered;<br>thou bringest the sheep, the goat, the child back to her mother.",
     "citation": {
-      "display": "Sappho, <em>fragment 104a</em> (c. 630–580 BCE, trans. <a href=\"https://www.gutenberg.org/files/57390/57390-h/57390-h.htm\" target=\"_blank\">Wharton, 1908</a>)",
+      "display": "Sappho, <em>fragment 104a</em> (c. 630–580 BCE, trans. <a href=\"https://archive.org/download/sapphomemoirtext57390gut/57390-h/57390-h.htm\" target=\"_blank\">Wharton, 1908</a>)",
       "bibliography": "Sappho. \"Fragment 104a.\" <em>Sappho: Memoir, Text, Selected Renderings, and a Literal Translation</em>, translated by Henry Thornton Wharton, John Lane, 1908. Composed c. 630–580 BCE.",
       "title": "Fragment 104a",
       "locator": {
-        "url": "https://www.gutenberg.org/files/57390/57390-h/57390-h.htm",
-        "label": "Project Gutenberg"
+        "url": "https://archive.org/download/sapphomemoirtext57390gut/57390-h/57390-h.htm",
+        "label": "Internet Archive"
       },
       "edition": {
         "id": "e-0026",
