@@ -97,8 +97,10 @@ Read `data/README.md` first: it explains every file and field. The essentials:
 - The calendar (`scripts/build_calendar.py`, sold on DFOS as a
   subscription to the year, $3 or pay what you want from $2; the plan's
   "The days, everywhere"): every card and essay as an all-day event
-  repeating yearly, each day shown as soon as it is added; open-rights
-  reading texts only, otherwise the citation; no images. Public, like
+  repeating yearly, each day shown as soon as it is added; each event a
+  pointer to its page (Ryan, 28 November 2026): the second name, the
+  reading's opening (open rights only), who and when, the link; no
+  images. Public, like
   `year.xml` (Ryan, 28 November 2026: no secrets or private path; the
   DFOS purchase is an honor system, since the cards and essays are free
   on the site): `calendar.ics` at the repo root, served by Pages at
