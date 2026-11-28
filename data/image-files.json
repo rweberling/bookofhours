@@ -4632,25 +4632,25 @@
       "height": 4029,
       "sha256": "429db19f5009fe89a51f422179f4227979a5966f5c50eb844170f2d524120332",
       "settings": "89e48fac760f",
-      "credit": "77d9e3c237fb",
+      "credit": "359450175a03",
       "copies": [
         {
           "file": "images/web/transit_muybridge-800.webp",
           "width": 800,
           "height": 767,
-          "bytes": 40944
+          "bytes": 40924
         },
         {
           "file": "images/web/transit_muybridge-1600.webp",
           "width": 1600,
           "height": 1535,
-          "bytes": 100262
+          "bytes": 100242
         },
         {
           "file": "images/web/transit_muybridge-2400.webp",
           "width": 2400,
           "height": 2302,
-          "bytes": 177976
+          "bytes": 177956
         }
       ]
     },
