@@ -1,3 +1,7 @@
+// RETIRED 28 November 2026: the calendar is now public at
+// earthlyhours.com/calendar.ics (scripts/build_calendar.py). Kept for the
+// record; the Worker can be deleted from Cloudflare.
+//
 // The Worker "earthlyhours-calendar", at calendar.earthlyhours.com: it
 // serves the calendar sold on DFOS (scripts/build_calendar.py builds it
 // and uploads it to the Workers KV namespace bound as CALENDAR) at

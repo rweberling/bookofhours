@@ -98,15 +98,17 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   subscription to the year, $3 or pay what you want from $2; the plan's
   "The days, everywhere"): every card and essay as an all-day event
   repeating yearly, each day shown as soon as it is added; open-rights
-  reading texts only, otherwise the citation; no images. Not kept in the
-  repo (it is public): `.github/workflows/calendar.yml` builds it when the
-  data changes and uploads it to Workers KV (secret
-  `CLOUDFLARE_CALENDAR_TOKEN`), and the Worker `earthlyhours-calendar`
-  (`workers/calendar.js`) serves it at calendar.earthlyhours.com under a
-  private path, a secret of the Worker that is never written in the repo.
-  `--out FILE`, `--show`, `--upload`; settings in `data/syndication.json`
-  ("calendar"). When the year is complete, the finished file replaces the
-  subscription on DFOS.
+  reading texts only, otherwise the citation; no images. Public, like
+  `year.xml` (Ryan, 28 November 2026: no secrets or private path; the
+  DFOS purchase is an honor system, since the cards and essays are free
+  on the site): `calendar.ics` at the repo root, served by Pages at
+  https://earthlyhours.com/calendar.ics. `.github/workflows/calendar.yml`
+  rebuilds and commits it when the data changes (no secret, the
+  workflow's own token). `python3 scripts/build_calendar.py` writes it;
+  `--out FILE`, `--show`; settings in `data/syndication.json`
+  ("calendar"). The old private Worker (`workers/calendar.js`,
+  calendar.earthlyhours.com) is retired. When the year is complete, the
+  finished file replaces the subscription on DFOS.
 - Substack import: `python3 scripts/import_substack.py --fetch --write`
   takes every new post from Substack (no export needed), gives each
   "Week NN:" post its season by month, runs the rest in turn, and ends
@@ -410,7 +412,7 @@ Read `data/README.md` first: it explains every file and field. The essentials:
   ones (removes `draft`, sets `released: <date>` on the desk record) and
   fixes the `fix` ones on the records, per the note, then sets `fixed:
   <date>` and clears `review` so the day comes back to him. Releasing is
-  the push: the Calendar workflow uploads the new calendar on it and the
+  the push: the Calendar workflow rebuilds and commits the calendar on it and the
   Syndicate run adds the day to `year.xml` on its date. Subscribers see a
   released card at once, even ahead of its date, so release only what he
   has passed, a few days ahead at least.

@@ -15,7 +15,24 @@
   "gloss": {
     "text": "<em>Versicolor</em> is Latin, “of changing colours”, for the bands across the caps."
   },
-  "records": [],
+  "records": [
+    "r-0144",
+    "i-0176"
+  ],
+  "related": {
+    "records": [
+      {
+        "@id": "https://earthlyhours.com/id/r-0144/",
+        "id": "r-0144",
+        "name": "“Coleoptera Associated with Polyporus versicolor L. in New Jersey”"
+      },
+      {
+        "@id": "https://earthlyhours.com/id/i-0176/",
+        "id": "i-0176",
+        "name": "James Sowerby, Boletus versicolor"
+      }
+    ]
+  },
   "license": "https://creativecommons.org/licenses/by-nc/4.0/",
   "dataset": "https://doi.org/10.5281/zenodo.23603918"
 }

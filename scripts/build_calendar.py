@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
-"""The calendar: the book's year as a subscribable .ics, sold on DFOS.
+"""The calendar: the book's year as a subscribable .ics, at earthlyhours.com/calendar.ics.
 
 Usage:
-  python3 scripts/build_calendar.py --out FILE     write the calendar to FILE
-  python3 scripts/build_calendar.py --upload       build it and put it where
-                                                   subscribers read it (needs
-                                                   CLOUDFLARE_CALENDAR_TOKEN, a
-                                                   Cloudflare API token with
-                                                   Workers KV Storage: Edit)
+  python3 scripts/build_calendar.py                write calendar.ics (the site's copy)
+  python3 scripts/build_calendar.py --out FILE     write the calendar to FILE instead
   python3 scripts/build_calendar.py --show         print the events as plain text
 
 Every day of the book's year is an all-day event that repeats each year:
@@ -29,23 +25,18 @@ November 2026. Unlike the pages and feeds, the calendar shows each day as
 soon as it is added, about ten days ahead: calendars are for looking
 ahead. It has no images (calendar apps don't show them).
 
-The file is not kept in the repository, which is public: it is built by
-.github/workflows/calendar.yml when the data changes and uploaded to
-Workers KV in the earthlyhours.com Cloudflare account, where the Worker
-"earthlyhours-calendar" serves it at calendar.earthlyhours.com under a
-private path, the address the buyers' subscribe file gives (the path is
-a secret of the Worker, never in this repository). The output is the same
-for the same data, so an unchanged calendar is not uploaded again.
+The file is part of the site (calendar.ics at the root, public like
+year.xml): .github/workflows/calendar.yml rebuilds and commits it when the
+data changes, and GitHub Pages serves it. Supporters reach it through the
+DFOS page (an honor system, Ryan, 28 November 2026: the cards and essays
+are free on the site anyway). The output is the same for the same data, so
+an unchanged calendar makes no commit.
 """
 
 import argparse
-import hashlib
 import json
-import os
 import re
 import sys
-import urllib.error
-import urllib.request
 from datetime import date
 from pathlib import Path
 
@@ -185,54 +176,23 @@ def build(config):
     return '\r\n'.join(fold(line) for line in lines) + '\r\n'
 
 
-def upload(config, text):
-    """Put the calendar in Workers KV, if it changed."""
-    token = os.environ.get('CLOUDFLARE_CALENDAR_TOKEN')
-    if not token:
-        print('No CLOUDFLARE_CALENDAR_TOKEN: nothing uploaded.')
-        return
-    base = (f'https://api.cloudflare.com/client/v4/accounts/{config["account"]}'
-            f'/storage/kv/namespaces/{config["namespace"]}/values/')
-    digest = hashlib.sha256(text.encode()).hexdigest()
-
-    def call(method, key, body=None, ctype='text/calendar'):
-        req = urllib.request.Request(base + key, data=body, method=method, headers={
-            'Authorization': f'Bearer {token}', 'Content-Type': ctype})
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                return r.read().decode()
-        except urllib.error.HTTPError as e:
-            if e.code == 404 and method == 'GET':
-                return None
-            raise SystemExit(f'{method} {key}: HTTP {e.code} {e.read().decode()[:300]}')
-    if call('GET', 'digest') == digest:
-        print('The calendar is unchanged; nothing uploaded.')
-        return
-    call('PUT', config['key'], text.encode('utf-8'))
-    call('PUT', 'digest', digest.encode(), 'text/plain')
-    print(f'The calendar uploaded ({len(text.encode()):,} bytes).')
-
-
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
-    ap.add_argument('--out')
-    ap.add_argument('--upload', action='store_true')
+    ap.add_argument('--out', default=str(HERE.parent / 'calendar.ics'))
     ap.add_argument('--show', action='store_true')
     args = ap.parse_args()
     config = load('syndication').get('calendar') or {}
     text = build(config)
-    if args.out:
+    if not args.show:
         Path(args.out).write_text(text, encoding='utf-8', newline='')
         print(f'{args.out}: {text.count("BEGIN:VEVENT")} events')
-    if args.show:
+    else:
         unfolded = text.replace('\r\n ', '')
         for block in re.findall(r'BEGIN:VEVENT\r\n(.*?)END:VEVENT', unfolded, re.S):
             f = dict(line.split(':', 1) for line in block.split('\r\n') if ':' in line)
             start = next(v for k, v in f.items() if k.startswith('DTSTART'))
             desc = f['DESCRIPTION'].replace('\\n', '\n').replace('\\,', ',').replace('\\;', ';')
             print(f'== {start}  {f["SUMMARY"]}\n{desc}\n')
-    if args.upload:
-        upload(config, text)
 
 
 if __name__ == '__main__':
